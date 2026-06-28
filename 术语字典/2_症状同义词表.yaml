@@ -1,0 +1,172 @@
+# ============================================
+# 症状同义词表
+# 来源：Neo4j数据库实际数据（2026-06-24导出）
+# Schema：专科知识图谱Schema标准 V1.1 §10
+# 维护方式：人工维护，AI不得自动修改
+# 合并规则：code相同=L1自动合并，aliases命中=L2自动合并，same_as=L3人工确认
+# ============================================
+
+- canonical: 胸痛
+  code: SYM-CARD-B479F36AE54A
+  name_en: Chest pain
+  aliases:
+    - 胸骨后疼痛
+    - 压榨性疼痛
+    - 缺血性胸痛
+    - 心前区疼痛
+    - 胸部不适
+  same_as: []
+  note: ""
+
+- canonical: 胸闷
+  code: SYM-CARD-0039E284D715
+  name_en: Chest tightness
+  aliases:
+    - 胸部压迫感
+    - 胸部紧缩感
+  same_as: []
+  note: ""
+
+- canonical: 呼吸困难
+  code: SYM-CARD-19E67F3BE240
+  name_en: Dyspnea
+  aliases:
+    - 气短
+    - dyspnea
+  same_as: []
+  note: ""
+
+- canonical: 劳力性呼吸困难
+  code: SYM-CARD-3C54A8AA7CDB
+  name_en: Exertional dyspnea
+  aliases:
+    - 劳力性气短
+    - 活动后呼吸困难
+    - 活动后气短
+  same_as: []
+  note: ""
+
+- canonical: 静息性呼吸困难
+  code: SYM-CARD-CFEE6A15D3BD
+  name_en: Dyspnea at rest
+  aliases:
+    - 静息呼吸困难
+    - 静息性气短
+  same_as: []
+  note: ""
+
+- canonical: 端坐呼吸
+  code: SYM-CARD-F076662BF021
+  name_en: Orthopnea
+  aliases: []
+  same_as: []
+  note: ""
+
+- canonical: 夜间阵发性呼吸困难
+  code: SYM-CARD-9BD3C4F11F7E
+  name_en: Paroxysmal nocturnal dyspnea
+  aliases:
+    - 夜间阵发呼吸困难
+    - PND
+  same_as: []
+  note: ""
+
+- canonical: 心悸
+  code: SYM-CARD-E3290D298A53
+  name_en: Palpitation
+  aliases: []
+  same_as: []
+  note: ""
+
+- canonical: 晕厥
+  code: SYM-CARD-F3352646F3F1
+  name_en: Syncope
+  aliases:
+    - 一过性意识丧失
+  same_as:
+    - "黑矇（需人工确认是否合并）"
+  note: ""
+
+- canonical: 黑矇
+  code: SYM-CARD-F655A47C2B62
+  name_en: Amaurosis
+  aliases:
+    - 黑蒙
+    - 眼前发黑
+  same_as:
+    - "晕厥（需人工确认是否合并）"
+  note: ""
+
+- canonical: 乏力
+  code: SYM-CARD-0ACC45EF4E60
+  name_en: Fatigue
+  aliases:
+    - 疲乏
+  same_as:
+    - "耐力下降（需人工确认是否合并）"
+  note: ""
+
+- canonical: 耐力下降
+  code: SYM-CARD-33F959FDD5F3
+  name_en: Decreased exercise tolerance
+  aliases:
+    - 运动耐量下降
+    - 活动耐量下降
+  same_as:
+    - "乏力（需人工确认是否合并）"
+  note: ""
+
+- canonical: 头晕
+  code: SYM-CARD-6DA3580C8B73
+  name_en: Dizziness
+  aliases:
+    - 眩晕
+  same_as: []
+  note: ""
+
+- canonical: 出汗
+  code: SYM-CARD-BC91622FC62F
+  name_en: Diaphoresis
+  aliases:
+    - 大汗
+    - 冷汗
+  same_as: []
+  note: ""
+
+- canonical: 上腹痛
+  code: SYM-CARD-1130B3D9AB8F
+  name_en: Epigastric pain
+  aliases:
+    - 上腹部疼痛
+    - 腹痛
+  same_as: []
+  note: ""
+
+- canonical: 恶心呕吐
+  code: SYM-CARD-1053F19CEBAD
+  name_en: Nausea and vomiting
+  aliases:
+    - 恶心
+    - 呕吐
+  same_as: []
+  note: ""
+
+- canonical: 放射痛
+  code: SYM-CARD-AECE358B7FF2
+  name_en: Radiating pain
+  aliases:
+    - 左肩放射痛
+    - 左臂放射痛
+    - 颈部放射痛
+    - 下颌放射痛
+    - 背部放射痛
+  same_as: []
+  note: ""
+
+- canonical: 濒死感
+  code: SYM-CARD-80A8947D5A71
+  name_en: Sense of impending doom
+  aliases:
+    - 濒死感觉
+  same_as: []
+  note: ""

@@ -1,0 +1,251 @@
+# ============================================
+# 疾病同义词表
+# 来源：Neo4j数据库实际数据（2026-06-24导出）
+# Schema：专科知识图谱Schema标准 V1.1 §10
+# 维护方式：人工维护，AI不得自动修改
+# 合并规则：code相同=L1自动合并，aliases命中=L2自动合并，same_as=L3人工确认
+# ============================================
+
+# === 冠状动脉疾病 ===
+
+- canonical: 急性冠脉综合征
+  code: DIS-CARD-CAD-ACS
+  name_en: Acute coronary syndrome
+  aliases:
+    - ACS
+    - 急性冠状动脉综合征
+    - 冠脉综合征
+  same_as: []
+  category: 冠状动脉疾病
+  subcategory: 急性冠脉综合征
+  note: ""
+
+- canonical: ST段抬高型心肌梗死
+  code: DIS-CARD-CAD-STEMI
+  name_en: ST-segment elevation myocardial infarction
+  aliases:
+    - STEMI
+    - ST抬高心梗
+    - ST段抬高性心肌梗死
+    - ST段抬高心肌梗死
+  same_as: []
+  category: 冠状动脉疾病
+  subcategory: 急性冠脉综合征
+  note: ""
+
+- canonical: 非ST段抬高型心肌梗死
+  code: DIS-CARD-CAD-NSTEMI
+  name_en: Non-ST-segment elevation myocardial infarction
+  aliases:
+    - NSTEMI
+    - 非ST抬高心梗
+    - 非ST段抬高性心肌梗死
+    - 非ST段抬高心肌梗死
+    - NSTE-ACS
+  same_as: []
+  category: 冠状动脉疾病
+  subcategory: 急性冠脉综合征
+  note: ""
+
+- canonical: 不稳定型心绞痛
+  code: DIS-CARD-CAD-UA
+  name_en: Unstable angina
+  aliases:
+    - UA
+    - 不稳定心绞痛
+  same_as: []
+  category: 冠状动脉疾病
+  subcategory: 急性冠脉综合征
+  note: ""
+
+- canonical: 急性心肌梗死
+  code: DIS-CARD-CAD-AMI
+  name_en: Acute myocardial infarction
+  aliases:
+    - AMI
+    - 心梗
+    - 心肌梗死
+    - 急性心梗
+  same_as: []
+  category: 冠状动脉疾病
+  subcategory: 急性冠脉综合征
+  note: "上位概念，STEMI/NSTEMI是下位概念"
+
+- canonical: 慢性冠脉综合征
+  code: DIS-CARD-CAD-CCS
+  name_en: Chronic coronary syndrome
+  aliases:
+    - CCS
+    - 慢性冠脉疾病
+    - 慢性冠状动脉综合征
+    - 慢性冠状动脉疾病
+    - CCD
+  same_as: []
+  category: 冠状动脉疾病
+  subcategory: 慢性冠脉疾病谱系
+  note: ""
+
+- canonical: 稳定型心绞痛
+  code: DIS-CARD-CAD-STABLE-ANGINA
+  name_en: Stable angina
+  aliases:
+    - 稳定性心绞痛
+    - 稳定性冠心病
+  same_as: []
+  category: 冠状动脉疾病
+  subcategory: 慢性冠脉疾病谱系
+  note: ""
+
+- canonical: 隐匿性冠心病
+  code: DIS-CARD-CAD-SILENT-ISCHEMIA
+  name_en: Silent myocardial ischemia
+  aliases:
+    - 无症状心肌缺血
+    - 无症状性心肌缺血
+  same_as: []
+  category: 冠状动脉疾病
+  subcategory: 慢性冠脉疾病谱系
+  note: ""
+
+- canonical: 陈旧性心肌梗死
+  code: DIS-CARD-CAD-OLD-MI
+  name_en: Old myocardial infarction
+  aliases:
+    - 既往心肌梗死
+    - 陈旧性心梗
+  same_as: []
+  category: 冠状动脉疾病
+  subcategory: 慢性冠脉疾病谱系
+  note: ""
+
+# === 重复节点（需合并）===
+
+- canonical: 缺血性心肌病
+  code: DIS-CARD-CM-ICM
+  name_en: Ischemic cardiomyopathy
+  aliases:
+    - ICM
+    - 缺血性心肌病变
+  same_as: []
+  category: 心肌病
+  subcategory: 特殊病因及继发性心肌病
+  note: "保留此节点，DIS-CARD-CAD-ICM合并到此节点后删除"
+
+# === 心肌病 ===
+
+- canonical: 扩张型心肌病
+  code: DIS-CARD-CM-DCM
+  name_en: Dilated cardiomyopathy
+  aliases:
+    - DCM
+    - 充血型心肌病
+  same_as: []
+  category: 心肌病
+  subcategory: 心室表型心肌病
+  note: ""
+
+- canonical: 肥厚型心肌病
+  code: DIS-CARD-CM-HCM
+  name_en: Hypertrophic cardiomyopathy
+  aliases:
+    - HCM
+    - 肥厚性心肌病
+  same_as: []
+  category: 心肌病
+  subcategory: 心室表型心肌病
+  note: ""
+
+- canonical: 限制型心肌病
+  code: DIS-CARD-CM-RCM
+  name_en: Restrictive cardiomyopathy
+  aliases:
+    - RCM
+  same_as: []
+  category: 心肌病
+  subcategory: 心室表型心肌病
+  note: ""
+
+- canonical: 非扩张型左心室心肌病
+  code: DIS-CARD-CM-NDLVCM
+  name_en: Non-dilated left ventricular cardiomyopathy
+  aliases:
+    - NDLVCM
+    - 非扩张型左室心肌病
+  same_as: []
+  category: 心肌病
+  subcategory: 心室表型心肌病
+  note: ""
+
+- canonical: 致心律失常性心肌病
+  code: DIS-CARD-CM-ACM
+  name_en: Arrhythmogenic cardiomyopathy
+  aliases:
+    - ACM
+    - 心律失常相关心肌病
+  same_as: []
+  category: 心肌病
+  subcategory: 心律失常表型心肌病
+  note: "ACM是上位概念，ARVC/ALVC/ABVC是下位概念"
+
+- canonical: 致心律失常性右心室心肌病
+  code: DIS-CARD-CM-ARVC
+  name_en: Arrhythmogenic right ventricular cardiomyopathy
+  aliases:
+    - ARVC
+    - 右心室发育不良型心肌病
+  same_as: []
+  category: 心肌病
+  subcategory: 心律失常表型心肌病
+  note: ""
+
+- canonical: 致心律失常性左心室心肌病
+  code: DIS-CARD-CM-ALVC
+  name_en: Arrhythmogenic left ventricular cardiomyopathy
+  aliases:
+    - ALVC
+  same_as: []
+  category: 心肌病
+  subcategory: 心律失常表型心肌病
+  note: ""
+
+- canonical: 致心律失常性双心室心肌病
+  code: DIS-CARD-CM-ABVC
+  name_en: Arrhythmogenic biventricular cardiomyopathy
+  aliases:
+    - ABVC
+  same_as: []
+  category: 心肌病
+  subcategory: 心律失常表型心肌病
+  note: ""
+
+- canonical: 淀粉样变心肌病
+  code: DIS-CARD-CM-AMYLOID
+  name_en: Amyloid cardiomyopathy
+  aliases:
+    - 心脏淀粉样变
+    - ATTR-CM
+    - AL-CM
+  same_as: []
+  category: 心肌病
+  subcategory: 特殊病因及继发性心肌病
+  note: ""
+
+- canonical: 法布雷病心肌病
+  code: DIS-CARD-CM-FABRY
+  name_en: Fabry cardiomyopathy
+  aliases:
+    - Fabry病心肌病
+  same_as: []
+  category: 心肌病
+  subcategory: 特殊病因及继发性心肌病
+  note: ""
+
+- canonical: 心房心肌病
+  code: DIS-CARD-CM-ATRIAL
+  name_en: Atrial cardiomyopathy
+  aliases:
+    - AtCM
+  same_as: []
+  category: 心肌病
+  subcategory: 心房心肌病
+  note: ""

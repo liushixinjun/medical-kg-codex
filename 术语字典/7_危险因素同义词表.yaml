@@ -1,0 +1,75 @@
+# ============================================
+# 危险因素同义词表
+# 来源：Neo4j数据库实际数据（2026-06-24导出）
+# Schema：专科知识图谱Schema标准 V1.1 §10
+# 维护方式：人工维护，AI不得自动修改
+# 合并规则：code相同=L1自动合并，aliases命中=L2自动合并，same_as=L3人工确认
+# ============================================
+
+# === 待创建危险因素节点 ===
+
+- canonical: 高血压
+  code: RF-CARD-HYPERTENSION
+  name_en: Hypertension
+  aliases: []
+  same_as: []
+  status: 待创建
+  note: ""
+
+- canonical: 糖尿病
+  code: RF-CARD-DIABETES
+  name_en: Diabetes mellitus
+  aliases: []
+  same_as: []
+  status: 待创建
+  note: ""
+
+- canonical: 吸烟
+  code: RF-CARD-SMOKING
+  name_en: Smoking
+  aliases: []
+  same_as: []
+  status: 待创建
+  note: ""
+
+- canonical: 饮酒
+  code: RF-CARD-ALCOHOL
+  name_en: Alcohol consumption
+  aliases: []
+  same_as: []
+  status: 待创建
+  note: ""
+
+- canonical: 家族史
+  code: RF-CARD-FAMILY-HISTORY
+  name_en: Family history
+  aliases: []
+  same_as: []
+  status: 待创建
+  note: ""
+
+- canonical: 基因突变
+  code: RF-CARD-GENETIC-MUTATION
+  name_en: Genetic mutation
+  aliases:
+    - 遗传因素
+  same_as: []
+  status: 待创建
+  note: ""
+
+- canonical: 肥胖
+  code: RF-CARD-OBESITY
+  name_en: Obesity
+  aliases: []
+  same_as: []
+  status: 待创建
+  note: ""
+
+- canonical: 高脂血症
+  code: RF-CARD-DYSLIPIDEMIA
+  name_en: Dyslipidemia
+  aliases:
+    - 血脂异常
+  same_as: []
+  status: 待创建
+  note: ""

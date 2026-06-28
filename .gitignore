@@ -1,0 +1,41 @@
+# Python/runtime
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+*.old
+
+# Raw documents and large archives
+*.pdf
+*.PDF
+*.doc
+*.docx
+*.zip
+*.7z
+*.rar
+
+# Generated graph snapshots and heavy intermediate artifacts
+**/nodes_final.jsonl
+**/relations_final.jsonl
+**/graph_final.json
+**/nodes_final.csv
+**/relations_final.csv
+**/*.clean.txt
+**/page_audit.jsonl
+**/segment_index.jsonl
+
+# Specialty graph generated artifacts: keep root docs separately, do not track heavy batch outputs by default
+心血管内科文献集合/00_foundation_skeleton/
+心血管内科文献集合/BATCH-*/
+心血管内科文献集合/99_全局质量体检_global_quality_audit/
+心血管内科文献集合/09_增量补丁_delta/
+
+# Local application/cache folders
+.agents/
+.codex/

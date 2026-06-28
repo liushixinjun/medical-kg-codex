@@ -1,0 +1,141 @@
+# ============================================
+# 体征同义词表
+# 来源：Neo4j数据库实际数据（2026-06-24导出）
+# Schema：专科知识图谱Schema标准 V1.1 §10
+# 维护方式：人工维护，AI不得自动修改
+# 合并规则：code相同=L1自动合并，aliases命中=L2自动合并，same_as=L3人工确认
+# ============================================
+
+- canonical: 低血压
+  code: SIGN-CARD-B479F36AE54A
+  name_en: Hypotension
+  aliases:
+    - 血压下降
+  same_as: []
+  note: ""
+
+- canonical: 奔马律
+  code: SIGN-CARD-75EFE91EFEED
+  name_en: Gallop rhythm
+  aliases: []
+  same_as: []
+  note: ""
+
+- canonical: 心动过速
+  code: SIGN-CARD-4E5DA62E1DA3
+  name_en: Tachycardia
+  aliases:
+    - 心率增快
+    - 心率快
+  same_as: []
+  note: ""
+
+- canonical: 心脏扩大
+  code: SIGN-CARD-EB9D2F421114
+  name_en: Cardiomegaly
+  aliases:
+    - 心界扩大
+    - 心腔扩大
+  same_as: []
+  note: ""
+
+- canonical: 心脏杂音
+  code: SIGN-CARD-92548DA98265
+  name_en: Cardiac murmur
+  aliases:
+    - 新发杂音
+    - 收缩期杂音
+  same_as: []
+  note: ""
+
+- canonical: 心音低钝
+  code: SIGN-CARD-7D7BE7B5FE4D
+  name_en: Muffled heart sounds
+  aliases:
+    - 心音减弱
+  same_as:
+    - "心音减弱 SIGN-CARD-E5C7FF8F1850（建议合并）"
+  note: ""
+
+- canonical: 心音减弱
+  code: SIGN-CARD-E5C7FF8F1850
+  name_en: Diminished heart sounds
+  aliases:
+    - 心音低钝
+  same_as:
+    - "心音低钝 SIGN-CARD-7D7BE7B5FE4D（建议合并）"
+  note: ""
+
+- canonical: 水肿
+  code: SIGN-CARD-52CC24CD4C33
+  name_en: Edema
+  aliases:
+    - 下肢水肿
+    - 外周水肿
+  same_as: []
+  note: ""
+
+- canonical: 皮肤湿冷
+  code: SIGN-CARD-FFE03BB62300
+  name_en: Cold clammy skin
+  aliases:
+    - 四肢湿冷
+    - 冷汗
+  same_as: []
+  note: ""
+
+- canonical: 第三心音
+  code: SIGN-CARD-B0814CB800B1
+  name_en: Third heart sound
+  aliases:
+    - S3心音
+  same_as: []
+  note: ""
+
+- canonical: 第四心音
+  code: SIGN-CARD-658603F4081B
+  name_en: Fourth heart sound
+  aliases:
+    - S4心音
+  same_as: []
+  note: ""
+
+- canonical: 肺水肿
+  code: SIGN-CARD-1431D67A6000
+  name_en: Pulmonary edema
+  aliases: []
+  same_as: []
+  note: ""
+
+- canonical: 肺淤血
+  code: SIGN-CARD-8F15AA48D767
+  name_en: Pulmonary congestion
+  aliases:
+    - 肺充血
+  same_as: []
+  note: ""
+
+- canonical: 肺部啰音
+  code: SIGN-CARD-67CD9C4673B0
+  name_en: Pulmonary rales
+  aliases:
+    - 肺部湿啰音
+    - 湿啰音
+    - 肺啰音
+  same_as: []
+  note: ""
+
+- canonical: 胸腔积液
+  code: SIGN-CARD-667CA8B6F7D8
+  name_en: Pleural effusion
+  aliases: []
+  same_as: []
+  note: ""
+
+- canonical: 颈静脉怒张
+  code: SIGN-CARD-37D71F7E64B1
+  name_en: Jugular venous distension
+  aliases:
+    - JVD
+  same_as: []
+  note: ""

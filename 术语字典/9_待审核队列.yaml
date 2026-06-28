@@ -1,0 +1,41 @@
+# ============================================
+# 待审核队列
+# 来源：Neo4j数据库实际数据（2026-06-24导出）
+# Schema：专科知识图谱Schema标准 V1.1 §10
+# 维护方式：人工维护，AI不得自动修改
+# 说明：从各同义词表same_as字段汇总，需人工逐一确认合并决策
+# ============================================
+
+# === 症状类 ===
+
+- entity_a:
+    name: 晕厥
+    code: SYM-CARD-F3352646F3F1
+  entity_b:
+    name: 黑矇
+    code: SYM-CARD-F655A47C2B62
+  question: "黑矇=晕厥？还是不同症状？"
+  suggestion: "临床建议保留为两个独立症状"
+  status: pending_review
+
+- entity_a:
+    name: 乏力
+    code: SYM-CARD-0ACC45EF4E60
+  entity_b:
+    name: 耐力下降
+    code: SYM-CARD-33F959FDD5F3
+  question: "乏力=耐力下降？还是不同症状？"
+  suggestion: "需临床专家确认是否合并为同一症状节点"
+  status: pending_review
+
+# === 体征类 ===
+
+- entity_a:
+    name: 心音低钝
+    code: SIGN-CARD-7D7BE7B5FE4D
+  entity_b:
+    name: 心音减弱
+    code: SIGN-CARD-E5C7FF8F1850
+  question: "心音低钝=心音减弱？建议合并为同一节点"
+  suggestion: "临床语义基本相同，建议合并至SIGN-CARD-7D7BE7B5FE4D"
+  status: pending_review

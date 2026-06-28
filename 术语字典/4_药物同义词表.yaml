@@ -1,0 +1,144 @@
+# ============================================
+# 药物同义词表
+# 来源：Neo4j数据库实际数据（2026-06-24导出）
+# Schema：专科知识图谱Schema标准 V1.1 §10
+# 维护方式：人工维护，AI不得自动修改
+# 合并规则：code相同=L1自动合并，aliases命中=L2自动合并，same_as=L3人工确认
+# ============================================
+
+# === 已有药物节点 ===
+
+- canonical: ACEI/ARB
+  code: MED-CARD-6B08182277BE
+  name_en: ACE Inhibitor / Angiotensin Receptor Blocker
+  aliases:
+    - ACEI
+    - ARB
+    - 血管紧张素转换酶抑制剂
+    - 血管紧张素受体阻滞剂
+  same_as: []
+  note: "需拆分为两个独立节点"
+
+- canonical: P2Y12受体抑制剂
+  code: MED-CARD-86E5A960E1BF
+  name_en: P2Y12 receptor inhibitor
+  aliases:
+    - 氯吡格雷
+    - 替格瑞洛
+    - 普拉格雷
+  same_as: []
+  note: ""
+
+- canonical: β受体拮抗剂
+  code: MED-BETA-BLOCKER
+  name_en: Beta-blocker
+  aliases:
+    - β受体阻滞剂
+    - 美托洛尔
+    - 比索洛尔
+  same_as: []
+  note: ""
+
+- canonical: 他汀类药物
+  code: MED-CARD-DAE0F0B68F1D
+  name_en: Statin
+  aliases:
+    - 他汀
+    - 高强度他汀
+    - 阿托伐他汀
+    - 瑞舒伐他汀
+  same_as: []
+  note: ""
+
+- canonical: 利尿剂
+  code: MED-DIURETIC
+  name_en: Diuretic
+  aliases:
+    - 呋塞米
+    - 氢氯噻嗪
+    - 螺内酯
+  same_as: []
+  note: ""
+
+- canonical: 硝酸酯类药物
+  code: MED-CARD-55157DA54154
+  name_en: Nitrate
+  aliases:
+    - 硝酸甘油
+    - 单硝酸异山梨酯
+  same_as: []
+  note: ""
+
+- canonical: 胺碘酮
+  code: MED-AMIODARONE
+  name_en: Amiodarone
+  aliases:
+    - 可达龙
+  same_as: []
+  note: ""
+
+- canonical: 阿司匹林
+  code: MED-CARD-9F606AC80BFD
+  name_en: Aspirin
+  aliases:
+    - 拜阿司匹林
+  same_as: []
+  note: ""
+
+- canonical: 非二氢吡啶类钙通道阻滞剂
+  code: MED-NDHP-CCB
+  name_en: Non-dihydropyridine calcium channel blocker
+  aliases:
+    - 维拉帕米
+    - 地尔硫䓬
+  same_as: []
+  note: ""
+
+# === 待创建药物节点 ===
+
+- canonical: 血管紧张素转换酶抑制剂
+  code: PENDING
+  name_en: Angiotensin-converting enzyme inhibitor
+  aliases:
+    - ACEI
+    - 普利类药物
+    - 依那普利
+    - 卡托普利
+  same_as: []
+  status: 待创建
+  note: "由MED-CARD-6B08182277BE拆分而来"
+
+- canonical: 血管紧张素II受体拮抗剂
+  code: PENDING
+  name_en: Angiotensin II receptor blocker
+  aliases:
+    - ARB
+    - 沙坦类药物
+    - 缬沙坦
+    - 氯沙坦
+  same_as: []
+  status: 待创建
+  note: "由MED-CARD-6B08182277BE拆分而来"
+
+- canonical: 钠-葡萄糖共转运蛋白2抑制剂
+  code: PENDING
+  name_en: Sodium-glucose co-transporter 2 inhibitor
+  aliases:
+    - SGLT2i
+    - 达格列净
+    - 恩格列净
+  same_as: []
+  status: 待创建
+  note: ""
+
+- canonical: 抗凝药物
+  code: PENDING
+  name_en: Anticoagulant
+  aliases:
+    - 华法林
+    - 达比加群
+    - 利伐沙班
+    - DOAC
+  same_as: []
+  status: 待创建
+  note: ""

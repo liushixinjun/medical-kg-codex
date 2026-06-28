@@ -1,0 +1,93 @@
+# ============================================
+# 检查同义词表
+# 来源：Neo4j数据库实际数据（2026-06-24导出）
+# Schema：专科知识图谱Schema标准 V1.1 §10
+# 维护方式：人工维护，AI不得自动修改
+# 合并规则：code相同=L1自动合并，aliases命中=L2自动合并，same_as=L3人工确认
+# ============================================
+
+- canonical: 超声心动图
+  code: EXAM-TTE
+  name_en: Transthoracic echocardiography
+  aliases:
+    - 经胸超声心动图
+    - TTE
+    - 心脏超声
+    - 心脏彩超
+  same_as: []
+  note: "当前preferred_name仍为EXAM-TTE，需修正为中文标准名"
+
+- canonical: 冠状动脉CT血管成像
+  code: EXAM-CARD-F60922D428D5
+  name_en: Coronary CT angiography
+  aliases:
+    - 冠脉CTA
+    - CTA
+  same_as: []
+  note: ""
+
+- canonical: 冠状动脉造影
+  code: EXAM-CAG
+  name_en: Coronary angiography
+  aliases:
+    - 冠脉造影
+  same_as: []
+  note: ""
+
+- canonical: 动态心电图
+  code: EXAM-HOLTER
+  name_en: Ambulatory electrocardiography
+  aliases:
+    - Holter心电图
+  same_as: []
+  note: ""
+
+- canonical: 基因检测
+  code: EXAM-GENETIC
+  name_en: Genetic testing
+  aliases:
+    - 遗传检测
+  same_as: []
+  note: ""
+
+- canonical: 心内膜心肌活检
+  code: EXAM-EMB
+  name_en: Endomyocardial biopsy
+  aliases:
+    - 心肌活检
+  same_as: []
+  note: ""
+
+- canonical: 心电图
+  code: EXAM-ECG
+  name_en: Electrocardiogram
+  aliases:
+    - 十二导联心电图
+    - 12导联心电图
+  same_as: []
+  note: ""
+
+- canonical: 心脏磁共振成像
+  code: EXAM-CMR
+  name_en: Cardiac magnetic resonance imaging
+  aliases:
+    - 心脏磁共振
+    - MRI
+  same_as: []
+  note: ""
+
+- canonical: 病史采集
+  code: EXAM-CLINICAL-HISTORY
+  name_en: Clinical history taking
+  aliases: []
+  same_as: []
+  note: ""
+
+- canonical: 运动负荷试验
+  code: EXAM-CARD-241B4B0218DF
+  name_en: Exercise stress test
+  aliases:
+    - 负荷试验
+    - 运动试验
+  same_as: []
+  note: ""

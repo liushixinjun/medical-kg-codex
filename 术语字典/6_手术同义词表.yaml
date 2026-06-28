@@ -1,0 +1,71 @@
+# ============================================
+# 手术同义词表
+# 来源：Neo4j数据库实际数据（2026-06-24导出）
+# Schema：专科知识图谱Schema标准 V1.1 §10
+# 维护方式：人工维护，AI不得自动修改
+# 合并规则：code相同=L1自动合并，aliases命中=L2自动合并，same_as=L3人工确认
+# ============================================
+
+- canonical: 冠状动脉旁路移植术
+  code: PROC-CARD-BDB19D2C7A36
+  name_en: Coronary artery bypass grafting
+  aliases:
+    - 冠脉搭桥
+    - 搭桥手术
+    - CABG
+  same_as: []
+  note: ""
+
+- canonical: 埋藏式心脏复律除颤器
+  code: PROC-ICD
+  name_en: Implantable cardioverter-defibrillator
+  aliases:
+    - 植入式心律转复除颤器
+  same_as: []
+  note: ""
+
+- canonical: 室间隔切除术
+  code: PROC-SEPTAL-MYECTOMY
+  name_en: Septal myectomy
+  aliases:
+    - Morrow手术
+    - 外科室间隔减容术
+  same_as: []
+  note: ""
+
+- canonical: 心脏移植
+  code: PROC-HEART-TRANSPLANT
+  name_en: Heart transplantation
+  aliases: []
+  same_as: []
+  note: ""
+
+- canonical: 溶栓治疗
+  code: PROC-CARD-DA0F467D4A30
+  name_en: Thrombolytic therapy
+  aliases:
+    - 静脉溶栓
+    - 纤溶治疗
+  same_as: []
+  note: ""
+
+- canonical: 经皮冠状动脉介入治疗
+  code: PROC-CARD-E9ADC25A25E3
+  name_en: Percutaneous coronary intervention
+  aliases:
+    - 冠脉介入
+    - PCI
+    - 支架植入
+    - 球囊扩张
+    - PTCA
+  same_as: []
+  note: ""
+
+- canonical: 酒精室间隔消融术
+  code: PROC-ASA
+  name_en: Alcohol septal ablation
+  aliases:
+    - TASH
+    - 室间隔消融
+  same_as: []
+  note: ""

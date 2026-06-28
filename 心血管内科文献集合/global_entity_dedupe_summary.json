@@ -1,0 +1,46 @@
+﻿{
+  "canonical_code_count": 14,
+  "rewritten_code_count": 14,
+  "code_map": {
+    "DIS-CARD-CM-ICM": "DIS-CARD-CAD-ICM",
+    "THR-373E88C30719256D": "THR-049352AD561FB4E2",
+    "THR-109BD197132FC72C": "THR-20F72DB64A71D4DD",
+    "THR-DE7DDD8A62B789C2": "THR-351A26270A38F660",
+    "THR-684438D737FE0D57": "THR-377FD96FE52493C8",
+    "THR-BDA669EBAE8257C6": "THR-44F0444AEC5B799E",
+    "THR-130F75F14731152C": "THR-60E981106447192E",
+    "THR-77F81B3E6906ABE2": "THR-64C829856AF5BB66",
+    "THR-4C4EE6E6BF060E41": "THR-660204BDADC2ED35",
+    "THR-73BA52033F26B409": "THR-66D1B2E57B9D04BE",
+    "THR-7385C76E7F593BCB": "THR-72144A7489E736BB",
+    "THR-9B57D619D6B7820F": "THR-99118A81B954ECAB",
+    "MED-CARD-DE220086E912": "MED-CARD-CC1DDBE4EFA8",
+    "MED-CARD-44C6BCCC3D6B": "MED-CARD-E54BB1F31556"
+  },
+  "batches": [
+    {
+      "batch_dir": "心血管内科文献集合\\00_foundation_skeleton",
+      "changed_nodes": 0,
+      "removed_duplicate_nodes_within_batch": 0,
+      "changed_relation_endpoints": 0,
+      "node_count": 26217,
+      "relation_count": 53039
+    },
+    {
+      "batch_dir": "心血管内科文献集合\\BATCH-CARD-CAD-20260623-001",
+      "changed_nodes": 11,
+      "removed_duplicate_nodes_within_batch": 0,
+      "changed_relation_endpoints": 37,
+      "node_count": 8422,
+      "relation_count": 28648
+    },
+    {
+      "batch_dir": "心血管内科文献集合\\BATCH-CARD-CM-20260622-001",
+      "changed_nodes": 3,
+      "removed_duplicate_nodes_within_batch": 0,
+      "changed_relation_endpoints": 106,
+      "node_count": 5604,
+      "relation_count": 17326
+    }
+  ]
+}
