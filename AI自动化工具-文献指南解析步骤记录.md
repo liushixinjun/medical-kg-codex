@@ -323,3 +323,88 @@ GitHub 远程未绑定
 已同步 `_全局复利与踩坑日志.md`：
 
 - `2026-06-28 08:43:37`：Neo4j delta 导入不能只按关系 id MERGE，必须按语义键去重；GitHub 凭据不得明文使用。
+
+---
+
+## 2026-06-28 18:48:43｜CAD/CM required 缺口闭环冲刺、delta 节点导入和新病种预检
+
+### 用户提出的问题
+
+1. 询问骨架、冠心病、心肌病是否已经搞定，并同意继续执行。
+2. 要求下一步直接推进，不再停留在候选；可修复项应一次性修复，不能硬造证据。
+3. 要求后续新病种启动前有可靠机制，避免漏顶层学科、PDF路径、教材骨架、可导入文件交接。
+
+### 判断结论
+
+1. 心肌病和冠心病结构硬错误已经为 0，但仍存在 required 缺口和 `clinical_review_status=pending_clinical_review`，不能进入正式 CDSS 推荐层。
+2. required 缺口不能只看 `SOURCE_DOES_NOT_COVER`；必须回查指南/教材 evidence index。若同病种原文存在但 pathway 标注不准，应按抽取/映射漏掉处理。
+3. 本轮只允许把有明确原文证据的缺口写入本地 JSONL 和测试库工作版本；没有明确随访原文的“隐匿型冠心病随访”不得硬补。
+
+### 已执行方案
+
+1. 新增并测试 `scripts/probe_required_gap_evidence.py`，用于从 `disease_pathway_coverage.csv` 反查指南/教材/候选索引。
+2. 新增并测试 `scripts/apply_curated_required_backfill.py`，用于应用“人工策展补丁”，支持新增节点、关系和既有节点别名合并。
+3. 生成策展补丁：
+   `心血管内科文献集合/99_闭环冲刺_closure_sprint/20260628_required_gap_probe/curated_required_backfill_20260628.json`
+4. 本地应用补丁：新增 4 个诊断标准实体、8 条关系，后续又合并 5 个节点别名。
+5. 扩展 `scripts/import_neo4j_delta.py`，支持 `delta_nodes_upsert.jsonl` 节点 upsert + `delta_relations_add.jsonl` 关系导入。
+6. 生成可导入增量包：
+   `心血管内科文献集合/09_增量补丁_delta/20260628_CAD_CM_required_gap_backfill/`
+7. 新增并测试 `scripts/preflight_new_disease_batch.py`，生成下一批新病种启动预检样例。
+8. SKILL 升级到 V1.25，写入 required 缺口闭环、delta 节点 upsert、新病种预检和可导入文件交接规则。
+
+### 当前执行结果
+
+本地补丁应用：
+
+```text
+新增节点：4
+更新别名节点：5
+新增关系：8
+delta_nodes_upsert：5
+delta_relations_add：8
+```
+
+冠心病审计变化：
+
+```text
+required_pathway_missing_count：6 → 1
+closed_loop_ready_disease_count：6 → 9
+target_match_failure_count：0
+duplicate_code_count：0
+duplicate_semantic_relation_count：0
+semantic_shell_node_relation_count：0
+technical_display_name_error_count：0
+```
+
+心肌病审计变化：
+
+```text
+required_pathway_missing_count：26 → 25
+closed_loop_ready_disease_count：4 → 5
+target_match_failure_count：0
+duplicate_code_count：0
+duplicate_semantic_relation_count：0
+semantic_shell_node_relation_count：0
+technical_display_name_error_count：0
+```
+
+新增测试：
+
+```text
+python -m unittest tests.test_preflight_new_disease_batch tests.test_apply_curated_required_backfill tests.test_import_neo4j_delta tests.test_probe_required_gap_evidence
+10 项 OK
+```
+
+### 遗留阻断
+
+1. 服务器导入尚未执行：当前环境未设置 `NEO4J_PASSWORD`，不能把密码写入命令、脚本或日志。
+2. 冠心病仍剩 1 个 required 缺口：隐匿型冠心病 follow_up。当前原文只有“及时发现、及早治疗”，不足以生成随访方案。
+3. 心肌病仍剩 25 个 required 缺口，主要是 ABVC/ALVC/心房心肌病/法布雷病心肌病/非扩张型左心室心肌病等稀有分型深层证据不足。
+4. 两个样板仍有 therapeutic recommendation 的 `clinical_review_status=pending_clinical_review`，正式 CDSS 推荐层不可上线。
+
+### 关联踩坑日志
+
+已同步 `_全局复利与踩坑日志.md`：
+
+- `2026-06-28 18:48:43`：required 缺口不能直接等同文献不覆盖；策展补丁必须带原文证据；delta 节点必须按 code 去重；没有明确随访原文不得硬补。

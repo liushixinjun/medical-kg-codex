@@ -1,0 +1,37 @@
+﻿{
+  "spec_id": "CURATED-REQUIRED-BACKFILL-CAD-CM-20260628",
+  "batch_count": 2,
+  "added_nodes": 4,
+  "added_relations": 8,
+  "batches": [
+    {
+      "batch_dir": "心血管内科文献集合\\BATCH-CARD-CAD-20260623-001",
+      "added_nodes": 4,
+      "added_relations": 7,
+      "added_node_codes": [
+        "DXC-CARD-CAD-CCS-CURATED-20260628",
+        "DXC-CARD-CAD-OLD-MI-CURATED-20260628",
+        "DXC-CARD-CAD-SILENT-ISCHEMIA-CURATED-20260628",
+        "DXC-CARD-CAD-UA-CURATED-20260628"
+      ],
+      "added_relation_ids": [
+        "REL-C2C1E9AB204D0190",
+        "REL-B777C7CD9922F02B",
+        "REL-4F6DA13ADFABE55D",
+        "REL-21701AA99AD080AE",
+        "REL-422369731A54924C",
+        "REL-1F43E28B5980CC65",
+        "REL-638AC70B7426B47C"
+      ]
+    },
+    {
+      "batch_dir": "心血管内科文献集合\\BATCH-CARD-CM-20260622-001",
+      "added_nodes": 0,
+      "added_relations": 1,
+      "added_node_codes": [],
+      "added_relation_ids": [
+        "REL-FF77622686E61454"
+      ]
+    }
+  ]
+}

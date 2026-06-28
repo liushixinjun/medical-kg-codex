@@ -5,7 +5,7 @@ description: Use when starting a specialty, disease-category, or single-disease 
 
 # AI自动化工具-文献指南解析
 
-版本：V1.24  
+版本：V1.25  
 Schema：`专科知识图谱Schema标准.md` V1.7  
 用途：从原始医学文献生成可审计、可合并的专科知识图谱标准数据实例。
 
@@ -40,6 +40,7 @@ Schema：`专科知识图谱Schema标准.md` V1.7
 | V1.22 | 2026-06-27 22:10:57 | 新增《AI自动化工具-文献指南解析步骤记录.md》过程记录要求：每天/每轮关键提示后必须记录用户问题、判断结论、执行方案、执行结果、遗留阻断，并关联《_全局复利与踩坑日志.md》；步骤记录用于复盘执行过程，踩坑日志用于沉淀可复用事故规则 |
 | V1.23 | 2026-06-27 22:43:11 | 新增重复问题升级机制、证据回捞候选防误判规则、大图谱数据增量优先规则和版本管理边界：同类问题反复出现必须升级为测试/审计/SKILL硬规则；Trae/外部模型候选不得直接写库；大 JSONL 快照不得作为日常小修复的唯一写入对象；代码文档进版本管理，大图谱快照以 manifest/hash/delta 管理 |
 | V1.24 | 2026-06-28 08:43:37 | 新增 Neo4j delta 导入语义键去重规则和 GitHub 凭据安全规则：增量关系导入必须先按 `(source.code, relationType, target.code)` 查重/合并，不得仅按关系 `id` MERGE；GitHub 不得使用明文账号密码自动化，必须使用 SSH、浏览器授权或细粒度 PAT |
+| V1.25 | 2026-06-28 18:48:43 | 新增 required 缺口闭环冲刺规则、策展补丁规则、delta 节点 upsert 规则和新病种启动预检规则：required 缺口必须先回查指南/教材 evidence index；可修复项必须写入本地 JSONL 并重跑审计；没有明确随访/诊断/治疗原文不得硬补；delta 包必须同时提供节点 upsert、关系 add、manifest 和可导入文件清单；新病种开工前必须运行预检或等价清单 |
 
 ## 1. 核心原则
 
@@ -1456,10 +1457,28 @@ delta_manifest.json
 
 Neo4j delta 导入规则：
 
+- 增量包必须同时考虑节点和关系：新增实体、别名修正、属性修正写入 `delta_nodes_upsert.jsonl`；新增临床关系写入 `delta_relations_add.jsonl`；两者必须由 `delta_manifest.json` 统一登记。
+- `delta_nodes_upsert.jsonl` 必须按全局 `code` 去重。同一节点如果来自多个批次，只能在 delta 包中出现一次；导入时执行节点 upsert，不得创建同 code 多节点。
+- 增量包中的节点和关系一律不得标记 `formal_cdss_ready=true`。未完成临床专家审核的补丁只能进入测试库工作版本。
 - 增量关系导入前必须先按 `(source.code, relationType, target.code)` 查询服务器是否已有同义语义边。
 - 若已有同义语义边但缺少标准 `id/provenance`，应更新该语义边或先删除旧边后写入标准边；不得仅按新关系 `id` 执行 `MERGE`。
 - 导入后必须验证目标语义键 `count(r)=1`，并全库验证 `duplicate_semantic_keys=0`。
 - 若发现旧边证据属于误判证据，不得合并进标准 provenance，应登记删除原因并保留清理记录。
+
+Required 缺口闭环冲刺规则：
+
+- 每次样板图谱或新病种生成后，必须读取 `disease_pathway_coverage.csv`，逐项列出 required 缺口。
+- 每个 required 缺口必须回查本批指南 evidence index、教材 evidence index 和基础骨架候选索引；不能只看审计里的 `SOURCE_DOES_NOT_COVER`。
+- 反查命中同病种原文但 pathway 标注不准时，归类为“抽取/映射漏掉”，进入策展补丁或重新抽取；不得继续声称文献不覆盖。
+- 策展补丁必须明确：新增/更新节点、关系、证据文本、来源名称、页码、segment_id、证据等级字段、`clinical_review_status=pending_clinical_review`、`formal_cdss_ready=false`。
+- 没有明确原文支持的 required 项不得硬补。例如仅出现“及时发现/及早治疗”不能自动生成“随访方案”；必须继续阻断正式 CDSS。
+- 策展补丁应用后必须重跑本地审计；至少验证 required 缺口变化、target_name_or_alias_match、duplicate_code、duplicate_semantic_relation、semantic_shell、technical_display_name、local_path_pollution。
+
+新病种启动预检规则：
+
+- 每次开始新专科、新疾病大类或单病种前，必须确认：顶层学科、scope_type、scope_target、PDF/指南来源路径、教材/基础骨架路径、本批输出路径、Schema 主文件、SKILL 主文件。
+- 推荐运行 `scripts/preflight_new_disease_batch.py` 或按同等字段生成预检记录。预检失败不得开始解析 PDF。
+- 每批生成后必须主动输出可导入图谱文件：`nodes_final.jsonl`、`relations_final.jsonl`、`quality_gate_summary.json`、`delta_manifest.json`、`delta_nodes_upsert.jsonl`、`delta_relations_add.jsonl`、Claude/临床审核包路径。
 
 ## 17. 受控合并
 

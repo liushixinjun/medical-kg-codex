@@ -1,0 +1,272 @@
+{
+  "id": "CURATED-REQUIRED-BACKFILL-CAD-CM-20260628",
+  "description": "仅补齐当前本地 JSONL 中已有原文证据支持的 required pathway 缺口；所有新增关系 clinical_review_status=pending_clinical_review，formal_cdss_ready=false。",
+  "batches": [
+    {
+      "batch_dir": "心血管内科文献集合/BATCH-CARD-CAD-20260623-001",
+      "batch_id": "BATCH-CARD-CAD-20260623-001",
+      "schema_version": "V1.1",
+      "scope_type": "category",
+      "scope_target": "冠状动脉粥样硬化性心脏病",
+      "nodes": [
+        {
+          "code": "DXC-CARD-CAD-CCS-CURATED-20260628",
+          "name": "慢性冠脉综合征诊断标准",
+          "entityType": "DiagnosisCriteria",
+          "entityCategory": "诊断",
+          "aliases": ["慢性冠脉综合征", "慢性冠状动脉疾病", "慢性冠脉综合征诊断依据", "慢性冠状动脉疾病诊断标准", "CCS诊断标准"],
+          "description": "结合疑似冠心病临床场景、心肌缺血客观证据、心电图/负荷试验、冠脉CTA或冠脉造影等检查综合判断慢性冠脉综合征。"
+        },
+        {
+          "code": "DXC-CARD-CAD-OLD-MI-CURATED-20260628",
+          "name": "陈旧性心肌梗死诊断依据",
+          "entityType": "DiagnosisCriteria",
+          "entityCategory": "诊断",
+          "aliases": ["陈旧性心肌梗死", "心肌梗死后瘢痕", "陈旧性心肌梗死诊断标准", "心肌梗死后瘢痕诊断依据", "旧心梗诊断依据"],
+          "description": "依据既往心肌梗死后瘢痕愈合、静息心电图陈旧性心肌梗死改变、超声心动图室壁运动异常或核素灌注缺损等客观证据综合判断。"
+        },
+        {
+          "code": "DXC-CARD-CAD-SILENT-ISCHEMIA-CURATED-20260628",
+          "name": "隐匿性冠心病诊断标准",
+          "entityType": "DiagnosisCriteria",
+          "entityCategory": "诊断",
+          "aliases": ["隐匿型冠心病", "无症状性冠心病", "无症状性心肌缺血", "隐匿型冠心病诊断标准", "无症状性冠心病诊断标准", "无症状性心肌缺血诊断依据"],
+          "description": "无心绞痛症状但存在心肌缺血客观证据；可由静息、动态或负荷心电图、冠脉CTA、心肌灌注显像、冠脉造影或IVUS等证实。"
+        },
+        {
+          "code": "DXC-CARD-CAD-UA-CURATED-20260628",
+          "name": "不稳定型心绞痛诊断标准",
+          "entityType": "DiagnosisCriteria",
+          "entityCategory": "诊断",
+          "aliases": ["不稳定型心绞痛", "UA", "UA诊断标准", "不稳定型心绞痛诊断依据", "UA/NSTEMI初步诊断依据"],
+          "description": "依据典型心绞痛症状、缺血性心电图动态改变以及心肌损伤标志物测定综合判断；肌钙蛋白阴性更支持UA，阳性提示少量心肌损伤或NSTEMI。"
+        },
+        {
+          "code": "EXAM-HOLTER",
+          "name": "动态心电图",
+          "entityType": "Exam",
+          "entityCategory": "诊断",
+          "aliases": ["动态ECG", "动态心电图", "Holter心电图", "动态心电监测", "Holter"]
+        }
+      ],
+      "relations": [
+        {
+          "source_code": "DIS-CARD-CAD-CCS",
+          "relationType": "has_diagnostic_criteria",
+          "target_code": "DXC-CARD-CAD-CCS-CURATED-20260628",
+          "provenance_records_json": [
+            {
+              "document_id": "DOC-C0BB559FA2C8448A",
+              "segment_id": "SEG-DOC-C0BB559FA2C8448A-263-TB-00041-CCS",
+              "source_name": "《内科学（第10版）》.pdf",
+              "source_type": "authoritative_textbook",
+              "source_version": "第10版",
+              "source_section": "diagnosis_criteria",
+              "source_page": 263,
+              "evidence_text": "慢性冠脉综合征包括伴稳定心绞痛症状和/或呼吸困难的疑似冠心病病人、新发心力衰竭或左心室功能障碍的疑似冠心病病人、ACS后1年内或近期血运重建后无症状或症状稳定病人、初次诊断或血运重建1年以上的无症状或有症状病人、疑似血管痉挛或微血管疾病的心绞痛病人，以及筛查时发现的无症状CAD病人。",
+              "guideline_id": "GL-CARD-INTERNAL-MEDICINE-10",
+              "evidence_id": "EVD-CURATED-CAD-CCS-DX-20260628-01",
+              "recommendation_class": "N/A",
+              "evidence_level": "N/A",
+              "confidence": 0.86
+            },
+            {
+              "document_id": "DOC-C0BB559FA2C8448A",
+              "segment_id": "SEG-DOC-C0BB559FA2C8448A-269-TB-00060-CCS",
+              "source_name": "《内科学（第10版）》.pdf",
+              "source_type": "authoritative_textbook",
+              "source_version": "第10版",
+              "source_section": "diagnosis_criteria",
+              "source_page": 269,
+              "evidence_text": "未捕捉到发作时ECG者可行ECG负荷试验。冠脉CTA有助于无创性评价冠脉管腔狭窄程度及管壁病变性质和分布。冠脉造影可明确病变的严重程度和分布范围，联合腔内影像和功能学技术，有助于诊断和指导进一步治疗。",
+              "guideline_id": "GL-CARD-INTERNAL-MEDICINE-10",
+              "evidence_id": "EVD-CURATED-CAD-CCS-DX-20260628-02",
+              "recommendation_class": "N/A",
+              "evidence_level": "N/A",
+              "confidence": 0.86
+            }
+          ]
+        },
+        {
+          "source_code": "DIS-CARD-CAD-OLD-MI",
+          "relationType": "has_diagnostic_criteria",
+          "target_code": "DXC-CARD-CAD-OLD-MI-CURATED-20260628",
+          "provenance_records_json": [
+            {
+              "document_id": "DOC-C0BB559FA2C8448A",
+              "segment_id": "SEG-DOC-C0BB559FA2C8448A-279-TB-00128-MI",
+              "source_name": "《内科学（第10版）》.pdf",
+              "source_type": "authoritative_textbook",
+              "source_version": "第10版",
+              "source_section": "diagnosis_criteria",
+              "source_page": 279,
+              "evidence_text": "坏死组织1～2周后开始吸收，并逐渐纤维化，在6～8周形成瘢痕愈合，称为陈旧性心肌梗死。",
+              "guideline_id": "GL-CARD-INTERNAL-MEDICINE-10",
+              "evidence_id": "EVD-CURATED-CAD-OLD-MI-DX-20260628-01",
+              "recommendation_class": "N/A",
+              "evidence_level": "N/A",
+              "confidence": 0.84
+            },
+            {
+              "document_id": "DOC-C0BB559FA2C8448A",
+              "segment_id": "SEG-DOC-C0BB559FA2C8448A-267-TB-00055-MI",
+              "source_name": "《内科学（第10版）》.pdf",
+              "source_type": "authoritative_textbook",
+              "source_version": "第10版",
+              "source_section": "diagnosis_criteria",
+              "source_page": 267,
+              "evidence_text": "静息时ECG也可能有陈旧性心肌梗死改变。超声心动图可探测到坏死区或缺血区心室壁运动异常；静息铊显像所示灌注缺损主要见于心肌梗死后瘢痕部位。",
+              "guideline_id": "GL-CARD-INTERNAL-MEDICINE-10",
+              "evidence_id": "EVD-CURATED-CAD-OLD-MI-DX-20260628-02",
+              "recommendation_class": "N/A",
+              "evidence_level": "N/A",
+              "confidence": 0.84
+            }
+          ]
+        },
+        {
+          "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+          "relationType": "has_diagnostic_criteria",
+          "target_code": "DXC-CARD-CAD-SILENT-ISCHEMIA-CURATED-20260628",
+          "provenance_records_json": [
+            {
+              "document_id": "DOC-C0BB559FA2C8448A",
+              "segment_id": "SEG-DOC-C0BB559FA2C8448A-273-TB-00072-ISCHEMIA",
+              "source_name": "《内科学（第10版）》.pdf",
+              "source_type": "authoritative_textbook",
+              "source_version": "第10版",
+              "source_section": "diagnosis_criteria",
+              "source_page": 273,
+              "evidence_text": "隐匿型冠心病或无症状性冠心病是指没有心绞痛症状，但有心肌缺血客观证据的冠心病；诊断方法包括静息、动态或负荷试验ECG检查，或进一步颈动脉内-中膜厚度、踝肱指数或冠脉CTA评估冠脉狭窄和钙化积分，另外心肌灌注显像、冠脉造影或IVUS检查都有重要的诊断价值。",
+              "guideline_id": "GL-CARD-INTERNAL-MEDICINE-10",
+              "evidence_id": "EVD-CURATED-CAD-SILENT-DX-20260628-01",
+              "recommendation_class": "N/A",
+              "evidence_level": "N/A",
+              "confidence": 0.88
+            }
+          ]
+        },
+        {
+          "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+          "relationType": "requires_exam",
+          "target_code": "EXAM-ECG",
+          "provenance_records_json": [
+            {
+              "document_id": "DOC-C0BB559FA2C8448A",
+              "segment_id": "SEG-DOC-C0BB559FA2C8448A-273-TB-00072-ISCHEMIA",
+              "source_name": "《内科学（第10版）》.pdf",
+              "source_type": "authoritative_textbook",
+              "source_version": "第10版",
+              "source_section": "exam",
+              "source_page": 273,
+              "evidence_text": "隐匿型冠心病的心肌缺血ECG表现可见于静息时，也可在负荷状态下才出现，常为动态ECG记录所发现。",
+              "guideline_id": "GL-CARD-INTERNAL-MEDICINE-10",
+              "evidence_id": "EVD-CURATED-CAD-SILENT-EXAM-ECG-20260628",
+              "recommendation_class": "N/A",
+              "evidence_level": "N/A",
+              "confidence": 0.88
+            }
+          ]
+        },
+        {
+          "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+          "relationType": "requires_exam",
+          "target_code": "EXAM-HOLTER",
+          "provenance_records_json": [
+            {
+              "document_id": "DOC-C0BB559FA2C8448A",
+              "segment_id": "SEG-DOC-C0BB559FA2C8448A-273-TB-00072-ISCHEMIA",
+              "source_name": "《内科学（第10版）》.pdf",
+              "source_type": "authoritative_textbook",
+              "source_version": "第10版",
+              "source_section": "exam",
+              "source_page": 273,
+              "evidence_text": "隐匿型冠心病的心肌缺血ECG表现常为动态ECG记录所发现。",
+              "guideline_id": "GL-CARD-INTERNAL-MEDICINE-10",
+              "evidence_id": "EVD-CURATED-CAD-SILENT-EXAM-HOLTER-20260628",
+              "recommendation_class": "N/A",
+              "evidence_level": "N/A",
+              "confidence": 0.88
+            }
+          ]
+        },
+        {
+          "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+          "relationType": "requires_exam",
+          "target_code": "EXAM-CARD-TEXT-2BB358B9BF",
+          "provenance_records_json": [
+            {
+              "document_id": "DOC-C0BB559FA2C8448A",
+              "segment_id": "SEG-DOC-C0BB559FA2C8448A-273-TB-00072-ISCHEMIA",
+              "source_name": "《内科学（第10版）》.pdf",
+              "source_type": "authoritative_textbook",
+              "source_version": "第10版",
+              "source_section": "exam",
+              "source_page": 273,
+              "evidence_text": "隐匿型冠心病可进一步通过冠脉CTA评估冠脉狭窄和钙化积分。",
+              "guideline_id": "GL-CARD-INTERNAL-MEDICINE-10",
+              "evidence_id": "EVD-CURATED-CAD-SILENT-EXAM-CCTA-20260628",
+              "recommendation_class": "N/A",
+              "evidence_level": "N/A",
+              "confidence": 0.86
+            }
+          ]
+        },
+        {
+          "source_code": "DIS-CARD-CAD-UA",
+          "relationType": "has_diagnostic_criteria",
+          "target_code": "DXC-CARD-CAD-UA-CURATED-20260628",
+          "provenance_records_json": [
+            {
+              "document_id": "DOC-C0BB559FA2C8448A",
+              "segment_id": "SEG-DOC-C0BB559FA2C8448A-275-TB-00096-UA",
+              "source_name": "《内科学（第10版）》.pdf",
+              "source_type": "authoritative_textbook",
+              "source_version": "第10版",
+              "source_section": "diagnosis_criteria",
+              "source_page": 275,
+              "evidence_text": "UA的诊断主要依靠临床表现以及发作时心电图ST-T的动态改变；根据典型的心绞痛症状、缺血性ECG改变以及心肌损伤标志物测定，可初步作出UA/NSTEMI诊断。",
+              "guideline_id": "GL-CARD-INTERNAL-MEDICINE-10",
+              "evidence_id": "EVD-CURATED-CAD-UA-DX-20260628-01",
+              "recommendation_class": "N/A",
+              "evidence_level": "N/A",
+              "confidence": 0.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "batch_dir": "心血管内科文献集合/BATCH-CARD-CM-20260622-001",
+      "batch_id": "BATCH-CARD-CM-20260622-001",
+      "schema_version": "V1.1",
+      "scope_type": "category",
+      "scope_target": "心肌病",
+      "nodes": [],
+      "relations": [
+        {
+          "source_code": "DIS-CARD-CAD-ICM",
+          "relationType": "has_etiology",
+          "target_code": "ETI-CARD-TEXT-D6A8249236",
+          "provenance_records_json": [
+            {
+              "document_id": "DOC-C0BB559FA2C8448A",
+              "segment_id": "SEG-DOC-C0BB559FA2C8448A-263-TB-00041-CCS",
+              "source_name": "《内科学（第10版）》.pdf",
+              "source_type": "authoritative_textbook",
+              "source_version": "第10版",
+              "source_section": "etiology",
+              "source_page": 263,
+              "evidence_text": "冠状动脉粥样硬化性心脏病指冠状动脉发生粥样硬化引起管腔狭窄或闭塞，导致心肌缺血、缺氧或坏死而引起的心脏病；缺血性心肌病属于冠心病的一种特殊类型或晚期阶段。",
+              "guideline_id": "GL-CARD-INTERNAL-MEDICINE-10",
+              "evidence_id": "EVD-CURATED-CM-ICM-ETI-20260628-01",
+              "recommendation_class": "N/A",
+              "evidence_level": "N/A",
+              "confidence": 0.86
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
