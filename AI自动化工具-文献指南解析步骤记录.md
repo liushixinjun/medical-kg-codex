@@ -483,3 +483,78 @@ formal_cdss_ready = false
 已同步 `_全局复利与踩坑日志.md`：
 
 - `2026-06-29 08:57:53`：临床专家审核不能逐边进行，必须产品化为疾病级、场景级、药师专项审核包；边级明细只作为证据追溯。
+
+---
+
+## 2026-06-29 09:20:00｜CAD/CM required closure round2 delta 导入测试库
+
+### 用户提出的问题
+
+1. 已在 Windows 用户级环境变量中设置 `NEO4J_USERNAME`、`NEO4J_URI`、`NEO4J_HTTP`、`NEO4J_PASSWORD`，要求核对无误后继续导入。
+2. 追问为什么此前一直可以连接数据库，本次却提示需要 PowerShell 环境变量。
+3. 询问后续如何做多智能体协调作战，哪些基础性工作可以分给 Trae，不影响 Codex 总体计划。
+
+### 判断结论
+
+1. 用户级环境变量已存在：`NEO4J_USERNAME=neo4j`、`NEO4J_URI=bolt://192.168.3.27:7687`、`NEO4J_HTTP=http://192.168.3.27:7474`、`NEO4J_PASSWORD` 已设置且未回显明文。
+2. 当前 Codex 命令进程没有自动继承用户新开的 PowerShell 会话变量，因此需要从 Windows User 环境读取后注入本次命令进程；这不是数据库不可连接。
+3. `scripts/import_neo4j_delta.py` 使用 Neo4j HTTP API，导入端点应使用 `NEO4J_HTTP`。
+
+### 已执行方案
+
+1. 从 User 环境读取 `NEO4J_PASSWORD`、`NEO4J_HTTP`、`NEO4J_USERNAME`，只注入当前导入命令进程，不写入脚本、日志或 Git。
+2. 执行 round2 delta 导入：
+   `心血管内科文献集合/09_增量补丁_delta/20260628_CAD_CM_required_gap_closure_round2/`
+3. 导入后运行服务器硬闸门复核 `scripts/verify_server_global_repair.py`。
+
+### 当前执行结果
+
+Delta 导入摘要：
+
+```text
+input_node_count = 31
+merged_node_count = 31
+input_relation_count = 35
+merged_relation_count = 35
+deleted_legacy_relationship_count = 1
+postcheck = 35 条语义键均 existing_count=1
+```
+
+服务器硬闸门复核：
+
+```text
+all_node_count = 26279
+kg_node_count = 26279
+all_relation_count = 53213
+kg_relation_count = 53213
+non_kgnode_node_count = 0
+relation_touching_non_kgnode_count = 0
+semantic_shell_relation_count = 0
+diagnosis_generic_direct_relation_count = 0
+technical_display_name_error_count = 0
+treatment_plan_actionability_error_count = 0
+medication_class_without_specific_count = 0
+label_metadata_mismatch_count = 0
+duplicate_type_name_count = 0
+```
+
+药物具体化复核：
+
+```text
+抗凝药物 has_specific_medication = 9
+溶栓药物 has_specific_medication = 6
+他汀类药物 has_specific_medication = 4
+β受体拮抗剂/阻滞剂各 has_specific_medication = 4
+```
+
+### 遗留阻断
+
+1. 测试库工作版本已同步；正式 CDSS 仍不可上线。
+2. `clinical_review_status_counts` 显示 `pending_clinical_review=597`，必须通过临床使用效果审核包和药师专项审核表回写，不得由 AI 自动批准。
+
+### 关联踩坑日志
+
+本次未新增新的质量事故；沿用：
+
+- `2026-06-29 08:57:53`：专家审核必须走疾病级、场景级、药师专项审核包。
+- `2026-06-28 08:43:37`：Neo4j delta 导入必须按语义键去重/替换，不得只按关系 id。

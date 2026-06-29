@@ -1,0 +1,1563 @@
+{
+  "nodes": {
+    "input_node_count": 31,
+    "merged_node_count": 31
+  },
+  "relations": {
+    "input_relation_count": 35,
+    "merged_relation_count": 35,
+    "deleted_legacy_relationship_count": 1,
+    "precheck": [
+      {
+        "source_code": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+        "relationType": "has_clinical_pathway",
+        "target_code": "PATH-CARD-CM-ATRIAL-AF-STROKE-RISK",
+        "source_found": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+        "target_found": "PATH-CARD-CM-ATRIAL-AF-STROKE-RISK",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-ABVC",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-ABVC-PADUA-BIVENTRICULAR",
+        "source_found": "DIS-CARD-CM-ABVC",
+        "target_found": "DXC-CARD-CM-ABVC-PADUA-BIVENTRICULAR",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CAD-SILENT-ISCHEMIA-CURATED-20260628",
+        "source_found": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "target_found": "DXC-CARD-CAD-SILENT-ISCHEMIA-CURATED-20260628",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CAD-UA",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CAD-UA-CURATED-20260628",
+        "source_found": "DIS-CARD-CAD-UA",
+        "target_found": "DXC-CARD-CAD-UA-CURATED-20260628",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-FABRY-ENZYME-GENE-EMB",
+        "source_found": "DIS-CARD-CM-FABRY",
+        "target_found": "DXC-CARD-CM-FABRY-ENZYME-GENE-EMB",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-ATRIAL-EHRA-CLASS",
+        "source_found": "DIS-CARD-CM-ATRIAL",
+        "target_found": "DXC-CARD-CM-ATRIAL-EHRA-CLASS",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CAD-OLD-MI",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CAD-OLD-MI-CURATED-20260628",
+        "source_found": "DIS-CARD-CAD-OLD-MI",
+        "target_found": "DXC-CARD-CAD-OLD-MI-CURATED-20260628",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-ALVC",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-ALVC-PADUA-LV",
+        "source_found": "DIS-CARD-CM-ALVC",
+        "target_found": "DXC-CARD-CM-ALVC-PADUA-LV",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CAD-CCS",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CAD-CCS-CURATED-20260628",
+        "source_found": "DIS-CARD-CAD-CCS",
+        "target_found": "DXC-CARD-CAD-CCS-CURATED-20260628",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-NDLVCM",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-NDLVCM-CMR-LGE",
+        "source_found": "DIS-CARD-CM-NDLVCM",
+        "target_found": "DXC-CARD-CM-NDLVCM-CMR-LGE",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-AMYLOID",
+        "relationType": "has_etiology",
+        "target_code": "ETI-CARD-CM-AMYLOID-AL-ATTR-DEPOSITION",
+        "source_found": "DIS-CARD-CM-AMYLOID",
+        "target_found": "ETI-CARD-CM-AMYLOID-AL-ATTR-DEPOSITION",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_etiology",
+        "target_code": "ETI-CARD-CM-ATRIAL-FIBROSIS-REMODELING",
+        "source_found": "DIS-CARD-CM-ATRIAL",
+        "target_found": "ETI-CARD-CM-ATRIAL-FIBROSIS-REMODELING",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_etiology",
+        "target_code": "ETI-CARD-CM-FABRY-GLA-ALPHA-GAL-A",
+        "source_found": "DIS-CARD-CM-FABRY",
+        "target_found": "ETI-CARD-CM-FABRY-GLA-ALPHA-GAL-A",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CAD-ICM",
+        "relationType": "has_etiology",
+        "target_code": "ETI-CARD-TEXT-D6A8249236",
+        "source_found": "DIS-CARD-CAD-ICM",
+        "target_found": "ETI-CARD-TEXT-D6A8249236",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-FF77622686E6"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-NDLVCM",
+        "relationType": "has_follow_up",
+        "target_code": "FU-CARD-CM-NDLVCM-LIFELONG-SCD-RISK",
+        "source_found": "DIS-CARD-CM-NDLVCM",
+        "target_found": "FU-CARD-CM-NDLVCM-LIFELONG-SCD-RISK",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_follow_up",
+        "target_code": "FU-CARD-CM-FABRY-REGULAR-CARDIAC-FOLLOW-UP",
+        "source_found": "DIS-CARD-CM-FABRY",
+        "target_found": "FU-CARD-CM-FABRY-REGULAR-CARDIAC-FOLLOW-UP",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "has_follow_up",
+        "target_code": "FU-CARD-CAD-SILENT-ISCHEMIA-ANNUAL-FOLLOW-UP",
+        "source_found": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "target_found": "FU-CARD-CAD-SILENT-ISCHEMIA-ANNUAL-FOLLOW-UP",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-ABVC",
+        "relationType": "has_follow_up",
+        "target_code": "FU-CARD-CM-ACM-ROUTINE-FOLLOW-UP",
+        "source_found": "DIS-CARD-CM-ABVC",
+        "target_found": "FU-CARD-CM-ACM-ROUTINE-FOLLOW-UP",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_prognosis",
+        "target_code": "PROG-CARD-CM-FABRY-EARLY-DX-TREATMENT",
+        "source_found": "DIS-CARD-CM-FABRY",
+        "target_found": "PROG-CARD-CM-FABRY-EARLY-DX-TREATMENT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-ABVC",
+        "relationType": "has_prognosis",
+        "target_code": "PROG-CARD-CM-ACM-SCD-HF-PROGRESSION",
+        "source_found": "DIS-CARD-CM-ABVC",
+        "target_found": "PROG-CARD-CM-ACM-SCD-HF-PROGRESSION",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_prognosis",
+        "target_code": "PROG-CARD-CM-ATRIAL-AF-STROKE-HF-RISK",
+        "source_found": "DIS-CARD-CM-ATRIAL",
+        "target_found": "PROG-CARD-CM-ATRIAL-AF-STROKE-HF-RISK",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-ATRIAL-AF-ATRIAL-DYSFUNCTION",
+        "source_found": "DIS-CARD-CM-ATRIAL",
+        "target_found": "SIGN-CARD-CM-ATRIAL-AF-ATRIAL-DYSFUNCTION",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-ACM",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-ACM-CUTANEOUS-HAIR-PALMOPLANTAR",
+        "source_found": "DIS-CARD-CM-ACM",
+        "target_found": "SIGN-CARD-CM-ACM-CUTANEOUS-HAIR-PALMOPLANTAR",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-AMYLOID",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-AMYLOID-LVH-LOW-VOLTAGE",
+        "source_found": "DIS-CARD-CM-AMYLOID",
+        "target_found": "SIGN-CARD-CM-AMYLOID-LVH-LOW-VOLTAGE",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-ALVC",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-ACM-VENTRICULAR-ARRHYTHMIA",
+        "source_found": "DIS-CARD-CM-ALVC",
+        "target_found": "SIGN-CARD-CM-ACM-VENTRICULAR-ARRHYTHMIA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-ABVC",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-ACM-VENTRICULAR-ARRHYTHMIA",
+        "source_found": "DIS-CARD-CM-ABVC",
+        "target_found": "SIGN-CARD-CM-ACM-VENTRICULAR-ARRHYTHMIA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-FABRY-LVH-CONDUCTION",
+        "source_found": "DIS-CARD-CM-FABRY",
+        "target_found": "SIGN-CARD-CM-FABRY-LVH-CONDUCTION",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_symptom",
+        "target_code": "SYM-CARD-CM-ATRIAL-PALPITATION-DYSPNEA",
+        "source_found": "DIS-CARD-CM-ATRIAL",
+        "target_found": "SYM-CARD-CM-ATRIAL-PALPITATION-DYSPNEA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-AMYLOID",
+        "relationType": "has_symptom",
+        "target_code": "SYM-CARD-CM-AMYLOID-HF-SYMPTOMS",
+        "source_found": "DIS-CARD-CM-AMYLOID",
+        "target_found": "SYM-CARD-CM-AMYLOID-HF-SYMPTOMS",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_symptom",
+        "target_code": "SYM-CARD-CM-FABRY-MULTISYSTEM-SYMPTOMS",
+        "source_found": "DIS-CARD-CM-FABRY",
+        "target_found": "SYM-CARD-CM-FABRY-MULTISYSTEM-SYMPTOMS",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-NDLVCM",
+        "relationType": "has_symptom",
+        "target_code": "SYM-CARD-CM-NDLVCM-ARRHYTHMIA-HF",
+        "source_found": "DIS-CARD-CM-NDLVCM",
+        "target_found": "SYM-CARD-CM-NDLVCM-ARRHYTHMIA-HF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_treatment_plan",
+        "target_code": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+        "source_found": "DIS-CARD-CM-ATRIAL",
+        "target_found": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "requires_exam",
+        "target_code": "EXAM-CARD-TEXT-2BB358B9BF",
+        "source_found": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "target_found": "EXAM-CARD-TEXT-2BB358B9BF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "requires_exam",
+        "target_code": "EXAM-ECG",
+        "source_found": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "target_found": "EXAM-ECG",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "requires_exam",
+        "target_code": "EXAM-HOLTER",
+        "source_found": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "target_found": "EXAM-HOLTER",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      }
+    ],
+    "actions": [
+      {
+        "id": "REL-14058566DE9A2482",
+        "source_code": "DIS-CARD-CM-NDLVCM",
+        "relationType": "has_follow_up",
+        "target_code": "FU-CARD-CM-NDLVCM-LIFELONG-SCD-RISK",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-142A62060E321A12",
+        "source_code": "DIS-CARD-CM-AMYLOID",
+        "relationType": "has_etiology",
+        "target_code": "ETI-CARD-CM-AMYLOID-AL-ATTR-DEPOSITION",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-1756BCD6EAEF5F88",
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-ATRIAL-AF-ATRIAL-DYSFUNCTION",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-1F43E28B5980CC65",
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "requires_exam",
+        "target_code": "EXAM-CARD-TEXT-2BB358B9BF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-21701AA99AD080AE",
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "requires_exam",
+        "target_code": "EXAM-ECG",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-2750DD4AD8BC4EAD",
+        "source_code": "DIS-CARD-CM-ABVC",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-ABVC-PADUA-BIVENTRICULAR",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-33E7E4C9C5AA11B0",
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_prognosis",
+        "target_code": "PROG-CARD-CM-FABRY-EARLY-DX-TREATMENT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-3F2E68443D7A1319",
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_follow_up",
+        "target_code": "FU-CARD-CM-FABRY-REGULAR-CARDIAC-FOLLOW-UP",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-422369731A54924C",
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "requires_exam",
+        "target_code": "EXAM-HOLTER",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-4F6DA13ADFABE55D",
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CAD-SILENT-ISCHEMIA-CURATED-20260628",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-638AC70B7426B47C",
+        "source_code": "DIS-CARD-CAD-UA",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CAD-UA-CURATED-20260628",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-643FE817BF084D48",
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_symptom",
+        "target_code": "SYM-CARD-CM-ATRIAL-PALPITATION-DYSPNEA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-68ABA1B1B0537FA0",
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-FABRY-ENZYME-GENE-EMB",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-6EB545959A2A9CCA",
+        "source_code": "DIS-CARD-CM-ABVC",
+        "relationType": "has_prognosis",
+        "target_code": "PROG-CARD-CM-ACM-SCD-HF-PROGRESSION",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-750DA70FC7675E85",
+        "source_code": "DIS-CARD-CM-AMYLOID",
+        "relationType": "has_symptom",
+        "target_code": "SYM-CARD-CM-AMYLOID-HF-SYMPTOMS",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-8218D425F278CBF2",
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-ATRIAL-EHRA-CLASS",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-84380CA5BA0C6013",
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_treatment_plan",
+        "target_code": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-8D351EEE8FC92860",
+        "source_code": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+        "relationType": "has_clinical_pathway",
+        "target_code": "PATH-CARD-CM-ATRIAL-AF-STROKE-RISK",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-8E3B5C384507CD38",
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "has_follow_up",
+        "target_code": "FU-CARD-CAD-SILENT-ISCHEMIA-ANNUAL-FOLLOW-UP",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-A280CB87DC8ACAF0",
+        "source_code": "DIS-CARD-CM-ACM",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-ACM-CUTANEOUS-HAIR-PALMOPLANTAR",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-AC2933DF1CED0E0A",
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_etiology",
+        "target_code": "ETI-CARD-CM-ATRIAL-FIBROSIS-REMODELING",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-AE1A44DA09EEBC60",
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_etiology",
+        "target_code": "ETI-CARD-CM-FABRY-GLA-ALPHA-GAL-A",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-B00366C9E906B0CE",
+        "source_code": "DIS-CARD-CM-ABVC",
+        "relationType": "has_follow_up",
+        "target_code": "FU-CARD-CM-ACM-ROUTINE-FOLLOW-UP",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-B777C7CD9922F02B",
+        "source_code": "DIS-CARD-CAD-OLD-MI",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CAD-OLD-MI-CURATED-20260628",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-BBFC153D8BD31DCB",
+        "source_code": "DIS-CARD-CM-ALVC",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-ALVC-PADUA-LV",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-C2C1E9AB204D0190",
+        "source_code": "DIS-CARD-CAD-CCS",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CAD-CCS-CURATED-20260628",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-C2D29BB0A3B0E4F1",
+        "source_code": "DIS-CARD-CM-AMYLOID",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-AMYLOID-LVH-LOW-VOLTAGE",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CC53DF314889B175",
+        "source_code": "DIS-CARD-CM-ALVC",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-ACM-VENTRICULAR-ARRHYTHMIA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-D1264A41E68727CB",
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_symptom",
+        "target_code": "SYM-CARD-CM-FABRY-MULTISYSTEM-SYMPTOMS",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-D915D426A660A8C4",
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_prognosis",
+        "target_code": "PROG-CARD-CM-ATRIAL-AF-STROKE-HF-RISK",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-E59B3E90CAA73119",
+        "source_code": "DIS-CARD-CM-ABVC",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-ACM-VENTRICULAR-ARRHYTHMIA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-EE9C4E4369487341",
+        "source_code": "DIS-CARD-CM-NDLVCM",
+        "relationType": "has_symptom",
+        "target_code": "SYM-CARD-CM-NDLVCM-ARRHYTHMIA-HF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-F2F9D55392F8375D",
+        "source_code": "DIS-CARD-CM-NDLVCM",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-NDLVCM-CMR-LGE",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-FE49325EA30E2E4A",
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-FABRY-LVH-CONDUCTION",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-FF77622686E61454",
+        "source_code": "DIS-CARD-CAD-ICM",
+        "relationType": "has_etiology",
+        "target_code": "ETI-CARD-TEXT-D6A8249236",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-FF77622686E6"
+        ],
+        "missing_id_count": 0,
+        "action": "replace_semantic_edge"
+      }
+    ],
+    "postcheck": [
+      {
+        "source_code": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+        "relationType": "has_clinical_pathway",
+        "target_code": "PATH-CARD-CM-ATRIAL-AF-STROKE-RISK",
+        "source_found": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+        "target_found": "PATH-CARD-CM-ATRIAL-AF-STROKE-RISK",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-8D351EEE8FC92860"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-ABVC",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-ABVC-PADUA-BIVENTRICULAR",
+        "source_found": "DIS-CARD-CM-ABVC",
+        "target_found": "DXC-CARD-CM-ABVC-PADUA-BIVENTRICULAR",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-2750DD4AD8BC4EAD"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CAD-SILENT-ISCHEMIA-CURATED-20260628",
+        "source_found": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "target_found": "DXC-CARD-CAD-SILENT-ISCHEMIA-CURATED-20260628",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-4F6DA13ADFABE55D"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CAD-UA",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CAD-UA-CURATED-20260628",
+        "source_found": "DIS-CARD-CAD-UA",
+        "target_found": "DXC-CARD-CAD-UA-CURATED-20260628",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-638AC70B7426B47C"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-FABRY-ENZYME-GENE-EMB",
+        "source_found": "DIS-CARD-CM-FABRY",
+        "target_found": "DXC-CARD-CM-FABRY-ENZYME-GENE-EMB",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-68ABA1B1B0537FA0"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-ATRIAL-EHRA-CLASS",
+        "source_found": "DIS-CARD-CM-ATRIAL",
+        "target_found": "DXC-CARD-CM-ATRIAL-EHRA-CLASS",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-8218D425F278CBF2"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CAD-OLD-MI",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CAD-OLD-MI-CURATED-20260628",
+        "source_found": "DIS-CARD-CAD-OLD-MI",
+        "target_found": "DXC-CARD-CAD-OLD-MI-CURATED-20260628",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-B777C7CD9922F02B"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-ALVC",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-ALVC-PADUA-LV",
+        "source_found": "DIS-CARD-CM-ALVC",
+        "target_found": "DXC-CARD-CM-ALVC-PADUA-LV",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-BBFC153D8BD31DCB"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CAD-CCS",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CAD-CCS-CURATED-20260628",
+        "source_found": "DIS-CARD-CAD-CCS",
+        "target_found": "DXC-CARD-CAD-CCS-CURATED-20260628",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-C2C1E9AB204D0190"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-NDLVCM",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-NDLVCM-CMR-LGE",
+        "source_found": "DIS-CARD-CM-NDLVCM",
+        "target_found": "DXC-CARD-CM-NDLVCM-CMR-LGE",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-F2F9D55392F8375D"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-AMYLOID",
+        "relationType": "has_etiology",
+        "target_code": "ETI-CARD-CM-AMYLOID-AL-ATTR-DEPOSITION",
+        "source_found": "DIS-CARD-CM-AMYLOID",
+        "target_found": "ETI-CARD-CM-AMYLOID-AL-ATTR-DEPOSITION",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-142A62060E321A12"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_etiology",
+        "target_code": "ETI-CARD-CM-ATRIAL-FIBROSIS-REMODELING",
+        "source_found": "DIS-CARD-CM-ATRIAL",
+        "target_found": "ETI-CARD-CM-ATRIAL-FIBROSIS-REMODELING",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-AC2933DF1CED0E0A"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_etiology",
+        "target_code": "ETI-CARD-CM-FABRY-GLA-ALPHA-GAL-A",
+        "source_found": "DIS-CARD-CM-FABRY",
+        "target_found": "ETI-CARD-CM-FABRY-GLA-ALPHA-GAL-A",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-AE1A44DA09EEBC60"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CAD-ICM",
+        "relationType": "has_etiology",
+        "target_code": "ETI-CARD-TEXT-D6A8249236",
+        "source_found": "DIS-CARD-CAD-ICM",
+        "target_found": "ETI-CARD-TEXT-D6A8249236",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-FF77622686E61454"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-NDLVCM",
+        "relationType": "has_follow_up",
+        "target_code": "FU-CARD-CM-NDLVCM-LIFELONG-SCD-RISK",
+        "source_found": "DIS-CARD-CM-NDLVCM",
+        "target_found": "FU-CARD-CM-NDLVCM-LIFELONG-SCD-RISK",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-14058566DE9A2482"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_follow_up",
+        "target_code": "FU-CARD-CM-FABRY-REGULAR-CARDIAC-FOLLOW-UP",
+        "source_found": "DIS-CARD-CM-FABRY",
+        "target_found": "FU-CARD-CM-FABRY-REGULAR-CARDIAC-FOLLOW-UP",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-3F2E68443D7A1319"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "has_follow_up",
+        "target_code": "FU-CARD-CAD-SILENT-ISCHEMIA-ANNUAL-FOLLOW-UP",
+        "source_found": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "target_found": "FU-CARD-CAD-SILENT-ISCHEMIA-ANNUAL-FOLLOW-UP",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-8E3B5C384507CD38"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-ABVC",
+        "relationType": "has_follow_up",
+        "target_code": "FU-CARD-CM-ACM-ROUTINE-FOLLOW-UP",
+        "source_found": "DIS-CARD-CM-ABVC",
+        "target_found": "FU-CARD-CM-ACM-ROUTINE-FOLLOW-UP",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-B00366C9E906B0CE"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_prognosis",
+        "target_code": "PROG-CARD-CM-FABRY-EARLY-DX-TREATMENT",
+        "source_found": "DIS-CARD-CM-FABRY",
+        "target_found": "PROG-CARD-CM-FABRY-EARLY-DX-TREATMENT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-33E7E4C9C5AA11B0"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-ABVC",
+        "relationType": "has_prognosis",
+        "target_code": "PROG-CARD-CM-ACM-SCD-HF-PROGRESSION",
+        "source_found": "DIS-CARD-CM-ABVC",
+        "target_found": "PROG-CARD-CM-ACM-SCD-HF-PROGRESSION",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-6EB545959A2A9CCA"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_prognosis",
+        "target_code": "PROG-CARD-CM-ATRIAL-AF-STROKE-HF-RISK",
+        "source_found": "DIS-CARD-CM-ATRIAL",
+        "target_found": "PROG-CARD-CM-ATRIAL-AF-STROKE-HF-RISK",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-D915D426A660A8C4"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-ATRIAL-AF-ATRIAL-DYSFUNCTION",
+        "source_found": "DIS-CARD-CM-ATRIAL",
+        "target_found": "SIGN-CARD-CM-ATRIAL-AF-ATRIAL-DYSFUNCTION",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-1756BCD6EAEF5F88"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-ACM",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-ACM-CUTANEOUS-HAIR-PALMOPLANTAR",
+        "source_found": "DIS-CARD-CM-ACM",
+        "target_found": "SIGN-CARD-CM-ACM-CUTANEOUS-HAIR-PALMOPLANTAR",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-A280CB87DC8ACAF0"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-AMYLOID",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-AMYLOID-LVH-LOW-VOLTAGE",
+        "source_found": "DIS-CARD-CM-AMYLOID",
+        "target_found": "SIGN-CARD-CM-AMYLOID-LVH-LOW-VOLTAGE",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-C2D29BB0A3B0E4F1"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-ALVC",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-ACM-VENTRICULAR-ARRHYTHMIA",
+        "source_found": "DIS-CARD-CM-ALVC",
+        "target_found": "SIGN-CARD-CM-ACM-VENTRICULAR-ARRHYTHMIA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CC53DF314889B175"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-ABVC",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-ACM-VENTRICULAR-ARRHYTHMIA",
+        "source_found": "DIS-CARD-CM-ABVC",
+        "target_found": "SIGN-CARD-CM-ACM-VENTRICULAR-ARRHYTHMIA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-E59B3E90CAA73119"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-FABRY-LVH-CONDUCTION",
+        "source_found": "DIS-CARD-CM-FABRY",
+        "target_found": "SIGN-CARD-CM-FABRY-LVH-CONDUCTION",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-FE49325EA30E2E4A"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_symptom",
+        "target_code": "SYM-CARD-CM-ATRIAL-PALPITATION-DYSPNEA",
+        "source_found": "DIS-CARD-CM-ATRIAL",
+        "target_found": "SYM-CARD-CM-ATRIAL-PALPITATION-DYSPNEA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-643FE817BF084D48"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-AMYLOID",
+        "relationType": "has_symptom",
+        "target_code": "SYM-CARD-CM-AMYLOID-HF-SYMPTOMS",
+        "source_found": "DIS-CARD-CM-AMYLOID",
+        "target_found": "SYM-CARD-CM-AMYLOID-HF-SYMPTOMS",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-750DA70FC7675E85"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_symptom",
+        "target_code": "SYM-CARD-CM-FABRY-MULTISYSTEM-SYMPTOMS",
+        "source_found": "DIS-CARD-CM-FABRY",
+        "target_found": "SYM-CARD-CM-FABRY-MULTISYSTEM-SYMPTOMS",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-D1264A41E68727CB"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-NDLVCM",
+        "relationType": "has_symptom",
+        "target_code": "SYM-CARD-CM-NDLVCM-ARRHYTHMIA-HF",
+        "source_found": "DIS-CARD-CM-NDLVCM",
+        "target_found": "SYM-CARD-CM-NDLVCM-ARRHYTHMIA-HF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-EE9C4E4369487341"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_treatment_plan",
+        "target_code": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+        "source_found": "DIS-CARD-CM-ATRIAL",
+        "target_found": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-84380CA5BA0C6013"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "requires_exam",
+        "target_code": "EXAM-CARD-TEXT-2BB358B9BF",
+        "source_found": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "target_found": "EXAM-CARD-TEXT-2BB358B9BF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-1F43E28B5980CC65"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "requires_exam",
+        "target_code": "EXAM-ECG",
+        "source_found": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "target_found": "EXAM-ECG",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-21701AA99AD080AE"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "requires_exam",
+        "target_code": "EXAM-HOLTER",
+        "source_found": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "target_found": "EXAM-HOLTER",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-422369731A54924C"
+        ],
+        "missing_id_count": 0
+      }
+    ],
+    "post_actions": [
+      {
+        "id": "REL-14058566DE9A2482",
+        "source_code": "DIS-CARD-CM-NDLVCM",
+        "relationType": "has_follow_up",
+        "target_code": "FU-CARD-CM-NDLVCM-LIFELONG-SCD-RISK",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-14058566DE9A2482"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-142A62060E321A12",
+        "source_code": "DIS-CARD-CM-AMYLOID",
+        "relationType": "has_etiology",
+        "target_code": "ETI-CARD-CM-AMYLOID-AL-ATTR-DEPOSITION",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-142A62060E321A12"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-1756BCD6EAEF5F88",
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-ATRIAL-AF-ATRIAL-DYSFUNCTION",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-1756BCD6EAEF5F88"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-1F43E28B5980CC65",
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "requires_exam",
+        "target_code": "EXAM-CARD-TEXT-2BB358B9BF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-1F43E28B5980CC65"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-21701AA99AD080AE",
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "requires_exam",
+        "target_code": "EXAM-ECG",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-21701AA99AD080AE"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-2750DD4AD8BC4EAD",
+        "source_code": "DIS-CARD-CM-ABVC",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-ABVC-PADUA-BIVENTRICULAR",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-2750DD4AD8BC4EAD"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-33E7E4C9C5AA11B0",
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_prognosis",
+        "target_code": "PROG-CARD-CM-FABRY-EARLY-DX-TREATMENT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-33E7E4C9C5AA11B0"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-3F2E68443D7A1319",
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_follow_up",
+        "target_code": "FU-CARD-CM-FABRY-REGULAR-CARDIAC-FOLLOW-UP",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-3F2E68443D7A1319"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-422369731A54924C",
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "requires_exam",
+        "target_code": "EXAM-HOLTER",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-422369731A54924C"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-4F6DA13ADFABE55D",
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CAD-SILENT-ISCHEMIA-CURATED-20260628",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-4F6DA13ADFABE55D"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-638AC70B7426B47C",
+        "source_code": "DIS-CARD-CAD-UA",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CAD-UA-CURATED-20260628",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-638AC70B7426B47C"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-643FE817BF084D48",
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_symptom",
+        "target_code": "SYM-CARD-CM-ATRIAL-PALPITATION-DYSPNEA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-643FE817BF084D48"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-68ABA1B1B0537FA0",
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-FABRY-ENZYME-GENE-EMB",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-68ABA1B1B0537FA0"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-6EB545959A2A9CCA",
+        "source_code": "DIS-CARD-CM-ABVC",
+        "relationType": "has_prognosis",
+        "target_code": "PROG-CARD-CM-ACM-SCD-HF-PROGRESSION",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-6EB545959A2A9CCA"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-750DA70FC7675E85",
+        "source_code": "DIS-CARD-CM-AMYLOID",
+        "relationType": "has_symptom",
+        "target_code": "SYM-CARD-CM-AMYLOID-HF-SYMPTOMS",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-750DA70FC7675E85"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-8218D425F278CBF2",
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-ATRIAL-EHRA-CLASS",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-8218D425F278CBF2"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-84380CA5BA0C6013",
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_treatment_plan",
+        "target_code": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-84380CA5BA0C6013"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-8D351EEE8FC92860",
+        "source_code": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+        "relationType": "has_clinical_pathway",
+        "target_code": "PATH-CARD-CM-ATRIAL-AF-STROKE-RISK",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-8D351EEE8FC92860"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-8E3B5C384507CD38",
+        "source_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "relationType": "has_follow_up",
+        "target_code": "FU-CARD-CAD-SILENT-ISCHEMIA-ANNUAL-FOLLOW-UP",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-8E3B5C384507CD38"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-A280CB87DC8ACAF0",
+        "source_code": "DIS-CARD-CM-ACM",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-ACM-CUTANEOUS-HAIR-PALMOPLANTAR",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-A280CB87DC8ACAF0"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-AC2933DF1CED0E0A",
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_etiology",
+        "target_code": "ETI-CARD-CM-ATRIAL-FIBROSIS-REMODELING",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-AC2933DF1CED0E0A"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-AE1A44DA09EEBC60",
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_etiology",
+        "target_code": "ETI-CARD-CM-FABRY-GLA-ALPHA-GAL-A",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-AE1A44DA09EEBC60"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-B00366C9E906B0CE",
+        "source_code": "DIS-CARD-CM-ABVC",
+        "relationType": "has_follow_up",
+        "target_code": "FU-CARD-CM-ACM-ROUTINE-FOLLOW-UP",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-B00366C9E906B0CE"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-B777C7CD9922F02B",
+        "source_code": "DIS-CARD-CAD-OLD-MI",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CAD-OLD-MI-CURATED-20260628",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-B777C7CD9922F02B"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-BBFC153D8BD31DCB",
+        "source_code": "DIS-CARD-CM-ALVC",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-ALVC-PADUA-LV",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-BBFC153D8BD31DCB"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-C2C1E9AB204D0190",
+        "source_code": "DIS-CARD-CAD-CCS",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CAD-CCS-CURATED-20260628",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-C2C1E9AB204D0190"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-C2D29BB0A3B0E4F1",
+        "source_code": "DIS-CARD-CM-AMYLOID",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-AMYLOID-LVH-LOW-VOLTAGE",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-C2D29BB0A3B0E4F1"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CC53DF314889B175",
+        "source_code": "DIS-CARD-CM-ALVC",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-ACM-VENTRICULAR-ARRHYTHMIA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CC53DF314889B175"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-D1264A41E68727CB",
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_symptom",
+        "target_code": "SYM-CARD-CM-FABRY-MULTISYSTEM-SYMPTOMS",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-D1264A41E68727CB"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-D915D426A660A8C4",
+        "source_code": "DIS-CARD-CM-ATRIAL",
+        "relationType": "has_prognosis",
+        "target_code": "PROG-CARD-CM-ATRIAL-AF-STROKE-HF-RISK",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-D915D426A660A8C4"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-E59B3E90CAA73119",
+        "source_code": "DIS-CARD-CM-ABVC",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-ACM-VENTRICULAR-ARRHYTHMIA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-E59B3E90CAA73119"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-EE9C4E4369487341",
+        "source_code": "DIS-CARD-CM-NDLVCM",
+        "relationType": "has_symptom",
+        "target_code": "SYM-CARD-CM-NDLVCM-ARRHYTHMIA-HF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-EE9C4E4369487341"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-F2F9D55392F8375D",
+        "source_code": "DIS-CARD-CM-NDLVCM",
+        "relationType": "has_diagnostic_criteria",
+        "target_code": "DXC-CARD-CM-NDLVCM-CMR-LGE",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-F2F9D55392F8375D"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-FE49325EA30E2E4A",
+        "source_code": "DIS-CARD-CM-FABRY",
+        "relationType": "has_sign",
+        "target_code": "SIGN-CARD-CM-FABRY-LVH-CONDUCTION",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-FE49325EA30E2E4A"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-FF77622686E61454",
+        "source_code": "DIS-CARD-CAD-ICM",
+        "relationType": "has_etiology",
+        "target_code": "ETI-CARD-TEXT-D6A8249236",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-FF77622686E61454"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      }
+    ]
+  }
+}
