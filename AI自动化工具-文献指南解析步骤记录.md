@@ -558,3 +558,174 @@ duplicate_type_name_count = 0
 
 - `2026-06-29 08:57:53`：专家审核必须走疾病级、场景级、药师专项审核包。
 - `2026-06-28 08:43:37`：Neo4j delta 导入必须按语义键去重/替换，不得只按关系 id。
+
+---
+
+## 2026-06-29 14:39:49｜Trae 图谱系统分析、前端审核包与多智能体协作方案
+
+### 用户提出的问题
+
+1. 按既定计划继续：补推 GitHub → 做 pending 审核包前端/回写机制 → 让 Trae 做审核页面 → 启动心力衰竭批次。
+2. 用户说明 Trae 已开发图谱系统，地址为 `http://192.168.3.27:4001/index.html`，要求读取分析功能并补充专家审核设计。
+3. 用户截图显示 GitHub 浏览器可打开，但命令行 `git push` 仍失败。
+
+### 判断结论
+
+1. Trae 当前系统已有总览、图谱探索、网络探索、覆盖分析、诊断模拟、数据字典、Schema 标准、术语库、系统配置页面。
+2. 当前系统没有 `clinical_review` / `pending` 专家审核工作流；不能直接承接 597 个 pending 的审核闭环。
+3. 正确方式是由 Codex 生成前端审核 JSON 包，Trae 只读取展示并导出审核结果；Codex 再校验导出文件、执行 detail 级回写、重跑审计并导入测试库。
+4. GitHub 浏览器能打开不等于当前 git 进程可推送；本轮 `git push origin main` 仍因 HTTPS 连接 reset 失败，需网络恢复后补推。
+
+### Trae 系统功能盘点
+
+已读取页面：
+
+```text
+index.html：专病总览、KPI、疾病大类、知识维度成熟度
+explore.html：疾病维度浏览、实体视角，调用 /api/kg/diseases/summary
+network.html：交互式图谱网络、实体详情、路径分析、导出
+heatmap.html：77 疾病 × 17 维度覆盖分析
+diagnosis.html：病例文本诊断模拟
+schema.html：图谱数据字典
+standard.html：Schema 标准
+terminology.html：医学术语知识库
+config.html：Neo4j 配置
+```
+
+已读取接口：
+
+```text
+/api/kg/stats
+/api/kg/diseases
+/api/kg/diseases/summary
+/api/kg/disease/{code}
+./assets/kg_full_data.json
+```
+
+### 已执行方案
+
+1. 按 TDD 新增测试 `tests/test_build_clinical_review_frontend_package.py`。
+2. 新增脚本 `scripts/build_clinical_review_frontend_package.py`，把疾病级、场景级、药师专项、边级明细转换成 Trae 前端可直接消费的 JSON。
+3. 生成真实前端审核包：
+   `心血管内科文献集合/99_临床审核_clinical_review/20260629_Trae前端审核包_frontend_review_package/`
+4. 新增正式计划文档：
+   `docs/superpowers/plans/2026-06-29-clinical-review-frontend-trae-integration.md`
+5. 新增 Trae 开发说明：
+   `心血管内科文献集合/99_临床审核_clinical_review/20260629_Trae前端审核包_frontend_review_package/Trae审核页面开发说明.md`
+6. 打包 Trae 前端审核包：
+   `20260629_Trae临床审核页面前端包.zip`
+7. SKILL 升级到 V1.27，写入多智能体协作边界和 Trae 不得直接写库规则。
+
+### 当前执行结果
+
+前端审核包：
+
+```text
+clinical_review_frontend_manifest.json
+clinical_review_frontend_data.json
+clinical_review_decision_export_template.csv
+Trae审核页面开发说明.md
+20260629_Trae临床审核页面前端包.zip
+```
+
+数据量：
+
+```text
+disease_review_count = 22
+scenario_card_count = 103
+pharmacist_item_count = 187
+detail_item_count = 303
+```
+
+测试：
+
+```text
+python -m unittest discover -s tests
+72 项 OK
+```
+
+### 遗留阻断
+
+1. GitHub 命令行推送仍失败：`Failed to connect to github.com port 443` 或 `Recv failure: Connection was reset`。本地提交未丢失，需网络恢复后执行 `git push origin main`。
+2. Trae 审核页面尚需 Trae 按开发说明实现；实现后只能导出审核结果，不能直接回写数据库。
+3. 心力衰竭批次尚未正式启动，下一步先跑新病种预检。
+
+### 关联踩坑日志
+
+本次同步到 SKILL V1.27：
+
+- 多智能体协作必须划清边界：Trae 做展示/候选/导出，Codex 做证据裁决/回写/导入/质量门禁。
+
+---
+
+## 2026-06-29 14:58:40｜心力衰竭批次启动预检与版本留痕修复
+
+### 用户提出的问题
+
+1. 按计划在 Trae 审核页面设计之后启动心力衰竭批次。
+
+### 判断结论
+
+1. 心力衰竭可以作为下一批疾病大类启动，指南路径和教材路径沿用心血管内科既定路径。
+2. 启动时发现 `prepare_medical_kg_batch.py` 仍把 `schema_version` 和 `skill_version` 硬编码为 V1.4，属于新批次留痕错误，必须先修脚本再继续。
+
+### 已执行方案
+
+1. 运行新病种预检：
+   `心血管内科文献集合/00_新病种预检_preflight/20260629_心力衰竭_heart_failure_preflight.json`
+2. 预检通过后创建批次：
+   `心血管内科文献集合/BATCH-CARD-HF-20260629-001/`
+3. 按 TDD 修改 `scripts/prepare_medical_kg_batch.py`，新增从主文档读取当前版本号的逻辑。
+4. 更新 `tests/test_prepare_medical_kg_batch.py`，验证新批次配置不再硬编码 V1.4。
+5. 修复已生成心力衰竭批次 `batch_config.json`：Schema V1.7、SKILL V1.27。
+6. SKILL 升级 V1.28，新增批次启动后必须复核版本号和纳入文件清单规则。
+
+### 当前执行结果
+
+预检结果：
+
+```text
+status = pass
+specialty = 心血管内科
+scope_type = 疾病大类
+scope_target = 心力衰竭
+missing_required_fields = []
+missing_paths = []
+warnings = []
+```
+
+批次配置：
+
+```text
+batch_id = BATCH-CARD-HF-20260629-001
+schema_version = V1.7
+skill_version = V1.27
+included_file_count = 18
+excluded_file_count = 405
+```
+
+纳入文献：
+
+```text
+纳入指南/共识/建议/路径 = 15
+纳入教材/基础书籍 = 3
+合计 = 18
+```
+
+测试：
+
+```text
+python -m unittest discover -s tests
+72 项 OK
+```
+
+### 遗留阻断
+
+1. 心力衰竭批次已启动并完成预检/目录/来源清单，尚未进入 PDF 解析与证据抽取。
+2. 开始解析前建议先人工确认 18 个纳入文件是否覆盖目标范围，尤其同名“心力衰竭患者利尿剂抵抗诊断及管理中国专家共识”存在两份不同大小文件，需保留为不同来源或后续按证据质量处理。
+
+### 关联踩坑日志
+
+已同步 `_全局复利与踩坑日志.md`：
+
+- `2026-06-29 14:58:40`：新批次 `batch_config.json` 版本号不得硬编码旧版本，必须从主文档读取。

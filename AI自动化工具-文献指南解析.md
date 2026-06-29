@@ -5,7 +5,7 @@ description: Use when starting a specialty, disease-category, or single-disease 
 
 # AI自动化工具-文献指南解析
 
-版本：V1.26  
+版本：V1.28  
 Schema：`专科知识图谱Schema标准.md` V1.7  
 用途：从原始医学文献生成可审计、可合并的专科知识图谱标准数据实例。
 
@@ -42,6 +42,8 @@ Schema：`专科知识图谱Schema标准.md` V1.7
 | V1.24 | 2026-06-28 08:43:37 | 新增 Neo4j delta 导入语义键去重规则和 GitHub 凭据安全规则：增量关系导入必须先按 `(source.code, relationType, target.code)` 查重/合并，不得仅按关系 `id` MERGE；GitHub 不得使用明文账号密码自动化，必须使用 SSH、浏览器授权或细粒度 PAT |
 | V1.25 | 2026-06-28 18:48:43 | 新增 required 缺口闭环冲刺规则、策展补丁规则、delta 节点 upsert 规则和新病种启动预检规则：required 缺口必须先回查指南/教材 evidence index；可修复项必须写入本地 JSONL 并重跑审计；没有明确随访/诊断/治疗原文不得硬补；delta 包必须同时提供节点 upsert、关系 add、manifest 和可导入文件清单；新病种开工前必须运行预检或等价清单 |
 | V1.26 | 2026-06-29 08:57:53 | 新增临床使用效果审核规则：`pending_clinical_review` 不得要求专家逐条查看图谱边，必须生成疾病级、场景级和药师专项的简化审核包；边级明细只作为证据追溯；AI 不得把 pending 自动改成专家已确认；正式 CDSS 推荐层必须以审核决策表回写为准 |
+| V1.27 | 2026-06-29 14:39:49 | 新增多智能体协作与 Trae 前端审核边界：Trae 可负责审核页面、候选清单、OCR/术语辅助和结果导出；不得直接写 Neo4j、不得直接改正式 JSONL、不得自动批准 pending；Codex 负责回写脚本、质量门禁、Neo4j 导入和最终上线判定 |
+| V1.28 | 2026-06-29 14:58:40 | 修复新批次启动版本留痕规则：`batch_config.json` 中 Schema/SKILL 版本必须从主文档当前 `版本：Vx.x` 读取，不得硬编码旧版本；新批次预检和准备后必须复核版本号、纳入文件数和纳入文件清单 |
 
 ## 1. 核心原则
 
@@ -1491,11 +1493,23 @@ Required 缺口闭环冲刺规则：
 - 使用效果审核只能确认“该场景是否可用于辅助诊疗参考”；不能替代药物剂量、禁忌、相互作用、推荐等级/证据等级、适用人群、排除条件等字段的结构化补全。
 - 若 required 缺口为 0，但仍存在 `pending_clinical_review` 或 CDSS 推荐字段缺口，本批只能进入测试库工作版本，不得进入正式 CDSS 推荐层。
 
+多智能体协作与 Trae 前端审核边界：
+
+- Codex 是图谱建设主控 agent，负责 Schema/SKILL、抽取规则、证据裁决、回写脚本、本地审计、Neo4j 导入、服务器硬闸门和正式 CDSS 判定。
+- Trae 可作为并行工程 agent，负责前端页面、审核表展示、筛选搜索、CSV/JSON 导出、PDF 清单整理、OCR 质量报告、术语候选和候选缺口清单。
+- Trae 不得直接写 Neo4j；不得直接修改 `nodes_final.jsonl`、`relations_final.jsonl`、delta 包；不得把候选关系直接变成正式图谱；不得设置 `formal_cdss_ready=true`；不得批量把 `pending_clinical_review` 改为 `clinical_approved`。
+- Trae 审核页面必须读取 Codex 生成的 `clinical_review_frontend_data.json`，只导出 `clinical_review_decisions_export_*.csv/json`。
+- Codex 收到 Trae 导出的审核结果后，必须先校验 review_id、batch_id、relation_id、审核人、审核角色、审核时间、备注规则，再转换为 detail 级回写 CSV。
+- 疾病级和场景级审核只表示临床使用效果判断；只有 detail 级 `approve` 且字段完整的行，才允许进入 `apply_clinical_review_decisions.py` 回写。
+- 多 agent 任务必须遵循“候选/展示/导出可并行，证据裁决/回写/导入必须串行由 Codex 控制”的原则。
+
 新病种启动预检规则：
 
 - 每次开始新专科、新疾病大类或单病种前，必须确认：顶层学科、scope_type、scope_target、PDF/指南来源路径、教材/基础骨架路径、本批输出路径、Schema 主文件、SKILL 主文件。
 - 推荐运行 `scripts/preflight_new_disease_batch.py` 或按同等字段生成预检记录。预检失败不得开始解析 PDF。
 - 每批生成后必须主动输出可导入图谱文件：`nodes_final.jsonl`、`relations_final.jsonl`、`quality_gate_summary.json`、`delta_manifest.json`、`delta_nodes_upsert.jsonl`、`delta_relations_add.jsonl`、详细追溯审核包路径、临床使用效果审核包路径、Claude/外部模型审核包路径。
+- 创建批次目录后必须复核 `00_scope_and_config/batch_config.json`：`schema_version` 必须等于 `专科知识图谱Schema标准.md` 当前版本；`skill_version` 必须等于 `AI自动化工具-文献指南解析.md` 当前版本。发现硬编码旧版本必须立即修复脚本和已生成配置。
+- 新批次正式开始解析前必须输出纳入文献清单，至少包括文件名、来源类型、扩展名和大小；纳入数异常时先检查 scope aliases 和路径匹配规则。
 
 ## 17. 受控合并
 

@@ -130,6 +130,9 @@ MANIFEST_FIELDS = (
     "inclusion_reason",
 )
 
+SCHEMA_FILE = "专科知识图谱Schema标准.md"
+SKILL_FILE = "AI自动化工具-文献指南解析.md"
+
 
 def sha256_file(path: Path, chunk_size: int = 1024 * 1024) -> str:
     digest = hashlib.sha256()
@@ -157,6 +160,14 @@ def infer_source_type(path: Path, root_kind: str) -> str:
     if path.suffix.lower() == ".txt":
         return "expert_material"
     return "unclassified"
+
+
+def read_markdown_version(path: Path, default: str = "UNKNOWN") -> str:
+    if not path.exists():
+        return default
+    text = path.read_text(encoding="utf-8-sig", errors="ignore")
+    match = re.search(r"^版本[：:]\s*(V[0-9]+(?:\.[0-9]+)*)\s*$", text, re.MULTILINE)
+    return match.group(1) if match else default
 
 
 def is_scope_relevant(path: Path, root: Path, root_kind: str, scope_target: str) -> bool:
@@ -187,6 +198,7 @@ def prepare_batch(
     guide_root = Path(guide_root).resolve()
     textbook_root = Path(textbook_root).resolve()
     output_root = Path(output_root).resolve()
+    standard_root = output_root.parent
 
     for label, root in (("guide_root", guide_root), ("textbook_root", textbook_root)):
         if not root.is_dir():
@@ -320,10 +332,10 @@ def prepare_batch(
         "guide_root": str(guide_root),
         "textbook_root": str(textbook_root),
         "output_root": str(output_root),
-        "schema_file": "专科知识图谱Schema标准.md",
-        "schema_version": "V1.4",
-        "skill_file": "AI自动化工具-文献指南解析.md",
-        "skill_version": "V1.4",
+        "schema_file": SCHEMA_FILE,
+        "schema_version": read_markdown_version(standard_root / SCHEMA_FILE),
+        "skill_file": SKILL_FILE,
+        "skill_version": read_markdown_version(standard_root / SKILL_FILE),
         "source_manifest_hash": manifest_hash,
         "included_file_count": sum(row["inclusion_status"] == "included" for row in rows),
         "excluded_file_count": sum(row["inclusion_status"] == "excluded" for row in rows),

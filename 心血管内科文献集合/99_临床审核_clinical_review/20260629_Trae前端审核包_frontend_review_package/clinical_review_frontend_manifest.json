@@ -1,0 +1,10 @@
+﻿{
+  "schema_version": "clinical-review-frontend-v1",
+  "frontend_data": "心血管内科文献集合\\99_临床审核_clinical_review\\20260629_Trae前端审核包_frontend_review_package\\clinical_review_frontend_data.json",
+  "decision_export_template": "心血管内科文献集合\\99_临床审核_clinical_review\\20260629_Trae前端审核包_frontend_review_package\\clinical_review_decision_export_template.csv",
+  "disease_review_count": 22,
+  "scenario_card_count": 103,
+  "pharmacist_item_count": 187,
+  "detail_item_count": 303,
+  "trae_write_boundary": "export_file_only_no_neo4j_no_jsonl_direct_write"
+}

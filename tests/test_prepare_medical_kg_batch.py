@@ -18,6 +18,8 @@ class PrepareMedicalKgBatchTests(unittest.TestCase):
             (guide / "心律失常").mkdir(parents=True)
             books.mkdir()
             output.mkdir()
+            (root / "AI自动化工具-文献指南解析.md").write_text("版本：V9.8\n", encoding="utf-8")
+            (root / "专科知识图谱Schema标准.md").write_text("版本：V7.6\n", encoding="utf-8")
 
             payload = b"same guideline bytes"
             (guide / "心肌病" / "中国心肌病指南.pdf").write_bytes(payload)
@@ -43,6 +45,8 @@ class PrepareMedicalKgBatchTests(unittest.TestCase):
             )
             self.assertEqual(config["specialty"], "心血管内科")
             self.assertEqual(config["scope_target"], "心肌病")
+            self.assertEqual(config["skill_version"], "V9.8")
+            self.assertEqual(config["schema_version"], "V7.6")
 
             with (batch_dir / "01_source_manifest" / "source_documents_manifest.csv").open(
                 encoding="utf-8-sig", newline=""
@@ -96,6 +100,8 @@ class PrepareMedicalKgBatchTests(unittest.TestCase):
             (guide / "其他").mkdir(parents=True)
             books.mkdir()
             output.mkdir()
+            (root / "AI自动化工具-文献指南解析.md").write_text("版本：V1.27\n", encoding="utf-8")
+            (root / "专科知识图谱Schema标准.md").write_text("版本：V1.7\n", encoding="utf-8")
 
             (guide / "CAD" / "中国慢性冠脉综合征指南.pdf").write_bytes(b"ccs")
             (guide / "ACS" / "STEMI NSTEMI 指南.pdf").write_bytes(b"acs")
@@ -117,7 +123,8 @@ class PrepareMedicalKgBatchTests(unittest.TestCase):
                     encoding="utf-8-sig"
                 )
             )
-            self.assertEqual(config["skill_version"], "V1.4")
+            self.assertEqual(config["skill_version"], "V1.27")
+            self.assertEqual(config["schema_version"], "V1.7")
 
             with (batch_dir / "01_source_manifest" / "source_documents_manifest.csv").open(
                 encoding="utf-8-sig", newline=""

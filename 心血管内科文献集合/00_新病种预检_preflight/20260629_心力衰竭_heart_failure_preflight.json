@@ -1,0 +1,29 @@
+﻿{
+  "status": "pass",
+  "created_at": "2026-06-29 14:42:47",
+  "specialty": "心血管内科",
+  "scope_type": "疾病大类",
+  "scope_target": "心力衰竭",
+  "source_roots": [
+    "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\心血管内科\\诊疗指南"
+  ],
+  "textbook_roots": [
+    "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\心血管内科\\书籍教材"
+  ],
+  "output_root": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合",
+  "schema_path": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\专科知识图谱Schema标准.md",
+  "skill_path": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\AI自动化工具-文献指南解析.md",
+  "missing_required_fields": [],
+  "missing_paths": [],
+  "warnings": [],
+  "required_next_outputs": [
+    "source_manifest/使用PDF清单",
+    "local_graph_jsonl/nodes_final.jsonl",
+    "local_graph_jsonl/relations_final.jsonl",
+    "quality_audit/quality_gate_summary.json",
+    "delta_import_package/delta_manifest.json",
+    "delta_import_package/delta_nodes_upsert.jsonl",
+    "delta_import_package/delta_relations_add.jsonl",
+    "claude_review_pack/审核包"
+  ]
+}
