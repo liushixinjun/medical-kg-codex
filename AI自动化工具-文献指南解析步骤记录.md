@@ -408,3 +408,78 @@ python -m unittest tests.test_preflight_new_disease_batch tests.test_apply_curat
 已同步 `_全局复利与踩坑日志.md`：
 
 - `2026-06-28 18:48:43`：required 缺口不能直接等同文献不覆盖；策展补丁必须带原文证据；delta 节点必须按 code 去重；没有明确随访原文不得硬补。
+
+---
+
+## 2026-06-29 08:57:53｜pending 临床审核改为“临床使用效果审核包”
+
+### 用户提出的问题
+
+1. `pending_clinical_review` 和 CDSS 推荐字段不可能让专家逐条看图谱网络节点确认。
+2. 专家只能从实际使用效果上确认，除非整理成非常简单清晰的数据格式。
+3. 用户截图显示已在本机 PowerShell 设置 `NEO4J_PASSWORD`，要求继续查看和执行。
+
+### 判断结论
+
+1. 用户判断正确：专家审核不能以 Neo4j 网络图或 303 条边级 pending 明细作为主入口。
+2. 正确流程是“疾病级整体可用性 → 场景级推荐卡 → 药师专项药物风险 → 边级证据追溯”。边级明细只给数据团队和回写脚本使用。
+3. AI 不得把 `pending_clinical_review` 自动改为专家已确认；只能生成审核包、回写脚本和阻断清单。
+4. 截图里的密码变量只对用户当前 PowerShell 会话有效；当前 Codex 执行进程仍读取不到 `NEO4J_PASSWORD`，因此服务器导入暂缓。
+
+### 已执行方案
+
+1. 新增并测试 `scripts/build_clinical_effect_review_pack.py`。
+2. 新增测试 `tests/test_build_clinical_effect_review_pack.py`，验证治疗方案下游药物推荐能回溯到疾病，并生成疾病级、场景级、药师专项三类审核表。
+3. 重新生成详细 pending 审核包：
+   `心血管内科文献集合/99_临床审核_clinical_review/20260629_pending_review_pack_latest/`
+4. 新增临床使用效果审核包：
+   `心血管内科文献集合/99_临床审核_clinical_review/20260629_临床使用效果审核包_effect_review/`
+5. 将规则同步到 `AI自动化工具-文献指南解析.md` V1.26，并追加本步骤记录和踩坑日志。
+
+### 当前执行结果
+
+详细 pending 审核包：
+
+```text
+review_item_count = 303
+CAD = 216
+CM = 87
+clinical_review_status 缺口 = 303
+```
+
+临床使用效果审核包：
+
+```text
+disease_review_count = 22
+scenario_card_count = 103
+pharmacist_item_count = 187
+```
+
+本地 required 闭环状态：
+
+```text
+CAD required_pathway_missing_count = 0
+CAD closed_loop_ready_disease_count = 10/10
+CM required_pathway_missing_count = 0
+CM closed_loop_ready_disease_count = 12/12
+```
+
+可导入增量包：
+
+```text
+心血管内科文献集合/09_增量补丁_delta/20260628_CAD_CM_required_gap_closure_round2/
+delta_nodes_upsert.jsonl = 31 nodes
+delta_relations_add.jsonl = 35 relations
+formal_cdss_ready = false
+```
+
+### 遗留阻断
+
+1. 服务器导入仍未执行：当前 Codex 执行进程未读取到 `NEO4J_PASSWORD`。
+2. 正式 CDSS 仍不可上线：pending 审核和部分 CDSS 推荐字段需要通过简化审核包回写，而不是 AI 自动批准。
+
+### 关联踩坑日志
+
+已同步 `_全局复利与踩坑日志.md`：
+
+- `2026-06-29 08:57:53`：临床专家审核不能逐边进行，必须产品化为疾病级、场景级、药师专项审核包；边级明细只作为证据追溯。

@@ -1,0 +1,176 @@
+{
+  "id": "curated_required_backfill_round2_alias_action_fix_20260628",
+  "description": "修复 round2 required 补丁后的 target_match_failure 与心房心肌病治疗方案可执行性问题：补充证据原文可命中的别名，并为治疗方案增加下游 ClinicalPathway。",
+  "batches": [
+    {
+      "batch_dir": "E:/BigMouse/0.CDSS文献诊疗指南材料PDF/AI专科知识图谱生成/心血管内科文献集合/BATCH-CARD-CAD-20260623-001",
+      "batch_id": "BATCH-CARD-CAD-20260623-001",
+      "schema_version": "V1.1",
+      "scope_type": "disease_category",
+      "scope_target": "冠状动脉粥样硬化性心脏病",
+      "nodes": [
+        {
+          "code": "FU-CARD-CAD-SILENT-ISCHEMIA-ANNUAL-FOLLOW-UP",
+          "name": "隐匿性冠心病年度临床随访评估",
+          "entityType": "FollowUp",
+          "entityCategory": "治疗随访",
+          "aliases": ["年度临床评估", "长期随访", "症状和用药复核", "静息12导联心电图", "风险控制"]
+        }
+      ],
+      "relations": []
+    },
+    {
+      "batch_dir": "E:/BigMouse/0.CDSS文献诊疗指南材料PDF/AI专科知识图谱生成/心血管内科文献集合/BATCH-CARD-CM-20260622-001",
+      "batch_id": "BATCH-CARD-CM-20260622-001",
+      "schema_version": "V1.1",
+      "scope_type": "disease_category",
+      "scope_target": "心肌疾病",
+      "nodes": [
+        {
+          "code": "SIGN-CARD-CM-ACM-VENTRICULAR-ARRHYTHMIA",
+          "name": "室性心律失常表现",
+          "entityType": "Sign",
+          "entityCategory": "临床表现",
+          "aliases": ["室性心律失常", "猝死首发表现", "心力衰竭"]
+        },
+        {
+          "code": "DXC-CARD-CM-ABVC-PADUA-BIVENTRICULAR",
+          "name": "ABVC双心室受累诊断流程",
+          "entityType": "DiagnosisCriteria",
+          "entityCategory": "诊断",
+          "aliases": ["左、右心室均满足受累标准", "ABVC"]
+        },
+        {
+          "code": "DXC-CARD-CM-ALVC-PADUA-LV",
+          "name": "ALVC左心室受累诊断流程",
+          "entityType": "DiagnosisCriteria",
+          "entityCategory": "诊断",
+          "aliases": ["仅左心室满足受累标准", "ALVC"]
+        },
+        {
+          "code": "PROG-CARD-CM-ACM-SCD-HF-PROGRESSION",
+          "name": "猝死和心力衰竭进展风险",
+          "entityType": "Prognosis",
+          "entityCategory": "预后",
+          "aliases": ["心源性猝死", "逐步进展为心力衰竭", "年轻人和运动员猝死"]
+        },
+        {
+          "code": "FU-CARD-CM-ACM-ROUTINE-FOLLOW-UP",
+          "name": "ACM谱系定期随访和猝死风险复评",
+          "entityType": "FollowUp",
+          "entityCategory": "治疗随访",
+          "aliases": ["常规随访", "临床评估", "心电图和超声心动图", "每1–2年复评", "每1-2年复评"]
+        },
+        {
+          "code": "ETI-CARD-CM-AMYLOID-AL-ATTR-DEPOSITION",
+          "name": "AL或ATTR淀粉样蛋白心肌沉积",
+          "entityType": "Etiology",
+          "entityCategory": "病因",
+          "aliases": ["心肌淀粉样变性", "免疫球蛋白轻链型", "甲状腺素转运蛋白型"]
+        },
+        {
+          "code": "ETI-CARD-CM-ATRIAL-FIBROSIS-REMODELING",
+          "name": "心房纤维化和电结构重构",
+          "entityType": "Etiology",
+          "entityCategory": "病因",
+          "aliases": ["结构、电生理、收缩和组织改变", "结构、电生理、收缩和组织学改变"]
+        },
+        {
+          "code": "SYM-CARD-CM-ATRIAL-PALPITATION-DYSPNEA",
+          "name": "心悸和活动后气促",
+          "entityType": "Symptom",
+          "entityCategory": "临床表现",
+          "aliases": ["房性心律失常", "心力衰竭相关表现", "症状常由房性心律失常"]
+        },
+        {
+          "code": "SIGN-CARD-CM-ATRIAL-AF-ATRIAL-DYSFUNCTION",
+          "name": "房性心律失常和心房功能异常",
+          "entityType": "Sign",
+          "entityCategory": "临床表现",
+          "aliases": ["心房结构", "电生理和组织学异常", "心房结构、收缩、电生理和组织学异常"]
+        },
+        {
+          "code": "DXC-CARD-CM-ATRIAL-EHRA-CLASS",
+          "name": "EHRA心房心肌病组织学分型诊断框架",
+          "entityType": "DiagnosisCriteria",
+          "entityCategory": "诊断",
+          "aliases": ["定义并表征心房心肌病", "诊断描述框架", "结构、电生理、收缩和组织学改变"]
+        },
+        {
+          "code": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+          "name": "房性心律失常与卒中风险管理",
+          "entityType": "TreatmentPlan",
+          "entityCategory": "治疗",
+          "aliases": ["心律失常管理", "卒中预防路径", "房性心律失常和卒中预防路径"]
+        },
+        {
+          "code": "PATH-CARD-CM-ATRIAL-AF-STROKE-RISK",
+          "name": "房性心律失常和卒中预防路径",
+          "entityType": "ClinicalPathway",
+          "entityCategory": "临床路径",
+          "aliases": ["房性心律失常管理路径", "卒中风险评估路径", "卒中预防路径"],
+          "description": "心房心肌病相关管理路径，围绕房性心律失常识别、卒中风险评估和预防策略进行临床决策。"
+        },
+        {
+          "code": "SYM-CARD-CM-FABRY-MULTISYSTEM-SYMPTOMS",
+          "name": "多系统受累症状",
+          "entityType": "Symptom",
+          "entityCategory": "临床表现",
+          "aliases": ["多脏器病变", "相应临床表现", "心脏受累"]
+        },
+        {
+          "code": "DXC-CARD-CM-FABRY-ENZYME-GENE-EMB",
+          "name": "酶活性、基因检测和心肌活检诊断",
+          "entityType": "DiagnosisCriteria",
+          "entityCategory": "诊断",
+          "aliases": ["心肌细胞肥大空泡变性", "GLA表达减少", "Gb3表达增加", "髓鞘样小体"]
+        },
+        {
+          "code": "PROG-CARD-CM-FABRY-EARLY-DX-TREATMENT",
+          "name": "早诊早治改善预后",
+          "entityType": "Prognosis",
+          "entityCategory": "预后",
+          "aliases": ["死亡的主要原因", "改善患者预后"]
+        },
+        {
+          "code": "FU-CARD-CM-NDLVCM-LIFELONG-SCD-RISK",
+          "name": "NDLVCM长期表型和猝死风险随访",
+          "entityType": "FollowUp",
+          "entityCategory": "治疗随访",
+          "aliases": ["全生命周期综合管理", "猝死风险", "SCD预防"]
+        }
+      ],
+      "relations": [
+        {
+          "source_code": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+          "relationType": "has_clinical_pathway",
+          "target_code": "PATH-CARD-CM-ATRIAL-AF-STROKE-RISK",
+          "applicable_population": "存在房性心律失常、卒中风险或心房结构/功能异常证据的心房心肌病患者",
+          "exclusion_criteria": "具体抗凝、节律控制、消融或器械治疗需按房颤/房性心律失常专项指南进一步判断禁忌证和适应证",
+          "clinical_rule_or_clinical_pathway": "房性心律失常和卒中预防路径",
+          "recommendation_class": "N/A",
+          "evidence_level": "N/A",
+          "clinical_review_status": "pending_clinical_review",
+          "formal_cdss_ready": false,
+          "provenance_records_json": [
+            {
+              "document_id": "WEB-HRS-ATCM-2016",
+              "segment_id": "HRS-ATCM-2016-MANAGEMENT-PATHWAY",
+              "source_name": "2016 EHRA/HRS/APHRS/SOLAECE expert consensus on atrial cardiomyopathies",
+              "source_type": "external_consensus",
+              "source_version": "2016-06-10",
+              "source_section": "Clinical implication",
+              "source_page": "",
+              "source_url": "https://www.hrsonline.org/resource/2016-ehrahrsaphrssolaece-expert-consensus-atrial-cardiomyopathies/",
+              "evidence_text": "心房心肌病共识强调其对心律失常管理和卒中风险的临床影响；治疗需结合房性心律失常和卒中预防路径。",
+              "evidence_id": "EVD-WEB-ATCM-PATH-001",
+              "recommendation_class": "N/A",
+              "evidence_level": "N/A",
+              "confidence": 0.82
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -50,6 +50,9 @@ class ApplyCuratedRequiredBackfillTests(unittest.TestCase):
                                 "source_code": "DIS-1",
                                 "relationType": "has_diagnostic_criteria",
                                 "target_code": "DXC-1",
+                                "applicable_population": "疑似测试病患者",
+                                "exclusion_criteria": "排除继发性原因",
+                                "clinical_rule_or_clinical_pathway": "测试病诊断路径",
                                 "provenance_records_json": [
                                     {
                                         "document_id": "DOC-1",
@@ -79,6 +82,10 @@ class ApplyCuratedRequiredBackfillTests(unittest.TestCase):
             self.assertEqual(first["added_relations"], 1)
             self.assertEqual(second["added_nodes"], 0)
             self.assertEqual(second["added_relations"], 0)
+            relation = json.loads((data / "relations_final.jsonl").read_text(encoding="utf-8-sig").splitlines()[0])
+            self.assertEqual(relation["applicable_population"], "疑似测试病患者")
+            self.assertEqual(relation["exclusion_criteria"], "排除继发性原因")
+            self.assertEqual(relation["clinical_rule_or_clinical_pathway"], "测试病诊断路径")
 
     def test_rejects_missing_relation_endpoint(self):
         with tempfile.TemporaryDirectory() as tmp:

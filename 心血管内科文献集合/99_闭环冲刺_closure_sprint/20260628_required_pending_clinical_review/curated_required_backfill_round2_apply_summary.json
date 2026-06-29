@@ -1,0 +1,82 @@
+﻿{
+  "spec_id": "curated_required_backfill_round2_20260628",
+  "batch_count": 2,
+  "added_nodes": 25,
+  "updated_nodes": 0,
+  "added_relations": 26,
+  "batches": [
+    {
+      "batch_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\BATCH-CARD-CAD-20260623-001",
+      "added_nodes": 1,
+      "updated_nodes": 0,
+      "added_relations": 1,
+      "added_node_codes": [
+        "FU-CARD-CAD-SILENT-ISCHEMIA-ANNUAL-FOLLOW-UP"
+      ],
+      "updated_node_codes": [],
+      "added_relation_ids": [
+        "REL-8E3B5C384507CD38"
+      ]
+    },
+    {
+      "batch_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\BATCH-CARD-CM-20260622-001",
+      "added_nodes": 24,
+      "updated_nodes": 0,
+      "added_relations": 25,
+      "added_node_codes": [
+        "SIGN-CARD-CM-ACM-VENTRICULAR-ARRHYTHMIA",
+        "SIGN-CARD-CM-ACM-CUTANEOUS-HAIR-PALMOPLANTAR",
+        "DXC-CARD-CM-ABVC-PADUA-BIVENTRICULAR",
+        "DXC-CARD-CM-ALVC-PADUA-LV",
+        "PROG-CARD-CM-ACM-SCD-HF-PROGRESSION",
+        "FU-CARD-CM-ACM-ROUTINE-FOLLOW-UP",
+        "ETI-CARD-CM-AMYLOID-AL-ATTR-DEPOSITION",
+        "SYM-CARD-CM-AMYLOID-HF-SYMPTOMS",
+        "SIGN-CARD-CM-AMYLOID-LVH-LOW-VOLTAGE",
+        "ETI-CARD-CM-ATRIAL-FIBROSIS-REMODELING",
+        "SYM-CARD-CM-ATRIAL-PALPITATION-DYSPNEA",
+        "SIGN-CARD-CM-ATRIAL-AF-ATRIAL-DYSFUNCTION",
+        "DXC-CARD-CM-ATRIAL-EHRA-CLASS",
+        "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+        "PROG-CARD-CM-ATRIAL-AF-STROKE-HF-RISK",
+        "ETI-CARD-CM-FABRY-GLA-ALPHA-GAL-A",
+        "SYM-CARD-CM-FABRY-MULTISYSTEM-SYMPTOMS",
+        "SIGN-CARD-CM-FABRY-LVH-CONDUCTION",
+        "DXC-CARD-CM-FABRY-ENZYME-GENE-EMB",
+        "PROG-CARD-CM-FABRY-EARLY-DX-TREATMENT",
+        "FU-CARD-CM-FABRY-REGULAR-CARDIAC-FOLLOW-UP",
+        "SYM-CARD-CM-NDLVCM-ARRHYTHMIA-HF",
+        "DXC-CARD-CM-NDLVCM-CMR-LGE",
+        "FU-CARD-CM-NDLVCM-LIFELONG-SCD-RISK"
+      ],
+      "updated_node_codes": [],
+      "added_relation_ids": [
+        "REL-E59B3E90CAA73119",
+        "REL-2750DD4AD8BC4EAD",
+        "REL-6EB545959A2A9CCA",
+        "REL-B00366C9E906B0CE",
+        "REL-A280CB87DC8ACAF0",
+        "REL-CC53DF314889B175",
+        "REL-BBFC153D8BD31DCB",
+        "REL-142A62060E321A12",
+        "REL-750DA70FC7675E85",
+        "REL-C2D29BB0A3B0E4F1",
+        "REL-AC2933DF1CED0E0A",
+        "REL-643FE817BF084D48",
+        "REL-1756BCD6EAEF5F88",
+        "REL-8218D425F278CBF2",
+        "REL-84380CA5BA0C6013",
+        "REL-D915D426A660A8C4",
+        "REL-AE1A44DA09EEBC60",
+        "REL-D1264A41E68727CB",
+        "REL-FE49325EA30E2E4A",
+        "REL-68ABA1B1B0537FA0",
+        "REL-33E7E4C9C5AA11B0",
+        "REL-3F2E68443D7A1319",
+        "REL-EE9C4E4369487341",
+        "REL-F2F9D55392F8375D",
+        "REL-14058566DE9A2482"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+﻿{
+  "coverage_csv": "心血管内科文献集合\\BATCH-CARD-CAD-20260623-001\\06_quality_audit\\disease_pathway_coverage.csv",
+  "summary": {
+    "missing_required_count": 1,
+    "repair_status_counts": {
+      "SOURCE_NOT_FOUND_IN_CURRENT_INDEX": 1
+    },
+    "guideline_index_count": 1,
+    "textbook_index_count": 1,
+    "candidate_index_count": 0,
+    "evidence_row_count": 4014,
+    "candidate_row_count": 0
+  },
+  "gaps": [
+    {
+      "disease_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+      "disease_name": "隐匿性冠心病",
+      "pathway_element": "follow_up",
+      "required_relation": "has_follow_up",
+      "exact_evidence_count": 0,
+      "name_fallback_evidence_count": 0,
+      "same_disease_any_pathway_evidence_count": 7,
+      "candidate_relation_count": 0,
+      "repair_status": "SOURCE_NOT_FOUND_IN_CURRENT_INDEX",
+      "evidence_samples": [
+        {
+          "source_name": "冠心病双联抗血小板治疗中国专家共识.pdf",
+          "source_page": 6,
+          "pathway_element": "symptom_sign",
+          "evidence_text": "期 · · 中华心血管病杂志2021 年5 月第49 卷第5 Chin J Cardiol, May 2021, Vol. 49, No. 5 437 表9 探讨冠心病患者中DAPT疗程的临床RCT 主要结论 研究名称（发表年份） 研究人群 DAPT时长（月） PRODIGY（2012）［46］ SCAD和/或ACS患者，接受PCI（n=2 013） 6比24 24个月DAPT增加出血风险 EXCELLENT（2012）［47］ 接受PCI的冠心病患者（n=1 443） 6比12 6个月DAPT较12个月DAPT未"
+        },
+        {
+          "source_name": "《内科学（第10版）》.pdf",
+          "source_page": 272,
+          "pathway_element": "treatment_plan",
+          "evidence_text": "缺血性心肌病（ischemic cardiomyopathy，ICM）属于冠心病的一种特殊类型或晚期阶段，临床表现 为新发心衰或左心室功能障碍，可伴有各种心律失常，心脏扩大类似扩张型心肌病。其病理生理基础 是冠脉粥样硬化病变使心肌长期缺血、缺氧以至心肌细胞减少、坏死、心肌纤维化、心肌瘢痕形成。 【临床表现】 1. 充血型缺血性心肌病 （1） 心绞痛：常见症状之一。多有明确冠心病病史，且绝大多数有1 次以上心肌梗死病史。但心 绞痛并不是必备症状，有些仅表现为无症状性心肌缺血，直至出现充血型心衰。出现心绞痛病人随着 病"
+        },
+        {
+          "source_name": "《内科学（第10版）》.pdf",
+          "source_page": 273,
+          "pathway_element": "prognosis",
+          "evidence_text": "【诊断】 1. 发病特点 隐匿型冠心病（latent coronary heart disease）或无症状性冠心病是指没有心绞痛 症状，但有心肌缺血客观证据的冠心病，其心肌缺血ECG 表现可见于静息时，也可在负荷状态下才出 现，常为动态ECG 记录所发现，也可为各种影像学检查所证实。 2. 临床表现 可分为三种类型：①有心肌缺血客观证据，但无心绞痛症状；②曾有过心肌梗死病 史，现有心肌缺血客观证据，但无症状；③有心肌缺血发作，有时有症状，有时无症状，此类病人居多。 糖尿病病人无症状心肌缺血更多见。应及时发现这类病"
+        }
+      ],
+      "candidate_samples": []
+    }
+  ]
+}

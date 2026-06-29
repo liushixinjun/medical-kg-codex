@@ -1,0 +1,26 @@
+{
+  "delta_id": "20260628_测试库回填_textbook_backfill_2rels",
+  "target": "Neo4j测试库",
+  "source_batch_dir": "心血管内科文献集合/00_foundation_skeleton",
+  "delta_relations_add": "delta_relations_add.jsonl",
+  "relation_count": 2,
+  "relations": [
+    {
+      "id": "REL-DC94A019381A",
+      "source_code": "DIS-CARD-HF-AHF",
+      "relationType": "treated_by_medication",
+      "target_code": "MED-CARD-55157DA54154",
+      "clinical_review_status": "pending_clinical_review",
+      "formal_cdss_ready": false
+    },
+    {
+      "id": "REL-8E8493537C57",
+      "source_code": "DIS-CARD-VHD-MS",
+      "relationType": "treated_by_medication",
+      "target_code": "MED-CARD-TEXT-EE219280A7",
+      "clinical_review_status": "pending_clinical_review",
+      "formal_cdss_ready": false
+    }
+  ],
+  "safety_policy": "仅同步测试库工作版本；clinical_review_status=pending_clinical_review，formal_cdss_ready=false，不进入正式CDSS推荐层。"
+}

@@ -1,0 +1,181 @@
+﻿{
+  "all_node_count": [
+    {
+      "value": 26249
+    }
+  ],
+  "all_relation_count": [
+    {
+      "value": 53179
+    }
+  ],
+  "kg_node_count": [
+    {
+      "value": 26249
+    }
+  ],
+  "kg_relation_count": [
+    {
+      "value": 53179
+    }
+  ],
+  "non_kgnode_node_count": [
+    {
+      "value": 0
+    }
+  ],
+  "relation_touching_non_kgnode_count": [
+    {
+      "value": 0
+    }
+  ],
+  "top_non_kgnode_nodes": [],
+  "semantic_shell_relation_count": [
+    {
+      "bad_relations": 0
+    }
+  ],
+  "diagnosis_generic_direct_relation_count": [
+    {
+      "value": 0
+    }
+  ],
+  "technical_display_name_error_count": [
+    {
+      "value": 0
+    }
+  ],
+  "treatment_plan_actionability_error_count": [
+    {
+      "value": 0
+    }
+  ],
+  "medication_class_without_specific_count": [
+    {
+      "value": 0
+    }
+  ],
+  "label_metadata_mismatch_count": [
+    {
+      "value": 0
+    }
+  ],
+  "anticoagulant_specific_medications": [
+    {
+      "class_name": "抗凝药物",
+      "class_codes": [
+        "MED-CARD-TEXT-EE219280A7"
+      ],
+      "alias_sets": [
+        [
+          "抗凝剂"
+        ]
+      ],
+      "specific_count": 9,
+      "specifics": [
+        "肝素",
+        "华法林",
+        "低分子量肝素",
+        "阿哌沙班",
+        "普通肝素",
+        "利伐沙班",
+        "依度沙班",
+        "达比加群",
+        "艾多沙班"
+      ]
+    }
+  ],
+  "thrombolytic_specific_medications": [
+    {
+      "class_name": "溶栓药物",
+      "class_codes": [
+        "MED-CARD-TEXT-D07193A49C"
+      ],
+      "alias_sets": [
+        [
+          "纤溶药物"
+        ]
+      ],
+      "specific_count": 6,
+      "specifics": [
+        "尿激酶",
+        "链激酶",
+        "阿替普酶",
+        "瑞替普酶",
+        "组织型纤溶酶原激活物",
+        "替奈普酶"
+      ]
+    }
+  ],
+  "statin_specific_medications": [
+    {
+      "class_name": "他汀类药物",
+      "class_codes": [
+        "MED-CARD-DAE0F0B68F1D"
+      ],
+      "specific_count": 4,
+      "specifics": [
+        "辛伐他汀",
+        "瑞舒伐他汀",
+        "普伐他汀",
+        "阿托伐他汀"
+      ]
+    }
+  ],
+  "beta_blocker_specific_medications": [
+    {
+      "class_name": "β受体拮抗剂",
+      "class_codes": [
+        "MED-BETA-BLOCKER"
+      ],
+      "specific_count": 4,
+      "specifics": [
+        "卡维地洛",
+        "阿替洛尔",
+        "比索洛尔",
+        "美托洛尔"
+      ]
+    },
+    {
+      "class_name": "β受体阻滞剂",
+      "class_codes": [
+        "MED-CARD-36D5B18BD8D3"
+      ],
+      "specific_count": 4,
+      "specifics": [
+        "美托洛尔",
+        "比索洛尔",
+        "阿替洛尔",
+        "卡维地洛"
+      ]
+    }
+  ],
+  "thrombolysis_execution_links": [
+    {
+      "plan_name": "溶栓治疗",
+      "downstream": [
+        {
+          "target_type": "Medication",
+          "relation": "includes_medication",
+          "target": "溶栓药物"
+        }
+      ]
+    }
+  ],
+  "duplicate_type_name_count": [
+    {
+      "duplicate_pairs": 0
+    }
+  ],
+  "top_duplicate_type_names": [],
+  "clinical_review_status_counts": [
+    {
+      "status": "not_applicable",
+      "count": 25682
+    },
+    {
+      "status": "pending_clinical_review",
+      "count": 567
+    }
+  ]
+}

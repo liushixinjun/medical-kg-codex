@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 from collections import Counter
 from pathlib import Path
 from typing import Any
@@ -63,6 +64,34 @@ def read_jsonl_rows(path: Path) -> list[dict[str, Any]]:
     return rows
 
 
+def read_nodes_aliases(paths: list[Path]) -> dict[str, list[str]]:
+    aliases_by_code: dict[str, list[str]] = {}
+    for path in paths:
+        for row in read_jsonl_rows(path):
+            if row.get("entityType") != "Disease":
+                continue
+            code = str(row.get("code", "")).strip()
+            names: list[str] = []
+            for field in ("name", "preferred_name", "display_name", "name_en", "abbr"):
+                value = str(row.get(field) or "").strip()
+                if value:
+                    names.append(value)
+            aliases = row.get("aliases") or []
+            if isinstance(aliases, str):
+                aliases = [aliases]
+            for alias in aliases:
+                value = str(alias or "").strip()
+                if value:
+                    names.append(value)
+            if code:
+                deduped: list[str] = []
+                for name in names:
+                    if name not in deduped:
+                        deduped.append(name)
+                aliases_by_code[code] = deduped
+    return aliases_by_code
+
+
 def missing_required_rows(coverage_csv: Path) -> list[dict[str, str]]:
     rows = []
     for row in read_csv_rows(coverage_csv):
@@ -114,6 +143,63 @@ def candidate_matches(gap: dict[str, str], row: dict[str, str]) -> bool:
     if entity_name in GENERIC_ENTITY_NAMES:
         return False
     return True
+
+
+PATHWAY_KEYWORDS = {
+    "etiology": ("病因", "致病", "基因", "突变", "遗传", "沉积", "缺乏", "贮积", "aetiology", "etiology", "mutation"),
+    "symptom": ("症状", "表现", "乏力", "呼吸困难", "胸痛", "心悸", "晕厥", "黑矇", "水肿", "symptom", "presentation"),
+    "sign": ("体征", "低电压", "高电压", "杂音", "水肿", "掌跖角化", "卷发", "肥厚", "扩张", "sign", "physical"),
+    "diagnosis_criteria": ("诊断", "标准", "依据", "符合", "排除", "criteria", "diagnostic", "diagnosis"),
+    "treatment_plan": ("治疗", "管理", "推荐", "药物", "手术", "植入", "ICD", "management", "treatment"),
+    "prognosis": ("预后", "死亡", "风险", "结局", "生存", "猝死", "progressive", "outcome", "prognosis"),
+    "follow_up": ("随访", "复查", "监测", "定期", "长期管理", "follow-up", "follow up", "monitor"),
+}
+
+
+def fulltext_candidates(
+    gap: dict[str, str],
+    *,
+    clean_text_dirs: list[Path],
+    aliases_by_code: dict[str, list[str]],
+    window_chars: int = 420,
+    limit: int = 5,
+) -> list[dict[str, Any]]:
+    disease_code = str(gap.get("disease_code", "")).strip()
+    aliases = aliases_by_code.get(disease_code) or [str(gap.get("disease_name", "")).strip()]
+    aliases = [alias for alias in aliases if len(alias) >= 2]
+    keywords = PATHWAY_KEYWORDS.get(str(gap.get("pathway_element", "")).strip(), ())
+    if not aliases or not keywords:
+        return []
+    candidates: list[dict[str, Any]] = []
+    seen: set[tuple[str, int, str]] = set()
+    for clean_dir in clean_text_dirs:
+        if not clean_dir.exists():
+            continue
+        for path in sorted(clean_dir.glob("*.clean.txt")):
+            text = path.read_text(encoding="utf-8-sig", errors="ignore")
+            for alias in aliases:
+                for match in re.finditer(re.escape(alias), text, flags=re.IGNORECASE):
+                    start = max(0, match.start() - window_chars)
+                    end = min(len(text), match.end() + window_chars)
+                    window = " ".join(text[start:end].split())
+                    hit_keywords = [kw for kw in keywords if kw.lower() in window.lower()]
+                    if not hit_keywords or is_noise(window):
+                        continue
+                    key = (path.name, start, alias)
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    candidates.append(
+                        {
+                            "clean_text_file": path.name,
+                            "matched_alias": alias,
+                            "matched_keywords": hit_keywords[:8],
+                            "evidence_text": clean_text(window, 420),
+                        }
+                    )
+                    if len(candidates) >= limit:
+                        return candidates
+    return candidates
 
 
 def sample_evidence(rows: list[dict[str, Any]], limit: int = 3) -> list[dict[str, Any]]:
@@ -180,6 +266,8 @@ def probe_required_gaps(
     guideline_jsonl_paths: list[Path],
     textbook_jsonl_paths: list[Path],
     candidate_csv_paths: list[Path],
+    clean_text_dirs: list[Path] | None = None,
+    nodes_jsonl_paths: list[Path] | None = None,
 ) -> dict[str, Any]:
     gaps = missing_required_rows(coverage_csv)
     evidence_rows: list[dict[str, Any]] = []
@@ -188,6 +276,8 @@ def probe_required_gaps(
     candidate_rows: list[dict[str, str]] = []
     for path in candidate_csv_paths:
         candidate_rows.extend(read_csv_rows(path))
+    clean_text_dirs = clean_text_dirs or []
+    aliases_by_code = read_nodes_aliases(nodes_jsonl_paths or [])
 
     output_gaps: list[dict[str, Any]] = []
     status_counter: Counter[str] = Counter()
@@ -200,7 +290,14 @@ def probe_required_gaps(
         exact = [row for row in same_code if evidence_pathway_matches(gap, row)]
         name_fallback = [row for row in same_name_drift if evidence_pathway_matches(gap, row)]
         candidates = [row for row in candidate_rows if candidate_matches(gap, row)]
+        fulltext = fulltext_candidates(
+            gap,
+            clean_text_dirs=clean_text_dirs,
+            aliases_by_code=aliases_by_code,
+        )
         status = repair_status_for(len(exact), len(name_fallback), len(candidates))
+        if status == "SOURCE_NOT_FOUND_IN_CURRENT_INDEX" and fulltext:
+            status = "FULLTEXT_EVIDENCE_REVIEW_REQUIRED"
         status_counter[status] += 1
         output_gaps.append(
             {
@@ -212,9 +309,11 @@ def probe_required_gaps(
                 "name_fallback_evidence_count": len(name_fallback),
                 "same_disease_any_pathway_evidence_count": len(same_code),
                 "candidate_relation_count": len(candidates),
+                "fulltext_candidate_count": len(fulltext),
                 "repair_status": status,
                 "evidence_samples": sample_evidence(exact or name_fallback or same_code),
                 "candidate_samples": sample_candidates(candidates),
+                "fulltext_samples": fulltext,
             }
         )
 
@@ -226,6 +325,7 @@ def probe_required_gaps(
             "guideline_index_count": len(guideline_jsonl_paths),
             "textbook_index_count": len(textbook_jsonl_paths),
             "candidate_index_count": len(candidate_csv_paths),
+            "clean_text_dir_count": len(clean_text_dirs),
             "evidence_row_count": len(evidence_rows),
             "candidate_row_count": len(candidate_rows),
         },
@@ -245,8 +345,10 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "name_fallback_evidence_count",
         "same_disease_any_pathway_evidence_count",
         "candidate_relation_count",
+        "fulltext_candidate_count",
         "evidence_sample_text",
         "candidate_sample_names",
+        "fulltext_sample_text",
     ]
     with path.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
@@ -259,6 +361,9 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
             flat["candidate_sample_names"] = " | ".join(
                 str(sample.get("entity_name", "")) for sample in row.get("candidate_samples", [])
             )
+            flat["fulltext_sample_text"] = " | ".join(
+                str(sample.get("evidence_text", "")) for sample in row.get("fulltext_samples", [])
+            )
             writer.writerow({field: flat.get(field, "") for field in fieldnames})
 
 
@@ -268,6 +373,8 @@ def main() -> None:
     parser.add_argument("--guideline-jsonl", action="append", type=Path, default=[])
     parser.add_argument("--textbook-jsonl", action="append", type=Path, default=[])
     parser.add_argument("--candidate-csv", action="append", type=Path, default=[])
+    parser.add_argument("--clean-text-dir", action="append", type=Path, default=[])
+    parser.add_argument("--nodes-jsonl", action="append", type=Path, default=[])
     parser.add_argument("--out-json", type=Path, required=True)
     parser.add_argument("--out-csv", type=Path, required=True)
     args = parser.parse_args()
@@ -277,6 +384,8 @@ def main() -> None:
         guideline_jsonl_paths=args.guideline_jsonl,
         textbook_jsonl_paths=args.textbook_jsonl,
         candidate_csv_paths=args.candidate_csv,
+        clean_text_dirs=args.clean_text_dir,
+        nodes_jsonl_paths=args.nodes_jsonl,
     )
     args.out_json.parent.mkdir(parents=True, exist_ok=True)
     args.out_json.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8-sig")

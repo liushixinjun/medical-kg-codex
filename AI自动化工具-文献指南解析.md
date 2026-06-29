@@ -5,7 +5,7 @@ description: Use when starting a specialty, disease-category, or single-disease 
 
 # AI自动化工具-文献指南解析
 
-版本：V1.25  
+版本：V1.26  
 Schema：`专科知识图谱Schema标准.md` V1.7  
 用途：从原始医学文献生成可审计、可合并的专科知识图谱标准数据实例。
 
@@ -41,6 +41,7 @@ Schema：`专科知识图谱Schema标准.md` V1.7
 | V1.23 | 2026-06-27 22:43:11 | 新增重复问题升级机制、证据回捞候选防误判规则、大图谱数据增量优先规则和版本管理边界：同类问题反复出现必须升级为测试/审计/SKILL硬规则；Trae/外部模型候选不得直接写库；大 JSONL 快照不得作为日常小修复的唯一写入对象；代码文档进版本管理，大图谱快照以 manifest/hash/delta 管理 |
 | V1.24 | 2026-06-28 08:43:37 | 新增 Neo4j delta 导入语义键去重规则和 GitHub 凭据安全规则：增量关系导入必须先按 `(source.code, relationType, target.code)` 查重/合并，不得仅按关系 `id` MERGE；GitHub 不得使用明文账号密码自动化，必须使用 SSH、浏览器授权或细粒度 PAT |
 | V1.25 | 2026-06-28 18:48:43 | 新增 required 缺口闭环冲刺规则、策展补丁规则、delta 节点 upsert 规则和新病种启动预检规则：required 缺口必须先回查指南/教材 evidence index；可修复项必须写入本地 JSONL 并重跑审计；没有明确随访/诊断/治疗原文不得硬补；delta 包必须同时提供节点 upsert、关系 add、manifest 和可导入文件清单；新病种开工前必须运行预检或等价清单 |
+| V1.26 | 2026-06-29 08:57:53 | 新增临床使用效果审核规则：`pending_clinical_review` 不得要求专家逐条查看图谱边，必须生成疾病级、场景级和药师专项的简化审核包；边级明细只作为证据追溯；AI 不得把 pending 自动改成专家已确认；正式 CDSS 推荐层必须以审核决策表回写为准 |
 
 ## 1. 核心原则
 
@@ -50,6 +51,8 @@ Schema：`专科知识图谱Schema标准.md` V1.7
 - 每条核心知识必须能追溯到原始文献、章节/页码或文本位置及原文片段。
 - 文本不合格、疾病归属不明确或 Schema 无法承载时，阻断并报告，不猜测入图。
 - 各批次独立抽取、独立验收；验收通过后才能合并到标准主图谱。
+- `pending_clinical_review` 是正式 CDSS 推荐层阻断标记，不是让临床专家逐条查看图谱关系的工作方式。每批必须把复杂图谱转换为疾病级、场景级、药师专项的简化审核表，专家从临床使用效果和风险角度确认。
+- AI 可以整理审核包、证据链和建议修复项，但不得自行把 `clinical_review_status=pending_clinical_review` 批量改为 `clinical_approved`。
 
 ### 1.1 满分执行目标
 
@@ -1474,11 +1477,25 @@ Required 缺口闭环冲刺规则：
 - 没有明确原文支持的 required 项不得硬补。例如仅出现“及时发现/及早治疗”不能自动生成“随访方案”；必须继续阻断正式 CDSS。
 - 策展补丁应用后必须重跑本地审计；至少验证 required 缺口变化、target_name_or_alias_match、duplicate_code、duplicate_semantic_relation、semantic_shell、technical_display_name、local_path_pollution。
 
+临床使用效果审核规则：
+
+- 每批图谱生成或修复后，必须同时生成两类审核资料：
+  - 详细追溯包：`clinical_review_items.csv`、`clinical_review_summary.json`，用于数据团队回写和证据追溯。
+  - 简化使用效果审核包：`00_审核说明_先看这个.md`、`01_疾病级使用效果审核表.csv`、`02_场景级推荐审核卡.csv`、`03_药师专项审核清单.csv`、`clinical_effect_review_summary.json`，用于临床专家和药师快速审核。
+- 临床专家主入口不是 Neo4j 网络图，也不是逐条边审核；主入口必须是：
+  - 疾病级：判断该病种图谱能否作为辅助诊疗参考、整体风险等级、是否可试用。
+  - 场景级：按治疗方案、药物治疗、手术/操作、随访、临床路径等场景确认是否符合临床使用效果。
+  - 药师专项：药物标准名/别名、剂量、禁忌、相互作用必须单独给药师审核。
+- 边级 `clinical_review_items.csv` 只用于追溯到具体关系、证据、字段缺口和回写脚本，不得作为专家日常主审核界面。
+- 专家审核表建议使用明确枚举：`可试用`、`仅参考`、`需修改`、`禁用`。只有审核表中 reviewer_name、reviewer_role、reviewed_at、decision 和 comment 完整，且 decision 允许回写时，脚本才可把对应推荐关系更新为 `clinical_approved` 或等价状态。
+- 使用效果审核只能确认“该场景是否可用于辅助诊疗参考”；不能替代药物剂量、禁忌、相互作用、推荐等级/证据等级、适用人群、排除条件等字段的结构化补全。
+- 若 required 缺口为 0，但仍存在 `pending_clinical_review` 或 CDSS 推荐字段缺口，本批只能进入测试库工作版本，不得进入正式 CDSS 推荐层。
+
 新病种启动预检规则：
 
 - 每次开始新专科、新疾病大类或单病种前，必须确认：顶层学科、scope_type、scope_target、PDF/指南来源路径、教材/基础骨架路径、本批输出路径、Schema 主文件、SKILL 主文件。
 - 推荐运行 `scripts/preflight_new_disease_batch.py` 或按同等字段生成预检记录。预检失败不得开始解析 PDF。
-- 每批生成后必须主动输出可导入图谱文件：`nodes_final.jsonl`、`relations_final.jsonl`、`quality_gate_summary.json`、`delta_manifest.json`、`delta_nodes_upsert.jsonl`、`delta_relations_add.jsonl`、Claude/临床审核包路径。
+- 每批生成后必须主动输出可导入图谱文件：`nodes_final.jsonl`、`relations_final.jsonl`、`quality_gate_summary.json`、`delta_manifest.json`、`delta_nodes_upsert.jsonl`、`delta_relations_add.jsonl`、详细追溯审核包路径、临床使用效果审核包路径、Claude/外部模型审核包路径。
 
 ## 17. 受控合并
 

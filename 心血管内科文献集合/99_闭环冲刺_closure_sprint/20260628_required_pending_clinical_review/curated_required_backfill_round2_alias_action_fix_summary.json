@@ -1,0 +1,49 @@
+﻿{
+  "spec_id": "curated_required_backfill_round2_alias_action_fix_20260628",
+  "batch_count": 2,
+  "added_nodes": 1,
+  "updated_nodes": 16,
+  "added_relations": 1,
+  "batches": [
+    {
+      "batch_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\BATCH-CARD-CAD-20260623-001",
+      "added_nodes": 0,
+      "updated_nodes": 1,
+      "added_relations": 0,
+      "added_node_codes": [],
+      "updated_node_codes": [
+        "FU-CARD-CAD-SILENT-ISCHEMIA-ANNUAL-FOLLOW-UP"
+      ],
+      "added_relation_ids": []
+    },
+    {
+      "batch_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\BATCH-CARD-CM-20260622-001",
+      "added_nodes": 1,
+      "updated_nodes": 15,
+      "added_relations": 1,
+      "added_node_codes": [
+        "PATH-CARD-CM-ATRIAL-AF-STROKE-RISK"
+      ],
+      "updated_node_codes": [
+        "SIGN-CARD-CM-ACM-VENTRICULAR-ARRHYTHMIA",
+        "DXC-CARD-CM-ABVC-PADUA-BIVENTRICULAR",
+        "DXC-CARD-CM-ALVC-PADUA-LV",
+        "PROG-CARD-CM-ACM-SCD-HF-PROGRESSION",
+        "FU-CARD-CM-ACM-ROUTINE-FOLLOW-UP",
+        "ETI-CARD-CM-AMYLOID-AL-ATTR-DEPOSITION",
+        "ETI-CARD-CM-ATRIAL-FIBROSIS-REMODELING",
+        "SYM-CARD-CM-ATRIAL-PALPITATION-DYSPNEA",
+        "SIGN-CARD-CM-ATRIAL-AF-ATRIAL-DYSFUNCTION",
+        "DXC-CARD-CM-ATRIAL-EHRA-CLASS",
+        "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+        "SYM-CARD-CM-FABRY-MULTISYSTEM-SYMPTOMS",
+        "DXC-CARD-CM-FABRY-ENZYME-GENE-EMB",
+        "PROG-CARD-CM-FABRY-EARLY-DX-TREATMENT",
+        "FU-CARD-CM-NDLVCM-LIFELONG-SCD-RISK"
+      ],
+      "added_relation_ids": [
+        "REL-8D351EEE8FC92860"
+      ]
+    }
+  ]
+}

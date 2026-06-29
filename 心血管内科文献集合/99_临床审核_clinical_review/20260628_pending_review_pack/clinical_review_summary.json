@@ -1,0 +1,21 @@
+﻿{
+  "review_item_count": 298,
+  "batch_counts": {
+    "BATCH-CARD-CAD-20260623-001": 215,
+    "BATCH-CARD-CM-20260622-001": 83
+  },
+  "missing_field_counts": {
+    "applicable_population": 298,
+    "clinical_review_status": 298,
+    "clinical_rule_or_clinical_pathway": 265,
+    "exclusion_or_contraindication": 298,
+    "recommendation_class_and_evidence_level": 255,
+    "medication_contraindication": 141,
+    "medication_dosage": 141,
+    "medication_interaction": 141,
+    "medication_aliases": 13,
+    "evidence_source_chain": 33
+  },
+  "review_csv": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\99_临床审核_clinical_review\\20260628_pending_review_pack\\clinical_review_items.csv",
+  "decision_rule": "只有 clinical_review_decision=approve 且 reviewer_name/reviewer_role/reviewed_at 完整的行可回写为 clinical_approved。"
+}

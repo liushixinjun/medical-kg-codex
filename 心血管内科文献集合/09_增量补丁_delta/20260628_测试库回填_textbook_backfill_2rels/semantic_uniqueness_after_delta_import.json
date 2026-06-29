@@ -1,0 +1,54 @@
+{
+  "target_relation_uniqueness": [
+    {
+      "source_code": "DIS-CARD-HF-AHF",
+      "target_code": "MED-CARD-55157DA54154",
+      "relation_count": 1,
+      "relation_ids": [
+        "REL-DC94A019381A"
+      ],
+      "evidence_counts": [
+        2
+      ]
+    },
+    {
+      "source_code": "DIS-CARD-VHD-MS",
+      "target_code": "MED-CARD-TEXT-EE219280A7",
+      "relation_count": 1,
+      "relation_ids": [
+        "REL-8E8493537C57"
+      ],
+      "evidence_counts": [
+        4
+      ]
+    }
+  ],
+  "global_duplicate_semantic_relation_count": [
+    {
+      "duplicate_semantic_keys": 0,
+      "redundant_relationship_count": 0
+    }
+  ],
+  "target_relations_detail": [
+    {
+      "source_name": "二尖瓣狭窄",
+      "relationType": "treated_by_medication",
+      "target_name": "抗凝药物",
+      "id": "REL-8E8493537C57",
+      "clinical_review_status": "pending_clinical_review",
+      "formal_cdss_ready": false,
+      "evidence_count": 4,
+      "source_quality": "textbook_evidence_backfill_candidate"
+    },
+    {
+      "source_name": "急性心力衰竭",
+      "relationType": "treated_by_medication",
+      "target_name": "硝酸酯类药物",
+      "id": "REL-DC94A019381A",
+      "clinical_review_status": "pending_clinical_review",
+      "formal_cdss_ready": false,
+      "evidence_count": 2,
+      "source_quality": "textbook_evidence_backfill_candidate"
+    }
+  ]
+}

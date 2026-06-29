@@ -1,16 +1,19 @@
 import unittest
+import re
 from pathlib import Path
 
 
 class NoHardcodedSecretsTests(unittest.TestCase):
     def test_repository_text_files_do_not_contain_known_secrets(self):
         root = Path(__file__).resolve().parents[1]
-        forbidden = {
-            "zysoft" + "@" + "2024",
-            "liu3348811" + ".0" + "@",
+        forbidden_literals = {
             "ghp" + "_",
             "github" + "_pat" + "_",
         }
+        forbidden_patterns = [
+            re.compile(r"NEO4J_PASSWORD\s*=\s*['\"][^'\"<\$][^'\"]+['\"]", re.IGNORECASE),
+            re.compile(r"https://[^\s/:]+:[^\s@]+@github\.com", re.IGNORECASE),
+        ]
         excluded_parts = {
             ".git",
             "__pycache__",
@@ -33,8 +36,11 @@ class NoHardcodedSecretsTests(unittest.TestCase):
                 text = path.read_text(encoding="utf-8-sig")
             except UnicodeDecodeError:
                 continue
-            for secret in forbidden:
+            for secret in forbidden_literals:
                 if secret in text:
+                    offenders.append(str(path.relative_to(root)))
+            for pattern in forbidden_patterns:
+                if pattern.search(text):
                     offenders.append(str(path.relative_to(root)))
         self.assertEqual(offenders, [])
 

@@ -1,0 +1,31 @@
+﻿{
+  "id": "DELTA-CAD-CM-REQUIRED-GAP-BACKFILL-20260628",
+  "purpose": "CAD/CM required pathway gap curated backfill, work-version only",
+  "formal_cdss_ready": false,
+  "node_count": 5,
+  "relation_count": 8,
+  "node_codes": [
+    "DXC-CARD-CAD-CCS-CURATED-20260628",
+    "DXC-CARD-CAD-OLD-MI-CURATED-20260628",
+    "DXC-CARD-CAD-SILENT-ISCHEMIA-CURATED-20260628",
+    "DXC-CARD-CAD-UA-CURATED-20260628",
+    "EXAM-HOLTER"
+  ],
+  "relation_ids": [
+    "REL-1F43E28B5980CC65",
+    "REL-21701AA99AD080AE",
+    "REL-422369731A54924C",
+    "REL-4F6DA13ADFABE55D",
+    "REL-638AC70B7426B47C",
+    "REL-B777C7CD9922F02B",
+    "REL-C2C1E9AB204D0190",
+    "REL-FF77622686E61454"
+  ],
+  "local_audit_after_backfill": {
+    "CAD_required_pathway_missing_count": 1,
+    "CAD_target_match_failure_count": 0,
+    "CM_required_pathway_missing_count": 25,
+    "CM_target_match_failure_count": 0
+  },
+  "import_command_requires": "NEO4J_PASSWORD environment variable; use scripts/import_neo4j_delta.py with --delta-nodes-upsert and --delta-relations-add --replace-semantic-edges"
+}

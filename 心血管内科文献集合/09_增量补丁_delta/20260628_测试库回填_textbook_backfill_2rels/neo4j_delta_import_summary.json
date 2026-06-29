@@ -1,0 +1,39 @@
+{
+  "precheck": [
+    {
+      "id": "REL-DC94A019381A",
+      "source_found": "DIS-CARD-HF-AHF",
+      "target_found": "MED-CARD-55157DA54154",
+      "existing_count": 1,
+      "existing_relation_ids": []
+    },
+    {
+      "id": "REL-8E8493537C57",
+      "source_found": "DIS-CARD-VHD-MS",
+      "target_found": "MED-CARD-TEXT-EE219280A7",
+      "existing_count": 1,
+      "existing_relation_ids": []
+    }
+  ],
+  "merged_count": 2,
+  "postcheck": [
+    {
+      "id": "REL-DC94A019381A",
+      "relationType": "treated_by_medication",
+      "source_name": "急性心力衰竭",
+      "target_name": "硝酸酯类药物",
+      "clinical_review_status": "pending_clinical_review",
+      "formal_cdss_ready": false,
+      "evidence_count": 2
+    },
+    {
+      "id": "REL-8E8493537C57",
+      "relationType": "treated_by_medication",
+      "source_name": "二尖瓣狭窄",
+      "target_name": "抗凝药物",
+      "clinical_review_status": "pending_clinical_review",
+      "formal_cdss_ready": false,
+      "evidence_count": 4
+    }
+  ]
+}

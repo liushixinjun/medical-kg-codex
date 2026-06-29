@@ -73,7 +73,20 @@ def normalize_node(node: dict[str, Any], batch_defaults: dict[str, Any]) -> dict
         "formal_cdss_ready": bool(node.get("formal_cdss_ready") or False),
         "source_quality": node.get("source_quality") or "curated_required_gap_backfill",
     }
-    for optional in ("description", "name_en", "abbr", "backfill_reason", "curation_note"):
+    for optional in (
+        "description",
+        "name_en",
+        "abbr",
+        "backfill_reason",
+        "curation_note",
+        "dosage",
+        "dose",
+        "dose_range",
+        "standard_dosage",
+        "drug_interactions",
+        "interaction",
+        "interactions",
+    ):
         if optional in node:
             normalized[optional] = node[optional]
     return normalized
@@ -154,6 +167,25 @@ def normalize_relation(relation: dict[str, Any], source: dict[str, Any], target:
     normalized.setdefault("recommendation_class", "N/A")
     normalized.setdefault("evidence_level", "N/A")
     normalized.setdefault("confidence", 0.86)
+    for optional in (
+        "applicable_population",
+        "applicability",
+        "patient_population",
+        "patient_scope",
+        "patient_state",
+        "exclusion_criteria",
+        "excluded_population",
+        "exclusion_conditions",
+        "contraindication",
+        "contraindications",
+        "clinical_rule_or_clinical_pathway",
+        "recommendation_context",
+        "medication_contraindication",
+        "medication_dosage",
+        "medication_interaction",
+    ):
+        if optional in relation:
+            normalized[optional] = relation[optional]
     return normalized
 
 

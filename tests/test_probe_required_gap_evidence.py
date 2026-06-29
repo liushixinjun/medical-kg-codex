@@ -149,6 +149,68 @@ class ProbeRequiredGapEvidenceTests(unittest.TestCase):
             self.assertEqual(row["name_fallback_evidence_count"], 1)
             self.assertEqual(row["repair_status"], "EVIDENCE_MAPPING_REVIEW_REQUIRED")
 
+    def test_marks_fulltext_review_required_when_evidence_index_missed_source_text(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            coverage = root / "coverage.csv"
+            nodes = root / "nodes.jsonl"
+            clean_dir = root / "clean"
+            clean_dir.mkdir()
+
+            with coverage.open("w", encoding="utf-8-sig", newline="") as handle:
+                writer = csv.DictWriter(
+                    handle,
+                    fieldnames=[
+                        "disease_code",
+                        "disease_name",
+                        "pathway_element",
+                        "applicability_status",
+                        "coverage_status",
+                    ],
+                )
+                writer.writeheader()
+                writer.writerow(
+                    {
+                        "disease_code": "DIS-FULLTEXT",
+                        "disease_name": "全文漏抽病",
+                        "pathway_element": "symptom",
+                        "applicability_status": "required",
+                        "coverage_status": "missing",
+                    }
+                )
+
+            nodes.write_text(
+                json.dumps(
+                    {
+                        "code": "DIS-FULLTEXT",
+                        "name": "全文漏抽病",
+                        "entityType": "Disease",
+                        "aliases": ["漏抽病别名"],
+                    },
+                    ensure_ascii=False,
+                )
+                + "\n",
+                encoding="utf-8-sig",
+            )
+            (clean_dir / "DOC-1.clean.txt").write_text(
+                "教材正文提示漏抽病别名的主要症状包括呼吸困难、心悸和活动耐量下降。",
+                encoding="utf-8-sig",
+            )
+
+            result = probe_required_gaps(
+                coverage_csv=coverage,
+                guideline_jsonl_paths=[],
+                textbook_jsonl_paths=[],
+                candidate_csv_paths=[],
+                clean_text_dirs=[clean_dir],
+                nodes_jsonl_paths=[nodes],
+            )
+
+            row = result["gaps"][0]
+            self.assertEqual(row["repair_status"], "FULLTEXT_EVIDENCE_REVIEW_REQUIRED")
+            self.assertEqual(row["fulltext_candidate_count"], 1)
+            self.assertIn("呼吸困难", row["fulltext_samples"][0]["evidence_text"])
+
 
 if __name__ == "__main__":
     unittest.main()

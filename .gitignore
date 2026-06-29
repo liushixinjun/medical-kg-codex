@@ -34,7 +34,7 @@ __pycache__/
 心血管内科文献集合/00_foundation_skeleton/
 心血管内科文献集合/BATCH-*/
 心血管内科文献集合/99_全局质量体检_global_quality_audit/
-心血管内科文献集合/09_增量补丁_delta/
+# Delta packages are small, auditable delivery artifacts and should be tracked.
 
 # Local application/cache folders
 .agents/
