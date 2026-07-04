@@ -1,0 +1,91 @@
+{
+  "created_at": "2026-06-29 23:15:28",
+  "repair_scope": [
+    "BATCH-CARD-CAD-20260623-001",
+    "BATCH-CARD-CM-20260622-001"
+  ],
+  "policy": "confirmed_wrong_delete; conditional_valid_relation_add_conditions; polluted_definition_replace_directly",
+  "batch_results": [
+    {
+      "batch_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\BATCH-CARD-CAD-20260623-001",
+      "batch_id": "BATCH-CARD-CAD-20260623-001",
+      "summary": {
+        "updated_polluted_definition_nodes": 0,
+        "updated_canonical_medication_nodes": 0,
+        "deleted_invalid_thrombolysis_relations": 0,
+        "conditioned_acs_reperfusion_relations": 0,
+        "conditioned_arrhythmia_plan_relations": 0,
+        "deleted_hcm_pci_relations": 0,
+        "retargeted_hcm_ccb_relations": 0,
+        "retargeted_synonym_medication_relations": 0,
+        "removed_duplicate_semantic_relations": 0,
+        "removed_orphan_synonym_nodes": 0
+      },
+      "operations": {
+        "updated_nodes": [],
+        "deleted_node_codes": [],
+        "deleted_relation_ids": [],
+        "upsert_relations": []
+      },
+      "input_node_count": 8444,
+      "output_node_count": 8444,
+      "input_relation_count": 28682,
+      "output_relation_count": 28682
+    },
+    {
+      "batch_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\BATCH-CARD-CM-20260622-001",
+      "batch_id": "BATCH-CARD-CM-20260622-001",
+      "summary": {
+        "updated_polluted_definition_nodes": 0,
+        "updated_canonical_medication_nodes": 0,
+        "deleted_invalid_thrombolysis_relations": 0,
+        "conditioned_acs_reperfusion_relations": 0,
+        "conditioned_arrhythmia_plan_relations": 0,
+        "deleted_hcm_pci_relations": 0,
+        "retargeted_hcm_ccb_relations": 0,
+        "retargeted_synonym_medication_relations": 0,
+        "removed_duplicate_semantic_relations": 0,
+        "removed_orphan_synonym_nodes": 0
+      },
+      "operations": {
+        "updated_nodes": [],
+        "deleted_node_codes": [],
+        "deleted_relation_ids": [],
+        "upsert_relations": []
+      },
+      "input_node_count": 5656,
+      "output_node_count": 5656,
+      "input_relation_count": 17391,
+      "output_relation_count": 17391
+    }
+  ],
+  "merged_operation_counts": {
+    "updated_nodes": 0,
+    "deleted_node_codes": 0,
+    "deleted_relation_ids": 0,
+    "upsert_relations": 0
+  },
+  "server_apply": {
+    "deleted_relationships": 0,
+    "merged_nodes": 0,
+    "merged_relations": 0,
+    "deleted_orphan_nodes": 0
+  },
+  "server_semantic_cleanup": {
+    "deleted_invalid_thrombolysis_semantic_edges": 0,
+    "deleted_hcm_pci_semantic_edges": 0
+  },
+  "server_synonym_merge": {
+    "moved_incoming_synonym_relations": 4,
+    "moved_outgoing_synonym_relations": 183,
+    "deleted_duplicate_synonym_nodes": 2
+  },
+  "server_targeted_verification": {
+    "cm_polluted_definition_count": 0,
+    "invalid_thrombolysis_relation_count": 0,
+    "hcm_pci_relation_count": 0,
+    "hcm_broad_ccb_relation_count": 0,
+    "hcm_ndhp_ccb_conditioned_count": 1,
+    "dcm_beta_synonym_duplicate_relation_count": 0
+  }
+}

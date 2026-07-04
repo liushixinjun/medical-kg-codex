@@ -86,6 +86,38 @@ def _paragraphs(body: str) -> list[str]:
     return result
 
 
+def _iter_text_units(text: str, extension: str):
+    page_pattern = re.compile(
+        r"<<<PAGE page=(\d+) class=([^>]+)>>>(.*?)(?=<<<PAGE page=|\Z)", re.S
+    )
+    section_pattern = re.compile(
+        r"<<<SECTION section_id=([^\s>]+)(?:\s+title=([^>]+))?>>>(.*?)(?=<<<SECTION\s+section_id=|\Z)",
+        re.S,
+    )
+    if extension == ".pdf" or page_pattern.search(text):
+        for page_match in page_pattern.finditer(text):
+            yield {
+                "source_page": int(page_match.group(1)),
+                "page_class": page_match.group(2),
+                "section_id": "",
+                "source_section": "",
+                "body": page_match.group(3),
+            }
+        return
+    for ordinal, section_match in enumerate(section_pattern.finditer(text), start=1):
+        section_id = section_match.group(1)
+        title = section_match.group(2) or f"SECTION_{ordinal}"
+        body = section_match.group(3)
+        if body.strip():
+            yield {
+                "source_page": None,
+                "page_class": "body",
+                "section_id": section_id,
+                "source_section": title,
+                "body": body,
+            }
+
+
 def _is_navigation_like(paragraph: str) -> bool:
     """Exclude table-of-contents/index lines that contain disease names but no clinical assertion."""
     text = paragraph.strip()
@@ -129,11 +161,8 @@ def extract_guideline_evidence(batch_dir: Path) -> dict:
     included = [
         row
         for row in manifest
-        if row.get("inclusion_status") == "included" and row.get("extension", "").lower() == ".pdf"
+        if row.get("inclusion_status") == "included" and row.get("extension", "").lower() in {".pdf", ".docx"}
     ]
-    page_pattern = re.compile(
-        r"<<<PAGE page=(\d+) class=([^>]+)>>>(.*?)(?=<<<PAGE page=|\Z)", re.S
-    )
     evidence_rows: list[dict] = []
     by_disease: dict[str, int] = {}
     by_document: dict[str, int] = {}
@@ -142,15 +171,16 @@ def extract_guideline_evidence(batch_dir: Path) -> dict:
         if not clean_path.is_file():
             continue
         text = clean_path.read_text(encoding="utf-8-sig")
+        extension = document.get("extension", "").lower()
         version_match = re.search(r"(?:19|20)\d{2}", document.get("file_name", ""))
         source_version = document.get("source_version", "") or (version_match.group(0) if version_match else "N/A")
         ordinal = 0
-        for page_match in page_pattern.finditer(text):
-            page = int(page_match.group(1))
-            page_class = page_match.group(2)
+        for unit in _iter_text_units(text, extension):
+            page = unit["source_page"]
+            page_class = unit["page_class"]
             if page_class in {"contents", "index", "copyright", "blank", "cover"}:
                 continue
-            for paragraph in _paragraphs(page_match.group(3)):
+            for paragraph in _paragraphs(unit["body"]):
                 if len(paragraph) < 8:
                     continue
                 if _is_reference_like(paragraph):
@@ -166,7 +196,10 @@ def extract_guideline_evidence(batch_dir: Path) -> dict:
                 content_hash = hashlib.sha256(paragraph.encode("utf-8")).hexdigest().upper()
                 for disease in matched_diseases:
                     ordinal += 1
-                    segment_id = f'SEG-{document["document_id"]}-{page}-GL-{ordinal:05d}-{disease["disease_code"].split("-")[-1]}'
+                    if unit.get("section_id"):
+                        segment_id = f'{unit["section_id"]}-GL-{ordinal:05d}-{disease["disease_code"].split("-")[-1]}'
+                    else:
+                        segment_id = f'SEG-{document["document_id"]}-{page}-GL-{ordinal:05d}-{disease["disease_code"].split("-")[-1]}'
                     evidence_id = f"EVD-{content_hash[:20]}-{disease['disease_code'].split('-')[-1]}"
                     pathway = _pathway_element(paragraph)
                     evidence_rows.append(

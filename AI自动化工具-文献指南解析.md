@@ -5,7 +5,7 @@ description: Use when starting a specialty, disease-category, or single-disease 
 
 # AI自动化工具-文献指南解析
 
-版本：V1.28  
+版本：V1.33  
 Schema：`专科知识图谱Schema标准.md` V1.7  
 用途：从原始医学文献生成可审计、可合并的专科知识图谱标准数据实例。
 
@@ -44,6 +44,11 @@ Schema：`专科知识图谱Schema标准.md` V1.7
 | V1.26 | 2026-06-29 08:57:53 | 新增临床使用效果审核规则：`pending_clinical_review` 不得要求专家逐条查看图谱边，必须生成疾病级、场景级和药师专项的简化审核包；边级明细只作为证据追溯；AI 不得把 pending 自动改成专家已确认；正式 CDSS 推荐层必须以审核决策表回写为准 |
 | V1.27 | 2026-06-29 14:39:49 | 新增多智能体协作与 Trae 前端审核边界：Trae 可负责审核页面、候选清单、OCR/术语辅助和结果导出；不得直接写 Neo4j、不得直接改正式 JSONL、不得自动批准 pending；Codex 负责回写脚本、质量门禁、Neo4j 导入和最终上线判定 |
 | V1.28 | 2026-06-29 14:58:40 | 修复新批次启动版本留痕规则：`batch_config.json` 中 Schema/SKILL 版本必须从主文档当前 `版本：Vx.x` 读取，不得硬编码旧版本；新批次预检和准备后必须复核版本号、纳入文件数和纳入文件清单 |
+| V1.29 | 2026-06-29 23:15:28 | 新增临床安全直接修复规则：已确认错误关系不得进入冻结/候选包，必须直接删除、改挂或补条件；Neo4j 遗留边若缺失或截断标准 `id`，必须按 `(source.code, relationType, target.name/code)` 语义条件清理；同义药物重复节点即使不是孤儿，也必须先迁移入边/出边到标准实体，再删除重复节点；修复后必须重跑本地回归、目标验证和服务器全局硬闸门 |
+| V1.30 | 2026-06-30 10:44:51 | 修复 Neo4j 增量导入 upsert 规则：节点必须先按 `KGNode.code` 匹配，再补实体类型标签和标签元数据，禁止把实体类型标签放入 `MERGE` 条件导致既有同 code 节点触发唯一约束或重复导入；心力衰竭批次导入后必须输出服务器实时批次统计、去重结果、可导入图谱文件清单和工具安装路径审计 |
+| V1.31 | 2026-06-30 22:14:47 | 新增正式 CDSS 前置安全体检与专家批量签收分级规则：继续新疾病前必须先跑服务器全库硬闸门；`pending_clinical_review` 不得由 AI 伪造为逐条专家审核，但可在专家同意机制后写入 `clinical_batch_signed_off`；AI 负责证据预审核并分为 `test_recommendation`、`knowledge_display`、`formal_blocked`；Neo4j 关系导入必须按 `(source.code, relationType, target.code)` 语义键 MERGE，禁止按关系 `id` 重复补边；任何导入后必须立即复查重复语义关系 |
+| V1.32 | 2026-07-01 10:24:43 | 新增房颤批次启动与累计库合并硬规则：新病种必须先补齐 `scope_taxonomy.csv` 和 `controlled_vocabulary.csv`，否则不得进入证据抽取；scope aliases 必须同时覆盖中文名、英文名、缩写和专病关键治疗词，但禁止使用过宽词导致误纳；导入累计 Neo4j 后必须复查并清零 `duplicate_type_name_count`，必要时执行同类型同名实体合并，迁移重复节点全部入边/出边后再删除重复节点 |
+| V1.33 | 2026-07-03 23:18:42 | 新增心律失常短缩写消歧与证据链完整硬规则：`AT/AFL/SVT/WPW` 等短缩写不得单独作为疾病命中依据，必须有中文全称、疾病上下文或长英文名共同锚定；`α1-AT`、`ATⅡ`、抗凝血酶 `AT`、`G6PD` 等跨学科缩写必须判为污染；DOCX/教材证据无页码时统一写 `source_page=N/A`，不得留空也不得伪造页码；未显式分级的专家共识/教材推荐可写“未分级推荐/专家共识或教材证据”，但必须保留 `ai_prechecked_limited` 与 `formal_cdss_ready=false` |
 
 ## 1. 核心原则
 
@@ -55,6 +60,19 @@ Schema：`专科知识图谱Schema标准.md` V1.7
 - 各批次独立抽取、独立验收；验收通过后才能合并到标准主图谱。
 - `pending_clinical_review` 是正式 CDSS 推荐层阻断标记，不是让临床专家逐条查看图谱关系的工作方式。每批必须把复杂图谱转换为疾病级、场景级、药师专项的简化审核表，专家从临床使用效果和风险角度确认。
 - AI 可以整理审核包、证据链和建议修复项，但不得自行把 `clinical_review_status=pending_clinical_review` 批量改为 `clinical_approved`。
+- 若临床专家同意采用“批量签收机制”，可把已完成 AI 证据预审核的关系标记为 `clinical_review_status=clinical_batch_signed_off`，但必须同时写入 `ai_evidence_review_status`、`cdss_release_level`、审核人/角色/时间和证据链；`formal_cdss_ready` 仍不得由 AI 自动置为 `true`。
+- AI 预审核放行分三级：`test_recommendation` 仅允许进入测试 CDSS 推荐层；`knowledge_display` 只允许知识展示，不做强推荐；`formal_blocked` 禁止进入正式 CDSS。推荐等级为 `N/A/N/A`、证据链不完整或药物安全字段不足时，不得进入正式推荐。
+- 已由原文、临床审核或服务器验证确认的错误，不得再做成“候选”“冻结”或长期待处理项：错误关系直接删除，指向错误直接改挂，泛化关系必须补充适用人群、排除条件和临床路径；所有动作必须写入本地 JSONL/增量脚本并同步 Neo4j 测试库。
+- 服务器修复不得只依赖关系 `id`。当历史边缺失、截断或污染标准 `id` 时，必须按 `(source.code, relationType, target.code/name)` 语义条件定位并清理；修复后必须重跑本地回归、目标验证和全库硬闸门。
+- 同义词归一不是“改显示名”即可。同义药物、检查、操作等重复实体即使仍有关系，也必须先把入边、出边、具体下级实体关系迁移到标准实体，再删除重复节点；同类型同名重复必须作为阻断项处理。
+- 增量导入 Neo4j 测试库后，必须立即复查 `duplicate_semantic_relation_count`。若按关系 `id` 重导导致历史已去重的 `(source.code, relationType, target.code)` 语义边被补回，必须立即执行语义关系去重并再次跑全库硬闸门。
+- 关系导入脚本必须使用语义键幂等合并：先 `MATCH (s:KGNode {code: row.source_code})` 与 `MATCH (t:KGNode {code: row.target_code})`，再 `MERGE (s)-[r:\`relationType\`]->(t)`，随后 `SET r += row.props`。关系 `id` 只能作为属性保存，不得作为 MERGE 唯一键。
+- 新病种若通用准备脚本未生成 `scope_taxonomy.csv` 或 `controlled_vocabulary.csv`，必须立即补齐后再抽取证据；缺少受控词表会导致疾病锚定失败或只生成 Evidence，属于阻断项。
+- scope aliases 必须先小范围命中专病文献，再人工/脚本复核纳入清单；不得使用“导管消融”“心律失常”等过宽词直接作为房颤类批次别名，除非后续过滤能证明不会误纳其他疾病材料。
+- 累计库导入后，`duplicate_type_name_count` 与 `duplicate_semantic_relation_count` 都是阻断项。若出现同类型同名重复实体，必须保留 canonical 节点，迁移重复节点全部出边/入边，再删除重复节点；只改显示名或只删孤儿节点不算修复。
+- 短英文缩写不得单独决定疾病归属。尤其心律失常场景中，`AT` 只有在同段出现“房性心动过速/房速/atrial tachycardia/局灶性房性”等上下文时才能归一到房性心动过速；`α1-AT`、`ATⅡ`、抗凝血酶 `AT`、`G6PD`、药物表缩写、其他疾病章节缩写均必须作为污染证据剔除。
+- DOCX、TXT、教材段落若天然没有页码，`source_page` 必须写 `N/A`，同时保留 `document_id`、`segment_id`、来源名称、章节/段落和内容哈希；不得把 `None/空值` 留给审计，也不得臆造页码。
+- 未提供正式 I/IIa/A/B 等等级的教材或专家共识证据，推荐字段必须写成 `recommendation_class=未分级推荐`、`evidence_level=专家共识/教材证据`、`recommendation_grade_source=ungraded_limited_signoff`；该类关系只能进入 `knowledge_display` 或测试推荐，不得标记正式 CDSS 可用。
 
 ### 1.1 满分执行目标
 
@@ -142,7 +160,7 @@ Schema：`专科知识图谱Schema标准.md` V1.7
 Neo4j 节点标签是无序集合，`labels(n)` 的返回顺序可能受数据库内部标签 token 顺序影响。即使创建语句写成 `CREATE (n:KGNode:Disease)`，某些数据库也可能返回 `['Disease','KGNode']`。因此：
 
 1. 业务规范标签顺序固定为 `['KGNode', entityType]`。
-2. 导入脚本创建或匹配节点时必须使用 `MERGE (n:KGNode:\`实体类型\` {code: row.code})` 的标签契约。
+2. 导入脚本创建或匹配节点时必须先按 `KGNode.code` 匹配：`MERGE (n:KGNode {code: row.code}) SET n += props SET n:\`实体类型\``；禁止把实体类型标签放入 `MERGE` 条件。若既有节点已有 `code` 但缺少类型标签，`MERGE (n:KGNode:\`实体类型\` {code})` 会触发唯一约束或重复导入风险。
 3. 每个节点必须写入 `primary_label='KGNode'`、`type_label=entityType`、`canonical_labels=['KGNode', entityType]`。
 4. 审核工具、统计脚本和给其他模型的审核包应读取 `canonical_labels`，不得直接用 `labels(n)` 的原始顺序判断合格/不合格。
 5. 任何导入脚本、补丁脚本、外部模型修复脚本不得创建只带 `Disease`、`TreatmentPlan`、`DiagnosisCriteria` 等类型标签但不带 `KGNode` 的临床节点。此类节点会绕过 `KGNode` 子图审计，必须判定为服务器级质量失败。
@@ -1510,6 +1528,7 @@ Required 缺口闭环冲刺规则：
 - 每批生成后必须主动输出可导入图谱文件：`nodes_final.jsonl`、`relations_final.jsonl`、`quality_gate_summary.json`、`delta_manifest.json`、`delta_nodes_upsert.jsonl`、`delta_relations_add.jsonl`、详细追溯审核包路径、临床使用效果审核包路径、Claude/外部模型审核包路径。
 - 创建批次目录后必须复核 `00_scope_and_config/batch_config.json`：`schema_version` 必须等于 `专科知识图谱Schema标准.md` 当前版本；`skill_version` 必须等于 `AI自动化工具-文献指南解析.md` 当前版本。发现硬编码旧版本必须立即修复脚本和已生成配置。
 - 新批次正式开始解析前必须输出纳入文献清单，至少包括文件名、来源类型、扩展名和大小；纳入数异常时先检查 scope aliases 和路径匹配规则。
+- 纳入清单必须检查“漏纳”和“误纳”两类问题：英文缩写文件夹如 `AF/` 不能漏掉；过宽治疗词导致的其他疾病/器械/护理材料不能误纳。发现误纳必须先收窄 aliases 并重建批次，不能在后续抽取阶段默默忽略。
 
 ## 17. 受控合并
 
@@ -1550,6 +1569,7 @@ Required 缺口闭环冲刺规则：
 - 导入后必须从 Neo4j 服务器重新统计节点数、关系数、实体类型计数和关系类型计数；最终统计以服务器查询结果为准，不以本地文件行数替代。服务器全库必须满足 `all_node_count == kg_node_count`、`all_relation_count == kg_relation_count`。
 - 导入后必须额外复核：非 `KGNode` 节点数=0、触达非 `KGNode` 的关系数=0、语义空壳关系数=0、治疗方案无下游实体=0、药物类别无具体药物=0、技术编码显示名=0、药物类别 aliases 污染=0、药物类别到具体药物 `has_specific_medication` 可查、`entityType+name` 全局重复=0、服务器关系语义键重复=0、标签元数据 mismatch=0。
 - 服务器合并多个批次后，必须按 `(source.code, relationType, target.code)` 去重关系；不得让骨架库和疾病批次的同义关系重复存在。
+- 服务器合并多个批次后，还必须按 `(entityType, name)` 检查重复节点；若重复节点仍有入边/出边，必须迁移关系到 canonical 节点后删除重复节点，不得只删除孤儿或把重复留给前端去重。
 - 前端图谱接口必须按节点 `code` 去重返回节点集合；关系路径可以保留多条，但“药物数量、检查数量、症状数量、治疗方案数量”等节点计数必须使用唯一节点数。
 - 必须写入 `08_neo4j_import/neo4j_import_summary.json`；如发生中断和补导入，还必须在同步报告中说明中断原因、恢复动作和最终一致性结果。
 

@@ -50,7 +50,7 @@ class ImportNeo4jTestDbTests(unittest.TestCase):
         self.assertEqual(len(delete_calls), 3)
         self.assertEqual(delete_calls[0][1], {"batch_size": 1000})
 
-    def test_import_nodes_uses_canonical_kgnode_first_label_contract(self):
+    def test_import_nodes_merges_on_kgnode_code_before_adding_type_label(self):
         client = FakeNeo4jClient()
         nodes = [
             {
@@ -65,8 +65,9 @@ class ImportNeo4jTestDbTests(unittest.TestCase):
 
         self.assertEqual(imported, 1)
         statement, parameters = client.calls[0]
-        self.assertIn("MERGE (n:KGNode:`Disease` {code: row.code})", statement)
-        self.assertNotIn("SET n:`Disease`", statement)
+        self.assertIn("MERGE (n:KGNode {code: row.code})", statement)
+        self.assertIn("SET n:`Disease`", statement)
+        self.assertNotIn("MERGE (n:KGNode:`Disease`", statement)
         props = parameters["rows"][0]["props"]
         self.assertEqual(props["primary_label"], "KGNode")
         self.assertEqual(props["type_label"], "Disease")
@@ -88,6 +89,27 @@ class ImportNeo4jTestDbTests(unittest.TestCase):
         statement = client.calls[0][0]
         self.assertIn("n.canonical_labels = ['KGNode', n.entityType]", statement)
         self.assertIn("labels(n) = ['KGNode', n.entityType]", statement)
+
+    def test_import_relations_merges_on_semantic_key_not_relation_id(self):
+        client = FakeNeo4jClient()
+        relations = [
+            {
+                "id": "REL-1",
+                "source_code": "DIS-HF",
+                "relationType": "has_follow_up",
+                "target_code": "FU-HF",
+            }
+        ]
+
+        imported = importer.import_relations(client, relations, batch_size=100)
+
+        self.assertEqual(imported, 1)
+        statement, parameters = client.calls[0]
+        self.assertIn("MATCH (s:KGNode {code: row.source_code})", statement)
+        self.assertIn("MATCH (t:KGNode {code: row.target_code})", statement)
+        self.assertIn("MERGE (s)-[r:`has_follow_up`]->(t)", statement)
+        self.assertNotIn("{id: row.id}", statement)
+        self.assertEqual(parameters["rows"][0]["id"], "REL-1")
 
     def test_http_client_retries_transient_url_errors(self):
         class FakeResponse:

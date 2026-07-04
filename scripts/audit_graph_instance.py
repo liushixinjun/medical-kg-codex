@@ -128,6 +128,10 @@ CONCRETE_MEDICATION_ALIASES_BY_CLASS.update(
         "洋地黄类药物": {"地高辛"},
         "血管紧张素Ⅱ受体拮抗剂": {"缬沙坦", "氯沙坦", "坎地沙坦", "厄贝沙坦", "替米沙坦"},
         "非二氢吡啶类钙通道阻滞剂": {"维拉帕米", "地尔硫䓬"},
+        "袢利尿剂": {"呋塞米", "托拉塞米", "布美他尼"},
+        "盐皮质激素受体拮抗剂": {"螺内酯", "依普利酮"},
+        "血管紧张素受体脑啡肽酶抑制剂": {"沙库巴曲缬沙坦"},
+        "钠-葡萄糖协同转运蛋白2抑制剂": {"达格列净", "恩格列净"},
     }
 )
 THERAPEUTIC_RECOMMENDATION_RELATIONS = {
@@ -141,6 +145,7 @@ CDSS_CLINICAL_APPROVED_STATUSES = {
     "clinical_approved",
     "expert_approved",
     "approved_by_clinical_expert",
+    "clinical_batch_signed_off",
 }
 TECHNICAL_DISPLAY_NAME_RE = re.compile(r"^[A-Z][A-Z0-9]+(?:-[A-Z0-9]+)+$")
 TECHNICAL_DISPLAY_NAME_EXCLUDED_TYPES = {"Evidence", "Guideline"}
@@ -702,6 +707,8 @@ def audit_graph(batch_dir: Path) -> dict:
 
     cdss_readiness_rows = []
     for rel in relations:
+        if rel.get("relationCategory") in {"taxonomy", "structural", "evidence"}:
+            continue
         if rel.get("relationType") not in THERAPEUTIC_RECOMMENDATION_RELATIONS and rel.get("relationCategory") != "therapeutic":
             continue
         source = node_by_code.get(rel.get("source_code"), {})

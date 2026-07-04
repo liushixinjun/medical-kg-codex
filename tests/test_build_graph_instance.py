@@ -288,6 +288,7 @@ class BuildGraphInstanceTests(unittest.TestCase):
                         "batch_id": "BATCH-CAD-TEST",
                         "scope_type": "category",
                         "scope_target": "冠状动脉粥样硬化性心脏病",
+                        "schema_version": "V1.7",
                     },
                     ensure_ascii=False,
                 ),
@@ -398,6 +399,10 @@ class BuildGraphInstanceTests(unittest.TestCase):
             relations = [json.loads(line) for line in (batch / "05_data_instance" / "relations_final.jsonl").read_text(encoding="utf-8-sig").splitlines()]
             self.assertTrue(all(node["scope_target"] == "冠状动脉粥样硬化性心脏病" for node in nodes))
             self.assertTrue(all(rel["scope_target"] == "冠状动脉粥样硬化性心脏病" for rel in relations))
+            self.assertTrue(all(node["schema_version"] == "V1.7" for node in nodes))
+            self.assertTrue(all(rel["schema_version"] == "V1.7" for rel in relations))
+            graph = json.loads((batch / "05_data_instance" / "graph_final.json").read_text(encoding="utf-8-sig"))
+            self.assertEqual(graph["schema_version"], "V1.7")
             self.assertTrue(any(rel["relationType"] == "requires_lab_test" for rel in relations))
             self.assertTrue(any(rel["relationType"] == "has_risk_stratification" and rel["target_code"].startswith("RISK-") for rel in relations))
             self.assertTrue(any(node["entityType"] == "ThresholdRule" and node["value"] == 1 for node in nodes))

@@ -11,6 +11,10 @@ __pycache__/
 *.bak
 *.old
 
+# Local secrets / database credentials
+图谱数据库链接.txt
+*数据库链接*.txt
+
 # Raw documents and large archives
 *.pdf
 *.PDF

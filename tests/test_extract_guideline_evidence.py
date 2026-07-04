@@ -8,6 +8,49 @@ from scripts.extract_guideline_evidence import extract_guideline_evidence
 
 
 class ExtractGuidelineEvidenceTests(unittest.TestCase):
+    def test_extracts_docx_clean_sections(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            batch = Path(tmp)
+            (batch / "00_scope_and_config").mkdir(parents=True)
+            (batch / "01_source_manifest").mkdir()
+            (batch / "03_clean_text").mkdir()
+            fields = ("canonical_name", "name_en", "abbr", "aliases", "entityType", "disease_scope", "source")
+            with (batch / "00_scope_and_config" / "controlled_vocabulary.csv").open("w", encoding="utf-8-sig", newline="") as handle:
+                writer = csv.DictWriter(handle, fieldnames=fields)
+                writer.writeheader()
+                writer.writerow({
+                    "canonical_name": "心力衰竭",
+                    "name_en": "Heart failure",
+                    "abbr": "HF",
+                    "aliases": "心衰",
+                    "entityType": "Disease",
+                    "disease_scope": "DIS-CARD-HF",
+                    "source": "test",
+                })
+            with (batch / "01_source_manifest" / "source_documents_manifest.csv").open("w", encoding="utf-8-sig", newline="") as handle:
+                writer = csv.DictWriter(handle, fieldnames=("batch_id", "document_id", "file_name", "source_type", "extension", "inclusion_status"))
+                writer.writeheader()
+                writer.writerow({
+                    "batch_id": "BATCH-HF",
+                    "document_id": "DOC-TEXTBOOK",
+                    "file_name": "内科学.docx",
+                    "source_type": "authoritative_textbook",
+                    "extension": ".docx",
+                    "inclusion_status": "included",
+                })
+            (batch / "03_clean_text" / "DOC-TEXTBOOK.clean.txt").write_text(
+                "<<<DOCUMENT document_id=DOC-TEXTBOOK>>>\n"
+                "<<<SECTION section_id=SEG-DOC-TEXTBOOK-P00001-00001 title=Body Text>>>\n"
+                "心力衰竭是各种心脏疾病导致心功能异常的临床综合征。\n",
+                encoding="utf-8-sig",
+            )
+
+            summary = extract_guideline_evidence(batch)
+
+            self.assertEqual(summary["document_count"], 1)
+            self.assertEqual(summary["document_with_evidence_count"], 1)
+            self.assertEqual(summary["evidence_count"], 1)
+
     def test_extracts_only_explicitly_disease_anchored_evidence(self):
         with tempfile.TemporaryDirectory() as tmp:
             batch = Path(tmp)

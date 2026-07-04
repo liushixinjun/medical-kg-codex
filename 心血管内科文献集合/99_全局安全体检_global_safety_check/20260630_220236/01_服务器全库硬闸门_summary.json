@@ -1,0 +1,15 @@
+﻿{
+  "kg_node_count": 28966,
+  "kg_relation_count": 63544,
+  "non_kgnode_node_count": 0,
+  "relation_touching_non_kgnode_count": 0,
+  "technical_display_name_error_count": 0,
+  "treatment_plan_actionability_error_count": 0,
+  "medication_class_without_specific_count": 0,
+  "duplicate_type_name_count": 0,
+  "duplicate_semantic_relation_count": 0,
+  "semantic_shell_relation_count": 0,
+  "blocking_issue_count": 0,
+  "blocking_items": [],
+  "global_safety_gate_status": "passed"
+}

@@ -70,8 +70,8 @@ def cleaned_node_props(node: dict[str, Any]) -> dict[str, Any]:
     return props
 
 
-def canonical_node_label_clause(entity_type: str) -> str:
-    return f":KGNode:{cypher_name(entity_type)}"
+def type_label_set_clause(entity_type: str) -> str:
+    return f"SET n:{cypher_name(entity_type)}"
 
 
 class Neo4jHttpClient:
@@ -210,11 +210,12 @@ def import_nodes(client: Neo4jHttpClient, nodes: list[dict[str, Any]], batch_siz
 
     imported = 0
     for entity_type, rows in sorted(grouped.items()):
-        label_clause = canonical_node_label_clause(entity_type)
+        type_label_clause = type_label_set_clause(entity_type)
         statement = f"""
         UNWIND $rows AS row
-        MERGE (n{label_clause} {{code: row.code}})
+        MERGE (n:KGNode {{code: row.code}})
         SET n += row.props
+        {type_label_clause}
         """
         for batch in chunks(rows, batch_size):
             client.run(statement, {"rows": batch})
@@ -244,7 +245,7 @@ def import_relations(client: Neo4jHttpClient, relations: list[dict[str, Any]], b
         UNWIND $rows AS row
         MATCH (s:KGNode {{code: row.source_code}})
         MATCH (t:KGNode {{code: row.target_code}})
-        MERGE (s)-[r:{rel_type} {{id: row.id}}]->(t)
+        MERGE (s)-[r:{rel_type}]->(t)
         SET r += row.props
         """
         for batch in chunks(rows, batch_size):

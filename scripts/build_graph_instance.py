@@ -42,6 +42,10 @@ ENTITY_CATEGORY = {
     "Evidence": "证据",
 }
 
+ENTITY_TYPE_CANONICALIZATION = {
+    "ClinicalProblem": "Complication",
+}
+
 TYPE_PREFIX = {
     "Symptom": "SYM",
     "Sign": "SIGN",
@@ -78,6 +82,7 @@ EXPLICIT_CODES = {
     "钆延迟增强": "IND-LGE",
     "N末端B型利钠肽原": "IND-NT-PROBNP",
     "肌钙蛋白": "IND-CARDIAC-TROPONIN",
+    "β受体阻滞剂": "MED-BETA-BLOCKER",
     "β受体拮抗剂": "MED-BETA-BLOCKER",
     "非二氢吡啶类钙通道阻滞剂": "MED-NDHP-CCB",
     "利尿剂": "MED-DIURETIC",
@@ -132,10 +137,15 @@ def _load_jsonl(path: Path) -> list[dict]:
 
 
 def _slug_code(entity_type: str, name: str) -> str:
+    entity_type = _canonical_entity_type(entity_type)
     if name in EXPLICIT_CODES:
         return EXPLICIT_CODES[name]
     digest = hashlib.sha1(f"{entity_type}|{name}".encode("utf-8")).hexdigest()[:12].upper()
     return f"{TYPE_PREFIX.get(entity_type, 'ENT')}-CARD-{digest}"
+
+
+def _canonical_entity_type(entity_type: str) -> str:
+    return ENTITY_TYPE_CANONICALIZATION.get(str(entity_type).strip(), str(entity_type).strip())
 
 
 def _node_id(code: str) -> str:
@@ -285,6 +295,7 @@ def build_graph_instance(batch_dir: Path) -> dict:
     config_path = batch_dir / "00_scope_and_config" / "batch_config.json"
     config = json.loads(config_path.read_text(encoding="utf-8-sig")) if config_path.is_file() else {}
     batch_id = config.get("batch_id", "BATCH-UNKNOWN")
+    schema_version = config.get("schema_version", "V1.4")
     scope_type = config.get("scope_type", "category")
     scope_target = config.get("scope_target", "心肌病")
     taxonomy = _load_csv(batch_dir / "00_scope_and_config" / "scope_taxonomy.csv")
@@ -420,7 +431,9 @@ def build_graph_instance(batch_dir: Path) -> dict:
 
     compiled_vocab = []
     vocabulary_by_code: dict[str, dict] = {}
-    for row in vocabulary:
+    for raw_row in vocabulary:
+        row = dict(raw_row)
+        row["entityType"] = _canonical_entity_type(row.get("entityType", ""))
         if row.get("entityType") == "Disease":
             continue
         vocabulary_by_code[_slug_code(row["entityType"], row["canonical_name"])] = row
@@ -655,9 +668,11 @@ def build_graph_instance(batch_dir: Path) -> dict:
         disease_node["definition_source"] = "scope_taxonomy.csv;controlled_vocabulary.csv"
 
     for node in nodes.values():
+        node["schema_version"] = schema_version
         node["scope_type"] = scope_type
         node["scope_target"] = scope_target
     for relation in relations.values():
+        relation["schema_version"] = schema_version
         relation["scope_type"] = scope_type
         relation["scope_target"] = scope_target
 
@@ -673,7 +688,7 @@ def build_graph_instance(batch_dir: Path) -> dict:
             handle.write(json.dumps(row, ensure_ascii=False) + "\n")
     _write_csv(output_dir / "nodes_final.csv", node_rows)
     _write_csv(output_dir / "relations_final.csv", relation_rows)
-    (output_dir / "graph_final.json").write_text(json.dumps({"schema_version": "V1.4", "batch_id": batch_id, "nodes": node_rows, "relations": relation_rows}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8-sig")
+    (output_dir / "graph_final.json").write_text(json.dumps({"schema_version": schema_version, "batch_id": batch_id, "nodes": node_rows, "relations": relation_rows}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8-sig")
 
     extraction_dir = batch_dir / "04_evidence_and_extraction"
     alias_rows = sorted(alias_log.values(), key=lambda row: (row["entityType"], row["canonical_name"], row["original_name"]))

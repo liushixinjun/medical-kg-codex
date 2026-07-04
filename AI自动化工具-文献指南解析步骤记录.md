@@ -729,3 +729,567 @@ python -m unittest discover -s tests
 已同步 `_全局复利与踩坑日志.md`：
 
 - `2026-06-29 14:58:40`：新批次 `batch_config.json` 版本号不得硬编码旧版本，必须从主文档读取。
+---
+
+## 2026-06-29 23:15:28～心肌病/冠心病临床安全直接修复与服务器硬闸门复核
+
+### 用户提出的问题
+
+1. 不再生成额外反馈报告，不做繁琐风险冻结补丁，已确认错误要直接处理正确。
+2. 修复 4 个心肌病定义污染。
+3. 数据库连接信息统一从 `图谱数据库链接.txt` 读取。
+4. 执行完成后继续心力衰竭批次 PDF 解析与证据抽取。
+
+### 判断结论
+
+1. 心肌病定义污染和冠心病/心肌病错误治疗关系属于已确认数据错误，不应进入候选或冻结状态。
+2. 服务器残留问题不能只按关系 `id` 删除；历史边存在缺失/截断 `id`，必须按语义条件清理。
+3. 同义药物重复节点即使仍有入边/出边，也必须先迁移关系，再删除重复节点，否则会出现“本地归一但服务器重复”的假通过。
+
+### 已执行方案
+
+1. 新增/更新回归测试：`tests/test_repair_cad_cm_clinical_safety.py`。
+2. 新增/更新直接修复脚本：`scripts/repair_cad_cm_clinical_safety.py`。
+3. 执行本地回归：`python -m unittest tests.test_repair_cad_cm_clinical_safety`。
+4. 从 `图谱数据库链接.txt` 解析 HTTP 地址、用户名、密码，不在日志输出密码。
+5. 执行服务器同步：`python scripts\repair_cad_cm_clinical_safety.py --workspace . --apply-server`。
+6. 执行服务器全局硬闸门：`python scripts\verify_server_global_repair.py`（连接信息由包装脚本从链接文件传入）。
+7. SKILL 升级 V1.29，并同步 `_全局复利与踩坑日志.md`。
+
+### 当前执行结果
+
+```text
+本地回归测试：4 项 OK
+
+服务器目标验证：
+cm_polluted_definition_count = 0
+invalid_thrombolysis_relation_count = 0
+hcm_pci_relation_count = 0
+hcm_broad_ccb_relation_count = 0
+hcm_ndhp_ccb_conditioned_count = 1
+dcm_beta_synonym_duplicate_relation_count = 0
+
+服务器同义节点合并：
+moved_incoming_synonym_relations = 4
+moved_outgoing_synonym_relations = 183
+deleted_duplicate_synonym_nodes = 2
+
+服务器全局硬闸门：
+non_kgnode_node_count = 0
+semantic_shell_relation_count = 0
+technical_display_name_error_count = 0
+treatment_plan_actionability_error_count = 0
+medication_class_without_specific_count = 0
+label_metadata_mismatch_count = 0
+duplicate_type_name_count = 0
+```
+
+### 遗留阻断
+
+1. `clinical_review_status=pending_clinical_review` 仍有 595 条，这是临床使用效果审核状态，不由 AI 自动批量改为专家已确认。
+2. 下一步继续心力衰竭批次 PDF 解析与证据抽取，并沿用 V1.29 直接修复与服务器硬闸门规则。
+
+### 关联踩坑日志
+
+已同步 `_全局复利与踩坑日志.md`：
+- `2026-06-29 23:15:28`：已确认错误不得候选/冻结；服务器修复必须支持语义条件清理；非孤儿同义重复节点必须迁移关系后删除。
+
+---
+
+## 2026-06-30 10:44:51～心力衰竭批次 OCR 修复、图谱生成、服务器导入与实时复核
+
+### 用户提出的问题
+
+1. 继续处理 2 份 OCR 阻断 PDF，生成心力衰竭图谱实例和审计结果。
+2. 缺少 Poppler/Tesseract 时可自行安装，但统一安装到 `D:\Program Files Ai`，结束后检查是否误装到 C 盘。
+3. 执行结束必须说明做到什么程度。
+4. 用户反馈 Trae 监测说图谱没变化，要求核实是否已经全部导入图谱数据库。
+
+### 判断结论
+
+1. 心力衰竭批次已完成 OCR 恢复、证据抽取、本地图谱生成、语义修复、本地审计、Neo4j 服务器导入和服务器实时复核。
+2. Trae 监测“没变化”不能直接说明未导入；必须按服务器 `batch_id`、疾病 code、证据数、关系数实时查询确认。
+3. 当前心力衰竭批次可作为 Neo4j 测试库工作版本；仍不能作为正式 CDSS 推荐层上线，因为 74 条直接 CDSS 推荐关系仍为 `pending_clinical_review` 或缺少完整推荐字段。
+
+### 已执行方案
+
+1. 完成 OCR 工具链处理：Tesseract 统一到 `D:\Program Files Ai\Tesseract-OCR`；Poppler 使用 Codex runtime 自带二进制。
+2. 对 2 份阻断 PDF 执行 OCR 恢复，30 页全部成功。
+3. 重跑心力衰竭证据抽取、图谱实例生成、语义质量修复和本地质量审计。
+4. 修复 `scripts/import_neo4j_test_db.py`：节点导入改为先 `MERGE (n:KGNode {code})`，再补实体类型标签，避免既有同 code 节点触发唯一约束。
+5. 将心力衰竭批次导入 Neo4j 测试库，并完成同类型同名重复节点合并、重复语义关系合并。
+6. 更新 SKILL 至 V1.30，并同步 `_全局复利与踩坑日志.md`。
+7. 生成心力衰竭批次导入报告和可导入图谱文件清单。
+
+### 当前执行结果
+
+```text
+OCR 恢复：
+target_page_count = 30
+ocr_success_page_count = 30
+failed = 0
+
+本地图谱：
+node_count = 2723
+relation_count = 10380
+evidence_node_count = 2582
+disease_count = 11
+closed_loop_ready_disease_count = 11
+required_pathway_missing_count = 0
+cdss_recommendation_readiness_error_count = 74
+
+服务器实时复核：
+kg_node_count = 28966
+kg_relation_count = 63544
+hf_batch_node_count = 2723
+hf_batch_direct_relation_count = 10377
+hf_evidence_count = 2582
+hf_disease_count = 11
+
+服务器硬闸门：
+non_kgnode_node_count = 0
+technical_display_name_error_count = 0
+duplicate_type_name_count = 0
+duplicate_semantic_relation_count = 0
+medication_class_without_specific_count = 0
+```
+
+### 遗留阻断
+
+1. 心力衰竭正式 CDSS 上线仍阻断：74 条直接 CDSS 推荐关系待临床使用效果审核或缺少完整推荐字段。
+2. Trae 若仍显示没变化，应按 `batch_id='BATCH-CARD-HF-20260629-001'` 或疾病 code `DIS-CARD-HF` 查询，并清理前端缓存/固定疾病列表过滤。
+
+### 关联踩坑日志
+
+已同步 `_全局复利与踩坑日志.md`：
+
+- `2026-06-30 10:44:51`：Neo4j 增量导入必须按 `KGNode.code` upsert；导入验收必须以服务器实时查询为准；Trae 前端未显示不能反推未导入。
+
+---
+
+## 2026-06-30 22:14:47～全库安全体检、心衰 CDSS AI 预审核与专家批量签收
+
+### 用户提出的问题
+
+1. 继续其他疾病前，先确认是否需要全面安全检查。
+2. 用户确认按方案执行。
+3. 用户补充：专家同意采用批量签收机制，可以执行。
+
+### 判断结论
+
+1. 继续新疾病前必须先做全库安全体检，否则后续疾病会继承并放大历史质量问题。
+2. AI 不能伪造“逐条专家审核”，但在专家同意批量签收机制后，可以做证据预审核、分级，并写入 `clinical_batch_signed_off`。
+3. 进入测试推荐层和进入正式 CDSS 是两件事：`test_recommendation` 可用于测试推荐；`knowledge_display` 只做知识展示；`formal_cdss_ready` 不由 AI 自动置为 true。
+
+### 已执行方案
+
+1. 新增测试：
+   - `tests/test_cdss_ai_precheck_signoff.py`
+   - `tests/test_global_safety_check.py`
+2. 新增脚本：
+   - `scripts/apply_cdss_ai_precheck_signoff.py`
+   - `scripts/global_safety_check.py`
+3. 更新审计规则：`clinical_batch_signed_off` 纳入临床批量签收状态。
+4. 执行服务器全库只读安全体检。
+5. 对心衰 74 条阻断关系执行 AI 证据预审核和专家批量签收回写。
+6. 重跑本地心衰审计。
+7. 增量导入 Neo4j 测试库。
+8. 发现导入后重复语义关系 227 组，执行服务器语义关系去重。
+9. 修复 `scripts/import_neo4j_test_db.py`，关系导入改为按 `(source.code, relationType, target.code)` 语义键 MERGE，不再按关系 `id` MERGE。
+10. 用修复后的导入脚本再次导入心衰批次，验证服务器关系数不再增加。
+11. 再次执行服务器全库硬闸门。
+12. 更新 SKILL V1.31、踩坑日志、执行报告和 Trae 前端核查说明。
+
+### 当前执行结果
+
+```text
+全库安全体检（导入前）：
+kg_node_count = 28966
+kg_relation_count = 63544
+global_safety_gate_status = passed
+
+心衰 74 条 AI 预审核：
+target_relation_count = 74
+ai_prechecked_pass = 40
+ai_prechecked_limited = 34
+ai_prechecked_blocked = 0
+clinical_review_status_set_to = clinical_batch_signed_off
+formal_cdss_ready_set_true = 0
+
+本地心衰审计：
+cdss_recommendation_readiness_error_count = 34
+required_pathway_missing_count = 0
+closed_loop_ready_disease_count = 11
+duplicate_semantic_relation_count = 0
+medication_class_without_specific_count = 0
+treatment_plan_actionability_error_count = 0
+
+Neo4j 导入后：
+input_node_count = 2723
+input_relation_count = 10380
+imported_node_rows = 2723
+imported_relation_rows = 10380
+
+导入后语义去重：
+duplicate_semantic_keys_before = 227
+deleted_relationship_count = 227
+duplicate_semantic_keys_after = 0
+
+导入脚本修复后再次导入：
+database_kg_node_count = 28966
+database_relation_count = 63544
+duplicate_semantic_relation_count = 0
+
+服务器最终硬闸门：
+kg_node_count = 28966
+kg_relation_count = 63544
+non_kgnode_node_count = 0
+relation_touching_non_kgnode_count = 0
+technical_display_name_error_count = 0
+treatment_plan_actionability_error_count = 0
+medication_class_without_specific_count = 0
+duplicate_type_name_count = 0
+duplicate_semantic_relation_count = 0
+semantic_shell_relation_count = 0
+global_safety_gate_status = passed
+
+服务器心衰 CDSS 状态：
+ai_prechecked_pass = 40
+ai_prechecked_limited = 34
+test_recommendation = 40
+knowledge_display = 34
+clinical_batch_signed_off = 74
+formal_cdss_ready_true = 0
+```
+
+测试：
+
+```text
+python -m unittest tests.test_cdss_ai_precheck_signoff tests.test_global_safety_check
+6 项 OK
+```
+
+### 遗留阻断
+
+1. 心力衰竭仍有 34 条关系不能进入强推荐，原因是推荐等级为 `N/A/N/A`，只能作为知识展示。
+2. 所有正式 CDSS 上线仍需后续正式发布规则；本次没有设置任何 `formal_cdss_ready=true`。
+3. 增量导入脚本已修复为语义键 MERGE；后续每次导入后仍必须复查 `duplicate_semantic_relation_count=0`。
+
+### 关联踩坑日志
+
+已同步 `_全局复利与踩坑日志.md`：
+
+- `2026-06-30 22:14:47`：专家批量签收只能作为证据预审核分级机制，不等于 AI 伪造逐条专家审核；关系导入必须按语义键 MERGE，并在导入后复查重复语义关系。
+
+---
+
+## 2026-07-01 10:24:43～房颤 AF 批次解析、修复、导入与服务器去重
+
+### 用户提出的问题
+
+用户确认下一步开始“房颤 AF”批次。
+
+### 判断结论
+
+1. 房颤适合做下一批：指南充足，且能检验抗凝、节律控制、心室率控制、风险评分、药物具体化和跨病种合并质量。
+2. 启动前必须先补齐 AF scope aliases、`scope_taxonomy.csv` 和 `controlled_vocabulary.csv`。
+3. 本批可导入测试库/知识展示层；正式 CDSS 仍不得上线，因为部分关系为 `knowledge_display`，且 `formal_cdss_ready=true` 保持 0。
+
+### 已执行方案
+
+1. 补充并收窄 AF scope aliases，避免漏掉 AF/AHA/ESC 文件，也避免过宽“导管消融”误纳 LVAD 心律失常材料。
+2. 建立批次：`BATCH-CARD-AF-20260701-001_房颤_AtrialFibrillation`。
+3. 生成并复核纳入文献清单：18 个文件。
+4. 解析 PDF/DOCX，生成页级审计和 clean text。
+5. 补齐 AF taxonomy 与 104 行受控词表。
+6. 抽取证据、生成图谱实例。
+7. 执行本地审计；修复 β受体阻滞剂类别别名、治疗方案下游实体、AF 专病治疗方案执行关系。
+8. 执行 CDSS AI 预审核与专家批量签收元数据回写。
+9. 导入服务器 Neo4j 测试库。
+10. 导入后发现 `duplicate_type_name_count=12`，新增服务器同类型同名实体合并脚本并执行合并。
+11. 复跑服务器全库安全门。
+
+### 当前执行结果
+
+```text
+PDF 解析：
+document_count = 11
+page_count = 1687
+page_accounting_rate = 1.0
+ocr_required_page_count = 0
+
+DOCX 解析：
+document_count = 7
+failed_document_count = 0
+segment_count = 39260
+
+证据抽取：
+document_count = 18
+document_with_evidence_count = 17
+evidence_count = 1966
+
+本地图谱：
+node_count = 1787
+relation_count = 8825
+required_pathway_missing_count = 0
+closed_loop_ready_disease_count = 1
+treatment_plan_actionability_error_count = 0
+medication_class_without_specific_count = 0
+duplicate_semantic_relation_count = 0
+duplicate_type_name_count = 0
+
+CDSS AI 预审核：
+target_relation_count = 33
+ai_prechecked_pass = 5
+ai_prechecked_limited = 28
+ai_prechecked_blocked = 0
+clinical_review_status_set_to = clinical_batch_signed_off
+formal_cdss_ready_set_true = 0
+
+服务器导入：
+input_node_count = 1787
+input_relation_count = 8825
+database_kg_node_count_after_import = 30719
+database_relation_count_after_import = 72348
+
+服务器同名实体合并：
+duplicate_group_count = 12
+deleted_nodes = 12
+outgoing_transferred = 772
+incoming_transferred = 22
+
+服务器最终硬闸门：
+kg_node_count = 30707
+kg_relation_count = 72334
+non_kgnode_node_count = 0
+relation_touching_non_kgnode_count = 0
+technical_display_name_error_count = 0
+treatment_plan_actionability_error_count = 0
+medication_class_without_specific_count = 0
+duplicate_type_name_count = 0
+duplicate_semantic_relation_count = 0
+semantic_shell_relation_count = 0
+global_safety_gate_status = passed
+```
+
+测试：
+
+```text
+python -m unittest tests.test_prepare_medical_kg_batch tests.test_preflight_new_disease_batch
+5 项 OK
+
+python -m unittest tests.test_repair_graph_semantic_quality tests.test_audit_graph_instance
+17 项 OK
+
+python -m py_compile scripts/dedupe_neo4j_type_name_nodes.py
+OK
+```
+
+### 遗留阻断
+
+1. 本批仍有 28 条 `knowledge_display` 关系，不进入正式 CDSS 强推荐。
+2. 服务器已完成同名实体合并；后续如果重导本批，必须再次跑全局安全门，防止本地 batch code 与服务器 canonical code 再次形成重复。
+3. `threshold_rule` 与 `differential_diagnosis` 为 optional missing，不影响本批 required 闭环，但后续可专项增强。
+
+### 关联踩坑日志
+
+已同步 `_全局复利与踩坑日志.md`：
+
+- `2026-07-01 10:24:43`：新病种必须先补 taxonomy/vocabulary；scope aliases 必须同时防漏纳和防误纳；累计库导入后必须清零同类型同名重复实体并迁移全部入/出边。
+
+---
+
+## 2026-07-03 11:36:27～已执行批次统计汇总与 HTML 报告生成
+
+### 用户提出的问题
+
+用户要求把目前已经执行的内容按学科、疾病大类、疾病进行统计汇总，覆盖资料总数、书籍和指南 PDF 数、各疾病解析利用数量、心内科骨架信息、已解析专病图谱维度统计，并新增报告统计 SKILL 文件和日期版本 HTML 报告。
+
+### 判断结论
+
+1. 统计报告必须脚本化生成，不能手工拼表，避免后续新增病种后口径不一致。
+2. “利用数量”拆成两个口径：`纳入解析文件数` 和 `产生证据文档数`。
+3. 服务器最终状态必须读取最新全局安全体检结果，不以本地 JSONL 行数替代。
+
+### 已执行方案
+
+1. 新增报告统计规范文件：`AI自动化工具-文献指南解析-报告统计.md`。
+2. 新增统计脚本：`scripts/build_report_statistics.py`。
+3. 读取以下产物汇总：
+   - `source_documents_manifest.csv`
+   - `quality_gate_summary.json`
+   - `guideline_evidence_summary.json`
+   - `nodes_final.jsonl`
+   - `relations_final.jsonl`
+   - `neo4j_import_summary.json`
+   - 最新 `99_全局安全体检_global_safety_check/*/01_服务器全库硬闸门_summary.json`
+4. 生成 HTML 报告和 JSON 数据底稿。
+
+### 当前执行结果
+
+```text
+资料总库：
+指南/文献目录总文件 = 420
+指南/文献 PDF = 224
+书籍教材总文件 = 3
+书籍教材 PDF = 1
+
+已统计批次：
+心血管内科基础骨架库
+心肌病
+冠状动脉粥样硬化性心脏病（冠心病）
+心力衰竭
+心房颤动（房颤，AF）
+
+服务器最终状态：
+kg_node_count = 30707
+kg_relation_count = 72334
+global_safety_gate_status = passed
+```
+
+输出文件：
+
+```text
+AI自动化工具-文献指南解析-报告统计.md
+scripts/build_report_statistics.py
+AI自动化工具-文献指南解析-统计报告_20260703.html
+AI自动化工具-文献指南解析-统计报告_20260703.json
+```
+
+自检结果：
+
+```text
+文件存在性检查：OK
+脚本语法检查：python -m py_compile scripts/build_report_statistics.py OK
+生成批次数：5
+```
+
+### 遗留阻断
+
+无本次报告生成阻断。
+
+### 关联踩坑日志
+
+本次为统计报告能力建设，没有新增质量事故，未新增 `_全局复利与踩坑日志.md` 条目。
+
+---
+
+## 2026-07-03 12:00:03～23:18:42 心律失常：室上性心动过速及心房扑动批次执行
+
+### 用户提出的问题
+
+用户要求在统计报告完成后，继续解析：
+
+- 顶层学科：心血管内科
+- 疾病大类：心律失常
+- 本批次专病：室上性心动过速及心房扑动
+- 指南来源路径：`E:\BigMouse\0.CDSS文献诊疗指南材料PDF\心血管内科\诊疗指南`
+- 教材路径：`E:\BigMouse\0.CDSS文献诊疗指南材料PDF\心血管内科\书籍教材`
+- 输出路径：`E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合`
+
+### 执行方案
+
+1. 先做新病种预检和源文件筛选。
+2. 生成 `scope_taxonomy.csv` 和 `controlled_vocabulary.csv`，覆盖 SVT、AVNRT、AVRT、房速、预激综合征、心房扑动。
+3. 解析 PDF 和 DOCX，生成页级/段落级 clean text。
+4. 抽取指南和教材证据，构建本地图谱 JSONL。
+5. 本地审计后先修结构语义：治疗方案下游动作、药物类别具体化、短缩写污染。
+6. 执行专家批量签收机制，但不把 AI limited 关系标记为正式 CDSS ready。
+7. 导入前跑服务器全局安全检查，导入后再跑全局安全检查和同类型同名去重。
+
+### 关键执行结果
+
+源文件：
+
+```text
+总扫描资料：423
+纳入资料：7
+纳入清单：
+1. SVT ESC 2019.pdf
+2. 中国 抗心律失常药物临床应用中国专家共识2023.pdf
+3. 室上性心动过速诊断及治疗中国专家共识(2021).pdf
+4. 抗心律失常药物临床应用中国专家共识.pdf
+5. 《内科学（第10版）》.docx
+6. 《内科学（第10版）》.pdf
+7. 内科学(第8版).docx
+```
+
+解析与抽取：
+
+```text
+PDF 解析：5 份，1136 页，页数核对率 100%，OCR 阻断 0
+DOCX 解析：2 份，39151 个片段，失败 0
+证据抽取：7 份资料均命中，6 个疾病/亚型，1140 条证据
+```
+
+本地图谱：
+
+```text
+节点：1254
+关系：9221
+疾病：6
+Evidence：1105
+Medication：21
+TreatmentPlan：11
+Procedure：7
+```
+
+本地最终审计：
+
+```text
+quality_gate_status = passed
+unknown_entity_type_count = 0
+wrong_relation_direction_count = 0
+duplicate_code_count = 0
+duplicate_type_name_count = 0
+semantic_shell_node_relation_count = 0
+treatment_plan_actionability_error_count = 0
+medication_class_without_specific_count = 0
+medication_alias_instance_gap_count = 0
+cdss_recommendation_readiness_error_count = 0
+core_relation_evidence_chain_rate = 1.0
+target_name_or_alias_match_rate = 1.0
+required_pathway_missing_count = 0
+closed_loop_ready_disease_count = 6/6
+```
+
+服务器导入：
+
+```text
+导入前服务器安全检查：passed
+导入节点：1254
+导入关系：9221
+导入后出现同类型同名重复：6 组
+去重迁移出边：363
+去重迁移入边：17
+删除重复节点：6
+最终服务器安全检查：passed
+服务器 KGNode：31911
+服务器关系：81520
+duplicate_type_name_count = 0
+duplicate_semantic_relation_count = 0
+global_safety_gate_status = passed
+```
+
+### 本次发现并修复的问题
+
+1. `AT` 不能单独作为房性心动过速锚点；`α1-AT`、`ATⅡ`、抗凝血酶 AT 等必须判为缩写污染。
+2. WPW/预激综合征不能从 G6PD、补体、房颤病因段落继承病因或风险因素。
+3. DOCX 教材无页码时，`source_page` 统一写 `N/A`，不能留空。
+4. 未显式给出 I/IIa/A/B 等推荐等级的教材/专家共识关系，可写“未分级推荐/专家共识或教材证据”，但只能 `ai_prechecked_limited`，`formal_cdss_ready=false`。
+5. 累计 Neo4j 导入后仍必须查并清零 `duplicate_type_name_count`。
+
+### 输出文件
+
+```text
+心血管内科文献集合\BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter
+scripts\repair_svt_afl_batch_quality.py
+scripts\repair_graph_semantic_quality.py
+scripts\apply_cdss_ai_precheck_signoff.py
+```
+
+### 关联踩坑日志
+
+已同步 `_全局复利与踩坑日志.md`：
+
+- `2026-07-03 23:18:42`：心律失常短缩写消歧、DOCX 页码 N/A、未分级推荐 limited 处理、导入后同类型同名去重。
