@@ -142,6 +142,53 @@ class PrepareMedicalKgBatchTests(unittest.TestCase):
             unrelated = next(row for row in rows if row["file_name"] == "房颤指南.pdf")
             self.assertEqual(unrelated["inclusion_reason"], "OUT_OF_SCOPE_PATH_AND_NAME")
 
+    def test_includes_ventricular_arrhythmia_and_scd_scope_aliases(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            guide = root / "指南"
+            books = root / "教材"
+            output = root / "输出"
+            (guide / "心律失常").mkdir(parents=True)
+            (guide / "其他").mkdir(parents=True)
+            books.mkdir()
+            output.mkdir()
+            (root / "AI自动化工具-文献指南解析.md").write_text("版本：V1.32\n", encoding="utf-8")
+            (root / "专科知识图谱Schema标准.md").write_text("版本：V1.8\n", encoding="utf-8")
+
+            (guide / "心律失常" / "室性心律失常中国专家共识.pdf").write_bytes(b"va")
+            (guide / "心律失常" / "VT VF SCD ICD guideline.pdf").write_bytes(b"vt")
+            (guide / "心律失常" / "Brugada LQTS CPVT 指南.pdf").write_bytes(b"inherited")
+            (guide / "其他" / "瓣膜性心脏病指南.pdf").write_bytes(b"valve")
+            (guide / "其他" / "房颤指南.pdf").write_bytes(b"af")
+            (books / "内科学第10版.pdf").write_bytes(b"textbook")
+
+            batch_dir = prepare_batch(
+                specialty="心血管内科",
+                scope_type="disease",
+                scope_target="室性心律失常及心脏性猝死",
+                guide_root=guide,
+                textbook_root=books,
+                output_root=output,
+                batch_id="BATCH-VA-SCD-TEST",
+            )
+
+            with (batch_dir / "01_source_manifest" / "source_documents_manifest.csv").open(
+                encoding="utf-8-sig", newline=""
+            ) as handle:
+                rows = list(csv.DictReader(handle))
+
+            included_names = {
+                row["file_name"]
+                for row in rows
+                if row["inclusion_status"] == "included"
+            }
+            self.assertIn("室性心律失常中国专家共识.pdf", included_names)
+            self.assertIn("VT VF SCD ICD guideline.pdf", included_names)
+            self.assertIn("Brugada LQTS CPVT 指南.pdf", included_names)
+            self.assertIn("内科学第10版.pdf", included_names)
+            self.assertNotIn("瓣膜性心脏病指南.pdf", included_names)
+            self.assertNotIn("房颤指南.pdf", included_names)
+
 
 if __name__ == "__main__":
     unittest.main()

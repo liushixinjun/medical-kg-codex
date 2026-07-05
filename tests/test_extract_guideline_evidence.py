@@ -50,6 +50,13 @@ class ExtractGuidelineEvidenceTests(unittest.TestCase):
             self.assertEqual(summary["document_count"], 1)
             self.assertEqual(summary["document_with_evidence_count"], 1)
             self.assertEqual(summary["evidence_count"], 1)
+            rows = [
+                json.loads(line)
+                for line in (batch / "04_evidence_and_extraction" / "guideline_evidence_index.jsonl")
+                .read_text(encoding="utf-8-sig")
+                .splitlines()
+            ]
+            self.assertEqual(rows[0]["source_page"], "N/A")
 
     def test_extracts_only_explicitly_disease_anchored_evidence(self):
         with tempfile.TemporaryDirectory() as tmp:

@@ -206,11 +206,17 @@ def apply_batch_spec(batch_spec: dict[str, Any]) -> dict[str, Any]:
     nodes = read_jsonl(nodes_path)
     relations = read_jsonl(relations_path)
     node_by_code = {str(node.get("code", "")): node for node in nodes}
+    node_by_type_name = {
+        (str(node.get("entityType", "")), str(node.get("name", ""))): node
+        for node in nodes
+        if node.get("entityType") and node.get("name")
+    }
     relation_keys = {
         (str(rel.get("source_code", "")), str(rel.get("relationType", "")), str(rel.get("target_code", "")))
         for rel in relations
     }
     defaults = batch_defaults(batch_spec, batch_dir)
+    code_remap: dict[str, str] = {}
 
     added_nodes = []
     updated_nodes = []
@@ -220,21 +226,34 @@ def apply_batch_spec(batch_spec: dict[str, Any]) -> dict[str, Any]:
             if merge_aliases(node_by_code[code], node_spec.get("aliases")):
                 updated_nodes.append(node_by_code[code])
             continue
+        type_name_key = (str(node_spec.get("entityType", "")).strip(), str(node_spec.get("name", "")).strip())
+        existing_same_type_name = node_by_type_name.get(type_name_key)
+        if existing_same_type_name:
+            existing_code = str(existing_same_type_name.get("code", "")).strip()
+            if existing_code:
+                code_remap[code] = existing_code
+            if merge_aliases(existing_same_type_name, node_spec.get("aliases")):
+                updated_nodes.append(existing_same_type_name)
+            continue
         node = normalize_node(node_spec, defaults)
         nodes.append(node)
         node_by_code[node["code"]] = node
+        node_by_type_name[(str(node.get("entityType", "")), str(node.get("name", "")))] = node
         added_nodes.append(node)
 
     added_relations = []
     for rel_spec in batch_spec.get("relations", []):
-        source_code = str(rel_spec.get("source_code", "")).strip()
-        target_code = str(rel_spec.get("target_code", "")).strip()
+        source_code = code_remap.get(str(rel_spec.get("source_code", "")).strip(), str(rel_spec.get("source_code", "")).strip())
+        target_code = code_remap.get(str(rel_spec.get("target_code", "")).strip(), str(rel_spec.get("target_code", "")).strip())
         relation_type = str(rel_spec.get("relationType", "")).strip()
         if source_code not in node_by_code or target_code not in node_by_code:
             raise ValueError(f"Missing endpoint for relation: {source_code} -[{relation_type}]-> {target_code}")
         key = (source_code, relation_type, target_code)
         if key in relation_keys:
             continue
+        rel_spec = dict(rel_spec)
+        rel_spec["source_code"] = source_code
+        rel_spec["target_code"] = target_code
         relation = normalize_relation(rel_spec, node_by_code[source_code], node_by_code[target_code], defaults)
         relations.append(relation)
         relation_keys.add(key)

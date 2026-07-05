@@ -1293,3 +1293,149 @@ scripts\apply_cdss_ai_precheck_signoff.py
 已同步 `_全局复利与踩坑日志.md`：
 
 - `2026-07-03 23:18:42`：心律失常短缩写消歧、DOCX 页码 N/A、未分级推荐 limited 处理、导入后同类型同名去重。
+
+## 2026-07-04 23:00:00～2026-07-05 21:22:26 心律失常：室性心律失常及心脏性猝死批次执行
+
+### 用户提出的问题
+
+用户要求继续心律失常疾病大类建设，并在执行中确认全量测试是本地还是数据库验证。执行目标为：
+
+- 顶层学科：心血管内科
+- 疾病大类：心律失常
+- 本批次专病：室性心律失常及心脏性猝死
+- 指南来源路径：`E:\BigMouse\0.CDSS文献诊疗指南材料PDF\心血管内科\诊疗指南`
+- 教材路径：`E:\BigMouse\0.CDSS文献诊疗指南材料PDF\心血管内科\书籍教材`
+- 输出路径：`E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合`
+
+### 执行方案
+
+1. 新批次前先跑服务器全库硬闸门，确认上一批累计库安全。
+2. 预检专科、疾病范围、指南路径、教材路径和输出路径。
+3. 生成室性心律失常及心脏性猝死 taxonomy 与受控词表。
+4. 解析 PDF 与 DOCX，构建教材骨架证据和指南证据。
+5. 构建本地图谱 JSONL，执行语义修复、药物类别具体化和治疗方案可执行化。
+6. 对 required 缺口执行证据反查和策展回填，但只允许使用同病种专属证据，不允许用缩略语页或混排表格硬补。
+7. 本地审计通过后执行 CDSS AI 预审与专家批量签收机制。
+8. 相关单测、全量单测通过后导入 Neo4j 测试库。
+9. 导入后执行语义关系去重、同类型同名节点去重和服务器全局安全体检。
+
+### 关键执行结果
+
+源文件：
+
+```text
+纳入资料：5
+1. 《内科学（第10版）》.docx
+2. 《内科学（第10版）》.pdf
+3. 内科学(第8版).docx
+4. 室性心律失常中国专家共识基层版.pdf
+5. ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf
+```
+
+解析与抽取：
+
+```text
+PDF 解析：3 份，1133 页，页数核对率 100%，OCR 阻断 0
+DOCX 解析：2 份，39151 个片段，失败 0
+证据抽取：5 份资料均命中，12 个疾病/亚型，1979 条指南/教材证据
+教材骨架证据：264 条
+```
+
+本地图谱：
+
+```text
+节点：2428
+关系：17845
+疾病/亚型：12
+Evidence：2208
+Guideline：5
+DiagnosisCriteria：12
+TreatmentPlan：18
+Medication：15
+Procedure：7
+Symptom：8
+Sign：7
+ThresholdRule：32
+```
+
+本地最终审计：
+
+```text
+quality_gate_status = passed
+required_pathway_missing_count = 0
+closed_loop_ready_disease_count = 12/12
+cdss_recommendation_readiness_error_count = 0
+duplicate_type_name_count = 0
+duplicate_semantic_relation_count = 0
+technical_display_name_error_count = 0
+treatment_plan_actionability_error_count = 0
+medication_class_without_specific_count = 0
+core_relation_evidence_chain_rate = 1.0
+target_name_or_alias_match_rate = 1.0
+```
+
+服务器导入与复核：
+
+```text
+导入模式：idempotent_merge_no_delete
+导入节点：2428
+导入关系：17845
+导入前服务器：KGNode=31911，关系=81520
+导入后服务器：KGNode=34293，关系=99273
+语义重复关系：0，未删除
+同类型同名重复：1 组，已合并；转移出边 2、入边 3，删除重复节点 1
+最终服务器：KGNode=34292，关系=99269
+global_safety_gate_status = passed
+blocking_issue_count = 0
+```
+
+批次级服务器统计：
+
+```text
+batch_id = BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD
+服务器本批次节点 = 2428
+服务器本批次关系 = 17841
+服务器本批次疾病 = 12
+```
+
+测试：
+
+```text
+相关单测：11 项 OK
+全量单测：93 项 OK
+脚本 py_compile：OK
+```
+
+统计报告：
+
+```text
+AI自动化工具-文献指南解析-统计报告_20260705.html
+AI自动化工具-文献指南解析-统计报告_20260705.json
+报告批次数：7
+```
+
+### 本次发现并修复的问题
+
+1. `VT` 作为别名时会误命中 `SVT`，`VA` 会误命中 `LVAD`；已在批次准备脚本中加入短 ASCII 别名词边界匹配，并去除过宽别名。
+2. required 回填初版评分误选 ESC 缩略语页、药物表或混排表格作为诊断证据；已改为 12 个缺口的专属证据规则，禁止缩略语页作为核心证据。
+3. DOCX 证据 `source_page=None` 会破坏证据链完整率；已统一写 `N/A`，并补单测。
+4. `钾剂` 药物类别缺少具体药物承接；已补 `氯化钾`，并补药物类别具体化规则。
+5. required 回填按 code 新增节点时，曾创建“心室扑动与心室颤动诊断标准”同类型同名重复；已修 `apply_curated_required_backfill.py`，按 `entityType+name` 复用既有节点并重映射关系。
+6. 两条随访关系缺 `exclusion_criteria`，导致 CDSS readiness 仍剩 2 项；已补模板和当前关系字段。
+
+### 输出文件
+
+```text
+心血管内科文献集合\BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD
+心血管内科文献集合\BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD\08_neo4j_import\neo4j_import_summary.json
+心血管内科文献集合\BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD\08_neo4j_import\global_safety_check_20260704_post_import\01_服务器全库硬闸门_summary.json
+scripts\build_ventricular_arrhythmia_evidence.py
+scripts\build_va_scd_required_backfill_spec.py
+scripts\apply_curated_required_backfill.py
+```
+
+### 关联踩坑日志
+
+已同步 `_全局复利与踩坑日志.md`：
+
+- `2026-07-05 21:22:26`：室性心律失常/心脏性猝死批次，短 ASCII 别名边界、required 回填证据选择、同类型同名节点复用、CDSS 排除/禁忌字段补齐。

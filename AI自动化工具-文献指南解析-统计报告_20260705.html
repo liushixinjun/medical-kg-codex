@@ -1,0 +1,563 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>AI自动化工具-文献指南解析-统计报告_20260705</title>
+  <style>
+    body { font-family: "Microsoft YaHei", "Segoe UI", Arial, sans-serif; margin: 28px; color: #172033; background: #f7f9fc; }
+    h1 { margin-bottom: 6px; }
+    h2 { margin-top: 34px; border-left: 5px solid #2f6fed; padding-left: 10px; }
+    .meta { color: #667085; margin-bottom: 20px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin: 18px 0; }
+    .card { background: white; border: 1px solid #e6eaf2; border-radius: 10px; padding: 14px; box-shadow: 0 1px 2px rgba(16, 24, 40, .04); }
+    .card-title { color: #667085; font-size: 13px; }
+    .card-value { font-size: 22px; font-weight: 700; margin-top: 6px; }
+    table { border-collapse: collapse; width: 100%; background: white; margin: 12px 0 24px; font-size: 13px; }
+    th, td { border: 1px solid #e3e8f0; padding: 8px 10px; vertical-align: top; }
+    th { background: #eef4ff; color: #1d3b6d; position: sticky; top: 0; z-index: 1; }
+    td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    .wide { display: block; overflow-x: auto; white-space: nowrap; }
+    .note { background: #fff8e6; border: 1px solid #ffe2a8; border-radius: 8px; padding: 12px; }
+    .ok { color: #067647; font-weight: 700; }
+    .warn { color: #b54708; font-weight: 700; }
+    .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+    .dot.on { background: #2f6fed; box-shadow: 0 0 0 2px rgba(47,111,237,.12); }
+    .dot.off { background: #d0d5dd; }
+    details { background: white; border: 1px solid #e3e8f0; border-radius: 8px; padding: 10px 12px; margin: 10px 0; }
+    summary { cursor: pointer; font-weight: 700; color: #1d3b6d; }
+    code { background: #eef1f5; padding: 2px 5px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+  <h1>AI自动化工具-文献指南解析-统计报告</h1>
+  <div class="meta">生成时间：2026-07-05 00:18:57 ｜ 日期版本：20260705 ｜ 工作目录：<code>E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成</code></div>
+
+  <div class="cards"><div class='card'><div class='card-title'>资料总库</div><div class='card-value'>415 份唯一资料</div></div><div class='card'><div class='card-title'>指南 PDF</div><div class='card-value'>224 个文件</div></div><div class='card'><div class='card-title'>书籍教材</div><div class='card-value'>2 份唯一资料</div></div><div class='card'><div class='card-title'>已解析批次</div><div class='card-value'>7 个</div></div><div class='card'><div class='card-title'>服务器节点</div><div class='card-value'>34292</div></div><div class='card'><div class='card-title'>服务器关系</div><div class='card-value'>99269</div></div><div class='card'><div class='card-title'>服务器安全门</div><div class='card-value'>passed</div></div></div>
+
+  <div class="note">
+    <b>结论：</b>截至本报告，心血管内科已完成基础骨架库、心肌病、冠心病、心力衰竭、房颤 AF 批次。
+    服务器最终全局安全门为 <span class="ok">passed</span>；
+    但部分专病仍存在 <code>knowledge_display</code> 或临床正式发布限制，不能等同于正式 CDSS 强推荐上线。
+  </div>
+
+  <h2>1. 资料总库统计</h2>
+  <table><thead><tr><th>资料类别</th><th>唯一资料数</th><th>原始文件数</th><th>同名多格式重复文件数</th><th>PDF文件</th><th>DOCX文件</th><th>支持格式文件</th><th>路径</th></tr></thead><tbody><tr><td>指南/文献目录</td><td class="num">413</td><td class="num">420</td><td class="num">7</td><td class="num">224</td><td class="num">159</td><td class="num">387</td><td>E:\BigMouse\0.CDSS文献诊疗指南材料PDF\心血管内科\诊疗指南</td></tr>
+<tr><td>书籍教材目录</td><td class="num">2</td><td class="num">3</td><td class="num">1</td><td class="num">1</td><td class="num">2</td><td class="num">3</td><td>E:\BigMouse\0.CDSS文献诊疗指南材料PDF\心血管内科\书籍教材</td></tr></tbody></table>
+
+  <details open>
+    <summary>书籍教材具体名称（同名 PDF/DOCX 只算一份）</summary>
+    <table><thead><tr><th>资料名称</th><th>已有格式</th><th>文件数</th></tr></thead><tbody><tr><td>《内科学(第10版)》</td><td>docx, pdf</td><td class="num">2</td></tr>
+<tr><td>内科学(第8版)</td><td>docx</td><td class="num">1</td></tr></tbody></table>
+  </details>
+
+  <details>
+    <summary>指南/文献具体名称（同名 PDF/DOCX 只算一份）</summary>
+    <table><thead><tr><th>资料名称</th><th>已有格式</th><th>文件数</th></tr></thead><tbody><tr><td>.DS_Store</td><td>none</td><td class="num">2</td></tr>
+<tr><td>01-05-A-0001CCU住院须知</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-A-0002ICU住院须知</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-A-0003病房住院须知</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-A-0005特需病房住院须知</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-A-0006急诊住院须知</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-B-0001预防跌倒十知道</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-B-0002压力性损伤的预防</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-B-0005约束注意事项</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-B-0006预防跌倒很重要</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-B-0008预防跌倒四部曲之健康管理</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-B-0009预防跌倒四部曲之药品管理</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-B-0010预防跌倒四部曲之坚持运动</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-B-0011胃管照护注意事项</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-B-0012深静脉置管照护注意事项</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-B-0013尿管照护注意事项</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-B-0014胸腔闭式引流管照护注意事项</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0001认识瓣膜疾病</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0003高血压与冠心病</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0004高血压患者用药误区</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0005肥胖与冠心病</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0009认识冠心病</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0011吸烟与冠心病</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0012血脂与冠心病</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0016心力衰竭</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0018心律失常</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0019认识先天性心脏病</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0020病毒性心肌炎</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0021肥厚型心肌病</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0022扩张型心肌病</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0023低血糖</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0024糖尿病</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0026静脉血栓栓塞症</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0027痛风</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0028主动脉夹层疾病知识宣教</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0029主动脉夹层患者出院宣教</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0030外科心脏瓣膜病术后出院注意事项</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0031冠心病搭桥出院注意事项</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0032先心病小儿外科术后出院注意事项</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0033乳糜胸相关健康指导</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0034腹主动脉瘤</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0035下肢动脉缺血</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0036糖尿病足</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0037外周动脉夹层</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0038其他外周动脉粥样硬化闭塞症</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0039下肢静脉曲张</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0040盆腔静脉功能不全</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0041下肢静脉血栓</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0042血管瘤、血管畸形</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0043心力衰竭的综合管理</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0044心衰的自我管理</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0045心衰患者的外出旅行管理</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0046主动脉瓣疾病</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0047二尖瓣疾病</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0048三尖瓣疾病</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0049肺动脉瓣疾病</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0050室间隔缺损</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0051房间隔缺损</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0052动脉导管未闭</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0053卵圆孔未闭</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0054法洛四联症</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0055糖尿病并发症</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0056预防静脉血栓栓塞症</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0057房颤知识</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0058房颤的诊断和治疗</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0059先心病小儿介入术后出院注意事项</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-C-0060体位性低血压护理指导</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-D-0001低盐低脂饮食</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-D-0003低嘌呤饮食</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-D-0004限钾饮食</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-D-0005高钾饮食</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-D-0006高蛋白饮食</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-D-0007平衡膳食八准则</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-D-0008软食</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-D-0009半流质饮食</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-D-0010流质饮食</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-D-0014糖尿病饮食</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-D-0017心衰的饮食指导</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-D-0018冠心病饮食指导</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-D-0019口服营养补充护理指导</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-E-0001静脉留置针</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-E-0002便秘的预防与处理</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-E-0003出入量的记录意义及正确统计方法</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-E-0004吸氧</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-E-0005遥测心电监护</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-E-0006雾化须知</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-E-0007正确测血压</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-E-0008推注泵、输液泵的使用</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-E-0009血糖监测</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-E-0010气管切开病人健康知识宣教</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-E-0011临时起搏器及起搏导线照护</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-E-0012能倍乐软雾吸入器</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-E-0013血透通路</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-E-0014胰岛素注射</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-F-0001抽血注意事项</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-F-0002粪便标本采集</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-F-0003尿液常规标本采集</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-F-0004高血压五项</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-F-0005OGTT</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-F-0006痰标本</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-F-0007一般细菌培养及鉴定(尿液)</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-F-0008一般细菌培养及鉴定(大便)</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-F-0009 24h尿液生化</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-F-0010卡托普利试验</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-G-0001腹部彩超</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-G-0002经食道超声心动图</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-G-0003心脏彩超</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-G-0004CT平扫</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-G-0005CT增强</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-G-0006运动心肺</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-G-00076分钟步行试验</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-G-0008磁共振平扫</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-G-0009磁共振增强</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-G-0010动态血压</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-G-0011动态心电图</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-G-0012运动平板</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-G-0013肺功能检查</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-G-0014CT血管成像CTA</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-G-0015食道调博</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-G-0016心肌血流灌注显像MPI</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-H-0002介入治疗术前注意事项</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-H-0003介入治疗术后注意事项</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-H-0004心律失常导管消融术护理指导</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-H-0005心律失常导管消融术的出院指导</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-H-0006冠状动脉造影及介入治疗手术指导</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-H-0007冠状动脉介入术后出院宣教</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-H-0008介入封堵术的护理指导</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-H-0009介入封堵术的出院指导</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-H-0010永久起搏器植入术的护理指导</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-H-0011永久起搏器植入的出院指导</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-H-0012左心耳封堵术的护理指导</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-H-0013左心耳封堵术的出院指导</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-H-0014心室折叠减容术的护理指导</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-H-0015经皮球囊二尖瓣成形术的护理指导</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-H-0016经导管主动脉瓣置换术(TAVR)的护理指导</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-I-0001心外科术前准备</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-I-0002冠心病搭桥术后护理</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-I-0003外科心脏瓣膜置换术后护</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-I-0004先心病小儿外科术后护理</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-I-0006主动脉夹层外科术后护理</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-J-0001华法林用药须知</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-J-0005血管外科常用药物</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-J-0006冠心病用药指导</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-J-0007静脉血栓栓塞症药物管理</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-J-0008瑞百安、波立达用药须知</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-J-0009英克司兰钠(乐可为)用药须知</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-K-0001呼吸功能锻炼</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-K-0003外科术后康复运动七步法</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-K-0005血管外科下肢康复</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-K-0006心梗患者心脏康复运动</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-K-0007糖尿病该如何运动</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-K-0008静脉血栓栓塞症运动康复</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-L-0001ICU心理护理</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-L-0002心理健康教育</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-M-0002出院流程</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05-M-0003发生了急性胸痛怎么办</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>01-05B-0007预防跌倒四部曲之环境物品</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>2.厦门大学附属心血管病医院专科护理常规(1)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>2015卵圆孔未闭处理策略中国专家建议_张玉顺</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>2017 卵圆孔未闭预防性封堵术中国专家共识</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>2018 ESC EACTS Guidelines on myocardial revascularization</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>2018 STEMI院前溶栓治疗中国专家共识</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>2021-2023年护理诊断编码20220411(2版)(1)</td><td>xlsx</td><td class="num">1</td></tr>
+<tr><td>2021卵圆孔未闭相关卒中预防中国专家指南_张玉顺</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>2024 中国成人暴发性心肌炎诊断和治疗指南</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>2024 年中国心血管病医疗质量概述【数据汇总】</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>2025ESC瓣膜指南 -</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>2_中国心肌病综合管理指南2025</td><td>pdf</td><td class="num">2</td></tr>
+<tr><td>2肺栓塞护理常规</td><td>doc</td><td class="num">1</td></tr>
+<tr><td>4TH universal definition of MI</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>5DVT护理常规</td><td>doc</td><td class="num">1</td></tr>
+<tr><td>6. 成人住院患者静脉血栓栓塞症的预防护理(2023-5-1实施)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>ACC/AHA/ACEP/NAEMSP /SCAI指 南:急性冠脉 综合征患者的管理 2025</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>ACC/AHA指南:心脏瓣膜病患者的管理(2020)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>ACC_AHA 心脏植入式电子设备的合理适用标准 2025</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>ACS ESC 2023</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>AF AHA 2023</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>AF ESC 2020</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>AF ESC 2024</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>AHA Management of Acute Myocarditis and Chronic Inflammatory Cardiomyopathy</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>AHA科学声明:使用心室辅助装置患者高血压的管理(2022)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>CCS CN 2024</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>CCS ESC 2019</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>CCS ESC 2024</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>DCM AHA 2016</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>DCM CN 2018</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>DCM ESC 2016</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>Danon病 A</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>Danon病 B</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>Danon病 C</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>Danon病 D</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>Duchenne型及Becker型肌营养不良</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>Dyslipidaemias AHA 2026</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>Dyslipidaemias ESC 2019</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>Dyslipidaemias ESC 2025</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>EACTS-STS主动脉急慢性综合征诊疗指南(2024)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>EHRA:连续血流左心室辅助装置患者心律失常的药物治疗和导管消融治疗(2024)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>ESC 关于传导系统起搏适应症的临床共识声明 2025</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>ESC 急性冠脉综合征指南(2023)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>ESC 起搏 2025</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>ESC/EACTS指南:房颤的管理(2024)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>ESC/EACTS指南:瓣膜性心脏病的管理(2021)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>ESC指南:右心衰与左心室辅助装置-术前,围手术期和术后管理策略 2024</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>ESC指南:室性心律失常患者的管理和心源性猝死的预防 2022</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>ESC指南:心肌病的管理2023</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>Endocarditis ESC 2023</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>European position paper on the management of patients with patent foramen ovale Part II - Decompression sickness, migraine, arterial deoxygenation syndromes and select high-risk clinical conditions</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>European position paper on the management of patients with patent foramen ovale--General approach and left circulation thromboembolism</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>HCM AHA 2024</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>HCM CN 2023</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>HCM ESC 2023</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>HF AHA 2022</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>HF CN 2024</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>HF ESC 2021</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>HF ESC 2023</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>HT ACC 2017</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>HT AHA 2025</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>HT ESC 2018</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>HT ESC 2024</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>ICU患者支气管肺泡灌洗液采集、送检、检测及结果解读规范2020</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>INOCA ESC 2020</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>JCS 2023 Myocarditis</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>NSTE-ACS ACC 2014</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>NSTE-ACS CN 2016</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>NSTE-ACS CN 2024</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>NSTE-ACS ESC 2020</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>PAD</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>PE ESC 2019</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>PH CN 2021</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>PH ESC 2015</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>Pompe病 A</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>Pompe病 B</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>SCAI Guidelines for the Management of Patent Foramen Ovale</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>STEMI ACC 2013</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>STEMI CN 2019</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>STEMI ESC 2017</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>SVT ESC 2019</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>SYNCOPE CN 2018</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>SYNCOPE ESC 2018</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>_中国 普通外科围手术期病人血液管理中国专家共识(2025)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>《ESICM急性呼吸窘迫综合征指南:定义、分型和呼吸支持策略》解读2023</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>《严重过敏反应急救指南》推荐意见2019</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>【医脉通】2020心肌梗死后心力衰竭防治专家共识</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>【医脉通】舒张性心力衰竭早期防治专家建议</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>【医脉通】钙增敏剂在心力衰竭中的临床应用专家建议</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>【用药助手】2015年抗菌药物临床应用指导原则</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>【用药助手】2024 IDSA指南:抗菌素耐药革兰氏阴性菌感染的治疗</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>【用药助手】2025 ATS官方临床实践指南:社区获得性肺炎的诊断与治疗</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>【用药助手】中国慢性胆囊炎、胆囊结石内科诊疗共识意见(2018年)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>【用药助手】中国成人医院获得性肺炎与呼吸机相关性肺炎诊断和治疗指南(2018年版)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>【用药助手】尿路感染诊断与治疗中国专家共识(2015版)——复杂性尿路感染</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>下消化道出血诊治指南2020</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>下肢深静脉血栓形成介入治疗护理实践指南</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 ST段抬高型心肌梗死患者急诊PCI微循环保护策略</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 Stanford B 型主动脉夹层诊断和治疗2022</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 冠状动脉粥样硬化性心脏病猝死2024</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 围手术期患者血液管理指南 WST 796-2022</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 左心室辅助装置植入全程管理专家共识(2023)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 左心耳干预预防心房颤动患者血栓栓塞事件:目前的认识和建议(2023) (1)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 常见先天性心脏病经皮介入治疗指南2021</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 心房颤动诊断和治疗中国指南 2025</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 心肌病综合管理指南(2025年)</td><td>docx, pdf</td><td class="num">2</td></tr>
+<tr><td>中国 心脏再同步治疗慢性心力衰竭的中国专家共识(2021)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 急性肺栓塞多学科团队救治中国专家共识2022</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 感染性心内膜炎外科治疗中国专家共识2022</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 慢性冠脉综合征患者诊断及管理指南2024</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 慢性血栓栓塞性肺动脉高压诊断与治疗指南(2024版)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 成人暴发性心肌炎诊断和治疗指南2024</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 成人肥厚型心肌病诊断与治疗指南2023</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 扩张型心肌病诊断和治疗指南2018</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 抗心律失常药物临床应用中国专家共识2023</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 经导管主动脉瓣置换术临床实践指南(2023版)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 经导管主动脉瓣置换术临床路径专家共识(2024 版)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 经导管二尖瓣缘对缘修复术的中国专家共识2022</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 经皮冠状动脉介入治疗指南(2025)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 腹主动脉瘤诊断和治疗中国专家共识(2022版)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 重症心血管营养专家共识(2025)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 非ST段抬高型急性冠脉综合征诊断和治疗指南2024</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 高血压临床实践指南2024</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国 高血压急症诊治规范2020</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国专家共识:危重患者人血白蛋白应用2020</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国左心室辅助装置候选者术前评估与管理专家共识(2023)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国左心室辅助装置植入术后...管理专家共识(2024年)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国左心室辅助装置植入术后早期重症监护管理专家共识(2024)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国床旁临时心脏起搏急诊专家共识(2023)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国心力衰竭患者离子管理专家共识</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国心力衰竭诊断和治疗指南2024</td><td>pdf</td><td class="num">2</td></tr>
+<tr><td>中国心房颤动管理指南(2025)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国心肌病综合管理指南2025</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国心脏移植免疫抑制治疗及排斥反应诊疗规范(2019版)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国心血管健康与疾病报告 2024 概要【数据汇总】</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国心血管健康与疾病报告(2023)【数据汇总】</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国急诊危重症患者肠内营养治疗专家共识2022</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国急诊感染性休克临床实践指南2016</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国急诊成人镇痛、镇静与谵妄管理专家共识2023</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国慢性肾脏病患者高血压管理指南(2023年版)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国成人心肌炎临床诊断与治疗指南2024</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国成人心脏外科围手术期营养支持治疗专家共识(2019)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国成人急性呼吸窘迫综合征(ARDS)诊断与非机械通气治疗指南(2023)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国成人患者肠外肠内营养临床应用指南(2023版)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国成人重症患者镇痛管理专家共识2023</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国抗血栓药物相关出血诊疗规范专家共识2022</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国经导管主动脉瓣置入术(TAVI)多学科专家共识</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国肺动脉高压诊断与治疗指南(2021版)</td><td>pdf</td><td class="num">2</td></tr>
+<tr><td>中国脓毒症脓毒性休克急诊治疗指南2018</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国血脂管理指南(2023年)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国透析患者慢性心力衰竭管理指南 2022</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国重症患者肠外营养治疗临床实践专家共识(2024)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国高血压临床实践指南 2022</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>中国高血压防治指南(2024年修订版)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>亚低温脑保护中国专家共识2020</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>住院患者静脉血栓栓塞症预防护理与管理专家共识_植艳茹</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>儿童常见先天性心脏病介入治疗专家共识</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>先天性心脏病相关性肺动脉高压诊治专家共识</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>全血和成分血使用规范</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>内分泌性高血压筛查专家共识(2025版)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>冠心病双联抗血小板治疗中国专家共识</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>冠状动脉粥样硬化性心脏病患者药物治疗管理路径专家共识_周洋</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>原发性醛固酮增多症诊断治疗的专家共识(2024版)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>发作性高血压临床诊治专家共识</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>嗜酸性粒细胞心内膜炎</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>图谱分解思路</td><td>txt</td><td class="num">1</td></tr>
+<tr><td>存活心肌无创影像学评价专家共识</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>室上性心动过速诊断及治疗中国专家共识(2021)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>室性心律失常中国专家共识基层版</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>射血分数保留的心力衰竭诊断与治疗中国专家共识 2025</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>左心室肥厚诊断和治疗临床路径中国专家共识2023</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>常见先天性心脏病介入治疗中国专家共识之一:房间隔缺损介入治疗</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>常见先天性心脏病介入治疗中国专家共识之三、动脉导管未闭的介入治疗</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>常见先天性心脏病介入治疗中国专家共识之二、室间隔缺损介入治疗</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>常见先天性心脏病介入治疗中国专家共识之四:经皮球囊肺动脉瓣与主动脉瓣成形术</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>常见先天性心脏病经皮介入治疗指南(2021版)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>心内膜弹力纤维增生症 A</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>心内膜弹力纤维增生症 B</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>心内膜心肌纤维化</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>心力衰竭常见病因及合并症的基层处理专家建议_袁璟</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>心力衰竭患者利尿剂抵抗诊断及管理中国专家共识</td><td>pdf</td><td class="num">2</td></tr>
+<tr><td>心力衰竭药物治疗相关高钾血症防治专家共识2024</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>心原性休克诊断和治疗中国专家共识(2018)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>心房颤动节律控制药物规范应用专家共识2023</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>心房颤动诊断和治疗中国指南 2023</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>心肌梗死心电图诊断标准和报告规范中国专家共识</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>心肌病 AHA 2006</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>心肌病 ESC 2008</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>心肌病 ESC 2023</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>心肌病 WHO 1980</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>心肌病 WHO 1995</td><td>epub</td><td class="num">1</td></tr>
+<tr><td>心肌病MOGE(S) ACC 2013</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>心肌病分类历史简介</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>心肌病心内膜心肌活检及病理检查临床应用指南</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>心肌病指南的演变</td><td>pptx</td><td class="num">1</td></tr>
+<tr><td>心肌病诊断与治疗建议 2007</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>心肌细胞心肌细胞外基质受累为主的限制型心肌病</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>心脏外科围手术期脑损伤防治专家共识2024</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>心脏手术白蛋白使用专家共识 2022</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>心脏瓣膜外科人工瓣膜选择中国专家共识</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>心脏结节病 A</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>心脏结节病 B</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>心血管疾病合并甲状腺功能异常临床诊治专家共识</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>心血管疾病防治指南和共识2007</td><td>doc</td><td class="num">1</td></tr>
+<tr><td>急性呼吸窘迫综合征患者机械通气指南(试行)2016</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>急性胰腺炎急诊诊治专家共识2024</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>急诊上消化道出血急诊诊治流程专家共识2021</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>慢性心力衰竭芪苈强心临床应用的专家共识2024</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>慢性肾脏病合并非瓣膜性心房颤动患者抗凝管理的专家共识_慢性肾脏病非瓣膜性心房颤动抗凝管理工作组</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>成人体外心肺复苏专家共识更新(2023版)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>成人先天性心脏病相关肺动脉高压诊断与治疗指南</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>成人法布雷病心肌病诊断与治疗中国专家共识</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>成人爆发性心肌炎诊断与治疗中国专家共识 2017</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>成人经鼻高流量湿化氧疗临床规范应用专家共识2019</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>抗心律失常药物临床应用中国专家共识</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>抗血栓药物围手术期管理多学科专家共识2020</td><td>pdf</td><td class="num">2</td></tr>
+<tr><td>护理制度汇编2024年压疮(1)(1)</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>护理制度汇编2024年跌倒(1)(2)</td><td>docx</td><td class="num">1</td></tr>
+<tr><td>无创正压通气急诊临床实践专家共识(2018)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>法布雷病心肌病 A</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>法布雷病心肌病 B</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>法布雷病心肌病 C</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>泛血管疾病患者血脂管理专家共识(2025版)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>淀粉样变心肌病 A</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>淀粉样变心肌病 B</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>炎症性心肌病</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>神经重症目标温度管理中国专家共识(2022版)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>稳定性冠心病诊断与治疗指南 2018</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>线粒体心肌病 A</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>线粒体心肌病 B</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>终止癫痫持续状态发作的专家共识2022</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>经皮冠状动脉介入治疗指南(2025)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>结蛋白相关心肌病 A</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>结蛋白相关心肌病 B</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>缺血性心肌病血运重建专家共识</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>老年人心肾综合征利尿剂应用的中国专家共识</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>老年人静脉血栓栓塞症防治中国专家共识_吴洲鹏</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>老年冠心病慢病管理指南_王杨淦</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>老年高血压特点及临床诊治流程专家共识(2024)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>肝素诱导的血小板减少症中国专家共识(2017)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>肝衰竭诊治指南(2024年版)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>肥厚型心肌病激发_负荷超声心动图临床应用指南(2024版)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>肾上腺静脉取血操作规范和结果解读专家共识(2025年版)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>脓毒症相关的血小板减少症临床诊疗中国专家共识2023</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>致心律失常性心肌病</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>药效学理论临床应用专家共识</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>血管导管相关感染预防与控制指南2021</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>重症右心功能管理专家共识2017</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>重症患者凝血功能障碍标准化评估中国专家共识2022</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>重症患者腹内高压监测与管理专家共识(2020版)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>重症血流动力学治疗——北京共识2015</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>铁过载心肌病 A</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>铁过载心肌病 B</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>铁过载心肌病 C</td><td>jpg</td><td class="num">1</td></tr>
+<tr><td>青年急性心肌梗死诊断和治疗专家建议</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>高血压基层诊疗指南(2019年)</td><td>pdf</td><td class="num">1</td></tr>
+<tr><td>高龄卧床高危静脉血栓栓塞症防治中国专家共识</td><td>pdf</td><td class="num">1</td></tr></tbody></table>
+  </details>
+
+  <h2>2. 学科 / 疾病大类 / 疾病批次统计</h2>
+  <div class="wide"><table><thead><tr><th>学科</th><th>疾病大类</th><th>疾病/范围</th><th>批次</th><th>纳入唯一资料</th><th>纳入原始文件</th><th>书籍教材</th><th>指南/共识PDF</th><th>产生证据文档</th><th>节点</th><th>关系</th><th>疾病数</th><th>required缺口</th><th>空壳治疗</th><th>药物类别缺具体药物</th><th>同名重复</th><th>语义重复关系</th></tr></thead><tbody><tr><td>心血管内科</td><td>心血管内科基础骨架</td><td>心血管内科基础骨架库</td><td>FOUNDATION-CARD-20260624-001</td><td class="num">2</td><td class="num">3</td><td class="num">3</td><td class="num">0</td><td></td><td class="num">26249</td><td class="num">53108</td><td class="num">76</td><td class="num">301</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td>心血管内科</td><td>心肌病</td><td>心肌病</td><td>BATCH-CARD-CM-20260622-001</td><td class="num">22</td><td class="num">22</td><td class="num">1</td><td class="num">21</td><td class="num">22</td><td class="num">5658</td><td class="num">17403</td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td>心血管内科</td><td>冠状动脉粥样硬化性心脏病（冠心病）</td><td>冠状动脉粥样硬化性心脏病</td><td>BATCH-CARD-CAD-20260623-001</td><td class="num">30</td><td class="num">30</td><td class="num">1</td><td class="num">29</td><td class="num">29</td><td class="num">8446</td><td class="num">28704</td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td>心血管内科</td><td>心力衰竭</td><td>心力衰竭</td><td>BATCH-CARD-HF-20260629-001</td><td class="num">16</td><td class="num">18</td><td class="num">3</td><td class="num">13</td><td class="num">18</td><td class="num">2723</td><td class="num">10380</td><td class="num">11</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td>心血管内科</td><td>心律失常</td><td>心房颤动（房颤，AF）</td><td>BATCH-CARD-AF-20260701-001_房颤_AtrialFibrillation</td><td class="num">17</td><td class="num">18</td><td class="num">3</td><td class="num">10</td><td class="num">17</td><td class="num">1787</td><td class="num">8825</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td>心血管内科</td><td>室上性心动过速及心房扑动</td><td>室上性心动过速及心房扑动</td><td>BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter</td><td class="num">6</td><td class="num">7</td><td class="num">3</td><td class="num">4</td><td class="num">7</td><td class="num">1254</td><td class="num">9221</td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td>心血管内科</td><td>室性心律失常及心脏性猝死</td><td>室性心律失常及心脏性猝死</td><td>BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD</td><td class="num">4</td><td class="num">5</td><td class="num">3</td><td class="num">2</td><td class="num">5</td><td class="num">2428</td><td class="num">17845</td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr></tbody></table></div>
+
+  <h2>3. 疾病大类总览</h2>
+  <div class="wide"><table><thead><tr><th>疾病大类</th><th>已解析专病/批次数</th><th>疾病数</th><th>平均维度覆盖率</th><th>维度覆盖</th></tr></thead><tbody><tr><td>冠状动脉粥样硬化性心脏病（冠心病）</td><td class="num">1</td><td class="num">10</td><td>100%</td><td><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span></td></tr>
+<tr><td>室上性心动过速及心房扑动</td><td class="num">1</td><td class="num">6</td><td>94%</td><td><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot off'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span></td></tr>
+<tr><td>室性心律失常及心脏性猝死</td><td class="num">1</td><td class="num">12</td><td>100%</td><td><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span></td></tr>
+<tr><td>心力衰竭</td><td class="num">1</td><td class="num">11</td><td>89%</td><td><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot off'></span><span class='dot on'></span><span class='dot off'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span></td></tr>
+<tr><td>心律失常</td><td class="num">1</td><td class="num">1</td><td>94%</td><td><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot off'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span></td></tr>
+<tr><td>心肌病</td><td class="num">1</td><td class="num">12</td><td>100%</td><td><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span></td></tr></tbody></table></div>
+
+  <h2>4. 心血管内科骨架库阶段统计</h2>
+  <div class="wide"><table><thead><tr><th>阶段</th><th>节点</th><th>关系</th><th>疾病数</th><th>症状</th><th>体征</th><th>检查</th><th>药物</th><th>治疗方案</th><th>有症状疾病</th><th>有体征疾病</th><th>有检查疾病</th><th>有治疗疾病</th></tr></thead><tbody><tr><td>初版目录骨架</td><td class="num">600</td><td class="num">735</td><td class="num">68</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>样板批次增强</td><td class="num">6541</td><td class="num">30803</td><td></td><td class="num">18</td><td class="num">16</td><td class="num">10</td><td class="num">19</td><td class="num">23</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>教材深层实体化</td><td class="num">13095</td><td class="num">39074</td><td class="num">68</td><td class="num">22</td><td class="num">23</td><td class="num">16</td><td class="num">26</td><td class="num">29</td><td class="num">54</td><td class="num">61</td><td class="num">58</td><td class="num">60</td></tr>
+<tr><td>全书跨章节回捞</td><td class="num">26191</td><td class="num">53314</td><td class="num">68</td><td class="num">25</td><td class="num">27</td><td class="num">19</td><td class="num">26</td><td class="num">31</td><td class="num">57</td><td class="num">67</td><td class="num">63</td><td class="num">67</td></tr></tbody></table></div>
+
+  <h2>5. 18维度覆盖率</h2>
+  <div class="wide"><table><thead><tr><th>范围</th><th>覆盖维度</th><th>覆盖率</th><th>维度覆盖</th><th>未覆盖维度</th></tr></thead><tbody><tr><td>心血管内科基础骨架库</td><td>18/18</td><td>100%</td><td><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span></td><td></td></tr>
+<tr><td>心肌病</td><td>18/18</td><td>100%</td><td><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span></td><td></td></tr>
+<tr><td>冠状动脉粥样硬化性心脏病</td><td>18/18</td><td>100%</td><td><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span></td><td></td></tr>
+<tr><td>心力衰竭</td><td>16/18</td><td>89%</td><td><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot off'></span><span class='dot on'></span><span class='dot off'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span></td><td>鉴别诊断、危险因素</td></tr>
+<tr><td>心房颤动（房颤，AF）</td><td>17/18</td><td>94%</td><td><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot off'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span></td><td>鉴别诊断</td></tr>
+<tr><td>室上性心动过速及心房扑动</td><td>17/18</td><td>94%</td><td><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot off'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span></td><td>流行病学</td></tr>
+<tr><td>室性心律失常及心脏性猝死</td><td>18/18</td><td>100%</td><td><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span><span class='dot on'></span></td><td></td></tr></tbody></table></div>
+
+  <h2>6. 专病/骨架图谱实体维度统计</h2>
+  <div class="wide"><table><thead><tr><th>批次/范围</th><th>疾病</th><th>疾病大类</th><th>疾病子类</th><th>证据</th><th>指南/来源</th><th>症状</th><th>体征</th><th>病因</th><th>危险因素</th><th>并发症</th><th>预后</th><th>检查</th><th>检验</th><th>诊断标准</th><th>鉴别诊断</th><th>风险分层/评分</th><th>治疗方案</th><th>药物</th><th>手术/操作</th><th>随访</th><th>阈值规则</th></tr></thead><tbody><tr><td>心血管内科基础骨架库</td><td class="num">76</td><td class="num">12</td><td class="num">18</td><td class="num">25601</td><td class="num">50</td><td class="num">25</td><td class="num">27</td><td class="num">22</td><td class="num">18</td><td class="num">13</td><td class="num">18</td><td class="num">19</td><td class="num">13</td><td class="num">12</td><td class="num">8</td><td class="num">16</td><td class="num">29</td><td class="num">71</td><td class="num">17</td><td class="num">17</td><td class="num">124</td></tr>
+<tr><td>心肌病</td><td class="num">12</td><td class="num">1</td><td class="num">5</td><td class="num">5258</td><td class="num">22</td><td class="num">23</td><td class="num">23</td><td class="num">13</td><td class="num">13</td><td class="num">8</td><td class="num">12</td><td class="num">13</td><td class="num">7</td><td class="num">12</td><td class="num">4</td><td class="num">7</td><td class="num">15</td><td class="num">50</td><td class="num">8</td><td class="num">12</td><td class="num">107</td></tr>
+<tr><td>冠状动脉粥样硬化性心脏病</td><td class="num">10</td><td class="num">1</td><td class="num">3</td><td class="num">7996</td><td class="num">37</td><td class="num">19</td><td class="num">20</td><td class="num">14</td><td class="num">15</td><td class="num">13</td><td class="num">10</td><td class="num">18</td><td class="num">13</td><td class="num">10</td><td class="num">6</td><td class="num">9</td><td class="num">18</td><td class="num">62</td><td class="num">12</td><td class="num">10</td><td class="num">124</td></tr>
+<tr><td>心力衰竭</td><td class="num">11</td><td class="num">1</td><td class="num">4</td><td class="num">2582</td><td class="num">18</td><td class="num">3</td><td class="num">2</td><td class="num">4</td><td class="num">0</td><td class="num">1</td><td class="num">11</td><td class="num">3</td><td class="num">1</td><td class="num">10</td><td class="num">0</td><td class="num">2</td><td class="num">11</td><td class="num">29</td><td class="num">1</td><td class="num">10</td><td class="num">0</td></tr>
+<tr><td>心房颤动（房颤，AF）</td><td class="num">1</td><td class="num">1</td><td class="num">1</td><td class="num">1651</td><td class="num">18</td><td class="num">9</td><td class="num">6</td><td class="num">1</td><td class="num">14</td><td class="num">6</td><td class="num">1</td><td class="num">8</td><td class="num">8</td><td class="num">4</td><td class="num">0</td><td class="num">5</td><td class="num">8</td><td class="num">27</td><td class="num">8</td><td class="num">2</td><td class="num">0</td></tr>
+<tr><td>室上性心动过速及心房扑动</td><td class="num">6</td><td class="num">1</td><td class="num">1</td><td class="num">1105</td><td class="num">7</td><td class="num">10</td><td class="num">4</td><td class="num">6</td><td class="num">10</td><td class="num">6</td><td class="num">8</td><td class="num">5</td><td class="num">6</td><td class="num">12</td><td class="num">4</td><td class="num">3</td><td class="num">11</td><td class="num">21</td><td class="num">7</td><td class="num">7</td><td class="num">0</td></tr>
+<tr><td>室性心律失常及心脏性猝死</td><td class="num">12</td><td class="num">1</td><td class="num">3</td><td class="num">2208</td><td class="num">5</td><td class="num">8</td><td class="num">7</td><td class="num">12</td><td class="num">11</td><td class="num">3</td><td class="num">12</td><td class="num">8</td><td class="num">4</td><td class="num">12</td><td class="num">2</td><td class="num">11</td><td class="num">18</td><td class="num">15</td><td class="num">7</td><td class="num">12</td><td class="num">32</td></tr></tbody></table></div>
+
+  <h2>7. 专病/骨架图谱关系维度统计</h2>
+  <div class="wide"><table><thead><tr><th>批次/范围</th><th>症状</th><th>体征</th><th>病因</th><th>危险因素</th><th>并发症</th><th>检查</th><th>检验</th><th>诊断标准</th><th>鉴别诊断</th><th>风险分层</th><th>治疗方案</th><th>药物治疗</th><th>手术/操作</th><th>随访</th><th>阈值规则</th><th>证据支撑</th></tr></thead><tbody><tr><td>心血管内科基础骨架库</td><td class="num">522</td><td class="num">481</td><td class="num">133</td><td class="num">363</td><td class="num">398</td><td class="num">401</td><td class="num">212</td><td class="num">12</td><td class="num">40</td><td class="num">16</td><td class="num">177</td><td class="num">294</td><td class="num">198</td><td class="num">17</td><td class="num">124</td><td class="num">43143</td></tr>
+<tr><td>心肌病</td><td class="num">64</td><td class="num">51</td><td class="num">20</td><td class="num">52</td><td class="num">52</td><td class="num">79</td><td class="num">8</td><td class="num">12</td><td class="num">20</td><td class="num">7</td><td class="num">21</td><td class="num">16</td><td class="num">22</td><td class="num">12</td><td class="num">107</td><td class="num">14074</td></tr>
+<tr><td>冠状动脉粥样硬化性心脏病</td><td class="num">104</td><td class="num">84</td><td class="num">24</td><td class="num">66</td><td class="num">69</td><td class="num">77</td><td class="num">54</td><td class="num">10</td><td class="num">22</td><td class="num">9</td><td class="num">49</td><td class="num">96</td><td class="num">31</td><td class="num">10</td><td class="num">124</td><td class="num">23007</td></tr>
+<tr><td>心力衰竭</td><td class="num">32</td><td class="num">22</td><td class="num">14</td><td class="num">0</td><td class="num">11</td><td class="num">33</td><td class="num">0</td><td class="num">20</td><td class="num">0</td><td class="num">2</td><td class="num">11</td><td class="num">43</td><td class="num">0</td><td class="num">20</td><td class="num">0</td><td class="num">7330</td></tr>
+<tr><td>心房颤动（房颤，AF）</td><td class="num">9</td><td class="num">5</td><td class="num">1</td><td class="num">14</td><td class="num">6</td><td class="num">8</td><td class="num">7</td><td class="num">1</td><td class="num">0</td><td class="num">3</td><td class="num">8</td><td class="num">18</td><td class="num">6</td><td class="num">1</td><td class="num">0</td><td class="num">6773</td></tr>
+<tr><td>室上性心动过速及心房扑动</td><td class="num">51</td><td class="num">8</td><td class="num">6</td><td class="num">40</td><td class="num">35</td><td class="num">26</td><td class="num">9</td><td class="num">6</td><td class="num">23</td><td class="num">0</td><td class="num">28</td><td class="num">36</td><td class="num">20</td><td class="num">6</td><td class="num">0</td><td class="num">7688</td></tr>
+<tr><td>室性心律失常及心脏性猝死</td><td class="num">73</td><td class="num">42</td><td class="num">12</td><td class="num">120</td><td class="num">31</td><td class="num">85</td><td class="num">16</td><td class="num">12</td><td class="num">2</td><td class="num">11</td><td class="num">55</td><td class="num">94</td><td class="num">56</td><td class="num">12</td><td class="num">32</td><td class="num">14815</td></tr></tbody></table></div>
+
+  <h2>8. 疾病清单</h2>
+  <table><thead><tr><th>疾病大类</th><th>范围</th><th>疾病数</th><th>疾病名称</th></tr></thead><tbody><tr><td>心血管内科基础骨架</td><td>心血管内科基础骨架库</td><td class="num">76</td><td>Brugada综合征、ST段抬高型心肌梗死、三尖瓣下移畸形、下肢动脉硬化闭塞症、不稳定型心绞痛、主动脉夹层、主动脉瓣反流、主动脉瓣狭窄、主动脉瘤、主动脉窦瘤、主动脉缩窄、二叶主动脉瓣、二尖瓣反流、二尖瓣狭窄、人工瓣膜心内膜炎、儿茶酚胺敏感性室性心动过速、先天性主动脉缩窄、冠状动脉痉挛、冠状动脉瘘、冠状动脉粥样硬化性心脏病、动脉导管未闭、动脉粥样硬化、原发性醛固酮增多症、原发性高血压、嗜铬细胞瘤和副神经节瘤、多瓣膜病、室性心动过速、室性期前收缩、室间隔缺损、心力衰竭、心包积液及心脏压塞、心室扑动与心室颤动、心房心肌病、心房扑动、心房颤动、心肌梗死后综合征、心肌炎、心脏性猝死、心脏骤停、心血管神经症 ...</td></tr>
+<tr><td>心肌病</td><td>心肌病</td><td class="num">12</td><td>心房心肌病、扩张型心肌病、法布雷病心肌病、淀粉样变心肌病、缺血性心肌病、肥厚型心肌病、致心律失常性双心室心肌病、致心律失常性右心室心肌病、致心律失常性左心室心肌病、致心律失常性心肌病、限制型心肌病、非扩张型左心室心肌病</td></tr>
+<tr><td>冠状动脉粥样硬化性心脏病（冠心病）</td><td>冠状动脉粥样硬化性心脏病</td><td class="num">10</td><td>ST段抬高型心肌梗死、不稳定型心绞痛、急性冠脉综合征、急性心肌梗死、慢性冠脉综合征、稳定型心绞痛、缺血性心肌病、陈旧性心肌梗死、隐匿性冠心病、非ST段抬高型心肌梗死</td></tr>
+<tr><td>心力衰竭</td><td>心力衰竭</td><td class="num">11</td><td>全心衰竭、右心衰竭、射血分数保留的心力衰竭、射血分数轻度降低的心力衰竭、射血分数降低的心力衰竭、左心衰竭、心力衰竭、心肌梗死后心力衰竭、急性心力衰竭、慢性心力衰竭、透析患者慢性心力衰竭</td></tr>
+<tr><td>心律失常</td><td>心房颤动（房颤，AF）</td><td class="num">1</td><td>心房颤动</td></tr>
+<tr><td>室上性心动过速及心房扑动</td><td>室上性心动过速及心房扑动</td><td class="num">6</td><td>室上性心动过速、心房扑动、房室折返性心动过速、房室结折返性心动过速、房性心动过速、预激综合征</td></tr>
+<tr><td>室性心律失常及心脏性猝死</td><td>室性心律失常及心脏性猝死</td><td class="num">12</td><td>Brugada综合征、儿茶酚胺敏感性多形性室性心动过速、室性心律失常、室性期前收缩、尖端扭转型室性心动过速、心室扑动与心室颤动、心脏性猝死、心脏骤停、持续性室性心动过速、短QT间期综合征、长QT间期综合征、非持续性室性心动过速</td></tr></tbody></table>
+
+  <h2>9. 服务器最终安全体检（人话版）</h2>
+  <table><thead><tr><th>检查项</th><th>数值</th><th>人话结论</th></tr></thead><tbody><tr><td>是否存在非标准节点</td><td class="num">0</td><td>没有。所有临床节点都带 KGNode 主标签，前端和查询不会混入脏节点。</td></tr>
+<tr><td>是否存在连到非标准节点的关系</td><td class="num">0</td><td>没有。关系两端都是标准 KGNode。</td></tr>
+<tr><td>是否存在技术编码当显示名</td><td class="num">0</td><td>没有。不会再把 EXAM-TTE 这类编码直接显示成临床名称。</td></tr>
+<tr><td>治疗方案是否还是空壳</td><td class="num">0</td><td>没有。治疗方案下面已经能继续连到药物、操作或路径。</td></tr>
+<tr><td>药物类别是否缺具体药物</td><td class="num">0</td><td>没有。抗凝药物等类别已能继续找到具体药物。</td></tr>
+<tr><td>是否存在同类型同名重复实体</td><td class="num">0</td><td>没有。同一类型同一名称已经合并，避免前端数量虚高。</td></tr>
+<tr><td>是否存在重复语义关系</td><td class="num">0</td><td>没有。同一 source-relation-target 不重复。</td></tr>
+<tr><td>是否存在鉴别诊断/治疗方案等空壳关系</td><td class="num">0</td><td>没有。未发现把“诊断标准/治疗方案”当作具体实体挂边。</td></tr>
+<tr><td>总判断</td><td>passed</td><td>passed 表示服务器图谱硬质量门通过；不等于正式 CDSS 强推荐已上线。</td></tr></tbody></table>
+
+  <h2>10. 服务器最终安全体检（原始指标）</h2>
+  <table><thead><tr><th>指标</th><th>数值</th></tr></thead><tbody><tr><td>kg_node_count</td><td class="num">34292</td></tr>
+<tr><td>kg_relation_count</td><td class="num">99269</td></tr>
+<tr><td>non_kgnode_node_count</td><td class="num">0</td></tr>
+<tr><td>relation_touching_non_kgnode_count</td><td class="num">0</td></tr>
+<tr><td>technical_display_name_error_count</td><td class="num">0</td></tr>
+<tr><td>treatment_plan_actionability_error_count</td><td class="num">0</td></tr>
+<tr><td>medication_class_without_specific_count</td><td class="num">0</td></tr>
+<tr><td>duplicate_type_name_count</td><td class="num">0</td></tr>
+<tr><td>duplicate_semantic_relation_count</td><td class="num">0</td></tr>
+<tr><td>semantic_shell_relation_count</td><td class="num">0</td></tr>
+<tr><td>blocking_issue_count</td><td class="num">0</td></tr>
+<tr><td>blocking_items</td><td>[]</td></tr>
+<tr><td>global_safety_gate_status</td><td>passed</td></tr></tbody></table>
+
+  <h2>11. 这些数字从哪里来（人话版）</h2>
+  <table><thead><tr><th>统计内容</th><th>读取文件</th><th>说明</th></tr></thead><tbody><tr><td>资料总数和具体名称</td><td>指南来源目录、教材目录、source_documents_manifest.csv</td><td>按资料名称去重；同一名称同时有 PDF/DOCX 只算一份，但保留格式说明。</td></tr>
+<tr><td>每个批次用了多少资料</td><td>01_source_manifest/source_documents_manifest.csv</td><td>included 表示本批次真正纳入解析的文件。</td></tr>
+<tr><td>多少文档真正产生证据</td><td>04_evidence_and_extraction/guideline_evidence_summary.json</td><td>document_with_evidence_count 表示解析后确实抽到证据段的文档数。</td></tr>
+<tr><td>节点、关系、required 缺口</td><td>06_quality_audit/quality_gate_summary.json</td><td>本地图谱质检结果，判断是否有结构性缺口和硬错误。</td></tr>
+<tr><td>实体维度和关系维度</td><td>05_data_instance/nodes_final.jsonl / relations_final.jsonl</td><td>逐行统计实体类型和关系类型。</td></tr>
+<tr><td>服务器最终状态</td><td>最新 01_服务器全库硬闸门_summary.json</td><td>导入服务器后重新检查，最终以服务器为准；优先取所有批次/全局目录中修改时间最新的安全体检文件。</td></tr></tbody></table>
+</body>
+</html>

@@ -44,6 +44,7 @@ MEDICATION_CLASS_ALIASES = {
     "袢利尿剂": ["环利尿剂", "loop diuretics"],
     "钙通道阻滞剂": ["钙拮抗剂"],
     "他汀类药物": ["他汀"],
+    "抗心律失常药物": ["抗心律失常药"],
 }
 
 SPECIFIC_MEDICATION_ALIASES = {
@@ -60,8 +61,14 @@ SPECIFIC_MEDICATION_ALIASES = {
     "普罗帕酮": ["propafenone"],
     "氟卡尼": ["flecainide"],
     "胺碘酮": ["amiodarone"],
+    "利多卡因": ["lidocaine"],
     "伊布利特": ["ibutilide"],
     "索他洛尔": ["sotalol"],
+    "普萘洛尔": ["propranolol"],
+    "奎尼丁": ["quinidine"],
+    "硫酸镁": ["镁剂", "magnesium sulfate"],
+    "钾剂": ["补钾"],
+    "氯化钾": ["potassium chloride", "KCl"],
     "沙库巴曲缬沙坦": ["沙库巴曲/缬沙坦"],
     "达格列净": ["dapagliflozin"],
     "恩格列净": ["empagliflozin"],
@@ -75,6 +82,8 @@ CANONICAL_MEDICATION_CODE_BY_NAME = {
 for medication_class, concrete_names in {
     "抗凝药物": {"华法林", "肝素", "普通肝素", "低分子量肝素", "达比加群", "达比加群酯", "利伐沙班", "依度沙班", "阿哌沙班", "艾多沙班"},
     "β受体阻滞剂": {"美托洛尔", "比索洛尔", "卡维地洛", "阿替洛尔"},
+    "抗心律失常药物": {"胺碘酮", "利多卡因", "索他洛尔", "普罗帕酮", "奎尼丁", "硫酸镁"},
+    "钾剂": {"氯化钾"},
     "袢利尿剂": {"呋塞米", "托拉塞米", "布美他尼"},
     "盐皮质激素受体拮抗剂": {"螺内酯", "依普利酮"},
     "血管紧张素受体脑啡肽酶抑制剂": {"沙库巴曲缬沙坦"},
@@ -138,6 +147,26 @@ TREATMENT_PLAN_EXECUTION_TARGETS = {
         ("includes_medication", "Medication", "地高辛"),
     ],
     "导管消融": [("includes_procedure", "Procedure", "射频导管消融")],
+    "射频消融治疗": [("includes_procedure", "Procedure", "导管消融")],
+    "电复律除颤": [
+        ("includes_procedure", "Procedure", "同步电复律"),
+        ("includes_procedure", "Procedure", "电除颤"),
+    ],
+    "急救复苏": [
+        ("includes_procedure", "Procedure", "心肺复苏"),
+        ("includes_procedure", "Procedure", "电除颤"),
+    ],
+    "ICD治疗": [("includes_procedure", "Procedure", "埋藏式心脏转复除颤器")],
+    "抗心律失常药物治疗": [
+        ("includes_medication", "Medication", "抗心律失常药物"),
+        ("includes_medication", "Medication", "胺碘酮"),
+        ("includes_medication", "Medication", "利多卡因"),
+        ("includes_medication", "Medication", "索他洛尔"),
+    ],
+    "诱因纠正": [
+        ("includes_medication", "Medication", "钾剂"),
+        ("includes_medication", "Medication", "硫酸镁"),
+    ],
     "房颤导管消融": [
         ("includes_procedure", "Procedure", "房颤导管消融"),
         ("includes_procedure", "Procedure", "肺静脉隔离"),

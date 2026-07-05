@@ -177,6 +177,7 @@ def extract_guideline_evidence(batch_dir: Path) -> dict:
         ordinal = 0
         for unit in _iter_text_units(text, extension):
             page = unit["source_page"]
+            source_page = page if page not in (None, "") else "N/A"
             page_class = unit["page_class"]
             if page_class in {"contents", "index", "copyright", "blank", "cover"}:
                 continue
@@ -211,7 +212,7 @@ def extract_guideline_evidence(batch_dir: Path) -> dict:
                             "source_type": document.get("source_type", "guideline"),
                             "source_version": source_version,
                             "source_section": pathway,
-                            "source_page": page,
+                            "source_page": source_page,
                             "disease_code": disease["disease_code"],
                             "disease_name": disease["disease_name"],
                             "pathway_element": pathway,

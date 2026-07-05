@@ -115,6 +115,93 @@ class ApplyCuratedRequiredBackfillTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "Missing endpoint"):
                 apply_backfill_spec(spec)
 
+    def test_reuses_existing_same_type_name_node_and_remaps_relation_target(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            batch = Path(tmp) / "BATCH-TEST"
+            data = batch / "05_data_instance"
+            data.mkdir(parents=True)
+            nodes = [
+                {
+                    "id": "KG_DIS_1",
+                    "code": "DIS-1",
+                    "name": "测试病",
+                    "preferred_name": "测试病",
+                    "display_name": "测试病",
+                    "entityType": "Disease",
+                    "entityCategory": "临床",
+                    "schema_version": "V1.1",
+                    "review_status": "approved",
+                    "batch_id": "BATCH-TEST",
+                },
+                {
+                    "id": "KG_DXC_EXISTING",
+                    "code": "DXC-EXISTING",
+                    "name": "测试病诊断标准",
+                    "preferred_name": "测试病诊断标准",
+                    "display_name": "测试病诊断标准",
+                    "entityType": "DiagnosisCriteria",
+                    "entityCategory": "诊断",
+                    "schema_version": "V1.1",
+                    "review_status": "approved",
+                    "batch_id": "BATCH-TEST",
+                },
+            ]
+            (data / "nodes_final.jsonl").write_text(
+                "".join(json.dumps(node, ensure_ascii=False) + "\n" for node in nodes),
+                encoding="utf-8-sig",
+            )
+            (data / "relations_final.jsonl").write_text("", encoding="utf-8-sig")
+
+            spec = {
+                "batches": [
+                    {
+                        "batch_dir": str(batch),
+                        "nodes": [
+                            {
+                                "code": "DXC-BACKFILL",
+                                "name": "测试病诊断标准",
+                                "entityType": "DiagnosisCriteria",
+                                "entityCategory": "诊断",
+                                "aliases": ["测试诊断"],
+                            }
+                        ],
+                        "relations": [
+                            {
+                                "source_code": "DIS-1",
+                                "relationType": "has_diagnostic_criteria",
+                                "target_code": "DXC-BACKFILL",
+                                "provenance_records_json": [
+                                    {
+                                        "document_id": "DOC-1",
+                                        "segment_id": "SEG-1",
+                                        "source_name": "测试指南",
+                                        "source_type": "guideline",
+                                        "source_page": 1,
+                                        "evidence_text": "测试病诊断依据包括心电图。",
+                                        "evidence_id": "EVD-1",
+                                    }
+                                ],
+                            }
+                        ],
+                    }
+                ]
+            }
+
+            summary = apply_backfill_spec(spec)
+            self.assertEqual(summary["added_nodes"], 0)
+            self.assertEqual(summary["updated_nodes"], 1)
+            self.assertEqual(summary["added_relations"], 1)
+            final_nodes = [
+                json.loads(line)
+                for line in (data / "nodes_final.jsonl").read_text(encoding="utf-8-sig").splitlines()
+                if line.strip()
+            ]
+            self.assertEqual(len(final_nodes), 2)
+            existing = next(node for node in final_nodes if node["code"] == "DXC-EXISTING")
+            self.assertIn("测试诊断", existing["aliases"])
+            relation = json.loads((data / "relations_final.jsonl").read_text(encoding="utf-8-sig").splitlines()[0])
+            self.assertEqual(relation["target_code"], "DXC-EXISTING")
+
 
 if __name__ == "__main__":
     unittest.main()

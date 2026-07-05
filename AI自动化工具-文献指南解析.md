@@ -5,7 +5,7 @@ description: Use when starting a specialty, disease-category, or single-disease 
 
 # AI自动化工具-文献指南解析
 
-版本：V1.33  
+版本：V1.34  
 Schema：`专科知识图谱Schema标准.md` V1.7  
 用途：从原始医学文献生成可审计、可合并的专科知识图谱标准数据实例。
 
@@ -49,6 +49,7 @@ Schema：`专科知识图谱Schema标准.md` V1.7
 | V1.31 | 2026-06-30 22:14:47 | 新增正式 CDSS 前置安全体检与专家批量签收分级规则：继续新疾病前必须先跑服务器全库硬闸门；`pending_clinical_review` 不得由 AI 伪造为逐条专家审核，但可在专家同意机制后写入 `clinical_batch_signed_off`；AI 负责证据预审核并分为 `test_recommendation`、`knowledge_display`、`formal_blocked`；Neo4j 关系导入必须按 `(source.code, relationType, target.code)` 语义键 MERGE，禁止按关系 `id` 重复补边；任何导入后必须立即复查重复语义关系 |
 | V1.32 | 2026-07-01 10:24:43 | 新增房颤批次启动与累计库合并硬规则：新病种必须先补齐 `scope_taxonomy.csv` 和 `controlled_vocabulary.csv`，否则不得进入证据抽取；scope aliases 必须同时覆盖中文名、英文名、缩写和专病关键治疗词，但禁止使用过宽词导致误纳；导入累计 Neo4j 后必须复查并清零 `duplicate_type_name_count`，必要时执行同类型同名实体合并，迁移重复节点全部入边/出边后再删除重复节点 |
 | V1.33 | 2026-07-03 23:18:42 | 新增心律失常短缩写消歧与证据链完整硬规则：`AT/AFL/SVT/WPW` 等短缩写不得单独作为疾病命中依据，必须有中文全称、疾病上下文或长英文名共同锚定；`α1-AT`、`ATⅡ`、抗凝血酶 `AT`、`G6PD` 等跨学科缩写必须判为污染；DOCX/教材证据无页码时统一写 `source_page=N/A`，不得留空也不得伪造页码；未显式分级的专家共识/教材推荐可写“未分级推荐/专家共识或教材证据”，但必须保留 `ai_prechecked_limited` 与 `formal_cdss_ready=false` |
+| V1.34 | 2026-07-05 21:22:26 | 新增室性心律失常/心脏性猝死批次回填规则：required 缺口回填不得用缩略语表、目录页、药物表或混排表格作为核心诊断证据；短 ASCII alias 如 `VT/VA/SCD` 必须按词边界匹配，禁止误命中 `SVT/DVT/LVAD` 等其他术语；回填节点必须先按 `entityType+name` 复用既有节点，不能因 code 不同创建同名重复实体；所有 CDSS 推荐/随访/治疗关系必须补齐适用人群和排除/禁忌条件后才能通过测试库闸门 |
 
 ## 1. 核心原则
 
@@ -73,6 +74,10 @@ Schema：`专科知识图谱Schema标准.md` V1.7
 - 短英文缩写不得单独决定疾病归属。尤其心律失常场景中，`AT` 只有在同段出现“房性心动过速/房速/atrial tachycardia/局灶性房性”等上下文时才能归一到房性心动过速；`α1-AT`、`ATⅡ`、抗凝血酶 `AT`、`G6PD`、药物表缩写、其他疾病章节缩写均必须作为污染证据剔除。
 - DOCX、TXT、教材段落若天然没有页码，`source_page` 必须写 `N/A`，同时保留 `document_id`、`segment_id`、来源名称、章节/段落和内容哈希；不得把 `None/空值` 留给审计，也不得臆造页码。
 - 未提供正式 I/IIa/A/B 等等级的教材或专家共识证据，推荐字段必须写成 `recommendation_class=未分级推荐`、`evidence_level=专家共识/教材证据`、`recommendation_grade_source=ungraded_limited_signoff`；该类关系只能进入 `knowledge_display` 或测试推荐，不得标记正式 CDSS 可用。
+- required 缺口回填必须优先使用同病种、同页或同段的诊断/随访/预后/体征专属证据。缩略语表、目录页、药物剂量表、跨病种混排表格只能作为辅助定位，不能作为核心回填证据。
+- 短 ASCII 别名必须按词边界匹配。`VT` 不得命中 `SVT`，`VA` 不得命中 `LVAD` 或普通英文单词片段，`SCD` 必须结合中文全称、疾病上下文或明确英文全称使用。
+- 策展回填或外部候选写入本地 JSONL 前，必须先按 `entityType+name` 查找既有节点。若已存在同类型同名实体，必须复用原 code 并把关系目标重映射到原节点；不得因新 code 再创建一个同名节点。
+- 所有进入 CDSS 测试推荐层的治疗、随访、操作、药物和风险处置关系，必须同时具备 `applicable_population` 和 `exclusion_criteria/contraindication`。缺任一项即使证据链完整，也不得通过测试库质量闸门。
 
 ### 1.1 满分执行目标
 
