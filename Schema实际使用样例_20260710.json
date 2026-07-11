@@ -1,0 +1,1461 @@
+{
+  "samples_DefinitionComponent": [
+    {
+      "code": "CARD-SKELETON-20260709-DEFINITIONCOMPONENT-8DB8F50DD3B824F9",
+      "name": "是各种原因导致的心脏结构和/或功能异常，使心脏出现收缩和/或充盈障碍，在静息或运动时心排血量下降或心腔内压力增高而引起的一组复杂临床综合征，主要表现为活动耐量下降",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DEFINITIONCOMPONENT-8191B034D295CFA4",
+      "name": "是一个更广泛的概念，伴有临床症状的心功能不全称之为心力衰竭（简称心衰）",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DEFINITIONCOMPONENT-E7FA213F43362C7B",
+      "name": "主要表现为活动耐量下降和液体潴留",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DEFINITIONCOMPONENT-E669B92C9B896F4D",
+      "name": "导致的心脏结构和/或功能异常，使心脏出现收缩和/或充盈障碍，在静息或运动时心排血量下降或心腔内压力增高而引起的一组复杂临床综",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DEFINITIONCOMPONENT-DF21CDD56F040F9B",
+      "name": "引起的一组复杂临床综合征，主要表现为活动耐量下降和液体潴留",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DEFINITIONCOMPONENT-D87B95184BF973F5",
+      "name": "是指心力衰竭急性发作和/或加重的一种临床综合征，可以是急性新发或慢性心衰急性失代偿",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DEFINITIONCOMPONENT-B4BF0696467A5482",
+      "name": "指心力衰竭急性发作和/或加重的一种临床综合征，可以是急性新发或慢性心衰急性失代偿",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DEFINITIONCOMPONENT-EA80CBEADBDFF995",
+      "name": "引起右心排血量急剧减低和体循环急性淤血，常由右心室梗死、急性大面积肺栓塞所致",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    }
+  ],
+  "samples_DiagnosisCriteriaComponent": [
+    {
+      "code": "CARD-SKELETON-20260709-DIAGNOSISCRITERIACOMPONENT-E6D0807AA3E69E03",
+      "name": "1.脑钠肽脑钠肽是心衰诊断、预后和疗效评估中的重要指标",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DIAGNOSISCRITERIACOMPONENT-4AEEDE8C8A83A808",
+      "name": "脑钠肽诊断心衰的敏感性、特异性、阴性预测值和阳性预测值均较高",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DIAGNOSISCRITERIACOMPONENT-2E79EC3C4C8B91C4",
+      "name": "老龄和女性升高",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DIAGNOSISCRITERIACOMPONENT-366A14AEFEFCDDA3",
+      "name": "肥胖者降低",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DIAGNOSISCRITERIACOMPONENT-FAA3ABF05B4E2D21",
+      "name": "左心室肥厚、心动过速、心肌缺血、肺动脉栓塞、肾功能不全、感染、败血症等亦可引起脑钠肽升高",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DIAGNOSISCRITERIACOMPONENT-071E41D813EB62A3",
+      "name": "2.肌钙蛋白严重心衰或心衰失代偿期病人的肌钙蛋白可有轻微升高",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DIAGNOSISCRITERIACOMPONENT-30F6A49D3CC7A19E",
+      "name": "但心衰病人检测肌钙蛋白更重要的目的是明确是否存在急性冠脉综合征",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DIAGNOSISCRITERIACOMPONENT-687916740BC14F54",
+      "name": "【心律失常的诊断】（一）病史心律失常的诊断应从详尽采集病史开始",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    }
+  ],
+  "samples_Prevention": [
+    {
+      "code": "CARD-SKELETON-20260709-PREVENTION-565CA7AC814B5FED",
+      "name": "1.生活方式管理（1）病人教育：心衰病人及家属应得到准确的有关疾病知识和管理的指导",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-PREVENTION-D69063B9957CB824",
+      "name": "内容包括健康的生活方式、适当的诱因规避、规范的药物服用、自我监测、合理的随访计划等",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-PREVENTION-AA91BCAAE5A88542",
+      "name": "（2）体重管理：日常体重监测能简便直观地反映病人体液潴留情况及利尿剂疗效",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-PREVENTION-2C09305A464FA298",
+      "name": "体重改变往往出现在临床体液潴留症状和体征之前",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-PREVENTION-C5E63E746B08F0A4",
+      "name": "部分严重慢性心衰病人存在临床或亚临床营养不良",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-PREVENTION-76843D3656D440C9",
+      "name": "若出现大量体脂丢失或干重减轻称为心源性恶病质",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-PREVENTION-67DCB37EFA8DCDDF",
+      "name": "往往提示预后不良",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-PREVENTION-33C2E4BC71EAE200",
+      "name": "（3）饮食管理：适当限盐有利于减轻心脏容量负荷",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    }
+  ],
+  "samples_Definition": [
+    {
+      "code": "CARD-SKELETON-20260709-DEFINITION-AC45C583A810A4E1",
+      "name": "第二章心力衰竭定义",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DEFINITION-0122661AC7221612",
+      "name": "第三节急性心力衰竭定义",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DEFINITION-C94DE28B1F1C19C7",
+      "name": "第一节概述定义",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DEFINITION-65C05570C18859BD",
+      "name": "第二节窦性心律失常定义",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DEFINITION-C2FC945BAC2246BE",
+      "name": "一、窦性心动过速定义",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DEFINITION-A2E333C8031EBD21",
+      "name": "二、窦性心动过缓定义",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DEFINITION-E303828A7682692C",
+      "name": "三、窦性停搏定义",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DEFINITION-38FF53B5D135AE6C",
+      "name": "四、窦房传导阻滞定义",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    }
+  ],
+  "samples_TextbookSection": [
+    {
+      "code": "TXTSEC-CARD-6EC6E23B8A0D0BC1",
+      "name": "一、冠状动脉痉挛",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "TXTSEC-CARD-92225AD4F40EFF8A",
+      "name": "一、室性期前收缩",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "TXTSEC-CARD-DCD8FAB760ECA3CF",
+      "name": "一、心脏电复律与电除颤",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "TXTSEC-CARD-BCBC16164DABDE21",
+      "name": "一、房室交界性期前收缩",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "TXTSEC-CARD-C501AB420F2E1219",
+      "name": "一、房性期前收缩",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "TXTSEC-CARD-BE578D240807E305",
+      "name": "一、稳定型心绞痛",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "TXTSEC-CARD-57C234DC4C3844E8",
+      "name": "一、窦性心动过速",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "TXTSEC-CARD-97267F65B56F497F",
+      "name": "三、导管消融",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    }
+  ],
+  "samples_DiseaseClassification": [
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-FBC8988935A6B6F5",
+      "name": "（一）按发生的部位分类左心室代偿功能不全所致为左心衰竭",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-2F3B270C14EBF999",
+      "name": "右心室代偿功能不全所致为右心衰竭",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-166A31C01D170E49",
+      "name": "左心衰竭和右心衰竭同时存在即为全心衰竭",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-FDBC8B9D332EF7C0",
+      "name": "（二）按发生的速度分类根据心衰发生的速度可分为慢性心衰和急性心衰",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-6D548BBAB4A66D2F",
+      "name": "1.急性心衰系因急性的严重心肌损害、结构破坏、心律失常或突然加重的心脏负荷",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-39F01C63BB11BB9B",
+      "name": "可以是初发心衰",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-6279901326F700A1",
+      "name": "也可以是慢性心衰急性加重",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-0F476B8279CAC9AE",
+      "name": "2.慢性心衰呈一个缓慢的发展过程",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    }
+  ],
+  "samples_ClinicalManifestation": [
+    {
+      "code": "CARD-SKELETON-20260709-CLINICALMANIFESTATION-0E1AC4B74A95DD2F",
+      "name": "第三节非扩张型左心室心肌病-临床表现",
+      "batch_id": "CARD-SKELETON-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    },
+    {
+      "code": "CARD-SKELETON-FULL-20260709-CLINICALMANIFESTATION-270DDC740DE723FE",
+      "name": "非扩张型左心室心肌病-临床表现",
+      "batch_id": "CARD-SKELETON-FULL-20260709",
+      "scope_target": null,
+      "skeleton_slot": null,
+      "knowledge_layer": "textbook_skeleton"
+    }
+  ],
+  "samples_ScoringScale": [],
+  "samples_PatientState": [],
+  "samples_ClinicalEvent": [],
+  "samples_ClassificationStage": [],
+  "samples_Indication": [],
+  "samples_TreatmentTiming": [],
+  "samples_TimeWindow": [],
+  "samples_DrugInteraction": [],
+  "samples_AdverseEffect": [],
+  "uppercase_rel_batches": [
+    {
+      "relationType": "HAS_EVIDENCE",
+      "count": 3954,
+      "sample_batches": [
+        "CARD-SKELETON-20260709",
+        "CARD-SKELETON-FULL-20260709"
+      ]
+    },
+    {
+      "relationType": "USES_MEDICATION",
+      "count": 383,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_DEFINITION_COMPONENT",
+      "count": 353,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_SYMPTOM",
+      "count": 339,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_EXAM",
+      "count": 305,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_PATHOPHYSIOLOGY",
+      "count": 303,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_SIGN",
+      "count": 269,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_ETIOLOGY",
+      "count": 263,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_DIAGNOSTIC_COMPONENT",
+      "count": 215,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_TREATMENT_PLAN",
+      "count": 199,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_RISK_FACTOR",
+      "count": 161,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_DIFFERENTIAL_DIAGNOSIS",
+      "count": 156,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_PROCEDURE",
+      "count": 153,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_PREVENTION",
+      "count": 144,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_DEFINITION",
+      "count": 124,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_FOLLOW_UP",
+      "count": 108,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_LAB_TEST",
+      "count": 102,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_PROGNOSIS",
+      "count": 101,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_CLASSIFICATION",
+      "count": 91,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_COMPLICATION",
+      "count": 18,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_EPIDEMIOLOGY",
+      "count": 10,
+      "sample_batches": [
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_CLINICAL_MANIFESTATION",
+      "count": 2,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709",
+        "CARD-SKELETON-20260709"
+      ]
+    },
+    {
+      "relationType": "HAS_RISK_STRATIFICATION",
+      "count": 1,
+      "sample_batches": [
+        "CARD-SKELETON-FULL-20260709"
+      ]
+    }
+  ],
+  "lowercase_rel_batches": [
+    {
+      "relationType": "supported_by_evidence",
+      "count": 97700
+    },
+    {
+      "relationType": "guideline_has_evidence",
+      "count": 17404
+    },
+    {
+      "relationType": "recommends_action",
+      "count": 2740
+    },
+    {
+      "relationType": "based_on_guideline",
+      "count": 2024
+    },
+    {
+      "relationType": "derived_from",
+      "count": 1721
+    },
+    {
+      "relationType": "has_recommended_action",
+      "count": 1466
+    },
+    {
+      "relationType": "has_recommendation_statement",
+      "count": 1405
+    },
+    {
+      "relationType": "has_symptom",
+      "count": 734
+    },
+    {
+      "relationType": "has_risk_factor",
+      "count": 641
+    },
+    {
+      "relationType": "requires_exam",
+      "count": 620
+    },
+    {
+      "relationType": "has_sign",
+      "count": 598
+    },
+    {
+      "relationType": "treated_by_medication",
+      "count": 591
+    },
+    {
+      "relationType": "may_cause_complication",
+      "count": 552
+    },
+    {
+      "relationType": "has_pathway_stage",
+      "count": 450
+    },
+    {
+      "relationType": "has_stage_rule",
+      "count": 386
+    },
+    {
+      "relationType": "next_pathway_stage",
+      "count": 319
+    },
+    {
+      "relationType": "has_treatment_plan",
+      "count": 312
+    },
+    {
+      "relationType": "requires_lab_test",
+      "count": 304
+    },
+    {
+      "relationType": "treated_by_procedure",
+      "count": 285
+    },
+    {
+      "relationType": "has_clinical_rule",
+      "count": 264
+    },
+    {
+      "relationType": "has_clinical_pathway",
+      "count": 215
+    },
+    {
+      "relationType": "has_etiology",
+      "count": 187
+    },
+    {
+      "relationType": "has_threshold_rule",
+      "count": 156
+    },
+    {
+      "relationType": "has_disease",
+      "count": 150
+    },
+    {
+      "relationType": "belongs_to_subcategory",
+      "count": 150
+    },
+    {
+      "relationType": "has_diagnostic_component",
+      "count": 133
+    },
+    {
+      "relationType": "belongs_to_category",
+      "count": 118
+    },
+    {
+      "relationType": "has_specific_medication",
+      "count": 95
+    },
+    {
+      "relationType": "has_pathophysiology",
+      "count": 94
+    },
+    {
+      "relationType": "includes_medication",
+      "count": 85
+    }
+  ],
+  "property_keys": [
+    {
+      "k": "batch_id",
+      "count": 43020
+    },
+    {
+      "k": "canonical_labels",
+      "count": 43020
+    },
+    {
+      "k": "code",
+      "count": 43020
+    },
+    {
+      "k": "entityType",
+      "count": 43020
+    },
+    {
+      "k": "formal_cdss_ready",
+      "count": 43020
+    },
+    {
+      "k": "id",
+      "count": 43020
+    },
+    {
+      "k": "name",
+      "count": 43020
+    },
+    {
+      "k": "primary_label",
+      "count": 43020
+    },
+    {
+      "k": "type_label",
+      "count": 43020
+    },
+    {
+      "k": "clinical_review_status",
+      "count": 39891
+    },
+    {
+      "k": "display_name",
+      "count": 39891
+    },
+    {
+      "k": "entityCategory",
+      "count": 39891
+    },
+    {
+      "k": "preferred_name",
+      "count": 39891
+    },
+    {
+      "k": "review_status",
+      "count": 39891
+    },
+    {
+      "k": "schema_version",
+      "count": 39891
+    },
+    {
+      "k": "source_type",
+      "count": 38316
+    },
+    {
+      "k": "disease_code",
+      "count": 38216
+    },
+    {
+      "k": "source_name",
+      "count": 38181
+    },
+    {
+      "k": "disease_name",
+      "count": 37578
+    },
+    {
+      "k": "document_id",
+      "count": 36968
+    },
+    {
+      "k": "evidence_id",
+      "count": 36912
+    },
+    {
+      "k": "evidence_text",
+      "count": 36862
+    },
+    {
+      "k": "segment_id",
+      "count": 36862
+    },
+    {
+      "k": "source_section",
+      "count": 36862
+    },
+    {
+      "k": "language",
+      "count": 36461
+    },
+    {
+      "k": "content_hash",
+      "count": 36355
+    },
+    {
+      "k": "source_page",
+      "count": 34561
+    },
+    {
+      "k": "evidence_level",
+      "count": 20848
+    },
+    {
+      "k": "recommendation_class",
+      "count": 20848
+    },
+    {
+      "k": "merge_status",
+      "count": 20220
+    },
+    {
+      "k": "scope_target",
+      "count": 20211
+    },
+    {
+      "k": "scope_type",
+      "count": 20211
+    },
+    {
+      "k": "source_version",
+      "count": 20160
+    },
+    {
+      "k": "conflict_status",
+      "count": 20132
+    },
+    {
+      "k": "confidence",
+      "count": 20069
+    },
+    {
+      "k": "pathway_element",
+      "count": 20069
+    },
+    {
+      "k": "guideline_id",
+      "count": 19562
+    },
+    {
+      "k": "line_end",
+      "count": 19562
+    },
+    {
+      "k": "line_start",
+      "count": 19562
+    },
+    {
+      "k": "translation_method",
+      "count": 19562
+    },
+    {
+      "k": "foundation_import_source",
+      "count": 5940
+    },
+    {
+      "k": "clinical_use_status",
+      "count": 3129
+    },
+    {
+      "k": "graph_version",
+      "count": 3129
+    },
+    {
+      "k": "knowledge_layer",
+      "count": 3129
+    },
+    {
+      "k": "source_layer",
+      "count": 3129
+    },
+    {
+      "k": "skeleton_scope",
+      "count": 1860
+    },
+    {
+      "k": "created_at",
+      "count": 1645
+    },
+    {
+      "k": "aliases",
+      "count": 1523
+    },
+    {
+      "k": "docx_para_end",
+      "count": 1269
+    },
+    {
+      "k": "docx_para_start",
+      "count": 1269
+    },
+    {
+      "k": "source_section_path",
+      "count": 1269
+    },
+    {
+      "k": "text_excerpt",
+      "count": 1269
+    },
+    {
+      "k": "ai_evidence_review_status",
+      "count": 1216
+    },
+    {
+      "k": "cdss_release_level",
+      "count": 1216
+    },
+    {
+      "k": "pathway_code",
+      "count": 1119
+    },
+    {
+      "k": "applicable_population",
+      "count": 779
+    },
+    {
+      "k": "stage_order",
+      "count": 735
+    },
+    {
+      "k": "stage_code",
+      "count": 729
+    },
+    {
+      "k": "skill_version",
+      "count": 712
+    },
+    {
+      "k": "evidence_ids",
+      "count": 704
+    },
+    {
+      "k": "trigger_condition",
+      "count": 669
+    },
+    {
+      "k": "required_patient_facts",
+      "count": 651
+    },
+    {
+      "k": "pdf_page_approx",
+      "count": 553
+    },
+    {
+      "k": "evidence_count",
+      "count": 510
+    },
+    {
+      "k": "recommendation_type",
+      "count": 510
+    },
+    {
+      "k": "rule_code",
+      "count": 510
+    },
+    {
+      "k": "statement_text",
+      "count": 510
+    },
+    {
+      "k": "exclusion_criteria",
+      "count": 488
+    },
+    {
+      "k": "rule_logic",
+      "count": 478
+    },
+    {
+      "k": "description",
+      "count": 474
+    },
+    {
+      "k": "name_en",
+      "count": 455
+    },
+    {
+      "k": "exit_condition",
+      "count": 450
+    },
+    {
+      "k": "stage_goal",
+      "count": 450
+    },
+    {
+      "k": "updated_at",
+      "count": 303
+    },
+    {
+      "k": "action_code",
+      "count": 291
+    },
+    {
+      "k": "action_entity_type",
+      "count": 291
+    },
+    {
+      "k": "action_name",
+      "count": 291
+    },
+    {
+      "k": "cdss_display_level",
+      "count": 291
+    },
+    {
+      "k": "contraindication_conditions",
+      "count": 291
+    },
+    {
+      "k": "created_by",
+      "count": 291
+    },
+    {
+      "k": "evidence_link_count",
+      "count": 291
+    },
+    {
+      "k": "guideline_count",
+      "count": 291
+    },
+    {
+      "k": "guideline_link_count",
+      "count": 291
+    },
+    {
+      "k": "guideline_match_status",
+      "count": 291
+    },
+    {
+      "k": "indication_conditions",
+      "count": 291
+    },
+    {
+      "k": "pathway_name",
+      "count": 291
+    },
+    {
+      "k": "primary_evidence_code",
+      "count": 291
+    },
+    {
+      "k": "primary_guideline_code",
+      "count": 291
+    },
+    {
+      "k": "primary_guideline_name",
+      "count": 291
+    },
+    {
+      "k": "required_patient_data",
+      "count": 291
+    },
+    {
+      "k": "rule_name",
+      "count": 291
+    },
+    {
+      "k": "scope_disease_code",
+      "count": 291
+    },
+    {
+      "k": "source_batch_id",
+      "count": 291
+    },
+    {
+      "k": "source_rule_relation_type",
+      "count": 291
+    },
+    {
+      "k": "stage_name",
+      "count": 291
+    },
+    {
+      "k": "statement_summary",
+      "count": 291
+    },
+    {
+      "k": "updated_by",
+      "count": 291
+    },
+    {
+      "k": "rule_type",
+      "count": 259
+    },
+    {
+      "k": "source_static_pathway_code",
+      "count": 249
+    },
+    {
+      "k": "blocked_action_codes",
+      "count": 219
+    },
+    {
+      "k": "blocked_action_names",
+      "count": 219
+    },
+    {
+      "k": "display_title",
+      "count": 219
+    },
+    {
+      "k": "evidence_summary_type",
+      "count": 219
+    },
+    {
+      "k": "front_end_display_rule",
+      "count": 219
+    },
+    {
+      "k": "guideline_names",
+      "count": 219
+    },
+    {
+      "k": "primary_evidence_id",
+      "count": 219
+    },
+    {
+      "k": "primary_evidence_raw_excerpt",
+      "count": 219
+    },
+    {
+      "k": "primary_evidence_summary",
+      "count": 219
+    },
+    {
+      "k": "primary_source_name",
+      "count": 219
+    },
+    {
+      "k": "primary_source_page",
+      "count": 219
+    },
+    {
+      "k": "primary_source_section",
+      "count": 219
+    },
+    {
+      "k": "recommended_action_codes",
+      "count": 219
+    },
+    {
+      "k": "recommended_action_names",
+      "count": 219
+    },
+    {
+      "k": "stage_key",
+      "count": 213
+    },
+    {
+      "k": "source_quality",
+      "count": 194
+    },
+    {
+      "k": "parentCode",
+      "count": 159
+    },
+    {
+      "k": "condition",
+      "count": 156
+    },
+    {
+      "k": "indicator_code",
+      "count": 156
+    },
+    {
+      "k": "operator",
+      "count": 156
+    },
+    {
+      "k": "patient_state",
+      "count": 156
+    },
+    {
+      "k": "time_context",
+      "count": 156
+    },
+    {
+      "k": "unit",
+      "count": 156
+    },
+    {
+      "k": "value",
+      "count": 156
+    },
+    {
+      "k": "abbr",
+      "count": 119
+    },
+    {
+      "k": "publication_year",
+      "count": 106
+    },
+    {
+      "k": "sha256",
+      "count": 106
+    },
+    {
+      "k": "title",
+      "count": 106
+    },
+    {
+      "k": "version",
+      "count": 106
+    },
+    {
+      "k": "docx_end_para",
+      "count": 94
+    },
+    {
+      "k": "docx_start_para",
+      "count": 94
+    },
+    {
+      "k": "parent_name",
+      "count": 94
+    },
+    {
+      "k": "subject_kind",
+      "count": 94
+    },
+    {
+      "k": "source_diagnostic_criteria_code",
+      "count": 93
+    },
+    {
+      "k": "contraindications",
+      "count": 84
+    },
+    {
+      "k": "dosage",
+      "count": 84
+    },
+    {
+      "k": "drug_interactions",
+      "count": 84
+    },
+    {
+      "k": "execution_boundary",
+      "count": 80
+    },
+    {
+      "k": "pathway_goal",
+      "count": 80
+    },
+    {
+      "k": "definition_evidence_text",
+      "count": 75
+    },
+    {
+      "k": "definition_source_type",
+      "count": 74
+    },
+    {
+      "k": "definition",
+      "count": 68
+    },
+    {
+      "k": "definition_knowledge_layer",
+      "count": 68
+    },
+    {
+      "k": "definition_skeleton_slot",
+      "count": 68
+    },
+    {
+      "k": "definition_source_name",
+      "count": 68
+    },
+    {
+      "k": "definition_source_section_path",
+      "count": 68
+    },
+    {
+      "k": "definition_updated_at",
+      "count": 68
+    },
+    {
+      "k": "definition_docx_paragraph_end",
+      "count": 58
+    },
+    {
+      "k": "definition_docx_paragraph_start",
+      "count": 58
+    },
+    {
+      "k": "definition_pdf_page_end",
+      "count": 58
+    },
+    {
+      "k": "definition_pdf_page_start",
+      "count": 58
+    },
+    {
+      "k": "textbook_anchor_generated_at",
+      "count": 58
+    },
+    {
+      "k": "textbook_anchor_status",
+      "count": 58
+    },
+    {
+      "k": "recommendation_text",
+      "count": 50
+    },
+    {
+      "k": "rule_expression_cn",
+      "count": 45
+    },
+    {
+      "k": "trigger_event",
+      "count": 45
+    },
+    {
+      "k": "definition_source",
+      "count": 23
+    },
+    {
+      "k": "merged_duplicate_codes",
+      "count": 19
+    },
+    {
+      "k": "last_dedupe_at",
+      "count": 17
+    },
+    {
+      "k": "merged_duplicate_batch_ids",
+      "count": 17
+    },
+    {
+      "k": "alias",
+      "count": 13
+    },
+    {
+      "k": "backfill_reason",
+      "count": 12
+    },
+    {
+      "k": "curation_note",
+      "count": 12
+    },
+    {
+      "k": "updated_reason",
+      "count": 12
+    },
+    {
+      "k": "definition_authority_level",
+      "count": 11
+    },
+    {
+      "k": "definition_confidence",
+      "count": 11
+    },
+    {
+      "k": "definition_download_file",
+      "count": 11
+    },
+    {
+      "k": "definition_import_decision",
+      "count": 11
+    },
+    {
+      "k": "definition_source_basis",
+      "count": 11
+    },
+    {
+      "k": "external_authority_review_status",
+      "count": 11
+    },
+    {
+      "k": "ui_context_prefix_removed",
+      "count": 10
+    },
+    {
+      "k": "ui_context_prefix_removed_at",
+      "count": 10
+    },
+    {
+      "k": "target_match_repair",
+      "count": 9
+    },
+    {
+      "k": "dedupe_note",
+      "count": 6
+    },
+    {
+      "k": "document_ids",
+      "count": 6
+    },
+    {
+      "k": "source_names",
+      "count": 6
+    },
+    {
+      "k": "standard_name",
+      "count": 6
+    },
+    {
+      "k": "definition_repair_reason",
+      "count": 4
+    },
+    {
+      "k": "exam_category",
+      "count": 4
+    },
+    {
+      "k": "purpose",
+      "count": 4
+    },
+    {
+      "k": "standard_code",
+      "count": 4
+    },
+    {
+      "k": "original_title",
+      "count": 2
+    },
+    {
+      "k": "terminology_repair_reason",
+      "count": 2
+    }
+  ]
+}

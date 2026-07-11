@@ -1,0 +1,1061 @@
+{
+  "ok": true,
+  "server": "192.168.3.27",
+  "queries": {
+    "entity_counts": [
+      {
+        "entityType": "Evidence",
+        "count": 38131
+      },
+      {
+        "entityType": "RecommendationStatement",
+        "count": 560
+      },
+      {
+        "entityType": "ClinicalRule",
+        "count": 523
+      },
+      {
+        "entityType": "PathwayStage",
+        "count": 450
+      },
+      {
+        "entityType": "Etiology",
+        "count": 290
+      },
+      {
+        "entityType": "Pathophysiology",
+        "count": 265
+      },
+      {
+        "entityType": "DefinitionComponent",
+        "count": 248
+      },
+      {
+        "entityType": "TreatmentPlan",
+        "count": 228
+      },
+      {
+        "entityType": "FollowUp",
+        "count": 184
+      },
+      {
+        "entityType": "DiagnosisCriteriaComponent",
+        "count": 177
+      },
+      {
+        "entityType": "Prognosis",
+        "count": 169
+      },
+      {
+        "entityType": "ThresholdRule",
+        "count": 156
+      },
+      {
+        "entityType": "DifferentialDiagnosis",
+        "count": 152
+      },
+      {
+        "entityType": "Prevention",
+        "count": 144
+      },
+      {
+        "entityType": "ClinicalPathway",
+        "count": 140
+      },
+      {
+        "entityType": "Medication",
+        "count": 127
+      },
+      {
+        "entityType": "Definition",
+        "count": 124
+      },
+      {
+        "entityType": "Disease",
+        "count": 115
+      },
+      {
+        "entityType": "Guideline",
+        "count": 106
+      },
+      {
+        "entityType": "DiagnosisCriteria",
+        "count": 81
+      },
+      {
+        "entityType": "TextbookSection",
+        "count": 73
+      },
+      {
+        "entityType": "DiseaseClassification",
+        "count": 68
+      },
+      {
+        "entityType": "Sign",
+        "count": 59
+      },
+      {
+        "entityType": "Procedure",
+        "count": 56
+      },
+      {
+        "entityType": "Symptom",
+        "count": 52
+      },
+      {
+        "entityType": "Exam",
+        "count": 50
+      },
+      {
+        "entityType": "RiskFactor",
+        "count": 50
+      },
+      {
+        "entityType": "RiskStratification",
+        "count": 46
+      },
+      {
+        "entityType": "LabTest",
+        "count": 39
+      },
+      {
+        "entityType": "Complication",
+        "count": 36
+      },
+      {
+        "entityType": "DiseaseCategory",
+        "count": 34
+      },
+      {
+        "entityType": "DiseaseSubcategory",
+        "count": 31
+      },
+      {
+        "entityType": "Epidemiology",
+        "count": 27
+      },
+      {
+        "entityType": "ExamIndicator",
+        "count": 17
+      },
+      {
+        "entityType": "Contraindication",
+        "count": 9
+      },
+      {
+        "entityType": "ClinicalManifestation",
+        "count": 2
+      },
+      {
+        "entityType": "Specialty",
+        "count": 1
+      }
+    ],
+    "relation_counts": [
+      {
+        "relationType": "supported_by_evidence",
+        "count": 97700
+      },
+      {
+        "relationType": "guideline_has_evidence",
+        "count": 17404
+      },
+      {
+        "relationType": "HAS_EVIDENCE",
+        "count": 3954
+      },
+      {
+        "relationType": "recommends_action",
+        "count": 2740
+      },
+      {
+        "relationType": "based_on_guideline",
+        "count": 2024
+      },
+      {
+        "relationType": "derived_from",
+        "count": 1721
+      },
+      {
+        "relationType": "has_recommended_action",
+        "count": 1466
+      },
+      {
+        "relationType": "has_recommendation_statement",
+        "count": 1405
+      },
+      {
+        "relationType": "has_symptom",
+        "count": 734
+      },
+      {
+        "relationType": "has_risk_factor",
+        "count": 641
+      },
+      {
+        "relationType": "requires_exam",
+        "count": 620
+      },
+      {
+        "relationType": "has_sign",
+        "count": 598
+      },
+      {
+        "relationType": "treated_by_medication",
+        "count": 591
+      },
+      {
+        "relationType": "may_cause_complication",
+        "count": 552
+      },
+      {
+        "relationType": "has_pathway_stage",
+        "count": 450
+      },
+      {
+        "relationType": "has_stage_rule",
+        "count": 386
+      },
+      {
+        "relationType": "USES_MEDICATION",
+        "count": 383
+      },
+      {
+        "relationType": "HAS_DEFINITION_COMPONENT",
+        "count": 353
+      },
+      {
+        "relationType": "HAS_SYMPTOM",
+        "count": 339
+      },
+      {
+        "relationType": "next_pathway_stage",
+        "count": 319
+      },
+      {
+        "relationType": "has_treatment_plan",
+        "count": 312
+      },
+      {
+        "relationType": "HAS_EXAM",
+        "count": 305
+      },
+      {
+        "relationType": "requires_lab_test",
+        "count": 304
+      },
+      {
+        "relationType": "HAS_PATHOPHYSIOLOGY",
+        "count": 303
+      },
+      {
+        "relationType": "treated_by_procedure",
+        "count": 285
+      },
+      {
+        "relationType": "HAS_SIGN",
+        "count": 269
+      },
+      {
+        "relationType": "has_clinical_rule",
+        "count": 264
+      },
+      {
+        "relationType": "HAS_ETIOLOGY",
+        "count": 263
+      },
+      {
+        "relationType": "HAS_DIAGNOSTIC_COMPONENT",
+        "count": 215
+      },
+      {
+        "relationType": "has_clinical_pathway",
+        "count": 215
+      },
+      {
+        "relationType": "HAS_TREATMENT_PLAN",
+        "count": 199
+      },
+      {
+        "relationType": "has_etiology",
+        "count": 187
+      },
+      {
+        "relationType": "HAS_RISK_FACTOR",
+        "count": 161
+      },
+      {
+        "relationType": "HAS_DIFFERENTIAL_DIAGNOSIS",
+        "count": 156
+      },
+      {
+        "relationType": "has_threshold_rule",
+        "count": 156
+      },
+      {
+        "relationType": "HAS_PROCEDURE",
+        "count": 153
+      },
+      {
+        "relationType": "belongs_to_subcategory",
+        "count": 150
+      },
+      {
+        "relationType": "has_disease",
+        "count": 150
+      },
+      {
+        "relationType": "HAS_PREVENTION",
+        "count": 144
+      },
+      {
+        "relationType": "has_diagnostic_component",
+        "count": 133
+      },
+      {
+        "relationType": "HAS_DEFINITION",
+        "count": 124
+      },
+      {
+        "relationType": "belongs_to_category",
+        "count": 118
+      },
+      {
+        "relationType": "HAS_FOLLOW_UP",
+        "count": 108
+      },
+      {
+        "relationType": "HAS_LAB_TEST",
+        "count": 102
+      },
+      {
+        "relationType": "HAS_PROGNOSIS",
+        "count": 101
+      },
+      {
+        "relationType": "has_specific_medication",
+        "count": 95
+      },
+      {
+        "relationType": "has_pathophysiology",
+        "count": 94
+      },
+      {
+        "relationType": "HAS_CLASSIFICATION",
+        "count": 91
+      },
+      {
+        "relationType": "includes_medication",
+        "count": 85
+      },
+      {
+        "relationType": "has_diagnostic_criteria",
+        "count": 84
+      },
+      {
+        "relationType": "has_follow_up",
+        "count": 84
+      },
+      {
+        "relationType": "has_prognosis",
+        "count": 75
+      },
+      {
+        "relationType": "differentiates_from",
+        "count": 65
+      },
+      {
+        "relationType": "has_risk_stratification",
+        "count": 38
+      },
+      {
+        "relationType": "has_epidemiology",
+        "count": 34
+      },
+      {
+        "relationType": "has_subcategory",
+        "count": 32
+      },
+      {
+        "relationType": "requires_exclusion_exam",
+        "count": 30
+      },
+      {
+        "relationType": "includes_procedure",
+        "count": 29
+      },
+      {
+        "relationType": "HAS_COMPLICATION",
+        "count": 18
+      },
+      {
+        "relationType": "has_differential_point",
+        "count": 16
+      },
+      {
+        "relationType": "has_category",
+        "count": 13
+      },
+      {
+        "relationType": "has_differential_diagnosis",
+        "count": 11
+      },
+      {
+        "relationType": "HAS_EPIDEMIOLOGY",
+        "count": 10
+      },
+      {
+        "relationType": "blocks_action",
+        "count": 8
+      },
+      {
+        "relationType": "exam_has_indicator",
+        "count": 6
+      },
+      {
+        "relationType": "may_block_action",
+        "count": 3
+      },
+      {
+        "relationType": "HAS_CLINICAL_MANIFESTATION",
+        "count": 2
+      },
+      {
+        "relationType": "lab_test_has_indicator",
+        "count": 2
+      },
+      {
+        "relationType": "HAS_RISK_STRATIFICATION",
+        "count": 1
+      }
+    ],
+    "field_coverage": [
+      {
+        "entityType": "Evidence",
+        "total": 38131,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 1269,
+        "missing_description": 38131,
+        "missing_skeleton_slot": 38131,
+        "missing_knowledge_layer": 36862,
+        "missing_clinical_review_status": 1269,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "RecommendationStatement",
+        "total": 560,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 0,
+        "missing_description": 560,
+        "missing_skeleton_slot": 560,
+        "missing_knowledge_layer": 560,
+        "missing_clinical_review_status": 0,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "ClinicalRule",
+        "total": 523,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 0,
+        "missing_description": 523,
+        "missing_skeleton_slot": 523,
+        "missing_knowledge_layer": 523,
+        "missing_clinical_review_status": 0,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "PathwayStage",
+        "total": 450,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 0,
+        "missing_description": 450,
+        "missing_skeleton_slot": 450,
+        "missing_knowledge_layer": 450,
+        "missing_clinical_review_status": 0,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "Etiology",
+        "total": 290,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 227,
+        "missing_description": 273,
+        "missing_skeleton_slot": 290,
+        "missing_knowledge_layer": 63,
+        "missing_clinical_review_status": 227,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "Pathophysiology",
+        "total": 265,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 236,
+        "missing_description": 262,
+        "missing_skeleton_slot": 265,
+        "missing_knowledge_layer": 29,
+        "missing_clinical_review_status": 236,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "DefinitionComponent",
+        "total": 248,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 248,
+        "missing_description": 248,
+        "missing_skeleton_slot": 248,
+        "missing_knowledge_layer": 0,
+        "missing_clinical_review_status": 248,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "TreatmentPlan",
+        "total": 228,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 138,
+        "missing_description": 220,
+        "missing_skeleton_slot": 228,
+        "missing_knowledge_layer": 90,
+        "missing_clinical_review_status": 138,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "FollowUp",
+        "total": 184,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 108,
+        "missing_description": 177,
+        "missing_skeleton_slot": 184,
+        "missing_knowledge_layer": 76,
+        "missing_clinical_review_status": 108,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "DiagnosisCriteriaComponent",
+        "total": 177,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 177,
+        "missing_description": 177,
+        "missing_skeleton_slot": 177,
+        "missing_knowledge_layer": 0,
+        "missing_clinical_review_status": 177,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "Prognosis",
+        "total": 169,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 93,
+        "missing_description": 164,
+        "missing_skeleton_slot": 169,
+        "missing_knowledge_layer": 76,
+        "missing_clinical_review_status": 93,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "ThresholdRule",
+        "total": 156,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 0,
+        "missing_description": 156,
+        "missing_skeleton_slot": 156,
+        "missing_knowledge_layer": 156,
+        "missing_clinical_review_status": 0,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "DifferentialDiagnosis",
+        "total": 152,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 130,
+        "missing_description": 152,
+        "missing_skeleton_slot": 152,
+        "missing_knowledge_layer": 22,
+        "missing_clinical_review_status": 130,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "Prevention",
+        "total": 144,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 144,
+        "missing_description": 144,
+        "missing_skeleton_slot": 144,
+        "missing_knowledge_layer": 0,
+        "missing_clinical_review_status": 144,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "ClinicalPathway",
+        "total": 140,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 0,
+        "missing_description": 80,
+        "missing_skeleton_slot": 140,
+        "missing_knowledge_layer": 140,
+        "missing_clinical_review_status": 0,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "Medication",
+        "total": 127,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 9,
+        "missing_description": 67,
+        "missing_skeleton_slot": 127,
+        "missing_knowledge_layer": 118,
+        "missing_clinical_review_status": 9,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "Definition",
+        "total": 124,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 124,
+        "missing_description": 124,
+        "missing_skeleton_slot": 124,
+        "missing_knowledge_layer": 0,
+        "missing_clinical_review_status": 124,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "Disease",
+        "total": 115,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 0,
+        "missing_description": 0,
+        "missing_skeleton_slot": 115,
+        "missing_knowledge_layer": 115,
+        "missing_clinical_review_status": 0,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "Guideline",
+        "total": 106,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 0,
+        "missing_description": 106,
+        "missing_skeleton_slot": 106,
+        "missing_knowledge_layer": 106,
+        "missing_clinical_review_status": 0,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "DiagnosisCriteria",
+        "total": 81,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 0,
+        "missing_description": 56,
+        "missing_skeleton_slot": 81,
+        "missing_knowledge_layer": 81,
+        "missing_clinical_review_status": 0,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "TextbookSection",
+        "total": 73,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 73,
+        "missing_description": 0,
+        "missing_skeleton_slot": 73,
+        "missing_knowledge_layer": 0,
+        "missing_clinical_review_status": 73,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "DiseaseClassification",
+        "total": 68,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 68,
+        "missing_description": 68,
+        "missing_skeleton_slot": 68,
+        "missing_knowledge_layer": 0,
+        "missing_clinical_review_status": 68,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "Sign",
+        "total": 59,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 9,
+        "missing_description": 42,
+        "missing_skeleton_slot": 59,
+        "missing_knowledge_layer": 50,
+        "missing_clinical_review_status": 9,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "Procedure",
+        "total": 56,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 8,
+        "missing_description": 38,
+        "missing_skeleton_slot": 56,
+        "missing_knowledge_layer": 48,
+        "missing_clinical_review_status": 8,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "Symptom",
+        "total": 52,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 10,
+        "missing_description": 41,
+        "missing_skeleton_slot": 52,
+        "missing_knowledge_layer": 42,
+        "missing_clinical_review_status": 10,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "Exam",
+        "total": 50,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 5,
+        "missing_description": 40,
+        "missing_skeleton_slot": 50,
+        "missing_knowledge_layer": 45,
+        "missing_clinical_review_status": 5,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "RiskFactor",
+        "total": 50,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 6,
+        "missing_description": 44,
+        "missing_skeleton_slot": 50,
+        "missing_knowledge_layer": 44,
+        "missing_clinical_review_status": 6,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "RiskStratification",
+        "total": 46,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 1,
+        "missing_description": 46,
+        "missing_skeleton_slot": 46,
+        "missing_knowledge_layer": 45,
+        "missing_clinical_review_status": 1,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "LabTest",
+        "total": 39,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 10,
+        "missing_description": 30,
+        "missing_skeleton_slot": 39,
+        "missing_knowledge_layer": 29,
+        "missing_clinical_review_status": 10,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "Complication",
+        "total": 36,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 3,
+        "missing_description": 29,
+        "missing_skeleton_slot": 36,
+        "missing_knowledge_layer": 33,
+        "missing_clinical_review_status": 3,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "DiseaseCategory",
+        "total": 34,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 21,
+        "missing_description": 13,
+        "missing_skeleton_slot": 34,
+        "missing_knowledge_layer": 13,
+        "missing_clinical_review_status": 21,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "DiseaseSubcategory",
+        "total": 31,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 0,
+        "missing_description": 31,
+        "missing_skeleton_slot": 31,
+        "missing_knowledge_layer": 31,
+        "missing_clinical_review_status": 0,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "Epidemiology",
+        "total": 27,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 10,
+        "missing_description": 26,
+        "missing_skeleton_slot": 27,
+        "missing_knowledge_layer": 17,
+        "missing_clinical_review_status": 10,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "ExamIndicator",
+        "total": 17,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 0,
+        "missing_description": 17,
+        "missing_skeleton_slot": 17,
+        "missing_knowledge_layer": 17,
+        "missing_clinical_review_status": 0,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "Contraindication",
+        "total": 9,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 0,
+        "missing_description": 9,
+        "missing_skeleton_slot": 9,
+        "missing_knowledge_layer": 9,
+        "missing_clinical_review_status": 0,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "ClinicalManifestation",
+        "total": 2,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 2,
+        "missing_description": 2,
+        "missing_skeleton_slot": 2,
+        "missing_knowledge_layer": 0,
+        "missing_clinical_review_status": 2,
+        "missing_formal_cdss_ready": 0
+      },
+      {
+        "entityType": "Specialty",
+        "total": 1,
+        "missing_name": 0,
+        "missing_code": 0,
+        "missing_display_name": 0,
+        "missing_description": 0,
+        "missing_skeleton_slot": 1,
+        "missing_knowledge_layer": 1,
+        "missing_clinical_review_status": 0,
+        "missing_formal_cdss_ready": 0
+      }
+    ],
+    "label_counts": [
+      {
+        "label": "KGNode",
+        "count": 43020
+      },
+      {
+        "label": "Evidence",
+        "count": 38131
+      },
+      {
+        "label": "RecommendationStatement",
+        "count": 560
+      },
+      {
+        "label": "ClinicalRule",
+        "count": 523
+      },
+      {
+        "label": "PathwayStage",
+        "count": 450
+      },
+      {
+        "label": "Etiology",
+        "count": 290
+      },
+      {
+        "label": "Pathophysiology",
+        "count": 265
+      },
+      {
+        "label": "DefinitionComponent",
+        "count": 248
+      },
+      {
+        "label": "TreatmentPlan",
+        "count": 228
+      },
+      {
+        "label": "FollowUp",
+        "count": 184
+      },
+      {
+        "label": "DiagnosisCriteriaComponent",
+        "count": 177
+      },
+      {
+        "label": "Prognosis",
+        "count": 169
+      },
+      {
+        "label": "ThresholdRule",
+        "count": 156
+      },
+      {
+        "label": "DifferentialDiagnosis",
+        "count": 152
+      },
+      {
+        "label": "Prevention",
+        "count": 144
+      },
+      {
+        "label": "ClinicalPathway",
+        "count": 140
+      },
+      {
+        "label": "Medication",
+        "count": 127
+      },
+      {
+        "label": "Definition",
+        "count": 124
+      },
+      {
+        "label": "Disease",
+        "count": 115
+      },
+      {
+        "label": "Guideline",
+        "count": 106
+      },
+      {
+        "label": "DiagnosisCriteria",
+        "count": 81
+      },
+      {
+        "label": "TextbookSection",
+        "count": 73
+      },
+      {
+        "label": "DiseaseClassification",
+        "count": 68
+      },
+      {
+        "label": "Sign",
+        "count": 59
+      },
+      {
+        "label": "Procedure",
+        "count": 56
+      },
+      {
+        "label": "Symptom",
+        "count": 52
+      },
+      {
+        "label": "Exam",
+        "count": 51
+      },
+      {
+        "label": "RiskFactor",
+        "count": 50
+      },
+      {
+        "label": "RiskStratification",
+        "count": 46
+      },
+      {
+        "label": "LabTest",
+        "count": 39
+      },
+      {
+        "label": "Complication",
+        "count": 36
+      },
+      {
+        "label": "DiseaseCategory",
+        "count": 34
+      },
+      {
+        "label": "DiseaseSubcategory",
+        "count": 31
+      },
+      {
+        "label": "Epidemiology",
+        "count": 27
+      },
+      {
+        "label": "ExamIndicator",
+        "count": 17
+      },
+      {
+        "label": "Contraindication",
+        "count": 9
+      },
+      {
+        "label": "ClinicalManifestation",
+        "count": 2
+      },
+      {
+        "label": "Specialty",
+        "count": 1
+      }
+    ],
+    "total_counts": [
+      {
+        "kg_nodes": 43020,
+        "all_relationships": 140183
+      }
+    ],
+    "cdss_relation_integrity": [
+      {
+        "rec_total": 560,
+        "rec_without_action": 0,
+        "rec_without_evidence": 0,
+        "rec_without_guideline": 0
+      }
+    ],
+    "diagnosis_detail": [
+      {
+        "diagnosis_total": 81,
+        "diagnosis_without_component": 31
+      }
+    ],
+    "treatment_actionability": [
+      {
+        "treatment_plan_total": 228,
+        "treatment_without_any_relation": 0,
+        "treatment_without_actionable_relation": 138
+      }
+    ]
+  }
+}

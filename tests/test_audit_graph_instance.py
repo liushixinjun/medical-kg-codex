@@ -8,6 +8,117 @@ from scripts.audit_graph_instance import audit_graph
 
 
 class AuditGraphInstanceTests(unittest.TestCase):
+    def test_pathway_applicability_profile_overrides_required_slots(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            batch = Path(tmp)
+            data_dir = batch / "05_data_instance"
+            config_dir = batch / "00_scope_and_config"
+            data_dir.mkdir(parents=True)
+            config_dir.mkdir(parents=True)
+
+            common = {
+                "preferred_name": "x",
+                "display_name": "x",
+                "entityCategory": "clinical",
+                "schema_version": "V1.11",
+                "review_status": "approved",
+                "batch_id": "BATCH-TEST",
+            }
+            nodes = [
+                {
+                    "id": "N1",
+                    "code": "DIS-TEST",
+                    "name": "Test disease",
+                    "entityType": "Disease",
+                    "description": "Test definition.",
+                    **common,
+                }
+            ]
+            (data_dir / "nodes_final.jsonl").write_text(
+                "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in nodes),
+                encoding="utf-8-sig",
+            )
+            (data_dir / "relations_final.jsonl").write_text("", encoding="utf-8-sig")
+            (config_dir / "pathway_applicability_profile.json").write_text(
+                json.dumps(
+                    {
+                        "diseases": {
+                            "DIS-TEST": {
+                                "symptom": {
+                                    "status": "not_applicable",
+                                    "reason": "Measurement phenotype; symptoms are not required for diagnosis.",
+                                },
+                                "sign": {"status": "optional"},
+                            }
+                        }
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8-sig",
+            )
+
+            summary = audit_graph(batch)
+
+            self.assertEqual(summary["pathway_applicability_profile_error_count"], 0)
+            with (batch / "06_quality_audit" / "missing_reason_and_solution.csv").open(
+                encoding="utf-8-sig",
+                newline="",
+            ) as handle:
+                rows = list(csv.DictReader(handle))
+            symptom = next(row for row in rows if row["pathway_element"] == "symptom")
+            sign = next(row for row in rows if row["pathway_element"] == "sign")
+            self.assertEqual(symptom["applicability_status"], "not_applicable")
+            self.assertEqual(symptom["missing_reason"], "NOT_APPLICABLE_BY_DISEASE_PROFILE")
+            self.assertIn("Measurement phenotype", symptom["solution"])
+            self.assertEqual(sign["applicability_status"], "optional")
+
+    def test_not_applicable_profile_requires_reason(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            batch = Path(tmp)
+            data_dir = batch / "05_data_instance"
+            config_dir = batch / "00_scope_and_config"
+            data_dir.mkdir(parents=True)
+            config_dir.mkdir(parents=True)
+
+            common = {
+                "preferred_name": "x",
+                "display_name": "x",
+                "entityCategory": "clinical",
+                "schema_version": "V1.11",
+                "review_status": "approved",
+                "batch_id": "BATCH-TEST",
+            }
+            nodes = [
+                {
+                    "id": "N1",
+                    "code": "DIS-TEST",
+                    "name": "Test disease",
+                    "entityType": "Disease",
+                    "description": "Test definition.",
+                    **common,
+                }
+            ]
+            (data_dir / "nodes_final.jsonl").write_text(
+                "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in nodes),
+                encoding="utf-8-sig",
+            )
+            (data_dir / "relations_final.jsonl").write_text("", encoding="utf-8-sig")
+            (config_dir / "pathway_applicability_profile.json").write_text(
+                json.dumps({"diseases": {"DIS-TEST": {"symptom": {"status": "not_applicable"}}}}),
+                encoding="utf-8-sig",
+            )
+
+            summary = audit_graph(batch)
+
+            self.assertEqual(summary["quality_gate_status"], "failed")
+            self.assertEqual(summary["pathway_applicability_profile_error_count"], 1)
+            with (batch / "06_quality_audit" / "pathway_applicability_profile_errors.csv").open(
+                encoding="utf-8-sig",
+                newline="",
+            ) as handle:
+                rows = list(csv.DictReader(handle))
+            self.assertEqual(rows[0]["error_type"], "missing_not_applicable_reason")
+
     def test_missing_reason_uses_counter_evidence_and_blocks_quality_gate(self):
         with tempfile.TemporaryDirectory() as tmp:
             batch = Path(tmp)
@@ -892,6 +1003,90 @@ class AuditGraphInstanceTests(unittest.TestCase):
             summary = audit_graph(batch)
 
             self.assertEqual(summary["target_match_failure_count"], 0)
+
+    def test_schema_v112_textbook_entities_and_relations_are_allowed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            batch = Path(tmp)
+            data_dir = batch / "05_data_instance"
+            data_dir.mkdir(parents=True)
+
+            common = {
+                "preferred_name": "x",
+                "display_name": "x",
+                "entityCategory": "clinical",
+                "schema_version": "V1.12",
+                "review_status": "approved",
+                "batch_id": "BATCH-TEST",
+            }
+            nodes = [
+                {"id": "N1", "code": "DIS-HCM", "name": "肥厚型心肌病", "entityType": "Disease", "description": "肥厚型心肌病定义。", **common},
+                {"id": "N2", "code": "DEF-HCM", "name": "肥厚型心肌病定义", "entityType": "Definition", **common},
+                {"id": "N3", "code": "DEFC-HCM-1", "name": "心室肥厚伴舒张功能障碍", "entityType": "DefinitionComponent", **common},
+                {"id": "N4", "code": "DXC-HCM", "name": "肥厚型心肌病诊断标准", "entityType": "DiagnosisCriteria", **common},
+                {"id": "N5", "code": "DXCC-HCM-1", "name": "室壁厚度达到诊断阈值", "entityType": "DiagnosisCriteriaComponent", **common},
+                {"id": "N6", "code": "PREV-HCM", "name": "肥厚型心肌病患者教育", "entityType": "Prevention", **common},
+                {"id": "N7", "code": "CLASS-HCM", "name": "梗阻型与非梗阻型", "entityType": "DiseaseClassification", **common},
+                {"id": "N8", "code": "GL-TEXTBOOK", "name": "内科学第10版", "entityType": "Guideline", **common},
+                {"id": "N9", "code": "SEC-HCM", "name": "肥厚型心肌病章节", "entityType": "SourceSection", **common},
+                {
+                    "id": "N10",
+                    "code": "EVD-HCM",
+                    "name": "肥厚型心肌病教材证据",
+                    "entityType": "Evidence",
+                    "document_id": "DOC-TEXTBOOK",
+                    "segment_id": "SEG-HCM",
+                    "source_name": "内科学第10版",
+                    "source_type": "authoritative_textbook",
+                    "source_version": "第10版",
+                    "source_section": "肥厚型心肌病",
+                    "source_page": "275",
+                    "evidence_text": "肥厚型心肌病是以心室肥厚为特征的心肌病。",
+                    "guideline_id": "GL-TEXTBOOK",
+                    "evidence_id": "EVD-HCM",
+                    "recommendation_class": "N/A",
+                    "evidence_level": "N/A",
+                    "confidence": 1.0,
+                    **common,
+                },
+            ]
+            relations = [
+                ("R1", "DIS-HCM", "has_definition", "DEF-HCM", "clinical"),
+                ("R2", "DEF-HCM", "has_definition_component", "DEFC-HCM-1", "clinical"),
+                ("R3", "DIS-HCM", "has_diagnostic_criteria", "DXC-HCM", "diagnostic"),
+                ("R4", "DXC-HCM", "has_diagnostic_component", "DXCC-HCM-1", "diagnostic"),
+                ("R5", "DIS-HCM", "has_prevention", "PREV-HCM", "clinical"),
+                ("R6", "DIS-HCM", "has_classification", "CLASS-HCM", "diagnostic"),
+                ("R7", "GL-TEXTBOOK", "has_source_section", "SEC-HCM", "evidence"),
+                ("R8", "SEC-HCM", "section_has_evidence", "EVD-HCM", "evidence"),
+            ]
+            rel_rows = [
+                {
+                    "id": rid,
+                    "source_code": source,
+                    "relationType": rel_type,
+                    "target_code": target,
+                    "relationCategory": category,
+                    "batch_id": "BATCH-TEST",
+                    "schema_version": "V1.12",
+                    "review_status": "approved",
+                }
+                for rid, source, rel_type, target, category in relations
+            ]
+
+            (data_dir / "nodes_final.jsonl").write_text(
+                "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in nodes),
+                encoding="utf-8-sig",
+            )
+            (data_dir / "relations_final.jsonl").write_text(
+                "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rel_rows),
+                encoding="utf-8-sig",
+            )
+
+            summary = audit_graph(batch)
+
+            self.assertEqual(summary["unknown_entity_type_count"], 0)
+            self.assertEqual(summary["unknown_relation_type_count"], 0)
+            self.assertEqual(summary["wrong_relation_direction_count"], 0)
 
 
 if __name__ == "__main__":

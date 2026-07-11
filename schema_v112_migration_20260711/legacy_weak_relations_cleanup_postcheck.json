@@ -1,0 +1,18 @@
+{
+  "legacy_three": [],
+  "legacy_all": [],
+  "totals": [
+    {
+      "nodes": 43020,
+      "rels": 139512
+    }
+  ],
+  "recommendation_integrity": [
+    {
+      "rec_total": 560,
+      "rec_without_action_or_block": 0,
+      "rec_without_evidence": 0,
+      "rec_without_guideline": 0
+    }
+  ]
+}

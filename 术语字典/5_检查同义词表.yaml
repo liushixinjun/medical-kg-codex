@@ -91,3 +91,15 @@
     - 运动试验
   same_as: []
   note: ""
+
+- canonical: 电生理检查
+  code: EXAM-CARD-TEXT-C33E64A777
+  name_en: Electrophysiological study
+  aliases:
+    - 心脏电生理检查
+    - 心内电生理检查
+    - 电生理检测
+    - EP检查
+    - EPS
+  same_as: []
+  note: "2026-07-07 缓慢性心律失常及传导阻滞批次跨批次去重回写；保留骨架库实体编码，合并本批次同名检查实体。"

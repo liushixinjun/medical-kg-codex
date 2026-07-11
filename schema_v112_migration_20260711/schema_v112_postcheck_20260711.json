@@ -1,0 +1,255 @@
+{
+  "totals": [
+    {
+      "nodes": 43020,
+      "rels": 139845
+    }
+  ],
+  "legacy_relations": [
+    {
+      "relationType": "USES_MEDICATION",
+      "count": 225
+    },
+    {
+      "relationType": "HAS_PROCEDURE",
+      "count": 106
+    },
+    {
+      "relationType": "HAS_CLINICAL_MANIFESTATION",
+      "count": 2
+    }
+  ],
+  "legacy_nodes": [],
+  "source_section": [
+    {
+      "count": 75
+    }
+  ],
+  "knowledge_layer": [
+    {
+      "layer": "textbook_core",
+      "count": 1860
+    },
+    {
+      "layer": "evidence",
+      "count": 1269
+    }
+  ],
+  "rec_integrity": [
+    {
+      "total": 58,
+      "with_action": 1,
+      "with_evidence": 2,
+      "with_guideline": 2
+    },
+    {
+      "total": 54,
+      "with_action": 1,
+      "with_evidence": 1,
+      "with_guideline": 1
+    },
+    {
+      "total": 23,
+      "with_action": 1,
+      "with_evidence": 3,
+      "with_guideline": 2
+    },
+    {
+      "total": 44,
+      "with_action": 1,
+      "with_evidence": 2,
+      "with_guideline": 1
+    },
+    {
+      "total": 13,
+      "with_action": 1,
+      "with_evidence": 3,
+      "with_guideline": 1
+    },
+    {
+      "total": 2,
+      "with_action": 0,
+      "with_evidence": 1,
+      "with_guideline": 1
+    },
+    {
+      "total": 3,
+      "with_action": 1,
+      "with_evidence": 2,
+      "with_guideline": 3
+    },
+    {
+      "total": 35,
+      "with_action": 1,
+      "with_evidence": 5,
+      "with_guideline": 4
+    },
+    {
+      "total": 11,
+      "with_action": 1,
+      "with_evidence": 4,
+      "with_guideline": 2
+    },
+    {
+      "total": 36,
+      "with_action": 1,
+      "with_evidence": 5,
+      "with_guideline": 3
+    },
+    {
+      "total": 15,
+      "with_action": 1,
+      "with_evidence": 4,
+      "with_guideline": 3
+    },
+    {
+      "total": 10,
+      "with_action": 1,
+      "with_evidence": 5,
+      "with_guideline": 1
+    },
+    {
+      "total": 16,
+      "with_action": 1,
+      "with_evidence": 5,
+      "with_guideline": 2
+    },
+    {
+      "total": 17,
+      "with_action": 1,
+      "with_evidence": 5,
+      "with_guideline": 5
+    },
+    {
+      "total": 4,
+      "with_action": 1,
+      "with_evidence": 4,
+      "with_guideline": 1
+    },
+    {
+      "total": 21,
+      "with_action": 3,
+      "with_evidence": 6,
+      "with_guideline": 3
+    },
+    {
+      "total": 26,
+      "with_action": 4,
+      "with_evidence": 6,
+      "with_guideline": 3
+    },
+    {
+      "total": 1,
+      "with_action": 5,
+      "with_evidence": 6,
+      "with_guideline": 2
+    },
+    {
+      "total": 8,
+      "with_action": 3,
+      "with_evidence": 6,
+      "with_guideline": 2
+    },
+    {
+      "total": 1,
+      "with_action": 0,
+      "with_evidence": 6,
+      "with_guideline": 2
+    },
+    {
+      "total": 1,
+      "with_action": 7,
+      "with_evidence": 6,
+      "with_guideline": 2
+    },
+    {
+      "total": 4,
+      "with_action": 4,
+      "with_evidence": 6,
+      "with_guideline": 2
+    },
+    {
+      "total": 8,
+      "with_action": 6,
+      "with_evidence": 6,
+      "with_guideline": 3
+    },
+    {
+      "total": 32,
+      "with_action": 5,
+      "with_evidence": 6,
+      "with_guideline": 3
+    },
+    {
+      "total": 38,
+      "with_action": 2,
+      "with_evidence": 6,
+      "with_guideline": 3
+    },
+    {
+      "total": 1,
+      "with_action": 5,
+      "with_evidence": 6,
+      "with_guideline": 1
+    },
+    {
+      "total": 1,
+      "with_action": 4,
+      "with_evidence": 6,
+      "with_guideline": 1
+    },
+    {
+      "total": 9,
+      "with_action": 7,
+      "with_evidence": 6,
+      "with_guideline": 3
+    },
+    {
+      "total": 22,
+      "with_action": 1,
+      "with_evidence": 6,
+      "with_guideline": 3
+    },
+    {
+      "total": 19,
+      "with_action": 8,
+      "with_evidence": 6,
+      "with_guideline": 3
+    },
+    {
+      "total": 3,
+      "with_action": 11,
+      "with_evidence": 6,
+      "with_guideline": 3
+    },
+    {
+      "total": 13,
+      "with_action": 13,
+      "with_evidence": 6,
+      "with_guideline": 3
+    },
+    {
+      "total": 2,
+      "with_action": 12,
+      "with_evidence": 6,
+      "with_guideline": 3
+    },
+    {
+      "total": 9,
+      "with_action": 9,
+      "with_evidence": 6,
+      "with_guideline": 3
+    }
+  ],
+  "duplicate_triples": [
+    {
+      "duplicate_groups": 0,
+      "duplicate_edges": 0
+    }
+  ],
+  "diag_without_component": [
+    {
+      "count": 31
+    }
+  ]
+}

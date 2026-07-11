@@ -69,3 +69,26 @@
     - 室间隔消融
   same_as: []
   note: ""
+
+- canonical: 临时心脏起搏
+  code: PROC-CARD-B69847521FA1
+  name_en: Temporary cardiac pacing
+  aliases:
+    - 床旁临时心脏起搏
+    - 经静脉临时心脏起搏
+    - 经胸壁心脏起搏
+    - 临时起搏
+    - 临时起搏器治疗
+  same_as: []
+  note: "2026-07-07 缓慢性心律失常及传导阻滞批次回写；用于CDSS路径动作和证据匹配。"
+
+- canonical: 心脏再同步治疗
+  code: PROC-CARD-TEXT-D2C1F9E289
+  name_en: Cardiac resynchronization therapy
+  aliases:
+    - CRT
+    - 双心室起搏
+    - 心脏同步化治疗
+    - 再同步治疗
+  same_as: []
+  note: "2026-07-07 缓慢性心律失常及传导阻滞批次跨批次去重回写；保留骨架库实体编码，合并本批次同名操作实体。"

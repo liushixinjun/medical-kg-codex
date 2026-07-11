@@ -1,0 +1,55 @@
+{
+  "recommendation_integrity": [
+    {
+      "rec_total": 560,
+      "rec_without_action": 3,
+      "rec_without_evidence": 0,
+      "rec_without_guideline": 0
+    }
+  ],
+  "diagnosis_component_coverage": [
+    {
+      "total": 81,
+      "with_component": 50,
+      "without_component": 31
+    }
+  ],
+  "legacy_relation_endpoint_types": [
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "sourceType": "SourceSection",
+      "targetType": "SourceSection",
+      "count": 1
+    },
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "sourceType": "Disease",
+      "targetType": "SourceSection",
+      "count": 1
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "targetType": "Procedure",
+      "count": 98
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "DiseaseCategory",
+      "targetType": "Procedure",
+      "count": 8
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceType": "SourceSection",
+      "targetType": "Medication",
+      "count": 204
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceType": "DiseaseCategory",
+      "targetType": "Medication",
+      "count": 21
+    }
+  ]
+}

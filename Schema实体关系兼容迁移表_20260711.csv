@@ -1,0 +1,22 @@
+对象类型,当前名称,标准名称,当前数量,处理级别,迁移动作,是否本次执行,说明
+实体,Definition,Definition,124,收编,保留并纳入Schema V1.12,否,定义容器实体，保存某来源下定义原文组
+实体,DefinitionComponent,DefinitionComponent,248,收编,保留并纳入Schema V1.12,否,定义拆解组件，用于疾病定义结构化
+实体,DiagnosisCriteriaComponent,DiagnosisCriteriaComponent,177,收编,保留并纳入Schema V1.12,否,诊断标准明细组件
+实体,Prevention,Prevention,144,收编,保留并纳入Schema V1.12,否,预防、二级预防和健康管理
+实体,TextbookSection,SourceSection,73,兼容迁移,后续dry-run迁移为SourceSection,否,TextbookSection为历史教材章节实体；新批次使用SourceSection
+实体,DiseaseClassification,DiseaseClassification,68,收编,保留并纳入Schema V1.12,否,疾病分类/分型实体；新批次优先使用
+实体,ClassificationStage,DiseaseClassification,0,兼容保留,历史兼容；新批次优先DiseaseClassification,否,避免与PathwayStage混淆
+实体,ClinicalManifestation,Symptom/Sign/SourceSection,2,不建议继续使用,后续按内容拆分为症状/体征或章节锚点,否,临床表现容器过粗，不能替代症状和体征实体
+关系,HAS_SYMPTOM,has_symptom,339,legacy迁移,后续按语义键迁移到小写标准关系,否,新批次禁止继续生成大写关系
+关系,HAS_SIGN,has_sign,269,legacy迁移,后续按语义键迁移到小写标准关系,否,新批次禁止继续生成大写关系
+关系,HAS_TREATMENT_PLAN,has_treatment_plan,199,legacy迁移,后续按语义键迁移到小写标准关系,否,新批次禁止继续生成大写关系
+关系,HAS_DIAGNOSTIC_COMPONENT,has_diagnostic_component,215,legacy迁移,后续按语义键迁移到小写标准关系,否,新批次禁止继续生成大写关系
+关系,HAS_RISK_FACTOR,has_risk_factor,161,legacy迁移,后续按语义键迁移到小写标准关系,否,新批次禁止继续生成大写关系
+关系,HAS_FOLLOW_UP,has_follow_up,108,legacy迁移,后续按语义键迁移到小写标准关系,否,新批次禁止继续生成大写关系
+关系,HAS_EVIDENCE,supported_by_evidence,3954,legacy迁移,后续按语义和端点类型判断迁移到supported_by_evidence或guideline_has_evidence,否,HAS_EVIDENCE语义过宽，不能机械全部转一个关系
+关系,USES_MEDICATION,treated_by_medication/includes_medication,383,legacy迁移,按source实体类型判断：Disease源转treated_by_medication，TreatmentPlan源转includes_medication,否,不能无脑映射
+关系,HAS_DEFINITION,has_definition,124,legacy迁移,后续迁移为小写标准关系,否,新批次使用has_definition
+关系,HAS_DEFINITION_COMPONENT,has_definition_component,353,legacy迁移,后续迁移为小写标准关系,否,新批次使用has_definition_component
+字段,knowledge_layer=textbook_skeleton,knowledge_layer=textbook_core,1860,字段值统一,后续dry-run迁移枚举值,否,V1.12标准值为textbook_core
+字段,knowledge_layer=evidence,按来源拆分为textbook_core/guideline_supplement/guideline_decision,1269,字段值治理,后续根据source_type和关系用途拆分,否,evidence过粗，不能直接用于CDSS层级判断
+字段,definition_skeleton_slot,skeleton_slot,68,字段兼容,保留definition_skeleton_slot并补通用skeleton_slot,否,Disease定义字段可保留，但通用骨架字段必须补齐

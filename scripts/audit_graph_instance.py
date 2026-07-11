@@ -11,14 +11,16 @@ from pathlib import Path
 ALLOWED_ENTITY_TYPES = {
     "Specialty", "DiseaseCategory", "DiseaseSubcategory", "Disease",
     "Symptom", "Sign", "Etiology", "Pathophysiology", "Epidemiology",
-    "RiskFactor", "Complication", "Prognosis", "Exam", "LabTest",
+    "Definition", "DefinitionComponent", "RiskFactor", "Complication",
+    "Prognosis", "Prevention", "Exam", "LabTest",
     "ExamIndicator", "ThresholdRule", "DiagnosisCriteria",
-    "DifferentialDiagnosis", "RiskStratification", "ScoringScale",
-    "ClinicalRule", "PatientState", "ClinicalEvent", "ClassificationStage",
+    "DiagnosisCriteriaComponent", "DifferentialDiagnosis",
+    "RiskStratification", "ScoringScale", "ClinicalRule", "PatientState",
+    "ClinicalEvent", "ClassificationStage", "DiseaseClassification",
     "TreatmentPlan", "Medication", "Procedure", "Indication",
     "Contraindication", "TreatmentTiming", "TimeWindow", "FollowUp",
     "DrugInteraction", "AdverseEffect", "ClinicalPathway", "Guideline",
-    "Evidence", "RecommendationStatement",
+    "SourceSection", "PathwayStage", "Evidence", "RecommendationStatement",
 }
 
 ALLOWED_DIRECTIONS = {
@@ -27,6 +29,8 @@ ALLOWED_DIRECTIONS = {
     "has_disease": ({"DiseaseSubcategory"}, {"Disease"}),
     "belongs_to_subcategory": ({"Disease"}, {"DiseaseSubcategory"}),
     "belongs_to_category": ({"Disease"}, {"DiseaseCategory"}),
+    "has_definition": ({"Disease"}, {"Definition"}),
+    "has_definition_component": ({"Definition"}, {"DefinitionComponent"}),
     "has_etiology": ({"Disease"}, {"Etiology"}),
     "has_pathophysiology": ({"Disease"}, {"Pathophysiology"}),
     "has_epidemiology": ({"Disease"}, {"Epidemiology"}),
@@ -35,37 +39,75 @@ ALLOWED_DIRECTIONS = {
     "has_sign": ({"Disease"}, {"Sign"}),
     "may_cause_complication": ({"Disease"}, {"Complication"}),
     "has_prognosis": ({"Disease"}, {"Prognosis"}),
+    "has_prevention": ({"Disease"}, {"Prevention"}),
     "requires_exam": ({"Disease"}, {"Exam"}),
     "requires_lab_test": ({"Disease"}, {"LabTest"}),
     "exam_has_indicator": ({"Exam"}, {"ExamIndicator"}),
     "lab_test_has_indicator": ({"LabTest"}, {"ExamIndicator"}),
     "has_threshold_rule": ({"ExamIndicator"}, {"ThresholdRule"}),
     "has_diagnostic_criteria": ({"Disease"}, {"DiagnosisCriteria"}),
+    "has_diagnostic_component": ({"DiagnosisCriteria"}, {"DiagnosisCriteriaComponent", "ClinicalRule", "Exam", "LabTest", "ExamIndicator", "Symptom", "Sign", "ThresholdRule"}),
     "differentiates_from": ({"Disease"}, {"Disease", "DifferentialDiagnosis"}),
     "has_risk_stratification": ({"Disease"}, {"RiskStratification"}),
     "uses_scoring_scale": ({"Disease"}, {"ScoringScale"}),
     "has_clinical_rule": ({"Disease"}, {"ClinicalRule"}),
     "has_classification_stage": ({"Disease"}, {"ClassificationStage"}),
+    "has_classification": ({"Disease"}, {"DiseaseClassification"}),
     "has_treatment_plan": ({"Disease"}, {"TreatmentPlan"}),
     "treated_by_medication": ({"Disease"}, {"Medication"}),
     "treated_by_procedure": ({"Disease"}, {"Procedure"}),
     "includes_medication": ({"TreatmentPlan"}, {"Medication"}),
     "includes_procedure": ({"TreatmentPlan"}, {"Procedure"}),
     "has_specific_medication": ({"Medication"}, {"Medication"}),
-    "has_indication": ({"Medication", "Procedure"}, {"Indication"}),
-    "has_contraindication": ({"Medication", "Procedure"}, {"Contraindication"}),
+    "has_indication": ({"Medication", "Procedure", "RecommendationStatement"}, {"Indication", "ClinicalRule", "PatientState"}),
+    "has_contraindication": ({"Medication", "Procedure", "RecommendationStatement"}, {"Contraindication", "ClinicalRule", "PatientState"}),
     "has_timing": ({"TreatmentPlan", "Procedure"}, {"TreatmentTiming"}),
     "has_time_window": ({"TreatmentTiming"}, {"TimeWindow"}),
     "has_follow_up": ({"Disease", "TreatmentPlan"}, {"FollowUp"}),
     "has_clinical_pathway": ({"Disease", "TreatmentPlan"}, {"ClinicalPathway"}),
+    "has_pathway_stage": ({"ClinicalPathway"}, {"PathwayStage"}),
+    "next_pathway_stage": ({"PathwayStage"}, {"PathwayStage"}),
+    "has_stage_rule": ({"PathwayStage"}, {"ClinicalRule"}),
+    "has_recommended_action": ({"ClinicalRule"}, {"Exam", "LabTest", "Medication", "Procedure", "TreatmentPlan", "FollowUp", "DifferentialDiagnosis", "RiskStratification", "DiagnosisCriteria"}),
+    "has_recommendation_statement": ({"ClinicalPathway", "PathwayStage", "ClinicalRule"}, {"RecommendationStatement"}),
+    "recommends_action": ({"RecommendationStatement", "ClinicalRule"}, {"Exam", "LabTest", "Medication", "Procedure", "TreatmentPlan", "FollowUp", "DifferentialDiagnosis", "RiskStratification", "DiagnosisCriteria"}),
+    "blocks_action": ({"RecommendationStatement"}, {"Medication", "Procedure", "TreatmentPlan"}),
     "interacts_with": ({"Medication"}, {"Medication", "DrugInteraction"}),
-    "based_on_guideline": ({"Disease"}, {"Guideline"}),
+    "based_on_guideline": ({"Disease", "RecommendationStatement"}, {"Guideline"}),
+    "has_source_section": ({"Guideline"}, {"SourceSection"}),
+    "section_has_evidence": ({"SourceSection"}, {"Evidence"}),
     "guideline_has_evidence": ({"Guideline"}, {"Evidence"}),
     "supported_by_evidence": (ALLOWED_ENTITY_TYPES - {"Evidence", "Guideline", "Specialty", "DiseaseCategory", "DiseaseSubcategory"}, {"Evidence"}),
     "derived_from": ({"RecommendationStatement"}, {"Evidence"}),
 }
+DEFAULT_REQUIRED_PATHWAY_ELEMENTS = {
+    "definition",
+    "etiology",
+    "symptom",
+    "sign",
+    "exam",
+    "diagnosis_criteria",
+    "treatment_plan",
+    "complication",
+    "prognosis",
+    "follow_up",
+    "guideline",
+    "evidence",
+}
+PATHWAY_APPLICABILITY_STATUSES = {"required", "optional", "not_applicable"}
 
 CORE_CATEGORIES = {"clinical", "diagnostic", "therapeutic", "risk", "rule"}
+CDSS_STRUCTURE_RELATIONS = {
+    "has_clinical_pathway",
+    "has_pathway_stage",
+    "next_pathway_stage",
+    "has_clinical_rule",
+    "has_stage_rule",
+    "has_recommendation_statement",
+    "has_recommended_action",
+    "recommends_action",
+    "blocks_action",
+}
 RECOMMENDATION_CONFLICT_RELATIONS = {
     "requires_exam",
     "requires_lab_test",
@@ -212,6 +254,91 @@ MEDICATION_CLASS_EXCLUDED_NAMES = {
 
 def _jsonl(path: Path) -> list[dict]:
     return [json.loads(line) for line in path.read_text(encoding="utf-8-sig").splitlines() if line.strip()]
+
+
+def _load_pathway_applicability_profile(batch_dir: Path) -> tuple[dict, list[dict]]:
+    """Read optional per-disease required-slot overrides for this batch."""
+    profile_path = batch_dir / "00_scope_and_config" / "pathway_applicability_profile.json"
+    if not profile_path.is_file():
+        return {}, []
+    try:
+        profile = json.loads(profile_path.read_text(encoding="utf-8-sig"))
+    except json.JSONDecodeError as exc:
+        return {}, [
+            {
+                "disease_code": "",
+                "pathway_element": "",
+                "error_type": "invalid_json",
+                "error_detail": str(exc),
+            }
+        ]
+    if not isinstance(profile, dict):
+        return {}, [
+            {
+                "disease_code": "",
+                "pathway_element": "",
+                "error_type": "invalid_profile_root",
+                "error_detail": "profile root must be a JSON object",
+            }
+        ]
+    errors: list[dict] = []
+    for disease_code, overrides in (profile.get("diseases") or {}).items():
+        if not isinstance(overrides, dict):
+            errors.append(
+                {
+                    "disease_code": disease_code,
+                    "pathway_element": "",
+                    "error_type": "invalid_disease_override",
+                    "error_detail": "disease override must be a JSON object",
+                }
+            )
+            continue
+        for element, rule in overrides.items():
+            if isinstance(rule, str):
+                status = rule
+                reason = ""
+            elif isinstance(rule, dict):
+                status = rule.get("status")
+                reason = rule.get("reason") or ""
+            else:
+                status = None
+                reason = ""
+            if status not in PATHWAY_APPLICABILITY_STATUSES:
+                errors.append(
+                    {
+                        "disease_code": disease_code,
+                        "pathway_element": element,
+                        "error_type": "invalid_applicability_status",
+                        "error_detail": f"status must be one of {sorted(PATHWAY_APPLICABILITY_STATUSES)}",
+                    }
+                )
+            if status == "not_applicable" and not reason.strip():
+                errors.append(
+                    {
+                        "disease_code": disease_code,
+                        "pathway_element": element,
+                        "error_type": "missing_not_applicable_reason",
+                        "error_detail": "not_applicable override must include a clinical reason",
+                    }
+                )
+    return profile, errors
+
+
+def _pathway_applicability(disease: dict, element: str, profile: dict) -> tuple[str, str]:
+    status = "required" if element in DEFAULT_REQUIRED_PATHWAY_ELEMENTS else "optional"
+    reason = ""
+    diseases = profile.get("diseases") or {}
+    override = diseases.get(disease.get("code")) or diseases.get(disease.get("name")) or {}
+    rule = override.get(element) if isinstance(override, dict) else None
+    if isinstance(rule, str):
+        if rule in PATHWAY_APPLICABILITY_STATUSES:
+            status = rule
+    elif isinstance(rule, dict):
+        rule_status = rule.get("status")
+        if rule_status in PATHWAY_APPLICABILITY_STATUSES:
+            status = rule_status
+        reason = rule.get("reason") or ""
+    return status, reason
 
 
 def _contains_local_path(value) -> bool:
@@ -474,6 +601,7 @@ def audit_graph(batch_dir: Path) -> dict:
     review_dir.mkdir(parents=True, exist_ok=True)
     config_path = batch_dir / "00_scope_and_config" / "batch_config.json"
     config = json.loads(config_path.read_text(encoding="utf-8-sig")) if config_path.is_file() else {}
+    applicability_profile, applicability_profile_errors = _load_pathway_applicability_profile(batch_dir)
     scope_target = config.get("scope_target") or "专科"
     nodes = _jsonl(data_dir / "nodes_final.jsonl")
     relations = _jsonl(data_dir / "relations_final.jsonl")
@@ -519,7 +647,12 @@ def audit_graph(batch_dir: Path) -> dict:
         for row in _technical_display_name_errors(node)
     ]
 
-    core_relations = [rel for rel in relations if rel.get("relationCategory") in CORE_CATEGORIES]
+    core_relations = [
+        rel
+        for rel in relations
+        if rel.get("relationCategory") in CORE_CATEGORIES
+        and rel.get("relationType") not in CDSS_STRUCTURE_RELATIONS
+    ]
     evidence_complete = [rel for rel in core_relations if all(field in rel and rel[field] not in (None, "") for field in EVIDENCE_REQUIRED) and rel.get("evidence_count", 0) == len(rel.get("provenance_records_json", []))]
     core_rate = len(evidence_complete) / len(core_relations) if core_relations else 1.0
 
@@ -784,7 +917,6 @@ def audit_graph(batch_dir: Path) -> dict:
         ("guideline", lambda d: bool(relation_index[(d["code"], "based_on_guideline")])),
         ("evidence", lambda d: bool(relation_index[(d["code"], "supported_by_evidence")])),
     )
-    required = {"definition", "etiology", "symptom", "sign", "exam", "diagnosis_criteria", "treatment_plan", "complication", "prognosis", "follow_up", "guideline", "evidence"}
     coverage_rows = []
     missing_rows = []
     closed_loop_ready = 0
@@ -807,10 +939,17 @@ def audit_graph(batch_dir: Path) -> dict:
         disease_missing_required = False
         for element, checker in coverage_map:
             covered = checker(disease)
-            applicability = "required" if element in required else "optional"
+            applicability, applicability_reason = _pathway_applicability(
+                disease,
+                element,
+                applicability_profile,
+            )
             if not covered and applicability == "required":
                 disease_missing_required = True
             reason, solution = ("", "") if covered else missing_reason_and_solution(disease, element)
+            if not covered and applicability == "not_applicable":
+                reason = "NOT_APPLICABLE_BY_DISEASE_PROFILE"
+                solution = applicability_reason
             coverage_rows.append({"disease_code": disease["code"], "disease_name": disease["name"], "pathway_element": element, "applicability_status": applicability, "coverage_status": "covered" if covered else "missing", "evidence_count": len(relation_index[(disease["code"], "supported_by_evidence")]), "source_names": "", "missing_reason": reason, "solution": solution})
             if not covered:
                 missing_rows.append({"disease_code": disease["code"], "disease_name": disease["name"], "pathway_element": element, "applicability_status": applicability, "missing_reason": reason, "solution": solution})
@@ -957,6 +1096,11 @@ def audit_graph(batch_dir: Path) -> dict:
         cdss_readiness_rows,
     )
     _write_csv(audit_dir / "schema_gap_register.csv", ("gap_id", "pathway_element", "source_document", "description", "status", "solution"), [])
+    _write_csv(
+        audit_dir / "pathway_applicability_profile_errors.csv",
+        ("disease_code", "pathway_element", "error_type", "error_detail"),
+        applicability_profile_errors,
+    )
 
     required_missing_rows = [row for row in missing_rows if row.get("applicability_status") == "required"]
     summary = {
@@ -1000,6 +1144,7 @@ def audit_graph(batch_dir: Path) -> dict:
         "required_pathway_missing_count": len(required_missing_rows),
         "source_conflict_count": sum(row.get("blocks_cdss") == "yes" for row in conflict_rows),
         "source_conflict_total_count": len(conflict_rows),
+        "pathway_applicability_profile_error_count": len(applicability_profile_errors),
     }
     critical_values = [
         summary["unknown_entity_type_count"], summary["unknown_relation_type_count"],
@@ -1020,6 +1165,7 @@ def audit_graph(batch_dir: Path) -> dict:
         summary["pending_alias_review_count"], summary["pending_polarity_review_count"],
         summary["extraction_miss_review_required_count"],
         summary["required_pathway_missing_count"],
+        summary["pathway_applicability_profile_error_count"],
     ]
     if any(critical_values) or core_rate != 1.0:
         summary["quality_gate_status"] = "failed"

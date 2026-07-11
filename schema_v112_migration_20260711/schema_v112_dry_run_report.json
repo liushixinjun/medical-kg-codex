@@ -1,0 +1,364 @@
+{
+  "mode": "dry_run",
+  "generated_at": "2026-07-11 08:16:33",
+  "server": "192.168.3.27:7687",
+  "node_plan": {
+    "textbook_section_to_source_section": {
+      "count": 73,
+      "sample_codes": [
+        "TXTSEC-CARD-6EC6E23B8A0D0BC1",
+        "TXTSEC-CARD-92225AD4F40EFF8A",
+        "TXTSEC-CARD-DCD8FAB760ECA3CF",
+        "TXTSEC-CARD-BCBC16164DABDE21",
+        "TXTSEC-CARD-C501AB420F2E1219",
+        "TXTSEC-CARD-BE578D240807E305",
+        "TXTSEC-CARD-57C234DC4C3844E8",
+        "TXTSEC-CARD-97267F65B56F497F",
+        "TXTSEC-CARD-A46AD3BBA11C0EA0",
+        "TXTSEC-CARD-61938AC223534BC2",
+        "TXTSEC-CARD-A70372EC356F907B",
+        "TXTSEC-CARD-D958E3E0D741EB85",
+        "TXTSEC-CARD-432C5BDE76D94928",
+        "TXTSEC-CARD-360C79CC52DF8C02",
+        "TXTSEC-CARD-154A822445B83295",
+        "TXTSEC-CARD-5C68F09FFB663007",
+        "TXTSEC-CARD-DAC668D3B77F9384",
+        "TXTSEC-CARD-D595A2928F9215CE",
+        "TXTSEC-CARD-D8BBB19A58A29A3A",
+        "TXTSEC-CARD-1A974CC7AA36E335"
+      ]
+    },
+    "clinical_manifestation_to_source_section": {
+      "count": 2,
+      "sample_codes": [
+        "CARD-SKELETON-20260709-CLINICALMANIFESTATION-0E1AC4B74A95DD2F",
+        "CARD-SKELETON-FULL-20260709-CLINICALMANIFESTATION-270DDC740DE723FE"
+      ]
+    },
+    "knowledge_layer_textbook_skeleton": {
+      "count": 1860,
+      "sample_codes": [
+        "CARD-SKELETON-20260709-CLINICALMANIFESTATION-0E1AC4B74A95DD2F",
+        "CARD-SKELETON-20260709-COMPLICATION-61206D16F31CAE33",
+        "CARD-SKELETON-20260709-COMPLICATION-BCD6690C5395E690",
+        "CARD-SKELETON-20260709-DEFINITION-AC45C583A810A4E1",
+        "CARD-SKELETON-20260709-DEFINITION-0122661AC7221612",
+        "CARD-SKELETON-20260709-DEFINITION-C94DE28B1F1C19C7",
+        "CARD-SKELETON-20260709-DEFINITION-65C05570C18859BD",
+        "CARD-SKELETON-20260709-DEFINITION-C2FC945BAC2246BE",
+        "CARD-SKELETON-20260709-DEFINITION-A2E333C8031EBD21",
+        "CARD-SKELETON-20260709-DEFINITION-E303828A7682692C",
+        "CARD-SKELETON-20260709-DEFINITION-38FF53B5D135AE6C",
+        "CARD-SKELETON-20260709-DEFINITION-7C7545ECAD6D0326",
+        "CARD-SKELETON-20260709-DEFINITION-1D0F156A0E3109EF",
+        "CARD-SKELETON-20260709-DEFINITION-79731FBDCEC3CC4E",
+        "CARD-SKELETON-20260709-DEFINITION-DEE9D0F62611F015",
+        "CARD-SKELETON-20260709-DEFINITION-5AC72A90D64ECBF5",
+        "CARD-SKELETON-20260709-DEFINITION-87CA28103EB31FD9",
+        "CARD-SKELETON-20260709-DEFINITION-F3C5878C4492ACDA",
+        "CARD-SKELETON-20260709-DEFINITION-274A58D6206097C5",
+        "CARD-SKELETON-20260709-DEFINITION-5886B018E578490E"
+      ]
+    },
+    "definition_skeleton_slot_to_skeleton_slot": {
+      "count": 68,
+      "sample_codes": [
+        "DIS-CARD-HF-CHF",
+        "DIS-CARD-HF-AHF",
+        "DIS-CARD-ARR-SINUS",
+        "DIS-CARD-ARR-AT",
+        "DIS-CARD-ARR-AFL",
+        "DIS-CARD-ARR-AF",
+        "DIS-CARD-ARR-PSVT",
+        "DIS-CARD-ARR-PVC",
+        "DIS-CARD-ARR-VT",
+        "DIS-CARD-ARR-VF",
+        "DIS-CARD-ARR-AVB",
+        "DIS-CARD-ARR-LQTS",
+        "DIS-CARD-ARR-BRUGADA",
+        "DIS-CARD-ARR-CPVT",
+        "DIS-CARD-ARR-ERS",
+        "DIS-CARD-CAD-ATHEROSCLEROSIS",
+        "DIS-CARD-CAD-CHD",
+        "DIS-CARD-CAD-CCS",
+        "DIS-CARD-CAD-STABLE-ANGINA",
+        "DIS-CARD-CAD-ICM"
+      ]
+    }
+  },
+  "relation_plan": {
+    "planned_relation_count": 7432,
+    "skipped_relation_count": 333,
+    "planned_by_mapping": [
+      {
+        "old_relationType": "HAS_CLASSIFICATION",
+        "new_relationType": "has_classification",
+        "count": 91
+      },
+      {
+        "old_relationType": "HAS_COMPLICATION",
+        "new_relationType": "may_cause_complication",
+        "count": 18
+      },
+      {
+        "old_relationType": "HAS_DEFINITION",
+        "new_relationType": "has_definition",
+        "count": 124
+      },
+      {
+        "old_relationType": "HAS_DEFINITION_COMPONENT",
+        "new_relationType": "has_definition_component",
+        "count": 353
+      },
+      {
+        "old_relationType": "HAS_DIAGNOSTIC_COMPONENT",
+        "new_relationType": "has_diagnostic_component",
+        "count": 215
+      },
+      {
+        "old_relationType": "HAS_DIFFERENTIAL_DIAGNOSIS",
+        "new_relationType": "differentiates_from",
+        "count": 156
+      },
+      {
+        "old_relationType": "HAS_EPIDEMIOLOGY",
+        "new_relationType": "has_epidemiology",
+        "count": 10
+      },
+      {
+        "old_relationType": "HAS_ETIOLOGY",
+        "new_relationType": "has_etiology",
+        "count": 263
+      },
+      {
+        "old_relationType": "HAS_EVIDENCE",
+        "new_relationType": "supported_by_evidence",
+        "count": 3954
+      },
+      {
+        "old_relationType": "HAS_EXAM",
+        "new_relationType": "requires_exam",
+        "count": 305
+      },
+      {
+        "old_relationType": "HAS_FOLLOW_UP",
+        "new_relationType": "has_follow_up",
+        "count": 108
+      },
+      {
+        "old_relationType": "HAS_LAB_TEST",
+        "new_relationType": "requires_lab_test",
+        "count": 102
+      },
+      {
+        "old_relationType": "HAS_PATHOPHYSIOLOGY",
+        "new_relationType": "has_pathophysiology",
+        "count": 303
+      },
+      {
+        "old_relationType": "HAS_PREVENTION",
+        "new_relationType": "has_prevention",
+        "count": 144
+      },
+      {
+        "old_relationType": "HAS_PROCEDURE",
+        "new_relationType": "treated_by_procedure",
+        "count": 47
+      },
+      {
+        "old_relationType": "HAS_PROGNOSIS",
+        "new_relationType": "has_prognosis",
+        "count": 101
+      },
+      {
+        "old_relationType": "HAS_RISK_FACTOR",
+        "new_relationType": "has_risk_factor",
+        "count": 161
+      },
+      {
+        "old_relationType": "HAS_RISK_STRATIFICATION",
+        "new_relationType": "has_risk_stratification",
+        "count": 1
+      },
+      {
+        "old_relationType": "HAS_SIGN",
+        "new_relationType": "has_sign",
+        "count": 269
+      },
+      {
+        "old_relationType": "HAS_SYMPTOM",
+        "new_relationType": "has_symptom",
+        "count": 339
+      },
+      {
+        "old_relationType": "HAS_TREATMENT_PLAN",
+        "new_relationType": "has_treatment_plan",
+        "count": 199
+      },
+      {
+        "old_relationType": "USES_MEDICATION",
+        "new_relationType": "treated_by_medication",
+        "count": 158
+      },
+      {
+        "old_relationType": "has_differential_diagnosis",
+        "new_relationType": "differentiates_from",
+        "count": 11
+      }
+    ],
+    "skipped_by_type": [
+      {
+        "relationType": "HAS_CLINICAL_MANIFESTATION",
+        "count": 2
+      },
+      {
+        "relationType": "HAS_PROCEDURE",
+        "count": 106
+      },
+      {
+        "relationType": "USES_MEDICATION",
+        "count": 225
+      }
+    ],
+    "duplicate_target_group_count": 0,
+    "duplicate_target_groups_sample": []
+  },
+  "before_checks": {
+    "legacy_relation_count": [
+      {
+        "relationType": "HAS_EVIDENCE",
+        "count": 3954
+      },
+      {
+        "relationType": "USES_MEDICATION",
+        "count": 383
+      },
+      {
+        "relationType": "HAS_DEFINITION_COMPONENT",
+        "count": 353
+      },
+      {
+        "relationType": "HAS_SYMPTOM",
+        "count": 339
+      },
+      {
+        "relationType": "HAS_EXAM",
+        "count": 305
+      },
+      {
+        "relationType": "HAS_PATHOPHYSIOLOGY",
+        "count": 303
+      },
+      {
+        "relationType": "HAS_SIGN",
+        "count": 269
+      },
+      {
+        "relationType": "HAS_ETIOLOGY",
+        "count": 263
+      },
+      {
+        "relationType": "HAS_DIAGNOSTIC_COMPONENT",
+        "count": 215
+      },
+      {
+        "relationType": "HAS_TREATMENT_PLAN",
+        "count": 199
+      },
+      {
+        "relationType": "HAS_RISK_FACTOR",
+        "count": 161
+      },
+      {
+        "relationType": "HAS_DIFFERENTIAL_DIAGNOSIS",
+        "count": 156
+      },
+      {
+        "relationType": "HAS_PROCEDURE",
+        "count": 153
+      },
+      {
+        "relationType": "HAS_PREVENTION",
+        "count": 144
+      },
+      {
+        "relationType": "HAS_DEFINITION",
+        "count": 124
+      },
+      {
+        "relationType": "HAS_FOLLOW_UP",
+        "count": 108
+      },
+      {
+        "relationType": "HAS_LAB_TEST",
+        "count": 102
+      },
+      {
+        "relationType": "HAS_PROGNOSIS",
+        "count": 101
+      },
+      {
+        "relationType": "HAS_CLASSIFICATION",
+        "count": 91
+      },
+      {
+        "relationType": "HAS_COMPLICATION",
+        "count": 18
+      },
+      {
+        "relationType": "has_differential_diagnosis",
+        "count": 11
+      },
+      {
+        "relationType": "HAS_EPIDEMIOLOGY",
+        "count": 10
+      },
+      {
+        "relationType": "HAS_CLINICAL_MANIFESTATION",
+        "count": 2
+      },
+      {
+        "relationType": "HAS_RISK_STRATIFICATION",
+        "count": 1
+      }
+    ],
+    "v112_nonstandard_entity_count": [
+      {
+        "entityType": "TextbookSection",
+        "count": 73
+      },
+      {
+        "entityType": "ClinicalManifestation",
+        "count": 2
+      }
+    ],
+    "knowledge_layer_values": [
+      {
+        "value": "textbook_skeleton",
+        "count": 1860
+      },
+      {
+        "value": "evidence",
+        "count": 1269
+      }
+    ],
+    "total": [
+      {
+        "node_count": 43020,
+        "relation_count": 140183
+      }
+    ],
+    "recommendation_integrity": [
+      {
+        "rec_total": 560,
+        "rec_without_action": 0,
+        "rec_without_evidence": 0,
+        "rec_without_guideline": 0
+      }
+    ]
+  },
+  "decision": {
+    "safe_to_apply": true,
+    "reason": "只迁移可确定映射的实体、字段和关系；跳过无法确定语义的历史关系。"
+  }
+}

@@ -1,0 +1,97 @@
+# batch_config.yaml 模板
+# 用途：新病种/新批次启动前的唯一配置入口。
+# 原则：先过 G0 启动闸门，再允许解析、抽取、构建、审计。
+# 注意：本模板不触发任何执行；复制到具体批次目录后再填写。
+
+batch:
+  batch_id: "BATCH-CARD-XXX-YYYYMMDD-001"
+  batch_name: "示例：心血管内科-心律失常-某专病批次"
+  created_date: "YYYY-MM-DD"
+  created_by: "Codex"
+  schema_version: "专科知识图谱Schema标准.md 中当前版本"
+  skill_version: "AI自动化工具-文献指南解析.md 中当前版本"
+
+scope:
+  top_specialty: "心血管内科"
+  disease_category: "示例：心律失常"
+  scope_type: "专病"   # 可选：顶层学科 / 疾病大类 / 专病 / 补丁修复 / 体检审计
+  scope_target:
+    - "示例：室上性心动过速"
+  scope_exclusion:
+    - "本批次明确不处理的疾病/分型/临床状态"
+  is_new_batch: true
+  allow_merge_with_existing_graph: false
+
+source_roots:
+  guideline_roots:
+    - "E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/诊疗指南"
+  textbook_roots:
+    - "E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/书籍教材"
+  external_authority_roots:
+    - "E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/外部权威"
+  terminology_roots:
+    - "E:/BigMouse/0.CDSS文献诊疗指南材料PDF/AI专科知识图谱生成/术语字典"
+
+output:
+  output_root: "E:/BigMouse/0.CDSS文献诊疗指南材料PDF/AI专科知识图谱生成/心血管内科文献集合"
+  batch_output_dir: ""   # G0 通过后生成，不手填也可
+  write_mode: "new_batch_only"  # 可选：new_batch_only / local_delta_only / server_import
+
+execution_permissions:
+  allow_neo4j_read: false
+  allow_neo4j_write: false
+  allow_file_overwrite: false
+  allow_skill_schema_change: false
+  allow_run_import_scripts: false
+  allow_run_repair_scripts: false
+  allow_run_delete_scripts: false
+
+neo4j:
+  target_env: "test"   # 可选：none / test / production
+  connection_file: "E:/BigMouse/0.CDSS文献诊疗指南材料PDF/AI专科知识图谱生成/图谱数据库链接.txt"
+  require_preimport_gate: true
+  require_postimport_gate: true
+
+skeleton_gate:
+  require_existing_disease_in_skeleton: true
+  require_disease_type_classification: true
+  require_definition: true
+  require_textbook_anchor: true
+  require_basic_slots:
+    - overview
+    - etiology
+    - pathogenesis
+    - clinical_manifestation
+    - exam_lab
+    - diagnosis
+    - differential_diagnosis
+    - treatment
+  allow_conditional_definition_for_display: true
+  allow_conditional_definition_for_formal_cdss: false
+
+source_policy:
+  textbook_role: "搭骨架"
+  guideline_role: "补推荐、证据、禁忌、阈值、路径"
+  external_authority_role: "补教材/指南缺失的基础定义或罕见病知识"
+  baidu_health_role: "仅患者教育/别名/辅助候选，不作为正式推荐证据"
+  require_source_manifest: true
+  require_pdf_or_doc_dedup_by_title: true
+
+quality_gates:
+  G0_startup:
+    enabled: true
+    must_pass_before_any_parsing: true
+  G1_local_audit:
+    enabled: true
+  G2_import_precheck:
+    enabled: true
+  G3_server_postcheck:
+    enabled: true
+
+reporting:
+  update_snapshot: true
+  update_step_log: true
+  update_pitfall_log: true
+  update_batch_ledger: true
+  produce_handoff_summary: true
+

@@ -1,0 +1,278 @@
+[
+  {
+    "rel": "blocks_action",
+    "sourceType": "ClinicalRule",
+    "targetType": "TreatmentPlan",
+    "count": 2
+  },
+  {
+    "rel": "blocks_action",
+    "sourceType": "ClinicalRule",
+    "targetType": "Procedure",
+    "count": 2
+  },
+  {
+    "rel": "blocks_action",
+    "sourceType": "RecommendationStatement",
+    "targetType": "TreatmentPlan",
+    "count": 2
+  },
+  {
+    "rel": "blocks_action",
+    "sourceType": "RecommendationStatement",
+    "targetType": "Procedure",
+    "count": 2
+  },
+  {
+    "rel": "has_recommended_action",
+    "sourceType": "PathwayStage",
+    "targetType": "TreatmentPlan",
+    "count": 289
+  },
+  {
+    "rel": "has_recommended_action",
+    "sourceType": "PathwayStage",
+    "targetType": "Medication",
+    "count": 233
+  },
+  {
+    "rel": "has_recommended_action",
+    "sourceType": "PathwayStage",
+    "targetType": "Exam",
+    "count": 217
+  },
+  {
+    "rel": "has_recommended_action",
+    "sourceType": "PathwayStage",
+    "targetType": "DiagnosisCriteria",
+    "count": 137
+  },
+  {
+    "rel": "has_recommended_action",
+    "sourceType": "PathwayStage",
+    "targetType": "FollowUp",
+    "count": 133
+  },
+  {
+    "rel": "has_recommended_action",
+    "sourceType": "PathwayStage",
+    "targetType": "Procedure",
+    "count": 103
+  },
+  {
+    "rel": "has_recommended_action",
+    "sourceType": "PathwayStage",
+    "targetType": "RiskFactor",
+    "count": 95
+  },
+  {
+    "rel": "has_recommended_action",
+    "sourceType": "PathwayStage",
+    "targetType": "Complication",
+    "count": 72
+  },
+  {
+    "rel": "has_recommended_action",
+    "sourceType": "PathwayStage",
+    "targetType": "RiskStratification",
+    "count": 70
+  },
+  {
+    "rel": "has_recommended_action",
+    "sourceType": "PathwayStage",
+    "targetType": "LabTest",
+    "count": 41
+  },
+  {
+    "rel": "has_recommended_action",
+    "sourceType": "PathwayStage",
+    "targetType": "Prognosis",
+    "count": 39
+  },
+  {
+    "rel": "has_recommended_action",
+    "sourceType": "PathwayStage",
+    "targetType": "ExamIndicator",
+    "count": 23
+  },
+  {
+    "rel": "has_recommended_action",
+    "sourceType": "PathwayStage",
+    "targetType": "DifferentialDiagnosis",
+    "count": 14
+  },
+  {
+    "rel": "may_block_action",
+    "sourceType": "DifferentialDiagnosis",
+    "targetType": "TreatmentPlan",
+    "count": 1
+  },
+  {
+    "rel": "may_block_action",
+    "sourceType": "DifferentialDiagnosis",
+    "targetType": "Procedure",
+    "count": 1
+  },
+  {
+    "rel": "may_block_action",
+    "sourceType": "DifferentialDiagnosis",
+    "targetType": "Medication",
+    "count": 1
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "RecommendationStatement",
+    "targetType": "TreatmentPlan",
+    "count": 247
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "ClinicalRule",
+    "targetType": "Medication",
+    "count": 234
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "RecommendationStatement",
+    "targetType": "Medication",
+    "count": 234
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "ClinicalRule",
+    "targetType": "TreatmentPlan",
+    "count": 227
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "ClinicalRule",
+    "targetType": "Exam",
+    "count": 218
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "RecommendationStatement",
+    "targetType": "Exam",
+    "count": 218
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "RecommendationStatement",
+    "targetType": "DiagnosisCriteria",
+    "count": 125
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "RecommendationStatement",
+    "targetType": "FollowUp",
+    "count": 121
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "ClinicalRule",
+    "targetType": "DiagnosisCriteria",
+    "count": 110
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "ClinicalRule",
+    "targetType": "FollowUp",
+    "count": 106
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "ClinicalRule",
+    "targetType": "Procedure",
+    "count": 103
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "RecommendationStatement",
+    "targetType": "Procedure",
+    "count": 103
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "ClinicalRule",
+    "targetType": "RiskFactor",
+    "count": 95
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "RecommendationStatement",
+    "targetType": "RiskFactor",
+    "count": 95
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "ClinicalRule",
+    "targetType": "Complication",
+    "count": 72
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "RecommendationStatement",
+    "targetType": "Complication",
+    "count": 72
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "ClinicalRule",
+    "targetType": "RiskStratification",
+    "count": 62
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "RecommendationStatement",
+    "targetType": "RiskStratification",
+    "count": 62
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "ClinicalRule",
+    "targetType": "LabTest",
+    "count": 42
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "RecommendationStatement",
+    "targetType": "LabTest",
+    "count": 42
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "ClinicalRule",
+    "targetType": "Prognosis",
+    "count": 39
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "RecommendationStatement",
+    "targetType": "Prognosis",
+    "count": 39
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "ClinicalRule",
+    "targetType": "ExamIndicator",
+    "count": 23
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "RecommendationStatement",
+    "targetType": "ExamIndicator",
+    "count": 23
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "ClinicalRule",
+    "targetType": "DifferentialDiagnosis",
+    "count": 14
+  },
+  {
+    "rel": "recommends_action",
+    "sourceType": "RecommendationStatement",
+    "targetType": "DifferentialDiagnosis",
+    "count": 14
+  }
+]

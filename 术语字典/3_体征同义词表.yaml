@@ -139,3 +139,14 @@
     - JVD
   same_as: []
   note: ""
+
+- canonical: 心动过缓
+  code: SIGN-CARD-TEXT-C0F47862DF
+  name_en: Bradycardia
+  aliases:
+    - 心率缓慢
+    - 心率过慢
+    - 心室率缓慢
+    - 脉搏缓慢
+  same_as: []
+  note: "2026-07-07 缓慢性心律失常及传导阻滞批次跨批次去重回写；作为体征/生命体征异常，不等同于疾病实体“窦性心动过缓”。"

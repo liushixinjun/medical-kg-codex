@@ -66,10 +66,24 @@ def _recommendation_grade(text: str) -> tuple[str, str]:
 
 
 def _paragraphs(body: str) -> list[str]:
+    body = (
+        body.replace("\x85", " ")
+        .replace("\u2028", " ")
+        .replace("\u2029", " ")
+        .replace("\v", " ")
+        .replace("\f", " ")
+    )
     body = re.sub(r"<<<SECTION[^>]+>>>", "", body)
     raw = [re.sub(r"\s*\n\s*", " ", part).strip() for part in re.split(r"\n\s*\n", body)]
     result = []
     for paragraph in (item for item in raw if item):
+        paragraph = (
+            paragraph.replace("\x85", " ")
+            .replace("\u2028", " ")
+            .replace("\u2029", " ")
+            .replace("\v", " ")
+            .replace("\f", " ")
+        )
         if len(paragraph) <= 1200:
             result.append(paragraph)
             continue
@@ -153,6 +167,26 @@ def _is_reference_like(paragraph: str) -> bool:
     )
 
 
+def _is_garbled_like(paragraph: str) -> bool:
+    """Drop PDF extraction garbage before it becomes clinical evidence."""
+    text = paragraph.strip()
+    if not text:
+        return True
+    c1_count = sum(0x80 <= ord(char) <= 0x9F for char in text)
+    replacement_count = text.count("\ufffd")
+    mojibake_markers = sum(text.count(marker) for marker in ("锟", "斤拷", "烫烫", "屯屯", "Ã", "Â", "ï¿½"))
+    non_space = [char for char in text if not char.isspace()]
+    if not non_space:
+        return True
+    chinese_count = sum("\u4e00" <= char <= "\u9fff" for char in non_space)
+    ascii_count = sum(ord(char) < 128 for char in non_space)
+    if c1_count >= 3 or replacement_count >= 2 or mojibake_markers >= 2:
+        return True
+    if len(non_space) >= 60 and chinese_count == 0 and ascii_count / len(non_space) < 0.65:
+        return True
+    return False
+
+
 def extract_guideline_evidence(batch_dir: Path) -> dict:
     batch_dir = Path(batch_dir).resolve()
     manifest = _load_csv(batch_dir / "01_source_manifest" / "source_documents_manifest.csv")
@@ -185,6 +219,8 @@ def extract_guideline_evidence(batch_dir: Path) -> dict:
                 if len(paragraph) < 8:
                     continue
                 if _is_reference_like(paragraph):
+                    continue
+                if _is_garbled_like(paragraph):
                     continue
                 matched_diseases = [
                     disease

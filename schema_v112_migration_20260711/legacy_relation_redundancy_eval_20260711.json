@@ -1,0 +1,1378 @@
+{
+  "endpoint_types": [
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "sourceType": "SourceSection",
+      "targetType": "SourceSection",
+      "count": 1
+    },
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "sourceType": "Disease",
+      "targetType": "SourceSection",
+      "count": 1
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "targetType": "Procedure",
+      "count": 98
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "DiseaseCategory",
+      "targetType": "Procedure",
+      "count": 8
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceType": "SourceSection",
+      "targetType": "Medication",
+      "count": 204
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceType": "DiseaseCategory",
+      "targetType": "Medication",
+      "count": 21
+    }
+  ],
+  "standard_duplicate_same_pair": [],
+  "props_keys": [
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "k": "id",
+      "count": 2
+    },
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "k": "relationType",
+      "count": 2
+    },
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "k": "batch_id",
+      "count": 2
+    },
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "k": "target_entityType",
+      "count": 2
+    },
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "k": "clinical_use_status",
+      "count": 2
+    },
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "k": "evidence_ids",
+      "count": 2
+    },
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "k": "source_code",
+      "count": 2
+    },
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "k": "knowledge_layer",
+      "count": 2
+    },
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "k": "target_name",
+      "count": 2
+    },
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "k": "formal_cdss_ready",
+      "count": 2
+    },
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "k": "graph_version",
+      "count": 2
+    },
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "k": "skeleton_scope",
+      "count": 2
+    },
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "k": "target_code",
+      "count": 2
+    },
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "k": "source_layer",
+      "count": 2
+    },
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "k": "source_name",
+      "count": 2
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "k": "evidence_ids",
+      "count": 106
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "k": "id",
+      "count": 106
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "k": "target_name",
+      "count": 106
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "k": "batch_id",
+      "count": 106
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "k": "target_entityType",
+      "count": 106
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "k": "relationType",
+      "count": 106
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "k": "source_name",
+      "count": 106
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "k": "clinical_use_status",
+      "count": 106
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "k": "formal_cdss_ready",
+      "count": 106
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "k": "source_code",
+      "count": 106
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "k": "source_layer",
+      "count": 106
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "k": "knowledge_layer",
+      "count": 106
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "k": "graph_version",
+      "count": 106
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "k": "skeleton_scope",
+      "count": 106
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "k": "target_code",
+      "count": 106
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "k": "merged_from_relation_ids",
+      "count": 8
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "k": "source_detail_ids",
+      "count": 5
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "k": "id",
+      "count": 225
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "k": "relationType",
+      "count": 225
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "k": "evidence_ids",
+      "count": 225
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "k": "batch_id",
+      "count": 225
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "k": "source_name",
+      "count": 225
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "k": "clinical_use_status",
+      "count": 225
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "k": "formal_cdss_ready",
+      "count": 225
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "k": "source_code",
+      "count": 225
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "k": "knowledge_layer",
+      "count": 225
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "k": "target_entityType",
+      "count": 225
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "k": "graph_version",
+      "count": 225
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "k": "skeleton_scope",
+      "count": 225
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "k": "target_code",
+      "count": 225
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "k": "source_layer",
+      "count": 225
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "k": "target_name",
+      "count": 225
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "k": "merged_from_relation_ids",
+      "count": 8
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "k": "source_detail_ids",
+      "count": 4
+    }
+  ],
+  "samples": [
+    {
+      "rel": "HAS_CLINICAL_MANIFESTATION",
+      "sourceType": "SourceSection",
+      "sourceName": "第三节非扩张型左心室心肌病",
+      "sourceCode": "TXTSEC-CARD-5C565BDC923202CC",
+      "targetType": "SourceSection",
+      "targetName": "第三节非扩张型左心室心肌病-临床表现",
+      "targetCode": "CARD-SKELETON-20260709-CLINICALMANIFESTATION-0E1AC4B74A95DD2F",
+      "props": {
+        "relationType": "HAS_CLINICAL_MANIFESTATION",
+        "target_name": "第三节非扩张型左心室心肌病-临床表现",
+        "target_entityType": "ClinicalManifestation",
+        "target_code": "CARD-SKELETON-20260709-CLINICALMANIFESTATION-0E1AC4B74A95DD2F",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-815A2D0E161E9D89",
+        "source_code": "TXTSEC-CARD-5C565BDC923202CC",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "第三节非扩张型左心室心肌病",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-45D4D228DA66F301"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceType": "SourceSection",
+      "sourceName": "第二节扩张型心肌病",
+      "sourceCode": "TXTSEC-CARD-7275FAF71470AD40",
+      "targetType": "Medication",
+      "targetName": "血管紧张素Ⅱ受体阻滞剂",
+      "targetCode": "MED-CARD-C015B7A5655A",
+      "props": {
+        "relationType": "USES_MEDICATION",
+        "target_name": "ARB",
+        "target_entityType": "Medication",
+        "target_code": "CARD-SKELETON-20260709-MEDICATION-98CCEBF03DF325E4",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-295C74A42D44A0FB",
+        "source_code": "TXTSEC-CARD-7275FAF71470AD40",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "第二节扩张型心肌病",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-B84B7653248F2A1F"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceType": "SourceSection",
+      "sourceName": "第二节扩张型心肌病",
+      "sourceCode": "TXTSEC-CARD-7275FAF71470AD40",
+      "targetType": "Medication",
+      "targetName": "血管紧张素受体脑啡肽酶抑制剂",
+      "targetCode": "MED-CARD-5C774D10CF46",
+      "props": {
+        "relationType": "USES_MEDICATION",
+        "target_name": "ARNI",
+        "target_entityType": "Medication",
+        "target_code": "CARD-SKELETON-20260709-MEDICATION-B79F84A2F6B924C5",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-A0C189A5B199BD7A",
+        "source_code": "TXTSEC-CARD-7275FAF71470AD40",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "第二节扩张型心肌病",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-B84B7653248F2A1F"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceType": "SourceSection",
+      "sourceName": "第三节糖尿病与心力衰竭",
+      "sourceCode": "TXTSEC-CARD-41FB6D58F338B3F7",
+      "targetType": "Medication",
+      "targetName": "血管紧张素受体脑啡肽酶抑制剂",
+      "targetCode": "MED-CARD-5C774D10CF46",
+      "props": {
+        "relationType": "USES_MEDICATION",
+        "target_name": "ARNI",
+        "target_entityType": "Medication",
+        "target_code": "CARD-SKELETON-20260709-MEDICATION-B79F84A2F6B924C5",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-92D500E6423F1FB3",
+        "source_code": "TXTSEC-CARD-41FB6D58F338B3F7",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "第三节糖尿病与心力衰竭",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-5DA427BF5D7DD70A"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "第二节慢性心力衰竭",
+      "sourceCode": "TXTSEC-CARD-F5685A4C49EF7BAF",
+      "targetType": "Procedure",
+      "targetName": "心脏再同步治疗",
+      "targetCode": "PROC-CARD-TEXT-D2C1F9E289",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "CRT",
+        "target_entityType": "Procedure",
+        "target_code": "CARD-SKELETON-20260709-PROCEDURE-849B8A1D3295BC9E",
+        "merged_from_relation_ids": [
+          "REL-CARD-SKEL-498C912FE7DF7136"
+        ],
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-6DDE1F6F5B47E687",
+        "source_code": "TXTSEC-CARD-F5685A4C49EF7BAF",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "第二节慢性心力衰竭",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-9B446423F2685D39"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "第二节慢性心力衰竭",
+      "sourceCode": "TXTSEC-CARD-F5685A4C49EF7BAF",
+      "targetType": "Procedure",
+      "targetName": "血运重建",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-04A901E627374E47",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "血运重建",
+        "target_entityType": "Procedure",
+        "target_code": "CARD-SKELETON-20260709-PROCEDURE-04A901E627374E47",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-92B26A53889E5623",
+        "source_code": "TXTSEC-CARD-F5685A4C49EF7BAF",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "第二节慢性心力衰竭",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-9B446423F2685D39"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "第二节慢性心力衰竭",
+      "sourceCode": "TXTSEC-CARD-F5685A4C49EF7BAF",
+      "targetType": "Procedure",
+      "targetName": "起搏器",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-3B8C0A206F202C65",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "起搏器",
+        "target_entityType": "Procedure",
+        "target_code": "CARD-SKELETON-20260709-PROCEDURE-3B8C0A206F202C65",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-1309D6A8FB88A726",
+        "source_code": "TXTSEC-CARD-F5685A4C49EF7BAF",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "第二节慢性心力衰竭",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-9B446423F2685D39"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "第二节慢性心力衰竭",
+      "sourceCode": "TXTSEC-CARD-F5685A4C49EF7BAF",
+      "targetType": "Procedure",
+      "targetName": "植入型心律转复除颤器",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-B59B1385BA9A601D",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "ICD",
+        "target_entityType": "Procedure",
+        "target_code": "CARD-SKELETON-20260709-PROCEDURE-DC00F937F76F3489",
+        "merged_from_relation_ids": [
+          "REL-CARD-SKEL-32BE6E21CBF37240"
+        ],
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-7BE2528349A4AB7F",
+        "source_code": "TXTSEC-CARD-F5685A4C49EF7BAF",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "第二节慢性心力衰竭",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-9B446423F2685D39"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "第三节急性心力衰竭",
+      "sourceCode": "TXTSEC-CARD-9EB385B486A23931",
+      "targetType": "Procedure",
+      "targetName": "血运重建",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-04A901E627374E47",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "血运重建",
+        "target_entityType": "Procedure",
+        "target_code": "CARD-SKELETON-20260709-PROCEDURE-04A901E627374E47",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-F88200D29A1C0AF6",
+        "source_code": "TXTSEC-CARD-9EB385B486A23931",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "第三节急性心力衰竭",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-805479FF3416EABD"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "第三节急性心力衰竭",
+      "sourceCode": "TXTSEC-CARD-9EB385B486A23931",
+      "targetType": "Procedure",
+      "targetName": "电复律",
+      "targetCode": "PROC-CARD-8BAC32B2612E",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "电复律",
+        "target_entityType": "Procedure",
+        "target_code": "PROC-CARD-8BAC32B2612E",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-7D1D85EB8D794CC0",
+        "source_code": "TXTSEC-CARD-9EB385B486A23931",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "第三节急性心力衰竭",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-805479FF3416EABD"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "第三节急性心力衰竭",
+      "sourceCode": "TXTSEC-CARD-9EB385B486A23931",
+      "targetType": "Procedure",
+      "targetName": "外科手术",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-FA9CF9F5BBDD3E3D",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "外科手术",
+        "target_entityType": "Procedure",
+        "target_code": "CARD-SKELETON-20260709-PROCEDURE-FA9CF9F5BBDD3E3D",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-9DCF9BCC4AA5B601",
+        "source_code": "TXTSEC-CARD-9EB385B486A23931",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "第三节急性心力衰竭",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-805479FF3416EABD"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "二、房性心动过速",
+      "sourceCode": "TXTSEC-CARD-D8BBB19A58A29A3A",
+      "targetType": "Procedure",
+      "targetName": "导管消融",
+      "targetCode": "PROC-CARD-BA093052CBC6",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "导管消融",
+        "target_entityType": "Procedure",
+        "target_code": "PROC-CARD-BA093052CBC6",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-B2911B3373982418",
+        "source_code": "TXTSEC-CARD-D8BBB19A58A29A3A",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "二、房性心动过速",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-9D600AC5163DFC7E"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "二、房性心动过速",
+      "sourceCode": "TXTSEC-CARD-D8BBB19A58A29A3A",
+      "targetType": "Procedure",
+      "targetName": "电复律",
+      "targetCode": "PROC-CARD-8BAC32B2612E",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "电复律",
+        "target_entityType": "Procedure",
+        "target_code": "PROC-CARD-8BAC32B2612E",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-4AB9E1ACB74C7858",
+        "source_code": "TXTSEC-CARD-D8BBB19A58A29A3A",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "二、房性心动过速",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-9D600AC5163DFC7E"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "二、房性心动过速",
+      "sourceCode": "TXTSEC-CARD-D8BBB19A58A29A3A",
+      "targetType": "Procedure",
+      "targetName": "起搏器",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-3B8C0A206F202C65",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "起搏器",
+        "target_entityType": "Procedure",
+        "target_code": "CARD-SKELETON-20260709-PROCEDURE-3B8C0A206F202C65",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-1EA30ADDD762EF95",
+        "source_code": "TXTSEC-CARD-D8BBB19A58A29A3A",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "二、房性心动过速",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-9D600AC5163DFC7E"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "三、心房扑动",
+      "sourceCode": "TXTSEC-CARD-A70372EC356F907B",
+      "targetType": "Procedure",
+      "targetName": "导管消融",
+      "targetCode": "PROC-CARD-BA093052CBC6",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "导管消融",
+        "target_entityType": "Procedure",
+        "target_code": "PROC-CARD-BA093052CBC6",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-F0C7C132A212D8F9",
+        "source_code": "TXTSEC-CARD-A70372EC356F907B",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "三、心房扑动",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-C89F65F1B8DCCF0E"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "三、心房扑动",
+      "sourceCode": "TXTSEC-CARD-A70372EC356F907B",
+      "targetType": "Procedure",
+      "targetName": "电复律",
+      "targetCode": "PROC-CARD-8BAC32B2612E",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "电复律",
+        "target_entityType": "Procedure",
+        "target_code": "PROC-CARD-8BAC32B2612E",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-A7A0199F86575C3B",
+        "source_code": "TXTSEC-CARD-A70372EC356F907B",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "三、心房扑动",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-C89F65F1B8DCCF0E"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "二、室性心动过速",
+      "sourceCode": "TXTSEC-CARD-154A822445B83295",
+      "targetType": "Procedure",
+      "targetName": "血运重建",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-04A901E627374E47",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "血运重建",
+        "target_entityType": "Procedure",
+        "target_code": "CARD-SKELETON-20260709-PROCEDURE-04A901E627374E47",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-EE12C1FC40865507",
+        "source_code": "TXTSEC-CARD-154A822445B83295",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "二、室性心动过速",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-D8DF7C1FE97D16C5"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "二、室性心动过速",
+      "sourceCode": "TXTSEC-CARD-154A822445B83295",
+      "targetType": "Procedure",
+      "targetName": "导管消融",
+      "targetCode": "PROC-CARD-BA093052CBC6",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "导管消融",
+        "target_entityType": "Procedure",
+        "target_code": "PROC-CARD-BA093052CBC6",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-D3032BAEB9C82D5C",
+        "source_code": "TXTSEC-CARD-154A822445B83295",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "二、室性心动过速",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-D8DF7C1FE97D16C5"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "二、室性心动过速",
+      "sourceCode": "TXTSEC-CARD-154A822445B83295",
+      "targetType": "Procedure",
+      "targetName": "电复律",
+      "targetCode": "PROC-CARD-8BAC32B2612E",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "电复律",
+        "target_entityType": "Procedure",
+        "target_code": "PROC-CARD-8BAC32B2612E",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-818FE03834AFBE79",
+        "source_code": "TXTSEC-CARD-154A822445B83295",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "二、室性心动过速",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-D8DF7C1FE97D16C5"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "二、室性心动过速",
+      "sourceCode": "TXTSEC-CARD-154A822445B83295",
+      "targetType": "Procedure",
+      "targetName": "起搏器",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-3B8C0A206F202C65",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "起搏器",
+        "target_entityType": "Procedure",
+        "target_code": "CARD-SKELETON-20260709-PROCEDURE-3B8C0A206F202C65",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-A2BF116B9101E336",
+        "source_code": "TXTSEC-CARD-154A822445B83295",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "二、室性心动过速",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-D8DF7C1FE97D16C5"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "二、室性心动过速",
+      "sourceCode": "TXTSEC-CARD-154A822445B83295",
+      "targetType": "Procedure",
+      "targetName": "心脏起搏器",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-F93FB044FE443C59",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "心脏起搏器",
+        "target_entityType": "Procedure",
+        "target_code": "CARD-SKELETON-20260709-PROCEDURE-F93FB044FE443C59",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-9D2092E6DBDEFABE",
+        "source_code": "TXTSEC-CARD-154A822445B83295",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "二、室性心动过速",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-D8DF7C1FE97D16C5"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "二、心血管植入型电子器械",
+      "sourceCode": "TXTSEC-CARD-DAC668D3B77F9384",
+      "targetType": "Procedure",
+      "targetName": "临时心脏起搏",
+      "targetCode": "PROC-CARD-B69847521FA1",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "临时心脏起搏",
+        "target_entityType": "Procedure",
+        "target_code": "PROC-CARD-B69847521FA1",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-537B58800202B79F",
+        "source_code": "TXTSEC-CARD-DAC668D3B77F9384",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "二、心血管植入型电子器械",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-D19DDA159474B42B"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "二、心血管植入型电子器械",
+      "sourceCode": "TXTSEC-CARD-DAC668D3B77F9384",
+      "targetType": "Procedure",
+      "targetName": "起搏器",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-3B8C0A206F202C65",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "起搏器",
+        "target_entityType": "Procedure",
+        "target_code": "CARD-SKELETON-20260709-PROCEDURE-3B8C0A206F202C65",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-BC94F5265E530CE5",
+        "source_code": "TXTSEC-CARD-DAC668D3B77F9384",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "二、心血管植入型电子器械",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-D19DDA159474B42B"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "二、心血管植入型电子器械",
+      "sourceCode": "TXTSEC-CARD-DAC668D3B77F9384",
+      "targetType": "Procedure",
+      "targetName": "心脏起搏器",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-F93FB044FE443C59",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "心脏起搏器",
+        "target_entityType": "Procedure",
+        "target_code": "CARD-SKELETON-20260709-PROCEDURE-F93FB044FE443C59",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-8A6A46F284BB10A4",
+        "source_code": "TXTSEC-CARD-DAC668D3B77F9384",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "二、心血管植入型电子器械",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-D19DDA159474B42B"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "DiseaseCategory",
+      "sourceName": "第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-FF693A65907956D3",
+      "targetType": "Procedure",
+      "targetName": "血运重建",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-04A901E627374E47",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "血运重建",
+        "target_entityType": "Procedure",
+        "target_code": "CARD-SKELETON-20260709-PROCEDURE-04A901E627374E47",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-5A69A4962FD4C702",
+        "source_code": "TXTSEC-CARD-FF693A65907956D3",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-34F9AD6A1B93D4EC"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "DiseaseCategory",
+      "sourceName": "第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-FF693A65907956D3",
+      "targetType": "Procedure",
+      "targetName": "外科手术",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-FA9CF9F5BBDD3E3D",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "外科手术",
+        "target_entityType": "Procedure",
+        "target_code": "CARD-SKELETON-20260709-PROCEDURE-FA9CF9F5BBDD3E3D",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-1C2430D67852EB96",
+        "source_code": "TXTSEC-CARD-FF693A65907956D3",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-34F9AD6A1B93D4EC"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "一、稳定型心绞痛",
+      "sourceCode": "TXTSEC-CARD-BE578D240807E305",
+      "targetType": "Procedure",
+      "targetName": "血运重建",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-04A901E627374E47",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "血运重建",
+        "target_entityType": "Procedure",
+        "target_code": "CARD-SKELETON-20260709-PROCEDURE-04A901E627374E47",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-1B1D6707CB330855",
+        "source_code": "TXTSEC-CARD-BE578D240807E305",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "一、稳定型心绞痛",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-FD2493BB87D62164"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "第二节扩张型心肌病",
+      "sourceCode": "TXTSEC-CARD-7275FAF71470AD40",
+      "targetType": "Procedure",
+      "targetName": "心脏移植",
+      "targetCode": "PROC-HEART-TRANSPLANT",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "心脏移植",
+        "target_entityType": "Procedure",
+        "target_code": "PROC-HEART-TRANSPLANT",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-FB65B85172E6A719",
+        "source_code": "TXTSEC-CARD-7275FAF71470AD40",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "第二节扩张型心肌病",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-B84B7653248F2A1F"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceType": "SourceSection",
+      "sourceName": "第四节致心律失常性右心室心肌病",
+      "sourceCode": "TXTSEC-CARD-29260EEFE3E9F2A2",
+      "targetType": "Procedure",
+      "targetName": "心脏移植",
+      "targetCode": "PROC-HEART-TRANSPLANT",
+      "props": {
+        "relationType": "HAS_PROCEDURE",
+        "target_name": "心脏移植",
+        "target_entityType": "Procedure",
+        "target_code": "PROC-HEART-TRANSPLANT",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-15C273D9E4B1595A",
+        "source_code": "TXTSEC-CARD-29260EEFE3E9F2A2",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "第四节致心律失常性右心室心肌病",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-D74FAF0D4BDD06E2"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceType": "SourceSection",
+      "sourceName": "第三节非扩张型左心室心肌病",
+      "sourceCode": "TXTSEC-CARD-5C565BDC923202CC",
+      "targetType": "Medication",
+      "targetName": "血管紧张素Ⅱ受体阻滞剂",
+      "targetCode": "MED-CARD-C015B7A5655A",
+      "props": {
+        "relationType": "USES_MEDICATION",
+        "target_name": "ARB",
+        "target_entityType": "Medication",
+        "target_code": "CARD-SKELETON-20260709-MEDICATION-98CCEBF03DF325E4",
+        "clinical_use_status": "knowledge_display_only",
+        "batch_id": "CARD-SKELETON-20260709",
+        "id": "REL-CARD-SKEL-688BC504895AD13D",
+        "source_code": "TXTSEC-CARD-5C565BDC923202CC",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton",
+        "knowledge_layer": "textbook_skeleton",
+        "source_name": "第三节非扩张型左心室心肌病",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "CARD-SKELETON-20260709-EVID-0016865789FD64BC"
+        ],
+        "source_layer": "textbook_skeleton"
+      }
+    }
+  ],
+  "source_section_with_evidence": [
+    {
+      "sourceSections": 62,
+      "oldRels": 303,
+      "sectionsWithEvidence": 0,
+      "evidenceLinks": 0
+    }
+  ],
+  "category_samples": [
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceName": "感染性心内膜炎",
+      "sourceCode": "CAT-CARD-IE",
+      "targetType": "Procedure",
+      "targetName": "外科手术",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-FA9CF9F5BBDD3E3D"
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceName": "感染性心内膜炎",
+      "sourceCode": "CAT-CARD-IE",
+      "targetType": "Procedure",
+      "targetName": "起搏器",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-3B8C0A206F202C65"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "感染性心内膜炎",
+      "sourceCode": "CAT-CARD-IE",
+      "targetType": "Medication",
+      "targetName": "利尿剂",
+      "targetCode": "MED-DIURETIC"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "心血管神经症",
+      "sourceCode": "CAT-CARD-NEUROSIS",
+      "targetType": "Medication",
+      "targetName": "选择性5-羟色胺再摄取抑制剂",
+      "targetCode": "CARD-SKELETON-FULL-20260709-MEDICATION-67B8149DCE7481E3"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "心血管神经症",
+      "sourceCode": "CAT-CARD-NEUROSIS",
+      "targetType": "Medication",
+      "targetName": "苯二氮䓬类抗焦虑药",
+      "targetCode": "CARD-SKELETON-FULL-20260709-MEDICATION-2033F78ED5E94FAB"
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceName": "第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-FF693A65907956D3",
+      "targetType": "Procedure",
+      "targetName": "外科手术",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-FA9CF9F5BBDD3E3D"
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceName": "第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-FF693A65907956D3",
+      "targetType": "Procedure",
+      "targetName": "血运重建",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-04A901E627374E47"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-FF693A65907956D3",
+      "targetType": "Medication",
+      "targetName": "肝素",
+      "targetCode": "MED-CARD-7717331EF136"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-FF693A65907956D3",
+      "targetType": "Medication",
+      "targetName": "华法林",
+      "targetCode": "MED-CARD-81B5F958C0F3"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-FF693A65907956D3",
+      "targetType": "Medication",
+      "targetName": "他汀类药物",
+      "targetCode": "MED-CARD-DAE0F0B68F1D"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-FF693A65907956D3",
+      "targetType": "Medication",
+      "targetName": "抗凝药物",
+      "targetCode": "MED-CARD-TEXT-EE219280A7"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-FF693A65907956D3",
+      "targetType": "Medication",
+      "targetName": "氯吡格雷",
+      "targetCode": "MED-CARD-EAA01CFD434E"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-FF693A65907956D3",
+      "targetType": "Medication",
+      "targetName": "P2Y12受体抑制剂",
+      "targetCode": "MED-CARD-86E5A960E1BF"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-FF693A65907956D3",
+      "targetType": "Medication",
+      "targetName": "替格瑞洛",
+      "targetCode": "MED-CARD-00A158EBF21E"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-FF693A65907956D3",
+      "targetType": "Medication",
+      "targetName": "阿司匹林",
+      "targetCode": "MED-CARD-9F606AC80BFD"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-FF693A65907956D3",
+      "targetType": "Medication",
+      "targetName": "普拉格雷",
+      "targetCode": "MED-CARD-0D29A60A2A91"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-1F4863F540B1193A",
+      "targetType": "Medication",
+      "targetName": "阿司匹林",
+      "targetCode": "MED-CARD-9F606AC80BFD"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-1F4863F540B1193A",
+      "targetType": "Medication",
+      "targetName": "P2Y12受体抑制剂",
+      "targetCode": "MED-CARD-86E5A960E1BF"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-1F4863F540B1193A",
+      "targetType": "Medication",
+      "targetName": "抗凝药物",
+      "targetCode": "MED-CARD-TEXT-EE219280A7"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-1F4863F540B1193A",
+      "targetType": "Medication",
+      "targetName": "普拉格雷",
+      "targetCode": "MED-CARD-0D29A60A2A91"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-1F4863F540B1193A",
+      "targetType": "Medication",
+      "targetName": "替格瑞洛",
+      "targetCode": "MED-CARD-00A158EBF21E"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-1F4863F540B1193A",
+      "targetType": "Medication",
+      "targetName": "他汀类药物",
+      "targetCode": "MED-CARD-DAE0F0B68F1D"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-1F4863F540B1193A",
+      "targetType": "Medication",
+      "targetName": "华法林",
+      "targetCode": "MED-CARD-81B5F958C0F3"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-1F4863F540B1193A",
+      "targetType": "Medication",
+      "targetName": "肝素",
+      "targetCode": "MED-CARD-7717331EF136"
+    },
+    {
+      "rel": "USES_MEDICATION",
+      "sourceName": "动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-1F4863F540B1193A",
+      "targetType": "Medication",
+      "targetName": "氯吡格雷",
+      "targetCode": "MED-CARD-EAA01CFD434E"
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceName": "动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-1F4863F540B1193A",
+      "targetType": "Procedure",
+      "targetName": "外科手术",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-FA9CF9F5BBDD3E3D"
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceName": "动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "sourceCode": "TXTSEC-CARD-1F4863F540B1193A",
+      "targetType": "Procedure",
+      "targetName": "血运重建",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-04A901E627374E47"
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceName": "成人常见先天性心血管病",
+      "sourceCode": "TXTSEC-CARD-F7CECD8190F15187",
+      "targetType": "Procedure",
+      "targetName": "外科手术",
+      "targetCode": "CARD-SKELETON-20260709-PROCEDURE-FA9CF9F5BBDD3E3D"
+    },
+    {
+      "rel": "HAS_PROCEDURE",
+      "sourceName": "成人常见先天性心血管病",
+      "sourceCode": "TXTSEC-CARD-F7CECD8190F15187",
+      "targetType": "Procedure",
+      "targetName": "经皮冠状动脉介入治疗",
+      "targetCode": "PROC-CARD-E9ADC25A25E3"
+    }
+  ]
+}

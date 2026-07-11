@@ -7,7 +7,7 @@ from collections import Counter
 from pathlib import Path
 
 
-SCHEMA_VERSION = "V1.4"
+SCHEMA_VERSION = "V1.8"
 STRUCTURAL_RELATIONS = {
     "has_category",
     "has_subcategory",
@@ -50,18 +50,24 @@ def remap_relation(rel: dict, code_map: dict[str, str]) -> dict:
     row["source_code"] = code_map.get(row.get("source_code"), row.get("source_code"))
     row["target_code"] = code_map.get(row.get("target_code"), row.get("target_code"))
     row["id"] = relation_id(row["source_code"], row["relationType"], row["target_code"])
-    row["schema_version"] = SCHEMA_VERSION
+    row["schema_version"] = row.get("schema_version") or SCHEMA_VERSION
     row["review_status"] = row.get("review_status") or "approved"
     return row
 
 
-def add_structural_for_new_disease(relations: list[dict], disease_code: str) -> None:
+def add_structural_for_new_disease(relations: list[dict], relation_semantics: set[tuple[str, str, str]], disease_code: str) -> None:
     if disease_code.startswith("DIS-CARD-CM-"):
         category_code = "CAT-CARD-CM"
         subcategory_code = "SUB-CARD-CM-GENERAL"
     elif disease_code.startswith("DIS-CARD-CAD-"):
         category_code = "CAT-CARD-CAD"
         subcategory_code = "SUB-CARD-CAD-GENERAL"
+    elif disease_code.startswith("DIS-CARD-HF"):
+        category_code = "CAT-CARD-HF"
+        subcategory_code = "SUB-CARD-HF-GENERAL"
+    elif disease_code.startswith("DIS-CARD-ARR"):
+        category_code = "CAT-CARD-ARR"
+        subcategory_code = "SUB-CARD-ARR-GENERAL"
     else:
         return
     for source, relation_type, target in (
@@ -69,6 +75,9 @@ def add_structural_for_new_disease(relations: list[dict], disease_code: str) -> 
         (disease_code, "belongs_to_subcategory", subcategory_code),
         (disease_code, "belongs_to_category", category_code),
     ):
+        semantic = (source, relation_type, target)
+        if semantic in relation_semantics:
+            continue
         relations.append(
             {
                 "id": relation_id(source, relation_type, target),
@@ -81,12 +90,15 @@ def add_structural_for_new_disease(relations: list[dict], disease_code: str) -> 
                 "review_status": "approved",
             }
         )
+        relation_semantics.add(semantic)
 
 
 def enrich(foundation_dir: Path, batch_dirs: list[Path]) -> dict:
     foundation_dir = foundation_dir.resolve()
-    nodes = load_jsonl(foundation_dir / "foundation_nodes.jsonl")
-    relations = load_jsonl(foundation_dir / "foundation_relations.jsonl")
+    current_nodes_path = foundation_dir / "05_data_instance" / "nodes_final.jsonl"
+    current_relations_path = foundation_dir / "05_data_instance" / "relations_final.jsonl"
+    nodes = load_jsonl(current_nodes_path) or load_jsonl(foundation_dir / "foundation_nodes.jsonl")
+    relations = load_jsonl(current_relations_path) or load_jsonl(foundation_dir / "foundation_relations.jsonl")
 
     by_code = {node["code"]: node for node in nodes}
     by_type_name = {(node.get("entityType"), node.get("name")): node["code"] for node in nodes}
@@ -122,7 +134,7 @@ def enrich(foundation_dir: Path, batch_dirs: list[Path]) -> dict:
                 )
                 continue
             row = dict(node)
-            row["schema_version"] = SCHEMA_VERSION
+            row["schema_version"] = row.get("schema_version") or SCHEMA_VERSION
             row["merge_status"] = "validated"
             row["foundation_import_source"] = batch_dir.name
             by_code[code] = row
@@ -131,7 +143,7 @@ def enrich(foundation_dir: Path, batch_dirs: list[Path]) -> dict:
             nodes.append(row)
             added_node_codes.add(code)
             if entity_type == "Disease":
-                add_structural_for_new_disease(relations, code)
+                add_structural_for_new_disease(relations, relation_semantics, code)
 
     for rel in relations:
         relation_semantics.add((rel["source_code"], rel["relationType"], rel["target_code"]))

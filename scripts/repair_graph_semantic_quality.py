@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import copy
 import hashlib
 import json
 import re
@@ -14,6 +15,7 @@ if str(ROOT) not in sys.path:
 from scripts.audit_graph_instance import (
     CONCRETE_MEDICATION_ALIASES_BY_CLASS,
     CORE_CATEGORIES,
+    EVIDENCE_REQUIRED,
     FORBIDDEN_MEDICATION_CLASS_ALIASES_BY_CLASS,
     SEMANTIC_SHELL_NAMES,
     _as_list,
@@ -125,6 +127,26 @@ TREATMENT_PLAN_EXECUTION_TARGETS = {
         ("includes_medication", "Medication", "钙通道阻滞剂"),
         ("includes_medication", "Medication", "利尿剂"),
     ],
+    "联合降压治疗": [
+        ("includes_medication", "Medication", "血管紧张素转换酶抑制剂"),
+        ("includes_medication", "Medication", "血管紧张素Ⅱ受体阻滞剂"),
+        ("includes_medication", "Medication", "钙通道阻滞剂"),
+        ("includes_medication", "Medication", "利尿剂"),
+        ("includes_medication", "Medication", "β受体阻滞剂"),
+    ],
+    "生活方式干预": [
+        ("includes_procedure", "Procedure", "限盐"),
+        ("includes_procedure", "Procedure", "减重"),
+        ("includes_procedure", "Procedure", "规律运动"),
+        ("includes_procedure", "Procedure", "戒烟限酒"),
+    ],
+    "高血压急症降压治疗": [
+        ("includes_medication", "Medication", "拉贝洛尔"),
+        ("includes_medication", "Medication", "乌拉地尔"),
+        ("includes_medication", "Medication", "尼卡地平"),
+        ("includes_medication", "Medication", "硝普钠"),
+        ("includes_medication", "Medication", "硝酸甘油"),
+    ],
     "氧疗": [("includes_procedure", "Procedure", "吸氧治疗")],
     "复律治疗": [
         ("includes_procedure", "Procedure", "电复律"),
@@ -166,6 +188,11 @@ TREATMENT_PLAN_EXECUTION_TARGETS = {
     "诱因纠正": [
         ("includes_medication", "Medication", "钾剂"),
         ("includes_medication", "Medication", "硫酸镁"),
+    ],
+    "起搏治疗": [
+        ("includes_procedure", "Procedure", "临时心脏起搏"),
+        ("includes_procedure", "Procedure", "永久起搏器植入"),
+        ("includes_procedure", "Procedure", "心脏再同步治疗"),
     ],
     "房颤导管消融": [
         ("includes_procedure", "Procedure", "房颤导管消融"),
@@ -450,21 +477,68 @@ def taxonomy_relation(class_node: dict, specific_node: dict, batch_id: str) -> d
     }
 
 
-def treatment_plan_execution_relation(plan_node: dict, target_node: dict, relation_type: str, batch_id: str) -> dict:
-    return {
+EVIDENCE_CHAIN_COPY_FIELDS = set(EVIDENCE_REQUIRED) | {
+    "evidence_count",
+    "provenance_records_json",
+    "document_ids",
+    "source_names",
+    "source_types",
+    "source_versions",
+    "source_sections",
+    "source_pages",
+    "guideline_ids",
+    "evidence_ids",
+    "source_title",
+    "source_titles",
+    "recommendation_statement",
+    "recommendation_context",
+    "applicable_population",
+    "exclusion_criteria",
+    "contraindications",
+    "clinical_review_status",
+    "cdss_release_level",
+    "ai_precheck_status",
+    "ai_precheck_note",
+    "clinical_effect_review_status",
+    "recommendation_grade_source",
+}
+
+
+def copy_evidence_chain(target_rel: dict, reference_rel: dict | None, reason: str) -> dict:
+    if not reference_rel:
+        return target_rel
+    for field in EVIDENCE_CHAIN_COPY_FIELDS:
+        value = reference_rel.get(field)
+        if value not in (None, ""):
+            target_rel[field] = copy.deepcopy(value)
+    target_rel["evidence_inherited_from_relation_id"] = reference_rel.get("id", "")
+    target_rel["evidence_inherited_from_relation_type"] = reference_rel.get("relationType", "")
+    target_rel["evidence_copy_reason"] = reason
+    return target_rel
+
+
+def treatment_plan_execution_relation(
+    plan_node: dict,
+    target_node: dict,
+    relation_type: str,
+    batch_id: str,
+    reference_rel: dict | None = None,
+) -> dict:
+    rel = {
         "id": stable_code("REL-PLANEXEC", plan_node["code"], relation_type, target_node["code"], batch_id),
         "source_code": plan_node["code"],
         "relationType": relation_type,
         "target_code": target_node["code"],
-        "relationCategory": "taxonomy",
+        "relationCategory": "therapeutic" if relation_type in {"includes_medication", "includes_procedure", "has_clinical_pathway"} else "taxonomy",
         "batch_id": batch_id,
         "schema_version": plan_node.get("schema_version") or target_node.get("schema_version") or "V1.5",
         "review_status": "approved",
-        "clinical_review_status": "not_applicable",
+        "clinical_review_status": reference_rel.get("clinical_review_status") if reference_rel else "not_applicable",
         "formal_cdss_ready": False,
         "polarity": "positive",
         "source_note": "auto_repair_treatment_plan_to_execution_entity",
     }
+    return copy_evidence_chain(rel, reference_rel, "treatment_plan_execution_inherits_disease_recommendation_evidence")
 
 
 GRADE_CLASS_RANK = {"Ⅰ": 5, "I": 5, "Ⅱa": 4, "IIa": 4, "Ⅱb": 3, "IIb": 3, "Ⅲ": 2, "III": 2}
@@ -773,15 +847,18 @@ def repair_batch(batch_dir: Path) -> dict:
     incoming_has_treatment_plan = {}
     disease_medication_targets = {}
     disease_procedure_targets = {}
+    direct_therapeutic_relations = {}
     for rel in relations_after_shell:
         source = node_by_code_current.get(rel.get("source_code"), {})
         target = node_by_code_current.get(rel.get("target_code"), {})
         if rel.get("relationType") == "has_treatment_plan" and source.get("entityType") == "Disease" and target.get("entityType") == "TreatmentPlan":
-            incoming_has_treatment_plan.setdefault(target["code"], []).append(source["code"])
+            incoming_has_treatment_plan.setdefault(target["code"], []).append(rel)
         elif rel.get("relationType") == "treated_by_medication" and source.get("entityType") == "Disease" and target.get("entityType") == "Medication":
             disease_medication_targets.setdefault(source["code"], []).append(target["code"])
+            direct_therapeutic_relations.setdefault((source["code"], target["code"]), []).append(rel)
         elif rel.get("relationType") == "treated_by_procedure" and source.get("entityType") == "Disease" and target.get("entityType") == "Procedure":
             disease_procedure_targets.setdefault(source["code"], []).append(target["code"])
+            direct_therapeutic_relations.setdefault((source["code"], target["code"]), []).append(rel)
 
     added_execution_nodes = []
     added_treatment_plan_execution_relations = []
@@ -805,14 +882,35 @@ def repair_batch(batch_dir: Path) -> dict:
         added_execution_nodes.append(target["code"])
         return target
 
+    def evidence_mentions_target(rel: dict | None, target_node: dict) -> bool:
+        if not rel:
+            return False
+        return any(_mentions(text, target_node) for text in _relation_evidence_texts(rel))
+
+    def best_execution_reference(incoming_plan_rels: list[dict], target_node: dict) -> dict | None:
+        for rel in incoming_plan_rels:
+            if evidence_mentions_target(rel, target_node):
+                return rel
+        for disease_code in (rel.get("source_code") for rel in incoming_plan_rels if rel.get("source_code")):
+            for rel in direct_therapeutic_relations.get((disease_code, target_node["code"]), []):
+                if evidence_mentions_target(rel, target_node):
+                    return rel
+        return None
+
     for plan_node in [node for node in nodes_after_shell if node.get("entityType") == "TreatmentPlan"]:
         plan_name = str(plan_node.get("name", "")).strip()
         if plan_node["code"] not in incoming_has_treatment_plan:
             continue
-        incoming_disease_codes = incoming_has_treatment_plan.get(plan_node["code"], [])
+        incoming_plan_rels = incoming_has_treatment_plan.get(plan_node["code"], [])
+        reference_plan_rel = next(
+            (
+                rel
+                for rel in incoming_plan_rels
+                if all(rel.get(field) not in (None, "") for field in EVIDENCE_REQUIRED)
+            ),
+            incoming_plan_rels[0] if incoming_plan_rels else None,
+        )
         target_specs = list(TREATMENT_PLAN_EXECUTION_TARGETS.get(plan_name, []))
-        if plan_name.endswith("治疗方案"):
-            target_specs.append(("has_clinical_pathway", "ClinicalPathway", plan_name.replace("治疗方案", "治疗路径")))
         for relation_type, entity_type, target_name in target_specs:
             target_node = ensure_execution_target(entity_type, target_name, plan_node)
             if not target_node:
@@ -820,12 +918,16 @@ def repair_batch(batch_dir: Path) -> dict:
             key = (plan_node["code"], relation_type, target_node["code"])
             if key in relation_key:
                 continue
-            rel = treatment_plan_execution_relation(plan_node, target_node, relation_type, batch_id)
+            target_reference_rel = best_execution_reference(incoming_plan_rels, target_node)
+            if not target_reference_rel:
+                continue
+            rel = treatment_plan_execution_relation(plan_node, target_node, relation_type, batch_id, target_reference_rel)
             relations_after_shell.append(rel)
             relation_key.add(key)
             added_treatment_plan_execution_relations.append(rel["id"])
             if relation_type == "has_clinical_pathway":
-                for disease_code in incoming_disease_codes:
+                for disease_plan_rel in incoming_plan_rels:
+                    disease_code = disease_plan_rel.get("source_code")
                     disease_node = node_by_code_current.get(disease_code)
                     if not disease_node:
                         continue
@@ -837,11 +939,42 @@ def repair_batch(batch_dir: Path) -> dict:
                         target_node,
                         "has_clinical_pathway",
                         batch_id,
+                        disease_plan_rel,
                     )
                     disease_rel["source_note"] = "auto_repair_disease_to_treatment_pathway_for_cdss_review"
                     relations_after_shell.append(disease_rel)
                     relation_key.add(disease_key)
                     added_treatment_plan_execution_relations.append(disease_rel["id"])
+
+    treatment_action_relation_types = {
+        "includes_medication",
+        "includes_procedure",
+        "has_timing",
+        "has_follow_up",
+        "has_clinical_pathway",
+        "has_indication",
+        "has_contraindication",
+    }
+    action_plan_codes = {
+        rel.get("source_code")
+        for rel in relations_after_shell
+        if rel.get("relationType") in treatment_action_relation_types
+    }
+    generic_treatment_plan_codes = {
+        node["code"]
+        for node in nodes_after_shell
+        if node.get("entityType") == "TreatmentPlan"
+        and str(node.get("name", "")).strip().endswith("治疗方案")
+        and node["code"] not in action_plan_codes
+    }
+    if generic_treatment_plan_codes:
+        relations_after_shell = [
+            rel
+            for rel in relations_after_shell
+            if rel.get("source_code") not in generic_treatment_plan_codes
+            and rel.get("target_code") not in generic_treatment_plan_codes
+        ]
+        nodes_after_shell = [node for node in nodes_after_shell if node["code"] not in generic_treatment_plan_codes]
 
     medication_by_name = {
         str(node.get("name", "")).strip(): node
@@ -892,6 +1025,7 @@ def repair_batch(batch_dir: Path) -> dict:
         "added_medication_taxonomy_relations": len(added_taxonomy_relations),
         "added_treatment_plan_execution_nodes": len(added_execution_nodes),
         "added_treatment_plan_execution_relations": len(added_treatment_plan_execution_relations),
+        "removed_generic_treatment_plan_nodes": len(generic_treatment_plan_codes),
         "node_clinical_review_status_added": node_review_added,
         "relation_clinical_review_status_added": relation_review_added,
         "duplicate_guideline_name_fields_repaired": duplicate_guideline_name_fields_repaired,

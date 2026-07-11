@@ -12,12 +12,12 @@
   code: MED-CARD-6B08182277BE
   name_en: ACE Inhibitor / Angiotensin Receptor Blocker
   aliases:
-    - ACEI
-    - ARB
+    - ACEI或ARB
+    - ACEI/ARB类药物
     - 血管紧张素转换酶抑制剂
     - 血管紧张素受体阻滞剂
   same_as: []
-  note: "需拆分为两个独立节点"
+  note: "历史组合类；2026-07-07 已避免占用 ACEI、ARB 单独简称，后续应逐步拆分为两个独立节点。"
 
 - canonical: P2Y12受体抑制剂
   code: MED-CARD-86E5A960E1BF
@@ -97,7 +97,7 @@
 # === 待创建药物节点 ===
 
 - canonical: 血管紧张素转换酶抑制剂
-  code: PENDING
+  code: MED-CARD-PENDING-ACEI
   name_en: Angiotensin-converting enzyme inhibitor
   aliases:
     - ACEI
@@ -109,7 +109,7 @@
   note: "由MED-CARD-6B08182277BE拆分而来"
 
 - canonical: 血管紧张素II受体拮抗剂
-  code: PENDING
+  code: MED-CARD-PENDING-ARB
   name_en: Angiotensin II receptor blocker
   aliases:
     - ARB
@@ -121,7 +121,7 @@
   note: "由MED-CARD-6B08182277BE拆分而来"
 
 - canonical: 钠-葡萄糖共转运蛋白2抑制剂
-  code: PENDING
+  code: MED-CARD-PENDING-SGLT2I
   name_en: Sodium-glucose co-transporter 2 inhibitor
   aliases:
     - SGLT2i
@@ -132,7 +132,7 @@
   note: ""
 
 - canonical: 抗凝药物
-  code: PENDING
+  code: MED-CARD-PENDING-ANTICOAGULANT
   name_en: Anticoagulant
   aliases:
     - 华法林

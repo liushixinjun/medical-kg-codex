@@ -5,8 +5,8 @@ description: Use when starting a specialty, disease-category, or single-disease 
 
 # AI自动化工具-文献指南解析
 
-版本：V1.34  
-Schema：`专科知识图谱Schema标准.md` V1.7  
+版本：V1.46  
+Schema：`专科知识图谱Schema标准.md` V1.14  
 用途：从原始医学文献生成可审计、可合并的专科知识图谱标准数据实例。
 
 ## 变更记录
@@ -50,6 +50,18 @@ Schema：`专科知识图谱Schema标准.md` V1.7
 | V1.32 | 2026-07-01 10:24:43 | 新增房颤批次启动与累计库合并硬规则：新病种必须先补齐 `scope_taxonomy.csv` 和 `controlled_vocabulary.csv`，否则不得进入证据抽取；scope aliases 必须同时覆盖中文名、英文名、缩写和专病关键治疗词，但禁止使用过宽词导致误纳；导入累计 Neo4j 后必须复查并清零 `duplicate_type_name_count`，必要时执行同类型同名实体合并，迁移重复节点全部入边/出边后再删除重复节点 |
 | V1.33 | 2026-07-03 23:18:42 | 新增心律失常短缩写消歧与证据链完整硬规则：`AT/AFL/SVT/WPW` 等短缩写不得单独作为疾病命中依据，必须有中文全称、疾病上下文或长英文名共同锚定；`α1-AT`、`ATⅡ`、抗凝血酶 `AT`、`G6PD` 等跨学科缩写必须判为污染；DOCX/教材证据无页码时统一写 `source_page=N/A`，不得留空也不得伪造页码；未显式分级的专家共识/教材推荐可写“未分级推荐/专家共识或教材证据”，但必须保留 `ai_prechecked_limited` 与 `formal_cdss_ready=false` |
 | V1.34 | 2026-07-05 21:22:26 | 新增室性心律失常/心脏性猝死批次回填规则：required 缺口回填不得用缩略语表、目录页、药物表或混排表格作为核心诊断证据；短 ASCII alias 如 `VT/VA/SCD` 必须按词边界匹配，禁止误命中 `SVT/DVT/LVAD` 等其他术语；回填节点必须先按 `entityType+name` 复用既有节点，不能因 code 不同创建同名重复实体；所有 CDSS 推荐/随访/治疗关系必须补齐适用人群和排除/禁忌条件后才能通过测试库闸门 |
+| V1.35 | 2026-07-06 16:56:17 | 同步 Schema V1.8：新增专病 CDSS 动态流程建模要求；PDF/教材解析必须抽取 ClinicalPathway、PathwayStage、ClinicalRule、推荐动作、阻断条件、缺失信息提示和证据链；禁止把“疾病下所有关联节点”直接作为 CDSS 推荐；新增“知识图谱负责医学规则、流程引擎负责患者事件执行”的边界 |
+| V1.36 | 2026-07-06 16:56:17 | 新增诊疗阶段与治疗方案防混淆硬规则：同一疾病/路径内 `PathwayStage.name` 不得与 `TreatmentPlan.name` 完全相同；阶段必须体现流程语义，治疗方案必须体现可执行动作语义；新增鉴别诊断下一级内容硬规则；新增任务结束交接摘要规则，防止账号 Token 中断导致后续无法接续 |
+| V1.37 | 2026-07-07 00:00:00 | 同步 Schema V1.9：新增诊断标准明细组件硬规则；诊断标准不得只抽取标题节点，必须拆解为症状/体征、检查、检验、指标阈值、动态变化、排除条件和证据链；新增 `cdss_diagnosis_criteria_detail_matrix.csv` 交付表 |
+| V1.38 | 2026-07-07 15:18:58 | 新增动态 CDSS 回补硬规则：同一临床概念不得因不同使用场景重复建 DDX/药物/检查/操作实体；新增前置 canonical code 查询要求；导入后硬闸门必须同时输出“本轮目标专病结果”和“全库存量缺口”，历史静态 ClinicalPathway 不得被前端当动态路径使用 |
+| V1.39 | 2026-07-07 15:47:39 | 新增历史静态路径迁移规则：无证据链的旧 ClinicalPathway 不得为了清零硬造 ClinicalRule；只允许补 PathwayStage 和既有动作锚点，正式推荐仍需证据链补全和临床审核 |
+| V1.40 | 2026-07-07 16:45:00 | 新增临床展示名与动作级证据展示硬规则：医生界面名称不得带疾病/用途生成前缀；CDSS 推荐证据必须绑定到当前推荐/阻断动作，不得把疾病全部证据池作为当前推荐依据展示 |
+| V1.41 | 2026-07-07 20:10:00 | 同步 Schema V1.10：启用 `RecommendationStatement` 作为 CDSS 推荐证据根实体；新批次必须抽取推荐陈述，连接规则、动作、指南和证据；前端不得从动作证据池或疾病证据池二次推理推荐依据 |
+| V1.42 | 2026-07-07 21:50:00 | 补充 `RecommendationStatement` 迁移与展示名硬规则：推荐陈述显示名必须包含临床规则/阶段上下文和动作类型，避免“抗凝治疗推荐”“溶栓治疗推荐”等跨规则重复；迁移后必须跑全库硬闸门并输出 RecommendationStatement 专项校验 |
+| V1.43 | 2026-07-07 22:48:44 | 补充批次收尾硬规则：本地审计通过后仍必须跑服务器累计库硬闸门；alias 新增、同名实体合并、证据匹配别名修复后必须回写 `术语字典` 并运行术语字典校验；每批次完成后必须更新批次登记台账和正式纳入文献来源清单 |
+| V1.44 | 2026-07-08 07:42:32 | 同步 Schema V1.11：新增教材骨架槽位 `skeleton_slot`、知识层级 `knowledge_layer`、章节路径和 PDF/书内页码范围；教材骨架抽取必须 DOCX 抽目录、PDF 校原文；冠心病、心肌病、心力衰竭、心律失常为优先验证范围，验证通过后自动扩展到心血管内科全部教材疾病 |
+| V1.45 | 2026-07-11 00:18:00 | 同步 Schema V1.12：收编教材骨架拆解实体 `Definition`、`DefinitionComponent`、`DiagnosisCriteriaComponent`、`Prevention`、`SourceSection`；明确 §7.7 是证据关系层，§9.2–§9.5 是证据/推荐/教材字段层；新批次禁止生成 `HAS_*` 大写历史关系，统一使用小写 snake_case 标准关系 |
+| V1.46 | 2026-07-11 09:08:00 | 同步 Schema V1.14 文档瘦身：主Schema只保留当前执行标准，历史变更、字段细则、禁用清单和CDSS长案例迁入 `schema_docs/`；明确 `Specialty` 为多学科战略保留实体；`has_recommended_action` 仅作阶段候选动作，后续建议迁移为 `stage_has_available_action` |
 
 ## 1. 核心原则
 
@@ -58,6 +70,9 @@ Schema：`专科知识图谱Schema标准.md` V1.7
 - 先生成标准数据实例与审核报告；Neo4j 导入必须单独确认。
 - 每条核心知识必须能追溯到原始文献、章节/页码或文本位置及原文片段。
 - 文本不合格、疾病归属不明确或 Schema 无法承载时，阻断并报告，不猜测入图。
+- 教材骨架知识必须带 `skeleton_slot`（教材栏目）和 `knowledge_layer`（知识使用层级）。没有这两个字段的教材核心关系，不得判定为骨架完成。
+- 教材核心知识必须绑定目标疾病章节。`Disease.definition` 和 `Disease.description` 不得来自其他疾病章节、跨章节引用、筛查背景或其他系统章节。
+- 教材来源优先使用“DOCX 抽目录结构 + PDF 校原文页码”的双源校验。DOCX 用于稳定定位章节，PDF 用于校验原文、页码和截图一致性。
 - 各批次独立抽取、独立验收；验收通过后才能合并到标准主图谱。
 - `pending_clinical_review` 是正式 CDSS 推荐层阻断标记，不是让临床专家逐条查看图谱关系的工作方式。每批必须把复杂图谱转换为疾病级、场景级、药师专项的简化审核表，专家从临床使用效果和风险角度确认。
 - AI 可以整理审核包、证据链和建议修复项，但不得自行把 `clinical_review_status=pending_clinical_review` 批量改为 `clinical_approved`。
@@ -66,6 +81,9 @@ Schema：`专科知识图谱Schema标准.md` V1.7
 - 已由原文、临床审核或服务器验证确认的错误，不得再做成“候选”“冻结”或长期待处理项：错误关系直接删除，指向错误直接改挂，泛化关系必须补充适用人群、排除条件和临床路径；所有动作必须写入本地 JSONL/增量脚本并同步 Neo4j 测试库。
 - 服务器修复不得只依赖关系 `id`。当历史边缺失、截断或污染标准 `id` 时，必须按 `(source.code, relationType, target.code/name)` 语义条件定位并清理；修复后必须重跑本地回归、目标验证和全库硬闸门。
 - 同义词归一不是“改显示名”即可。同义药物、检查、操作等重复实体即使仍有关系，也必须先把入边、出边、具体下级实体关系迁移到标准实体，再删除重复节点；同类型同名重复必须作为阻断项处理。
+- 同一临床概念不得因为“用于不同疾病鉴别”“用于不同流程阶段”而重复建实体。新增 `DifferentialDiagnosis`、`Medication`、`Exam`、`Procedure`、`DiagnosisCriteria` 前，必须先按 `entityType+name` 和既有 canonical code 查询；若已存在，应复用既有 code 或迁移到中立 canonical code，不得创建场景化重复节点。
+- 动态 CDSS 回补后必须分两层报告硬闸门：第一层为本轮目标专病，要求 `target_dxc_without_component=0`、`target_ddx_without_detail=0`、`dynamic_pathway_without_stage=0`、`stage_plan_name_collision=0`；第二层为全库存量缺口，必须列出剩余 `global_dxc_without_component`、历史静态 `ClinicalPathway` 未拆阶段等问题，并明确挡在正式动态 CDSS 推荐层之外。
+- 历史静态 `ClinicalPathway` 迁移时，若能找到原文证据链，可补 `PathwayStage -> has_stage_rule -> ClinicalRule`；若找不到证据链，不得为了通过形式检查而生成无证据 ClinicalRule，只允许补 `PathwayStage` 和既有诊断/治疗/随访/风险动作锚点，并保持 `formal_cdss_ready=false`。
 - 增量导入 Neo4j 测试库后，必须立即复查 `duplicate_semantic_relation_count`。若按关系 `id` 重导导致历史已去重的 `(source.code, relationType, target.code)` 语义边被补回，必须立即执行语义关系去重并再次跑全库硬闸门。
 - 关系导入脚本必须使用语义键幂等合并：先 `MATCH (s:KGNode {code: row.source_code})` 与 `MATCH (t:KGNode {code: row.target_code})`，再 `MERGE (s)-[r:\`relationType\`]->(t)`，随后 `SET r += row.props`。关系 `id` 只能作为属性保存，不得作为 MERGE 唯一键。
 - 新病种若通用准备脚本未生成 `scope_taxonomy.csv` 或 `controlled_vocabulary.csv`，必须立即补齐后再抽取证据；缺少受控词表会导致疾病锚定失败或只生成 Evidence，属于阻断项。
@@ -78,6 +96,14 @@ Schema：`专科知识图谱Schema标准.md` V1.7
 - 短 ASCII 别名必须按词边界匹配。`VT` 不得命中 `SVT`，`VA` 不得命中 `LVAD` 或普通英文单词片段，`SCD` 必须结合中文全称、疾病上下文或明确英文全称使用。
 - 策展回填或外部候选写入本地 JSONL 前，必须先按 `entityType+name` 查找既有节点。若已存在同类型同名实体，必须复用原 code 并把关系目标重映射到原节点；不得因新 code 再创建一个同名节点。
 - 所有进入 CDSS 测试推荐层的治疗、随访、操作、药物和风险处置关系，必须同时具备 `applicable_population` 和 `exclusion_criteria/contraindication`。缺任一项即使证据链完整，也不得通过测试库质量闸门。
+- 专病 CDSS 推荐不得再按“症状/诊断命中疾病后，一次性列出该疾病全部检查、检验、药物、手术、鉴别诊断”处理。解析输出必须支持动态流程：当前阶段、已满足条件、缺失条件、推荐动作、禁忌阻断、证据来源。
+- 图谱只维护医学知识和规则来源；EMR 字段映射、检验回报、医嘱提交、按钮点击、页面刷新等系统事件属于专病流程引擎配置，不得写成医学图谱事实。
+- 医生界面展示名不得包含 `AMI诊断明细：`、`AMI鉴别：`、`STEMI路径：`、`DX-COMP`、`DDX` 等生成前缀或技术上下文。疾病范围、用途、规则类型必须写入 `code/pathway_code/rule_type/scope_disease_code` 等属性；`name/preferred_name/display_name` 必须是临床可读短名称。
+- CDSS 推荐证据必须绑定到 `RecommendationStatement`。每条进入 CDSS 的推荐、阻断或不推荐语句都必须建立 `RecommendationStatement` 节点，并连接 `ClinicalRule`、具体动作、`Guideline` 和主 `Evidence`。前端默认展示推荐陈述的主证据；疾病证据池和动作证据池只能用于知识追溯，不得作为当前推荐依据。
+- `RecommendationStatement.display_name/name/preferred_name` 不得只写“动作名+推荐/阻断”。必须采用“规则或阶段上下文｜动作名（动作类型）推荐/阻断”，例如“STEMI再灌注策略选择规则｜溶栓治疗（治疗方案）推荐”。同名动作跨规则出现时不得合并推荐陈述。
+- 本地批次质量门禁通过不等于服务器累计库通过。每次导入 Neo4j 后必须立即运行服务器全局硬闸门，至少清零 `non_kgnode_node_count`、`duplicate_type_name_count`、`duplicate_semantic_relation_count`、`technical_display_name_error_count`、`semantic_shell_relation_count`，并把结果写入批次台账。
+- alias 不是临时补丁。凡新增 alias、合并同名实体、修复 target_match 或证据匹配别名，必须同步回写 `术语字典/`；若是路径/治疗方案类别名，应写入 `8_路径与治疗方案同义词表.yaml`，并区分 `aliases` 与 `evidence_match_aliases`。每次修改后必须运行 `scripts/validate_terminology_dictionaries.py`，blocking 和 warning 都必须为 0。
+- 每个批次结束前必须完成“四处一致”：本地 JSONL、服务器 Neo4j、术语字典、批次登记台账。必须更新 `心血管内科文献集合/批次登记台账.md`，并生成正式纳入文献便捷清单；未完成这些收尾项，不得宣称批次完成。
 
 ### 1.1 满分执行目标
 
@@ -87,7 +113,60 @@ Schema：`专科知识图谱Schema标准.md` V1.7
 基础画像层：定义、病因、危险因素、机制、症状、体征、检查、诊断、鉴别、治疗原则、预后
 指南决策层：推荐陈述、推荐等级、证据等级、阈值、路径、药物、操作、随访、风险分层
 术语归一层：疾病、症状、体征、药物、检查、操作、评分、危险因素的标准名、英文名、缩写和别名
+专病流程层：诊疗阶段、阶段目标、进入条件、退出/转段条件、推荐陈述、推荐动作、阻断条件、缺失信息提示、证据链
 ```
+
+### 1.1.1 专病 CDSS 动态流程抽取目标
+
+从 V1.35 起，每个拟进入 CDSS 应用的专病批次，除实体和关系外，必须同步形成一张“可执行路径表”。该表用于让前端、Oracle/EMR 集成和流程引擎知道如何从图谱规则推导当前推荐，而不是只展示疾病关联节点。
+
+可执行路径表至少包含：
+
+| 字段 | 中文含义 | 来源 |
+|---|---|---|
+| `disease_code` | 疾病编码 | 图谱 Disease |
+| `pathway_code` | 专病路径编码 | ClinicalPathway |
+| `stage_code` | 诊疗阶段编码 | PathwayStage |
+| `stage_name` | 诊疗阶段名称 | 教材/指南/路径抽取 |
+| `stage_order` | 阶段顺序 | 指南流程图、路径顺序或临床逻辑 |
+| `stage_goal` | 阶段目标 | 原文或抽取摘要 |
+| `enter_conditions` | 进入条件 | ClinicalRule.if_conditions |
+| `exit_or_next_conditions` | 退出或转段条件 | ClinicalRule / ThresholdRule |
+| `required_patient_data` | 需要读取的患者数据 | 主诊断、主诉、体征、检验、检查、禁忌证等 |
+| `missing_data_prompt` | 缺失信息提示 | 当患者数据不足时提示补什么 |
+| `recommendation_statement_codes` | 推荐陈述编码 | `RecommendationStatement`；每条推荐/阻断必须有独立推荐陈述 |
+| `recommended_actions` | 推荐动作 | 检查、检验、药物、操作、治疗方案、随访、鉴别诊断 |
+| `blocked_actions` | 禁忌或暂缓动作 | 被禁忌证、排除条件或风险阻断的动作 |
+| `evidence_refs` | 证据链 | 必须来自 `RecommendationStatement -> derived_from -> Evidence`，不得从疾病/动作证据池反推 |
+| `cdss_display_level` | 展示级别 | 强提醒、普通推荐、知识展示、正式阻断 |
+
+AMI/STEMI 示例：
+
+```text
+阶段：再灌注决策
+进入条件：确诊或高度疑似 STEMI；发病时间≤12小时
+需要患者数据：发病时间、心电图、肌钙蛋白、PCI可及性、溶栓禁忌证、主动脉夹层风险
+推荐动作：
+  - 可及时PCI：推荐急诊PCI
+  - 不能及时PCI且无禁忌证：推荐溶栓治疗
+阻断动作：
+  - 可疑主动脉夹层：阻断溶栓
+缺失提示：
+  - 未记录PCI预计时间：提示补充PCI可及性
+  - 未评估溶栓禁忌证：提示补充禁忌证评估
+证据：指南名称、页码、推荐等级、证据等级
+```
+
+硬规则：
+
+- 若只抽到“溶栓治疗”“药物治疗”“诊断标准”等标题，而没有条件、动作明细、禁忌/排除条件和证据链，不得进入 CDSS 推荐层。
+- 若只抽到“急性心肌梗死诊断标准”“某疾病诊断标准”等标题，而没有下级诊断组件，不得进入 CDSS 诊断推理层。诊断标准必须至少形成：`诊断标准 + 诊断明细组件 + 患者数据字段 + 判断逻辑/阈值 + 证据来源`。
+- 若只抽到“心绞痛、肺栓塞、主动脉夹层、急性心包炎”等鉴别诊断名称，而没有鉴别要点、建议排除检查/检验、阻断动作或证据链，不得进入 CDSS 鉴别推荐层。鉴别诊断必须至少形成：`鉴别对象 + 关键区别 + 建议检查/检验 + 治疗安全影响 + 证据来源`。
+- 治疗方案、检查、用药、鉴别诊断必须能落到某个 `PathwayStage` 或 `ClinicalRule`，否则只能作为知识展示。
+- 流程引擎事件名不得作为医学实体入图，例如“心电图结果保存按钮”“医嘱提交事件”不属于图谱实体。
+- `PathwayStage` 与 `TreatmentPlan` 不得同名混用。阶段名称必须回答“现在走到哪一步”，例如“再灌注决策阶段”“抗栓治疗管理阶段”“出院二级预防阶段”；治疗方案名称必须回答“具体做什么治疗”，例如“溶栓治疗”“急诊PCI”“双联抗血小板治疗”。同一 `disease_code/pathway_code` 下若出现 `PathwayStage.name == TreatmentPlan.name`，必须阻断交付并修正命名或建模。
+- 批次交付时必须输出 `cdss_executable_pathway.csv`，用于开发同事直接实现专病流程推理。
+- 批次交付时必须输出 `cdss_diagnosis_criteria_detail_matrix.csv`，用于前端和规则引擎展示诊断标准下级明细，禁止只展示“诊断标准”标题节点。
 
 正式批次不得只满足结构合规。若图谱中 Evidence 很多但可推理实体少，或常见临床概念只停留在 `evidence_text` 未实体化，视为语义质量不合格。
 
@@ -112,7 +191,113 @@ Schema：`专科知识图谱Schema标准.md` V1.7
 
 若基础教材/专著骨架未完成，不得用指南证据直接替代基础画像；指南优先用于规范化决策，不负责补齐全部基础医学常识。若指南中出现教材未覆盖的新术语或新治疗，应进入术语扩展和临床决策增强层，并记录来源优先级。
 
-### 1.2.1 全书跨章节回捞与反证检索硬规则
+### 1.2.1 教材骨架槽位与知识层级硬规则
+
+教材骨架抽取必须把每条知识归入两个维度：
+
+```text
+skeleton_slot = 教材骨架槽位，回答“这条知识属于疾病章节哪一栏”
+knowledge_layer = 知识层级，回答“这条知识在 CDSS 中怎么使用”
+```
+
+`skeleton_slot` 标准取值：
+
+| skeleton_slot | 中文解释 |
+|---|---|
+| `overview` | 疾病概述/定义 |
+| `etiology` | 病因 |
+| `pathogenesis` | 发病机制/病理生理/病理改变 |
+| `epidemiology` | 流行病学 |
+| `clinical_manifestation` | 临床表现，包括症状和体征 |
+| `exam_lab` | 实验室和辅助检查 |
+| `diagnosis_differential` | 诊断与鉴别诊断 |
+| `classification_risk` | 分型、分期、分级、危险分层 |
+| `treatment` | 治疗原则、药物、操作、手术、器械治疗 |
+| `prognosis_followup_prevention` | 预后、随访、预防 |
+
+`knowledge_layer` 标准取值：
+
+| knowledge_layer | 中文解释 | 使用限制 |
+|---|---|---|
+| `textbook_core` | 教材基础骨架 | 可作为疾病基础画像和基础诊疗框架 |
+| `guideline_supplement` | 指南补充知识 | 用于补充教材未覆盖的细节 |
+| `guideline_decision` | 指南决策知识 | 可进入 `RecommendationStatement`，作为 CDSS 推荐依据 |
+| `screening_context` | 筛查/背景上下文 | 不得直接当作目标疾病核心表现或核心治疗 |
+| `cross_reference` | 跨章节引用 | 不得写入目标疾病 `definition/description` 或核心骨架 |
+
+硬规则：
+
+1. `Disease.definition` 必须来自目标疾病章节的定义/概述段，且 `skeleton_slot=overview`、`knowledge_layer=textbook_core`。
+2. `Disease.description` 不得从其他疾病章节、鉴别引用、并发症引用、筛查背景或其他系统章节抽取。
+3. 教材核心关系必须有 `source_section_path`、`pdf_page_start/pdf_page_end`、`book_page_start/book_page_end`、`text_anchor` 和 `evidence_text`。
+4. 如果疾病名只出现在其他章节的“鉴别/病因/并发症/参见某章”语境中，只能标记为 `cross_reference`，不得写入该疾病核心骨架。
+5. 质量闸门必须检查：
+
+```text
+disease_definition_empty_count = 0
+disease_definition_source_mismatch_count = 0
+description_cross_chapter_pollution_count = 0
+textbook_core_without_skeleton_slot_count = 0
+textbook_core_without_knowledge_layer_count = 0
+textbook_source_anchor_missing_count = 0
+```
+
+### 1.2.2 DOCX + PDF 双源校验规则
+
+教材/专著同时存在 DOCX 和 PDF 时，必须采用双源校验：
+
+```text
+DOCX：优先用于抽取目录、标题层级、章节起止段落。
+PDF：优先用于校验原文、PDF 页码、书内页码、截图一致性。
+```
+
+不得只依赖 DOCX 段落号作为最终证据定位；不得只依赖 PDF 关键词搜索作为疾病归属判断。标准证据定位必须同时保留：
+
+```text
+source_section_path
+pdf_page_start
+pdf_page_end
+book_page_start
+book_page_end
+text_anchor
+evidence_text
+```
+
+若 PDF 无法直接抽取文本，应进入 OCR 流程；OCR 失败或版面无法确认时，该段不得进入正式教材核心骨架。
+
+### 1.2.3 心血管内科教材骨架优先验证与自动扩展规则
+
+心血管内科教材骨架修复先以四个大类作为优先验证范围：
+
+```text
+1. 冠心病
+2. 心肌病
+3. 心力衰竭
+4. 心律失常
+```
+
+这四个大类只是优先验证范围，不是最终范围。验证通过后，必须按同一规则自动扩大到《内科学》第10版心血管内科全部教材疾病，包括但不限于：
+
+```text
+高血压
+心脏瓣膜病
+心包疾病
+感染性心内膜炎
+先天性心血管病
+主动脉和周围血管病
+心血管神经症
+肿瘤心脏病学
+其他心血管疾病
+```
+
+自动扩展不需要重新讨论方案，但必须满足：
+
+1. 每个新增大类先生成 `textbook_skeleton_matrix.csv`。
+2. 每个新增大类先跑章节锚点和污染审计。
+3. 若四类优先验证中发现规则漏洞，必须先修正 Schema/SKILL/脚本，再扩展到其他大类。
+4. 扩展结果必须写入批次登记台账和来源清单。
+
+### 1.2.4 全书跨章节回捞与反证检索硬规则
 
 基础教材/专著抽取不得只截取某一章节作为唯一语料。疾病知识常跨章节出现，例如心血管疾病可在呼吸、血液、肾脏、风湿免疫、急诊、重症、病理生理等章节出现。首次建设学科骨架库时，必须执行“两阶段抽取”：
 
@@ -140,13 +325,13 @@ Schema：`专科知识图谱Schema标准.md` V1.7
 
 `SOURCE_DOES_NOT_COVER` 只能表示“已检索确认来源确实没有覆盖”，不得作为抽取失败、章节截取过窄、术语字典不全或实体映射失败的默认兜底原因。
 
-### 1.2.2 样板图谱合并范围规则
+### 1.2.5 样板图谱合并范围规则
 
 疾病大类或单病种样板图谱合并学科骨架库时，必须以本批次 `00_scope_and_config/scope_taxonomy.csv` 中非空 `disease_code` 为闭环审计范围。骨架库中的鉴别诊断疾病、相邻疾病、并发疾病可以作为关联知识引用，但不得自动扩大本批次 Disease 闭环范围。
 
 若合并后 `disease_count` 超过 scope 疾病数，必须检查是否把非本批次疾病节点纳入闭环审计；未修复前不得宣称样板图谱完整。
 
-### 1.2.3 生成后主动交付规则
+### 1.2.6 生成后主动交付规则
 
 每次图谱数据生成后，必须主动输出以下文件的绝对路径，避免上下文或 token 中断导致用户无法继续工作：
 
@@ -160,7 +345,7 @@ Schema：`专科知识图谱Schema标准.md` V1.7
 08_neo4j_import/neo4j_import_summary.json（若已导入）
 ```
 
-### 1.2.4 Neo4j 标签规范与审计口径
+### 1.2.7 Neo4j 标签规范与审计口径
 
 Neo4j 节点标签是无序集合，`labels(n)` 的返回顺序可能受数据库内部标签 token 顺序影响。即使创建语句写成 `CREATE (n:KGNode:Disease)`，某些数据库也可能返回 `['Disease','KGNode']`。因此：
 
@@ -217,6 +402,8 @@ foundation_scope_taxonomy.csv
 foundation_controlled_vocabulary.csv
 foundation_segments.jsonl
 foundation_evidence.jsonl
+textbook_skeleton_matrix.csv
+textbook_chapter_anchor_audit.csv
 foundation_nodes.jsonl
 foundation_relations.jsonl
 foundation_coverage_audit.csv
@@ -352,6 +539,41 @@ AI自动化工具-文献指南解析步骤记录.md
 3. 若本轮暴露流程漏洞、质量事故、可复用错误模式，必须同步写入踩坑日志，并在步骤记录中引用对应时间。
 4. 新病种启动前，先读取最近步骤记录和相关踩坑日志，再开始解析。
 5. 不得口头声称“已记录”；必须实际写入文件。
+```
+
+### 1.7.1 任务结束交接摘要（强制）
+
+考虑账号 Token、VPN、服务器连接或长任务中断风险，每次任务结束、阶段性暂停或用户要求继续其他账号接手时，必须在最终回复中提供“可交接摘要”。不得只说“已完成”或“继续下一步”。
+
+交接摘要固定包含：
+
+```text
+1. 当前任务目标
+2. 本轮已完成事项
+3. 本轮修改/新增文件绝对路径
+4. 已验证结果或尚未验证原因
+5. 仍存在的问题/阻断
+6. 下一步建议执行顺序
+7. 若换账号继续，应先读取哪些文件
+8. 是否已同步步骤记录和踩坑日志
+```
+
+若本轮涉及图谱数据生成或导入，还必须补充：
+
+```text
+可导入文件清单
+服务器导入状态
+质量闸门结果
+未进入正式 CDSS 的原因
+```
+
+若本轮涉及 Schema/SKILL/方案更新，必须补充：
+
+```text
+Schema版本
+SKILL版本
+新增硬规则摘要
+后续批次必须遵守的执行点
 ```
 
 ### 1.8 重复问题升级机制
@@ -1108,7 +1330,7 @@ duration     疗程（如适用）：长期 | 3个月 | 至手术前
 抽取前必须建立：
 
 ```text
-(batch_id, document_id, segment_id, disease_code, pathway_element)
+(batch_id, document_id, segment_id, disease_code, pathway_element, skeleton_slot, knowledge_layer, source_section_path)
 ```
 
 禁止按文件顺序、数组索引、相邻窗口或全库关键词命中直接分配疾病。
@@ -1118,6 +1340,7 @@ duration     疗程（如适用）：长期 | 3个月 | 至手术前
 - 标题、章节标题、正文疾病锚点和文档主题必须一致。
 - 参考文献、目录、缩写表、并发症或偶然提及不能授予全文疾病归属。
 - 多疾病指南必须按章节和局部疾病锚点绑定。
+- 教材核心骨架必须优先绑定目标疾病章节；跨章节回捞命中的内容必须先判定为 `textbook_core`、`cross_reference` 或 `screening_context`，不得默认作为核心骨架。
 
 ### 13.2 Definition
 
@@ -1125,7 +1348,9 @@ duration     疗程（如适用）：长期 | 3个月 | 至手术前
 - 原始证据写入 `definition_evidence_text`。
 - 英文来源保留英文原文，并记录忠实翻译方法。
 - 证据必须命中目标疾病规范名、英文名或受控别名。
-- 不得使用版权页、摘要背景、缩写表、参考文献或其他疾病章节作为定义。
+- 不得使用版权页、摘要背景、缩写表、参考文献、其他疾病章节、鉴别诊断引用段、并发症引用段或跨章节“参见某章”段落作为定义。
+- `Disease.definition` 必须来自 `skeleton_slot=overview` 且 `knowledge_layer=textbook_core` 的目标疾病章节证据。
+- `Disease.description` 可以比 `definition` 稍宽，但不得跨疾病、跨章节或跨系统污染；若无法确认章节归属，只能进入待复核清单，不得写入正式字段。
 - Definition 不依赖 `pathway_element=definition` 单一路径。只要同一证据分段命中目标疾病规范名、英文名或受控别名，并出现“是一类”“是指”“定义为”“为特征”“defined as”“characterized by”等定义句式，必须提升写入 `Disease.description` 和 `definition_evidence_text`。
 - 若 required 的 `definition` 缺失，但已纳入证据中存在上述定义句式，缺失原因必须标记为 `EXTRACTION_MAPPING_GAP`，不得标记为 `SOURCE_DOES_NOT_COVER`。
 - 若指南/教材没有可靠定义句，但 `scope_taxonomy.csv` 或 `controlled_vocabulary.csv` 已给出中文规范名、英文名、缩写、所属疾病谱系，则必须生成“术语映射定义”作为兜底 `Disease.description`，并标记 `definition_source_type=controlled_vocabulary`、`definition_source=scope_taxonomy.csv;controlled_vocabulary.csv`。该兜底不得伪造成指南证据。
@@ -1185,6 +1410,12 @@ HUMAN_CLINICAL_JUDGEMENT_REQUIRED
 - 临床关系目标实体在证据分段中的名称/别名命中率为 100%。
 - Definition 疾病相关性命中率为 100%。
 - 跨疾病来源污染为 0。
+- `disease_definition_empty_count=0`，scope 内正式疾病不得缺定义。
+- `disease_definition_source_mismatch_count=0`，定义不得来自错误章节。
+- `description_cross_chapter_pollution_count=0`，疾病描述不得跨章节污染。
+- `textbook_core_without_skeleton_slot_count=0`，教材核心骨架关系必须有教材栏目。
+- `textbook_core_without_knowledge_layer_count=0`，教材核心骨架关系必须有知识层级。
+- `textbook_source_anchor_missing_count=0`，教材核心证据必须能定位到章节路径和页码/文本锚点。
 - 教材知识伪装为指南正式分级的记录为 0。
 - 疾病闭环覆盖矩阵和缺口解决方案已生成。
 - `alias_normalization_log.csv` 已生成，`status=pending_review` 的条目已人工处理或明确标注待下批次处理。
@@ -1381,6 +1612,9 @@ P0 环节 `risk_factor` 和 `differential_diagnosis` 不得长期缺失。若 Sc
 - `nodes_final.jsonl` / `nodes_final.csv`
 - `relations_final.jsonl` / `relations_final.csv`
 - `graph_final.json`
+- `cdss_executable_pathway.csv`
+- `cdss_recommendation_statement_matrix.csv`
+- `cdss_rule_action_matrix.csv`
 - `disease_pathway_coverage.csv`
 - `missing_reason_and_solution.csv`
 - `source_conflict_register.csv`

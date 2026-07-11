@@ -1,0 +1,101 @@
+{
+  "mode": "dry-run",
+  "generated_at": "2026-07-11 08:52:36",
+  "legacy_relation_types": [
+    "USES_MEDICATION",
+    "HAS_PROCEDURE",
+    "HAS_CLINICAL_MANIFESTATION"
+  ],
+  "before_counts": [
+    {
+      "relationType": "HAS_CLINICAL_MANIFESTATION",
+      "count": 2,
+      "clinical_use_status": [
+        "knowledge_display_only"
+      ],
+      "formal_cdss_ready": [
+        "false"
+      ],
+      "knowledge_layer": [
+        "textbook_skeleton"
+      ]
+    },
+    {
+      "relationType": "HAS_PROCEDURE",
+      "count": 106,
+      "clinical_use_status": [
+        "knowledge_display_only"
+      ],
+      "formal_cdss_ready": [
+        "false"
+      ],
+      "knowledge_layer": [
+        "textbook_skeleton"
+      ]
+    },
+    {
+      "relationType": "USES_MEDICATION",
+      "count": 225,
+      "clinical_use_status": [
+        "knowledge_display_only"
+      ],
+      "formal_cdss_ready": [
+        "false"
+      ],
+      "knowledge_layer": [
+        "textbook_skeleton"
+      ]
+    }
+  ],
+  "before_endpoint_counts": [
+    {
+      "relationType": "HAS_CLINICAL_MANIFESTATION",
+      "source_entityType": "SourceSection",
+      "target_entityType": "SourceSection",
+      "count": 1
+    },
+    {
+      "relationType": "HAS_CLINICAL_MANIFESTATION",
+      "source_entityType": "Disease",
+      "target_entityType": "SourceSection",
+      "count": 1
+    },
+    {
+      "relationType": "HAS_PROCEDURE",
+      "source_entityType": "SourceSection",
+      "target_entityType": "Procedure",
+      "count": 98
+    },
+    {
+      "relationType": "HAS_PROCEDURE",
+      "source_entityType": "DiseaseCategory",
+      "target_entityType": "Procedure",
+      "count": 8
+    },
+    {
+      "relationType": "USES_MEDICATION",
+      "source_entityType": "SourceSection",
+      "target_entityType": "Medication",
+      "count": 204
+    },
+    {
+      "relationType": "USES_MEDICATION",
+      "source_entityType": "DiseaseCategory",
+      "target_entityType": "Medication",
+      "count": 21
+    }
+  ],
+  "candidate_count": 333,
+  "candidate_by_type": {
+    "HAS_CLINICAL_MANIFESTATION": 2,
+    "HAS_PROCEDURE": 106,
+    "USES_MEDICATION": 225
+  },
+  "safety_rule": {
+    "clinical_use_status": "knowledge_display_only",
+    "formal_cdss_ready": false,
+    "knowledge_layer": "textbook_skeleton",
+    "meaning": "仅清理教材骨架章节提及/弱语义旧关系，不清理正式CDSS推荐关系"
+  },
+  "deleted_count": 0
+}

@@ -1,0 +1,23 @@
+# ============================================
+# 路径与治疗方案同义词表
+# 来源：专科CDSS路径实体、治疗方案实体、证据匹配回写
+# Schema：专科知识图谱Schema标准 V1.0+
+# 维护方式：AI抽取后必须回写；人工可复核修订
+# 合并规则：
+#   - aliases：真实同义词/简称，可用于前端检索和实体合并
+#   - evidence_match_aliases：证据原文命中词，只用于证据链匹配，不直接作为实体标准名
+# ============================================
+
+- canonical: 二度房室传导阻滞治疗路径
+  code: PATHWAY-CARD-0E388753F1D9
+  entityType: ClinicalPathway
+  name_en: Second-degree atrioventricular block clinical pathway
+  aliases:
+    - 二度房室传导阻滞诊疗路径
+    - 二度房室传导阻滞处理路径
+  evidence_match_aliases:
+    - 二度或三度房室传导阻滞
+    - 临时心脏起搏
+    - 心脏起搏
+  same_as: []
+  note: "2026-07-07 缓慢性心律失常及传导阻滞批次 target_match 修复回写；evidence_match_aliases 仅用于证明证据文本支持该路径，不作为标准病名或操作名。"
