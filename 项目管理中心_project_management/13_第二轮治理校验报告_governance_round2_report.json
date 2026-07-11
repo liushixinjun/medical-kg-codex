@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-07-11 23:55:00",
+  "main_skill_version": "V2.0 精简总纲",
+  "appendix_count": 7,
+  "error_fingerprint_rows": 10,
+  "neo4j_written": false,
+  "protected_cardiology_collection_touched": false,
+  "trae_prompt_handled": false,
+  "next_recommended_action": "骨架质量闭环专项：按教材骨架槽位审计心血管内科全量疾病，再继续指南抽取。",
+  "validation_result": "VALIDATION_OK",
+  "main_skill_bytes": 7463
+}

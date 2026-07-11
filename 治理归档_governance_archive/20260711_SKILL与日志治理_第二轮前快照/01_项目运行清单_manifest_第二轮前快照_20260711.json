@@ -1,25 +1,24 @@
 {
   "project_name": "AI专科知识图谱生成",
-  "updated_at": "2026-07-11 23:55:00",
+  "created_at": "2026-07-11 23:24:01",
   "root_path": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成",
   "current_schema_file": "专科知识图谱Schema标准.md",
   "current_skill_file": "AI自动化工具-文献指南解析.md",
-  "current_skill_version": "V2.0 精简总纲",
-  "governance_round": "20260711_SKILL与日志治理_第二轮_总纲附录日志归档",
+  "governance_round": "20260711_SKILL与日志治理_第一轮安全基础",
   "large_data_policy": {
-    "心血管内科文献集合": "只登记，不移动、不重命名、不拆分、不全量进Git"
+    "心血管内科文献集合": "本轮只登记，不移动、不重命名、不拆分、不归档"
   },
   "minimum_copy_files": [
     "项目管理中心_project_management",
     "AI自动化工具-文献指南解析.md",
     "专科知识图谱Schema标准.md",
-    "技能文档_skill_docs",
-    "日志归档_log_archive",
-    "治理脚本_governance_scripts",
+    "schema_docs",
+    "scripts",
+    "tests",
     "术语字典",
     "batch_config模板.yaml",
     "G0启动闸门设计.md",
     "kg_pipeline渐进式重构方案.md"
   ],
-  "neo4j_policy": "本轮不连接、不写Neo4j；图谱写库必须走G2审计和G3受控入库。"
+  "neo4j_policy": "本轮不写Neo4j，不执行导入、删除、去重、修复脚本。"
 }
