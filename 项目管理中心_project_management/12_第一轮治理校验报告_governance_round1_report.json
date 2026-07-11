@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-07-11 23:31:11",
+  "scope": "governance_round_1_only",
+  "checks": {
+    "archive_file_count": 9,
+    "archive_missing_count": 0,
+    "sha256_record_count": 9,
+    "project_management_file_count": 12,
+    "skill_rule_mapping_rows": 40,
+    "p0_rule_count": 39,
+    "p1_rule_count": 1,
+    "p0_p1_without_target_location": 0
+  },
+  "not_performed": [
+    "connect_neo4j",
+    "write_neo4j",
+    "import_graph_data",
+    "delete_graph_data",
+    "move_or_rename_batch_outputs",
+    "split_cardiology_collection",
+    "run_legacy_batches",
+    "run_high_risk_scripts",
+    "rewrite_main_skill_or_schema"
+  ],
+  "protected_paths": [
+    "心血管内科文献集合/"
+  ],
+  "created_entry_points": [
+    "项目管理中心_project_management/00_项目总入口_项目地图.md",
+    "项目管理中心_project_management/01_项目运行清单_manifest.json",
+    "项目管理中心_project_management/02_关键文件清单_file_index.csv",
+    "项目管理中心_project_management/03_目录用途清单_directory_index.csv",
+    "项目管理中心_project_management/10_迁移复制清单_copy_checklist.md",
+    "技能文档_skill_docs/SKILL规则迁移覆盖矩阵_rule_mapping_20260711.csv"
+  ],
+  "next_recommended_action": "第二轮治理：主SKILL瘦身、附录拆分、日志按月归档、错误指纹索引与P0/P1规则校验脚本。"
+}
