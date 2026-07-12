@@ -92,7 +92,7 @@ def main() -> int:
         fail("心血管内科月度建设计划不存在", failures)
     else:
         plan_text = read_text(monthly_plan)
-        for disease in ["冠心病", "心肌病", "急性心肌梗死", "心力衰竭", "心律失常", "起搏治疗相关疾病", "瓣膜病", "肺动脉高压"]:
+        for disease in ["冠心病", "心肌病", "急性心肌梗死", "心力衰竭", "高血压", "心律失常", "起搏治疗相关疾病", "瓣膜病", "肺动脉高压"]:
             if disease not in plan_text:
                 fail(f"月度计划缺少目标：{disease}", failures)
         if "旧候选池不复用" not in plan_text:
@@ -103,8 +103,8 @@ def main() -> int:
         fail("批次登记台账不存在", failures)
     else:
         rows = list(csv.DictReader(ledger.open(encoding="utf-8-sig")))
-        if len(rows) < 8:
-            fail(f"批次计划少于 8 条：{len(rows)}", failures)
+        if len(rows) < 9:
+            fail(f"批次计划少于 9 条：{len(rows)}", failures)
 
     manifest = ROOT / "项目管理中心_project_management/01_项目运行清单_manifest.json"
     if not manifest.exists():
@@ -140,7 +140,7 @@ def main() -> int:
     print("main_skill_bytes=", skill.stat().st_size)
     print("appendix_count=", len(appendix_files))
     print("monthly_plan=present")
-    print("batch_plan_rows>=8")
+    print("batch_plan_rows>=9")
     return 0
 
 
