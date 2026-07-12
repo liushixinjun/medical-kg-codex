@@ -1,0 +1,47 @@
+{
+  "run_date": "20260712",
+  "generated_at": "2026-07-12T09:28:19",
+  "neo4j_written": false,
+  "delta_generated": false,
+  "source_scope": "历史候选池复用审计，不作为当前骨架缺陷",
+  "input": {
+    "evidence_audit": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\骨架质量闭环_skeleton_quality_loop\\20260712_心血管内科疾病名称与证据坐标对齐\\证据文本质量与坐标审计_20260712.csv",
+    "mergeable_summary": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\骨架质量闭环_skeleton_quality_loop\\20260712_心血管内科疾病名称与证据坐标对齐\\可归并候选摘要_20260712.csv",
+    "align_summary": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\骨架质量闭环_skeleton_quality_loop\\20260712_心血管内科疾病名称与证据坐标对齐\\疾病名称与章节坐标对齐_summary_20260712.json",
+    "backfill_index_scope": "历史候选池/旧实例产物",
+    "d6_matrix_scope": "当前骨架基线产物"
+  },
+  "counts": {
+    "mergeable_input_rows": 6138,
+    "sample_rows": 180,
+    "machine_precheck_decision": {
+      "仅作重抽取线索": 4993,
+      "不建议复用": 1145
+    },
+    "risk_flags": {
+      "章节坐标未对齐": 6125,
+      "证据未直接出现疾病名": 4570,
+      "证据片段缺疾病名": 4843,
+      "实体过泛需疾病上下文": 3871,
+      "疑似非目标章节上下文": 557,
+      "证据片段缺实体名": 922,
+      "否定/禁忌/上下文限定语": 657
+    },
+    "slots": {
+      "clinical_manifestation": 1832,
+      "complication": 1255,
+      "risk_factor": 934,
+      "etiology_pathogenesis": 382,
+      "exam_lab": 641,
+      "diagnosis_differential": 179,
+      "treatment": 809,
+      "follow_up_prognosis": 71,
+      "classification_risk": 35
+    }
+  },
+  "decision": {
+    "direct_batch_reuse_allowed": false,
+    "reuse_level": "不建议批量复用，仅作为重抽取线索",
+    "hard_rule": "历史候选池不得直接生成入库delta；最多作为小批量人工复核或重抽取线索。"
+  }
+}
