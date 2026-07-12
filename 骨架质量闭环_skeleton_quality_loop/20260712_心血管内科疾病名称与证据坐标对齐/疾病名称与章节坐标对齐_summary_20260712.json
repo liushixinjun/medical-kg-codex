@@ -1,0 +1,48 @@
+{
+  "run_date": "20260712",
+  "generated_at": "2026-07-12T08:46:20",
+  "neo4j_written": false,
+  "input": {
+    "d6_matrix": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_教材骨架库_foundation_skeleton\\心血管内科全章节骨架扩展_CARD-SKELETON-FULL-20260709\\阶段D6_来源感知G1全章节审计矩阵_20260709.csv",
+    "d6_matrix_scope": "当前骨架基线产物",
+    "d6_matrix_mtime": "2026-07-09T14:58:26",
+    "backfill_index": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_foundation_skeleton\\04_evidence_and_extraction\\textbook_fullbook_backfill_index.csv",
+    "backfill_index_scope": "历史候选池/旧实例产物",
+    "backfill_index_mtime": "2026-06-25T14:59:24"
+  },
+  "counts": {
+    "d6_subject_count": 81,
+    "backfill_disease_count": 68,
+    "backfill_row_count": 13066,
+    "name_mapping_status": {
+      "暂不采用": 23,
+      "可自动采用": 44,
+      "需人工确认": 1
+    },
+    "evidence_quality": {
+      "疑似非正文噪声": 14,
+      "弱证据文本": 2496,
+      "证据文本不足": 3319,
+      "中等证据文本": 5478,
+      "强证据文本": 1759
+    },
+    "merge_decision": {
+      "阻断_疑似非正文噪声": 11,
+      "阻断_证据文本不足": 4950,
+      "可进入抽样复核后归并": 6138,
+      "阻断_无可靠骨架疾病映射": 1145,
+      "阻断_疾病映射需人工确认": 822
+    },
+    "line_in_target_docx_range_yes": 44,
+    "line_in_target_docx_range_no": 13022,
+    "mergeable_slot_summary_rows": 336,
+    "blocked_slot_summary_rows": 495
+  },
+  "hard_conclusion": [
+    "本轮对齐审计针对 2026-06-25 历史全书回捞候选池，目的只是判断其能否安全归并到 2026-07-09 当前 D6 骨架。",
+    "本轮发现的问题不作为当前 D6 骨架质量扣分；当前骨架质量仍以 2026-07-09 D6 审计和服务器复核为准。",
+    "line_number 与 D6 docx_start_para/docx_end_para 不是同一可靠坐标体系，不能用 line_number 直接归并。",
+    "疾病名称可通过 exact/normalized/manual_synonym_rule 先解决一批，但 fuzzy_or_containment 必须人工确认。",
+    "只有 merge_decision=可进入抽样复核后归并 的候选，才能进入下一步 delta 生成；本轮不生成入库 delta。"
+  ]
+}
