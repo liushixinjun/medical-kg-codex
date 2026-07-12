@@ -1,0 +1,324 @@
+{
+  "generated_at": "2026-07-12 07:59:27",
+  "run_date": "20260712",
+  "neo4j_written": false,
+  "source_files": {
+    "full_matrix": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_教材骨架库_foundation_skeleton\\心血管内科全章节骨架扩展_CARD-SKELETON-FULL-20260709\\阶段D6_来源感知G1全章节审计矩阵_20260709.csv",
+    "full_summary": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_教材骨架库_foundation_skeleton\\心血管内科全章节骨架扩展_CARD-SKELETON-FULL-20260709\\阶段D6_来源感知G1全章节审计_summary_20260709.json",
+    "chapter_outline": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_教材骨架库_foundation_skeleton\\心血管内科全章节骨架扩展_CARD-SKELETON-FULL-20260709\\心血管内科教材章节目录_20260709.csv",
+    "backfill_coverage": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_foundation_skeleton\\06_quality_audit\\textbook_fullbook_backfill_coverage.csv",
+    "foundation_quality": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_foundation_skeleton\\06_quality_audit\\foundation_quality_summary.json",
+    "import_summary": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_foundation_skeleton\\08_neo4j_import\\neo4j_import_summary_global_dedupe_replace_final.json",
+    "c6_server_summary": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_教材骨架库_foundation_skeleton\\心血管内科全章节骨架扩展_CARD-SKELETON-FULL-20260709\\阶段C6_服务器复核_summary_20260709.json"
+  },
+  "matrix_subject_count": 81,
+  "audited_subject_count": 55,
+  "chapter_outline_count": 81,
+  "subject_kind_counter": {
+    "category_container": 18,
+    "overview_section": 3,
+    "disease_or_topic": 52,
+    "therapy_or_management_section": 8
+  },
+  "status_counter": {
+    "container_rollup_only": 18,
+    "source_limited_ready_as_textbook_core": 45,
+    "source_covered_ready": 18
+  },
+  "level_counter": {
+    "章": 11,
+    "节": 47,
+    "条目": 23
+  },
+  "slot_status_counter": {
+    "candidate_present": 291,
+    "not_applicable_or_not_detected": 58,
+    "source_not_cover": 16,
+    "deep_entity_present": 19,
+    "reference_only": 1
+  },
+  "slot_by_group": {
+    "definition": {
+      "candidate_present": 55
+    },
+    "etiology_pathogenesis": {
+      "candidate_present": 36,
+      "not_applicable_or_not_detected": 18,
+      "source_not_cover": 1
+    },
+    "clinical_manifestation": {
+      "not_applicable_or_not_detected": 2,
+      "candidate_present": 46,
+      "source_not_cover": 7
+    },
+    "exam_lab": {
+      "not_applicable_or_not_detected": 2,
+      "candidate_present": 50,
+      "source_not_cover": 3
+    },
+    "diagnosis_differential": {
+      "not_applicable_or_not_detected": 3,
+      "candidate_present": 46,
+      "source_not_cover": 5,
+      "reference_only": 1
+    },
+    "classification_risk": {
+      "candidate_present": 6,
+      "not_applicable_or_not_detected": 31,
+      "deep_entity_present": 18
+    },
+    "treatment": {
+      "not_applicable_or_not_detected": 2,
+      "candidate_present": 52,
+      "deep_entity_present": 1
+    }
+  },
+  "issue_counter": {
+    "P2": 15
+  },
+  "foundation_quality_summary": {
+    "status": "foundation_skeleton_built",
+    "schema_version": "V1.2",
+    "specialty": "心血管内科",
+    "source_document": "《内科学（第10版）》.docx",
+    "source_document_id": "DOC-CF62B75AEC93F1A6",
+    "cardiology_line_start": 5339,
+    "cardiology_line_end": 11398,
+    "category_count": 12,
+    "disease_count": 68,
+    "node_count": 600,
+    "relation_count": 735,
+    "evidence_count": 507,
+    "entity_type_counts": {
+      "Specialty": 1,
+      "DiseaseCategory": 12,
+      "DiseaseSubcategory": 12,
+      "Disease": 68,
+      "Evidence": 507
+    },
+    "relation_type_counts": {
+      "has_category": 12,
+      "has_subcategory": 12,
+      "has_disease": 68,
+      "belongs_to_subcategory": 68,
+      "belongs_to_category": 68,
+      "supported_by_evidence": 507
+    },
+    "coverage_item_count": 1156,
+    "covered_item_count": 507,
+    "coverage_rate": 0.438581,
+    "quality_note": "第一版骨架库已完成疾病三层目录和教材证据锚定；pending_deep_extraction 项需在下一轮语义抽取中实体化为症状、体征、检查、治疗等节点。"
+  },
+  "local_nodes_final_total": 34293,
+  "local_nodes_entity_type_counts_top": {
+    "Evidence": 33147,
+    "ThresholdRule": 156,
+    "Medication": 94,
+    "Disease": 92,
+    "Guideline": 87,
+    "TreatmentPlan": 74,
+    "DiagnosisCriteria": 59,
+    "Prognosis": 53,
+    "FollowUp": 52,
+    "ClinicalPathway": 51,
+    "Etiology": 48,
+    "Sign": 44,
+    "RiskFactor": 43,
+    "Procedure": 39,
+    "RiskStratification": 37,
+    "Symptom": 35,
+    "Exam": 29,
+    "DiseaseSubcategory": 26,
+    "Complication": 25,
+    "LabTest": 22,
+    "Pathophysiology": 22,
+    "DifferentialDiagnosis": 14,
+    "DiseaseCategory": 12,
+    "Epidemiology": 11,
+    "ExamIndicator": 11,
+    "Contraindication": 9,
+    "Specialty": 1
+  },
+  "clinical_entity_count_in_nodes_final": 410,
+  "last_import_summary": {
+    "status": "imported",
+    "database_kg_node_count": 26217,
+    "database_relation_count": 53039,
+    "node_entity_type_counts": {
+      "Specialty": 1,
+      "DiseaseCategory": 12,
+      "DiseaseSubcategory": 18,
+      "Disease": 76,
+      "Evidence": 25601,
+      "Complication": 13,
+      "DiagnosisCriteria": 12,
+      "DifferentialDiagnosis": 8,
+      "Epidemiology": 5,
+      "Etiology": 22,
+      "Exam": 19,
+      "ExamIndicator": 8,
+      "FollowUp": 17,
+      "Guideline": 50,
+      "LabTest": 13,
+      "Medication": 61,
+      "Pathophysiology": 9,
+      "Procedure": 15,
+      "Prognosis": 18,
+      "RiskFactor": 18,
+      "RiskStratification": 16,
+      "Sign": 27,
+      "Symptom": 25,
+      "ThresholdRule": 124,
+      "TreatmentPlan": 29
+    },
+    "relation_type_counts": {
+      "has_category": 12,
+      "has_subcategory": 12,
+      "has_disease": 76,
+      "belongs_to_subcategory": 76,
+      "belongs_to_category": 76,
+      "supported_by_evidence": 43143,
+      "based_on_guideline": 276,
+      "differentiates_from": 40,
+      "exam_has_indicator": 6,
+      "guideline_has_evidence": 5813,
+      "has_diagnostic_criteria": 12,
+      "has_epidemiology": 22,
+      "has_etiology": 133,
+      "has_follow_up": 17,
+      "has_pathophysiology": 76,
+      "has_prognosis": 18,
+      "has_risk_factor": 363,
+      "has_risk_stratification": 16,
+      "has_sign": 481,
+      "has_symptom": 522,
+      "has_threshold_rule": 124,
+      "has_treatment_plan": 177,
+      "lab_test_has_indicator": 2,
+      "may_cause_complication": 398,
+      "requires_exam": 401,
+      "treated_by_medication": 294,
+      "treated_by_procedure": 198,
+      "requires_lab_test": 212,
+      "has_specific_medication": 43
+    }
+  },
+  "c6_server_summary": {
+    "status": "passed",
+    "batch_counts": {
+      "batch_nodes": 1798,
+      "batch_kgnodes": 1798,
+      "batch_relations": 5146
+    },
+    "checks": {
+      "non_kgnode_batch_nodes": 0,
+      "duplicate_type_name_in_batch": 0,
+      "duplicate_semantic_relations_in_batch": 0,
+      "relations_missing_evidence_ids": 0,
+      "formal_cdss_ready_nodes": 0,
+      "formal_cdss_ready_relations": 0,
+      "evidence_missing_excerpt": 0,
+      "evidence_without_inbound_relation": 0,
+      "technical_code_like_primary_name": 0
+    },
+    "batch_entity_types": [
+      {
+        "entityType": "Evidence",
+        "count": 773
+      },
+      {
+        "entityType": "Etiology",
+        "count": 135
+      },
+      {
+        "entityType": "Pathophysiology",
+        "count": 131
+      },
+      {
+        "entityType": "DefinitionComponent",
+        "count": 118
+      },
+      {
+        "entityType": "DiagnosisCriteriaComponent",
+        "count": 107
+      },
+      {
+        "entityType": "FollowUp",
+        "count": 90
+      },
+      {
+        "entityType": "Prevention",
+        "count": 90
+      },
+      {
+        "entityType": "DifferentialDiagnosis",
+        "count": 83
+      },
+      {
+        "entityType": "Prognosis",
+        "count": 82
+      },
+      {
+        "entityType": "Definition",
+        "count": 73
+      },
+      {
+        "entityType": "TreatmentPlan",
+        "count": 50
+      },
+      {
+        "entityType": "TextbookSection",
+        "count": 29
+      },
+      {
+        "entityType": "DiseaseClassification",
+        "count": 13
+      },
+      {
+        "entityType": "DiseaseCategory",
+        "count": 8
+      },
+      {
+        "entityType": "Medication",
+        "count": 4
+      },
+      {
+        "entityType": "Symptom",
+        "count": 3
+      },
+      {
+        "entityType": "LabTest",
+        "count": 2
+      },
+      {
+        "entityType": "Procedure",
+        "count": 2
+      },
+      {
+        "entityType": "ClinicalManifestation",
+        "count": 1
+      },
+      {
+        "entityType": "Complication",
+        "count": 1
+      },
+      {
+        "entityType": "Exam",
+        "count": 1
+      },
+      {
+        "entityType": "RiskStratification",
+        "count": 1
+      },
+      {
+        "entityType": "Sign",
+        "count": 1
+      }
+    ]
+  },
+  "interpretation": {
+    "local_extraction": "D6全章节候选抽取未发现extraction_gap，但大量source_limited说明教材本身不覆盖或只适合作为基础骨架。",
+    "server_state": "本轮未连接服务器；只引用历史导入摘要，不能替代实时Neo4j复核。",
+    "cdss_readiness": "教材骨架可作为基础知识层，不等同于正式CDSS推荐层；后续仍需指南证据、推荐规则和服务器postcheck。"
+  }
+}

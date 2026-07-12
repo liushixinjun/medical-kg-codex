@@ -1,0 +1,16 @@
+﻿severity,issue_type,subject_name,parent,slot,reason,recommended_action
+P2,source_not_cover,窦性心动过速,窦性心律失常,clinical_manifestation,当前教材章节未覆盖，后续由指南/权威来源补血肉,后续专病指南/权威来源补充，不作为教材抽取失败
+P2,source_not_cover,窦性心动过速,窦性心律失常,exam_lab,当前教材章节未覆盖，后续由指南/权威来源补血肉,后续专病指南/权威来源补充，不作为教材抽取失败
+P2,source_not_cover,窦性心动过速,窦性心律失常,diagnosis_differential,当前教材章节未覆盖，后续由指南/权威来源补血肉,后续专病指南/权威来源补充，不作为教材抽取失败
+P2,source_not_cover,窦性心动过缓,窦性心律失常,clinical_manifestation,当前教材章节未覆盖，后续由指南/权威来源补血肉,后续专病指南/权威来源补充，不作为教材抽取失败
+P2,source_not_cover,窦房传导阻滞,窦性心律失常,clinical_manifestation,当前教材章节未覆盖，后续由指南/权威来源补血肉,后续专病指南/权威来源补充，不作为教材抽取失败
+P2,source_not_cover,心房颤动,房性心律失常,diagnosis_differential,当前教材章节未覆盖，后续由指南/权威来源补血肉,后续专病指南/权威来源补充，不作为教材抽取失败
+P2,source_not_cover,房室交界性期前收缩,房室交界性心律失常,clinical_manifestation,当前教材章节未覆盖，后续由指南/权威来源补血肉,后续专病指南/权威来源补充，不作为教材抽取失败
+P2,source_not_cover,非阵发性房室交界性心动过速,房室交界性心律失常,clinical_manifestation,当前教材章节未覆盖，后续由指南/权威来源补血肉,后续专病指南/权威来源补充，不作为教材抽取失败
+P2,source_not_cover,非阵发性房室交界性心动过速,房室交界性心律失常,exam_lab,当前教材章节未覆盖，后续由指南/权威来源补血肉,后续专病指南/权威来源补充，不作为教材抽取失败
+P2,source_not_cover,非阵发性房室交界性心动过速,房室交界性心律失常,diagnosis_differential,当前教材章节未覆盖，后续由指南/权威来源补血肉,后续专病指南/权威来源补充，不作为教材抽取失败
+P2,source_not_cover,室内传导阻滞,心脏传导阻滞,clinical_manifestation,当前教材章节未覆盖，后续由指南/权威来源补血肉,后续专病指南/权威来源补充，不作为教材抽取失败
+P2,source_not_cover,抗心律失常药物的合理应用,心律失常,clinical_manifestation,当前教材章节未覆盖，后续由指南/权威来源补血肉,后续专病指南/权威来源补充，不作为教材抽取失败
+P2,source_not_cover,抗心律失常药物的合理应用,心律失常,exam_lab,当前教材章节未覆盖，后续由指南/权威来源补血肉,后续专病指南/权威来源补充，不作为教材抽取失败
+P2,source_not_cover,抗心律失常药物的合理应用,心律失常,diagnosis_differential,当前教材章节未覆盖，后续由指南/权威来源补血肉,后续专病指南/权威来源补充，不作为教材抽取失败
+P2,source_not_cover,心血管神经症,第三篇循环系统疾病,diagnosis_differential,当前教材章节未覆盖，后续由指南/权威来源补血肉,后续专病指南/权威来源补充，不作为教材抽取失败

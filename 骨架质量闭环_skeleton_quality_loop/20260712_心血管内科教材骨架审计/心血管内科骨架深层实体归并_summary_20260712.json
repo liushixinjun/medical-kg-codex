@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-07-12 08:04:25",
+  "neo4j_written": false,
+  "backfill_index": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_foundation_skeleton\\04_evidence_and_extraction\\textbook_fullbook_backfill_index.csv",
+  "d6_matrix": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_教材骨架库_foundation_skeleton\\心血管内科全章节骨架扩展_CARD-SKELETON-FULL-20260709\\阶段D6_来源感知G1全章节审计矩阵_20260709.csv",
+  "backfill_total_rows": 13066,
+  "mapped_rows": 13034,
+  "section_aligned_rows": 20,
+  "out_of_section_rows": 13014,
+  "disease_slot_pair_count": 422,
+  "priority_pair_count": 416,
+  "backfill_disease_name_count": 68,
+  "backfill_disease_names_not_in_d6": 34,
+  "action_counter": {
+    "疑似跨章节噪声，需人工抽样确认": 416,
+    "已可作为槽位候选复核": 5,
+    "无需处理": 1
+  },
+  "slot_counter": {
+    "treatment": 2098,
+    "etiology_pathogenesis": 2483,
+    "follow_up_prognosis": 2688,
+    "clinical_manifestation": 3443,
+    "diagnosis_differential": 643,
+    "exam_lab": 1622,
+    "classification_risk": 57
+  },
+  "entity_type_counter": {
+    "Procedure": 582,
+    "Etiology": 570,
+    "Complication": 2523,
+    "RiskFactor": 1541,
+    "Symptom": 1307,
+    "Sign": 2136,
+    "Pathophysiology": 372,
+    "DifferentialDiagnosis": 432,
+    "LabTest": 496,
+    "Prognosis": 108,
+    "DiagnosisCriteria": 211,
+    "Exam": 1126,
+    "TreatmentPlan": 787,
+    "FollowUp": 57,
+    "Medication": 729,
+    "RiskStratification": 57
+  },
+  "interpretation": {
+    "section_aligned": "候选实体行号落在D6疾病/专题章节段落范围内，可优先归并。",
+    "out_of_section": "全书回捞命中但不在对应章节范围内，可能是跨章节噪声或全书关联事实，不能直接入槽位。",
+    "next_step": "先处理需要归并到D6槽位的条目，再抽样核查跨章节噪声。"
+  }
+}

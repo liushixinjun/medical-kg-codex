@@ -1,0 +1,417 @@
+﻿subject_name,parent,subject_kind,d6_status,slot,d6_slot_status,entity_mentions,section_aligned_mentions,out_of_section_mentions,unique_entity_count,section_aligned_unique_entity_count,entity_type_counts,sample_section_aligned_entities,sample_all_entities,sample_evidence,recommended_action
+Brugada综合征,,,,clinical_manifestation,not_in_d6_slot_audit,4,0,4,3,0,"{""Sign"": 3, ""Symptom"": 1}",,低血压；头晕；心动过速,,疑似跨章节噪声，需人工抽样确认
+Brugada综合征,,,,etiology_pathogenesis,not_in_d6_slot_audit,2,0,2,2,0,"{""Etiology"": 1, ""Pathophysiology"": 1}",,心肌缺血；遗传因素,,疑似跨章节噪声，需人工抽样确认
+Brugada综合征,,,,follow_up_prognosis,not_in_d6_slot_audit,1,0,1,1,0,"{""Complication"": 1}",,心力衰竭,,疑似跨章节噪声，需人工抽样确认
+Brugada综合征,,,,treatment,not_in_d6_slot_audit,2,0,2,2,0,"{""Medication"": 1, ""TreatmentPlan"": 1}",,复律治疗；洋地黄类药物,,疑似跨章节噪声，需人工抽样确认
+ST段抬高型心肌梗死,,,,classification_risk,not_in_d6_slot_audit,1,0,1,1,0,"{""RiskStratification"": 1}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+ST段抬高型心肌梗死,,,,clinical_manifestation,not_in_d6_slot_audit,36,0,36,16,0,"{""Symptom"": 14, ""Sign"": 22}",,乏力；休克；低血压；出汗；发绀；呼吸困难；咳嗽；头晕；心动过速；晕厥；水肿；濒死感；肺部啰音；胸痛；颈静脉怒张；高血压,,疑似跨章节噪声，需人工抽样确认
+ST段抬高型心肌梗死,,,,diagnosis_differential,not_in_d6_slot_audit,3,0,3,2,0,"{""DifferentialDiagnosis"": 2, ""DiagnosisCriteria"": 1}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+ST段抬高型心肌梗死,,,,etiology_pathogenesis,not_in_d6_slot_audit,20,0,20,9,0,"{""Etiology"": 5, ""Pathophysiology"": 9, ""RiskFactor"": 6}",,创伤；动脉粥样硬化；右心负荷增加；吸烟；心肌缺血；手术；深静脉血栓形成；糖尿病；肿瘤,,疑似跨章节噪声，需人工抽样确认
+ST段抬高型心肌梗死,,,,exam_lab,not_in_d6_slot_audit,16,0,16,5,0,"{""Exam"": 14, ""LabTest"": 2}",,冠状动脉造影；心电图；心肌肌钙蛋白；肾功能；超声心动图,,疑似跨章节噪声，需人工抽样确认
+ST段抬高型心肌梗死,,,,follow_up_prognosis,not_in_d6_slot_audit,25,0,25,7,0,"{""Complication"": 22, ""Prognosis"": 3}",,出血；心力衰竭；心律失常；猝死；脑卒中；预后不良；预后良好,,疑似跨章节噪声，需人工抽样确认
+ST段抬高型心肌梗死,,,,treatment,not_in_d6_slot_audit,38,0,38,15,0,"{""TreatmentPlan"": 18, ""Procedure"": 9, ""Medication"": 11}",,他汀类药物；冠状动脉旁路移植术；抗凝治疗；抗凝药物；抗血小板治疗；抗血小板药物；溶栓治疗；溶栓药物；硝酸酯类药物；经皮冠状动脉介入治疗；药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；血运重建；钙通道阻滞剂,,疑似跨章节噪声，需人工抽样确认
+三尖瓣下移畸形,,,,clinical_manifestation,not_in_d6_slot_audit,12,0,12,5,0,"{""Sign"": 9, ""Symptom"": 3}",,低血压；心动过速；心脏扩大；晕厥；黑矇,,疑似跨章节噪声，需人工抽样确认
+三尖瓣下移畸形,,,,diagnosis_differential,not_in_d6_slot_audit,2,0,2,1,0,"{""DifferentialDiagnosis"": 2}",,鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+三尖瓣下移畸形,,,,etiology_pathogenesis,not_in_d6_slot_audit,5,0,5,3,0,"{""RiskFactor"": 4, ""Etiology"": 1}",,感染；手术；遗传因素,,疑似跨章节噪声，需人工抽样确认
+三尖瓣下移畸形,,,,exam_lab,not_in_d6_slot_audit,8,0,8,5,0,"{""Exam"": 8}",,CT检查；心电图；电生理检查；磁共振成像；超声心动图,,疑似跨章节噪声，需人工抽样确认
+三尖瓣下移畸形,,,,follow_up_prognosis,not_in_d6_slot_audit,5,0,5,3,0,"{""Complication"": 5}",,心律失常；感染性心内膜炎；猝死,,疑似跨章节噪声，需人工抽样确认
+三尖瓣下移畸形,,,,treatment,not_in_d6_slot_audit,1,0,1,1,0,"{""Procedure"": 1}",,射频消融术,,疑似跨章节噪声，需人工抽样确认
+下肢动脉硬化闭塞症,心脏骤停与心脏性猝死,disease_or_topic,source_covered_ready,classification_risk,deep_entity_present,1,0,1,1,0,"{""RiskStratification"": 1}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+下肢动脉硬化闭塞症,心脏骤停与心脏性猝死,disease_or_topic,source_covered_ready,clinical_manifestation,candidate_present,3,0,3,1,0,"{""Sign"": 3}",,高血压,,疑似跨章节噪声，需人工抽样确认
+下肢动脉硬化闭塞症,心脏骤停与心脏性猝死,disease_or_topic,source_covered_ready,etiology_pathogenesis,candidate_present,17,0,17,6,0,"{""RiskFactor"": 14, ""Etiology"": 3}",,动脉粥样硬化；吸烟；感染；手术；糖尿病；肿瘤,,疑似跨章节噪声，需人工抽样确认
+下肢动脉硬化闭塞症,心脏骤停与心脏性猝死,disease_or_topic,source_covered_ready,follow_up_prognosis,not_in_d6_slot_audit,6,0,6,5,0,"{""Complication"": 5, ""Prognosis"": 1}",,出血；心力衰竭；猝死；脑卒中；预后不良,,疑似跨章节噪声，需人工抽样确认
+下肢动脉硬化闭塞症,心脏骤停与心脏性猝死,disease_or_topic,source_covered_ready,treatment,candidate_present,1,0,1,1,0,"{""Procedure"": 1}",,经皮冠状动脉介入治疗,,疑似跨章节噪声，需人工抽样确认
+不稳定型心绞痛,,,,classification_risk,not_in_d6_slot_audit,4,0,4,1,0,"{""RiskStratification"": 4}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+不稳定型心绞痛,,,,clinical_manifestation,not_in_d6_slot_audit,33,0,33,15,0,"{""Symptom"": 17, ""Sign"": 16}",,休克；低血压；出汗；发绀；呼吸困难；咳嗽；心动过速；心悸；心脏杂音；恶心呕吐；晕厥；第三心音；第四心音；胸痛；高血压,,疑似跨章节噪声，需人工抽样确认
+不稳定型心绞痛,,,,diagnosis_differential,not_in_d6_slot_audit,7,0,7,2,0,"{""DifferentialDiagnosis"": 5, ""DiagnosisCriteria"": 2}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+不稳定型心绞痛,,,,etiology_pathogenesis,not_in_d6_slot_audit,24,0,24,7,0,"{""RiskFactor"": 7, ""Etiology"": 6, ""Pathophysiology"": 11}",,动脉粥样硬化；吸烟；心肌缺血；感染；手术；深静脉血栓形成；糖尿病,,疑似跨章节噪声，需人工抽样确认
+不稳定型心绞痛,,,,exam_lab,not_in_d6_slot_audit,23,0,23,9,0,"{""Exam"": 18, ""LabTest"": 5}",,冠状动脉造影；动态心电图；心电图；心肌肌钙蛋白；红细胞沉降率；肾功能；血常规；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+不稳定型心绞痛,,,,follow_up_prognosis,not_in_d6_slot_audit,38,0,38,7,0,"{""Complication"": 34, ""Prognosis"": 4}",,出血；心力衰竭；心律失常；猝死；肺动脉高压；预后不良；预后良好,,疑似跨章节噪声，需人工抽样确认
+不稳定型心绞痛,,,,treatment,not_in_d6_slot_audit,52,0,52,17,0,"{""TreatmentPlan"": 26, ""Medication"": 16, ""Procedure"": 10}",,一般治疗；他汀类药物；冠状动脉旁路移植术；复律治疗；抗凝治疗；抗凝药物；抗血小板治疗；抗血小板药物；氧疗；溶栓治疗；硝酸酯类药物；经皮冠状动脉介入治疗；药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；血运重建；钙通道阻滞剂,,疑似跨章节噪声，需人工抽样确认
+主动脉夹层,心脏骤停与心脏性猝死,disease_or_topic,source_covered_ready,clinical_manifestation,candidate_present,71,0,71,16,0,"{""Symptom"": 39, ""Sign"": 32}",,下肢疼痛；休克；低血压；发热；发绀；呼吸困难；咯血；咳嗽；心动过速；心脏杂音；晕厥；水肿；胸痛；胸闷；颈静脉怒张；高血压,,疑似跨章节噪声，需人工抽样确认
+主动脉夹层,心脏骤停与心脏性猝死,disease_or_topic,source_covered_ready,diagnosis_differential,candidate_present,22,0,22,2,0,"{""DifferentialDiagnosis"": 14, ""DiagnosisCriteria"": 8}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+主动脉夹层,心脏骤停与心脏性猝死,disease_or_topic,source_covered_ready,etiology_pathogenesis,not_applicable_or_not_detected,53,0,53,11,0,"{""RiskFactor"": 37, ""Etiology"": 12, ""Pathophysiology"": 4}",,创伤；动脉粥样硬化；家族史；心肌缺血；感染；手术；炎症；肺动脉血栓栓塞；肿瘤；遗传因素；长期卧床,,疑似跨章节噪声，需人工抽样确认
+主动脉夹层,心脏骤停与心脏性猝死,disease_or_topic,source_covered_ready,exam_lab,candidate_present,31,0,31,9,0,"{""Exam"": 25, ""LabTest"": 6}",,CT检查；冠状动脉造影；心电图；磁共振成像；肾功能；胸部X线检查；血管超声；血糖；超声心动图,,疑似跨章节噪声，需人工抽样确认
+主动脉夹层,心脏骤停与心脏性猝死,disease_or_topic,source_covered_ready,follow_up_prognosis,not_in_d6_slot_audit,32,0,32,10,0,"{""Complication"": 28, ""FollowUp"": 1, ""Prognosis"": 3}",,出血；定期随访；心力衰竭；心脏压塞；感染性心内膜炎；肺动脉高压；肺栓塞；脑卒中；预后不良；预后良好,,疑似跨章节噪声，需人工抽样确认
+主动脉夹层,心脏骤停与心脏性猝死,disease_or_topic,source_covered_ready,treatment,candidate_present,30,0,30,14,0,"{""TreatmentPlan"": 12, ""Procedure"": 5, ""Medication"": 13}",,一般治疗；他汀类药物；利尿剂；心包穿刺；抗凝治疗；抗凝药物；溶栓治疗；溶栓药物；硝酸酯类药物；经皮冠状动脉介入治疗；药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；钙通道阻滞剂,,疑似跨章节噪声，需人工抽样确认
+主动脉瓣反流,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,41,0,41,22,0,"{""Symptom"": 18, ""Sign"": 23}",,休克；低血压；出汗；劳力性呼吸困难；发热；发绀；呼吸困难；咯血；咳嗽；夜间阵发性呼吸困难；头晕；心动过速；心悸；心脏扩大；心脏杂音；晕厥；水肿；水肿感；端坐呼吸；第三心音,,疑似跨章节噪声，需人工抽样确认
+主动脉瓣反流,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,candidate_present,4,0,4,2,0,"{""DifferentialDiagnosis"": 3, ""DiagnosisCriteria"": 1}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+主动脉瓣反流,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,candidate_present,34,0,34,7,0,"{""RiskFactor"": 29, ""Etiology"": 4, ""Pathophysiology"": 1}",,创伤；心肌缺血；感染；手术；炎症；肿瘤；遗传因素,,疑似跨章节噪声，需人工抽样确认
+主动脉瓣反流,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,14,0,14,6,0,"{""LabTest"": 4, ""Exam"": 10}",,心电图；心脏导管检查；磁共振成像；肾功能；血管超声；超声心动图,,疑似跨章节噪声，需人工抽样确认
+主动脉瓣反流,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,28,0,28,8,0,"{""Complication"": 25, ""Prognosis"": 1, ""FollowUp"": 2}",,出血；定期随访；心力衰竭；心律失常；感染性心内膜炎；猝死；肺动脉高压；预后不良,,疑似跨章节噪声，需人工抽样确认
+主动脉瓣反流,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,26,0,26,15,0,"{""Medication"": 11, ""TreatmentPlan"": 7, ""Procedure"": 8}",,一般治疗；他汀类药物；利尿剂；控制心室率；氧疗；洋地黄类药物；瓣膜置换术；硝酸酯类药物；经导管主动脉瓣置换术；经皮冠状动脉介入治疗；药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；钙通道阻滞剂；降压治疗,,疑似跨章节噪声，需人工抽样确认
+主动脉瓣狭窄,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,52,0,52,22,0,"{""Sign"": 21, ""Symptom"": 31}",,乏力；休克；出汗；劳力性呼吸困难；发热；呼吸困难；咳嗽；夜间阵发性呼吸困难；头晕；心悸；心脏扩大；心脏杂音；晕厥；水肿；水肿感；端坐呼吸；第三心音；第四心音；胸痛；胸闷,,疑似跨章节噪声，需人工抽样确认
+主动脉瓣狭窄,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,candidate_present,20,0,20,2,0,"{""DifferentialDiagnosis"": 16, ""DiagnosisCriteria"": 4}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+主动脉瓣狭窄,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,candidate_present,58,0,58,10,0,"{""Pathophysiology"": 7, ""RiskFactor"": 28, ""Etiology"": 23}",,创伤；动脉粥样硬化；右心负荷增加；吸烟；家族史；心肌缺血；感染；手术；炎症；遗传因素,,疑似跨章节噪声，需人工抽样确认
+主动脉瓣狭窄,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,37,0,37,13,0,"{""Exam"": 26, ""LabTest"": 11}",,CT检查；C反应蛋白；冠状动脉造影；心电图；心脏导管检查；磁共振成像；红细胞沉降率；肾功能；胸部X线检查；血常规；血管超声；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+主动脉瓣狭窄,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,34,0,34,9,0,"{""Complication"": 30, ""Prognosis"": 3, ""FollowUp"": 1}",,出血；定期随访；心力衰竭；心律失常；感染性心内膜炎；猝死；肺动脉高压；预后不良；预后良好,,疑似跨章节噪声，需人工抽样确认
+主动脉瓣狭窄,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,30,0,30,12,0,"{""Medication"": 8, ""TreatmentPlan"": 10, ""Procedure"": 12}",,他汀类药物；利尿剂；控制心室率；氧疗；洋地黄类药物；瓣膜置换术；硝酸酯类药物；经导管主动脉瓣置换术；经皮冠状动脉介入治疗；药物治疗；血管紧张素转换酶抑制剂；降压治疗,,疑似跨章节噪声，需人工抽样确认
+主动脉瘤,,,,clinical_manifestation,not_in_d6_slot_audit,4,0,4,3,0,"{""Sign"": 4}",,休克；低血压；高血压,,疑似跨章节噪声，需人工抽样确认
+主动脉瘤,,,,diagnosis_differential,not_in_d6_slot_audit,4,0,4,2,0,"{""DifferentialDiagnosis"": 3, ""DiagnosisCriteria"": 1}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+主动脉瘤,,,,etiology_pathogenesis,not_in_d6_slot_audit,31,0,31,8,0,"{""RiskFactor"": 19, ""Etiology"": 11, ""Pathophysiology"": 1}",,创伤；动脉粥样硬化；家族史；心肌缺血；感染；手术；炎症；肿瘤,,疑似跨章节噪声，需人工抽样确认
+主动脉瘤,,,,exam_lab,not_in_d6_slot_audit,7,0,7,7,0,"{""Exam"": 5, ""LabTest"": 2}",,CT检查；心电图；磁共振成像；血管超声；血糖；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+主动脉瘤,,,,follow_up_prognosis,not_in_d6_slot_audit,9,0,9,3,0,"{""Prognosis"": 2, ""Complication"": 7}",,出血；心力衰竭；预后不良,,疑似跨章节噪声，需人工抽样确认
+主动脉瘤,,,,treatment,not_in_d6_slot_audit,2,0,2,2,0,"{""TreatmentPlan"": 2}",,药物治疗；血运重建,,疑似跨章节噪声，需人工抽样确认
+主动脉窦瘤,,,,diagnosis_differential,not_in_d6_slot_audit,4,0,4,2,0,"{""DiagnosisCriteria"": 1, ""DifferentialDiagnosis"": 3}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+主动脉窦瘤,,,,etiology_pathogenesis,not_in_d6_slot_audit,7,0,7,3,0,"{""RiskFactor"": 6, ""Pathophysiology"": 1}",,心肌缺血；感染；手术,,疑似跨章节噪声，需人工抽样确认
+主动脉窦瘤,,,,exam_lab,not_in_d6_slot_audit,11,0,11,7,0,"{""Exam"": 10, ""LabTest"": 1}",,冠状动脉造影；心电图；心脏导管检查；磁共振成像；肾功能；血管超声；超声心动图,,疑似跨章节噪声，需人工抽样确认
+主动脉窦瘤,,,,follow_up_prognosis,not_in_d6_slot_audit,12,0,12,7,0,"{""Complication"": 10, ""FollowUp"": 2}",,出血；定期随访；心力衰竭；心律失常；心脏压塞；感染性心内膜炎；肺动脉高压,,疑似跨章节噪声，需人工抽样确认
+主动脉窦瘤,,,,treatment,not_in_d6_slot_audit,5,0,5,1,0,"{""Procedure"": 5}",,经皮冠状动脉介入治疗,,疑似跨章节噪声，需人工抽样确认
+主动脉缩窄,,,,clinical_manifestation,not_in_d6_slot_audit,25,0,25,10,0,"{""Symptom"": 7, ""Sign"": 18}",,低血压；劳力性呼吸困难；发绀；呼吸困难；头晕；心悸；心脏杂音；水肿；胸闷；高血压,,疑似跨章节噪声，需人工抽样确认
+主动脉缩窄,,,,diagnosis_differential,not_in_d6_slot_audit,7,0,7,2,0,"{""DiagnosisCriteria"": 4, ""DifferentialDiagnosis"": 3}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+主动脉缩窄,,,,etiology_pathogenesis,not_in_d6_slot_audit,12,0,12,5,0,"{""RiskFactor"": 12}",,感染；手术；糖尿病；肥胖；肿瘤,,疑似跨章节噪声，需人工抽样确认
+主动脉缩窄,,,,exam_lab,not_in_d6_slot_audit,7,0,7,4,0,"{""Exam"": 6, ""LabTest"": 1}",,CT检查；磁共振成像；血糖；超声心动图,,疑似跨章节噪声，需人工抽样确认
+主动脉缩窄,,,,follow_up_prognosis,not_in_d6_slot_audit,7,0,7,4,0,"{""Complication"": 5, ""FollowUp"": 1, ""Prognosis"": 1}",,出血；定期随访；心力衰竭；预后不良,,疑似跨章节噪声，需人工抽样确认
+主动脉缩窄,,,,treatment,not_in_d6_slot_audit,2,0,2,1,0,"{""Procedure"": 2}",,经皮冠状动脉介入治疗,,疑似跨章节噪声，需人工抽样确认
+二叶主动脉瓣,,,,clinical_manifestation,not_in_d6_slot_audit,2,0,2,2,0,"{""Sign"": 2}",,心脏扩大；高血压,,疑似跨章节噪声，需人工抽样确认
+二叶主动脉瓣,,,,diagnosis_differential,not_in_d6_slot_audit,1,0,1,1,0,"{""DifferentialDiagnosis"": 1}",,鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+二叶主动脉瓣,,,,etiology_pathogenesis,not_in_d6_slot_audit,9,0,9,4,0,"{""RiskFactor"": 7, ""Etiology"": 2}",,创伤；感染；手术；炎症,,疑似跨章节噪声，需人工抽样确认
+二叶主动脉瓣,,,,exam_lab,not_in_d6_slot_audit,3,0,3,2,0,"{""Exam"": 3}",,心电图；超声心动图,,疑似跨章节噪声，需人工抽样确认
+二叶主动脉瓣,,,,follow_up_prognosis,not_in_d6_slot_audit,7,0,7,5,0,"{""Complication"": 6, ""Prognosis"": 1}",,出血；心力衰竭；心律失常；感染性心内膜炎；预后不良,,疑似跨章节噪声，需人工抽样确认
+二叶主动脉瓣,,,,treatment,not_in_d6_slot_audit,1,0,1,1,0,"{""Procedure"": 1}",,经皮冠状动脉介入治疗,,疑似跨章节噪声，需人工抽样确认
+二尖瓣反流,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,65,0,65,24,0,"{""Sign"": 42, ""Symptom"": 23}",,乏力；休克；低血压；出汗；劳力性呼吸困难；发热；呼吸困难；咯血；夜间阵发性呼吸困难；奔马律；心动过速；心悸；心脏扩大；心脏杂音；心音低钝；恶心呕吐；晕厥；水肿；端坐呼吸；第三心音,,疑似跨章节噪声，需人工抽样确认
+二尖瓣反流,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,candidate_present,9,0,9,2,0,"{""DifferentialDiagnosis"": 3, ""DiagnosisCriteria"": 6}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+二尖瓣反流,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,candidate_present,41,0,41,10,0,"{""Pathophysiology"": 5, ""RiskFactor"": 31, ""Etiology"": 5}",,创伤；动脉粥样硬化；右心负荷增加；家族史；心肌缺血；感染；手术；糖尿病；肿瘤；遗传因素,,疑似跨章节噪声，需人工抽样确认
+二尖瓣反流,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,29,0,29,9,0,"{""Exam"": 23, ""LabTest"": 6}",,CT检查；心电图；心脏导管检查；红细胞沉降率；肾功能；胸部X线检查；血常规；血管超声；超声心动图,,疑似跨章节噪声，需人工抽样确认
+二尖瓣反流,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,37,0,37,10,0,"{""Complication"": 31, ""FollowUp"": 2, ""Prognosis"": 4}",,定期随访；心力衰竭；心律失常；心脏压塞；感染性心内膜炎；猝死；肺动脉高压；脑卒中；预后不良；预后良好,,疑似跨章节噪声，需人工抽样确认
+二尖瓣反流,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,33,0,33,17,0,"{""Medication"": 9, ""TreatmentPlan"": 13, ""Procedure"": 11}",,一般治疗；复律治疗；心脏再同步治疗；抗凝治疗；抗凝药物；抗血小板药物；控制心室率；洋地黄类药物；瓣膜置换术；硝酸酯类药物；经皮冠状动脉介入治疗；药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；醛固酮受体拮抗剂；钙通道阻滞剂；降压治疗,,疑似跨章节噪声，需人工抽样确认
+二尖瓣狭窄,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,classification_risk,deep_entity_present,1,0,1,1,0,"{""RiskStratification"": 1}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+二尖瓣狭窄,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,78,0,78,24,0,"{""Symptom"": 31, ""Sign"": 47}",,休克；低血压；劳力性呼吸困难；发热；发绀；呼吸困难；咯血；咳嗽；心动过缓；心动过速；心脏扩大；心脏杂音；恶心呕吐；晕厥；杵状指；水肿；端坐呼吸；第三心音；第四心音；肺部啰音,,疑似跨章节噪声，需人工抽样确认
+二尖瓣狭窄,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,candidate_present,10,0,10,2,0,"{""DifferentialDiagnosis"": 6, ""DiagnosisCriteria"": 4}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+二尖瓣狭窄,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,candidate_present,44,0,44,10,0,"{""RiskFactor"": 38, ""Etiology"": 3, ""Pathophysiology"": 3}",,动脉粥样硬化；右心负荷增加；吸烟；家族史；感染；手术；炎症；糖尿病；肥胖；肿瘤,,疑似跨章节噪声，需人工抽样确认
+二尖瓣狭窄,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,30,0,30,9,0,"{""Exam"": 17, ""LabTest"": 13}",,CT检查；动脉血气分析；心电图；心脏导管检查；肾功能；血管超声；血糖；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+二尖瓣狭窄,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,50,0,50,11,0,"{""Complication"": 46, ""FollowUp"": 2, ""Prognosis"": 2}",,出血；定期随访；心力衰竭；心律失常；心脏压塞；感染性心内膜炎；猝死；肺动脉高压；肺栓塞；脑卒中；预后不良,,疑似跨章节噪声，需人工抽样确认
+二尖瓣狭窄,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,43,0,43,15,0,"{""Medication"": 18, ""TreatmentPlan"": 19, ""Procedure"": 6}",,一般治疗；利尿剂；复律治疗；抗凝治疗；抗凝药物；抗血小板药物；控制心室率；氧疗；洋地黄类药物；瓣膜置换术；硝酸酯类药物；经皮冠状动脉介入治疗；药物治疗；血运重建；钙通道阻滞剂,,疑似跨章节噪声，需人工抽样确认
+人工瓣膜心内膜炎,,,,clinical_manifestation,not_in_d6_slot_audit,3,0,3,2,0,"{""Symptom"": 2, ""Sign"": 1}",,发热；心脏杂音,,疑似跨章节噪声，需人工抽样确认
+人工瓣膜心内膜炎,,,,diagnosis_differential,not_in_d6_slot_audit,2,0,2,2,0,"{""DiagnosisCriteria"": 1, ""DifferentialDiagnosis"": 1}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+人工瓣膜心内膜炎,,,,etiology_pathogenesis,not_in_d6_slot_audit,23,0,23,5,0,"{""RiskFactor"": 21, ""Etiology"": 1, ""Pathophysiology"": 1}",,右心负荷增加；感染；手术；炎症；糖尿病,,疑似跨章节噪声，需人工抽样确认
+人工瓣膜心内膜炎,,,,exam_lab,not_in_d6_slot_audit,9,0,9,4,0,"{""Exam"": 7, ""LabTest"": 2}",,CT检查；磁共振成像；血培养；超声心动图,,疑似跨章节噪声，需人工抽样确认
+人工瓣膜心内膜炎,,,,follow_up_prognosis,not_in_d6_slot_audit,13,0,13,6,0,"{""Complication"": 11, ""Prognosis"": 2}",,心力衰竭；感染性心内膜炎；肺动脉高压；肺栓塞；脑卒中；预后不良,,疑似跨章节噪声，需人工抽样确认
+人工瓣膜心内膜炎,,,,treatment,not_in_d6_slot_audit,8,0,8,3,0,"{""Procedure"": 7, ""TreatmentPlan"": 1}",,瓣膜置换术；经导管主动脉瓣置换术；药物治疗,,疑似跨章节噪声，需人工抽样确认
+儿茶酚胺敏感性室性心动过速,,,,classification_risk,not_in_d6_slot_audit,1,0,1,1,0,"{""RiskStratification"": 1}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+儿茶酚胺敏感性室性心动过速,,,,clinical_manifestation,not_in_d6_slot_audit,19,0,19,6,0,"{""Sign"": 9, ""Symptom"": 10}",,低血压；头晕；心动过速；心悸；心脏扩大；晕厥,,疑似跨章节噪声，需人工抽样确认
+儿茶酚胺敏感性室性心动过速,,,,diagnosis_differential,not_in_d6_slot_audit,2,0,2,2,0,"{""DifferentialDiagnosis"": 1, ""DiagnosisCriteria"": 1}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+儿茶酚胺敏感性室性心动过速,,,,etiology_pathogenesis,not_in_d6_slot_audit,12,0,12,5,0,"{""Etiology"": 4, ""RiskFactor"": 5, ""Pathophysiology"": 3}",,创伤；家族史；心肌缺血；手术；遗传因素,,疑似跨章节噪声，需人工抽样确认
+儿茶酚胺敏感性室性心动过速,,,,exam_lab,not_in_d6_slot_audit,12,0,12,5,0,"{""Exam"": 12}",,CT检查；动态心电图；心电图；磁共振成像；超声心动图,,疑似跨章节噪声，需人工抽样确认
+儿茶酚胺敏感性室性心动过速,,,,follow_up_prognosis,not_in_d6_slot_audit,18,0,18,3,0,"{""Complication"": 17, ""FollowUp"": 1}",,定期随访；心律失常；猝死,,疑似跨章节噪声，需人工抽样确认
+儿茶酚胺敏感性室性心动过速,,,,treatment,not_in_d6_slot_audit,5,0,5,3,0,"{""Procedure"": 4, ""TreatmentPlan"": 1}",,射频消融术；植入式心律转复除颤器；药物治疗,,疑似跨章节噪声，需人工抽样确认
+先天性主动脉缩窄,,,,clinical_manifestation,not_in_d6_slot_audit,3,0,3,2,0,"{""Sign"": 3}",,发绀；高血压,,疑似跨章节噪声，需人工抽样确认
+先天性主动脉缩窄,,,,diagnosis_differential,not_in_d6_slot_audit,2,0,2,2,0,"{""DiagnosisCriteria"": 1, ""DifferentialDiagnosis"": 1}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+先天性主动脉缩窄,,,,etiology_pathogenesis,not_in_d6_slot_audit,4,0,4,1,0,"{""RiskFactor"": 4}",,手术,,疑似跨章节噪声，需人工抽样确认
+先天性主动脉缩窄,,,,follow_up_prognosis,not_in_d6_slot_audit,1,0,1,1,0,"{""FollowUp"": 1}",,定期随访,,疑似跨章节噪声，需人工抽样确认
+先天性主动脉缩窄,,,,treatment,not_in_d6_slot_audit,1,0,1,1,0,"{""Procedure"": 1}",,经皮冠状动脉介入治疗,,疑似跨章节噪声，需人工抽样确认
+冠状动脉痉挛,冠状动脉疾病的其他表现形式,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,6,0,6,6,0,"{""Sign"": 1, ""Symptom"": 5}",,乏力；头晕；心悸；晕厥；水肿；黑矇,,疑似跨章节噪声，需人工抽样确认
+冠状动脉痉挛,冠状动脉疾病的其他表现形式,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,candidate_present,1,0,1,1,0,"{""DiagnosisCriteria"": 1}",,诊断标准,,疑似跨章节噪声，需人工抽样确认
+冠状动脉痉挛,冠状动脉疾病的其他表现形式,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,not_applicable_or_not_detected,5,0,5,4,0,"{""Etiology"": 2, ""RiskFactor"": 3}",,动脉粥样硬化；吸烟；手术；肿瘤,,疑似跨章节噪声，需人工抽样确认
+冠状动脉痉挛,冠状动脉疾病的其他表现形式,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,3,0,3,3,0,"{""Complication"": 3}",,心力衰竭；心律失常；猝死,,疑似跨章节噪声，需人工抽样确认
+冠状动脉痉挛,冠状动脉疾病的其他表现形式,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,3,0,3,2,0,"{""Procedure"": 2, ""Medication"": 1}",,射频消融术；洋地黄类药物,,疑似跨章节噪声，需人工抽样确认
+冠状动脉瘘,,,,clinical_manifestation,not_in_d6_slot_audit,1,0,1,1,0,"{""Sign"": 1}",,心脏杂音,,疑似跨章节噪声，需人工抽样确认
+冠状动脉瘘,,,,etiology_pathogenesis,not_in_d6_slot_audit,5,0,5,2,0,"{""RiskFactor"": 5}",,感染；手术,,疑似跨章节噪声，需人工抽样确认
+冠状动脉瘘,,,,exam_lab,not_in_d6_slot_audit,1,0,1,1,0,"{""Exam"": 1}",,心脏导管检查,,疑似跨章节噪声，需人工抽样确认
+冠状动脉瘘,,,,follow_up_prognosis,not_in_d6_slot_audit,9,0,9,6,0,"{""Complication"": 9}",,心力衰竭；心律失常；心脏压塞；肺动脉高压；肺栓塞；脑卒中,,疑似跨章节噪声，需人工抽样确认
+冠状动脉瘘,,,,treatment,not_in_d6_slot_audit,2,0,2,2,0,"{""Procedure"": 1, ""TreatmentPlan"": 1}",,经皮冠状动脉介入治疗；药物治疗,,疑似跨章节噪声，需人工抽样确认
+冠状动脉粥样硬化性心脏病,,,,classification_risk,not_in_d6_slot_audit,4,0,4,1,0,"{""RiskStratification"": 4}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+冠状动脉粥样硬化性心脏病,,,,clinical_manifestation,not_in_d6_slot_audit,199,0,199,31,0,"{""Sign"": 122, ""Symptom"": 77}",,乏力；休克；低血压；出汗；劳力性呼吸困难；发热；发绀；呼吸困难；咯血；咳嗽；夜间阵发性呼吸困难；头晕；奇脉；奔马律；心动过缓；心动过速；心悸；心脏扩大；心脏杂音；心音低钝,,疑似跨章节噪声，需人工抽样确认
+冠状动脉粥样硬化性心脏病,,,,diagnosis_differential,not_in_d6_slot_audit,34,0,34,2,0,"{""DifferentialDiagnosis"": 25, ""DiagnosisCriteria"": 9}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+冠状动脉粥样硬化性心脏病,,,,etiology_pathogenesis,not_in_d6_slot_audit,229,0,229,16,0,"{""Etiology"": 60, ""RiskFactor"": 135, ""Pathophysiology"": 34}",,创伤；动脉粥样硬化；右心负荷增加；吸烟；家族史；心肌缺血；感染；手术；深静脉血栓形成；炎症；糖尿病；肥胖；肿瘤；遗传因素；长期卧床；高脂血症,,疑似跨章节噪声，需人工抽样确认
+冠状动脉粥样硬化性心脏病,,,,exam_lab,not_in_d6_slot_audit,117,0,117,20,0,"{""LabTest"": 39, ""Exam"": 78}",,CT检查；CT肺动脉造影；冠状动脉CTA；冠状动脉造影；动态心电图；动脉血气分析；心内膜心肌活检；心电图；心肌肌钙蛋白；心脏导管检查；电生理检查；磁共振成像；肾功能；胸部X线检查；脑钠肽；血常规；血管超声；血糖；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+冠状动脉粥样硬化性心脏病,,,,follow_up_prognosis,not_in_d6_slot_audit,153,0,153,11,0,"{""Complication"": 150, ""FollowUp"": 2, ""Prognosis"": 1}",,出血；定期随访；心力衰竭；心律失常；心脏压塞；感染性心内膜炎；猝死；肺动脉高压；肺栓塞；脑卒中；预后良好,,疑似跨章节噪声，需人工抽样确认
+冠状动脉粥样硬化性心脏病,,,,treatment,not_in_d6_slot_audit,122,0,122,26,0,"{""Procedure"": 26, ""TreatmentPlan"": 39, ""Medication"": 57}",,一般治疗；他汀类药物；冠状动脉旁路移植术；利尿剂；复律治疗；射频消融术；心包穿刺；心脏移植；抗凝治疗；抗凝药物；抗血小板药物；控制心室率；洋地黄类药物；溶栓治疗；溶栓药物；瓣膜置换术；硝酸酯类药物；经皮冠状动脉介入治疗；胺碘酮；药物治疗,,疑似跨章节噪声，需人工抽样确认
+动脉导管未闭,,,,clinical_manifestation,not_in_d6_slot_audit,13,0,13,10,0,"{""Sign"": 7, ""Symptom"": 6}",,乏力；低血压；劳力性呼吸困难；发绀；呼吸困难；头晕；心悸；心脏杂音；胸闷；高血压,,疑似跨章节噪声，需人工抽样确认
+动脉导管未闭,,,,diagnosis_differential,not_in_d6_slot_audit,6,0,6,2,0,"{""DiagnosisCriteria"": 2, ""DifferentialDiagnosis"": 4}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+动脉导管未闭,,,,etiology_pathogenesis,not_in_d6_slot_audit,17,0,17,4,0,"{""RiskFactor"": 16, ""Pathophysiology"": 1}",,创伤；心肌缺血；感染；手术,,疑似跨章节噪声，需人工抽样确认
+动脉导管未闭,,,,exam_lab,not_in_d6_slot_audit,16,0,16,7,0,"{""Exam"": 15, ""LabTest"": 1}",,冠状动脉造影；心电图；心脏导管检查；磁共振成像；肾功能；血管超声；超声心动图,,疑似跨章节噪声，需人工抽样确认
+动脉导管未闭,,,,follow_up_prognosis,not_in_d6_slot_audit,21,0,21,11,0,"{""Complication"": 18, ""Prognosis"": 1, ""FollowUp"": 2}",,出血；定期随访；心力衰竭；心律失常；心脏压塞；感染性心内膜炎；猝死；肺动脉高压；肺栓塞；脑卒中；预后良好,,疑似跨章节噪声，需人工抽样确认
+动脉导管未闭,,,,treatment,not_in_d6_slot_audit,15,0,15,7,0,"{""Procedure"": 14, ""TreatmentPlan"": 1}",,射频消融术；心脏再同步治疗；心脏移植；植入式心律转复除颤器；经皮冠状动脉介入治疗；药物治疗；起搏器植入,,疑似跨章节噪声，需人工抽样确认
+动脉粥样硬化,动脉粥样硬化和冠状动脉粥样硬化性心脏病,disease_or_topic,source_limited_ready_as_textbook_core,classification_risk,deep_entity_present,3,0,3,1,0,"{""RiskStratification"": 3}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+动脉粥样硬化,动脉粥样硬化和冠状动脉粥样硬化性心脏病,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,139,0,139,29,0,"{""Symptom"": 53, ""Sign"": 86}",,乏力；休克；低血压；出汗；劳力性呼吸困难；发热；发绀；呼吸困难；咯血；咳嗽；头晕；奔马律；心动过缓；心动过速；心悸；心脏扩大；心脏杂音；心音低钝；恶心呕吐；晕厥,,疑似跨章节噪声，需人工抽样确认
+动脉粥样硬化,动脉粥样硬化和冠状动脉粥样硬化性心脏病,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,candidate_present,36,0,36,2,0,"{""DifferentialDiagnosis"": 26, ""DiagnosisCriteria"": 10}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+动脉粥样硬化,动脉粥样硬化和冠状动脉粥样硬化性心脏病,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,candidate_present,282,0,282,16,0,"{""Etiology"": 137, ""RiskFactor"": 135, ""Pathophysiology"": 10}",,创伤；动脉粥样硬化；吸烟；家族史；心肌缺血；感染；手术；深静脉血栓形成；炎症；糖尿病；肥胖；肺动脉血栓栓塞；肿瘤；遗传因素；长期卧床；高脂血症,,疑似跨章节噪声，需人工抽样确认
+动脉粥样硬化,动脉粥样硬化和冠状动脉粥样硬化性心脏病,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,116,0,116,17,0,"{""Exam"": 50, ""LabTest"": 66}",,CT检查；CT肺动脉造影；C反应蛋白；冠状动脉造影；心内膜心肌活检；心电图；心脏导管检查；电生理检查；磁共振成像；红细胞沉降率；肾功能；胸部X线检查；血常规；血管超声；血糖；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+动脉粥样硬化,动脉粥样硬化和冠状动脉粥样硬化性心脏病,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,90,0,90,11,0,"{""Complication"": 84, ""Prognosis"": 3, ""FollowUp"": 3}",,出血；定期随访；心力衰竭；心律失常；心脏压塞；感染性心内膜炎；猝死；肺动脉高压；肺栓塞；脑卒中；预后不良,,疑似跨章节噪声，需人工抽样确认
+动脉粥样硬化,动脉粥样硬化和冠状动脉粥样硬化性心脏病,disease_or_topic,source_limited_ready_as_textbook_core,treatment,deep_entity_present,78,0,78,18,0,"{""Procedure"": 7, ""TreatmentPlan"": 28, ""Medication"": 43}",,一般治疗；他汀类药物；冠状动脉旁路移植术；利尿剂；射频消融术；抗凝治疗；抗凝药物；抗血小板药物；溶栓治疗；溶栓药物；硝酸酯类药物；经皮冠状动脉介入治疗；药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；血运重建；钙通道阻滞剂；降压治疗,,疑似跨章节噪声，需人工抽样确认
+原发性醛固酮增多症,,,,clinical_manifestation,not_in_d6_slot_audit,15,0,15,3,0,"{""Sign"": 14, ""Symptom"": 1}",,低血压；恶心呕吐；高血压,,疑似跨章节噪声，需人工抽样确认
+原发性醛固酮增多症,,,,diagnosis_differential,not_in_d6_slot_audit,3,0,3,2,0,"{""DiagnosisCriteria"": 2, ""DifferentialDiagnosis"": 1}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+原发性醛固酮增多症,,,,etiology_pathogenesis,not_in_d6_slot_audit,20,0,20,6,0,"{""RiskFactor"": 19, ""Pathophysiology"": 1}",,右心负荷增加；感染；手术；糖尿病；肥胖；肿瘤,,疑似跨章节噪声，需人工抽样确认
+原发性醛固酮增多症,,,,exam_lab,not_in_d6_slot_audit,11,0,11,5,0,"{""LabTest"": 5, ""Exam"": 6}",,CT检查；磁共振成像；肾功能；血糖；血脂检查,,疑似跨章节噪声，需人工抽样确认
+原发性醛固酮增多症,,,,follow_up_prognosis,not_in_d6_slot_audit,5,0,5,4,0,"{""Complication"": 4, ""Prognosis"": 1}",,出血；心力衰竭；脑卒中；预后良好,,疑似跨章节噪声，需人工抽样确认
+原发性醛固酮增多症,,,,treatment,not_in_d6_slot_audit,11,0,11,6,0,"{""TreatmentPlan"": 4, ""Medication"": 7}",,药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；血运重建；醛固酮受体拮抗剂；降压治疗,,疑似跨章节噪声，需人工抽样确认
+原发性高血压,高血压,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,58,0,58,11,0,"{""Sign"": 51, ""Symptom"": 7}",,乏力；低血压；发热；发绀；呼吸困难；咳嗽；心悸；水肿；胸闷；颈静脉怒张；高血压,,疑似跨章节噪声，需人工抽样确认
+原发性高血压,高血压,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,candidate_present,14,0,14,2,0,"{""DifferentialDiagnosis"": 12, ""DiagnosisCriteria"": 2}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+原发性高血压,高血压,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,candidate_present,20,0,20,9,0,"{""RiskFactor"": 17, ""Etiology"": 3}",,动脉粥样硬化；吸烟；家族史；感染；手术；炎症；糖尿病；肥胖；高脂血症,,疑似跨章节噪声，需人工抽样确认
+原发性高血压,高血压,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,22,0,22,7,0,"{""Exam"": 8, ""LabTest"": 14}",,冠状动脉造影；心电图；肾功能；胸部X线检查；血糖；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+原发性高血压,高血压,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,11,0,11,5,0,"{""Complication"": 11}",,出血；心力衰竭；心律失常；肺动脉高压；脑卒中,,疑似跨章节噪声，需人工抽样确认
+原发性高血压,高血压,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,13,0,13,7,0,"{""TreatmentPlan"": 5, ""Medication"": 8}",,一般治疗；利尿剂；药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；醛固酮受体拮抗剂；降压治疗,,疑似跨章节噪声，需人工抽样确认
+嗜铬细胞瘤和副神经节瘤,,,,clinical_manifestation,not_in_d6_slot_audit,16,0,16,5,0,"{""Sign"": 14, ""Symptom"": 2}",,休克；出汗；心动过速；心悸；高血压,,疑似跨章节噪声，需人工抽样确认
+嗜铬细胞瘤和副神经节瘤,,,,diagnosis_differential,not_in_d6_slot_audit,4,0,4,1,0,"{""DifferentialDiagnosis"": 4}",,鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+嗜铬细胞瘤和副神经节瘤,,,,etiology_pathogenesis,not_in_d6_slot_audit,16,0,16,4,0,"{""RiskFactor"": 16}",,感染；手术；糖尿病；肿瘤,,疑似跨章节噪声，需人工抽样确认
+嗜铬细胞瘤和副神经节瘤,,,,exam_lab,not_in_d6_slot_audit,10,0,10,4,0,"{""Exam"": 5, ""LabTest"": 5}",,CT检查；磁共振成像；肾功能；血糖,,疑似跨章节噪声，需人工抽样确认
+嗜铬细胞瘤和副神经节瘤,,,,follow_up_prognosis,not_in_d6_slot_audit,3,0,3,3,0,"{""Complication"": 3}",,出血；心力衰竭；心律失常,,疑似跨章节噪声，需人工抽样确认
+嗜铬细胞瘤和副神经节瘤,,,,treatment,not_in_d6_slot_audit,4,0,4,3,0,"{""Medication"": 2, ""TreatmentPlan"": 2}",,醛固酮受体拮抗剂；钙通道阻滞剂；降压治疗,,疑似跨章节噪声，需人工抽样确认
+多瓣膜病,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,2,0,2,1,0,"{""Sign"": 2}",,心脏杂音,,疑似跨章节噪声，需人工抽样确认
+多瓣膜病,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,candidate_present,1,0,1,1,0,"{""DiagnosisCriteria"": 1}",,诊断标准,,疑似跨章节噪声，需人工抽样确认
+多瓣膜病,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,not_applicable_or_not_detected,5,0,5,2,0,"{""RiskFactor"": 5}",,感染；手术,,疑似跨章节噪声，需人工抽样确认
+多瓣膜病,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,2,0,2,2,0,"{""Exam"": 2}",,心脏导管检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+多瓣膜病,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,5,0,5,4,0,"{""Complication"": 3, ""Prognosis"": 2}",,心力衰竭；感染性心内膜炎；预后不良；预后良好,,疑似跨章节噪声，需人工抽样确认
+多瓣膜病,心脏瓣膜病,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,5,0,5,4,0,"{""TreatmentPlan"": 1, ""Procedure"": 4}",,心脏再同步治疗；瓣膜置换术；经皮冠状动脉介入治疗；药物治疗,,疑似跨章节噪声，需人工抽样确认
+室性心动过速,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,classification_risk,deep_entity_present,2,0,2,1,0,"{""RiskStratification"": 2}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+室性心动过速,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,142,0,142,21,0,"{""Sign"": 99, ""Symptom"": 43}",,乏力；休克；低血压；出汗；发绀；呼吸困难；咳嗽；头晕；心动过缓；心动过速；心悸；心脏扩大；心脏杂音；恶心呕吐；晕厥；水肿；第四心音；胸痛；胸闷；颈静脉怒张,,疑似跨章节噪声，需人工抽样确认
+室性心动过速,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,candidate_present,18,0,18,2,0,"{""DifferentialDiagnosis"": 11, ""DiagnosisCriteria"": 7}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+室性心动过速,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,candidate_present,54,0,54,13,0,"{""Etiology"": 10, ""RiskFactor"": 31, ""Pathophysiology"": 13}",,创伤；动脉粥样硬化；右心负荷增加；吸烟；家族史；心肌缺血；感染；手术；炎症；糖尿病；肥胖；肿瘤；遗传因素,,疑似跨章节噪声，需人工抽样确认
+室性心动过速,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,47,0,47,12,0,"{""Exam"": 41, ""LabTest"": 6}",,CT检查；冠状动脉造影；动态心电图；动脉血气分析；心内膜心肌活检；心电图；电生理检查；磁共振成像；肾功能；血糖；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+室性心动过速,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,131,0,131,6,0,"{""Complication"": 128, ""FollowUp"": 1, ""Prognosis"": 2}",,定期随访；心力衰竭；心律失常；心脏压塞；猝死；预后良好,,疑似跨章节噪声，需人工抽样确认
+室性心动过速,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,116,0,116,21,0,"{""TreatmentPlan"": 44, ""Procedure"": 46, ""Medication"": 26}",,他汀类药物；冠状动脉旁路移植术；利尿剂；复律治疗；射频消融术；心脏再同步治疗；心脏移植；抗凝治疗；控制心室率；植入式心律转复除颤器；洋地黄类药物；溶栓治疗；硝酸酯类药物；经皮冠状动脉介入治疗；胺碘酮；药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；血运重建；起搏器植入,,疑似跨章节噪声，需人工抽样确认
+室性期前收缩,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,classification_risk,deep_entity_present,2,0,2,1,0,"{""RiskStratification"": 2}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+室性期前收缩,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,98,0,98,25,0,"{""Sign"": 56, ""Symptom"": 42}",,乏力；休克；低血压；出汗；劳力性呼吸困难；发绀；呼吸困难；咳嗽；夜间阵发性呼吸困难；头晕；奔马律；心动过缓；心动过速；心悸；心脏扩大；心脏杂音；恶心呕吐；晕厥；水肿；端坐呼吸,,疑似跨章节噪声，需人工抽样确认
+室性期前收缩,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,candidate_present,6,0,6,1,0,"{""DifferentialDiagnosis"": 6}",,鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+室性期前收缩,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,candidate_present,24,0,24,10,0,"{""RiskFactor"": 9, ""Pathophysiology"": 12, ""Etiology"": 3}",,创伤；动脉粥样硬化；右心负荷增加；吸烟；心肌缺血；手术；炎症；糖尿病；肿瘤；遗传因素,,疑似跨章节噪声，需人工抽样确认
+室性期前收缩,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,27,0,27,9,0,"{""Exam"": 20, ""LabTest"": 7}",,动态心电图；心电图；心肌肌钙蛋白；电生理检查；肾功能；脑钠肽；血常规；血糖；血脂检查,,疑似跨章节噪声，需人工抽样确认
+室性期前收缩,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,55,0,55,5,0,"{""Complication"": 54, ""FollowUp"": 1}",,定期随访；心力衰竭；心律失常；心脏压塞；猝死,,疑似跨章节噪声，需人工抽样确认
+室性期前收缩,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,27,0,27,11,0,"{""Procedure"": 8, ""Medication"": 9, ""TreatmentPlan"": 10}",,复律治疗；射频消融术；抗凝治疗；植入式心律转复除颤器；洋地黄类药物；硝酸酯类药物；胺碘酮；药物治疗；血运重建；起搏器植入；钙通道阻滞剂,,疑似跨章节噪声，需人工抽样确认
+室间隔缺损,,,,clinical_manifestation,not_in_d6_slot_audit,35,0,35,15,0,"{""Sign"": 22, ""Symptom"": 13}",,乏力；低血压；劳力性呼吸困难；发绀；呼吸困难；咳嗽；头晕；心悸；心脏扩大；心脏杂音；晕厥；杵状指；水肿；胸痛；高血压,,疑似跨章节噪声，需人工抽样确认
+室间隔缺损,,,,diagnosis_differential,not_in_d6_slot_audit,14,0,14,2,0,"{""DiagnosisCriteria"": 4, ""DifferentialDiagnosis"": 10}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+室间隔缺损,,,,etiology_pathogenesis,not_in_d6_slot_audit,28,0,28,5,0,"{""RiskFactor"": 20, ""Pathophysiology"": 8}",,创伤；右心负荷增加；心肌缺血；感染；手术,,疑似跨章节噪声，需人工抽样确认
+室间隔缺损,,,,exam_lab,not_in_d6_slot_audit,31,0,31,7,0,"{""Exam"": 29, ""LabTest"": 2}",,冠状动脉造影；心电图；心脏导管检查；磁共振成像；肾功能；血管超声；超声心动图,,疑似跨章节噪声，需人工抽样确认
+室间隔缺损,,,,follow_up_prognosis,not_in_d6_slot_audit,31,0,31,11,0,"{""Complication"": 28, ""Prognosis"": 1, ""FollowUp"": 2}",,出血；定期随访；心力衰竭；心律失常；心脏压塞；感染性心内膜炎；猝死；肺动脉高压；肺栓塞；脑卒中；预后良好,,疑似跨章节噪声，需人工抽样确认
+室间隔缺损,,,,treatment,not_in_d6_slot_audit,17,0,17,7,0,"{""Procedure"": 16, ""TreatmentPlan"": 1}",,射频消融术；心脏再同步治疗；心脏移植；植入式心律转复除颤器；经皮冠状动脉介入治疗；药物治疗；起搏器植入,,疑似跨章节噪声，需人工抽样确认
+心力衰竭,,,,classification_risk,not_in_d6_slot_audit,1,0,1,1,0,"{""RiskStratification"": 1}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+心力衰竭,,,,clinical_manifestation,not_in_d6_slot_audit,283,0,283,34,0,"{""Symptom"": 109, ""Sign"": 174}",,下肢疼痛；乏力；休克；低血压；出汗；劳力性呼吸困难；发热；发绀；呼吸困难；咯血；咳嗽；夜间阵发性呼吸困难；头晕；奔马律；心动过缓；心动过速；心悸；心脏扩大；心脏杂音；恶心呕吐,,疑似跨章节噪声，需人工抽样确认
+心力衰竭,,,,diagnosis_differential,not_in_d6_slot_audit,20,0,20,2,0,"{""DifferentialDiagnosis"": 14, ""DiagnosisCriteria"": 6}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+心力衰竭,,,,etiology_pathogenesis,not_in_d6_slot_audit,135,0,135,15,0,"{""Etiology"": 26, ""RiskFactor"": 84, ""Pathophysiology"": 25}",,动脉粥样硬化；右心负荷增加；吸烟；家族史；心肌缺血；感染；手术；深静脉血栓形成；炎症；糖尿病；肥胖；肺动脉血栓栓塞；肿瘤；遗传因素；高脂血症,,疑似跨章节噪声，需人工抽样确认
+心力衰竭,,,,exam_lab,not_in_d6_slot_audit,85,0,85,19,0,"{""LabTest"": 44, ""Exam"": 41}",,CT检查；C反应蛋白；冠状动脉造影；动态心电图；动脉血气分析；心电图；心肌肌钙蛋白；心脏导管检查；电生理检查；磁共振成像；红细胞沉降率；肾功能；胸部X线检查；脑钠肽；血培养；血常规；血糖；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+心力衰竭,,,,follow_up_prognosis,not_in_d6_slot_audit,230,0,230,12,0,"{""Complication"": 223, ""Prognosis"": 4, ""FollowUp"": 3}",,出血；定期随访；心力衰竭；心律失常；心脏压塞；感染性心内膜炎；猝死；肺动脉高压；肺栓塞；脑卒中；预后不良；预后良好,,疑似跨章节噪声，需人工抽样确认
+心力衰竭,,,,treatment,not_in_d6_slot_audit,149,0,149,27,0,"{""Procedure"": 26, ""TreatmentPlan"": 60, ""Medication"": 63}",,一般治疗；他汀类药物；冠状动脉旁路移植术；利尿剂；复律治疗；射频消融术；心脏再同步治疗；心脏移植；抗凝治疗；抗凝药物；控制心室率；植入式心律转复除颤器；氧疗；洋地黄类药物；溶栓治疗；瓣膜置换术；硝酸酯类药物；经皮冠状动脉介入治疗；胺碘酮；药物治疗,,疑似跨章节噪声，需人工抽样确认
+心包积液及心脏压塞,心包疾病,disease_or_topic,source_covered_ready,clinical_manifestation,candidate_present,145,0,145,28,0,"{""Symptom"": 59, ""Sign"": 86}",,下肢疼痛；乏力；休克；低血压；劳力性呼吸困难；发热；发绀；呼吸困难；咯血；咳嗽；头晕；奇脉；奔马律；心动过缓；心动过速；心悸；心脏扩大；心脏杂音；心音低钝；恶心呕吐,,疑似跨章节噪声，需人工抽样确认
+心包积液及心脏压塞,心包疾病,disease_or_topic,source_covered_ready,diagnosis_differential,candidate_present,30,0,30,2,0,"{""DifferentialDiagnosis"": 19, ""DiagnosisCriteria"": 11}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+心包积液及心脏压塞,心包疾病,disease_or_topic,source_covered_ready,etiology_pathogenesis,candidate_present,87,0,87,11,0,"{""RiskFactor"": 71, ""Etiology"": 12, ""Pathophysiology"": 4}",,创伤；动脉粥样硬化；右心负荷增加；心肌缺血；感染；手术；炎症；糖尿病；肥胖；肺动脉血栓栓塞；肿瘤,,疑似跨章节噪声，需人工抽样确认
+心包积液及心脏压塞,心包疾病,disease_or_topic,source_covered_ready,exam_lab,candidate_present,71,0,71,18,0,"{""LabTest"": 19, ""Exam"": 52}",,CT检查；C反应蛋白；冠状动脉造影；动脉血气分析；心内膜心肌活检；心电图；心肌肌钙蛋白；心脏导管检查；电生理检查；磁共振成像；红细胞沉降率；肾功能；胸部X线检查；血培养；血常规；血管超声；血糖；超声心动图,,疑似跨章节噪声，需人工抽样确认
+心包积液及心脏压塞,心包疾病,disease_or_topic,source_covered_ready,follow_up_prognosis,not_in_d6_slot_audit,118,0,118,12,0,"{""Complication"": 108, ""FollowUp"": 3, ""Prognosis"": 7}",,出血；定期随访；心力衰竭；心律失常；心脏压塞；感染性心内膜炎；猝死；肺动脉高压；肺栓塞；脑卒中；预后不良；预后良好,,疑似跨章节噪声，需人工抽样确认
+心包积液及心脏压塞,心包疾病,disease_or_topic,source_covered_ready,treatment,candidate_present,65,0,65,23,0,"{""TreatmentPlan"": 27, ""Medication"": 15, ""Procedure"": 23}",,利尿剂；复律治疗；导管取栓；射频消融术；心包穿刺；心脏移植；抗凝治疗；抗凝药物；抗血小板药物；控制心室率；氧疗；洋地黄类药物；溶栓治疗；溶栓药物；瓣膜置换术；硝酸酯类药物；经皮冠状动脉介入治疗；胺碘酮；药物治疗；血管紧张素Ⅱ受体拮抗剂,,疑似跨章节噪声，需人工抽样确认
+心室扑动与心室颤动,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,134,0,134,23,0,"{""Sign"": 87, ""Symptom"": 47}",,乏力；休克；低血压；出汗；发绀；呼吸困难；咳嗽；头晕；心动过缓；心动过速；心悸；心脏扩大；心脏杂音；恶心呕吐；晕厥；水肿；濒死感；第四心音；胸痛；胸闷,,疑似跨章节噪声，需人工抽样确认
+心室扑动与心室颤动,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,candidate_present,8,0,8,2,0,"{""DifferentialDiagnosis"": 6, ""DiagnosisCriteria"": 2}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+心室扑动与心室颤动,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,not_applicable_or_not_detected,31,0,31,10,0,"{""Etiology"": 9, ""RiskFactor"": 14, ""Pathophysiology"": 8}",,创伤；动脉粥样硬化；右心负荷增加；家族史；心肌缺血；感染；手术；炎症；糖尿病；遗传因素,,疑似跨章节噪声，需人工抽样确认
+心室扑动与心室颤动,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,28,0,28,8,0,"{""Exam"": 21, ""LabTest"": 7}",,CT检查；动脉血气分析；心电图；电生理检查；磁共振成像；肾功能；血糖；超声心动图,,疑似跨章节噪声，需人工抽样确认
+心室扑动与心室颤动,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,98,0,98,7,0,"{""Complication"": 96, ""Prognosis"": 2}",,出血；心力衰竭；心律失常；心脏压塞；猝死；预后不良；预后良好,,疑似跨章节噪声，需人工抽样确认
+心室扑动与心室颤动,室性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,78,0,78,14,0,"{""TreatmentPlan"": 33, ""Medication"": 19, ""Procedure"": 26}",,他汀类药物；复律治疗；射频消融术；心脏再同步治疗；抗凝治疗；植入式心律转复除颤器；洋地黄类药物；硝酸酯类药物；经皮冠状动脉介入治疗；胺碘酮；药物治疗；血运重建；起搏器植入；钙通道阻滞剂,,疑似跨章节噪声，需人工抽样确认
+心房扑动,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,classification_risk,deep_entity_present,2,0,2,1,0,"{""RiskStratification"": 2}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+心房扑动,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,108,0,108,23,0,"{""Sign"": 83, ""Symptom"": 25}",,乏力；休克；低血压；发热；发绀；呼吸困难；头晕；奔马律；心动过缓；心动过速；心悸；心脏扩大；心脏杂音；晕厥；水肿；水肿感；肢体肿胀；肺部啰音；胸痛；胸闷,,疑似跨章节噪声，需人工抽样确认
+心房扑动,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,candidate_present,7,0,7,2,0,"{""DifferentialDiagnosis"": 6, ""DiagnosisCriteria"": 1}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+心房扑动,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,candidate_present,30,0,30,10,0,"{""Pathophysiology"": 5, ""RiskFactor"": 23, ""Etiology"": 2}",,右心负荷增加；吸烟；心肌缺血；感染；手术；深静脉血栓形成；炎症；糖尿病；肥胖；肿瘤,,疑似跨章节噪声，需人工抽样确认
+心房扑动,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,27,0,27,9,0,"{""LabTest"": 7, ""Exam"": 20}",,动态心电图；动脉血气分析；心电图；电生理检查；磁共振成像；肾功能；血糖；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+心房扑动,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,66,0,66,8,0,"{""Complication"": 65, ""Prognosis"": 1}",,出血；心力衰竭；心律失常；猝死；肺动脉高压；肺栓塞；脑卒中；预后不良,,疑似跨章节噪声，需人工抽样确认
+心房扑动,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,57,0,57,15,0,"{""Medication"": 22, ""TreatmentPlan"": 24, ""Procedure"": 11}",,利尿剂；复律治疗；射频消融术；抗凝治疗；抗凝药物；控制心室率；洋地黄类药物；瓣膜置换术；经皮冠状动脉介入治疗；胺碘酮；药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；起搏器植入；钙通道阻滞剂,,疑似跨章节噪声，需人工抽样确认
+心房颤动,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,classification_risk,deep_entity_present,5,0,5,1,0,"{""RiskStratification"": 5}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+心房颤动,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,230,0,230,31,0,"{""Sign"": 151, ""Symptom"": 79}",,上腹痛；乏力；休克；低血压；劳力性呼吸困难；发热；发绀；呼吸困难；咯血；咳嗽；夜间阵发性呼吸困难；头晕；奔马律；心动过缓；心动过速；心悸；心脏扩大；心脏杂音；晕厥；水肿,,疑似跨章节噪声，需人工抽样确认
+心房颤动,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,source_not_cover,20,0,20,2,0,"{""DifferentialDiagnosis"": 17, ""DiagnosisCriteria"": 3}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+心房颤动,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,candidate_present,123,0,123,15,0,"{""Pathophysiology"": 23, ""RiskFactor"": 86, ""Etiology"": 14}",,创伤；动脉粥样硬化；右心负荷增加；吸烟；家族史；心肌缺血；感染；手术；深静脉血栓形成；炎症；糖尿病；肥胖；肿瘤；遗传因素；长期卧床,,疑似跨章节噪声，需人工抽样确认
+心房颤动,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,83,0,83,15,0,"{""LabTest"": 23, ""Exam"": 60}",,CT检查；CT肺动脉造影；动态心电图；动脉血气分析；心电图；心肌肌钙蛋白；电生理检查；磁共振成像；肾功能；脑钠肽；血常规；血管超声；血糖；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+心房颤动,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,189,0,189,12,0,"{""Complication"": 178, ""Prognosis"": 4, ""FollowUp"": 7}",,出血；定期随访；心力衰竭；心律失常；心脏压塞；感染性心内膜炎；猝死；肺动脉高压；肺栓塞；脑卒中；预后不良；预后良好,,疑似跨章节噪声，需人工抽样确认
+心房颤动,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,219,0,219,26,0,"{""Medication"": 82, ""Procedure"": 41, ""TreatmentPlan"": 96}",,一般治疗；他汀类药物；利尿剂；复律治疗；射频消融术；心脏再同步治疗；心脏移植；抗凝治疗；抗凝药物；抗血小板治疗；抗血小板药物；控制心室率；洋地黄类药物；溶栓治疗；瓣膜置换术；硝酸酯类药物；经皮冠状动脉介入治疗；胺碘酮；药物治疗；血管紧张素Ⅱ受体拮抗剂,,疑似跨章节噪声，需人工抽样确认
+心肌梗死后综合征,,,,clinical_manifestation,not_in_d6_slot_audit,4,0,4,4,0,"{""Sign"": 2, ""Symptom"": 2}",,发热；心脏扩大；心脏杂音；胸痛,,疑似跨章节噪声，需人工抽样确认
+心肌梗死后综合征,,,,exam_lab,not_in_d6_slot_audit,2,0,2,2,0,"{""Exam"": 2}",,心电图；超声心动图,,疑似跨章节噪声，需人工抽样确认
+心肌梗死后综合征,,,,follow_up_prognosis,not_in_d6_slot_audit,2,0,2,2,0,"{""Complication"": 2}",,心力衰竭；心律失常,,疑似跨章节噪声，需人工抽样确认
+心肌梗死后综合征,,,,treatment,not_in_d6_slot_audit,2,0,2,2,0,"{""TreatmentPlan"": 1, ""Procedure"": 1}",,溶栓治疗；经皮冠状动脉介入治疗,,疑似跨章节噪声，需人工抽样确认
+心肌炎,心肌疾病,disease_or_topic,source_covered_ready,classification_risk,deep_entity_present,2,0,2,1,0,"{""RiskStratification"": 2}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+心肌炎,心肌疾病,disease_or_topic,source_covered_ready,diagnosis_differential,candidate_present,36,0,36,2,0,"{""DifferentialDiagnosis"": 22, ""DiagnosisCriteria"": 14}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+心脏性猝死,,,,classification_risk,not_in_d6_slot_audit,2,0,2,1,0,"{""RiskStratification"": 2}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+心脏性猝死,,,,clinical_manifestation,not_in_d6_slot_audit,51,0,51,17,0,"{""Sign"": 23, ""Symptom"": 28}",,乏力；低血压；发绀；呼吸困难；头晕；心动过缓；心动过速；心悸；心脏扩大；心脏杂音；晕厥；水肿；第三心音；第四心音；胸痛；胸闷；高血压,,疑似跨章节噪声，需人工抽样确认
+心脏性猝死,,,,diagnosis_differential,not_in_d6_slot_audit,9,0,9,2,0,"{""DiagnosisCriteria"": 7, ""DifferentialDiagnosis"": 2}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+心脏性猝死,,,,etiology_pathogenesis,not_in_d6_slot_audit,29,0,29,9,0,"{""RiskFactor"": 16, ""Etiology"": 7, ""Pathophysiology"": 6}",,创伤；动脉粥样硬化；右心负荷增加；家族史；心肌缺血；感染；手术；糖尿病；遗传因素,,疑似跨章节噪声，需人工抽样确认
+心脏性猝死,,,,exam_lab,not_in_d6_slot_audit,14,0,14,4,0,"{""Exam"": 14}",,动态心电图；心电图；电生理检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+心脏性猝死,,,,follow_up_prognosis,not_in_d6_slot_audit,68,0,68,7,0,"{""Complication"": 67, ""Prognosis"": 1}",,心力衰竭；心律失常；心脏压塞；感染性心内膜炎；猝死；脑卒中；预后不良,,疑似跨章节噪声，需人工抽样确认
+心脏性猝死,,,,treatment,not_in_d6_slot_audit,36,0,36,11,0,"{""Procedure"": 25, ""TreatmentPlan"": 8, ""Medication"": 3}",,复律治疗；射频消融术；心脏再同步治疗；心脏移植；植入式心律转复除颤器；硝酸酯类药物；经皮冠状动脉介入治疗；胺碘酮；药物治疗；血运重建；起搏器植入,,疑似跨章节噪声，需人工抽样确认
+心脏骤停,,,,classification_risk,not_in_d6_slot_audit,1,0,1,1,0,"{""RiskStratification"": 1}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+心脏骤停,,,,clinical_manifestation,not_in_d6_slot_audit,26,0,26,14,0,"{""Symptom"": 12, ""Sign"": 14}",,乏力；休克；低血压；发绀；呼吸困难；心动过缓；心动过速；心悸；心脏扩大；恶心呕吐；晕厥；水肿；胸痛；高血压,,疑似跨章节噪声，需人工抽样确认
+心脏骤停,,,,diagnosis_differential,not_in_d6_slot_audit,6,0,6,2,0,"{""DiagnosisCriteria"": 2, ""DifferentialDiagnosis"": 4}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+心脏骤停,,,,etiology_pathogenesis,not_in_d6_slot_audit,13,0,13,7,0,"{""RiskFactor"": 10, ""Pathophysiology"": 2, ""Etiology"": 1}",,创伤；动脉粥样硬化；家族史；心肌缺血；感染；手术；糖尿病,,疑似跨章节噪声，需人工抽样确认
+心脏骤停,,,,exam_lab,not_in_d6_slot_audit,13,0,13,6,0,"{""Exam"": 9, ""LabTest"": 4}",,冠状动脉造影；动态心电图；动脉血气分析；心电图；心肌肌钙蛋白；超声心动图,,疑似跨章节噪声，需人工抽样确认
+心脏骤停,,,,follow_up_prognosis,not_in_d6_slot_audit,28,0,28,5,0,"{""Complication"": 26, ""Prognosis"": 2}",,心力衰竭；心律失常；心脏压塞；猝死；预后不良,,疑似跨章节噪声，需人工抽样确认
+心脏骤停,,,,treatment,not_in_d6_slot_audit,23,0,23,12,0,"{""Procedure"": 10, ""TreatmentPlan"": 9, ""Medication"": 4}",,利尿剂；复律治疗；射频消融术；心脏再同步治疗；心脏移植；抗凝治疗；植入式心律转复除颤器；氧疗；胺碘酮；药物治疗；起搏器植入；钙通道阻滞剂,,疑似跨章节噪声，需人工抽样确认
+心血管神经症,第三篇循环系统疾病,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,12,0,12,10,0,"{""Symptom"": 9, ""Sign"": 3}",,乏力；出汗；呼吸困难；头晕；心动过速；心悸；心脏杂音；胸痛；胸闷；高血压,,疑似跨章节噪声，需人工抽样确认
+心血管神经症,第三篇循环系统疾病,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,source_not_cover,1,0,1,1,0,"{""DifferentialDiagnosis"": 1}",,鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+心血管神经症,第三篇循环系统疾病,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,not_applicable_or_not_detected,4,0,4,4,0,"{""Etiology"": 3, ""RiskFactor"": 1}",,动脉粥样硬化；吸烟；炎症；遗传因素,,疑似跨章节噪声，需人工抽样确认
+心血管神经症,第三篇循环系统疾病,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,2,0,2,2,0,"{""Exam"": 1, ""LabTest"": 1}",,心电图；血脂检查,,疑似跨章节噪声，需人工抽样确认
+心血管神经症,第三篇循环系统疾病,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,2,0,2,2,0,"{""Complication"": 2}",,心力衰竭；心律失常,,疑似跨章节噪声，需人工抽样确认
+心血管神经症,第三篇循环系统疾病,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,2,0,2,2,0,"{""TreatmentPlan"": 2}",,氧疗；药物治疗,,疑似跨章节噪声，需人工抽样确认
+急性冠脉综合征,,,,classification_risk,not_in_d6_slot_audit,2,0,2,1,0,"{""RiskStratification"": 2}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+急性冠脉综合征,,,,clinical_manifestation,not_in_d6_slot_audit,61,0,61,21,0,"{""Symptom"": 17, ""Sign"": 44}",,休克；低血压；出汗；发热；呼吸困难；咳嗽；夜间阵发性呼吸困难；头晕；奔马律；心动过缓；心动过速；心脏杂音；恶心呕吐；水肿；端坐呼吸；第三心音；肺部啰音；胸痛；胸闷；颈静脉怒张,,疑似跨章节噪声，需人工抽样确认
+急性冠脉综合征,,,,diagnosis_differential,not_in_d6_slot_audit,20,0,20,2,0,"{""DifferentialDiagnosis"": 15, ""DiagnosisCriteria"": 5}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+急性冠脉综合征,,,,etiology_pathogenesis,not_in_d6_slot_audit,42,0,42,10,0,"{""Pathophysiology"": 11, ""RiskFactor"": 23, ""Etiology"": 8}",,动脉粥样硬化；右心负荷增加；吸烟；家族史；心肌缺血；感染；手术；糖尿病；肥胖；肿瘤,,疑似跨章节噪声，需人工抽样确认
+急性冠脉综合征,,,,exam_lab,not_in_d6_slot_audit,46,0,46,14,0,"{""Exam"": 25, ""LabTest"": 21}",,CT检查；冠状动脉造影；动脉血气分析；心电图；心肌肌钙蛋白；红细胞沉降率；肾功能；胸部X线检查；脑钠肽；血常规；血管超声；血糖；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+急性冠脉综合征,,,,follow_up_prognosis,not_in_d6_slot_audit,46,0,46,8,0,"{""Complication"": 45, ""Prognosis"": 1}",,出血；心力衰竭；心律失常；心脏压塞；猝死；肺栓塞；脑卒中；预后良好,,疑似跨章节噪声，需人工抽样确认
+急性冠脉综合征,,,,treatment,not_in_d6_slot_audit,40,0,40,18,0,"{""TreatmentPlan"": 19, ""Procedure"": 12, ""Medication"": 9}",,一般治疗；他汀类药物；冠状动脉旁路移植术；复律治疗；心包穿刺；心脏再同步治疗；抗凝治疗；抗血小板药物；氧疗；溶栓治疗；硝酸酯类药物；经皮冠状动脉介入治疗；药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；血运重建；起搏器植入；钙通道阻滞剂,,疑似跨章节噪声，需人工抽样确认
+急性心力衰竭,心力衰竭,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,32,0,32,15,0,"{""Sign"": 19, ""Symptom"": 13}",,下肢疼痛；乏力；休克；低血压；出汗；发热；头晕；心动过缓；心动过速；心悸；恶心呕吐；水肿；濒死感；胸闷；高血压,,疑似跨章节噪声，需人工抽样确认
+急性心力衰竭,心力衰竭,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,candidate_present,1,0,1,1,0,"{""DifferentialDiagnosis"": 1}",,鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+急性心力衰竭,心力衰竭,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,candidate_present,10,0,10,5,0,"{""RiskFactor"": 9, ""Etiology"": 1}",,创伤；动脉粥样硬化；手术；糖尿病；肥胖,,疑似跨章节噪声，需人工抽样确认
+急性心力衰竭,心力衰竭,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,10,0,10,5,0,"{""Exam"": 1, ""LabTest"": 9}",,红细胞沉降率；肾功能；血糖；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+急性心力衰竭,心力衰竭,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,18,0,18,6,0,"{""Complication"": 17, ""Prognosis"": 1}",,出血；心力衰竭；心律失常；肺栓塞；脑卒中；预后不良,,疑似跨章节噪声，需人工抽样确认
+急性心力衰竭,心力衰竭,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,20,0,20,12,0,"{""TreatmentPlan"": 7, ""Medication"": 11, ""Procedure"": 2}",,利尿剂；复律治疗；射频消融术；抗凝治疗；抗凝药物；控制心室率；硝酸酯类药物；胺碘酮；药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；钙通道阻滞剂,,疑似跨章节噪声，需人工抽样确认
+急性心包炎,心包疾病,disease_or_topic,source_covered_ready,clinical_manifestation,candidate_present,26,0,26,12,0,"{""Sign"": 7, ""Symptom"": 19}",,乏力；休克；出汗；发热；呼吸困难；咳嗽；心悸；晕厥；水肿；胸痛；胸闷；高血压,,疑似跨章节噪声，需人工抽样确认
+急性心包炎,心包疾病,disease_or_topic,source_covered_ready,diagnosis_differential,candidate_present,8,0,8,2,0,"{""DifferentialDiagnosis"": 6, ""DiagnosisCriteria"": 2}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+急性心包炎,心包疾病,disease_or_topic,source_covered_ready,etiology_pathogenesis,candidate_present,20,0,20,8,0,"{""Pathophysiology"": 2, ""RiskFactor"": 15, ""Etiology"": 3}",,右心负荷增加；心肌缺血；感染；手术；炎症；糖尿病；肿瘤；长期卧床,,疑似跨章节噪声，需人工抽样确认
+急性心包炎,心包疾病,disease_or_topic,source_covered_ready,exam_lab,candidate_present,23,0,23,8,0,"{""Exam"": 14, ""LabTest"": 9}",,CT检查；C反应蛋白；心电图；心肌肌钙蛋白；红细胞沉降率；肾功能；血常规；超声心动图,,疑似跨章节噪声，需人工抽样确认
+急性心包炎,心包疾病,disease_or_topic,source_covered_ready,follow_up_prognosis,not_in_d6_slot_audit,8,0,8,7,0,"{""Complication"": 6, ""Prognosis"": 2}",,出血；心力衰竭；心律失常；心脏压塞；肺栓塞；预后不良；预后良好,,疑似跨章节噪声，需人工抽样确认
+急性心包炎,心包疾病,disease_or_topic,source_covered_ready,treatment,candidate_present,1,0,1,1,0,"{""Medication"": 1}",,抗血小板药物,,疑似跨章节噪声，需人工抽样确认
+急性心肌梗死,,,,classification_risk,not_in_d6_slot_audit,6,0,6,1,0,"{""RiskStratification"": 6}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+急性心肌梗死,,,,clinical_manifestation,not_in_d6_slot_audit,223,0,223,30,0,"{""Symptom"": 94, ""Sign"": 129}",,乏力；休克；低血压；出汗；劳力性呼吸困难；发热；发绀；呼吸困难；咯血；咳嗽；夜间阵发性呼吸困难；头晕；奔马律；心动过缓；心动过速；心悸；心脏扩大；心脏杂音；晕厥；水肿,,疑似跨章节噪声，需人工抽样确认
+急性心肌梗死,,,,diagnosis_differential,not_in_d6_slot_audit,38,0,38,2,0,"{""DifferentialDiagnosis"": 31, ""DiagnosisCriteria"": 7}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+急性心肌梗死,,,,etiology_pathogenesis,not_in_d6_slot_audit,121,0,121,16,0,"{""Etiology"": 20, ""RiskFactor"": 54, ""Pathophysiology"": 47}",,创伤；动脉粥样硬化；右心负荷增加；吸烟；心室重构；心肌缺血；感染；手术；深静脉血栓形成；炎症；糖尿病；肥胖；肿瘤；遗传因素；长期卧床；高脂血症,,疑似跨章节噪声，需人工抽样确认
+急性心肌梗死,,,,exam_lab,not_in_d6_slot_audit,123,0,123,20,0,"{""LabTest"": 28, ""Exam"": 95}",,CT检查；CT肺动脉造影；C反应蛋白；冠状动脉CTA；冠状动脉造影；动态心电图；心电图；心肌肌钙蛋白；心脏导管检查；电生理检查；磁共振成像；红细胞沉降率；肾功能；胸部X线检查；脑钠肽；血常规；血管超声；血糖；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+急性心肌梗死,,,,follow_up_prognosis,not_in_d6_slot_audit,149,0,149,10,0,"{""Complication"": 142, ""FollowUp"": 4, ""Prognosis"": 3}",,出血；定期随访；心力衰竭；心律失常；猝死；肺动脉高压；肺栓塞；脑卒中；预后不良；预后良好,,疑似跨章节噪声，需人工抽样确认
+急性心肌梗死,,,,treatment,not_in_d6_slot_audit,161,0,161,27,0,"{""Procedure"": 42, ""Medication"": 65, ""TreatmentPlan"": 54}",,一般治疗；他汀类药物；冠状动脉旁路移植术；利尿剂；复律治疗；射频消融术；心脏再同步治疗；心脏移植；抗凝治疗；抗凝药物；抗血小板治疗；抗血小板药物；植入式心律转复除颤器；氧疗；洋地黄类药物；溶栓治疗；溶栓药物；硝酸酯类药物；经皮冠状动脉介入治疗；胺碘酮,,疑似跨章节噪声，需人工抽样确认
+感染性心内膜炎,第三篇循环系统疾病,disease_or_topic,source_covered_ready,classification_risk,deep_entity_present,1,0,1,1,0,"{""RiskStratification"": 1}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+感染性心内膜炎,第三篇循环系统疾病,disease_or_topic,source_covered_ready,clinical_manifestation,candidate_present,54,0,54,20,0,"{""Symptom"": 21, ""Sign"": 33}",,上腹痛；乏力；休克；低血压；劳力性呼吸困难；发热；发绀；呼吸困难；咯血；咳嗽；心脏扩大；心脏杂音；晕厥；杵状指；水肿；端坐呼吸；第三心音；肺部啰音；颈静脉怒张；高血压,,疑似跨章节噪声，需人工抽样确认
+感染性心内膜炎,第三篇循环系统疾病,disease_or_topic,source_covered_ready,diagnosis_differential,candidate_present,16,0,16,2,0,"{""DifferentialDiagnosis"": 10, ""DiagnosisCriteria"": 6}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+感染性心内膜炎,第三篇循环系统疾病,disease_or_topic,source_covered_ready,etiology_pathogenesis,candidate_present,114,0,114,10,0,"{""RiskFactor"": 97, ""Etiology"": 12, ""Pathophysiology"": 5}",,创伤；动脉粥样硬化；右心负荷增加；感染；手术；炎症；糖尿病；肺动脉血栓栓塞；肿瘤；遗传因素,,疑似跨章节噪声，需人工抽样确认
+感染性心内膜炎,第三篇循环系统疾病,disease_or_topic,source_covered_ready,exam_lab,candidate_present,44,0,44,13,0,"{""LabTest"": 21, ""Exam"": 23}",,CT检查；C反应蛋白；心电图；心肌肌钙蛋白；磁共振成像；红细胞沉降率；肾功能；脑钠肽；血培养；血常规；血管超声；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+感染性心内膜炎,第三篇循环系统疾病,disease_or_topic,source_covered_ready,follow_up_prognosis,not_in_d6_slot_audit,109,0,109,12,0,"{""Complication"": 98, ""Prognosis"": 6, ""FollowUp"": 5}",,出血；定期随访；心力衰竭；心律失常；心脏压塞；感染性心内膜炎；猝死；肺动脉高压；肺栓塞；脑卒中；预后不良；预后良好,,疑似跨章节噪声，需人工抽样确认
+感染性心内膜炎,第三篇循环系统疾病,disease_or_topic,source_covered_ready,treatment,candidate_present,46,0,46,17,0,"{""Procedure"": 17, ""TreatmentPlan"": 14, ""Medication"": 15}",,一般治疗；他汀类药物；利尿剂；抗凝治疗；抗凝药物；控制心室率；洋地黄类药物；瓣膜置换术；硝酸酯类药物；经导管主动脉瓣置换术；经皮冠状动脉介入治疗；药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；醛固酮受体拮抗剂；钙通道阻滞剂；降压治疗,,疑似跨章节噪声，需人工抽样确认
+慢性冠脉综合征,,,,clinical_manifestation,not_in_d6_slot_audit,4,0,4,4,0,"{""Symptom"": 2, ""Sign"": 2}",,低血压；呼吸困难；心动过速；胸痛,,疑似跨章节噪声，需人工抽样确认
+慢性冠脉综合征,,,,etiology_pathogenesis,not_in_d6_slot_audit,8,0,8,3,0,"{""Etiology"": 3, ""Pathophysiology"": 4, ""RiskFactor"": 1}",,动脉粥样硬化；心肌缺血；感染,,疑似跨章节噪声，需人工抽样确认
+慢性冠脉综合征,,,,exam_lab,not_in_d6_slot_audit,2,0,2,2,0,"{""Exam"": 2}",,冠状动脉造影；心电图,,疑似跨章节噪声，需人工抽样确认
+慢性冠脉综合征,,,,follow_up_prognosis,not_in_d6_slot_audit,5,0,5,4,0,"{""Complication"": 5}",,出血；心力衰竭；心律失常；猝死,,疑似跨章节噪声，需人工抽样确认
+慢性冠脉综合征,,,,treatment,not_in_d6_slot_audit,4,0,4,3,0,"{""TreatmentPlan"": 3, ""Medication"": 1}",,硝酸酯类药物；药物治疗；血运重建,,疑似跨章节噪声，需人工抽样确认
+慢性心力衰竭,心力衰竭,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,19,0,19,6,0,"{""Sign"": 17, ""Symptom"": 2}",,乏力；心动过缓；心动过速；心脏扩大；水肿；高血压,,疑似跨章节噪声，需人工抽样确认
+慢性心力衰竭,心力衰竭,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,candidate_present,2,0,2,1,0,"{""DifferentialDiagnosis"": 2}",,鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+慢性心力衰竭,心力衰竭,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,not_applicable_or_not_detected,15,0,15,7,0,"{""RiskFactor"": 12, ""Pathophysiology"": 1, ""Etiology"": 2}",,动脉粥样硬化；吸烟；家族史；心肌缺血；感染；糖尿病；肥胖,,疑似跨章节噪声，需人工抽样确认
+慢性心力衰竭,心力衰竭,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,11,0,11,4,0,"{""Exam"": 1, ""LabTest"": 10}",,心电图；肾功能；血糖；血脂检查,,疑似跨章节噪声，需人工抽样确认
+慢性心力衰竭,心力衰竭,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,25,0,25,4,0,"{""Complication"": 25}",,出血；心力衰竭；心律失常；脑卒中,,疑似跨章节噪声，需人工抽样确认
+慢性心力衰竭,心力衰竭,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,15,0,15,9,0,"{""Procedure"": 7, ""TreatmentPlan"": 2, ""Medication"": 6}",,利尿剂；心脏再同步治疗；心脏移植；植入式心律转复除颤器；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；血运重建；起搏器植入；钙通道阻滞剂,,疑似跨章节噪声，需人工抽样确认
+房室传导阻滞,心脏传导阻滞,disease_or_topic,source_limited_ready_as_textbook_core,classification_risk,deep_entity_present,1,0,1,1,0,"{""RiskStratification"": 1}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+房室传导阻滞,心脏传导阻滞,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,144,0,144,25,0,"{""Sign"": 100, ""Symptom"": 44}",,乏力；休克；低血压；出汗；发绀；呼吸困难；咯血；咳嗽；头晕；奔马律；心动过缓；心动过速；心悸；心脏扩大；心脏杂音；心音低钝；恶心呕吐；晕厥；水肿；第四心音,,疑似跨章节噪声，需人工抽样确认
+房室传导阻滞,心脏传导阻滞,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,candidate_present,9,0,9,2,0,"{""DiagnosisCriteria"": 3, ""DifferentialDiagnosis"": 6}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+房室传导阻滞,心脏传导阻滞,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,candidate_present,40,0,40,11,0,"{""RiskFactor"": 25, ""Etiology"": 4, ""Pathophysiology"": 11}",,创伤；动脉粥样硬化；右心负荷增加；心肌缺血；感染；手术；炎症；糖尿病；肥胖；肿瘤；遗传因素,,疑似跨章节噪声，需人工抽样确认
+房室传导阻滞,心脏传导阻滞,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,40,0,40,12,0,"{""Exam"": 27, ""LabTest"": 13}",,C反应蛋白；动态心电图；心电图；心肌肌钙蛋白；电生理检查；磁共振成像；红细胞沉降率；肾功能；血常规；血糖；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+房室传导阻滞,心脏传导阻滞,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,83,0,83,11,0,"{""Complication"": 80, ""FollowUp"": 1, ""Prognosis"": 2}",,出血；定期随访；心力衰竭；心律失常；心脏压塞；感染性心内膜炎；猝死；肺动脉高压；肺栓塞；脑卒中；预后不良,,疑似跨章节噪声，需人工抽样确认
+房室传导阻滞,心脏传导阻滞,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,80,0,80,18,0,"{""Medication"": 36, ""Procedure"": 23, ""TreatmentPlan"": 21}",,利尿剂；复律治疗；射频消融术；心脏再同步治疗；抗凝治疗；控制心室率；植入式心律转复除颤器；洋地黄类药物；硝酸酯类药物；经皮冠状动脉介入治疗；胺碘酮；药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；血运重建；起搏器植入；醛固酮受体拮抗剂；钙通道阻滞剂,,疑似跨章节噪声，需人工抽样确认
+房性心动过速,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,classification_risk,deep_entity_present,1,0,1,1,0,"{""RiskStratification"": 1}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+房性心动过速,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,47,0,47,13,0,"{""Sign"": 31, ""Symptom"": 16}",,乏力；休克；低血压；呼吸困难；头晕；心动过缓；心动过速；心悸；晕厥；水肿；胸痛；胸闷；黑矇,,疑似跨章节噪声，需人工抽样确认
+房性心动过速,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,candidate_present,3,0,3,1,0,"{""DifferentialDiagnosis"": 3}",,鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+房性心动过速,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,candidate_present,14,0,14,5,0,"{""RiskFactor"": 10, ""Pathophysiology"": 4}",,创伤；吸烟；心肌缺血；感染；手术,,疑似跨章节噪声，需人工抽样确认
+房性心动过速,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,16,0,16,4,0,"{""LabTest"": 2, ""Exam"": 14}",,动态心电图；动脉血气分析；心电图；肾功能,,疑似跨章节噪声，需人工抽样确认
+房性心动过速,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,29,0,29,7,0,"{""Complication"": 27, ""Prognosis"": 1, ""FollowUp"": 1}",,出血；定期随访；心力衰竭；心律失常；猝死；脑卒中；预后不良,,疑似跨章节噪声，需人工抽样确认
+房性心动过速,房性心律失常,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,21,0,21,7,0,"{""Procedure"": 4, ""Medication"": 9, ""TreatmentPlan"": 8}",,复律治疗；射频消融术；控制心室率；洋地黄类药物；胺碘酮；药物治疗；钙通道阻滞剂,,疑似跨章节噪声，需人工抽样确认
+房间隔缺损,,,,clinical_manifestation,not_in_d6_slot_audit,24,0,24,11,0,"{""Sign"": 14, ""Symptom"": 10}",,乏力；劳力性呼吸困难；发绀；呼吸困难；头晕；心动过速；心悸；心脏杂音；晕厥；杵状指；高血压,,疑似跨章节噪声，需人工抽样确认
+房间隔缺损,,,,diagnosis_differential,not_in_d6_slot_audit,4,0,4,2,0,"{""DiagnosisCriteria"": 2, ""DifferentialDiagnosis"": 2}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+房间隔缺损,,,,etiology_pathogenesis,not_in_d6_slot_audit,19,0,19,6,0,"{""RiskFactor"": 14, ""Pathophysiology"": 3, ""Etiology"": 2}",,创伤；动脉粥样硬化；右心负荷增加；感染；手术；炎症,,疑似跨章节噪声，需人工抽样确认
+房间隔缺损,,,,exam_lab,not_in_d6_slot_audit,6,0,6,3,0,"{""Exam"": 5, ""LabTest"": 1}",,心电图；肾功能；超声心动图,,疑似跨章节噪声，需人工抽样确认
+房间隔缺损,,,,follow_up_prognosis,not_in_d6_slot_audit,20,0,20,7,0,"{""Complication"": 20}",,出血；心力衰竭；心律失常；感染性心内膜炎；猝死；肺动脉高压；脑卒中,,疑似跨章节噪声，需人工抽样确认
+房间隔缺损,,,,treatment,not_in_d6_slot_audit,13,0,13,8,0,"{""Procedure"": 11, ""TreatmentPlan"": 2}",,射频消融术；心脏再同步治疗；心脏移植；抗凝治疗；植入式心律转复除颤器；经皮冠状动脉介入治疗；药物治疗；起搏器植入,,疑似跨章节噪声，需人工抽样确认
+扩张型心肌病,心肌疾病,disease_or_topic,source_covered_ready,classification_risk,deep_entity_present,1,0,1,1,0,"{""RiskStratification"": 1}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+扩张型心肌病,心肌疾病,disease_or_topic,source_covered_ready,clinical_manifestation,candidate_present,24,0,24,11,0,"{""Sign"": 19, ""Symptom"": 5}",,劳力性呼吸困难；发绀；呼吸困难；奔马律；心动过速；心脏扩大；心脏杂音；晕厥；水肿；第四心音；高血压,,疑似跨章节噪声，需人工抽样确认
+扩张型心肌病,心肌疾病,disease_or_topic,source_covered_ready,diagnosis_differential,candidate_present,18,0,18,2,0,"{""DiagnosisCriteria"": 9, ""DifferentialDiagnosis"": 9}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+扩张型心肌病,心肌疾病,disease_or_topic,source_covered_ready,etiology_pathogenesis,candidate_present,28,0,28,9,0,"{""Etiology"": 9, ""Pathophysiology"": 6, ""RiskFactor"": 13}",,创伤；家族史；心肌缺血；感染；手术；炎症；糖尿病；肿瘤；遗传因素,,疑似跨章节噪声，需人工抽样确认
+扩张型心肌病,心肌疾病,disease_or_topic,source_covered_ready,exam_lab,candidate_present,14,0,14,10,0,"{""Exam"": 11, ""LabTest"": 3}",,冠状动脉造影；心内膜心肌活检；心电图；心肌肌钙蛋白；心脏导管检查；电生理检查；磁共振成像；脑钠肽；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+扩张型心肌病,心肌疾病,disease_or_topic,source_covered_ready,follow_up_prognosis,not_in_d6_slot_audit,35,0,35,6,0,"{""Complication"": 32, ""Prognosis"": 2, ""FollowUp"": 1}",,定期随访；心力衰竭；心律失常；感染性心内膜炎；猝死；预后不良,,疑似跨章节噪声，需人工抽样确认
+扩张型心肌病,心肌疾病,disease_or_topic,source_covered_ready,treatment,candidate_present,26,0,26,11,0,"{""TreatmentPlan"": 10, ""Procedure"": 8, ""Medication"": 8}",,心脏再同步治疗；心脏移植；抗凝治疗；抗凝药物；控制心室率；植入式心律转复除颤器；洋地黄类药物；药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；降压治疗,,疑似跨章节噪声，需人工抽样确认
+早期复极综合征,,,,clinical_manifestation,not_in_d6_slot_audit,22,0,22,9,0,"{""Symptom"": 10, ""Sign"": 12}",,低血压；呼吸困难；头晕；心动过缓；心动过速；心悸；心脏扩大；晕厥；胸闷,,疑似跨章节噪声，需人工抽样确认
+早期复极综合征,,,,diagnosis_differential,not_in_d6_slot_audit,3,0,3,2,0,"{""DifferentialDiagnosis"": 2, ""DiagnosisCriteria"": 1}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+早期复极综合征,,,,etiology_pathogenesis,not_in_d6_slot_audit,8,0,8,3,0,"{""Etiology"": 4, ""RiskFactor"": 4}",,家族史；手术；遗传因素,,疑似跨章节噪声，需人工抽样确认
+早期复极综合征,,,,exam_lab,not_in_d6_slot_audit,8,0,8,5,0,"{""Exam"": 7, ""LabTest"": 1}",,CT检查；心电图；磁共振成像；肾功能；超声心动图,,疑似跨章节噪声，需人工抽样确认
+早期复极综合征,,,,follow_up_prognosis,not_in_d6_slot_audit,15,0,15,3,0,"{""Complication"": 15}",,心力衰竭；心律失常；猝死,,疑似跨章节噪声，需人工抽样确认
+早期复极综合征,,,,treatment,not_in_d6_slot_audit,7,0,7,4,0,"{""TreatmentPlan"": 1, ""Procedure"": 4, ""Medication"": 2}",,植入式心律转复除颤器；洋地黄类药物；经皮冠状动脉介入治疗；药物治疗,,疑似跨章节噪声，需人工抽样确认
+稳定型心绞痛,慢性冠状动脉综合征,disease_or_topic,source_covered_ready,classification_risk,deep_entity_present,3,0,3,1,0,"{""RiskStratification"": 3}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+稳定型心绞痛,慢性冠状动脉综合征,disease_or_topic,source_covered_ready,clinical_manifestation,candidate_present,49,0,49,21,0,"{""Symptom"": 29, ""Sign"": 20}",,乏力；休克；低血压；出汗；呼吸困难；咳嗽；头晕；心动过缓；心动过速；心悸；心脏扩大；心脏杂音；恶心呕吐；晕厥；水肿；濒死感；第三心音；第四心音；胸痛；胸闷,,疑似跨章节噪声，需人工抽样确认
+稳定型心绞痛,慢性冠状动脉综合征,disease_or_topic,source_covered_ready,diagnosis_differential,candidate_present,14,0,14,2,0,"{""DifferentialDiagnosis"": 9, ""DiagnosisCriteria"": 5}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+稳定型心绞痛,慢性冠状动脉综合征,disease_or_topic,source_covered_ready,etiology_pathogenesis,candidate_present,35,0,35,7,0,"{""RiskFactor"": 14, ""Etiology"": 5, ""Pathophysiology"": 16}",,创伤；动脉粥样硬化；吸烟；心肌缺血；手术；糖尿病；高脂血症,,疑似跨章节噪声，需人工抽样确认
+稳定型心绞痛,慢性冠状动脉综合征,disease_or_topic,source_covered_ready,exam_lab,candidate_present,34,0,34,11,0,"{""Exam"": 28, ""LabTest"": 6}",,CT检查；冠状动脉CTA；冠状动脉造影；动态心电图；心电图；心肌肌钙蛋白；红细胞沉降率；肾功能；血常规；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+稳定型心绞痛,慢性冠状动脉综合征,disease_or_topic,source_covered_ready,follow_up_prognosis,not_in_d6_slot_audit,34,0,34,7,0,"{""Complication"": 30, ""Prognosis"": 4}",,出血；心力衰竭；心律失常；猝死；肺动脉高压；预后不良；预后良好,,疑似跨章节噪声，需人工抽样确认
+稳定型心绞痛,慢性冠状动脉综合征,disease_or_topic,source_covered_ready,treatment,candidate_present,49,0,49,13,0,"{""TreatmentPlan"": 17, ""Medication"": 24, ""Procedure"": 8}",,一般治疗；他汀类药物；冠状动脉旁路移植术；抗血小板治疗；抗血小板药物；硝酸酯类药物；经皮冠状动脉介入治疗；药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；血运重建；钙通道阻滞剂；降压治疗,,疑似跨章节噪声，需人工抽样确认
+窦性心律失常,,,,clinical_manifestation,not_in_d6_slot_audit,7,0,7,4,0,"{""Sign"": 6, ""Symptom"": 1}",,低血压；心动过缓；心动过速；晕厥,,疑似跨章节噪声，需人工抽样确认
+窦性心律失常,,,,diagnosis_differential,not_in_d6_slot_audit,1,0,1,1,0,"{""DifferentialDiagnosis"": 1}",,鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+窦性心律失常,,,,etiology_pathogenesis,not_in_d6_slot_audit,1,0,1,1,0,"{""Etiology"": 1}",,遗传因素,,疑似跨章节噪声，需人工抽样确认
+窦性心律失常,,,,exam_lab,not_in_d6_slot_audit,1,0,1,1,0,"{""Exam"": 1}",,心电图,,疑似跨章节噪声，需人工抽样确认
+窦性心律失常,,,,follow_up_prognosis,not_in_d6_slot_audit,6,0,6,2,0,"{""Complication"": 6}",,心律失常；猝死,,疑似跨章节噪声，需人工抽样确认
+继发性高血压,高血压,disease_or_topic,source_limited_ready_as_textbook_core,classification_risk,deep_entity_present,2,0,2,1,0,"{""RiskStratification"": 2}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+继发性高血压,高血压,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,52,0,52,8,0,"{""Sign"": 48, ""Symptom"": 4}",,休克；低血压；呼吸困难；头晕；心悸；心脏杂音；胸闷；高血压,,疑似跨章节噪声，需人工抽样确认
+继发性高血压,高血压,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,candidate_present,9,0,9,2,0,"{""DifferentialDiagnosis"": 5, ""DiagnosisCriteria"": 4}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+继发性高血压,高血压,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,not_applicable_or_not_detected,25,0,25,9,0,"{""Pathophysiology"": 1, ""RiskFactor"": 20, ""Etiology"": 4}",,创伤；动脉粥样硬化；心肌缺血；感染；手术；糖尿病；肥胖；肿瘤；遗传因素,,疑似跨章节噪声，需人工抽样确认
+继发性高血压,高血压,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,14,0,14,8,0,"{""Exam"": 6, ""LabTest"": 8}",,CT检查；动态心电图；心电图；磁共振成像；肾功能；血糖；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+继发性高血压,高血压,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,10,0,10,5,0,"{""Complication"": 9, ""FollowUp"": 1}",,出血；定期随访；心力衰竭；心律失常；脑卒中,,疑似跨章节噪声，需人工抽样确认
+继发性高血压,高血压,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,16,0,16,7,0,"{""TreatmentPlan"": 6, ""Medication"": 10}",,一般治疗；利尿剂；药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；醛固酮受体拮抗剂；降压治疗,,疑似跨章节噪声，需人工抽样确认
+缩窄性心包炎,心包疾病,disease_or_topic,source_covered_ready,clinical_manifestation,candidate_present,45,0,45,18,0,"{""Sign"": 36, ""Symptom"": 9}",,乏力；休克；低血压；发热；发绀；呼吸困难；奇脉；心动过缓；心动过速；心脏杂音；心音低钝；杵状指；水肿；肺部啰音；胸痛；胸闷；颈静脉怒张；高血压,,疑似跨章节噪声，需人工抽样确认
+缩窄性心包炎,心包疾病,disease_or_topic,source_covered_ready,diagnosis_differential,candidate_present,21,0,21,2,0,"{""DifferentialDiagnosis"": 15, ""DiagnosisCriteria"": 6}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+缩窄性心包炎,心包疾病,disease_or_topic,source_covered_ready,etiology_pathogenesis,candidate_present,36,0,36,9,0,"{""RiskFactor"": 26, ""Etiology"": 8, ""Pathophysiology"": 2}",,创伤；右心负荷增加；感染；手术；炎症；糖尿病；肥胖；肿瘤；遗传因素,,疑似跨章节噪声，需人工抽样确认
+缩窄性心包炎,心包疾病,disease_or_topic,source_covered_ready,exam_lab,candidate_present,26,0,26,12,0,"{""LabTest"": 6, ""Exam"": 20}",,CT检查；心内膜心肌活检；心电图；心肌肌钙蛋白；心脏导管检查；磁共振成像；肾功能；脑钠肽；血常规；血管超声；血糖；超声心动图,,疑似跨章节噪声，需人工抽样确认
+缩窄性心包炎,心包疾病,disease_or_topic,source_covered_ready,follow_up_prognosis,not_in_d6_slot_audit,24,0,24,9,0,"{""Complication"": 23, ""Prognosis"": 1}",,出血；心力衰竭；心律失常；心脏压塞；感染性心内膜炎；肺动脉高压；肺栓塞；脑卒中；预后不良,,疑似跨章节噪声，需人工抽样确认
+缩窄性心包炎,心包疾病,disease_or_topic,source_covered_ready,treatment,candidate_present,7,0,7,4,0,"{""Medication"": 2, ""Procedure"": 4, ""TreatmentPlan"": 1}",,心包穿刺；洋地黄类药物；经皮冠状动脉介入治疗；药物治疗,,疑似跨章节噪声，需人工抽样确认
+缺血性心肌病,慢性冠状动脉综合征,disease_or_topic,source_limited_ready_as_textbook_core,classification_risk,deep_entity_present,1,0,1,1,0,"{""RiskStratification"": 1}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+缺血性心肌病,慢性冠状动脉综合征,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,27,0,27,16,0,"{""Sign"": 12, ""Symptom"": 15}",,乏力；休克；劳力性呼吸困难；呼吸困难；夜间阵发性呼吸困难；奔马律；心动过速；心悸；心脏扩大；晕厥；水肿；端坐呼吸；肺部啰音；胸痛；胸闷；颈静脉怒张,,疑似跨章节噪声，需人工抽样确认
+缺血性心肌病,慢性冠状动脉综合征,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,candidate_present,8,0,8,2,0,"{""DifferentialDiagnosis"": 6, ""DiagnosisCriteria"": 2}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+缺血性心肌病,慢性冠状动脉综合征,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,not_applicable_or_not_detected,23,0,23,7,0,"{""RiskFactor"": 8, ""Pathophysiology"": 12, ""Etiology"": 3}",,创伤；动脉粥样硬化；右心负荷增加；心肌缺血；感染；手术；糖尿病,,疑似跨章节噪声，需人工抽样确认
+缺血性心肌病,慢性冠状动脉综合征,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,14,0,14,7,0,"{""Exam"": 12, ""LabTest"": 2}",,冠状动脉造影；动态心电图；心电图；心肌肌钙蛋白；电生理检查；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+缺血性心肌病,慢性冠状动脉综合征,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,22,0,22,8,0,"{""Complication"": 21, ""FollowUp"": 1}",,出血；定期随访；心力衰竭；心律失常；猝死；肺动脉高压；肺栓塞；脑卒中,,疑似跨章节噪声，需人工抽样确认
+缺血性心肌病,慢性冠状动脉综合征,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,15,0,15,11,0,"{""Procedure"": 5, ""TreatmentPlan"": 7, ""Medication"": 3}",,冠状动脉旁路移植术；射频消融术；心脏移植；抗凝治疗；硝酸酯类药物；经皮冠状动脉介入治疗；药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；血运重建；降压治疗,,疑似跨章节噪声，需人工抽样确认
+肥厚型心肌病,心肌疾病,disease_or_topic,source_covered_ready,classification_risk,deep_entity_present,1,0,1,1,0,"{""RiskStratification"": 1}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+肥厚型心肌病,心肌疾病,disease_or_topic,source_covered_ready,clinical_manifestation,candidate_present,13,0,13,10,0,"{""Sign"": 5, ""Symptom"": 8}",,乏力；休克；咳嗽；心动过速；心悸；心脏扩大；晕厥；胸痛；胸闷；高血压,,疑似跨章节噪声，需人工抽样确认
+肥厚型心肌病,心肌疾病,disease_or_topic,source_covered_ready,diagnosis_differential,candidate_present,11,0,11,2,0,"{""DifferentialDiagnosis"": 7, ""DiagnosisCriteria"": 4}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+肥厚型心肌病,心肌疾病,disease_or_topic,source_covered_ready,etiology_pathogenesis,candidate_present,21,0,21,9,0,"{""Etiology"": 8, ""Pathophysiology"": 7, ""RiskFactor"": 6}",,右心负荷增加；家族史；心肌缺血；感染；手术；炎症；糖尿病；肿瘤；遗传因素,,疑似跨章节噪声，需人工抽样确认
+肥厚型心肌病,心肌疾病,disease_or_topic,source_covered_ready,exam_lab,candidate_present,15,0,15,9,0,"{""Exam"": 13, ""LabTest"": 2}",,冠状动脉造影；心内膜心肌活检；心电图；电生理检查；磁共振成像；红细胞沉降率；血常规；血管超声；超声心动图,,疑似跨章节噪声，需人工抽样确认
+肥厚型心肌病,心肌疾病,disease_or_topic,source_covered_ready,follow_up_prognosis,not_in_d6_slot_audit,25,0,25,7,0,"{""Complication"": 21, ""Prognosis"": 3, ""FollowUp"": 1}",,定期随访；心力衰竭；心律失常；猝死；肺动脉高压；预后不良；预后良好,,疑似跨章节噪声，需人工抽样确认
+肥厚型心肌病,心肌疾病,disease_or_topic,source_covered_ready,treatment,candidate_present,16,0,16,9,0,"{""TreatmentPlan"": 5, ""Procedure"": 5, ""Medication"": 6}",,利尿剂；心脏再同步治疗；心脏移植；抗凝治疗；植入式心律转复除颤器；硝酸酯类药物；经皮冠状动脉介入治疗；药物治疗；钙通道阻滞剂,,疑似跨章节噪声，需人工抽样确认
+肺动脉瓣狭窄,,,,clinical_manifestation,not_in_d6_slot_audit,5,0,5,5,0,"{""Sign"": 2, ""Symptom"": 3}",,劳力性呼吸困难；呼吸困难；心脏杂音；晕厥；高血压,,疑似跨章节噪声，需人工抽样确认
+肺动脉瓣狭窄,,,,diagnosis_differential,not_in_d6_slot_audit,6,0,6,2,0,"{""DiagnosisCriteria"": 2, ""DifferentialDiagnosis"": 4}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+肺动脉瓣狭窄,,,,etiology_pathogenesis,not_in_d6_slot_audit,14,0,14,4,0,"{""RiskFactor"": 13, ""Etiology"": 1}",,创伤；感染；手术；遗传因素,,疑似跨章节噪声，需人工抽样确认
+肺动脉瓣狭窄,,,,exam_lab,not_in_d6_slot_audit,8,0,8,3,0,"{""Exam"": 8}",,心电图；心脏导管检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+肺动脉瓣狭窄,,,,follow_up_prognosis,not_in_d6_slot_audit,12,0,12,6,0,"{""Complication"": 12}",,心力衰竭；心律失常；感染性心内膜炎；猝死；肺动脉高压；脑卒中,,疑似跨章节噪声，需人工抽样确认
+肺动脉瓣狭窄,,,,treatment,not_in_d6_slot_audit,12,0,12,5,0,"{""Procedure"": 12}",,心脏再同步治疗；心脏移植；植入式心律转复除颤器；经皮冠状动脉介入治疗；起搏器植入,,疑似跨章节噪声，需人工抽样确认
+肾实质性高血压,,,,clinical_manifestation,not_in_d6_slot_audit,11,0,11,2,0,"{""Sign"": 11}",,水肿；高血压,,疑似跨章节噪声，需人工抽样确认
+肾实质性高血压,,,,etiology_pathogenesis,not_in_d6_slot_audit,6,0,6,5,0,"{""RiskFactor"": 5, ""Etiology"": 1}",,动脉粥样硬化；感染；糖尿病；肿瘤；长期卧床,,疑似跨章节噪声，需人工抽样确认
+肾实质性高血压,,,,exam_lab,not_in_d6_slot_audit,3,0,3,1,0,"{""LabTest"": 3}",,肾功能,,疑似跨章节噪声，需人工抽样确认
+肾实质性高血压,,,,treatment,not_in_d6_slot_audit,3,0,3,3,0,"{""TreatmentPlan"": 1, ""Medication"": 2}",,药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂,,疑似跨章节噪声，需人工抽样确认
+肾血管性高血压,,,,clinical_manifestation,not_in_d6_slot_audit,17,0,17,2,0,"{""Sign"": 17}",,低血压；高血压,,疑似跨章节噪声，需人工抽样确认
+肾血管性高血压,,,,diagnosis_differential,not_in_d6_slot_audit,3,0,3,1,0,"{""DiagnosisCriteria"": 3}",,诊断标准,,疑似跨章节噪声，需人工抽样确认
+肾血管性高血压,,,,etiology_pathogenesis,not_in_d6_slot_audit,11,0,11,6,0,"{""RiskFactor"": 6, ""Etiology"": 5}",,创伤；动脉粥样硬化；家族史；手术；糖尿病；肥胖,,疑似跨章节噪声，需人工抽样确认
+肾血管性高血压,,,,exam_lab,not_in_d6_slot_audit,12,0,12,5,0,"{""LabTest"": 7, ""Exam"": 5}",,CT检查；磁共振成像；肾功能；血管超声；血脂检查,,疑似跨章节噪声，需人工抽样确认
+肾血管性高血压,,,,follow_up_prognosis,not_in_d6_slot_audit,4,0,4,3,0,"{""Complication"": 4}",,出血；心力衰竭；脑卒中,,疑似跨章节噪声，需人工抽样确认
+肾血管性高血压,,,,treatment,not_in_d6_slot_audit,11,0,11,6,0,"{""TreatmentPlan"": 4, ""Medication"": 7}",,药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；血运重建；醛固酮受体拮抗剂；降压治疗,,疑似跨章节噪声，需人工抽样确认
+致心律失常性右心室心肌病,心肌疾病,disease_or_topic,source_covered_ready,classification_risk,deep_entity_present,1,0,1,1,0,"{""RiskStratification"": 1}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+致心律失常性右心室心肌病,心肌疾病,disease_or_topic,source_covered_ready,clinical_manifestation,candidate_present,17,0,17,6,0,"{""Sign"": 14, ""Symptom"": 3}",,低血压；心动过速；心悸；心脏扩大；晕厥；水肿,,疑似跨章节噪声，需人工抽样确认
+致心律失常性右心室心肌病,心肌疾病,disease_or_topic,source_covered_ready,diagnosis_differential,candidate_present,14,0,14,2,0,"{""DifferentialDiagnosis"": 7, ""DiagnosisCriteria"": 7}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+致心律失常性右心室心肌病,心肌疾病,disease_or_topic,source_covered_ready,etiology_pathogenesis,candidate_present,30,0,30,10,0,"{""Etiology"": 9, ""Pathophysiology"": 9, ""RiskFactor"": 12}",,创伤；动脉粥样硬化；家族史；心肌缺血；感染；手术；炎症；糖尿病；肿瘤；遗传因素,,疑似跨章节噪声，需人工抽样确认
+致心律失常性右心室心肌病,心肌疾病,disease_or_topic,source_covered_ready,exam_lab,candidate_present,18,0,18,9,0,"{""Exam"": 18}",,CT检查；冠状动脉造影；动态心电图；心内膜心肌活检；心电图；电生理检查；磁共振成像；胸部X线检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+致心律失常性右心室心肌病,心肌疾病,disease_or_topic,source_covered_ready,follow_up_prognosis,not_in_d6_slot_audit,39,0,39,5,0,"{""Complication"": 37, ""Prognosis"": 2}",,心力衰竭；心律失常；猝死；预后不良；预后良好,,疑似跨章节噪声，需人工抽样确认
+致心律失常性右心室心肌病,心肌疾病,disease_or_topic,source_covered_ready,treatment,candidate_present,6,0,6,3,0,"{""Procedure"": 6}",,射频消融术；心脏移植；植入式心律转复除颤器,,疑似跨章节噪声，需人工抽样确认
+长QT间期综合征,,,,clinical_manifestation,not_in_d6_slot_audit,18,0,18,7,0,"{""Symptom"": 7, ""Sign"": 11}",,低血压；发热；呼吸困难；心动过缓；心动过速；晕厥；胸闷,,疑似跨章节噪声，需人工抽样确认
+长QT间期综合征,,,,diagnosis_differential,not_in_d6_slot_audit,1,0,1,1,0,"{""DifferentialDiagnosis"": 1}",,鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+长QT间期综合征,,,,etiology_pathogenesis,not_in_d6_slot_audit,9,0,9,5,0,"{""RiskFactor"": 5, ""Etiology"": 2, ""Pathophysiology"": 2}",,家族史；心肌缺血；手术；糖尿病；遗传因素,,疑似跨章节噪声，需人工抽样确认
+长QT间期综合征,,,,exam_lab,not_in_d6_slot_audit,4,0,4,3,0,"{""Exam"": 1, ""LabTest"": 3}",,心电图；肾功能；血糖,,疑似跨章节噪声，需人工抽样确认
+长QT间期综合征,,,,follow_up_prognosis,not_in_d6_slot_audit,13,0,13,3,0,"{""Complication"": 13}",,心力衰竭；心律失常；猝死,,疑似跨章节噪声，需人工抽样确认
+长QT间期综合征,,,,treatment,not_in_d6_slot_audit,7,0,7,5,0,"{""Medication"": 5, ""Procedure"": 2}",,植入式心律转复除颤器；洋地黄类药物；经皮冠状动脉介入治疗；胺碘酮；钙通道阻滞剂,,疑似跨章节噪声，需人工抽样确认
+阵发性室上性心动过速,,,,clinical_manifestation,not_in_d6_slot_audit,7,0,7,2,0,"{""Sign"": 7}",,休克；心动过速,,疑似跨章节噪声，需人工抽样确认
+阵发性室上性心动过速,,,,diagnosis_differential,not_in_d6_slot_audit,1,0,1,1,0,"{""DifferentialDiagnosis"": 1}",,鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+阵发性室上性心动过速,,,,etiology_pathogenesis,not_in_d6_slot_audit,5,0,5,1,0,"{""RiskFactor"": 5}",,感染,,疑似跨章节噪声，需人工抽样确认
+阵发性室上性心动过速,,,,exam_lab,not_in_d6_slot_audit,4,0,4,3,0,"{""LabTest"": 2, ""Exam"": 2}",,动脉血气分析；心电图；肾功能,,疑似跨章节噪声，需人工抽样确认
+阵发性室上性心动过速,,,,follow_up_prognosis,not_in_d6_slot_audit,11,0,11,4,0,"{""Complication"": 10, ""Prognosis"": 1}",,出血；心力衰竭；心律失常；预后不良,,疑似跨章节噪声，需人工抽样确认
+阵发性室上性心动过速,,,,treatment,not_in_d6_slot_audit,9,0,9,5,0,"{""TreatmentPlan"": 6, ""Medication"": 3}",,复律治疗；洋地黄类药物；胺碘酮；药物治疗；钙通道阻滞剂,,疑似跨章节噪声，需人工抽样确认
+限制型心肌病,心肌疾病,disease_or_topic,source_covered_ready,clinical_manifestation,candidate_present,11,0,11,8,0,"{""Symptom"": 4, ""Sign"": 7}",,劳力性呼吸困难；呼吸困难；奔马律；水肿；第四心音；肺部啰音；运动耐量下降；颈静脉怒张,,疑似跨章节噪声，需人工抽样确认
+限制型心肌病,心肌疾病,disease_or_topic,source_covered_ready,diagnosis_differential,candidate_present,7,0,7,2,0,"{""DiagnosisCriteria"": 4, ""DifferentialDiagnosis"": 3}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+限制型心肌病,心肌疾病,disease_or_topic,source_covered_ready,etiology_pathogenesis,candidate_present,8,0,8,3,0,"{""Pathophysiology"": 2, ""Etiology"": 3, ""RiskFactor"": 3}",,心肌缺血；手术；遗传因素,,疑似跨章节噪声，需人工抽样确认
+限制型心肌病,心肌疾病,disease_or_topic,source_covered_ready,exam_lab,candidate_present,8,0,8,7,0,"{""Exam"": 6, ""LabTest"": 2}",,CT检查；心内膜心肌活检；心肌肌钙蛋白；心脏导管检查；磁共振成像；脑钠肽；超声心动图,,疑似跨章节噪声，需人工抽样确认
+限制型心肌病,心肌疾病,disease_or_topic,source_covered_ready,follow_up_prognosis,not_in_d6_slot_audit,14,0,14,4,0,"{""Complication"": 11, ""Prognosis"": 3}",,心力衰竭；心律失常；猝死；预后不良,,疑似跨章节噪声，需人工抽样确认
+限制型心肌病,心肌疾病,disease_or_topic,source_covered_ready,treatment,candidate_present,7,0,7,6,0,"{""TreatmentPlan"": 3, ""Medication"": 3, ""Procedure"": 1}",,利尿剂；心脏移植；抗凝治疗；洋地黄类药物；药物治疗；钙通道阻滞剂,,疑似跨章节噪声，需人工抽样确认
+静脉血栓症,心脏骤停与心脏性猝死,disease_or_topic,source_limited_ready_as_textbook_core,classification_risk,deep_entity_present,2,0,2,1,0,"{""RiskStratification"": 2}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+静脉血栓症,心脏骤停与心脏性猝死,disease_or_topic,source_limited_ready_as_textbook_core,clinical_manifestation,candidate_present,171,0,171,32,0,"{""Symptom"": 89, ""Sign"": 82}",,上腹痛；下肢疼痛；乏力；休克；低血压；劳力性呼吸困难；发热；发绀；呼吸困难；咯血；咳嗽；夜间阵发性呼吸困难；头晕；奔马律；心动过速；心悸；心脏扩大；心脏杂音；恶心呕吐；晕厥,,疑似跨章节噪声，需人工抽样确认
+静脉血栓症,心脏骤停与心脏性猝死,disease_or_topic,source_limited_ready_as_textbook_core,diagnosis_differential,candidate_present,42,0,42,2,0,"{""DifferentialDiagnosis"": 27, ""DiagnosisCriteria"": 15}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+静脉血栓症,心脏骤停与心脏性猝死,disease_or_topic,source_limited_ready_as_textbook_core,etiology_pathogenesis,candidate_present,174,0,174,17,0,"{""RiskFactor"": 101, ""Etiology"": 62, ""Pathophysiology"": 11}",,创伤；动脉粥样硬化；右心负荷增加；吸烟；家族史；心肌缺血；感染；手术；深静脉血栓形成；炎症；糖尿病；肥胖；肺动脉血栓栓塞；肿瘤；遗传因素；长期卧床；高脂血症,,疑似跨章节噪声，需人工抽样确认
+静脉血栓症,心脏骤停与心脏性猝死,disease_or_topic,source_limited_ready_as_textbook_core,exam_lab,candidate_present,68,0,68,18,0,"{""Exam"": 51, ""LabTest"": 17}",,CT检查；CT肺动脉造影；C反应蛋白；动脉血气分析；心电图；心肌肌钙蛋白；心脏导管检查；磁共振成像；红细胞沉降率；肺通气/灌注显像；肾功能；胸部X线检查；脑钠肽；血常规；血管超声；血糖；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+静脉血栓症,心脏骤停与心脏性猝死,disease_or_topic,source_limited_ready_as_textbook_core,follow_up_prognosis,not_in_d6_slot_audit,171,0,171,12,0,"{""Complication"": 157, ""FollowUp"": 4, ""Prognosis"": 10}",,出血；定期随访；心力衰竭；心律失常；心脏压塞；感染性心内膜炎；猝死；肺动脉高压；肺栓塞；脑卒中；预后不良；预后良好,,疑似跨章节噪声，需人工抽样确认
+静脉血栓症,心脏骤停与心脏性猝死,disease_or_topic,source_limited_ready_as_textbook_core,treatment,candidate_present,88,0,88,19,0,"{""Medication"": 19, ""TreatmentPlan"": 57, ""Procedure"": 12}",,冠状动脉旁路移植术；利尿剂；复律治疗；心包穿刺；抗凝治疗；抗凝药物；抗血小板治疗；抗血小板药物；氧疗；溶栓治疗；溶栓药物；硝酸酯类药物；经皮冠状动脉介入治疗；药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；血运重建；醛固酮受体拮抗剂；钙通道阻滞剂,,疑似跨章节噪声，需人工抽样确认
+非ST段抬高型心肌梗死,,,,classification_risk,not_in_d6_slot_audit,3,0,3,1,0,"{""RiskStratification"": 3}",,危险分层,,疑似跨章节噪声，需人工抽样确认
+非ST段抬高型心肌梗死,,,,clinical_manifestation,not_in_d6_slot_audit,20,0,20,10,0,"{""Symptom"": 14, ""Sign"": 6}",,休克；低血压；出汗；发绀；呼吸困难；心动过速；心悸；恶心呕吐；晕厥；胸痛,,疑似跨章节噪声，需人工抽样确认
+非ST段抬高型心肌梗死,,,,diagnosis_differential,not_in_d6_slot_audit,4,0,4,2,0,"{""DiagnosisCriteria"": 2, ""DifferentialDiagnosis"": 2}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+非ST段抬高型心肌梗死,,,,etiology_pathogenesis,not_in_d6_slot_audit,18,0,18,7,0,"{""Etiology"": 6, ""Pathophysiology"": 6, ""RiskFactor"": 6}",,动脉粥样硬化；吸烟；心肌缺血；感染；手术；深静脉血栓形成；糖尿病,,疑似跨章节噪声，需人工抽样确认
+非ST段抬高型心肌梗死,,,,exam_lab,not_in_d6_slot_audit,18,0,18,6,0,"{""Exam"": 13, ""LabTest"": 5}",,冠状动脉造影；心电图；心肌肌钙蛋白；肾功能；血脂检查；超声心动图,,疑似跨章节噪声，需人工抽样确认
+非ST段抬高型心肌梗死,,,,follow_up_prognosis,not_in_d6_slot_audit,28,0,28,6,0,"{""Complication"": 25, ""Prognosis"": 3}",,出血；心力衰竭；心律失常；猝死；预后不良；预后良好,,疑似跨章节噪声，需人工抽样确认
+非ST段抬高型心肌梗死,,,,treatment,not_in_d6_slot_audit,47,0,47,17,0,"{""TreatmentPlan"": 23, ""Procedure"": 12, ""Medication"": 12}",,一般治疗；他汀类药物；冠状动脉旁路移植术；复律治疗；抗凝治疗；抗凝药物；抗血小板治疗；抗血小板药物；氧疗；溶栓治疗；硝酸酯类药物；经皮冠状动脉介入治疗；药物治疗；血管紧张素Ⅱ受体拮抗剂；血管紧张素转换酶抑制剂；血运重建；钙通道阻滞剂,,疑似跨章节噪声，需人工抽样确认
+非扩张型左心室心肌病,心肌疾病,disease_or_topic,source_covered_ready,clinical_manifestation,candidate_present,1,0,1,1,0,"{""Sign"": 1}",,心动过速,,疑似跨章节噪声，需人工抽样确认
+非扩张型左心室心肌病,心肌疾病,disease_or_topic,source_covered_ready,diagnosis_differential,candidate_present,5,0,5,2,0,"{""DiagnosisCriteria"": 3, ""DifferentialDiagnosis"": 2}",,诊断标准；鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+非扩张型左心室心肌病,心肌疾病,disease_or_topic,source_covered_ready,etiology_pathogenesis,candidate_present,3,0,3,2,0,"{""Etiology"": 1, ""Pathophysiology"": 2}",,心肌缺血；遗传因素,,疑似跨章节噪声，需人工抽样确认
+非扩张型左心室心肌病,心肌疾病,disease_or_topic,source_covered_ready,exam_lab,candidate_present,5,0,5,3,0,"{""Exam"": 5}",,心内膜心肌活检；心电图；超声心动图,,疑似跨章节噪声，需人工抽样确认
+非扩张型左心室心肌病,心肌疾病,disease_or_topic,source_covered_ready,follow_up_prognosis,not_in_d6_slot_audit,8,0,8,3,0,"{""Complication"": 8}",,心力衰竭；心律失常；猝死,,疑似跨章节噪声，需人工抽样确认
+非扩张型左心室心肌病,心肌疾病,disease_or_topic,source_covered_ready,treatment,candidate_present,1,0,1,1,0,"{""TreatmentPlan"": 1}",,控制心室率,,疑似跨章节噪声，需人工抽样确认
+高血压急症和亚急症,,,,clinical_manifestation,not_in_d6_slot_audit,10,0,10,4,0,"{""Sign"": 9, ""Symptom"": 1}",,低血压；水肿；胸闷；高血压,,疑似跨章节噪声，需人工抽样确认
+高血压急症和亚急症,,,,diagnosis_differential,not_in_d6_slot_audit,1,0,1,1,0,"{""DifferentialDiagnosis"": 1}",,鉴别诊断,,疑似跨章节噪声，需人工抽样确认
+高血压急症和亚急症,,,,etiology_pathogenesis,not_in_d6_slot_audit,1,0,1,1,0,"{""RiskFactor"": 1}",,手术,,疑似跨章节噪声，需人工抽样确认
+高血压急症和亚急症,,,,follow_up_prognosis,not_in_d6_slot_audit,3,0,3,2,0,"{""Complication"": 3}",,出血；心力衰竭,,疑似跨章节噪声，需人工抽样确认
+高血压急症和亚急症,,,,treatment,not_in_d6_slot_audit,2,0,2,2,0,"{""TreatmentPlan"": 2}",,一般治疗；降压治疗,,疑似跨章节噪声，需人工抽样确认
