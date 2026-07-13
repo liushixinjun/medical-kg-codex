@@ -1,0 +1,2187 @@
+{
+  "nodes": {
+    "input_node_count": 20,
+    "merged_node_count": 20
+  },
+  "relations": {
+    "input_relation_count": 49,
+    "merged_relation_count": 49,
+    "deleted_legacy_relationship_count": 0,
+    "precheck": [
+      {
+        "source_code": "LAB-CARD-FULLBOOK-5CE99AF138",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-ABG-ABNORMAL",
+        "source_found": "LAB-CARD-FULLBOOK-5CE99AF138",
+        "target_found": "IND-CARD-LAB-ABG-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-07B39C98F1",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "source_found": "LAB-CARD-TEXT-07B39C98F1",
+        "target_found": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-768E5070F6",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "source_found": "LAB-CARD-TEXT-768E5070F6",
+        "target_found": "IND-CARD-LAB-BNP-ELEVATED",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-43D8A5AEE4",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+        "source_found": "LAB-CARD-TEXT-43D8A5AEE4",
+        "target_found": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-D983BB0EFF",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "source_found": "LAB-CARD-TEXT-D983BB0EFF",
+        "target_found": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-8E96DA78BC099DF8",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-8E96DA78BC099DF8",
+        "target_found": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-CADREM-AMI-07B39C98F1",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "source_found": "LAB-CARD-CADREM-AMI-07B39C98F1",
+        "target_found": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-98464EDC80D81183",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-98464EDC80D81183",
+        "target_found": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-AAA739D91A",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "source_found": "LAB-CARD-CADREM-STABLE-ANGINA-AAA739D91A",
+        "target_found": "IND-CARD-LAB-BNP-ELEVATED",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+        "target_found": "IND-CARD-LAB-BNP-ELEVATED",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-408A62EF5D",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "source_found": "LAB-CARD-CADREM-STABLE-ANGINA-408A62EF5D",
+        "target_found": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-EA39FB0FF19DE7FA",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-EA39FB0FF19DE7FA",
+        "target_found": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-70C17E9844CB4791",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-AMI-LAB-68AAB9D88BA4",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-70C17E9844CB4791",
+        "target_found": "IND-CARD-AMI-LAB-68AAB9D88BA4",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-91E42761BD25C8F406E4"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-1621003505C956CA",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-AMI-LAB-0FC93EB091FE",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-1621003505C956CA",
+        "target_found": "IND-CARD-AMI-LAB-0FC93EB091FE",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-FE31AF93E61F72BAB5AD"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-AMI-LAB-2906F6AE1C62",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+        "target_found": "IND-CARD-AMI-LAB-2906F6AE1C62",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-0833A59BC97F451FD384"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-43D8A5AEE4",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+        "source_found": "LAB-CARD-CADREM-STABLE-ANGINA-43D8A5AEE4",
+        "target_found": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-FE6022A36946E72E",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-FE6022A36946E72E",
+        "target_found": "IND-CARD-LAB-BNP-ELEVATED",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-FULLBOOK-5CE99AF138",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-09C17E4A3894569F41",
+        "source_found": "LAB-CARD-FULLBOOK-5CE99AF138",
+        "target_found": "EVI-CARD-LABBACKFILL-09C17E4A3894569F41",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-ABG-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-09C17E4A3894569F41",
+        "source_found": "IND-CARD-LAB-ABG-ABNORMAL",
+        "target_found": "EVI-CARD-LABBACKFILL-09C17E4A3894569F41",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-07B39C98F1",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E",
+        "source_found": "LAB-CARD-TEXT-07B39C98F1",
+        "target_found": "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E",
+        "source_found": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "target_found": "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-768E5070F6",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-6A651A73B7BA6CADAF",
+        "source_found": "LAB-CARD-TEXT-768E5070F6",
+        "target_found": "EVI-CARD-LABBACKFILL-6A651A73B7BA6CADAF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-6A651A73B7BA6CADAF",
+        "source_found": "IND-CARD-LAB-BNP-ELEVATED",
+        "target_found": "EVI-CARD-LABBACKFILL-6A651A73B7BA6CADAF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-43D8A5AEE4",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-835C248B01540CF22F",
+        "source_found": "LAB-CARD-TEXT-43D8A5AEE4",
+        "target_found": "EVI-CARD-LABBACKFILL-835C248B01540CF22F",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-835C248B01540CF22F",
+        "source_found": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+        "target_found": "EVI-CARD-LABBACKFILL-835C248B01540CF22F",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-D983BB0EFF",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-556C21D1AA8BF59D2B",
+        "source_found": "LAB-CARD-TEXT-D983BB0EFF",
+        "target_found": "EVI-CARD-LABBACKFILL-556C21D1AA8BF59D2B",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-556C21D1AA8BF59D2B",
+        "source_found": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "target_found": "EVI-CARD-LABBACKFILL-556C21D1AA8BF59D2B",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-8E96DA78BC099DF8",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-B792011C1B04E2CED1",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-8E96DA78BC099DF8",
+        "target_found": "EVI-CARD-LABBACKFILL-B792011C1B04E2CED1",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-B792011C1B04E2CED1",
+        "source_found": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "target_found": "EVI-CARD-LABBACKFILL-B792011C1B04E2CED1",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-CADREM-AMI-07B39C98F1",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E",
+        "source_found": "LAB-CARD-CADREM-AMI-07B39C98F1",
+        "target_found": "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-98464EDC80D81183",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-7431DF213BB48820B0",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-98464EDC80D81183",
+        "target_found": "EVI-CARD-LABBACKFILL-7431DF213BB48820B0",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-7431DF213BB48820B0",
+        "source_found": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "target_found": "EVI-CARD-LABBACKFILL-7431DF213BB48820B0",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-AAA739D91A",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-0E04935555B27198A8",
+        "source_found": "LAB-CARD-CADREM-STABLE-ANGINA-AAA739D91A",
+        "target_found": "EVI-CARD-LABBACKFILL-0E04935555B27198A8",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-0E04935555B27198A8",
+        "source_found": "IND-CARD-LAB-BNP-ELEVATED",
+        "target_found": "EVI-CARD-LABBACKFILL-0E04935555B27198A8",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-BE68DCF5C7FF62602C",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+        "target_found": "EVI-CARD-LABBACKFILL-BE68DCF5C7FF62602C",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-BE68DCF5C7FF62602C",
+        "source_found": "IND-CARD-LAB-BNP-ELEVATED",
+        "target_found": "EVI-CARD-LABBACKFILL-BE68DCF5C7FF62602C",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-408A62EF5D",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-45A9063A0BBAF46AAA",
+        "source_found": "LAB-CARD-CADREM-STABLE-ANGINA-408A62EF5D",
+        "target_found": "EVI-CARD-LABBACKFILL-45A9063A0BBAF46AAA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-45A9063A0BBAF46AAA",
+        "source_found": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "target_found": "EVI-CARD-LABBACKFILL-45A9063A0BBAF46AAA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-EA39FB0FF19DE7FA",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-4688292B63CA5321B6",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-EA39FB0FF19DE7FA",
+        "target_found": "EVI-CARD-LABBACKFILL-4688292B63CA5321B6",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-4688292B63CA5321B6",
+        "source_found": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "target_found": "EVI-CARD-LABBACKFILL-4688292B63CA5321B6",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-70C17E9844CB4791",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-4659C50833580F451A",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-70C17E9844CB4791",
+        "target_found": "EVI-CARD-LABBACKFILL-4659C50833580F451A",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-AMI-LAB-68AAB9D88BA4",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-4659C50833580F451A",
+        "source_found": "IND-CARD-AMI-LAB-68AAB9D88BA4",
+        "target_found": "EVI-CARD-LABBACKFILL-4659C50833580F451A",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-1621003505C956CA",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-5E3E0521034408195B",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-1621003505C956CA",
+        "target_found": "EVI-CARD-LABBACKFILL-5E3E0521034408195B",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-AMI-LAB-0FC93EB091FE",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-5E3E0521034408195B",
+        "source_found": "IND-CARD-AMI-LAB-0FC93EB091FE",
+        "target_found": "EVI-CARD-LABBACKFILL-5E3E0521034408195B",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-24ABD37695B5A0687F",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+        "target_found": "EVI-CARD-LABBACKFILL-24ABD37695B5A0687F",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-AMI-LAB-2906F6AE1C62",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-24ABD37695B5A0687F",
+        "source_found": "IND-CARD-AMI-LAB-2906F6AE1C62",
+        "target_found": "EVI-CARD-LABBACKFILL-24ABD37695B5A0687F",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-43D8A5AEE4",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-835C248B01540CF22F",
+        "source_found": "LAB-CARD-CADREM-STABLE-ANGINA-43D8A5AEE4",
+        "target_found": "EVI-CARD-LABBACKFILL-835C248B01540CF22F",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-FE6022A36946E72E",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-18F67F6E5DAB9ADD59",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-FE6022A36946E72E",
+        "target_found": "EVI-CARD-LABBACKFILL-18F67F6E5DAB9ADD59",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-18F67F6E5DAB9ADD59",
+        "source_found": "IND-CARD-LAB-BNP-ELEVATED",
+        "target_found": "EVI-CARD-LABBACKFILL-18F67F6E5DAB9ADD59",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      }
+    ],
+    "actions": [
+      {
+        "id": "REL-F46F960842675C8F9947",
+        "source_code": "LAB-CARD-FULLBOOK-5CE99AF138",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-09C17E4A3894569F41",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-73C335C0E2B9D7080F7A",
+        "source_code": "IND-CARD-LAB-ABG-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-09C17E4A3894569F41",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-0500BF740CFF824329A3",
+        "source_code": "LAB-CARD-FULLBOOK-5CE99AF138",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-ABG-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-BA3A408DCB4C318A3980",
+        "source_code": "LAB-CARD-TEXT-07B39C98F1",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-5AF09B5F0F34C9E5B065",
+        "source_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-63D5E7FE02F8555FED29",
+        "source_code": "LAB-CARD-TEXT-07B39C98F1",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-53778EC85FCE7DC07EF6",
+        "source_code": "LAB-CARD-TEXT-768E5070F6",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-6A651A73B7BA6CADAF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-98869F93342727C4E303",
+        "source_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-6A651A73B7BA6CADAF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-D9489E72657A7704C659",
+        "source_code": "LAB-CARD-TEXT-768E5070F6",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-DB8DE72FB61BD549031B",
+        "source_code": "LAB-CARD-TEXT-43D8A5AEE4",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-835C248B01540CF22F",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-F19D50A3E872E0987CA0",
+        "source_code": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-835C248B01540CF22F",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-2C84005FA942EA0A8523",
+        "source_code": "LAB-CARD-TEXT-43D8A5AEE4",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-6831B4825787B2B637E9",
+        "source_code": "LAB-CARD-TEXT-D983BB0EFF",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-556C21D1AA8BF59D2B",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-64BAE335940CE9C552FB",
+        "source_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-556C21D1AA8BF59D2B",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-D9DD48969F6597DBEE2C",
+        "source_code": "LAB-CARD-TEXT-D983BB0EFF",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-80168FBF4F4224B2BBFE",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-8E96DA78BC099DF8",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-B792011C1B04E2CED1",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-6CED7CC3D3DD04BDDBA8",
+        "source_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-B792011C1B04E2CED1",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-66BCCE3A912922286C2F",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-8E96DA78BC099DF8",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-6227F30F539AA60E06C3",
+        "source_code": "LAB-CARD-CADREM-AMI-07B39C98F1",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-8C3EF52AEB2D3F1B6C79",
+        "source_code": "LAB-CARD-CADREM-AMI-07B39C98F1",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-AA49D1E3ACA8907C82C4",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-98464EDC80D81183",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-7431DF213BB48820B0",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-D9A3486E5C8EAED50BAC",
+        "source_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-7431DF213BB48820B0",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-1B0CCECCBD06C006E0FA",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-98464EDC80D81183",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-04C6F8876FC59F1159C3",
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-AAA739D91A",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-0E04935555B27198A8",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-67EB302A24F365AFC168",
+        "source_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-0E04935555B27198A8",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-FBF9106CA3D32F9EBE02",
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-AAA739D91A",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-26499EA504BBE55BA138",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-BE68DCF5C7FF62602C",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-830414F4DBE0B2DB4CC3",
+        "source_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-BE68DCF5C7FF62602C",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-009B4660927ABBDBF9A4",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-71D4725812E8AAF7FC3E",
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-408A62EF5D",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-45A9063A0BBAF46AAA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-897C4F5FE392512B10F5",
+        "source_code": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-45A9063A0BBAF46AAA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-D75E78E25CB8544819E5",
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-408A62EF5D",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-5A1DB805A3BBD8EF8462",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-EA39FB0FF19DE7FA",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-4688292B63CA5321B6",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-BBD9A55F06494B8ADFE5",
+        "source_code": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-4688292B63CA5321B6",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-451BB3BD09330B54271D",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-EA39FB0FF19DE7FA",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-78AD604AB32A1251367F",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-70C17E9844CB4791",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-4659C50833580F451A",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-B5473256E4FC4C655F7B",
+        "source_code": "IND-CARD-AMI-LAB-68AAB9D88BA4",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-4659C50833580F451A",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-91E42761BD25C8F406E4",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-70C17E9844CB4791",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-AMI-LAB-68AAB9D88BA4",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-91E42761BD25C8F406E4"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-0C6486AE20D688C7EBA4",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-1621003505C956CA",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-5E3E0521034408195B",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-BC5166A842958688D717",
+        "source_code": "IND-CARD-AMI-LAB-0FC93EB091FE",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-5E3E0521034408195B",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-FE31AF93E61F72BAB5AD",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-1621003505C956CA",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-AMI-LAB-0FC93EB091FE",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-FE31AF93E61F72BAB5AD"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-D024A629A991EC6B7303",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-24ABD37695B5A0687F",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-A29C8EE18B0E03B56B73",
+        "source_code": "IND-CARD-AMI-LAB-2906F6AE1C62",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-24ABD37695B5A0687F",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-0833A59BC97F451FD384",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-AMI-LAB-2906F6AE1C62",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-0833A59BC97F451FD384"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-E47C3470D06642A0A5A8",
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-43D8A5AEE4",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-835C248B01540CF22F",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-C2D35284BB735CD52F0C",
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-43D8A5AEE4",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-FCBD76B0C16AB4E7B5C2",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-FE6022A36946E72E",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-18F67F6E5DAB9ADD59",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-FA655D6F372BDDF6BD61",
+        "source_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-18F67F6E5DAB9ADD59",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-5EAF47D9BE9F547C946E",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-FE6022A36946E72E",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      }
+    ],
+    "postcheck": [
+      {
+        "source_code": "LAB-CARD-FULLBOOK-5CE99AF138",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-ABG-ABNORMAL",
+        "source_found": "LAB-CARD-FULLBOOK-5CE99AF138",
+        "target_found": "IND-CARD-LAB-ABG-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-0500BF740CFF824329A3"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-07B39C98F1",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "source_found": "LAB-CARD-TEXT-07B39C98F1",
+        "target_found": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-63D5E7FE02F8555FED29"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-768E5070F6",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "source_found": "LAB-CARD-TEXT-768E5070F6",
+        "target_found": "IND-CARD-LAB-BNP-ELEVATED",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-D9489E72657A7704C659"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-43D8A5AEE4",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+        "source_found": "LAB-CARD-TEXT-43D8A5AEE4",
+        "target_found": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-2C84005FA942EA0A8523"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-D983BB0EFF",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "source_found": "LAB-CARD-TEXT-D983BB0EFF",
+        "target_found": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-D9DD48969F6597DBEE2C"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-8E96DA78BC099DF8",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-8E96DA78BC099DF8",
+        "target_found": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-66BCCE3A912922286C2F"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-CADREM-AMI-07B39C98F1",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "source_found": "LAB-CARD-CADREM-AMI-07B39C98F1",
+        "target_found": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-8C3EF52AEB2D3F1B6C79"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-98464EDC80D81183",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-98464EDC80D81183",
+        "target_found": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-1B0CCECCBD06C006E0FA"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-AAA739D91A",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "source_found": "LAB-CARD-CADREM-STABLE-ANGINA-AAA739D91A",
+        "target_found": "IND-CARD-LAB-BNP-ELEVATED",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-FBF9106CA3D32F9EBE02"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+        "target_found": "IND-CARD-LAB-BNP-ELEVATED",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-009B4660927ABBDBF9A4"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-408A62EF5D",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "source_found": "LAB-CARD-CADREM-STABLE-ANGINA-408A62EF5D",
+        "target_found": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-D75E78E25CB8544819E5"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-EA39FB0FF19DE7FA",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-EA39FB0FF19DE7FA",
+        "target_found": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-451BB3BD09330B54271D"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-70C17E9844CB4791",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-AMI-LAB-68AAB9D88BA4",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-70C17E9844CB4791",
+        "target_found": "IND-CARD-AMI-LAB-68AAB9D88BA4",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-91E42761BD25C8F406E4"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-1621003505C956CA",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-AMI-LAB-0FC93EB091FE",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-1621003505C956CA",
+        "target_found": "IND-CARD-AMI-LAB-0FC93EB091FE",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-FE31AF93E61F72BAB5AD"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-AMI-LAB-2906F6AE1C62",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+        "target_found": "IND-CARD-AMI-LAB-2906F6AE1C62",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-0833A59BC97F451FD384"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-43D8A5AEE4",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+        "source_found": "LAB-CARD-CADREM-STABLE-ANGINA-43D8A5AEE4",
+        "target_found": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-C2D35284BB735CD52F0C"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-FE6022A36946E72E",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-FE6022A36946E72E",
+        "target_found": "IND-CARD-LAB-BNP-ELEVATED",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-5EAF47D9BE9F547C946E"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-FULLBOOK-5CE99AF138",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-09C17E4A3894569F41",
+        "source_found": "LAB-CARD-FULLBOOK-5CE99AF138",
+        "target_found": "EVI-CARD-LABBACKFILL-09C17E4A3894569F41",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-F46F960842675C8F9947"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-ABG-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-09C17E4A3894569F41",
+        "source_found": "IND-CARD-LAB-ABG-ABNORMAL",
+        "target_found": "EVI-CARD-LABBACKFILL-09C17E4A3894569F41",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-73C335C0E2B9D7080F7A"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-07B39C98F1",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E",
+        "source_found": "LAB-CARD-TEXT-07B39C98F1",
+        "target_found": "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-BA3A408DCB4C318A3980"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E",
+        "source_found": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "target_found": "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-5AF09B5F0F34C9E5B065"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-768E5070F6",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-6A651A73B7BA6CADAF",
+        "source_found": "LAB-CARD-TEXT-768E5070F6",
+        "target_found": "EVI-CARD-LABBACKFILL-6A651A73B7BA6CADAF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-53778EC85FCE7DC07EF6"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-6A651A73B7BA6CADAF",
+        "source_found": "IND-CARD-LAB-BNP-ELEVATED",
+        "target_found": "EVI-CARD-LABBACKFILL-6A651A73B7BA6CADAF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-98869F93342727C4E303"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-43D8A5AEE4",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-835C248B01540CF22F",
+        "source_found": "LAB-CARD-TEXT-43D8A5AEE4",
+        "target_found": "EVI-CARD-LABBACKFILL-835C248B01540CF22F",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-DB8DE72FB61BD549031B"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-835C248B01540CF22F",
+        "source_found": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+        "target_found": "EVI-CARD-LABBACKFILL-835C248B01540CF22F",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-F19D50A3E872E0987CA0"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-D983BB0EFF",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-556C21D1AA8BF59D2B",
+        "source_found": "LAB-CARD-TEXT-D983BB0EFF",
+        "target_found": "EVI-CARD-LABBACKFILL-556C21D1AA8BF59D2B",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-6831B4825787B2B637E9"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-556C21D1AA8BF59D2B",
+        "source_found": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "target_found": "EVI-CARD-LABBACKFILL-556C21D1AA8BF59D2B",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-64BAE335940CE9C552FB"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-8E96DA78BC099DF8",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-B792011C1B04E2CED1",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-8E96DA78BC099DF8",
+        "target_found": "EVI-CARD-LABBACKFILL-B792011C1B04E2CED1",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-80168FBF4F4224B2BBFE"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-B792011C1B04E2CED1",
+        "source_found": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "target_found": "EVI-CARD-LABBACKFILL-B792011C1B04E2CED1",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-6CED7CC3D3DD04BDDBA8"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-CADREM-AMI-07B39C98F1",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E",
+        "source_found": "LAB-CARD-CADREM-AMI-07B39C98F1",
+        "target_found": "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-6227F30F539AA60E06C3"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-98464EDC80D81183",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-7431DF213BB48820B0",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-98464EDC80D81183",
+        "target_found": "EVI-CARD-LABBACKFILL-7431DF213BB48820B0",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-AA49D1E3ACA8907C82C4"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-7431DF213BB48820B0",
+        "source_found": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "target_found": "EVI-CARD-LABBACKFILL-7431DF213BB48820B0",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-D9A3486E5C8EAED50BAC"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-AAA739D91A",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-0E04935555B27198A8",
+        "source_found": "LAB-CARD-CADREM-STABLE-ANGINA-AAA739D91A",
+        "target_found": "EVI-CARD-LABBACKFILL-0E04935555B27198A8",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-04C6F8876FC59F1159C3"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-0E04935555B27198A8",
+        "source_found": "IND-CARD-LAB-BNP-ELEVATED",
+        "target_found": "EVI-CARD-LABBACKFILL-0E04935555B27198A8",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-67EB302A24F365AFC168"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-BE68DCF5C7FF62602C",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+        "target_found": "EVI-CARD-LABBACKFILL-BE68DCF5C7FF62602C",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-26499EA504BBE55BA138"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-BE68DCF5C7FF62602C",
+        "source_found": "IND-CARD-LAB-BNP-ELEVATED",
+        "target_found": "EVI-CARD-LABBACKFILL-BE68DCF5C7FF62602C",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-830414F4DBE0B2DB4CC3"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-408A62EF5D",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-45A9063A0BBAF46AAA",
+        "source_found": "LAB-CARD-CADREM-STABLE-ANGINA-408A62EF5D",
+        "target_found": "EVI-CARD-LABBACKFILL-45A9063A0BBAF46AAA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-71D4725812E8AAF7FC3E"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-45A9063A0BBAF46AAA",
+        "source_found": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "target_found": "EVI-CARD-LABBACKFILL-45A9063A0BBAF46AAA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-897C4F5FE392512B10F5"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-EA39FB0FF19DE7FA",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-4688292B63CA5321B6",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-EA39FB0FF19DE7FA",
+        "target_found": "EVI-CARD-LABBACKFILL-4688292B63CA5321B6",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-5A1DB805A3BBD8EF8462"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-4688292B63CA5321B6",
+        "source_found": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "target_found": "EVI-CARD-LABBACKFILL-4688292B63CA5321B6",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-BBD9A55F06494B8ADFE5"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-70C17E9844CB4791",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-4659C50833580F451A",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-70C17E9844CB4791",
+        "target_found": "EVI-CARD-LABBACKFILL-4659C50833580F451A",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-78AD604AB32A1251367F"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-AMI-LAB-68AAB9D88BA4",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-4659C50833580F451A",
+        "source_found": "IND-CARD-AMI-LAB-68AAB9D88BA4",
+        "target_found": "EVI-CARD-LABBACKFILL-4659C50833580F451A",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-B5473256E4FC4C655F7B"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-1621003505C956CA",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-5E3E0521034408195B",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-1621003505C956CA",
+        "target_found": "EVI-CARD-LABBACKFILL-5E3E0521034408195B",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-0C6486AE20D688C7EBA4"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-AMI-LAB-0FC93EB091FE",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-5E3E0521034408195B",
+        "source_found": "IND-CARD-AMI-LAB-0FC93EB091FE",
+        "target_found": "EVI-CARD-LABBACKFILL-5E3E0521034408195B",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-BC5166A842958688D717"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-24ABD37695B5A0687F",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+        "target_found": "EVI-CARD-LABBACKFILL-24ABD37695B5A0687F",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-D024A629A991EC6B7303"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-AMI-LAB-2906F6AE1C62",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-24ABD37695B5A0687F",
+        "source_found": "IND-CARD-AMI-LAB-2906F6AE1C62",
+        "target_found": "EVI-CARD-LABBACKFILL-24ABD37695B5A0687F",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-A29C8EE18B0E03B56B73"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-43D8A5AEE4",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-835C248B01540CF22F",
+        "source_found": "LAB-CARD-CADREM-STABLE-ANGINA-43D8A5AEE4",
+        "target_found": "EVI-CARD-LABBACKFILL-835C248B01540CF22F",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-E47C3470D06642A0A5A8"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "CARD-SKELETON-20260709-LABTEST-FE6022A36946E72E",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-18F67F6E5DAB9ADD59",
+        "source_found": "CARD-SKELETON-20260709-LABTEST-FE6022A36946E72E",
+        "target_found": "EVI-CARD-LABBACKFILL-18F67F6E5DAB9ADD59",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-FCBD76B0C16AB4E7B5C2"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-18F67F6E5DAB9ADD59",
+        "source_found": "IND-CARD-LAB-BNP-ELEVATED",
+        "target_found": "EVI-CARD-LABBACKFILL-18F67F6E5DAB9ADD59",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-FA655D6F372BDDF6BD61"
+        ],
+        "missing_id_count": 0
+      }
+    ],
+    "post_actions": [
+      {
+        "id": "REL-F46F960842675C8F9947",
+        "source_code": "LAB-CARD-FULLBOOK-5CE99AF138",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-09C17E4A3894569F41",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-F46F960842675C8F9947"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-73C335C0E2B9D7080F7A",
+        "source_code": "IND-CARD-LAB-ABG-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-09C17E4A3894569F41",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-73C335C0E2B9D7080F7A"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-0500BF740CFF824329A3",
+        "source_code": "LAB-CARD-FULLBOOK-5CE99AF138",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-ABG-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-0500BF740CFF824329A3"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-BA3A408DCB4C318A3980",
+        "source_code": "LAB-CARD-TEXT-07B39C98F1",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-BA3A408DCB4C318A3980"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-5AF09B5F0F34C9E5B065",
+        "source_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-5AF09B5F0F34C9E5B065"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-63D5E7FE02F8555FED29",
+        "source_code": "LAB-CARD-TEXT-07B39C98F1",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-63D5E7FE02F8555FED29"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-53778EC85FCE7DC07EF6",
+        "source_code": "LAB-CARD-TEXT-768E5070F6",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-6A651A73B7BA6CADAF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-53778EC85FCE7DC07EF6"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-98869F93342727C4E303",
+        "source_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-6A651A73B7BA6CADAF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-98869F93342727C4E303"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-D9489E72657A7704C659",
+        "source_code": "LAB-CARD-TEXT-768E5070F6",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-D9489E72657A7704C659"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-DB8DE72FB61BD549031B",
+        "source_code": "LAB-CARD-TEXT-43D8A5AEE4",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-835C248B01540CF22F",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-DB8DE72FB61BD549031B"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-F19D50A3E872E0987CA0",
+        "source_code": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-835C248B01540CF22F",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-F19D50A3E872E0987CA0"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-2C84005FA942EA0A8523",
+        "source_code": "LAB-CARD-TEXT-43D8A5AEE4",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-2C84005FA942EA0A8523"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-6831B4825787B2B637E9",
+        "source_code": "LAB-CARD-TEXT-D983BB0EFF",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-556C21D1AA8BF59D2B",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-6831B4825787B2B637E9"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-64BAE335940CE9C552FB",
+        "source_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-556C21D1AA8BF59D2B",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-64BAE335940CE9C552FB"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-D9DD48969F6597DBEE2C",
+        "source_code": "LAB-CARD-TEXT-D983BB0EFF",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-D9DD48969F6597DBEE2C"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-80168FBF4F4224B2BBFE",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-8E96DA78BC099DF8",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-B792011C1B04E2CED1",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-80168FBF4F4224B2BBFE"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-6CED7CC3D3DD04BDDBA8",
+        "source_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-B792011C1B04E2CED1",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-6CED7CC3D3DD04BDDBA8"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-66BCCE3A912922286C2F",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-8E96DA78BC099DF8",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-66BCCE3A912922286C2F"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-6227F30F539AA60E06C3",
+        "source_code": "LAB-CARD-CADREM-AMI-07B39C98F1",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-6227F30F539AA60E06C3"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-8C3EF52AEB2D3F1B6C79",
+        "source_code": "LAB-CARD-CADREM-AMI-07B39C98F1",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-8C3EF52AEB2D3F1B6C79"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-AA49D1E3ACA8907C82C4",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-98464EDC80D81183",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-7431DF213BB48820B0",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-AA49D1E3ACA8907C82C4"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-D9A3486E5C8EAED50BAC",
+        "source_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-7431DF213BB48820B0",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-D9A3486E5C8EAED50BAC"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-1B0CCECCBD06C006E0FA",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-98464EDC80D81183",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-1B0CCECCBD06C006E0FA"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-04C6F8876FC59F1159C3",
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-AAA739D91A",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-0E04935555B27198A8",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-04C6F8876FC59F1159C3"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-67EB302A24F365AFC168",
+        "source_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-0E04935555B27198A8",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-67EB302A24F365AFC168"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-FBF9106CA3D32F9EBE02",
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-AAA739D91A",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-FBF9106CA3D32F9EBE02"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-26499EA504BBE55BA138",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-BE68DCF5C7FF62602C",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-26499EA504BBE55BA138"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-830414F4DBE0B2DB4CC3",
+        "source_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-BE68DCF5C7FF62602C",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-830414F4DBE0B2DB4CC3"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-009B4660927ABBDBF9A4",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-009B4660927ABBDBF9A4"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-71D4725812E8AAF7FC3E",
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-408A62EF5D",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-45A9063A0BBAF46AAA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-71D4725812E8AAF7FC3E"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-897C4F5FE392512B10F5",
+        "source_code": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-45A9063A0BBAF46AAA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-897C4F5FE392512B10F5"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-D75E78E25CB8544819E5",
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-408A62EF5D",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-D75E78E25CB8544819E5"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-5A1DB805A3BBD8EF8462",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-EA39FB0FF19DE7FA",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-4688292B63CA5321B6",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-5A1DB805A3BBD8EF8462"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-BBD9A55F06494B8ADFE5",
+        "source_code": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-4688292B63CA5321B6",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-BBD9A55F06494B8ADFE5"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-451BB3BD09330B54271D",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-EA39FB0FF19DE7FA",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-NTPROBNP-ELEVATED",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-451BB3BD09330B54271D"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-78AD604AB32A1251367F",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-70C17E9844CB4791",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-4659C50833580F451A",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-78AD604AB32A1251367F"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-B5473256E4FC4C655F7B",
+        "source_code": "IND-CARD-AMI-LAB-68AAB9D88BA4",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-4659C50833580F451A",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-B5473256E4FC4C655F7B"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-91E42761BD25C8F406E4",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-70C17E9844CB4791",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-AMI-LAB-68AAB9D88BA4",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-91E42761BD25C8F406E4"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-0C6486AE20D688C7EBA4",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-1621003505C956CA",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-5E3E0521034408195B",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-0C6486AE20D688C7EBA4"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-BC5166A842958688D717",
+        "source_code": "IND-CARD-AMI-LAB-0FC93EB091FE",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-5E3E0521034408195B",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-BC5166A842958688D717"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-FE31AF93E61F72BAB5AD",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-1621003505C956CA",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-AMI-LAB-0FC93EB091FE",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-FE31AF93E61F72BAB5AD"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-D024A629A991EC6B7303",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-24ABD37695B5A0687F",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-D024A629A991EC6B7303"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-A29C8EE18B0E03B56B73",
+        "source_code": "IND-CARD-AMI-LAB-2906F6AE1C62",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-24ABD37695B5A0687F",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-A29C8EE18B0E03B56B73"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-0833A59BC97F451FD384",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-AMI-LAB-2906F6AE1C62",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-0833A59BC97F451FD384"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-E47C3470D06642A0A5A8",
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-43D8A5AEE4",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-835C248B01540CF22F",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-E47C3470D06642A0A5A8"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-C2D35284BB735CD52F0C",
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-43D8A5AEE4",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-C2D35284BB735CD52F0C"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-FCBD76B0C16AB4E7B5C2",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-FE6022A36946E72E",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-18F67F6E5DAB9ADD59",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-FCBD76B0C16AB4E7B5C2"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-FA655D6F372BDDF6BD61",
+        "source_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABBACKFILL-18F67F6E5DAB9ADD59",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-FA655D6F372BDDF6BD61"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-5EAF47D9BE9F547C946E",
+        "source_code": "CARD-SKELETON-20260709-LABTEST-FE6022A36946E72E",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BNP-ELEVATED",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-5EAF47D9BE9F547C946E"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      }
+    ]
+  }
+}

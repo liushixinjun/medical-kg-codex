@@ -1,0 +1,38 @@
+{
+  "node_count": 20,
+  "relation_count": 49,
+  "evidence_node_count": 15,
+  "indicator_node_count": 5,
+  "lab_test_has_indicator_relation_count": 17,
+  "supported_by_evidence_relation_count": 32,
+  "duplicate_node_codes": false,
+  "duplicate_relation_keys": false,
+  "empty_evidence_nodes": [],
+  "relation_without_id": [],
+  "hard_gate_pass": true,
+  "batch_id": "BATCH-CARD-LAB-EVIDENCE-20260713-001",
+  "focus_row_count": 106,
+  "adopted_row_count": 104,
+  "blocked_row_count": 2,
+  "catalog_lab_count": 15,
+  "blocked_labs": [
+    "血培养"
+  ],
+  "adopted_labs": [
+    "BNP",
+    "B型利钠肽",
+    "B型钠尿肽",
+    "NT-proBNP",
+    "N末端B型钠尿肽前体",
+    "动脉血气分析",
+    "电解质",
+    "肌酸激酶",
+    "肌酸激酶同工酶MB",
+    "肌钙蛋白",
+    "肾功能",
+    "脑钠肽",
+    "血糖",
+    "血脂",
+    "血脂检查"
+  ]
+}

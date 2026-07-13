@@ -1,0 +1,3 @@
+﻿disease_code,disease_name,lab_code,lab_name,indicator_count,evidence_count,nonempty_evidence_count,indicators,blocked_reason
+DIS-CARD-CAD-AMI,急性心肌梗死,LAB-CARD-TEXT-48E9A64933,血培养,0,0,0,[],当前缺口主要落在 AMI/HF 等场景，未找到支持这些疾病常规需要血培养的直接证据；只在急性心包炎资料中出现，暂不硬补。
+DIS-CARD-HF,心力衰竭,LAB-CARD-TEXT-48E9A64933,血培养,0,0,0,[],当前缺口主要落在 AMI/HF 等场景，未找到支持这些疾病常规需要血培养的直接证据；只在急性心包炎资料中出现，暂不硬补。

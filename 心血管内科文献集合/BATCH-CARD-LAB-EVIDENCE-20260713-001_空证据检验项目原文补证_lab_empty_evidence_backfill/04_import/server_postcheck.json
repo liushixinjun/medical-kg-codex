@@ -1,0 +1,61 @@
+{
+  "batch_nodes": [
+    {
+      "c": 20,
+      "types": [
+        "Evidence",
+        "ExamIndicator"
+      ]
+    }
+  ],
+  "batch_rels": [
+    {
+      "c": 49,
+      "types": [
+        "lab_test_has_indicator",
+        "supported_by_evidence"
+      ]
+    }
+  ],
+  "empty_batch_evidence": [
+    {
+      "c": 0,
+      "codes": []
+    }
+  ],
+  "non_kg_batch_nodes": [
+    {
+      "c": 0
+    }
+  ],
+  "duplicate_touched_rel": [
+    {
+      "c": 0,
+      "rows": []
+    }
+  ],
+  "remaining_focus_count": 2,
+  "remaining_by_lab_name": {
+    "血培养": 2
+  },
+  "remaining_sample": [
+    {
+      "disease_code": "DIS-CARD-CAD-AMI",
+      "disease_name": "急性心肌梗死",
+      "lab_code": "LAB-CARD-TEXT-48E9A64933",
+      "lab_name": "血培养",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 0,
+      "indicators": []
+    },
+    {
+      "disease_code": "DIS-CARD-HF",
+      "disease_name": "心力衰竭",
+      "lab_code": "LAB-CARD-TEXT-48E9A64933",
+      "lab_name": "血培养",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 0,
+      "indicators": []
+    }
+  ]
+}
