@@ -1,5 +1,39 @@
 # 00_当前项目状态_SNAPSHOT
 
+更新时间：2026-07-14 08:20:00
+
+## 当前阶段
+心血管内科图谱处于“全库质量治理 + 已解析疾病 CDSS 决策层补强”阶段。
+
+## 最新完成
+- `BATCH-CARD-DXC-AVB-COMP-20260714-001` 已导入 Neo4j。
+- 传导阻滞共享诊断标准补齐 8 个下钻明细组件。
+- 全库 `diagnosis_criteria_without_component`：6 → 0。
+- 全库 `required_lab_without_indicator_or_evidence`：0。
+
+## 当前核心问题
+- 全量 `RecommendationStatement` 仍有 53 条候选治理缺口；其中正式 CDSS 推荐缺核心链路为 0。
+- VTE 骨架存在历史段落污染线索，已登记为独立治理任务，未混入本轮。
+
+## 本次不做什么
+- 不清理 VTE 历史污染。
+- 不新增外部网页证据。
+- 不修改 Schema/SKILL 主文档。
+- 不删除历史批次。
+
+## 关键文件入口
+- 本轮批次：`E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\BATCH-CARD-DXC-AVB-COMP-20260714-001_传导阻滞诊断标准明细补齐_AVB_SAB_diagnosis_component_refine`
+- 后置体检：`E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\00_全局质量体检_global_quality_audit\20260714_after_avb_diagnosis_component_refine`
+- 步骤记录：`AI自动化工具-文献指南解析步骤记录.md`
+- 踩坑日志：`_全局复利与踩坑日志.md`
+
+## 下一步唯一建议动作
+治理 53 条全量 RecommendationStatement 候选缺口，先统计缺口类型，再决定补证据、补 action/guideline 关系，或降级为非正式 CDSS 展示。
+
+---
+
+# 00_当前项目状态_SNAPSHOT
+
 更新时间：2026-07-13 23:27:54
 
 ## 当前阶段

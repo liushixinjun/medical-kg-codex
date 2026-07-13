@@ -1,0 +1,19 @@
+{
+  "batch_id": "BATCH-CARD-DXC-AVB-COMP-20260714-001",
+  "created_at": "2026-07-14 07:52:17",
+  "parent_criteria_code": "DX-CARD-5F28B989F353",
+  "component_count": 8,
+  "node_rows": 9,
+  "relation_rows": 24,
+  "source_evidence_codes": [
+    "EVD-03738107C48965887852-BRADY",
+    "EVD-03738107C48965887852-SAB",
+    "EVD-16A802061D09515EA9E8-AVB",
+    "EVD-16A802061D09515EA9E8-AVB3",
+    "EVD-1B1E62A8472E1475EFC1-AVB1",
+    "EVD-B1283A597FF38E5672DA-AVB",
+    "EVD-CA1E4ED0F67E96B40A15-AVB",
+    "EVD-F5F0A207C51A014082F4-AVB"
+  ],
+  "quality_gate": "G2_import_ready"
+}

@@ -1,0 +1,176 @@
+{
+  "non_kg_nodes": {
+    "count": 0
+  },
+  "required_lab_without_indicator_or_evidence": {
+    "count": 0
+  },
+  "diagnosis_criteria_without_component": {
+    "count": 0,
+    "sample": []
+  },
+  "recommendation_statement_missing_core_all": {
+    "count": 53,
+    "sample": [
+      {
+        "code": "REC-CDSS-CAD-STEMI-03-02-FIB-BLOCK",
+        "name": "疑似主动脉夹层、活动性出血或重大出血风险未排除前，不得把溶栓作为可执行推荐。",
+        "evidence_count": 6,
+        "action_count": 0,
+        "guideline_count": 6
+      },
+      {
+        "code": "REC-HT-CKD-DIAG-DXC-CKD",
+        "name": "慢性肾脏病合并高血压：CKD合并高血压诊断标准推荐",
+        "evidence_count": 0,
+        "action_count": 2,
+        "guideline_count": 2
+      },
+      {
+        "code": "REC-HT-CKD-FU-FU-CKD-BP-RENAL",
+        "name": "慢性肾脏病合并高血压：CKD高血压血压和肾功能随访推荐",
+        "evidence_count": 0,
+        "action_count": 2,
+        "guideline_count": 2
+      },
+      {
+        "code": "REC-HT-CKD-TX-PLAN-CARD-BDE62A3BE028",
+        "name": "慢性肾脏病合并高血压：降压治疗推荐",
+        "evidence_count": 0,
+        "action_count": 2,
+        "guideline_count": 2
+      },
+      {
+        "code": "REC-HT-ELDERLY-DIAG-DXC-ELDERLY",
+        "name": "老年高血压：老年高血压诊断标准推荐",
+        "evidence_count": 0,
+        "action_count": 2,
+        "guideline_count": 2
+      },
+      {
+        "code": "REC-HT-ELDERLY-FU-FU-CARD-A15AFD3EECB9",
+        "name": "老年高血压：老年高血压随访方案推荐",
+        "evidence_count": 0,
+        "action_count": 2,
+        "guideline_count": 2
+      },
+      {
+        "code": "REC-HT-ELDERLY-TX-PLAN-CARD-0CDCF256C0E6",
+        "name": "老年高血压：联合降压治疗推荐",
+        "evidence_count": 0,
+        "action_count": 2,
+        "guideline_count": 2
+      },
+      {
+        "code": "REC-HT-EMERGENCY-DIAG-DXC-EMERGENCY",
+        "name": "高血压急症：高血压急症诊断标准推荐",
+        "evidence_count": 0,
+        "action_count": 2,
+        "guideline_count": 2
+      },
+      {
+        "code": "REC-HT-EMERGENCY-FU-FU-CARD-5C2A91913A3B",
+        "name": "高血压急症：高血压急症随访方案推荐",
+        "evidence_count": 0,
+        "action_count": 2,
+        "guideline_count": 2
+      },
+      {
+        "code": "REC-HT-EMERGENCY-TX-PLAN-CARD-0CDCF256C0E6",
+        "name": "高血压急症：联合降压治疗推荐",
+        "evidence_count": 0,
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "code": "REC-HT-EMERGENCY-TX-PLAN-CARD-BDE62A3BE028",
+        "name": "高血压急症：降压治疗推荐",
+        "evidence_count": 0,
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "code": "REC-HT-ENDOCRINE-DIAG-DXC-CARD-71E8C657623B",
+        "name": "内分泌性高血压：内分泌性高血压诊断标准推荐",
+        "evidence_count": 0,
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "code": "REC-HT-ENDOCRINE-FU-FU-CARD-FD508C0F17A1",
+        "name": "内分泌性高血压：内分泌性高血压随访方案推荐",
+        "evidence_count": 0,
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "code": "REC-HT-ENDOCRINE-TX-PLAN-CARD-BDE62A3BE028",
+        "name": "内分泌性高血压：降压治疗推荐",
+        "evidence_count": 0,
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "code": "REC-HT-HT-DIAG-DXC-CARD-AA96D71FB917",
+        "name": "高血压：高血压诊断标准推荐",
+        "evidence_count": 0,
+        "action_count": 2,
+        "guideline_count": 2
+      },
+      {
+        "code": "REC-HT-HT-FU-FU-CARD-67AAA3B7D885",
+        "name": "高血压：高血压随访方案推荐",
+        "evidence_count": 0,
+        "action_count": 2,
+        "guideline_count": 2
+      },
+      {
+        "code": "REC-HT-HT-TX-PLAN-CARD-0CDCF256C0E6",
+        "name": "高血压：联合降压治疗推荐",
+        "evidence_count": 0,
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "code": "REC-HT-HT-TX-PLAN-CARD-2081B78ED14D",
+        "name": "高血压：生活方式干预推荐",
+        "evidence_count": 0,
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "code": "REC-HT-MASKED-DIAG-DXC-MASKED",
+        "name": "隐匿性高血压：隐匿性高血压诊断标准推荐",
+        "evidence_count": 0,
+        "action_count": 2,
+        "guideline_count": 2
+      },
+      {
+        "code": "REC-HT-MASKED-FU-FU-CARD-3DAA53000684",
+        "name": "隐匿性高血压：隐匿性高血压随访方案推荐",
+        "evidence_count": 0,
+        "action_count": 2,
+        "guideline_count": 2
+      }
+    ]
+  },
+  "recommendation_statement_missing_core_formal_cdss": {
+    "count": 0
+  },
+  "differential_without_detail": {
+    "count": 0
+  },
+  "duplicate_semantic_relationships": {
+    "count": 0
+  },
+  "summary": {
+    "non_kg_nodes": 0,
+    "required_lab_without_indicator_or_evidence": 0,
+    "diagnosis_criteria_without_component": 0,
+    "recommendation_statement_missing_core_all": 53,
+    "recommendation_statement_missing_core_formal_cdss": 0,
+    "differential_without_detail": 0,
+    "duplicate_semantic_relationships": 0
+  },
+  "audit_time": "2026-07-14 07:53:48"
+}

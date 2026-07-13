@@ -1,0 +1,12 @@
+{
+  "batch_id": "BATCH-CARD-DXC-AVB-COMP-20260714-001",
+  "checked_at": "2026-07-14 07:52:17",
+  "hard_gate": {
+    "non_kg_nodes": 0,
+    "required_lab_without_indicator_or_evidence": 0,
+    "diagnosis_criteria_without_component": 0,
+    "recommendation_statement_missing_core": 0,
+    "differential_without_detail": 0,
+    "duplicate_semantic_relationships": 0
+  }
+}

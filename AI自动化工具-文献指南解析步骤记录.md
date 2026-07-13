@@ -1,3 +1,29 @@
+## 2026-07-14 08:20:00｜传导阻滞诊断标准明细补齐已导入 Neo4j，诊断标准无明细缺口归零
+
+### 用户问题
+继续按顺序执行全库质量治理，不要让单个节点问题影响全局进度；能安全修复的直接导入，不能安全修复的进入后续治理。
+
+### 根因判断
+1. 6 条 `DiagnosisCriteria` 无明细缺口实际指向同一个共享诊断标准：`DX-CARD-5F28B989F353 / 心电图传导阻滞诊断依据`。
+2. 该诊断标准被房室传导阻滞、一度/二度/三度房室传导阻滞、缓慢性心律失常、窦房传导阻滞共同引用。
+3. 数据问题不是疾病节点缺失，而是共享诊断标准只有标题，缺少 `has_diagnostic_component` 下钻明细。
+4. 教材证据足够，来源为《内科学（第10版）》房室传导阻滞、病态窦房结综合征相关章节。
+
+### 执行结果
+- 批次：`BATCH-CARD-DXC-AVB-COMP-20260714-001`
+- 输出目录：`E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\BATCH-CARD-DXC-AVB-COMP-20260714-001_传导阻滞诊断标准明细补齐_AVB_SAB_diagnosis_component_refine`
+- Neo4j 写入：是
+- 节点 upsert：9 个（父诊断标准属性更新 1 个，诊断标准明细 8 个）
+- 关系 merge：24 条
+- 诊断标准无明细缺口：6 → 0
+- required LabTest 缺指标/证据：0
+- 正式 CDSS 推荐缺核心链路：0
+- 全量 RecommendationStatement 候选治理缺口：53（保留为下一项，不等同于正式 CDSS 硬闸门）
+- 后置体检目录：`E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\00_全局质量体检_global_quality_audit\20260714_after_avb_diagnosis_component_refine`
+
+### 下一步
+继续治理 53 条全量 RecommendationStatement 候选缺口，优先区分“正式 CDSS 推荐”与“候选/展示推荐”，避免把候选治理缺口误报成上线硬阻断。
+
 ## 2026-07-13 23:27:54｜高血压检验指标补链已导入 Neo4j，全库 required LabTest 缺口降至 2 条
 
 ### 用户问题
