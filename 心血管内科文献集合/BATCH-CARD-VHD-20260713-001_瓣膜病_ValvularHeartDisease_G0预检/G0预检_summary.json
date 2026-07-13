@@ -1,0 +1,16 @@
+{
+  "batch_id": "BATCH-CARD-VHD-20260713-001",
+  "top_specialty": "心血管内科",
+  "disease_category": "瓣膜病",
+  "source_root": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\心血管内科\\诊疗指南",
+  "textbook_root": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\心血管内科\\书籍教材",
+  "candidate_file_count": 21,
+  "textbook_count": 1,
+  "guideline_count": 20,
+  "p1_count": 18,
+  "p2_count": 2,
+  "status": "G0_preflight_completed_no_neo4j_write",
+  "next_step": "人工/AI确认纳入清单后执行PDF解析与教材骨架抽取",
+  "p0_count": 1,
+  "note": "《内科学（第10版）》按固定教材骨架来源纳入，不依赖文件名关键词。"
+}

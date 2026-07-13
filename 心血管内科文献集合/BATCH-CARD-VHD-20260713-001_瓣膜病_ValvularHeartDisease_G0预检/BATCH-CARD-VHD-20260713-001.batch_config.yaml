@@ -1,0 +1,11 @@
+batch_id: BATCH-CARD-VHD-20260713-001
+top_specialty: 心血管内科
+disease_category: 瓣膜病
+scope_type: disease_category
+scope_target: 瓣膜病
+source_roots:
+  - E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/诊疗指南
+textbook_roots:
+  - E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/书籍教材
+output_root: E:/BigMouse/0.CDSS文献诊疗指南材料PDF/AI专科知识图谱生成/心血管内科文献集合
+status: G0_preflight_completed_no_neo4j_write

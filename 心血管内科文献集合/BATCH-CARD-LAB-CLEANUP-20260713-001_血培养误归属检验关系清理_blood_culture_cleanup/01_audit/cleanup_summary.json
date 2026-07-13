@@ -1,0 +1,19 @@
+{
+  "batch_id": "BATCH-CARD-LAB-CLEANUP-20260713-001",
+  "target_count": 2,
+  "matched_before_count": 2,
+  "deleted_relation_count": 2,
+  "after": [
+    {
+      "disease_code": "DIS-CARD-CAD-AMI",
+      "lab_code": "LAB-CARD-TEXT-48E9A64933",
+      "remaining_relation_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-HF",
+      "lab_code": "LAB-CARD-TEXT-48E9A64933",
+      "remaining_relation_count": 0
+    }
+  ],
+  "hard_gate_pass": true
+}

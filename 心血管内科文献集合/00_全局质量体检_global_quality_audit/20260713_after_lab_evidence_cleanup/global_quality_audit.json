@@ -1,0 +1,1357 @@
+{
+  "non_kg_nodes": {
+    "count": 0,
+    "sample_labels": []
+  },
+  "empty_evidence_nodes": {
+    "count": 1269,
+    "sample_codes": [
+      "CARD-SKELETON-20260709-EVID-F69C7EE031AF3FAC",
+      "CARD-SKELETON-20260709-EVID-47C515380CC96C9D",
+      "CARD-SKELETON-20260709-EVID-2DE1974BD38A6E77",
+      "CARD-SKELETON-20260709-EVID-72DA51D4E93170F2",
+      "CARD-SKELETON-20260709-EVID-35B1049DF4399B22",
+      "CARD-SKELETON-20260709-EVID-DDFC8A021D300184",
+      "CARD-SKELETON-20260709-EVID-CE39980F73C1A441",
+      "CARD-SKELETON-20260709-EVID-84F844563B07A316",
+      "CARD-SKELETON-20260709-EVID-9B446423F2685D39",
+      "CARD-SKELETON-20260709-EVID-9166EB72290695B4",
+      "CARD-SKELETON-20260709-EVID-504F66DFAA36074C",
+      "CARD-SKELETON-20260709-EVID-EDBF014CDD53D21E",
+      "CARD-SKELETON-20260709-EVID-3CD9CADB035FFAB2",
+      "CARD-SKELETON-20260709-EVID-5A2ECBECF4341FBA",
+      "CARD-SKELETON-20260709-EVID-859983F38A5A0317",
+      "CARD-SKELETON-20260709-EVID-805479FF3416EABD",
+      "CARD-SKELETON-20260709-EVID-06B7B84F116656B4",
+      "CARD-SKELETON-20260709-EVID-0845ACD4B82584AC",
+      "CARD-SKELETON-20260709-EVID-A9BD2AEDA8F6D51B",
+      "CARD-SKELETON-20260709-EVID-4868CFFA1019BF4F",
+      "CARD-SKELETON-20260709-EVID-38208C5FF331E482",
+      "CARD-SKELETON-20260709-EVID-F00D79F6E2F1FE9D",
+      "CARD-SKELETON-20260709-EVID-12C3F899EE100558",
+      "CARD-SKELETON-20260709-EVID-41A392A7302770C8",
+      "CARD-SKELETON-20260709-EVID-E5B90A002A9B62FA",
+      "CARD-SKELETON-20260709-EVID-114FEA35B5630884",
+      "CARD-SKELETON-20260709-EVID-DFEC50B05FB744D4",
+      "CARD-SKELETON-20260709-EVID-FF95C308EB38E46E",
+      "CARD-SKELETON-20260709-EVID-2357269647AB48B7",
+      "CARD-SKELETON-20260709-EVID-7DDDF41E29E4DDE9"
+    ]
+  },
+  "required_lab_without_indicator_or_evidence": [
+    {
+      "disease_code": "DIS-CARD-HT",
+      "disease_name": "高血压",
+      "lab_code": "LAB-CARD-9BAE7B9210AE",
+      "lab_name": "尿白蛋白/肌酐比值",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 9
+    },
+    {
+      "disease_code": "DIS-CARD-HT",
+      "disease_name": "高血压",
+      "lab_code": "LAB-CARD-23D1E86AB4BE",
+      "lab_name": "甲状腺功能",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 22
+    },
+    {
+      "disease_code": "DIS-CARD-HT",
+      "disease_name": "高血压",
+      "lab_code": "LAB-CARD-0C977E67C366",
+      "lab_name": "空腹血糖",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 87
+    },
+    {
+      "disease_code": "DIS-CARD-HT",
+      "disease_name": "高血压",
+      "lab_code": "LAB-CARD-F2BFB7EA8B44",
+      "lab_name": "血尿酸",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 50
+    },
+    {
+      "disease_code": "DIS-CARD-HT",
+      "disease_name": "高血压",
+      "lab_code": "LAB-CARD-D26D76AD854B",
+      "lab_name": "血肌酐",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 61
+    },
+    {
+      "disease_code": "DIS-CARD-HT",
+      "disease_name": "高血压",
+      "lab_code": "LAB-CARD-C59B64C19ADD",
+      "lab_name": "血脂",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 71
+    },
+    {
+      "disease_code": "DIS-CARD-HT",
+      "disease_name": "高血压",
+      "lab_code": "LAB-CARD-91796AAB61B0",
+      "lab_name": "醛固酮/肾素比值",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 22
+    },
+    {
+      "disease_code": "DIS-CARD-HT-CKD",
+      "disease_name": "慢性肾脏病合并高血压",
+      "lab_code": "LAB-CARD-9BAE7B9210AE",
+      "lab_name": "尿白蛋白/肌酐比值",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 9
+    },
+    {
+      "disease_code": "DIS-CARD-HT-CKD",
+      "disease_name": "慢性肾脏病合并高血压",
+      "lab_code": "LAB-CARD-D26D76AD854B",
+      "lab_name": "血肌酐",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 61
+    },
+    {
+      "disease_code": "DIS-CARD-HT-ELDERLY",
+      "disease_name": "老年高血压",
+      "lab_code": "LAB-CARD-0C977E67C366",
+      "lab_name": "空腹血糖",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 87
+    },
+    {
+      "disease_code": "DIS-CARD-HT-ELDERLY",
+      "disease_name": "老年高血压",
+      "lab_code": "LAB-CARD-F2BFB7EA8B44",
+      "lab_name": "血尿酸",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 50
+    },
+    {
+      "disease_code": "DIS-CARD-HT-ELDERLY",
+      "disease_name": "老年高血压",
+      "lab_code": "LAB-CARD-D26D76AD854B",
+      "lab_name": "血肌酐",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 61
+    },
+    {
+      "disease_code": "DIS-CARD-HT-ELDERLY",
+      "disease_name": "老年高血压",
+      "lab_code": "LAB-CARD-C59B64C19ADD",
+      "lab_name": "血脂",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 71
+    },
+    {
+      "disease_code": "DIS-CARD-HT-EMERGENCY",
+      "disease_name": "高血压急症",
+      "lab_code": "LAB-CARD-0C977E67C366",
+      "lab_name": "空腹血糖",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 87
+    },
+    {
+      "disease_code": "DIS-CARD-HT-EMERGENCY",
+      "disease_name": "高血压急症",
+      "lab_code": "LAB-CARD-D26D76AD854B",
+      "lab_name": "血肌酐",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 61
+    },
+    {
+      "disease_code": "DIS-CARD-HT-EMERGENCY",
+      "disease_name": "高血压急症",
+      "lab_code": "LAB-CARD-C59B64C19ADD",
+      "lab_name": "血脂",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 71
+    },
+    {
+      "disease_code": "DIS-CARD-HT-ENDOCRINE",
+      "disease_name": "内分泌性高血压",
+      "lab_code": "LAB-CARD-23D1E86AB4BE",
+      "lab_name": "甲状腺功能",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 22
+    },
+    {
+      "disease_code": "DIS-CARD-HT-ENDOCRINE",
+      "disease_name": "内分泌性高血压",
+      "lab_code": "LAB-CARD-0C977E67C366",
+      "lab_name": "空腹血糖",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 87
+    },
+    {
+      "disease_code": "DIS-CARD-HT-MASKED",
+      "disease_name": "隐匿性高血压",
+      "lab_code": "LAB-CARD-C59B64C19ADD",
+      "lab_name": "血脂",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 71
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "lab_code": "LAB-CARD-23D1E86AB4BE",
+      "lab_name": "甲状腺功能",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 22
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "lab_code": "LAB-CARD-0C977E67C366",
+      "lab_name": "空腹血糖",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 87
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "lab_code": "LAB-CARD-F2BFB7EA8B44",
+      "lab_name": "血尿酸",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 50
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "lab_code": "LAB-CARD-D26D76AD854B",
+      "lab_name": "血肌酐",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 61
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "lab_code": "LAB-CARD-C59B64C19ADD",
+      "lab_name": "血脂",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 71
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "lab_code": "LAB-CARD-91796AAB61B0",
+      "lab_name": "醛固酮/肾素比值",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 22
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PAROXYSMAL",
+      "disease_name": "发作性高血压",
+      "lab_code": "LAB-CARD-23D1E86AB4BE",
+      "lab_name": "甲状腺功能",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 22
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PAROXYSMAL",
+      "disease_name": "发作性高血压",
+      "lab_code": "LAB-CARD-0C977E67C366",
+      "lab_name": "空腹血糖",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 87
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PRIMARY",
+      "disease_name": "原发性高血压",
+      "lab_code": "LAB-CARD-0C977E67C366",
+      "lab_name": "空腹血糖",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 87
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PRIMARY",
+      "disease_name": "原发性高血压",
+      "lab_code": "LAB-CARD-F2BFB7EA8B44",
+      "lab_name": "血尿酸",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 50
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PRIMARY",
+      "disease_name": "原发性高血压",
+      "lab_code": "LAB-CARD-D26D76AD854B",
+      "lab_name": "血肌酐",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 61
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PRIMARY",
+      "disease_name": "原发性高血压",
+      "lab_code": "LAB-CARD-C59B64C19ADD",
+      "lab_name": "血脂",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 71
+    },
+    {
+      "disease_code": "DIS-CARD-HT-RENAL-PARENCHYMAL",
+      "disease_name": "肾实质性高血压",
+      "lab_code": "LAB-CARD-F2BFB7EA8B44",
+      "lab_name": "血尿酸",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 50
+    },
+    {
+      "disease_code": "DIS-CARD-HT-RESISTANT",
+      "disease_name": "难治性高血压",
+      "lab_code": "LAB-CARD-23D1E86AB4BE",
+      "lab_name": "甲状腺功能",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 22
+    },
+    {
+      "disease_code": "DIS-CARD-HT-RESISTANT",
+      "disease_name": "难治性高血压",
+      "lab_code": "LAB-CARD-0C977E67C366",
+      "lab_name": "空腹血糖",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 87
+    },
+    {
+      "disease_code": "DIS-CARD-HT-RESISTANT",
+      "disease_name": "难治性高血压",
+      "lab_code": "LAB-CARD-F2BFB7EA8B44",
+      "lab_name": "血尿酸",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 50
+    },
+    {
+      "disease_code": "DIS-CARD-HT-RESISTANT",
+      "disease_name": "难治性高血压",
+      "lab_code": "LAB-CARD-D26D76AD854B",
+      "lab_name": "血肌酐",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 61
+    },
+    {
+      "disease_code": "DIS-CARD-HT-RESISTANT",
+      "disease_name": "难治性高血压",
+      "lab_code": "LAB-CARD-C59B64C19ADD",
+      "lab_name": "血脂",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 71
+    },
+    {
+      "disease_code": "DIS-CARD-HT-RESISTANT",
+      "disease_name": "难治性高血压",
+      "lab_code": "LAB-CARD-91796AAB61B0",
+      "lab_name": "醛固酮/肾素比值",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 22
+    },
+    {
+      "disease_code": "DIS-CARD-HT-SECONDARY",
+      "disease_name": "继发性高血压",
+      "lab_code": "LAB-CARD-9BAE7B9210AE",
+      "lab_name": "尿白蛋白/肌酐比值",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 9
+    },
+    {
+      "disease_code": "DIS-CARD-HT-SECONDARY",
+      "disease_name": "继发性高血压",
+      "lab_code": "LAB-CARD-23D1E86AB4BE",
+      "lab_name": "甲状腺功能",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 22
+    },
+    {
+      "disease_code": "DIS-CARD-HT-SECONDARY",
+      "disease_name": "继发性高血压",
+      "lab_code": "LAB-CARD-0C977E67C366",
+      "lab_name": "空腹血糖",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 87
+    },
+    {
+      "disease_code": "DIS-CARD-HT-SECONDARY",
+      "disease_name": "继发性高血压",
+      "lab_code": "LAB-CARD-F2BFB7EA8B44",
+      "lab_name": "血尿酸",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 50
+    },
+    {
+      "disease_code": "DIS-CARD-HT-SECONDARY",
+      "disease_name": "继发性高血压",
+      "lab_code": "LAB-CARD-D26D76AD854B",
+      "lab_name": "血肌酐",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 61
+    },
+    {
+      "disease_code": "DIS-CARD-HT-SECONDARY",
+      "disease_name": "继发性高血压",
+      "lab_code": "LAB-CARD-C59B64C19ADD",
+      "lab_name": "血脂",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 71
+    },
+    {
+      "disease_code": "DIS-CARD-HT-SECONDARY",
+      "disease_name": "继发性高血压",
+      "lab_code": "LAB-CARD-91796AAB61B0",
+      "lab_name": "醛固酮/肾素比值",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 22
+    },
+    {
+      "disease_code": "DIS-CARD-HT-URGENCY",
+      "disease_name": "高血压亚急症",
+      "lab_code": "LAB-CARD-0C977E67C366",
+      "lab_name": "空腹血糖",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 87
+    },
+    {
+      "disease_code": "DIS-CARD-HT-URGENCY",
+      "disease_name": "高血压亚急症",
+      "lab_code": "LAB-CARD-C59B64C19ADD",
+      "lab_name": "血脂",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 71
+    },
+    {
+      "disease_code": "DIS-CARD-HT-WCH",
+      "disease_name": "白大衣高血压",
+      "lab_code": "LAB-CARD-23D1E86AB4BE",
+      "lab_name": "甲状腺功能",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 22
+    },
+    {
+      "disease_code": "DIS-CARD-HT-WCH",
+      "disease_name": "白大衣高血压",
+      "lab_code": "LAB-CARD-0C977E67C366",
+      "lab_name": "空腹血糖",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 87
+    },
+    {
+      "disease_code": "DIS-CARD-HT-WCH",
+      "disease_name": "白大衣高血压",
+      "lab_code": "LAB-CARD-C59B64C19ADD",
+      "lab_name": "血脂",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 71
+    },
+    {
+      "disease_code": "DIS-CARD-HT-WCH",
+      "disease_name": "白大衣高血压",
+      "lab_code": "LAB-CARD-91796AAB61B0",
+      "lab_name": "醛固酮/肾素比值",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 22
+    },
+    {
+      "disease_code": "DIS-CARD-IE",
+      "disease_name": "感染性心内膜炎",
+      "lab_code": "LAB-CARD-TEXT-48E9A64933",
+      "lab_name": "血培养",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-IE-PVE",
+      "disease_name": "人工瓣膜心内膜炎",
+      "lab_code": "LAB-CARD-TEXT-48E9A64933",
+      "lab_name": "血培养",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-PERICARD-ACUTE",
+      "disease_name": "急性心包炎",
+      "lab_code": "CARD-SKELETON-FULL-20260709-LABTEST-963F52815A5370A3",
+      "lab_name": "D-二聚体",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-PERICARD-EFFUSION",
+      "disease_name": "心包积液及心脏压塞",
+      "lab_code": "LAB-CARD-TEXT-48E9A64933",
+      "lab_name": "血培养",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-VTE",
+      "disease_name": "静脉血栓症",
+      "lab_code": "CARD-SKELETON-FULL-20260709-LABTEST-963F52815A5370A3",
+      "lab_name": "D-二聚体",
+      "indicator_count": 0,
+      "nonempty_evidence_count": 0
+    }
+  ],
+  "indicator_without_evidence": [],
+  "diagnosis_criteria_without_component": [
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "criteria_code": "DX-CARD-5F28B989F353",
+      "criteria_name": "心电图传导阻滞诊断依据"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "criteria_code": "DX-CARD-5F28B989F353",
+      "criteria_name": "心电图传导阻滞诊断依据"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "criteria_code": "DX-CARD-5F28B989F353",
+      "criteria_name": "心电图传导阻滞诊断依据"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "criteria_code": "DX-CARD-5F28B989F353",
+      "criteria_name": "心电图传导阻滞诊断依据"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "criteria_code": "DXC-CARD-464F39D5B91C",
+      "criteria_name": "束支传导阻滞诊断标准"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "criteria_code": "DX-CARD-5F28B989F353",
+      "criteria_name": "心电图传导阻滞诊断依据"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "criteria_code": "DX-CARD-5F28B989F353",
+      "criteria_name": "心电图传导阻滞诊断依据"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "criteria_code": "DXC-CARD-5121D5B9EC6F",
+      "criteria_name": "窦性心动过缓诊断标准"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "criteria_code": "DXC-CARD-B000729B8734",
+      "criteria_name": "窦房结功能障碍诊断标准"
+    },
+    {
+      "disease_code": "DIS-CARD-HT",
+      "disease_name": "高血压",
+      "criteria_code": "DXC-CARD-AA96D71FB917",
+      "criteria_name": "高血压诊断标准"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-CKD",
+      "disease_name": "慢性肾脏病合并高血压",
+      "criteria_code": "DXC-HT-CKD",
+      "criteria_name": "CKD合并高血压诊断标准"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-ELDERLY",
+      "disease_name": "老年高血压",
+      "criteria_code": "DXC-HT-ELDERLY",
+      "criteria_name": "老年高血压诊断标准"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-EMERGENCY",
+      "disease_name": "高血压急症",
+      "criteria_code": "DXC-HT-EMERGENCY",
+      "criteria_name": "高血压急症诊断标准"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-ENDOCRINE",
+      "disease_name": "内分泌性高血压",
+      "criteria_code": "DXC-CARD-71E8C657623B",
+      "criteria_name": "内分泌性高血压诊断标准"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-MASKED",
+      "disease_name": "隐匿性高血压",
+      "criteria_code": "DXC-HT-MASKED",
+      "criteria_name": "隐匿性高血压诊断标准"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "criteria_code": "DXC-CARD-56EBD83589B6",
+      "criteria_name": "原发性醛固酮增多症诊断标准"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PAROXYSMAL",
+      "disease_name": "发作性高血压",
+      "criteria_code": "DXC-HT-PAROXYSMAL",
+      "criteria_name": "发作性高血压诊断标准"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PRIMARY",
+      "disease_name": "原发性高血压",
+      "criteria_code": "DXC-CARD-317486966B34",
+      "criteria_name": "原发性高血压诊断标准"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-RENAL-PARENCHYMAL",
+      "disease_name": "肾实质性高血压",
+      "criteria_code": "DXC-HT-RENAL-PARENCHYMAL",
+      "criteria_name": "肾实质性高血压诊断标准"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-RENOVASCULAR",
+      "disease_name": "肾血管性高血压",
+      "criteria_code": "DXC-HT-RENOVASCULAR",
+      "criteria_name": "肾血管性高血压诊断标准"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-RESISTANT",
+      "disease_name": "难治性高血压",
+      "criteria_code": "DXC-CARD-ACE197340A13",
+      "criteria_name": "难治性高血压诊断标准"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-SECONDARY",
+      "disease_name": "继发性高血压",
+      "criteria_code": "DXC-CARD-E024FB14B96D",
+      "criteria_name": "继发性高血压诊断标准"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-URGENCY",
+      "disease_name": "高血压亚急症",
+      "criteria_code": "DXC-HT-URGENCY",
+      "criteria_name": "高血压亚急症诊断标准"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-WCH",
+      "disease_name": "白大衣高血压",
+      "criteria_code": "DXC-HT-WCH",
+      "criteria_name": "白大衣高血压诊断标准"
+    }
+  ],
+  "differential_without_detail": [],
+  "recommendation_statement_missing_core": [
+    {
+      "recommendation_code": "REC-047C1E2BE0811E47",
+      "recommendation_name": "急性冠脉综合征路径随访安全规则｜急性冠脉综合征随访方案（随访）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-06672B182152B976",
+      "recommendation_name": "房颤抗凝治疗规则｜达比加群（药物）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-069462846083A451",
+      "recommendation_name": "长QT间期综合征路径随访安全规则｜长QT间期综合征随访与复查方案（随访）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-06A4C4DDBAEDAA6A",
+      "recommendation_name": "STEMI再灌注策略选择规则｜溶栓治疗（操作/手术）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-07308C6CEE0C3A7E",
+      "recommendation_name": "不稳定型心绞痛路径评估规则｜不稳定型心绞痛诊断标准（诊断标准）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 5
+    },
+    {
+      "recommendation_code": "REC-07471D46DB30A44D",
+      "recommendation_name": "儿茶酚胺敏感性多形性室性心动过速路径治疗决策规则｜儿茶酚胺敏感性多形性室性心动过速治疗方案（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-0865E023D4216664",
+      "recommendation_name": "不稳定型心绞痛路径治疗决策规则｜复律治疗（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 5
+    },
+    {
+      "recommendation_code": "REC-09D8E5D4AD1DFC74",
+      "recommendation_name": "室上速/房扑心电机制分型规则｜心房扑动诊断标准（诊断标准）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-0AE833429DB28639",
+      "recommendation_name": "心脏性猝死路径治疗决策规则｜抗心律失常药物治疗（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-0B490AFB3BD72C3E",
+      "recommendation_name": "非持续性室性心动过速路径治疗决策规则｜电复律除颤（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-0C33C27DD9EEF105",
+      "recommendation_name": "急性冠脉综合征路径治疗决策规则｜抗凝治疗（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-0C4298F05F8B721B",
+      "recommendation_name": "STEMI抗血小板与抗凝治疗规则｜阿司匹林（药物）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-0C79D172AF1123A2",
+      "recommendation_name": "肥厚型心肌病路径随访安全规则｜肥厚型心肌病随访方案（随访）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 4
+    },
+    {
+      "recommendation_code": "REC-0CEA840B84C9A729",
+      "recommendation_name": "儿茶酚胺敏感性多形性室性心动过速路径治疗决策规则｜电复律除颤（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-0D8FA636CC44E581",
+      "recommendation_name": "持续性室性心动过速路径治疗决策规则｜射频消融治疗（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-0DB8C46972871FD9",
+      "recommendation_name": "心脏骤停路径随访安全规则｜心脏骤停随访方案（随访）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-0DDF91E5FAF604FF",
+      "recommendation_name": "致心律失常性双心室心肌病路径治疗决策规则｜抗凝治疗（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-0E671D461545F253",
+      "recommendation_name": "长QT间期综合征路径治疗决策规则｜ICD治疗（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-0F630AC742C64BB6",
+      "recommendation_name": "心衰LVEF分型规则｜射血分数降低的心力衰竭诊断标准（诊断标准）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-0F86F06B81582959",
+      "recommendation_name": "心房心肌病路径随访安全规则｜心房心肌病随访方案（随访）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 4
+    },
+    {
+      "recommendation_code": "REC-0F8ACA9DB3CC3645",
+      "recommendation_name": "稳定窄QRS SVT急性终止规则｜腺苷（药物）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-0FCD2D2818CA7033",
+      "recommendation_name": "房颤随访规则｜CHA2DS2-VASc评分（风险分层）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-121D8EE47068F523",
+      "recommendation_name": "Brugada综合征路径治疗决策规则｜Brugada综合征治疗方案（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 4
+    },
+    {
+      "recommendation_code": "REC-13AB94BB541808B3",
+      "recommendation_name": "STEMI溶栓禁忌阻断规则｜溶栓治疗（操作/手术）阻断",
+      "evidence_count": 0,
+      "action_count": 0,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-142D35EEB9FF17B3",
+      "recommendation_name": "房颤节律控制与导管消融规则｜导管消融（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-14B40A1608CFAC32",
+      "recommendation_name": "STEMI再灌注策略选择规则｜经皮冠状动脉介入治疗（操作/手术）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-15126939F30762EE",
+      "recommendation_name": "室性心律失常路径评估规则｜室性心律失常诊断标准（诊断标准）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 4
+    },
+    {
+      "recommendation_code": "REC-15D009D072BC4234",
+      "recommendation_name": "心脏骤停路径治疗决策规则｜电复律除颤（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-194C9DD47E025699",
+      "recommendation_name": "室性期前收缩路径治疗决策规则｜室性期前收缩治疗方案（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-196DB89B6F2507F4",
+      "recommendation_name": "尖端扭转型室性心动过速路径治疗决策规则｜抗心律失常药物治疗（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-19EFD56BD1F71BD1",
+      "recommendation_name": "房颤抗凝治疗规则｜利伐沙班（药物）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-1CEE0915FBC45FD4",
+      "recommendation_name": "持续性室性心动过速路径治疗决策规则｜电复律除颤（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-1D8686DF38D53C27",
+      "recommendation_name": "室性期前收缩路径治疗决策规则｜抗心律失常药物治疗（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-1D9D5DD75D6E3744",
+      "recommendation_name": "室上速/房扑心电机制分型规则｜动态心电图（检查）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-1DB8472584314B12",
+      "recommendation_name": "隐匿性冠心病路径评估规则｜隐匿性冠心病诊断标准（诊断标准）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-1EAC86CC172E82A3",
+      "recommendation_name": "HFrEF长期规范药物治疗规则｜血管紧张素Ⅱ受体阻滞剂（药物）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-1F08D0D8F95F8840",
+      "recommendation_name": "急性心衰淤血处理规则｜袢利尿剂（药物）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-1F0F59A9B1E764A4",
+      "recommendation_name": "房颤急性复律/心率控制规则｜胺碘酮（药物）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-20F0795395FF6BB7",
+      "recommendation_name": "Brugada综合征路径治疗决策规则｜抗心律失常药物治疗（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 4
+    },
+    {
+      "recommendation_code": "REC-20FCDA444A5F1A22",
+      "recommendation_name": "限制型心肌病路径随访安全规则｜限制型心肌病随访方案（随访）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-2146FE591FCE5050",
+      "recommendation_name": "尖端扭转型室性心动过速路径随访安全规则｜尖端扭转型室性心动过速随访方案（随访）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-2151FE38ACEFD11D",
+      "recommendation_name": "心脏骤停路径评估规则｜心脏骤停诊断标准（诊断标准）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-21D990E4430DC5ED",
+      "recommendation_name": "非扩张型左心室心肌病路径随访安全规则｜NDLVCM长期表型和猝死风险随访（随访）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 4
+    },
+    {
+      "recommendation_code": "REC-21F28579B6832C61",
+      "recommendation_name": "STEMI再灌注策略选择规则｜冠状动脉造影（检查）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-2552823372289E79",
+      "recommendation_name": "室性心律失常路径治疗决策规则｜室性心律失常治疗方案（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 4
+    },
+    {
+      "recommendation_code": "REC-2803D585674F1A5A",
+      "recommendation_name": "儿茶酚胺敏感性多形性室性心动过速路径随访安全规则｜儿茶酚胺敏感性多形性室性心动过速风险分层（风险分层）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-2896C7CB028F9764",
+      "recommendation_name": "复发性SVT消融评估规则｜射频导管消融（操作/手术）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-28E5C440737AB289",
+      "recommendation_name": "心脏骤停路径治疗决策规则｜射频消融治疗（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-292BE2CF55986450",
+      "recommendation_name": "HFrEF长期规范药物治疗规则｜盐皮质激素受体拮抗剂（药物）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-2B0A860969D0CB18",
+      "recommendation_name": "致心律失常性心肌病路径治疗决策规则｜致心律失常性心肌病治疗方案（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-2B53E0EC6FAAF3FC",
+      "recommendation_name": "肥厚型心肌病路径治疗决策规则｜抗凝治疗（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 4
+    },
+    {
+      "recommendation_code": "REC-2C459FB26708DAD8",
+      "recommendation_name": "儿茶酚胺敏感性多形性室性心动过速路径评估规则｜儿茶酚胺敏感性多形性室性心动过速诊断标准（诊断标准）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-2D007FEA16344C82",
+      "recommendation_name": "致心律失常性右心室心肌病路径治疗决策规则｜致心律失常性右心室心肌病治疗方案（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-2D0C8BD190242AD2",
+      "recommendation_name": "房颤抗凝治疗规则｜抗凝药物（药物）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-2D3B6B1813298A97",
+      "recommendation_name": "STEMI抗血小板与抗凝治疗规则｜抗凝治疗（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-2DDCA667F430F3FA",
+      "recommendation_name": "扩张型心肌病路径治疗决策规则｜扩张型心肌病治疗方案（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-300EDB319691EA8A",
+      "recommendation_name": "心室扑动与心室颤动路径治疗决策规则｜抗心律失常药物治疗（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-312145D109A8F691",
+      "recommendation_name": "房扑抗凝复律规则｜抗凝药物（药物）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-31FDF389F87DF498",
+      "recommendation_name": "稳定型心绞痛路径治疗决策规则｜稳定型心绞痛治疗方案（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-333AA9DF420F7DB2",
+      "recommendation_name": "心房心肌病路径治疗决策规则｜房性心律失常与卒中风险管理（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 4
+    },
+    {
+      "recommendation_code": "REC-33FC7A359E1DA0BB",
+      "recommendation_name": "STEMI溶栓禁忌阻断规则｜溶栓治疗（治疗方案）阻断",
+      "evidence_count": 0,
+      "action_count": 0,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-346A7B6F72203B80",
+      "recommendation_name": "肥厚型心肌病路径治疗决策规则｜肥厚型心肌病治疗方案（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 4
+    },
+    {
+      "recommendation_code": "REC-34AFE54CFB0F02B9",
+      "recommendation_name": "缺血性心肌病路径治疗决策规则｜血运重建（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-34FC7853D08FE26F",
+      "recommendation_name": "稳定窄QRS SVT急性终止规则｜颈动脉窦按摩（操作/手术）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-3565AC8D78FB12CB",
+      "recommendation_name": "STEMI抗血小板与抗凝治疗规则｜普通肝素（药物）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-35AFFC16987E38D3",
+      "recommendation_name": "影像学新发室壁运动异常｜超声心动图（检查）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-368BDCEFBC65FAC9",
+      "recommendation_name": "长QT间期综合征路径治疗决策规则｜电复律除颤（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-373A59A06A078858",
+      "recommendation_name": "尖端扭转型室性心动过速路径治疗决策规则｜电复律除颤（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-3988F9FE0A801E2A",
+      "recommendation_name": "室性心律失常路径治疗决策规则｜射频消融治疗（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 4
+    },
+    {
+      "recommendation_code": "REC-3993D6D74CED11F4",
+      "recommendation_name": "尖端扭转型室性心动过速路径治疗决策规则｜尖端扭转型室性心动过速治疗方案（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-3A1C60225ED42F22",
+      "recommendation_name": "STEMI抗血小板与抗凝治疗规则｜低分子量肝素（药物）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-3A4D17008D1F8F04",
+      "recommendation_name": "室性心律失常路径治疗决策规则｜电复律除颤（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 4
+    },
+    {
+      "recommendation_code": "REC-3A6BA48320B05217",
+      "recommendation_name": "心衰疑诊利钠肽与超声评估规则｜左心室射血分数（ExamIndicator）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-3F196A9FDA47EC87",
+      "recommendation_name": "HFrEF长期规范药物治疗规则｜血管紧张素受体脑啡肽酶抑制剂（药物）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-409D51FF3EF8F9F0",
+      "recommendation_name": "淀粉样变心肌病路径评估规则｜淀粉样变心肌病诊断标准（诊断标准）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-4160846401ECB617",
+      "recommendation_name": "致心律失常性心肌病路径随访安全规则｜致心律失常性心肌病随访方案（随访）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-427E7B3010D2852C",
+      "recommendation_name": "STEMI二级预防与随访规则｜瑞舒伐他汀（药物）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-43B5E8668891D88E",
+      "recommendation_name": "非扩张型左心室心肌病路径评估规则｜CMR-LGE非缺血性瘢痕诊断依据（诊断标准）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 4
+    },
+    {
+      "recommendation_code": "REC-43CB93405DFD3C3B",
+      "recommendation_name": "淀粉样变心肌病路径治疗决策规则｜淀粉样变心肌病治疗方案（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-448ED7FBC949A6A0",
+      "recommendation_name": "尖端扭转型室性心动过速路径治疗决策规则｜ICD治疗（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-44C54EB75362E681",
+      "recommendation_name": "非持续性室性心动过速路径随访安全规则｜非持续性室性心动过速随访与复查方案（随访）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-45BF0572CB073F1B",
+      "recommendation_name": "长QT间期综合征路径治疗决策规则｜抗心律失常药物治疗（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-473085E274C198B4",
+      "recommendation_name": "慢性冠脉综合征路径随访安全规则｜慢性冠脉综合征随访方案（随访）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 4
+    },
+    {
+      "recommendation_code": "REC-484D25F1C92C158A",
+      "recommendation_name": "持续性室性心动过速路径评估规则｜持续性室性心动过速诊断标准（诊断标准）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-4879BC5487C0237C",
+      "recommendation_name": "房颤随访规则｜HAS-BLED评分（风险分层）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-48ACCA58849D7D40",
+      "recommendation_name": "房颤卒中出血评分规则｜CHA2DS2-VASc评分（风险分层）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-4AC0AA29BB44F05E",
+      "recommendation_name": "限制型心肌病路径评估规则｜限制型心肌病诊断标准（诊断标准）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-4B0CDD61249087E3",
+      "recommendation_name": "房颤节律控制与导管消融规则｜房颤导管消融（操作/手术）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-4D99AA7991249384",
+      "recommendation_name": "心衰疑诊利钠肽与超声评估规则｜利钠肽（检查）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-4DC54492700DB784",
+      "recommendation_name": "房颤卒中出血评分规则｜HAS-BLED评分（风险分层）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-4E1F1511A359893F",
+      "recommendation_name": "致心律失常性左心室心肌病路径随访安全规则｜致心律失常性左心室心肌病风险分层（风险分层）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-4E58B5A027DD1859",
+      "recommendation_name": "STEMI诊断确认规则｜超声心动图（检查）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-4E992FA271E92226",
+      "recommendation_name": "心脏性猝死路径治疗决策规则｜心脏性猝死治疗方案（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 3
+    },
+    {
+      "recommendation_code": "REC-4F29DF99898C8CC2",
+      "recommendation_name": "不稳定型心绞痛路径随访安全规则｜不稳定型心绞痛随访方案（随访）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 5
+    },
+    {
+      "recommendation_code": "REC-503DA5FFF8F7E70B",
+      "recommendation_name": "儿茶酚胺敏感性多形性室性心动过速路径治疗决策规则｜ICD治疗（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-50DB7AB6BC0A0C92",
+      "recommendation_name": "慢性冠脉综合征路径治疗决策规则｜慢性冠脉综合征治疗方案（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 4
+    },
+    {
+      "recommendation_code": "REC-519A282D9FA59F80",
+      "recommendation_name": "稳定型心绞痛路径治疗决策规则｜抗血小板治疗（治疗方案）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-52314CDED5532BDA",
+      "recommendation_name": "HFrEF长期规范药物治疗规则｜钠-葡萄糖协同转运蛋白2抑制剂（药物）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    },
+    {
+      "recommendation_code": "REC-53005B26BDC41745",
+      "recommendation_name": "室性期前收缩路径随访安全规则｜室性期前收缩随访方案（随访）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 2
+    },
+    {
+      "recommendation_code": "REC-5313C02E33DB1945",
+      "recommendation_name": "室上速/房扑心电机制分型规则｜心电图（检查）推荐",
+      "evidence_count": 0,
+      "action_count": 1,
+      "guideline_count": 1
+    }
+  ],
+  "duplicate_semantic_relationships": [],
+  "summary_counts": {
+    "node_count": 43677,
+    "relation_count": 140884
+  },
+  "metric_counts": {
+    "non_kg_nodes": 0,
+    "empty_evidence_nodes": 1269,
+    "required_lab_without_indicator_or_evidence": 56,
+    "indicator_without_evidence": 0,
+    "diagnosis_criteria_without_component": 24,
+    "differential_without_detail": 0,
+    "recommendation_statement_missing_core": 100,
+    "duplicate_semantic_relationships": 0
+  },
+  "hard_gate_pass": false
+}
