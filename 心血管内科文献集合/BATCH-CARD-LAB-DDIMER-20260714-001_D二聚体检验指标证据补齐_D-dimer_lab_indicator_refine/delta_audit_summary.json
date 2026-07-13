@@ -1,0 +1,13 @@
+{
+  "batch_id": "BATCH-CARD-LAB-DDIMER-20260714-001",
+  "created_at": "2026-07-14 07:37:14",
+  "node_count": 3,
+  "relation_count": 8,
+  "target_lab_code": "CARD-SKELETON-FULL-20260709-LABTEST-963F52815A5370A3",
+  "target_lab_name": "D-二聚体",
+  "evidence_codes": [
+    "EVD-0F39A4044FE5018F6EB2-HF",
+    "EVD-CARD-DEEP-686B95F36EE3E6"
+  ],
+  "scope": "clear_required_lab_without_indicator_or_evidence hard gate for D-dimer"
+}

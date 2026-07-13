@@ -1,0 +1,56 @@
+{
+  "batch_id": "BATCH-CARD-LAB-DDIMER-20260714-001",
+  "merged_nodes": 3,
+  "merged_relations": 8,
+  "relationship_context_updates": 2,
+  "precheck": [
+    {
+      "source_code": "CARD-SKELETON-FULL-20260709-LABTEST-963F52815A5370A3",
+      "target_code": "IND-CARD-LAB-DDIMER-PTE-NEG-20260714",
+      "relationType": "lab_test_has_indicator",
+      "both_found": true
+    },
+    {
+      "source_code": "CARD-SKELETON-FULL-20260709-LABTEST-963F52815A5370A3",
+      "target_code": "IND-CARD-LAB-DDIMER-AGE-ADJ-20260714",
+      "relationType": "lab_test_has_indicator",
+      "both_found": true
+    },
+    {
+      "source_code": "CARD-SKELETON-FULL-20260709-LABTEST-963F52815A5370A3",
+      "target_code": "IND-CARD-LAB-DDIMER-PE-ELEVATED-20260714",
+      "relationType": "lab_test_has_indicator",
+      "both_found": true
+    },
+    {
+      "source_code": "CARD-SKELETON-FULL-20260709-LABTEST-963F52815A5370A3",
+      "target_code": "EVD-0F39A4044FE5018F6EB2-HF",
+      "relationType": "supported_by_evidence",
+      "both_found": true
+    },
+    {
+      "source_code": "CARD-SKELETON-FULL-20260709-LABTEST-963F52815A5370A3",
+      "target_code": "EVD-CARD-DEEP-686B95F36EE3E6",
+      "relationType": "supported_by_evidence",
+      "both_found": true
+    },
+    {
+      "source_code": "IND-CARD-LAB-DDIMER-PTE-NEG-20260714",
+      "target_code": "EVD-0F39A4044FE5018F6EB2-HF",
+      "relationType": "supported_by_evidence",
+      "both_found": true
+    },
+    {
+      "source_code": "IND-CARD-LAB-DDIMER-AGE-ADJ-20260714",
+      "target_code": "EVD-0F39A4044FE5018F6EB2-HF",
+      "relationType": "supported_by_evidence",
+      "both_found": true
+    },
+    {
+      "source_code": "IND-CARD-LAB-DDIMER-PE-ELEVATED-20260714",
+      "target_code": "EVD-CARD-DEEP-686B95F36EE3E6",
+      "relationType": "supported_by_evidence",
+      "both_found": true
+    }
+  ]
+}

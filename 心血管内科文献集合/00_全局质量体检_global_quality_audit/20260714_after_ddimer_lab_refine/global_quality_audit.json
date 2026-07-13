@@ -1,0 +1,216 @@
+{
+  "non_kg_nodes": {
+    "count": 0,
+    "sample": []
+  },
+  "required_lab_without_indicator_or_evidence": {
+    "count": 0,
+    "sample": []
+  },
+  "diagnosis_criteria_without_component": {
+    "count": 6,
+    "sample": [
+      {
+        "disease_code": "DIS-CARD-ARR-AVB",
+        "criteria_name": "心电图传导阻滞诊断依据",
+        "disease_name": "房室传导阻滞",
+        "criteria_code": "DX-CARD-5F28B989F353"
+      },
+      {
+        "disease_code": "DIS-CARD-ARR-AVB1",
+        "criteria_name": "心电图传导阻滞诊断依据",
+        "disease_name": "一度房室传导阻滞",
+        "criteria_code": "DX-CARD-5F28B989F353"
+      },
+      {
+        "disease_code": "DIS-CARD-ARR-AVB2",
+        "criteria_name": "心电图传导阻滞诊断依据",
+        "disease_name": "二度房室传导阻滞",
+        "criteria_code": "DX-CARD-5F28B989F353"
+      },
+      {
+        "disease_code": "DIS-CARD-ARR-AVB3",
+        "criteria_name": "心电图传导阻滞诊断依据",
+        "disease_name": "三度房室传导阻滞",
+        "criteria_code": "DX-CARD-5F28B989F353"
+      },
+      {
+        "disease_code": "DIS-CARD-ARR-BRADY",
+        "criteria_name": "心电图传导阻滞诊断依据",
+        "disease_name": "缓慢性心律失常",
+        "criteria_code": "DX-CARD-5F28B989F353"
+      },
+      {
+        "disease_code": "DIS-CARD-ARR-SAB",
+        "criteria_name": "心电图传导阻滞诊断依据",
+        "disease_name": "窦房传导阻滞",
+        "criteria_code": "DX-CARD-5F28B989F353"
+      }
+    ]
+  },
+  "recommendation_statement_missing_core": {
+    "count": 53,
+    "missing_evidence": 50,
+    "missing_action": 1,
+    "missing_guideline": 2,
+    "sample": [
+      {
+        "evidence_count": 3,
+        "name": "疑似主动脉夹层、活动性出血或重大出血风险未排除前，不得把溶栓作为可执行推荐。",
+        "code": "REC-CDSS-CAD-STEMI-03-02-FIB-BLOCK",
+        "action_count": 0,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "慢性肾脏病合并高血压：CKD合并高血压诊断标准推荐",
+        "code": "REC-HT-CKD-DIAG-DXC-CKD",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "慢性肾脏病合并高血压：CKD高血压血压和肾功能随访推荐",
+        "code": "REC-HT-CKD-FU-FU-CKD-BP-RENAL",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "慢性肾脏病合并高血压：降压治疗推荐",
+        "code": "REC-HT-CKD-TX-PLAN-CARD-BDE62A3BE028",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "老年高血压：老年高血压诊断标准推荐",
+        "code": "REC-HT-ELDERLY-DIAG-DXC-ELDERLY",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "老年高血压：老年高血压随访方案推荐",
+        "code": "REC-HT-ELDERLY-FU-FU-CARD-A15AFD3EECB9",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "老年高血压：联合降压治疗推荐",
+        "code": "REC-HT-ELDERLY-TX-PLAN-CARD-0CDCF256C0E6",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "高血压急症：高血压急症诊断标准推荐",
+        "code": "REC-HT-EMERGENCY-DIAG-DXC-EMERGENCY",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "高血压急症：高血压急症随访方案推荐",
+        "code": "REC-HT-EMERGENCY-FU-FU-CARD-5C2A91913A3B",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "高血压急症：联合降压治疗推荐",
+        "code": "REC-HT-EMERGENCY-TX-PLAN-CARD-0CDCF256C0E6",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "高血压急症：降压治疗推荐",
+        "code": "REC-HT-EMERGENCY-TX-PLAN-CARD-BDE62A3BE028",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "内分泌性高血压：内分泌性高血压诊断标准推荐",
+        "code": "REC-HT-ENDOCRINE-DIAG-DXC-CARD-71E8C657623B",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "内分泌性高血压：内分泌性高血压随访方案推荐",
+        "code": "REC-HT-ENDOCRINE-FU-FU-CARD-FD508C0F17A1",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "内分泌性高血压：降压治疗推荐",
+        "code": "REC-HT-ENDOCRINE-TX-PLAN-CARD-BDE62A3BE028",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "高血压：高血压诊断标准推荐",
+        "code": "REC-HT-HT-DIAG-DXC-CARD-AA96D71FB917",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "高血压：高血压随访方案推荐",
+        "code": "REC-HT-HT-FU-FU-CARD-67AAA3B7D885",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "高血压：联合降压治疗推荐",
+        "code": "REC-HT-HT-TX-PLAN-CARD-0CDCF256C0E6",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "高血压：生活方式干预推荐",
+        "code": "REC-HT-HT-TX-PLAN-CARD-2081B78ED14D",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "隐匿性高血压：隐匿性高血压诊断标准推荐",
+        "code": "REC-HT-MASKED-DIAG-DXC-MASKED",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "隐匿性高血压：隐匿性高血压随访方案推荐",
+        "code": "REC-HT-MASKED-FU-FU-CARD-3DAA53000684",
+        "action_count": 1,
+        "guideline_count": 2
+      }
+    ]
+  },
+  "differential_without_detail": {
+    "count": 0,
+    "sample": []
+  },
+  "duplicate_semantic_relationships": {
+    "count": 0,
+    "sample": []
+  },
+  "summary": {
+    "non_kg_nodes": 0,
+    "required_lab_without_indicator_or_evidence": 0,
+    "diagnosis_criteria_without_component": 6,
+    "recommendation_statement_missing_core": 53,
+    "differential_without_detail": 0,
+    "duplicate_semantic_relationships": 0
+  },
+  "audit_time": "2026-07-14 07:38:49"
+}
