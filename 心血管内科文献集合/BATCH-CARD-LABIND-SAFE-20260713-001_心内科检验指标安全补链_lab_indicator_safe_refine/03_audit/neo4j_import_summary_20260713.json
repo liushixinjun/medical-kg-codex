@@ -1,0 +1,1427 @@
+{
+  "nodes": {
+    "input_node_count": 8,
+    "merged_node_count": 8
+  },
+  "relations": {
+    "input_relation_count": 32,
+    "merged_relation_count": 32,
+    "deleted_legacy_relationship_count": 0,
+    "precheck": [
+      {
+        "source_code": "LAB-CARD-6DEDDE6D2554",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-INR-ABNORMAL",
+        "source_found": "LAB-CARD-6DEDDE6D2554",
+        "target_found": "IND-CARD-LAB-INR-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-E0293B589260",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "source_found": "LAB-CARD-E0293B589260",
+        "target_found": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-A7AB15DD86D3",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "source_found": "LAB-CARD-A7AB15DD86D3",
+        "target_found": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-32F70E68B21F",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "source_found": "LAB-CARD-32F70E68B21F",
+        "target_found": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-597957F91E61",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "source_found": "LAB-CARD-597957F91E61",
+        "target_found": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-AE8C4B377AE9",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "source_found": "LAB-CARD-AE8C4B377AE9",
+        "target_found": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-F89D5BB72F25",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "source_found": "LAB-CARD-F89D5BB72F25",
+        "target_found": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-DD19DD9B725F",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "source_found": "LAB-CARD-DD19DD9B725F",
+        "target_found": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-INR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-85D728764314BEE5D6D8-AF",
+        "source_found": "IND-CARD-LAB-INR-ABNORMAL",
+        "target_found": "EVD-85D728764314BEE5D6D8-AF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-INR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-955C49D30E0063EB43F2-AF",
+        "source_found": "IND-CARD-LAB-INR-ABNORMAL",
+        "target_found": "EVD-955C49D30E0063EB43F2-AF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-INR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-0CD2FDF3C468912EDBD9-AF",
+        "source_found": "IND-CARD-LAB-INR-ABNORMAL",
+        "target_found": "EVD-0CD2FDF3C468912EDBD9-AF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-58B8296ABD08869C6B20-AF",
+        "source_found": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "target_found": "EVD-58B8296ABD08869C6B20-AF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-65475B2518B7C423E844-AF",
+        "source_found": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "target_found": "EVD-65475B2518B7C423E844-AF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-0A6F3D7010133C363A68-AF",
+        "source_found": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "target_found": "EVD-0A6F3D7010133C363A68-AF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-65475B2518B7C423E844-AF",
+        "source_found": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "target_found": "EVD-65475B2518B7C423E844-AF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-B849E2D66E62F47DAF4E-AFL",
+        "source_found": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "target_found": "EVD-B849E2D66E62F47DAF4E-AFL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-6FAA68DC1E464AC93E82-AVRT",
+        "source_found": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "target_found": "EVD-6FAA68DC1E464AC93E82-AVRT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-5993E16859BB06D824EC-SVT",
+        "source_found": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "target_found": "EVD-5993E16859BB06D824EC-SVT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-EBD2355386E608D172E0-AT",
+        "source_found": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "target_found": "EVD-EBD2355386E608D172E0-AT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-8ADFA937197C93BAF501-AT",
+        "source_found": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "target_found": "EVD-8ADFA937197C93BAF501-AT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-98727682FD72A7776E7B-WPW",
+        "source_found": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "target_found": "EVD-98727682FD72A7776E7B-WPW",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-98727682FD72A7776E7B-AFL",
+        "source_found": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "target_found": "EVD-98727682FD72A7776E7B-AFL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-D8EA2C0114E2AB8A8856-AFL",
+        "source_found": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "target_found": "EVD-D8EA2C0114E2AB8A8856-AFL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-1478592C23658BF177EF-AT",
+        "source_found": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "target_found": "EVD-1478592C23658BF177EF-AT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-B6C62F998ACADDEE6FD7-WPW",
+        "source_found": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "target_found": "EVD-B6C62F998ACADDEE6FD7-WPW",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-76C745A9C6DF56D9CAAE-AFL",
+        "source_found": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "target_found": "EVD-76C745A9C6DF56D9CAAE-AFL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-TB-EA1C92F555D1CB766AB7-PVC",
+        "source_found": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "target_found": "EVD-TB-EA1C92F555D1CB766AB7-PVC",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-80A0F709A35C01DB16AE-HT",
+        "source_found": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "target_found": "EVD-80A0F709A35C01DB16AE-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C1B37EB9F55D60B6AD76-HT",
+        "source_found": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "target_found": "EVD-C1B37EB9F55D60B6AD76-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-19E42D2881212255B14C-VF",
+        "source_found": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "target_found": "EVD-19E42D2881212255B14C-VF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-090F0D2EC31836080C04-TDP",
+        "source_found": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "target_found": "EVD-090F0D2EC31836080C04-TDP",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-19E42D2881212255B14C-TDP",
+        "source_found": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "target_found": "EVD-19E42D2881212255B14C-TDP",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      }
+    ],
+    "actions": [
+      {
+        "id": "REL-FD19D7D4384FC552AD2F",
+        "source_code": "IND-CARD-LAB-INR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-85D728764314BEE5D6D8-AF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-96816A89EB5E6F2DC880",
+        "source_code": "IND-CARD-LAB-INR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-955C49D30E0063EB43F2-AF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-F7EAB1C16745239C27AB",
+        "source_code": "IND-CARD-LAB-INR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-0CD2FDF3C468912EDBD9-AF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-DE43B62C551EFD2A58D0",
+        "source_code": "LAB-CARD-6DEDDE6D2554",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-INR-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-A9A3507D6C0A05E835D8",
+        "source_code": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-58B8296ABD08869C6B20-AF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-6BB24D84B1BC552EA622",
+        "source_code": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-65475B2518B7C423E844-AF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-589D3CE0A7B389F88F7E",
+        "source_code": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-0A6F3D7010133C363A68-AF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-5FE710FE9FE598EDEE20",
+        "source_code": "LAB-CARD-E0293B589260",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-B54B25908657CD3D10F2",
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-65475B2518B7C423E844-AF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-0FA919AD352955310322",
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-B849E2D66E62F47DAF4E-AFL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-A2CC3B93B3DF19C96840",
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-6FAA68DC1E464AC93E82-AVRT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-40E73E6DA42C65927306",
+        "source_code": "LAB-CARD-A7AB15DD86D3",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-F6A73F0449338DC6CB61",
+        "source_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-5993E16859BB06D824EC-SVT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-BCC6D799F79643728A06",
+        "source_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-EBD2355386E608D172E0-AT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-330D588C5A4E08052343",
+        "source_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-8ADFA937197C93BAF501-AT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-3CE2D854130E7DEB6536",
+        "source_code": "LAB-CARD-32F70E68B21F",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-7FFA1B5D3DDA04B01F25",
+        "source_code": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-98727682FD72A7776E7B-WPW",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-B5CCBE796A678DB70DE9",
+        "source_code": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-98727682FD72A7776E7B-AFL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-F66C9E1D9C6A4AD9D56A",
+        "source_code": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-D8EA2C0114E2AB8A8856-AFL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-E3E1E8EBDFECDA5CA49B",
+        "source_code": "LAB-CARD-597957F91E61",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-576B019EC9D25C27FA26",
+        "source_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-1478592C23658BF177EF-AT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-3BF294F0C7FE8F6DC351",
+        "source_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-B6C62F998ACADDEE6FD7-WPW",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-F15A50937C631325D62C",
+        "source_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-76C745A9C6DF56D9CAAE-AFL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-24ED47F70FD596C5FFB8",
+        "source_code": "LAB-CARD-AE8C4B377AE9",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-6007162B62D5230C36D9",
+        "source_code": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-TB-EA1C92F555D1CB766AB7-PVC",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-0E517177608296401405",
+        "source_code": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-80A0F709A35C01DB16AE-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-901D466AAE571F71BC23",
+        "source_code": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C1B37EB9F55D60B6AD76-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-3D9B24B6BB124A2CEE87",
+        "source_code": "LAB-CARD-F89D5BB72F25",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-EDCA267C2D1AA89F8B0F",
+        "source_code": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-19E42D2881212255B14C-VF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-515878D54723A0CB39FF",
+        "source_code": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-090F0D2EC31836080C04-TDP",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-C2BC7E91CD440FF104EC",
+        "source_code": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-19E42D2881212255B14C-TDP",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-28B77DF0ADC1044AF291",
+        "source_code": "LAB-CARD-DD19DD9B725F",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      }
+    ],
+    "postcheck": [
+      {
+        "source_code": "LAB-CARD-6DEDDE6D2554",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-INR-ABNORMAL",
+        "source_found": "LAB-CARD-6DEDDE6D2554",
+        "target_found": "IND-CARD-LAB-INR-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-DE43B62C551EFD2A58D0"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-E0293B589260",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "source_found": "LAB-CARD-E0293B589260",
+        "target_found": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-5FE710FE9FE598EDEE20"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-A7AB15DD86D3",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "source_found": "LAB-CARD-A7AB15DD86D3",
+        "target_found": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-40E73E6DA42C65927306"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-32F70E68B21F",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "source_found": "LAB-CARD-32F70E68B21F",
+        "target_found": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-3CE2D854130E7DEB6536"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-597957F91E61",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "source_found": "LAB-CARD-597957F91E61",
+        "target_found": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-E3E1E8EBDFECDA5CA49B"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-AE8C4B377AE9",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "source_found": "LAB-CARD-AE8C4B377AE9",
+        "target_found": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-24ED47F70FD596C5FFB8"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-F89D5BB72F25",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "source_found": "LAB-CARD-F89D5BB72F25",
+        "target_found": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-3D9B24B6BB124A2CEE87"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-DD19DD9B725F",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "source_found": "LAB-CARD-DD19DD9B725F",
+        "target_found": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-28B77DF0ADC1044AF291"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-INR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-85D728764314BEE5D6D8-AF",
+        "source_found": "IND-CARD-LAB-INR-ABNORMAL",
+        "target_found": "EVD-85D728764314BEE5D6D8-AF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-FD19D7D4384FC552AD2F"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-INR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-955C49D30E0063EB43F2-AF",
+        "source_found": "IND-CARD-LAB-INR-ABNORMAL",
+        "target_found": "EVD-955C49D30E0063EB43F2-AF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-96816A89EB5E6F2DC880"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-INR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-0CD2FDF3C468912EDBD9-AF",
+        "source_found": "IND-CARD-LAB-INR-ABNORMAL",
+        "target_found": "EVD-0CD2FDF3C468912EDBD9-AF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-F7EAB1C16745239C27AB"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-58B8296ABD08869C6B20-AF",
+        "source_found": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "target_found": "EVD-58B8296ABD08869C6B20-AF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-A9A3507D6C0A05E835D8"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-65475B2518B7C423E844-AF",
+        "source_found": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "target_found": "EVD-65475B2518B7C423E844-AF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-6BB24D84B1BC552EA622"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-0A6F3D7010133C363A68-AF",
+        "source_found": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "target_found": "EVD-0A6F3D7010133C363A68-AF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-589D3CE0A7B389F88F7E"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-65475B2518B7C423E844-AF",
+        "source_found": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "target_found": "EVD-65475B2518B7C423E844-AF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-B54B25908657CD3D10F2"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-B849E2D66E62F47DAF4E-AFL",
+        "source_found": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "target_found": "EVD-B849E2D66E62F47DAF4E-AFL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-0FA919AD352955310322"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-6FAA68DC1E464AC93E82-AVRT",
+        "source_found": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "target_found": "EVD-6FAA68DC1E464AC93E82-AVRT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-A2CC3B93B3DF19C96840"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-5993E16859BB06D824EC-SVT",
+        "source_found": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "target_found": "EVD-5993E16859BB06D824EC-SVT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-F6A73F0449338DC6CB61"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-EBD2355386E608D172E0-AT",
+        "source_found": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "target_found": "EVD-EBD2355386E608D172E0-AT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-BCC6D799F79643728A06"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-8ADFA937197C93BAF501-AT",
+        "source_found": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "target_found": "EVD-8ADFA937197C93BAF501-AT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-330D588C5A4E08052343"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-98727682FD72A7776E7B-WPW",
+        "source_found": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "target_found": "EVD-98727682FD72A7776E7B-WPW",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-7FFA1B5D3DDA04B01F25"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-98727682FD72A7776E7B-AFL",
+        "source_found": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "target_found": "EVD-98727682FD72A7776E7B-AFL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-B5CCBE796A678DB70DE9"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-D8EA2C0114E2AB8A8856-AFL",
+        "source_found": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "target_found": "EVD-D8EA2C0114E2AB8A8856-AFL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-F66C9E1D9C6A4AD9D56A"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-1478592C23658BF177EF-AT",
+        "source_found": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "target_found": "EVD-1478592C23658BF177EF-AT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-576B019EC9D25C27FA26"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-B6C62F998ACADDEE6FD7-WPW",
+        "source_found": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "target_found": "EVD-B6C62F998ACADDEE6FD7-WPW",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-3BF294F0C7FE8F6DC351"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-76C745A9C6DF56D9CAAE-AFL",
+        "source_found": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "target_found": "EVD-76C745A9C6DF56D9CAAE-AFL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-F15A50937C631325D62C"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-TB-EA1C92F555D1CB766AB7-PVC",
+        "source_found": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "target_found": "EVD-TB-EA1C92F555D1CB766AB7-PVC",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-6007162B62D5230C36D9"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-80A0F709A35C01DB16AE-HT",
+        "source_found": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "target_found": "EVD-80A0F709A35C01DB16AE-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-0E517177608296401405"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C1B37EB9F55D60B6AD76-HT",
+        "source_found": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "target_found": "EVD-C1B37EB9F55D60B6AD76-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-901D466AAE571F71BC23"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-19E42D2881212255B14C-VF",
+        "source_found": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "target_found": "EVD-19E42D2881212255B14C-VF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-EDCA267C2D1AA89F8B0F"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-090F0D2EC31836080C04-TDP",
+        "source_found": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "target_found": "EVD-090F0D2EC31836080C04-TDP",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-515878D54723A0CB39FF"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-19E42D2881212255B14C-TDP",
+        "source_found": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "target_found": "EVD-19E42D2881212255B14C-TDP",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-C2BC7E91CD440FF104EC"
+        ],
+        "missing_id_count": 0
+      }
+    ],
+    "post_actions": [
+      {
+        "id": "REL-FD19D7D4384FC552AD2F",
+        "source_code": "IND-CARD-LAB-INR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-85D728764314BEE5D6D8-AF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-FD19D7D4384FC552AD2F"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-96816A89EB5E6F2DC880",
+        "source_code": "IND-CARD-LAB-INR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-955C49D30E0063EB43F2-AF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-96816A89EB5E6F2DC880"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-F7EAB1C16745239C27AB",
+        "source_code": "IND-CARD-LAB-INR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-0CD2FDF3C468912EDBD9-AF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-F7EAB1C16745239C27AB"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-DE43B62C551EFD2A58D0",
+        "source_code": "LAB-CARD-6DEDDE6D2554",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-INR-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-DE43B62C551EFD2A58D0"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-A9A3507D6C0A05E835D8",
+        "source_code": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-58B8296ABD08869C6B20-AF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-A9A3507D6C0A05E835D8"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-6BB24D84B1BC552EA622",
+        "source_code": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-65475B2518B7C423E844-AF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-6BB24D84B1BC552EA622"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-589D3CE0A7B389F88F7E",
+        "source_code": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-0A6F3D7010133C363A68-AF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-589D3CE0A7B389F88F7E"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-5FE710FE9FE598EDEE20",
+        "source_code": "LAB-CARD-E0293B589260",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-5FE710FE9FE598EDEE20"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-B54B25908657CD3D10F2",
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-65475B2518B7C423E844-AF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-B54B25908657CD3D10F2"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-0FA919AD352955310322",
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-B849E2D66E62F47DAF4E-AFL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-0FA919AD352955310322"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-A2CC3B93B3DF19C96840",
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-6FAA68DC1E464AC93E82-AVRT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-A2CC3B93B3DF19C96840"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-40E73E6DA42C65927306",
+        "source_code": "LAB-CARD-A7AB15DD86D3",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-40E73E6DA42C65927306"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-F6A73F0449338DC6CB61",
+        "source_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-5993E16859BB06D824EC-SVT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-F6A73F0449338DC6CB61"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-BCC6D799F79643728A06",
+        "source_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-EBD2355386E608D172E0-AT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-BCC6D799F79643728A06"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-330D588C5A4E08052343",
+        "source_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-8ADFA937197C93BAF501-AT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-330D588C5A4E08052343"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-3CE2D854130E7DEB6536",
+        "source_code": "LAB-CARD-32F70E68B21F",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-3CE2D854130E7DEB6536"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-7FFA1B5D3DDA04B01F25",
+        "source_code": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-98727682FD72A7776E7B-WPW",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-7FFA1B5D3DDA04B01F25"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-B5CCBE796A678DB70DE9",
+        "source_code": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-98727682FD72A7776E7B-AFL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-B5CCBE796A678DB70DE9"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-F66C9E1D9C6A4AD9D56A",
+        "source_code": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-D8EA2C0114E2AB8A8856-AFL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-F66C9E1D9C6A4AD9D56A"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-E3E1E8EBDFECDA5CA49B",
+        "source_code": "LAB-CARD-597957F91E61",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-E3E1E8EBDFECDA5CA49B"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-576B019EC9D25C27FA26",
+        "source_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-1478592C23658BF177EF-AT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-576B019EC9D25C27FA26"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-3BF294F0C7FE8F6DC351",
+        "source_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-B6C62F998ACADDEE6FD7-WPW",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-3BF294F0C7FE8F6DC351"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-F15A50937C631325D62C",
+        "source_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-76C745A9C6DF56D9CAAE-AFL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-F15A50937C631325D62C"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-24ED47F70FD596C5FFB8",
+        "source_code": "LAB-CARD-AE8C4B377AE9",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-24ED47F70FD596C5FFB8"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-6007162B62D5230C36D9",
+        "source_code": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-TB-EA1C92F555D1CB766AB7-PVC",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-6007162B62D5230C36D9"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-0E517177608296401405",
+        "source_code": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-80A0F709A35C01DB16AE-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-0E517177608296401405"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-901D466AAE571F71BC23",
+        "source_code": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C1B37EB9F55D60B6AD76-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-901D466AAE571F71BC23"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-3D9B24B6BB124A2CEE87",
+        "source_code": "LAB-CARD-F89D5BB72F25",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-3D9B24B6BB124A2CEE87"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-EDCA267C2D1AA89F8B0F",
+        "source_code": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-19E42D2881212255B14C-VF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-EDCA267C2D1AA89F8B0F"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-515878D54723A0CB39FF",
+        "source_code": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-090F0D2EC31836080C04-TDP",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-515878D54723A0CB39FF"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-C2BC7E91CD440FF104EC",
+        "source_code": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-19E42D2881212255B14C-TDP",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-C2BC7E91CD440FF104EC"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-28B77DF0ADC1044AF291",
+        "source_code": "LAB-CARD-DD19DD9B725F",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-28B77DF0ADC1044AF291"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      }
+    ]
+  }
+}

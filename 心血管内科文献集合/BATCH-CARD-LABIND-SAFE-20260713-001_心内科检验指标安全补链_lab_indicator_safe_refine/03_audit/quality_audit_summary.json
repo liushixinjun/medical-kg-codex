@@ -1,0 +1,12 @@
+{
+  "batch_id": "BATCH-CARD-LABIND-SAFE-20260713-001",
+  "node_count": 8,
+  "relation_count": 32,
+  "indicator_node_count": 8,
+  "lab_test_has_indicator_relation_count": 8,
+  "supported_by_evidence_relation_count": 24,
+  "duplicate_relation_keys": [],
+  "missing_required_nodes": [],
+  "relation_without_evidence_count": 0,
+  "local_hard_gate_pass": true
+}

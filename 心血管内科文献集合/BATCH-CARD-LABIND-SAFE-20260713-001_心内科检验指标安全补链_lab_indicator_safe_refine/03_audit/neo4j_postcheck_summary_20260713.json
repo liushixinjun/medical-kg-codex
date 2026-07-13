@@ -1,0 +1,328 @@
+{
+  "batch_id": "BATCH-CARD-LABIND-SAFE-20260713-001",
+  "group_summary": {
+    "冠心病": {
+      "disease_count": 14,
+      "lab_total": 103,
+      "lab_with_indicator": 78,
+      "lab_without_indicator": 25,
+      "disease_full_missing": 0,
+      "disease_partial_missing": 8,
+      "disease_covered": 4,
+      "top_missing_lab_names": [
+        {
+          "lab": "肾功能",
+          "disease_count": 8,
+          "diseases": [
+            "动脉粥样硬化",
+            "冠状动脉粥样硬化性心脏病",
+            "稳定型心绞痛",
+            "急性冠脉综合征",
+            "不稳定型心绞痛",
+            "急性心肌梗死",
+            "ST段抬高型心肌梗死",
+            "非ST段抬高型心肌梗死"
+          ]
+        },
+        {
+          "lab": "血糖",
+          "disease_count": 5,
+          "diseases": [
+            "动脉粥样硬化",
+            "冠状动脉粥样硬化性心脏病",
+            "急性冠脉综合征",
+            "急性心肌梗死",
+            "稳定型心绞痛"
+          ]
+        },
+        {
+          "lab": "脑钠肽",
+          "disease_count": 3,
+          "diseases": [
+            "冠状动脉粥样硬化性心脏病",
+            "急性冠脉综合征",
+            "急性心肌梗死"
+          ]
+        },
+        {
+          "lab": "动脉血气分析",
+          "disease_count": 2,
+          "diseases": [
+            "冠状动脉粥样硬化性心脏病",
+            "急性冠脉综合征"
+          ]
+        },
+        {
+          "lab": "BNP",
+          "disease_count": 1,
+          "diseases": [
+            "稳定型心绞痛"
+          ]
+        },
+        {
+          "lab": "B型钠尿肽",
+          "disease_count": 1,
+          "diseases": [
+            "稳定型心绞痛"
+          ]
+        },
+        {
+          "lab": "NT-proBNP",
+          "disease_count": 1,
+          "diseases": [
+            "稳定型心绞痛"
+          ]
+        },
+        {
+          "lab": "N末端B型钠尿肽前体",
+          "disease_count": 1,
+          "diseases": [
+            "稳定型心绞痛"
+          ]
+        },
+        {
+          "lab": "血培养",
+          "disease_count": 1,
+          "diseases": [
+            "急性心肌梗死"
+          ]
+        }
+      ]
+    },
+    "心肌病": {
+      "disease_count": 12,
+      "lab_total": 21,
+      "lab_with_indicator": 12,
+      "lab_without_indicator": 9,
+      "disease_full_missing": 0,
+      "disease_partial_missing": 3,
+      "disease_covered": 1,
+      "top_missing_lab_names": [
+        {
+          "lab": "脑钠肽",
+          "disease_count": 3,
+          "diseases": [
+            "扩张型心肌病",
+            "限制型心肌病",
+            "心肌炎"
+          ]
+        },
+        {
+          "lab": "B型利钠肽",
+          "disease_count": 2,
+          "diseases": [
+            "限制型心肌病",
+            "扩张型心肌病"
+          ]
+        },
+        {
+          "lab": "肾功能",
+          "disease_count": 2,
+          "diseases": [
+            "扩张型心肌病",
+            "心肌炎"
+          ]
+        },
+        {
+          "lab": "B型钠尿肽",
+          "disease_count": 1,
+          "diseases": [
+            "限制型心肌病"
+          ]
+        },
+        {
+          "lab": "N末端B型钠尿肽前体",
+          "disease_count": 1,
+          "diseases": [
+            "限制型心肌病"
+          ]
+        }
+      ]
+    },
+    "心力衰竭": {
+      "disease_count": 11,
+      "lab_total": 24,
+      "lab_with_indicator": 10,
+      "lab_without_indicator": 14,
+      "disease_full_missing": 0,
+      "disease_partial_missing": 3,
+      "disease_covered": 0,
+      "top_missing_lab_names": [
+        {
+          "lab": "肾功能",
+          "disease_count": 3,
+          "diseases": [
+            "慢性心力衰竭",
+            "急性心力衰竭",
+            "心力衰竭"
+          ]
+        },
+        {
+          "lab": "血糖",
+          "disease_count": 3,
+          "diseases": [
+            "慢性心力衰竭",
+            "急性心力衰竭",
+            "心力衰竭"
+          ]
+        },
+        {
+          "lab": "B型钠尿肽",
+          "disease_count": 2,
+          "diseases": [
+            "慢性心力衰竭",
+            "急性心力衰竭"
+          ]
+        },
+        {
+          "lab": "N末端B型钠尿肽前体",
+          "disease_count": 2,
+          "diseases": [
+            "慢性心力衰竭",
+            "急性心力衰竭"
+          ]
+        },
+        {
+          "lab": "动脉血气分析",
+          "disease_count": 1,
+          "diseases": [
+            "心力衰竭"
+          ]
+        },
+        {
+          "lab": "电解质",
+          "disease_count": 1,
+          "diseases": [
+            "慢性心力衰竭"
+          ]
+        },
+        {
+          "lab": "脑钠肽",
+          "disease_count": 1,
+          "diseases": [
+            "心力衰竭"
+          ]
+        },
+        {
+          "lab": "血培养",
+          "disease_count": 1,
+          "diseases": [
+            "心力衰竭"
+          ]
+        }
+      ]
+    },
+    "心律失常": {
+      "disease_count": 31,
+      "lab_total": 73,
+      "lab_with_indicator": 43,
+      "lab_without_indicator": 30,
+      "disease_full_missing": 2,
+      "disease_partial_missing": 9,
+      "disease_covered": 7,
+      "top_missing_lab_names": [
+        {
+          "lab": "肾功能",
+          "disease_count": 10,
+          "diseases": [
+            "房性心动过速",
+            "心房扑动",
+            "心房颤动",
+            "室性期前收缩",
+            "持续性室性心动过速",
+            "心室扑动与心室颤动",
+            "房室传导阻滞",
+            "长QT间期综合征"
+          ]
+        },
+        {
+          "lab": "动脉血气分析",
+          "disease_count": 7,
+          "diseases": [
+            "房性心动过速",
+            "心房扑动",
+            "心房颤动",
+            "阵发性室上性心动过速",
+            "持续性室性心动过速",
+            "心室扑动与心室颤动",
+            "心脏骤停"
+          ]
+        },
+        {
+          "lab": "血糖",
+          "disease_count": 7,
+          "diseases": [
+            "心房扑动",
+            "心房颤动",
+            "室性期前收缩",
+            "持续性室性心动过速",
+            "房室传导阻滞",
+            "长QT间期综合征",
+            "心室扑动与心室颤动"
+          ]
+        },
+        {
+          "lab": "电解质",
+          "disease_count": 4,
+          "diseases": [
+            "心室扑动与心室颤动",
+            "房室传导阻滞",
+            "室性期前收缩",
+            "房性心动过速"
+          ]
+        },
+        {
+          "lab": "脑钠肽",
+          "disease_count": 2,
+          "diseases": [
+            "心房颤动",
+            "室性期前收缩"
+          ]
+        }
+      ]
+    }
+  },
+  "hard_gate": {
+    "batch_node_count": 8,
+    "batch_relation_count": 32,
+    "non_kg_batch_nodes": 0,
+    "indicator_without_evidence": 0,
+    "batch_rel_without_evidence_ids": 0,
+    "duplicate_semantic_relations_touched": 0,
+    "new_indicator_names": [
+      {
+        "code": "IND-CARD-LAB-INR-ABNORMAL",
+        "name": "INR异常"
+      },
+      {
+        "code": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "name": "凝血功能异常"
+      },
+      {
+        "code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "name": "甲状腺功能异常"
+      },
+      {
+        "code": "IND-CARD-LAB-ELECTROLYTE-ABNORMAL",
+        "name": "电解质异常"
+      },
+      {
+        "code": "IND-CARD-LAB-LIVER-FUNCTION-ABNORMAL",
+        "name": "肝功能异常"
+      },
+      {
+        "code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "name": "肾功能异常"
+      },
+      {
+        "code": "IND-CARD-LAB-POTASSIUM-ABNORMAL",
+        "name": "血钾异常"
+      },
+      {
+        "code": "IND-CARD-LAB-MAGNESIUM-ABNORMAL",
+        "name": "血镁异常"
+      }
+    ]
+  },
+  "hard_gate_pass": true
+}

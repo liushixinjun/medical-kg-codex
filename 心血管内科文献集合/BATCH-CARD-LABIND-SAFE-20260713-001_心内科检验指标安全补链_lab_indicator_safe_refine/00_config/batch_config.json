@@ -1,0 +1,6 @@
+{
+  "batch_id": "BATCH-CARD-LABIND-SAFE-20260713-001",
+  "scope_target": "心血管内科已解析疾病大类",
+  "purpose": "安全补全 LabTest 到 ExamIndicator 的检验指标下钻关系",
+  "accepted_rule": "仅采纳已入库 LabTest 非空原文证据；无证据文本不硬补。"
+}

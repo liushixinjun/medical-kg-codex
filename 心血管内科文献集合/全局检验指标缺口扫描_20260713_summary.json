@@ -1,0 +1,10 @@
+{
+  "file": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\全局检验指标缺口扫描_20260713.csv",
+  "disease_with_lab_count": 75,
+  "complete_missing": 14,
+  "partial_missing": 48,
+  "covered": 13,
+  "lab_total": 363,
+  "lab_with_indicator": 189,
+  "lab_without_indicator": 174
+}

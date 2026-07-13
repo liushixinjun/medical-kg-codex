@@ -2,6 +2,357 @@
 
 用途：记录当前和最近任务的执行过程摘要。历史记录已按月归档到 `日志归档_log_archive/`。
 
+## 2026-07-13 14:20:00｜心内科检验指标安全补链已导入 Neo4j
+
+### 用户提出的问题
+Trae 反馈检验指标分类不清晰；AMI 修复后，要求同类问题扩展检查并修复其他已解析病种，重点判断是图谱结构问题、数据问题还是前端展示问题。
+
+### 判断结论
+Schema 不需要新增 `LabTestIndicator`。检验指标继续统一使用 `ExamIndicator`，分类依赖路径：
+
+```text
+检验指标：Disease -> requires_lab_test -> LabTest -> lab_test_has_indicator -> ExamIndicator
+检查指标：Disease -> requires_exam -> Exam -> exam_has_indicator -> ExamIndicator
+```
+
+本轮根因不是前端单独问题，而是部分 `LabTest` 缺少到 `ExamIndicator` 的下钻关系；同时旧骨架里存在空证据，不能为了覆盖率硬补。
+
+### 执行结果
+
+```text
+批次：BATCH-CARD-LABIND-SAFE-20260713-001
+输出目录：心血管内科文献集合/BATCH-CARD-LABIND-SAFE-20260713-001_心内科检验指标安全补链_lab_indicator_safe_refine
+新增/更新节点：8
+新增/更新关系：32
+其中 lab_test_has_indicator：8
+Neo4j 导入：成功
+服务器硬闸门：通过
+```
+
+新增标准检验指标：
+
+```text
+INR异常、凝血功能异常、甲状腺功能异常、电解质异常、肝功能异常、肾功能异常、血钾异常、血镁异常
+```
+
+覆盖率变化：
+
+```text
+心律失常：lab_test_has_indicator 覆盖 17/73 -> 43/73；整病种完全缺指标 10 -> 2
+冠心病：78/103，未强补空证据缺口
+心肌病：12/21，未强补空证据缺口
+心力衰竭：10/24，未强补空证据缺口
+```
+
+剩余问题集中在 `肾功能`、`血糖`、`脑钠肽/BNP/NT-proBNP`、`动脉血气分析` 等旧骨架空证据或证据粒度不足项目，必须回原文补证据后再补链。
+
+## 2026-07-13 00:35:00｜AMI检验指标下钻关系已修复并导入 Neo4j
+
+### 用户提出的问题
+Trae 前端发现 AMI 的检验指标分类不清晰：`Exam` 和 `LabTest` 分离正确，但 `LabTestIndicator` 不存在、`LabTest.indicators` 为空、`lab_test_has_indicator` 几乎缺失，导致前端只能展示检查指标，看不到检验项目下级指标。
+
+### 判断结论
+这不是单纯前端展示问题。Schema 当前设计不需要 `LabTestIndicator`，检验指标统一用 `ExamIndicator`，靠关系区分：
+
+```text
+检查指标：Exam -> exam_has_indicator -> ExamIndicator
+检验指标：LabTest -> lab_test_has_indicator -> ExamIndicator
+```
+
+AMI 问题根因是图谱数据缺少 `LabTest -> lab_test_has_indicator -> ExamIndicator` 下钻关系；前端同时需要停止查询不存在的 `LabTestIndicator`。
+
+### 执行结果
+
+```text
+批次：BATCH-CARD-CAD-AMI-LABIND-20260713-001
+输出目录：心血管内科文献集合/BATCH-CARD-CAD-AMI-LABIND-20260713-001_AMI检验指标精修_lab_indicator_refine
+本地 delta 节点：15
+本地 delta 关系：26
+Neo4j 导入节点：15 / 15
+Neo4j 导入关系：26 / 26
+AMI 检验指标：0 -> 11
+Evidence 缺失：0
+非 KGNode：0
+```
+
+仍未硬补的 AMI 检验项目：肾功能、脑钠肽、血培养、血糖。原因是当前服务器证据为空或没有独立 AMI 原文支撑，已作为缺口保留，不能伪造成已证据化指标。
+
+### 全局同类问题
+
+已生成全局扫描文件：
+
+```text
+心血管内科文献集合/全局检验指标缺口扫描_20260713.csv
+```
+
+扫描结果：
+
+```text
+有检验项目的疾病：75
+检验指标完全缺失：34
+检验指标部分缺失：35
+已有覆盖：6
+```
+
+结论：其他病种大概率也有同类问题，后续应按疾病大类分批修复，不应让前端用 `LabTestIndicator` 或 `LabTest.indicators` 字段兜底。
+
+## 2026-07-12 21:46:00｜冠心病剩余病种教材骨架批量精修扩展已导入 Neo4j
+
+### 用户提出的问题
+
+用户要求直接开始“冠心病剩余病种批量精修扩展”，并强调不要因为单个节点或单个缺口影响全局进度。
+
+### 判断结论
+
+本轮不重跑旧冠心病批次，不新造疾病主节点，复用旧 CAD 疾病编码；以 2026-07-09 的 D6 教材骨架候选为来源，重点处理章节名和疾病名不一致的问题。UA/NSTEMI 在教材中是合并章节，隐匿性冠心病在教材中表现为“隐匿型冠心病”，需要映射后再抽取。明显泛化或跳转式候选不入库。
+
+### 执行结果
+
+```text
+输出批次：BATCH-CARD-CAD-REMAINING-20260712-001
+输出目录：心血管内科文献集合/BATCH-CARD-CAD-REMAINING-20260712-001_冠心病剩余病种教材骨架精修_textbook_refine
+本地 delta 节点：461
+本地 delta 关系：859
+本地硬闸门：通过
+Neo4j 导入节点：461 / 461
+Neo4j 导入关系：859 / 859
+替换旧同语义关系：0
+服务器 postcheck：通过
+```
+
+服务器硬闸门：
+
+```text
+非 KGNode 节点：0
+泛化 has_related_entity：0
+重复同语义关系：0
+诊断标准无明细：0
+Evidence 无原文：0
+短实体名称过长：0
+hard_gate_pass=true
+```
+
+本轮已覆盖并入库的重点对象：
+
+```text
+急性心肌梗死、UA、NSTEMI、稳定型心绞痛、缺血性心肌病、隐匿性冠心病、ACS、CCS。
+```
+
+非阻断缺口：
+
+```text
+ACS/CCS 属于上位综合征或大类概念，教材 D6 候选主要覆盖定义、分类和病理机制，不具备完整诊断/治疗闭环。
+陈旧性心肌梗死在 D6 教材骨架中没有独立章节来源，本轮不硬补。
+隐匿性冠心病缺诊断组件，需要后续从指南或人工金标准补充。
+```
+
+### 关键产物
+
+```text
+治理脚本_governance_scripts/生成冠心病剩余病种批量精修包_generate_cad_remaining_textbook_refine.py
+治理脚本_governance_scripts/服务器复核冠心病剩余病种批量精修_postcheck_cad_remaining.py
+心血管内科文献集合/BATCH-CARD-CAD-REMAINING-20260712-001_冠心病剩余病种教材骨架精修_textbook_refine/02_delta/delta_nodes_upsert.jsonl
+心血管内科文献集合/BATCH-CARD-CAD-REMAINING-20260712-001_冠心病剩余病种教材骨架精修_textbook_refine/02_delta/delta_relations_add.jsonl
+心血管内科文献集合/BATCH-CARD-CAD-REMAINING-20260712-001_冠心病剩余病种教材骨架精修_textbook_refine/03_audit/quality_audit_summary.json
+心血管内科文献集合/BATCH-CARD-CAD-REMAINING-20260712-001_冠心病剩余病种教材骨架精修_textbook_refine/03_audit/neo4j_import_summary_20260712.json
+心血管内科文献集合/BATCH-CARD-CAD-REMAINING-20260712-001_冠心病剩余病种教材骨架精修_textbook_refine/03_audit/neo4j_postcheck_summary_20260712.json
+心血管内科文献集合/BATCH-CARD-CAD-REMAINING-20260712-001_冠心病剩余病种教材骨架精修_textbook_refine/04_reports/冠心病剩余病种教材骨架精修报告_20260712.md
+```
+
+### 下一步
+
+冠心病教材骨架层已进一步补齐。下一步建议进入“冠心病指南 PDF 决策层二次精修”：重点把 PCI、抗血小板、抗凝、溶栓、危险分层、禁忌/排除、随访和二级预防从指南证据链补成 CDSS 可执行规则。
+
+## 2026-07-12 22:20:00｜STEMI 教材骨架精修包导入 Neo4j 与服务器 postcheck
+
+### 用户提出的问题
+用户确认按下一步建议执行，要求高效处理；如果没问题，直接把 STEMI 教材骨架精修包导入服务器图谱数据库。
+
+### 判断结论
+
+本地 STEMI 精修包已通过硬闸门，且用户已明确授权写库。本轮执行机器预检，确认服务器可达后直接导入 Neo4j，并执行服务器端 postcheck。数据库密码从 `图谱数据库链接.txt` 读取，但不输出。
+
+### 执行结果
+
+```text
+Neo4j连接：成功
+导入前服务器KGNode：43020
+导入节点：203 / 203
+导入关系：430 / 430
+替换旧同语义关系：37
+服务器postcheck：通过
+```
+
+服务器 postcheck 结果：
+
+```text
+本批次服务器节点：203
+本批次服务器关系：430
+诊断标准明细下钻：9
+鉴别诊断下钻：8
+具体溶栓药物：7
+禁忌证节点：10
+阻断关系：4
+ClinicalRule原文证据覆盖：18/18
+泛化has_related_entity关系：0
+模板化排除语：0
+hard_gate_pass=true
+```
+
+### 关键产物
+
+```text
+心血管内科文献集合/BATCH-CARD-CAD-STEMI-20260712-001_STEMI教材骨架精修_textbook_refine/03_audit/neo4j_import_summary_20260712.json
+心血管内科文献集合/BATCH-CARD-CAD-STEMI-20260712-001_STEMI教材骨架精修_textbook_refine/03_audit/neo4j_postcheck_summary_20260712.json
+治理脚本_governance_scripts/服务器复核STEMI教材骨架精修_postcheck_stemi_textbook_refine.py
+```
+
+### 说明
+
+“替换旧同语义关系 37”不是删除节点，而是同一 `source_code + relationType + target_code` 的旧关系被新带版本、批次和证据字段的关系替换，避免重复边。
+
+### 下一步
+
+通知 Trae/前端核对急性心肌梗死或 STEMI 页面：诊断标准应下钻到诊断组件；鉴别诊断应下钻到鉴别规则；溶栓治疗应能看到具体溶栓药物、剂量和禁忌阻断；规则详情应能展示 `derived_from Evidence` 的原文依据。
+
+## 2026-07-12 21:50:00｜STEMI 教材骨架精修包生成与硬闸门校验
+
+### 用户提出的问题
+用户手工贴出《内科学（第10版）》“急性 ST 段抬高型心肌梗死”章节原文，要求精确对比现有识别内容和图谱数据库缺失，重点确认疾病概述、诊断标准、鉴别诊断、溶栓治疗、溶栓药物、禁忌证、检查检验和风险分层是否真正进入图谱。
+
+### 判断结论
+
+现有服务器 STEMI 图谱不是完全缺失，但属于“标题级/粗粒度可浏览”状态：诊断标准下级明细不足，鉴别诊断缺对照规则，溶栓治疗缺具体药物、剂量、禁忌和再通判断，ClinicalRule 多为处理后字段，缺少规则原文段落。需要先生成教材骨架精修包，本轮不直接写 Neo4j。
+
+### 执行方案
+
+1. 以用户手工核对的《内科学（第10版）》STEMI章节为金标准。
+2. 新建 STEMI 教材骨架精修批次目录。
+3. 生成 `Evidence` 原文证据节点，保留疾病概述、诊断、鉴别、治疗、溶栓禁忌和药物表原文段落摘要。
+4. 生成诊断标准明细、鉴别诊断规则、具体溶栓药物、禁忌阻断规则和风险分层实体。
+5. 修复生成器问题：ClinicalRule 必须有 `derived_from Evidence`；组件类不得用 `has_related_entity` 泛化关系直接挂疾病。
+6. 跑本地硬闸门，不连接 Neo4j，不写数据库。
+
+### 执行结果
+
+```text
+输出目录：
+E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\BATCH-CARD-CAD-STEMI-20260712-001_STEMI教材骨架精修_textbook_refine
+
+delta节点：203
+delta关系：430
+诊断标准明细：5
+鉴别诊断节点：7
+具体溶栓药物：5
+禁忌证节点：10
+阻断关系：4
+ClinicalRule原文证据覆盖：通过
+模板化排除语：0
+泛化has_related_entity关系：0
+硬闸门失败数：0
+Neo4j写入：否
+```
+
+### 关键产物
+
+```text
+治理脚本_governance_scripts/生成STEMI教材骨架精修包_generate_stemi_textbook_refine.py
+心血管内科文献集合/BATCH-CARD-CAD-STEMI-20260712-001_STEMI教材骨架精修_textbook_refine/01_gold_standard/STEMI教材人工金标准_槽位清单.csv
+心血管内科文献集合/BATCH-CARD-CAD-STEMI-20260712-001_STEMI教材骨架精修_textbook_refine/02_delta/delta_nodes_upsert.jsonl
+心血管内科文献集合/BATCH-CARD-CAD-STEMI-20260712-001_STEMI教材骨架精修_textbook_refine/02_delta/delta_relations_add.jsonl
+心血管内科文献集合/BATCH-CARD-CAD-STEMI-20260712-001_STEMI教材骨架精修_textbook_refine/03_audit/STEMI教材对照缺口矩阵.csv
+心血管内科文献集合/BATCH-CARD-CAD-STEMI-20260712-001_STEMI教材骨架精修_textbook_refine/03_audit/STEMI安全禁忌阻断规则审计.csv
+心血管内科文献集合/BATCH-CARD-CAD-STEMI-20260712-001_STEMI教材骨架精修_textbook_refine/04_reports/STEMI教材骨架精修报告_20260712.md
+```
+
+### 遗留阻断
+
+无本地硬闸门阻断。尚未入库，因此前端页面不会立即变化；如要进入服务器图谱，需要单独执行受控 G3 导入和 postcheck。
+
+### 关联踩坑日志
+
+本轮新增规则：ClinicalRule 不得只有处理后逻辑，必须 `derived_from` 到保存原文段落的 `Evidence`；DiagnosisCriteriaComponent、ExamIndicator 等组件类不得通过泛化 `has_related_entity` 直接挂疾病，必须由诊断标准、检查等上级实体承接。
+
+## 2026-07-12 16:45:00｜冠心病 V2.1 回归验证与历史旧文件淘汰
+
+### 用户提出的问题
+
+用户要求对 2026 年 6 月第一批历史脚本和文件进行淘汰治理：明确无用、影响效率的旧脚本和旧文件应删除，而不是长期保留；同时继续完成冠心病 V2.1 回归验证收尾。
+
+### 判断结论
+
+`docs/` 目录仅包含早期 superpowers 计划草稿，不参与当前 SKILL、Schema、批次、证据或入库流程，可删除。`scripts/finalize_coronary_batch.py` 是 2026 年 6 月冠心病一次性最终化脚本，引用已淘汰的 CSV/graph_final 旧口径，且无当前代码依赖，可删除。冠心病 6 月第一批旧 CSV、聚合 JSON 和 render_samples 可再生成或已被 JSONL 正式数据替代，可删除；正式 JSONL、来源清单、证据索引和质量审计必须保留。
+
+### 执行方案
+
+1. 先验证删除目标路径均位于项目工作目录内。
+2. 删除 `docs/` 历史计划草稿目录。
+3. 删除冠心病 6 月第一批旧聚合 JSON、旧 CSV、页面渲染样本。
+4. 删除 `scripts/finalize_coronary_batch.py`，并同步脚本资产台账。
+5. 保留冠心病 V2.1 回归 delta、审计、报告和正式 JSONL 证据链。
+6. 重新运行冠心病 V2.1 回归校验，确认旧文件删除不影响当前流程。
+
+### 执行结果
+
+```text
+冠心病 V2.1 本地 G2 校验：通过
+delta节点：105
+delta关系：864
+推荐陈述：33
+覆盖疾病数：10
+纳入PDF：30
+硬阻断：0
+Neo4j写入：否
+已删除旧文件/目录：docs/、finalize_coronary_batch.py、graph_final.json、nodes_final.csv、relations_final.csv、render_samples/
+累计释放空间：约431.12 MB
+```
+
+### 遗留阻断
+
+无硬阻断。剩余 2 条 OCR 疑似噪声证据摘要和 18 条旧 readiness 关系未被新路径层疾病名覆盖，属于回归提醒，不阻断当前 V2.1 本地 delta。
+
+### 关联踩坑日志
+
+本轮规则：历史旧脚本和旧文件不能无限保留；明确无用、已被正式流程替代且不影响证据追溯的内容，应进入淘汰删除或归档删除流程，避免后续误执行和目录膨胀。
+
+## 2026-07-12 14:20:00｜SKILL V2.1 精确校验与顺序闸门补强
+
+### 用户提出的问题
+
+用户要求再次确认本周骨架提升和 SKILL 改造内容，不要依赖记忆；今天要把 SKILL 已提升改造内容进行精确校验，确保下一阶段计划稳步进行。
+
+### 判断结论
+
+SKILL V2.1 主体可用，但原治理脚本只检查“目标是否存在”，没有检查“目标顺序是否一致”。月度计划顶部目标列表曾与建设顺序表不一致，必须修复并纳入自动化校验。
+
+### 执行方案
+
+1. 校验主 SKILL、7 个附录、规则迁移覆盖矩阵、月度计划、批次台账、manifest。
+2. 将疾病顺序一致性纳入 `校验SKILL治理_validate_skill_governance.py`。
+3. 修正月度计划顶部目标顺序。
+4. 主 SKILL 补充硬句：`未通过 G2 不写 Neo4j`。
+5. 生成 `项目管理中心_project_management/15_SKILL_V2.1精确校验报告_20260712.md`。
+
+### 执行结果
+
+```text
+SKILL治理校验：VALIDATION_OK
+主SKILL大小：8113 bytes
+附录数量：7
+月度目标数量：9
+疾病顺序：冠心病 > 心肌病 > 急性心肌梗死 > 心力衰竭 > 高血压 > 心律失常 > 起搏治疗相关疾病 > 瓣膜病 > 肺动脉高压
+Neo4j写入：否
+delta生成：否
+```
+
+### 遗留阻断
+
+无治理阻断。下一步应启动冠心病 V2.1 回归验证与差量补齐，不从 0 重建。
+
+### 关联踩坑日志
+
+已新增“计划/台账/SKILL顺序不一致”防复发记录，并纳入错误指纹索引。
+
 ## 2026-07-12 13:25:37｜月度计划补充高血压疾病大类
 
 ### 用户提出的问题
