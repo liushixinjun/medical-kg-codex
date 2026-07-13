@@ -1,0 +1,13 @@
+{
+  "batch_id": "BATCH-CARD-DXC-COMP-20260714-001",
+  "generated_at": "2026-07-14 07:19:25",
+  "input_missing_criteria_rows": 24,
+  "new_component_nodes": 18,
+  "new_relations": 36,
+  "blocked_rows": 6,
+  "local_validation": {
+    "duplicate_node_codes": 0,
+    "duplicate_relation_semantic_keys": 0
+  },
+  "note": "本批只补已有非空 Evidence 的诊断标准组件；无证据标题型诊断标准阻断。"
+}

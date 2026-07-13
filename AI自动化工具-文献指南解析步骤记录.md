@@ -742,3 +742,26 @@ Neo4j连接：否
 ### 关联踩坑日志
 
 `_全局复利与踩坑日志.md`：2026-07-11 23:55:00 条目。
+## 2026-07-14 07:25:00｜推荐陈述核心链路与诊断标准明细补齐已导入 Neo4j
+
+### 执行目标
+
+继续处理 2026-07-13 全库体检暴露的两个核心缺口：`RecommendationStatement` 缺核心链路、`DiagnosisCriteria` 无明细组件。原则是只补已有可追溯 code 和非空证据能支持的关系，不凭空生成临床结论。
+
+### 执行结果
+
+1. `BATCH-CARD-RS-CORELINK-20260714-001` 已导入 Neo4j：新增/回连关系 293 条，其中 `supported_by_evidence` 291 条、`recommends_action` 2 条。
+2. `BATCH-CARD-DXC-COMP-20260714-001` 已导入 Neo4j：新增诊断标准明细组件 18 个，新增关系 36 条。
+3. 全库后置复核：RecommendationStatement 缺核心链路 344 → 53；DiagnosisCriteria 无明细 24 → 6。
+4. 剩余 53 条推荐陈述缺口中，高血压 50 条缺 `primary_evidence_code`，冠心病 3 条涉及阻断/指南/动作端点缺失，均已进入 blocker，不硬补。
+5. 剩余 6 条诊断标准缺口均为传导阻滞相关共用标准，无非空 Evidence，已进入 blocker。
+
+### 关键输出
+
+- `心血管内科文献集合/BATCH-CARD-RS-CORELINK-20260714-001_推荐陈述核心链路补齐_recommendation_corelink_refine`
+- `心血管内科文献集合/BATCH-CARD-DXC-COMP-20260714-001_诊断标准明细组件补齐_diagnosis_component_refine`
+- `心血管内科文献集合/00_全局质量体检_global_quality_audit/20260714_after_rs_dxc_corelink_refine`
+
+### 下一步
+
+继续处理剩余 53 条推荐陈述 blocker：高血压需要回到已解析指南/教材证据，为推荐节点补 `primary_evidence_code`；冠心病 3 条需要补动作/指南端点。剩余 6 条传导阻滞诊断标准需回原文补证据后再生成诊断明细组件。

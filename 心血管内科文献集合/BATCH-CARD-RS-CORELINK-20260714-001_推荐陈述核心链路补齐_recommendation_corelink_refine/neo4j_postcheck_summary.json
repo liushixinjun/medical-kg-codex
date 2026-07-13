@@ -1,0 +1,437 @@
+{
+  "recommendation_postcheck": {
+    "missing_core_count": 53,
+    "missing_evidence": 50,
+    "missing_action": 1,
+    "missing_guideline": 2,
+    "sample": [
+      {
+        "evidence_count": 3,
+        "name": "疑似主动脉夹层、活动性出血或重大出血风险未排除前，不得把溶栓作为可执行推荐。",
+        "scope_disease_code": null,
+        "code": "REC-CDSS-CAD-STEMI-03-02-FIB-BLOCK",
+        "action_count": 0,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "慢性肾脏病合并高血压：CKD合并高血压诊断标准推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-CKD-DIAG-DXC-CKD",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "慢性肾脏病合并高血压：CKD高血压血压和肾功能随访推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-CKD-FU-FU-CKD-BP-RENAL",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "慢性肾脏病合并高血压：降压治疗推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-CKD-TX-PLAN-CARD-BDE62A3BE028",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "老年高血压：老年高血压诊断标准推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-ELDERLY-DIAG-DXC-ELDERLY",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "老年高血压：老年高血压随访方案推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-ELDERLY-FU-FU-CARD-A15AFD3EECB9",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "老年高血压：联合降压治疗推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-ELDERLY-TX-PLAN-CARD-0CDCF256C0E6",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "高血压急症：高血压急症诊断标准推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-EMERGENCY-DIAG-DXC-EMERGENCY",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "高血压急症：高血压急症随访方案推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-EMERGENCY-FU-FU-CARD-5C2A91913A3B",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "高血压急症：联合降压治疗推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-EMERGENCY-TX-PLAN-CARD-0CDCF256C0E6",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "高血压急症：降压治疗推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-EMERGENCY-TX-PLAN-CARD-BDE62A3BE028",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "内分泌性高血压：内分泌性高血压诊断标准推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-ENDOCRINE-DIAG-DXC-CARD-71E8C657623B",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "内分泌性高血压：内分泌性高血压随访方案推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-ENDOCRINE-FU-FU-CARD-FD508C0F17A1",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "内分泌性高血压：降压治疗推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-ENDOCRINE-TX-PLAN-CARD-BDE62A3BE028",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "高血压：高血压诊断标准推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-HT-DIAG-DXC-CARD-AA96D71FB917",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "高血压：高血压随访方案推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-HT-FU-FU-CARD-67AAA3B7D885",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "高血压：联合降压治疗推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-HT-TX-PLAN-CARD-0CDCF256C0E6",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "高血压：生活方式干预推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-HT-TX-PLAN-CARD-2081B78ED14D",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "隐匿性高血压：隐匿性高血压诊断标准推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-MASKED-DIAG-DXC-MASKED",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "隐匿性高血压：隐匿性高血压随访方案推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-MASKED-FU-FU-CARD-3DAA53000684",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "隐匿性高血压：生活方式干预推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-MASKED-TX-PLAN-CARD-2081B78ED14D",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "原发性醛固酮增多症：原发性醛固酮增多症诊断标准推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-PA-DIAG-DXC-CARD-56EBD83589B6",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "原发性醛固酮增多症：原发性醛固酮增多症随访方案推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-PA-FU-FU-CARD-4431A1FE6C73",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "原发性醛固酮增多症：联合降压治疗推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-PA-TX-PLAN-CARD-0CDCF256C0E6",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "发作性高血压：发作性高血压诊断标准推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-PAROXYSMAL-DIAG-DXC-PAROXYSMAL",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "发作性高血压：发作性高血压随访方案推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-PAROXYSMAL-FU-FU-CARD-9EF08F23CBE3",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "发作性高血压：发作性高血压诱因处理和病因导向治疗推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-PAROXYSMAL-TX-PLAN-PAROXYSMAL-CAUSE-BA",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "原发性高血压：原发性高血压诊断标准推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-PRIMARY-DIAG-DXC-CARD-317486966B34",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "原发性高血压：原发性高血压随访方案推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-PRIMARY-FU-FU-CARD-D42E1520B05E",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "原发性高血压：联合降压治疗推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-PRIMARY-TX-PLAN-CARD-0CDCF256C0E6",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "原发性高血压：生活方式干预推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-PRIMARY-TX-PLAN-CARD-2081B78ED14D",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "肾实质性高血压：肾实质性高血压诊断标准推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-RENAL-PARENCHYMAL-DIAG-DXC-RENAL-PARENCHYMAL",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "肾实质性高血压：肾实质性高血压随访方案推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-RENAL-PARENCHYMAL-FU-FU-CARD-5B0D8BB5818D",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "肾实质性高血压：降压治疗推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-RENAL-PARENCHYMAL-TX-PLAN-CARD-BDE62A3BE028",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "肾血管性高血压：肾血管性高血压诊断标准推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-RENOVASCULAR-DIAG-DXC-RENOVASCULAR",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "肾血管性高血压：肾血管性高血压随访方案推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-RENOVASCULAR-FU-FU-CARD-B14257BE5587",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "肾血管性高血压：联合降压治疗推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-RENOVASCULAR-TX-PLAN-CARD-0CDCF256C0E6",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "难治性高血压：难治性高血压诊断标准推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-RESISTANT-DIAG-DXC-CARD-ACE197340A13",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "难治性高血压：难治性高血压随访方案推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-RESISTANT-FU-FU-CARD-162ACB3C6AA9",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "难治性高血压：联合降压治疗推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-RESISTANT-TX-PLAN-CARD-0CDCF256C0E6",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "难治性高血压：生活方式干预推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-RESISTANT-TX-PLAN-CARD-2081B78ED14D",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "继发性高血压：继发性高血压诊断标准推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-SECONDARY-DIAG-DXC-CARD-E024FB14B96D",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "继发性高血压：继发性高血压随访方案推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-SECONDARY-FU-FU-CARD-4B8BCE62B705",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "继发性高血压：联合降压治疗推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-SECONDARY-TX-PLAN-CARD-0CDCF256C0E6",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "继发性高血压：降压治疗推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-SECONDARY-TX-PLAN-CARD-BDE62A3BE028",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "高血压亚急症：高血压亚急症诊断标准推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-URGENCY-DIAG-DXC-URGENCY",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "高血压亚急症：高血压亚急症随访方案推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-URGENCY-FU-FU-CARD-FE4A3D41DF0A",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "高血压亚急症：降压治疗推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-URGENCY-TX-PLAN-CARD-BDE62A3BE028",
+        "action_count": 1,
+        "guideline_count": 1
+      },
+      {
+        "evidence_count": 0,
+        "name": "白大衣高血压：白大衣高血压诊断标准推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-WCH-DIAG-DXC-WCH",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "白大衣高血压：白大衣高血压随访方案推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-WCH-FU-FU-CARD-4A5605647CA9",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 0,
+        "name": "白大衣高血压：生活方式干预推荐",
+        "scope_disease_code": null,
+        "code": "REC-HT-WCH-TX-PLAN-CARD-2081B78ED14D",
+        "action_count": 1,
+        "guideline_count": 2
+      },
+      {
+        "evidence_count": 1,
+        "name": "STEMI直接PCI推荐陈述",
+        "scope_disease_code": null,
+        "code": "REC-CARD-STEMI-PRIMARY-PCI",
+        "action_count": 1,
+        "guideline_count": 0
+      },
+      {
+        "evidence_count": 1,
+        "name": "STEMI溶栓治疗推荐陈述",
+        "scope_disease_code": null,
+        "code": "REC-CARD-STEMI-THROMBOLYSIS",
+        "action_count": 1,
+        "guideline_count": 0
+      }
+    ]
+  },
+  "duplicate_check": {
+    "duplicate_semantic_relationships": 0
+  }
+}

@@ -1,0 +1,1603 @@
+{
+  "nodes": {
+    "input_node_count": 18,
+    "merged_node_count": 18
+  },
+  "relations": {
+    "input_relation_count": 36,
+    "merged_relation_count": 36,
+    "deleted_legacy_relationship_count": 0,
+    "precheck": [
+      {
+        "source_code": "DXC-CARD-464F39D5B91C",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-6DEAAA9D775F376F",
+        "source_found": "DXC-CARD-464F39D5B91C",
+        "target_found": "DXCOMP-CARD-6DEAAA9D775F376F",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXC-CARD-5121D5B9EC6F",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-5060E7C7E4028747",
+        "source_found": "DXC-CARD-5121D5B9EC6F",
+        "target_found": "DXCOMP-CARD-5060E7C7E4028747",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXC-CARD-B000729B8734",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-F2C58E3357A8A67E",
+        "source_found": "DXC-CARD-B000729B8734",
+        "target_found": "DXCOMP-CARD-F2C58E3357A8A67E",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXC-CARD-AA96D71FB917",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-BED95A1F0C4C47B1",
+        "source_found": "DXC-CARD-AA96D71FB917",
+        "target_found": "DXCOMP-CARD-BED95A1F0C4C47B1",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXC-HT-CKD",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-FEB94D0175B16156",
+        "source_found": "DXC-HT-CKD",
+        "target_found": "DXCOMP-CARD-FEB94D0175B16156",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXC-HT-ELDERLY",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-37489093BCBA7076",
+        "source_found": "DXC-HT-ELDERLY",
+        "target_found": "DXCOMP-CARD-37489093BCBA7076",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXC-HT-EMERGENCY",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-418C21C2A417E2DF",
+        "source_found": "DXC-HT-EMERGENCY",
+        "target_found": "DXCOMP-CARD-418C21C2A417E2DF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXC-CARD-71E8C657623B",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-EB3F0503ACC59AEA",
+        "source_found": "DXC-CARD-71E8C657623B",
+        "target_found": "DXCOMP-CARD-EB3F0503ACC59AEA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXC-HT-MASKED",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-986E58E6DC4BE122",
+        "source_found": "DXC-HT-MASKED",
+        "target_found": "DXCOMP-CARD-986E58E6DC4BE122",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXC-CARD-56EBD83589B6",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-29C5747B64E354EC",
+        "source_found": "DXC-CARD-56EBD83589B6",
+        "target_found": "DXCOMP-CARD-29C5747B64E354EC",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXC-HT-PAROXYSMAL",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-B78A7909853BBCA9",
+        "source_found": "DXC-HT-PAROXYSMAL",
+        "target_found": "DXCOMP-CARD-B78A7909853BBCA9",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXC-CARD-317486966B34",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-50763CCF2BAF52E4",
+        "source_found": "DXC-CARD-317486966B34",
+        "target_found": "DXCOMP-CARD-50763CCF2BAF52E4",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXC-HT-RENAL-PARENCHYMAL",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-F20921C62822E30B",
+        "source_found": "DXC-HT-RENAL-PARENCHYMAL",
+        "target_found": "DXCOMP-CARD-F20921C62822E30B",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXC-HT-RENOVASCULAR",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-1A69F7F701D5478D",
+        "source_found": "DXC-HT-RENOVASCULAR",
+        "target_found": "DXCOMP-CARD-1A69F7F701D5478D",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXC-CARD-ACE197340A13",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-61B59E85CBD1973D",
+        "source_found": "DXC-CARD-ACE197340A13",
+        "target_found": "DXCOMP-CARD-61B59E85CBD1973D",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXC-CARD-E024FB14B96D",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-972FE3B2953EA49B",
+        "source_found": "DXC-CARD-E024FB14B96D",
+        "target_found": "DXCOMP-CARD-972FE3B2953EA49B",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXC-HT-URGENCY",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-BA13180A33E1F68F",
+        "source_found": "DXC-HT-URGENCY",
+        "target_found": "DXCOMP-CARD-BA13180A33E1F68F",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXC-HT-WCH",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-C49FDF06064B466C",
+        "source_found": "DXC-HT-WCH",
+        "target_found": "DXCOMP-CARD-C49FDF06064B466C",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXCOMP-CARD-6DEAAA9D775F376F",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-FFB150BDDB1F8DC6E833-BBB",
+        "source_found": "DXCOMP-CARD-6DEAAA9D775F376F",
+        "target_found": "EVD-FFB150BDDB1F8DC6E833-BBB",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXCOMP-CARD-5060E7C7E4028747",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-66B9812B7CB594274FB3-SB",
+        "source_found": "DXCOMP-CARD-5060E7C7E4028747",
+        "target_found": "EVD-66B9812B7CB594274FB3-SB",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXCOMP-CARD-F2C58E3357A8A67E",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-8E17CB98F8033B5FF244-SND",
+        "source_found": "DXCOMP-CARD-F2C58E3357A8A67E",
+        "target_found": "EVD-8E17CB98F8033B5FF244-SND",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXCOMP-CARD-BED95A1F0C4C47B1",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-AC5FAB97F3920C8FE853-HT",
+        "source_found": "DXCOMP-CARD-BED95A1F0C4C47B1",
+        "target_found": "EVD-AC5FAB97F3920C8FE853-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXCOMP-CARD-FEB94D0175B16156",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-2DDA42E80412B28DBCD1-CKD",
+        "source_found": "DXCOMP-CARD-FEB94D0175B16156",
+        "target_found": "EVD-2DDA42E80412B28DBCD1-CKD",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXCOMP-CARD-37489093BCBA7076",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-2A5F1BF0D4498B079EAA-ELDERLY",
+        "source_found": "DXCOMP-CARD-37489093BCBA7076",
+        "target_found": "EVD-2A5F1BF0D4498B079EAA-ELDERLY",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXCOMP-CARD-418C21C2A417E2DF",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-909D53DCC890EB901C7A-EMERGENCY",
+        "source_found": "DXCOMP-CARD-418C21C2A417E2DF",
+        "target_found": "EVD-909D53DCC890EB901C7A-EMERGENCY",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXCOMP-CARD-EB3F0503ACC59AEA",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-4C07A5379B34F9BDC927-ENDOCRINE",
+        "source_found": "DXCOMP-CARD-EB3F0503ACC59AEA",
+        "target_found": "EVD-4C07A5379B34F9BDC927-ENDOCRINE",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXCOMP-CARD-986E58E6DC4BE122",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-5C3E34985A31B63EF4DB-MASKED",
+        "source_found": "DXCOMP-CARD-986E58E6DC4BE122",
+        "target_found": "EVD-5C3E34985A31B63EF4DB-MASKED",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXCOMP-CARD-29C5747B64E354EC",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C859652F95F58B9E8CF4-PA",
+        "source_found": "DXCOMP-CARD-29C5747B64E354EC",
+        "target_found": "EVD-C859652F95F58B9E8CF4-PA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXCOMP-CARD-B78A7909853BBCA9",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-6AD0B646AD8AAF13F84F-PAROXYSMAL",
+        "source_found": "DXCOMP-CARD-B78A7909853BBCA9",
+        "target_found": "EVD-6AD0B646AD8AAF13F84F-PAROXYSMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXCOMP-CARD-50763CCF2BAF52E4",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C39CAE584FE67A892597-PRIMARY",
+        "source_found": "DXCOMP-CARD-50763CCF2BAF52E4",
+        "target_found": "EVD-C39CAE584FE67A892597-PRIMARY",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXCOMP-CARD-F20921C62822E30B",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-47EDE155E1D93F693580-PARENCHYMAL",
+        "source_found": "DXCOMP-CARD-F20921C62822E30B",
+        "target_found": "EVD-47EDE155E1D93F693580-PARENCHYMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXCOMP-CARD-1A69F7F701D5478D",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-94C7E566B0A8FDC6FDFA-RENOVASCULAR",
+        "source_found": "DXCOMP-CARD-1A69F7F701D5478D",
+        "target_found": "EVD-94C7E566B0A8FDC6FDFA-RENOVASCULAR",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXCOMP-CARD-61B59E85CBD1973D",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C39CAE584FE67A892597-RESISTANT",
+        "source_found": "DXCOMP-CARD-61B59E85CBD1973D",
+        "target_found": "EVD-C39CAE584FE67A892597-RESISTANT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXCOMP-CARD-972FE3B2953EA49B",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-7DE846A8728142266C9C-SECONDARY",
+        "source_found": "DXCOMP-CARD-972FE3B2953EA49B",
+        "target_found": "EVD-7DE846A8728142266C9C-SECONDARY",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXCOMP-CARD-BA13180A33E1F68F",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-F26E32F2BA8ADBF83473-URGENCY",
+        "source_found": "DXCOMP-CARD-BA13180A33E1F68F",
+        "target_found": "EVD-F26E32F2BA8ADBF83473-URGENCY",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "DXCOMP-CARD-C49FDF06064B466C",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C2D90AE1E14C9148437B-WCH",
+        "source_found": "DXCOMP-CARD-C49FDF06064B466C",
+        "target_found": "EVD-C2D90AE1E14C9148437B-WCH",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      }
+    ],
+    "actions": [
+      {
+        "id": "REL-CARD-DXC-COMP-F0F5A66018F7F79F",
+        "source_code": "DXC-CARD-464F39D5B91C",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-6DEAAA9D775F376F",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-2AFBC3699160BFF2",
+        "source_code": "DXCOMP-CARD-6DEAAA9D775F376F",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-FFB150BDDB1F8DC6E833-BBB",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-1590D607517E66BB",
+        "source_code": "DXC-CARD-5121D5B9EC6F",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-5060E7C7E4028747",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-E18F9AC36B8C67B2",
+        "source_code": "DXCOMP-CARD-5060E7C7E4028747",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-66B9812B7CB594274FB3-SB",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-813EB31B048E59CF",
+        "source_code": "DXC-CARD-B000729B8734",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-F2C58E3357A8A67E",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-721AB333073B4C35",
+        "source_code": "DXCOMP-CARD-F2C58E3357A8A67E",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-8E17CB98F8033B5FF244-SND",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-FB561F97629F1A14",
+        "source_code": "DXC-CARD-AA96D71FB917",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-BED95A1F0C4C47B1",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-6CDD94BF9E8679BD",
+        "source_code": "DXCOMP-CARD-BED95A1F0C4C47B1",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-AC5FAB97F3920C8FE853-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-428C14E341D4C4C2",
+        "source_code": "DXC-HT-CKD",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-FEB94D0175B16156",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-CF736B6E440C0777",
+        "source_code": "DXCOMP-CARD-FEB94D0175B16156",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-2DDA42E80412B28DBCD1-CKD",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-35852F8704A1E64E",
+        "source_code": "DXC-HT-ELDERLY",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-37489093BCBA7076",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-BE7729003615C78A",
+        "source_code": "DXCOMP-CARD-37489093BCBA7076",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-2A5F1BF0D4498B079EAA-ELDERLY",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-4264314FAD60341C",
+        "source_code": "DXC-HT-EMERGENCY",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-418C21C2A417E2DF",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-86154F540F2DE029",
+        "source_code": "DXCOMP-CARD-418C21C2A417E2DF",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-909D53DCC890EB901C7A-EMERGENCY",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-EE3908292D3DE2C6",
+        "source_code": "DXC-CARD-71E8C657623B",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-EB3F0503ACC59AEA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-6DD330C03A10D6FD",
+        "source_code": "DXCOMP-CARD-EB3F0503ACC59AEA",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-4C07A5379B34F9BDC927-ENDOCRINE",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-6462C5988CF596EA",
+        "source_code": "DXC-HT-MASKED",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-986E58E6DC4BE122",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-1AB9D94B1664EEFB",
+        "source_code": "DXCOMP-CARD-986E58E6DC4BE122",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-5C3E34985A31B63EF4DB-MASKED",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-A5B20B227C4B1980",
+        "source_code": "DXC-CARD-56EBD83589B6",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-29C5747B64E354EC",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-7D754D72C680469C",
+        "source_code": "DXCOMP-CARD-29C5747B64E354EC",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C859652F95F58B9E8CF4-PA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-57F77DA075BC2A50",
+        "source_code": "DXC-HT-PAROXYSMAL",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-B78A7909853BBCA9",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-F57C319ECFA84174",
+        "source_code": "DXCOMP-CARD-B78A7909853BBCA9",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-6AD0B646AD8AAF13F84F-PAROXYSMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-15DFAD7D79B8CD8D",
+        "source_code": "DXC-CARD-317486966B34",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-50763CCF2BAF52E4",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-95688D008BB40776",
+        "source_code": "DXCOMP-CARD-50763CCF2BAF52E4",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C39CAE584FE67A892597-PRIMARY",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-CAC694F4FD51103D",
+        "source_code": "DXC-HT-RENAL-PARENCHYMAL",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-F20921C62822E30B",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-4B7AD7C47544C7C3",
+        "source_code": "DXCOMP-CARD-F20921C62822E30B",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-47EDE155E1D93F693580-PARENCHYMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-662F4210CFE27AF8",
+        "source_code": "DXC-HT-RENOVASCULAR",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-1A69F7F701D5478D",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-A5D57D9998F45C2E",
+        "source_code": "DXCOMP-CARD-1A69F7F701D5478D",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-94C7E566B0A8FDC6FDFA-RENOVASCULAR",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-7647B1F21E6CEB9C",
+        "source_code": "DXC-CARD-ACE197340A13",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-61B59E85CBD1973D",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-B94DD97E5AF2ED51",
+        "source_code": "DXCOMP-CARD-61B59E85CBD1973D",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C39CAE584FE67A892597-RESISTANT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-A040CCFF0EB96DB4",
+        "source_code": "DXC-CARD-E024FB14B96D",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-972FE3B2953EA49B",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-29BBB579F099B6BD",
+        "source_code": "DXCOMP-CARD-972FE3B2953EA49B",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-7DE846A8728142266C9C-SECONDARY",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-8A52187562AE6AAB",
+        "source_code": "DXC-HT-URGENCY",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-BA13180A33E1F68F",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-F0F2212BA85B88C8",
+        "source_code": "DXCOMP-CARD-BA13180A33E1F68F",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-F26E32F2BA8ADBF83473-URGENCY",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-C9AE967474A5D3D6",
+        "source_code": "DXC-HT-WCH",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-C49FDF06064B466C",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-A9DC911A741F5569",
+        "source_code": "DXCOMP-CARD-C49FDF06064B466C",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C2D90AE1E14C9148437B-WCH",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      }
+    ],
+    "postcheck": [
+      {
+        "source_code": "DXC-CARD-464F39D5B91C",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-6DEAAA9D775F376F",
+        "source_found": "DXC-CARD-464F39D5B91C",
+        "target_found": "DXCOMP-CARD-6DEAAA9D775F376F",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-F0F5A66018F7F79F"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXC-CARD-5121D5B9EC6F",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-5060E7C7E4028747",
+        "source_found": "DXC-CARD-5121D5B9EC6F",
+        "target_found": "DXCOMP-CARD-5060E7C7E4028747",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-1590D607517E66BB"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXC-CARD-B000729B8734",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-F2C58E3357A8A67E",
+        "source_found": "DXC-CARD-B000729B8734",
+        "target_found": "DXCOMP-CARD-F2C58E3357A8A67E",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-813EB31B048E59CF"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXC-CARD-AA96D71FB917",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-BED95A1F0C4C47B1",
+        "source_found": "DXC-CARD-AA96D71FB917",
+        "target_found": "DXCOMP-CARD-BED95A1F0C4C47B1",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-FB561F97629F1A14"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXC-HT-CKD",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-FEB94D0175B16156",
+        "source_found": "DXC-HT-CKD",
+        "target_found": "DXCOMP-CARD-FEB94D0175B16156",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-428C14E341D4C4C2"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXC-HT-ELDERLY",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-37489093BCBA7076",
+        "source_found": "DXC-HT-ELDERLY",
+        "target_found": "DXCOMP-CARD-37489093BCBA7076",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-35852F8704A1E64E"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXC-HT-EMERGENCY",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-418C21C2A417E2DF",
+        "source_found": "DXC-HT-EMERGENCY",
+        "target_found": "DXCOMP-CARD-418C21C2A417E2DF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-4264314FAD60341C"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXC-CARD-71E8C657623B",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-EB3F0503ACC59AEA",
+        "source_found": "DXC-CARD-71E8C657623B",
+        "target_found": "DXCOMP-CARD-EB3F0503ACC59AEA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-EE3908292D3DE2C6"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXC-HT-MASKED",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-986E58E6DC4BE122",
+        "source_found": "DXC-HT-MASKED",
+        "target_found": "DXCOMP-CARD-986E58E6DC4BE122",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-6462C5988CF596EA"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXC-CARD-56EBD83589B6",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-29C5747B64E354EC",
+        "source_found": "DXC-CARD-56EBD83589B6",
+        "target_found": "DXCOMP-CARD-29C5747B64E354EC",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-A5B20B227C4B1980"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXC-HT-PAROXYSMAL",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-B78A7909853BBCA9",
+        "source_found": "DXC-HT-PAROXYSMAL",
+        "target_found": "DXCOMP-CARD-B78A7909853BBCA9",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-57F77DA075BC2A50"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXC-CARD-317486966B34",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-50763CCF2BAF52E4",
+        "source_found": "DXC-CARD-317486966B34",
+        "target_found": "DXCOMP-CARD-50763CCF2BAF52E4",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-15DFAD7D79B8CD8D"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXC-HT-RENAL-PARENCHYMAL",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-F20921C62822E30B",
+        "source_found": "DXC-HT-RENAL-PARENCHYMAL",
+        "target_found": "DXCOMP-CARD-F20921C62822E30B",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-CAC694F4FD51103D"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXC-HT-RENOVASCULAR",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-1A69F7F701D5478D",
+        "source_found": "DXC-HT-RENOVASCULAR",
+        "target_found": "DXCOMP-CARD-1A69F7F701D5478D",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-662F4210CFE27AF8"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXC-CARD-ACE197340A13",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-61B59E85CBD1973D",
+        "source_found": "DXC-CARD-ACE197340A13",
+        "target_found": "DXCOMP-CARD-61B59E85CBD1973D",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-7647B1F21E6CEB9C"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXC-CARD-E024FB14B96D",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-972FE3B2953EA49B",
+        "source_found": "DXC-CARD-E024FB14B96D",
+        "target_found": "DXCOMP-CARD-972FE3B2953EA49B",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-A040CCFF0EB96DB4"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXC-HT-URGENCY",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-BA13180A33E1F68F",
+        "source_found": "DXC-HT-URGENCY",
+        "target_found": "DXCOMP-CARD-BA13180A33E1F68F",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-8A52187562AE6AAB"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXC-HT-WCH",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-C49FDF06064B466C",
+        "source_found": "DXC-HT-WCH",
+        "target_found": "DXCOMP-CARD-C49FDF06064B466C",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-C9AE967474A5D3D6"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXCOMP-CARD-6DEAAA9D775F376F",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-FFB150BDDB1F8DC6E833-BBB",
+        "source_found": "DXCOMP-CARD-6DEAAA9D775F376F",
+        "target_found": "EVD-FFB150BDDB1F8DC6E833-BBB",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-2AFBC3699160BFF2"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXCOMP-CARD-5060E7C7E4028747",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-66B9812B7CB594274FB3-SB",
+        "source_found": "DXCOMP-CARD-5060E7C7E4028747",
+        "target_found": "EVD-66B9812B7CB594274FB3-SB",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-E18F9AC36B8C67B2"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXCOMP-CARD-F2C58E3357A8A67E",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-8E17CB98F8033B5FF244-SND",
+        "source_found": "DXCOMP-CARD-F2C58E3357A8A67E",
+        "target_found": "EVD-8E17CB98F8033B5FF244-SND",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-721AB333073B4C35"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXCOMP-CARD-BED95A1F0C4C47B1",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-AC5FAB97F3920C8FE853-HT",
+        "source_found": "DXCOMP-CARD-BED95A1F0C4C47B1",
+        "target_found": "EVD-AC5FAB97F3920C8FE853-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-6CDD94BF9E8679BD"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXCOMP-CARD-FEB94D0175B16156",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-2DDA42E80412B28DBCD1-CKD",
+        "source_found": "DXCOMP-CARD-FEB94D0175B16156",
+        "target_found": "EVD-2DDA42E80412B28DBCD1-CKD",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-CF736B6E440C0777"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXCOMP-CARD-37489093BCBA7076",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-2A5F1BF0D4498B079EAA-ELDERLY",
+        "source_found": "DXCOMP-CARD-37489093BCBA7076",
+        "target_found": "EVD-2A5F1BF0D4498B079EAA-ELDERLY",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-BE7729003615C78A"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXCOMP-CARD-418C21C2A417E2DF",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-909D53DCC890EB901C7A-EMERGENCY",
+        "source_found": "DXCOMP-CARD-418C21C2A417E2DF",
+        "target_found": "EVD-909D53DCC890EB901C7A-EMERGENCY",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-86154F540F2DE029"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXCOMP-CARD-EB3F0503ACC59AEA",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-4C07A5379B34F9BDC927-ENDOCRINE",
+        "source_found": "DXCOMP-CARD-EB3F0503ACC59AEA",
+        "target_found": "EVD-4C07A5379B34F9BDC927-ENDOCRINE",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-6DD330C03A10D6FD"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXCOMP-CARD-986E58E6DC4BE122",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-5C3E34985A31B63EF4DB-MASKED",
+        "source_found": "DXCOMP-CARD-986E58E6DC4BE122",
+        "target_found": "EVD-5C3E34985A31B63EF4DB-MASKED",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-1AB9D94B1664EEFB"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXCOMP-CARD-29C5747B64E354EC",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C859652F95F58B9E8CF4-PA",
+        "source_found": "DXCOMP-CARD-29C5747B64E354EC",
+        "target_found": "EVD-C859652F95F58B9E8CF4-PA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-7D754D72C680469C"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXCOMP-CARD-B78A7909853BBCA9",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-6AD0B646AD8AAF13F84F-PAROXYSMAL",
+        "source_found": "DXCOMP-CARD-B78A7909853BBCA9",
+        "target_found": "EVD-6AD0B646AD8AAF13F84F-PAROXYSMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-F57C319ECFA84174"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXCOMP-CARD-50763CCF2BAF52E4",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C39CAE584FE67A892597-PRIMARY",
+        "source_found": "DXCOMP-CARD-50763CCF2BAF52E4",
+        "target_found": "EVD-C39CAE584FE67A892597-PRIMARY",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-95688D008BB40776"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXCOMP-CARD-F20921C62822E30B",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-47EDE155E1D93F693580-PARENCHYMAL",
+        "source_found": "DXCOMP-CARD-F20921C62822E30B",
+        "target_found": "EVD-47EDE155E1D93F693580-PARENCHYMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-4B7AD7C47544C7C3"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXCOMP-CARD-1A69F7F701D5478D",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-94C7E566B0A8FDC6FDFA-RENOVASCULAR",
+        "source_found": "DXCOMP-CARD-1A69F7F701D5478D",
+        "target_found": "EVD-94C7E566B0A8FDC6FDFA-RENOVASCULAR",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-A5D57D9998F45C2E"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXCOMP-CARD-61B59E85CBD1973D",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C39CAE584FE67A892597-RESISTANT",
+        "source_found": "DXCOMP-CARD-61B59E85CBD1973D",
+        "target_found": "EVD-C39CAE584FE67A892597-RESISTANT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-B94DD97E5AF2ED51"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXCOMP-CARD-972FE3B2953EA49B",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-7DE846A8728142266C9C-SECONDARY",
+        "source_found": "DXCOMP-CARD-972FE3B2953EA49B",
+        "target_found": "EVD-7DE846A8728142266C9C-SECONDARY",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-29BBB579F099B6BD"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXCOMP-CARD-BA13180A33E1F68F",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-F26E32F2BA8ADBF83473-URGENCY",
+        "source_found": "DXCOMP-CARD-BA13180A33E1F68F",
+        "target_found": "EVD-F26E32F2BA8ADBF83473-URGENCY",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-F0F2212BA85B88C8"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "DXCOMP-CARD-C49FDF06064B466C",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C2D90AE1E14C9148437B-WCH",
+        "source_found": "DXCOMP-CARD-C49FDF06064B466C",
+        "target_found": "EVD-C2D90AE1E14C9148437B-WCH",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-A9DC911A741F5569"
+        ],
+        "missing_id_count": 0
+      }
+    ],
+    "post_actions": [
+      {
+        "id": "REL-CARD-DXC-COMP-F0F5A66018F7F79F",
+        "source_code": "DXC-CARD-464F39D5B91C",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-6DEAAA9D775F376F",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-F0F5A66018F7F79F"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-2AFBC3699160BFF2",
+        "source_code": "DXCOMP-CARD-6DEAAA9D775F376F",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-FFB150BDDB1F8DC6E833-BBB",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-2AFBC3699160BFF2"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-1590D607517E66BB",
+        "source_code": "DXC-CARD-5121D5B9EC6F",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-5060E7C7E4028747",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-1590D607517E66BB"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-E18F9AC36B8C67B2",
+        "source_code": "DXCOMP-CARD-5060E7C7E4028747",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-66B9812B7CB594274FB3-SB",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-E18F9AC36B8C67B2"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-813EB31B048E59CF",
+        "source_code": "DXC-CARD-B000729B8734",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-F2C58E3357A8A67E",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-813EB31B048E59CF"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-721AB333073B4C35",
+        "source_code": "DXCOMP-CARD-F2C58E3357A8A67E",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-8E17CB98F8033B5FF244-SND",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-721AB333073B4C35"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-FB561F97629F1A14",
+        "source_code": "DXC-CARD-AA96D71FB917",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-BED95A1F0C4C47B1",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-FB561F97629F1A14"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-6CDD94BF9E8679BD",
+        "source_code": "DXCOMP-CARD-BED95A1F0C4C47B1",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-AC5FAB97F3920C8FE853-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-6CDD94BF9E8679BD"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-428C14E341D4C4C2",
+        "source_code": "DXC-HT-CKD",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-FEB94D0175B16156",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-428C14E341D4C4C2"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-CF736B6E440C0777",
+        "source_code": "DXCOMP-CARD-FEB94D0175B16156",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-2DDA42E80412B28DBCD1-CKD",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-CF736B6E440C0777"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-35852F8704A1E64E",
+        "source_code": "DXC-HT-ELDERLY",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-37489093BCBA7076",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-35852F8704A1E64E"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-BE7729003615C78A",
+        "source_code": "DXCOMP-CARD-37489093BCBA7076",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-2A5F1BF0D4498B079EAA-ELDERLY",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-BE7729003615C78A"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-4264314FAD60341C",
+        "source_code": "DXC-HT-EMERGENCY",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-418C21C2A417E2DF",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-4264314FAD60341C"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-86154F540F2DE029",
+        "source_code": "DXCOMP-CARD-418C21C2A417E2DF",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-909D53DCC890EB901C7A-EMERGENCY",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-86154F540F2DE029"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-EE3908292D3DE2C6",
+        "source_code": "DXC-CARD-71E8C657623B",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-EB3F0503ACC59AEA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-EE3908292D3DE2C6"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-6DD330C03A10D6FD",
+        "source_code": "DXCOMP-CARD-EB3F0503ACC59AEA",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-4C07A5379B34F9BDC927-ENDOCRINE",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-6DD330C03A10D6FD"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-6462C5988CF596EA",
+        "source_code": "DXC-HT-MASKED",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-986E58E6DC4BE122",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-6462C5988CF596EA"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-1AB9D94B1664EEFB",
+        "source_code": "DXCOMP-CARD-986E58E6DC4BE122",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-5C3E34985A31B63EF4DB-MASKED",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-1AB9D94B1664EEFB"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-A5B20B227C4B1980",
+        "source_code": "DXC-CARD-56EBD83589B6",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-29C5747B64E354EC",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-A5B20B227C4B1980"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-7D754D72C680469C",
+        "source_code": "DXCOMP-CARD-29C5747B64E354EC",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C859652F95F58B9E8CF4-PA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-7D754D72C680469C"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-57F77DA075BC2A50",
+        "source_code": "DXC-HT-PAROXYSMAL",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-B78A7909853BBCA9",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-57F77DA075BC2A50"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-F57C319ECFA84174",
+        "source_code": "DXCOMP-CARD-B78A7909853BBCA9",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-6AD0B646AD8AAF13F84F-PAROXYSMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-F57C319ECFA84174"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-15DFAD7D79B8CD8D",
+        "source_code": "DXC-CARD-317486966B34",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-50763CCF2BAF52E4",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-15DFAD7D79B8CD8D"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-95688D008BB40776",
+        "source_code": "DXCOMP-CARD-50763CCF2BAF52E4",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C39CAE584FE67A892597-PRIMARY",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-95688D008BB40776"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-CAC694F4FD51103D",
+        "source_code": "DXC-HT-RENAL-PARENCHYMAL",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-F20921C62822E30B",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-CAC694F4FD51103D"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-4B7AD7C47544C7C3",
+        "source_code": "DXCOMP-CARD-F20921C62822E30B",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-47EDE155E1D93F693580-PARENCHYMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-4B7AD7C47544C7C3"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-662F4210CFE27AF8",
+        "source_code": "DXC-HT-RENOVASCULAR",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-1A69F7F701D5478D",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-662F4210CFE27AF8"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-A5D57D9998F45C2E",
+        "source_code": "DXCOMP-CARD-1A69F7F701D5478D",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-94C7E566B0A8FDC6FDFA-RENOVASCULAR",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-A5D57D9998F45C2E"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-7647B1F21E6CEB9C",
+        "source_code": "DXC-CARD-ACE197340A13",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-61B59E85CBD1973D",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-7647B1F21E6CEB9C"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-B94DD97E5AF2ED51",
+        "source_code": "DXCOMP-CARD-61B59E85CBD1973D",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C39CAE584FE67A892597-RESISTANT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-B94DD97E5AF2ED51"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-A040CCFF0EB96DB4",
+        "source_code": "DXC-CARD-E024FB14B96D",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-972FE3B2953EA49B",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-A040CCFF0EB96DB4"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-29BBB579F099B6BD",
+        "source_code": "DXCOMP-CARD-972FE3B2953EA49B",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-7DE846A8728142266C9C-SECONDARY",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-29BBB579F099B6BD"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-8A52187562AE6AAB",
+        "source_code": "DXC-HT-URGENCY",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-BA13180A33E1F68F",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-8A52187562AE6AAB"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-F0F2212BA85B88C8",
+        "source_code": "DXCOMP-CARD-BA13180A33E1F68F",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-F26E32F2BA8ADBF83473-URGENCY",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-F0F2212BA85B88C8"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXC-COMP-C9AE967474A5D3D6",
+        "source_code": "DXC-HT-WCH",
+        "relationType": "has_diagnostic_component",
+        "target_code": "DXCOMP-CARD-C49FDF06064B466C",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXC-COMP-C9AE967474A5D3D6"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-DXCOMP-EVD-A9DC911A741F5569",
+        "source_code": "DXCOMP-CARD-C49FDF06064B466C",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-C2D90AE1E14C9148437B-WCH",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-DXCOMP-EVD-A9DC911A741F5569"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      }
+    ]
+  }
+}

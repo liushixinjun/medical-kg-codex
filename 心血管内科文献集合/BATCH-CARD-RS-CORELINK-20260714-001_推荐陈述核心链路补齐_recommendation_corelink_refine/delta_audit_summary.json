@@ -1,0 +1,17 @@
+{
+  "batch_id": "BATCH-CARD-RS-CORELINK-20260714-001",
+  "generated_at": "2026-07-14 07:16:37",
+  "safe_relation_count": 293,
+  "safe_supported_by_evidence_count": 291,
+  "safe_recommends_action_count": 2,
+  "blocked_item_count": 53,
+  "blocked_by_part": {
+    "based_on_guideline": 2,
+    "recommends_action": 1,
+    "supported_by_evidence": 50
+  },
+  "local_validation": {
+    "duplicate_relation_semantic_keys": 0
+  },
+  "scope": "全库 RecommendationStatement 安全回连；以冠心病优先，但同类可安全回连关系一次性修复。"
+}
