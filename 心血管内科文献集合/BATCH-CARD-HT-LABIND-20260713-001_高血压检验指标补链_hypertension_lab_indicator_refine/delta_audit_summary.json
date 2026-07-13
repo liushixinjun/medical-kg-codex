@@ -1,0 +1,44 @@
+{
+  "batch_id": "BATCH-CARD-HT-LABIND-20260713-001",
+  "generated_at": "2026-07-13 23:21:02",
+  "ht_required_lab_gap_rows_targeted": 51,
+  "ht_unique_lab_tests_targeted": 7,
+  "new_or_upsert_node_count": 9,
+  "delta_relation_count": 28,
+  "new_exam_indicator_nodes": [
+    "IND-CARD-HT-LAB-FPG-ABNORMAL",
+    "IND-CARD-HT-LAB-CREATININE-ABNORMAL",
+    "IND-CARD-HT-LAB-URIC-ACID-ELEVATED",
+    "IND-CARD-HT-LAB-ARR-ABNORMAL",
+    "IND-CARD-HT-LAB-UACR-ABNORMAL",
+    "IND-CARD-LAB-BLOOD-CULTURE-RESULT"
+  ],
+  "new_evidence_nodes": [
+    "EVI-CARD-LABIND-BLOODCULTURE-D19439DDD990ECA7",
+    "EVI-CARD-LABIND-BLOODCULTURE-B8262456E9A1E2A7",
+    "EVI-CARD-LABIND-BLOODCULTURE-378F21D58AD7FFCA"
+  ],
+  "blocked_rows": [
+    {
+      "disease_code": "DIS-CARD-PERICARD-ACUTE",
+      "disease_name": "急性心包炎",
+      "lab_name": "D-二聚体",
+      "lab_code": "CARD-SKELETON-FULL-20260709-LABTEST-963F52815A5370A3",
+      "reason": "目标 LabTest 节点和疾病-检验关系均缺少非空原文证据；不能用其他疾病的 D-二聚体证据硬补。",
+      "next_action": "回到教材/指南原文补证据后再生成 delta。"
+    },
+    {
+      "disease_code": "DIS-CARD-VTE",
+      "disease_name": "静脉血栓症",
+      "lab_name": "D-二聚体",
+      "lab_code": "CARD-SKELETON-FULL-20260709-LABTEST-963F52815A5370A3",
+      "reason": "目标 LabTest 节点和疾病-检验关系均缺少非空原文证据；虽然库内存在 AMI 相关 D-二聚体证据，但不能跨疾病直接套用。",
+      "next_action": "回到 VTE/肺栓塞教材或指南原文补证据后再生成 delta。"
+    }
+  ],
+  "local_validation": {
+    "duplicate_node_codes": 0,
+    "duplicate_relation_semantic_keys": 0
+  },
+  "expected_effect": "高血压 51 条 required LabTest 缺指标缺口清零；血培养 3 条老骨架缺口同步补证据和指标；D-二聚体 2 条保留阻断。"
+}

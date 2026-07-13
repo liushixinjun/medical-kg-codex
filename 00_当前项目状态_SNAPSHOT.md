@@ -1,3 +1,26 @@
+# 00_当前项目状态_SNAPSHOT
+
+更新时间：2026-07-13 23:27:54
+
+## 当前阶段
+心血管内科图谱进入“全库质量治理 + 已解析疾病 CDSS 决策层补强”阶段。
+
+## 最新完成
+- `BATCH-CARD-HT-LABIND-20260713-001` 已导入 Neo4j。
+- 高血压 required LabTest 缺口 51→0。
+- 全库 required LabTest 缺口 56→2。
+- 本轮新增/更新节点 9、关系 28。
+
+## 当前核心问题
+- 剩余 2 条 required LabTest 缺口均为 D-二聚体，需要回原文补证据，不能跨疾病套用 AMI 同名证据。
+- `RecommendationStatement` 缺核心链路真实为 344 条，旧报告 100 是 LIMIT 截断。
+- 诊断标准无明细 24 条仍需治理。
+
+## 下一步唯一建议动作
+按疾病大类批量治理 RecommendationStatement 和 DiagnosisCriteria：优先冠心病、心肌病、心力衰竭、心律失常、高血压。
+
+---
+
 # 当前项目状态 SNAPSHOT
 
 更新时间：2026-07-09 08:10:00

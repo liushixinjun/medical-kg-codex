@@ -1,3 +1,28 @@
+## 2026-07-13 23:27:54｜高血压检验指标补链已导入 Neo4j，全库 required LabTest 缺口降至 2 条
+
+### 用户问题
+继续执行并提高质量：不要让单个节点问题拖慢全局进度，同时要把可安全修复的数据直接入库，把不能安全修复的明确阻断。
+
+### 根因判断
+1. 高血压 51 条 `requires_lab_test` 缺口的根因不是缺证据，而是 7 个共享 `LabTest` 没有下钻到 `ExamIndicator`。
+2. 3 条血培养老骨架缺口在疾病-检验关系上已有原文证据，可转成 Evidence 节点并补 `血培养结果` 指标。
+3. 2 条 D-二聚体缺口所在目标 LabTest 与疾病关系均无非空原文证据，不能借用 AMI 的同名 D-二聚体证据硬补。
+4. 旧全库审计脚本对 `RecommendationStatement` 使用了 `LIMIT 100`，之前显示 100 条只是截断样本；本轮真实统计为 344 条。
+
+### 执行结果
+- 批次：`BATCH-CARD-HT-LABIND-20260713-001`
+- 输出目录：`E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\BATCH-CARD-HT-LABIND-20260713-001_高血压检验指标补链_hypertension_lab_indicator_refine`
+- Neo4j 写入：是
+- 节点 upsert：9 个
+- 关系 upsert：28 条
+- 高血压 required LabTest 缺口：51 → 0
+- 全库 required LabTest 缺口：56 → 2
+- 剩余阻断：急性心包炎 -> D-二聚体；静脉血栓症 -> D-二聚体
+- 后置体检目录：`E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\00_全局质量体检_global_quality_audit\20260713_after_ht_lab_indicator_refine`
+
+### 下一步
+优先处理 344 条 RecommendationStatement 缺核心链路和 24 条诊断标准无明细；D-二聚体 2 条需回到 VTE/心包炎原文后再补，不做跨疾病硬补。
+
 # AI自动化工具-文献指南解析步骤记录
 
 用途：记录当前和最近任务的执行过程摘要。历史记录已按月归档到 `日志归档_log_archive/`。

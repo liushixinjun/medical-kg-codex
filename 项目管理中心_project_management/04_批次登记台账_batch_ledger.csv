@@ -1,4 +1,5 @@
 batch_id,学科,疾病大类,专病范围,状态,输出路径,是否写Neo4j,备注
+BATCH-CARD-HT-LABIND-20260713-001,心血管内科,跨疾病大类/检验指标补链,高血压检验指标+血培养老骨架补证据,已导入Neo4j并通过postcheck,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\BATCH-CARD-HT-LABIND-20260713-001_高血压检验指标补链_hypertension_lab_indicator_refine,是,节点9、关系28；高血压required LabTest缺口51→0；全库required LabTest缺口56→2；剩余D-二聚体2条阻断
 BATCH-CARD-VHD-20260713-001,心血管内科,瓣膜病,G0预检,已完成G0预检未写Neo4j,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\BATCH-CARD-VHD-20260713-001_瓣膜病_ValvularHeartDisease_G0预检,否,候选资料21份；教材1份；指南/文献20份；P0固定教材1份；P1优先资料18份；P2候选资料2份
 BATCH-CARD-LAB-CLEANUP-20260713-001,心血管内科,跨疾病大类,AMI/HF血培养误归属检验关系清理,已执行且服务器复核通过,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\BATCH-CARD-LAB-CLEANUP-20260713-001_血培养误归属检验关系清理_blood_culture_cleanup,是,删除2条误归属requires_lab_test关系：急性心肌梗死->血培养、心力衰竭->血培养；保留LabTest和Evidence节点
 BATCH-CARD-LAB-EVIDENCE-20260713-001,心血管内科,跨疾病大类,冠心病/心肌病/心力衰竭/心律失常空证据检验项目原文补证,已生成并导入Neo4j且服务器postcheck通过,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\BATCH-CARD-LAB-EVIDENCE-20260713-001_空证据检验项目原文补证_lab_empty_evidence_backfill,是,新增/更新20个节点；49条关系；证据节点15；新增标准检验指标5；剩余血培养2条因缺少AMI/HF直接证据被阻断；非KGNode/空证据/重复语义关系均为0

@@ -1,0 +1,3 @@
+﻿disease_code,disease_name,lab_code,lab_name,reason,next_action
+DIS-CARD-PERICARD-ACUTE,急性心包炎,CARD-SKELETON-FULL-20260709-LABTEST-963F52815A5370A3,D-二聚体,目标 LabTest 节点和疾病-检验关系均缺少非空原文证据；不能用其他疾病的 D-二聚体证据硬补。,回到教材/指南原文补证据后再生成 delta。
+DIS-CARD-VTE,静脉血栓症,CARD-SKELETON-FULL-20260709-LABTEST-963F52815A5370A3,D-二聚体,目标 LabTest 节点和疾病-检验关系均缺少非空原文证据；虽然库内存在 AMI 相关 D-二聚体证据，但不能跨疾病直接套用。,回到 VTE/肺栓塞教材或指南原文补证据后再生成 delta。

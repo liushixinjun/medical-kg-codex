@@ -1,0 +1,1251 @@
+{
+  "nodes": {
+    "input_node_count": 9,
+    "merged_node_count": 9
+  },
+  "relations": {
+    "input_relation_count": 28,
+    "merged_relation_count": 28,
+    "deleted_legacy_relationship_count": 0,
+    "precheck": [
+      {
+        "source_code": "LAB-CARD-0C977E67C366",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+        "source_found": "LAB-CARD-0C977E67C366",
+        "target_found": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-C59B64C19ADD",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "source_found": "LAB-CARD-C59B64C19ADD",
+        "target_found": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-D26D76AD854B",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-CREATININE-ABNORMAL",
+        "source_found": "LAB-CARD-D26D76AD854B",
+        "target_found": "IND-CARD-HT-LAB-CREATININE-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-23D1E86AB4BE",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "source_found": "LAB-CARD-23D1E86AB4BE",
+        "target_found": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-F2BFB7EA8B44",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-URIC-ACID-ELEVATED",
+        "source_found": "LAB-CARD-F2BFB7EA8B44",
+        "target_found": "IND-CARD-HT-LAB-URIC-ACID-ELEVATED",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-91796AAB61B0",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-ARR-ABNORMAL",
+        "source_found": "LAB-CARD-91796AAB61B0",
+        "target_found": "IND-CARD-HT-LAB-ARR-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-9BAE7B9210AE",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-UACR-ABNORMAL",
+        "source_found": "LAB-CARD-9BAE7B9210AE",
+        "target_found": "IND-CARD-HT-LAB-UACR-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-48E9A64933",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "source_found": "LAB-CARD-TEXT-48E9A64933",
+        "target_found": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-E70AD0F5A40F18C80706-HT",
+        "source_found": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+        "target_found": "EVD-E70AD0F5A40F18C80706-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-0FDE663014406E9724AE-HT",
+        "source_found": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+        "target_found": "EVD-0FDE663014406E9724AE-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-7F859E063AC346AA8A9D-HT",
+        "source_found": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "target_found": "EVD-7F859E063AC346AA8A9D-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-FA65DC2A06995EEB9015-SECONDARY",
+        "source_found": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "target_found": "EVD-FA65DC2A06995EEB9015-SECONDARY",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-CREATININE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-8ADFA937197C93BAF501-HT",
+        "source_found": "IND-CARD-HT-LAB-CREATININE-ABNORMAL",
+        "target_found": "EVD-8ADFA937197C93BAF501-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-CREATININE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-0593AAE07EAB74E6A716-HT",
+        "source_found": "IND-CARD-HT-LAB-CREATININE-ABNORMAL",
+        "target_found": "EVD-0593AAE07EAB74E6A716-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-B9CAB7EC30CAB04B08EC-HT",
+        "source_found": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "target_found": "EVD-B9CAB7EC30CAB04B08EC-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-3BBEC2D46A322B320230-HT",
+        "source_found": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "target_found": "EVD-3BBEC2D46A322B320230-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-URIC-ACID-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-46683964152E5535D749-HT",
+        "source_found": "IND-CARD-HT-LAB-URIC-ACID-ELEVATED",
+        "target_found": "EVD-46683964152E5535D749-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-URIC-ACID-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-46683964152E5535D749-SECONDARY",
+        "source_found": "IND-CARD-HT-LAB-URIC-ACID-ELEVATED",
+        "target_found": "EVD-46683964152E5535D749-SECONDARY",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-ARR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-1877917358FF7371A271-HT",
+        "source_found": "IND-CARD-HT-LAB-ARR-ABNORMAL",
+        "target_found": "EVD-1877917358FF7371A271-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-ARR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-1877917358FF7371A271-PA",
+        "source_found": "IND-CARD-HT-LAB-ARR-ABNORMAL",
+        "target_found": "EVD-1877917358FF7371A271-PA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-UACR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-5A65D3F9F22B91200E69-HT",
+        "source_found": "IND-CARD-HT-LAB-UACR-ABNORMAL",
+        "target_found": "EVD-5A65D3F9F22B91200E69-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-UACR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-B10288763B43645761DB-RESISTANT",
+        "source_found": "IND-CARD-HT-LAB-UACR-ABNORMAL",
+        "target_found": "EVD-B10288763B43645761DB-RESISTANT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-48E9A64933",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-D19439DDD990ECA7",
+        "source_found": "LAB-CARD-TEXT-48E9A64933",
+        "target_found": "EVI-CARD-LABIND-BLOODCULTURE-D19439DDD990ECA7",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-D19439DDD990ECA7",
+        "source_found": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "target_found": "EVI-CARD-LABIND-BLOODCULTURE-D19439DDD990ECA7",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-48E9A64933",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-B8262456E9A1E2A7",
+        "source_found": "LAB-CARD-TEXT-48E9A64933",
+        "target_found": "EVI-CARD-LABIND-BLOODCULTURE-B8262456E9A1E2A7",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-B8262456E9A1E2A7",
+        "source_found": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "target_found": "EVI-CARD-LABIND-BLOODCULTURE-B8262456E9A1E2A7",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-48E9A64933",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-378F21D58AD7FFCA",
+        "source_found": "LAB-CARD-TEXT-48E9A64933",
+        "target_found": "EVI-CARD-LABIND-BLOODCULTURE-378F21D58AD7FFCA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      },
+      {
+        "source_code": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-378F21D58AD7FFCA",
+        "source_found": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "target_found": "EVI-CARD-LABIND-BLOODCULTURE-378F21D58AD7FFCA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1
+      }
+    ],
+    "actions": [
+      {
+        "id": "REL-CARD-HT-LABIND-BD1178987FC1",
+        "source_code": "LAB-CARD-0C977E67C366",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-84E17A000CA6",
+        "source_code": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-E70AD0F5A40F18C80706-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-2E2D3A7645A3",
+        "source_code": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-0FDE663014406E9724AE-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-LABIND-70E32A87EAB6",
+        "source_code": "LAB-CARD-C59B64C19ADD",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-E14FB1E50AFD",
+        "source_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-7F859E063AC346AA8A9D-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-52926B7D438E",
+        "source_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-FA65DC2A06995EEB9015-SECONDARY",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-LABIND-5ACAD5A1CA36",
+        "source_code": "LAB-CARD-D26D76AD854B",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-CREATININE-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-029A645D20E1",
+        "source_code": "IND-CARD-HT-LAB-CREATININE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-8ADFA937197C93BAF501-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-B95EC8ED1BCD",
+        "source_code": "IND-CARD-HT-LAB-CREATININE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-0593AAE07EAB74E6A716-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-LABIND-92052BC7A145",
+        "source_code": "LAB-CARD-23D1E86AB4BE",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-A5F2A0F1C82C",
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-B9CAB7EC30CAB04B08EC-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-E22CE2C4BB88",
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-3BBEC2D46A322B320230-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-LABIND-934488B728EA",
+        "source_code": "LAB-CARD-F2BFB7EA8B44",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-URIC-ACID-ELEVATED",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-41EE81228140",
+        "source_code": "IND-CARD-HT-LAB-URIC-ACID-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-46683964152E5535D749-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-34B5E1D8D64E",
+        "source_code": "IND-CARD-HT-LAB-URIC-ACID-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-46683964152E5535D749-SECONDARY",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-LABIND-44821F4E2F9C",
+        "source_code": "LAB-CARD-91796AAB61B0",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-ARR-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-FF5420F3B705",
+        "source_code": "IND-CARD-HT-LAB-ARR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-1877917358FF7371A271-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-2EF731F7FCB0",
+        "source_code": "IND-CARD-HT-LAB-ARR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-1877917358FF7371A271-PA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-LABIND-3E8466335D0A",
+        "source_code": "LAB-CARD-9BAE7B9210AE",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-UACR-ABNORMAL",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-1BC86AB432F1",
+        "source_code": "IND-CARD-HT-LAB-UACR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-5A65D3F9F22B91200E69-HT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-08CB6F3611D1",
+        "source_code": "IND-CARD-HT-LAB-UACR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-B10288763B43645761DB-RESISTANT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-BLOODCULTURE-LABIND-502C7D181165",
+        "source_code": "LAB-CARD-TEXT-48E9A64933",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-BLOODCULTURE-LAB-EVD-3B194C364089",
+        "source_code": "LAB-CARD-TEXT-48E9A64933",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-D19439DDD990ECA7",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-BLOODCULTURE-IND-EVD-81E39A37E303",
+        "source_code": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-D19439DDD990ECA7",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-BLOODCULTURE-LAB-EVD-1E11FB7B5C41",
+        "source_code": "LAB-CARD-TEXT-48E9A64933",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-B8262456E9A1E2A7",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-BLOODCULTURE-IND-EVD-AF0C03A3A1EB",
+        "source_code": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-B8262456E9A1E2A7",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-BLOODCULTURE-LAB-EVD-147BA3D18B4A",
+        "source_code": "LAB-CARD-TEXT-48E9A64933",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-378F21D58AD7FFCA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      },
+      {
+        "id": "REL-CARD-BLOODCULTURE-IND-EVD-00E8FB8288DB",
+        "source_code": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-378F21D58AD7FFCA",
+        "existing_count": 0,
+        "existing_relation_ids": [],
+        "missing_id_count": 1,
+        "action": "create"
+      }
+    ],
+    "postcheck": [
+      {
+        "source_code": "LAB-CARD-0C977E67C366",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+        "source_found": "LAB-CARD-0C977E67C366",
+        "target_found": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-LABIND-BD1178987FC1"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-C59B64C19ADD",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "source_found": "LAB-CARD-C59B64C19ADD",
+        "target_found": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-LABIND-70E32A87EAB6"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-D26D76AD854B",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-CREATININE-ABNORMAL",
+        "source_found": "LAB-CARD-D26D76AD854B",
+        "target_found": "IND-CARD-HT-LAB-CREATININE-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-LABIND-5ACAD5A1CA36"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-23D1E86AB4BE",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "source_found": "LAB-CARD-23D1E86AB4BE",
+        "target_found": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-LABIND-92052BC7A145"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-F2BFB7EA8B44",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-URIC-ACID-ELEVATED",
+        "source_found": "LAB-CARD-F2BFB7EA8B44",
+        "target_found": "IND-CARD-HT-LAB-URIC-ACID-ELEVATED",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-LABIND-934488B728EA"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-91796AAB61B0",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-ARR-ABNORMAL",
+        "source_found": "LAB-CARD-91796AAB61B0",
+        "target_found": "IND-CARD-HT-LAB-ARR-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-LABIND-44821F4E2F9C"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-9BAE7B9210AE",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-UACR-ABNORMAL",
+        "source_found": "LAB-CARD-9BAE7B9210AE",
+        "target_found": "IND-CARD-HT-LAB-UACR-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-LABIND-3E8466335D0A"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-48E9A64933",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "source_found": "LAB-CARD-TEXT-48E9A64933",
+        "target_found": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-BLOODCULTURE-LABIND-502C7D181165"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-E70AD0F5A40F18C80706-HT",
+        "source_found": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+        "target_found": "EVD-E70AD0F5A40F18C80706-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-84E17A000CA6"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-0FDE663014406E9724AE-HT",
+        "source_found": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+        "target_found": "EVD-0FDE663014406E9724AE-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-2E2D3A7645A3"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-7F859E063AC346AA8A9D-HT",
+        "source_found": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "target_found": "EVD-7F859E063AC346AA8A9D-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-E14FB1E50AFD"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-FA65DC2A06995EEB9015-SECONDARY",
+        "source_found": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "target_found": "EVD-FA65DC2A06995EEB9015-SECONDARY",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-52926B7D438E"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-CREATININE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-8ADFA937197C93BAF501-HT",
+        "source_found": "IND-CARD-HT-LAB-CREATININE-ABNORMAL",
+        "target_found": "EVD-8ADFA937197C93BAF501-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-029A645D20E1"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-CREATININE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-0593AAE07EAB74E6A716-HT",
+        "source_found": "IND-CARD-HT-LAB-CREATININE-ABNORMAL",
+        "target_found": "EVD-0593AAE07EAB74E6A716-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-B95EC8ED1BCD"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-B9CAB7EC30CAB04B08EC-HT",
+        "source_found": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "target_found": "EVD-B9CAB7EC30CAB04B08EC-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-A5F2A0F1C82C"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-3BBEC2D46A322B320230-HT",
+        "source_found": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "target_found": "EVD-3BBEC2D46A322B320230-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-E22CE2C4BB88"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-URIC-ACID-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-46683964152E5535D749-HT",
+        "source_found": "IND-CARD-HT-LAB-URIC-ACID-ELEVATED",
+        "target_found": "EVD-46683964152E5535D749-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-41EE81228140"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-URIC-ACID-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-46683964152E5535D749-SECONDARY",
+        "source_found": "IND-CARD-HT-LAB-URIC-ACID-ELEVATED",
+        "target_found": "EVD-46683964152E5535D749-SECONDARY",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-34B5E1D8D64E"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-ARR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-1877917358FF7371A271-HT",
+        "source_found": "IND-CARD-HT-LAB-ARR-ABNORMAL",
+        "target_found": "EVD-1877917358FF7371A271-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-FF5420F3B705"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-ARR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-1877917358FF7371A271-PA",
+        "source_found": "IND-CARD-HT-LAB-ARR-ABNORMAL",
+        "target_found": "EVD-1877917358FF7371A271-PA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-2EF731F7FCB0"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-UACR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-5A65D3F9F22B91200E69-HT",
+        "source_found": "IND-CARD-HT-LAB-UACR-ABNORMAL",
+        "target_found": "EVD-5A65D3F9F22B91200E69-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-1BC86AB432F1"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-HT-LAB-UACR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-B10288763B43645761DB-RESISTANT",
+        "source_found": "IND-CARD-HT-LAB-UACR-ABNORMAL",
+        "target_found": "EVD-B10288763B43645761DB-RESISTANT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-08CB6F3611D1"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-48E9A64933",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-D19439DDD990ECA7",
+        "source_found": "LAB-CARD-TEXT-48E9A64933",
+        "target_found": "EVI-CARD-LABIND-BLOODCULTURE-D19439DDD990ECA7",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-BLOODCULTURE-LAB-EVD-3B194C364089"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-D19439DDD990ECA7",
+        "source_found": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "target_found": "EVI-CARD-LABIND-BLOODCULTURE-D19439DDD990ECA7",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-BLOODCULTURE-IND-EVD-81E39A37E303"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-48E9A64933",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-B8262456E9A1E2A7",
+        "source_found": "LAB-CARD-TEXT-48E9A64933",
+        "target_found": "EVI-CARD-LABIND-BLOODCULTURE-B8262456E9A1E2A7",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-BLOODCULTURE-LAB-EVD-1E11FB7B5C41"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-B8262456E9A1E2A7",
+        "source_found": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "target_found": "EVI-CARD-LABIND-BLOODCULTURE-B8262456E9A1E2A7",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-BLOODCULTURE-IND-EVD-AF0C03A3A1EB"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "LAB-CARD-TEXT-48E9A64933",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-378F21D58AD7FFCA",
+        "source_found": "LAB-CARD-TEXT-48E9A64933",
+        "target_found": "EVI-CARD-LABIND-BLOODCULTURE-378F21D58AD7FFCA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-BLOODCULTURE-LAB-EVD-147BA3D18B4A"
+        ],
+        "missing_id_count": 0
+      },
+      {
+        "source_code": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-378F21D58AD7FFCA",
+        "source_found": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "target_found": "EVI-CARD-LABIND-BLOODCULTURE-378F21D58AD7FFCA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-BLOODCULTURE-IND-EVD-00E8FB8288DB"
+        ],
+        "missing_id_count": 0
+      }
+    ],
+    "post_actions": [
+      {
+        "id": "REL-CARD-HT-LABIND-BD1178987FC1",
+        "source_code": "LAB-CARD-0C977E67C366",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-LABIND-BD1178987FC1"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-84E17A000CA6",
+        "source_code": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-E70AD0F5A40F18C80706-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-84E17A000CA6"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-2E2D3A7645A3",
+        "source_code": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-0FDE663014406E9724AE-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-2E2D3A7645A3"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-LABIND-70E32A87EAB6",
+        "source_code": "LAB-CARD-C59B64C19ADD",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-LABIND-70E32A87EAB6"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-E14FB1E50AFD",
+        "source_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-7F859E063AC346AA8A9D-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-E14FB1E50AFD"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-52926B7D438E",
+        "source_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-FA65DC2A06995EEB9015-SECONDARY",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-52926B7D438E"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-LABIND-5ACAD5A1CA36",
+        "source_code": "LAB-CARD-D26D76AD854B",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-CREATININE-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-LABIND-5ACAD5A1CA36"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-029A645D20E1",
+        "source_code": "IND-CARD-HT-LAB-CREATININE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-8ADFA937197C93BAF501-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-029A645D20E1"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-B95EC8ED1BCD",
+        "source_code": "IND-CARD-HT-LAB-CREATININE-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-0593AAE07EAB74E6A716-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-B95EC8ED1BCD"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-LABIND-92052BC7A145",
+        "source_code": "LAB-CARD-23D1E86AB4BE",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-LABIND-92052BC7A145"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-A5F2A0F1C82C",
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-B9CAB7EC30CAB04B08EC-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-A5F2A0F1C82C"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-E22CE2C4BB88",
+        "source_code": "IND-CARD-LAB-THYROID-FUNCTION-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-3BBEC2D46A322B320230-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-E22CE2C4BB88"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-LABIND-934488B728EA",
+        "source_code": "LAB-CARD-F2BFB7EA8B44",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-URIC-ACID-ELEVATED",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-LABIND-934488B728EA"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-41EE81228140",
+        "source_code": "IND-CARD-HT-LAB-URIC-ACID-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-46683964152E5535D749-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-41EE81228140"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-34B5E1D8D64E",
+        "source_code": "IND-CARD-HT-LAB-URIC-ACID-ELEVATED",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-46683964152E5535D749-SECONDARY",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-34B5E1D8D64E"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-LABIND-44821F4E2F9C",
+        "source_code": "LAB-CARD-91796AAB61B0",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-ARR-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-LABIND-44821F4E2F9C"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-FF5420F3B705",
+        "source_code": "IND-CARD-HT-LAB-ARR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-1877917358FF7371A271-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-FF5420F3B705"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-2EF731F7FCB0",
+        "source_code": "IND-CARD-HT-LAB-ARR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-1877917358FF7371A271-PA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-2EF731F7FCB0"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-LABIND-3E8466335D0A",
+        "source_code": "LAB-CARD-9BAE7B9210AE",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-HT-LAB-UACR-ABNORMAL",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-LABIND-3E8466335D0A"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-1BC86AB432F1",
+        "source_code": "IND-CARD-HT-LAB-UACR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-5A65D3F9F22B91200E69-HT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-1BC86AB432F1"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-HT-IND-EVD-08CB6F3611D1",
+        "source_code": "IND-CARD-HT-LAB-UACR-ABNORMAL",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVD-B10288763B43645761DB-RESISTANT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-HT-IND-EVD-08CB6F3611D1"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-BLOODCULTURE-LABIND-502C7D181165",
+        "source_code": "LAB-CARD-TEXT-48E9A64933",
+        "relationType": "lab_test_has_indicator",
+        "target_code": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-BLOODCULTURE-LABIND-502C7D181165"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-BLOODCULTURE-LAB-EVD-3B194C364089",
+        "source_code": "LAB-CARD-TEXT-48E9A64933",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-D19439DDD990ECA7",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-BLOODCULTURE-LAB-EVD-3B194C364089"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-BLOODCULTURE-IND-EVD-81E39A37E303",
+        "source_code": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-D19439DDD990ECA7",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-BLOODCULTURE-IND-EVD-81E39A37E303"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-BLOODCULTURE-LAB-EVD-1E11FB7B5C41",
+        "source_code": "LAB-CARD-TEXT-48E9A64933",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-B8262456E9A1E2A7",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-BLOODCULTURE-LAB-EVD-1E11FB7B5C41"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-BLOODCULTURE-IND-EVD-AF0C03A3A1EB",
+        "source_code": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-B8262456E9A1E2A7",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-BLOODCULTURE-IND-EVD-AF0C03A3A1EB"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-BLOODCULTURE-LAB-EVD-147BA3D18B4A",
+        "source_code": "LAB-CARD-TEXT-48E9A64933",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-378F21D58AD7FFCA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-BLOODCULTURE-LAB-EVD-147BA3D18B4A"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      },
+      {
+        "id": "REL-CARD-BLOODCULTURE-IND-EVD-00E8FB8288DB",
+        "source_code": "IND-CARD-LAB-BLOOD-CULTURE-RESULT",
+        "relationType": "supported_by_evidence",
+        "target_code": "EVI-CARD-LABIND-BLOODCULTURE-378F21D58AD7FFCA",
+        "existing_count": 1,
+        "existing_relation_ids": [
+          "REL-CARD-BLOODCULTURE-IND-EVD-00E8FB8288DB"
+        ],
+        "missing_id_count": 0,
+        "action": "update"
+      }
+    ]
+  }
+}
