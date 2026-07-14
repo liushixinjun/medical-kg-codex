@@ -1,0 +1,323 @@
+{
+  "batch": "20260714_冠心病总精修",
+  "generated_at": "2026-07-14 13:02:03",
+  "disease_count": 15,
+  "diseases": [
+    {
+      "code": "DIS-CARD-CAD-ACS",
+      "name": "急性冠脉综合征",
+      "category": null,
+      "subcategory": null,
+      "definition": "急性冠脉综合征是一组由急性心肌缺血引起的临床综合征，主要包括不稳定型心绞痛（UA）、非ST 段抬高型心肌梗死（NSTEMI）和 ST 段抬高型心肌梗死（STEMI），冠心病猝死是特殊类型 ACS。",
+      "definition_confidence": null
+    },
+    {
+      "code": "DIS-CARD-CAD-AMI",
+      "name": "急性心肌梗死",
+      "category": null,
+      "subcategory": null,
+      "definition": "急性心肌梗死（AMI）是急性冠脉综合征的重要类型，临床上分为5型，其中最常见的是原发冠脉不稳定斑块破裂、糜烂或侵蚀继发血栓形成导致的自发性AMI。",
+      "definition_confidence": null
+    },
+    {
+      "code": "DIS-CARD-CAD-ATHEROSCLEROSIS",
+      "name": "动脉粥样硬化",
+      "category": null,
+      "subcategory": null,
+      "definition": "动脉粥样硬化（atherosclerosis）的特点是受累动脉的病变从内膜开始，局部先后发生细胞内外的脂质积聚、纤维组织增生和钙质沉着，病变内可见单核巨噬细胞及其他炎症细胞，并有平滑肌细胞的迁移和增生，大量胶原纤维、弹力纤维和蛋白多糖等结缔组织基质形成，动脉中层也可发生逐渐退变和钙化，在此基础上可发生斑块内出血、糜烂或破裂及继发局部血栓形成。",
+      "definition_confidence": null
+    },
+    {
+      "code": "DIS-CARD-CAD-CCS",
+      "name": "慢性冠脉综合征",
+      "category": null,
+      "subcategory": null,
+      "definition": "慢性冠状动脉综合征（CCS）最常见为慢性稳定型劳力性心绞痛和以心功能不全为主要表现的缺血性心肌病，部分处于渡过 ACS 后或行血运重建之后稳定期，有些则为无症状隐匿型冠心病。",
+      "definition_confidence": null
+    },
+    {
+      "code": "DIS-CARD-CAD-CHD",
+      "name": "冠状动脉粥样硬化性心脏病",
+      "category": null,
+      "subcategory": null,
+      "definition": "冠状动脉粥样硬化性心脏病（coronary atherosclerotic heart disease）指冠状动脉（冠脉）发生粥样硬化引起管腔狭窄或闭塞，导致心肌缺血、缺氧或坏死而引起的心脏病，简称冠心病（coronary artery disease，CAD；",
+      "definition_confidence": null
+    },
+    {
+      "code": "DIS-CARD-CAD-ICM",
+      "name": "缺血性心肌病",
+      "category": null,
+      "subcategory": null,
+      "definition": "缺血性心肌病（ischemic cardiomyopathy，ICM）属于冠心病的一种特殊类型或晚期阶段，临床表现为新发心衰或左心室功能障碍，可伴有各种心律失常，心脏扩大类似扩张型心肌病。",
+      "definition_confidence": null
+    },
+    {
+      "code": "DIS-CARD-CAD-NSTEMI",
+      "name": "非ST段抬高型心肌梗死",
+      "category": null,
+      "subcategory": null,
+      "definition": "非ST段抬高型心肌梗死（NSTEMI）属于非ST段抬高型急性冠脉综合征，表现为较严重心肌缺血，并伴有心肌损害和心肌坏死标志物升高。",
+      "definition_confidence": null
+    },
+    {
+      "code": "DIS-CARD-CAD-OLD-MI",
+      "name": "陈旧性心肌梗死",
+      "category": null,
+      "subcategory": null,
+      "definition": "陈旧性心肌梗死是急性心肌梗死坏死组织逐渐纤维化，并在6～8周形成瘢痕愈合后的状态。",
+      "definition_confidence": null
+    },
+    {
+      "code": "DIS-CARD-CAD-POST-MI-SYNDROME",
+      "name": "心肌梗死后综合征",
+      "category": null,
+      "subcategory": null,
+      "definition": "心肌梗死后综合征也称Dressler综合征，是AMI后数周至数月内出现、可反复发生的综合征。",
+      "definition_confidence": null
+    },
+    {
+      "code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+      "name": "隐匿性冠心病",
+      "category": null,
+      "subcategory": null,
+      "definition": "隐匿型冠心病或无症状性冠心病是指没有心绞痛症状，但有心肌缺血客观证据的冠心病。",
+      "definition_confidence": null
+    },
+    {
+      "code": "DIS-CARD-CAD-SPASM",
+      "name": "冠状动脉痉挛",
+      "category": null,
+      "subcategory": null,
+      "definition": "冠脉痉挛是一种特殊类型的冠脉疾病。",
+      "definition_confidence": null
+    },
+    {
+      "code": "DIS-CARD-CAD-STABLE-ANGINA",
+      "name": "稳定型心绞痛",
+      "category": null,
+      "subcategory": null,
+      "definition": "稳定型心绞痛（stable angina pectoris）也称劳力性心绞痛。",
+      "definition_confidence": null
+    },
+    {
+      "code": "DIS-CARD-CAD-STEMI",
+      "name": "ST段抬高型心肌梗死",
+      "category": null,
+      "subcategory": null,
+      "definition": "STEMI 是指急性心肌缺血性坏死，大多是在冠脉病变的基础上，发生冠脉血供急剧减少或中断，使相应的心肌严重而持久地急性缺血所致。",
+      "definition_confidence": null
+    },
+    {
+      "code": "DIS-CARD-CAD-UA",
+      "name": "不稳定型心绞痛",
+      "category": null,
+      "subcategory": null,
+      "definition": "不稳定型心绞痛（UA）属于非ST段抬高型急性冠脉综合征，是有新发心肌缺血（包括静息状态下缺血）但不伴有心肌坏死的临床状态。",
+      "definition_confidence": null
+    },
+    {
+      "code": "DIS-CARD-HF-POST-MI",
+      "name": "心肌梗死后心力衰竭",
+      "category": null,
+      "subcategory": null,
+      "definition": "心肌梗死后因心肌细胞死亡、瘢痕形成、心室重构、持续缺血或神经体液激活等机制导致或加重的心力衰竭临床状态，可发生于住院期间或远期随访阶段。",
+      "definition_confidence": "conditional"
+    }
+  ],
+  "hard": {
+    "non_kgnode": 0,
+    "label_mismatch": 0,
+    "cad_diagnosis_without_component": 0,
+    "cad_differential_without_detail": 0,
+    "cad_treatment_plan_without_action": 11,
+    "cad_medication_category_without_specific": 0,
+    "cad_recommendation_without_corelink": 0,
+    "cad_abbr_medication_primary": 0
+  },
+  "gap_counts": {
+    "diagnosis_criteria_without_component": 0,
+    "differential_without_detail": 0,
+    "treatment_plan_without_action": 11,
+    "medication_category_without_specific": 0,
+    "clinical_rule_without_text_or_evidence": 36,
+    "recommendation_without_corelink": 0,
+    "abbr_medication_primary": 0
+  },
+  "rel_types": [
+    {
+      "relType": "supported_by_evidence",
+      "targetType": "Evidence",
+      "count": 9038
+    },
+    {
+      "relType": "has_symptom",
+      "targetType": "Symptom",
+      "count": 213
+    },
+    {
+      "relType": "treated_by_medication",
+      "targetType": "Medication",
+      "count": 190
+    },
+    {
+      "relType": "has_sign",
+      "targetType": "Sign",
+      "count": 177
+    },
+    {
+      "relType": "based_on_guideline",
+      "targetType": "Guideline",
+      "count": 174
+    },
+    {
+      "relType": "requires_exam",
+      "targetType": "Exam",
+      "count": 154
+    },
+    {
+      "relType": "has_risk_factor",
+      "targetType": "RiskFactor",
+      "count": 111
+    },
+    {
+      "relType": "requires_lab_test",
+      "targetType": "LabTest",
+      "count": 102
+    },
+    {
+      "relType": "may_cause_complication",
+      "targetType": "Complication",
+      "count": 101
+    },
+    {
+      "relType": "has_pathophysiology",
+      "targetType": "Pathophysiology",
+      "count": 83
+    },
+    {
+      "relType": "has_etiology",
+      "targetType": "Etiology",
+      "count": 73
+    },
+    {
+      "relType": "has_treatment_plan",
+      "targetType": "TreatmentPlan",
+      "count": 64
+    },
+    {
+      "relType": "treated_by_procedure",
+      "targetType": "Procedure",
+      "count": 57
+    },
+    {
+      "relType": "has_clinical_rule",
+      "targetType": "ClinicalRule",
+      "count": 55
+    },
+    {
+      "relType": "has_follow_up",
+      "targetType": "FollowUp",
+      "count": 41
+    },
+    {
+      "relType": "has_prognosis",
+      "targetType": "Prognosis",
+      "count": 40
+    },
+    {
+      "relType": "has_prevention",
+      "targetType": "Prevention",
+      "count": 30
+    },
+    {
+      "relType": "differentiates_from",
+      "targetType": "DifferentialDiagnosis",
+      "count": 27
+    },
+    {
+      "relType": "belongs_to_subcategory",
+      "targetType": "DiseaseSubcategory",
+      "count": 26
+    },
+    {
+      "relType": "has_classification",
+      "targetType": "DiseaseClassification",
+      "count": 26
+    },
+    {
+      "relType": "has_clinical_pathway",
+      "targetType": "ClinicalPathway",
+      "count": 23
+    },
+    {
+      "relType": "has_diagnostic_criteria",
+      "targetType": "DiagnosisCriteria",
+      "count": 17
+    },
+    {
+      "relType": "belongs_to_category",
+      "targetType": "DiseaseCategory",
+      "count": 16
+    },
+    {
+      "relType": "has_definition",
+      "targetType": "Definition",
+      "count": 13
+    },
+    {
+      "relType": "has_definition_component",
+      "targetType": "DefinitionComponent",
+      "count": 13
+    },
+    {
+      "relType": "has_differential_point",
+      "targetType": "ClinicalRule",
+      "count": 12
+    },
+    {
+      "relType": "has_contraindication",
+      "targetType": "Contraindication",
+      "count": 10
+    },
+    {
+      "relType": "has_diagnostic_component",
+      "targetType": "DiagnosisCriteriaComponent",
+      "count": 10
+    },
+    {
+      "relType": "has_risk_stratification",
+      "targetType": "RiskStratification",
+      "count": 9
+    },
+    {
+      "relType": "has_threshold_rule",
+      "targetType": "ThresholdRule",
+      "count": 8
+    },
+    {
+      "relType": "has_epidemiology",
+      "targetType": "Epidemiology",
+      "count": 5
+    },
+    {
+      "relType": "requires_exclusion_exam",
+      "targetType": "Exam",
+      "count": 4
+    },
+    {
+      "relType": "has_recommendation_statement",
+      "targetType": "RecommendationStatement",
+      "count": 2
+    },
+    {
+      "relType": "requires_exclusion_exam",
+      "targetType": "LabTest",
+      "count": 2
+    },
+    {
+      "relType": "requires_exam",
+      "targetType": "ExamIndicator",
+      "count": 1
+    }
+  ]
+}

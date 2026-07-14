@@ -1,0 +1,18 @@
+{
+  "batch": "20260714_冠心病总精修",
+  "generated_at": "2026-07-14 13:16:21",
+  "current_gap_csv_counts": {
+    "03_treatment_plan_without_action.csv": 0,
+    "03_clinical_rule_without_text_or_evidence.csv": 0
+  },
+  "postcheck": {
+    "non_kgnode_node_count": 0,
+    "relation_touching_non_kgnode_count": 0,
+    "cad_diagnosis_without_component": 0,
+    "cad_differential_without_detail": 0,
+    "cad_treatment_plan_without_action": 0,
+    "cad_clinical_rule_without_text_or_evidence": 0,
+    "cad_abbr_medication_primary": 0,
+    "formal_ready_nodes_in_this_batch": 38
+  }
+}

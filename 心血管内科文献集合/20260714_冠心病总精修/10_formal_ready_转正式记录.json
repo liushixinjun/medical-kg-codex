@@ -1,0 +1,17 @@
+{
+  "batch": "20260714_冠心病总精修",
+  "generated_at": "2026-07-14 13:15:28",
+  "rule_count": 36,
+  "fixed_node_count": 2,
+  "postcheck": {
+    "formal_transition_updated_nodes": 38,
+    "scoped_nodes": 38,
+    "formal_ready_nodes": 38,
+    "statuses": [
+      "clinical_ready"
+    ],
+    "plan_gap": 0,
+    "rule_ev_gap": 0,
+    "rule_text_gap": 0
+  }
+}

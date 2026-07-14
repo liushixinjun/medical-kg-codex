@@ -1,0 +1,16 @@
+﻿code,name,Definition,Etiology,Pathophysiology,Epidemiology,Symptom,Sign,RiskFactor,Complication,Exam,LabTest,ExamIndicator,DiagnosisCriteria,DifferentialDiagnosis,RiskStratification,TreatmentPlan,Medication,Procedure,Contraindication,FollowUp,Prognosis,ClinicalPathway,ClinicalRule,RecommendationStatement,Evidence,total_out_entities
+DIS-CARD-CAD-ACS,急性冠脉综合征,2,2,11,0,14,13,10,9,10,10,0,1,4,1,8,15,6,0,1,1,2,4,0,1557,1719
+DIS-CARD-CAD-AMI,急性心肌梗死,1,13,12,2,36,37,17,12,19,17,0,2,4,2,9,24,12,0,9,9,2,4,0,1780,2061
+DIS-CARD-CAD-ATHEROSCLEROSIS,动脉粥样硬化,1,15,11,1,16,13,14,9,12,7,0,0,0,0,4,9,3,0,0,0,0,1,0,1003,1122
+DIS-CARD-CAD-CCS,慢性冠脉综合征,1,2,17,0,9,2,9,6,6,3,0,1,1,1,3,10,2,0,1,1,2,4,0,483,591
+DIS-CARD-CAD-CHD,冠状动脉粥样硬化性心脏病,0,4,2,1,15,16,10,9,13,8,0,0,0,0,6,12,6,0,0,0,0,0,0,1355,1459
+DIS-CARD-CAD-ICM,缺血性心肌病,1,2,3,0,23,26,7,11,15,3,0,2,3,0,4,3,6,0,1,1,2,6,0,280,421
+DIS-CARD-CAD-NSTEMI,非ST段抬高型心肌梗死,1,9,1,0,16,9,8,6,16,8,0,2,3,2,6,19,4,0,1,1,2,4,0,784,930
+DIS-CARD-CAD-OLD-MI,陈旧性心肌梗死,0,1,0,0,7,4,3,4,4,2,0,1,0,0,2,4,1,0,1,1,2,2,0,24,75
+DIS-CARD-CAD-POST-MI-SYNDROME,心肌梗死后综合征,0,0,0,0,2,2,0,2,2,0,0,0,0,0,1,0,1,0,0,0,0,0,0,19,31
+DIS-CARD-CAD-SILENT-ISCHEMIA,隐匿性冠心病,1,1,0,0,5,2,2,2,8,1,0,1,0,0,1,3,1,0,1,1,2,3,0,7,47
+DIS-CARD-CAD-SPASM,冠状动脉痉挛,1,1,0,0,7,1,3,3,7,0,0,0,0,0,0,6,1,0,0,0,0,4,0,49,99
+DIS-CARD-CAD-STABLE-ANGINA,稳定型心绞痛,2,2,15,0,19,17,7,7,19,24,0,2,2,1,4,29,2,0,21,21,2,4,0,525,773
+DIS-CARD-CAD-STEMI,ST段抬高型心肌梗死,1,11,10,1,23,21,13,13,9,10,0,1,8,1,9,38,8,10,2,2,3,23,2,792,1046
+DIS-CARD-CAD-UA,不稳定型心绞痛,1,9,1,0,18,12,8,7,16,11,0,2,2,1,6,18,4,0,1,1,2,4,0,353,501
+DIS-CARD-HF-POST-MI,心肌梗死后心力衰竭,0,1,0,0,3,2,0,1,2,0,1,2,0,0,1,0,0,0,2,1,2,4,0,27,52

@@ -1,0 +1,3 @@
+﻿source_code,source_name,relation_type,target_code,target_name,action,disease_code,node_code,node_name,entityType,labels
+PLAN-CARD-STEMI-A8A3EB1D6170,直接PCI治疗,includes_procedure,PROC-CARD-E9ADC25A25E3,经皮冠状动脉介入治疗,merge_direct_pci_action,,,,,
+,,,,,reclassify_pump_failure_hemodynamic_assessment,DIS-CARD-CAD-STEMI,PLAN-CARD-STEMI-38B8E5D35355,泵衰竭与血流动力学评估,RiskStratification,"['KGNode', 'RiskStratification']"
