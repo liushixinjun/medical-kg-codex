@@ -1,3 +1,44 @@
+## 2026-07-14 14:26:00｜心衰、心律失常、高血压总精修一次性完成：65个疾病通过硬闸门并转正式
+
+### 用户问题
+1. 不要再分一步一步处理，要求按同一套硬闸门一次性处理心力衰竭、心律失常、高血压。
+2. 不能因为个别阻断节点影响全局进度；能修的直接修，不能修的必须说明原因。
+3. 治疗方案不能只有空顶层，必须能下钻到具体动作、子方案或操作。
+
+### 处理原则
+1. 疾病范围按 `DIS-CARD-HF`、`DIS-CARD-ARR`、`DIS-CARD-SCD`、`DIS-CARD-HT` 精确限定，避免把“心律失常性心肌病”等历史心肌病节点误纳入。
+2. `ClinicalRule` 必须有 `supported_by_evidence`。
+3. `TreatmentPlan` 必须至少直连 `includes_medication`、`includes_procedure`、`has_treatment_component` 或 `supported_by_evidence` 中的有效下游。
+4. `DiagnosisCriteria` 必须有 `has_diagnostic_component`；`DifferentialDiagnosis` 必须能下钻到规则或证据。
+5. 同一疾病下同类型同名直连重复必须为 0 后，才允许转 `formal_cdss_ready=true`。
+
+### 执行结果
+- 批次：`20260714_心衰心律高血压总精修`
+- 写入 Neo4j：是
+- 覆盖疾病：65 个，其中心力衰竭 11 个、心律失常/心脏性猝死 31 个、高血压 23 个。
+- 规则证据链补齐：197 条。
+- 治疗方案下游补链：第一轮 614 条，第二轮针对传导阻滞类阻断方案补齐 8 条组件关系。
+- 语义污染治理：2 个。
+- 同名重复直连治理：1 组。
+- 转正式：65 个疾病全部转 `formal_cdss_ready=true`。
+
+### 服务器复核结果
+- clinical_rule_without_evidence：0
+- treatment_plan_without_action：0
+- diagnosis_without_component：0
+- differential_without_detail：0
+- same_type_same_name_duplicates：0（本批次疾病范围口径）
+- non_kgnode：0
+- 状态：`formal_cdss_ready`
+
+### 关键文件
+- `心血管内科文献集合/20260714_心衰心律高血压总精修/09_三范围总精修验收报告.md`
+- `心血管内科文献集合/20260714_心衰心律高血压总精修/10_阻断治疗方案补齐明细.csv`
+- `心血管内科文献集合/20260714_心衰心律高血压总精修/11_formal_ready_最终转正式明细.csv`
+
+### 保留问题
+全库仍存在历史冠心病/教材骨架与专病批次双挂造成的同名主数据归并候选，属于后续“主数据归并治理”，不属于本批次阻断。
+
 ## 2026-07-14 13:54:00｜心肌病总精修扩展完成：规则证据链、治疗方案下游、重复直连治理并转正式
 
 ### 用户问题

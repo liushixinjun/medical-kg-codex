@@ -1,0 +1,13 @@
+{
+  "batch_id": "20260714_心衰心律高血压总精修",
+  "executed_at": "2026-07-14T14:17:27",
+  "disease_count": 65,
+  "baseline": {
+    "clinical_rule_without_evidence": 197,
+    "treatment_plan_without_action": 41,
+    "diagnosis_without_component": 0,
+    "differential_without_detail": 0,
+    "same_type_same_name_duplicates": 1,
+    "non_kgnode": 0
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "batch_id": "20260714_心衰心律高血压总精修",
+  "executed_at": "2026-07-14T14:17:27",
+  "disease_count": 65,
+  "scope_counts": {
+    "心力衰竭": 11,
+    "心律失常": 31,
+    "高血压": 23
+  },
+  "baseline": {
+    "clinical_rule_without_evidence": 197,
+    "treatment_plan_without_action": 41,
+    "diagnosis_without_component": 0,
+    "differential_without_detail": 0,
+    "same_type_same_name_duplicates": 1,
+    "non_kgnode": 0
+  },
+  "after_repair": {
+    "clinical_rule_without_evidence": 0,
+    "treatment_plan_without_action": 4,
+    "diagnosis_without_component": 0,
+    "differential_without_detail": 0,
+    "same_type_same_name_duplicates": 0,
+    "non_kgnode": 0
+  },
+  "final": {
+    "clinical_rule_without_evidence": 0,
+    "treatment_plan_without_action": 4,
+    "diagnosis_without_component": 0,
+    "differential_without_detail": 0,
+    "same_type_same_name_duplicates": 0,
+    "non_kgnode": 0
+  },
+  "rule_linked": 197,
+  "rule_blocked": 0,
+  "diagnosis_differential_created": 0,
+  "diagnosis_differential_blocked": 0,
+  "treatment_edges_linked": 614,
+  "treatment_plans_blocked": 4,
+  "semantic_fixed": 2,
+  "duplicate_nodes_processed": 1,
+  "formal_diseases": 61,
+  "blocked_diseases": 4,
+  "second_pass_blocked_treatment_repair": {
+    "executed_at": "2026-07-14T14:26:00",
+    "linked_components": 8,
+    "final": {
+      "clinical_rule_without_evidence": 0,
+      "treatment_plan_without_action": 0,
+      "diagnosis_without_component": 0,
+      "differential_without_detail": 0,
+      "same_type_same_name_duplicates": 0,
+      "non_kgnode": 0
+    },
+    "formal_diseases_final": 65,
+    "blocked_diseases_final": 0
+  }
+}

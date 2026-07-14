@@ -1,0 +1,3 @@
+﻿scope,disease_code,disease,code,name,new_entityType,new_relation,status
+心律失常,DIS-CARD-ARR-SAB,窦房传导阻滞,CARD-SKELETON-20260709-TREATMENTPLAN-945CD8BA8CAD9E14,窦房传导阻滞的病因及治疗参见病态窦房结综合征,Etiology,has_etiology,fixed
+高血压,DIS-CARD-HT-PAROXYSMAL,发作性高血压,PLAN-HT-PAROXYSMAL-CAUSE-BASED,发作性高血压诱因处理和病因导向治疗,Etiology,has_etiology,fixed
