@@ -1,3 +1,40 @@
+## 2026-07-14 13:54:00｜心肌病总精修扩展完成：规则证据链、治疗方案下游、重复直连治理并转正式
+
+### 用户问题
+1. 心肌病要按冠心病同一套规则做总精修扩展，不能只停留在节点数量。
+2. 规则必须有证据链，治疗方案必须能下钻到动作/子方案，测试通过后改为正式。
+3. 历史重复实体和空壳关系不能继续影响正式 CDSS。
+
+### 处理原则
+1. `ClinicalRule` 必须有 `rule_text` 和 `supported_by_evidence`。
+2. 顶层 `TreatmentPlan` 必须至少直连 `includes_medication`、`includes_procedure` 或 `has_treatment_component`。
+3. 病因句不得作为 `TreatmentPlan`；应归入 `Etiology`。
+4. 同病种同类型同名重复直连必须治理到 0 后，才允许转 `formal_cdss_ready=true`。
+
+### 执行结果
+- 批次：`20260714_心肌病总精修`
+- 写入 Neo4j：是
+- 补齐 ClinicalRule 证据链：28 条
+- 修复治疗方案下游动作：10 个顶层 TreatmentPlan，新增/复用直连关系 100 条
+- 修复语义污染：心肌炎 1 个误归 `TreatmentPlan` 的病因句改为 `Etiology`
+- 治理同名重复直连：24 组
+- 转正式：13 个疾病节点、103 个核心节点
+
+### 复核结果
+- clinical_rule_without_evidence：0
+- treatment_plan_without_action：0
+- diagnosis_without_component：0
+- differential_without_detail：0
+- myocarditis_misclassified_node：0
+- non_kgnode：0
+- same_type_same_name_duplicates：0
+- 状态：`formal_cdss_ready`
+
+### 关键文件
+- `心血管内科文献集合\20260714_心肌病总精修\11_心肌病总精修验收报告.md`
+- `心血管内科文献集合\20260714_心肌病总精修\12_formal_ready_转正式记录.json`
+- `心血管内科文献集合\20260714_心肌病总精修\13_同名重复直连治理明细.csv`
+
 ## 2026-07-14 10:35:05｜CDSS总精修入库完成：药物类别具体化、命名别名规范化、重复实体归并
 
 ### 用户问题

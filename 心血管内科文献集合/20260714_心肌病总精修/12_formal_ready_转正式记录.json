@@ -1,0 +1,27 @@
+{
+  "batch_id": "20260714_心肌病总精修",
+  "executed_at": "2026-07-14T13:54:00",
+  "before_postcheck": {
+    "clinical_rule_without_evidence": 0,
+    "treatment_plan_without_action": 0,
+    "diagnosis_without_component": 0,
+    "differential_without_detail": 0,
+    "myocarditis_misclassified_node": 0,
+    "non_kgnode": 0,
+    "same_type_same_name_duplicates": 0
+  },
+  "formal_updated": {
+    "formal_disease_nodes": 13,
+    "formal_core_nodes": 103
+  },
+  "after_postcheck": {
+    "clinical_rule_without_evidence": 0,
+    "treatment_plan_without_action": 0,
+    "diagnosis_without_component": 0,
+    "differential_without_detail": 0,
+    "myocarditis_misclassified_node": 0,
+    "non_kgnode": 0,
+    "same_type_same_name_duplicates": 0
+  },
+  "status": "formal_cdss_ready"
+}

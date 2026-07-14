@@ -26,3 +26,4 @@ BATCH-CARD-PAH-202607-PLAN,心血管内科,肺动脉高压,肺动脉高压大类
 2026-07-14 07:39:04,BATCH-CARD-LAB-DDIMER-20260714-001,心血管内科,检验指标证据补齐,D-二聚体共享检验节点,已入库,新增3个ExamIndicator和8条关系;检验缺口2->0;VTE污染另列专项,
 BATCH-CARD-DDX-RULE-FILL-20260714-001,心血管内科,鉴别诊断治理,,,,,14条规则；52候选拒绝；496旧规则兼容；180历史短句隔离
 BATCH-CARD-CAD-TOTAL-REFINE-20260714-001,心血管内科,冠心病,冠心病总精修扩展,已写入Neo4j并通过postcheck,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260714_冠心病总精修,是,补齐36条CDSS规则证据链；直接PCI治疗补具体操作；泵衰竭与血流动力学评估更正为风险分层；38个测试通过节点转formal_cdss_ready=true；治疗方案可执行性缺口=0；规则缺文本/证据=0
+20260714_心肌病总精修,心血管内科,心肌病,心肌病总精修扩展,已写入Neo4j并通过postcheck,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260714_心肌病总精修,是,补齐28条ClinicalRule证据链；修复10个顶层TreatmentPlan下游动作；心肌炎病因句误归TreatmentPlan改Etiology；治理同名重复直连24组；13个疾病节点和103个核心节点转formal_cdss_ready=true

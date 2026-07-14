@@ -1,0 +1,15 @@
+{
+  "batch_id": "20260714_心肌病总精修",
+  "executed_at": "2026-07-14T13:49:41",
+  "target_plan_count": 10,
+  "linked_edge_count": 100,
+  "blocked_plan_count": 0,
+  "postcheck": {
+    "treatment_plan_without_action": 0,
+    "clinical_rule_without_evidence": 0,
+    "diagnosis_without_component": 0,
+    "differential_without_detail": 0,
+    "myocarditis_misclassified_node": 0,
+    "non_kgnode": 0
+  }
+}

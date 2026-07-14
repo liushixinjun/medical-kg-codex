@@ -1,0 +1,2 @@
+﻿code,name,before_labels,before_entityType,before_has_treatment_plan,after_labels,after_entityType,after_has_etiology,status
+CARD-SKELETON-FULL-20260709-TREATMENTPLAN-B0129871DED2AE10,非感染性病因包括理化、药物、过敏、免疫等,KGNode|TreatmentPlan,TreatmentPlan,1,KGNode|Etiology,Etiology,1,fixed
