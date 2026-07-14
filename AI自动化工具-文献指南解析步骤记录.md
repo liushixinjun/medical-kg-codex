@@ -1,3 +1,39 @@
+## 2026-07-14 10:02:00｜真实鉴别对象规则补齐已入库，旧规则字段兼容与历史短句隔离完成
+
+### 用户问题
+执行“14 个真实鉴别对象的鉴别规则补齐”，优先 STEMI、心肌病、室上速/房扑、室性心律失常相关对象；要求一次性闭环，不要反复下一步。
+
+### 处理原则
+1. 旧自动候选 52 条存在证据泛化和 OCR 噪声污染，不入库。
+2. 每个真实鉴别对象只补 1 条可解释 `ClinicalRule`，并连接原文 `Evidence`。
+3. 写库结构统一为：`DifferentialDiagnosis -> has_differential_point -> ClinicalRule -> supported_by_evidence -> Evidence`。
+4. 旧 ClinicalRule 使用 `rule_logic` 的，兼容回填 `rule_text`；历史短句型规则没有完整证据的，标记 `blocked`，不进入正式 CDSS。
+
+### 执行结果
+- 批次：`BATCH-CARD-DDX-RULE-FILL-20260714-001`
+- 输出目录：`心血管内科文献集合\BATCH-CARD-DDX-RULE-FILL-20260714-001_真实鉴别对象规则补齐_differential_rule_fill`
+- 写入 Neo4j：是
+- 新增/更新鉴别规则：14 条
+- 覆盖真实鉴别对象：14 个
+- 关联证据节点：11 个
+- 阻断：0 条
+- 拒绝旧自动候选：52 条
+- 旧规则字段兼容：496 条
+- 历史短句型规则隔离：180 条
+
+### 复核结果
+- `DifferentialDiagnosis` 无明细：0
+- 本批规则无证据：0
+- 正式 ClinicalRule 无正文：0
+- 正式 ClinicalRule 无证据：0
+- 标签/实体类型错配：0
+- `differentiates_from` 指向非鉴别对象：0
+- 非 KGNode 节点：0
+- 正式 CDSS 硬闸门：通过
+
+### 后续
+继续处理后续疾病时，不能只建鉴别对象节点；必须同步建立鉴别规则明细和证据链。
+
 ## 2026-07-14 08:32:00｜RecommendationStatement 候选核心链路治理已入库，合理审计口径缺口归零
 
 ## 2026-07-14 09:20:46｜历史节点类型治理已导入 Neo4j，诊断标准误分型清零

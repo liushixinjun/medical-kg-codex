@@ -1,0 +1,7 @@
+{
+  "batch_id": "BATCH-CARD-DDX-RULE-FILL-20260714-001",
+  "generated_at": "2026-07-14 09:58:05",
+  "rejected_auto_candidate_count": 52,
+  "reason": "上一轮自动候选存在证据泛化和OCR噪声污染，正式写库改用人工规则化精修包。",
+  "replacement_file": "心血管内科文献集合\\BATCH-CARD-DDX-RULE-FILL-20260714-001_真实鉴别对象规则补齐_differential_rule_fill\\differential_rule_refined_to_apply.jsonl"
+}

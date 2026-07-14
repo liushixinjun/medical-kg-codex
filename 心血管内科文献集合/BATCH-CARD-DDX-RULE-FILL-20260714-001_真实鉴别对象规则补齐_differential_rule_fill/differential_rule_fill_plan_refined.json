@@ -1,0 +1,16 @@
+{
+  "batch_id": "BATCH-CARD-DDX-RULE-FILL-20260714-001",
+  "generated_at": "2026-07-14 09:58:05",
+  "raw_ddx_target_count": 14,
+  "refined_rule_count": 14,
+  "blocked_count": 0,
+  "rejected_auto_candidate_count": 52,
+  "mode": "refined_one_rule_per_real_differential_target",
+  "write_policy": "只写入证据可追溯的ClinicalRule；旧自动候选不入库。",
+  "files": {
+    "rules_jsonl": "心血管内科文献集合\\BATCH-CARD-DDX-RULE-FILL-20260714-001_真实鉴别对象规则补齐_differential_rule_fill\\differential_rule_refined_to_apply.jsonl",
+    "rules_csv": "心血管内科文献集合\\BATCH-CARD-DDX-RULE-FILL-20260714-001_真实鉴别对象规则补齐_differential_rule_fill\\differential_rule_refined_to_apply.csv",
+    "blocked_jsonl": "心血管内科文献集合\\BATCH-CARD-DDX-RULE-FILL-20260714-001_真实鉴别对象规则补齐_differential_rule_fill\\differential_rule_blocked_after_refine.jsonl",
+    "rejected_auto_summary": "心血管内科文献集合\\BATCH-CARD-DDX-RULE-FILL-20260714-001_真实鉴别对象规则补齐_differential_rule_fill\\differential_rule_auto52_rejection_summary.json"
+  }
+}

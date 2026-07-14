@@ -1,0 +1,26 @@
+{
+  "batch_id": "BATCH-CARD-DDX-RULE-FILL-20260714-001",
+  "started_at": "2026-07-14 09:58:05",
+  "rules_attempted": 14,
+  "rules_written": 14,
+  "ddx_rule_edges": 14,
+  "evidence_edges": 11,
+  "blocked_count": 0,
+  "written_codes": [
+    "RULE-DDX-9FF8EF625B0D",
+    "RULE-DDX-2ADEA00FEA49",
+    "RULE-DDX-B95FE741EED1",
+    "RULE-DDX-0BCDFBDB2EE1",
+    "RULE-DDX-D0B88EE88ED7",
+    "RULE-DDX-3B1A851FE970",
+    "RULE-DDX-F6845CA62524",
+    "RULE-DDX-F7863924CD83",
+    "RULE-DDX-F459BC630CA4",
+    "RULE-DDX-83832ADF4B3D",
+    "RULE-DDX-A925E1A05CB0",
+    "RULE-DDX-A03E3ED04577",
+    "RULE-DDX-BB7F299F2DD1",
+    "RULE-DDX-18B1251FA44C"
+  ],
+  "finished_at": "2026-07-14 09:58:08"
+}

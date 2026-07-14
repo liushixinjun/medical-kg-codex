@@ -1,0 +1,17 @@
+{
+  "batch_id": "BATCH-CARD-LEGACY-RULE-QUARANTINE-20260714-001",
+  "checked_at": "2026-07-14 10:00:59",
+  "before_empty_no_logic": 180,
+  "quarantined_and_filled_from_name": 180,
+  "after_empty_no_logic": 0,
+  "hard_gate_after_quarantine": {
+    "raw_differential_without_detail": 0,
+    "ddx_batch_rules_without_evidence": 0,
+    "formal_clinical_rules_without_content": 0,
+    "formal_clinical_rules_without_evidence": 0,
+    "label_entity_mismatch": 0,
+    "differentiates_from_to_non_ddx": 0,
+    "non_kgnode_nodes": 0,
+    "formal_cdss_hard_gate_pass": true
+  }
+}
