@@ -1,5 +1,34 @@
 ## 2026-07-14 08:32:00｜RecommendationStatement 候选核心链路治理已入库，合理审计口径缺口归零
 
+## 2026-07-14 09:20:46｜历史节点类型治理已导入 Neo4j，诊断标准误分型清零
+
+### 用户问题
+继续治理 VTE 后发现的历史宽口径问题：12 个早期 `DiagnosisCriteria` 只有标题、148 个早期 `DifferentialDiagnosis` 没有明细。
+
+### 根因判断
+1. 12 个 `DiagnosisCriteria` 实际是 ECG/电生理特征项或筛查规则，不是诊断标准总标题。
+2. 148 个 `DifferentialDiagnosis` 中，134 个是句子型鉴别要点/排除规则，应作为 `ClinicalRule`；14 个是真实鉴别疾病/状态，应保留为 `DifferentialDiagnosis`，后续补鉴别规则。
+3. 正确治理方式是改实体类型和关系类型，不补假下级节点。
+
+### 执行结果
+- 批次：`BATCH-CARD-HIST-TYPE-CLEAN-20260714-001`
+- 输出目录：`E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\BATCH-CARD-HIST-TYPE-CLEAN-20260714-001_历史节点类型治理_historical_node_type_cleanup`
+- 已写入 Neo4j：是
+- 改型节点：146 个
+- 关系转换：160 条 `differentiates_from` → `has_differential_point`
+- 原始宽口径 `DiagnosisCriteria` 无明细：12 → 0
+- 原始宽口径 `DifferentialDiagnosis` 无明细：148 → 14
+- 剩余 14 条：真实鉴别疾病/状态，进入下一步“鉴别规则补齐”。
+
+### 复核结果
+- `differentiates_from` 指向非 `DifferentialDiagnosis`：0
+- 标签与 `entityType` 不一致：0
+- 全库正式 CDSS 硬闸门：通过
+
+### 下一步
+基于原文证据给剩余 14 个真实鉴别对象补 `has_differential_point -> ClinicalRule`，优先 STEMI、心肌病、室上速/房扑、室性心律失常。
+
+
 ## 2026-07-14 08:53:44｜VTE 历史骨架污染已治理，错误证据和错误临床关系已从服务器清除
 
 ### 用户问题

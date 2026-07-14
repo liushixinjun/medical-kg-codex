@@ -1,0 +1,11 @@
+{
+  "batch_id": "BATCH-CARD-HIST-TYPE-CLEAN-20260714-001",
+  "executed_at": "2026-07-14T09:17:49",
+  "dxc_candidates": 12,
+  "dxc_nodes_updated": 12,
+  "diff_candidates": 134,
+  "diff_nodes_updated": 134,
+  "diff_incoming_relations_converted": 160,
+  "missing_nodes": [],
+  "status": "applied"
+}

@@ -1,0 +1,89 @@
+{
+  "batch_id": "BATCH-CARD-HIST-TYPE-CLEAN-20260714-001",
+  "generated_at": "2026-07-14T09:17:02",
+  "diagnosiscriteria_raw_count": 12,
+  "diagnosiscriteria_retype_count": 12,
+  "differential_raw_count": 148,
+  "differential_retype_to_clinicalrule_count": 134,
+  "differential_targets_need_detail_count": 14,
+  "dxc_target_type_counts": {
+    "ExamIndicator": 11,
+    "ClinicalRule": 1
+  },
+  "diff_decision_counts": {
+    "keep_differential_target_needs_detail": 14,
+    "retype_to_clinical_rule_differential_point": 134
+  },
+  "blocked_samples": [
+    {
+      "code": "DDX-CARD-A4091D292E4B",
+      "name": "冠状动脉痉挛",
+      "batch_id": "BATCH-CARD-CAD-20260623-001"
+    },
+    {
+      "code": "DDX-CARD-STEMI-BED7C76BD0A8",
+      "name": "嗜铬细胞瘤",
+      "batch_id": "BATCH-CARD-CAD-STEMI-20260712-001"
+    },
+    {
+      "code": "DDX-CARD-STEMI-4DD215C51903",
+      "name": "心绞痛",
+      "batch_id": "BATCH-CARD-CAD-STEMI-20260712-001"
+    },
+    {
+      "code": "DDX-CARD-A07BA907BDB0",
+      "name": "心肌炎",
+      "batch_id": "BATCH-CARD-CAD-STEMI-20260712-001"
+    },
+    {
+      "code": "DDX-CARD-STEMI-5ED3F170AA98",
+      "name": "急性肺动脉栓塞",
+      "batch_id": "BATCH-CARD-CAD-STEMI-20260712-001"
+    },
+    {
+      "code": "DDX-CARD-STEMI-F118C9F80AE2",
+      "name": "急腹症",
+      "batch_id": "BATCH-CARD-CAD-STEMI-20260712-001"
+    },
+    {
+      "code": "DDX-CARD-6AB732E54DB3",
+      "name": "冠心病",
+      "batch_id": "BATCH-CARD-CM-20260622-001"
+    },
+    {
+      "code": "DDX-CARD-645287F85899",
+      "name": "瓣膜性心脏病",
+      "batch_id": "BATCH-CARD-CM-20260622-001"
+    },
+    {
+      "code": "DDX-CARD-887CF6C354E7",
+      "name": "高血压性心脏病",
+      "batch_id": "BATCH-CARD-CM-20260622-001"
+    },
+    {
+      "code": "DDX-CARD-91D172B6AA3C",
+      "name": "心房颤动",
+      "batch_id": "BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter"
+    },
+    {
+      "code": "DDX-CARD-F46806C9EB37",
+      "name": "房性早搏",
+      "batch_id": "BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter"
+    },
+    {
+      "code": "DDX-CARD-CE220DDF6AA5",
+      "name": "窦性心动过速",
+      "batch_id": "BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter"
+    },
+    {
+      "code": "DDX-CARD-E6C98B4ECF84",
+      "name": "癫痫",
+      "batch_id": "BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD"
+    },
+    {
+      "code": "DDX-CARD-660433DF4D1F",
+      "name": "预激综合征伴心房颤动",
+      "batch_id": "BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD"
+    }
+  ]
+}
