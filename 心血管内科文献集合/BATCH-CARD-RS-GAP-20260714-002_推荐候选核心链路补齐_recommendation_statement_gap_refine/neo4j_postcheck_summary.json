@@ -1,0 +1,9 @@
+{
+  "batch_id": "BATCH-CARD-RS-GAP-20260714-002",
+  "checked_at": "2026-07-14 08:02:15",
+  "counts_after": {
+    "raw_all_recommendation_missing_core": 2,
+    "adjusted_recommendation_missing_core": 0,
+    "formal_cdss_recommendation_missing_core": 0
+  }
+}

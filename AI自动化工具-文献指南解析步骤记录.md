@@ -1,3 +1,27 @@
+## 2026-07-14 08:32:00｜RecommendationStatement 候选核心链路治理已入库，合理审计口径缺口归零
+
+### 用户问题
+继续按顺序处理剩余质量缺口，直接修复能安全修复的关系，不要把候选问题误报成正式 CDSS 阻断。
+
+### 根因判断
+1. 50 条高血压推荐并非无证据，而是已有 `derived_from -> Evidence`，缺少审计要求的 `supported_by_evidence -> Evidence`。
+2. 1 条 STEMI 溶栓阻断推荐不是缺治疗动作，而是阻断类推荐应指向 `ClinicalRule`，不能指向“溶栓治疗”本身。
+3. 2 条 STEMI 教材来源推荐已有证据和动作，但没有 guideline；这是审计口径问题，不能把《内科学（第10版）》伪装成 Guideline。
+
+### 执行结果
+- 批次：`BATCH-CARD-RS-GAP-20260714-002`
+- 输出目录：`E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\BATCH-CARD-RS-GAP-20260714-002_推荐候选核心链路补齐_recommendation_statement_gap_refine`
+- Neo4j 写入：是
+- 节点更新：1 个
+- 关系 merge：88 条（高血压证据关系 87 条，STEMI 阻断动作关系 1 条）
+- 原始全量 RecommendationStatement 缺口：53 → 2
+- 合理口径 RecommendationStatement 缺口：51 → 0
+- 正式 CDSS 推荐缺核心链路：0
+- 后置体检目录：`E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\00_全局质量体检_global_quality_audit\20260714_after_recommendation_gap_refine`
+
+### 下一步
+剩余 2 条原始旧口径缺口不做伪修复；下一步应推进 VTE 历史骨架污染独立治理，或继续按台账进入下一疾病大类批次。
+
 ## 2026-07-14 08:20:00｜传导阻滞诊断标准明细补齐已导入 Neo4j，诊断标准无明细缺口归零
 
 ### 用户问题

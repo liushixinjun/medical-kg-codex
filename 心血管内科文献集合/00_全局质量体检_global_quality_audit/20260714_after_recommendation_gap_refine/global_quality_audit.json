@@ -1,0 +1,59 @@
+{
+  "non_kg_nodes": {
+    "count": 0
+  },
+  "required_lab_without_indicator_or_evidence": {
+    "count": 0
+  },
+  "diagnosis_criteria_without_component": {
+    "count": 0
+  },
+  "recommendation_statement_missing_core_raw_all": {
+    "count": 2
+  },
+  "recommendation_statement_missing_core_adjusted": {
+    "count": 0
+  },
+  "recommendation_statement_missing_core_formal_cdss": {
+    "count": 0
+  },
+  "differential_without_detail": {
+    "count": 0
+  },
+  "duplicate_semantic_relationships": {
+    "count": 0
+  },
+  "raw_remaining_sample": [
+    {
+      "code": "REC-CARD-STEMI-PRIMARY-PCI",
+      "name": "STEMI直接PCI推荐陈述",
+      "src_types": [
+        "authoritative_textbook"
+      ],
+      "evidence_count": 1,
+      "action_count": 1,
+      "guideline_count": 0
+    },
+    {
+      "code": "REC-CARD-STEMI-THROMBOLYSIS",
+      "name": "STEMI溶栓治疗推荐陈述",
+      "src_types": [
+        "authoritative_textbook"
+      ],
+      "evidence_count": 1,
+      "action_count": 1,
+      "guideline_count": 0
+    }
+  ],
+  "summary": {
+    "non_kg_nodes": 0,
+    "required_lab_without_indicator_or_evidence": 0,
+    "diagnosis_criteria_without_component": 0,
+    "recommendation_statement_missing_core_raw_all": 2,
+    "recommendation_statement_missing_core_adjusted": 0,
+    "recommendation_statement_missing_core_formal_cdss": 0,
+    "differential_without_detail": 0,
+    "duplicate_semantic_relationships": 0
+  },
+  "audit_time": "2026-07-14 08:03:08"
+}

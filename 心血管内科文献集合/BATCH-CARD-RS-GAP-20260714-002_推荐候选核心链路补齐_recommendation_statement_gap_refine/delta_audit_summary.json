@@ -1,0 +1,22 @@
+{
+  "batch_id": "BATCH-CARD-RS-GAP-20260714-002",
+  "created_at": "2026-07-14 08:02:15",
+  "nodes_upserted": 1,
+  "relations_merged": 88,
+  "ht_supported_by_evidence_relations": 87,
+  "fib_block_action_relations": 1,
+  "counts_before": {
+    "raw_all_recommendation_missing_core": 53,
+    "adjusted_recommendation_missing_core": 51,
+    "formal_cdss_recommendation_missing_core": 0
+  },
+  "counts_after": {
+    "raw_all_recommendation_missing_core": 2,
+    "adjusted_recommendation_missing_core": 0,
+    "formal_cdss_recommendation_missing_core": 0
+  },
+  "notes": [
+    "No guideline relation was fabricated for textbook-only STEMI recommendations.",
+    "Adjusted audit treats authoritative_textbook evidence as valid source when guideline relation is not applicable."
+  ]
+}
