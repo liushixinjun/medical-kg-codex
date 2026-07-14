@@ -1,0 +1,225 @@
+{
+  "batch_id": "BATCH-CARD-VTE-CLEAN-20260714-001",
+  "checked_at": "2026-07-14T08:51:12",
+  "vte_special_gate": {
+    "outgoing_total": 494,
+    "outgoing_counts": [
+      {
+        "rel": "supported_by_evidence",
+        "entityType": "Evidence",
+        "c": 394
+      },
+      {
+        "rel": "has_symptom",
+        "entityType": "Symptom",
+        "c": 19
+      },
+      {
+        "rel": "has_etiology",
+        "entityType": "Etiology",
+        "c": 13
+      },
+      {
+        "rel": "has_sign",
+        "entityType": "Sign",
+        "c": 13
+      },
+      {
+        "rel": "has_risk_factor",
+        "entityType": "RiskFactor",
+        "c": 12
+      },
+      {
+        "rel": "requires_exam",
+        "entityType": "Exam",
+        "c": 10
+      },
+      {
+        "rel": "may_cause_complication",
+        "entityType": "Complication",
+        "c": 6
+      },
+      {
+        "rel": "requires_lab_test",
+        "entityType": "LabTest",
+        "c": 6
+      },
+      {
+        "rel": "has_treatment_plan",
+        "entityType": "TreatmentPlan",
+        "c": 5
+      },
+      {
+        "rel": "treated_by_medication",
+        "entityType": "Medication",
+        "c": 5
+      },
+      {
+        "rel": "differentiates_from",
+        "entityType": "DifferentialDiagnosis",
+        "c": 2
+      },
+      {
+        "rel": "has_pathophysiology",
+        "entityType": "Pathophysiology",
+        "c": 2
+      },
+      {
+        "rel": "treated_by_procedure",
+        "entityType": "Procedure",
+        "c": 2
+      },
+      {
+        "rel": "belongs_to_category",
+        "entityType": "DiseaseCategory",
+        "c": 1
+      },
+      {
+        "rel": "belongs_to_subcategory",
+        "entityType": "DiseaseSubcategory",
+        "c": 1
+      },
+      {
+        "rel": "has_definition",
+        "entityType": "Definition",
+        "c": 1
+      },
+      {
+        "rel": "has_diagnostic_component",
+        "entityType": "DiagnosisCriteriaComponent",
+        "c": 1
+      },
+      {
+        "rel": "has_epidemiology",
+        "entityType": "Epidemiology",
+        "c": 1
+      }
+    ],
+    "applied_delete_pairs_remaining": 0,
+    "applied_delete_pairs_remaining_examples": [],
+    "supported_by_evidence_count": 394,
+    "remaining_evidence_without_vte_semantics": 0,
+    "remaining_evidence_without_vte_semantics_examples": [],
+    "manual_review_keep_temporarily_count": 5,
+    "manual_review_keep_temporarily": [
+      {
+        "relationType": "has_symptom",
+        "entityType": "Symptom",
+        "target_code": "SYM-CARD-FULLBOOK-1E40A7793E",
+        "target_name": "水肿感",
+        "manual_review_reason": "水肿感：DVT下肢症状可能相关，需规范为下肢肿胀/水肿",
+        "remaining_count": 1
+      },
+      {
+        "relationType": "may_cause_complication",
+        "entityType": "Complication",
+        "target_code": "COMP-CARD-7CF202961681",
+        "target_name": "心力衰竭",
+        "manual_review_reason": "心力衰竭：PTE右心衰可能相关，需改为右心衰/急性右心衰并补证据",
+        "remaining_count": 1
+      },
+      {
+        "relationType": "requires_exam",
+        "entityType": "Exam",
+        "target_code": "EXAM-CARD-TEXT-8633D5B324",
+        "target_name": "磁共振成像",
+        "manual_review_reason": "磁共振成像：可能作为特殊影像补充，需确认具体VTE场景",
+        "remaining_count": 1
+      },
+      {
+        "relationType": "requires_lab_test",
+        "entityType": "LabTest",
+        "target_code": "LAB-CARD-TEXT-07B39C98F1",
+        "target_name": "肾功能",
+        "manual_review_reason": "肾功能：抗凝用药/造影前评估可能相关，需补证据与场景关系",
+        "remaining_count": 1
+      },
+      {
+        "relationType": "requires_lab_test",
+        "entityType": "LabTest",
+        "target_code": "LAB-CARD-TEXT-768E5070F6",
+        "target_name": "脑钠肽",
+        "manual_review_reason": "脑钠肽：PTE右心负荷/风险分层可能相关，需补VTE证据后重建",
+        "remaining_count": 1
+      }
+    ]
+  },
+  "global_formal_cdss_hard_gates": {
+    "non_kg_nodes": 0,
+    "relation_touching_non_kg": 0,
+    "clinical_ready_labtest_without_indicator_or_evidence": 0,
+    "formal_diagnosis_criteria_without_component": 0,
+    "formal_differential_without_detail": 0,
+    "formal_cdss_recommendation_missing_core": 0,
+    "duplicate_semantic_relationships": 0
+  },
+  "global_raw_historical_findings_not_blocking_this_batch": {
+    "diagnosis_criteria_without_component_all_raw": 12,
+    "diagnosis_criteria_without_component_examples": [
+      {
+        "code": "DXC-CARD-352801FF845E",
+        "name": "P波消失",
+        "batch_id": "BATCH-CARD-AF-20260701-001_房颤_AtrialFibrillation"
+      },
+      {
+        "code": "DXC-CARD-62E58598E750",
+        "name": "f波",
+        "batch_id": "BATCH-CARD-AF-20260701-001_房颤_AtrialFibrillation"
+      },
+      {
+        "code": "DXC-CARD-A0C93230F32D",
+        "name": "RR间期绝对不规则",
+        "batch_id": "BATCH-CARD-AF-20260701-001_房颤_AtrialFibrillation"
+      },
+      {
+        "code": "DXC-CARD-1E95DD850160",
+        "name": "Delta波",
+        "batch_id": "BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter"
+      },
+      {
+        "code": "DXC-CARD-4C3785841A1C",
+        "name": "RP间期",
+        "batch_id": "BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter"
+      },
+      {
+        "code": "DXC-CARD-50ECBB378EF9",
+        "name": "P波异常",
+        "batch_id": "BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter"
+      },
+      {
+        "code": "DXC-CARD-5D736D44DEF4",
+        "name": "三尖瓣环峡部依赖",
+        "batch_id": "BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter"
+      },
+      {
+        "code": "DXC-CARD-E00FC384EBED",
+        "name": "锯齿样F波",
+        "batch_id": "BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter"
+      },
+      {
+        "code": "DXC-CARD-F7025E7AB077",
+        "name": "PR间期",
+        "batch_id": "BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter"
+      },
+      {
+        "code": "DXC-CARD-42C873FF5F1D",
+        "name": "房室分离",
+        "batch_id": "BATCH-CARD-BRADY-AVB-20260705-001_缓慢性心律失常传导阻滞_Bradyarrhythmia_AVBlock"
+      },
+      {
+        "code": "DXC-CARD-A10C42441F20",
+        "name": "PR间期延长",
+        "batch_id": "BATCH-CARD-BRADY-AVB-20260705-001_缓慢性心律失常传导阻滞_Bradyarrhythmia_AVBlock"
+      },
+      {
+        "code": "DXC-CARD-6C4508DDA2F4",
+        "name": "继发性高血压筛查标准",
+        "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension"
+      }
+    ],
+    "differential_without_detail_all_raw": 148,
+    "note": "这些为历史展示/候选层宽口径提示，不作为本轮 VTE 污染清理失败条件。"
+  },
+  "global_formal_cdss_hard_gate_passed": true,
+  "vte_special_gate_passed": true
+}

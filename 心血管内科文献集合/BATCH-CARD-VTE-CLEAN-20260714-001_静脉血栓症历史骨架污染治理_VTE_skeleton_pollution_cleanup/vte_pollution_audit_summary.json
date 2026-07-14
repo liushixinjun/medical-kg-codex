@@ -1,0 +1,276 @@
+{
+  "batch_id": "BATCH-CARD-VTE-CLEAN-20260714-001",
+  "audit_time": "2026-07-14 08:37:11",
+  "total_outgoing": 844,
+  "decision_counts": {
+    "keep_category": 2,
+    "keep_semantic": 33,
+    "review_ambiguous": 60,
+    "delete_high_confidence": 355,
+    "keep_evidence": 394
+  },
+  "delete_high_confidence_count": 355,
+  "by_decision_rel_entity": [
+    {
+      "decision": "keep_evidence",
+      "rel": "supported_by_evidence",
+      "entityType": "Evidence",
+      "count": 394
+    },
+    {
+      "decision": "delete_high_confidence",
+      "rel": "supported_by_evidence",
+      "entityType": "Evidence",
+      "count": 329
+    },
+    {
+      "decision": "review_ambiguous",
+      "rel": "has_symptom",
+      "entityType": "Symptom",
+      "count": 14
+    },
+    {
+      "decision": "review_ambiguous",
+      "rel": "has_sign",
+      "entityType": "Sign",
+      "count": 12
+    },
+    {
+      "decision": "review_ambiguous",
+      "rel": "has_etiology",
+      "entityType": "Etiology",
+      "count": 9
+    },
+    {
+      "decision": "review_ambiguous",
+      "rel": "has_risk_factor",
+      "entityType": "RiskFactor",
+      "count": 7
+    },
+    {
+      "decision": "delete_high_confidence",
+      "rel": "treated_by_medication",
+      "entityType": "Medication",
+      "count": 7
+    },
+    {
+      "decision": "delete_high_confidence",
+      "rel": "requires_lab_test",
+      "entityType": "LabTest",
+      "count": 6
+    },
+    {
+      "decision": "keep_semantic",
+      "rel": "has_risk_factor",
+      "entityType": "RiskFactor",
+      "count": 5
+    },
+    {
+      "decision": "review_ambiguous",
+      "rel": "requires_exam",
+      "entityType": "Exam",
+      "count": 5
+    },
+    {
+      "decision": "keep_semantic",
+      "rel": "has_etiology",
+      "entityType": "Etiology",
+      "count": 4
+    },
+    {
+      "decision": "keep_semantic",
+      "rel": "has_symptom",
+      "entityType": "Symptom",
+      "count": 4
+    },
+    {
+      "decision": "delete_high_confidence",
+      "rel": "may_cause_complication",
+      "entityType": "Complication",
+      "count": 4
+    },
+    {
+      "decision": "keep_semantic",
+      "rel": "requires_exam",
+      "entityType": "Exam",
+      "count": 4
+    },
+    {
+      "decision": "keep_semantic",
+      "rel": "treated_by_medication",
+      "entityType": "Medication",
+      "count": 4
+    },
+    {
+      "decision": "delete_high_confidence",
+      "rel": "has_symptom",
+      "entityType": "Symptom",
+      "count": 3
+    },
+    {
+      "decision": "review_ambiguous",
+      "rel": "has_treatment_plan",
+      "entityType": "TreatmentPlan",
+      "count": 3
+    },
+    {
+      "decision": "keep_semantic",
+      "rel": "may_cause_complication",
+      "entityType": "Complication",
+      "count": 3
+    },
+    {
+      "decision": "delete_high_confidence",
+      "rel": "has_etiology",
+      "entityType": "Etiology",
+      "count": 2
+    },
+    {
+      "decision": "review_ambiguous",
+      "rel": "has_pathophysiology",
+      "entityType": "Pathophysiology",
+      "count": 2
+    },
+    {
+      "decision": "keep_semantic",
+      "rel": "has_treatment_plan",
+      "entityType": "TreatmentPlan",
+      "count": 2
+    },
+    {
+      "decision": "review_ambiguous",
+      "rel": "may_cause_complication",
+      "entityType": "Complication",
+      "count": 2
+    },
+    {
+      "decision": "keep_semantic",
+      "rel": "requires_lab_test",
+      "entityType": "LabTest",
+      "count": 2
+    },
+    {
+      "decision": "review_ambiguous",
+      "rel": "requires_lab_test",
+      "entityType": "LabTest",
+      "count": 2
+    },
+    {
+      "decision": "review_ambiguous",
+      "rel": "treated_by_procedure",
+      "entityType": "Procedure",
+      "count": 2
+    },
+    {
+      "decision": "keep_category",
+      "rel": "belongs_to_category",
+      "entityType": "DiseaseCategory",
+      "count": 1
+    },
+    {
+      "decision": "keep_category",
+      "rel": "belongs_to_subcategory",
+      "entityType": "DiseaseSubcategory",
+      "count": 1
+    },
+    {
+      "decision": "keep_semantic",
+      "rel": "differentiates_from",
+      "entityType": "DifferentialDiagnosis",
+      "count": 1
+    },
+    {
+      "decision": "review_ambiguous",
+      "rel": "differentiates_from",
+      "entityType": "DifferentialDiagnosis",
+      "count": 1
+    },
+    {
+      "decision": "keep_semantic",
+      "rel": "has_definition",
+      "entityType": "Definition",
+      "count": 1
+    },
+    {
+      "decision": "keep_semantic",
+      "rel": "has_diagnostic_component",
+      "entityType": "DiagnosisCriteriaComponent",
+      "count": 1
+    },
+    {
+      "decision": "keep_semantic",
+      "rel": "has_epidemiology",
+      "entityType": "Epidemiology",
+      "count": 1
+    },
+    {
+      "decision": "delete_high_confidence",
+      "rel": "has_sign",
+      "entityType": "Sign",
+      "count": 1
+    },
+    {
+      "decision": "keep_semantic",
+      "rel": "has_sign",
+      "entityType": "Sign",
+      "count": 1
+    },
+    {
+      "decision": "delete_high_confidence",
+      "rel": "has_treatment_plan",
+      "entityType": "TreatmentPlan",
+      "count": 1
+    },
+    {
+      "decision": "delete_high_confidence",
+      "rel": "requires_exam",
+      "entityType": "Exam",
+      "count": 1
+    },
+    {
+      "decision": "review_ambiguous",
+      "rel": "treated_by_medication",
+      "entityType": "Medication",
+      "count": 1
+    },
+    {
+      "decision": "delete_high_confidence",
+      "rel": "treated_by_procedure",
+      "entityType": "Procedure",
+      "count": 1
+    }
+  ],
+  "rules": {
+    "true_terms": [
+      "静脉血栓栓塞",
+      "静脉血栓症",
+      "静脉血栓",
+      "深静脉血栓",
+      "下肢深静脉",
+      "肺血栓栓塞",
+      "肺动脉血栓",
+      "肺动脉栓塞",
+      "肺栓塞",
+      "VTE",
+      "PTE",
+      "DVT",
+      "venous thromboembolism",
+      "pulmonary thromboembolism",
+      "pulmonary embolism",
+      "deep venous thrombosis",
+      "deep vein thrombosis"
+    ],
+    "false_context_terms": [
+      "心血管神经症",
+      "神经症",
+      "焦虑",
+      "忧愁",
+      "心脏神经症",
+      "冠状动脉粥样硬化性心脏病病史",
+      "心绞痛和急性心肌梗死",
+      "感染性心内膜炎（intravenous drug",
+      "肿瘤治疗相关高血压",
+      "贝赫切特病无特异"
+    ]
+  }
+}

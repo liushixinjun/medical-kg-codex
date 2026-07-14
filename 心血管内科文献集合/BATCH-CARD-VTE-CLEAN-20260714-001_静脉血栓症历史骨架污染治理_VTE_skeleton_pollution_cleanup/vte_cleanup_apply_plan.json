@@ -1,0 +1,55 @@
+{
+  "batch_id": "BATCH-CARD-VTE-CLEAN-20260714-001",
+  "generated_at": "2026-07-14T08:41:32",
+  "original_high_confidence_count": 355,
+  "manual_review_keep_temporarily_count": 5,
+  "delete_apply_count": 350,
+  "delete_apply_by_entityType": {
+    "Etiology": 2,
+    "Sign": 1,
+    "Symptom": 2,
+    "TreatmentPlan": 1,
+    "Complication": 3,
+    "LabTest": 4,
+    "Evidence": 329,
+    "Medication": 7,
+    "Procedure": 1
+  },
+  "manual_review_keep_temporarily_targets": [
+    {
+      "relationType": "has_symptom",
+      "entityType": "Symptom",
+      "target_code": "SYM-CARD-FULLBOOK-1E40A7793E",
+      "target_name": "水肿感",
+      "manual_review_reason": "水肿感：DVT下肢症状可能相关，需规范为下肢肿胀/水肿"
+    },
+    {
+      "relationType": "may_cause_complication",
+      "entityType": "Complication",
+      "target_code": "COMP-CARD-7CF202961681",
+      "target_name": "心力衰竭",
+      "manual_review_reason": "心力衰竭：PTE右心衰可能相关，需改为右心衰/急性右心衰并补证据"
+    },
+    {
+      "relationType": "requires_exam",
+      "entityType": "Exam",
+      "target_code": "EXAM-CARD-TEXT-8633D5B324",
+      "target_name": "磁共振成像",
+      "manual_review_reason": "磁共振成像：可能作为特殊影像补充，需确认具体VTE场景"
+    },
+    {
+      "relationType": "requires_lab_test",
+      "entityType": "LabTest",
+      "target_code": "LAB-CARD-TEXT-07B39C98F1",
+      "target_name": "肾功能",
+      "manual_review_reason": "肾功能：抗凝用药/造影前评估可能相关，需补证据与场景关系"
+    },
+    {
+      "relationType": "requires_lab_test",
+      "entityType": "LabTest",
+      "target_code": "LAB-CARD-TEXT-768E5070F6",
+      "target_name": "脑钠肽",
+      "manual_review_reason": "脑钠肽：PTE右心负荷/风险分层可能相关，需补VTE证据后重建"
+    }
+  ]
+}
