@@ -1,0 +1,13 @@
+﻿CDSS决策节点数,ClinicalRule,Complication,Contraindication,Definition,DiagnosisCriteria,DiagnosisCriteriaComponent,DifferentialDiagnosis,Epidemiology,Etiology,Evidence,Exam,ExamIndicator,FollowUp,Guideline,LabTest,LabTestIndicator,Medication,Pathophysiology,Prevention,Procedure,Prognosis,RecommendationStatement,RiskStratification,Sign,Symptom,TreatmentPlan,formal_cdss_ready,临床审核状态,关系数,关联实体数,定义是否存在,指南数,正式CDSS关系数,疾病亚类,疾病名称,疾病大类,疾病编码,证据数
+3,2,3,0,0,1,0,0,0,1,5,1,0,1,4,0,0,0,0,0,0,1,0,1,1,1,1,True,clinical_ready,31,29,是,4,0,,心房心肌病,,DIS-CARD-CM-ATRIAL,5
+7,5,9,0,1,0,5,0,0,6,601,11,0,0,0,7,0,9,8,0,7,0,0,0,16,16,2,True,clinical_ready,719,718,是,0,0,,心肌炎,,DIS-CARD-CM-MYOCARDITIS,601
+12,8,7,0,1,1,4,3,1,11,721,13,0,1,19,6,0,18,10,0,6,1,0,1,17,13,4,True,clinical_ready,885,883,是,19,0,,扩张型心肌病,,DIS-CARD-CM-DCM,721
+3,2,3,0,0,1,0,0,0,1,10,4,0,1,2,0,0,0,0,0,0,1,0,0,1,1,1,True,clinical_ready,36,34,是,2,0,,法布雷病心肌病,,DIS-CARD-CM-FABRY,10
+3,2,4,0,0,1,0,2,0,1,69,6,0,1,11,0,0,0,0,0,2,1,0,0,1,1,1,True,clinical_ready,113,111,是,11,0,,淀粉样变心肌病,,DIS-CARD-CM-AMYLOID,69
+8,6,7,0,1,1,13,3,2,3,906,12,0,1,20,2,0,10,10,0,7,1,0,1,10,14,2,True,clinical_ready,1052,1050,是,20,0,,肥厚型心肌病,,DIS-CARD-CM-HCM,906
+4,2,2,0,0,1,0,0,0,1,9,2,0,1,2,0,0,1,0,0,1,1,0,1,1,2,2,True,clinical_ready,37,35,是,2,0,,致心律失常性双心室心肌病,,DIS-CARD-CM-ABVC,9
+4,3,6,0,1,1,8,4,0,4,436,11,0,1,12,0,0,4,11,0,5,1,0,1,4,8,1,True,clinical_ready,541,539,是,12,0,,致心律失常性右心室心肌病,,DIS-CARD-CM-ARVC,436
+3,2,3,0,0,1,0,1,0,1,27,6,0,1,5,0,0,0,0,0,1,1,0,1,1,1,1,True,clinical_ready,61,59,是,5,0,,致心律失常性左心室心肌病,,DIS-CARD-CM-ALVC,27
+5,3,3,0,0,1,0,2,0,1,59,6,0,1,8,0,0,2,0,0,2,1,0,1,1,5,2,True,clinical_ready,108,106,是,8,0,,致心律失常性心肌病,,DIS-CARD-CM-ACM,59
+8,6,6,0,1,1,3,3,1,11,265,13,0,1,15,6,0,5,2,0,4,1,0,0,8,11,2,True,clinical_ready,379,377,是,15,0,,限制型心肌病,,DIS-CARD-CM-RCM,265
+5,3,4,0,1,1,3,0,0,1,101,5,0,1,5,0,0,4,3,0,1,1,0,0,1,1,2,True,clinical_ready,149,147,是,5,0,,非扩张型左心室心肌病,,DIS-CARD-CM-NDLVCM,101

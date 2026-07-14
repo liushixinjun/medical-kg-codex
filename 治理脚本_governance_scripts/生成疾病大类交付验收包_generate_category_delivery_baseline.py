@@ -65,26 +65,45 @@ SCENARIOS = [
 ]
 
 
-CAD_KEY_NAMES = [
-    "冠状动脉粥样硬化性心脏病",
-    "冠心病",
-    "急性冠脉综合征",
-    "急性冠状动脉综合征",
-    "不稳定型心绞痛",
-    "急性心肌梗死",
-    "ST段抬高型心肌梗死",
-    "非ST段抬高型心肌梗死",
-    "慢性冠脉疾病",
-    "慢性冠脉综合征",
-    "稳定型心绞痛",
-    "缺血性心肌病",
-    "隐匿性冠心病",
-    "无症状心肌缺血",
-    "陈旧性心肌梗死",
-    "冠状动脉痉挛",
-    "冠状动脉粥样硬化",
-    "动脉粥样硬化",
-]
+CATEGORY_CONFIGS = {
+    "冠心病": {
+        "code_prefixes": ["DIS-CARD-CAD"],
+        "category_contains": ["冠心", "冠状动脉粥样硬化"],
+        "key_names": [
+            "冠状动脉粥样硬化性心脏病",
+            "冠心病",
+            "急性冠脉综合征",
+            "急性冠状动脉综合征",
+            "不稳定型心绞痛",
+            "急性心肌梗死",
+            "ST段抬高型心肌梗死",
+            "非ST段抬高型心肌梗死",
+            "慢性冠脉疾病",
+            "慢性冠脉综合征",
+            "稳定型心绞痛",
+            "缺血性心肌病",
+            "隐匿性冠心病",
+            "无症状心肌缺血",
+            "陈旧性心肌梗死",
+            "冠状动脉痉挛",
+            "冠状动脉粥样硬化",
+            "动脉粥样硬化",
+        ],
+        "sample_disease": "ST段抬高型心肌梗死",
+        "sample_recommendation": "急诊PCI",
+        "sample_trigger": "胸痛 + ST段抬高 + 发病时间窗满足",
+        "sample_note": "AMI/STEMI 定位：冠心病大类中的技术开发案例和深度样板。",
+    },
+    "心肌病": {
+        "code_prefixes": ["DIS-CARD-CM"],
+        "category_contains": ["心肌病", "心肌疾病"],
+        "key_names": [],
+        "sample_disease": "肥厚型心肌病",
+        "sample_recommendation": "猝死风险分层与ICD植入评估",
+        "sample_trigger": "HCM + 猝死高危因素或风险评分达到阈值",
+        "sample_note": "HCM/DCM 等典型专病可作为技术开发样板，但不能代替心肌病大类整体。",
+    },
+}
 
 
 def parse_connection_file(path: Path) -> dict[str, str]:
@@ -125,24 +144,30 @@ def query(client: Neo4jHttpClient, statement: str, params: dict[str, Any] | None
     return result_rows(client.run(statement, params or {}))
 
 
-def cad_scope_where(alias: str = "d") -> str:
+def get_category_config(category: str) -> dict[str, Any]:
+    if category not in CATEGORY_CONFIGS:
+        supported = "、".join(CATEGORY_CONFIGS)
+        raise SystemExit(f"当前支持的大类：{supported}；收到：{category}")
+    return CATEGORY_CONFIGS[category]
+
+
+def category_scope_where(alias: str = "d") -> str:
     return f"""
     (
-      {alias}.code STARTS WITH 'DIS-CARD-CAD'
-      OR coalesce({alias}.disease_category,'') CONTAINS '冠心'
-      OR coalesce({alias}.disease_category,'') CONTAINS '冠状动脉粥样硬化'
+      any(prefix IN $code_prefixes WHERE coalesce({alias}.code,'') STARTS WITH prefix)
+      OR any(category_keyword IN $category_contains WHERE coalesce({alias}.disease_category,'') CONTAINS category_keyword)
       OR any(name IN $key_names WHERE coalesce({alias}.name,'') CONTAINS name)
     )
     """
 
 
-def fetch_diseases(client: Neo4jHttpClient) -> list[dict[str, Any]]:
+def fetch_diseases(client: Neo4jHttpClient, config: dict[str, Any]) -> list[dict[str, Any]]:
     return query(
         client,
         f"""
         MATCH (d:KGNode)
         WHERE d.entityType = 'Disease'
-          AND {cad_scope_where("d")}
+          AND {category_scope_where("d")}
         OPTIONAL MATCH (d)-[r]-(n:KGNode)
         WITH d,
              count(DISTINCT n) AS related_entity_count,
@@ -167,7 +192,11 @@ def fetch_diseases(client: Neo4jHttpClient) -> list[dict[str, Any]]:
           formal_ready_relation_count
         ORDER BY disease_category, disease_subcategory, disease_name, disease_code
         """,
-        {"key_names": CAD_KEY_NAMES},
+        {
+            "code_prefixes": config["code_prefixes"],
+            "category_contains": config["category_contains"],
+            "key_names": config["key_names"],
+        },
     )
 
 
@@ -394,6 +423,8 @@ def build_progress_rows(diseases: list[dict[str, Any]], capability_rows: list[di
 
 def write_markdown_report(
     path: Path,
+    category: str,
+    config: dict[str, Any],
     generated_at: str,
     diseases: list[dict[str, Any]],
     progress_rows: list[dict[str, Any]],
@@ -410,18 +441,18 @@ def write_markdown_report(
     low_score = sum(1 for row in progress_rows if row["大类基线分"] < 60)
 
     lines = [
-        "# 冠心病大类图谱质量验收报告",
+        f"# {category}大类图谱质量验收报告",
         "",
         f"- 生成时间：{generated_at}",
-        "- 验收口径：疾病大类，不把 AMI 当成冠心病整体。",
-        "- AMI/STEMI 定位：冠心病大类中的技术开发案例和深度样板。",
+        f"- 验收口径：疾病大类，不把单个专病当成{category}整体。",
+        f"- {config['sample_note']}",
         "- 数据来源：服务器 Neo4j 只读查询 + 已入库图谱关系。",
         "",
         "## 1. 总览",
         "",
         "| 项目 | 数量 |",
         "|---|---:|",
-        f"| 冠心病大类相关疾病/分型 | {total_diseases} |",
+        f"| {category}大类相关疾病/分型 | {total_diseases} |",
         f"| 关联关系总数 | {total_relations} |",
         f"| 证据节点数 | {total_evidence} |",
         f"| 指南节点数 | {total_guidelines} |",
@@ -434,13 +465,13 @@ def write_markdown_report(
         "",
     ]
     if total_diseases == 0:
-        lines.append("未在服务器识别到冠心病大类疾病节点，必须先修复疾病目录层。")
+        lines.append(f"未在服务器识别到{category}大类疾病节点，必须先修复疾病目录层。")
     elif issue_count == 0 and low_score == 0:
-        lines.append("冠心病大类可作为 V1.0 第一交付大类进入前端/后端联调；仍需按医生使用场景继续优化展示。")
+        lines.append(f"{category}大类可作为 V1.0 交付大类进入前端/后端联调；仍需按医生使用场景继续优化展示。")
     elif issue_count == 0:
-        lines.append("冠心病大类已通过本轮硬质量验收，可作为大类交付基线；低分疾病代表覆盖深度不足，后续按优先级继续补充，不等同于硬质量失败。")
+        lines.append(f"{category}大类已通过本轮硬质量验收，可作为大类交付基线；低分疾病代表覆盖深度不足，后续按优先级继续补充，不等同于硬质量失败。")
     else:
-        lines.append("冠心病大类仍存在硬质量问题，需按本报告问题清单补齐后再作为完整大类样板。")
+        lines.append(f"{category}大类仍存在硬质量问题，需按本报告问题清单补齐后再作为完整大类样板。")
 
     lines.extend(
         [
@@ -463,7 +494,7 @@ def write_markdown_report(
         if not rows:
             lines.append("- 未发现。")
         else:
-            lines.append(f"- 发现 {len(rows)} 条，详见 `04_质量问题明细.json` 和 `冠心病大类前端展示问题清单_20260714.md`。")
+            lines.append(f"- 发现 {len(rows)} 条，详见 `04_质量问题明细.json` 和 `{category}大类前端展示问题清单_20260714.md`。")
         lines.append("")
 
     lines.extend(
@@ -472,24 +503,30 @@ def write_markdown_report(
             "",
             f"- 本轮抽取推荐/诊断/治疗/鉴别相关证据样本 {len(evidence_samples)} 条。",
             "- 医生端展示时，不应显示疾病全部证据；应显示当前推荐动作绑定的指南、页码/段落、推荐等级、证据等级和原文摘要。",
-            "- AMI/STEMI 仍作为技术开发案例，但报告和验收按冠心病大类计算。",
+            f"- {config['sample_disease']} 作为技术开发样板时，报告和验收仍按{category}大类计算。",
             "",
             "## 6. 交付结论",
             "",
-            "冠心病大类进入 V1.0 基线验收流程。下一步不是单独追 AMI，而是按本报告缺口对整个冠心病大类补齐，并把 AMI/STEMI 样板交给技术同事实现动态 CDSS 推理与展示。",
+            f"{category}大类进入 V1.0 基线验收流程。下一步不是单独追某一个专病，而是按本报告缺口对整个{category}大类补齐，并把典型专病样板交给技术同事实现动态 CDSS 推理与展示。",
             "",
         ]
     )
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
-def write_frontend_issues(path: Path, quality_issues: dict[str, list[dict[str, Any]]], evidence_samples: list[dict[str, Any]]) -> None:
+def write_frontend_issues(
+    path: Path,
+    category: str,
+    config: dict[str, Any],
+    quality_issues: dict[str, list[dict[str, Any]]],
+    evidence_samples: list[dict[str, Any]],
+) -> None:
     lines = [
-        "# 冠心病大类前端展示问题清单",
+        f"# {category}大类前端展示问题清单",
         "",
         "## 给 Trae/前端的核心要求",
         "",
-        "1. 冠心病是疾病大类；AMI/STEMI 是开发案例，不能把 AMI 当成冠心病全部。",
+        f"1. {category}是疾病大类；典型专病是开发案例，不能把单个专病当成{category}全部。",
         "2. 诊断标准、鉴别诊断、治疗方案必须继续下钻到规则/条件/证据，不允许只显示标题。",
         "3. 证据与指南不按疾病一股脑展示；医生点到某条推荐时，只展示该推荐绑定的证据。",
         "4. 页面统计应按疾病大类、疾病、实体类型、关系类型分层展示。",
@@ -519,11 +556,11 @@ def write_frontend_issues(path: Path, quality_issues: dict[str, list[dict[str, A
             "```json",
             json.dumps(
                 {
-                    "recommendation": "急诊PCI",
-                    "disease": "ST段抬高型心肌梗死",
-                    "why_triggered": "胸痛 + ST段抬高 + 发病时间窗满足",
+                    "recommendation": config["sample_recommendation"],
+                    "disease": config["sample_disease"],
+                    "why_triggered": config["sample_trigger"],
                     "evidence": {
-                        "guideline": "STEMI CN 2019.pdf",
+                        "guideline": "指南名称",
                         "page": "页码或段落",
                         "recommendation_level": "推荐等级",
                         "evidence_level": "证据等级",
@@ -543,22 +580,23 @@ def write_frontend_issues(path: Path, quality_issues: dict[str, list[dict[str, A
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="生成疾病大类交付验收包。当前支持冠心病大类。")
+    parser = argparse.ArgumentParser(description="生成疾病大类交付验收包。")
     parser.add_argument("--category", default="冠心病")
     parser.add_argument("--connection-file", type=Path, default=ROOT / "图谱数据库链接.txt")
-    parser.add_argument("--output-dir", type=Path, default=ROOT / "心血管内科文献集合" / "20260714_冠心病大类交付验收")
+    parser.add_argument("--output-dir", type=Path, default=None)
     parser.add_argument("--database", default="neo4j")
     args = parser.parse_args()
 
-    if args.category != "冠心病":
-        raise SystemExit("当前脚本先固化冠心病大类验收；其他大类后续复用本结构扩展。")
+    config = get_category_config(args.category)
+    if args.output_dir is None:
+        args.output_dir = ROOT / "心血管内科文献集合" / f"20260714_{args.category}大类交付验收"
 
     conn = parse_connection_file(args.connection_file)
     client = Neo4jHttpClient(conn["uri"], conn["username"], conn["password"], args.database, 5, 1)
     args.output_dir.mkdir(parents=True, exist_ok=True)
     generated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    diseases = fetch_diseases(client)
+    diseases = fetch_diseases(client, config)
     disease_codes = [row["disease_code"] for row in diseases if row.get("disease_code")]
     dimension_rows = fetch_dimension_counts(client, disease_codes) if disease_codes else []
     quality_issues = fetch_quality_issues(client, disease_codes) if disease_codes else {}
@@ -568,7 +606,7 @@ def main() -> int:
     progress_rows = build_progress_rows(diseases, capability_rows)
 
     write_csv(
-        args.output_dir / "冠心病大类建设进度表_20260714.csv",
+        args.output_dir / f"{args.category}大类建设进度表_20260714.csv",
         progress_rows,
         [
             "疾病编码",
@@ -587,19 +625,20 @@ def main() -> int:
             "交付判断",
         ],
     )
-    write_csv(args.output_dir / "冠心病大类CDSS推荐能力矩阵_20260714.csv", capability_rows)
-    write_csv(args.output_dir / "冠心病大类维度覆盖明细_20260714.csv", dimension_summary_rows)
-    write_csv(args.output_dir / "冠心病大类证据链抽查样本_20260714.csv", evidence_samples)
+    write_csv(args.output_dir / f"{args.category}大类CDSS推荐能力矩阵_20260714.csv", capability_rows)
+    write_csv(args.output_dir / f"{args.category}大类维度覆盖明细_20260714.csv", dimension_summary_rows)
+    write_csv(args.output_dir / f"{args.category}大类证据链抽查样本_20260714.csv", evidence_samples)
 
     (args.output_dir / "04_质量问题明细.json").write_text(
         json.dumps(quality_issues, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    (args.output_dir / "05_冠心病大类验收原始数据.json").write_text(
+    (args.output_dir / f"05_{args.category}大类验收原始数据.json").write_text(
         json.dumps(
             {
                 "generated_at": generated_at,
                 "category": args.category,
+                "category_config": config,
                 "diseases": diseases,
                 "dimension_rows": dimension_rows,
                 "progress_rows": progress_rows,
@@ -614,7 +653,9 @@ def main() -> int:
     )
 
     write_markdown_report(
-        args.output_dir / "冠心病大类图谱质量验收报告_20260714.md",
+        args.output_dir / f"{args.category}大类图谱质量验收报告_20260714.md",
+        args.category,
+        config,
         generated_at,
         diseases,
         progress_rows,
@@ -622,7 +663,9 @@ def main() -> int:
         evidence_samples,
     )
     write_frontend_issues(
-        args.output_dir / "冠心病大类前端展示问题清单_20260714.md",
+        args.output_dir / f"{args.category}大类前端展示问题清单_20260714.md",
+        args.category,
+        config,
         quality_issues,
         evidence_samples,
     )
@@ -640,7 +683,7 @@ def main() -> int:
             "<60": sum(1 for row in progress_rows if row["大类基线分"] < 60),
         },
     }
-    (args.output_dir / "00_冠心病大类交付验收摘要.json").write_text(
+    (args.output_dir / f"00_{args.category}大类交付验收摘要.json").write_text(
         json.dumps(summary, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )

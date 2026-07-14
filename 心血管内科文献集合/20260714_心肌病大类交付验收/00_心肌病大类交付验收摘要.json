@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-07-14 19:57:53",
+  "category": "心肌病",
+  "output_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\20260714_心肌病大类交付验收",
+  "disease_count": 12,
+  "evidence_sample_count": 183,
+  "quality_issue_counts": {
+    "诊断标准无明细": 0,
+    "鉴别诊断无规则或依据": 0,
+    "治疗方案无下游动作": 0,
+    "同疾病同类型同名重复直连": 0,
+    "CDSS推荐节点缺证据": 0
+  },
+  "progress_distribution": {
+    ">=80": 3,
+    "60-79": 3,
+    "<60": 6
+  }
+}
