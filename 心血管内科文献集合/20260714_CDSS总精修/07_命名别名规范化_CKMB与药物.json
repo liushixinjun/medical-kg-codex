@@ -1,0 +1,147 @@
+{
+  "batch_id": "BATCH-CARD-NAME-ALIAS-NORMALIZE-20260714-001",
+  "updated_at": "2026-07-14 10:33:53",
+  "results": [
+    [
+      {
+        "code": "MED-CARD-E40082221530",
+        "name": "血管紧张素转换酶抑制剂",
+        "aliases": [
+          "ACE抑制剂",
+          "ACEI",
+          "Angiotensin-converting enzyme inhibitor",
+          "ACE inhibitor",
+          "普利类药物"
+        ]
+      }
+    ],
+    [
+      {
+        "code": "MED-CARD-STEMI-C6E5F2B51268",
+        "name": "糖蛋白Ⅱb/Ⅲa受体拮抗剂",
+        "aliases": [
+          "GPⅡb/Ⅲa受体拮抗剂",
+          "GPIIb/IIIa受体拮抗剂",
+          "GP IIb/IIIa inhibitor",
+          "糖蛋白IIb/IIIa受体拮抗剂"
+        ]
+      }
+    ],
+    [
+      {
+        "updated_labtest": 6
+      }
+    ],
+    [
+      {
+        "label_fixed_diagnosis_component": 8
+      }
+    ],
+    [
+      {
+        "label_fixed_exam_indicator": 3
+      }
+    ]
+  ],
+  "checks": {
+    "label_entity_mismatch": 0,
+    "medication_abbrev_as_primary": 0,
+    "ckmb_in_medication": 0
+  },
+  "updated_medications": [
+    {
+      "code": "MED-CARD-E40082221530",
+      "name": "血管紧张素转换酶抑制剂",
+      "aliases": [
+        "ACE抑制剂",
+        "ACEI",
+        "Angiotensin-converting enzyme inhibitor",
+        "ACE inhibitor",
+        "普利类药物"
+      ]
+    },
+    {
+      "code": "MED-CARD-STEMI-C6E5F2B51268",
+      "name": "糖蛋白Ⅱb/Ⅲa受体拮抗剂",
+      "aliases": [
+        "GPⅡb/Ⅲa受体拮抗剂",
+        "GPIIb/IIIa受体拮抗剂",
+        "GP IIb/IIIa inhibitor",
+        "糖蛋白IIb/IIIa受体拮抗剂"
+      ]
+    }
+  ],
+  "updated_labtests": [
+    {
+      "code": "CARD-SKELETON-20260709-LABTEST-1621003505C956CA",
+      "name": "肌酸激酶同工酶（CK-MB）",
+      "aliases": [
+        "肌酸激酶同工酶MB",
+        "CK-MB",
+        "CKMB",
+        "肌酸激酶同工酶",
+        "肌酸激酶MB",
+        "肌酸激酶MB同工酶"
+      ]
+    },
+    {
+      "code": "LAB-CARD-960C7CE8E22B",
+      "name": "肌酸激酶同工酶（CK-MB）",
+      "aliases": [
+        "CKMB",
+        "肌酸激酶MB",
+        "肌酸激酶同工酶",
+        "CK-MB",
+        "肌酸激酶MB同工酶"
+      ]
+    },
+    {
+      "code": "LAB-CARD-CADREM-AMI-CA4C7A8A1F",
+      "name": "肌酸激酶同工酶（CK-MB）",
+      "aliases": [
+        "CK-MB",
+        "肌酸激酶同工酶",
+        "肌酸激酶MB同工酶",
+        "肌酸激酶同工酶（CK-MB）",
+        "CKMB",
+        "肌酸激酶MB"
+      ]
+    },
+    {
+      "code": "LAB-CARD-CADREM-NSTEMI-CA4C7A8A1F",
+      "name": "肌酸激酶同工酶（CK-MB）",
+      "aliases": [
+        "CK-MB",
+        "肌酸激酶同工酶",
+        "肌酸激酶MB同工酶",
+        "肌酸激酶同工酶（CK-MB）",
+        "CKMB",
+        "肌酸激酶MB"
+      ]
+    },
+    {
+      "code": "LAB-CARD-CADREM-STABLE-ANGINA-CA4C7A8A1F",
+      "name": "肌酸激酶同工酶（CK-MB）",
+      "aliases": [
+        "CK-MB",
+        "肌酸激酶同工酶",
+        "肌酸激酶MB同工酶",
+        "肌酸激酶同工酶（CK-MB）",
+        "CKMB",
+        "肌酸激酶MB"
+      ]
+    },
+    {
+      "code": "LAB-CARD-CADREM-UA-CA4C7A8A1F",
+      "name": "肌酸激酶同工酶（CK-MB）",
+      "aliases": [
+        "CK-MB",
+        "肌酸激酶同工酶",
+        "肌酸激酶MB同工酶",
+        "肌酸激酶同工酶（CK-MB）",
+        "CKMB",
+        "肌酸激酶MB"
+      ]
+    }
+  ]
+}

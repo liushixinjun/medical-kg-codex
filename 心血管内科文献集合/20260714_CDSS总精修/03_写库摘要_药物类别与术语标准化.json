@@ -1,0 +1,12 @@
+{
+  "batch_id": "BATCH-CARD-CDSS-RULE-EVIDENCE-REFINE-20260714-001",
+  "started_at": "2026-07-14 10:18:12",
+  "category_gap_rows": 37,
+  "specific_links_attempted": 133,
+  "specific_nodes_merged": 30,
+  "specific_links_merged": 77,
+  "ckmb_nodes_standardized": 4,
+  "remaining_medication_category_nodes_without_specific": 0,
+  "remaining_technical_name_nodes": 0,
+  "finished_at": "2026-07-14 10:18:15"
+}

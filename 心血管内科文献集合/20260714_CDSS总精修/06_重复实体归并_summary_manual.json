@@ -1,0 +1,31 @@
+{
+  "batch_id": "BATCH-CARD-DUP-MERGE-20260714-001",
+  "started_at": "2026-07-14 10:23:58",
+  "manual_groups": [
+    {
+      "keep": "PATHWAY-CDSS-CAD-ICM",
+      "drop": "PATHWAY-CDSS-CM-ICM",
+      "found": [
+        "PATHWAY-CDSS-CAD-ICM",
+        "PATHWAY-CDSS-CM-ICM"
+      ],
+      "out_rels_copied": 2,
+      "in_rels_copied": 1,
+      "deleted_drop": true
+    },
+    {
+      "keep": "RULE-CDSS-CAD-ICM-02-02-REVASC",
+      "drop": "RULE-CDSS-CM-ICM-02-01-REVASC",
+      "found": [
+        "RULE-CDSS-CAD-ICM-02-02-REVASC",
+        "RULE-CDSS-CM-ICM-02-01-REVASC"
+      ],
+      "out_rels_copied": 5,
+      "in_rels_copied": 2,
+      "deleted_drop": true
+    }
+  ],
+  "duplicate_relationships_deleted_after_manual": 3,
+  "duplicate_groups_after": [],
+  "finished_at": "2026-07-14 10:23:59"
+}

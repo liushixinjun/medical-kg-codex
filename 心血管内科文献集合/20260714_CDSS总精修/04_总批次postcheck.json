@@ -1,0 +1,32 @@
+{
+  "batch_id": "BATCH-CARD-CDSS-RULE-EVIDENCE-REFINE-20260714-001",
+  "display_batch_name": "20260714_CDSS总精修",
+  "generated_at": "2026-07-14 10:35:05",
+  "counts": {
+    "non_kgnode_nodes": 0,
+    "label_entity_mismatch": 0,
+    "formal_clinical_rules_without_content": 0,
+    "formal_clinical_rules_without_evidence": 0,
+    "differential_without_detail": 0,
+    "diagnosis_criteria_without_component": 0,
+    "scope_medication_category_without_specific": 0,
+    "technical_name_nodes": 0,
+    "duplicate_specific_medication_relations": 0,
+    "duplicate_same_type_same_name_scope": 0,
+    "blocked_but_formal": 0,
+    "batch_specific_medication_links": 77,
+    "batch_specific_medication_nodes": 30,
+    "ckmb_remaining_raw": 0,
+    "ckmb_in_medication": 0,
+    "medication_abbrev_as_primary": 0,
+    "duplicate_relationship_pairs": 0
+  },
+  "samples": {
+    "bad_medication_abbrev": [],
+    "ckmb_medication": []
+  },
+  "hard_gate_pass": true,
+  "blocking_items": [],
+  "naming_rule": "目录使用 日期_中文主题；英文机器批次号只写入文件内容，不作为目录名。",
+  "alias_rule": "药物主名使用中文/通用全称，英文缩写和中文简称进入 aliases；检验指标同理，CK-MB 不归入 Medication。"
+}

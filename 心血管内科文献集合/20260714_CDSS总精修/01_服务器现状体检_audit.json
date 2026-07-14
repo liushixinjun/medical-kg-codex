@@ -1,0 +1,1056 @@
+{
+  "batch_id": "BATCH-CARD-CDSS-RULE-EVIDENCE-REFINE-20260714-001",
+  "generated_at": "2026-07-14 10:14:01",
+  "scope_categories": [
+    "冠心病",
+    "心肌病",
+    "心律失常",
+    "心脏性猝死",
+    "缓慢性心律失常",
+    "室性心律失常"
+  ],
+  "stats": {
+    "scope_disease_count": 57,
+    "scope_diseases": [
+      {
+        "code": "DIS-CARD-ARR-BRUGADA",
+        "name": "Brugada综合征",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CAD-STEMI",
+        "name": "ST段抬高型心肌梗死",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-AVB1",
+        "name": "一度房室传导阻滞",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-AVB3",
+        "name": "三度房室传导阻滞",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CAD-UA",
+        "name": "不稳定型心绞痛",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-AVB2",
+        "name": "二度房室传导阻滞",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-CPVT",
+        "name": "儿茶酚胺敏感性多形性室性心动过速",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CAD-SPASM",
+        "name": "冠状动脉痉挛",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CAD-CHD",
+        "name": "冠状动脉粥样硬化性心脏病",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CAD-ATHEROSCLEROSIS",
+        "name": "动脉粥样硬化",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-SVT",
+        "name": "室上性心动过速",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-VA",
+        "name": "室性心律失常",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-PVC",
+        "name": "室性期前收缩",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-TDP",
+        "name": "尖端扭转型室性心动过速",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-VF",
+        "name": "心室扑动与心室颤动",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CM-ATRIAL",
+        "name": "心房心肌病",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-AFL",
+        "name": "心房扑动",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-AF",
+        "name": "心房颤动",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CAD-POST-MI-SYNDROME",
+        "name": "心肌梗死后综合征",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CM-MYOCARDITIS",
+        "name": "心肌炎",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-SCD-SUDDEN",
+        "name": "心脏性猝死",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-SCD-ARREST",
+        "name": "心脏骤停",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CAD-ACS",
+        "name": "急性冠脉综合征",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CAD-AMI",
+        "name": "急性心肌梗死",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CAD-CCS",
+        "name": "慢性冠脉综合征",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-AVB",
+        "name": "房室传导阻滞",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-AVRT",
+        "name": "房室折返性心动过速",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-AVNRT",
+        "name": "房室结折返性心动过速",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-AT",
+        "name": "房性心动过速",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CM-DCM",
+        "name": "扩张型心肌病",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-VT",
+        "name": "持续性室性心动过速",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-ERS",
+        "name": "早期复极综合征",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-BBB",
+        "name": "束支传导阻滞",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CM-FABRY",
+        "name": "法布雷病心肌病",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CM-AMYLOID",
+        "name": "淀粉样变心肌病",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-SQTS",
+        "name": "短QT间期综合征",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CAD-STABLE-ANGINA",
+        "name": "稳定型心绞痛",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-SB",
+        "name": "窦性心动过缓",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-SINUS",
+        "name": "窦性心律失常",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-SAB",
+        "name": "窦房传导阻滞",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-SND",
+        "name": "窦房结功能障碍",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-BRADY",
+        "name": "缓慢性心律失常",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CAD-ICM",
+        "name": "缺血性心肌病",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CM-HCM",
+        "name": "肥厚型心肌病",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CM-ABVC",
+        "name": "致心律失常性双心室心肌病",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CM-ARVC",
+        "name": "致心律失常性右心室心肌病",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CM-ALVC",
+        "name": "致心律失常性左心室心肌病",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CM-ACM",
+        "name": "致心律失常性心肌病",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-LQTS",
+        "name": "长QT间期综合征",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-PSVT",
+        "name": "阵发性室上性心动过速",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CAD-OLD-MI",
+        "name": "陈旧性心肌梗死",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CM-RCM",
+        "name": "限制型心肌病",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "name": "隐匿性冠心病",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CAD-NSTEMI",
+        "name": "非ST段抬高型心肌梗死",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-CM-NDLVCM",
+        "name": "非扩张型左心室心肌病",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-NSVT",
+        "name": "非持续性室性心动过速",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      },
+      {
+        "code": "DIS-CARD-ARR-WPW",
+        "name": "预激综合征",
+        "category": "",
+        "labels": [
+          "Disease",
+          "KGNode"
+        ],
+        "formal_cdss_ready": false
+      }
+    ],
+    "node_counts_by_type": [
+      {
+        "entityType": "Evidence",
+        "count": 23657
+      },
+      {
+        "entityType": "ClinicalRule",
+        "count": 427
+      },
+      {
+        "entityType": "PathwayStage",
+        "count": 307
+      },
+      {
+        "entityType": "RecommendationStatement",
+        "count": 177
+      },
+      {
+        "entityType": "Symptom",
+        "count": 74
+      },
+      {
+        "entityType": "Medication",
+        "count": 68
+      },
+      {
+        "entityType": "Sign",
+        "count": 62
+      },
+      {
+        "entityType": "Disease",
+        "count": 57
+      },
+      {
+        "entityType": "ClinicalPathway",
+        "count": 53
+      },
+      {
+        "entityType": "Pathophysiology",
+        "count": 48
+      },
+      {
+        "entityType": "Exam",
+        "count": 43
+      },
+      {
+        "entityType": "DefinitionComponent",
+        "count": 32
+      },
+      {
+        "entityType": "LabTest",
+        "count": 29
+      },
+      {
+        "entityType": "Etiology",
+        "count": 28
+      },
+      {
+        "entityType": "DiseaseClassification",
+        "count": 26
+      },
+      {
+        "entityType": "Prevention",
+        "count": 20
+      },
+      {
+        "entityType": "FollowUp",
+        "count": 19
+      },
+      {
+        "entityType": "Prognosis",
+        "count": 19
+      },
+      {
+        "entityType": "ExamIndicator",
+        "count": 18
+      },
+      {
+        "entityType": "RiskFactor",
+        "count": 18
+      },
+      {
+        "entityType": "Procedure",
+        "count": 16
+      },
+      {
+        "entityType": "DiagnosisCriteriaComponent",
+        "count": 15
+      },
+      {
+        "entityType": "DifferentialDiagnosis",
+        "count": 12
+      },
+      {
+        "entityType": "Complication",
+        "count": 10
+      },
+      {
+        "entityType": "Contraindication",
+        "count": 10
+      },
+      {
+        "entityType": "Definition",
+        "count": 9
+      },
+      {
+        "entityType": "ThresholdRule",
+        "count": 8
+      },
+      {
+        "entityType": "TreatmentPlan",
+        "count": 7
+      },
+      {
+        "entityType": "DiagnosisCriteria",
+        "count": 6
+      },
+      {
+        "entityType": "Epidemiology",
+        "count": 1
+      }
+    ]
+  },
+  "gaps": {
+    "diagnosis_criteria_without_component": [],
+    "differential_without_rule": [],
+    "formal_rule_without_evidence": [],
+    "formal_rule_without_text": [],
+    "medication_category_without_specific_medication": [
+      {
+        "disease_code": "DIS-CARD-CAD-STEMI",
+        "disease_name": "ST段抬高型心肌梗死",
+        "node_code": "MED-CARD-STEMI-C6E5F2B51268",
+        "node_name": "GPⅡb/Ⅲa受体拮抗剂",
+        "batch_id": "BATCH-CARD-CAD-STEMI-20260712-001",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-STEMI",
+        "disease_name": "ST段抬高型心肌梗死",
+        "node_code": "MED-CARD-STEMI-611F442336F1",
+        "node_name": "洋地黄制剂",
+        "batch_id": "BATCH-CARD-CAD-STEMI-20260712-001",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-UA",
+        "disease_name": "不稳定型心绞痛",
+        "node_code": "MED-CARD-CADREM-UA-86E5A960E1",
+        "node_name": "P2Y12受体抑制剂",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-UA",
+        "disease_name": "不稳定型心绞痛",
+        "node_code": "MED-CARD-CADREM-UA-64DAEC4E11",
+        "node_name": "β受体拮抗剂",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-UA",
+        "disease_name": "不稳定型心绞痛",
+        "node_code": "MED-CARD-CADREM-UA-55157DA541",
+        "node_name": "硝酸酯类药物",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-UA",
+        "disease_name": "不稳定型心绞痛",
+        "node_code": "MED-CARD-CADREM-UA-28E925C6DE",
+        "node_name": "钙通道阻滞剂",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-SPASM",
+        "disease_name": "冠状动脉痉挛",
+        "node_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7",
+        "node_name": "β受体拮抗剂",
+        "batch_id": "CARD-SKELETON-20260709",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-ARR-PVC",
+        "disease_name": "室性期前收缩",
+        "node_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7",
+        "node_name": "β受体拮抗剂",
+        "batch_id": "CARD-SKELETON-20260709",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-ARR-VF",
+        "disease_name": "心室扑动与心室颤动",
+        "node_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7",
+        "node_name": "β受体拮抗剂",
+        "batch_id": "CARD-SKELETON-20260709",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-ARR-AFL",
+        "disease_name": "心房扑动",
+        "node_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7",
+        "node_name": "β受体拮抗剂",
+        "batch_id": "CARD-SKELETON-20260709",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-ARR-AF",
+        "disease_name": "心房颤动",
+        "node_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7",
+        "node_name": "β受体拮抗剂",
+        "batch_id": "CARD-SKELETON-20260709",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CM-MYOCARDITIS",
+        "disease_name": "心肌炎",
+        "node_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7",
+        "node_name": "β受体拮抗剂",
+        "batch_id": "CARD-SKELETON-20260709",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-AMI",
+        "disease_name": "急性心肌梗死",
+        "node_code": "MED-CARD-CADREM-AMI-64DAEC4E11",
+        "node_name": "β受体拮抗剂",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-AMI",
+        "disease_name": "急性心肌梗死",
+        "node_code": "MED-CARD-CADREM-AMI-55157DA541",
+        "node_name": "硝酸酯类药物",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-ARR-AT",
+        "disease_name": "房性心动过速",
+        "node_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7",
+        "node_name": "β受体拮抗剂",
+        "batch_id": "CARD-SKELETON-20260709",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CM-DCM",
+        "disease_name": "扩张型心肌病",
+        "node_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7",
+        "node_name": "β受体拮抗剂",
+        "batch_id": "CARD-SKELETON-20260709",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CM-DCM",
+        "disease_name": "扩张型心肌病",
+        "node_code": "CARD-SKELETON-20260709-MEDICATION-09DFB5E0DF9F68B9",
+        "node_name": "血管紧张素II受体拮抗剂",
+        "batch_id": "CARD-SKELETON-20260709",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CM-DCM",
+        "disease_name": "扩张型心肌病",
+        "node_code": "CARD-SKELETON-20260709-MEDICATION-7887433A96437926",
+        "node_name": "血管紧张素转换酶抑制剂或血管紧张素受体阻滞剂",
+        "batch_id": "CARD-SKELETON-20260709",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CM-DCM",
+        "disease_name": "扩张型心肌病",
+        "node_code": "CARD-SKELETON-20260709-MEDICATION-CE7B6E8D0756D10D",
+        "node_name": "钠-葡萄糖共转运蛋白2抑制剂",
+        "batch_id": "CARD-SKELETON-20260709",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-STABLE-ANGINA",
+        "disease_name": "稳定型心绞痛",
+        "node_code": "MED-CARD-CADREM-STABLE-ANGINA-86E5A960E1",
+        "node_name": "P2Y12受体抑制剂",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-STABLE-ANGINA",
+        "disease_name": "稳定型心绞痛",
+        "node_code": "MED-CARD-CADREM-STABLE-ANGINA-64DAEC4E11",
+        "node_name": "β受体拮抗剂",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-STABLE-ANGINA",
+        "disease_name": "稳定型心绞痛",
+        "node_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7",
+        "node_name": "β受体拮抗剂",
+        "batch_id": "CARD-SKELETON-20260709",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-STABLE-ANGINA",
+        "disease_name": "稳定型心绞痛",
+        "node_code": "MED-CARD-CADREM-STABLE-ANGINA-55157DA541",
+        "node_name": "硝酸酯类药物",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-STABLE-ANGINA",
+        "disease_name": "稳定型心绞痛",
+        "node_code": "MED-CARD-CADREM-STABLE-ANGINA-28E925C6DE",
+        "node_name": "钙通道阻滞剂",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-STABLE-ANGINA",
+        "disease_name": "稳定型心绞痛",
+        "node_code": "MED-CARD-CADREM-STABLE-ANGINA-6974A87B31",
+        "node_name": "非二氢吡啶类钙通道阻滞剂",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-ARR-SB",
+        "disease_name": "窦性心动过缓",
+        "node_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7",
+        "node_name": "β受体拮抗剂",
+        "batch_id": "CARD-SKELETON-20260709",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CM-HCM",
+        "disease_name": "肥厚型心肌病",
+        "node_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7",
+        "node_name": "β受体拮抗剂",
+        "batch_id": "CARD-SKELETON-20260709",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CM-ARVC",
+        "disease_name": "致心律失常性右心室心肌病",
+        "node_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7",
+        "node_name": "β受体拮抗剂",
+        "batch_id": "CARD-SKELETON-20260709",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CM-RCM",
+        "disease_name": "限制型心肌病",
+        "node_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7",
+        "node_name": "β受体拮抗剂",
+        "batch_id": "CARD-SKELETON-20260709",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "disease_name": "隐匿性冠心病",
+        "node_code": "MED-CARD-CADREM-SILENT-ISCHEMIA-64DAEC4E11",
+        "node_name": "β受体拮抗剂",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+        "disease_name": "隐匿性冠心病",
+        "node_code": "MED-CARD-CADREM-SILENT-ISCHEMIA-DAE0F0B68F",
+        "node_name": "他汀类药物",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-NSTEMI",
+        "disease_name": "非ST段抬高型心肌梗死",
+        "node_code": "MED-CARD-CADREM-NSTEMI-86E5A960E1",
+        "node_name": "P2Y12受体抑制剂",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-NSTEMI",
+        "disease_name": "非ST段抬高型心肌梗死",
+        "node_code": "MED-CARD-CADREM-NSTEMI-64DAEC4E11",
+        "node_name": "β受体拮抗剂",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-NSTEMI",
+        "disease_name": "非ST段抬高型心肌梗死",
+        "node_code": "MED-CARD-CADREM-NSTEMI-55157DA541",
+        "node_name": "硝酸酯类药物",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CAD-NSTEMI",
+        "disease_name": "非ST段抬高型心肌梗死",
+        "node_code": "MED-CARD-CADREM-NSTEMI-28E925C6DE",
+        "node_name": "钙通道阻滞剂",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CM-NDLVCM",
+        "disease_name": "非扩张型左心室心肌病",
+        "node_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7",
+        "node_name": "β受体拮抗剂",
+        "batch_id": "CARD-SKELETON-20260709",
+        "rel_type": "treated_by_medication"
+      },
+      {
+        "disease_code": "DIS-CARD-CM-NDLVCM",
+        "disease_name": "非扩张型左心室心肌病",
+        "node_code": "CARD-SKELETON-20260709-MEDICATION-09DFB5E0DF9F68B9",
+        "node_name": "血管紧张素II受体拮抗剂",
+        "batch_id": "CARD-SKELETON-20260709",
+        "rel_type": "treated_by_medication"
+      }
+    ]
+  },
+  "cleanup_candidates": {
+    "orphan_scope_nodes": [],
+    "non_kgnode_label_counts": [],
+    "technical_name_nodes": [
+      {
+        "code": "LAB-CARD-CADREM-AMI-CA4C7A8A1F",
+        "name": "CK-MB",
+        "display_name": "CK-MB",
+        "entityType": "LabTest",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001"
+      },
+      {
+        "code": "LAB-CARD-CADREM-NSTEMI-CA4C7A8A1F",
+        "name": "CK-MB",
+        "display_name": "CK-MB",
+        "entityType": "LabTest",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001"
+      },
+      {
+        "code": "LAB-CARD-CADREM-STABLE-ANGINA-CA4C7A8A1F",
+        "name": "CK-MB",
+        "display_name": "CK-MB",
+        "entityType": "LabTest",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001"
+      },
+      {
+        "code": "LAB-CARD-CADREM-UA-CA4C7A8A1F",
+        "name": "CK-MB",
+        "display_name": "CK-MB",
+        "entityType": "LabTest",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001"
+      }
+    ],
+    "blocked_but_formal_nodes": []
+  },
+  "global_gate_before": {
+    "non_kgnode_nodes": 0,
+    "label_entity_mismatch": 0,
+    "formal_clinical_rules_without_content": 0,
+    "formal_clinical_rules_without_evidence": 0,
+    "differential_without_detail": 0,
+    "diagnosis_criteria_without_component": 0
+  }
+}
