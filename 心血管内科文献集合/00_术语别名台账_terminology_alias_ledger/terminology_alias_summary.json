@@ -1,0 +1,41 @@
+{
+  "audited_graph_count": null,
+  "alias_row_count": 6224,
+  "unique_alias_count": 1342,
+  "conflict_alias_count": 211,
+  "counts_by_entityType": {
+    "ClinicalPathway": 6,
+    "Complication": 150,
+    "Contraindication": 44,
+    "DiagnosisCriteria": 691,
+    "DifferentialDiagnosis": 68,
+    "Disease": 431,
+    "Epidemiology": 66,
+    "Etiology": 579,
+    "Exam": 288,
+    "ExamIndicator": 76,
+    "FollowUp": 294,
+    "LabTest": 162,
+    "Medication": 354,
+    "Pathophysiology": 125,
+    "Procedure": 203,
+    "Prognosis": 347,
+    "RiskFactor": 286,
+    "RiskStratification": 230,
+    "Sign": 277,
+    "Symptom": 290,
+    "TreatmentPlan": 1257
+  },
+  "source_graph_dirs": [
+    "00_foundation_skeleton",
+    "BATCH-CARD-AF-20260701-001_房颤_AtrialFibrillation",
+    "BATCH-CARD-CAD-20260623-001",
+    "BATCH-CARD-CDSS-RULE-EVIDENCE-REFINE-20260714-001",
+    "BATCH-CARD-CM-20260622-001",
+    "BATCH-CARD-HF-20260629-001",
+    "BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter",
+    "BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD"
+  ],
+  "last_manual_update": "2026-07-14",
+  "last_manual_update_note": "回写CDSS总精修术语：ACEI、糖蛋白Ⅱb/Ⅲa受体拮抗剂、CK-MB。"
+}

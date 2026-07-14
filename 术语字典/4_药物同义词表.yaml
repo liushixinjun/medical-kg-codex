@@ -97,16 +97,20 @@
 # === 待创建药物节点 ===
 
 - canonical: 血管紧张素转换酶抑制剂
-  code: MED-CARD-PENDING-ACEI
+  code: MED-CARD-E40082221530
   name_en: Angiotensin-converting enzyme inhibitor
   aliases:
     - ACEI
+    - ACE抑制剂
+    - ACE inhibitor
     - 普利类药物
     - 依那普利
     - 卡托普利
+    - 贝那普利
+    - 培哚普利
   same_as: []
-  status: 待创建
-  note: "由MED-CARD-6B08182277BE拆分而来"
+  status: 已入库
+  note: "2026-07-14 总精修回写：主名必须为中文完整名称，ACEI等缩写仅作aliases；由MED-CARD-6B08182277BE历史组合类拆分而来。"
 
 - canonical: 血管紧张素II受体拮抗剂
   code: MED-CARD-PENDING-ARB
@@ -142,3 +146,18 @@
   same_as: []
   status: 待创建
   note: ""
+
+- canonical: 糖蛋白Ⅱb/Ⅲa受体拮抗剂
+  code: MED-CARD-STEMI-C6E5F2B51268
+  name_en: Glycoprotein IIb/IIIa receptor inhibitor
+  aliases:
+    - GPⅡb/Ⅲa受体拮抗剂
+    - GPIIb/IIIa受体拮抗剂
+    - GP IIb/IIIa inhibitor
+    - 糖蛋白IIb/IIIa受体拮抗剂
+    - 替罗非班
+    - 依替巴肽
+    - 阿昔单抗
+  same_as: []
+  status: 已入库
+  note: "2026-07-14 总精修回写：主名规范为中文完整名称，英文/罗马数字写法作aliases；具体药物已通过has_specific_medication下钻。"
