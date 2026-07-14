@@ -1,0 +1,24 @@
+{
+  "batch_id": "20260714_全库主数据归并治理",
+  "generated_at": "2026-07-14T14:53:56",
+  "duplicate_group_count": 148,
+  "candidate_duplicate_node_count": 149,
+  "blocked_group_count": 0,
+  "candidate_entity_type_counts": {
+    "Definition": 2,
+    "Complication": 1,
+    "DiagnosisCriteria": 4,
+    "Exam": 16,
+    "LabTest": 13,
+    "Medication": 24,
+    "Procedure": 4,
+    "RiskFactor": 1,
+    "Sign": 23,
+    "Symptom": 27,
+    "FollowUp": 9,
+    "Pathophysiology": 7,
+    "Prevention": 9,
+    "Prognosis": 9
+  },
+  "mode": "apply"
+}

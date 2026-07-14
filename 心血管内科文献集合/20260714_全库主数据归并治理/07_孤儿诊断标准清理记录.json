@@ -1,0 +1,28 @@
+{
+  "deleted_nodes": [
+    {
+      "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+      "name": "急性心肌梗死诊断标准",
+      "code": "DXC-CARD-CADREM-AMI-547346EE2F"
+    },
+    {
+      "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+      "name": "非ST段抬高型心肌梗死诊断标准",
+      "code": "DXC-CARD-CADREM-NSTEMI-AD026DED69"
+    },
+    {
+      "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+      "name": "稳定型心绞痛诊断标准",
+      "code": "DXC-CARD-CADREM-STABLE-ANGINA-F0FABEDE13"
+    },
+    {
+      "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+      "name": "不稳定型心绞痛诊断标准",
+      "code": "DXC-CARD-CADREM-UA-83118B6431"
+    }
+  ],
+  "deleted_count": 4,
+  "batch_id": "20260714_全库主数据归并治理",
+  "cleanup_type": "零关系孤儿 DiagnosisCriteria 精确清理",
+  "generated_at": "2026-07-14T15:01:34"
+}

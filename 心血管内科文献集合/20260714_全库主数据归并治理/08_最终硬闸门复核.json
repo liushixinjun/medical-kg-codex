@@ -1,0 +1,13 @@
+{
+  "same_disease_same_type_same_name_duplicates": 0,
+  "non_kgnode": 0,
+  "label_mismatch": 0,
+  "diagnosis_without_component": 0,
+  "differential_without_detail": 0,
+  "treatment_plan_without_downstream": 0,
+  "formal_diseases": 78,
+  "total_kgnodes": 43748,
+  "total_relationships": 141833,
+  "batch_id": "20260714_全库主数据归并治理",
+  "generated_at": "2026-07-14T15:04:38"
+}

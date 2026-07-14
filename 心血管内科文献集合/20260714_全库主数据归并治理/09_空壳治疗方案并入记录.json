@@ -1,0 +1,113 @@
+{
+  "batch_id": "20260714_全库主数据归并治理",
+  "cleanup_type": "空壳 TreatmentPlan 并入 canonical",
+  "generated_at": "2026-07-14T15:03:59",
+  "old_code": "PLAN-CARD-7CC38FBA6F57",
+  "canonical_code": "PLAN-CARD-TEXT-7CC38FBA6F",
+  "migrated_relations": [
+    {
+      "source_code": "REC-CDSS-AF-ARR-AF-03-01-TREAT",
+      "source_name": "心房颤动治疗应根据病情严重程度、禁忌证和患者特征选择复律治疗、导管消融、左心耳封堵、β受体阻滞剂、低分子肝素等。",
+      "source_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "rel_type": "recommends_action",
+      "props": {
+        "relationType": "recommends_action",
+        "evidence_count": 3,
+        "target_code": "PLAN-CARD-7CC38FBA6F57",
+        "schema_version": "V1.10",
+        "batch_id": "BATCH-CARD-AF-CDSS-20260709-001",
+        "id": "REL-C27B777FD204AB41FA3C",
+        "source_code": "REC-CDSS-AF-ARR-AF-03-01-TREAT",
+        "recommendation_code": "REC-CDSS-AF-ARR-AF-03-01-TREAT",
+        "clinical_review_status": "pending_clinical_use_effect_review",
+        "created_at": "2026-07-09 00:00:00",
+        "conflict_status": "none",
+        "rule_code": "RULE-CDSS-AF-ARR-AF-03-01-TREAT",
+        "formal_cdss_ready": false,
+        "skill_version": "V1.40",
+        "evidence_ids": [
+          "EVD-13D6E67D3A0E3F587233-AF",
+          "EVD-E807E736B7EFCCD34B7B-AF",
+          "EVD-14CAF9C6244192878939-AF"
+        ],
+        "relationCategory": "recommendation",
+        "merge_status": "delta_ready",
+        "review_status": "ai_prechecked",
+        "cdss_release_level": "test_recommendation"
+      }
+    },
+    {
+      "source_code": "RULE-CDSS-AF-ARR-AF-03-01-TREAT",
+      "source_name": "心房颤动治疗决策阶段规则",
+      "source_labels": [
+        "KGNode",
+        "ClinicalRule"
+      ],
+      "rel_type": "recommends_action",
+      "props": {
+        "relationType": "recommends_action",
+        "evidence_count": 3,
+        "target_code": "PLAN-CARD-7CC38FBA6F57",
+        "schema_version": "V1.10",
+        "batch_id": "BATCH-CARD-AF-CDSS-20260709-001",
+        "id": "REL-7B820C4A6982D8CBE535",
+        "source_code": "RULE-CDSS-AF-ARR-AF-03-01-TREAT",
+        "recommendation_code": "REC-CDSS-AF-ARR-AF-03-01-TREAT",
+        "clinical_review_status": "pending_clinical_use_effect_review",
+        "created_at": "2026-07-09 00:00:00",
+        "conflict_status": "none",
+        "rule_code": "RULE-CDSS-AF-ARR-AF-03-01-TREAT",
+        "formal_cdss_ready": false,
+        "skill_version": "V1.40",
+        "evidence_ids": [
+          "EVD-13D6E67D3A0E3F587233-AF",
+          "EVD-E807E736B7EFCCD34B7B-AF",
+          "EVD-14CAF9C6244192878939-AF"
+        ],
+        "relationCategory": "recommendation",
+        "merge_status": "delta_ready",
+        "review_status": "ai_prechecked",
+        "cdss_release_level": "test_recommendation"
+      }
+    },
+    {
+      "source_code": "STAGE-CDSS-AF-ARR-AF-03-TREAT",
+      "source_name": "心房颤动治疗决策阶段",
+      "source_labels": [
+        "KGNode",
+        "PathwayStage"
+      ],
+      "rel_type": "has_recommended_action",
+      "props": {
+        "relationType": "has_recommended_action",
+        "evidence_count": 3,
+        "target_code": "PLAN-CARD-7CC38FBA6F57",
+        "schema_version": "V1.10",
+        "batch_id": "BATCH-CARD-AF-CDSS-20260709-001",
+        "id": "REL-2318946AE4BD8C6A07BA",
+        "source_code": "STAGE-CDSS-AF-ARR-AF-03-TREAT",
+        "recommendation_code": "REC-CDSS-AF-ARR-AF-03-01-TREAT",
+        "clinical_review_status": "pending_clinical_use_effect_review",
+        "created_at": "2026-07-09 00:00:00",
+        "conflict_status": "none",
+        "rule_code": "RULE-CDSS-AF-ARR-AF-03-01-TREAT",
+        "formal_cdss_ready": false,
+        "skill_version": "V1.40",
+        "evidence_ids": [
+          "EVD-13D6E67D3A0E3F587233-AF",
+          "EVD-E807E736B7EFCCD34B7B-AF",
+          "EVD-14CAF9C6244192878939-AF"
+        ],
+        "relationCategory": "pathway",
+        "merge_status": "delta_ready",
+        "review_status": "ai_prechecked",
+        "cdss_release_level": "test_recommendation"
+      }
+    }
+  ],
+  "migrated_count": 3,
+  "deleted_count": 1
+}

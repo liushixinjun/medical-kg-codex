@@ -1,4 +1,5 @@
 ﻿batch_id,学科,疾病大类,专病范围,状态,输出路径,是否写Neo4j,备注
+20260714_全库主数据归并治理,心血管内科,全库主数据治理,同病种同类型同名重复直连；孤儿诊断标准；空壳治疗方案,已写入Neo4j并通过postcheck,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260714_全库主数据归并治理,是,重复组148；重复节点149；迁移入边160；迁移出边228；清理零关系孤儿诊断标准4个；空壳治疗方案并入canonical1个；最终硬闸门全为0
 20260714_心衰心律高血压总精修,心血管内科,心力衰竭/心律失常/高血压,心力衰竭11个；心律失常/心脏性猝死31个；高血压23个,已写入Neo4j并通过postcheck,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260714_心衰心律高血压总精修,是,65个疾病全部formal_cdss_ready；规则证据链补齐197条；治疗方案下游补链614条；传导阻滞类阻断方案补齐8条组件关系；语义污染治理2个；同名重复直连治理1组；本批次硬闸门全为0
 BATCH-CARD-CDSS-RULE-EVIDENCE-REFINE-20260714-001,心血管内科,全库/CDSS规则证据链总精修,冠心病/心肌病/心力衰竭/心律失常等已建图谱范围,已写入Neo4j并通过postcheck,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260714_CDSS总精修,是,补齐具体药物关系77条；新建具体药物节点30个；归并重复实体6组；补齐类型标签11个；药物类别无具体药物=0；CK-MB误归药物=0；药物缩写作为主名=0；全库硬闸门通过
 BATCH-CARD-HIST-TYPE-CLEAN-20260714-001,心血管内科,全库/历史节点类型治理,早期DiagnosisCriteria与DifferentialDiagnosis误分型,已写入Neo4j并通过postcheck,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\BATCH-CARD-HIST-TYPE-CLEAN-20260714-001_历史节点类型治理_historical_node_type_cleanup,是,节点改型146；关系转换160；DiagnosisCriteria无明细12→0；DifferentialDiagnosis无明细148→14；正式CDSS硬闸门通过
