@@ -1,0 +1,11 @@
+{
+  "source_code": "PLAN-CARD-260280003FF2",
+  "source_name": "缺血性心肌病治疗方案",
+  "old_code": "PROC-CARD-CADREM-ICM-9360DBD2DE",
+  "old_name": "心脏移植",
+  "standard_code": "PROC-HEART-TRANSPLANT",
+  "standard_name": "心脏移植",
+  "migrated_count": 1,
+  "generated_at": "2026-07-14 15:26:25",
+  "fix_type": "已替换重复节点残留引用迁移"
+}

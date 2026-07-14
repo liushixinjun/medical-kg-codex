@@ -1,0 +1,7 @@
+{
+  "same_disease_same_type_same_name_duplicate_count": [],
+  "diagnosis_criteria_without_component_count": [],
+  "orphan_diagnosis_criteria_count": [],
+  "treatment_plan_without_downstream_count": [],
+  "replaced_duplicate_still_referenced_count": []
+}
