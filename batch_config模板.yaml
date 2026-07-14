@@ -87,6 +87,16 @@ quality_gates:
     enabled: true
   G3_server_postcheck:
     enabled: true
+    required_after_server_import: true
+    fixed_postcheck_entry: "公共执行层_kg_pipeline/批次入库后复测_postcheck.py"
+    output_subdir: "99_入库后复测"
+    must_pass_before_next_batch: true
+    command_example: >
+      D:/Program Files Ai/python-venvs/medical-kg/Scripts/python.exe
+      公共执行层_kg_pipeline/批次入库后复测_postcheck.py
+      --batch-id ${batch.batch_id}
+      --batch-output-dir ${output.batch_output_dir}
+      --connection-file ${neo4j.connection_file}
 
 reporting:
   update_snapshot: true
@@ -94,4 +104,3 @@ reporting:
   update_pitfall_log: true
   update_batch_ledger: true
   produce_handoff_summary: true
-

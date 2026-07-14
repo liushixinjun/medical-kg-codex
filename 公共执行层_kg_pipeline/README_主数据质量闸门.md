@@ -34,3 +34,23 @@ $py = "D:\Program Files Ai\python-venvs\medical-kg\Scripts\python.exe"
 - G1：本地 JSONL 生成后，先查本地是否准备生成重复主节点。
 - G2：导入前只读连接 Neo4j，确认服务器已有标准主节点，避免重复创建。
 - G3/postcheck：入库后再次查服务器，必须全部为 0 才能继续新病种。
+
+## 批次入库后统一复测入口
+
+以后新病种或精修批次写入 Neo4j 后，不再单独记忆多个旧脚本，统一执行：
+
+```powershell
+$py = "D:\Program Files Ai\python-venvs\medical-kg\Scripts\python.exe"
+& $py "公共执行层_kg_pipeline\批次入库后复测_postcheck.py" `
+  --batch-id "BATCH-示例" `
+  --batch-output-dir "心血管内科文献集合\示例批次目录" `
+  --connection-file "图谱数据库链接.txt"
+```
+
+统一入口会在批次目录下生成：
+
+| 输出 | 用途 |
+|---|---|
+| `99_入库后复测/00_入库后复测总览.json` | 给脚本读取的总结果 |
+| `99_入库后复测/00_入库后复测报告.md` | 给人看的中文复测报告 |
+| `99_入库后复测/01_主数据质量闸门/` | 主数据质量闸门明细 |
