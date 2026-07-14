@@ -1,0 +1,369 @@
+{
+  "诊断标准无明细": [],
+  "鉴别诊断无规则或依据": [],
+  "治疗方案无下游动作": [],
+  "同疾病同类型同名重复直连": [],
+  "CDSS推荐节点缺证据": [],
+  "CDSS推荐证据疾病范围不一致": [
+    {
+      "disease_code": "DIS-CARD-HTN-EMERGENCY",
+      "disease_name": "高血压急症和亚急症",
+      "node_code": "PLAN-CARD-TEXT-BDE62A3BE0",
+      "node_name": "降压治疗",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-CARD-DEEP-90953183C30875",
+      "evidence_name": "稳定型心绞痛-降压治疗-教材证据-7517-C30875",
+      "evidence_scope": "DIS-CARD-CAD-STABLE-ANGINA"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-ESSENTIAL",
+      "disease_name": "原发性高血压",
+      "node_code": "PLAN-CARD-TEXT-BDE62A3BE0",
+      "node_name": "降压治疗",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-CARD-DEEP-90953183C30875",
+      "evidence_name": "稳定型心绞痛-降压治疗-教材证据-7517-C30875",
+      "evidence_scope": "DIS-CARD-CAD-STABLE-ANGINA"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-9A9489A580AF81E3951A-ACS",
+      "evidence_name": "经皮冠状动脉介入治疗指南（2025）.pdf 第4页证据（SEG-DOC-99DE8941F1F5EDF3-4-GL-00016-ACS）",
+      "evidence_scope": "DIS-CARD-CAD-ACS"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-0FD2E1A1C41C63483397-AMI",
+      "evidence_name": "经皮冠状动脉介入治疗指南（2025）.pdf 第5页证据（SEG-DOC-99DE8941F1F5EDF3-5-GL-00025-AMI）",
+      "evidence_scope": "DIS-CARD-CAD-AMI"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-CARD-DEEP-1A8C7847389EE8",
+      "evidence_name": "动脉粥样硬化-血运重建-教材证据-7275-389EE8",
+      "evidence_scope": "DIS-CARD-CAD-ATHEROSCLEROSIS"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-3F9A9CEAE20ED79F1757-CCS",
+      "evidence_name": "CCS CN 2024.pdf 第13页证据（SEG-DOC-0CFCD79F003BFB93-13-GL-00090-CCS）",
+      "evidence_scope": "DIS-CARD-CAD-CCS"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-CARD-FULLBOOK-68CA9382674DBD",
+      "evidence_name": "冠状动脉粥样硬化性心脏病-经皮冠状动脉介入治疗-全书回捞证据-7503-674DBD",
+      "evidence_scope": "DIS-CARD-CAD-CHD"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-7C0964745D26804E80A3-ICM",
+      "evidence_name": "存活心肌无创影像学评价专家共识.pdf 第7页证据（SEG-DOC-73CBCF74B9DAABAC-7-GL-00013-ICM）",
+      "evidence_scope": "DIS-CARD-CAD-ICM"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-CARD-DEEP-D41E326922E566",
+      "evidence_name": "非ST段抬高型心肌梗死-经皮冠状动脉介入治疗-教材证据-7733-22E566",
+      "evidence_scope": "DIS-CARD-CAD-NSTEMI"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-200F2F27FE465C9FC404-ANGINA",
+      "evidence_name": "经皮冠状动脉介入治疗指南（2025）.pdf 第4页证据（SEG-DOC-99DE8941F1F5EDF3-4-GL-00015-ANGINA）",
+      "evidence_scope": "DIS-CARD-CAD-STABLE-ANGINA"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-0FD2E1A1C41C63483397-STEMI",
+      "evidence_name": "经皮冠状动脉介入治疗指南（2025）.pdf 第5页证据（SEG-DOC-99DE8941F1F5EDF3-5-GL-00026-STEMI）",
+      "evidence_scope": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-CARD-FULLBOOK-8F88E219A0E438",
+      "evidence_name": "不稳定型心绞痛-经皮冠状动脉介入治疗-全书回捞证据-7735-A0E438",
+      "evidence_scope": "DIS-CARD-CAD-UA"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "node_code": "PLAN-CARD-TEXT-BDE62A3BE0",
+      "node_name": "降压治疗",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-CARD-DEEP-90953183C30875",
+      "evidence_name": "稳定型心绞痛-降压治疗-教材证据-7517-C30875",
+      "evidence_scope": "DIS-CARD-CAD-STABLE-ANGINA"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-PHEO",
+      "disease_name": "嗜铬细胞瘤和副神经节瘤",
+      "node_code": "PLAN-CARD-TEXT-BDE62A3BE0",
+      "node_name": "降压治疗",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-CARD-DEEP-90953183C30875",
+      "evidence_name": "稳定型心绞痛-降压治疗-教材证据-7517-C30875",
+      "evidence_scope": "DIS-CARD-CAD-STABLE-ANGINA"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-RENOVASCULAR",
+      "disease_name": "肾血管性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-9A9489A580AF81E3951A-ACS",
+      "evidence_name": "经皮冠状动脉介入治疗指南（2025）.pdf 第4页证据（SEG-DOC-99DE8941F1F5EDF3-4-GL-00016-ACS）",
+      "evidence_scope": "DIS-CARD-CAD-ACS"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-RENOVASCULAR",
+      "disease_name": "肾血管性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-0FD2E1A1C41C63483397-AMI",
+      "evidence_name": "经皮冠状动脉介入治疗指南（2025）.pdf 第5页证据（SEG-DOC-99DE8941F1F5EDF3-5-GL-00025-AMI）",
+      "evidence_scope": "DIS-CARD-CAD-AMI"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-RENOVASCULAR",
+      "disease_name": "肾血管性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-CARD-DEEP-1A8C7847389EE8",
+      "evidence_name": "动脉粥样硬化-血运重建-教材证据-7275-389EE8",
+      "evidence_scope": "DIS-CARD-CAD-ATHEROSCLEROSIS"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-RENOVASCULAR",
+      "disease_name": "肾血管性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-3F9A9CEAE20ED79F1757-CCS",
+      "evidence_name": "CCS CN 2024.pdf 第13页证据（SEG-DOC-0CFCD79F003BFB93-13-GL-00090-CCS）",
+      "evidence_scope": "DIS-CARD-CAD-CCS"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-RENOVASCULAR",
+      "disease_name": "肾血管性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-CARD-FULLBOOK-68CA9382674DBD",
+      "evidence_name": "冠状动脉粥样硬化性心脏病-经皮冠状动脉介入治疗-全书回捞证据-7503-674DBD",
+      "evidence_scope": "DIS-CARD-CAD-CHD"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-RENOVASCULAR",
+      "disease_name": "肾血管性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-7C0964745D26804E80A3-ICM",
+      "evidence_name": "存活心肌无创影像学评价专家共识.pdf 第7页证据（SEG-DOC-73CBCF74B9DAABAC-7-GL-00013-ICM）",
+      "evidence_scope": "DIS-CARD-CAD-ICM"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-RENOVASCULAR",
+      "disease_name": "肾血管性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-CARD-DEEP-D41E326922E566",
+      "evidence_name": "非ST段抬高型心肌梗死-经皮冠状动脉介入治疗-教材证据-7733-22E566",
+      "evidence_scope": "DIS-CARD-CAD-NSTEMI"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-RENOVASCULAR",
+      "disease_name": "肾血管性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-200F2F27FE465C9FC404-ANGINA",
+      "evidence_name": "经皮冠状动脉介入治疗指南（2025）.pdf 第4页证据（SEG-DOC-99DE8941F1F5EDF3-4-GL-00015-ANGINA）",
+      "evidence_scope": "DIS-CARD-CAD-STABLE-ANGINA"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-RENOVASCULAR",
+      "disease_name": "肾血管性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-0FD2E1A1C41C63483397-STEMI",
+      "evidence_name": "经皮冠状动脉介入治疗指南（2025）.pdf 第5页证据（SEG-DOC-99DE8941F1F5EDF3-5-GL-00026-STEMI）",
+      "evidence_scope": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-RENOVASCULAR",
+      "disease_name": "肾血管性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-CARD-FULLBOOK-8F88E219A0E438",
+      "evidence_name": "不稳定型心绞痛-经皮冠状动脉介入治疗-全书回捞证据-7735-A0E438",
+      "evidence_scope": "DIS-CARD-CAD-UA"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-RENOVASCULAR",
+      "disease_name": "肾血管性高血压",
+      "node_code": "PLAN-CARD-TEXT-BDE62A3BE0",
+      "node_name": "降压治疗",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-CARD-DEEP-90953183C30875",
+      "evidence_name": "稳定型心绞痛-降压治疗-教材证据-7517-C30875",
+      "evidence_scope": "DIS-CARD-CAD-STABLE-ANGINA"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-SECONDARY",
+      "disease_name": "继发性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-9A9489A580AF81E3951A-ACS",
+      "evidence_name": "经皮冠状动脉介入治疗指南（2025）.pdf 第4页证据（SEG-DOC-99DE8941F1F5EDF3-4-GL-00016-ACS）",
+      "evidence_scope": "DIS-CARD-CAD-ACS"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-SECONDARY",
+      "disease_name": "继发性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-0FD2E1A1C41C63483397-AMI",
+      "evidence_name": "经皮冠状动脉介入治疗指南（2025）.pdf 第5页证据（SEG-DOC-99DE8941F1F5EDF3-5-GL-00025-AMI）",
+      "evidence_scope": "DIS-CARD-CAD-AMI"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-SECONDARY",
+      "disease_name": "继发性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-CARD-DEEP-1A8C7847389EE8",
+      "evidence_name": "动脉粥样硬化-血运重建-教材证据-7275-389EE8",
+      "evidence_scope": "DIS-CARD-CAD-ATHEROSCLEROSIS"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-SECONDARY",
+      "disease_name": "继发性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-3F9A9CEAE20ED79F1757-CCS",
+      "evidence_name": "CCS CN 2024.pdf 第13页证据（SEG-DOC-0CFCD79F003BFB93-13-GL-00090-CCS）",
+      "evidence_scope": "DIS-CARD-CAD-CCS"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-SECONDARY",
+      "disease_name": "继发性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-CARD-FULLBOOK-68CA9382674DBD",
+      "evidence_name": "冠状动脉粥样硬化性心脏病-经皮冠状动脉介入治疗-全书回捞证据-7503-674DBD",
+      "evidence_scope": "DIS-CARD-CAD-CHD"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-SECONDARY",
+      "disease_name": "继发性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-7C0964745D26804E80A3-ICM",
+      "evidence_name": "存活心肌无创影像学评价专家共识.pdf 第7页证据（SEG-DOC-73CBCF74B9DAABAC-7-GL-00013-ICM）",
+      "evidence_scope": "DIS-CARD-CAD-ICM"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-SECONDARY",
+      "disease_name": "继发性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-CARD-DEEP-D41E326922E566",
+      "evidence_name": "非ST段抬高型心肌梗死-经皮冠状动脉介入治疗-教材证据-7733-22E566",
+      "evidence_scope": "DIS-CARD-CAD-NSTEMI"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-SECONDARY",
+      "disease_name": "继发性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-200F2F27FE465C9FC404-ANGINA",
+      "evidence_name": "经皮冠状动脉介入治疗指南（2025）.pdf 第4页证据（SEG-DOC-99DE8941F1F5EDF3-4-GL-00015-ANGINA）",
+      "evidence_scope": "DIS-CARD-CAD-STABLE-ANGINA"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-SECONDARY",
+      "disease_name": "继发性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-0FD2E1A1C41C63483397-STEMI",
+      "evidence_name": "经皮冠状动脉介入治疗指南（2025）.pdf 第5页证据（SEG-DOC-99DE8941F1F5EDF3-5-GL-00026-STEMI）",
+      "evidence_scope": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-SECONDARY",
+      "disease_name": "继发性高血压",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-CARD-FULLBOOK-8F88E219A0E438",
+      "evidence_name": "不稳定型心绞痛-经皮冠状动脉介入治疗-全书回捞证据-7735-A0E438",
+      "evidence_scope": "DIS-CARD-CAD-UA"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-SECONDARY",
+      "disease_name": "继发性高血压",
+      "node_code": "PLAN-CARD-TEXT-BDE62A3BE0",
+      "node_name": "降压治疗",
+      "entity_type": "TreatmentPlan",
+      "evidence_code": "EVD-CARD-DEEP-90953183C30875",
+      "evidence_name": "稳定型心绞痛-降压治疗-教材证据-7517-C30875",
+      "evidence_scope": "DIS-CARD-CAD-STABLE-ANGINA"
+    }
+  ]
+}

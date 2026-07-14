@@ -103,6 +103,33 @@ CATEGORY_CONFIGS = {
         "sample_trigger": "HCM + 猝死高危因素或风险评分达到阈值",
         "sample_note": "HCM/DCM 等典型专病可作为技术开发样板，但不能代替心肌病大类整体。",
     },
+    "心力衰竭": {
+        "code_prefixes": ["DIS-CARD-HF"],
+        "category_contains": ["心力衰竭", "心衰"],
+        "key_names": [],
+        "sample_disease": "慢性心力衰竭",
+        "sample_recommendation": "心衰分型评估与规范化药物治疗",
+        "sample_trigger": "呼吸困难/水肿 + BNP或NT-proBNP升高 + 超声心动图异常",
+        "sample_note": "心衰样板应优先覆盖 HFrEF、HFpEF、AHF/CHF 分型和急慢性处理，不能只看单一治疗药物。",
+    },
+    "心律失常": {
+        "code_prefixes": ["DIS-CARD-ARR"],
+        "category_contains": ["心律失常", "传导阻滞", "心动过速", "心动过缓"],
+        "key_names": [],
+        "sample_disease": "心房颤动",
+        "sample_recommendation": "卒中风险评估与抗凝决策",
+        "sample_trigger": "房颤确诊 + CHA2DS2-VASc评分达到抗凝阈值 + 无主要禁忌",
+        "sample_note": "心律失常大类覆盖范围较宽，房颤可作技术样板，但不能代替室上速、室性心律失常和缓慢性心律失常整体。",
+    },
+    "高血压": {
+        "code_prefixes": ["DIS-CARD-HTN"],
+        "category_contains": ["高血压"],
+        "key_names": [],
+        "sample_disease": "原发性高血压",
+        "sample_recommendation": "血压分级、危险分层与降压治疗",
+        "sample_trigger": "多次血压升高 + 靶器官损害/合并症/危险因素评估",
+        "sample_note": "高血压大类要同时看原发性、继发性和急症/亚急症，不能只按普通门诊降压处理。",
+    },
 }
 
 
@@ -285,6 +312,22 @@ def fetch_quality_issues(client: Neo4jHttpClient, disease_codes: list[str]) -> d
             RETURN DISTINCT d.code AS disease_code, d.name AS disease_name,
                    n.code AS node_code, n.name AS node_name, n.entityType AS entity_type
             ORDER BY disease_code, entity_type, node_name
+        """,
+        "CDSS推荐证据疾病范围不一致": """
+            UNWIND $disease_codes AS code
+            MATCH (d:KGNode {code: code})--(n:KGNode)
+            WHERE n.entityType IN ['ClinicalRule','RecommendationStatement','TreatmentPlan']
+            MATCH (n)-[er]-(e:KGNode)
+            WHERE e.entityType IN ['Evidence','Guideline']
+            WITH code, d, n, e,
+                 coalesce(er.disease_code, e.disease_code, '') AS evidence_scope
+            WHERE evidence_scope <> ''
+              AND NOT evidence_scope IN $disease_codes
+            RETURN DISTINCT d.code AS disease_code, d.name AS disease_name,
+                   n.code AS node_code, n.name AS node_name, n.entityType AS entity_type,
+                   e.code AS evidence_code, coalesce(e.name, e.source_name, e.title, left(coalesce(e.evidence_text, e.original_text, ''), 80)) AS evidence_name,
+                   evidence_scope
+            ORDER BY disease_code, entity_type, node_name, evidence_scope
         """,
     }
     return {name: query(client, statement, {"disease_codes": disease_codes}) for name, statement in checks.items()}

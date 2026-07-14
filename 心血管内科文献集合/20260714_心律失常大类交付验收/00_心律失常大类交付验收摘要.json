@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-07-14 20:13:45",
+  "category": "心律失常",
+  "output_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\20260714_心律失常大类交付验收",
+  "disease_count": 29,
+  "evidence_sample_count": 300,
+  "quality_issue_counts": {
+    "诊断标准无明细": 0,
+    "鉴别诊断无规则或依据": 0,
+    "治疗方案无下游动作": 0,
+    "同疾病同类型同名重复直连": 0,
+    "CDSS推荐节点缺证据": 0,
+    "CDSS推荐证据疾病范围不一致": 3923
+  },
+  "progress_distribution": {
+    ">=80": 10,
+    "60-79": 8,
+    "<60": 11
+  }
+}

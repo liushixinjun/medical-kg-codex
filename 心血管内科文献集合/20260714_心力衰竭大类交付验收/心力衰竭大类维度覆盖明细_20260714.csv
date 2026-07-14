@@ -1,0 +1,12 @@
+﻿CDSS决策节点数,ClinicalRule,Complication,Contraindication,Definition,DiagnosisCriteria,DiagnosisCriteriaComponent,DifferentialDiagnosis,Epidemiology,Etiology,Evidence,Exam,ExamIndicator,FollowUp,Guideline,LabTest,LabTestIndicator,Medication,Pathophysiology,Prevention,Procedure,Prognosis,RecommendationStatement,RiskStratification,Sign,Symptom,TreatmentPlan,formal_cdss_ready,临床审核状态,关系数,关联实体数,定义是否存在,指南数,正式CDSS关系数,疾病亚类,疾病名称,疾病大类,疾病编码,证据数
+5,4,1,0,0,1,0,0,0,1,17,2,1,1,4,0,0,0,0,0,0,1,0,0,2,3,1,True,clinical_ready,44,43,是,4,0,,全心衰竭,,DIS-CARD-HF-BIVENTRICULAR,17
+5,4,1,0,0,2,0,0,0,1,164,2,1,2,9,0,0,1,1,0,0,1,0,1,2,3,1,True,clinical_ready,201,200,是,9,0,,右心衰竭,,DIS-CARD-HF-RIGHT,164
+5,4,1,0,0,2,0,0,1,2,174,2,1,2,11,0,0,6,1,0,0,1,0,0,2,3,1,True,clinical_ready,219,218,是,11,0,,射血分数保留的心力衰竭,,DIS-CARD-HF-HFpEF,174
+5,4,1,0,0,2,0,0,0,1,36,2,1,2,8,0,0,6,0,0,0,1,0,0,2,2,1,True,clinical_ready,74,73,是,8,0,,射血分数轻度降低的心力衰竭,,DIS-CARD-HF-HFmrEF,36
+5,4,1,0,0,2,0,0,0,1,147,2,1,2,12,0,0,6,0,0,0,1,0,0,2,3,1,True,clinical_ready,190,189,是,12,0,,射血分数降低的心力衰竭,,DIS-CARD-HF-HFrEF,147
+5,4,1,0,0,2,0,0,0,1,140,2,1,2,8,0,0,4,0,0,0,1,0,0,2,3,1,True,clinical_ready,177,176,是,8,0,,左心衰竭,,DIS-CARD-HF-LEFT,140
+12,4,10,0,0,1,0,5,2,6,3051,10,1,1,18,9,0,16,3,0,9,1,0,1,18,20,8,True,clinical_ready,3209,3207,是,18,0,,心力衰竭,,DIS-CARD-HF,3051
+5,4,1,0,0,2,0,0,0,1,27,2,1,2,1,0,0,0,0,0,0,1,0,0,2,3,1,True,clinical_ready,53,52,是,1,0,,心肌梗死后心力衰竭,,DIS-CARD-HF-POST-MI,27
+10,6,6,0,1,2,1,0,0,3,280,2,1,2,12,6,0,14,0,0,4,1,0,0,14,17,4,True,clinical_ready,400,398,是,12,0,,急性心力衰竭,,DIS-CARD-HF-AHF,280
+15,13,5,0,1,2,5,0,2,3,308,8,1,2,13,8,0,13,2,0,4,1,0,1,16,13,2,True,clinical_ready,445,443,是,13,0,,慢性心力衰竭,,DIS-CARD-HF-CHF,308
+5,4,1,0,0,2,0,0,0,1,21,2,1,2,1,0,0,3,0,0,0,1,0,0,2,3,1,True,clinical_ready,50,49,是,1,0,,透析患者慢性心力衰竭,,DIS-CARD-HF-DIALYSIS-CHF,21
