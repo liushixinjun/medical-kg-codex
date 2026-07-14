@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-07-14 20:46:38",
+  "category": "肺动脉高压",
+  "category_config": {
+    "code_prefixes": [
+      "DIS-CARD-PAH",
+      "DIS-CARD-PH",
+      "DIS-CARD-PHTN"
+    ],
+    "category_contains": [
+      "肺动脉高压",
+      "肺高压"
+    ],
+    "key_names": [],
+    "sample_disease": "肺动脉高压",
+    "sample_recommendation": "肺动脉高压分型、危险分层与靶向治疗评估",
+    "sample_trigger": "疑似肺动脉高压 + 超声/右心导管/病因分型证据",
+    "sample_note": "肺动脉高压当前若无疾病节点，应作为新批次启动缺口，而不是误用肺动脉瓣狭窄等相邻疾病代替。"
+  },
+  "diseases": [],
+  "dimension_rows": [],
+  "progress_rows": [],
+  "capability_rows": [],
+  "evidence_samples": []
+}

@@ -1,0 +1,10 @@
+﻿CDSS决策节点数,ClinicalRule,Complication,Contraindication,Definition,DiagnosisCriteria,DiagnosisCriteriaComponent,DifferentialDiagnosis,Epidemiology,Etiology,Evidence,Exam,ExamIndicator,FollowUp,Guideline,LabTest,LabTestIndicator,Medication,Pathophysiology,Prevention,Procedure,Prognosis,RecommendationStatement,RiskStratification,Sign,Symptom,TreatmentPlan,formal_cdss_ready,临床审核状态,关系数,关联实体数,定义是否存在,指南数,正式CDSS关系数,疾病亚类,疾病名称,疾病大类,疾病编码,证据数
+5,4,1,0,0,1,0,0,0,1,25,3,0,1,4,0,0,0,0,0,0,1,0,0,1,5,1,True,clinical_ready,53,52,是,4,0,,一度房室传导阻滞,,DIS-CARD-ARR-AVB1,25
+5,4,1,0,0,1,0,0,0,1,61,2,0,1,4,0,0,1,0,0,0,1,0,0,2,5,1,True,clinical_ready,90,89,是,4,0,,三度房室传导阻滞,,DIS-CARD-ARR-AVB3,61
+5,4,1,0,0,1,0,0,0,1,8,1,0,1,3,0,0,0,0,0,0,1,0,0,1,1,1,True,clinical_ready,29,28,是,3,0,,二度房室传导阻滞,,DIS-CARD-ARR-AVB2,8
+13,5,10,0,1,1,0,0,0,9,821,7,0,1,4,8,0,10,2,0,7,1,0,0,15,14,8,True,clinical_ready,941,939,是,4,0,,房室传导阻滞,,DIS-CARD-ARR-AVB,821
+5,4,1,0,0,1,0,0,0,1,69,2,0,1,3,0,0,0,1,0,0,1,0,0,2,7,1,True,clinical_ready,99,98,是,3,0,,束支传导阻滞,,DIS-CARD-ARR-BBB,69
+14,5,1,0,1,1,1,0,0,1,152,3,0,1,4,0,0,6,1,0,2,1,0,1,4,6,9,True,clinical_ready,208,207,是,4,0,,窦性心动过缓,,DIS-CARD-ARR-SB,152
+5,4,1,0,1,1,2,0,0,2,26,2,0,1,3,0,0,0,0,0,0,1,0,0,1,5,1,True,clinical_ready,57,56,是,3,0,,窦房传导阻滞,,DIS-CARD-ARR-SAB,26
+5,4,1,0,0,1,0,0,0,1,63,4,0,1,3,0,0,2,0,0,0,1,0,0,3,6,1,True,clinical_ready,96,95,是,3,0,,窦房结功能障碍,,DIS-CARD-ARR-SND,63
+6,4,1,0,0,1,0,0,0,1,170,3,0,1,4,0,0,2,1,0,2,1,0,1,4,6,2,True,clinical_ready,209,208,是,4,0,,缓慢性心律失常,,DIS-CARD-ARR-BRADY,170

@@ -1,7 +1,7 @@
 # 专科CDSS图谱查询接口与 Cypher 示例
 
-版本：V1.0  
-日期：2026-07-07 22:10:00  
+版本：V1.1
+日期：2026-07-14 20:40:00
 定位：`专病辅助诊疗建设方案_专科CDSS六级建设.md` 的开发实施附件  
 适用对象：后端、Trae 前端、规则引擎、专病诊疗路径编辑器  
 适用图谱：Neo4j 专科知识图谱，实体以 `KGNode.code` 唯一识别，类型以 `entityType` 为准
@@ -33,6 +33,47 @@
 ```
 
 正式 CDSS 推荐必须以 `RecommendationStatement` 为根，不得从疾病证据池或动作证据池反推依据。
+
+### 2.1 推荐证据查询硬规则
+
+查询某条推荐的证据时，必须按当前疾病或当前疾病大类过滤 `supported_by_evidence.disease_code`。
+
+不要使用“推荐节点连了哪些证据就全部展示”的写法。
+
+正确示例：
+
+```cypher
+MATCH (d:KGNode {code: $disease_code})--(rec:KGNode)
+WHERE rec.entityType IN ['ClinicalRule','RecommendationStatement','TreatmentPlan']
+MATCH (rec)-[er:supported_by_evidence]-(e:KGNode)
+WHERE e.entityType IN ['Evidence','Guideline']
+  AND coalesce(er.formal_cdss_ready, true) <> false
+  AND coalesce(er.disease_code, e.disease_code, '') IN $allowed_disease_codes
+RETURN
+  rec.code AS recommendation_code,
+  rec.name AS recommendation_name,
+  e.code AS evidence_code,
+  coalesce(e.source_name, e.name, e.title) AS source_name,
+  coalesce(e.source_page, e.page, e.page_number) AS page,
+  coalesce(er.recommendation_class, e.recommendation_class) AS recommendation_class,
+  coalesce(er.evidence_level, e.evidence_level) AS evidence_level,
+  coalesce(er.evidence_text, e.evidence_text, e.original_text) AS evidence_text
+ORDER BY source_name, page
+```
+
+参数：
+
+- `$disease_code`：当前疾病编码。
+- `$allowed_disease_codes`：当前疾病、上级疾病和疾病大类允许使用的证据范围。
+
+错误示例：
+
+```cypher
+MATCH (rec)-[:supported_by_evidence]-(e)
+RETURN e
+```
+
+这个写法会把共享治疗/规则节点上的其他疾病证据全部展示出来，不能用于正式 CDSS。
 
 ## 3. 通用返回规则
 

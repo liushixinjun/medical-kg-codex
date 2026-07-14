@@ -1,0 +1,9 @@
+﻿CDSS决策节点数,ClinicalRule,Complication,Contraindication,Definition,DiagnosisCriteria,DiagnosisCriteriaComponent,DifferentialDiagnosis,Epidemiology,Etiology,Evidence,Exam,ExamIndicator,FollowUp,Guideline,LabTest,LabTestIndicator,Medication,Pathophysiology,Prevention,Procedure,Prognosis,RecommendationStatement,RiskStratification,Sign,Symptom,TreatmentPlan,formal_cdss_ready,临床审核状态,关系数,关联实体数,定义是否存在,指南数,正式CDSS关系数,疾病亚类,疾病名称,疾病大类,疾病编码,证据数
+6,3,8,0,1,0,5,0,0,10,232,6,0,7,0,1,0,14,9,7,4,7,0,0,15,13,3,False,pending_clinical_review,361,360,否,0,0,,主动脉瓣反流,,DIS-CARD-VHD-AR,232
+6,3,6,0,1,0,3,0,1,6,360,9,0,8,0,5,0,6,9,8,4,8,0,0,8,17,3,False,pending_clinical_review,482,481,否,0,0,,主动脉瓣狭窄,,DIS-CARD-VHD-AS,360
+0,0,4,0,0,0,0,0,1,1,46,3,0,0,0,0,0,0,0,0,1,0,0,0,2,0,0,False,pending_clinical_review,64,63,否,0,0,,二叶主动脉瓣,,DIS-CARD-CHD-BAV,46
+5,1,9,0,1,0,1,0,0,2,332,7,0,6,0,3,0,14,12,6,4,6,0,0,15,17,4,False,pending_clinical_review,457,456,否,0,0,,二尖瓣反流,,DIS-CARD-VHD-MR,332
+6,1,9,0,1,0,1,0,1,11,409,7,0,8,0,4,0,11,11,8,4,8,0,0,20,12,5,False,pending_clinical_review,549,548,否,0,0,,二尖瓣狭窄,,DIS-CARD-VHD-MS,409
+0,0,5,0,0,0,0,0,0,1,102,4,0,0,0,1,0,0,1,0,2,0,0,0,1,1,0,False,pending_clinical_review,124,123,否,0,0,,人工瓣膜心内膜炎,,DIS-CARD-IE-PVE,102
+1,1,2,0,1,0,0,0,0,0,40,2,0,0,0,0,0,0,0,0,4,0,0,0,3,1,0,False,pending_clinical_review,64,63,否,0,0,,多瓣膜病,,DIS-CARD-VHD-MULTI,40
+0,0,6,0,0,0,0,0,0,1,92,4,0,0,0,0,0,0,0,0,5,0,0,0,2,3,0,False,pending_clinical_review,119,118,否,0,0,,肺动脉瓣狭窄,,DIS-CARD-CHD-PS,92

@@ -122,13 +122,56 @@ CATEGORY_CONFIGS = {
         "sample_note": "心律失常大类覆盖范围较宽，房颤可作技术样板，但不能代替室上速、室性心律失常和缓慢性心律失常整体。",
     },
     "高血压": {
-        "code_prefixes": ["DIS-CARD-HTN"],
+        "code_prefixes": ["DIS-CARD-HT"],
         "category_contains": ["高血压"],
         "key_names": [],
         "sample_disease": "原发性高血压",
         "sample_recommendation": "血压分级、危险分层与降压治疗",
         "sample_trigger": "多次血压升高 + 靶器官损害/合并症/危险因素评估",
         "sample_note": "高血压大类要同时看原发性、继发性和急症/亚急症，不能只按普通门诊降压处理。",
+    },
+    "起搏治疗相关疾病": {
+        "code_prefixes": [
+            "DIS-CARD-ARR-AVB",
+            "DIS-CARD-ARR-BRADY",
+            "DIS-CARD-ARR-SAB",
+            "DIS-CARD-ARR-SB",
+            "DIS-CARD-ARR-SND",
+            "DIS-CARD-ARR-BBB",
+        ],
+        "category_contains": [],
+        "key_names": [],
+        "sample_disease": "房室传导阻滞",
+        "sample_recommendation": "临时起搏或永久起搏器植入评估",
+        "sample_trigger": "缓慢性心律失常或传导阻滞 + 症状或血流动力学不稳定",
+        "sample_note": "起搏治疗相关疾病当前从心律失常大类中拆出传导阻滞、缓慢性心律失常和窦房结功能障碍等适合起搏评估的疾病。",
+    },
+    "瓣膜病": {
+        "code_prefixes": [
+            "DIS-CARD-VHD",
+            "DIS-CARD-IE-PVE",
+            "DIS-CARD-CHD-BAV",
+            "DIS-CARD-CHD-PS",
+        ],
+        "category_contains": [],
+        "key_names": [],
+        "sample_disease": "主动脉瓣狭窄",
+        "sample_recommendation": "瓣膜狭窄/反流严重程度评估与介入或外科治疗",
+        "sample_trigger": "瓣膜病确诊 + 症状/超声严重程度/心功能影响满足干预条件",
+        "sample_note": "瓣膜病本轮以既有 VHD 编码和明确瓣膜相关疾病为基线，后续需按指南补充二尖瓣、主动脉瓣、三尖瓣等专病深度。",
+    },
+    "肺动脉高压": {
+        "code_prefixes": [
+            "DIS-CARD-PAH",
+            "DIS-CARD-PH",
+            "DIS-CARD-PHTN",
+        ],
+        "category_contains": ["肺动脉高压", "肺高压"],
+        "key_names": [],
+        "sample_disease": "肺动脉高压",
+        "sample_recommendation": "肺动脉高压分型、危险分层与靶向治疗评估",
+        "sample_trigger": "疑似肺动脉高压 + 超声/右心导管/病因分型证据",
+        "sample_note": "肺动脉高压当前若无疾病节点，应作为新批次启动缺口，而不是误用肺动脉瓣狭窄等相邻疾病代替。",
     },
 }
 
@@ -307,13 +350,14 @@ def fetch_quality_issues(client: Neo4jHttpClient, disease_codes: list[str]) -> d
               AND NOT EXISTS {
                 MATCH (n)-[er]-(e:KGNode)
                 WHERE e.entityType IN ['Evidence','Guideline']
-                  AND (er.disease_code IS NULL OR er.disease_code = code)
+                  AND coalesce(er.formal_cdss_ready, true) <> false
+                  AND coalesce(er.disease_code, e.disease_code, '') IN $disease_codes
               }
             RETURN DISTINCT d.code AS disease_code, d.name AS disease_name,
                    n.code AS node_code, n.name AS node_name, n.entityType AS entity_type
             ORDER BY disease_code, entity_type, node_name
         """,
-        "CDSS推荐证据疾病范围不一致": """
+        "CDSS推荐证据缺少疾病范围": """
             UNWIND $disease_codes AS code
             MATCH (d:KGNode {code: code})--(n:KGNode)
             WHERE n.entityType IN ['ClinicalRule','RecommendationStatement','TreatmentPlan']
@@ -321,8 +365,8 @@ def fetch_quality_issues(client: Neo4jHttpClient, disease_codes: list[str]) -> d
             WHERE e.entityType IN ['Evidence','Guideline']
             WITH code, d, n, e,
                  coalesce(er.disease_code, e.disease_code, '') AS evidence_scope
-            WHERE evidence_scope <> ''
-              AND NOT evidence_scope IN $disease_codes
+            WHERE coalesce(er.formal_cdss_ready, true) <> false
+              AND evidence_scope = ''
             RETURN DISTINCT d.code AS disease_code, d.name AS disease_name,
                    n.code AS node_code, n.name AS node_name, n.entityType AS entity_type,
                    e.code AS evidence_code, coalesce(e.name, e.source_name, e.title, left(coalesce(e.evidence_text, e.original_text, ''), 80)) AS evidence_name,
@@ -340,8 +384,15 @@ def fetch_evidence_samples(client: Neo4jHttpClient, disease_codes: list[str]) ->
         UNWIND $disease_codes AS code
         MATCH (d:KGNode {code: code})--(n:KGNode)
         WHERE n.entityType IN ['ClinicalRule','RecommendationStatement','TreatmentPlan','Medication','Procedure','DiagnosisCriteria','DifferentialDiagnosis']
-        OPTIONAL MATCH (n)--(e:KGNode {entityType:'Evidence'})
-        OPTIONAL MATCH (n)--(g:KGNode {entityType:'Guideline'})
+        OPTIONAL MATCH (n)-[er]-(e:KGNode {entityType:'Evidence'})
+        WHERE coalesce(er.formal_cdss_ready, true) <> false
+          AND coalesce(er.disease_code, e.disease_code, '') IN $disease_codes
+        OPTIONAL MATCH (n)-[gr]-(g:KGNode {entityType:'Guideline'})
+        WHERE coalesce(gr.formal_cdss_ready, true) <> false
+          AND (
+            coalesce(gr.disease_code, g.disease_code, '') IN $disease_codes
+            OR coalesce(gr.disease_code, g.disease_code, '') = ''
+          )
         WITH d, n,
              collect(DISTINCT coalesce(g.name, g.source_name, g.title))[0..3] AS guideline_names,
              collect(DISTINCT coalesce(e.evidence_text, e.original_text, e.text, e.name))[0..2] AS evidence_texts,

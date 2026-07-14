@@ -1,0 +1,3886 @@
+{
+  "generated_at": "2026-07-14 20:46:32",
+  "category": "起搏治疗相关疾病",
+  "category_config": {
+    "code_prefixes": [
+      "DIS-CARD-ARR-AVB",
+      "DIS-CARD-ARR-BRADY",
+      "DIS-CARD-ARR-SAB",
+      "DIS-CARD-ARR-SB",
+      "DIS-CARD-ARR-SND",
+      "DIS-CARD-ARR-BBB"
+    ],
+    "category_contains": [],
+    "key_names": [],
+    "sample_disease": "房室传导阻滞",
+    "sample_recommendation": "临时起搏或永久起搏器植入评估",
+    "sample_trigger": "缓慢性心律失常或传导阻滞 + 症状或血流动力学不稳定",
+    "sample_note": "起搏治疗相关疾病当前从心律失常大类中拆出传导阻滞、缓慢性心律失常和窦房结功能障碍等适合起搏评估的疾病。"
+  },
+  "diseases": [
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "disease_category": "",
+      "disease_subcategory": "",
+      "definition": "一度房室传导阻滞是房室传导时间延长，但全部心房冲动仍能传导至心室的房室传导阻滞。",
+      "formal_cdss_ready": true,
+      "clinical_review_status": "clinical_ready",
+      "related_entity_count": 52,
+      "relation_count": 53,
+      "evidence_count": 25,
+      "guideline_count": 4,
+      "cdss_decision_node_count": 5,
+      "formal_ready_relation_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "disease_category": "",
+      "disease_subcategory": "",
+      "definition": "三度房室传导阻滞又称完全性房室传导阻滞，是全部心房冲动不能传导至心室，心房和心室节律由各自独立起搏点控制的房室传导阻滞。",
+      "formal_cdss_ready": true,
+      "clinical_review_status": "clinical_ready",
+      "related_entity_count": 89,
+      "relation_count": 90,
+      "evidence_count": 61,
+      "guideline_count": 4,
+      "cdss_decision_node_count": 5,
+      "formal_ready_relation_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "disease_category": "",
+      "disease_subcategory": "",
+      "definition": "二度房室传导阻滞是部分心房冲动不能传导至心室的房室传导阻滞，可分为Ⅰ型（文氏阻滞）和Ⅱ型。",
+      "formal_cdss_ready": true,
+      "clinical_review_status": "clinical_ready",
+      "related_entity_count": 28,
+      "relation_count": 29,
+      "evidence_count": 8,
+      "guideline_count": 3,
+      "cdss_decision_node_count": 5,
+      "formal_ready_relation_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "disease_category": "",
+      "disease_subcategory": "",
+      "definition": "房室传导阻滞（atrioventricular block）是指房室交界区脱离了生理不应期后，心房冲动传导延迟或不能传导至心室。",
+      "formal_cdss_ready": true,
+      "clinical_review_status": "clinical_ready",
+      "related_entity_count": 939,
+      "relation_count": 941,
+      "evidence_count": 821,
+      "guideline_count": 4,
+      "cdss_decision_node_count": 13,
+      "formal_ready_relation_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "disease_category": "",
+      "disease_subcategory": "",
+      "definition": "室内传导阻滞（intraventricular block）是指希氏束以下部位的传导阻滞。",
+      "formal_cdss_ready": true,
+      "clinical_review_status": "clinical_ready",
+      "related_entity_count": 98,
+      "relation_count": 99,
+      "evidence_count": 69,
+      "guideline_count": 3,
+      "cdss_decision_node_count": 5,
+      "formal_ready_relation_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "disease_category": "",
+      "disease_subcategory": "",
+      "definition": "成人窦性心律的频率低于 60 次 / 分称为窦性心动过缓（sinus bradycardia）（图 3-3-5）。",
+      "formal_cdss_ready": true,
+      "clinical_review_status": "clinical_ready",
+      "related_entity_count": 207,
+      "relation_count": 208,
+      "evidence_count": 152,
+      "guideline_count": 4,
+      "cdss_decision_node_count": 14,
+      "formal_ready_relation_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "disease_category": "",
+      "disease_subcategory": "",
+      "definition": "窦房传导阻滞（sinoatrial block，SAB）指窦房结冲动传导至心房时发生延缓或阻滞。",
+      "formal_cdss_ready": true,
+      "clinical_review_status": "clinical_ready",
+      "related_entity_count": 56,
+      "relation_count": 57,
+      "evidence_count": 26,
+      "guideline_count": 3,
+      "cdss_decision_node_count": 5,
+      "formal_ready_relation_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "disease_category": "",
+      "disease_subcategory": "",
+      "definition": "病态窦房结综合征（sick sinus syndrome，SSS）简称病窦综合征，是由窦房结病变导致功能减退，产生多种心律失常的综合表现。",
+      "formal_cdss_ready": true,
+      "clinical_review_status": "clinical_ready",
+      "related_entity_count": 95,
+      "relation_count": 96,
+      "evidence_count": 63,
+      "guideline_count": 3,
+      "cdss_decision_node_count": 5,
+      "formal_ready_relation_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "disease_category": "",
+      "disease_subcategory": "",
+      "definition": "以窦性心动过缓、异位房性心动过缓、窦房传导阻滞或停搏、房室传导阻滞等导致心率过慢或传导延迟为主要表现的一组心律失常。",
+      "formal_cdss_ready": true,
+      "clinical_review_status": "clinical_ready",
+      "related_entity_count": 208,
+      "relation_count": 209,
+      "evidence_count": 170,
+      "guideline_count": 4,
+      "cdss_decision_node_count": 6,
+      "formal_ready_relation_count": 0
+    }
+  ],
+  "dimension_rows": [
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "entity_count": 5,
+      "relation_count": 5
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Complication",
+      "entity_count": 10,
+      "relation_count": 10
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Definition",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "DiagnosisCriteria",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Etiology",
+      "entity_count": 9,
+      "relation_count": 9
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Evidence",
+      "entity_count": 821,
+      "relation_count": 821
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Exam",
+      "entity_count": 7,
+      "relation_count": 7
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "FollowUp",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Guideline",
+      "entity_count": 4,
+      "relation_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "LabTest",
+      "entity_count": 8,
+      "relation_count": 8
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Medication",
+      "entity_count": 10,
+      "relation_count": 10
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Pathophysiology",
+      "entity_count": 2,
+      "relation_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Procedure",
+      "entity_count": 7,
+      "relation_count": 7
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Prognosis",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Sign",
+      "entity_count": 15,
+      "relation_count": 15
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Symptom",
+      "entity_count": 14,
+      "relation_count": 14
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "TreatmentPlan",
+      "entity_count": 8,
+      "relation_count": 8
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "entity_count": 4,
+      "relation_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "entity_type": "Complication",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "entity_type": "DiagnosisCriteria",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "entity_type": "Etiology",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "entity_type": "Evidence",
+      "entity_count": 25,
+      "relation_count": 25
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "entity_type": "Exam",
+      "entity_count": 3,
+      "relation_count": 3
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "entity_type": "FollowUp",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "entity_type": "Guideline",
+      "entity_count": 4,
+      "relation_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "entity_type": "Prognosis",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "entity_type": "Sign",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "entity_type": "Symptom",
+      "entity_count": 5,
+      "relation_count": 5
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "entity_type": "TreatmentPlan",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "entity_count": 4,
+      "relation_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "entity_type": "Complication",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "entity_type": "DiagnosisCriteria",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "entity_type": "Etiology",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "entity_type": "Evidence",
+      "entity_count": 8,
+      "relation_count": 8
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "entity_type": "Exam",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "entity_type": "FollowUp",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "entity_type": "Guideline",
+      "entity_count": 3,
+      "relation_count": 3
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "entity_type": "Prognosis",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "entity_type": "Sign",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "entity_type": "Symptom",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "entity_type": "TreatmentPlan",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "entity_count": 4,
+      "relation_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "Complication",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "DiagnosisCriteria",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "Etiology",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "Evidence",
+      "entity_count": 61,
+      "relation_count": 61
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "Exam",
+      "entity_count": 2,
+      "relation_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "FollowUp",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "Guideline",
+      "entity_count": 4,
+      "relation_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "Medication",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "Prognosis",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "Sign",
+      "entity_count": 2,
+      "relation_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "Symptom",
+      "entity_count": 5,
+      "relation_count": 5
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "TreatmentPlan",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "entity_type": "ClinicalRule",
+      "entity_count": 4,
+      "relation_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "entity_type": "Complication",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "entity_type": "DiagnosisCriteria",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "entity_type": "Etiology",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "entity_type": "Evidence",
+      "entity_count": 69,
+      "relation_count": 69
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "entity_type": "Exam",
+      "entity_count": 2,
+      "relation_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "entity_type": "FollowUp",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "entity_type": "Guideline",
+      "entity_count": 3,
+      "relation_count": 3
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "entity_type": "Pathophysiology",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "entity_type": "Prognosis",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "entity_type": "Sign",
+      "entity_count": 2,
+      "relation_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "entity_type": "Symptom",
+      "entity_count": 7,
+      "relation_count": 7
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "entity_type": "TreatmentPlan",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "ClinicalRule",
+      "entity_count": 4,
+      "relation_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "Complication",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "DiagnosisCriteria",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "Etiology",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "Evidence",
+      "entity_count": 170,
+      "relation_count": 170
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "Exam",
+      "entity_count": 3,
+      "relation_count": 3
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "FollowUp",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "Guideline",
+      "entity_count": 4,
+      "relation_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "Medication",
+      "entity_count": 2,
+      "relation_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "Pathophysiology",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "Procedure",
+      "entity_count": 2,
+      "relation_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "Prognosis",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "RiskStratification",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "Sign",
+      "entity_count": 4,
+      "relation_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "Symptom",
+      "entity_count": 6,
+      "relation_count": 6
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "TreatmentPlan",
+      "entity_count": 2,
+      "relation_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "ClinicalRule",
+      "entity_count": 4,
+      "relation_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "Complication",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "Definition",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "DiagnosisCriteria",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "DiagnosisCriteriaComponent",
+      "entity_count": 2,
+      "relation_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "Etiology",
+      "entity_count": 2,
+      "relation_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "Evidence",
+      "entity_count": 26,
+      "relation_count": 26
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "Exam",
+      "entity_count": 2,
+      "relation_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "FollowUp",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "Guideline",
+      "entity_count": 3,
+      "relation_count": 3
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "Prognosis",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "Sign",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "Symptom",
+      "entity_count": 5,
+      "relation_count": 5
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "TreatmentPlan",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "ClinicalRule",
+      "entity_count": 5,
+      "relation_count": 5
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Complication",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Definition",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "DiagnosisCriteria",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "DiagnosisCriteriaComponent",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Etiology",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Evidence",
+      "entity_count": 152,
+      "relation_count": 152
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Exam",
+      "entity_count": 3,
+      "relation_count": 3
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "FollowUp",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Guideline",
+      "entity_count": 4,
+      "relation_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Medication",
+      "entity_count": 6,
+      "relation_count": 6
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Pathophysiology",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Procedure",
+      "entity_count": 2,
+      "relation_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Prognosis",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "RiskStratification",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Sign",
+      "entity_count": 4,
+      "relation_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Symptom",
+      "entity_count": 6,
+      "relation_count": 6
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "TreatmentPlan",
+      "entity_count": 9,
+      "relation_count": 9
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "ClinicalRule",
+      "entity_count": 4,
+      "relation_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "Complication",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "DiagnosisCriteria",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "Etiology",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "Evidence",
+      "entity_count": 63,
+      "relation_count": 63
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "Exam",
+      "entity_count": 4,
+      "relation_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "FollowUp",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "Guideline",
+      "entity_count": 3,
+      "relation_count": 3
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "Medication",
+      "entity_count": 2,
+      "relation_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "Prognosis",
+      "entity_count": 1,
+      "relation_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "Sign",
+      "entity_count": 3,
+      "relation_count": 3
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "Symptom",
+      "entity_count": 6,
+      "relation_count": 6
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "TreatmentPlan",
+      "entity_count": 1,
+      "relation_count": 1
+    }
+  ],
+  "progress_rows": [
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB1",
+      "疾病名称": "一度房室传导阻滞",
+      "疾病大类": "",
+      "疾病亚类": "",
+      "关联实体数": 52,
+      "证据数": 25,
+      "指南数": 4,
+      "CDSS决策节点数": 5,
+      "正式CDSS关系数": 0,
+      "可用场景数": 4,
+      "需补强场景数": 4,
+      "缺口场景数": 5,
+      "大类基线分": 46.2,
+      "交付判断": "暂不建议作为交付样板"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB3",
+      "疾病名称": "三度房室传导阻滞",
+      "疾病大类": "",
+      "疾病亚类": "",
+      "关联实体数": 89,
+      "证据数": 61,
+      "指南数": 4,
+      "CDSS决策节点数": 5,
+      "正式CDSS关系数": 0,
+      "可用场景数": 3,
+      "需补强场景数": 6,
+      "缺口场景数": 4,
+      "大类基线分": 46.2,
+      "交付判断": "暂不建议作为交付样板"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB2",
+      "疾病名称": "二度房室传导阻滞",
+      "疾病大类": "",
+      "疾病亚类": "",
+      "关联实体数": 28,
+      "证据数": 8,
+      "指南数": 3,
+      "CDSS决策节点数": 5,
+      "正式CDSS关系数": 0,
+      "可用场景数": 2,
+      "需补强场景数": 6,
+      "缺口场景数": 5,
+      "大类基线分": 38.5,
+      "交付判断": "暂不建议作为交付样板"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB",
+      "疾病名称": "房室传导阻滞",
+      "疾病大类": "",
+      "疾病亚类": "",
+      "关联实体数": 939,
+      "证据数": 821,
+      "指南数": 4,
+      "CDSS决策节点数": 13,
+      "正式CDSS关系数": 0,
+      "可用场景数": 9,
+      "需补强场景数": 2,
+      "缺口场景数": 2,
+      "大类基线分": 76.9,
+      "交付判断": "可参考但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BBB",
+      "疾病名称": "束支传导阻滞",
+      "疾病大类": "",
+      "疾病亚类": "",
+      "关联实体数": 98,
+      "证据数": 69,
+      "指南数": 3,
+      "CDSS决策节点数": 5,
+      "正式CDSS关系数": 0,
+      "可用场景数": 3,
+      "需补强场景数": 5,
+      "缺口场景数": 5,
+      "大类基线分": 42.3,
+      "交付判断": "暂不建议作为交付样板"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SB",
+      "疾病名称": "窦性心动过缓",
+      "疾病大类": "",
+      "疾病亚类": "",
+      "关联实体数": 207,
+      "证据数": 152,
+      "指南数": 4,
+      "CDSS决策节点数": 14,
+      "正式CDSS关系数": 0,
+      "可用场景数": 6,
+      "需补强场景数": 5,
+      "缺口场景数": 2,
+      "大类基线分": 65.4,
+      "交付判断": "可参考但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SAB",
+      "疾病名称": "窦房传导阻滞",
+      "疾病大类": "",
+      "疾病亚类": "",
+      "关联实体数": 56,
+      "证据数": 26,
+      "指南数": 3,
+      "CDSS决策节点数": 5,
+      "正式CDSS关系数": 0,
+      "可用场景数": 3,
+      "需补强场景数": 5,
+      "缺口场景数": 5,
+      "大类基线分": 42.3,
+      "交付判断": "暂不建议作为交付样板"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SND",
+      "疾病名称": "窦房结功能障碍",
+      "疾病大类": "",
+      "疾病亚类": "",
+      "关联实体数": 95,
+      "证据数": 63,
+      "指南数": 3,
+      "CDSS决策节点数": 5,
+      "正式CDSS关系数": 0,
+      "可用场景数": 4,
+      "需补强场景数": 5,
+      "缺口场景数": 4,
+      "大类基线分": 50.0,
+      "交付判断": "暂不建议作为交付样板"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BRADY",
+      "疾病名称": "缓慢性心律失常",
+      "疾病大类": "",
+      "疾病亚类": "",
+      "关联实体数": 208,
+      "证据数": 170,
+      "指南数": 4,
+      "CDSS决策节点数": 6,
+      "正式CDSS关系数": 0,
+      "可用场景数": 4,
+      "需补强场景数": 7,
+      "缺口场景数": 2,
+      "大类基线分": 57.7,
+      "交付判断": "暂不建议作为交付样板"
+    }
+  ],
+  "capability_rows": [
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB1",
+      "疾病名称": "一度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "疑似疾病识别",
+      "支撑实体类型": "Symptom、Sign",
+      "支撑实体数量": 6,
+      "证据节点数量": 25,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB1",
+      "疾病名称": "一度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "诊断建议",
+      "支撑实体类型": "DiagnosisCriteria、DiagnosisCriteriaComponent、ClinicalRule",
+      "支撑实体数量": 5,
+      "证据节点数量": 25,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB1",
+      "疾病名称": "一度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "鉴别诊断",
+      "支撑实体类型": "DifferentialDiagnosis",
+      "支撑实体数量": 0,
+      "证据节点数量": 25,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB1",
+      "疾病名称": "一度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "推荐检查",
+      "支撑实体类型": "Exam、ExamIndicator",
+      "支撑实体数量": 3,
+      "证据节点数量": 25,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB1",
+      "疾病名称": "一度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "推荐检验",
+      "支撑实体类型": "LabTest、LabTestIndicator",
+      "支撑实体数量": 0,
+      "证据节点数量": 25,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB1",
+      "疾病名称": "一度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "风险分层",
+      "支撑实体类型": "RiskStratification",
+      "支撑实体数量": 0,
+      "证据节点数量": 25,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB1",
+      "疾病名称": "一度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "治疗方案",
+      "支撑实体类型": "TreatmentPlan、RecommendationStatement",
+      "支撑实体数量": 1,
+      "证据节点数量": 25,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB1",
+      "疾病名称": "一度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "药物推荐",
+      "支撑实体类型": "Medication",
+      "支撑实体数量": 0,
+      "证据节点数量": 25,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB1",
+      "疾病名称": "一度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "手术/操作推荐",
+      "支撑实体类型": "Procedure",
+      "支撑实体数量": 0,
+      "证据节点数量": 25,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB1",
+      "疾病名称": "一度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "禁忌与风险预警",
+      "支撑实体类型": "Contraindication、ClinicalRule",
+      "支撑实体数量": 4,
+      "证据节点数量": 25,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB1",
+      "疾病名称": "一度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "随访",
+      "支撑实体类型": "FollowUp",
+      "支撑实体数量": 1,
+      "证据节点数量": 25,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB1",
+      "疾病名称": "一度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "预后/预防",
+      "支撑实体类型": "Prognosis、Prevention",
+      "支撑实体数量": 1,
+      "证据节点数量": 25,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB1",
+      "疾病名称": "一度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "并发症管理",
+      "支撑实体类型": "Complication",
+      "支撑实体数量": 1,
+      "证据节点数量": 25,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB3",
+      "疾病名称": "三度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "疑似疾病识别",
+      "支撑实体类型": "Symptom、Sign",
+      "支撑实体数量": 7,
+      "证据节点数量": 61,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB3",
+      "疾病名称": "三度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "诊断建议",
+      "支撑实体类型": "DiagnosisCriteria、DiagnosisCriteriaComponent、ClinicalRule",
+      "支撑实体数量": 5,
+      "证据节点数量": 61,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB3",
+      "疾病名称": "三度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "鉴别诊断",
+      "支撑实体类型": "DifferentialDiagnosis",
+      "支撑实体数量": 0,
+      "证据节点数量": 61,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB3",
+      "疾病名称": "三度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "推荐检查",
+      "支撑实体类型": "Exam、ExamIndicator",
+      "支撑实体数量": 2,
+      "证据节点数量": 61,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB3",
+      "疾病名称": "三度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "推荐检验",
+      "支撑实体类型": "LabTest、LabTestIndicator",
+      "支撑实体数量": 0,
+      "证据节点数量": 61,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB3",
+      "疾病名称": "三度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "风险分层",
+      "支撑实体类型": "RiskStratification",
+      "支撑实体数量": 0,
+      "证据节点数量": 61,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB3",
+      "疾病名称": "三度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "治疗方案",
+      "支撑实体类型": "TreatmentPlan、RecommendationStatement",
+      "支撑实体数量": 1,
+      "证据节点数量": 61,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB3",
+      "疾病名称": "三度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "药物推荐",
+      "支撑实体类型": "Medication",
+      "支撑实体数量": 1,
+      "证据节点数量": 61,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB3",
+      "疾病名称": "三度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "手术/操作推荐",
+      "支撑实体类型": "Procedure",
+      "支撑实体数量": 0,
+      "证据节点数量": 61,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB3",
+      "疾病名称": "三度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "禁忌与风险预警",
+      "支撑实体类型": "Contraindication、ClinicalRule",
+      "支撑实体数量": 4,
+      "证据节点数量": 61,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB3",
+      "疾病名称": "三度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "随访",
+      "支撑实体类型": "FollowUp",
+      "支撑实体数量": 1,
+      "证据节点数量": 61,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB3",
+      "疾病名称": "三度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "预后/预防",
+      "支撑实体类型": "Prognosis、Prevention",
+      "支撑实体数量": 1,
+      "证据节点数量": 61,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB3",
+      "疾病名称": "三度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "并发症管理",
+      "支撑实体类型": "Complication",
+      "支撑实体数量": 1,
+      "证据节点数量": 61,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB2",
+      "疾病名称": "二度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "疑似疾病识别",
+      "支撑实体类型": "Symptom、Sign",
+      "支撑实体数量": 2,
+      "证据节点数量": 8,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB2",
+      "疾病名称": "二度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "诊断建议",
+      "支撑实体类型": "DiagnosisCriteria、DiagnosisCriteriaComponent、ClinicalRule",
+      "支撑实体数量": 5,
+      "证据节点数量": 8,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB2",
+      "疾病名称": "二度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "鉴别诊断",
+      "支撑实体类型": "DifferentialDiagnosis",
+      "支撑实体数量": 0,
+      "证据节点数量": 8,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB2",
+      "疾病名称": "二度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "推荐检查",
+      "支撑实体类型": "Exam、ExamIndicator",
+      "支撑实体数量": 1,
+      "证据节点数量": 8,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB2",
+      "疾病名称": "二度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "推荐检验",
+      "支撑实体类型": "LabTest、LabTestIndicator",
+      "支撑实体数量": 0,
+      "证据节点数量": 8,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB2",
+      "疾病名称": "二度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "风险分层",
+      "支撑实体类型": "RiskStratification",
+      "支撑实体数量": 0,
+      "证据节点数量": 8,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB2",
+      "疾病名称": "二度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "治疗方案",
+      "支撑实体类型": "TreatmentPlan、RecommendationStatement",
+      "支撑实体数量": 1,
+      "证据节点数量": 8,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB2",
+      "疾病名称": "二度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "药物推荐",
+      "支撑实体类型": "Medication",
+      "支撑实体数量": 0,
+      "证据节点数量": 8,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB2",
+      "疾病名称": "二度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "手术/操作推荐",
+      "支撑实体类型": "Procedure",
+      "支撑实体数量": 0,
+      "证据节点数量": 8,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB2",
+      "疾病名称": "二度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "禁忌与风险预警",
+      "支撑实体类型": "Contraindication、ClinicalRule",
+      "支撑实体数量": 4,
+      "证据节点数量": 8,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB2",
+      "疾病名称": "二度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "随访",
+      "支撑实体类型": "FollowUp",
+      "支撑实体数量": 1,
+      "证据节点数量": 8,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB2",
+      "疾病名称": "二度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "预后/预防",
+      "支撑实体类型": "Prognosis、Prevention",
+      "支撑实体数量": 1,
+      "证据节点数量": 8,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB2",
+      "疾病名称": "二度房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "并发症管理",
+      "支撑实体类型": "Complication",
+      "支撑实体数量": 1,
+      "证据节点数量": 8,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB",
+      "疾病名称": "房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "疑似疾病识别",
+      "支撑实体类型": "Symptom、Sign",
+      "支撑实体数量": 29,
+      "证据节点数量": 821,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB",
+      "疾病名称": "房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "诊断建议",
+      "支撑实体类型": "DiagnosisCriteria、DiagnosisCriteriaComponent、ClinicalRule",
+      "支撑实体数量": 6,
+      "证据节点数量": 821,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB",
+      "疾病名称": "房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "鉴别诊断",
+      "支撑实体类型": "DifferentialDiagnosis",
+      "支撑实体数量": 0,
+      "证据节点数量": 821,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB",
+      "疾病名称": "房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "推荐检查",
+      "支撑实体类型": "Exam、ExamIndicator",
+      "支撑实体数量": 7,
+      "证据节点数量": 821,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB",
+      "疾病名称": "房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "推荐检验",
+      "支撑实体类型": "LabTest、LabTestIndicator",
+      "支撑实体数量": 8,
+      "证据节点数量": 821,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB",
+      "疾病名称": "房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "风险分层",
+      "支撑实体类型": "RiskStratification",
+      "支撑实体数量": 0,
+      "证据节点数量": 821,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB",
+      "疾病名称": "房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "治疗方案",
+      "支撑实体类型": "TreatmentPlan、RecommendationStatement",
+      "支撑实体数量": 8,
+      "证据节点数量": 821,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB",
+      "疾病名称": "房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "药物推荐",
+      "支撑实体类型": "Medication",
+      "支撑实体数量": 10,
+      "证据节点数量": 821,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB",
+      "疾病名称": "房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "手术/操作推荐",
+      "支撑实体类型": "Procedure",
+      "支撑实体数量": 7,
+      "证据节点数量": 821,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB",
+      "疾病名称": "房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "禁忌与风险预警",
+      "支撑实体类型": "Contraindication、ClinicalRule",
+      "支撑实体数量": 5,
+      "证据节点数量": 821,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB",
+      "疾病名称": "房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "随访",
+      "支撑实体类型": "FollowUp",
+      "支撑实体数量": 1,
+      "证据节点数量": 821,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB",
+      "疾病名称": "房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "预后/预防",
+      "支撑实体类型": "Prognosis、Prevention",
+      "支撑实体数量": 1,
+      "证据节点数量": 821,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-AVB",
+      "疾病名称": "房室传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "并发症管理",
+      "支撑实体类型": "Complication",
+      "支撑实体数量": 10,
+      "证据节点数量": 821,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BBB",
+      "疾病名称": "束支传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "疑似疾病识别",
+      "支撑实体类型": "Symptom、Sign",
+      "支撑实体数量": 9,
+      "证据节点数量": 69,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BBB",
+      "疾病名称": "束支传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "诊断建议",
+      "支撑实体类型": "DiagnosisCriteria、DiagnosisCriteriaComponent、ClinicalRule",
+      "支撑实体数量": 5,
+      "证据节点数量": 69,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BBB",
+      "疾病名称": "束支传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "鉴别诊断",
+      "支撑实体类型": "DifferentialDiagnosis",
+      "支撑实体数量": 0,
+      "证据节点数量": 69,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BBB",
+      "疾病名称": "束支传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "推荐检查",
+      "支撑实体类型": "Exam、ExamIndicator",
+      "支撑实体数量": 2,
+      "证据节点数量": 69,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BBB",
+      "疾病名称": "束支传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "推荐检验",
+      "支撑实体类型": "LabTest、LabTestIndicator",
+      "支撑实体数量": 0,
+      "证据节点数量": 69,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BBB",
+      "疾病名称": "束支传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "风险分层",
+      "支撑实体类型": "RiskStratification",
+      "支撑实体数量": 0,
+      "证据节点数量": 69,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BBB",
+      "疾病名称": "束支传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "治疗方案",
+      "支撑实体类型": "TreatmentPlan、RecommendationStatement",
+      "支撑实体数量": 1,
+      "证据节点数量": 69,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BBB",
+      "疾病名称": "束支传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "药物推荐",
+      "支撑实体类型": "Medication",
+      "支撑实体数量": 0,
+      "证据节点数量": 69,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BBB",
+      "疾病名称": "束支传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "手术/操作推荐",
+      "支撑实体类型": "Procedure",
+      "支撑实体数量": 0,
+      "证据节点数量": 69,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BBB",
+      "疾病名称": "束支传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "禁忌与风险预警",
+      "支撑实体类型": "Contraindication、ClinicalRule",
+      "支撑实体数量": 4,
+      "证据节点数量": 69,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BBB",
+      "疾病名称": "束支传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "随访",
+      "支撑实体类型": "FollowUp",
+      "支撑实体数量": 1,
+      "证据节点数量": 69,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BBB",
+      "疾病名称": "束支传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "预后/预防",
+      "支撑实体类型": "Prognosis、Prevention",
+      "支撑实体数量": 1,
+      "证据节点数量": 69,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BBB",
+      "疾病名称": "束支传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "并发症管理",
+      "支撑实体类型": "Complication",
+      "支撑实体数量": 1,
+      "证据节点数量": 69,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SB",
+      "疾病名称": "窦性心动过缓",
+      "疾病大类": "",
+      "CDSS场景": "疑似疾病识别",
+      "支撑实体类型": "Symptom、Sign",
+      "支撑实体数量": 10,
+      "证据节点数量": 152,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SB",
+      "疾病名称": "窦性心动过缓",
+      "疾病大类": "",
+      "CDSS场景": "诊断建议",
+      "支撑实体类型": "DiagnosisCriteria、DiagnosisCriteriaComponent、ClinicalRule",
+      "支撑实体数量": 7,
+      "证据节点数量": 152,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SB",
+      "疾病名称": "窦性心动过缓",
+      "疾病大类": "",
+      "CDSS场景": "鉴别诊断",
+      "支撑实体类型": "DifferentialDiagnosis",
+      "支撑实体数量": 0,
+      "证据节点数量": 152,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SB",
+      "疾病名称": "窦性心动过缓",
+      "疾病大类": "",
+      "CDSS场景": "推荐检查",
+      "支撑实体类型": "Exam、ExamIndicator",
+      "支撑实体数量": 3,
+      "证据节点数量": 152,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SB",
+      "疾病名称": "窦性心动过缓",
+      "疾病大类": "",
+      "CDSS场景": "推荐检验",
+      "支撑实体类型": "LabTest、LabTestIndicator",
+      "支撑实体数量": 0,
+      "证据节点数量": 152,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SB",
+      "疾病名称": "窦性心动过缓",
+      "疾病大类": "",
+      "CDSS场景": "风险分层",
+      "支撑实体类型": "RiskStratification",
+      "支撑实体数量": 1,
+      "证据节点数量": 152,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SB",
+      "疾病名称": "窦性心动过缓",
+      "疾病大类": "",
+      "CDSS场景": "治疗方案",
+      "支撑实体类型": "TreatmentPlan、RecommendationStatement",
+      "支撑实体数量": 9,
+      "证据节点数量": 152,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SB",
+      "疾病名称": "窦性心动过缓",
+      "疾病大类": "",
+      "CDSS场景": "药物推荐",
+      "支撑实体类型": "Medication",
+      "支撑实体数量": 6,
+      "证据节点数量": 152,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SB",
+      "疾病名称": "窦性心动过缓",
+      "疾病大类": "",
+      "CDSS场景": "手术/操作推荐",
+      "支撑实体类型": "Procedure",
+      "支撑实体数量": 2,
+      "证据节点数量": 152,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SB",
+      "疾病名称": "窦性心动过缓",
+      "疾病大类": "",
+      "CDSS场景": "禁忌与风险预警",
+      "支撑实体类型": "Contraindication、ClinicalRule",
+      "支撑实体数量": 5,
+      "证据节点数量": 152,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SB",
+      "疾病名称": "窦性心动过缓",
+      "疾病大类": "",
+      "CDSS场景": "随访",
+      "支撑实体类型": "FollowUp",
+      "支撑实体数量": 1,
+      "证据节点数量": 152,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SB",
+      "疾病名称": "窦性心动过缓",
+      "疾病大类": "",
+      "CDSS场景": "预后/预防",
+      "支撑实体类型": "Prognosis、Prevention",
+      "支撑实体数量": 1,
+      "证据节点数量": 152,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SB",
+      "疾病名称": "窦性心动过缓",
+      "疾病大类": "",
+      "CDSS场景": "并发症管理",
+      "支撑实体类型": "Complication",
+      "支撑实体数量": 1,
+      "证据节点数量": 152,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SAB",
+      "疾病名称": "窦房传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "疑似疾病识别",
+      "支撑实体类型": "Symptom、Sign",
+      "支撑实体数量": 6,
+      "证据节点数量": 26,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SAB",
+      "疾病名称": "窦房传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "诊断建议",
+      "支撑实体类型": "DiagnosisCriteria、DiagnosisCriteriaComponent、ClinicalRule",
+      "支撑实体数量": 7,
+      "证据节点数量": 26,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SAB",
+      "疾病名称": "窦房传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "鉴别诊断",
+      "支撑实体类型": "DifferentialDiagnosis",
+      "支撑实体数量": 0,
+      "证据节点数量": 26,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SAB",
+      "疾病名称": "窦房传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "推荐检查",
+      "支撑实体类型": "Exam、ExamIndicator",
+      "支撑实体数量": 2,
+      "证据节点数量": 26,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SAB",
+      "疾病名称": "窦房传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "推荐检验",
+      "支撑实体类型": "LabTest、LabTestIndicator",
+      "支撑实体数量": 0,
+      "证据节点数量": 26,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SAB",
+      "疾病名称": "窦房传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "风险分层",
+      "支撑实体类型": "RiskStratification",
+      "支撑实体数量": 0,
+      "证据节点数量": 26,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SAB",
+      "疾病名称": "窦房传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "治疗方案",
+      "支撑实体类型": "TreatmentPlan、RecommendationStatement",
+      "支撑实体数量": 1,
+      "证据节点数量": 26,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SAB",
+      "疾病名称": "窦房传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "药物推荐",
+      "支撑实体类型": "Medication",
+      "支撑实体数量": 0,
+      "证据节点数量": 26,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SAB",
+      "疾病名称": "窦房传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "手术/操作推荐",
+      "支撑实体类型": "Procedure",
+      "支撑实体数量": 0,
+      "证据节点数量": 26,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SAB",
+      "疾病名称": "窦房传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "禁忌与风险预警",
+      "支撑实体类型": "Contraindication、ClinicalRule",
+      "支撑实体数量": 4,
+      "证据节点数量": 26,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SAB",
+      "疾病名称": "窦房传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "随访",
+      "支撑实体类型": "FollowUp",
+      "支撑实体数量": 1,
+      "证据节点数量": 26,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SAB",
+      "疾病名称": "窦房传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "预后/预防",
+      "支撑实体类型": "Prognosis、Prevention",
+      "支撑实体数量": 1,
+      "证据节点数量": 26,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SAB",
+      "疾病名称": "窦房传导阻滞",
+      "疾病大类": "",
+      "CDSS场景": "并发症管理",
+      "支撑实体类型": "Complication",
+      "支撑实体数量": 1,
+      "证据节点数量": 26,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SND",
+      "疾病名称": "窦房结功能障碍",
+      "疾病大类": "",
+      "CDSS场景": "疑似疾病识别",
+      "支撑实体类型": "Symptom、Sign",
+      "支撑实体数量": 9,
+      "证据节点数量": 63,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SND",
+      "疾病名称": "窦房结功能障碍",
+      "疾病大类": "",
+      "CDSS场景": "诊断建议",
+      "支撑实体类型": "DiagnosisCriteria、DiagnosisCriteriaComponent、ClinicalRule",
+      "支撑实体数量": 5,
+      "证据节点数量": 63,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SND",
+      "疾病名称": "窦房结功能障碍",
+      "疾病大类": "",
+      "CDSS场景": "鉴别诊断",
+      "支撑实体类型": "DifferentialDiagnosis",
+      "支撑实体数量": 0,
+      "证据节点数量": 63,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SND",
+      "疾病名称": "窦房结功能障碍",
+      "疾病大类": "",
+      "CDSS场景": "推荐检查",
+      "支撑实体类型": "Exam、ExamIndicator",
+      "支撑实体数量": 4,
+      "证据节点数量": 63,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SND",
+      "疾病名称": "窦房结功能障碍",
+      "疾病大类": "",
+      "CDSS场景": "推荐检验",
+      "支撑实体类型": "LabTest、LabTestIndicator",
+      "支撑实体数量": 0,
+      "证据节点数量": 63,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SND",
+      "疾病名称": "窦房结功能障碍",
+      "疾病大类": "",
+      "CDSS场景": "风险分层",
+      "支撑实体类型": "RiskStratification",
+      "支撑实体数量": 0,
+      "证据节点数量": 63,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SND",
+      "疾病名称": "窦房结功能障碍",
+      "疾病大类": "",
+      "CDSS场景": "治疗方案",
+      "支撑实体类型": "TreatmentPlan、RecommendationStatement",
+      "支撑实体数量": 1,
+      "证据节点数量": 63,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SND",
+      "疾病名称": "窦房结功能障碍",
+      "疾病大类": "",
+      "CDSS场景": "药物推荐",
+      "支撑实体类型": "Medication",
+      "支撑实体数量": 2,
+      "证据节点数量": 63,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SND",
+      "疾病名称": "窦房结功能障碍",
+      "疾病大类": "",
+      "CDSS场景": "手术/操作推荐",
+      "支撑实体类型": "Procedure",
+      "支撑实体数量": 0,
+      "证据节点数量": 63,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SND",
+      "疾病名称": "窦房结功能障碍",
+      "疾病大类": "",
+      "CDSS场景": "禁忌与风险预警",
+      "支撑实体类型": "Contraindication、ClinicalRule",
+      "支撑实体数量": 4,
+      "证据节点数量": 63,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SND",
+      "疾病名称": "窦房结功能障碍",
+      "疾病大类": "",
+      "CDSS场景": "随访",
+      "支撑实体类型": "FollowUp",
+      "支撑实体数量": 1,
+      "证据节点数量": 63,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SND",
+      "疾病名称": "窦房结功能障碍",
+      "疾病大类": "",
+      "CDSS场景": "预后/预防",
+      "支撑实体类型": "Prognosis、Prevention",
+      "支撑实体数量": 1,
+      "证据节点数量": 63,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-SND",
+      "疾病名称": "窦房结功能障碍",
+      "疾病大类": "",
+      "CDSS场景": "并发症管理",
+      "支撑实体类型": "Complication",
+      "支撑实体数量": 1,
+      "证据节点数量": 63,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BRADY",
+      "疾病名称": "缓慢性心律失常",
+      "疾病大类": "",
+      "CDSS场景": "疑似疾病识别",
+      "支撑实体类型": "Symptom、Sign",
+      "支撑实体数量": 10,
+      "证据节点数量": 170,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BRADY",
+      "疾病名称": "缓慢性心律失常",
+      "疾病大类": "",
+      "CDSS场景": "诊断建议",
+      "支撑实体类型": "DiagnosisCriteria、DiagnosisCriteriaComponent、ClinicalRule",
+      "支撑实体数量": 5,
+      "证据节点数量": 170,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BRADY",
+      "疾病名称": "缓慢性心律失常",
+      "疾病大类": "",
+      "CDSS场景": "鉴别诊断",
+      "支撑实体类型": "DifferentialDiagnosis",
+      "支撑实体数量": 0,
+      "证据节点数量": 170,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BRADY",
+      "疾病名称": "缓慢性心律失常",
+      "疾病大类": "",
+      "CDSS场景": "推荐检查",
+      "支撑实体类型": "Exam、ExamIndicator",
+      "支撑实体数量": 3,
+      "证据节点数量": 170,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BRADY",
+      "疾病名称": "缓慢性心律失常",
+      "疾病大类": "",
+      "CDSS场景": "推荐检验",
+      "支撑实体类型": "LabTest、LabTestIndicator",
+      "支撑实体数量": 0,
+      "证据节点数量": 170,
+      "正式CDSS关系数": 0,
+      "能力判断": "缺口"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BRADY",
+      "疾病名称": "缓慢性心律失常",
+      "疾病大类": "",
+      "CDSS场景": "风险分层",
+      "支撑实体类型": "RiskStratification",
+      "支撑实体数量": 1,
+      "证据节点数量": 170,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BRADY",
+      "疾病名称": "缓慢性心律失常",
+      "疾病大类": "",
+      "CDSS场景": "治疗方案",
+      "支撑实体类型": "TreatmentPlan、RecommendationStatement",
+      "支撑实体数量": 2,
+      "证据节点数量": 170,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BRADY",
+      "疾病名称": "缓慢性心律失常",
+      "疾病大类": "",
+      "CDSS场景": "药物推荐",
+      "支撑实体类型": "Medication",
+      "支撑实体数量": 2,
+      "证据节点数量": 170,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BRADY",
+      "疾病名称": "缓慢性心律失常",
+      "疾病大类": "",
+      "CDSS场景": "手术/操作推荐",
+      "支撑实体类型": "Procedure",
+      "支撑实体数量": 2,
+      "证据节点数量": 170,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BRADY",
+      "疾病名称": "缓慢性心律失常",
+      "疾病大类": "",
+      "CDSS场景": "禁忌与风险预警",
+      "支撑实体类型": "Contraindication、ClinicalRule",
+      "支撑实体数量": 4,
+      "证据节点数量": 170,
+      "正式CDSS关系数": 0,
+      "能力判断": "可用于CDSS展示"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BRADY",
+      "疾病名称": "缓慢性心律失常",
+      "疾病大类": "",
+      "CDSS场景": "随访",
+      "支撑实体类型": "FollowUp",
+      "支撑实体数量": 1,
+      "证据节点数量": 170,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BRADY",
+      "疾病名称": "缓慢性心律失常",
+      "疾病大类": "",
+      "CDSS场景": "预后/预防",
+      "支撑实体类型": "Prognosis、Prevention",
+      "支撑实体数量": 1,
+      "证据节点数量": 170,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    },
+    {
+      "疾病编码": "DIS-CARD-ARR-BRADY",
+      "疾病名称": "缓慢性心律失常",
+      "疾病大类": "",
+      "CDSS场景": "并发症管理",
+      "支撑实体类型": "Complication",
+      "支撑实体数量": 1,
+      "证据节点数量": 170,
+      "正式CDSS关系数": 0,
+      "能力判断": "可展示但需补强"
+    }
+  ],
+  "evidence_samples": [
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-A6DF09C52922FA7A",
+      "node_name": "房室传导阻滞可以发生在房室结、希氏束以及束支等不同的部位",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-AVB-03-01-TREAT",
+      "node_name": "房室传导阻滞治疗决策阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "Ⅰ"
+      ],
+      "evidence_levels": [
+        "B"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-AVB-01-01-DIAG",
+      "node_name": "房室传导阻滞诊断确认阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "N/A"
+      ],
+      "evidence_levels": [
+        "N/A"
+      ],
+      "evidence_texts": [
+        "当房颤病人的心室律变得规则，应考虑以下的可能性：①恢复窦性心律；②转变为房性心动过速； ③转变为房扑（固定的房室传导比率）；④发生房室交界性心动过速或室性心动过速。如心室律变为慢而规则（30～60 次 / 分），提示可能出现完全性房室传导阻滞。心电图检查有助于确立诊断。房颤病人并发房室交界性与室性心动过速或完全性房室传导阻滞，常见原因是洋地黄中毒。"
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-AVB-04-01-FOLLOW",
+      "node_name": "房室传导阻滞随访管理阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "Ⅰ"
+      ],
+      "evidence_levels": [
+        "B"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-AVB-02-01-RISK",
+      "node_name": "房室传导阻滞风险分层阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "Ⅰ"
+      ],
+      "evidence_levels": [
+        "B"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "DiagnosisCriteria",
+      "node_code": "DX-CARD-5F28B989F353",
+      "node_name": "心电图传导阻滞诊断依据",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Medication",
+      "node_code": "MED-DIURETIC",
+      "node_name": "利尿剂",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Medication",
+      "node_code": "MED-CARD-669F94E52F61",
+      "node_name": "异丙肾上腺素",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Medication",
+      "node_code": "MED-CARD-TEXT-93710567D3",
+      "node_name": "洋地黄类药物",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Medication",
+      "node_code": "MED-CARD-55157DA54154",
+      "node_name": "硝酸酯类药物",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Medication",
+      "node_code": "MED-AMIODARONE",
+      "node_name": "胺碘酮",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Medication",
+      "node_code": "MED-CARD-TEXT-B905AF3E59",
+      "node_name": "血管紧张素Ⅱ受体拮抗剂",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Medication",
+      "node_code": "MED-CARD-E40082221530",
+      "node_name": "血管紧张素转换酶抑制剂",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Medication",
+      "node_code": "MED-CARD-TEXT-4E1713BBBA",
+      "node_name": "醛固酮受体拮抗剂",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Medication",
+      "node_code": "MED-CARD-TEXT-28E925C6DE",
+      "node_name": "钙通道阻滞剂",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Medication",
+      "node_code": "MED-CARD-EF0B44CD1F78",
+      "node_name": "阿托品",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Procedure",
+      "node_code": "PROC-CARD-B69847521FA1",
+      "node_name": "临时心脏起搏",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Procedure",
+      "node_code": "PROC-CARD-BA093052CBC6",
+      "node_name": "导管消融",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Procedure",
+      "node_code": "PROC-CARD-TEXT-84551F84B4",
+      "node_name": "射频消融术",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Procedure",
+      "node_code": "PROC-CARD-TEXT-D2C1F9E289",
+      "node_name": "心脏再同步治疗",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Procedure",
+      "node_code": "PROC-CARD-TEXT-D9A9D30763",
+      "node_name": "植入式心律转复除颤器",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Procedure",
+      "node_code": "PROC-CARD-E9ADC25A25E3",
+      "node_name": "经皮冠状动脉介入治疗",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "Procedure",
+      "node_code": "PROC-CARD-TEXT-23F5CDA89B",
+      "node_name": "起搏器植入",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "TreatmentPlan",
+      "node_code": "CARD-SKELETON-FULL-20260709-TREATMENTPLAN-D355EC5DA6033AF6",
+      "node_name": "也可见于电解质紊乱（如高钾血症）、药物中毒（如洋地黄中毒）及心脏手术损伤（心脏瓣膜手术、导管消融术等）",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "TreatmentPlan",
+      "node_code": "PLAN-CARD-TEXT-7CC38FBA6F",
+      "node_name": "复律治疗",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "TreatmentPlan",
+      "node_code": "CARD-SKELETON-FULL-20260709-TREATMENTPLAN-F0FFE784C9505FA2",
+      "node_name": "心房和心室的节律由各自独立的起搏点控制",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "TreatmentPlan",
+      "node_code": "PLAN-CARD-4902C4C10300",
+      "node_name": "房室传导阻滞治疗方案",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "TreatmentPlan",
+      "node_code": "PLAN-CARD-A1C4E6332D38",
+      "node_name": "抗凝治疗",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "TreatmentPlan",
+      "node_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "node_name": "控制心室率",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "TreatmentPlan",
+      "node_code": "PLAN-CARD-TEXT-EEF9C97B59",
+      "node_name": "血运重建",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "entity_type": "TreatmentPlan",
+      "node_code": "PLAN-CARD-F7FB7035330D",
+      "node_name": "起搏治疗",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-AVB1-03-01-TREAT",
+      "node_name": "一度房室传导阻滞治疗决策阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "Ⅱa"
+      ],
+      "evidence_levels": [
+        "B"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-AVB1-01-01-DIAG",
+      "node_name": "一度房室传导阻滞诊断确认阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "Ⅱa"
+      ],
+      "evidence_levels": [
+        "B"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-AVB1-04-01-FOLLOW",
+      "node_name": "一度房室传导阻滞随访管理阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "Ⅱa"
+      ],
+      "evidence_levels": [
+        "B"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-AVB1-02-01-RISK",
+      "node_name": "一度房室传导阻滞风险分层阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "Ⅱa"
+      ],
+      "evidence_levels": [
+        "B"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "entity_type": "DiagnosisCriteria",
+      "node_code": "DX-CARD-5F28B989F353",
+      "node_name": "心电图传导阻滞诊断依据",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "entity_type": "TreatmentPlan",
+      "node_code": "PLAN-CARD-85C17399C1E4",
+      "node_name": "一度房室传导阻滞治疗方案",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-AVB2-03-01-TREAT",
+      "node_name": "二度房室传导阻滞治疗决策阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-AVB2-01-01-DIAG",
+      "node_name": "二度房室传导阻滞诊断确认阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-AVB2-04-01-FOLLOW",
+      "node_name": "二度房室传导阻滞随访管理阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-AVB2-02-01-RISK",
+      "node_name": "二度房室传导阻滞风险分层阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "entity_type": "DiagnosisCriteria",
+      "node_code": "DX-CARD-5F28B989F353",
+      "node_name": "心电图传导阻滞诊断依据",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "entity_type": "TreatmentPlan",
+      "node_code": "PLAN-CARD-1A90D3A039E7",
+      "node_name": "二度房室传导阻滞治疗方案",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-AVB3-03-01-TREAT",
+      "node_name": "三度房室传导阻滞治疗决策阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "Ⅰ"
+      ],
+      "evidence_levels": [
+        "B"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-AVB3-01-01-DIAG",
+      "node_name": "三度房室传导阻滞诊断确认阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "Ⅰ"
+      ],
+      "evidence_levels": [
+        "B"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-AVB3-04-01-FOLLOW",
+      "node_name": "三度房室传导阻滞随访管理阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "Ⅰ"
+      ],
+      "evidence_levels": [
+        "B"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-AVB3-02-01-RISK",
+      "node_name": "三度房室传导阻滞风险分层阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "Ⅰ"
+      ],
+      "evidence_levels": [
+        "B"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "DiagnosisCriteria",
+      "node_code": "DX-CARD-5F28B989F353",
+      "node_name": "心电图传导阻滞诊断依据",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "Medication",
+      "node_code": "MED-CARD-EF0B44CD1F78",
+      "node_name": "阿托品",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "entity_type": "TreatmentPlan",
+      "node_code": "PLAN-CARD-B5595FF75DE4",
+      "node_name": "三度房室传导阻滞治疗方案",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-BBB-03-01-TREAT",
+      "node_name": "束支传导阻滞治疗决策阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-BBB-01-01-DIAG",
+      "node_name": "束支传导阻滞诊断确认阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-BBB-04-01-FOLLOW",
+      "node_name": "束支传导阻滞随访管理阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-BBB-02-01-RISK",
+      "node_name": "束支传导阻滞风险分层阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "entity_type": "DiagnosisCriteria",
+      "node_code": "DXC-CARD-464F39D5B91C",
+      "node_name": "束支传导阻滞诊断标准",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "entity_type": "TreatmentPlan",
+      "node_code": "PLAN-CARD-00B9C7D70BD9",
+      "node_name": "束支传导阻滞治疗方案",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-BRADY-03-01-TREAT",
+      "node_name": "缓慢性心律失常治疗决策阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "Ⅰ"
+      ],
+      "evidence_levels": [
+        "B"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-BRADY-01-01-DIAG",
+      "node_name": "缓慢性心律失常诊断确认阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-BRADY-04-01-FOLLOW",
+      "node_name": "缓慢性心律失常随访管理阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "Ⅰ"
+      ],
+      "evidence_levels": [
+        "B"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-BRADY-02-01-RISK",
+      "node_name": "缓慢性心律失常风险分层阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "Ⅰ"
+      ],
+      "evidence_levels": [
+        "B"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "DiagnosisCriteria",
+      "node_code": "DX-CARD-5F28B989F353",
+      "node_name": "心电图传导阻滞诊断依据",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "Medication",
+      "node_code": "MED-CARD-669F94E52F61",
+      "node_name": "异丙肾上腺素",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "Medication",
+      "node_code": "MED-CARD-EF0B44CD1F78",
+      "node_name": "阿托品",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "Procedure",
+      "node_code": "PROC-CARD-B69847521FA1",
+      "node_name": "临时心脏起搏",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "Procedure",
+      "node_code": "PROC-CARD-TEXT-D2C1F9E289",
+      "node_name": "心脏再同步治疗",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "TreatmentPlan",
+      "node_code": "PLAN-CARD-D48B04D85208",
+      "node_name": "缓慢性心律失常治疗方案",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "entity_type": "TreatmentPlan",
+      "node_code": "PLAN-CARD-F7FB7035330D",
+      "node_name": "起搏治疗",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-SAB-03-01-TREAT",
+      "node_name": "窦房传导阻滞治疗决策阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-SAB-01-01-DIAG",
+      "node_name": "窦房传导阻滞诊断确认阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-SAB-04-01-FOLLOW",
+      "node_name": "窦房传导阻滞随访管理阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-SAB-02-01-RISK",
+      "node_name": "窦房传导阻滞风险分层阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "DiagnosisCriteria",
+      "node_code": "DX-CARD-5F28B989F353",
+      "node_name": "心电图传导阻滞诊断依据",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "entity_type": "TreatmentPlan",
+      "node_code": "PLAN-CARD-B809AAF4889D",
+      "node_name": "窦房传导阻滞治疗方案",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "ClinicalRule",
+      "node_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-4E2FFCA8C194D357",
+      "node_name": "窦性心动过缓常同时伴有窦性心律不齐（不同PP间期的差异＞0.12秒）",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-SB-03-01-TREAT",
+      "node_name": "窦性心动过缓治疗决策阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-SB-01-01-DIAG",
+      "node_name": "窦性心动过缓诊断确认阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-SB-04-01-FOLLOW",
+      "node_name": "窦性心动过缓随访管理阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "Ⅰ"
+      ],
+      "evidence_levels": [
+        "B"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-SB-02-01-RISK",
+      "node_name": "窦性心动过缓风险分层阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "DiagnosisCriteria",
+      "node_code": "DXC-CARD-5121D5B9EC6F",
+      "node_name": "窦性心动过缓诊断标准",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Medication",
+      "node_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7",
+      "node_name": "β受体拮抗剂",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Medication",
+      "node_code": "MED-CARD-669F94E52F61",
+      "node_name": "异丙肾上腺素",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Medication",
+      "node_code": "MED-AMIODARONE",
+      "node_name": "胺碘酮",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Medication",
+      "node_code": "MED-CARD-TEXT-28E925C6DE",
+      "node_name": "钙通道阻滞剂",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Medication",
+      "node_code": "MED-CARD-EF0B44CD1F78",
+      "node_name": "阿托品",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Medication",
+      "node_code": "MED-NDHP-CCB",
+      "node_name": "非二氢吡啶类钙通道阻滞剂",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Procedure",
+      "node_code": "PROC-CARD-B69847521FA1",
+      "node_name": "临时心脏起搏",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "Procedure",
+      "node_code": "PROC-CARD-TEXT-D2C1F9E289",
+      "node_name": "心脏再同步治疗",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "TreatmentPlan",
+      "node_code": "CARD-SKELETON-20260709-TREATMENTPLAN-BFCF60272E5E8F9F",
+      "node_name": "下位的潜在起搏点",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "TreatmentPlan",
+      "node_code": "CARD-SKELETON-20260709-TREATMENTPLAN-644453136DFD38E2",
+      "node_name": "以及应用拟胆碱药物、胺碘酮、β受体拮抗剂、非二氢吡啶类钙通道阻滞剂或洋地黄类等药物",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "TreatmentPlan",
+      "node_code": "CARD-SKELETON-20260709-TREATMENTPLAN-03F69ADBD8DD8ACB",
+      "node_name": "可应用阿托品或异丙肾上腺素等药物",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "TreatmentPlan",
+      "node_code": "CARD-SKELETON-20260709-TREATMENTPLAN-788A4C55AED14161",
+      "node_name": "应用洋地黄类药物、乙酰胆碱等亦可引起窦性停搏",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "TreatmentPlan",
+      "node_code": "CARD-SKELETON-20260709-TREATMENTPLAN-B7A5660A87DD1BA2",
+      "node_name": "故应考虑心脏起搏治疗",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "TreatmentPlan",
+      "node_code": "CARD-SKELETON-20260709-TREATMENTPLAN-F3121EC03152AC77",
+      "node_name": "无症状的窦性心动过缓通常无需治疗",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "TreatmentPlan",
+      "node_code": "CARD-SKELETON-20260709-TREATMENTPLAN-9FCAC418A06FE88B",
+      "node_name": "治疗可参照病态窦房结综合征",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "TreatmentPlan",
+      "node_code": "PLAN-CARD-84E0BB8F1329",
+      "node_name": "窦性心动过缓治疗方案",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "entity_type": "TreatmentPlan",
+      "node_code": "PLAN-CARD-F7FB7035330D",
+      "node_name": "起搏治疗",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-SND-03-01-TREAT",
+      "node_name": "窦房结功能障碍治疗决策阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-SND-01-01-DIAG",
+      "node_name": "窦房结功能障碍诊断确认阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-SND-04-01-FOLLOW",
+      "node_name": "窦房结功能障碍随访管理阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "ClinicalRule",
+      "node_code": "RULE-CDSS-BRADYAVB-ARR-SND-02-01-RISK",
+      "node_name": "窦房结功能障碍风险分层阶段规则",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_levels": [
+        "未分级/指南未显式标注"
+      ],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "DiagnosisCriteria",
+      "node_code": "DXC-CARD-B000729B8734",
+      "node_name": "窦房结功能障碍诊断标准",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "Medication",
+      "node_code": "MED-CARD-669F94E52F61",
+      "node_name": "异丙肾上腺素",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "Medication",
+      "node_code": "MED-CARD-EF0B44CD1F78",
+      "node_name": "阿托品",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "entity_type": "TreatmentPlan",
+      "node_code": "PLAN-CARD-26AF9C4155B7",
+      "node_name": "窦房结功能障碍治疗方案",
+      "guideline_names": [],
+      "pages": [],
+      "recommendation_levels": [],
+      "evidence_levels": [],
+      "evidence_texts": []
+    }
+  ]
+}

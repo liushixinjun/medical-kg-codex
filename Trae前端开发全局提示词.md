@@ -1,7 +1,7 @@
 # Trae前端开发全局提示词
 
-版本：V1.4
-更新时间：2026-07-11 17:34:47
+版本：V1.5
+更新时间：2026-07-14 20:40:00
 适用范围：专科知识图谱、专病辅助诊疗、图谱探索、临床诊断模拟、路径编辑、临床审核、Schema 标准、CDSS 前后端集成。
 依据文件：
 
@@ -14,6 +14,7 @@
 
 | 版本 | 时间 | 变更内容 | Trae影响 |
 |---|---:|---|---|
+| V1.5 | 2026-07-14 20:40:00 | 新增 CDSS 推荐证据范围过滤规则：Evidence/Guideline 必须按当前疾病或当前疾病大类过滤 `supported_by_evidence.disease_code`，不能展示推荐节点连接的全部证据 | 医生点击“急诊PCI、抗凝治疗、降压治疗、起搏治疗”等推荐时，只展示属于当前疾病/大类的证据；外部疾病证据不得进入正式 CDSS 展示 |
 | V1.4 | 2026-07-11 17:34:47 | Schema V1.15 所有表格已统一增加 AMI 示例列，并补具体值格式要求 | Trae 阅读 Schema 时按“格式或使用要求 + AMI示例”理解接口字段、展示字段和查询关系 |
 | V1.4 | 2026-07-11 17:18:30 | Schema V1.15 §5 已补充字段格式要求和节点/关系 JSON 示例 | 前端/后端接口入参、返回字段和审核页面要按 `code/id/aliases/status/schema_version` 规范校验；别名必须按数组处理 |
 | V1.4 | 2026-07-11 17:06:21 | Schema V1.15 已把实体、关系改成中文优先说明，并补充诊断标准明细、Evidence、阶段候选动作/正式推荐动作案例 | 前端页面展示优先使用中文业务含义；英文 relationType/entityType 只作为查询字段；Evidence 区域不得一次性展示疾病证据池，只展示当前推荐直连证据 |
@@ -45,6 +46,38 @@
 ```
 
 图谱负责提供医学知识、实体关系和证据链；规则引擎/路径引擎负责根据患者当前数据动态触发。
+
+### 1.1 CDSS 推荐证据范围过滤硬规则
+
+前端和后端查询推荐证据时，不能只按“推荐节点连接了哪些 Evidence/Guideline”展示。
+
+必须按当前疾病或当前疾病大类过滤证据范围：
+
+```cypher
+MATCH (d:KGNode {code: $disease_code})--(rec:KGNode)
+WHERE rec.entityType IN ['ClinicalRule','RecommendationStatement','TreatmentPlan']
+MATCH (rec)-[er:supported_by_evidence]-(e:KGNode)
+WHERE e.entityType IN ['Evidence','Guideline']
+  AND coalesce(er.formal_cdss_ready, true) <> false
+  AND coalesce(er.disease_code, e.disease_code, '') IN $allowed_disease_codes
+RETURN rec, er, e
+```
+
+参数说明：
+
+- `$disease_code`：当前疾病编码，例如 `DIS-CARD-CAD-STEMI`。
+- `$allowed_disease_codes`：当前疾病及其所属大类允许使用的证据范围，例如冠心病可包含 `DIS-CARD-CAD-STEMI`、`DIS-CARD-CAD-AMI`、`DIS-CARD-CAD`。
+- `er.disease_code`：证据关系适用疾病范围，2026-07-14 已批量从 Evidence/Guideline 回填到关系上。
+
+医生界面只展示当前推荐自己的主证据：
+
+- 指南名称
+- 页码/段落
+- 推荐等级
+- 证据等级
+- 原文摘要
+
+不得展示该推荐节点连接的全部证据；否则共享节点会把其他疾病证据串进当前疾病。
 
 ## 2. 节点字段与显示规则
 

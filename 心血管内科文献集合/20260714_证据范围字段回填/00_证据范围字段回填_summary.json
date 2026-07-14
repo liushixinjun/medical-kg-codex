@@ -1,0 +1,3420 @@
+{
+  "dry_run": false,
+  "before": {
+    "total_supported_by_evidence": 102730,
+    "evidence_has_scope": 98761,
+    "relation_missing_scope_can_fill": 98132,
+    "relation_and_evidence_missing_scope": 3938
+  },
+  "updated_count": 98132,
+  "after": {
+    "total_supported_by_evidence": 102730,
+    "evidence_has_scope": 98761,
+    "relation_missing_scope_can_fill": 0,
+    "relation_and_evidence_missing_scope": 3938
+  },
+  "fillable_samples_before": [
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "DXC-CARD-6C4508DDA2F4",
+      "source_name": "继发性高血压筛查标准",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-45F6194A20E2C3BE464F-HT",
+      "evidence_name": "中国 高血压临床实践指南2024.pdf 第22页证据（SEG-DOC-97ABB3DBC0C7F58D-22-GL-00087-HT）",
+      "disease_code_to_fill": "DIS-CARD-HT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "DXC-CARD-6C4508DDA2F4",
+      "source_name": "继发性高血压筛查标准",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-45F6194A20E2C3BE464F-PA",
+      "evidence_name": "中国 高血压临床实践指南2024.pdf 第22页证据（SEG-DOC-97ABB3DBC0C7F58D-22-GL-00090-PA）",
+      "disease_code_to_fill": "DIS-CARD-HT-PA"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "DXC-CARD-6C4508DDA2F4",
+      "source_name": "继发性高血压筛查标准",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-45F6194A20E2C3BE464F-RESISTANT",
+      "evidence_name": "中国 高血压临床实践指南2024.pdf 第22页证据（SEG-DOC-97ABB3DBC0C7F58D-22-GL-00089-RESISTANT）",
+      "disease_code_to_fill": "DIS-CARD-HT-RESISTANT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "DXC-CARD-6C4508DDA2F4",
+      "source_name": "继发性高血压筛查标准",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-45F6194A20E2C3BE464F-SECONDARY",
+      "evidence_name": "中国 高血压临床实践指南2024.pdf 第22页证据（SEG-DOC-97ABB3DBC0C7F58D-22-GL-00088-SECONDARY）",
+      "disease_code_to_fill": "DIS-CARD-HT-SECONDARY"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "DXC-CARD-6C4508DDA2F4",
+      "source_name": "继发性高血压筛查标准",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-6BADEAD199509FF34540-HT",
+      "evidence_name": "中国高血压临床实践指南 2022.pdf 第21页证据（SEG-DOC-139FEAE78F9A08EE-21-GL-00087-HT）",
+      "disease_code_to_fill": "DIS-CARD-HT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "DXC-CARD-6C4508DDA2F4",
+      "source_name": "继发性高血压筛查标准",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-6BADEAD199509FF34540-PA",
+      "evidence_name": "中国高血压临床实践指南 2022.pdf 第21页证据（SEG-DOC-139FEAE78F9A08EE-21-GL-00091-PA）",
+      "disease_code_to_fill": "DIS-CARD-HT-PA"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "DXC-CARD-6C4508DDA2F4",
+      "source_name": "继发性高血压筛查标准",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-6BADEAD199509FF34540-PRIMARY",
+      "evidence_name": "中国高血压临床实践指南 2022.pdf 第21页证据（SEG-DOC-139FEAE78F9A08EE-21-GL-00088-PRIMARY）",
+      "disease_code_to_fill": "DIS-CARD-HT-PRIMARY"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "DXC-CARD-6C4508DDA2F4",
+      "source_name": "继发性高血压筛查标准",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-6BADEAD199509FF34540-RESISTANT",
+      "evidence_name": "中国高血压临床实践指南 2022.pdf 第21页证据（SEG-DOC-139FEAE78F9A08EE-21-GL-00090-RESISTANT）",
+      "disease_code_to_fill": "DIS-CARD-HT-RESISTANT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "DXC-CARD-6C4508DDA2F4",
+      "source_name": "继发性高血压筛查标准",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-6BADEAD199509FF34540-SECONDARY",
+      "evidence_name": "中国高血压临床实践指南 2022.pdf 第21页证据（SEG-DOC-139FEAE78F9A08EE-21-GL-00089-SECONDARY）",
+      "disease_code_to_fill": "DIS-CARD-HT-SECONDARY"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "DXC-CARD-6C4508DDA2F4",
+      "source_name": "继发性高血压筛查标准",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-897BDB12EB9F4FBECBBB-HT",
+      "evidence_name": "中国高血压临床实践指南 2022.pdf 第21页证据（SEG-DOC-139FEAE78F9A08EE-21-GL-00092-HT）",
+      "disease_code_to_fill": "DIS-CARD-HT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "DXC-CARD-6C4508DDA2F4",
+      "source_name": "继发性高血压筛查标准",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-897BDB12EB9F4FBECBBB-PA",
+      "evidence_name": "中国高血压临床实践指南 2022.pdf 第21页证据（SEG-DOC-139FEAE78F9A08EE-21-GL-00095-PA）",
+      "disease_code_to_fill": "DIS-CARD-HT-PA"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "DXC-CARD-6C4508DDA2F4",
+      "source_name": "继发性高血压筛查标准",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-897BDB12EB9F4FBECBBB-RESISTANT",
+      "evidence_name": "中国高血压临床实践指南 2022.pdf 第21页证据（SEG-DOC-139FEAE78F9A08EE-21-GL-00094-RESISTANT）",
+      "disease_code_to_fill": "DIS-CARD-HT-RESISTANT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "DXC-CARD-6C4508DDA2F4",
+      "source_name": "继发性高血压筛查标准",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-897BDB12EB9F4FBECBBB-SECONDARY",
+      "evidence_name": "中国高血压临床实践指南 2022.pdf 第21页证据（SEG-DOC-139FEAE78F9A08EE-21-GL-00093-SECONDARY）",
+      "disease_code_to_fill": "DIS-CARD-HT-SECONDARY"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "DXC-CARD-6C4508DDA2F4",
+      "source_name": "继发性高血压筛查标准",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-DD7C5128FE73E737C19D-HT",
+      "evidence_name": "中国 高血压临床实践指南2024.pdf 第21页证据（SEG-DOC-97ABB3DBC0C7F58D-21-GL-00081-HT）",
+      "disease_code_to_fill": "DIS-CARD-HT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "DXC-CARD-6C4508DDA2F4",
+      "source_name": "继发性高血压筛查标准",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-DD7C5128FE73E737C19D-SECONDARY",
+      "evidence_name": "中国 高血压临床实践指南2024.pdf 第21页证据（SEG-DOC-97ABB3DBC0C7F58D-21-GL-00082-SECONDARY）",
+      "disease_code_to_fill": "DIS-CARD-HT-SECONDARY"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-01-ECG-DIAGNOSIS",
+      "source_name": "房颤心电图诊断规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-028A2F2BA76DE48E34B3-AF",
+      "evidence_name": "慢性肾脏病合并非瓣膜性心房颤动患者抗凝管理的专家共识_慢性肾脏病非瓣膜性心房颤动抗凝管理工作组.pdf 第2页证据（SEG-DOC-63A0DE9B1C2143F8-2-GL-00008-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-01-ECG-DIAGNOSIS",
+      "source_name": "房颤心电图诊断规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-D4005792C9B076BFC7E1-AF",
+      "evidence_name": "《内科学（第10版）》.pdf 第234页证据（SEG-DOC-C0BB559FA2C8448A-234-GL-00035-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-02-RISK-SCORES",
+      "source_name": "房颤卒中出血评分规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-1BDBEB039CDD54E3D3A7-AF",
+      "evidence_name": "AF ESC 2020.pdf 第36页证据（SEG-DOC-C5A1A36777F25502-36-GL-00127-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-03-ANTICOAGULATION",
+      "source_name": "房颤抗凝治疗规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-00CF88A508BB4F312338-AF",
+      "evidence_name": "中国心房颤动管理指南（2025）.pdf 第44页证据（SEG-DOC-4BF1E6843E30FAE5-44-GL-00168-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-03-ANTICOAGULATION",
+      "source_name": "房颤抗凝治疗规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-1BDBEB039CDD54E3D3A7-AF",
+      "evidence_name": "AF ESC 2020.pdf 第36页证据（SEG-DOC-C5A1A36777F25502-36-GL-00127-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-03-ANTICOAGULATION",
+      "source_name": "房颤抗凝治疗规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-8A9E9D41F2BC962BEB8B-AF",
+      "evidence_name": "中国心房颤动管理指南（2025）.pdf 第38页证据（SEG-DOC-4BF1E6843E30FAE5-38-GL-00142-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-04-ACUTE-CONTROL",
+      "source_name": "房颤急性复律/心率控制规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-00CF88A508BB4F312338-AF",
+      "evidence_name": "中国心房颤动管理指南（2025）.pdf 第44页证据（SEG-DOC-4BF1E6843E30FAE5-44-GL-00168-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-04-ACUTE-CONTROL",
+      "source_name": "房颤急性复律/心率控制规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-8A9E9D41F2BC962BEB8B-AF",
+      "evidence_name": "中国心房颤动管理指南（2025）.pdf 第38页证据（SEG-DOC-4BF1E6843E30FAE5-38-GL-00142-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-05-RHYTHM-ABLATION",
+      "source_name": "房颤节律控制与导管消融规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-01226DDDBF2566E8F84E-AF",
+      "evidence_name": "《内科学（第10版）》.pdf 第257页证据（SEG-DOC-C0BB559FA2C8448A-257-GL-00062-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-05-RHYTHM-ABLATION",
+      "source_name": "房颤节律控制与导管消融规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-72EB22EEF00323FB3AD9-AF",
+      "evidence_name": "心房颤动诊断和治疗中国指南 2023.pdf 第17页证据（SEG-DOC-EE90C4C9A4C51DF7-17-GL-00059-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-06-FOLLOWUP",
+      "source_name": "房颤随访规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-01226DDDBF2566E8F84E-AF",
+      "evidence_name": "《内科学（第10版）》.pdf 第257页证据（SEG-DOC-C0BB559FA2C8448A-257-GL-00062-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-06-FOLLOWUP",
+      "source_name": "房颤随访规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-72EB22EEF00323FB3AD9-AF",
+      "evidence_name": "心房颤动诊断和治疗中国指南 2023.pdf 第17页证据（SEG-DOC-EE90C4C9A4C51DF7-17-GL-00059-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-DDX-AFL",
+      "source_name": "房颤与心房扑动鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-028A2F2BA76DE48E34B3-AF",
+      "evidence_name": "慢性肾脏病合并非瓣膜性心房颤动患者抗凝管理的专家共识_慢性肾脏病非瓣膜性心房颤动抗凝管理工作组.pdf 第2页证据（SEG-DOC-63A0DE9B1C2143F8-2-GL-00008-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-DDX-AFL",
+      "source_name": "房颤与心房扑动鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-D4005792C9B076BFC7E1-AF",
+      "evidence_name": "《内科学（第10版）》.pdf 第234页证据（SEG-DOC-C0BB559FA2C8448A-234-GL-00035-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-DDX-AT",
+      "source_name": "房颤与房性心动过速鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-028A2F2BA76DE48E34B3-AF",
+      "evidence_name": "慢性肾脏病合并非瓣膜性心房颤动患者抗凝管理的专家共识_慢性肾脏病非瓣膜性心房颤动抗凝管理工作组.pdf 第2页证据（SEG-DOC-63A0DE9B1C2143F8-2-GL-00008-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-DDX-AT",
+      "source_name": "房颤与房性心动过速鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-D4005792C9B076BFC7E1-AF",
+      "evidence_name": "《内科学（第10版）》.pdf 第234页证据（SEG-DOC-C0BB559FA2C8448A-234-GL-00035-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-DDX-SVT",
+      "source_name": "房颤与室上性心动过速鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-028A2F2BA76DE48E34B3-AF",
+      "evidence_name": "慢性肾脏病合并非瓣膜性心房颤动患者抗凝管理的专家共识_慢性肾脏病非瓣膜性心房颤动抗凝管理工作组.pdf 第2页证据（SEG-DOC-63A0DE9B1C2143F8-2-GL-00008-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-DDX-SVT",
+      "source_name": "房颤与室上性心动过速鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-D4005792C9B076BFC7E1-AF",
+      "evidence_name": "《内科学（第10版）》.pdf 第234页证据（SEG-DOC-C0BB559FA2C8448A-234-GL-00035-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-DX-COMP-DOCUMENTATION",
+      "source_name": "房颤记录证据组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-028A2F2BA76DE48E34B3-AF",
+      "evidence_name": "慢性肾脏病合并非瓣膜性心房颤动患者抗凝管理的专家共识_慢性肾脏病非瓣膜性心房颤动抗凝管理工作组.pdf 第2页证据（SEG-DOC-63A0DE9B1C2143F8-2-GL-00008-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-DX-COMP-DOCUMENTATION",
+      "source_name": "房颤记录证据组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-D4005792C9B076BFC7E1-AF",
+      "evidence_name": "《内科学（第10版）》.pdf 第234页证据（SEG-DOC-C0BB559FA2C8448A-234-GL-00035-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-DX-COMP-ECG-RR",
+      "source_name": "房颤RR不规则心电组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-028A2F2BA76DE48E34B3-AF",
+      "evidence_name": "慢性肾脏病合并非瓣膜性心房颤动患者抗凝管理的专家共识_慢性肾脏病非瓣膜性心房颤动抗凝管理工作组.pdf 第2页证据（SEG-DOC-63A0DE9B1C2143F8-2-GL-00008-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-DX-COMP-ECG-RR",
+      "source_name": "房颤RR不规则心电组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-D4005792C9B076BFC7E1-AF",
+      "evidence_name": "《内科学（第10版）》.pdf 第234页证据（SEG-DOC-C0BB559FA2C8448A-234-GL-00035-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-DX-COMP-NO-P",
+      "source_name": "房颤P波缺如组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-028A2F2BA76DE48E34B3-AF",
+      "evidence_name": "慢性肾脏病合并非瓣膜性心房颤动患者抗凝管理的专家共识_慢性肾脏病非瓣膜性心房颤动抗凝管理工作组.pdf 第2页证据（SEG-DOC-63A0DE9B1C2143F8-2-GL-00008-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AF-DX-COMP-NO-P",
+      "source_name": "房颤P波缺如组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-D4005792C9B076BFC7E1-AF",
+      "evidence_name": "《内科学（第10版）》.pdf 第234页证据（SEG-DOC-C0BB559FA2C8448A-234-GL-00035-AF）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AFL-DX-COMP-FLUTTER-WAVE",
+      "source_name": "房扑扑动波组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-091DCA6C247FAD9B4430-AFL",
+      "evidence_name": "《内科学（第10版）》.docx 第None页证据（SEG-DOC-CF62B75AEC93F1A6-P03208-03491-GL-00131-AFL）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AFL"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AFL-DX-COMP-FLUTTER-WAVE",
+      "source_name": "房扑扑动波组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-52F92D38A1E6498A4D09-WPW",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第15页证据（SEG-DOC-04A6231207D5F4D6-15-GL-00130-WPW）",
+      "disease_code_to_fill": "DIS-CARD-ARR-WPW"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AFL-DX-COMP-FLUTTER-WAVE",
+      "source_name": "房扑扑动波组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-E481A267ED3BA48B080C-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第34页证据（SEG-DOC-04A6231207D5F4D6-34-GL-00235-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AT-DX-COMP-ATRIAL-P",
+      "source_name": "房速异位P波组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-011B40A3FEC8FE56CB5D-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第3页证据（SEG-DOC-04A6231207D5F4D6-3-GL-00032-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AT-DX-COMP-ATRIAL-P",
+      "source_name": "房速异位P波组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C9950FFDF14F096EA0B8-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第9页证据（SEG-DOC-04A6231207D5F4D6-9-GL-00083-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AVNRT-DX-COMP-SHORT-RP",
+      "source_name": "AVNRT短RP组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-011B40A3FEC8FE56CB5D-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第3页证据（SEG-DOC-04A6231207D5F4D6-3-GL-00032-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AVNRT-DX-COMP-SHORT-RP",
+      "source_name": "AVNRT短RP组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C9950FFDF14F096EA0B8-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第9页证据（SEG-DOC-04A6231207D5F4D6-9-GL-00083-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AVRT-DX-COMP-ACCESSORY",
+      "source_name": "AVRT旁路参与组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-091DCA6C247FAD9B4430-AFL",
+      "evidence_name": "《内科学（第10版）》.docx 第None页证据（SEG-DOC-CF62B75AEC93F1A6-P03208-03491-GL-00131-AFL）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AFL"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AVRT-DX-COMP-ACCESSORY",
+      "source_name": "AVRT旁路参与组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-52F92D38A1E6498A4D09-WPW",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第15页证据（SEG-DOC-04A6231207D5F4D6-15-GL-00130-WPW）",
+      "disease_code_to_fill": "DIS-CARD-ARR-WPW"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-AVRT-DX-COMP-ACCESSORY",
+      "source_name": "AVRT旁路参与组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-E481A267ED3BA48B080C-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第34页证据（SEG-DOC-04A6231207D5F4D6-34-GL-00235-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-AFL-01-STABILITY",
+      "source_name": "室上速/房扑血流动力学稳定性规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-008C3C73C794EC14A074-SVT",
+      "evidence_name": "内科学(第8版).docx 第None页证据（SEG-DOC-6E44027E23077E48-P09751-09751-GL-00061-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-AFL-01-STABILITY",
+      "source_name": "室上速/房扑血流动力学稳定性规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-09B1E465B34B6085BFBF-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第8页证据（SEG-DOC-04A6231207D5F4D6-8-GL-00079-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-AFL-01-STABILITY",
+      "source_name": "室上速/房扑血流动力学稳定性规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-8E8277EACCB8AF52483A-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第7页证据（SEG-DOC-04A6231207D5F4D6-7-GL-00074-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-AFL-02-ECG-MECHANISM",
+      "source_name": "室上速/房扑心电机制分型规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-011B40A3FEC8FE56CB5D-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第3页证据（SEG-DOC-04A6231207D5F4D6-3-GL-00032-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-AFL-02-ECG-MECHANISM",
+      "source_name": "室上速/房扑心电机制分型规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C9950FFDF14F096EA0B8-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第9页证据（SEG-DOC-04A6231207D5F4D6-9-GL-00083-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-AFL-03-ACUTE-VAGAL-ADENOSINE",
+      "source_name": "稳定窄QRS SVT急性终止规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-008C3C73C794EC14A074-SVT",
+      "evidence_name": "内科学(第8版).docx 第None页证据（SEG-DOC-6E44027E23077E48-P09751-09751-GL-00061-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-AFL-03-ACUTE-VAGAL-ADENOSINE",
+      "source_name": "稳定窄QRS SVT急性终止规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-09B1E465B34B6085BFBF-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第8页证据（SEG-DOC-04A6231207D5F4D6-8-GL-00079-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-AFL-03-ACUTE-VAGAL-ADENOSINE",
+      "source_name": "稳定窄QRS SVT急性终止规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-8E8277EACCB8AF52483A-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第7页证据（SEG-DOC-04A6231207D5F4D6-7-GL-00074-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-AFL-04-ABLATION",
+      "source_name": "复发性SVT消融评估规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-01226DDDBF2566E8F84E-SVT",
+      "evidence_name": "《内科学（第10版）》.pdf 第257页证据（SEG-DOC-C0BB559FA2C8448A-257-GL-00107-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-AFL-05-AFL-ANTICOAG",
+      "source_name": "房扑抗凝复律规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-091DCA6C247FAD9B4430-AFL",
+      "evidence_name": "《内科学（第10版）》.docx 第None页证据（SEG-DOC-CF62B75AEC93F1A6-P03208-03491-GL-00131-AFL）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AFL"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-AFL-05-AFL-ANTICOAG",
+      "source_name": "房扑抗凝复律规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-52F92D38A1E6498A4D09-WPW",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第15页证据（SEG-DOC-04A6231207D5F4D6-15-GL-00130-WPW）",
+      "disease_code_to_fill": "DIS-CARD-ARR-WPW"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-AFL-05-AFL-ANTICOAG",
+      "source_name": "房扑抗凝复律规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-E481A267ED3BA48B080C-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第34页证据（SEG-DOC-04A6231207D5F4D6-34-GL-00235-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-AFL-06-FOLLOWUP",
+      "source_name": "室上速/房扑随访规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-091DCA6C247FAD9B4430-AFL",
+      "evidence_name": "《内科学（第10版）》.docx 第None页证据（SEG-DOC-CF62B75AEC93F1A6-P03208-03491-GL-00131-AFL）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AFL"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-AFL-06-FOLLOWUP",
+      "source_name": "室上速/房扑随访规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-52F92D38A1E6498A4D09-WPW",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第15页证据（SEG-DOC-04A6231207D5F4D6-15-GL-00130-WPW）",
+      "disease_code_to_fill": "DIS-CARD-ARR-WPW"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-AFL-06-FOLLOWUP",
+      "source_name": "室上速/房扑随访规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-E481A267ED3BA48B080C-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第34页证据（SEG-DOC-04A6231207D5F4D6-34-GL-00235-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-DDX-AF-RVR",
+      "source_name": "SVT与房颤伴快速心室率鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-011B40A3FEC8FE56CB5D-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第3页证据（SEG-DOC-04A6231207D5F4D6-3-GL-00032-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-DDX-AF-RVR",
+      "source_name": "SVT与房颤伴快速心室率鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C9950FFDF14F096EA0B8-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第9页证据（SEG-DOC-04A6231207D5F4D6-9-GL-00083-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-DDX-AFL",
+      "source_name": "SVT与心房扑动鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-091DCA6C247FAD9B4430-AFL",
+      "evidence_name": "《内科学（第10版）》.docx 第None页证据（SEG-DOC-CF62B75AEC93F1A6-P03208-03491-GL-00131-AFL）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AFL"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-DDX-AFL",
+      "source_name": "SVT与心房扑动鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-52F92D38A1E6498A4D09-WPW",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第15页证据（SEG-DOC-04A6231207D5F4D6-15-GL-00130-WPW）",
+      "disease_code_to_fill": "DIS-CARD-ARR-WPW"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-DDX-AFL",
+      "source_name": "SVT与心房扑动鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-E481A267ED3BA48B080C-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第34页证据（SEG-DOC-04A6231207D5F4D6-34-GL-00235-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-DDX-VT",
+      "source_name": "SVT与室性心动过速鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-011B40A3FEC8FE56CB5D-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第3页证据（SEG-DOC-04A6231207D5F4D6-3-GL-00032-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-DDX-VT",
+      "source_name": "SVT与室性心动过速鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C9950FFDF14F096EA0B8-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第9页证据（SEG-DOC-04A6231207D5F4D6-9-GL-00083-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-DX-COMP-ECG-DOCUMENT",
+      "source_name": "SVT心电记录组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-011B40A3FEC8FE56CB5D-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第3页证据（SEG-DOC-04A6231207D5F4D6-3-GL-00032-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-DX-COMP-ECG-DOCUMENT",
+      "source_name": "SVT心电记录组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C9950FFDF14F096EA0B8-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第9页证据（SEG-DOC-04A6231207D5F4D6-9-GL-00083-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-DX-COMP-NARROW-REGULAR",
+      "source_name": "规则窄QRS心动过速组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-011B40A3FEC8FE56CB5D-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第3页证据（SEG-DOC-04A6231207D5F4D6-3-GL-00032-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-SVT-DX-COMP-NARROW-REGULAR",
+      "source_name": "规则窄QRS心动过速组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C9950FFDF14F096EA0B8-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第9页证据（SEG-DOC-04A6231207D5F4D6-9-GL-00083-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-WPW-DX-COMP-PREEXCITATION",
+      "source_name": "WPW预激心电组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-091DCA6C247FAD9B4430-AFL",
+      "evidence_name": "《内科学（第10版）》.docx 第None页证据（SEG-DOC-CF62B75AEC93F1A6-P03208-03491-GL-00131-AFL）",
+      "disease_code_to_fill": "DIS-CARD-ARR-AFL"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-WPW-DX-COMP-PREEXCITATION",
+      "source_name": "WPW预激心电组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-52F92D38A1E6498A4D09-WPW",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第15页证据（SEG-DOC-04A6231207D5F4D6-15-GL-00130-WPW）",
+      "disease_code_to_fill": "DIS-CARD-ARR-WPW"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-ARR-WPW-DX-COMP-PREEXCITATION",
+      "source_name": "WPW预激心电组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-E481A267ED3BA48B080C-SVT",
+      "evidence_name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf 第34页证据（SEG-DOC-04A6231207D5F4D6-34-GL-00235-SVT）",
+      "disease_code_to_fill": "DIS-CARD-ARR-SVT"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-AMI-DDX-ANGINA",
+      "source_name": "不稳定型/稳定型心绞痛",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-23809B8617D9BDC7270C-STEMI",
+      "evidence_name": "4TH universal definition of MI.pdf 第9页证据（SEG-DOC-174B3BDD2451501A-9-GL-00006-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-AMI-DDX-ANGINA",
+      "source_name": "不稳定型/稳定型心绞痛",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-561EE78DB0FD987183B9-ACS",
+      "evidence_name": "NSTE-ACS CN 2024.pdf 第3页证据（SEG-DOC-223D946BFCBBE084-3-GL-00014-ACS）",
+      "disease_code_to_fill": "DIS-CARD-CAD-ACS"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-AMI-DDX-AORTIC-DISSECTION",
+      "source_name": "主动脉夹层排除与溶栓阻断",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-561EE78DB0FD987183B9-ACS",
+      "evidence_name": "NSTE-ACS CN 2024.pdf 第3页证据（SEG-DOC-223D946BFCBBE084-3-GL-00014-ACS）",
+      "disease_code_to_fill": "DIS-CARD-CAD-ACS"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-AMI-DDX-AORTIC-DISSECTION",
+      "source_name": "主动脉夹层排除与溶栓阻断",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-B9B303B0E1B921BC095F-STEMI",
+      "evidence_name": "2018 STEMI院前溶栓治疗中国专家共识.pdf 第5页证据（SEG-DOC-866065446A7A5F65-5-GL-00031-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-AMI-DDX-PE",
+      "source_name": "肺栓塞排除",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-284C4E9C02BA9B546BC7-AMI",
+      "evidence_name": "NSTE-ACS CN 2024.pdf 第3页证据（SEG-DOC-223D946BFCBBE084-3-GL-00020-AMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-AMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-AMI-DDX-PE",
+      "source_name": "肺栓塞排除",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-561EE78DB0FD987183B9-ACS",
+      "evidence_name": "NSTE-ACS CN 2024.pdf 第3页证据（SEG-DOC-223D946BFCBBE084-3-GL-00014-ACS）",
+      "disease_code_to_fill": "DIS-CARD-CAD-ACS"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-AMI-DDX-PERICARDITIS",
+      "source_name": "急性心包炎排除",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-192887A1ADE5529AFF5C-STEMI",
+      "evidence_name": "STEMI CN 2019.pdf 第3页证据（SEG-DOC-955DCDB8BC81606E-3-GL-00014-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-AMI-DDX-PERICARDITIS",
+      "source_name": "急性心包炎排除",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-561EE78DB0FD987183B9-ACS",
+      "evidence_name": "NSTE-ACS CN 2024.pdf 第3页证据（SEG-DOC-223D946BFCBBE084-3-GL-00014-ACS）",
+      "disease_code_to_fill": "DIS-CARD-CAD-ACS"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-AMI-DX-COMP-CORONARY-THROMBUS",
+      "source_name": "冠状动脉血栓或责任病变",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-4E5A6C127482DC443670-STEMI",
+      "evidence_name": "4TH universal definition of MI.pdf 第4页证据（SEG-DOC-174B3BDD2451501A-4-GL-00001-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-AMI-DX-COMP-ECG-ISCHEMIA",
+      "source_name": "缺血性心电图改变",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-113BF85876DF5EF032F0-STEMI",
+      "evidence_name": "STEMI ESC 2017.pdf 第9页证据（SEG-DOC-608DDED17DA46BC7-9-GL-00016-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-AMI-DX-COMP-ECG-ISCHEMIA",
+      "source_name": "缺血性心电图改变",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-4DC149E13028FD06A974-ACS",
+      "evidence_name": "4TH universal definition of MI.pdf 第23页证据（SEG-DOC-174B3BDD2451501A-23-GL-00023-ACS）",
+      "disease_code_to_fill": "DIS-CARD-CAD-ACS"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-AMI-DX-COMP-IMAGING-WALL-MOTION",
+      "source_name": "影像学新发室壁运动异常",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-4E5A6C127482DC443670-STEMI",
+      "evidence_name": "4TH universal definition of MI.pdf 第4页证据（SEG-DOC-174B3BDD2451501A-4-GL-00001-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-AMI-DX-COMP-ISCHEMIC-SYMPTOM",
+      "source_name": "急性缺血症状或等效表现",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-23809B8617D9BDC7270C-STEMI",
+      "evidence_name": "4TH universal definition of MI.pdf 第9页证据（SEG-DOC-174B3BDD2451501A-9-GL-00006-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-AMI-DX-COMP-TROPONIN-DYNAMIC",
+      "source_name": "肌钙蛋白升高及动态变化",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-23809B8617D9BDC7270C-STEMI",
+      "evidence_name": "4TH universal definition of MI.pdf 第9页证据（SEG-DOC-174B3BDD2451501A-9-GL-00006-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-AMI-DX-COMP-TROPONIN-DYNAMIC",
+      "source_name": "肌钙蛋白升高及动态变化",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-5C8AE27C34EB5FAA3124-AMI",
+      "evidence_name": "4TH universal definition of MI.pdf 第19页证据（SEG-DOC-174B3BDD2451501A-19-GL-00017-AMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-AMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-STEMI-01-INITIAL-ECG-TROPONIN",
+      "source_name": "STEMI疑诊心电图与肌钙蛋白评估规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-113BF85876DF5EF032F0-STEMI",
+      "evidence_name": "STEMI ESC 2017.pdf 第9页证据（SEG-DOC-608DDED17DA46BC7-9-GL-00016-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-STEMI-01-INITIAL-ECG-TROPONIN",
+      "source_name": "STEMI疑诊心电图与肌钙蛋白评估规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-23809B8617D9BDC7270C-STEMI",
+      "evidence_name": "4TH universal definition of MI.pdf 第9页证据（SEG-DOC-174B3BDD2451501A-9-GL-00006-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-STEMI-02-DIAGNOSIS-CONFIRM",
+      "source_name": "STEMI诊断确认规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-23809B8617D9BDC7270C-STEMI",
+      "evidence_name": "4TH universal definition of MI.pdf 第9页证据（SEG-DOC-174B3BDD2451501A-9-GL-00006-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-STEMI-02-DIAGNOSIS-CONFIRM",
+      "source_name": "STEMI诊断确认规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-4DC149E13028FD06A974-ACS",
+      "evidence_name": "4TH universal definition of MI.pdf 第23页证据（SEG-DOC-174B3BDD2451501A-23-GL-00023-ACS）",
+      "disease_code_to_fill": "DIS-CARD-CAD-ACS"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-STEMI-02-DIAGNOSIS-CONFIRM",
+      "source_name": "STEMI诊断确认规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-B006F53884892B4245ED-STEMI",
+      "evidence_name": "STEMI ESC 2017.pdf 第6页证据（SEG-DOC-608DDED17DA46BC7-6-GL-00008-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-STEMI-03-REPERFUSION-SELECT",
+      "source_name": "STEMI再灌注策略选择规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-1C7BEBF33C4B07C4693D-STEMI",
+      "evidence_name": "STEMI ESC 2017.pdf 第48页证据（SEG-DOC-608DDED17DA46BC7-48-GL-00099-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-STEMI-03-REPERFUSION-SELECT",
+      "source_name": "STEMI再灌注策略选择规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-662C41B76B258D7E8FE8-STEMI",
+      "evidence_name": "STEMI ESC 2017.pdf 第21页证据（SEG-DOC-608DDED17DA46BC7-21-GL-00040-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-STEMI-03-REPERFUSION-SELECT",
+      "source_name": "STEMI再灌注策略选择规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-9E8CE48E36F457A68185-STEMI",
+      "evidence_name": "STEMI ESC 2017.pdf 第49页证据（SEG-DOC-608DDED17DA46BC7-49-GL-00101-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-STEMI-04-FIBRINOLYSIS-BLOCK",
+      "source_name": "STEMI溶栓禁忌阻断规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-B9B303B0E1B921BC095F-STEMI",
+      "evidence_name": "2018 STEMI院前溶栓治疗中国专家共识.pdf 第5页证据（SEG-DOC-866065446A7A5F65-5-GL-00031-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-STEMI-05-ANTITHROMBOTIC",
+      "source_name": "STEMI抗血小板与抗凝治疗规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-58F0ABFAF9EB30091D7A-STEMI",
+      "evidence_name": "STEMI ESC 2017.pdf 第31页证据（SEG-DOC-608DDED17DA46BC7-31-GL-00055-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-STEMI-05-ANTITHROMBOTIC",
+      "source_name": "STEMI抗血小板与抗凝治疗规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-DBAD6C36E6EB12587EA1-STEMI",
+      "evidence_name": "STEMI ESC 2017.pdf 第25页证据（SEG-DOC-608DDED17DA46BC7-25-GL-00046-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-STEMI-06-SECONDARY-PREVENTION",
+      "source_name": "STEMI二级预防与随访规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-484DBB2AC0F23DD07AA4-STEMI",
+      "evidence_name": "STEMI ESC 2017.pdf 第49页证据（SEG-DOC-608DDED17DA46BC7-49-GL-00104-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-STEMI-06-SECONDARY-PREVENTION",
+      "source_name": "STEMI二级预防与随访规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-CD376C831C68934A39DA-STEMI",
+      "evidence_name": "STEMI ESC 2017.pdf 第49页证据（SEG-DOC-608DDED17DA46BC7-49-GL-00105-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-STEMI-DX-COMP-ST-ELEVATION",
+      "source_name": "持续ST段抬高或等效表现",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-113BF85876DF5EF032F0-STEMI",
+      "evidence_name": "STEMI ESC 2017.pdf 第9页证据（SEG-DOC-608DDED17DA46BC7-9-GL-00016-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-CAD-STEMI-DX-COMP-ST-ELEVATION",
+      "source_name": "持续ST段抬高或等效表现",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-1C7BEBF33C4B07C4693D-STEMI",
+      "evidence_name": "STEMI ESC 2017.pdf 第48页证据（SEG-DOC-608DDED17DA46BC7-48-GL-00099-STEMI）",
+      "disease_code_to_fill": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-01-INITIAL-NP-ECHO",
+      "source_name": "心衰疑诊利钠肽与超声评估规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-BAC1C48FDED5FA1DEB2D-AHF",
+      "evidence_name": "《内科学（第10版）》.pdf 第212页证据（SEG-DOC-C0BB559FA2C8448A-212-GL-00109-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-01-INITIAL-NP-ECHO",
+      "source_name": "心衰疑诊利钠肽与超声评估规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C3D617211B596CF0E5CE-HF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第7页证据（SEG-DOC-7476B9BFB2D92F3A-7-GL-00069-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-02-DIAGNOSIS-TRIAD",
+      "source_name": "心衰诊断三要素规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-BAC1C48FDED5FA1DEB2D-AHF",
+      "evidence_name": "《内科学（第10版）》.pdf 第212页证据（SEG-DOC-C0BB559FA2C8448A-212-GL-00109-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-02-DIAGNOSIS-TRIAD",
+      "source_name": "心衰诊断三要素规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C3D617211B596CF0E5CE-HF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第7页证据（SEG-DOC-7476B9BFB2D92F3A-7-GL-00069-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-03-EF-PHENOTYPE",
+      "source_name": "心衰LVEF分型规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-1740A4027F163FB2BFA3-HFpEF",
+      "evidence_name": "中国心力衰竭诊断和治疗指南2024.pdf 第16页证据（SEG-DOC-E2AE11B44F6F744B-16-GL-00117-HFpEF）",
+      "disease_code_to_fill": "DIS-CARD-HF-HFpEF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-03-EF-PHENOTYPE",
+      "source_name": "心衰LVEF分型规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-7DFE0F3278CE8851A238-HFpEF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第8页证据（SEG-DOC-7476B9BFB2D92F3A-8-GL-00081-HFpEF）",
+      "disease_code_to_fill": "DIS-CARD-HF-HFpEF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-04-ACUTE-CONGESTION",
+      "source_name": "急性心衰淤血处理规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-3D73B3265AA9A0357CBB-AHF",
+      "evidence_name": "心力衰竭患者利尿剂抵抗诊断及管理中国专家共识.pdf 第2页证据（SEG-DOC-7198C13DB2740EAA-2-GL-00011-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-04-ACUTE-CONGESTION",
+      "source_name": "急性心衰淤血处理规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-BAC1C48FDED5FA1DEB2D-AHF",
+      "evidence_name": "《内科学（第10版）》.pdf 第212页证据（SEG-DOC-C0BB559FA2C8448A-212-GL-00109-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-05-HFREF-GDMT",
+      "source_name": "HFrEF长期规范药物治疗规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-6C22AF8E99424C13D50E-HF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第13页证据（SEG-DOC-7476B9BFB2D92F3A-13-GL-00121-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-05-HFREF-GDMT",
+      "source_name": "HFrEF长期规范药物治疗规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-6C40984E352072D805F6-HF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第11页证据（SEG-DOC-7476B9BFB2D92F3A-11-GL-00106-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-06-HFPEF-MANAGEMENT",
+      "source_name": "HFpEF综合管理规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-1740A4027F163FB2BFA3-HFpEF",
+      "evidence_name": "中国心力衰竭诊断和治疗指南2024.pdf 第16页证据（SEG-DOC-E2AE11B44F6F744B-16-GL-00117-HFpEF）",
+      "disease_code_to_fill": "DIS-CARD-HF-HFpEF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-06-HFPEF-MANAGEMENT",
+      "source_name": "HFpEF综合管理规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-6C22AF8E99424C13D50E-HF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第13页证据（SEG-DOC-7476B9BFB2D92F3A-13-GL-00121-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-06-HFPEF-MANAGEMENT",
+      "source_name": "HFpEF综合管理规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-6C40984E352072D805F6-HF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第11页证据（SEG-DOC-7476B9BFB2D92F3A-11-GL-00106-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-06-HFPEF-MANAGEMENT",
+      "source_name": "HFpEF综合管理规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-7DFE0F3278CE8851A238-HFpEF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第8页证据（SEG-DOC-7476B9BFB2D92F3A-8-GL-00081-HFpEF）",
+      "disease_code_to_fill": "DIS-CARD-HF-HFpEF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-07-FOLLOWUP-SAFETY",
+      "source_name": "心衰随访与用药安全监测规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-D33B79AC036793E90BBD-HF",
+      "evidence_name": "心力衰竭药物治疗相关高钾血症防治专家共识2024.pdf 第5页证据（SEG-DOC-C440C68F7BD2DFFB-5-GL-00017-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DDX-ANEMIA",
+      "source_name": "心衰与贫血相关乏力气促鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-BAC1C48FDED5FA1DEB2D-AHF",
+      "evidence_name": "《内科学（第10版）》.pdf 第212页证据（SEG-DOC-C0BB559FA2C8448A-212-GL-00109-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DDX-ANEMIA",
+      "source_name": "心衰与贫血相关乏力气促鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C3D617211B596CF0E5CE-HF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第7页证据（SEG-DOC-7476B9BFB2D92F3A-7-GL-00069-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DDX-COPD-ASTHMA",
+      "source_name": "心衰与慢阻肺/哮喘鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-BAC1C48FDED5FA1DEB2D-AHF",
+      "evidence_name": "《内科学（第10版）》.pdf 第212页证据（SEG-DOC-C0BB559FA2C8448A-212-GL-00109-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DDX-COPD-ASTHMA",
+      "source_name": "心衰与慢阻肺/哮喘鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C3D617211B596CF0E5CE-HF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第7页证据（SEG-DOC-7476B9BFB2D92F3A-7-GL-00069-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DDX-PE",
+      "source_name": "心衰与肺栓塞鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-BAC1C48FDED5FA1DEB2D-AHF",
+      "evidence_name": "《内科学（第10版）》.pdf 第212页证据（SEG-DOC-C0BB559FA2C8448A-212-GL-00109-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DDX-PE",
+      "source_name": "心衰与肺栓塞鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C3D617211B596CF0E5CE-HF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第7页证据（SEG-DOC-7476B9BFB2D92F3A-7-GL-00069-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DDX-PNEUMONIA",
+      "source_name": "心衰与肺炎鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-BAC1C48FDED5FA1DEB2D-AHF",
+      "evidence_name": "《内科学（第10版）》.pdf 第212页证据（SEG-DOC-C0BB559FA2C8448A-212-GL-00109-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DDX-PNEUMONIA",
+      "source_name": "心衰与肺炎鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C3D617211B596CF0E5CE-HF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第7页证据（SEG-DOC-7476B9BFB2D92F3A-7-GL-00069-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DDX-RENAL-VOLUME",
+      "source_name": "心衰与肾性容量负荷鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-BAC1C48FDED5FA1DEB2D-AHF",
+      "evidence_name": "《内科学（第10版）》.pdf 第212页证据（SEG-DOC-C0BB559FA2C8448A-212-GL-00109-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DDX-RENAL-VOLUME",
+      "source_name": "心衰与肾性容量负荷鉴别规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C3D617211B596CF0E5CE-HF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第7页证据（SEG-DOC-7476B9BFB2D92F3A-7-GL-00069-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-ACUTE-ONSET",
+      "source_name": "急性心衰起病组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-3D73B3265AA9A0357CBB-AHF",
+      "evidence_name": "心力衰竭患者利尿剂抵抗诊断及管理中国专家共识.pdf 第2页证据（SEG-DOC-7198C13DB2740EAA-2-GL-00011-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-ACUTE-ONSET",
+      "source_name": "急性心衰起病组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-BAC1C48FDED5FA1DEB2D-AHF",
+      "evidence_name": "《内科学（第10版）》.pdf 第212页证据（SEG-DOC-C0BB559FA2C8448A-212-GL-00109-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-CHRONIC-SYMPTOM",
+      "source_name": "慢性心衰长期症状组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-BAC1C48FDED5FA1DEB2D-AHF",
+      "evidence_name": "《内科学（第10版）》.pdf 第212页证据（SEG-DOC-C0BB559FA2C8448A-212-GL-00109-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-CHRONIC-SYMPTOM",
+      "source_name": "慢性心衰长期症状组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C3D617211B596CF0E5CE-HF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第7页证据（SEG-DOC-7476B9BFB2D92F3A-7-GL-00069-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-CLINICAL-CONGESTION",
+      "source_name": "心衰症状体征组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-BAC1C48FDED5FA1DEB2D-AHF",
+      "evidence_name": "《内科学（第10版）》.pdf 第212页证据（SEG-DOC-C0BB559FA2C8448A-212-GL-00109-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-CLINICAL-CONGESTION",
+      "source_name": "心衰症状体征组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C3D617211B596CF0E5CE-HF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第7页证据（SEG-DOC-7476B9BFB2D92F3A-7-GL-00069-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-CONGESTION-HYPOPERFUSION",
+      "source_name": "急性心衰淤血低灌注组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-3D73B3265AA9A0357CBB-AHF",
+      "evidence_name": "心力衰竭患者利尿剂抵抗诊断及管理中国专家共识.pdf 第2页证据（SEG-DOC-7198C13DB2740EAA-2-GL-00011-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-CONGESTION-HYPOPERFUSION",
+      "source_name": "急性心衰淤血低灌注组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-BAC1C48FDED5FA1DEB2D-AHF",
+      "evidence_name": "《内科学（第10版）》.pdf 第212页证据（SEG-DOC-C0BB559FA2C8448A-212-GL-00109-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-DIALYSIS-VOLUME",
+      "source_name": "透析患者容量状态组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-BAC1C48FDED5FA1DEB2D-AHF",
+      "evidence_name": "《内科学（第10版）》.pdf 第212页证据（SEG-DOC-C0BB559FA2C8448A-212-GL-00109-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-DIALYSIS-VOLUME",
+      "source_name": "透析患者容量状态组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C3D617211B596CF0E5CE-HF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第7页证据（SEG-DOC-7476B9BFB2D92F3A-7-GL-00069-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-ECHO",
+      "source_name": "超声心动图结构功能组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-BAC1C48FDED5FA1DEB2D-AHF",
+      "evidence_name": "《内科学（第10版）》.pdf 第212页证据（SEG-DOC-C0BB559FA2C8448A-212-GL-00109-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-ECHO",
+      "source_name": "超声心动图结构功能组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C3D617211B596CF0E5CE-HF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第7页证据（SEG-DOC-7476B9BFB2D92F3A-7-GL-00069-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-HFMREF-LVEF",
+      "source_name": "HFmrEF射血分数组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-1740A4027F163FB2BFA3-HFpEF",
+      "evidence_name": "中国心力衰竭诊断和治疗指南2024.pdf 第16页证据（SEG-DOC-E2AE11B44F6F744B-16-GL-00117-HFpEF）",
+      "disease_code_to_fill": "DIS-CARD-HF-HFpEF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-HFMREF-LVEF",
+      "source_name": "HFmrEF射血分数组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-7DFE0F3278CE8851A238-HFpEF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第8页证据（SEG-DOC-7476B9BFB2D92F3A-8-GL-00081-HFpEF）",
+      "disease_code_to_fill": "DIS-CARD-HF-HFpEF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-HFPEF-LVEF",
+      "source_name": "HFpEF射血分数组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-1740A4027F163FB2BFA3-HFpEF",
+      "evidence_name": "中国心力衰竭诊断和治疗指南2024.pdf 第16页证据（SEG-DOC-E2AE11B44F6F744B-16-GL-00117-HFpEF）",
+      "disease_code_to_fill": "DIS-CARD-HF-HFpEF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-HFPEF-LVEF",
+      "source_name": "HFpEF射血分数组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-7DFE0F3278CE8851A238-HFpEF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第8页证据（SEG-DOC-7476B9BFB2D92F3A-8-GL-00081-HFpEF）",
+      "disease_code_to_fill": "DIS-CARD-HF-HFpEF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-HFPEF-STRUCTURE",
+      "source_name": "HFpEF结构舒张异常组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-1740A4027F163FB2BFA3-HFpEF",
+      "evidence_name": "中国心力衰竭诊断和治疗指南2024.pdf 第16页证据（SEG-DOC-E2AE11B44F6F744B-16-GL-00117-HFpEF）",
+      "disease_code_to_fill": "DIS-CARD-HF-HFpEF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-HFPEF-STRUCTURE",
+      "source_name": "HFpEF结构舒张异常组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-7DFE0F3278CE8851A238-HFpEF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第8页证据（SEG-DOC-7476B9BFB2D92F3A-8-GL-00081-HFpEF）",
+      "disease_code_to_fill": "DIS-CARD-HF-HFpEF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-HFREF-LVEF",
+      "source_name": "HFrEF射血分数组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-1740A4027F163FB2BFA3-HFpEF",
+      "evidence_name": "中国心力衰竭诊断和治疗指南2024.pdf 第16页证据（SEG-DOC-E2AE11B44F6F744B-16-GL-00117-HFpEF）",
+      "disease_code_to_fill": "DIS-CARD-HF-HFpEF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-HFREF-LVEF",
+      "source_name": "HFrEF射血分数组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-7DFE0F3278CE8851A238-HFpEF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第8页证据（SEG-DOC-7476B9BFB2D92F3A-8-GL-00081-HFpEF）",
+      "disease_code_to_fill": "DIS-CARD-HF-HFpEF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-LEFT-PULMONARY",
+      "source_name": "左心衰肺淤血组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-BAC1C48FDED5FA1DEB2D-AHF",
+      "evidence_name": "《内科学（第10版）》.pdf 第212页证据（SEG-DOC-C0BB559FA2C8448A-212-GL-00109-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-LEFT-PULMONARY",
+      "source_name": "左心衰肺淤血组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C3D617211B596CF0E5CE-HF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第7页证据（SEG-DOC-7476B9BFB2D92F3A-7-GL-00069-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-NP",
+      "source_name": "利钠肽诊断组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-BAC1C48FDED5FA1DEB2D-AHF",
+      "evidence_name": "《内科学（第10版）》.pdf 第212页证据（SEG-DOC-C0BB559FA2C8448A-212-GL-00109-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-NP",
+      "source_name": "利钠肽诊断组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C3D617211B596CF0E5CE-HF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第7页证据（SEG-DOC-7476B9BFB2D92F3A-7-GL-00069-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-POSTMI-HISTORY",
+      "source_name": "心梗后心衰病史组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-BAC1C48FDED5FA1DEB2D-AHF",
+      "evidence_name": "《内科学（第10版）》.pdf 第212页证据（SEG-DOC-C0BB559FA2C8448A-212-GL-00109-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-POSTMI-HISTORY",
+      "source_name": "心梗后心衰病史组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C3D617211B596CF0E5CE-HF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第7页证据（SEG-DOC-7476B9BFB2D92F3A-7-GL-00069-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-RIGHT-SYSTEMIC",
+      "source_name": "右心衰体循环淤血组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-BAC1C48FDED5FA1DEB2D-AHF",
+      "evidence_name": "《内科学（第10版）》.pdf 第212页证据（SEG-DOC-C0BB559FA2C8448A-212-GL-00109-AHF）",
+      "disease_code_to_fill": "DIS-CARD-HF-AHF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-HF-DX-COMP-RIGHT-SYSTEMIC",
+      "source_name": "右心衰体循环淤血组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C3D617211B596CF0E5CE-HF",
+      "evidence_name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第7页证据（SEG-DOC-7476B9BFB2D92F3A-7-GL-00069-HF）",
+      "disease_code_to_fill": "DIS-CARD-HF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-097806EACD3F-01",
+      "source_name": "缺血性心肌病临床症状与缺血表现组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-0B86F000BFC1DF91F705-ICM",
+      "evidence_name": "DCM CN 2018.pdf 第2页证据（SEG-DOC-FF80679E54616C13-2-GL-00007-ICM）",
+      "disease_code_to_fill": "DIS-CARD-CM-ICM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-097806EACD3F-02",
+      "source_name": "缺血性心肌病心电图/心肌损伤/缺血证据组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-0B86F000BFC1DF91F705-ICM",
+      "evidence_name": "DCM CN 2018.pdf 第2页证据（SEG-DOC-FF80679E54616C13-2-GL-00007-ICM）",
+      "disease_code_to_fill": "DIS-CARD-CM-ICM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-097806EACD3F-03",
+      "source_name": "缺血性心肌病解剖或影像学证据组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-0B86F000BFC1DF91F705-ICM",
+      "evidence_name": "DCM CN 2018.pdf 第2页证据（SEG-DOC-FF80679E54616C13-2-GL-00007-ICM）",
+      "disease_code_to_fill": "DIS-CARD-CM-ICM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-16CFF57650C6-01",
+      "source_name": "扩张型心肌病心脏结构和功能异常组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-26CD5802C3C5E0A2B148-DCM",
+      "evidence_name": "中国心肌病综合管理指南2025.pdf 第4页证据（SEG-DOC-8917447CF08D5176-4-GL-00018-DCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-DCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-16CFF57650C6-01",
+      "source_name": "扩张型心肌病心脏结构和功能异常组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-27EF0299F4DE9D99C389-DCM",
+      "evidence_name": "心肌病诊断与治疗建议  2007.pdf 第2页证据（SEG-DOC-EE4059BC9FA37E66-2-GL-00033-DCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-DCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-16CFF57650C6-01",
+      "source_name": "扩张型心肌病心脏结构和功能异常组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C14CF5C9764CDA9CAE55-DCM",
+      "evidence_name": "心肌病诊断与治疗建议  2007.pdf 第3页证据（SEG-DOC-EE4059BC9FA37E66-3-GL-00045-DCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-DCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-16CFF57650C6-01",
+      "source_name": "扩张型心肌病心脏结构和功能异常组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-TB-5908340B73B73B1642EC-DCM",
+      "evidence_name": "《内科学》第10版 第311页证据（SEG-DOC-C0BB559FA2C8448A-311-TB-00021）",
+      "disease_code_to_fill": "DIS-CARD-CM-DCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-16CFF57650C6-01",
+      "source_name": "扩张型心肌病心脏结构和功能异常组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-TB-7F0A22117F8FE0172CF9-DCM",
+      "evidence_name": "《内科学》第10版 第311页证据（SEG-DOC-C0BB559FA2C8448A-311-TB-00022）",
+      "disease_code_to_fill": "DIS-CARD-CM-DCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-16CFF57650C6-02",
+      "source_name": "扩张型心肌病病因、家族史或遗传线索组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-26CD5802C3C5E0A2B148-DCM",
+      "evidence_name": "中国心肌病综合管理指南2025.pdf 第4页证据（SEG-DOC-8917447CF08D5176-4-GL-00018-DCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-DCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-16CFF57650C6-02",
+      "source_name": "扩张型心肌病病因、家族史或遗传线索组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-27EF0299F4DE9D99C389-DCM",
+      "evidence_name": "心肌病诊断与治疗建议  2007.pdf 第2页证据（SEG-DOC-EE4059BC9FA37E66-2-GL-00033-DCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-DCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-16CFF57650C6-02",
+      "source_name": "扩张型心肌病病因、家族史或遗传线索组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C14CF5C9764CDA9CAE55-DCM",
+      "evidence_name": "心肌病诊断与治疗建议  2007.pdf 第3页证据（SEG-DOC-EE4059BC9FA37E66-3-GL-00045-DCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-DCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-16CFF57650C6-02",
+      "source_name": "扩张型心肌病病因、家族史或遗传线索组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-TB-5908340B73B73B1642EC-DCM",
+      "evidence_name": "《内科学》第10版 第311页证据（SEG-DOC-C0BB559FA2C8448A-311-TB-00021）",
+      "disease_code_to_fill": "DIS-CARD-CM-DCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-16CFF57650C6-02",
+      "source_name": "扩张型心肌病病因、家族史或遗传线索组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-TB-7F0A22117F8FE0172CF9-DCM",
+      "evidence_name": "《内科学》第10版 第311页证据（SEG-DOC-C0BB559FA2C8448A-311-TB-00022）",
+      "disease_code_to_fill": "DIS-CARD-CM-DCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-16CFF57650C6-03",
+      "source_name": "扩张型心肌病排除负荷或缺血性继发改变组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-26CD5802C3C5E0A2B148-DCM",
+      "evidence_name": "中国心肌病综合管理指南2025.pdf 第4页证据（SEG-DOC-8917447CF08D5176-4-GL-00018-DCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-DCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-16CFF57650C6-03",
+      "source_name": "扩张型心肌病排除负荷或缺血性继发改变组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-27EF0299F4DE9D99C389-DCM",
+      "evidence_name": "心肌病诊断与治疗建议  2007.pdf 第2页证据（SEG-DOC-EE4059BC9FA37E66-2-GL-00033-DCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-DCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-16CFF57650C6-03",
+      "source_name": "扩张型心肌病排除负荷或缺血性继发改变组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-C14CF5C9764CDA9CAE55-DCM",
+      "evidence_name": "心肌病诊断与治疗建议  2007.pdf 第3页证据（SEG-DOC-EE4059BC9FA37E66-3-GL-00045-DCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-DCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-16CFF57650C6-03",
+      "source_name": "扩张型心肌病排除负荷或缺血性继发改变组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-TB-5908340B73B73B1642EC-DCM",
+      "evidence_name": "《内科学》第10版 第311页证据（SEG-DOC-C0BB559FA2C8448A-311-TB-00021）",
+      "disease_code_to_fill": "DIS-CARD-CM-DCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-16CFF57650C6-03",
+      "source_name": "扩张型心肌病排除负荷或缺血性继发改变组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-TB-7F0A22117F8FE0172CF9-DCM",
+      "evidence_name": "《内科学》第10版 第311页证据（SEG-DOC-C0BB559FA2C8448A-311-TB-00022）",
+      "disease_code_to_fill": "DIS-CARD-CM-DCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-30F656ACB669-01",
+      "source_name": "急性冠脉综合征临床症状与缺血表现组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-A757284F10089B5E60ED-ACS",
+      "evidence_name": "《内科学（第10版）》.pdf 第466页证据（SEG-DOC-C0BB559FA2C8448A-466-GL-00222-ACS）",
+      "disease_code_to_fill": "DIS-CARD-CAD-ACS"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-30F656ACB669-02",
+      "source_name": "急性冠脉综合征心电图/心肌损伤/缺血证据组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-A757284F10089B5E60ED-ACS",
+      "evidence_name": "《内科学（第10版）》.pdf 第466页证据（SEG-DOC-C0BB559FA2C8448A-466-GL-00222-ACS）",
+      "disease_code_to_fill": "DIS-CARD-CAD-ACS"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-30F656ACB669-03",
+      "source_name": "急性冠脉综合征解剖或影像学证据组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-A757284F10089B5E60ED-ACS",
+      "evidence_name": "《内科学（第10版）》.pdf 第466页证据（SEG-DOC-C0BB559FA2C8448A-466-GL-00222-ACS）",
+      "disease_code_to_fill": "DIS-CARD-CAD-ACS"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-4335F6498D1C-01",
+      "source_name": "肥厚型心肌病心脏结构和功能异常组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-D38F0492EA9F9200762F-HCM",
+      "evidence_name": "《内科学（第10版）》.pdf 第306页证据（SEG-DOC-C0BB559FA2C8448A-306-GL-00026-HCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-HCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-4335F6498D1C-01",
+      "source_name": "肥厚型心肌病心脏结构和功能异常组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-DBFBC9CE4B1276B89925-HCM",
+      "evidence_name": "成人法布雷病心肌病诊断与治疗中国专家共识.pdf 第3页证据（SEG-DOC-829A089219708BB6-3-GL-00006-HCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-HCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-4335F6498D1C-01",
+      "source_name": "肥厚型心肌病心脏结构和功能异常组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-EB986126E19DF663939B-HCM",
+      "evidence_name": "肥厚型心肌病激发_负荷超声心动图临床应用指南(2024版).pdf 第8页证据（SEG-DOC-6605420FFBDD9D1D-8-GL-00016-HCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-HCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-4335F6498D1C-01",
+      "source_name": "肥厚型心肌病心脏结构和功能异常组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-FFEC8CA65DBBB1B8118F-HCM",
+      "evidence_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf 第6页证据（SEG-DOC-372CA06E729E0563-6-GL-00023-HCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-HCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-4335F6498D1C-01",
+      "source_name": "肥厚型心肌病心脏结构和功能异常组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-TB-D6E25221BF9444B19E9A-HCM",
+      "evidence_name": "《内科学》第10版 第309页证据（SEG-DOC-C0BB559FA2C8448A-309-TB-00012）",
+      "disease_code_to_fill": "DIS-CARD-CM-HCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-4335F6498D1C-02",
+      "source_name": "肥厚型心肌病病因、家族史或遗传线索组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-D38F0492EA9F9200762F-HCM",
+      "evidence_name": "《内科学（第10版）》.pdf 第306页证据（SEG-DOC-C0BB559FA2C8448A-306-GL-00026-HCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-HCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-4335F6498D1C-02",
+      "source_name": "肥厚型心肌病病因、家族史或遗传线索组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-DBFBC9CE4B1276B89925-HCM",
+      "evidence_name": "成人法布雷病心肌病诊断与治疗中国专家共识.pdf 第3页证据（SEG-DOC-829A089219708BB6-3-GL-00006-HCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-HCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-4335F6498D1C-02",
+      "source_name": "肥厚型心肌病病因、家族史或遗传线索组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-EB986126E19DF663939B-HCM",
+      "evidence_name": "肥厚型心肌病激发_负荷超声心动图临床应用指南(2024版).pdf 第8页证据（SEG-DOC-6605420FFBDD9D1D-8-GL-00016-HCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-HCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-4335F6498D1C-02",
+      "source_name": "肥厚型心肌病病因、家族史或遗传线索组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-FFEC8CA65DBBB1B8118F-HCM",
+      "evidence_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf 第6页证据（SEG-DOC-372CA06E729E0563-6-GL-00023-HCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-HCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-4335F6498D1C-02",
+      "source_name": "肥厚型心肌病病因、家族史或遗传线索组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-TB-D6E25221BF9444B19E9A-HCM",
+      "evidence_name": "《内科学》第10版 第309页证据（SEG-DOC-C0BB559FA2C8448A-309-TB-00012）",
+      "disease_code_to_fill": "DIS-CARD-CM-HCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-4335F6498D1C-03",
+      "source_name": "肥厚型心肌病排除负荷或缺血性继发改变组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-D38F0492EA9F9200762F-HCM",
+      "evidence_name": "《内科学（第10版）》.pdf 第306页证据（SEG-DOC-C0BB559FA2C8448A-306-GL-00026-HCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-HCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-4335F6498D1C-03",
+      "source_name": "肥厚型心肌病排除负荷或缺血性继发改变组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-DBFBC9CE4B1276B89925-HCM",
+      "evidence_name": "成人法布雷病心肌病诊断与治疗中国专家共识.pdf 第3页证据（SEG-DOC-829A089219708BB6-3-GL-00006-HCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-HCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-4335F6498D1C-03",
+      "source_name": "肥厚型心肌病排除负荷或缺血性继发改变组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-EB986126E19DF663939B-HCM",
+      "evidence_name": "肥厚型心肌病激发_负荷超声心动图临床应用指南(2024版).pdf 第8页证据（SEG-DOC-6605420FFBDD9D1D-8-GL-00016-HCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-HCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-4335F6498D1C-03",
+      "source_name": "肥厚型心肌病排除负荷或缺血性继发改变组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-FFEC8CA65DBBB1B8118F-HCM",
+      "evidence_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf 第6页证据（SEG-DOC-372CA06E729E0563-6-GL-00023-HCM）",
+      "disease_code_to_fill": "DIS-CARD-CM-HCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-4335F6498D1C-03",
+      "source_name": "肥厚型心肌病排除负荷或缺血性继发改变组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-TB-D6E25221BF9444B19E9A-HCM",
+      "evidence_name": "《内科学》第10版 第309页证据（SEG-DOC-C0BB559FA2C8448A-309-TB-00012）",
+      "disease_code_to_fill": "DIS-CARD-CM-HCM"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-663B41A63239-01",
+      "source_name": "心脏骤停心电或节律记录组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-TB-61418D55351291166001-ARREST",
+      "evidence_name": "《内科学（第10版）》.pdf 第842页证据（SEG-DOC-C0BB559FA2C8448A-842-TB-00251-ARREST）",
+      "disease_code_to_fill": "DIS-CARD-SCD-ARREST"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-663B41A63239-01",
+      "source_name": "心脏骤停心电或节律记录组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-TB-F75A4CDE65FB59482C81-ARREST",
+      "evidence_name": "《内科学（第10版）》.pdf 第918页证据（SEG-DOC-C0BB559FA2C8448A-918-TB-00253-ARREST）",
+      "disease_code_to_fill": "DIS-CARD-SCD-ARREST"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "RULE-CARD-MIG-DX-DXC-CARD-663B41A63239-02",
+      "source_name": "心脏骤停临床事件和血流动力学组成规则",
+      "evidence_type": "Evidence",
+      "evidence_code": "EVD-TB-61418D55351291166001-ARREST",
+      "evidence_name": "《内科学（第10版）》.pdf 第842页证据（SEG-DOC-C0BB559FA2C8448A-842-TB-00251-ARREST）",
+      "disease_code_to_fill": "DIS-CARD-SCD-ARREST"
+    }
+  ],
+  "missing_scope_samples_after": [
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-02D95E49124F49D0",
+      "source_name": "因ST段抬高呈一过性与STEMI不同",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-BACKFILL-F68AF7B9166D9BBA",
+      "evidence_name": "教材证据-166D9BBA"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-02D95E49124F49D0",
+      "source_name": "因ST段抬高呈一过性与STEMI不同",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-A163ACDFF92E7237",
+      "evidence_name": "教材证据-F92E7237"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-05E05848109304F8",
+      "source_name": "可通过病史、查体及TTE、CMR、冠脉造影等检查进行鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-AAC8B9DEA186DDB9",
+      "evidence_name": "教材证据-A186DDB9"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-05E05848109304F8",
+      "source_name": "可通过病史、查体及TTE、CMR、冠脉造影等检查进行鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-76AF468935EFBEFF",
+      "evidence_name": "教材证据-35EFBEFF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-0F240EF2223858D9",
+      "source_name": "【诊断与鉴别诊断】参照“冠心病”“糖尿病”相关章节",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-B284344CCBA7D6A8",
+      "evidence_name": "教材证据-CBA7D6A8"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-0FAD8514BE88B177",
+      "source_name": "测定血浆BNP/NT-proBNP水平对鉴别急性心源性和支气管性哮喘有较大的参考价值",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-859983F38A5A0317",
+      "evidence_name": "教材证据-8A5A0317"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-0FAD8514BE88B177",
+      "source_name": "测定血浆BNP/NT-proBNP水平对鉴别急性心源性和支气管性哮喘有较大的参考价值",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-1EB685DD381DD535",
+      "evidence_name": "教材证据-381DD535"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-11F82C4C8C66D0ED",
+      "source_name": "梅毒性主动脉炎和主动脉瘤以及纵隔肿瘤相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-05841B1432EB3322",
+      "evidence_name": "教材证据-32EB3322"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-11F82C4C8C66D0ED",
+      "source_name": "梅毒性主动脉炎和主动脉瘤以及纵隔肿瘤相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-87A3FECA759E6625",
+      "evidence_name": "教材证据-759E6625"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-141D318CD2FE0B33",
+      "source_name": "缩窄性心包炎鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-65D1BC6FB63F02A9",
+      "evidence_name": "教材证据-B63F02A9"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-141D318CD2FE0B33",
+      "source_name": "缩窄性心包炎鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-68B7816F9110FC73",
+      "evidence_name": "教材证据-9110FC73"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-15223A18E17F4362",
+      "source_name": "【诊断与鉴别诊断】2.鉴别诊断应与心脏收缩功能减低的其他原发和继发性心肌病鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-4ED349A5DCD2D40D",
+      "evidence_name": "教材证据-DCD2D40D"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-17ECE218926722EF",
+      "source_name": "【鉴别诊断】各种器质性心脏病都可引起缺血性ST-T的改变",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-0984AC8D74D4CA00",
+      "evidence_name": "教材证据-74D4CA00"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-1D304AF541952B94",
+      "source_name": "许多排除了器质性心脏病而反复出现不明原因晕厥甚至心脏性猝死的病人被证明存在基因变异",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-BACKFILL-9E003C5D639F7853",
+      "evidence_name": "教材证据-639F7853"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-2466A4967186B769",
+      "source_name": "【诊断与鉴别诊断】综合症状、心前区杂音、X线、心电图及超声心动图检查",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-A398054A016F7CAF",
+      "evidence_name": "教材证据-016F7CAF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-2C6B429737BD52DE",
+      "source_name": "需排除心脏后负荷增加、系统性或代谢性疾病所导致的心肌肥厚",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-031B89C60459839E",
+      "evidence_name": "教材证据-0459839E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-2C6B429737BD52DE",
+      "source_name": "需排除心脏后负荷增加、系统性或代谢性疾病所导致的心肌肥厚",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-6E8F2777B6F0ACF9",
+      "evidence_name": "教材证据-B6F0ACF9"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-3D7D20BE5B74B18F",
+      "source_name": "【临床表现】室速的临床症状视发作时心室率、持续时间、基础心脏病和心功能状况不同而异",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-BACKFILL-4E28A66E89FC7A03",
+      "evidence_name": "教材证据-89FC7A03"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-3D7D20BE5B74B18F",
+      "source_name": "【临床表现】室速的临床症状视发作时心室率、持续时间、基础心脏病和心功能状况不同而异",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-7D77ADBAB990504B",
+      "evidence_name": "教材证据-B990504B"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-46002D71A03E6728",
+      "source_name": "【诊断与鉴别诊断】根据典型心绞痛的发作特点",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-1FDCF551E20D0C8D",
+      "evidence_name": "教材证据-E20D0C8D"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-4ACFA54B909D9640",
+      "source_name": "包括高血压、主动脉瓣狭窄、运动员心肌肥厚等",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-031B89C60459839E",
+      "evidence_name": "教材证据-0459839E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-4BF225880E0AF9B7",
+      "source_name": "亟需紧急鉴别方可作出治疗决策",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-F2CBA949847C3D42",
+      "evidence_name": "教材证据-847C3D42"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-4BF225880E0AF9B7",
+      "source_name": "亟需紧急鉴别方可作出治疗决策",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-2DF51B0B73D84DFE",
+      "evidence_name": "教材证据-73D84DFE"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-4E2FFCA8C194D357",
+      "source_name": "窦性心动过缓常同时伴有窦性心律不齐（不同PP间期的差异＞0.12秒）",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-BACKFILL-C6DBB21EC3209BE5",
+      "evidence_name": "教材证据-C3209BE5"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-4E2FFCA8C194D357",
+      "source_name": "窦性心动过缓常同时伴有窦性心律不齐（不同PP间期的差异＞0.12秒）",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-3E0E61E21C92AE39",
+      "evidence_name": "教材证据-1C92AE39"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-6090BA471F4E8D7F",
+      "source_name": "尚需与VM鉴别的疾病主要有：β受体功能亢进症、自身免疫病累及心脏、其他非感染性心肌炎（如甲状腺素或儿茶酚胺性心肌病、过敏",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-F2CBA949847C3D42",
+      "evidence_name": "教材证据-847C3D42"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-6090BA471F4E8D7F",
+      "source_name": "尚需与VM鉴别的疾病主要有：β受体功能亢进症、自身免疫病累及心脏、其他非感染性心肌炎（如甲状腺素或儿茶酚胺性心肌病、过敏",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-2DF51B0B73D84DFE",
+      "evidence_name": "教材证据-73D84DFE"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-6B6FA04953592D2C",
+      "source_name": "【诊断与鉴别诊断】3.鉴别诊断以上特殊类型VM极易与急性冠脉综合征、缺血性心肌病、应激性心肌病及其他疾病相混淆",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-F2CBA949847C3D42",
+      "evidence_name": "教材证据-847C3D42"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-71505D9C32550D25",
+      "source_name": "【诊断与鉴别诊断】参照“心力衰竭”和“糖尿病”相关章节",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-2F5D8D052EDAB460",
+      "evidence_name": "教材证据-2EDAB460"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-7844381F60797639",
+      "source_name": "5.基因检测家系筛查及基因检测对鉴别诊断、预后评估和生育决策有价值",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-031B89C60459839E",
+      "evidence_name": "教材证据-0459839E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-83E8288F5198E28C",
+      "source_name": "5.心脏磁共振对诊断、鉴别诊断及预后评估均有很高价值",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-AAC8B9DEA186DDB9",
+      "evidence_name": "教材证据-A186DDB9"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-8BA9047C50CD7513",
+      "source_name": "【诊断与鉴别诊断】3.鉴别诊断",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-F42DD9A27E485488",
+      "evidence_name": "教材证据-7E485488"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-8D1F46ED790417FF",
+      "source_name": "与窦性P波形态不同",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-BACKFILL-F23E5EC1D2AB45BA",
+      "evidence_name": "教材证据-D2AB45BA"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-8D1F46ED790417FF",
+      "source_name": "与窦性P波形态不同",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-AA63C0B0A72905EC",
+      "evidence_name": "教材证据-A72905EC"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-8FFF1F5BD226215D",
+      "source_name": "CMR提供的心肌组织特征有助于病因鉴别诊断",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-AAC8B9DEA186DDB9",
+      "evidence_name": "教材证据-A186DDB9"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-8FFF1F5BD226215D",
+      "source_name": "CMR提供的心肌组织特征有助于病因鉴别诊断",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-76AF468935EFBEFF",
+      "evidence_name": "教材证据-35EFBEFF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-9886F2614614EA66",
+      "source_name": "因ST段抬高与稳定型心绞痛、UA和NSTEMI不同",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-BACKFILL-ADEF62E74B483FAB",
+      "evidence_name": "教材证据-4B483FAB"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-9886F2614614EA66",
+      "source_name": "因ST段抬高与稳定型心绞痛、UA和NSTEMI不同",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-98297366292D8F96",
+      "evidence_name": "教材证据-292D8F96"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-A7484D083ACE788A",
+      "source_name": "但需与动脉导管未闭、主动脉窦瘤、主-肺间隔缺损及室间隔缺损合并主动脉瓣关闭不全相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-A398054A016F7CAF",
+      "evidence_name": "教材证据-016F7CAF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-AD689C4DAD0477F9",
+      "source_name": "【鉴别诊断】需鉴别其他引起心脏增大和心力衰竭的病因",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-18A00031350D90CE",
+      "evidence_name": "教材证据-350D90CE"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-B180D22AA574F36E",
+      "source_name": "支气管哮喘、喘息性支气管炎急性加重相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-859983F38A5A0317",
+      "evidence_name": "教材证据-8A5A0317"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-B180D22AA574F36E",
+      "source_name": "支气管哮喘、喘息性支气管炎急性加重相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-1EB685DD381DD535",
+      "evidence_name": "教材证据-381DD535"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-B31C2B0E017BFA79",
+      "source_name": "提示心肌炎的可能",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-AAC8B9DEA186DDB9",
+      "evidence_name": "教材证据-A186DDB9"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-B31C2B0E017BFA79",
+      "source_name": "提示心肌炎的可能",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-76AF468935EFBEFF",
+      "evidence_name": "教材证据-35EFBEFF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-B5F4AE479740EB0E",
+      "source_name": "可根据影像学检查结果及心导管压力特征进行鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-65D1BC6FB63F02A9",
+      "evidence_name": "教材证据-B63F02A9"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-B5F4AE479740EB0E",
+      "source_name": "可根据影像学检查结果及心导管压力特征进行鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-68B7816F9110FC73",
+      "evidence_name": "教材证据-9110FC73"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-BA7743EF717AF16E",
+      "source_name": "病人可在不同时间出现一种以上的心律失常",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-BACKFILL-09EE995DADC024AF",
+      "evidence_name": "教材证据-ADC024AF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-BA7743EF717AF16E",
+      "source_name": "病人可在不同时间出现一种以上的心律失常",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-C13A124204B6A805",
+      "evidence_name": "教材证据-04B6A805"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-BB2185EF609F26FB",
+      "source_name": "【诊断与鉴别诊断】2.鉴别诊断首先",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-65D1BC6FB63F02A9",
+      "evidence_name": "教材证据-B63F02A9"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-BE6CDEAA994A795E",
+      "source_name": "有时难与室速鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-BACKFILL-C087B190EDBDB1F5",
+      "evidence_name": "教材证据-EDBDB1F5"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-BE6CDEAA994A795E",
+      "source_name": "有时难与室速鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-E80946CED5B2AA93",
+      "evidence_name": "教材证据-D5B2AA93"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-C10FEFAD52960ECF",
+      "source_name": "【诊断与鉴别诊断】根据典型症状与体征",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-859983F38A5A0317",
+      "evidence_name": "教材证据-8A5A0317"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-C4E3F9D76B500762",
+      "source_name": "应加以鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-0984AC8D74D4CA00",
+      "evidence_name": "教材证据-74D4CA00"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-C5CEBB846F57E76F",
+      "source_name": "【诊断与鉴别诊断】2.鉴别诊断应除外心脏扩大、收缩功能减低的其他继发原因",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-AAC8B9DEA186DDB9",
+      "evidence_name": "教材证据-A186DDB9"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-CBAE71E1AB09DD63",
+      "source_name": "（三）鉴别诊断需除外较常见的左室负荷增加性心室肥厚",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-031B89C60459839E",
+      "evidence_name": "教材证据-0459839E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-DCD9DD0D5394C7E6",
+      "source_name": "结合年龄和存在冠心病危险因素",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-1FDCF551E20D0C8D",
+      "evidence_name": "教材证据-E20D0C8D"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-DCD9DD0D5394C7E6",
+      "source_name": "结合年龄和存在冠心病危险因素",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-66468572B86B3684",
+      "evidence_name": "教材证据-B86B3684"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-E20CED87A4B0A205",
+      "source_name": "根据起源点不同",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-BACKFILL-B47363F12667F7DA",
+      "evidence_name": "教材证据-2667F7DA"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-E20CED87A4B0A205",
+      "source_name": "根据起源点不同",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-067CB2A950AE8C18",
+      "evidence_name": "教材证据-50AE8C18"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-E2225E67AE044759",
+      "source_name": "需要和本病相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-05841B1432EB3322",
+      "evidence_name": "教材证据-32EB3322"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-E2225E67AE044759",
+      "source_name": "需要和本病相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-87A3FECA759E6625",
+      "evidence_name": "教材证据-759E6625"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-EA0F3A17BA57CA05",
+      "source_name": "P波之间的等电线仍存在（与心房扑动时等电线消失不同）",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-BACKFILL-68DE74C8382DB42E",
+      "evidence_name": "教材证据-382DB42E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-EA0F3A17BA57CA05",
+      "source_name": "P波之间的等电线仍存在（与心房扑动时等电线消失不同）",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-9B70CDFD5F51CF7E",
+      "evidence_name": "教材证据-5F51CF7E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-F0EF68710DD1EEF2",
+      "source_name": "P波形态与窦性P波不同",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-BACKFILL-FBF716FCF4484ED2",
+      "evidence_name": "教材证据-F4484ED2"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-F0EF68710DD1EEF2",
+      "source_name": "P波形态与窦性P波不同",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-4575431E0EAA2CFD",
+      "evidence_name": "教材证据-0EAA2CFD"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-F3EBCA7C06639DEF",
+      "source_name": "此时就难以和一般的心绞痛相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-BACKFILL-32AB626C213EF67E",
+      "evidence_name": "教材证据-213EF67E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-F3EBCA7C06639DEF",
+      "source_name": "此时就难以和一般的心绞痛相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-5E8C27479842A1E7",
+      "evidence_name": "教材证据-9842A1E7"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-F41B262924C71456",
+      "source_name": "【诊断与鉴别诊断】本病发展到出现器官缺血或坏死阶段时",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-05841B1432EB3322",
+      "evidence_name": "教材证据-32EB3322"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-F4638B6FCCC2D3A0",
+      "source_name": "因静息性发作与稳定型心绞痛不同",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-BACKFILL-86CAC94C7F3858FD",
+      "evidence_name": "教材证据-7F3858FD"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-F4638B6FCCC2D3A0",
+      "source_name": "因静息性发作与稳定型心绞痛不同",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-C9D99EE00264C0DA",
+      "evidence_name": "教材证据-0264C0DA"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-F46DAD3D9F31D433",
+      "source_name": "【诊断与鉴别诊断】影像学发现室壁增厚是诊断HCM的必备条件",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-031B89C60459839E",
+      "evidence_name": "教材证据-0459839E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-FB792899696FE3A9",
+      "source_name": "应注意鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-BACKFILL-96DE4F94AECEC54B",
+      "evidence_name": "教材证据-AECEC54B"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-20260709-DIFFERENTIALDIAGNOSIS-FB792899696FE3A9",
+      "source_name": "应注意鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-B538A1092EA24B4B",
+      "evidence_name": "教材证据-2EA24B4B"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-01FFEC6212C8935F",
+      "source_name": "合并肺动脉高压者应与原发性肺动脉高压及法洛四联症鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-26D939C592101D52",
+      "evidence_name": "教材证据-92101D52"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-03F03D7551AB8758",
+      "source_name": "本病应与多发性大动脉炎累及髂动脉者、血栓闭塞性脉管炎（又称Buerger病）相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-35E3CE07D35D595D",
+      "evidence_name": "教材证据-D35D595D"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-0610DEF9C621E51D",
+      "source_name": "主动脉壁间血肿、主动脉穿透性溃疡进行鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-394CA8B686929812",
+      "evidence_name": "教材证据-86929812"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-08F5ECD74D64908F",
+      "source_name": "风湿热-鉴别诊断",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-331A0A293A82A9F9",
+      "evidence_name": "教材证据-3A82A9F9"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-0C31632E952D910B",
+      "source_name": "2.心包积液、缩窄性心包炎由于腔静脉回流受阻同样可以引起颈静脉怒张、肝大、下肢水肿等类似右心衰竭表现",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-A739B37EB5D24E0E",
+      "evidence_name": "教材证据-B5D24E0E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-0DAAE4AC0FF1EE95",
+      "source_name": "表3-10-12023版ESC感染性心内膜炎诊断标准3.鉴别诊断本病可涉及全身多脏器",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-A3D82F4A8FA369CF",
+      "evidence_name": "教材证据-8FA369CF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-0FDA1416B09D0623",
+      "source_name": "必须注意排除器质性心脏病",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-F734C6167E206276",
+      "evidence_name": "教材证据-7E206276"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-1547DF85C0CA50C9",
+      "source_name": "因此需要鉴别诊断",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-3B1F6B5BBEAB15A0",
+      "evidence_name": "教材证据-BEAB15A0"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-1D681671E4BCBE73",
+      "source_name": "与其他疾病的鉴别诊断参见“稳定型心绞痛”部分",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-3B1F6B5BBEAB15A0",
+      "evidence_name": "教材证据-BEAB15A0"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-210A9343C731C1F4",
+      "source_name": "3.鉴别诊断",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-604CE2C7EC19FE7E",
+      "evidence_name": "教材证据-EC19FE7E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-23BD9DCBA4628EFF",
+      "source_name": "表3-12-1主动脉夹层的高危特征由于本病多以急性胸痛为首要症状",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-394CA8B686929812",
+      "evidence_name": "教材证据-86929812"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-24094FD774605F92",
+      "source_name": "卵圆孔未闭应与小房间隔缺损相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-26D939C592101D52",
+      "evidence_name": "教材证据-92101D52"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-2689F37EB12C1F17",
+      "source_name": "排除其他疾病后",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-2DF51B0B73D84DFE",
+      "evidence_name": "教材证据-73D84DFE"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-305FF238F5B02122",
+      "source_name": "也诊断为高血压",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BFF35492C538159D",
+      "evidence_name": "教材证据-C538159D"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-3404A239D826C997",
+      "source_name": "一般需非同日测量三次血压值收缩压均≥140mmHg和/或舒张压均≥90mmHg可诊断高血压",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BFF35492C538159D",
+      "evidence_name": "教材证据-C538159D"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-3A1C13EFDD6F8AC9",
+      "source_name": "需鉴别其他引起心脏增大和心力衰竭的病因",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-2FA7C52AEC30975E",
+      "evidence_name": "教材证据-EC30975E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-3A2F24C552275B53",
+      "source_name": "无青紫者应与扩张型心肌病和心包积液鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-26D939C592101D52",
+      "evidence_name": "教材证据-92101D52"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-3BBA5074C6B4FB34",
+      "source_name": "3.鉴别诊断以上特殊类型VM极易与急性冠脉综合征、缺血性心肌病、应激性心肌病及其他疾病相混淆",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-2DF51B0B73D84DFE",
+      "evidence_name": "教材证据-73D84DFE"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-3BD171747DF1FBB0",
+      "source_name": "胸痛伴心电图ST段抬高者与急性心肌梗死鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-AB73BE0939BF38A0",
+      "evidence_name": "教材证据-39BF38A0"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-3C36672F76F6565E",
+      "source_name": "2.鉴别诊断诊断急性心包炎应注意与其他可引起急性胸痛的疾病相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-AB73BE0939BF38A0",
+      "evidence_name": "教材证据-39BF38A0"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-3E50D2B3FEC1E4A8",
+      "source_name": "参照“高血压”“糖尿病”相关章节",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-7BBD58F905A5A079",
+      "evidence_name": "教材证据-05A5A079"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-3F7C3AF7F14D647D",
+      "source_name": "3.不同疾病分别导致不同瓣膜损害如先天性肺动脉瓣狭窄伴风湿性二尖瓣病变",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-F1916171FA5A922B",
+      "evidence_name": "教材证据-FA5A922B"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-436D17245A489BAE",
+      "source_name": "超声心动图有助于鉴别生理性杂音、三尖瓣反流、室间隔缺损、左心室或右心室流出道梗阻等",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-384244B20C6D02A5",
+      "evidence_name": "教材证据-0C6D02A5"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-544A63ED07DA136C",
+      "source_name": "主要应与限制型心肌病相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-3FEBD9D46112A4D3",
+      "evidence_name": "教材证据-6112A4D3"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-5621993B41F09DD5",
+      "source_name": "肺栓塞多见于长期卧床及行动不便病人",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-AB73BE0939BF38A0",
+      "evidence_name": "教材证据-39BF38A0"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-5C7037DA313AEC9D",
+      "source_name": "鉴别诊断需要考虑以下疾病",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-F400E1ABB466ACF4",
+      "evidence_name": "教材证据-B466ACF4"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-5CD45CC4A3D7565B",
+      "source_name": "病人既往有高血压史",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BFF35492C538159D",
+      "evidence_name": "教材证据-C538159D"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-5CED3E51131ADB90",
+      "source_name": "高血压诊断根据诊室测量的血压值",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BFF35492C538159D",
+      "evidence_name": "教材证据-C538159D"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-65AAFD19CBF1DA4B",
+      "source_name": "不难鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-A739B37EB5D24E0E",
+      "evidence_name": "教材证据-B5D24E0E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-6BFC2580E124251F",
+      "source_name": "夹层可产生多系统血管的压迫",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-394CA8B686929812",
+      "evidence_name": "教材证据-86929812"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-6E34897356CC66E2",
+      "source_name": "2.鉴别诊断应除外心脏扩大、收缩功能减低的其他继发原因",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-76AF468935EFBEFF",
+      "evidence_name": "教材证据-35EFBEFF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-705E72663211F2F4",
+      "source_name": "还应与其他原因引起的心力衰竭相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-3FEBD9D46112A4D3",
+      "evidence_name": "教材证据-6112A4D3"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-7390C2E04FB5CD0D",
+      "source_name": "有高血压史的胸痛病人需要除外主动脉夹层动脉瘤破裂",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-AB73BE0939BF38A0",
+      "evidence_name": "教材证据-39BF38A0"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-7607DBEC0E881C10",
+      "source_name": "2.鉴别诊断应与心脏收缩功能减低的其他原发和继发性心肌病鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-EA4777620CE0BDB7",
+      "evidence_name": "教材证据-0CE0BDB7"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-761E866A2290BB43",
+      "source_name": "上述情况超声心动图可予以鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-FC197797EF539E7D",
+      "evidence_name": "教材证据-EF539E7D"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-762D5BEB2066FA67",
+      "source_name": "2.鉴别诊断主要鉴别引起呼吸困难的临床情况",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-462BA3A1060760FB",
+      "evidence_name": "教材证据-060760FB"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-773B0585813753A2",
+      "source_name": "常规实验室检查有助于鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-A739B37EB5D24E0E",
+      "evidence_name": "教材证据-B5D24E0E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-7A4F61515126867F",
+      "source_name": "肺静脉畸形引流、肺动脉瓣狭窄及小型室间隔缺损等鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-26D939C592101D52",
+      "evidence_name": "教材证据-92101D52"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-7A8C01BA74052BA6",
+      "source_name": "对于中高危的可疑主动脉夹层病人",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-394CA8B686929812",
+      "evidence_name": "教材证据-86929812"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-7A9ADA1584717C1E",
+      "source_name": "排除诊断：无论有/无确定的替代诊断指标",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-A3D82F4A8FA369CF",
+      "evidence_name": "教材证据-8FA369CF"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-7AEFCD50559D674F",
+      "source_name": "而是多种因素作用于不同环节所致",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-5402C9B638A4191B",
+      "evidence_name": "教材证据-38A4191B"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-80ED939AE528005A",
+      "source_name": "有青紫者应与其他青紫型先天性心脏病及三尖瓣闭锁鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-26D939C592101D52",
+      "evidence_name": "教材证据-92101D52"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-880888BDF0ADF5DA",
+      "source_name": "暴发性重症心肌炎：暴发性发病",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-2DF51B0B73D84DFE",
+      "evidence_name": "教材证据-73D84DFE"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-8B703F91875090D0",
+      "source_name": "超声心动图、胸部CT、CMR可鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-A739B37EB5D24E0E",
+      "evidence_name": "教材证据-B5D24E0E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-8B97CD1496EFAB17",
+      "source_name": "缺血性溃疡伴有剧痛应与神经病变、下肢静脉曲张所致溃疡鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-35E3CE07D35D595D",
+      "evidence_name": "教材证据-D35D595D"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-91902AD4ABEDC07A",
+      "source_name": "急性心包炎与肺栓塞相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-AB73BE0939BF38A0",
+      "evidence_name": "教材证据-39BF38A0"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-95C3669AE601ABA7",
+      "source_name": "应注意与肝硬化、结核性腹膜炎等相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-3FEBD9D46112A4D3",
+      "evidence_name": "教材证据-6112A4D3"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-97D1DC6609EA05E3",
+      "source_name": "导致组织缺血或夹层破入某些器官",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-394CA8B686929812",
+      "evidence_name": "教材证据-86929812"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-9916DD8C474F2793",
+      "source_name": "夜间收缩压平均值≥120mmHg和/或舒张压平均值≥70mmHg来诊断高血压",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BFF35492C538159D",
+      "evidence_name": "教材证据-C538159D"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-9944DDB151E49CC1",
+      "source_name": "肺动脉瓣狭窄、肥厚型心肌病鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-26D939C592101D52",
+      "evidence_name": "教材证据-92101D52"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-9D8353AD47546517",
+      "source_name": "1.心绞痛鉴别要点见表3-4-5",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-F400E1ABB466ACF4",
+      "evidence_name": "教材证据-B466ACF4"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-9EACF9337A026FE5",
+      "source_name": "破口入心包腔可出现急性心包炎的心电图改变",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-AB73BE0939BF38A0",
+      "evidence_name": "教材证据-39BF38A0"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-A2625491989BCEB0",
+      "source_name": "鉴别诊断主要与先天性青紫型心脏畸形鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-808DD08A2FBED92C",
+      "evidence_name": "教材证据-2FBED92C"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-A6DF09C52922FA7A",
+      "source_name": "房室传导阻滞可以发生在房室结、希氏束以及束支等不同的部位",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-43D071DBAF26F34C",
+      "evidence_name": "教材证据-AF26F34C"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-AA22B3DE01B08C31",
+      "source_name": "根据心脏原有的基础疾病如冠心病、高血压、瓣膜病、先天性心脏病或心肌病等病史",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-462BA3A1060760FB",
+      "evidence_name": "教材证据-060760FB"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-AF7B4DD3C47F86CE",
+      "source_name": "表3-4-5心绞痛和急性心肌梗死的鉴别诊断要点2.主动脉夹层胸痛一开始即达高峰",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-F400E1ABB466ACF4",
+      "evidence_name": "教材证据-B466ACF4"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-B00A48F7E8211580",
+      "source_name": "包括慢性阻塞性肺气肿、支气管哮喘、肺栓塞等",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-A739B37EB5D24E0E",
+      "evidence_name": "教材证据-B5D24E0E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-B65A5C7162652067",
+      "source_name": "排除继发性病因后",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-68B7816F9110FC73",
+      "evidence_name": "教材证据-9110FC73"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-B6D1666FCBF0B17C",
+      "source_name": "1.发病特点隐匿型冠心病（latentcoronaryheartdisease）或无症状性冠心病是指没有心绞痛症状",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-4C06185571708576",
+      "evidence_name": "教材证据-71708576"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-BBF7FFD8EE07A36B",
+      "source_name": "Graham-Steell杂音鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-A3517C203E5B623F",
+      "evidence_name": "教材证据-3E5B623F"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-BC2B9A8B20CBB4A4",
+      "source_name": "除基础心脏病体征有助于鉴别外",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-A739B37EB5D24E0E",
+      "evidence_name": "教材证据-B5D24E0E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-C0E5D13D60553A2E",
+      "source_name": "首先需要与肺部疾病鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-A739B37EB5D24E0E",
+      "evidence_name": "教材证据-B5D24E0E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-C2AF73A74CE02D55",
+      "source_name": "尤其是与心力衰竭相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-462BA3A1060760FB",
+      "evidence_name": "教材证据-060760FB"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-C412B93CD706EAD3",
+      "source_name": "鉴别诊断主要考虑急性冠脉综合征和急性肺栓塞",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-394CA8B686929812",
+      "evidence_name": "教材证据-86929812"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-C4F9DC59EFB87E26",
+      "source_name": "3.其他引起水肿的疾病应与肾性水肿、肝性水肿、低蛋白血症、甲状腺功能减退、下肢静脉功能异常等相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-A739B37EB5D24E0E",
+      "evidence_name": "教材证据-B5D24E0E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-C74656217E62F4B9",
+      "source_name": "跛行应与椎管狭窄、关节炎、骨筋膜隔室综合征等所致的假性跛行相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-35E3CE07D35D595D",
+      "evidence_name": "教材证据-D35D595D"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-C858EFADF097CF05",
+      "source_name": "参照“冠心病”“糖尿病”相关章节",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-B0065D00A8838A0D",
+      "evidence_name": "教材证据-A8838A0D"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-D4DB42D4FC02D366",
+      "source_name": "缩窄性心包炎多可根据典型的临床表现及辅助检查诊断",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-3FEBD9D46112A4D3",
+      "evidence_name": "教材证据-6112A4D3"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-DB00F26BCB6270C6",
+      "source_name": "Austin-Flint杂音应与二尖瓣狭窄的心尖区舒张中晚期杂音鉴别：前者常紧随第三心音后",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-A3517C203E5B623F",
+      "evidence_name": "教材证据-3E5B623F"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-DC5AC78EB42ED67E",
+      "source_name": "2.鉴别诊断首先",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-68B7816F9110FC73",
+      "evidence_name": "教材证据-9110FC73"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-DCCE680937A39D18",
+      "source_name": "鉴别诊断应考虑原发性肺动脉扩张",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-26D939C592101D52",
+      "evidence_name": "教材证据-92101D52"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-DD5781119FC5A24E",
+      "source_name": "合并反流和二尖瓣病变者多为风湿性心脏瓣膜病",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-FC197797EF539E7D",
+      "evidence_name": "教材证据-EF539E7D"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-E07A99D210903E7E",
+      "source_name": "但有心肌缺血客观证据的冠心病",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-4C06185571708576",
+      "evidence_name": "教材证据-71708576"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-E0811F4F81ED2CDB",
+      "source_name": "超声心动图有助于鉴别相对性二尖瓣狭窄、左房黏液瘤、三尖瓣狭窄和原发性肺动脉高压等",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-04580C2FDA310949",
+      "evidence_name": "教材证据-DA310949"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-E0CF6161C09A89B4",
+      "source_name": "常累及肾动脉而有肾性高血压",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-35E3CE07D35D595D",
+      "evidence_name": "教材证据-D35D595D"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-E3F741A43D5AE258",
+      "source_name": "2.鉴别诊断主动脉瓣反流杂音于胸骨左缘明显时",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-A3517C203E5B623F",
+      "evidence_name": "教材证据-3E5B623F"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-EC358B711C8EA6C7",
+      "source_name": "相应疾病鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-394CA8B686929812",
+      "evidence_name": "教材证据-86929812"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-F6859249B2A5BEEA",
+      "source_name": "（二）鉴别诊断临床上主动脉瓣狭窄应与下列情况的主动脉瓣区收缩期杂音相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-FC197797EF539E7D",
+      "evidence_name": "教材证据-EF539E7D"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-F7923C54E944468F",
+      "source_name": "同时需排除冠心病的某些并发症",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-2FA7C52AEC30975E",
+      "evidence_name": "教材证据-EC30975E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-F8FBE548CDF57F39",
+      "source_name": "（二）鉴别诊断1.肺部疾病心衰最常见的症状为呼吸困难",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-A739B37EB5D24E0E",
+      "evidence_name": "教材证据-B5D24E0E"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-FB58813CC17C6C61",
+      "source_name": "主动脉瓣关闭不全合并室间隔缺损、主动脉窦瘤（Valsalva窦瘤）破裂等可引起双期或连续性杂音的病变鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-26D939C592101D52",
+      "evidence_name": "教材证据-92101D52"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-FC63186BF62D4ABB",
+      "source_name": "与心绞痛、甲状腺功能亢进、心肌炎、二尖瓣脱垂综合征及嗜铬细胞瘤等进行鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-F734C6167E206276",
+      "evidence_name": "教材证据-7E206276"
+    },
+    {
+      "source_type": "ClinicalRule",
+      "source_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-FD761DB73D7006E0",
+      "source_name": "主要应与风湿性瓣膜病及肥厚型梗阻性心肌病相鉴别",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-26D939C592101D52",
+      "evidence_name": "教材证据-92101D52"
+    },
+    {
+      "source_type": "Complication",
+      "source_code": "CARD-SKELETON-20260709-COMPLICATION-61206D16F31CAE33",
+      "source_name": "肺水肿",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-9FD9E415D7FF425F",
+      "evidence_name": "教材证据-D7FF425F"
+    },
+    {
+      "source_type": "Complication",
+      "source_code": "CARD-SKELETON-20260709-COMPLICATION-61206D16F31CAE33",
+      "source_name": "肺水肿",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-088BF350C542589C",
+      "evidence_name": "教材证据-C542589C"
+    },
+    {
+      "source_type": "Complication",
+      "source_code": "CARD-SKELETON-20260709-COMPLICATION-61206D16F31CAE33",
+      "source_name": "肺水肿",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-692652DB95CF57A4",
+      "evidence_name": "教材证据-95CF57A4"
+    },
+    {
+      "source_type": "Complication",
+      "source_code": "CARD-SKELETON-20260709-COMPLICATION-61206D16F31CAE33",
+      "source_name": "肺水肿",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-DE6C1B21325AD35C",
+      "evidence_name": "教材证据-325AD35C"
+    },
+    {
+      "source_type": "Complication",
+      "source_code": "CARD-SKELETON-20260709-COMPLICATION-BCD6690C5395E690",
+      "source_name": "三、导管消融-并发症",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-849693D62AA3F457",
+      "evidence_name": "教材证据-2AA3F457"
+    },
+    {
+      "source_type": "Complication",
+      "source_code": "CARD-SKELETON-FULL-20260709-COMPLICATION-CF33FD44E13235F5",
+      "source_name": "室性心律失常",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-7FF41FD2B4565369",
+      "evidence_name": "教材证据-B4565369"
+    },
+    {
+      "source_type": "Complication",
+      "source_code": "COMP-CARD-0BB4844323FE",
+      "source_name": "心脏骤停",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-7FF41FD2B4565369",
+      "evidence_name": "教材证据-B4565369"
+    },
+    {
+      "source_type": "Complication",
+      "source_code": "COMP-CARD-2D4A7476D746",
+      "source_name": "心源性休克",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-088BF350C542589C",
+      "evidence_name": "教材证据-C542589C"
+    },
+    {
+      "source_type": "Complication",
+      "source_code": "COMP-CARD-2D4A7476D746",
+      "source_name": "心源性休克",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-692652DB95CF57A4",
+      "evidence_name": "教材证据-95CF57A4"
+    },
+    {
+      "source_type": "Complication",
+      "source_code": "COMP-CARD-2D4A7476D746",
+      "source_name": "心源性休克",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-DE6C1B21325AD35C",
+      "evidence_name": "教材证据-325AD35C"
+    },
+    {
+      "source_type": "Complication",
+      "source_code": "COMP-CARD-7CF202961681",
+      "source_name": "心力衰竭",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-6C2EBCF13AB1297E",
+      "evidence_name": "教材证据-3AB1297E"
+    },
+    {
+      "source_type": "Complication",
+      "source_code": "COMP-CARD-7CF202961681",
+      "source_name": "心力衰竭",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-F9225CA1E9147D4E",
+      "evidence_name": "教材证据-E9147D4E"
+    },
+    {
+      "source_type": "Complication",
+      "source_code": "COMP-CARD-7CF202961681",
+      "source_name": "心力衰竭",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-B18740BAA7C3E2AC",
+      "evidence_name": "教材证据-A7C3E2AC"
+    },
+    {
+      "source_type": "Complication",
+      "source_code": "COMP-CARD-7CF202961681",
+      "source_name": "心力衰竭",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-BF2999C9EE5C56C9",
+      "evidence_name": "教材证据-EE5C56C9"
+    },
+    {
+      "source_type": "Complication",
+      "source_code": "COMP-CARD-FULLBOOK-F7077FB368",
+      "source_name": "出血",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-6A30F2F72873BDAA",
+      "evidence_name": "教材证据-2873BDAA"
+    },
+    {
+      "source_type": "Complication",
+      "source_code": "COMP-CARD-FULLBOOK-F7077FB368",
+      "source_name": "出血",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-82CF8B30A97595B4",
+      "evidence_name": "教材证据-A97595B4"
+    },
+    {
+      "source_type": "Complication",
+      "source_code": "COMP-CARD-FULLBOOK-F7077FB368",
+      "source_name": "出血",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-E3AD6AF93485CE57",
+      "evidence_name": "教材证据-3485CE57"
+    },
+    {
+      "source_type": "Complication",
+      "source_code": "COMP-CARD-TEXT-2EDA47E727",
+      "source_name": "脑卒中",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-FULL-20260709-EVID-B18740BAA7C3E2AC",
+      "evidence_name": "教材证据-A7C3E2AC"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-0122661AC7221612",
+      "source_name": "第三节急性心力衰竭定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-EDBF014CDD53D21E",
+      "evidence_name": "教材证据-DD53D21E"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-0F7EBFD6324B1AD5",
+      "source_name": "二、心血管植入型电子器械定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-5AF0DC52F74A1A09",
+      "evidence_name": "教材证据-F74A1A09"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-145696DDBAE4F488",
+      "source_name": "第四节致心律失常性右心室心肌病定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-0256E3875E166788",
+      "evidence_name": "教材证据-5E166788"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-18CD8AD81971AEFD",
+      "source_name": "二、室性心动过速定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-9B2F21646F6D62DD",
+      "evidence_name": "教材证据-6F6D62DD"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-1D0F156A0E3109EF",
+      "source_name": "一、房性期前收缩定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-C3A949098F4E969B",
+      "evidence_name": "教材证据-8F4E969B"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-274A58D6206097C5",
+      "source_name": "三、非阵发性房室交界性心动过速定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-BEBAE65849F4A5B3",
+      "evidence_name": "教材证据-49F4A5B3"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-2B58E6664B133DC4",
+      "source_name": "［附］遗传性心律失常综合征定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-56E6576F2E29FE34",
+      "evidence_name": "教材证据-2E29FE34"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-37B12ADE902D01C0",
+      "source_name": "第六节心脏传导阻滞定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-ABD64F3F22242020",
+      "evidence_name": "教材证据-22242020"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-38FF53B5D135AE6C",
+      "source_name": "四、窦房传导阻滞定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-DFEC50B05FB744D4",
+      "evidence_name": "教材证据-5FB744D4"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-3AD2FFC80CF7890B",
+      "source_name": "二、心肌桥定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-6C0630C672B1E2EC",
+      "evidence_name": "教材证据-72B1E2EC"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-3E1524A6ED10C77D",
+      "source_name": "第二节慢性心力衰竭定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-BACKFILL-831A4E2DCE41C056",
+      "evidence_name": "教材证据-CE41C056"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-4A8CCC4BE1C2E1B5",
+      "source_name": "第一节心力衰竭总论定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-BACKFILL-43827C373CADD12B",
+      "evidence_name": "教材证据-3CADD12B"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-55AC3B125CF2A95C",
+      "source_name": "三、微血管疾病定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-DF1E4537E55EEC1E",
+      "evidence_name": "教材证据-E55EEC1E"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-5886B018E578490E",
+      "source_name": "四、房室交界区相关的折返性心动过速定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-B7ECDF6F2DB4110C",
+      "evidence_name": "教材证据-2DB4110C"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-588888FB8B569A16",
+      "source_name": "第三节糖尿病与心力衰竭定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-6CFE95A1103BE7DF",
+      "evidence_name": "教材证据-103BE7DF"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-5A15F2309FAF2123",
+      "source_name": "第二节扩张型心肌病定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-796E080AFBA9ABC6",
+      "evidence_name": "教材证据-FBA9ABC6"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-5AC72A90D64ECBF5",
+      "source_name": "四、心房颤动定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-00166C5BABBA84A4",
+      "evidence_name": "教材证据-ABBA84A4"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-65C05570C18859BD",
+      "source_name": "第二节窦性心律失常定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-12C3F899EE100558",
+      "evidence_name": "教材证据-EE100558"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-660DFDB9BD0968B6",
+      "source_name": "第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-1BB281BF37AE5797",
+      "evidence_name": "教材证据-37AE5797"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-69FC2793F3F472E6",
+      "source_name": "第二节糖尿病与冠心病定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-6DD4450E3AA2FE87",
+      "evidence_name": "教材证据-3AA2FE87"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-6BB58D445417B8D4",
+      "source_name": "第三节慢性冠状动脉综合征定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-D6EAFD139DD4F1DC",
+      "evidence_name": "教材证据-9DD4F1DC"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-6C4D15CCE02AF22B",
+      "source_name": "一、心脏电复律与电除颤定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-6B594964B6CC53A3",
+      "evidence_name": "教材证据-B6CC53A3"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-71D124690C69C1E4",
+      "source_name": "一、稳定型心绞痛定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-48353A7C6F4F5BAC",
+      "evidence_name": "教材证据-6F4F5BAC"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-79731FBDCEC3CC4E",
+      "source_name": "二、房性心动过速定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-12B829981E43696F",
+      "evidence_name": "教材证据-1E43696F"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-7C7545ECAD6D0326",
+      "source_name": "五、病态窦房结综合征定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-FF95C308EB38E46E",
+      "evidence_name": "教材证据-EB38E46E"
+    },
+    {
+      "source_type": "Definition",
+      "source_code": "CARD-SKELETON-20260709-DEFINITION-84493C39EE988230",
+      "source_name": "三、导管消融定义",
+      "evidence_type": "Evidence",
+      "evidence_code": "CARD-SKELETON-20260709-EVID-52B5DB94584D4B7A",
+      "evidence_name": "教材证据-584D4B7A"
+    }
+  ]
+}
