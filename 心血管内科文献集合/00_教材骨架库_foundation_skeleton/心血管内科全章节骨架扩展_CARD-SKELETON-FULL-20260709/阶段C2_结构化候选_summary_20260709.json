@@ -1,0 +1,14 @@
+{
+  "batch_id": "CARD-SKELETON-FULL-20260709",
+  "generated_at": "2026-07-09 14:57:04",
+  "input": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_教材骨架库_foundation_skeleton\\心血管内科全章节骨架扩展_CARD-SKELETON-FULL-20260709\\阶段D1_全章节教材骨架原文锚点_evidence_20260709.jsonl",
+  "dict_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\术语字典",
+  "evidence_anchor_count": 348,
+  "candidate_node_count": 1282,
+  "candidate_relation_count": 2092,
+  "evidence_link_count": 2215,
+  "audit_count": 348,
+  "not_imported_to_neo4j": true,
+  "import_status": "local_candidate_not_imported",
+  "next_required": "G1_deep_audit_then_curated_delta"
+}

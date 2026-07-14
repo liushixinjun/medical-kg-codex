@@ -1,0 +1,21 @@
+{
+  "status": "success",
+  "batch_id": "CARD-SKELETON-FULL-20260709",
+  "nodes": {
+    "input_node_count": 1798,
+    "merged_node_count": 1798
+  },
+  "relations": {
+    "input_relation_count": 5146,
+    "merged_relation_count": 5146,
+    "deleted_legacy_relationship_count": 0,
+    "action_counts": {
+      "create": 5146
+    },
+    "postcheck_bad_count": 0
+  },
+  "source_files": [
+    "阶段C5_curated_delta_nodes_20260709.jsonl",
+    "阶段C5_curated_delta_relations_20260709.jsonl"
+  ]
+}

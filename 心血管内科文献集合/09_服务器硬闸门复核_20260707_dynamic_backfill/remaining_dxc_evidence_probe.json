@@ -1,0 +1,468 @@
+[
+  {
+    "disease_code": "DIS-CARD-ARR-BRUGADA",
+    "disease_name": "Brugada综合征",
+    "dx_code": "DXC-CARD-REQ-A69DF947813A",
+    "dx_name": "Brugada综合征诊断标准",
+    "evidence_codes": [],
+    "resolved_evidence_codes": [
+      "EVD-0174E53D695CDE0D168C-BRUGADA",
+      "EVD-0C285669574AD781E59C-BRUGADA",
+      "EVD-15E5A74C063949CDA946-BRUGADA",
+      "EVD-1DFD2B20A3502360B4ED-BRUGADA",
+      "EVD-21ECFB82664F6A921D42-BRUGADA"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-CPVT",
+    "disease_name": "儿茶酚胺敏感性多形性室性心动过速",
+    "dx_code": "DXC-CARD-REQ-FE58A0E71FEE",
+    "dx_name": "儿茶酚胺敏感性多形性室性心动过速诊断标准",
+    "evidence_codes": [],
+    "resolved_evidence_codes": [
+      "EVD-0174E53D695CDE0D168C-CPVT",
+      "EVD-0E36E752D1BE06A90962-CPVT",
+      "EVD-142A2DE4B90AA3A0AB2B-CPVT",
+      "EVD-1D57B5A6BCB983D88DA9-CPVT",
+      "EVD-1DFD2B20A3502360B4ED-CPVT"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-LQTS",
+    "disease_name": "长QT间期综合征",
+    "dx_code": "DXC-CARD-REQ-4FDD69B1DF11",
+    "dx_name": "长QT间期综合征诊断标准",
+    "evidence_codes": [],
+    "resolved_evidence_codes": [
+      "EVD-00323EE9BEA35BEB60BB-LQTS",
+      "EVD-03876E6C66267C5C1BB5-LQTS",
+      "EVD-03B05326ADCB1E7378E3-LQTS",
+      "EVD-0557CABCC078CAD7F14C-LQTS",
+      "EVD-0C285669574AD781E59C-LQTS"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-NSVT",
+    "disease_name": "非持续性室性心动过速",
+    "dx_code": "DXC-CARD-REQ-C31462862B56",
+    "dx_name": "非持续性室性心动过速诊断标准",
+    "evidence_codes": [],
+    "resolved_evidence_codes": [
+      "EVD-080C7F9EFF4817993B8A-NSVT",
+      "EVD-0C0D51CCD900B97B1AFD-NSVT",
+      "EVD-1B71353C7B850F1F4A8A-NSVT",
+      "EVD-1B7358756C77DA82726A-NSVT",
+      "EVD-22F1D1DDC36B0B600F0B-NSVT"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-PVC",
+    "disease_name": "室性期前收缩",
+    "dx_code": "DXC-CARD-E67828C4B263",
+    "dx_name": "室性期前收缩诊断标准",
+    "evidence_codes": [
+      "EVD-77E575313290309ACD7E-PVC",
+      "EVD-TB-9BBB78EB9A8F341619D9-PVC",
+      "EVD-B80172311264680BDAC5-PVC",
+      "EVD-TB-C8D90A4B2E725F3E6B4C-PVC"
+    ],
+    "resolved_evidence_codes": [
+      "EVD-77E575313290309ACD7E-PVC",
+      "EVD-B80172311264680BDAC5-PVC",
+      "EVD-TB-9BBB78EB9A8F341619D9-PVC",
+      "EVD-TB-C8D90A4B2E725F3E6B4C-PVC"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-SQTS",
+    "disease_name": "短QT间期综合征",
+    "dx_code": "DXC-CARD-REQ-F5E5DC1892EC",
+    "dx_name": "短QT间期综合征诊断标准",
+    "evidence_codes": [],
+    "resolved_evidence_codes": [
+      "EVD-0C285669574AD781E59C-SQTS",
+      "EVD-12525D6B7FDABF703573-SQTS",
+      "EVD-20ECED296C7EE98CF1D7-SQTS",
+      "EVD-308FEE043A398A00ED9C-SQTS",
+      "EVD-31FED4A2CB7FDE6D6F6B-SQTS"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-TDP",
+    "disease_name": "尖端扭转型室性心动过速",
+    "dx_code": "DXC-CARD-REQ-187786BCF29C",
+    "dx_name": "尖端扭转型室性心动过速诊断标准",
+    "evidence_codes": [],
+    "resolved_evidence_codes": [
+      "EVD-00323EE9BEA35BEB60BB-TDP",
+      "EVD-01F821FAAA2B8A8C5F27-TDP",
+      "EVD-03876E6C66267C5C1BB5-TDP",
+      "EVD-0557CABCC078CAD7F14C-TDP",
+      "EVD-05843C8237A69A062548-TDP"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-VA",
+    "disease_name": "室性心律失常",
+    "dx_code": "DXC-CARD-REQ-206010AB3275",
+    "dx_name": "室性心律失常诊断标准",
+    "evidence_codes": [],
+    "resolved_evidence_codes": [
+      "EVD-00323EE9BEA35BEB60BB-VA",
+      "EVD-01226DDDBF2566E8F84E-VA",
+      "EVD-016B94527BFF83301D33-VA",
+      "EVD-02C09DB539E2AD3ADB44-VA",
+      "EVD-03457637AF26C7A4FF24-VA"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-VF",
+    "disease_name": "心室扑动与心室颤动",
+    "dx_code": "DXC-CARD-8ACA8BC65FBE",
+    "dx_name": "心室扑动与心室颤动诊断标准",
+    "evidence_codes": [
+      "EVD-TB-0A56361AC757170F89F4-VF",
+      "EVD-TB-C001445EDA5318276FDC-VF",
+      "EVD-TB-29E0C7E19BA5462795AB-VF"
+    ],
+    "resolved_evidence_codes": [
+      "EVD-TB-0A56361AC757170F89F4-VF",
+      "EVD-TB-29E0C7E19BA5462795AB-VF",
+      "EVD-TB-C001445EDA5318276FDC-VF"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-VT",
+    "disease_name": "持续性室性心动过速",
+    "dx_code": "DXC-CARD-AA6BAD3066A3",
+    "dx_name": "持续性室性心动过速诊断标准",
+    "evidence_codes": [
+      "EVD-TB-511EBB969AE18A9B8533-VT",
+      "EVD-TB-C8D90A4B2E725F3E6B4C-VT",
+      "EVD-AA503EA3126E4F65D33E-VT",
+      "EVD-TB-9BBB78EB9A8F341619D9-VT",
+      "EVD-TB-768C920AFBBFC4222902-VT"
+    ],
+    "resolved_evidence_codes": [
+      "EVD-AA503EA3126E4F65D33E-VT",
+      "EVD-TB-511EBB969AE18A9B8533-VT",
+      "EVD-TB-768C920AFBBFC4222902-VT",
+      "EVD-TB-9BBB78EB9A8F341619D9-VT",
+      "EVD-TB-C8D90A4B2E725F3E6B4C-VT"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-ACS",
+    "disease_name": "急性冠脉综合征",
+    "dx_code": "DXC-CARD-30F656ACB669",
+    "dx_name": "急性冠脉综合征诊断标准",
+    "evidence_codes": [
+      "EVD-A757284F10089B5E60ED-ACS"
+    ],
+    "resolved_evidence_codes": [
+      "EVD-A757284F10089B5E60ED-ACS"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-CCS",
+    "disease_name": "慢性冠脉综合征",
+    "dx_code": "DXC-CARD-CAD-CCS-CURATED-20260628",
+    "dx_name": "慢性冠脉综合征诊断标准",
+    "evidence_codes": [],
+    "resolved_evidence_codes": [
+      "EVD-00500E56838521D1853C-CCS",
+      "EVD-00703DC4FABEFCC1BD9D-CCS",
+      "EVD-0074E088124304BFDA77-CCS",
+      "EVD-019FE93DC48C8CD8DAC2-CCS",
+      "EVD-02C69371610F375E1A8D-CCS"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-ICM",
+    "disease_name": "缺血性心肌病",
+    "dx_code": "DXC-CARD-097806EACD3F",
+    "dx_name": "缺血性心肌病诊断标准",
+    "evidence_codes": [
+      "EVD-0B86F000BFC1DF91F705-ICM"
+    ],
+    "resolved_evidence_codes": [
+      "EVD-0B86F000BFC1DF91F705-ICM"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-NSTEMI",
+    "disease_name": "非ST段抬高型心肌梗死",
+    "dx_code": "DXC-CARD-AD026DED6958",
+    "dx_name": "非ST段抬高型心肌梗死诊断标准",
+    "evidence_codes": [
+      "EVD-C3D0D21EAE4C6BF3996A-NSTEMI"
+    ],
+    "resolved_evidence_codes": [
+      "EVD-C3D0D21EAE4C6BF3996A-NSTEMI"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-OLD-MI",
+    "disease_name": "陈旧性心肌梗死",
+    "dx_code": "DXC-CARD-CAD-OLD-MI-CURATED-20260628",
+    "dx_name": "陈旧性心肌梗死诊断依据",
+    "evidence_codes": [],
+    "resolved_evidence_codes": [
+      "EVD-00500E56838521D1853C-MI",
+      "EVD-031BA794407F74F55B8B-MI",
+      "EVD-0557F7773247CA1A79EC-MI",
+      "EVD-0A7C5931A82DC7AF2B3A-MI",
+      "EVD-0AF47B0E09B86CEE0B03-MI"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+    "disease_name": "隐匿性冠心病",
+    "dx_code": "DXC-CARD-CAD-SILENT-ISCHEMIA-CURATED-20260628",
+    "dx_name": "隐匿性冠心病诊断标准",
+    "evidence_codes": [],
+    "resolved_evidence_codes": [
+      "EVD-70A672875FB90E7D7A27-ISCHEMIA",
+      "EVD-7CE259B029C35858DB24-ISCHEMIA",
+      "EVD-9327FDF6E778000FB760-ISCHEMIA",
+      "EVD-F8F46C61DE06145B1198-ISCHEMIA",
+      "EVD-TB-3E0E5015ADEF86B101BF-ISCHEMIA"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-STABLE-ANGINA",
+    "disease_name": "稳定型心绞痛",
+    "dx_code": "DXC-CARD-F0FABEDE13D8",
+    "dx_name": "稳定型心绞痛诊断标准",
+    "evidence_codes": [
+      "EVD-28A3B9CF0363F965278F-ANGINA"
+    ],
+    "resolved_evidence_codes": [
+      "EVD-28A3B9CF0363F965278F-ANGINA"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-UA",
+    "disease_name": "不稳定型心绞痛",
+    "dx_code": "DXC-CARD-CAD-UA-CURATED-20260628",
+    "dx_name": "不稳定型心绞痛诊断标准",
+    "evidence_codes": [],
+    "resolved_evidence_codes": [
+      "EVD-03B4C8868CBC1258E2A5-UA",
+      "EVD-06DDCBBA999D5DF55BFF-UA",
+      "EVD-091EF3EE48C1145A0CCC-UA",
+      "EVD-0AAFE16ADDBC86048914-UA",
+      "EVD-0CCD7C1153D1B11A8A82-UA"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CM-ABVC",
+    "disease_name": "致心律失常性双心室心肌病",
+    "dx_code": "DXC-CARD-CM-ABVC-PADUA-BIVENTRICULAR",
+    "dx_name": "ABVC双心室受累诊断流程",
+    "evidence_codes": [],
+    "resolved_evidence_codes": [
+      "EVD-08295DA4EED85656A764-ABVC",
+      "EVD-1531F948DBF3F4B93574-ABVC",
+      "EVD-2242D7ECFF04974226D8-ABVC",
+      "EVD-372D6AE9E53CCA620998-ABVC",
+      "EVD-4A1E4087CE013F3ECAA8-ABVC"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CM-ACM",
+    "disease_name": "致心律失常性心肌病",
+    "dx_code": "DXC-CARD-E0CC534A2482",
+    "dx_name": "致心律失常性心肌病诊断标准",
+    "evidence_codes": [
+      "EVD-EA4F5846943FD2EDC5A2-ACM",
+      "EVD-FFEC8CA65DBBB1B8118F-ACM"
+    ],
+    "resolved_evidence_codes": [
+      "EVD-EA4F5846943FD2EDC5A2-ACM",
+      "EVD-FFEC8CA65DBBB1B8118F-ACM"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CM-ALVC",
+    "disease_name": "致心律失常性左心室心肌病",
+    "dx_code": "DXC-CARD-CM-ALVC-PADUA-LV",
+    "dx_name": "ALVC左心室受累诊断流程",
+    "evidence_codes": [],
+    "resolved_evidence_codes": [
+      "EVD-066552C60477CD73B70D-ALVC",
+      "EVD-08295DA4EED85656A764-ALVC",
+      "EVD-1531F948DBF3F4B93574-ALVC",
+      "EVD-166438AB9D1A5DD206B5-ALVC",
+      "EVD-1E866D7222215EE772CA-ALVC"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CM-AMYLOID",
+    "disease_name": "淀粉样变心肌病",
+    "dx_code": "DXC-CARD-C5CD88A6E22B",
+    "dx_name": "淀粉样变心肌病诊断标准",
+    "evidence_codes": [
+      "EVD-5F2A35025261D39FCAFB-AMYLOID",
+      "EVD-58DE7E71088468292683-AMYLOID",
+      "EVD-FBB22B98ABF7CAAFF24A-AMYLOID",
+      "EVD-165940DDED43FC899516-AMYLOID"
+    ],
+    "resolved_evidence_codes": [
+      "EVD-165940DDED43FC899516-AMYLOID",
+      "EVD-58DE7E71088468292683-AMYLOID",
+      "EVD-5F2A35025261D39FCAFB-AMYLOID",
+      "EVD-FBB22B98ABF7CAAFF24A-AMYLOID"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CM-ARVC",
+    "disease_name": "致心律失常性右心室心肌病",
+    "dx_code": "DXC-CARD-C8CFD05F6624",
+    "dx_name": "致心律失常性右心室心肌病诊断标准",
+    "evidence_codes": [
+      "EVD-D603EB30933722472AC6-ARVC",
+      "EVD-8880421ABCE71468D096-ARVC",
+      "EVD-6DF7D3F149DDC883AF79-ARVC",
+      "EVD-983FA90A69713036EC66-ARVC"
+    ],
+    "resolved_evidence_codes": [
+      "EVD-6DF7D3F149DDC883AF79-ARVC",
+      "EVD-8880421ABCE71468D096-ARVC",
+      "EVD-983FA90A69713036EC66-ARVC",
+      "EVD-D603EB30933722472AC6-ARVC"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CM-ATRIAL",
+    "disease_name": "心房心肌病",
+    "dx_code": "DXC-CARD-CM-ATRIAL-EHRA-CLASS",
+    "dx_name": "EHRA心房心肌病组织学分型诊断框架",
+    "evidence_codes": [],
+    "resolved_evidence_codes": [
+      "EVD-0EBC528F9F2374DA5B28-ATRIAL",
+      "EVD-28A6FE4B0E63BA664B7E-ATRIAL",
+      "EVD-74C08FDA665F90308028-ATRIAL",
+      "EVD-773C089A9E762740DADF-ATRIAL",
+      "EVD-B7158EA8F42BD3742755-ATRIAL"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CM-DCM",
+    "disease_name": "扩张型心肌病",
+    "dx_code": "DXC-CARD-16CFF57650C6",
+    "dx_name": "扩张型心肌病诊断标准",
+    "evidence_codes": [
+      "EVD-TB-5908340B73B73B1642EC-DCM",
+      "EVD-27EF0299F4DE9D99C389-DCM",
+      "EVD-26CD5802C3C5E0A2B148-DCM",
+      "EVD-C14CF5C9764CDA9CAE55-DCM",
+      "EVD-TB-7F0A22117F8FE0172CF9-DCM"
+    ],
+    "resolved_evidence_codes": [
+      "EVD-26CD5802C3C5E0A2B148-DCM",
+      "EVD-27EF0299F4DE9D99C389-DCM",
+      "EVD-C14CF5C9764CDA9CAE55-DCM",
+      "EVD-TB-5908340B73B73B1642EC-DCM",
+      "EVD-TB-7F0A22117F8FE0172CF9-DCM"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CM-FABRY",
+    "disease_name": "法布雷病心肌病",
+    "dx_code": "DXC-CARD-CM-FABRY-ENZYME-GENE-EMB",
+    "dx_name": "酶活性、基因检测和心肌活检诊断",
+    "evidence_codes": [],
+    "resolved_evidence_codes": [
+      "EVD-00CF1703DDCBA6474E42-FABRY",
+      "EVD-10883BFD34EA033FDF6E-FABRY",
+      "EVD-171C192F1182A0CE6292-FABRY",
+      "EVD-19A7AED44FBB561C23FB-FABRY",
+      "EVD-305FAC2C36B8A121E5B4-FABRY"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CM-HCM",
+    "disease_name": "肥厚型心肌病",
+    "dx_code": "DXC-CARD-4335F6498D1C",
+    "dx_name": "肥厚型心肌病诊断标准",
+    "evidence_codes": [
+      "EVD-EB986126E19DF663939B-HCM",
+      "EVD-FFEC8CA65DBBB1B8118F-HCM",
+      "EVD-TB-D6E25221BF9444B19E9A-HCM",
+      "EVD-DBFBC9CE4B1276B89925-HCM",
+      "EVD-D38F0492EA9F9200762F-HCM"
+    ],
+    "resolved_evidence_codes": [
+      "EVD-D38F0492EA9F9200762F-HCM",
+      "EVD-DBFBC9CE4B1276B89925-HCM",
+      "EVD-EB986126E19DF663939B-HCM",
+      "EVD-FFEC8CA65DBBB1B8118F-HCM",
+      "EVD-TB-D6E25221BF9444B19E9A-HCM"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CM-NDLVCM",
+    "disease_name": "非扩张型左心室心肌病",
+    "dx_code": "DXC-CARD-CM-NDLVCM-CMR-LGE",
+    "dx_name": "CMR-LGE非缺血性瘢痕诊断依据",
+    "evidence_codes": [],
+    "resolved_evidence_codes": [
+      "EVD-0AE31689594635E9B8FD-NDLVCM",
+      "EVD-0EBC528F9F2374DA5B28-NDLVCM",
+      "EVD-105ACC5EF6AEFCD23F73-NDLVCM",
+      "EVD-16AFDD428B8E4AC6AF6F-NDLVCM",
+      "EVD-177ACB397FF1D2B0CC3F-NDLVCM"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CM-RCM",
+    "disease_name": "限制型心肌病",
+    "dx_code": "DXC-CARD-F68ECA7670AB",
+    "dx_name": "限制型心肌病诊断标准",
+    "evidence_codes": [
+      "EVD-FFEC8CA65DBBB1B8118F-RCM",
+      "EVD-26CD5802C3C5E0A2B148-RCM",
+      "EVD-3378C7AF19D8C5D6D836-RCM",
+      "EVD-TB-B9678D452E636AA92F4C-RCM"
+    ],
+    "resolved_evidence_codes": [
+      "EVD-26CD5802C3C5E0A2B148-RCM",
+      "EVD-3378C7AF19D8C5D6D836-RCM",
+      "EVD-FFEC8CA65DBBB1B8118F-RCM",
+      "EVD-TB-B9678D452E636AA92F4C-RCM"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-SCD-ARREST",
+    "disease_name": "心脏骤停",
+    "dx_code": "DXC-CARD-663B41A63239",
+    "dx_name": "心脏骤停诊断标准",
+    "evidence_codes": [
+      "EVD-TB-61418D55351291166001-ARREST",
+      "EVD-TB-F75A4CDE65FB59482C81-ARREST"
+    ],
+    "resolved_evidence_codes": [
+      "EVD-TB-61418D55351291166001-ARREST",
+      "EVD-TB-F75A4CDE65FB59482C81-ARREST"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-SCD-SUDDEN",
+    "disease_name": "心脏性猝死",
+    "dx_code": "DXC-CARD-6B002C8433DE",
+    "dx_name": "心脏性猝死诊断标准",
+    "evidence_codes": [
+      "EVD-2AA60383D7A330521376-SUDDEN",
+      "EVD-4E46A29E2F905FA473FD-SUDDEN",
+      "EVD-9115EEE0F843877EEC13-SUDDEN",
+      "EVD-D38F0492EA9F9200762F-SUDDEN"
+    ],
+    "resolved_evidence_codes": [
+      "EVD-2AA60383D7A330521376-SUDDEN",
+      "EVD-4E46A29E2F905FA473FD-SUDDEN",
+      "EVD-9115EEE0F843877EEC13-SUDDEN",
+      "EVD-D38F0492EA9F9200762F-SUDDEN"
+    ]
+  }
+]

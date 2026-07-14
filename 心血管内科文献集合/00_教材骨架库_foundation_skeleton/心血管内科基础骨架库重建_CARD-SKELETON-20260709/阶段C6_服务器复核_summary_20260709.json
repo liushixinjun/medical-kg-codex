@@ -1,0 +1,216 @@
+{
+  "batch_id": "CARD-SKELETON-20260709",
+  "generated_at": "2026-07-09 13:10:59",
+  "batch_counts": {
+    "batch_nodes": 1331,
+    "batch_kgnodes": 1331,
+    "batch_relations": 2608
+  },
+  "batch_entity_types": [
+    {
+      "entityType": "Evidence",
+      "count": 496
+    },
+    {
+      "entityType": "DefinitionComponent",
+      "count": 130
+    },
+    {
+      "entityType": "Pathophysiology",
+      "count": 105
+    },
+    {
+      "entityType": "Etiology",
+      "count": 92
+    },
+    {
+      "entityType": "TreatmentPlan",
+      "count": 88
+    },
+    {
+      "entityType": "DiagnosisCriteriaComponent",
+      "count": 70
+    },
+    {
+      "entityType": "DiseaseClassification",
+      "count": 55
+    },
+    {
+      "entityType": "Prevention",
+      "count": 54
+    },
+    {
+      "entityType": "Definition",
+      "count": 51
+    },
+    {
+      "entityType": "DifferentialDiagnosis",
+      "count": 47
+    },
+    {
+      "entityType": "TextbookSection",
+      "count": 44
+    },
+    {
+      "entityType": "FollowUp",
+      "count": 18
+    },
+    {
+      "entityType": "DiseaseCategory",
+      "count": 13
+    },
+    {
+      "entityType": "Prognosis",
+      "count": 11
+    },
+    {
+      "entityType": "Epidemiology",
+      "count": 10
+    },
+    {
+      "entityType": "LabTest",
+      "count": 8
+    },
+    {
+      "entityType": "Sign",
+      "count": 8
+    },
+    {
+      "entityType": "Symptom",
+      "count": 7
+    },
+    {
+      "entityType": "Procedure",
+      "count": 6
+    },
+    {
+      "entityType": "RiskFactor",
+      "count": 6
+    },
+    {
+      "entityType": "Medication",
+      "count": 5
+    },
+    {
+      "entityType": "Exam",
+      "count": 4
+    },
+    {
+      "entityType": "Complication",
+      "count": 2
+    },
+    {
+      "entityType": "ClinicalManifestation",
+      "count": 1
+    }
+  ],
+  "batch_relation_types": [
+    {
+      "relationType": "HAS_EVIDENCE",
+      "count": 1316
+    },
+    {
+      "relationType": "HAS_DEFINITION_COMPONENT",
+      "count": 130
+    },
+    {
+      "relationType": "USES_MEDICATION",
+      "count": 128
+    },
+    {
+      "relationType": "HAS_PATHOPHYSIOLOGY",
+      "count": 105
+    },
+    {
+      "relationType": "HAS_EXAM",
+      "count": 103
+    },
+    {
+      "relationType": "HAS_SYMPTOM",
+      "count": 97
+    },
+    {
+      "relationType": "HAS_ETIOLOGY",
+      "count": 93
+    },
+    {
+      "relationType": "HAS_TREATMENT_PLAN",
+      "count": 89
+    },
+    {
+      "relationType": "HAS_DIAGNOSTIC_COMPONENT",
+      "count": 71
+    },
+    {
+      "relationType": "HAS_SIGN",
+      "count": 70
+    },
+    {
+      "relationType": "HAS_PROCEDURE",
+      "count": 58
+    },
+    {
+      "relationType": "HAS_RISK_FACTOR",
+      "count": 58
+    },
+    {
+      "relationType": "HAS_CLASSIFICATION",
+      "count": 55
+    },
+    {
+      "relationType": "HAS_PREVENTION",
+      "count": 54
+    },
+    {
+      "relationType": "HAS_DEFINITION",
+      "count": 51
+    },
+    {
+      "relationType": "HAS_DIFFERENTIAL_DIAGNOSIS",
+      "count": 47
+    },
+    {
+      "relationType": "HAS_LAB_TEST",
+      "count": 38
+    },
+    {
+      "relationType": "HAS_FOLLOW_UP",
+      "count": 18
+    },
+    {
+      "relationType": "HAS_PROGNOSIS",
+      "count": 11
+    },
+    {
+      "relationType": "HAS_EPIDEMIOLOGY",
+      "count": 10
+    },
+    {
+      "relationType": "HAS_COMPLICATION",
+      "count": 5
+    },
+    {
+      "relationType": "HAS_CLINICAL_MANIFESTATION",
+      "count": 1
+    }
+  ],
+  "checks": {
+    "non_kgnode_batch_nodes": 0,
+    "duplicate_type_name_in_batch": 0,
+    "duplicate_semantic_relations_in_batch": 0,
+    "relations_missing_evidence_ids": 0,
+    "formal_cdss_ready_nodes": 0,
+    "formal_cdss_ready_relations": 0,
+    "evidence_missing_excerpt": 0,
+    "evidence_without_inbound_relation": 0,
+    "technical_code_like_primary_name": 0
+  },
+  "status": "passed",
+  "global_overview": {
+    "kg_nodes": 37189,
+    "entity_types": 37,
+    "relationships": 110665
+  },
+  "disease_category_count": 25,
+  "disease_count": 100
+}

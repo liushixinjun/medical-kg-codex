@@ -3,6 +3,7 @@ from __future__ import annotations
 import base64
 import csv
 import json
+import os
 import urllib.request
 from datetime import datetime
 from pathlib import Path
@@ -15,8 +16,13 @@ TODAY = "20260709"
 
 
 def post(statement: str, parameters: dict[str, Any] | None = None) -> dict[str, Any]:
-    url = "http://192.168.3.27:7474/db/neo4j/tx/commit"
-    token = base64.b64encode("neo4j:zysoft@2024".encode("utf-8")).decode("ascii")
+    http_root = os.environ.get("NEO4J_HTTP", "http://192.168.3.27:7474").rstrip("/")
+    username = os.environ.get("NEO4J_USERNAME", "neo4j")
+    password = os.environ.get("NEO4J_PASSWORD")
+    if not password:
+        raise RuntimeError("缺少 NEO4J_PASSWORD 环境变量，禁止在脚本中硬编码数据库密码。")
+    url = f"{http_root}/db/neo4j/tx/commit"
+    token = base64.b64encode(f"{username}:{password}".encode("utf-8")).decode("ascii")
     payload = json.dumps(
         {"statements": [{"statement": statement, "parameters": parameters or {}}]},
         ensure_ascii=False,

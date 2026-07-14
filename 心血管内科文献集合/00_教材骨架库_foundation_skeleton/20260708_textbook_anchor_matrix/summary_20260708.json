@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-07-08 09:16:41",
+  "docx": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\心血管内科\\书籍教材\\《内科学（第10版）》.docx",
+  "pdf": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\心血管内科\\书籍教材\\《内科学（第10版）》.pdf",
+  "p0_input": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\99_教材骨架质量审计_textbook_skeleton_audit\\20260708_074929\\priority_four_p0_textbook_skeleton_audit.csv",
+  "segment_count": 81,
+  "p0_disease_count": 68,
+  "repair_candidate_count": 43,
+  "status_counts": {
+    "ready_for_import_after_sampling": 28,
+    "ready_for_review": 15,
+    "needs_manual_anchor_review": 17,
+    "needs_guideline_or_manual_source": 8
+  },
+  "match_type_counts": {
+    "exact_title": 30,
+    "overview_mention": 13,
+    "alias_title": 1,
+    "body_mention": 16,
+    "no_textbook_anchor": 8
+  },
+  "scope_policy": "四类只是优先验证集；通过硬闸门后自动扩大到心血管内科其他疾病。",
+  "outputs": {
+    "outline": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_教材骨架库_foundation_skeleton\\20260708_textbook_anchor_matrix\\textbook_cardiology_chapter_outline_20260708.csv",
+    "matrix": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_教材骨架库_foundation_skeleton\\20260708_textbook_anchor_matrix\\textbook_skeleton_matrix_priority_four_20260708.csv",
+    "repair_jsonl": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_教材骨架库_foundation_skeleton\\20260708_textbook_anchor_matrix\\p0_definition_repair_input_priority_four_20260708.jsonl"
+  }
+}

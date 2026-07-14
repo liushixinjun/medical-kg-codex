@@ -1,0 +1,1080 @@
+{
+  "summary": [
+    {
+      "batch_id": "BATCH-CARD-AF-CDSS-20260709-001",
+      "disease_category": "心房颤动（房颤，AF）",
+      "disease_count": 1,
+      "disease_names": [
+        "心房颤动"
+      ],
+      "pathway_count": 1,
+      "stage_count": 4,
+      "rule_count": 4,
+      "recommendation_count": 4,
+      "action_count": 34,
+      "evidence_count": 12,
+      "guideline_count": 5
+    },
+    {
+      "batch_id": "BATCH-CARD-BRADY-AVB-CDSS-20260709-001",
+      "disease_category": "缓慢性心律失常及传导阻滞",
+      "disease_count": 9,
+      "disease_names": [
+        "房室传导阻滞",
+        "一度房室传导阻滞",
+        "二度房室传导阻滞",
+        "三度房室传导阻滞",
+        "束支传导阻滞",
+        "缓慢性心律失常",
+        "窦房传导阻滞",
+        "窦性心动过缓",
+        "窦房结功能障碍"
+      ],
+      "pathway_count": 9,
+      "stage_count": 36,
+      "rule_count": 36,
+      "recommendation_count": 36,
+      "action_count": 88,
+      "evidence_count": 70,
+      "guideline_count": 30
+    },
+    {
+      "batch_id": "BATCH-CARD-CAD-CDSS-20260709-001",
+      "disease_category": "冠状动脉粥样硬化性心脏病",
+      "disease_count": 10,
+      "disease_names": [
+        "慢性冠脉综合征",
+        "稳定型心绞痛",
+        "缺血性心肌病",
+        "急性冠脉综合征",
+        "不稳定型心绞痛",
+        "急性心肌梗死",
+        "ST段抬高型心肌梗死",
+        "非ST段抬高型心肌梗死",
+        "陈旧性心肌梗死",
+        "隐匿性冠心病"
+      ],
+      "pathway_count": 10,
+      "stage_count": 29,
+      "rule_count": 33,
+      "recommendation_count": 33,
+      "action_count": 127,
+      "evidence_count": 86,
+      "guideline_count": 43
+    },
+    {
+      "batch_id": "BATCH-CARD-CM-CDSS-20260709-001",
+      "disease_category": "冠状动脉粥样硬化性心脏病",
+      "disease_count": 1,
+      "disease_names": [
+        "缺血性心肌病"
+      ],
+      "pathway_count": 1,
+      "stage_count": 2,
+      "rule_count": 2,
+      "recommendation_count": 2,
+      "action_count": 8,
+      "evidence_count": 5,
+      "guideline_count": 1
+    },
+    {
+      "batch_id": "BATCH-CARD-CM-CDSS-20260709-001",
+      "disease_category": "心肌病",
+      "disease_count": 11,
+      "disease_names": [
+        "肥厚型心肌病",
+        "扩张型心肌病",
+        "非扩张型左心室心肌病",
+        "致心律失常性右心室心肌病",
+        "限制型心肌病",
+        "致心律失常性双心室心肌病",
+        "致心律失常性心肌病",
+        "致心律失常性左心室心肌病",
+        "淀粉样变心肌病",
+        "心房心肌病",
+        "法布雷病心肌病"
+      ],
+      "pathway_count": 11,
+      "stage_count": 26,
+      "rule_count": 28,
+      "recommendation_count": 28,
+      "action_count": 112,
+      "evidence_count": 64,
+      "guideline_count": 40
+    },
+    {
+      "batch_id": "BATCH-CARD-HF-CDSS-20260709-001",
+      "disease_category": "心力衰竭",
+      "disease_count": 11,
+      "disease_names": [
+        "慢性心力衰竭",
+        "急性心力衰竭",
+        "心力衰竭",
+        "全心衰竭",
+        "透析患者慢性心力衰竭",
+        "射血分数轻度降低的心力衰竭",
+        "射血分数保留的心力衰竭",
+        "射血分数降低的心力衰竭",
+        "左心衰竭",
+        "心肌梗死后心力衰竭",
+        "右心衰竭"
+      ],
+      "pathway_count": 11,
+      "stage_count": 44,
+      "rule_count": 44,
+      "recommendation_count": 44,
+      "action_count": 150,
+      "evidence_count": 80,
+      "guideline_count": 41
+    },
+    {
+      "batch_id": "BATCH-CARD-SVT-AFL-CDSS-20260709-001",
+      "disease_category": "室上性心动过速及心房扑动",
+      "disease_count": 6,
+      "disease_names": [
+        "房性心动过速",
+        "心房扑动",
+        "房室结折返性心动过速",
+        "房室折返性心动过速",
+        "室上性心动过速",
+        "预激综合征"
+      ],
+      "pathway_count": 6,
+      "stage_count": 24,
+      "rule_count": 24,
+      "recommendation_count": 24,
+      "action_count": 184,
+      "evidence_count": 48,
+      "guideline_count": 22
+    },
+    {
+      "batch_id": "BATCH-CARD-VA-SCD-CDSS-20260709-001",
+      "disease_category": "室性心律失常及心脏性猝死",
+      "disease_count": 12,
+      "disease_names": [
+        "室性期前收缩",
+        "持续性室性心动过速",
+        "心室扑动与心室颤动",
+        "长QT间期综合征",
+        "Brugada综合征",
+        "儿茶酚胺敏感性多形性室性心动过速",
+        "心脏骤停",
+        "心脏性猝死",
+        "非持续性室性心动过速",
+        "短QT间期综合征",
+        "尖端扭转型室性心动过速",
+        "室性心律失常"
+      ],
+      "pathway_count": 12,
+      "stage_count": 48,
+      "rule_count": 48,
+      "recommendation_count": 48,
+      "action_count": 343,
+      "evidence_count": 76,
+      "guideline_count": 41
+    }
+  ],
+  "samples": [
+    {
+      "disease_code": "DIS-CARD-ARR-AF",
+      "disease_name": "心房颤动",
+      "batch_id": "BATCH-CARD-AF-CDSS-20260709-001",
+      "stage_code": "STAGE-CDSS-AF-ARR-AF-01-DIAG",
+      "stage_name": "心房颤动诊断确认阶段",
+      "stage_type": null,
+      "stage_order": 1,
+      "rule_code": "RULE-CDSS-AF-ARR-AF-01-01-DIAG",
+      "rule_name": "心房颤动诊断确认阶段规则",
+      "recommendation_code": "REC-CDSS-AF-ARR-AF-01-01-DIAG",
+      "recommendation_name": "疑似心房颤动时，应结合心房颤动诊断标准、12导联心电图、事件记录仪、动态心电图、心脏CT等进行诊断确认和必要鉴别。",
+      "statement_text": "疑似心房颤动时，应结合心房颤动诊断标准、12导联心电图、事件记录仪、动态心电图、心脏CT等进行诊断确认和必要鉴别。",
+      "recommendation_class": "未分级/指南未显式标注",
+      "evidence_level": "未分级/指南未显式标注",
+      "primary_source_name": "心房颤动诊断和治疗中国指南 2023.pdf",
+      "primary_source_page": 3,
+      "primary_evidence_summary": "疑似心房颤动时，应结合心房颤动诊断标准、12导联心电图、事件记录仪、动态心电图、心脏CT等进行诊断确认和必要鉴别。",
+      "actions": [
+        {
+          "code": "LAB-CARD-E0293B589260",
+          "entityType": "LabTest",
+          "name": "凝血功能检查"
+        },
+        {
+          "code": "EXAM-HOLTER",
+          "entityType": "Exam",
+          "name": "动态心电图"
+        },
+        {
+          "code": "EXAM-CARD-41BF81CAB3CE",
+          "entityType": "Exam",
+          "name": "事件记录仪"
+        }
+      ],
+      "evidences": [
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-DD21E053B151F1B764C3-AF",
+          "page": null
+        },
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-8606B3A8C71C25BEDC39-AF",
+          "page": null
+        }
+      ],
+      "guidelines": [
+        {
+          "code": "SRC-DOC-470392B42F1372AF",
+          "name": "心房颤动节律控制药物规范应用专家共识2023.pdf"
+        },
+        {
+          "code": "SRC-DOC-4BF1E6843E30FAE5",
+          "name": "中国心房颤动管理指南（2025）.pdf"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AF",
+      "disease_name": "心房颤动",
+      "batch_id": "BATCH-CARD-AF-CDSS-20260709-001",
+      "stage_code": "STAGE-CDSS-AF-ARR-AF-02-RISK",
+      "stage_name": "心房颤动风险分层阶段",
+      "stage_type": null,
+      "stage_order": 2,
+      "rule_code": "RULE-CDSS-AF-ARR-AF-02-01-RISK",
+      "rule_name": "心房颤动风险分层阶段规则",
+      "recommendation_code": "REC-CDSS-AF-ARR-AF-02-01-RISK",
+      "recommendation_name": "心房颤动确诊或高度疑似后，应结合CHA2DS2-VASc评分、EHRA症状分级、心房颤动风险分层、冠心病、吸烟等进行风险分层和高危因素识别。",
+      "statement_text": "心房颤动确诊或高度疑似后，应结合CHA2DS2-VASc评分、EHRA症状分级、心房颤动风险分层、冠心病、吸烟等进行风险分层和高危因素识别。",
+      "recommendation_class": "未分级/指南未显式标注",
+      "evidence_level": "未分级/指南未显式标注",
+      "primary_source_name": "中国心房颤动管理指南（2025）.pdf",
+      "primary_source_page": 10,
+      "primary_evidence_summary": "心房颤动确诊或高度疑似后，应结合CHA2DS2-VASc评分、EHRA症状分级、心房颤动风险分层、冠心病、吸烟等进行风险分层和高危因素识别。",
+      "actions": [
+        {
+          "code": "RF-CARD-B9897348761B",
+          "entityType": "RiskFactor",
+          "name": "心力衰竭"
+        },
+        {
+          "code": "COMP-CARD-477C6EB5E1D6",
+          "entityType": "Complication",
+          "name": "心力衰竭加重"
+        },
+        {
+          "code": "RF-CARD-2F3ECDF14371",
+          "entityType": "RiskFactor",
+          "name": "慢性肾脏病"
+        }
+      ],
+      "evidences": [
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-E27C252B3894B512EFCD-AF",
+          "page": null
+        },
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-C3A26B3A2291D8FF0C0D-AF",
+          "page": null
+        }
+      ],
+      "guidelines": [
+        {
+          "code": "SRC-DOC-EE90C4C9A4C51DF7",
+          "name": "心房颤动诊断和治疗中国指南 2023.pdf"
+        },
+        {
+          "code": "SRC-DOC-63A0DE9B1C2143F8",
+          "name": "慢性肾脏病合并非瓣膜性心房颤动患者抗凝管理的专家共识_慢性肾脏病非瓣膜性心房颤动抗凝管理工作组.pdf"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AF",
+      "disease_name": "心房颤动",
+      "batch_id": "BATCH-CARD-AF-CDSS-20260709-001",
+      "stage_code": "STAGE-CDSS-AF-ARR-AF-03-TREAT",
+      "stage_name": "心房颤动治疗决策阶段",
+      "stage_type": null,
+      "stage_order": 3,
+      "rule_code": "RULE-CDSS-AF-ARR-AF-03-01-TREAT",
+      "rule_name": "心房颤动治疗决策阶段规则",
+      "recommendation_code": "REC-CDSS-AF-ARR-AF-03-01-TREAT",
+      "recommendation_name": "心房颤动治疗应根据病情严重程度、禁忌证和患者特征选择复律治疗、导管消融、左心耳封堵、β受体阻滞剂、低分子肝素等。",
+      "statement_text": "心房颤动治疗应根据病情严重程度、禁忌证和患者特征选择复律治疗、导管消融、左心耳封堵、β受体阻滞剂、低分子肝素等。",
+      "recommendation_class": "未分级/指南未显式标注",
+      "evidence_level": "未分级/指南未显式标注",
+      "primary_source_name": "中国心房颤动管理指南（2025）.pdf",
+      "primary_source_page": 17,
+      "primary_evidence_summary": "心房颤动治疗应根据病情严重程度、禁忌证和患者特征选择复律治疗、导管消融、左心耳封堵、β受体阻滞剂、低分子肝素等。",
+      "actions": [
+        {
+          "code": "PLAN-CARD-5C9E41087192",
+          "entityType": "TreatmentPlan",
+          "name": "导管消融"
+        },
+        {
+          "code": "MED-CARD-EEAD5526AA1A",
+          "entityType": "Medication",
+          "name": "利伐沙班"
+        },
+        {
+          "code": "PLAN-CARD-8648D7D7CF5C",
+          "entityType": "TreatmentPlan",
+          "name": "左心耳封堵"
+        }
+      ],
+      "evidences": [
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-E807E736B7EFCCD34B7B-AF",
+          "page": null
+        },
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-14CAF9C6244192878939-AF",
+          "page": null
+        }
+      ],
+      "guidelines": [
+        {
+          "code": "SRC-DOC-12C73CE9FC871CF4",
+          "name": "中国 左心耳干预预防心房颤动患者血栓栓塞事件：目前的认识和建议（2023） (1).pdf"
+        },
+        {
+          "code": "SRC-DOC-4BF1E6843E30FAE5",
+          "name": "中国心房颤动管理指南（2025）.pdf"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AF",
+      "disease_name": "心房颤动",
+      "batch_id": "BATCH-CARD-AF-CDSS-20260709-001",
+      "stage_code": "STAGE-CDSS-AF-ARR-AF-04-FOLLOW",
+      "stage_name": "心房颤动随访管理阶段",
+      "stage_type": null,
+      "stage_order": 4,
+      "rule_code": "RULE-CDSS-AF-ARR-AF-04-01-FOLLOW",
+      "rule_name": "心房颤动随访管理阶段规则",
+      "recommendation_code": "REC-CDSS-AF-ARR-AF-04-01-FOLLOW",
+      "recommendation_name": "心房颤动稳定期或治疗后，应按心房颤动随访方案、心房颤动预后进行随访和复评。",
+      "statement_text": "心房颤动稳定期或治疗后，应按心房颤动随访方案、心房颤动预后进行随访和复评。",
+      "recommendation_class": "Ⅱa",
+      "evidence_level": "C",
+      "primary_source_name": "中国心房颤动管理指南（2025）.pdf",
+      "primary_source_page": 7,
+      "primary_evidence_summary": "心房颤动稳定期或治疗后，应按心房颤动随访方案、心房颤动预后进行随访和复评。",
+      "actions": [
+        {
+          "code": "FU-CARD-CE0CF6305FAF",
+          "entityType": "FollowUp",
+          "name": "心房颤动随访方案"
+        },
+        {
+          "code": "PROG-CARD-191D2B9A6F36",
+          "entityType": "Prognosis",
+          "name": "心房颤动预后"
+        }
+      ],
+      "evidences": [
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-DC5F68281990CE87A7A1-AF",
+          "page": null
+        },
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-217494AE3758881F4CDB-AF",
+          "page": null
+        }
+      ],
+      "guidelines": [
+        {
+          "code": "SRC-DOC-EE90C4C9A4C51DF7",
+          "name": "心房颤动诊断和治疗中国指南 2023.pdf"
+        },
+        {
+          "code": "SRC-DOC-12C73CE9FC871CF4",
+          "name": "中国 左心耳干预预防心房颤动患者血栓栓塞事件：目前的认识和建议（2023） (1).pdf"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "batch_id": "BATCH-CARD-BRADY-AVB-CDSS-20260709-001",
+      "stage_code": "STAGE-CDSS-BRADYAVB-ARR-AVB-01-DIAG",
+      "stage_name": "房室传导阻滞诊断确认阶段",
+      "stage_type": null,
+      "stage_order": 1,
+      "rule_code": "RULE-CDSS-BRADYAVB-ARR-AVB-01-01-DIAG",
+      "rule_name": "房室传导阻滞诊断确认阶段规则",
+      "recommendation_code": "REC-CDSS-BRADYAVB-ARR-AVB-01-01-DIAG",
+      "recommendation_name": "疑似房室传导阻滞时，应结合心电图传导阻滞诊断依据、动态心电图、心电图、电生理检查、阿托品试验进行诊断确认和必要鉴别。",
+      "statement_text": "疑似房室传导阻滞时，应结合心电图传导阻滞诊断依据、动态心电图、心电图、电生理检查、阿托品试验进行诊断确认和必要鉴别。",
+      "recommendation_class": "未分级/指南未显式标注",
+      "evidence_level": "未分级/指南未显式标注",
+      "primary_source_name": "《内科学（第10版）》.pdf",
+      "primary_source_page": 317,
+      "primary_evidence_summary": "疑似房室传导阻滞时，应结合心电图传导阻滞诊断依据、动态心电图、心电图、电生理检查、阿托品试验进行诊断确认和必要鉴别。",
+      "actions": [
+        {
+          "code": "EXAM-ECG",
+          "entityType": "Exam",
+          "name": "心电图"
+        },
+        {
+          "code": "EXAM-CARD-C33E64A77705",
+          "entityType": "Exam",
+          "name": "电生理检查"
+        },
+        {
+          "code": "DX-CARD-5F28B989F353",
+          "entityType": "DiagnosisCriteria",
+          "name": "心电图传导阻滞诊断依据"
+        }
+      ],
+      "evidences": [
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-59BBC049DE8062FEFBC6-AVB",
+          "page": null
+        },
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-8B983529A31A94FDB7CE-AVB",
+          "page": null
+        }
+      ],
+      "guidelines": [
+        {
+          "code": "SRC-DOC-C0BB559FA2C8448A",
+          "name": "《内科学（第10版）》.pdf"
+        },
+        {
+          "code": "SRC-DOC-6E44027E23077E48",
+          "name": "内科学(第8版).docx"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "batch_id": "BATCH-CARD-BRADY-AVB-CDSS-20260709-001",
+      "stage_code": "STAGE-CDSS-BRADYAVB-ARR-AVB-02-RISK",
+      "stage_name": "房室传导阻滞风险分层阶段",
+      "stage_type": null,
+      "stage_order": 2,
+      "rule_code": "RULE-CDSS-BRADYAVB-ARR-AVB-02-01-RISK",
+      "rule_name": "房室传导阻滞风险分层阶段规则",
+      "recommendation_code": "REC-CDSS-BRADYAVB-ARR-AVB-02-01-RISK",
+      "recommendation_name": "房室传导阻滞确诊或高度疑似后，应结合血流动力学不稳定和心脏停搏风险进行风险分层和高危因素识别。",
+      "statement_text": "房室传导阻滞确诊或高度疑似后，应结合血流动力学不稳定和心脏停搏风险进行风险分层和高危因素识别。",
+      "recommendation_class": "Ⅰ",
+      "evidence_level": "B",
+      "primary_source_name": "中国床旁临时心脏起搏急诊专家共识（2023）.pdf",
+      "primary_source_page": 4,
+      "primary_evidence_summary": "房室传导阻滞确诊或高度疑似后，应结合血流动力学不稳定和心脏停搏风险进行风险分层和高危因素识别。",
+      "actions": [
+        {
+          "code": "COMP-CARD-09909DBE960B",
+          "entityType": "Complication",
+          "name": "血流动力学不稳定和心脏停搏风险"
+        }
+      ],
+      "evidences": [
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-EAC3C82FAC5433C6ED45-AVB",
+          "page": null
+        },
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-8B983529A31A94FDB7CE-AVB",
+          "page": null
+        }
+      ],
+      "guidelines": [
+        {
+          "code": "SRC-DOC-6E44027E23077E48",
+          "name": "内科学(第8版).docx"
+        },
+        {
+          "code": "SRC-DOC-7EABAF0372E7ED03",
+          "name": "中国床旁临时心脏起搏急诊专家共识（2023）.pdf"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "batch_id": "BATCH-CARD-BRADY-AVB-CDSS-20260709-001",
+      "stage_code": "STAGE-CDSS-BRADYAVB-ARR-AVB-03-TREAT",
+      "stage_name": "房室传导阻滞治疗决策阶段",
+      "stage_type": null,
+      "stage_order": 3,
+      "rule_code": "RULE-CDSS-BRADYAVB-ARR-AVB-03-01-TREAT",
+      "rule_name": "房室传导阻滞治疗决策阶段规则",
+      "recommendation_code": "REC-CDSS-BRADYAVB-ARR-AVB-03-01-TREAT",
+      "recommendation_name": "房室传导阻滞治疗应根据病情严重程度、禁忌证和患者特征选择房室传导阻滞治疗方案、起搏治疗、异丙肾上腺素、阿托品、临时心脏起搏。",
+      "statement_text": "房室传导阻滞治疗应根据病情严重程度、禁忌证和患者特征选择房室传导阻滞治疗方案、起搏治疗、异丙肾上腺素、阿托品、临时心脏起搏。",
+      "recommendation_class": "Ⅰ",
+      "evidence_level": "B",
+      "primary_source_name": "中国床旁临时心脏起搏急诊专家共识（2023）.pdf",
+      "primary_source_page": 4,
+      "primary_evidence_summary": "房室传导阻滞治疗应根据病情严重程度、禁忌证和患者特征选择房室传导阻滞治疗方案、起搏治疗、异丙肾上腺素、阿托品、临时心脏起搏。",
+      "actions": [
+        {
+          "code": "PROC-CARD-B69847521FA1",
+          "entityType": "Procedure",
+          "name": "临时心脏起搏"
+        },
+        {
+          "code": "PLAN-CARD-4902C4C10300",
+          "entityType": "TreatmentPlan",
+          "name": "房室传导阻滞治疗方案"
+        },
+        {
+          "code": "PLAN-CARD-F7FB7035330D",
+          "entityType": "TreatmentPlan",
+          "name": "起搏治疗"
+        }
+      ],
+      "evidences": [
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-264A63760AAF3E2F73C4-AVB",
+          "page": null
+        },
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-8B983529A31A94FDB7CE-AVB",
+          "page": null
+        }
+      ],
+      "guidelines": [
+        {
+          "code": "SRC-DOC-6E44027E23077E48",
+          "name": "内科学(第8版).docx"
+        },
+        {
+          "code": "SRC-DOC-C0BB559FA2C8448A",
+          "name": "《内科学（第10版）》.pdf"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "batch_id": "BATCH-CARD-BRADY-AVB-CDSS-20260709-001",
+      "stage_code": "STAGE-CDSS-BRADYAVB-ARR-AVB-04-FOLLOW",
+      "stage_name": "房室传导阻滞随访管理阶段",
+      "stage_type": null,
+      "stage_order": 4,
+      "rule_code": "RULE-CDSS-BRADYAVB-ARR-AVB-04-01-FOLLOW",
+      "rule_name": "房室传导阻滞随访管理阶段规则",
+      "recommendation_code": "REC-CDSS-BRADYAVB-ARR-AVB-04-01-FOLLOW",
+      "recommendation_name": "房室传导阻滞稳定期或治疗后，应按房室传导阻滞随访方案、房室传导阻滞预后进行随访和复评。",
+      "statement_text": "房室传导阻滞稳定期或治疗后，应按房室传导阻滞随访方案、房室传导阻滞预后进行随访和复评。",
+      "recommendation_class": "Ⅰ",
+      "evidence_level": "B",
+      "primary_source_name": "中国床旁临时心脏起搏急诊专家共识（2023）.pdf",
+      "primary_source_page": 4,
+      "primary_evidence_summary": "房室传导阻滞稳定期或治疗后，应按房室传导阻滞随访方案、房室传导阻滞预后进行随访和复评。",
+      "actions": [
+        {
+          "code": "PROG-CARD-9C8E49DBAF61",
+          "entityType": "Prognosis",
+          "name": "房室传导阻滞预后"
+        },
+        {
+          "code": "FU-CARD-51FF2D5376B7",
+          "entityType": "FollowUp",
+          "name": "房室传导阻滞随访方案"
+        }
+      ],
+      "evidences": [
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-FFE9F335E136617AA0C1-AVB",
+          "page": null
+        },
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-7A3CCC384FC0C027D000-AVB",
+          "page": null
+        }
+      ],
+      "guidelines": [
+        {
+          "code": "SRC-DOC-C0BB559FA2C8448A",
+          "name": "《内科学（第10版）》.pdf"
+        },
+        {
+          "code": "SRC-DOC-6E44027E23077E48",
+          "name": "内科学(第8版).docx"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "batch_id": "BATCH-CARD-BRADY-AVB-CDSS-20260709-001",
+      "stage_code": "STAGE-CDSS-BRADYAVB-ARR-AVB1-01-DIAG",
+      "stage_name": "一度房室传导阻滞诊断确认阶段",
+      "stage_type": null,
+      "stage_order": 1,
+      "rule_code": "RULE-CDSS-BRADYAVB-ARR-AVB1-01-01-DIAG",
+      "rule_name": "一度房室传导阻滞诊断确认阶段规则",
+      "recommendation_code": "REC-CDSS-BRADYAVB-ARR-AVB1-01-01-DIAG",
+      "recommendation_name": "疑似一度房室传导阻滞时，应结合心电图传导阻滞诊断依据、动态心电图、心电图、电生理检查进行诊断确认和必要鉴别。",
+      "statement_text": "疑似一度房室传导阻滞时，应结合心电图传导阻滞诊断依据、动态心电图、心电图、电生理检查进行诊断确认和必要鉴别。",
+      "recommendation_class": "Ⅱa",
+      "evidence_level": "B",
+      "primary_source_name": "中国床旁临时心脏起搏急诊专家共识（2023）.pdf",
+      "primary_source_page": 4,
+      "primary_evidence_summary": "疑似一度房室传导阻滞时，应结合心电图传导阻滞诊断依据、动态心电图、心电图、电生理检查进行诊断确认和必要鉴别。",
+      "actions": [
+        {
+          "code": "DX-CARD-5F28B989F353",
+          "entityType": "DiagnosisCriteria",
+          "name": "心电图传导阻滞诊断依据"
+        },
+        {
+          "code": "EXAM-HOLTER",
+          "entityType": "Exam",
+          "name": "动态心电图"
+        },
+        {
+          "code": "EXAM-ECG",
+          "entityType": "Exam",
+          "name": "心电图"
+        }
+      ],
+      "evidences": [
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-FEE06C9B5E496E4E59E4-AVB1",
+          "page": null
+        },
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-4F812B7FA1A350653315-AVB1",
+          "page": null
+        }
+      ],
+      "guidelines": [
+        {
+          "code": "SRC-DOC-7EABAF0372E7ED03",
+          "name": "中国床旁临时心脏起搏急诊专家共识（2023）.pdf"
+        },
+        {
+          "code": "SRC-DOC-6E44027E23077E48",
+          "name": "内科学(第8版).docx"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "batch_id": "BATCH-CARD-BRADY-AVB-CDSS-20260709-001",
+      "stage_code": "STAGE-CDSS-BRADYAVB-ARR-AVB1-02-RISK",
+      "stage_name": "一度房室传导阻滞风险分层阶段",
+      "stage_type": null,
+      "stage_order": 2,
+      "rule_code": "RULE-CDSS-BRADYAVB-ARR-AVB1-02-01-RISK",
+      "rule_name": "一度房室传导阻滞风险分层阶段规则",
+      "recommendation_code": "REC-CDSS-BRADYAVB-ARR-AVB1-02-01-RISK",
+      "recommendation_name": "一度房室传导阻滞确诊或高度疑似后，应结合血流动力学不稳定和心脏停搏风险进行风险分层和高危因素识别。",
+      "statement_text": "一度房室传导阻滞确诊或高度疑似后，应结合血流动力学不稳定和心脏停搏风险进行风险分层和高危因素识别。",
+      "recommendation_class": "Ⅱa",
+      "evidence_level": "B",
+      "primary_source_name": "中国床旁临时心脏起搏急诊专家共识（2023）.pdf",
+      "primary_source_page": 4,
+      "primary_evidence_summary": "一度房室传导阻滞确诊或高度疑似后，应结合血流动力学不稳定和心脏停搏风险进行风险分层和高危因素识别。",
+      "actions": [
+        {
+          "code": "COMP-CARD-09909DBE960B",
+          "entityType": "Complication",
+          "name": "血流动力学不稳定和心脏停搏风险"
+        }
+      ],
+      "evidences": [
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-4F812B7FA1A350653315-AVB1",
+          "page": null
+        },
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-74D5F36B2E3E83601D64-AVB1",
+          "page": null
+        }
+      ],
+      "guidelines": [
+        {
+          "code": "SRC-DOC-6E44027E23077E48",
+          "name": "内科学(第8版).docx"
+        },
+        {
+          "code": "SRC-DOC-7EABAF0372E7ED03",
+          "name": "中国床旁临时心脏起搏急诊专家共识（2023）.pdf"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "batch_id": "BATCH-CARD-BRADY-AVB-CDSS-20260709-001",
+      "stage_code": "STAGE-CDSS-BRADYAVB-ARR-AVB1-03-TREAT",
+      "stage_name": "一度房室传导阻滞治疗决策阶段",
+      "stage_type": null,
+      "stage_order": 3,
+      "rule_code": "RULE-CDSS-BRADYAVB-ARR-AVB1-03-01-TREAT",
+      "rule_name": "一度房室传导阻滞治疗决策阶段规则",
+      "recommendation_code": "REC-CDSS-BRADYAVB-ARR-AVB1-03-01-TREAT",
+      "recommendation_name": "一度房室传导阻滞治疗应根据病情严重程度、禁忌证和患者特征选择一度房室传导阻滞治疗方案。",
+      "statement_text": "一度房室传导阻滞治疗应根据病情严重程度、禁忌证和患者特征选择一度房室传导阻滞治疗方案。",
+      "recommendation_class": "Ⅱa",
+      "evidence_level": "B",
+      "primary_source_name": "中国床旁临时心脏起搏急诊专家共识（2023）.pdf",
+      "primary_source_page": 4,
+      "primary_evidence_summary": "一度房室传导阻滞治疗应根据病情严重程度、禁忌证和患者特征选择一度房室传导阻滞治疗方案。",
+      "actions": [
+        {
+          "code": "PLAN-CARD-85C17399C1E4",
+          "entityType": "TreatmentPlan",
+          "name": "一度房室传导阻滞治疗方案"
+        }
+      ],
+      "evidences": [
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-4F812B7FA1A350653315-AVB1",
+          "page": null
+        },
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-67FF67A32502B1FEEEEA-AVB1",
+          "page": null
+        }
+      ],
+      "guidelines": [
+        {
+          "code": "SRC-DOC-C0BB559FA2C8448A",
+          "name": "《内科学（第10版）》.pdf"
+        },
+        {
+          "code": "SRC-DOC-CF62B75AEC93F1A6",
+          "name": "《内科学（第10版）》.docx"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "batch_id": "BATCH-CARD-BRADY-AVB-CDSS-20260709-001",
+      "stage_code": "STAGE-CDSS-BRADYAVB-ARR-AVB1-04-FOLLOW",
+      "stage_name": "一度房室传导阻滞随访管理阶段",
+      "stage_type": null,
+      "stage_order": 4,
+      "rule_code": "RULE-CDSS-BRADYAVB-ARR-AVB1-04-01-FOLLOW",
+      "rule_name": "一度房室传导阻滞随访管理阶段规则",
+      "recommendation_code": "REC-CDSS-BRADYAVB-ARR-AVB1-04-01-FOLLOW",
+      "recommendation_name": "一度房室传导阻滞稳定期或治疗后，应按一度房室传导阻滞随访方案、进展为高度传导阻滞或需起搏风险进行随访和复评。",
+      "statement_text": "一度房室传导阻滞稳定期或治疗后，应按一度房室传导阻滞随访方案、进展为高度传导阻滞或需起搏风险进行随访和复评。",
+      "recommendation_class": "Ⅱa",
+      "evidence_level": "B",
+      "primary_source_name": "中国床旁临时心脏起搏急诊专家共识（2023）.pdf",
+      "primary_source_page": 4,
+      "primary_evidence_summary": "一度房室传导阻滞稳定期或治疗后，应按一度房室传导阻滞随访方案、进展为高度传导阻滞或需起搏风险进行随访和复评。",
+      "actions": [
+        {
+          "code": "PROG-CARD-0C7FA0305262",
+          "entityType": "Prognosis",
+          "name": "进展为高度传导阻滞或需起搏风险"
+        },
+        {
+          "code": "FU-CARD-D5CB12D1F799",
+          "entityType": "FollowUp",
+          "name": "一度房室传导阻滞随访方案"
+        }
+      ],
+      "evidences": [
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-FEE06C9B5E496E4E59E4-AVB1",
+          "page": null
+        },
+        {
+          "summary": null,
+          "raw_excerpt": null,
+          "code": "EVD-74D5F36B2E3E83601D64-AVB1",
+          "page": null
+        }
+      ],
+      "guidelines": [
+        {
+          "code": "SRC-DOC-7EABAF0372E7ED03",
+          "name": "中国床旁临时心脏起搏急诊专家共识（2023）.pdf"
+        },
+        {
+          "code": "SRC-DOC-6E44027E23077E48",
+          "name": "内科学(第8版).docx"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "batch_id": "BATCH-CARD-AF-CDSS-20260709-001",
+      "non_kgnode": 0,
+      "pathway_without_stage": 0,
+      "stage_without_rule": 0,
+      "rule_without_rec": 0,
+      "rec_without_action_or_block": 0,
+      "rec_without_evidence": 0,
+      "rec_without_guideline": 0
+    },
+    {
+      "batch_id": "BATCH-CARD-BRADY-AVB-CDSS-20260709-001",
+      "non_kgnode": 0,
+      "pathway_without_stage": 0,
+      "stage_without_rule": 0,
+      "rule_without_rec": 0,
+      "rec_without_action_or_block": 0,
+      "rec_without_evidence": 0,
+      "rec_without_guideline": 0
+    },
+    {
+      "batch_id": "BATCH-CARD-CAD-CDSS-20260709-001",
+      "non_kgnode": 0,
+      "pathway_without_stage": 0,
+      "stage_without_rule": 0,
+      "rule_without_rec": 0,
+      "rec_without_action_or_block": 0,
+      "rec_without_evidence": 0,
+      "rec_without_guideline": 0
+    },
+    {
+      "batch_id": "BATCH-CARD-CM-CDSS-20260709-001",
+      "non_kgnode": 0,
+      "pathway_without_stage": 0,
+      "stage_without_rule": 0,
+      "rule_without_rec": 0,
+      "rec_without_action_or_block": 0,
+      "rec_without_evidence": 0,
+      "rec_without_guideline": 0
+    },
+    {
+      "batch_id": "BATCH-CARD-HF-CDSS-20260709-001",
+      "non_kgnode": 0,
+      "pathway_without_stage": 0,
+      "stage_without_rule": 0,
+      "rule_without_rec": 0,
+      "rec_without_action_or_block": 0,
+      "rec_without_evidence": 0,
+      "rec_without_guideline": 0
+    },
+    {
+      "batch_id": "BATCH-CARD-SVT-AFL-CDSS-20260709-001",
+      "non_kgnode": 0,
+      "pathway_without_stage": 0,
+      "stage_without_rule": 0,
+      "rule_without_rec": 0,
+      "rec_without_action_or_block": 0,
+      "rec_without_evidence": 0,
+      "rec_without_guideline": 0
+    },
+    {
+      "batch_id": "BATCH-CARD-VA-SCD-CDSS-20260709-001",
+      "non_kgnode": 0,
+      "pathway_without_stage": 0,
+      "stage_without_rule": 0,
+      "rule_without_rec": 0,
+      "rec_without_action_or_block": 0,
+      "rec_without_evidence": 0,
+      "rec_without_guideline": 0
+    }
+  ],
+  "batch_summary": [
+    {
+      "batch_id": "BATCH-CARD-AF-CDSS-20260709-001",
+      "disease_count": 1,
+      "disease_names": [
+        "心房颤动"
+      ],
+      "pathway_count": 1,
+      "stage_count": 4,
+      "rule_count": 4,
+      "recommendation_count": 4,
+      "action_or_block_count": 34,
+      "evidence_count": 12,
+      "guideline_count": 5
+    },
+    {
+      "batch_id": "BATCH-CARD-BRADY-AVB-CDSS-20260709-001",
+      "disease_count": 9,
+      "disease_names": [
+        "房室传导阻滞",
+        "一度房室传导阻滞",
+        "二度房室传导阻滞",
+        "三度房室传导阻滞",
+        "束支传导阻滞",
+        "缓慢性心律失常",
+        "窦房传导阻滞",
+        "窦性心动过缓",
+        "窦房结功能障碍"
+      ],
+      "pathway_count": 9,
+      "stage_count": 36,
+      "rule_count": 36,
+      "recommendation_count": 36,
+      "action_or_block_count": 40,
+      "evidence_count": 70,
+      "guideline_count": 4
+    },
+    {
+      "batch_id": "BATCH-CARD-CAD-CDSS-20260709-001",
+      "disease_count": 10,
+      "disease_names": [
+        "急性冠脉综合征",
+        "急性心肌梗死",
+        "ST段抬高型心肌梗死",
+        "非ST段抬高型心肌梗死",
+        "不稳定型心绞痛",
+        "慢性冠脉综合征",
+        "稳定型心绞痛",
+        "缺血性心肌病",
+        "陈旧性心肌梗死",
+        "隐匿性冠心病"
+      ],
+      "pathway_count": 10,
+      "stage_count": 29,
+      "rule_count": 33,
+      "recommendation_count": 33,
+      "action_or_block_count": 55,
+      "evidence_count": 77,
+      "guideline_count": 19
+    },
+    {
+      "batch_id": "BATCH-CARD-CM-CDSS-20260709-001",
+      "disease_count": 12,
+      "disease_names": [
+        "肥厚型心肌病",
+        "扩张型心肌病",
+        "限制型心肌病",
+        "致心律失常性心肌病",
+        "致心律失常性右心室心肌病",
+        "致心律失常性左心室心肌病",
+        "致心律失常性双心室心肌病",
+        "淀粉样变心肌病",
+        "法布雷病心肌病",
+        "心房心肌病",
+        "非扩张型左心室心肌病",
+        "缺血性心肌病"
+      ],
+      "pathway_count": 12,
+      "stage_count": 28,
+      "rule_count": 30,
+      "recommendation_count": 30,
+      "action_or_block_count": 68,
+      "evidence_count": 66,
+      "guideline_count": 15
+    },
+    {
+      "batch_id": "BATCH-CARD-HF-CDSS-20260709-001",
+      "disease_count": 11,
+      "disease_names": [
+        "心力衰竭",
+        "急性心力衰竭",
+        "全心衰竭",
+        "慢性心力衰竭",
+        "透析患者慢性心力衰竭",
+        "射血分数轻度降低的心力衰竭",
+        "射血分数保留的心力衰竭",
+        "射血分数降低的心力衰竭",
+        "左心衰竭",
+        "心肌梗死后心力衰竭",
+        "右心衰竭"
+      ],
+      "pathway_count": 11,
+      "stage_count": 44,
+      "rule_count": 44,
+      "recommendation_count": 44,
+      "action_or_block_count": 55,
+      "evidence_count": 65,
+      "guideline_count": 10
+    },
+    {
+      "batch_id": "BATCH-CARD-SVT-AFL-CDSS-20260709-001",
+      "disease_count": 6,
+      "disease_names": [
+        "心房扑动",
+        "房性心动过速",
+        "房室结折返性心动过速",
+        "房室折返性心动过速",
+        "室上性心动过速",
+        "预激综合征"
+      ],
+      "pathway_count": 6,
+      "stage_count": 24,
+      "rule_count": 24,
+      "recommendation_count": 24,
+      "action_or_block_count": 60,
+      "evidence_count": 47,
+      "guideline_count": 6
+    },
+    {
+      "batch_id": "BATCH-CARD-VA-SCD-CDSS-20260709-001",
+      "disease_count": 12,
+      "disease_names": [
+        "Brugada综合征",
+        "儿茶酚胺敏感性多形性室性心动过速",
+        "长QT间期综合征",
+        "非持续性室性心动过速",
+        "室性期前收缩",
+        "短QT间期综合征",
+        "尖端扭转型室性心动过速",
+        "室性心律失常",
+        "心室扑动与心室颤动",
+        "持续性室性心动过速",
+        "心脏骤停",
+        "心脏性猝死"
+      ],
+      "pathway_count": 12,
+      "stage_count": 48,
+      "rule_count": 48,
+      "recommendation_count": 48,
+      "action_or_block_count": 95,
+      "evidence_count": 76,
+      "guideline_count": 4
+    }
+  ]
+}

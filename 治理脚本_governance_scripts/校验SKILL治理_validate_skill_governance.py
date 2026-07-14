@@ -15,6 +15,18 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
+EXPECTED_MONTHLY_ORDER = [
+    "冠心病",
+    "心肌病",
+    "急性心肌梗死",
+    "心力衰竭",
+    "高血压",
+    "心律失常",
+    "起搏治疗相关疾病",
+    "瓣膜病",
+    "肺动脉高压",
+]
+
 
 def read_text(path: Path) -> str:
     return path.read_text(encoding="utf-8-sig")
@@ -22,6 +34,20 @@ def read_text(path: Path) -> str:
 
 def fail(msg: str, failures: list[str]) -> None:
     failures.append(msg)
+
+
+def assert_text_order(name: str, text: str, expected: list[str], failures: list[str]) -> None:
+    positions: list[tuple[str, int]] = []
+    for item in expected:
+        pos = text.find(item)
+        if pos < 0:
+            fail(f"{name} 缺少目标：{item}", failures)
+        else:
+            positions.append((item, pos))
+    if len(positions) == len(expected):
+        actual = [item for item, _ in sorted(positions, key=lambda x: x[1])]
+        if actual != expected:
+            fail(f"{name} 疾病顺序不一致：当前={actual}；应为={expected}", failures)
 
 
 def main() -> int:
@@ -47,6 +73,7 @@ def main() -> int:
         ]:
             if required not in text:
                 fail(f"主 SKILL 缺少关键内容：{required}", failures)
+        assert_text_order("主 SKILL 当前建设目标", text, EXPECTED_MONTHLY_ORDER, failures)
 
     appendix_dir = ROOT / "技能文档_skill_docs"
     appendix_files = list(appendix_dir.glob("附录*_*.md"))
@@ -92,9 +119,7 @@ def main() -> int:
         fail("心血管内科月度建设计划不存在", failures)
     else:
         plan_text = read_text(monthly_plan)
-        for disease in ["冠心病", "心肌病", "急性心肌梗死", "心力衰竭", "高血压", "心律失常", "起搏治疗相关疾病", "瓣膜病", "肺动脉高压"]:
-            if disease not in plan_text:
-                fail(f"月度计划缺少目标：{disease}", failures)
+        assert_text_order("月度计划", plan_text, EXPECTED_MONTHLY_ORDER, failures)
         if "旧候选池不复用" not in plan_text:
             fail("月度计划未写明旧候选池不复用", failures)
 
@@ -105,6 +130,10 @@ def main() -> int:
         rows = list(csv.DictReader(ledger.open(encoding="utf-8-sig")))
         if len(rows) < 9:
             fail(f"批次计划少于 9 条：{len(rows)}", failures)
+        else:
+            actual_order = [r.get("疾病大类", "") for r in rows[:9]]
+            if actual_order != EXPECTED_MONTHLY_ORDER:
+                fail(f"批次登记台账疾病顺序不一致：当前={actual_order}；应为={EXPECTED_MONTHLY_ORDER}", failures)
 
     manifest = ROOT / "项目管理中心_project_management/01_项目运行清单_manifest.json"
     if not manifest.exists():
@@ -141,6 +170,7 @@ def main() -> int:
     print("appendix_count=", len(appendix_files))
     print("monthly_plan=present")
     print("batch_plan_rows>=9")
+    print("monthly_order=ok")
     return 0
 
 

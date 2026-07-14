@@ -1,0 +1,72 @@
+{
+  "audited_graph_count": 7,
+  "total_scenario_relation_count": 7781,
+  "total_scenario_issue_count": 0,
+  "total_blocking_issue_count": 0,
+  "gate": "passed",
+  "graphs": [
+    {
+      "graph_dir": "BATCH-CARD-AF-20260701-001_房颤_AtrialFibrillation",
+      "scenario_relation_count": 112,
+      "scenario_issue_count": 0,
+      "blocking_issue_count": 0,
+      "missing_by_relation_type": {},
+      "missing_field_counter": {},
+      "gate": "passed"
+    },
+    {
+      "graph_dir": "BATCH-CARD-CAD-20260623-001",
+      "scenario_relation_count": 883,
+      "scenario_issue_count": 0,
+      "blocking_issue_count": 0,
+      "missing_by_relation_type": {},
+      "missing_field_counter": {},
+      "gate": "passed"
+    },
+    {
+      "graph_dir": "BATCH-CARD-CM-20260622-001",
+      "scenario_relation_count": 595,
+      "scenario_issue_count": 0,
+      "blocking_issue_count": 0,
+      "missing_by_relation_type": {},
+      "missing_field_counter": {},
+      "gate": "passed"
+    },
+    {
+      "graph_dir": "BATCH-CARD-HF-20260629-001",
+      "scenario_relation_count": 278,
+      "scenario_issue_count": 0,
+      "blocking_issue_count": 0,
+      "missing_by_relation_type": {},
+      "missing_field_counter": {},
+      "gate": "passed"
+    },
+    {
+      "graph_dir": "BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter",
+      "scenario_relation_count": 326,
+      "scenario_issue_count": 0,
+      "blocking_issue_count": 0,
+      "missing_by_relation_type": {},
+      "missing_field_counter": {},
+      "gate": "passed"
+    },
+    {
+      "graph_dir": "BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD",
+      "scenario_relation_count": 707,
+      "scenario_issue_count": 0,
+      "blocking_issue_count": 0,
+      "missing_by_relation_type": {},
+      "missing_field_counter": {},
+      "gate": "passed"
+    },
+    {
+      "graph_dir": "00_foundation_skeleton",
+      "scenario_relation_count": 4880,
+      "scenario_issue_count": 0,
+      "blocking_issue_count": 0,
+      "missing_by_relation_type": {},
+      "missing_field_counter": {},
+      "gate": "passed"
+    }
+  ]
+}

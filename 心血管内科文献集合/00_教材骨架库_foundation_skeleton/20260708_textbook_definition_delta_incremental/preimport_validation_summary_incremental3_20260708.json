@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-07-08 09:18:17",
+  "ready_count": 28,
+  "already_nonempty_count": 25,
+  "selected_empty_count": 3,
+  "delta_count": 3,
+  "blocking_error_count": 0,
+  "preimport_gate_status": "passed",
+  "delta_jsonl": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_教材骨架库_foundation_skeleton\\20260708_textbook_definition_delta_incremental\\delta_disease_definition_update_incremental3_20260708.jsonl",
+  "errors": [],
+  "selected_codes": [
+    "DIS-CARD-CAD-SPASM",
+    "DIS-CARD-ARR-SB",
+    "DIS-CARD-ARR-SND"
+  ]
+}

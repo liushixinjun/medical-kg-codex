@@ -1,0 +1,13 @@
+{
+  "batch_id": "CARD-SKELETON-FULL-20260709",
+  "generated_at": "2026-07-09 15:04:16",
+  "status": "passed",
+  "node_count": 1798,
+  "relation_count": 5146,
+  "evidence_node_count": 773,
+  "blocker_count": 0,
+  "warning_count": 0,
+  "blocker_types": {},
+  "warning_types": {},
+  "neo4j_import_allowed": true
+}

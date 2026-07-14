@@ -1,0 +1,27 @@
+[
+  {
+    "generated_at": "2026-07-09 21:28:18",
+    "batch_id": "BATCH-CARD-BRADY-AVB-CDSS-20260709-001",
+    "source_batch": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\BATCH-CARD-BRADY-AVB-20260705-001_缓慢性心律失常传导阻滞_Bradyarrhythmia_AVBlock",
+    "output_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\BATCH-CARD-BRADY-AVB-CDSS-20260709-001_缓慢性心律失常传导阻滞_CDSS决策层升级",
+    "scope_target": "缓慢性心律失常及传导阻滞",
+    "disease_count": 9,
+    "new_node_count": 117,
+    "new_relation_count": 804,
+    "recommendation_statement_count": 36,
+    "clinical_rule_count": 36,
+    "pathway_stage_count": 36,
+    "clinical_pathway_count": 9,
+    "missing_endpoint_count": 0,
+    "missing_endpoints": [],
+    "recommendation_required_empty_count": 0,
+    "recommendation_required_empty": [],
+    "recommendation_without_action_count": 0,
+    "recommendation_without_evidence_count": 0,
+    "stage_treatment_plan_name_collision_count": 0,
+    "stage_treatment_plan_name_collision": [],
+    "mojibake_suspect_node_count": 0,
+    "mojibake_suspect_node_codes": [],
+    "hard_gate_pass": true
+  }
+]

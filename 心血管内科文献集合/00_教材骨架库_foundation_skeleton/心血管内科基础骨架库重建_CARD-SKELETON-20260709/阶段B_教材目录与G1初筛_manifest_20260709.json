@@ -1,0 +1,22 @@
+{
+  "batch_id": "CARD-SKELETON-20260709",
+  "generated_at": "2026-07-09 09:08:48",
+  "source_docx": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\心血管内科\\书籍教材\\《内科学（第10版）》.docx",
+  "source_pdf": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\心血管内科\\书籍教材\\《内科学（第10版）》.pdf",
+  "docx_sha256": "cf62b75aec93f1a6e01b3974f9f79a09befd64243a1619868e903d7f7831e4bf",
+  "pdf_sha256": "c0bb559fa2c8448a54612f7edf751c9342df584d15ce90d0cf7e4f97bf852d78",
+  "docx_para_count": 21704,
+  "cardiology_docx_range": {
+    "start": 3744,
+    "end": 7686
+  },
+  "chapter_rows_count": 119,
+  "coverage_rows_count": 1140,
+  "summary_rows_count": 57,
+  "outputs": [
+    "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_教材骨架库_foundation_skeleton\\心血管内科基础骨架库重建_CARD-SKELETON-20260709\\心血管内科教材章节目录_20260709.csv",
+    "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_教材骨架库_foundation_skeleton\\心血管内科基础骨架库重建_CARD-SKELETON-20260709\\心血管内科教材疾病目录树_20260709.md",
+    "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_教材骨架库_foundation_skeleton\\心血管内科基础骨架库重建_CARD-SKELETON-20260709\\四大优先疾病教材骨架槽位覆盖矩阵_G1初筛_20260709.csv",
+    "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_教材骨架库_foundation_skeleton\\心血管内科基础骨架库重建_CARD-SKELETON-20260709\\四大优先疾病教材骨架覆盖汇总_G1初筛_20260709.csv"
+  ]
+}

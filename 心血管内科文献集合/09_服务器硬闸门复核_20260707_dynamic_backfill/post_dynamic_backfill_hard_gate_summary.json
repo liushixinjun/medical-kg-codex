@@ -1,0 +1,33 @@
+{
+  "global_safety": {
+    "kg_node_count": 34402,
+    "kg_relation_count": 99784,
+    "non_kgnode_node_count": 0,
+    "relation_touching_non_kgnode_count": 0,
+    "technical_display_name_error_count": 0,
+    "treatment_plan_actionability_error_count": 0,
+    "medication_class_without_specific_count": 0,
+    "duplicate_type_name_count": 0,
+    "duplicate_semantic_relation_count": 0,
+    "semantic_shell_relation_count": 0,
+    "blocking_issue_count": 0,
+    "blocking_items": [],
+    "global_safety_gate_status": "passed"
+  },
+  "custom_hard_gates": {
+    "target_dxc_without_component": 0,
+    "global_dxc_without_component": 31,
+    "target_ddx_without_detail": 0,
+    "global_ddx_without_detail": 0,
+    "pathway_without_stage_global": 51,
+    "dynamic_pathway_without_stage": 0,
+    "stage_without_rule_or_action": 0,
+    "clinical_rule_without_evidence": 0,
+    "clinical_rule_without_downstream_action_or_component_use": 0,
+    "stage_plan_name_collision": 0,
+    "duplicate_semantic_relation_count_now": 0,
+    "duplicate_type_name_count_now": 0,
+    "new_dynamic_nodes": 98
+  },
+  "remaining_target_dxc": []
+}

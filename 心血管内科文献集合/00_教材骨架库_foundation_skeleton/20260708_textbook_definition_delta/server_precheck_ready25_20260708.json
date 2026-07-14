@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-07-08 09:07:00",
+  "server_precheck_status": "passed",
+  "checked_count": 25,
+  "missing_count": 0,
+  "multi_match_count": 0,
+  "existing_definition_count": 0,
+  "missing_codes": [],
+  "multi_match_codes": [],
+  "existing_definition_codes": [],
+  "write_executed": false
+}

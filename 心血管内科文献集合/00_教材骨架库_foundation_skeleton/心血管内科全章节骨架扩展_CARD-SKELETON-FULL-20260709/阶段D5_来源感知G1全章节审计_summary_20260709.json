@@ -1,0 +1,27 @@
+{
+  "batch_id": "CARD-SKELETON-FULL-20260709",
+  "generated_at": "2026-07-09 14:52:03",
+  "subject_count": 81,
+  "status_counter": {
+    "container_rollup_only": 19,
+    "source_limited_ready_as_textbook_core": 44,
+    "source_covered_ready": 18
+  },
+  "extraction_gap_group_counter": {
+    "treatment": 1
+  },
+  "reference_only_group_counter": {
+    "clinical_manifestation": 1,
+    "diagnosis_differential": 3
+  },
+  "source_not_cover_group_counter": {
+    "definition": 7,
+    "exam_lab": 31,
+    "etiology_pathogenesis": 1,
+    "clinical_manifestation": 13,
+    "diagnosis_differential": 21,
+    "treatment": 19
+  },
+  "neo4j_import_allowed": false,
+  "note": "Full cardiology skeleton is local candidate layer; not imported until parent hierarchy and G2 curated delta are completed."
+}

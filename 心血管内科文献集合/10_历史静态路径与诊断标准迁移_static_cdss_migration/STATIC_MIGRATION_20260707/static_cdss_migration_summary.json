@@ -1,0 +1,21 @@
+{
+  "node_count": 342,
+  "relation_count": 1744,
+  "node_entity_counts": {
+    "ClinicalRule": 189,
+    "PathwayStage": 153
+  },
+  "relation_type_counts": {
+    "has_diagnostic_component": 93,
+    "supported_by_evidence": 771,
+    "has_clinical_pathway": 21,
+    "has_pathway_stage": 153,
+    "has_stage_rule": 96,
+    "has_recommended_action": 316,
+    "recommends_action": 192,
+    "next_pathway_stage": 102
+  },
+  "diagnostic_criteria_migrated": 31,
+  "static_pathways_migrated": 51,
+  "static_pathways_unmapped": []
+}

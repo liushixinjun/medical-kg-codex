@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-07-08 20:33:03",
+  "delta_count": 30,
+  "blocked_count": 10,
+  "preimport_gate_status": "passed",
+  "outputs": {
+    "delta_jsonl": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_教材骨架库_foundation_skeleton\\20260708_textbook_definition_delta_curated\\delta_disease_definition_update_curated30_20260708.jsonl",
+    "validation_detail_csv": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_教材骨架库_foundation_skeleton\\20260708_textbook_definition_delta_curated\\preimport_validation_detail_curated30_20260708.csv",
+    "blocked_csv": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_教材骨架库_foundation_skeleton\\20260708_textbook_definition_delta_curated\\blocked_after_curated30_20260708.csv"
+  }
+}

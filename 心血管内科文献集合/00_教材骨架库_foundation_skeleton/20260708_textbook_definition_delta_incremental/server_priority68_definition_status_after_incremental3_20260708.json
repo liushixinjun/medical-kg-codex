@@ -1,0 +1,11 @@
+{
+  "checked_count": 68,
+  "missing_count": 0,
+  "duplicate_match_count": 0,
+  "definition_empty_count": 40,
+  "definition_nonempty_count": 28,
+  "definition_source_section_missing_count": 0,
+  "definition_skeleton_slot_error_count": 0,
+  "definition_knowledge_layer_error_count": 0,
+  "status": "passed"
+}

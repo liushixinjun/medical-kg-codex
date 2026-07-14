@@ -1,0 +1,19 @@
+{
+  "batch_id": "CARD-SKELETON-20260709",
+  "generated_at": "2026-07-09 11:03:52",
+  "subject_count": 57,
+  "status_counter": {
+    "g1_structured_candidate_ready": 44,
+    "g1_container_rollup_only": 13
+  },
+  "subject_kind_counter": {
+    "disease_or_subtype": 21,
+    "overview_section": 3,
+    "therapy_or_management_section": 6,
+    "category_container": 13,
+    "ecg_defined_arrhythmia": 14
+  },
+  "missing_group_counter": {},
+  "neo4j_import_allowed": false,
+  "next_required": "backfill_missing_groups_or_curate_ready_candidates"
+}

@@ -1,0 +1,12 @@
+{
+  "batch_id": "CARD-SKELETON-20260709",
+  "generated_at": "2026-07-09 11:03:32",
+  "curated_subject_count": 7,
+  "curated_node_count": 24,
+  "curated_relation_count": 29,
+  "curated_evidence_link_count": 29,
+  "merged_node_count": 883,
+  "merged_relation_count": 1303,
+  "not_imported_to_neo4j": true,
+  "note": "C4 is local curated candidate layer; still requires final G1/G2 audit and stable-id delta generation."
+}

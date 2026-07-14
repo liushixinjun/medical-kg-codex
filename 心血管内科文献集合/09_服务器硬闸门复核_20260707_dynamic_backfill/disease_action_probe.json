@@ -1,0 +1,1002 @@
+[
+  {
+    "disease_code": "DIS-CARD-ARR-AF",
+    "disease_name": "心房颤动",
+    "dx_codes": [
+      "DXC-CARD-5996B55AA97D"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-TEXT-EEF9C97B59",
+      "PLAN-CARD-8648D7D7CF5C",
+      "PLAN-CARD-0C511F6A9FF0",
+      "PLAN-CARD-946E8629999F",
+      "PLAN-CARD-0315A5E784A6"
+    ],
+    "followup_codes": [
+      "FU-CARD-CE0CF6305FAF"
+    ],
+    "risk_codes": [
+      "RISK-CARD-BD6FBD0D2712",
+      "RISK-CARD-7371F77D04B5",
+      "RISK-CARD-6D5D70049DC7"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-AFL",
+    "disease_name": "心房扑动",
+    "dx_codes": [
+      "DXC-CARD-04B9595EC8CA"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-A1C4E6332D38",
+      "PLAN-CARD-85C337BCB2D5",
+      "PLAN-CARD-5C9E41087192",
+      "PLAN-CARD-108E680ADD4F",
+      "PLAN-CARD-TEXT-7CC38FBA6F"
+    ],
+    "followup_codes": [
+      "FU-CARD-39BD08E82048"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-AT",
+    "disease_name": "房性心动过速",
+    "dx_codes": [
+      "DXC-CARD-204766CBAB68"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-TEXT-655F4B37BC",
+      "PLAN-CARD-108E680ADD4F",
+      "PLAN-CARD-A1C4E6332D38",
+      "PLAN-CARD-6C7D6A045FA6",
+      "PLAN-CARD-5C9E41087192"
+    ],
+    "followup_codes": [
+      "FU-CARD-6E66B8E5FCA4"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-AVB",
+    "disease_name": "房室传导阻滞",
+    "dx_codes": [],
+    "treatment_codes": [
+      "PLAN-CARD-TEXT-7CC38FBA6F",
+      "PLAN-CARD-TEXT-EEF9C97B59",
+      "PLAN-CARD-A1C4E6332D38",
+      "PLAN-CARD-TEXT-655F4B37BC"
+    ],
+    "followup_codes": [],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-AVNRT",
+    "disease_name": "房室结折返性心动过速",
+    "dx_codes": [
+      "DXC-CARD-9A428C9E2C3C"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-5C9E41087192",
+      "PLAN-CARD-8EAEE6E3A5AC",
+      "PLAN-CARD-108E680ADD4F",
+      "PLAN-CARD-741F70867FDD"
+    ],
+    "followup_codes": [
+      "FU-CARD-DDCD8935DDF1"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-AVRT",
+    "disease_name": "房室折返性心动过速",
+    "dx_codes": [
+      "DXC-CARD-96EF831225B2"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-64B52A7B760E",
+      "PLAN-CARD-344A32B0714D",
+      "PLAN-CARD-108E680ADD4F",
+      "PLAN-CARD-5C9E41087192",
+      "PLAN-CARD-741F70867FDD"
+    ],
+    "followup_codes": [
+      "FU-CARD-431BD69A14C0"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-BRUGADA",
+    "disease_name": "Brugada综合征",
+    "dx_codes": [
+      "DXC-CARD-REQ-A69DF947813A"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-TEXT-7CC38FBA6F",
+      "PLAN-CARD-E01DCE98BB99",
+      "PLAN-CARD-A977F77F5BC2",
+      "PLAN-CARD-946BE3CB675F",
+      "PLAN-CARD-A694F46F1102"
+    ],
+    "followup_codes": [
+      "FU-CARD-DACB92B0C5DD"
+    ],
+    "risk_codes": [
+      "RISK-CARD-3B90BBF6CF71"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-CPVT",
+    "disease_name": "儿茶酚胺敏感性多形性室性心动过速",
+    "dx_codes": [
+      "DXC-CARD-REQ-FE58A0E71FEE"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-D4265EE715BD",
+      "PLAN-CARD-A694F46F1102",
+      "PLAN-CARD-E01DCE98BB99",
+      "PLAN-CARD-946BE3CB675F"
+    ],
+    "followup_codes": [
+      "FU-CARD-CA6D6BEF3F11"
+    ],
+    "risk_codes": [
+      "RISK-CARD-7592F7642F24"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-ERS",
+    "disease_name": "早期复极综合征",
+    "dx_codes": [],
+    "treatment_codes": [],
+    "followup_codes": [],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-LQTS",
+    "disease_name": "长QT间期综合征",
+    "dx_codes": [
+      "DXC-CARD-REQ-4FDD69B1DF11"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-E01DCE98BB99",
+      "PLAN-CARD-A694F46F1102",
+      "PLAN-CARD-946BE3CB675F",
+      "PLAN-CARD-5577EA63AC56"
+    ],
+    "followup_codes": [
+      "FU-CARD-REQ-57220EA34AC5"
+    ],
+    "risk_codes": [
+      "RISK-CARD-87ECA663125E"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-NSVT",
+    "disease_name": "非持续性室性心动过速",
+    "dx_codes": [
+      "DXC-CARD-REQ-C31462862B56"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-99A20A48D160",
+      "PLAN-CARD-A694F46F1102",
+      "PLAN-CARD-946BE3CB675F"
+    ],
+    "followup_codes": [
+      "FU-CARD-REQ-9FB8C3CF28CA"
+    ],
+    "risk_codes": [
+      "RISK-CARD-73780F30E838"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-PSVT",
+    "disease_name": "阵发性室上性心动过速",
+    "dx_codes": [],
+    "treatment_codes": [
+      "PLAN-CARD-TEXT-7CC38FBA6F"
+    ],
+    "followup_codes": [],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-PVC",
+    "disease_name": "室性期前收缩",
+    "dx_codes": [
+      "DXC-CARD-E67828C4B263"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-A1C4E6332D38",
+      "PLAN-CARD-8D7FDE84DC07",
+      "PLAN-CARD-C23D6266C767",
+      "PLAN-CARD-E01DCE98BB99",
+      "PLAN-CARD-77E2B4A66CCD"
+    ],
+    "followup_codes": [
+      "FU-CARD-9EE0B12A0727"
+    ],
+    "risk_codes": [
+      "RISK-CARD-FC946E22ED9C"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-SINUS",
+    "disease_name": "窦性心律失常",
+    "dx_codes": [],
+    "treatment_codes": [],
+    "followup_codes": [],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-SQTS",
+    "disease_name": "短QT间期综合征",
+    "dx_codes": [
+      "DXC-CARD-REQ-F5E5DC1892EC"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-946BE3CB675F",
+      "PLAN-CARD-C1B0D29171C8"
+    ],
+    "followup_codes": [
+      "FU-CARD-29E417517387"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-SVT",
+    "disease_name": "室上性心动过速",
+    "dx_codes": [
+      "DXC-CARD-FD25F5A6CB2C"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-A1C4E6332D38",
+      "PLAN-CARD-741F70867FDD",
+      "PLAN-CARD-5C9E41087192",
+      "PLAN-CARD-18BAD30E125A",
+      "PLAN-CARD-108E680ADD4F"
+    ],
+    "followup_codes": [
+      "FU-CARD-00103E0E5112"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-TDP",
+    "disease_name": "尖端扭转型室性心动过速",
+    "dx_codes": [
+      "DXC-CARD-REQ-187786BCF29C"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-6162E45256D2",
+      "PLAN-CARD-A694F46F1102",
+      "PLAN-CARD-8D7FDE84DC07",
+      "PLAN-CARD-E01DCE98BB99",
+      "PLAN-CARD-946BE3CB675F"
+    ],
+    "followup_codes": [
+      "FU-CARD-1F8B40D282BA"
+    ],
+    "risk_codes": [
+      "RISK-CARD-B282969A0E50"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-VA",
+    "disease_name": "室性心律失常",
+    "dx_codes": [
+      "DXC-CARD-REQ-206010AB3275"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-E01DCE98BB99",
+      "PLAN-CARD-2DBB5F9C858E",
+      "PLAN-CARD-A694F46F1102",
+      "PLAN-CARD-946BE3CB675F",
+      "PLAN-CARD-8D7FDE84DC07"
+    ],
+    "followup_codes": [
+      "FU-CARD-560244BBE36C"
+    ],
+    "risk_codes": [
+      "RISK-CARD-ED4558D6EFFC"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-VF",
+    "disease_name": "心室扑动与心室颤动",
+    "dx_codes": [
+      "DXC-CARD-8ACA8BC65FBE"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-A1C4E6332D38",
+      "PLAN-CARD-F4DFEE3BA390",
+      "PLAN-CARD-8D7FDE84DC07",
+      "PLAN-CARD-C23D6266C767",
+      "PLAN-CARD-E01DCE98BB99"
+    ],
+    "followup_codes": [
+      "FU-CARD-615F1DEDC4A6"
+    ],
+    "risk_codes": [
+      "RISK-CARD-101DF0D8A1E8"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-VT",
+    "disease_name": "持续性室性心动过速",
+    "dx_codes": [
+      "DXC-CARD-AA6BAD3066A3"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-TEXT-EEF9C97B59",
+      "PLAN-CARD-946BE3CB675F",
+      "PLAN-CARD-A694F46F1102",
+      "PLAN-CARD-8D7FDE84DC07",
+      "PLAN-CARD-47613024D1C5"
+    ],
+    "followup_codes": [
+      "FU-CARD-05832BEF02A2"
+    ],
+    "risk_codes": [
+      "RISK-CARD-D8E501796019"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-ARR-WPW",
+    "disease_name": "预激综合征",
+    "dx_codes": [
+      "DXC-CARD-C4C1DC3E0CB5"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-5C9E41087192",
+      "PLAN-CARD-64B52A7B760E",
+      "PLAN-CARD-A1C4E6332D38",
+      "PLAN-CARD-741F70867FDD",
+      "PLAN-CARD-C6D5D3242A03"
+    ],
+    "followup_codes": [
+      "FU-CARD-58BC1E7A037C"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-ACS",
+    "disease_name": "急性冠脉综合征",
+    "dx_codes": [
+      "DXC-CARD-30F656ACB669"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-3972CBC8228B",
+      "PLAN-CARD-42FD049DCDB5",
+      "PLAN-CARD-FULLBOOK-B87D3F557B",
+      "PLAN-CARD-A1C4E6332D38",
+      "PLAN-CARD-FULLBOOK-BBA9C43055"
+    ],
+    "followup_codes": [
+      "FU-CARD-F8771CA2A365"
+    ],
+    "risk_codes": [
+      "RISK-CARD-118DE6495635"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-AMI",
+    "disease_name": "急性心肌梗死",
+    "dx_codes": [
+      "DXC-CARD-547346EE2FED"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-42FD049DCDB5",
+      "PLAN-CARD-3972CBC8228B",
+      "PLAN-CARD-A1C4E6332D38",
+      "PLAN-CARD-FULLBOOK-BBA9C43055",
+      "PLAN-CARD-FULLBOOK-B87D3F557B"
+    ],
+    "followup_codes": [
+      "FU-CARD-ED1B0E900769"
+    ],
+    "risk_codes": [
+      "RISK-CARD-9566F1411AE9",
+      "RISK-CARD-7C838C246189"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-ATHEROSCLEROSIS",
+    "disease_name": "动脉粥样硬化",
+    "dx_codes": [],
+    "treatment_codes": [
+      "PLAN-CARD-TEXT-BDE62A3BE0",
+      "PLAN-CARD-A1C4E6332D38",
+      "PLAN-CARD-FULLBOOK-B87D3F557B",
+      "PLAN-CARD-TEXT-EEF9C97B59"
+    ],
+    "followup_codes": [],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-CCS",
+    "disease_name": "慢性冠脉综合征",
+    "dx_codes": [
+      "DXC-CARD-CAD-CCS-CURATED-20260628"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-89D4C114E515",
+      "PLAN-CARD-42FD049DCDB5",
+      "PLAN-CARD-TEXT-EEF9C97B59"
+    ],
+    "followup_codes": [
+      "FU-CARD-0841C3FAD521"
+    ],
+    "risk_codes": [
+      "RISK-CARD-20754CD9B62D"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-CHD",
+    "disease_name": "冠状动脉粥样硬化性心脏病",
+    "dx_codes": [],
+    "treatment_codes": [
+      "PLAN-CARD-TEXT-BDE62A3BE0",
+      "PLAN-CARD-FULLBOOK-B87D3F557B",
+      "PLAN-CARD-TEXT-655F4B37BC",
+      "PLAN-CARD-TEXT-7CC38FBA6F",
+      "PLAN-CARD-A1C4E6332D38"
+    ],
+    "followup_codes": [],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-ICM",
+    "disease_name": "缺血性心肌病",
+    "dx_codes": [
+      "DXC-CARD-097806EACD3F"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-260280003FF2",
+      "PLAN-CARD-A1C4E6332D38",
+      "PLAN-CARD-TEXT-BDE62A3BE0",
+      "PLAN-CARD-TEXT-EEF9C97B59"
+    ],
+    "followup_codes": [
+      "FU-CARD-AF9070949AB7"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-NSTEMI",
+    "disease_name": "非ST段抬高型心肌梗死",
+    "dx_codes": [
+      "DXC-CARD-AD026DED6958"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-42FD049DCDB5",
+      "PLAN-CARD-FULLBOOK-BBA9C43055",
+      "PLAN-CARD-TEXT-7CC38FBA6F",
+      "PLAN-CARD-A1C4E6332D38",
+      "PLAN-CARD-TEXT-EEF9C97B59"
+    ],
+    "followup_codes": [
+      "FU-CARD-E0E295CC2D2E"
+    ],
+    "risk_codes": [
+      "RISK-CARD-829873C257A6",
+      "RISK-CARD-9566F1411AE9"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-OLD-MI",
+    "disease_name": "陈旧性心肌梗死",
+    "dx_codes": [
+      "DXC-CARD-CAD-OLD-MI-CURATED-20260628"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-42FD049DCDB5",
+      "PLAN-CARD-9ACFEF0709E2"
+    ],
+    "followup_codes": [
+      "FU-CARD-53E0DA55CCC2"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-POST-MI-SYNDROME",
+    "disease_name": "心肌梗死后综合征",
+    "dx_codes": [],
+    "treatment_codes": [
+      "PLAN-CARD-FULLBOOK-B87D3F557B"
+    ],
+    "followup_codes": [],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+    "disease_name": "隐匿性冠心病",
+    "dx_codes": [
+      "DXC-CARD-CAD-SILENT-ISCHEMIA-CURATED-20260628"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-65EBD0DFC019"
+    ],
+    "followup_codes": [
+      "FU-CARD-CAD-SILENT-ISCHEMIA-ANNUAL-FOLLOW-UP"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-SPASM",
+    "disease_name": "冠状动脉痉挛",
+    "dx_codes": [],
+    "treatment_codes": [],
+    "followup_codes": [],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-STABLE-ANGINA",
+    "disease_name": "稳定型心绞痛",
+    "dx_codes": [
+      "DXC-CARD-F0FABEDE13D8"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-42FD049DCDB5",
+      "PLAN-CARD-TEXT-BDE62A3BE0",
+      "PLAN-CARD-TEXT-EEF9C97B59",
+      "PLAN-CARD-DDD036288AF3"
+    ],
+    "followup_codes": [
+      "FU-CARD-22A2B8A765AC"
+    ],
+    "risk_codes": [
+      "RISK-CARD-C8FDB01D41A4"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-STEMI",
+    "disease_name": "ST段抬高型心肌梗死",
+    "dx_codes": [
+      "DXC-CARD-36BC5337C93C"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-46086B93DD2D",
+      "PLAN-CARD-42FD049DCDB5",
+      "PLAN-CARD-FULLBOOK-B87D3F557B",
+      "PLAN-CARD-A1C4E6332D38",
+      "PLAN-CARD-TEXT-EEF9C97B59"
+    ],
+    "followup_codes": [
+      "FU-CARD-CE3E83B4C5CE"
+    ],
+    "risk_codes": [
+      "RISK-CARD-EB7F78C471AB"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CAD-UA",
+    "disease_name": "不稳定型心绞痛",
+    "dx_codes": [
+      "DXC-CARD-CAD-UA-CURATED-20260628"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-8B4C35522D9A",
+      "PLAN-CARD-TEXT-7CC38FBA6F",
+      "PLAN-CARD-FULLBOOK-BBA9C43055",
+      "PLAN-CARD-A1C4E6332D38",
+      "PLAN-CARD-TEXT-EEF9C97B59"
+    ],
+    "followup_codes": [
+      "FU-CARD-0F81C23E250E"
+    ],
+    "risk_codes": [
+      "RISK-CARD-38E7349FFEB1"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CM-ABVC",
+    "disease_name": "致心律失常性双心室心肌病",
+    "dx_codes": [
+      "DXC-CARD-CM-ABVC-PADUA-BIVENTRICULAR"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-75D805FA2D42",
+      "PLAN-CARD-A1C4E6332D38"
+    ],
+    "followup_codes": [
+      "FU-CARD-CM-ACM-ROUTINE-FOLLOW-UP"
+    ],
+    "risk_codes": [
+      "RISK-CARD-73C4D46DAD92"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CM-ACM",
+    "disease_name": "致心律失常性心肌病",
+    "dx_codes": [
+      "DXC-CARD-E0CC534A2482"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-8BABC3547777",
+      "PLAN-CARD-A1C4E6332D38"
+    ],
+    "followup_codes": [
+      "FU-CARD-D122E1A8DC19"
+    ],
+    "risk_codes": [
+      "RISK-CARD-341E5DDF79BA"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CM-ALVC",
+    "disease_name": "致心律失常性左心室心肌病",
+    "dx_codes": [
+      "DXC-CARD-CM-ALVC-PADUA-LV"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-501677A0810C"
+    ],
+    "followup_codes": [
+      "FU-CARD-54FDCA736767"
+    ],
+    "risk_codes": [
+      "RISK-CARD-D82F521AFD8B"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CM-AMYLOID",
+    "disease_name": "淀粉样变心肌病",
+    "dx_codes": [
+      "DXC-CARD-C5CD88A6E22B"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-BE44DFBB5552"
+    ],
+    "followup_codes": [
+      "FU-CARD-94C8AE220B62"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-CM-ARVC",
+    "disease_name": "致心律失常性右心室心肌病",
+    "dx_codes": [
+      "DXC-CARD-C8CFD05F6624"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-A998492DDF0E"
+    ],
+    "followup_codes": [
+      "FU-CARD-ABD01AB929A0"
+    ],
+    "risk_codes": [
+      "RISK-CARD-B8562DBAE6B8"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CM-ATRIAL",
+    "disease_name": "心房心肌病",
+    "dx_codes": [
+      "DXC-CARD-CM-ATRIAL-EHRA-CLASS"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT"
+    ],
+    "followup_codes": [
+      "FU-CARD-4F0F5C00E92E"
+    ],
+    "risk_codes": [
+      "RISK-CARD-5D9AF80FB084"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CM-DCM",
+    "disease_name": "扩张型心肌病",
+    "dx_codes": [
+      "DXC-CARD-16CFF57650C6"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-EF123C1AB63F",
+      "PLAN-CARD-A1C4E6332D38",
+      "PLAN-CARD-TEXT-BDE62A3BE0",
+      "PLAN-CARD-TEXT-655F4B37BC"
+    ],
+    "followup_codes": [
+      "FU-CARD-9B799CB8CABF"
+    ],
+    "risk_codes": [
+      "RISK-CARD-5217C75AAD41"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CM-FABRY",
+    "disease_name": "法布雷病心肌病",
+    "dx_codes": [
+      "DXC-CARD-CM-FABRY-ENZYME-GENE-EMB"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-D8661B4FB4B1"
+    ],
+    "followup_codes": [
+      "FU-CARD-CM-FABRY-REGULAR-CARDIAC-FOLLOW-UP"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-CM-HCM",
+    "disease_name": "肥厚型心肌病",
+    "dx_codes": [
+      "DXC-CARD-4335F6498D1C"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-C73CCA666CCA",
+      "PLAN-CARD-A1C4E6332D38"
+    ],
+    "followup_codes": [
+      "FU-CARD-B30DF4D6DE67"
+    ],
+    "risk_codes": [
+      "RISK-CARD-C72CDDDDE658"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-CM-MYOCARDITIS",
+    "disease_name": "心肌炎",
+    "dx_codes": [],
+    "treatment_codes": [
+      "PLAN-CARD-A1C4E6332D38",
+      "PLAN-CARD-TEXT-7CC38FBA6F"
+    ],
+    "followup_codes": [],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-CM-NDLVCM",
+    "disease_name": "非扩张型左心室心肌病",
+    "dx_codes": [
+      "DXC-CARD-CM-NDLVCM-CMR-LGE"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-0E0B6D3DD944",
+      "PLAN-CARD-TEXT-655F4B37BC"
+    ],
+    "followup_codes": [
+      "FU-CARD-CM-NDLVCM-LIFELONG-SCD-RISK"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-CM-RCM",
+    "disease_name": "限制型心肌病",
+    "dx_codes": [
+      "DXC-CARD-F68ECA7670AB"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-A1C4E6332D38",
+      "PLAN-CARD-8419002B35F1"
+    ],
+    "followup_codes": [
+      "FU-CARD-1231E09FC493"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-HF",
+    "disease_name": "心力衰竭",
+    "dx_codes": [
+      "DXC-CARD-C9F14771A730"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-EFF16DE5C7BC",
+      "PLAN-CARD-A1C4E6332D38",
+      "PLAN-CARD-TEXT-655F4B37BC",
+      "PLAN-CARD-FULLBOOK-B87D3F557B",
+      "PLAN-CARD-TEXT-BDE62A3BE0"
+    ],
+    "followup_codes": [
+      "FU-CARD-8BCE7C3349BC"
+    ],
+    "risk_codes": [
+      "RISK-CARD-FDA995103C36"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-HF-AHF",
+    "disease_name": "急性心力衰竭",
+    "dx_codes": [
+      "DXC-CARD-F8A3379B0E95",
+      "DXC-CARD-C9F14771A730"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-A1C4E6332D38",
+      "PLAN-CARD-8DE84AB1F5CB",
+      "PLAN-CARD-TEXT-7CC38FBA6F",
+      "PLAN-CARD-TEXT-655F4B37BC"
+    ],
+    "followup_codes": [
+      "FU-CARD-8BCE7C3349BC",
+      "FU-CARD-FEF8D3FB0935"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-HF-BIVENTRICULAR",
+    "disease_name": "全心衰竭",
+    "dx_codes": [
+      "DXC-CARD-C9F14771A730"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-E34C37595CAA"
+    ],
+    "followup_codes": [
+      "FU-CARD-8BCE7C3349BC"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-HF-CHF",
+    "disease_name": "慢性心力衰竭",
+    "dx_codes": [
+      "DXC-CARD-ED581915E839",
+      "DXC-CARD-C9F14771A730"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-TEXT-EEF9C97B59",
+      "PLAN-CARD-CDCF4B5B8556"
+    ],
+    "followup_codes": [
+      "FU-CARD-EB09E424D896",
+      "FU-CARD-8BCE7C3349BC"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-HF-DIALYSIS-CHF",
+    "disease_name": "透析患者慢性心力衰竭",
+    "dx_codes": [
+      "DXC-CARD-C9F14771A730",
+      "DXC-CARD-CE6F1213B83D"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-C3F083B7CCAC"
+    ],
+    "followup_codes": [
+      "FU-CARD-8C6D2ACF6BA1",
+      "FU-CARD-8BCE7C3349BC"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-HF-HFmrEF",
+    "disease_name": "射血分数轻度降低的心力衰竭",
+    "dx_codes": [
+      "DXC-CARD-C9F14771A730",
+      "DXC-CARD-28280DD401C8"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-BC4747CE025F"
+    ],
+    "followup_codes": [
+      "FU-CARD-C57FA7D6D28B",
+      "FU-CARD-8BCE7C3349BC"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-HF-HFpEF",
+    "disease_name": "射血分数保留的心力衰竭",
+    "dx_codes": [
+      "DXC-CARD-C9F14771A730",
+      "DXC-CARD-2456E1DC2365"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-71EEE6F12EA8"
+    ],
+    "followup_codes": [
+      "FU-CARD-8BCE7C3349BC",
+      "FU-CARD-D060708A226F"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-HF-HFrEF",
+    "disease_name": "射血分数降低的心力衰竭",
+    "dx_codes": [
+      "DXC-CARD-221AA46B58A3",
+      "DXC-CARD-C9F14771A730"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-4C0507593DD1"
+    ],
+    "followup_codes": [
+      "FU-CARD-1302594CF43E",
+      "FU-CARD-8BCE7C3349BC"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-HF-LEFT",
+    "disease_name": "左心衰竭",
+    "dx_codes": [
+      "DXC-CARD-25510C02A8C8",
+      "DXC-CARD-C9F14771A730"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-D0BC88D1FA7D"
+    ],
+    "followup_codes": [
+      "FU-CARD-8BCE7C3349BC",
+      "FU-CARD-66D4C98C712F"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-HF-POST-MI",
+    "disease_name": "心肌梗死后心力衰竭",
+    "dx_codes": [
+      "DXC-CARD-5A4BCEDA1085",
+      "DXC-CARD-C9F14771A730"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-019D9CFB289A"
+    ],
+    "followup_codes": [
+      "FU-CARD-8C8AB2EC9F7D",
+      "FU-CARD-8BCE7C3349BC"
+    ],
+    "risk_codes": []
+  },
+  {
+    "disease_code": "DIS-CARD-HF-RIGHT",
+    "disease_name": "右心衰竭",
+    "dx_codes": [
+      "DXC-CARD-FB1FD85809E5",
+      "DXC-CARD-C9F14771A730"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-E843FA63DDCF"
+    ],
+    "followup_codes": [
+      "FU-CARD-29AFBDFB220D",
+      "FU-CARD-8BCE7C3349BC"
+    ],
+    "risk_codes": [
+      "RISK-CARD-011399550FDD"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-SCD-ARREST",
+    "disease_name": "心脏骤停",
+    "dx_codes": [
+      "DXC-CARD-663B41A63239"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-TEXT-7CC38FBA6F",
+      "PLAN-CARD-A694F46F1102",
+      "PLAN-CARD-D0001FDBBA7E",
+      "PLAN-CARD-8D7FDE84DC07",
+      "PLAN-CARD-946BE3CB675F"
+    ],
+    "followup_codes": [
+      "FU-CARD-6C300A11F9E9"
+    ],
+    "risk_codes": [
+      "RISK-CARD-4263DC3E19BA"
+    ]
+  },
+  {
+    "disease_code": "DIS-CARD-SCD-SUDDEN",
+    "disease_name": "心脏性猝死",
+    "dx_codes": [
+      "DXC-CARD-6B002C8433DE"
+    ],
+    "treatment_codes": [
+      "PLAN-CARD-TEXT-7CC38FBA6F",
+      "PLAN-CARD-946BE3CB675F",
+      "PLAN-CARD-E01DCE98BB99",
+      "PLAN-CARD-A694F46F1102",
+      "PLAN-CARD-B9AD52AAFDDB"
+    ],
+    "followup_codes": [
+      "FU-CARD-ECE6663DB61D"
+    ],
+    "risk_codes": [
+      "RISK-CARD-39D6A5F57D3A"
+    ]
+  }
+]

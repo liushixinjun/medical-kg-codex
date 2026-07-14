@@ -1,0 +1,887 @@
+[
+  {
+    "pathway_code": "PATH-CARD-CM-ATRIAL-AF-STROKE-RISK",
+    "pathway_name": "房性心律失常和卒中预防路径",
+    "batch_id": "BATCH-CARD-CM-20260622-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-04AD8DC8503F",
+    "pathway_name": "室性心律失常治疗路径",
+    "batch_id": "BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD",
+    "disease_codes": [
+      "DIS-CARD-ARR-VA"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-ARR-VA"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-0CF7B718B269",
+    "pathway_name": "ST段抬高型心肌梗死治疗路径",
+    "batch_id": "BATCH-CARD-CAD-20260623-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-11AEC215E073",
+    "pathway_name": "心室扑动与心室颤动治疗路径",
+    "batch_id": "BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD",
+    "disease_codes": [
+      "DIS-CARD-ARR-VF"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-ARR-VF"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-168E228D2992",
+    "pathway_name": "心力衰竭治疗路径",
+    "batch_id": "BATCH-CARD-HF-20260629-001",
+    "disease_codes": [
+      "DIS-CARD-HF"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-HF"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-17A2C6DE85BB",
+    "pathway_name": "致心律失常性左心室心肌病治疗路径",
+    "batch_id": "BATCH-CARD-CM-20260622-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-1B6450E2CB29",
+    "pathway_name": "肥厚型心肌病治疗路径",
+    "batch_id": "BATCH-CARD-CM-20260622-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-1CF6B8F522CB",
+    "pathway_name": "射血分数轻度降低的心力衰竭治疗路径",
+    "batch_id": "BATCH-CARD-HF-20260629-001",
+    "disease_codes": [
+      "DIS-CARD-HF-HFmrEF"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-HF-HFmrEF"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-2CEC2DD2357F",
+    "pathway_name": "透析患者慢性心力衰竭治疗路径",
+    "batch_id": "BATCH-CARD-HF-20260629-001",
+    "disease_codes": [
+      "DIS-CARD-HF-DIALYSIS-CHF"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-HF-DIALYSIS-CHF"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-2D83296059F7",
+    "pathway_name": "淀粉样变心肌病治疗路径",
+    "batch_id": "BATCH-CARD-CM-20260622-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-31AEF9651AEF",
+    "pathway_name": "心房扑动治疗路径",
+    "batch_id": "BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter",
+    "disease_codes": [
+      "DIS-CARD-ARR-AFL"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-ARR-AFL"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-39CFBD93D21C",
+    "pathway_name": "法布雷病心肌病治疗路径",
+    "batch_id": "BATCH-CARD-CM-20260622-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-41DC82CC9620",
+    "pathway_name": "非持续性室性心动过速治疗路径",
+    "batch_id": "BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD",
+    "disease_codes": [
+      "DIS-CARD-ARR-NSVT"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-ARR-NSVT"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-44DAC3BE112B",
+    "pathway_name": "心肌梗死后心力衰竭治疗路径",
+    "batch_id": "BATCH-CARD-HF-20260629-001",
+    "disease_codes": [
+      "DIS-CARD-HF-POST-MI"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-HF-POST-MI"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-46E54F5E9965",
+    "pathway_name": "持续性室性心动过速治疗路径",
+    "batch_id": "BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD",
+    "disease_codes": [
+      "DIS-CARD-ARR-VT"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-ARR-VT"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-47D3A2CC113F",
+    "pathway_name": "缺血性心肌病治疗路径",
+    "batch_id": "BATCH-CARD-CAD-20260623-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-492A756A97A0",
+    "pathway_name": "预激综合征治疗路径",
+    "batch_id": "BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter",
+    "disease_codes": [
+      "DIS-CARD-ARR-WPW"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-ARR-WPW"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-4EA2DCC78DCE",
+    "pathway_name": "短QT间期综合征治疗路径",
+    "batch_id": "BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD",
+    "disease_codes": [
+      "DIS-CARD-ARR-SQTS"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-ARR-SQTS"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-5CA473A5EFB7",
+    "pathway_name": "慢性心力衰竭治疗路径",
+    "batch_id": "BATCH-CARD-HF-20260629-001",
+    "disease_codes": [
+      "DIS-CARD-HF-CHF"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-HF-CHF"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-5E45FE7612C0",
+    "pathway_name": "室上性心动过速治疗路径",
+    "batch_id": "BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter",
+    "disease_codes": [
+      "DIS-CARD-ARR-SVT"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-ARR-SVT"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-5E4A6A51FCFA",
+    "pathway_name": "致心律失常性右心室心肌病治疗路径",
+    "batch_id": "BATCH-CARD-CM-20260622-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-75AAE6892822",
+    "pathway_name": "扩张型心肌病治疗路径",
+    "batch_id": "BATCH-CARD-CM-20260622-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-76327A0605BF",
+    "pathway_name": "左心衰竭治疗路径",
+    "batch_id": "BATCH-CARD-HF-20260629-001",
+    "disease_codes": [
+      "DIS-CARD-HF-LEFT"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-HF-LEFT"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-7AB7CAC36944",
+    "pathway_name": "心脏骤停治疗路径",
+    "batch_id": "BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD",
+    "disease_codes": [
+      "DIS-CARD-SCD-ARREST"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-SCD-ARREST"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-7E09B8ADECBE",
+    "pathway_name": "心脏性猝死治疗路径",
+    "batch_id": "BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD",
+    "disease_codes": [
+      "DIS-CARD-SCD-SUDDEN"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-SCD-SUDDEN"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-81FA1596CA65",
+    "pathway_name": "长QT间期综合征治疗路径",
+    "batch_id": "BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD",
+    "disease_codes": [
+      "DIS-CARD-ARR-LQTS"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-ARR-LQTS"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-881A5962FEE8",
+    "pathway_name": "室性期前收缩治疗路径",
+    "batch_id": "BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD",
+    "disease_codes": [
+      "DIS-CARD-ARR-PVC"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-ARR-PVC"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-8A6F078A4E03",
+    "pathway_name": "儿茶酚胺敏感性多形性室性心动过速治疗路径",
+    "batch_id": "BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD",
+    "disease_codes": [
+      "DIS-CARD-ARR-CPVT"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-ARR-CPVT"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-95B0A082242B",
+    "pathway_name": "房性心动过速治疗路径",
+    "batch_id": "BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter",
+    "disease_codes": [
+      "DIS-CARD-ARR-AT"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-ARR-AT"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-9F837323F5A4",
+    "pathway_name": "致心律失常性心肌病治疗路径",
+    "batch_id": "BATCH-CARD-CM-20260622-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-A89AD457E954",
+    "pathway_name": "慢性冠脉综合征治疗路径",
+    "batch_id": "BATCH-CARD-CAD-20260623-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-AAC14212D98C",
+    "pathway_name": "尖端扭转型室性心动过速治疗路径",
+    "batch_id": "BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD",
+    "disease_codes": [
+      "DIS-CARD-ARR-TDP"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-ARR-TDP"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-BA4901A548C2",
+    "pathway_name": "稳定型心绞痛治疗路径",
+    "batch_id": "BATCH-CARD-CAD-20260623-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-BCB6595E4A58",
+    "pathway_name": "射血分数降低的心力衰竭治疗路径",
+    "batch_id": "BATCH-CARD-HF-20260629-001",
+    "disease_codes": [
+      "DIS-CARD-HF-HFrEF"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-HF-HFrEF"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-CCE233F593A6",
+    "pathway_name": "射血分数保留的心力衰竭治疗路径",
+    "batch_id": "BATCH-CARD-HF-20260629-001",
+    "disease_codes": [
+      "DIS-CARD-HF-HFpEF"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-HF-HFpEF"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-CDD85E19C142",
+    "pathway_name": "陈旧性心肌梗死治疗路径",
+    "batch_id": "BATCH-CARD-CAD-20260623-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-CE20E681F8F0",
+    "pathway_name": "隐匿性冠心病治疗路径",
+    "batch_id": "BATCH-CARD-CAD-20260623-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-CEAE0C4E99B9",
+    "pathway_name": "急性心肌梗死治疗路径",
+    "batch_id": "BATCH-CARD-CAD-20260623-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-D2F1438BB7D4",
+    "pathway_name": "全心衰竭治疗路径",
+    "batch_id": "BATCH-CARD-HF-20260629-001",
+    "disease_codes": [
+      "DIS-CARD-HF-BIVENTRICULAR"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-HF-BIVENTRICULAR"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-D8694FD10E05",
+    "pathway_name": "右心衰竭治疗路径",
+    "batch_id": "BATCH-CARD-HF-20260629-001",
+    "disease_codes": [
+      "DIS-CARD-HF-RIGHT"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-HF-RIGHT"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-DEBB2FEB08F8",
+    "pathway_name": "不稳定型心绞痛治疗路径",
+    "batch_id": "BATCH-CARD-CAD-20260623-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-DF6F434C5C44",
+    "pathway_name": "致心律失常性双心室心肌病治疗路径",
+    "batch_id": "BATCH-CARD-CM-20260622-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-E6FFD251EB59",
+    "pathway_name": "非扩张型左心室心肌病治疗路径",
+    "batch_id": "BATCH-CARD-CM-20260622-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-E724A2E93C03",
+    "pathway_name": "房室折返性心动过速治疗路径",
+    "batch_id": "BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter",
+    "disease_codes": [
+      "DIS-CARD-ARR-AVRT"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-ARR-AVRT"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-E7DCA9EB52BB",
+    "pathway_name": "非ST段抬高型心肌梗死治疗路径",
+    "batch_id": "BATCH-CARD-CAD-20260623-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-EF8B93B288A6",
+    "pathway_name": "心房颤动治疗路径",
+    "batch_id": "BATCH-CARD-AF-20260701-001_房颤_AtrialFibrillation",
+    "disease_codes": [
+      "DIS-CARD-ARR-AF"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-ARR-AF"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-F1B034D0D7A3",
+    "pathway_name": "Brugada综合征治疗路径",
+    "batch_id": "BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD",
+    "disease_codes": [
+      "DIS-CARD-ARR-BRUGADA"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-ARR-BRUGADA"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-F1DB759D76BC",
+    "pathway_name": "房室结折返性心动过速治疗路径",
+    "batch_id": "BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter",
+    "disease_codes": [
+      "DIS-CARD-ARR-AVNRT"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-ARR-AVNRT"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-F2B4D728E4C5",
+    "pathway_name": "限制型心肌病治疗路径",
+    "batch_id": "BATCH-CARD-CM-20260622-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-F67364931C99",
+    "pathway_name": "急性心力衰竭治疗路径",
+    "batch_id": "BATCH-CARD-HF-20260629-001",
+    "disease_codes": [
+      "DIS-CARD-HF-AHF"
+    ],
+    "incoming_disease_codes": [
+      "DIS-CARD-HF-AHF"
+    ],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "pathway_code": "PATHWAY-CARD-FBB8A78A91AB",
+    "pathway_name": "急性冠脉综合征治疗路径",
+    "batch_id": "BATCH-CARD-CAD-20260623-001",
+    "disease_codes": [],
+    "incoming_disease_codes": [],
+    "outgoing": [
+      {
+        "code": null,
+        "name": null,
+        "rel": null,
+        "type": null
+      }
+    ]
+  }
+]

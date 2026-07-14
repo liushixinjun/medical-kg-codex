@@ -1,0 +1,210 @@
+batch:
+  batch_id: "BATCH-CARD-HT-20260709-001_高血压_Hypertension"
+  batch_name: "心血管内科-高血压疾病大类解析批次"
+  created_date: "2026-07-09"
+  created_by: "Codex"
+
+scope:
+  top_specialty: "心血管内科"
+  disease_category: "高血压疾病"
+  scope_type: "疾病大类"
+  scope_target:
+    - "高血压"
+  scope_exclusion:
+    - "非心血管专科主导的妊娠期高血压专题暂不作为本批次核心专病"
+    - "肺动脉高压不归入本批次，另属肺血管/右心疾病方向"
+  is_new_batch: true
+  allow_merge_with_existing_graph: false
+  source_aliases:
+    - "高血压"
+    - "Hypertension"
+    - "hypertension"
+    - "HT"
+    - "blood pressure"
+    - "原发性醛固酮增多症"
+    - "醛固酮"
+    - "肾上腺"
+    - "内分泌性高血压"
+    - "肾血管"
+    - "发作性高血压"
+
+source_roots:
+  guideline_roots:
+    - "E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/诊疗指南"
+  textbook_roots:
+    - "E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/书籍教材"
+  external_authority_roots:
+    - "E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/外部权威"
+  terminology_roots:
+    - "E:/BigMouse/0.CDSS文献诊疗指南材料PDF/AI专科知识图谱生成/术语字典"
+
+output:
+  output_root: "E:/BigMouse/0.CDSS文献诊疗指南材料PDF/AI专科知识图谱生成/心血管内科文献集合"
+  write_mode: "new_batch_only"
+
+execution_permissions:
+  allow_neo4j_read: false
+  allow_neo4j_write: false
+  allow_file_overwrite: false
+  allow_skill_schema_change: false
+  allow_run_import_scripts: false
+  allow_run_repair_scripts: false
+  allow_run_delete_scripts: false
+
+source_policy:
+  textbook_role: "搭骨架"
+  guideline_role: "补推荐、证据、禁忌、阈值、路径"
+  external_authority_role: "仅补教材/指南未覆盖的基础定义或患者教育候选"
+  require_source_manifest: true
+  require_pdf_or_doc_dedup_by_title: true
+  source_scope_aliases:
+    - "中国高血压"
+    - "高血压临床实践指南"
+    - "高血压防治指南"
+    - "高血压基层诊疗"
+    - "高血压急症"
+    - "老年高血压"
+    - "慢性肾脏病患者高血压"
+    - "内分泌性高血压"
+    - "原发性醛固酮增多症"
+    - "肾上腺静脉取血"
+    - "paroxysmal hypertension"
+    - "hypertension"
+
+taxonomy_rows:
+  - {specialty_code: "SPEC-CARD", category_code: "", subcategory_code: "", disease_code: "", name: "心血管内科", name_en: "Cardiology", aliases: "心内科", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "", disease_code: "", name: "高血压疾病", name_en: "Hypertensive disorders", aliases: "高血压,hypertension,HT", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "SUB-CARD-HT-GENERAL", disease_code: "", name: "高血压常见类型", name_en: "Common hypertension phenotypes", aliases: "原发性高血压,难治性高血压,白大衣高血压,隐匿性高血压", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "SUB-CARD-HT-SECONDARY", disease_code: "", name: "继发性高血压", name_en: "Secondary hypertension", aliases: "继发性高血压,secondary hypertension", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "SUB-CARD-HT-CRISIS", disease_code: "", name: "高血压危象", name_en: "Hypertensive crisis", aliases: "高血压急症,高血压亚急症,hypertensive emergency,hypertensive urgency", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "SUB-CARD-HT-SPECIAL", disease_code: "", name: "特殊人群和特殊类型高血压", name_en: "Special hypertension populations and phenotypes", aliases: "老年高血压,CKD合并高血压,发作性高血压", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "SUB-CARD-HT-GENERAL", disease_code: "DIS-CARD-HT", name: "高血压", name_en: "Hypertension", aliases: "血压升高,hypertension,HT,high blood pressure", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "SUB-CARD-HT-GENERAL", disease_code: "DIS-CARD-HT-PRIMARY", name: "原发性高血压", name_en: "Primary hypertension", aliases: "本态性高血压,essential hypertension,primary hypertension", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "SUB-CARD-HT-SECONDARY", disease_code: "DIS-CARD-HT-SECONDARY", name: "继发性高血压", name_en: "Secondary hypertension", aliases: "secondary hypertension,可明确病因的高血压", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "SUB-CARD-HT-CRISIS", disease_code: "DIS-CARD-HT-EMERGENCY", name: "高血压急症", name_en: "Hypertensive emergency", aliases: "hypertensive emergency,高血压危象伴靶器官损害", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "SUB-CARD-HT-CRISIS", disease_code: "DIS-CARD-HT-URGENCY", name: "高血压亚急症", name_en: "Hypertensive urgency", aliases: "hypertensive urgency,无急性靶器官损害的重度高血压", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "SUB-CARD-HT-SPECIAL", disease_code: "DIS-CARD-HT-ELDERLY", name: "老年高血压", name_en: "Hypertension in older adults", aliases: "老年人高血压,elderly hypertension", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "SUB-CARD-HT-GENERAL", disease_code: "DIS-CARD-HT-RESISTANT", name: "难治性高血压", name_en: "Resistant hypertension", aliases: "顽固性高血压,resistant hypertension", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "SUB-CARD-HT-GENERAL", disease_code: "DIS-CARD-HT-WCH", name: "白大衣高血压", name_en: "White-coat hypertension", aliases: "诊室高血压,white coat hypertension", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "SUB-CARD-HT-GENERAL", disease_code: "DIS-CARD-HT-MASKED", name: "隐匿性高血压", name_en: "Masked hypertension", aliases: "masked hypertension", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "SUB-CARD-HT-SECONDARY", disease_code: "DIS-CARD-HT-ENDOCRINE", name: "内分泌性高血压", name_en: "Endocrine hypertension", aliases: "endocrine hypertension", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "SUB-CARD-HT-SECONDARY", disease_code: "DIS-CARD-HT-PA", name: "原发性醛固酮增多症", name_en: "Primary aldosteronism", aliases: "原醛,PA,primary aldosteronism", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "SUB-CARD-HT-SECONDARY", disease_code: "DIS-CARD-HT-RENAL-PARENCHYMAL", name: "肾实质性高血压", name_en: "Renal parenchymal hypertension", aliases: "肾性高血压,renal parenchymal hypertension", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "SUB-CARD-HT-SECONDARY", disease_code: "DIS-CARD-HT-RENOVASCULAR", name: "肾血管性高血压", name_en: "Renovascular hypertension", aliases: "renovascular hypertension,肾动脉狭窄相关高血压", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "SUB-CARD-HT-SPECIAL", disease_code: "DIS-CARD-HT-CKD", name: "慢性肾脏病合并高血压", name_en: "Hypertension in chronic kidney disease", aliases: "CKD合并高血压,慢性肾脏病患者高血压", inclusion_status: "included"}
+  - {specialty_code: "SPEC-CARD", category_code: "CAT-CARD-HT", subcategory_code: "SUB-CARD-HT-SPECIAL", disease_code: "DIS-CARD-HT-PAROXYSMAL", name: "发作性高血压", name_en: "Paroxysmal hypertension", aliases: "paroxysmal hypertension,阵发性高血压", inclusion_status: "included"}
+
+controlled_vocabulary_rows:
+  - {canonical_name: "高血压", name_en: "Hypertension", abbr: "HT", aliases: "血压升高,high blood pressure,hypertension", entityType: "Disease", disease_scope: "DIS-CARD-HT", source: "hypertension_scope_v1"}
+  - {canonical_name: "原发性高血压", name_en: "Primary hypertension", abbr: "", aliases: "本态性高血压,essential hypertension,primary hypertension", entityType: "Disease", disease_scope: "DIS-CARD-HT-PRIMARY", source: "hypertension_scope_v1"}
+  - {canonical_name: "继发性高血压", name_en: "Secondary hypertension", abbr: "", aliases: "secondary hypertension", entityType: "Disease", disease_scope: "DIS-CARD-HT-SECONDARY", source: "hypertension_scope_v1"}
+  - {canonical_name: "高血压急症", name_en: "Hypertensive emergency", abbr: "", aliases: "hypertensive emergency,高血压危象", entityType: "Disease", disease_scope: "DIS-CARD-HT-EMERGENCY", source: "hypertension_scope_v1"}
+  - {canonical_name: "高血压亚急症", name_en: "Hypertensive urgency", abbr: "", aliases: "hypertensive urgency", entityType: "Disease", disease_scope: "DIS-CARD-HT-URGENCY", source: "hypertension_scope_v1"}
+  - {canonical_name: "老年高血压", name_en: "Hypertension in older adults", abbr: "", aliases: "老年人高血压,elderly hypertension", entityType: "Disease", disease_scope: "DIS-CARD-HT-ELDERLY", source: "hypertension_scope_v1"}
+  - {canonical_name: "难治性高血压", name_en: "Resistant hypertension", abbr: "", aliases: "顽固性高血压,resistant hypertension", entityType: "Disease", disease_scope: "DIS-CARD-HT-RESISTANT", source: "hypertension_scope_v1"}
+  - {canonical_name: "白大衣高血压", name_en: "White-coat hypertension", abbr: "", aliases: "white coat hypertension", entityType: "Disease", disease_scope: "DIS-CARD-HT-WCH", source: "hypertension_scope_v1"}
+  - {canonical_name: "隐匿性高血压", name_en: "Masked hypertension", abbr: "", aliases: "masked hypertension", entityType: "Disease", disease_scope: "DIS-CARD-HT-MASKED", source: "hypertension_scope_v1"}
+  - {canonical_name: "内分泌性高血压", name_en: "Endocrine hypertension", abbr: "", aliases: "endocrine hypertension", entityType: "Disease", disease_scope: "DIS-CARD-HT-ENDOCRINE", source: "hypertension_scope_v1"}
+  - {canonical_name: "原发性醛固酮增多症", name_en: "Primary aldosteronism", abbr: "PA", aliases: "原醛,primary aldosteronism", entityType: "Disease", disease_scope: "DIS-CARD-HT-PA", source: "hypertension_scope_v1"}
+  - {canonical_name: "肾实质性高血压", name_en: "Renal parenchymal hypertension", abbr: "", aliases: "肾性高血压", entityType: "Disease", disease_scope: "DIS-CARD-HT-RENAL-PARENCHYMAL", source: "hypertension_scope_v1"}
+  - {canonical_name: "肾血管性高血压", name_en: "Renovascular hypertension", abbr: "", aliases: "肾动脉狭窄相关高血压,renovascular hypertension", entityType: "Disease", disease_scope: "DIS-CARD-HT-RENOVASCULAR", source: "hypertension_scope_v1"}
+  - {canonical_name: "慢性肾脏病合并高血压", name_en: "Hypertension in chronic kidney disease", abbr: "CKD-HT", aliases: "CKD合并高血压,慢性肾脏病患者高血压", entityType: "Disease", disease_scope: "DIS-CARD-HT-CKD", source: "hypertension_scope_v1"}
+  - {canonical_name: "发作性高血压", name_en: "Paroxysmal hypertension", abbr: "", aliases: "阵发性高血压,paroxysmal hypertension", entityType: "Disease", disease_scope: "DIS-CARD-HT-PAROXYSMAL", source: "hypertension_scope_v1"}
+  - {canonical_name: "头痛", name_en: "Headache", abbr: "", aliases: "头部疼痛", entityType: "Symptom", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "头晕", name_en: "Dizziness", abbr: "", aliases: "眩晕,头昏", entityType: "Symptom", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "心悸", name_en: "Palpitation", abbr: "", aliases: "心慌", entityType: "Symptom", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "胸闷", name_en: "Chest distress", abbr: "", aliases: "胸部不适", entityType: "Symptom", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "胸痛", name_en: "Chest pain", abbr: "", aliases: "胸部疼痛", entityType: "Symptom", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "呼吸困难", name_en: "Dyspnea", abbr: "", aliases: "气促,气短", entityType: "Symptom", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "视物模糊", name_en: "Blurred vision", abbr: "", aliases: "视力模糊", entityType: "Symptom", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "鼻出血", name_en: "Epistaxis", abbr: "", aliases: "鼻衄", entityType: "Symptom", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "恶心", name_en: "Nausea", abbr: "", aliases: "", entityType: "Symptom", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "呕吐", name_en: "Vomiting", abbr: "", aliases: "", entityType: "Symptom", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "意识障碍", name_en: "Disturbance of consciousness", abbr: "", aliases: "意识改变", entityType: "Symptom", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "抽搐", name_en: "Convulsion", abbr: "", aliases: "惊厥", entityType: "Symptom", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "血压升高", name_en: "Elevated blood pressure", abbr: "", aliases: "高血压,收缩压升高,舒张压升高", entityType: "Sign", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "靶器官损害", name_en: "Target organ damage", abbr: "TOD", aliases: "靶器官受损,HMOD", entityType: "Sign", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "左心室肥厚", name_en: "Left ventricular hypertrophy", abbr: "LVH", aliases: "左室肥厚", entityType: "Sign", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "眼底改变", name_en: "Fundus change", abbr: "", aliases: "高血压视网膜病变", entityType: "Sign", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "水肿", name_en: "Edema", abbr: "", aliases: "浮肿", entityType: "Sign", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "神经系统体征", name_en: "Neurological signs", abbr: "", aliases: "神经系统异常体征", entityType: "Sign", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "高盐饮食", name_en: "High salt diet", abbr: "", aliases: "盐摄入过多,高钠饮食", entityType: "RiskFactor", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "肥胖", name_en: "Obesity", abbr: "", aliases: "超重,体重增加", entityType: "RiskFactor", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "吸烟", name_en: "Smoking", abbr: "", aliases: "", entityType: "RiskFactor", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "饮酒", name_en: "Alcohol consumption", abbr: "", aliases: "过量饮酒", entityType: "RiskFactor", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "家族史", name_en: "Family history", abbr: "", aliases: "高血压家族史", entityType: "RiskFactor", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "高龄", name_en: "Advanced age", abbr: "", aliases: "老年", entityType: "RiskFactor", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "糖尿病", name_en: "Diabetes mellitus", abbr: "DM", aliases: "diabetes", entityType: "RiskFactor", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "血脂异常", name_en: "Dyslipidemia", abbr: "", aliases: "高脂血症", entityType: "RiskFactor", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "慢性肾脏病", name_en: "Chronic kidney disease", abbr: "CKD", aliases: "肾功能不全", entityType: "RiskFactor", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "阻塞性睡眠呼吸暂停", name_en: "Obstructive sleep apnea", abbr: "OSA", aliases: "睡眠呼吸暂停", entityType: "RiskFactor", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "脑卒中", name_en: "Stroke", abbr: "", aliases: "卒中,脑血管事件", entityType: "Complication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "冠心病", name_en: "Coronary artery disease", abbr: "CAD", aliases: "冠状动脉粥样硬化性心脏病", entityType: "Complication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "心力衰竭", name_en: "Heart failure", abbr: "HF", aliases: "心衰", entityType: "Complication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "心肌梗死", name_en: "Myocardial infarction", abbr: "MI", aliases: "急性心肌梗死,AMI", entityType: "Complication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "主动脉夹层", name_en: "Aortic dissection", abbr: "", aliases: "", entityType: "Complication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "高血压脑病", name_en: "Hypertensive encephalopathy", abbr: "", aliases: "", entityType: "Complication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "视网膜病变", name_en: "Retinopathy", abbr: "", aliases: "高血压视网膜病变", entityType: "Complication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "终末期肾病", name_en: "End-stage kidney disease", abbr: "ESKD", aliases: "尿毒症", entityType: "Complication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "诊室血压测量", name_en: "Office blood pressure measurement", abbr: "OBPM", aliases: "诊室血压,办公室血压", entityType: "Exam", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "家庭血压监测", name_en: "Home blood pressure monitoring", abbr: "HBPM", aliases: "家庭自测血压", entityType: "Exam", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "24小时动态血压监测", name_en: "Ambulatory blood pressure monitoring", abbr: "ABPM", aliases: "动态血压监测,24h ABPM", entityType: "Exam", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "心电图", name_en: "Electrocardiogram", abbr: "ECG", aliases: "常规心电图,ECG", entityType: "Exam", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "超声心动图", name_en: "Echocardiography", abbr: "TTE", aliases: "心脏超声", entityType: "Exam", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "眼底检查", name_en: "Fundus examination", abbr: "", aliases: "", entityType: "Exam", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "肾动脉超声", name_en: "Renal artery ultrasound", abbr: "", aliases: "肾动脉彩超", entityType: "Exam", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "肾上腺CT", name_en: "Adrenal CT", abbr: "", aliases: "肾上腺增强CT", entityType: "Exam", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "肾上腺静脉采血", name_en: "Adrenal venous sampling", abbr: "AVS", aliases: "肾上腺静脉取血,AVS", entityType: "Exam", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "睡眠呼吸监测", name_en: "Sleep apnea monitoring", abbr: "", aliases: "睡眠监测,多导睡眠监测", entityType: "Exam", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "血肌酐", name_en: "Serum creatinine", abbr: "Scr", aliases: "肌酐", entityType: "LabTest", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "血钾", name_en: "Serum potassium", abbr: "K", aliases: "血清钾", entityType: "LabTest", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "尿白蛋白/肌酐比值", name_en: "Urine albumin-to-creatinine ratio", abbr: "UACR", aliases: "尿白蛋白肌酐比,尿微量白蛋白", entityType: "LabTest", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "空腹血糖", name_en: "Fasting plasma glucose", abbr: "FPG", aliases: "血糖", entityType: "LabTest", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "血脂", name_en: "Lipid profile", abbr: "", aliases: "血脂谱,胆固醇", entityType: "LabTest", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "血尿酸", name_en: "Serum uric acid", abbr: "UA", aliases: "尿酸", entityType: "LabTest", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "醛固酮/肾素比值", name_en: "Aldosterone-to-renin ratio", abbr: "ARR", aliases: "醛固酮肾素比值,ARR", entityType: "LabTest", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "甲状腺功能", name_en: "Thyroid function", abbr: "", aliases: "甲功", entityType: "LabTest", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "收缩压", name_en: "Systolic blood pressure", abbr: "SBP", aliases: "SBP,高压", entityType: "ExamIndicator", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "舒张压", name_en: "Diastolic blood pressure", abbr: "DBP", aliases: "DBP,低压", entityType: "ExamIndicator", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "24小时平均血压", name_en: "24-hour mean blood pressure", abbr: "", aliases: "24h平均血压", entityType: "ExamIndicator", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "日间血压", name_en: "Daytime blood pressure", abbr: "", aliases: "白天血压", entityType: "ExamIndicator", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "夜间血压", name_en: "Nighttime blood pressure", abbr: "", aliases: "夜间平均血压", entityType: "ExamIndicator", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "估算肾小球滤过率", name_en: "Estimated glomerular filtration rate", abbr: "eGFR", aliases: "eGFR", entityType: "ExamIndicator", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "高血压诊断标准", name_en: "Hypertension diagnostic criteria", abbr: "", aliases: "诊断高血压,高血压诊断", entityType: "DiagnosisCriteria", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "继发性高血压筛查标准", name_en: "Secondary hypertension screening criteria", abbr: "", aliases: "继发性高血压筛查", entityType: "DiagnosisCriteria", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "高血压急症诊断标准", name_en: "Hypertensive emergency diagnostic criteria", abbr: "", aliases: "高血压急症诊断", entityType: "DiagnosisCriteria", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "心血管风险分层", name_en: "Cardiovascular risk stratification", abbr: "", aliases: "总体心血管风险,风险分层", entityType: "RiskStratification", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "靶器官损害评估", name_en: "Target organ damage assessment", abbr: "TOD assessment", aliases: "靶器官评估,HMOD评估", entityType: "RiskStratification", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "生活方式干预", name_en: "Lifestyle intervention", abbr: "", aliases: "生活方式治疗,非药物治疗", entityType: "TreatmentPlan", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "降压治疗", name_en: "Antihypertensive treatment", abbr: "", aliases: "降压药物治疗,控制血压", entityType: "TreatmentPlan", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "联合降压治疗", name_en: "Combination antihypertensive therapy", abbr: "", aliases: "联合治疗,起始联合治疗", entityType: "TreatmentPlan", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "高血压急症降压治疗", name_en: "Blood pressure lowering in hypertensive emergency", abbr: "", aliases: "静脉降压治疗,急症降压", entityType: "TreatmentPlan", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "钙通道阻滞剂", name_en: "Calcium channel blocker", abbr: "CCB", aliases: "CCB,二氢吡啶类钙通道阻滞剂", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "血管紧张素转换酶抑制剂", name_en: "Angiotensin-converting enzyme inhibitor", abbr: "ACEI", aliases: "ACE抑制剂,ACEI", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "血管紧张素Ⅱ受体阻滞剂", name_en: "Angiotensin receptor blocker", abbr: "ARB", aliases: "ARB,血管紧张素受体拮抗剂", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "利尿剂", name_en: "Diuretics", abbr: "", aliases: "噻嗪类利尿剂,噻嗪样利尿剂", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "β受体阻滞剂", name_en: "Beta-blocker", abbr: "BB", aliases: "β受体拮抗剂,beta blocker", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "盐皮质激素受体拮抗剂", name_en: "Mineralocorticoid receptor antagonist", abbr: "MRA", aliases: "醛固酮受体拮抗剂,MRA", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "氨氯地平", name_en: "Amlodipine", abbr: "", aliases: "", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "硝苯地平", name_en: "Nifedipine", abbr: "", aliases: "", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "贝那普利", name_en: "Benazepril", abbr: "", aliases: "", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "依那普利", name_en: "Enalapril", abbr: "", aliases: "", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "培哚普利", name_en: "Perindopril", abbr: "", aliases: "", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "缬沙坦", name_en: "Valsartan", abbr: "", aliases: "", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "氯沙坦", name_en: "Losartan", abbr: "", aliases: "", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "替米沙坦", name_en: "Telmisartan", abbr: "", aliases: "", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "氢氯噻嗪", name_en: "Hydrochlorothiazide", abbr: "HCTZ", aliases: "", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "吲达帕胺", name_en: "Indapamide", abbr: "", aliases: "", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "螺内酯", name_en: "Spironolactone", abbr: "", aliases: "", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "依普利酮", name_en: "Eplerenone", abbr: "", aliases: "", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "美托洛尔", name_en: "Metoprolol", abbr: "", aliases: "", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "比索洛尔", name_en: "Bisoprolol", abbr: "", aliases: "", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "拉贝洛尔", name_en: "Labetalol", abbr: "", aliases: "", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "乌拉地尔", name_en: "Urapidil", abbr: "", aliases: "", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "尼卡地平", name_en: "Nicardipine", abbr: "", aliases: "", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "硝普钠", name_en: "Sodium nitroprusside", abbr: "", aliases: "", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "硝酸甘油", name_en: "Nitroglycerin", abbr: "", aliases: "", entityType: "Medication", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "肾上腺切除术", name_en: "Adrenalectomy", abbr: "", aliases: "腹腔镜肾上腺切除", entityType: "Procedure", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "肾动脉介入治疗", name_en: "Renal artery intervention", abbr: "", aliases: "肾动脉支架,肾动脉血运重建", entityType: "Procedure", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "血压随访", name_en: "Blood pressure follow-up", abbr: "", aliases: "血压复查,家庭血压随访", entityType: "FollowUp", disease_scope: "ALL", source: "hypertension_vocab_v1"}
+  - {canonical_name: "药物不良反应监测", name_en: "Adverse drug reaction monitoring", abbr: "", aliases: "不良反应监测", entityType: "FollowUp", disease_scope: "ALL", source: "hypertension_vocab_v1"}

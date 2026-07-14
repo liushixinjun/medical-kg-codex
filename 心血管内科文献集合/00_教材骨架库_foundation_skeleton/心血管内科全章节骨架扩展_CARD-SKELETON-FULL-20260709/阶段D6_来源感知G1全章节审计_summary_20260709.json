@@ -1,0 +1,25 @@
+{
+  "batch_id": "CARD-SKELETON-FULL-20260709",
+  "generated_at": "2026-07-09 14:58:26",
+  "subject_count": 81,
+  "status_counter": {
+    "container_rollup_only": 18,
+    "source_limited_ready_as_textbook_core": 45,
+    "source_covered_ready": 18
+  },
+  "extraction_gap_group_counter": {},
+  "reference_only_group_counter": {
+    "clinical_manifestation": 1,
+    "diagnosis_differential": 3
+  },
+  "source_not_cover_group_counter": {
+    "definition": 7,
+    "exam_lab": 32,
+    "etiology_pathogenesis": 1,
+    "clinical_manifestation": 14,
+    "diagnosis_differential": 22,
+    "treatment": 19
+  },
+  "neo4j_import_allowed": false,
+  "note": "Full cardiology skeleton candidate extraction complete with source-aware audit. Not imported until G2 curated delta."
+}

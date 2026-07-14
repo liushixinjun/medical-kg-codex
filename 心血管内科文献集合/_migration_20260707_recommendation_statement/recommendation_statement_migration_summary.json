@@ -1,0 +1,25 @@
+﻿{
+  "batch_id": "RECOMMENDATION-STATEMENT-MIGRATION-20260707",
+  "schema_version": "V1.10",
+  "dry_run": false,
+  "candidate_count": 291,
+  "statement_count": 291,
+  "before": {
+    "recommendation_statement_count": 0,
+    "orphan_without_action_count": 0,
+    "orphan_without_evidence_count": 0,
+    "candidate_without_statement_count": 291,
+    "duplicate_statement_triplet_count": 0,
+    "technical_prefix_display_count": 0
+  },
+  "after": {
+    "recommendation_statement_count": 291,
+    "orphan_without_action_count": 0,
+    "orphan_without_evidence_count": 0,
+    "candidate_without_statement_count": 0,
+    "duplicate_statement_triplet_count": 0,
+    "technical_prefix_display_count": 0
+  },
+  "output_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\_migration_20260707_recommendation_statement",
+  "matrix_file": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\_migration_20260707_recommendation_statement\\cdss_recommendation_statement_matrix.csv"
+}

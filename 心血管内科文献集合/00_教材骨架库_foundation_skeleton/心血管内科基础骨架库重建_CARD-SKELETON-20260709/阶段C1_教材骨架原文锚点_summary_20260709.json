@@ -1,0 +1,18 @@
+{
+  "batch_id": "CARD-SKELETON-20260709",
+  "generated_at": "2026-07-09 09:16:32",
+  "python": "D:\\Program Files Ai\\python-venvs\\medical-kg\\Scripts\\python.exe",
+  "selected_subject_count": 57,
+  "node_count": 253,
+  "relation_count": 196,
+  "evidence_count": 196,
+  "audit_count": 57,
+  "not_imported_to_neo4j": true,
+  "next_required": "structured_entity_extraction_from_textbook_anchors",
+  "files": [
+    "阶段C1_教材骨架原文锚点_nodes_20260709.jsonl",
+    "阶段C1_教材骨架原文锚点_relations_20260709.jsonl",
+    "阶段C1_教材骨架原文锚点_evidence_20260709.jsonl",
+    "阶段C1_教材骨架原文锚点审计_20260709.csv"
+  ]
+}

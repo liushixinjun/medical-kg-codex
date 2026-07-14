@@ -1,0 +1,13 @@
+﻿{
+    "updated_at":  "2026-07-09 09:11:38",
+    "standard_python":  "D:\\Program Files Ai\\python-venvs\\medical-kg\\Scripts\\python.exe",
+    "install_root":  "D:\\Program Files Ai",
+    "packages":  {
+                     "python-docx":  "installed",
+                     "pdfplumber":  "installed",
+                     "pypdf":  "installed",
+                     "neo4j":  "installed"
+                 },
+    "rule_file":  "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\项目运行环境规则.md",
+    "note":  "后续正式项目脚本统一使用项目专用 Python，Codex 缓存 Python 仅作为临时环境。"
+}

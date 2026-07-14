@@ -1,0 +1,26 @@
+{
+  "batch_id": "CARD-SKELETON-20260709",
+  "generated_at": "2026-07-09 10:05:15",
+  "subject_count": 57,
+  "status_counter": {
+    "g1_structured_candidate_ready": 13,
+    "g1_needs_backfill": 31,
+    "g1_container_rollup_only": 12,
+    "g1_no_structured_candidate": 1
+  },
+  "subject_kind_counter": {
+    "disease_or_subtype": 35,
+    "overview_section": 3,
+    "therapy_or_management_section": 7,
+    "category_container": 12
+  },
+  "missing_group_counter": {
+    "clinical_manifestation": 12,
+    "exam_lab": 21,
+    "treatment": 25,
+    "diagnosis_differential": 20,
+    "definition": 2
+  },
+  "neo4j_import_allowed": false,
+  "next_required": "backfill_missing_groups_or_curate_ready_candidates"
+}

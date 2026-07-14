@@ -1,0 +1,144 @@
+{
+  "local": {
+    "renamed_nodes": 5,
+    "removed_duplicate_nodes": 7,
+    "target_alias_updates": 2,
+    "remapped_relations": 32,
+    "collapsed_duplicate_relations": 13,
+    "node_count_after": 1331,
+    "relation_count_after": 2608
+  },
+  "server_ops": [
+    {
+      "op": "rename",
+      "code": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+      "result": [
+        {
+          "code": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+          "name": "B型钠尿肽",
+          "alias": [
+            "BNP",
+            "脑钠肽",
+            "B型利钠肽"
+          ]
+        }
+      ]
+    },
+    {
+      "op": "rename",
+      "code": "CARD-SKELETON-20260709-LABTEST-EA39FB0FF19DE7FA",
+      "result": [
+        {
+          "code": "CARD-SKELETON-20260709-LABTEST-EA39FB0FF19DE7FA",
+          "name": "N末端B型钠尿肽前体",
+          "alias": [
+            "NT-proBNP",
+            "NT-proBNP测定",
+            "N端脑钠肽前体",
+            "N末端脑钠肽前体"
+          ]
+        }
+      ]
+    },
+    {
+      "op": "rename",
+      "code": "CARD-SKELETON-20260709-EXAM-4974BA875B54084B",
+      "result": [
+        {
+          "code": "CARD-SKELETON-20260709-EXAM-4974BA875B54084B",
+          "name": "计算机断层扫描",
+          "alias": [
+            "CT",
+            "CT检查"
+          ]
+        }
+      ]
+    },
+    {
+      "op": "rename",
+      "code": "CARD-SKELETON-20260709-MEDICATION-7887433A96437926",
+      "result": [
+        {
+          "code": "CARD-SKELETON-20260709-MEDICATION-7887433A96437926",
+          "name": "血管紧张素转换酶抑制剂或血管紧张素受体阻滞剂",
+          "alias": [
+            "ACEI/ARB",
+            "ACEI或ARB",
+            "普利类或沙坦类药物"
+          ]
+        }
+      ]
+    },
+    {
+      "op": "rename",
+      "code": "CARD-SKELETON-20260709-LABTEST-1621003505C956CA",
+      "result": [
+        {
+          "code": "CARD-SKELETON-20260709-LABTEST-1621003505C956CA",
+          "name": "肌酸激酶同工酶MB",
+          "alias": [
+            "CK-MB",
+            "肌酸激酶MB同工酶",
+            "肌酸激酶-MB同工酶"
+          ]
+        }
+      ]
+    },
+    {
+      "op": "merge_delete",
+      "old": "CARD-SKELETON-20260709-PROCEDURE-DC00F937F76F3489",
+      "target": "CARD-SKELETON-20260709-PROCEDURE-B59B1385BA9A601D",
+      "moved_relations": 8,
+      "created": 6,
+      "merged_existing": 2
+    },
+    {
+      "op": "merge_delete",
+      "old": "CARD-SKELETON-20260709-PROCEDURE-849B8A1D3295BC9E",
+      "target": "PROC-CARD-TEXT-D2C1F9E289",
+      "moved_relations": 2,
+      "created": 0,
+      "merged_existing": 2
+    },
+    {
+      "op": "merge_delete",
+      "old": "CARD-SKELETON-20260709-EXAM-504A6CF28CEABB1D",
+      "target": "CARD-SKELETON-20260709-EXAM-652809DC86CBF5A2",
+      "moved_relations": 2,
+      "created": 2,
+      "merged_existing": 0
+    },
+    {
+      "op": "merge_delete",
+      "old": "CARD-SKELETON-20260709-MEDICATION-AA6D03EBED9D4834",
+      "target": "MED-CARD-E40082221530",
+      "moved_relations": 8,
+      "created": 1,
+      "merged_existing": 7
+    },
+    {
+      "op": "merge_delete",
+      "old": "CARD-SKELETON-20260709-MEDICATION-98CCEBF03DF325E4",
+      "target": "MED-CARD-C015B7A5655A",
+      "moved_relations": 6,
+      "created": 6,
+      "merged_existing": 0
+    },
+    {
+      "op": "merge_delete",
+      "old": "CARD-SKELETON-20260709-MEDICATION-B79F84A2F6B924C5",
+      "target": "MED-CARD-5C774D10CF46",
+      "moved_relations": 4,
+      "created": 4,
+      "merged_existing": 0
+    },
+    {
+      "op": "merge_delete",
+      "old": "CARD-SKELETON-20260709-PROCEDURE-A24EADA35881AF07",
+      "target": "PROC-CARD-E9ADC25A25E3",
+      "moved_relations": 2,
+      "created": 0,
+      "merged_existing": 2
+    }
+  ]
+}

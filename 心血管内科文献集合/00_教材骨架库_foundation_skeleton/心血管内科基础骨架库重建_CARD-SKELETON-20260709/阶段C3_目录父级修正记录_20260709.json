@@ -1,0 +1,52 @@
+{
+  "fixed_at": "2026-07-09 10:09:52",
+  "problem": "DOCX split chapter title caused 第一节动脉粥样硬化 to be attached to 第三章心律失常",
+  "subject": "第一节动脉粥样硬化",
+  "wrong_parent": "第三章心律失常",
+  "correct_parent": "第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+  "correct_pdf_page": "258",
+  "changes": [
+    {
+      "file": "心血管内科教材章节目录_20260709.csv",
+      "rows_changed": 1
+    },
+    {
+      "file": "阶段C1_教材骨架原文锚点审计_20260709.csv",
+      "rows_changed": 1
+    },
+    {
+      "file": "阶段C2_G1深审计矩阵_20260709.csv",
+      "rows_changed": 1
+    },
+    {
+      "file": "阶段C3_补抽后G1深审计矩阵_20260709.csv",
+      "rows_changed": 1
+    },
+    {
+      "file": "阶段C2_下一步补槽位优先清单_20260709.csv",
+      "rows_changed": 1
+    },
+    {
+      "file": "阶段C3_补抽后剩余缺口清单_20260709.csv",
+      "rows_changed": 1
+    },
+    {
+      "file": "阶段C1_教材骨架原文锚点_evidence_20260709.jsonl",
+      "rows_changed": 4,
+      "note": "metadata corrected; candidate IDs remain local-only and must be regenerated before curated delta if used"
+    },
+    {
+      "file": "阶段C2_结构化候选_evidence_links_20260709.jsonl",
+      "rows_changed": 28,
+      "note": "metadata corrected; candidate IDs remain local-only and must be regenerated before curated delta if used"
+    },
+    {
+      "file": "阶段C3_缺口定向补抽_evidence_links_20260709.jsonl",
+      "rows_changed": 2,
+      "note": "metadata corrected; candidate IDs remain local-only and must be regenerated before curated delta if used"
+    }
+  ],
+  "neo4j_written": false,
+  "curated_delta_allowed": false,
+  "note": "仅修正本地目录/审计/证据元数据；进入正式delta前需重新生成受影响对象ID。"
+}

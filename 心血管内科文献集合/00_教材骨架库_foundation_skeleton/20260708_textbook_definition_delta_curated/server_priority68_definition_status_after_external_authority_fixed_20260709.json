@@ -1,0 +1,16 @@
+{
+  "checked_count": 68,
+  "missing_count": 0,
+  "definition_empty_count": 0,
+  "definition_nonempty_count": 68,
+  "high_confidence_count": 6,
+  "conditional_count": 5,
+  "external_authority_count": 11,
+  "empty_codes": [],
+  "source_type_distribution": {
+    "authoritative_textbook": 57,
+    "external_authoritative_source": 6,
+    "external_authoritative_source_conditional": 5
+  },
+  "status": "passed"
+}

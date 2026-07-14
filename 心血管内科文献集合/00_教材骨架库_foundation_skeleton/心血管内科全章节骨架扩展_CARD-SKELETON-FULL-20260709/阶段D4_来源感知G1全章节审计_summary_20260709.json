@@ -1,0 +1,26 @@
+{
+  "batch_id": "CARD-SKELETON-FULL-20260709",
+  "generated_at": "2026-07-09 14:50:24",
+  "subject_count": 81,
+  "status_counter": {
+    "container_rollup_only": 19,
+    "source_limited_ready_as_textbook_core": 42,
+    "source_covered_ready": 17,
+    "extraction_gap_needs_rule_or_manual": 3
+  },
+  "extraction_gap_group_counter": {
+    "treatment": 2,
+    "clinical_manifestation": 1,
+    "diagnosis_differential": 1
+  },
+  "source_not_cover_group_counter": {
+    "definition": 7,
+    "exam_lab": 31,
+    "etiology_pathogenesis": 1,
+    "clinical_manifestation": 13,
+    "diagnosis_differential": 21,
+    "treatment": 19
+  },
+  "neo4j_import_allowed": false,
+  "note": "D4 is source-aware audit. source_limited means textbook did not cover the slot; not equal to parser failure."
+}

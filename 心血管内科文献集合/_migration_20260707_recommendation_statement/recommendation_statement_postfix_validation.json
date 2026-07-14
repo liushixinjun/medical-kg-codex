@@ -1,0 +1,67 @@
+﻿{
+  "count": 291,
+  "without_action": 0,
+  "without_evidence": 0,
+  "without_guideline_node": 0,
+  "without_primary_guideline_code": 0,
+  "candidate_without_statement": 0,
+  "duplicate_triplet": 0,
+  "duplicate_type_name": 0,
+  "by_action_type": [
+    {
+      "action_entity_type": "TreatmentPlan",
+      "recommendation_type": "recommend",
+      "count": 119
+    },
+    {
+      "action_entity_type": "DiagnosisCriteria",
+      "recommendation_type": "recommend",
+      "count": 42
+    },
+    {
+      "action_entity_type": "FollowUp",
+      "recommendation_type": "recommend",
+      "count": 38
+    },
+    {
+      "action_entity_type": "RiskStratification",
+      "recommendation_type": "recommend",
+      "count": 30
+    },
+    {
+      "action_entity_type": "Medication",
+      "recommendation_type": "recommend",
+      "count": 29
+    },
+    {
+      "action_entity_type": "Exam",
+      "recommendation_type": "recommend",
+      "count": 18
+    },
+    {
+      "action_entity_type": "Procedure",
+      "recommendation_type": "recommend",
+      "count": 7
+    },
+    {
+      "action_entity_type": "LabTest",
+      "recommendation_type": "recommend",
+      "count": 4
+    },
+    {
+      "action_entity_type": "ExamIndicator",
+      "recommendation_type": "recommend",
+      "count": 2
+    },
+    {
+      "action_entity_type": "Procedure",
+      "recommendation_type": "block",
+      "count": 1
+    },
+    {
+      "action_entity_type": "TreatmentPlan",
+      "recommendation_type": "block",
+      "count": 1
+    }
+  ]
+}

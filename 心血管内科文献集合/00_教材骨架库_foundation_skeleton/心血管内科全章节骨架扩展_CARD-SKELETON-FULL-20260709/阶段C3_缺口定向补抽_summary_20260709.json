@@ -1,0 +1,11 @@
+{
+  "batch_id": "CARD-SKELETON-FULL-20260709",
+  "generated_at": "2026-07-09 14:57:24",
+  "backfill_subject_count": 47,
+  "backfill_node_count": 294,
+  "backfill_relation_count": 433,
+  "backfill_evidence_link_count": 433,
+  "merged_node_count": 1497,
+  "merged_relation_count": 2525,
+  "not_imported_to_neo4j": true
+}

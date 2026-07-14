@@ -1,0 +1,348 @@
+{
+  "all_node_count": 34292,
+  "non_kg_node_count": 0,
+  "entity_type_counts": [
+    {
+      "entityType": "Evidence",
+      "count": 33147
+    },
+    {
+      "entityType": "ThresholdRule",
+      "count": 156
+    },
+    {
+      "entityType": "Medication",
+      "count": 93
+    },
+    {
+      "entityType": "Disease",
+      "count": 92
+    },
+    {
+      "entityType": "Guideline",
+      "count": 87
+    },
+    {
+      "entityType": "TreatmentPlan",
+      "count": 74
+    },
+    {
+      "entityType": "DiagnosisCriteria",
+      "count": 59
+    },
+    {
+      "entityType": "Prognosis",
+      "count": 53
+    },
+    {
+      "entityType": "FollowUp",
+      "count": 52
+    },
+    {
+      "entityType": "ClinicalPathway",
+      "count": 51
+    },
+    {
+      "entityType": "Etiology",
+      "count": 48
+    },
+    {
+      "entityType": "Sign",
+      "count": 44
+    },
+    {
+      "entityType": "RiskFactor",
+      "count": 43
+    },
+    {
+      "entityType": "Procedure",
+      "count": 39
+    },
+    {
+      "entityType": "RiskStratification",
+      "count": 37
+    },
+    {
+      "entityType": "Symptom",
+      "count": 35
+    },
+    {
+      "entityType": "Exam",
+      "count": 29
+    },
+    {
+      "entityType": "DiseaseSubcategory",
+      "count": 26
+    },
+    {
+      "entityType": "Complication",
+      "count": 25
+    },
+    {
+      "entityType": "LabTest",
+      "count": 22
+    },
+    {
+      "entityType": "Pathophysiology",
+      "count": 22
+    },
+    {
+      "entityType": "DifferentialDiagnosis",
+      "count": 14
+    },
+    {
+      "entityType": "DiseaseCategory",
+      "count": 12
+    },
+    {
+      "entityType": "Epidemiology",
+      "count": 11
+    },
+    {
+      "entityType": "ExamIndicator",
+      "count": 11
+    },
+    {
+      "entityType": "Contraindication",
+      "count": 9
+    },
+    {
+      "entityType": "Specialty",
+      "count": 1
+    }
+  ],
+  "category_list": [
+    {
+      "code": "CAT-CARD-AORTA-PAD",
+      "name": "主动脉和周围血管病"
+    },
+    {
+      "code": "CAT-CARD-CHD",
+      "name": "先天性心血管病"
+    },
+    {
+      "code": "CAT-CARD-CAD",
+      "name": "冠状动脉粥样硬化性心脏病"
+    },
+    {
+      "code": "CAT-CARD-HF",
+      "name": "心力衰竭"
+    },
+    {
+      "code": "CAT-CARD-PERICARD",
+      "name": "心包疾病"
+    },
+    {
+      "code": "CAT-CARD-ARR",
+      "name": "心律失常"
+    },
+    {
+      "code": "CAT-CARD-CM",
+      "name": "心肌病"
+    },
+    {
+      "code": "CAT-CARD-VHD",
+      "name": "心脏瓣膜病"
+    },
+    {
+      "code": "CAT-CARD-SCD",
+      "name": "心脏骤停与心脏性猝死"
+    },
+    {
+      "code": "CAT-CARD-NEUROSIS",
+      "name": "心血管神经症"
+    },
+    {
+      "code": "CAT-CARD-IE",
+      "name": "感染性心内膜炎"
+    },
+    {
+      "code": "CAT-CARD-HTN",
+      "name": "高血压"
+    }
+  ],
+  "category_disease_counts": [
+    {
+      "code": "CAT-CARD-ARR",
+      "name": "心律失常",
+      "disease_count": 23
+    },
+    {
+      "code": "CAT-CARD-CAD",
+      "name": "冠状动脉粥样硬化性心脏病",
+      "disease_count": 14
+    },
+    {
+      "code": "CAT-CARD-CM",
+      "name": "心肌病",
+      "disease_count": 13
+    },
+    {
+      "code": "CAT-CARD-HF",
+      "name": "心力衰竭",
+      "disease_count": 11
+    },
+    {
+      "code": "CAT-CARD-CHD",
+      "name": "先天性心血管病",
+      "disease_count": 9
+    },
+    {
+      "code": "CAT-CARD-HTN",
+      "name": "高血压",
+      "disease_count": 8
+    },
+    {
+      "code": "CAT-CARD-VHD",
+      "name": "心脏瓣膜病",
+      "disease_count": 5
+    },
+    {
+      "code": "CAT-CARD-AORTA-PAD",
+      "name": "主动脉和周围血管病",
+      "disease_count": 4
+    },
+    {
+      "code": "CAT-CARD-PERICARD",
+      "name": "心包疾病",
+      "disease_count": 3
+    },
+    {
+      "code": "CAT-CARD-SCD",
+      "name": "心脏骤停与心脏性猝死",
+      "disease_count": 2
+    },
+    {
+      "code": "CAT-CARD-IE",
+      "name": "感染性心内膜炎",
+      "disease_count": 2
+    },
+    {
+      "code": "CAT-CARD-NEUROSIS",
+      "name": "心血管神经症",
+      "disease_count": 1
+    }
+  ],
+  "relationship_type_counts_top30": [
+    {
+      "relationType": "supported_by_evidence",
+      "count": 79749
+    },
+    {
+      "relationType": "guideline_has_evidence",
+      "count": 13679
+    },
+    {
+      "relationType": "has_symptom",
+      "count": 629
+    },
+    {
+      "relationType": "has_sign",
+      "count": 546
+    },
+    {
+      "relationType": "has_risk_factor",
+      "count": 534
+    },
+    {
+      "relationType": "requires_exam",
+      "count": 530
+    },
+    {
+      "relationType": "based_on_guideline",
+      "count": 491
+    },
+    {
+      "relationType": "treated_by_medication",
+      "count": 491
+    },
+    {
+      "relationType": "may_cause_complication",
+      "count": 479
+    },
+    {
+      "relationType": "treated_by_procedure",
+      "count": 276
+    },
+    {
+      "relationType": "has_treatment_plan",
+      "count": 269
+    },
+    {
+      "relationType": "requires_lab_test",
+      "count": 241
+    },
+    {
+      "relationType": "has_etiology",
+      "count": 169
+    },
+    {
+      "relationType": "has_threshold_rule",
+      "count": 156
+    },
+    {
+      "relationType": "belongs_to_subcategory",
+      "count": 126
+    },
+    {
+      "relationType": "has_disease",
+      "count": 126
+    },
+    {
+      "relationType": "belongs_to_category",
+      "count": 95
+    },
+    {
+      "relationType": "has_pathophysiology",
+      "count": 87
+    },
+    {
+      "relationType": "has_clinical_pathway",
+      "count": 81
+    },
+    {
+      "relationType": "has_specific_medication",
+      "count": 77
+    },
+    {
+      "relationType": "includes_medication",
+      "count": 71
+    },
+    {
+      "relationType": "differentiates_from",
+      "count": 65
+    },
+    {
+      "relationType": "has_diagnostic_criteria",
+      "count": 60
+    },
+    {
+      "relationType": "has_follow_up",
+      "count": 60
+    },
+    {
+      "relationType": "has_prognosis",
+      "count": 51
+    },
+    {
+      "relationType": "has_risk_stratification",
+      "count": 32
+    },
+    {
+      "relationType": "has_epidemiology",
+      "count": 28
+    },
+    {
+      "relationType": "has_subcategory",
+      "count": 27
+    },
+    {
+      "relationType": "includes_procedure",
+      "count": 24
+    },
+    {
+      "relationType": "has_category",
+      "count": 12
+    }
+  ]
+}

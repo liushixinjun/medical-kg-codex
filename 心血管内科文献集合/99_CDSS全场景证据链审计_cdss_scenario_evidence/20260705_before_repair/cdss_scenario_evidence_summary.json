@@ -1,0 +1,221 @@
+{
+  "audited_graph_count": 7,
+  "total_scenario_relation_count": 6452,
+  "total_scenario_issue_count": 287,
+  "total_blocking_issue_count": 287,
+  "gate": "failed",
+  "graphs": [
+    {
+      "graph_dir": "BATCH-CARD-AF-20260701-001_房颤_AtrialFibrillation",
+      "scenario_relation_count": 112,
+      "scenario_issue_count": 28,
+      "blocking_issue_count": 28,
+      "missing_by_relation_type": {
+        "has_clinical_pathway": 2,
+        "has_etiology": 1,
+        "has_pathophysiology": 1,
+        "has_sign": 1,
+        "includes_medication": 11,
+        "includes_procedure": 9,
+        "requires_exam": 1,
+        "treated_by_medication": 1,
+        "treated_by_procedure": 1
+      },
+      "missing_field_counter": {
+        "confidence": 22,
+        "document_id": 22,
+        "evidence_id": 22,
+        "evidence_level": 22,
+        "evidence_text": 22,
+        "guideline_id": 22,
+        "recommendation_class": 22,
+        "segment_id": 22,
+        "source_name": 22,
+        "source_page": 28,
+        "source_section": 22,
+        "source_type": 22,
+        "source_version": 22
+      },
+      "gate": "failed"
+    },
+    {
+      "graph_dir": "BATCH-CARD-CAD-20260623-001",
+      "scenario_relation_count": 883,
+      "scenario_issue_count": 28,
+      "blocking_issue_count": 28,
+      "missing_by_relation_type": {
+        "has_clinical_pathway": 10,
+        "has_follow_up": 1,
+        "includes_medication": 12,
+        "includes_procedure": 5
+      },
+      "missing_field_counter": {
+        "confidence": 27,
+        "document_id": 27,
+        "evidence_id": 27,
+        "evidence_level": 27,
+        "evidence_text": 27,
+        "guideline_id": 28,
+        "recommendation_class": 27,
+        "segment_id": 27,
+        "source_name": 27,
+        "source_page": 28,
+        "source_section": 27,
+        "source_type": 27,
+        "source_version": 27
+      },
+      "gate": "failed"
+    },
+    {
+      "graph_dir": "BATCH-CARD-CM-20260622-001",
+      "scenario_relation_count": 595,
+      "scenario_issue_count": 50,
+      "blocking_issue_count": 50,
+      "missing_by_relation_type": {
+        "has_clinical_pathway": 12,
+        "has_diagnostic_criteria": 5,
+        "has_etiology": 3,
+        "has_follow_up": 3,
+        "has_prognosis": 3,
+        "has_sign": 6,
+        "has_symptom": 4,
+        "has_treatment_plan": 1,
+        "includes_medication": 13
+      },
+      "missing_field_counter": {
+        "confidence": 24,
+        "document_id": 24,
+        "evidence_id": 24,
+        "evidence_level": 24,
+        "evidence_text": 24,
+        "guideline_id": 50,
+        "recommendation_class": 24,
+        "segment_id": 24,
+        "source_name": 24,
+        "source_page": 33,
+        "source_section": 24,
+        "source_type": 24,
+        "source_version": 24
+      },
+      "gate": "failed"
+    },
+    {
+      "graph_dir": "BATCH-CARD-HF-20260629-001",
+      "scenario_relation_count": 278,
+      "scenario_issue_count": 72,
+      "blocking_issue_count": 72,
+      "missing_by_relation_type": {
+        "has_clinical_pathway": 22,
+        "has_diagnostic_criteria": 2,
+        "has_epidemiology": 1,
+        "has_etiology": 1,
+        "has_pathophysiology": 1,
+        "has_risk_stratification": 1,
+        "has_sign": 6,
+        "has_symptom": 4,
+        "includes_medication": 29,
+        "includes_procedure": 1,
+        "requires_exam": 1,
+        "treated_by_medication": 3
+      },
+      "missing_field_counter": {
+        "confidence": 52,
+        "document_id": 52,
+        "evidence_id": 52,
+        "evidence_level": 52,
+        "evidence_text": 52,
+        "guideline_id": 52,
+        "recommendation_class": 52,
+        "segment_id": 52,
+        "source_name": 52,
+        "source_page": 72,
+        "source_section": 52,
+        "source_type": 52,
+        "source_version": 52
+      },
+      "gate": "failed"
+    },
+    {
+      "graph_dir": "BATCH-CARD-SVT-AFL-20260703-001_室上速房扑_SVT_AtrialFlutter",
+      "scenario_relation_count": 326,
+      "scenario_issue_count": 26,
+      "blocking_issue_count": 26,
+      "missing_by_relation_type": {
+        "has_clinical_pathway": 12,
+        "includes_medication": 10,
+        "includes_procedure": 4
+      },
+      "missing_field_counter": {
+        "confidence": 26,
+        "document_id": 26,
+        "evidence_id": 26,
+        "evidence_level": 26,
+        "evidence_text": 26,
+        "guideline_id": 26,
+        "recommendation_class": 26,
+        "segment_id": 26,
+        "source_name": 26,
+        "source_page": 26,
+        "source_section": 26,
+        "source_type": 26,
+        "source_version": 26
+      },
+      "gate": "failed"
+    },
+    {
+      "graph_dir": "BATCH-CARD-VA-SCD-20260704-001_室性心律失常心脏性猝死_VA_SCD",
+      "scenario_relation_count": 707,
+      "scenario_issue_count": 34,
+      "blocking_issue_count": 34,
+      "missing_by_relation_type": {
+        "has_clinical_pathway": 24,
+        "includes_medication": 4,
+        "includes_procedure": 6
+      },
+      "missing_field_counter": {
+        "confidence": 34,
+        "document_id": 34,
+        "evidence_id": 34,
+        "evidence_level": 34,
+        "evidence_text": 34,
+        "guideline_id": 34,
+        "recommendation_class": 34,
+        "segment_id": 34,
+        "source_name": 34,
+        "source_page": 34,
+        "source_section": 34,
+        "source_type": 34,
+        "source_version": 34
+      },
+      "gate": "failed"
+    },
+    {
+      "graph_dir": "00_foundation_skeleton",
+      "scenario_relation_count": 3551,
+      "scenario_issue_count": 49,
+      "blocking_issue_count": 49,
+      "missing_by_relation_type": {
+        "has_clinical_pathway": 20,
+        "includes_medication": 22,
+        "includes_procedure": 5,
+        "treated_by_medication": 2
+      },
+      "missing_field_counter": {
+        "confidence": 47,
+        "document_id": 47,
+        "evidence_id": 47,
+        "evidence_level": 49,
+        "evidence_text": 47,
+        "guideline_id": 49,
+        "recommendation_class": 49,
+        "segment_id": 47,
+        "source_name": 47,
+        "source_page": 49,
+        "source_section": 47,
+        "source_type": 47,
+        "source_version": 47
+      },
+      "gate": "failed"
+    }
+  ]
+}

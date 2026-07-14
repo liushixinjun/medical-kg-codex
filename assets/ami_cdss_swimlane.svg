@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1760" viewBox="0 0 1500 1760">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="dashArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748b"/>
+    </marker>
+    <style>
+      .bg { fill:#ffffff; }
+      .lane { fill:#f8fafc; stroke:#cbd5e1; stroke-width:1.5; }
+      .head1 { fill:#dbeafe; stroke:#93c5fd; stroke-width:1.5; }
+      .head2 { fill:#dcfce7; stroke:#86efac; stroke-width:1.5; }
+      .head3 { fill:#fef3c7; stroke:#f59e0b; stroke-width:1.5; }
+      .phase { fill:#eef2ff; stroke:#a5b4fc; stroke-width:1.2; }
+      .box1 { fill:#eff6ff; stroke:#60a5fa; stroke-width:1.2; }
+      .box2 { fill:#f0fdf4; stroke:#4ade80; stroke-width:1.2; }
+      .box3 { fill:#fffbeb; stroke:#f59e0b; stroke-width:1.2; }
+      .title { font-family:"Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; font-size:22px; font-weight:700; fill:#111827; }
+      .h { font-family:"Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; font-size:17px; font-weight:700; fill:#111827; }
+      .t { font-family:"Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; font-size:15px; fill:#1f2937; }
+      .small { font-family:Consolas, "Microsoft YaHei", monospace; font-size:13px; fill:#334155; }
+      .note { font-family:"Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; font-size:14px; fill:#475569; }
+      .arrow { stroke:#2563eb; stroke-width:1.8; fill:none; marker-end:url(#arrow); }
+      .dash { stroke:#64748b; stroke-width:1.4; stroke-dasharray:6 5; fill:none; marker-end:url(#dashArrow); }
+      .sep { stroke:#cbd5e1; stroke-width:1.5; stroke-dasharray:8 6; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1500" height="1760"/>
+  <text class="title" x="40" y="40">AMI 完整模拟泳道图：一诉五史出疑似诊断，报告回填后收敛诊疗建议</text>
+
+  <rect class="lane" x="35" y="70" width="370" height="1640" rx="14"/>
+  <rect class="lane" x="445" y="70" width="380" height="1640" rx="14"/>
+  <rect class="lane" x="865" y="70" width="590" height="1640" rx="14"/>
+
+  <rect class="head1" x="60" y="95" width="320" height="56" rx="10"/>
+  <text class="h" x="112" y="130">泳道一：医生 / EMR 输入</text>
+  <rect class="head2" x="475" y="95" width="320" height="56" rx="10"/>
+  <text class="h" x="520" y="130">泳道二：辅助诊疗业务动作</text>
+  <rect class="head3" x="895" y="95" width="530" height="56" rx="10"/>
+  <text class="h" x="950" y="130">泳道三：真实图谱实体与关系命中</text>
+
+  <rect class="phase" x="60" y="170" width="1365" height="38" rx="8"/>
+  <text class="h" x="80" y="195">阶段一：初诊录入。一诉五史 + 体征即可生成疑似诊断和下一步检查检验</text>
+
+  <!-- step 1 -->
+  <rect class="box1" x="70" y="240" width="310" height="150" rx="10"/>
+  <text class="h" x="95" y="270">1. 录入一诉五史</text>
+  <text class="t" x="95" y="300">主诉：胸痛2小时</text>
+  <text class="t" x="95" y="325">现病史：压榨样疼痛</text>
+  <text class="t" x="95" y="350">伴出汗、恶心呕吐</text>
+  <text class="t" x="95" y="375">既往史：高血压、糖尿病</text>
+
+  <rect class="box2" x="480" y="240" width="310" height="150" rx="10"/>
+  <text class="h" x="505" y="270">1. 拆出可用信息</text>
+  <text class="t" x="505" y="300">这次症状：胸痛、出汗</text>
+  <text class="t" x="505" y="325">伴随表现：恶心呕吐</text>
+  <text class="t" x="505" y="350">高危背景：高血压、糖尿病</text>
+  <text class="t" x="505" y="375">后续各环节重复使用</text>
+
+  <rect class="box3" x="900" y="225" width="520" height="180" rx="10"/>
+  <text class="h" x="925" y="255">一诉五史怎么被使用</text>
+  <text class="small" x="925" y="282">主诉/现病史：决定能不能生成疑似诊断</text>
+  <text class="small" x="925" y="304">既往/个人/家族史：只判断风险高不高</text>
+  <text class="small" x="925" y="326">体征：判断是否更急、更重</text>
+  <text class="small" x="925" y="348">过敏史：不推诊断，只做后续用药安全</text>
+  <text class="small" x="925" y="370">胸痛2小时：后续用于再灌注时间窗</text>
+  <text class="note" x="925" y="392">先推疑似，再推荐检查，报告回来后再收敛诊断</text>
+
+  <!-- step 2 -->
+  <rect class="box2" x="480" y="455" width="310" height="145" rx="10"/>
+  <text class="h" x="505" y="485">2. 推荐疑似诊断</text>
+  <text class="t" x="505" y="515">疑似：ACS、AMI</text>
+  <text class="t" x="505" y="540">备选：UA、心肌炎等</text>
+  <text class="t" x="505" y="565">高血压/糖尿病进入风险背景</text>
+
+  <rect class="box3" x="900" y="445" width="520" height="165" rx="10"/>
+  <text class="h" x="925" y="475">疑似诊断反查</text>
+  <text class="small" x="925" y="504">Disease -has_symptom-> 胸痛/出汗/恶心呕吐</text>
+  <text class="small" x="925" y="526">Disease -has_risk_factor-> 高血压/糖尿病</text>
+  <text class="small" x="925" y="548">候选：DIS-CARD-CAD-ACS / DIS-CARD-CAD-AMI</text>
+  <text class="small" x="925" y="570">候选：DIS-CARD-CAD-STEMI / DIS-CARD-CAD-NSTEMI</text>
+  <text class="note" x="925" y="592">此时只是疑似诊断，等待检查检验收敛</text>
+
+  <!-- step 3 -->
+  <rect class="box1" x="70" y="660" width="310" height="105" rx="10"/>
+  <text class="h" x="95" y="690">医生关注 AMI/ACS</text>
+  <text class="t" x="95" y="720">点击关注并继续生成建议</text>
+  <text class="t" x="95" y="745">不需要先确认最终诊断</text>
+
+  <rect class="box2" x="480" y="645" width="310" height="135" rx="10"/>
+  <text class="h" x="505" y="675">3. 推荐下一步检查检验</text>
+  <text class="t" x="505" y="705">心电图、心肌肌钙蛋白</text>
+  <text class="t" x="505" y="730">CK-MB、超声心动图</text>
+  <text class="t" x="505" y="755">肾功能、血糖、血脂检查</text>
+
+  <rect class="box3" x="900" y="640" width="520" height="145" rx="10"/>
+  <text class="h" x="925" y="670">检查检验关系</text>
+  <text class="small" x="925" y="698">DIS-CARD-CAD-AMI -requires_exam-> EXAM-ECG</text>
+  <text class="small" x="925" y="720">DIS-CARD-CAD-AMI -requires_exam-> EXAM-TTE / EXAM-CAG</text>
+  <text class="small" x="925" y="742">DIS-CARD-CAD-AMI -requires_lab_test</text>
+  <text class="small" x="925" y="764">  -> LAB-CARD-A9EC1D4DA037</text>
+
+  <line class="sep" x1="60" y1="830" x2="1425" y2="830"/>
+  <rect class="phase" x="60" y="855" width="1365" height="38" rx="8"/>
+  <text class="h" x="80" y="880">阶段二：报告回填。心电图和心肌肌钙蛋白返回后，收敛诊断并进入治疗建议</text>
+
+  <!-- step 4 -->
+  <rect class="box1" x="70" y="930" width="310" height="150" rx="10"/>
+  <text class="h" x="95" y="960">4. 查看并回填报告</text>
+  <text class="t" x="95" y="990">心电图：II、III、aVF ST段抬高</text>
+  <text class="t" x="95" y="1015">肌钙蛋白：0h升高，1h继续升高</text>
+  <text class="t" x="95" y="1040">超声：下壁室壁运动异常</text>
+  <text class="t" x="95" y="1065">主动脉CTA：夹层未见</text>
+
+  <rect class="box2" x="480" y="930" width="310" height="150" rx="10"/>
+  <text class="h" x="505" y="960">4. 形成诊断依据</text>
+  <text class="t" x="505" y="990">支持：缺血性胸痛</text>
+  <text class="t" x="505" y="1015">支持：ST段抬高</text>
+  <text class="t" x="505" y="1040">支持：心肌肌钙蛋白动态升高</text>
+  <text class="t" x="505" y="1065">鉴别：主动脉夹层已排除</text>
+
+  <rect class="box3" x="900" y="915" width="520" height="180" rx="10"/>
+  <text class="h" x="925" y="945">诊断标准命中</text>
+  <text class="small" x="925" y="973">DIS-CARD-CAD-AMI -has_diagnostic_criteria</text>
+  <text class="small" x="925" y="995">  -> DXC-CARD-547346EE2FED</text>
+  <text class="small" x="925" y="1017">EXAM-ECG -exam_has_indicator-> IND-CARD-340F2703D39C</text>
+  <text class="small" x="925" y="1039">RULE-CARD-CAD-AMI-DX-COMP-ECG-ISCHEMIA</text>
+  <text class="small" x="925" y="1061">RULE-CARD-CAD-AMI-DX-COMP-TROPONIN-DYNAMIC</text>
+  <text class="note" x="925" y="1083">此时由疑似诊断收敛为 AMI/STEMI 支持依据</text>
+
+  <!-- step 5 -->
+  <rect class="box1" x="70" y="1160" width="310" height="110" rx="10"/>
+  <text class="h" x="95" y="1190">医生确认或关注诊断</text>
+  <text class="t" x="95" y="1220">确认：AMI / STEMI</text>
+  <text class="t" x="95" y="1245">继续生成治疗建议</text>
+
+  <rect class="box2" x="480" y="1150" width="310" height="135" rx="10"/>
+  <text class="h" x="505" y="1180">5. 进入再灌注评估</text>
+  <text class="t" x="505" y="1210">发病时间：2小时</text>
+  <text class="t" x="505" y="1235">PCI可及：90分钟</text>
+  <text class="t" x="505" y="1260">活动性出血：无</text>
+
+  <rect class="box3" x="900" y="1145" width="520" height="145" rx="10"/>
+  <text class="h" x="925" y="1175">推荐阶段定位</text>
+  <text class="small" x="925" y="1203">stage_code = STAGE-CDSS-CAD-AMI-02-REPERFUSION</text>
+  <text class="small" x="925" y="1225">rule_code = RULE-CDSS-CAD-AMI-02-01-REPERFUSION</text>
+  <text class="small" x="925" y="1247">RecommendationStatement 作为当前患者推荐根节点</text>
+  <text class="small" x="925" y="1269">不从 has_treatment_plan 直接生成患者推荐</text>
+
+  <!-- step 6 -->
+  <rect class="box2" x="480" y="1355" width="310" height="135" rx="10"/>
+  <text class="h" x="505" y="1385">6. 输出治疗建议</text>
+  <text class="t" x="505" y="1415">建议：评估PCI/溶栓/冠脉造影</text>
+  <text class="t" x="505" y="1440">动作：经皮冠状动脉介入治疗</text>
+  <text class="t" x="505" y="1465">关注：出血风险、PCI可及性</text>
+
+  <rect class="box3" x="900" y="1340" width="520" height="170" rx="10"/>
+  <text class="h" x="925" y="1370">治疗推荐命中</text>
+  <text class="small" x="925" y="1398">REC-CDSS-CAD-AMI-02-01-REPERFUSION</text>
+  <text class="small" x="925" y="1420">  -recommends_action-> PROC-CARD-E9ADC25A25E3</text>
+  <text class="small" x="925" y="1442">  action_name: 经皮冠状动脉介入治疗</text>
+  <text class="small" x="925" y="1464">primary_evidence_code 可用于展示证据来源</text>
+  <text class="note" x="925" y="1488">输出给医生：建议、依据、需补充判断的信息</text>
+
+  <!-- step 7 -->
+  <rect class="box1" x="70" y="1540" width="310" height="95" rx="10"/>
+  <text class="h" x="95" y="1570">医生查看辅助建议</text>
+  <text class="t" x="95" y="1600">展示建议、依据、证据来源</text>
+  <text class="t" x="95" y="1625">由医生确认最终处置</text>
+
+  <rect class="box2" x="480" y="1535" width="310" height="105" rx="10"/>
+  <text class="h" x="505" y="1565">7. 展示建议与证据</text>
+  <text class="t" x="505" y="1595">推荐陈述、动作、证据</text>
+  <text class="t" x="505" y="1620">风险提示和缺失项</text>
+
+  <rect class="box3" x="900" y="1530" width="520" height="115" rx="10"/>
+  <text class="h" x="925" y="1560">证据展示</text>
+  <text class="small" x="925" y="1588">RecommendationStatement.primary_evidence_code</text>
+  <text class="small" x="925" y="1610">Evidence / Guideline 用于展示来源</text>
+  <text class="note" x="925" y="1632">不得只展示疾病名称，必须展示命中依据和下一步动作</text>
+
+  <!-- arrows -->
+  <path class="arrow" d="M380 315 C430 315 430 315 480 315"/>
+  <path class="dash" d="M790 315 C845 315 845 315 900 315"/>
+  <path class="arrow" d="M635 390 L635 455"/>
+  <path class="dash" d="M790 525 C845 525 845 525 900 525"/>
+  <path class="arrow" d="M635 600 L635 645"/>
+  <path class="arrow" d="M380 712 C430 712 430 712 480 712"/>
+  <path class="dash" d="M790 712 C845 712 845 712 900 712"/>
+  <path class="arrow" d="M635 780 L635 930"/>
+  <path class="arrow" d="M380 1005 C430 1005 430 1005 480 1005"/>
+  <path class="dash" d="M790 1005 C845 1005 845 1005 900 1005"/>
+  <path class="arrow" d="M635 1080 L635 1150"/>
+  <path class="arrow" d="M380 1215 C430 1215 430 1215 480 1215"/>
+  <path class="dash" d="M790 1215 C845 1215 845 1215 900 1215"/>
+  <path class="arrow" d="M635 1285 L635 1355"/>
+  <path class="dash" d="M790 1422 C845 1422 845 1422 900 1422"/>
+  <path class="arrow" d="M635 1490 L635 1535"/>
+  <path class="arrow" d="M480 1588 C430 1588 430 1588 380 1588"/>
+  <path class="dash" d="M790 1588 C845 1588 845 1588 900 1588"/>
+</svg>

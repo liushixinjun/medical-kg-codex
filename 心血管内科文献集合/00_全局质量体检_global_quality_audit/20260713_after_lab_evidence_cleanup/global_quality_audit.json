@@ -1340,8 +1340,8 @@
   ],
   "duplicate_semantic_relationships": [],
   "summary_counts": {
-    "node_count": 43677,
-    "relation_count": 140884
+    "node_count": 43686,
+    "relation_count": 6154915051
   },
   "metric_counts": {
     "non_kg_nodes": 0,

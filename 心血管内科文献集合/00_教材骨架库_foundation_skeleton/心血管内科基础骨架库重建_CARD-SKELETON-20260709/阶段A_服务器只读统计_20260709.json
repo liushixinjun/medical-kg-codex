@@ -1,0 +1,403 @@
+﻿{
+    "status":  "ok",
+    "collected_at":  "2026-07-09 09:00:47",
+    "endpoint":  "http://192.168.3.27:7474/db/neo4j/tx/commit",
+    "errors":  [
+
+               ],
+    "results":  [
+                    {
+                        "columns":  [
+                                        "node_count"
+                                    ],
+                        "data":  [
+                                     {
+                                         "row":  [
+                                                     35858
+                                                 ],
+                                         "meta":  [
+                                                      null
+                                                  ]
+                                     }
+                                 ]
+                    },
+                    {
+                        "columns":  [
+                                        "relation_count"
+                                    ],
+                        "data":  [
+                                     {
+                                         "row":  [
+                                                     108057
+                                                 ],
+                                         "meta":  [
+                                                      null
+                                                  ]
+                                     }
+                                 ]
+                    },
+                    {
+                        "columns":  [
+                                        "disease_count"
+                                    ],
+                        "data":  [
+                                     {
+                                         "row":  [
+                                                     100
+                                                 ],
+                                         "meta":  [
+                                                      null
+                                                  ]
+                                     }
+                                 ]
+                    },
+                    {
+                        "columns":  [
+                                        "kgnode_count"
+                                    ],
+                        "data":  [
+                                     {
+                                         "row":  [
+                                                     35858
+                                                 ],
+                                         "meta":  [
+                                                      null
+                                                  ]
+                                     }
+                                 ]
+                    },
+                    {
+                        "columns":  [
+                                        "non_kgnode_count"
+                                    ],
+                        "data":  [
+                                     {
+                                         "row":  [
+                                                     0
+                                                 ],
+                                         "meta":  [
+                                                      null
+                                                  ]
+                                     }
+                                 ]
+                    },
+                    {
+                        "columns":  [
+                                        "label",
+                                        "count"
+                                    ],
+                        "data":  [
+                                     {
+                                         "row":  [
+                                                     "KGNode",
+                                                     35858
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "Evidence",
+                                                     33892
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "RecommendationStatement",
+                                                     291
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "ClinicalRule",
+                                                     259
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "PathwayStage",
+                                                     177
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "ThresholdRule",
+                                                     156
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "Disease",
+                                                     100
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "Medication",
+                                                     96
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "Guideline",
+                                                     91
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "TreatmentPlan",
+                                                     84
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "DiagnosisCriteria",
+                                                     65
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "ClinicalPathway",
+                                                     64
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "Prognosis",
+                                                     61
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "FollowUp",
+                                                     60
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "Etiology",
+                                                     54
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "Sign",
+                                                     47
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "RiskFactor",
+                                                     43
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "Procedure",
+                                                     41
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "RiskStratification",
+                                                     40
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "Exam",
+                                                     36
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "Symptom",
+                                                     36
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "DiseaseSubcategory",
+                                                     27
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "Complication",
+                                                     26
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "Pathophysiology",
+                                                     25
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "DifferentialDiagnosis",
+                                                     22
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "LabTest",
+                                                     22
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "DiseaseCategory",
+                                                     12
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "Epidemiology",
+                                                     11
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "ExamIndicator",
+                                                     11
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "Contraindication",
+                                                     9
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     },
+                                     {
+                                         "row":  [
+                                                     "Specialty",
+                                                     1
+                                                 ],
+                                         "meta":  [
+                                                      null,
+                                                      null
+                                                  ]
+                                     }
+                                 ]
+                    }
+                ]
+}

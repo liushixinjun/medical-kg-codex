@@ -74,7 +74,7 @@
 | 类别 | AMI 示例内容 |
 |---|---|
 | 疾病 | 急性心肌梗死、ST 段抬高型心肌梗死、非 ST 段抬高型心肌梗死 |
-| 症状体征 | 胸痛、胸闷、大汗、恶心、呼吸困难、血压异常 |
+| 症状体征 | 胸痛、胸闷、出汗、恶心呕吐、呼吸困难、血压异常 |
 | 检查 | 心电图、超声心动图、冠脉 CTA、冠脉造影 |
 | 检验 | 肌钙蛋白、肌酸激酶同工酶、BNP/NT-proBNP、D-二聚体、肾功能 |
 | 诊断标准 | 心肌损伤标志物升高、心电图动态改变、缺血症状、影像学证据 |
@@ -89,7 +89,7 @@
 以 AMI 为例：
 
 ```text
-患者出现胸痛、大汗，心电图提示 ST 段抬高，肌钙蛋白升高。
+患者出现胸痛、出汗，心电图提示 ST 段抬高，心肌肌钙蛋白升高。
 系统可提示：需关注急性心肌梗死可能。
 系统可展示：支持诊断的症状、心电图表现、肌钙蛋白结果。
 系统可建议：完善心电图动态复查、心肌损伤标志物复查、必要时评估冠脉情况。
@@ -174,65 +174,574 @@
 
 ## 5. AMI 辅助诊疗应用示例
 
-### 5.1 接诊阶段
+本章说明“图谱三元组怎么被系统使用”。以下内容以最新 `专科知识图谱Schema标准.md` V1.15 为准。
 
-患者因胸痛就诊，医生录入主诉、现病史和体征后，系统结合胸痛、出汗、恶心、血压变化等信息，提示需关注急性冠脉综合征、急性心肌梗死等可能，并建议完善心电图和心肌损伤标志物检测。
+### 5.1 图谱如何类比 Oracle 表
 
-### 5.2 诊断判断阶段
+可将图谱理解为两类数据：
 
-检查检验结果回传后，系统结合心电图表现、肌钙蛋白结果和患者症状，提示是否符合 AMI 相关诊断依据，并展示支持或不支持诊断的关键证据。
+| 图谱对象 | 类比 Oracle | 说明 |
+|---|---|---|
+| `KGNode` | 主数据表 | 存疾病、症状、检查、检验、治疗方案、规则、证据等实体 |
+| `KGRelation` | 关联表 | 存 `source_code`、`relationType`、`target_code`，表达实体之间的关系 |
 
-例如：
-
-```text
-支持依据：
-- 胸痛症状明显；
-- 心电图存在 ST 段改变；
-- 肌钙蛋白升高或动态变化。
-
-建议关注：
-- 是否存在主动脉夹层、肺栓塞等鉴别诊断；
-- 是否需要进一步复查心电图或心肌损伤标志物；
-- 是否需要评估冠脉情况。
-```
-
-### 5.3 治疗方案参考阶段
-
-系统根据 AMI 类型、发病时间、检查检验结果、禁忌证和医院救治条件，为医生提供治疗方案参考。
-
-例如：
+三元组示例：
 
 ```text
-若判断为 STEMI，且发病时间较短：
-- 提示评估急诊 PCI 条件；
-- 如 PCI 条件受限，提示评估溶栓适应证；
-- 同时提示需关注出血风险、主动脉夹层风险、药物过敏史等。
+急性心肌梗死 -requires_exam-> 心电图
 ```
 
-系统只做辅助提示，医生根据患者病情和医院实际流程确定最终治疗方案。
+落到关系表可理解为：
 
-### 5.4 用药与风险提醒阶段
+| source_code | relationType | target_code |
+|---|---|---|
+| DIS-CARD-CAD-AMI | requires_exam | EXAM-ECG |
 
-在医生开立抗血小板、抗凝、调脂、降压等相关治疗时，系统结合患者既往史、过敏史、肝肾功能、出血风险和当前用药情况，提供合理用药提醒。
+系统实现时必须使用 `code` 关联，不使用中文名称做主键。
 
-例如：
+### 5.2 AMI 需要用到的核心实体
+
+| 业务对象 | entityType | AMI 示例 |
+|---|---|---|
+| 疾病 | `Disease` | 急性心肌梗死 |
+| 疾病分型 | `DiseaseClassification` | STEMI、NSTEMI |
+| 症状 | `Symptom` | 胸痛、胸闷、出汗、恶心呕吐 |
+| 体征 | `Sign` | 低血压、休克表现 |
+| 危险因素 | `RiskFactor` | 高血压、糖尿病、吸烟 |
+| 检查 | `Exam` | 心电图、超声心动图、冠脉造影 |
+| 检验 | `LabTest` | 心肌肌钙蛋白、肌酸激酶同工酶、肾功能、血糖、血脂检查 |
+| 指标 | `ExamIndicator` | ST 段抬高、肌钙蛋白升高 |
+| 诊断标准 | `DiagnosisCriteria` | 急性心肌梗死诊断标准 |
+| 诊断标准明细 | `DiagnosisCriteriaComponent` | 缺血性症状、心电图缺血改变 |
+| 鉴别诊断 | `DifferentialDiagnosis` | 主动脉夹层、肺栓塞 |
+| 治疗方案 | `TreatmentPlan` | 再灌注治疗、抗血小板治疗 |
+| 药物 | `Medication` | 阿司匹林、氯吡格雷、肝素 |
+| 操作/手术 | `Procedure` | 急诊 PCI、溶栓治疗 |
+| 推荐阶段 | `PathwayStage` 或阶段字段 | `STAGE-CDSS-CAD-AMI-02-REPERFUSION` 再灌注评估 |
+| 临床规则 | `ClinicalRule` 或规则字段 | `RULE-CDSS-CAD-AMI-02-01-REPERFUSION` |
+| 推荐陈述 | `RecommendationStatement` | `REC-CDSS-CAD-AMI-02-01-REPERFUSION` |
+| 证据/指南 | `Evidence`、`Guideline` | 指南原文片段、指南来源 |
+
+### 5.3 AMI 八步使用链路
+
+| 步骤 | 业务场景 | AMI 示例 | 图谱查询路径 | 输出 |
+|---|---|---|---|---|
+| 1. 分拣输入内容 | 录入一诉五史、体征 | 胸痛2小时、出汗、恶心呕吐、高血压、糖尿病 | 输入内容先分拣为 `Symptom`、`RiskFactor` 等实体 | 形成患者事实 `patient_facts` |
+| 2. 疑似疾病识别 | 根据患者事实反查疾病 | 胸痛、出汗、高危病史命中 `DIS-CARD-CAD-AMI`、`DIS-CARD-CAD-STEMI` | `Disease -has_symptom/has_sign/has_risk_factor-> 对应实体` | 提示疑似急性心肌梗死/STEMI |
+| 3. 推荐检查检验 | 医生关注疑似 AMI | `EXAM-ECG` 心电图、`LAB-CARD-A9EC1D4DA037` 心肌肌钙蛋白、`EXAM-TTE` 超声心动图 | `Disease -requires_exam/requires_lab_test-> Exam/LabTest` | 输出下一步检查检验建议 |
+| 4. 鉴别诊断提示 | 胸痛证据仍不完整 | `DDX-CARD-8F53C29C0798` 主动脉夹层、`DDX-CARD-881C77E90E42` 肺栓塞、急性心包炎、冠状动脉痉挛 | `Disease -differentiates_from-> DifferentialDiagnosis` | 输出需要排除的鉴别方向 |
+| 5. 辅助诊断判断 | 检查检验结果返回 | `EXAM-ECG` 命中 ST 段抬高，心肌肌钙蛋白动态升高 | `Disease -has_diagnostic_criteria-> DiagnosisCriteria`，结合诊断规则 | 输出支持依据、缺失项、需鉴别项 |
+| 6. 进入专病阶段 | 医生确认或关注 AMI/STEMI | 定位 `STAGE-CDSS-CAD-AMI-02-REPERFUSION` 再灌注评估阶段 | 根据推荐陈述中的 `stage_code`、`rule_code` 定位当前阶段 | 明确当前所处诊疗阶段 |
+| 7. 输出治疗建议 | 按阶段规则给建议 | `REC-CDSS-CAD-AMI-02-01-REPERFUSION` 推荐评估 PCI、溶栓或冠脉造影 | `RecommendationStatement -> recommends_action` | 输出推荐动作和需补充判断的信息 |
+| 8. 展示建议与证据 | 展示推荐原因 | `REC-775B4D172719135D` 关联 `EVD-5C8AE27C34EB5FAA3124-AMI` | `RecommendationStatement -> Evidence/Guideline` | 展示建议、原因、证据来源 |
+
+注意：`has_treatment_plan` 只用于知识浏览，不能直接作为当前患者推荐。当前患者推荐必须从 `RecommendationStatement` 读取。
+
+### 5.4 AMI 辅助诊疗流程图
+
+![AMI辅助诊疗泳道图](assets/ami_cdss_swimlane.svg)
+
+这张图按泳道展示：左侧是医生和 EMR 输入，中间是辅助诊疗业务动作，右侧是图谱真实数据命中。图中使用的是当前图谱导出的 AMI/STEMI 数据锚点，不是临时编造的示例。比如“一诉五史、体征”中的“胸痛2小时、出汗、恶心呕吐、高血压、糖尿病”会先被分拣为具体实体 code，再通过图谱关系反查 AMI/STEMI，并继续串联检查检验、诊断依据和治疗建议。
+
+图中主要真实数据锚点如下：
+
+| 用途 | 真实 code | 名称 | 可查询关系或字段 |
+|---|---|---|---|
+| 疑似疾病 | `DIS-CARD-CAD-AMI` | 急性心肌梗死 | `has_symptom`、`requires_exam`、`requires_lab_test`、`has_diagnostic_criteria` |
+| 疑似分型 | `DIS-CARD-CAD-STEMI` | ST段抬高型心肌梗死 | `has_symptom`、`has_risk_factor`、`requires_exam`、`requires_lab_test` |
+| 症状 | `SYM-CARD-B479F36AE54A` | 胸痛 | 可反查 `Disease -has_symptom-> Symptom` |
+| 症状 | `SYM-CARD-BC91622FC62F` | 出汗 | 可反查 `Disease -has_symptom-> Symptom` |
+| 症状 | `SYM-CARD-1053F19CEBAD` | 恶心呕吐 | 可反查 `Disease -has_symptom-> Symptom` |
+| 危险因素 | `RF-CARD-DE0A9F1FE2C8` | 高血压 | 可反查 `Disease -has_risk_factor-> RiskFactor` |
+| 危险因素 | `RF-CARD-26FAEB71ABE2` | 糖尿病 | 可反查 `Disease -has_risk_factor-> RiskFactor` |
+| 检查 | `EXAM-ECG` | 心电图 | `Disease -requires_exam-> Exam` |
+| 检验 | `LAB-CARD-A9EC1D4DA037` | 心肌肌钙蛋白 | `Disease -requires_lab_test-> LabTest` |
+| 检查指标 | `IND-CARD-340F2703D39C` | ST段抬高 | `Exam -exam_has_indicator-> ExamIndicator` |
+| 诊断标准 | `DXC-CARD-547346EE2FED` | 急性心肌梗死诊断标准 | `Disease -has_diagnostic_criteria-> DiagnosisCriteria` |
+| 鉴别诊断 | `DDX-CARD-8F53C29C0798` | 主动脉夹层 | `Disease -differentiates_from-> DifferentialDiagnosis` |
+| 鉴别诊断 | `DDX-CARD-881C77E90E42` | 肺栓塞 | `Disease -differentiates_from-> DifferentialDiagnosis` |
+| 推荐陈述 | `REC-CDSS-CAD-AMI-02-01-REPERFUSION` | AMI再灌注评估推荐 | `recommends_action`，动作 `PROC-CARD-E9ADC25A25E3` |
+| 推荐证据 | `REC-775B4D172719135D` | 肌钙蛋白动态变化推荐 | `primary_evidence_code=EVD-5C8AE27C34EB5FAA3124-AMI` |
+
+### 5.5 AMI 完整模拟案例
+
+这个案例用于诊疗推荐页联调。第一步只录入一诉五史和体征，系统应输出“疑似诊断”和“下一步检查检验”；第二步回填检查检验报告后，再收敛到 AMI/STEMI 并输出治疗建议。
+
+一诉五史不是填完就结束，也不是所有内容都用来“推诊断”。可以简单理解为：主诉和现病史负责判断“像不像这个病”，既往史、个人史、家族史负责判断“风险高不高”，过敏史负责后面“用药和治疗安不安全”。系统先把这些内容拆开，再在不同环节重复使用。
+
+| 输入字段 | 系统主要看什么 | 在疑似诊断里怎么用 | 后面还怎么用 |
+|---|---|---|---|
+| 主诉 | 这次为什么来看病，如胸痛2小时 | 是疑似诊断的入口。出现胸痛、胸闷等当前症状，系统才会考虑 AMI/ACS | 决定先推荐心电图、心肌肌钙蛋白等检查 |
+| 现病史 | 胸痛怎么痛、持续多久、有没有出汗/恶心呕吐/放射痛 | 用来判断这个胸痛像不像缺血性胸痛，疑似程度会更高 | 用来判断是否急、是否要排除主动脉夹层、肺栓塞等 |
+| 既往史 | 高血压、糖尿病、冠心病史等 | 只能说明风险更高，不能单独推出 AMI | 用于风险分层、检查加急、治疗安全性评估 |
+| 个人史 | 吸烟、肥胖、长期饮酒等 | 也是风险背景，只加分，不单独推诊断 | 用于危险因素管理、出院宣教和随访 |
+| 家族史 | 直系亲属早发冠心病、心梗等 | 作为心血管高危背景 | 用于风险提示和长期管理 |
+| 过敏史 | 药物过敏、造影剂过敏等 | 不参与疑似诊断 | 后续开药、造影、介入前做安全提醒 |
+| 体格检查 | 低血压、心率快、皮肤湿冷、休克表现等 | 说明病情可能更重，提升紧急程度 | 用于判断是否急诊处理、是否存在休克或并发症 |
+
+所以，这条数据链路可以用人话理解为：
 
 ```text
-患者存在出血风险时，系统提示抗凝或抗血小板治疗需关注出血风险。
-患者肾功能异常时，系统提示部分药物使用需结合肾功能评估。
-患者存在药物过敏史时，系统提示医生核对相关用药。
+先看主诉和现病史：有没有这次发作的胸痛、出汗、恶心呕吐
+  -> 有，才进入 AMI/ACS 疑似诊断
+再看既往史、个人史、家族史：有没有高血压、糖尿病、吸烟等高危背景
+  -> 有，只提高风险等级，不单独生成诊断
+然后推荐下一步检查：心电图、心肌肌钙蛋白、超声心动图等
+  -> 报告回来后，再判断是否支持 AMI/STEMI
+最后再看过敏史、出血风险、PCI可及性等
+  -> 用于治疗建议和安全提醒
 ```
 
-### 5.5 出院与随访阶段
+**第一阶段：医生录入一诉五史**
 
-患者出院前，系统可根据 AMI 二级预防要求，提示医生关注长期用药、复查项目、危险因素控制和随访安排。
+| 字段 | 模拟输入 | 系统应识别的图谱实体 |
+|---|---|---|
+| 姓名/年龄/科室 | 张某，男，58岁，心血管内科 | 基础上下文 |
+| 主诉 | 胸痛2小时 | `SYM-CARD-B479F36AE54A` 胸痛 |
+| 现病史 | 胸骨后压榨样疼痛，持续不缓解，伴出汗、恶心呕吐 | 胸痛、`SYM-CARD-BC91622FC62F` 出汗、`SYM-CARD-1053F19CEBAD` 恶心呕吐 |
+| 既往史 | 高血压10年，糖尿病5年 | `RF-CARD-DE0A9F1FE2C8` 高血压、`RF-CARD-26FAEB71ABE2` 糖尿病 |
+| 个人史 | 吸烟30年 | `RiskFactor=吸烟` |
+| 家族史 | 父亲有冠心病史 | 心血管高危背景 |
+| 过敏史 | 否认药物过敏史 | 用药安全背景 |
+| 体格检查 | 血压95/60mmHg，心率110次/分，皮肤湿冷 | 低血压、心动过速、皮肤湿冷 |
 
-例如：
+**第一阶段预期输出：疑似诊断**
 
-- 是否已评估抗血小板、调脂、降压等二级预防治疗；
-- 是否提示控制血压、血脂、血糖等危险因素；
-- 是否安排复查和随访建议；
-- 是否记录患者宣教和注意事项。
+| 展示位置 | 输出内容 | 说明 |
+|---|---|---|
+| 推荐诊断 | 急性冠脉综合征、急性心肌梗死、不稳定型心绞痛 | 仅为疑似诊断，不是最终诊断 |
+| 待分型提示 | STEMI/NSTEMI 待心电图和心肌肌钙蛋白确认 | 没有报告前不能直接确诊 |
+| 命中依据 | 胸痛、出汗、恶心呕吐、高血压、糖尿病、吸烟 | 高血压、糖尿病、吸烟只作为危险因素 |
+| 下一步建议 | 完善心电图、心肌肌钙蛋白、肌酸激酶同工酶、超声心动图、肾功能、血糖、血脂检查 | 来自 `requires_exam`、`requires_lab_test` |
+| 鉴别提醒 | 主动脉夹层、肺栓塞、急性心包炎、冠状动脉痉挛 | 来自 `differentiates_from` |
+
+第一阶段可模拟请求：
+
+```json
+{
+  "patient_context": {
+    "name": "张某",
+    "sex": "男",
+    "age": 58,
+    "department": "心血管内科"
+  },
+  "chief_complaint": "胸痛2小时",
+  "present_illness": "胸骨后压榨样疼痛，持续不缓解，伴出汗、恶心呕吐",
+  "past_history": "高血压10年，糖尿病5年",
+  "personal_history": "吸烟30年",
+  "family_history": "父亲有冠心病史",
+  "allergy_history": "否认药物过敏史",
+  "physical_exam": "血压95/60mmHg，心率110次/分，皮肤湿冷"
+}
+```
+
+第一阶段推荐返回：
+
+```json
+{
+  "stage": "initial_suspected_diagnosis",
+  "recommendations": [
+    {
+      "disease_code": "DIS-CARD-CAD-ACS",
+      "disease_name": "急性冠脉综合征",
+      "recommendation_role": "suspected_diagnosis",
+      "hit_symptoms": ["胸痛", "出汗", "恶心呕吐"],
+      "hit_risk_factors": ["高血压", "糖尿病", "吸烟"],
+      "next_step": ["EXAM-ECG", "LAB-CARD-A9EC1D4DA037"]
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-AMI",
+      "disease_name": "急性心肌梗死",
+      "recommendation_role": "suspected_diagnosis",
+      "hit_symptoms": ["胸痛", "出汗", "恶心呕吐"],
+      "hit_risk_factors": ["高血压", "糖尿病", "吸烟"],
+      "next_step": ["EXAM-ECG", "LAB-CARD-A9EC1D4DA037"]
+    }
+  ],
+  "risk_context": ["高血压", "糖尿病", "吸烟"],
+  "differentials": ["主动脉夹层", "肺栓塞", "急性心包炎", "冠状动脉痉挛"]
+}
+```
+
+**第二阶段：医生关注 AMI 后推荐检查检验**
+
+| 推荐项目 | 图谱 code | 用途 |
+|---|---|---|
+| 心电图 | `EXAM-ECG` | 判断 ST 段抬高/压低、缺血性改变 |
+| 心肌肌钙蛋白 | `LAB-CARD-A9EC1D4DA037` | 判断心肌损伤及动态变化 |
+| 肌酸激酶同工酶 | `LAB-CARD-960C7CE8E22B` | 辅助判断心肌损伤 |
+| 超声心动图 | `EXAM-TTE` | 评估室壁运动异常、心功能 |
+| 冠状动脉造影 | `EXAM-CAG` | 评估冠脉责任病变 |
+| 肾功能、血糖、血脂检查 | `LabTest` | 治疗安全性和危险因素评估 |
+
+**第三阶段：报告回填**
+
+| 报告类型 | 模拟结果 | 命中的图谱对象 |
+|---|---|---|
+| 心电图 | II、III、aVF 导联 ST 段抬高 | `IND-CARD-340F2703D39C` ST段抬高 |
+| 心肌肌钙蛋白 | 0h 升高，1h 复查继续升高 | 肌钙蛋白升高及动态变化 |
+| 超声心动图 | 下壁节段性室壁运动异常 | 新发室壁运动异常 |
+| 主动脉 CTA | 未见主动脉夹层征象 | 主动脉夹层鉴别已排除 |
+
+第二阶段回填请求：
+
+```json
+{
+  "focused_disease_code": "DIS-CARD-CAD-AMI",
+  "exam_results": {
+    "EXAM-ECG": "II、III、aVF导联ST段抬高",
+    "EXAM-TTE": "下壁节段性室壁运动异常",
+    "aortic_dissection_excluded": true
+  },
+  "lab_results": {
+    "LAB-CARD-A9EC1D4DA037": "心肌肌钙蛋白0h升高，1h复查继续升高",
+    "LAB-CARD-960C7CE8E22B": "肌酸激酶同工酶升高"
+  },
+  "clinical_facts": {
+    "onset_hours": 2,
+    "pci_available_minutes": 90,
+    "active_bleeding": false
+  }
+}
+```
+
+**第四阶段：诊断收敛**
+
+| 判断项 | 结果 | 系统输出 |
+|---|---|---|
+| 缺血性症状 | 胸痛持续不缓解 | 支持 AMI |
+| 心电图证据 | ST 段抬高 | 支持 STEMI 分型 |
+| 心肌损伤证据 | 心肌肌钙蛋白升高并动态变化 | 支持 AMI |
+| 影像学证据 | 节段性室壁运动异常 | 辅助支持 |
+| 鉴别诊断 | 主动脉夹层已排除 | 可进入再灌注评估 |
+
+诊断收敛输出：
+
+```json
+{
+  "stage": "diagnosis_check",
+  "diagnosis": {
+    "disease_code": "DIS-CARD-CAD-AMI",
+    "disease_name": "急性心肌梗死",
+    "subtype_code": "DIS-CARD-CAD-STEMI",
+    "subtype_name": "ST段抬高型心肌梗死",
+    "supporting_evidence": ["胸痛持续不缓解", "ST段抬高", "心肌肌钙蛋白动态升高", "节段性室壁运动异常"],
+    "differential_status": ["主动脉夹层已排除", "肺栓塞需结合临床继续评估"]
+  }
+}
+```
+
+**第五阶段：治疗建议**
+
+| 条件 | 模拟值 | 推荐输出 |
+|---|---|---|
+| 发病时间 | 2小时 | 符合再灌注评估时间窗 |
+| PCI 可及性 | 90分钟内可及 | 推荐评估急诊 PCI |
+| 主动脉夹层 | 已排除 | 不阻断再灌注评估 |
+| 活动性出血 | 无 | 可继续评估抗栓/介入治疗 |
+
+治疗建议输出：
+
+```json
+{
+  "stage": "treatment_suggest",
+  "stage_code": "STAGE-CDSS-CAD-AMI-02-REPERFUSION",
+  "recommendation_code": "REC-CDSS-CAD-AMI-02-01-REPERFUSION",
+  "recommendation_text": "AMI患者应结合分型、时间窗和PCI可及性评估急诊PCI、溶栓或冠脉造影。",
+  "recommended_actions": [
+    {
+      "action_code": "PROC-CARD-E9ADC25A25E3",
+      "action_name": "经皮冠状动脉介入治疗"
+    }
+  ],
+  "missing_or_attention": ["确认PCI可及性", "评估出血风险", "持续关注肺栓塞等鉴别诊断"]
+}
+```
+
+### 5.6 一开始写什么会命中 AMI 疑似诊断
+
+系统第一步不是让医生写诊断，而是从主诉、现病史、既往史、体征等内容中识别 AMI 相关线索。只要录入内容命中图谱中的 `Symptom`、`Sign`、`RiskFactor`，系统即可把 AMI 作为疑似疾病提示出来。
+
+| 录入位置 | 医生可能填写内容 | 命中的图谱实体 | 关系路径 | 作用 |
+|---|---|---|---|---|
+| 主诉 | 胸痛、胸闷、胸痛 2 小时、压榨样胸痛 | `Symptom=胸痛/胸闷` | `Disease -has_symptom-> Symptom` | 触发 AMI/ACS 疑似疾病提示 |
+| 现病史 | 疼痛持续不缓解、伴出汗、伴恶心呕吐、活动后加重、放射至左肩背 | `Symptom=出汗/恶心呕吐/胸痛` | `Disease -has_symptom-> Symptom` | 增强 AMI 疑似程度 |
+| 既往史 | 冠心病史、高血压、糖尿病、高脂血症 | `RiskFactor=冠心病史/高血压/糖尿病/血脂异常` | `Disease -has_risk_factor-> RiskFactor` | 增强心血管高危背景 |
+| 个人史 | 长期吸烟、肥胖、长期饮酒、缺乏运动 | `RiskFactor=吸烟/肥胖` | `Disease -has_risk_factor-> RiskFactor` | 增强风险提示 |
+| 体征 | 低血压、心动过速、休克表现、皮肤湿冷 | `Sign=低血压/心动过速/休克/皮肤湿冷` | `Disease -has_sign-> Sign` | 提示重症或并发症风险 |
+
+最小命中示例：
+
+```text
+主诉：胸痛2小时
+现病史：胸痛持续不缓解，伴出汗、恶心呕吐
+既往史：高血压、糖尿病
+```
+
+系统匹配逻辑：
+
+```text
+胸痛、出汗、恶心呕吐
+  -> 命中 Symptom
+  -> 反查 Disease -has_symptom-> Symptom
+  -> 命中急性心肌梗死/急性冠脉综合征
+
+高血压、糖尿病
+  -> 命中 RiskFactor
+  -> 反查 Disease -has_risk_factor-> RiskFactor
+  -> 增强 AMI 疑似提示
+```
+
+输出示例：
+
+```text
+疑似疾病提示：急性冠脉综合征、急性心肌梗死。
+命中依据：胸痛、出汗、恶心呕吐、高血压、糖尿病。
+建议：完善心电图、肌钙蛋白等检查检验，并关注主动脉夹层、肺栓塞等鉴别诊断。
+```
+
+建议命中规则：
+
+| 命中情况 | 系统动作 |
+|---|---|
+| 命中胸痛/胸闷等核心症状 | 提示关注 ACS/AMI |
+| 核心症状 + 出汗/恶心呕吐 | 提高 AMI 疑似优先级 |
+| 核心症状 + 高血压/糖尿病/吸烟等危险因素 | 提示心血管高危背景 |
+| 核心症状 + 低血压/休克表现 | 提示重症风险，建议尽快完善检查 |
+
+### 5.7 关注 AMI 后推荐哪些检查检验
+
+当系统提示“疑似 AMI/ACS”后，下一步不是直接给治疗，而是先补齐诊断和鉴别所需的检查检验。
+
+| 推荐目的 | 推荐项目 | 对应实体 | 图谱关系 | 系统输出 |
+|---|---|---|---|---|
+| 判断是否存在心肌缺血 | 心电图、动态心电图复查 | `Exam=心电图` | `Disease -requires_exam-> Exam` | 建议立即完善心电图，关注 ST 段改变 |
+| 判断是否存在心肌损伤 | 肌钙蛋白、CK-MB | `LabTest=肌钙蛋白/CK-MB` | `Disease -requires_lab_test-> LabTest` | 建议检测并动态复查心肌损伤标志物 |
+| 判断心功能和并发症 | 超声心动图、BNP/NT-proBNP | `Exam=超声心动图`、`LabTest=BNP` | `requires_exam/requires_lab_test` | 评估室壁运动异常、心衰风险 |
+| 排除主动脉夹层 | 主动脉 CTA、床旁超声 | 由鉴别诊断说明或业务规则提示 | `Disease -differentiates_from-> DifferentialDiagnosis` | 胸痛性质异常时提示排除主动脉夹层 |
+| 排除肺栓塞 | D-二聚体、CTPA | 由鉴别诊断说明或业务规则提示 | `Disease -differentiates_from-> DifferentialDiagnosis` | 胸痛伴呼吸困难/低氧时提示排除肺栓塞 |
+| 治疗安全性评估 | 血常规、肾功能、血糖、血脂检查 | `LabTest` | `requires_lab_test` | 为后续抗栓、调脂和介入治疗做基础评估 |
+
+图谱查询主路径：
+
+```text
+急性心肌梗死
+  -> requires_exam
+    -> 心电图、超声心动图、冠脉造影
+
+急性心肌梗死
+  -> requires_lab_test
+    -> 心肌肌钙蛋白、肌酸激酶同工酶、肾功能、血糖、血脂检查
+
+急性心肌梗死
+  -> differentiates_from
+    -> 主动脉夹层、肺栓塞、急性心包炎
+```
+
+### 5.8 检查检验结果出来后怎么确定诊断
+
+系统不直接“自动确诊”，而是把患者结果和图谱中的诊断标准明细逐项比对，给出“支持诊断依据、未满足项、需鉴别项”，由医生最终确认。
+
+| 患者结果 | 命中的图谱实体 | 图谱关系 | 判断 |
+|---|---|---|---|
+| 胸痛持续不缓解 | `DiagnosisCriteriaComponent=缺血性症状` | `DiagnosisCriteria -has_diagnostic_component-> DiagnosisCriteriaComponent` | 支持 AMI 诊断依据 |
+| 心电图 ST 段抬高 | `ExamIndicator=ST段抬高` | `DiagnosisCriteria -has_diagnostic_component-> ExamIndicator` | 支持 STEMI 判断 |
+| 肌钙蛋白升高并动态变化 | `ThresholdRule=肌钙蛋白动态升高` | `DiagnosisCriteria -has_diagnostic_component-> ThresholdRule` | 支持心肌损伤判断 |
+| 超声提示新发室壁运动异常 | `DiagnosisCriteriaComponent=新发室壁运动异常` | `has_diagnostic_component` | 辅助支持诊断 |
+| 主动脉 CTA 提示异常 | `DifferentialDiagnosis=主动脉夹层` | `Disease -differentiates_from-> DifferentialDiagnosis` | 提示需优先鉴别，不应直接进入溶栓路径 |
+
+诊断判断主路径：
+
+```text
+急性心肌梗死
+  -> has_diagnostic_criteria
+    -> 急性心肌梗死诊断标准
+      -> has_diagnostic_component
+        -> 缺血性症状
+        -> 缺血性心电图改变
+        -> 肌钙蛋白升高及动态变化
+        -> 新发室壁运动异常
+```
+
+输出示例：
+
+```text
+诊断依据提示：当前资料支持急性心肌梗死。
+已满足：胸痛、ST 段抬高、肌钙蛋白升高并动态变化。
+仍需关注：主动脉夹层、肺栓塞等鉴别诊断是否已排除。
+下一步：进入 AMI/STEMI 治疗路径评估。
+```
+
+### 5.9 有诊断后推荐什么治疗方案或路径
+
+诊断明确后，系统分两层输出：先展示疾病可用治疗方案，再根据患者条件触发当前患者推荐。
+
+| 层级 | 用途 | 图谱关系 | AMI 示例 |
+|---|---|---|---|
+| 知识浏览层 | 展示该疾病通常有哪些治疗方案 | `Disease -has_treatment_plan-> TreatmentPlan` | 再灌注治疗、抗血小板治疗、抗凝治疗、二级预防 |
+| 方案组成层 | 展示方案包含哪些药物/操作 | `TreatmentPlan -includes_medication/includes_procedure-> Medication/Procedure` | 阿司匹林、氯吡格雷、急诊 PCI、溶栓治疗 |
+| 患者推荐层 | 根据当前患者条件给推荐 | `RecommendationStatement` 的 `stage_code`、`rule_code` 和 `recommends_action` | `REC-CDSS-CAD-AMI-02-01-REPERFUSION` 推荐评估 PCI、溶栓或冠脉造影 |
+
+患者级推荐主路径：
+
+```text
+RecommendationStatement
+  code = REC-CDSS-CAD-AMI-02-01-REPERFUSION
+  stage_code = STAGE-CDSS-CAD-AMI-02-REPERFUSION
+  rule_code = RULE-CDSS-CAD-AMI-02-01-REPERFUSION
+  recommends_action
+    -> PROC-CARD-E9ADC25A25E3
+       经皮冠状动脉介入治疗
+```
+
+输出示例：
+
+```text
+当前阶段：AMI 再灌注评估阶段。
+推荐动作：结合分型、时间窗和 PCI 可及性评估 PCI、溶栓或冠脉造影。
+动作实体：PROC-CARD-E9ADC25A25E3，经皮冠状动脉介入治疗。
+关注信息：主动脉夹层、肺栓塞等鉴别是否已排除，以及出血风险、PCI 可及性等。
+```
+
+### 5.10 关键图谱语法示例
+
+**疑似疾病识别**
+
+```cypher
+MATCH (d:KGNode {entityType:'Disease'})
+OPTIONAL MATCH (d)-[:has_symptom]->(s:KGNode {entityType:'Symptom'})
+OPTIONAL MATCH (d)-[:has_risk_factor]->(rf:KGNode {entityType:'RiskFactor'})
+WHERE s.name IN $symptom_names OR rf.name IN $risk_factor_names
+RETURN d.code AS disease_code,
+       coalesce(d.display_name, d.name) AS disease_name,
+       collect(DISTINCT s.name) AS hit_symptoms,
+       collect(DISTINCT rf.name) AS hit_risk_factors
+ORDER BY size(hit_symptoms) + size(hit_risk_factors) DESC
+```
+
+**推荐检查检验**
+
+```cypher
+MATCH (d:KGNode {entityType:'Disease', code:$disease_code})
+OPTIONAL MATCH (d)-[:requires_exam]->(exam:KGNode {entityType:'Exam'})
+OPTIONAL MATCH (d)-[:requires_lab_test]->(lab:KGNode {entityType:'LabTest'})
+RETURN collect(DISTINCT exam{.code, .name}) AS exams,
+       collect(DISTINCT lab{.code, .name}) AS lab_tests
+```
+
+**诊断标准明细**
+
+```cypher
+MATCH (d:KGNode {entityType:'Disease', code:$disease_code})
+      -[:has_diagnostic_criteria]->(dx:KGNode {entityType:'DiagnosisCriteria'})
+OPTIONAL MATCH (dx)-[:has_diagnostic_component]->(comp:KGNode)
+RETURN dx.code AS criteria_code,
+       coalesce(dx.display_name, dx.name) AS criteria_name,
+       collect(DISTINCT comp{.code, .entityType, .name}) AS components
+```
+
+**鉴别诊断**
+
+```cypher
+MATCH (d:KGNode {entityType:'Disease', code:$disease_code})
+      -[:differentiates_from]->(ddx:KGNode {entityType:'DifferentialDiagnosis'})
+RETURN ddx.code AS differential_code,
+       coalesce(ddx.display_name, ddx.name) AS differential_name,
+       ddx.description AS differential_note
+```
+
+**患者级治疗推荐**
+
+```cypher
+MATCH (rs:KGNode {entityType:'RecommendationStatement'})
+WHERE rs.code = 'REC-CDSS-CAD-AMI-02-01-REPERFUSION'
+   OR rs.stage_code = 'STAGE-CDSS-CAD-AMI-02-REPERFUSION'
+OPTIONAL MATCH (rs)-[:recommends_action]->(action:KGNode)
+OPTIONAL MATCH (rs)-[:derived_from]->(ev:KGNode {entityType:'Evidence'})
+OPTIONAL MATCH (rs)-[:based_on_guideline]->(g:KGNode {entityType:'Guideline'})
+RETURN rs.stage_code AS stage_code,
+       rs.rule_code AS rule_code,
+       rs.code AS recommendation_code,
+       coalesce(rs.display_name, rs.name) AS recommendation_name,
+       rs.statement_text AS statement_text,
+       collect(DISTINCT action{.code, .name}) AS recommended_actions,
+       collect(DISTINCT ev.code)
+         + CASE WHEN rs.primary_evidence_code IS NULL THEN [] ELSE [rs.primary_evidence_code] END AS evidence_codes,
+       collect(DISTINCT g.name) AS guideline_names
+```
+
+### 5.11 建议封装接口
+
+| 接口 | 输入 | 图谱关系 | 输出 |
+|---|---|---|---|
+| `POST /cdss/suspect-diseases` | 主诉、病史、体征 | `has_symptom`、`has_sign`、`has_risk_factor` | 疑似疾病和命中依据 |
+| `GET /kg/disease/{code}/workup` | 疾病 code | `requires_exam`、`requires_lab_test` | 推荐检查检验 |
+| `POST /cdss/diagnosis-check` | 疾病 code、检查检验结果 | `has_diagnostic_criteria`、`has_diagnostic_component` | 诊断依据、缺失项 |
+| `GET /kg/disease/{code}/differentials` | 疾病 code | `differentiates_from` | 鉴别诊断列表 |
+| `POST /cdss/treatment-suggest` | 疾病 code、患者状态 | `RecommendationStatement.stage_code`、`rule_code`、`recommends_action`、`primary_evidence_code` | 推荐动作、需补充判断的信息、证据 |
+
+### 5.12 截图场景的正确联调口径
+
+以下输入用于校验诊疗推荐页是否按 AMI 专病链路工作：
+
+```text
+主诉：胸痛2小时
+现病史：胸痛、出汗、恶心呕吐
+既往史：高血压、糖尿病
+```
+
+正确结果不应靠人工维护“AMI/ACS 优先级名单”，而应按图谱关系和患者证据自动评分。该场景下，“高血压、糖尿病”来自既往史，应作为 `RiskFactor` 参与加分，不能单独生成推荐诊断；`心电图、心肌肌钙蛋白` 尚未返回前，页面展示的是“疑似诊断/待排疾病”，不是最终诊断。
+
+该输入下，系统应优先展示胸痛相关的疑似疾病，并提示下一步检查检验。由于尚无心电图和心肌肌钙蛋白结果，冠心病谱系内多个疾病可以处于同一疑似层级，不要求强行给出唯一第一名。示例结果如下：
+
+| 展示层级 | 诊断候选 | 疾病 code | 命中依据 | 说明 |
+|---|---|---|---|---|
+| 疑似诊断 | 急性冠脉综合征 | `DIS-CARD-CAD-ACS` | 胸痛、出汗、恶心呕吐、高危因素 | 胸痛急症入口，可作为上位提示 |
+| 疑似诊断 | 急性心肌梗死 | `DIS-CARD-CAD-AMI` | 胸痛、出汗、恶心呕吐、高危因素 | 需完善心电图、心肌肌钙蛋白 |
+| 待分型 | ST段抬高型心肌梗死 | `DIS-CARD-CAD-STEMI` | 胸痛、高危因素 | 需等待心电图 ST 段结果进一步确认 |
+| 待分型 | 非ST段抬高型心肌梗死 | `DIS-CARD-CAD-NSTEMI` | 胸痛、高危因素 | 需结合心肌肌钙蛋白和心电图动态判断 |
+
+`不稳定型心绞痛`可与 AMI/ACS 同属胸痛相关疑似诊断，但需要通过心电图、心肌肌钙蛋白动态变化进一步区分；`心肌炎`可作为鉴别或备选诊断。`高血压`、`糖尿病`在本场景中是危险因素，只能作为命中依据和风险背景，不应作为“推荐诊断”展示，除非患者输入的是血压显著升高、靶器官损害等高血压急症证据。
+
+可扩展排序规则建议：
+
+```text
+候选召回：
+  只用当前阳性症状、体征、检查检验异常召回 Disease
+  既往史、个人史、危险因素只作为加分依据，不单独召回诊断
+
+候选评分：
+  当前主诉/现病史症状命中 has_symptom：高权重
+  当前体征命中 has_sign：高权重
+  检查检验异常命中诊断标准或指标：最高权重
+  既往史/危险因素命中 has_risk_factor：低权重
+  疾病具备诊断标准、推荐检查检验、鉴别诊断、推荐陈述：结构完整度加分
+  仅命中危险因素、无当前阳性症状/体征/检查异常：不进入推荐诊断列表
+
+结果分层：
+  suspected_diagnosis：当前证据支持的疑似诊断
+  differential_diagnosis：需要排除的鉴别诊断
+  risk_context：危险因素或既往病史，不作为本次推荐诊断
+  next_step：下一步检查检验或诊疗建议
+
+排序边界：
+  症状阶段只做疑似分层，不做最终确诊排序
+  同一层级疾病分数接近时允许并列展示
+  心电图、心肌肌钙蛋白等结果返回后，再用诊断标准收敛到 AMI/STEMI/NSTEMI/UA 等具体诊断
+```
+
+诊疗推荐页生成诊断建议时，应至少返回以下字段，便于判断推荐是否合理：
+
+```json
+{
+  "disease_code": "DIS-CARD-CAD-AMI",
+  "disease_name": "急性心肌梗死",
+  "hit_symptoms": ["胸痛", "出汗", "恶心呕吐"],
+  "hit_risk_factors": ["高血压", "糖尿病"],
+  "recommendation_role": "suspected_diagnosis",
+  "next_step": ["EXAM-ECG", "LAB-CARD-A9EC1D4DA037"]
+}
+```
 
 ## 6. AI 提效说明
 

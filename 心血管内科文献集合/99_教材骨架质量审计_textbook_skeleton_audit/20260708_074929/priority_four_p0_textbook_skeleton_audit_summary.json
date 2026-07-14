@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-07-08 07:49:29",
+  "scope": "priority cardiovascular categories: CAD, cardiomyopathy, heart failure, arrhythmia; plus SCD category when present",
+  "disease_count": 68,
+  "p0_count": 68,
+  "definition_empty_count": 68,
+  "description_no_self_anchor_count": 1,
+  "description_other_disease_anchor_count": 43,
+  "known_pollution_keyword_count": 14,
+  "csv": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\99_教材骨架质量审计_textbook_skeleton_audit\\20260708_074929\\priority_four_p0_textbook_skeleton_audit.csv"
+}

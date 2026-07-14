@@ -1,0 +1,20 @@
+{
+  "checked_count": 68,
+  "missing_count": 0,
+  "duplicate_match_count": 0,
+  "definition_empty_count": 10,
+  "definition_nonempty_count": 58,
+  "empty_definition_codes": [
+    "DIS-CARD-HF-POST-MI",
+    "DIS-CARD-HF-DIALYSIS-CHF",
+    "DIS-CARD-ARR-VA",
+    "DIS-CARD-ARR-BRADY",
+    "DIS-CARD-CM-ATRIAL",
+    "DIS-CARD-CM-FABRY",
+    "DIS-CARD-CM-AMYLOID",
+    "DIS-CARD-CM-ABVC",
+    "DIS-CARD-CM-ALVC",
+    "DIS-CARD-CM-ACM"
+  ],
+  "status": "passed"
+}

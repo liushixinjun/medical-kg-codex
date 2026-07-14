@@ -1,0 +1,69 @@
+﻿code,name,definition_status,definition_confidence,external_authority_review_status,definition_source_type,definition_source_name,definition_preview
+DIS-CARD-ARR-AF,心房颤动,definition_present,,,authoritative_textbook,《内科学（第10版）》,心房颤动（atrial fibrillation，AF）简称房颤，是最常见的心律失常之一，是指规则有序的心房电活动丧失，代之以快速无序的颤动波，是最严重的心房电活动紊乱。
+DIS-CARD-ARR-AFL,心房扑动,definition_present,,,authoritative_textbook,《内科学（第10版）》,心房扑动（atrial flutter）简称房扑，是介于房速和房颤之间的快速型心律失常。
+DIS-CARD-ARR-AT,房性心动过速,definition_present,,,authoritative_textbook,《内科学（第10版）》,房性心动过速（atrial tachycardia）简称房速，指起源于心房且无需房室结参与维持的心动过速。
+DIS-CARD-ARR-AVB,房室传导阻滞,definition_present,,,authoritative_textbook,《内科学（第10版）》,房室传导阻滞（atrioventricular block）是指房室交界区脱离了生理不应期后，心房冲动传导延迟或不能传导至心室。
+DIS-CARD-ARR-AVB1,一度房室传导阻滞,definition_present,,,authoritative_textbook,《内科学（第10版）》,一度房室传导阻滞是房室传导时间延长，但全部心房冲动仍能传导至心室的房室传导阻滞。
+DIS-CARD-ARR-AVB2,二度房室传导阻滞,definition_present,,,authoritative_textbook,《内科学（第10版）》,二度房室传导阻滞是部分心房冲动不能传导至心室的房室传导阻滞，可分为Ⅰ型（文氏阻滞）和Ⅱ型。
+DIS-CARD-ARR-AVB3,三度房室传导阻滞,definition_present,,,authoritative_textbook,《内科学（第10版）》,三度房室传导阻滞又称完全性房室传导阻滞，是全部心房冲动不能传导至心室，心房和心室节律由各自独立起搏点控制的房室传导阻滞。
+DIS-CARD-ARR-AVNRT,房室结折返性心动过速,definition_present,,,authoritative_textbook,《内科学（第10版）》,房室结折返性心动过速（AVNRT）是折返环路位于房室结内的房室交界区相关折返性心动过速。
+DIS-CARD-ARR-AVRT,房室折返性心动过速,definition_present,,,authoritative_textbook,《内科学（第10版）》,房室折返性心动过速（AVRT）是通过旁道产生的心动过速，可由房室交界区、旁道与心房、心室共同组成折返环路。
+DIS-CARD-ARR-BBB,束支传导阻滞,definition_present,,,authoritative_textbook,《内科学（第10版）》,室内传导阻滞（intraventricular block）是指希氏束以下部位的传导阻滞。
+DIS-CARD-ARR-BRADY,缓慢性心律失常,definition_present,high,machine_curated_source_backed,external_authoritative_source,2018 ACC/AHA/HRS缓慢性心律失常与传导延迟指南摘要,以窦性心动过缓、异位房性心动过缓、窦房传导阻滞或停搏、房室传导阻滞等导致心率过慢或传导延迟为主要表现的一组心律失常。
+DIS-CARD-ARR-BRUGADA,Brugada综合征,definition_present,,,authoritative_textbook,《内科学（第10版）》,Brugada综合征是与钠离子通道和钙离子通道基因突变相关的遗传性心律失常综合征，临床可表现为反复晕厥，是中青年非器质性心脏病猝死的重要原因。
+DIS-CARD-ARR-CPVT,儿茶酚胺敏感性多形性室性心动过速,definition_present,,,authoritative_textbook,《内科学（第10版）》,儿茶酚胺敏感性室性心动过速（CPVT）是一种罕见的遗传性室速，病人常无明显结构性心脏病，症状多在运动或情绪激动时发生。
+DIS-CARD-ARR-ERS,早期复极综合征,definition_present,,,authoritative_textbook,《内科学（第10版）》,早期复极综合征是心电复极异常的一种，为生理性心电图变异；在有心搏骤停史或记录到多形性室速、特发性室颤时，可诊断早期复极综合征。
+DIS-CARD-ARR-LQTS,长QT间期综合征,definition_present,,,authoritative_textbook,《内科学（第10版）》,长QT间期综合征（LQTS）是可分为先天性和获得性的离子通道病，表现为QT间期延长，并可导致晕厥和/或猝死。
+DIS-CARD-ARR-NSVT,非持续性室性心动过速,definition_present,,,authoritative_textbook,《内科学（第10版）》,非持续性室性心动过速是发作时间短于30秒、能自行终止的室性心动过速。
+DIS-CARD-ARR-PSVT,阵发性室上性心动过速,definition_present,,,authoritative_textbook,《内科学（第10版）》,阵发性室上性心动过速（PSVT）是房室交界区相关折返性心动过速在临床上的统称，呈规律快速心动过速，突然发作与终止。
+DIS-CARD-ARR-PVC,室性期前收缩,definition_present,,,authoritative_textbook,《内科学（第10版）》,室性期前收缩（premature ventricular beat）也称室性早搏，简称室早，是一种最常见的心律失常，指希氏束以下部位心室兴奋灶提前除极而产生的过早搏动。
+DIS-CARD-ARR-SAB,窦房传导阻滞,definition_present,,,authoritative_textbook,《内科学（第10版）》,窦房传导阻滞（sinoatrial block，SAB）指窦房结冲动传导至心房时发生延缓或阻滞。
+DIS-CARD-ARR-SB,窦性心动过缓,definition_present,,,authoritative_textbook,《内科学（第10版）》,成人窦性心律的频率低于 60 次 / 分称为窦性心动过缓（sinus bradycardia）（图 3-3-5）。
+DIS-CARD-ARR-SINUS,窦性心律失常,definition_present,,,authoritative_textbook,《内科学（第10版）》,窦性心律失常是由于窦房结冲动发放频 率的异常或窦性冲动向心房的传导受阻所导致的心律失常。
+DIS-CARD-ARR-SND,窦房结功能障碍,definition_present,,,authoritative_textbook,《内科学（第10版）》,病态窦房结综合征（sick sinus syndrome，SSS）简称病窦综合征，是由窦房结病变导致功能减退，产生多种心律失常的综合表现。
+DIS-CARD-ARR-SQTS,短QT间期综合征,definition_present,,,authoritative_textbook,《内科学（第10版）》,短QT间期综合征（SQTS）是单基因突变引起的常染色体显性遗传离子通道病，可表现为心悸、头晕及反复发作的晕厥和/或心脏性猝死。
+DIS-CARD-ARR-SVT,室上性心动过速,definition_present,,,authoritative_textbook,《内科学（第10版）》,室上性心动过速简称室上速，是临床上统称的阵发性室上性心动过速，表现为规律而快速、突然发作与终止、心电图多为QRS波群形态正常且RR间期规则的快速心律。
+DIS-CARD-ARR-TDP,尖端扭转型室性心动过速,definition_present,,,authoritative_textbook,《内科学（第10版）》,尖端扭转型室性心动过速（TdP）是多形性室速的特殊类型，发作时QRS波群振幅与波峰呈周期性改变，宛如围绕等电位线连续扭转。
+DIS-CARD-ARR-VA,室性心律失常,definition_present,high,machine_curated_source_backed,external_authoritative_source,2022 ESC室性心律失常与心脏性猝死预防指南,起源于心室的异常心律谱系，主要包括室性早搏、非持续性或持续性室性心动过速、尖端扭转型室速、室颤、电风暴等类型。
+DIS-CARD-ARR-VF,心室扑动与心室颤动,definition_present,,,authoritative_textbook,《内科学（第10版）》,心室扑动（ventricular flutter，VF）与心室颤动（ventricular fibrillation，VF）简称室扑和室颤，为致死性心律失常。
+DIS-CARD-ARR-VT,持续性室性心动过速,definition_present,,,authoritative_textbook,《内科学（第10版）》,室性心动过速（ventricular tachycardia，VT）简称室速，是起源于希氏束以下的特殊传导系统或者心室肌的连续 3 个或 3 个以上的异位心搏。
+DIS-CARD-ARR-WPW,预激综合征,definition_present,,,authoritative_textbook,《内科学（第10版）》,预激综合征是心室预激引发房室折返性心动过速的综合征，其中由Kent束引发者称为Wolf-Parkinson-White综合征或典型预激综合征。
+DIS-CARD-CAD-ACS,急性冠脉综合征,definition_present,,,authoritative_textbook,《内科学（第10版）》,急性冠脉综合征是一组由急性心肌缺血引起的临床综合征，主要包括不稳定型心绞痛（UA）、非ST 段抬高型心肌梗死（NSTEMI）和 ST 段抬高型心肌梗死（STEMI），冠心病猝死是特殊类型 ACS。
+DIS-CARD-CAD-AMI,急性心肌梗死,definition_present,,,authoritative_textbook,《内科学（第10版）》,急性心肌梗死（AMI）是急性冠脉综合征的重要类型，临床上分为5型，其中最常见的是原发冠脉不稳定斑块破裂、糜烂或侵蚀继发血栓形成导致的自发性AMI。
+DIS-CARD-CAD-ATHEROSCLEROSIS,动脉粥样硬化,definition_present,,,authoritative_textbook,《内科学（第10版）》,动脉粥样硬化（atherosclerosis）的特点是受累动脉的病变从内膜开始，局部先后发生细胞内外的脂质积聚、纤维组织增生和钙质沉着，病变内可见单核巨噬细胞及其他炎症细胞，并有平滑肌细胞的迁移和增生，大量胶原纤维、弹力纤维和蛋白多糖等结缔
+DIS-CARD-CAD-CCS,慢性冠脉综合征,definition_present,,,authoritative_textbook,《内科学（第10版）》,慢性冠状动脉综合征（CCS）最常见为慢性稳定型劳力性心绞痛和以心功能不全为主要表现的缺血性心肌病，部分处于渡过 ACS 后或行血运重建之后稳定期，有些则为无症状隐匿型冠心病。
+DIS-CARD-CAD-CHD,冠状动脉粥样硬化性心脏病,definition_present,,,authoritative_textbook,《内科学（第10版）》,冠状动脉粥样硬化性心脏病（coronary atherosclerotic heart disease）指冠状动脉（冠脉）发生粥样硬化引起管腔狭窄或闭塞，导致心肌缺血、缺氧或坏死而引起的心脏病，简称冠心病（coronary artery d
+DIS-CARD-CAD-ICM,缺血性心肌病,definition_present,,,authoritative_textbook,《内科学（第10版）》,缺血性心肌病（ischemic cardiomyopathy，ICM）属于冠心病的一种特殊类型或晚期阶段，临床表现为新发心衰或左心室功能障碍，可伴有各种心律失常，心脏扩大类似扩张型心肌病。
+DIS-CARD-CAD-NSTEMI,非ST段抬高型心肌梗死,definition_present,,,authoritative_textbook,《内科学（第10版）》,非ST段抬高型心肌梗死（NSTEMI）属于非ST段抬高型急性冠脉综合征，表现为较严重心肌缺血，并伴有心肌损害和心肌坏死标志物升高。
+DIS-CARD-CAD-OLD-MI,陈旧性心肌梗死,definition_present,,,authoritative_textbook,《内科学（第10版）》,陈旧性心肌梗死是急性心肌梗死坏死组织逐渐纤维化，并在6～8周形成瘢痕愈合后的状态。
+DIS-CARD-CAD-POST-MI-SYNDROME,心肌梗死后综合征,definition_present,,,authoritative_textbook,《内科学（第10版）》,心肌梗死后综合征也称Dressler综合征，是AMI后数周至数月内出现、可反复发生的综合征。
+DIS-CARD-CAD-SILENT-ISCHEMIA,隐匿性冠心病,definition_present,,,authoritative_textbook,《内科学（第10版）》,隐匿型冠心病或无症状性冠心病是指没有心绞痛症状，但有心肌缺血客观证据的冠心病。
+DIS-CARD-CAD-SPASM,冠状动脉痉挛,definition_present,,,authoritative_textbook,《内科学（第10版）》,冠脉痉挛是一种特殊类型的冠脉疾病。
+DIS-CARD-CAD-STABLE-ANGINA,稳定型心绞痛,definition_present,,,authoritative_textbook,《内科学（第10版）》,稳定型心绞痛（stable angina pectoris）也称劳力性心绞痛。
+DIS-CARD-CAD-STEMI,ST段抬高型心肌梗死,definition_present,,,authoritative_textbook,《内科学（第10版）》,STEMI 是指急性心肌缺血性坏死，大多是在冠脉病变的基础上，发生冠脉血供急剧减少或中断，使相应的心肌严重而持久地急性缺血所致。
+DIS-CARD-CAD-UA,不稳定型心绞痛,definition_present,,,authoritative_textbook,《内科学（第10版）》,不稳定型心绞痛（UA）属于非ST段抬高型急性冠脉综合征，是有新发心肌缺血（包括静息状态下缺血）但不伴有心肌坏死的临床状态。
+DIS-CARD-CM-ABVC,致心律失常性双心室心肌病,definition_present,conditional,machine_curated_conditional,external_authoritative_source_conditional,2023 ESC心肌病管理指南,致心律失常性心肌病中同时累及左、右心室的表型，表现为双心室结构或功能异常并伴室性心律失常风险。
+DIS-CARD-CM-ACM,致心律失常性心肌病,definition_present,high,machine_curated_source_backed,external_authoritative_source,2023 ESC心肌病管理指南,以心肌结构和功能异常，并伴室性心律失常为核心特征的一组心肌病谱系，可表现为右室、左室或双心室受累。
+DIS-CARD-CM-ALVC,致心律失常性左心室心肌病,definition_present,conditional,machine_curated_conditional,external_authoritative_source_conditional,2023 ESC心肌病管理指南,以左心室为主的致心律失常性心肌病表型，常表现为非缺血性左室瘢痕或脂肪替代，可伴区域或整体运动异常；在ESC指南中多归入非扩张型左室心肌病表型管理。
+DIS-CARD-CM-AMYLOID,淀粉样变心肌病,definition_present,high,machine_curated_source_backed,external_authoritative_source,ESC心脏淀粉样变诊断与治疗立场声明2021,由淀粉样蛋白纤维沉积或蓄积于心肌或心脏组织所致的浸润性心肌病，可导致心室壁增厚、舒张/收缩功能受损和心律失常等表现。
+DIS-CARD-CM-ARVC,致心律失常性右心室心肌病,definition_present,high,machine_curated_source_backed,external_authoritative_source,2023 ESC心肌病管理指南,以右心室扩张和/或功能障碍为主，并结合组织学受累和/或心电异常等诊断标准的一种致心律失常性心肌病表型，可伴左室受累。
+DIS-CARD-CM-ATRIAL,心房心肌病,definition_present,high,machine_curated_source_backed,external_authoritative_source,EHRA/HRS/APHRS/SOLAECE心房心肌病专家共识2016,影响心房结构、构筑、收缩或电生理特性的改变所构成的综合状态，并可能产生临床相关表现。
+DIS-CARD-CM-DCM,扩张型心肌病,definition_present,,,authoritative_textbook,《内科学（第10版）》,扩张型心肌病（dilated cardiomyopathy，DCM）是一类以左室或双心室扩大伴收缩功能障碍为特征的心肌病，且无法以负荷异常或心肌缺血等来解释。
+DIS-CARD-CM-FABRY,法布雷病心肌病,definition_present,conditional,machine_curated_conditional,external_authoritative_source_conditional,国家罕见病诊疗指南2019 + GeneReviews + 百度健康医典,由GLA基因致病变异导致α-半乳糖苷酶A活性不足，引起糖鞘脂在多器官细胞内蓄积；累及心脏时可表现为左室肥厚、心肌纤维化、心律失常或心力衰竭等心肌病表现。
+DIS-CARD-CM-HCM,肥厚型心肌病,definition_present,,,authoritative_textbook,《内科学（第10版）》,肥厚型心肌病（hypertrophic cardiomyopathy，HCM）是一类以左心室和 / 或右心室肥厚，伴舒张功能障碍为特征的心肌病，需排除继发于后负荷增加或系统性疾病的心肌肥厚。
+DIS-CARD-CM-MYOCARDITIS,心肌炎,definition_present,,,authoritative_textbook,《内科学（第10版）》,心肌炎（myocarditis）是指感染和非感染性心肌炎性疾病。
+DIS-CARD-CM-NDLVCM,非扩张型左心室心肌病,definition_present,,,authoritative_textbook,《内科学（第10版）》,非扩张型左心室心肌病（non-dilated left ventricular cardiomyopathy，NDLVC）是指在无左心室扩张情况下，左心室存在着非缺血性瘢痕或脂肪替代，伴或不伴整体或局部室壁运动异常；
+DIS-CARD-CM-RCM,限制型心肌病,definition_present,,,authoritative_textbook,《内科学（第10版）》,限制型心肌病（restrictive cardiomyopathy，RCM）是一组以限制性心室充盈障碍为特征的混合性心肌病，其预后较差，5 年生存期仅约 30%。
+DIS-CARD-HF,心力衰竭,definition_present,,,authoritative_textbook,《内科学（第10版）》,心力衰竭（heart failure，HF）是各种原因导致的心脏结构和 / 或功能异常，使心脏出现收缩和 / 或充盈障碍，在静息或运动时心排血量下降或心腔内压力增高而引起的一组复杂临床综合征，主要表现为活动耐量下降和液体潴留。
+DIS-CARD-HF-AHF,急性心力衰竭,definition_present,,,authoritative_textbook,《内科学（第10版）》,急性心力衰竭（acute heart failure，AHF）是指心力衰竭急性发作和 / 或加重的一种临床综合征，可以是急性新发或慢性心衰急性失代偿。
+DIS-CARD-HF-BIVENTRICULAR,全心衰竭,definition_present,,,authoritative_textbook,《内科学（第10版）》,全心衰竭是左心衰竭和右心衰竭同时存在的心力衰竭。
+DIS-CARD-HF-CHF,慢性心力衰竭,definition_present,,,authoritative_textbook,《内科学（第10版）》,慢性心力衰竭是一个缓慢发展的心力衰竭过程，一般有代偿性心脏扩大或肥厚及其他代偿机制参与。
+DIS-CARD-HF-DIALYSIS-CHF,透析患者慢性心力衰竭,definition_present,conditional,machine_curated_conditional,external_authoritative_source_conditional,中国透析患者慢性心力衰竭管理指南,发生于维持性透析患者的慢性心力衰竭临床状态，需结合心力衰竭的症状体征、心电图、胸部影像、利钠肽、心肌损伤标志物、超声心动图和透析容量状态进行综合诊断与管理。
+DIS-CARD-HF-HFmrEF,射血分数轻度降低的心力衰竭,definition_present,,,authoritative_textbook,《内科学（第10版）》,射血分数轻度降低型心力衰竭（HFmrEF）是指左心室射血分数为41%～49%的心力衰竭，以轻度收缩功能障碍为主。
+DIS-CARD-HF-HFpEF,射血分数保留的心力衰竭,definition_present,,,authoritative_textbook,《内科学（第10版）》,射血分数保留型心力衰竭（HFpEF）是指左心室射血分数≥50%的心力衰竭，通常存在充盈压升高、舒张功能受损的表现。
+DIS-CARD-HF-HFrEF,射血分数降低的心力衰竭,definition_present,,,authoritative_textbook,《内科学（第10版）》,射血分数降低的心力衰竭（HFrEF）是指左心室射血分数≤40%的心力衰竭，即传统概念中的收缩性心衰。
+DIS-CARD-HF-LEFT,左心衰竭,definition_present,,,authoritative_textbook,《内科学（第10版）》,左心衰竭是左心室代偿功能不全所致的心力衰竭，临床上较为常见。
+DIS-CARD-HF-POST-MI,心肌梗死后心力衰竭,definition_present,conditional,machine_curated_conditional,external_authoritative_source_conditional,2022 AHA/ACC/HFSA心衰指南 + 2023 ESC急性冠脉综合征指南 + PMC综述,心肌梗死后因心肌细胞死亡、瘢痕形成、心室重构、持续缺血或神经体液激活等机制导致或加重的心力衰竭临床状态，可发生于住院期间或远期随访阶段。
+DIS-CARD-HF-RIGHT,右心衰竭,definition_present,,,authoritative_textbook,《内科学（第10版）》,右心衰竭是右心室代偿功能不全所致的心力衰竭。
+DIS-CARD-SCD-ARREST,心脏骤停,definition_present,,,authoritative_textbook,《内科学（第10版）》,心脏骤停（CA）是指心脏射血功能突然终止，造成全身血液循环中断、呼吸停止和意识丧失。
+DIS-CARD-SCD-SUDDEN,心脏性猝死,definition_present,,,authoritative_textbook,《内科学（第10版）》,心脏性猝死（SCD）是指急性症状发作后1小时内发生的以意识突然丧失为特征、由心脏原因引起的自然死亡。

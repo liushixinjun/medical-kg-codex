@@ -1,0 +1,26 @@
+﻿disease_code,disease_name,match_status,match_type,source_section_path,definition_preview,errors,validation_status
+DIS-CARD-CAD-STEMI,ST段抬高型心肌梗死,ready_for_import_after_sampling,exact_title,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 急性冠脉综合征 > 急性 ST 段抬高型心肌梗死,STEMI 是指急性心肌缺血性坏死，大多是在冠脉病变的基础上，发生冠脉血供急剧减少或中断，使相应的心肌严重而持久地急性缺血所致。,,passed
+DIS-CARD-CAD-CHD,冠状动脉粥样硬化性心脏病,ready_for_import_after_sampling,alias_title,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 冠状动脉粥样硬化性心脏病概述,冠状动脉粥样硬化性心脏病（coronary atherosclerotic heart disease）指冠状动脉（冠脉）发生粥样硬化引起管腔狭窄或闭塞，导致心肌缺血、缺氧或坏死而引起的心脏病，简称冠心病（coronary artery disease，CAD；,,passed
+DIS-CARD-CAD-ATHEROSCLEROSIS,动脉粥样硬化,ready_for_import_after_sampling,exact_title,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 动脉粥样硬化,动脉粥样硬化（atherosclerosis）的特点是受累动脉的病变从内膜开始，局部先后发生细胞内外的脂质积聚、纤维组织增生和钙质沉着，病变内可见单核巨噬细胞及其他炎症细胞，并有平滑肌细胞的迁移和增生，大量胶原纤维、弹力纤维和蛋白多糖等结缔组织基质形成，动脉中层也可发生逐渐退变和钙化，在此基础上可发生斑块内出血、糜烂或破裂及继发局部血栓形成。,,passed
+DIS-CARD-CAD-ACS,急性冠脉综合征,ready_for_import_after_sampling,exact_title,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 急性冠脉综合征,急性冠脉综合征是一组由急性心肌缺血引起的临床综合征，主要包括不稳定型心绞痛（UA）、非ST 段抬高型心肌梗死（NSTEMI）和 ST 段抬高型心肌梗死（STEMI），冠心病猝死是特殊类型 ACS。,,passed
+DIS-CARD-CAD-CCS,慢性冠脉综合征,ready_for_import_after_sampling,exact_title,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 慢性冠状动脉综合征,慢性冠状动脉综合征（CCS）最常见为慢性稳定型劳力性心绞痛和以心功能不全为主要表现的缺血性心肌病，部分处于渡过 ACS 后或行血运重建之后稳定期，有些则为无症状隐匿型冠心病。,,passed
+DIS-CARD-CAD-STABLE-ANGINA,稳定型心绞痛,ready_for_import_after_sampling,exact_title,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 慢性冠状动脉综合征 > 稳定型心绞痛,稳定型心绞痛（stable angina pectoris）也称劳力性心绞痛。,,passed
+DIS-CARD-CAD-ICM,缺血性心肌病,ready_for_import_after_sampling,exact_title,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 慢性冠状动脉综合征 > 缺血性心肌病,缺血性心肌病（ischemic cardiomyopathy，ICM）属于冠心病的一种特殊类型或晚期阶段，临床表现为新发心衰或左心室功能障碍，可伴有各种心律失常，心脏扩大类似扩张型心肌病。,,passed
+DIS-CARD-HF,心力衰竭,ready_for_import_after_sampling,exact_title,心力衰竭 > 心力衰竭,心力衰竭（heart failure，HF）是各种原因导致的心脏结构和 / 或功能异常，使心脏出现收缩和 / 或充盈障碍，在静息或运动时心排血量下降或心腔内压力增高而引起的一组复杂临床综合征，主要表现为活动耐量下降和液体潴留。,,passed
+DIS-CARD-HF-AHF,急性心力衰竭,ready_for_import_after_sampling,exact_title,心力衰竭 > 急性心力衰竭,急性心力衰竭（acute heart failure，AHF）是指心力衰竭急性发作和 / 或加重的一种临床综合征，可以是急性新发或慢性心衰急性失代偿。,,passed
+DIS-CARD-ARR-PVC,室性期前收缩,ready_for_import_after_sampling,exact_title,心律失常 > 室性心律失常 > 室性期前收缩,室性期前收缩（premature ventricular beat）也称室性早搏，简称室早，是一种最常见的心律失常，指希氏束以下部位心室兴奋灶提前除极而产生的过早搏动。,,passed
+DIS-CARD-ARR-VF,心室扑动与心室颤动,ready_for_import_after_sampling,exact_title,心律失常 > 室性心律失常 > 心室扑动与心室颤动,心室扑动（ventricular flutter，VF）与心室颤动（ventricular fibrillation，VF）简称室扑和室颤，为致死性心律失常。,,passed
+DIS-CARD-ARR-AFL,心房扑动,ready_for_import_after_sampling,exact_title,心律失常 > 房性心律失常 > 心房扑动,心房扑动（atrial flutter）简称房扑，是介于房速和房颤之间的快速型心律失常。,,passed
+DIS-CARD-ARR-AF,心房颤动,ready_for_import_after_sampling,exact_title,心律失常 > 房性心律失常 > 心房颤动,心房颤动（atrial fibrillation，AF）简称房颤，是最常见的心律失常之一，是指规则有序的心房电活动丧失，代之以快速无序的颤动波，是最严重的心房电活动紊乱。,,passed
+DIS-CARD-ARR-AVB,房室传导阻滞,ready_for_import_after_sampling,exact_title,心律失常 > 心脏传导阻滞 > 房室传导阻滞,房室传导阻滞（atrioventricular block）是指房室交界区脱离了生理不应期后，心房冲动传导延迟或不能传导至心室。,,passed
+DIS-CARD-ARR-AT,房性心动过速,ready_for_import_after_sampling,exact_title,心律失常 > 房性心律失常 > 房性心动过速,房性心动过速（atrial tachycardia）简称房速，指起源于心房且无需房室结参与维持的心动过速。,,passed
+DIS-CARD-ARR-VT,持续性室性心动过速,ready_for_import_after_sampling,exact_title,心律失常 > 室性心律失常 > 室性心动过速,室性心动过速（ventricular tachycardia，VT）简称室速，是起源于希氏束以下的特殊传导系统或者心室肌的连续 3 个或 3 个以上的异位心搏。,,passed
+DIS-CARD-ARR-BBB,束支传导阻滞,ready_for_import_after_sampling,exact_title,心律失常 > 心脏传导阻滞 > 室内传导阻滞,室内传导阻滞（intraventricular block）是指希氏束以下部位的传导阻滞。,,passed
+DIS-CARD-ARR-SINUS,窦性心律失常,ready_for_import_after_sampling,exact_title,心律失常 > 窦性心律失常,窦性心律失常是由于窦房结冲动发放频 率的异常或窦性冲动向心房的传导受阻所导致的心律失常。,,passed
+DIS-CARD-ARR-SAB,窦房传导阻滞,ready_for_import_after_sampling,exact_title,心律失常 > 窦性心律失常 > 窦房传导阻滞,窦房传导阻滞（sinoatrial block，SAB）指窦房结冲动传导至心房时发生延缓或阻滞。,,passed
+DIS-CARD-CM-MYOCARDITIS,心肌炎,ready_for_import_after_sampling,exact_title,心肌疾病 > 心肌炎,心肌炎（myocarditis）是指感染和非感染性心肌炎性疾病。,,passed
+DIS-CARD-CM-DCM,扩张型心肌病,ready_for_import_after_sampling,exact_title,心肌疾病 > 扩张型心肌病,扩张型心肌病（dilated cardiomyopathy，DCM）是一类以左室或双心室扩大伴收缩功能障碍为特征的心肌病，且无法以负荷异常或心肌缺血等来解释。,,passed
+DIS-CARD-CM-HCM,肥厚型心肌病,ready_for_import_after_sampling,exact_title,心肌疾病 > 肥厚型心肌病,肥厚型心肌病（hypertrophic cardiomyopathy，HCM）是一类以左心室和 / 或右心室肥厚，伴舒张功能障碍为特征的心肌病，需排除继发于后负荷增加或系统性疾病的心肌肥厚。,,passed
+DIS-CARD-CM-ARVC,致心律失常性右心室心肌病,ready_for_import_after_sampling,exact_title,心肌疾病 > 致心律失常性右心室心肌病,致心律失常性右心室心肌病（arrhythmogenic right ventricular cardiomyopathy，ARVC）是以进展性右心室心肌萎缩并被纤维或 / 和脂肪替代为特征的心肌疾病。,,passed
+DIS-CARD-CM-RCM,限制型心肌病,ready_for_import_after_sampling,exact_title,心肌疾病 > 限制型心肌病,限制型心肌病（restrictive cardiomyopathy，RCM）是一组以限制性心室充盈障碍为特征的混合性心肌病，其预后较差，5 年生存期仅约 30%。,,passed
+DIS-CARD-CM-NDLVCM,非扩张型左心室心肌病,ready_for_import_after_sampling,exact_title,心肌疾病 > 非扩张型左心室心肌病,非扩张型左心室心肌病（non-dilated left ventricular cardiomyopathy，NDLVC）是指在无左心室扩张情况下，左心室存在着非缺血性瘢痕或脂肪替代，伴或不伴整体或局部室壁运动异常；,,passed

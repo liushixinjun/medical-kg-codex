@@ -1,0 +1,14 @@
+{
+  "status": "ok",
+  "verified_at": "2026-07-09 09:12:08",
+  "python": "D:\\Program Files Ai\\python-venvs\\medical-kg\\Scripts\\python.exe",
+  "docx_sha256": "cf62b75aec93f1a6e01b3974f9f79a09befd64243a1619868e903d7f7831e4bf",
+  "pdf_sha256": "c0bb559fa2c8448a54612f7edf751c9342df584d15ce90d0cf7e4f97bf852d78",
+  "docx_para_count": 21704,
+  "output_row_counts": {
+    "章节目录": 119,
+    "覆盖矩阵": 1140,
+    "覆盖汇总": 57
+  },
+  "note": "阶段B产物已由项目标准 Python 复核；后续正式深抽取统一使用该 Python。"
+}

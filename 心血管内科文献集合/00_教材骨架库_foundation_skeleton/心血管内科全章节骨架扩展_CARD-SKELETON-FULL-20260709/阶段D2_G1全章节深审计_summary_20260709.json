@@ -1,0 +1,26 @@
+{
+  "batch_id": "CARD-SKELETON-FULL-20260709",
+  "generated_at": "2026-07-09 14:57:04",
+  "subject_count": 81,
+  "status_counter": {
+    "g1_needs_backfill": 47,
+    "g1_container_rollup_only": 18,
+    "g1_structured_candidate_ready": 16
+  },
+  "subject_kind_counter": {
+    "therapy_or_management_section": 9,
+    "category_container": 18,
+    "disease_or_subtype": 39,
+    "overview_section": 2,
+    "ecg_defined_arrhythmia": 13
+  },
+  "missing_group_counter": {
+    "treatment": 30,
+    "clinical_manifestation": 8,
+    "diagnosis_differential": 23,
+    "exam_lab": 27,
+    "definition": 7
+  },
+  "neo4j_import_allowed": false,
+  "next_required": "backfill_missing_groups_or_curate_ready_candidates"
+}

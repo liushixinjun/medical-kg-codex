@@ -1,0 +1,44 @@
+﻿category,disease_code,disease_name,match_status,match_type,source_section_path,hit_text,definition_candidate
+冠状动脉粥样硬化性心脏病,DIS-CARD-CAD-UA,不稳定型心绞痛,ready_for_review,overview_mention,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 急性冠脉综合征,不稳定型心绞痛,急性冠脉综合征是一组由急性心肌缺血引起的临床综合征，主要包括不稳定型心绞痛（UA）、非ST 段抬高型心肌梗死（NSTEMI）和 ST 段抬高型心肌梗死（STEMI），冠心病猝死是特殊类型 ACS。
+冠状动脉粥样硬化性心脏病,DIS-CARD-CAD-SPASM,冠状动脉痉挛,ready_for_review,overview_mention,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 慢性冠状动脉综合征,冠脉痉挛,但冠脉痉挛或微血管病变的病人没有心外膜血管固定狭窄临床上亦不少见。
+冠状动脉粥样硬化性心脏病,DIS-CARD-CAD-POST-MI-SYNDROME,心肌梗死后综合征,needs_manual_anchor_review,body_mention,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 急性冠脉综合征 > 急性 ST 段抬高型心肌梗死,心肌梗死后综合征,5. 心肌梗死后综合征（post-infarction syndrome） 也称 Dressler 综合征，发生率约1%～3%，于 AMI 后数周至数月内出现，可反复发生。
+冠状动脉粥样硬化性心脏病,DIS-CARD-CAD-AMI,急性心肌梗死,ready_for_review,overview_mention,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 急性冠脉综合征,急性心肌梗死,临床上将急性心肌梗死（acute myocardial infarction，AMI）分为 5 型：1 型是自发性 AMI，即原发冠脉不稳 定斑块发生破裂、糜烂或侵蚀继发血栓形成所致，最常见；
+冠状动脉粥样硬化性心脏病,DIS-CARD-CAD-OLD-MI,陈旧性心肌梗死,needs_manual_anchor_review,body_mention,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 慢性冠状动脉综合征 > 稳定型心绞痛,陈旧性心肌梗死,（二）心电图（ECG）检查 1. 静息时 ECG 约半数病人在正常范围，也可能有陈旧性心肌梗死改变或非特异性 ST 段和 T波异常。
+冠状动脉粥样硬化性心脏病,DIS-CARD-CAD-SILENT-ISCHEMIA,隐匿性冠心病,ready_for_review,exact_title,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 慢性冠状动脉综合征 > 隐匿型冠心病,隐匿型冠心病,三、隐匿型冠心病 【诊断】 1. 发病特点 隐匿型冠心病（latent coronary heart disease）或无症状性冠心病是指没有心绞痛症状，但有心肌缺血客观证据的冠心病，其心肌缺血 ECG 表现可见于静息时，也可在负荷状态下才出现，常为动态 ECG 记录所发现，也可为各种影像学检查所证实。
+冠状动脉粥样硬化性心脏病,DIS-CARD-CAD-NSTEMI,非ST段抬高型心肌梗死,ready_for_review,overview_mention,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 急性冠脉综合征,NSTEMI,急性冠脉综合征是一组由急性心肌缺血引起的临床综合征，主要包括不稳定型心绞痛（UA）、非ST 段抬高型心肌梗死（NSTEMI）和 ST 段抬高型心肌梗死（STEMI），冠心病猝死是特殊类型 ACS。
+心力衰竭,DIS-CARD-HF-BIVENTRICULAR,全心衰竭,needs_manual_anchor_review,body_mention,心力衰竭 > 心力衰竭总论,全心衰竭,左心衰竭和右心衰竭同时存在即为全心衰竭。
+心力衰竭,DIS-CARD-HF-RIGHT,右心衰竭,needs_manual_anchor_review,body_mention,心力衰竭 > 心力衰竭总论,右心衰竭,左心衰竭和右心衰竭同时存在即为全心衰竭。
+心力衰竭,DIS-CARD-HF-HFpEF,射血分数保留的心力衰竭,needs_manual_anchor_review,body_mention,心力衰竭 > 心力衰竭总论,射血分数保留,LVEF≥50% 者称为射血分数保留型心衰（HF with preserved EF，HFpEF），通常存在充盈压升高、舒张功能受损的表现，既往被称为舒张性心衰。
+心力衰竭,DIS-CARD-HF-HFmrEF,射血分数轻度降低的心力衰竭,needs_manual_anchor_review,body_mention,心力衰竭 > 心力衰竭总论,射血分数轻度降低,LVEF 为 41%～49% 者称为射血分数轻度降低型心衰（HF with mildly reduced EF，HFmrEF），以轻度收缩功能障碍为主。
+心力衰竭,DIS-CARD-HF-HFrEF,射血分数降低的心力衰竭,needs_manual_anchor_review,body_mention,心力衰竭 > 心力衰竭总论,射血分数降低,LVEF≤40% 者称为射血分数降低的心衰（HF with reduced EF，HFrEF），即传统概念中的收缩性心衰。
+心力衰竭,DIS-CARD-HF-LEFT,左心衰竭,needs_manual_anchor_review,body_mention,心力衰竭 > 心力衰竭总论,左心衰竭,第一节 | 心力衰竭总论 【类型】 （一）按发生的部位分类 左心室代偿功能不全所致为左心衰竭，临床上较为常见。
+心力衰竭,DIS-CARD-HF-POST-MI,心肌梗死后心力衰竭,ready_for_review,overview_mention,心力衰竭 > 心力衰竭,心衰,心功能不全（cardiac dysfunction）是一个更广泛的概念，伴有临床症状的心功能不全称之为心力衰竭（简称心衰）。
+心力衰竭,DIS-CARD-HF-CHF,慢性心力衰竭,ready_for_review,exact_title,心力衰竭 > 慢性心力衰竭,慢性心力衰竭,第二节 | 慢性心力衰竭 【流行病学】 慢性心力衰竭（chronic heart failure，CHF）是心血管疾病的终末期阶段和最主要的死因。
+心力衰竭,DIS-CARD-HF-DIALYSIS-CHF,透析患者慢性心力衰竭,needs_guideline_or_manual_source,no_textbook_anchor,,,
+心律失常,DIS-CARD-ARR-BRUGADA,Brugada综合征,needs_manual_anchor_review,body_mention,心律失常 > 概 述,Brugada,目前已明确的遗传性心律失常包括长 QT 间期综合征、短 QT 间期综合征、Brugada 综合征、儿茶酚胺敏感性室性心动过速、早期复极综合征等，部分心房颤动（如孤立性或家族性房颤）和预激综合征病人也具有基因突变位点。
+心律失常,DIS-CARD-ARR-AVB1,一度房室传导阻滞,ready_for_review,overview_mention,心律失常 > 心脏传导阻滞 > 房室传导阻滞,一度房室传导阻滞,房室传导阻滞根据严重程度分为三度：一度房室传导阻滞的传导时间延长，但全部冲动仍能传导至心室。
+心律失常,DIS-CARD-ARR-AVB3,三度房室传导阻滞,ready_for_review,overview_mention,心律失常 > 心脏传导阻滞 > 房室传导阻滞,三度房室传导阻滞,三度房室传导阻滞又称完全性房室传导阻滞，此时全部冲动不能被传导至心室，心房和心室的节律由各自独立的起搏点控制。
+心律失常,DIS-CARD-ARR-AVB2,二度房室传导阻滞,ready_for_review,overview_mention,心律失常 > 心脏传导阻滞 > 房室传导阻滞,二度房室传导阻滞,二度房室传导阻滞又分为Ⅰ型（文氏阻滞）和Ⅱ型，Ⅰ型阻滞表现为传导时间进行性延长，直至一次冲动不能传导至心室；
+心律失常,DIS-CARD-ARR-CPVT,儿茶酚胺敏感性多形性室性心动过速,needs_manual_anchor_review,body_mention,心律失常 > 室性心律失常 > 心室扑动与心室颤动,CPVT,3. 儿茶酚胺敏感性室性心动过速（catecholaminergic polymorphic ventricular tachycardia，CPVT）是一种罕见的遗传性室速，病人常无明显的结构性心脏病。
+心律失常,DIS-CARD-ARR-SVT,室上性心动过速,ready_for_review,overview_mention,心律失常 > 房室交界性心律失常 > 房室交界区相关的折返性心动过速,室上性心动过速,房室交界区相关的折返性心动过速主要包括房室结折返性心动过速（atrioventricular nodal reentrant tachycardia，AVNRT）和房室折返性心动过速（atrioventricular reentrant tachycardia，AVRT）两大类，临床特征表现为规律而快速的心动过速，呈突然发作与终止，心电图多表现为 QRS 波群形态正常、 RR 间期规则的快速心律，故在临床上又统称为阵发性室上性心动过速（paroxysmal supraventricular tachycardia，PSVT），简称室上速。
+心律失常,DIS-CARD-ARR-VA,室性心律失常,needs_manual_anchor_review,exact_title,心律失常 > 室性心律失常,室性心律失常,第五节 | 室性心律失常
+心律失常,DIS-CARD-ARR-TDP,尖端扭转型室性心动过速,needs_manual_anchor_review,body_mention,心律失常 > 室性心律失常 > 室性心动过速,尖端扭转型室性心动过速,【特殊类型的室性心动过速】 1. 尖端扭转型室性心动过速（torsades de pointes，TdP） 是多形性室速的一个特殊类型，因发作时 QRS 波群的振幅与波峰呈周期性改变，宛如围绕等电位线连续扭转得名，频率 200～250 次 / 分。
+心律失常,DIS-CARD-ARR-AVRT,房室折返性心动过速,ready_for_review,overview_mention,心律失常 > 房室交界性心律失常 > 房室交界区相关的折返性心动过速,房室折返性心动过速,房室交界区相关的折返性心动过速主要包括房室结折返性心动过速（atrioventricular nodal reentrant tachycardia，AVNRT）和房室折返性心动过速（atrioventricular reentrant tachycardia，AVRT）两大类，临床特征表现为规律而快速的心动过速，呈突然发作与终止，心电图多表现为 QRS 波群形态正常、 RR 间期规则的快速心律，故在临床上又统称为阵发性室上性心动过速（paroxysmal supraventricular tachycardia，PSVT），简称室上速。
+心律失常,DIS-CARD-ARR-AVNRT,房室结折返性心动过速,ready_for_review,overview_mention,心律失常 > 房室交界性心律失常 > 房室交界区相关的折返性心动过速,房室结折返性心动过速,房室交界区相关的折返性心动过速主要包括房室结折返性心动过速（atrioventricular nodal reentrant tachycardia，AVNRT）和房室折返性心动过速（atrioventricular reentrant tachycardia，AVRT）两大类，临床特征表现为规律而快速的心动过速，呈突然发作与终止，心电图多表现为 QRS 波群形态正常、 RR 间期规则的快速心律，故在临床上又统称为阵发性室上性心动过速（paroxysmal supraventricular tachycardia，PSVT），简称室上速。
+心律失常,DIS-CARD-ARR-ERS,早期复极综合征,needs_manual_anchor_review,body_mention,心律失常 > 概 述,早期复极综合征,目前已明确的遗传性心律失常包括长 QT 间期综合征、短 QT 间期综合征、Brugada 综合征、儿茶酚胺敏感性室性心动过速、早期复极综合征等，部分心房颤动（如孤立性或家族性房颤）和预激综合征病人也具有基因突变位点。
+心律失常,DIS-CARD-ARR-SQTS,短QT间期综合征,needs_manual_anchor_review,body_mention,心律失常 > 概 述,短 QT,目前已明确的遗传性心律失常包括长 QT 间期综合征、短 QT 间期综合征、Brugada 综合征、儿茶酚胺敏感性室性心动过速、早期复极综合征等，部分心房颤动（如孤立性或家族性房颤）和预激综合征病人也具有基因突变位点。
+心律失常,DIS-CARD-ARR-SB,窦性心动过缓,ready_for_review,overview_mention,心律失常 > 窦性心律失常,窦性心动过缓,根据心电图及临床表现分为窦性心动过速、窦性心动过缓、窦性停搏、窦房传导阻滞以及病态窦房结综合征。
+心律失常,DIS-CARD-ARR-SND,窦房结功能障碍,ready_for_review,overview_mention,心律失常 > 窦性心律失常,病态窦房结综合征,根据心电图及临床表现分为窦性心动过速、窦性心动过缓、窦性停搏、窦房传导阻滞以及病态窦房结综合征。
+心律失常,DIS-CARD-ARR-BRADY,缓慢性心律失常,needs_guideline_or_manual_source,no_textbook_anchor,,,
+心律失常,DIS-CARD-ARR-LQTS,长QT间期综合征,ready_for_review,overview_mention,心律失常 > 抗心律失常药物的合理应用,长 QT,大多数的致心律失常作用发生在开始治疗后数天或改变剂量时，较多表现为持续性室速、长 QT 间期与尖端扭转型室速。
+心律失常,DIS-CARD-ARR-PSVT,阵发性室上性心动过速,ready_for_review,overview_mention,心律失常 > 房室交界性心律失常 > 房室交界区相关的折返性心动过速,阵发性室上性心动过速,房室交界区相关的折返性心动过速主要包括房室结折返性心动过速（atrioventricular nodal reentrant tachycardia，AVNRT）和房室折返性心动过速（atrioventricular reentrant tachycardia，AVRT）两大类，临床特征表现为规律而快速的心动过速，呈突然发作与终止，心电图多表现为 QRS 波群形态正常、 RR 间期规则的快速心律，故在临床上又统称为阵发性室上性心动过速（paroxysmal supraventricular tachycardia，PSVT），简称室上速。
+心律失常,DIS-CARD-ARR-NSVT,非持续性室性心动过速,needs_guideline_or_manual_source,no_textbook_anchor,,,
+心律失常,DIS-CARD-ARR-WPW,预激综合征,ready_for_review,overview_mention,心律失常 > 房室交界性心律失常 > 房室交界区相关的折返性心动过速,预激综合征,后者由房室交界区、旁道与心房、心室共同组成折返环路，与预激综合征密切相关。
+心肌病,DIS-CARD-CM-ATRIAL,心房心肌病,needs_guideline_or_manual_source,no_textbook_anchor,,,
+心肌病,DIS-CARD-CM-FABRY,法布雷病心肌病,needs_manual_anchor_review,body_mention,心肌疾病 > 肥厚型心肌病,Fabry,尚需除外较少见的全身性疾病引起的心肌肥厚，如淀粉样变、结节病、戈谢病、糖原贮积症、Fabry 病、Danon 病、血色病等。
+心肌病,DIS-CARD-CM-AMYLOID,淀粉样变心肌病,needs_manual_anchor_review,body_mention,心肌疾病 > 肥厚型心肌病,淀粉样变,尚需除外较少见的全身性疾病引起的心肌肥厚，如淀粉样变、结节病、戈谢病、糖原贮积症、Fabry 病、Danon 病、血色病等。
+心肌病,DIS-CARD-CM-ABVC,致心律失常性双心室心肌病,needs_guideline_or_manual_source,no_textbook_anchor,,,
+心肌病,DIS-CARD-CM-ALVC,致心律失常性左心室心肌病,needs_guideline_or_manual_source,no_textbook_anchor,,,
+心肌病,DIS-CARD-CM-ACM,致心律失常性心肌病,needs_guideline_or_manual_source,no_textbook_anchor,,,
+心脏骤停与心脏性猝死;心律失常,DIS-CARD-SCD-SUDDEN,心脏性猝死,needs_manual_anchor_review,body_mention,心律失常 > 概 述,心脏性猝死,③判断预后：通过电刺激确定病人是否易于诱发室性心动过速、有无发生心脏性猝死的危险。
+心脏骤停与心脏性猝死;心律失常,DIS-CARD-SCD-ARREST,心脏骤停,needs_guideline_or_manual_source,no_textbook_anchor,,,

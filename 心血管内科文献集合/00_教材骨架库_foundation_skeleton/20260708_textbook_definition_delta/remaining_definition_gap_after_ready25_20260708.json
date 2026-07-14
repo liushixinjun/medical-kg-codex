@@ -1,0 +1,9 @@
+{
+  "remaining_count": 43,
+  "status_counts": {
+    "ready_for_review": 18,
+    "needs_manual_anchor_review": 17,
+    "needs_guideline_or_manual_source": 8
+  },
+  "output": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\00_教材骨架库_foundation_skeleton\\20260708_textbook_definition_delta\\remaining_definition_gap_after_ready25_20260708.csv"
+}

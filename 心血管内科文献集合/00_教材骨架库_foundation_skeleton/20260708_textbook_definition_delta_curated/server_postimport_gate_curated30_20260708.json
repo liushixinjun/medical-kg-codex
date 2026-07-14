@@ -1,0 +1,13 @@
+{
+  "checked_count": 30,
+  "missing_count": 0,
+  "duplicate_match_count": 0,
+  "definition_empty_count": 0,
+  "source_type_error_count": 0,
+  "source_section_missing_count": 0,
+  "skeleton_slot_error_count": 0,
+  "knowledge_layer_error_count": 0,
+  "pdf_page_missing_count": 0,
+  "docx_anchor_missing_count": 0,
+  "definition_noise_count": 0
+}

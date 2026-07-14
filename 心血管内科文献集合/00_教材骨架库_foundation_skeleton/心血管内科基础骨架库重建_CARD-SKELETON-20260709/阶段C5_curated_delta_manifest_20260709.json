@@ -1,0 +1,35 @@
+{
+  "batch_id": "CARD-SKELETON-20260709",
+  "generated_at": "2026-07-09 12:56:45",
+  "scope": "cardiology_priority_four_textbook_skeleton",
+  "source_candidates": {
+    "c4_nodes": 883,
+    "c4_relations": 1303,
+    "evidence_links": 1322
+  },
+  "delta": {
+    "nodes": 1331,
+    "relations": 2608,
+    "evidence_nodes": 496,
+    "subject_mappings": 57,
+    "clinical_node_mappings": 883,
+    "skipped_relations": 0,
+    "standardization_merges": {
+      "renamed_nodes": 5,
+      "removed_duplicate_nodes": 7,
+      "remapped_relations": 32,
+      "collapsed_duplicate_relations": 13
+    }
+  },
+  "neo4j_written": false,
+  "import_allowed": false,
+  "next_required": "G2_preimport_audit",
+  "files": [
+    "阶段C5_curated_delta_nodes_20260709.jsonl",
+    "阶段C5_curated_delta_relations_20260709.jsonl",
+    "阶段C5_curated_delta_evidence_20260709.jsonl",
+    "阶段C5_subject_mapping_20260709.csv",
+    "阶段C5_clinical_node_mapping_20260709.csv"
+  ],
+  "updated_after_import_standardization": "2026-07-09 13:12:00"
+}

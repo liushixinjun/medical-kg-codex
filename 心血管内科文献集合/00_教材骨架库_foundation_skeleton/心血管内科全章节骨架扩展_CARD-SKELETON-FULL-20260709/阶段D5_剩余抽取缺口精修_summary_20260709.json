@@ -1,0 +1,10 @@
+{
+  "batch_id": "CARD-SKELETON-FULL-20260709",
+  "generated_at": "2026-07-09 14:51:26",
+  "curated_subject_count": 1,
+  "curated_node_count": 2,
+  "curated_relation_count": 2,
+  "merged_node_count": 1490,
+  "merged_relation_count": 2515,
+  "not_imported_to_neo4j": true
+}

@@ -3,6 +3,7 @@ from __future__ import annotations
 import base64
 import csv
 import json
+import os
 import urllib.request
 from pathlib import Path
 
@@ -36,8 +37,13 @@ def read_blocked_codes(path: Path) -> set[str]:
 
 def neo4j_post(statement: str, parameters: dict[str, object]) -> dict[str, object]:
     # 生产环境这里应复用统一连接解析；本脚本用于当前服务器复核。
-    url = "http://192.168.3.27:7474/db/neo4j/tx/commit"
-    token = base64.b64encode("neo4j:zysoft@2024".encode("utf-8")).decode("ascii")
+    http_root = os.environ.get("NEO4J_HTTP", "http://192.168.3.27:7474").rstrip("/")
+    username = os.environ.get("NEO4J_USERNAME", "neo4j")
+    password = os.environ.get("NEO4J_PASSWORD")
+    if not password:
+        raise RuntimeError("缺少 NEO4J_PASSWORD 环境变量，禁止在脚本中硬编码数据库密码。")
+    url = f"{http_root}/db/neo4j/tx/commit"
+    token = base64.b64encode(f"{username}:{password}".encode("utf-8")).decode("ascii")
     req = urllib.request.Request(
         url,
         data=json.dumps({"statements": [{"statement": statement, "parameters": parameters}]}, ensure_ascii=False).encode("utf-8"),

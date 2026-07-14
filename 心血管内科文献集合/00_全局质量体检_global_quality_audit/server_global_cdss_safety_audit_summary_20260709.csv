@@ -1,0 +1,16 @@
+﻿检查项,数量,性质,说明
+non_kgnode_nodes_count,0,阻断,不带 KGNode 标签的节点，前端/查询接口可能漏查。
+relations_touching_non_kgnode_count,0,阻断,关系连接到非 KGNode 节点，图谱主查询可能漏掉。
+duplicate_type_name_count,2,阻断,同一实体类型同名重复，会影响医生看到的实体唯一性。
+disease_definition_empty_count,32,阻断,疾病定义为空，不能支撑疾病基本解释。
+conditional_definition_used_in_formal_ready_edges_count,0,阻断,条件性定义参与正式推荐关系，属于 CDSS 风险。
+diagnosis_criteria_without_components_count,4,阻断,诊断标准只有标题，没有明细条件。
+differential_diagnosis_without_details_count,0,阻断,鉴别诊断只有疾病名，没有鉴别点/排除检查。
+treatment_plan_without_downstream_action_count,46,阻断,治疗方案没有药物/手术/动作下游，医生无法执行。
+medication_class_without_specific_count,6,阻断,药物类别没有具体药品，医生无法落地用药。
+recommendation_relationships_missing_core_fields_count,1491,阻断,推荐关系缺推荐等级、证据等级或来源证据。
+technical_name_nodes_count,0,阻断,节点名是技术编码，前端展示不可读。
+raw_label_order_differs_count,147,警告,需要治理，但不一定阻断知识展示。
+recommendation_like_nodes_without_evidence_count,457,警告,需要治理，但不一定阻断知识展示。
+evidence_without_guideline_count,0,警告,需要治理，但不一定阻断知识展示。
+label_metadata_mismatch_count,0,警告,需要治理，但不一定阻断知识展示。

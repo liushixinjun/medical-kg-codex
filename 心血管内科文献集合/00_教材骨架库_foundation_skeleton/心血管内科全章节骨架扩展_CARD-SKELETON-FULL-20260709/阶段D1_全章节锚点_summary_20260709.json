@@ -1,0 +1,11 @@
+{
+  "batch_id": "CARD-SKELETON-FULL-20260709",
+  "generated_at": "2026-07-09 14:56:40",
+  "docx": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\心血管内科\\书籍教材\\《内科学（第10版）》.docx",
+  "segment_count": 81,
+  "chapter_row_count": 81,
+  "evidence_anchor_count": 348,
+  "not_imported_to_neo4j": true,
+  "fix": "parent logic corrected for oncology and diabetes-cardiovascular sections; cardiovascular neurosis spillover trimmed",
+  "next_required": "structured_candidate_extraction_G1_audit"
+}
