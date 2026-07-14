@@ -1,0 +1,15 @@
+﻿CDSS决策节点数,ClinicalRule,Complication,Contraindication,Definition,DiagnosisCriteria,DiagnosisCriteriaComponent,DifferentialDiagnosis,Epidemiology,Etiology,Evidence,Exam,ExamIndicator,FollowUp,Guideline,LabTest,LabTestIndicator,Medication,Pathophysiology,Prevention,Procedure,Prognosis,RecommendationStatement,RiskStratification,Sign,Symptom,TreatmentPlan,formal_cdss_ready,临床审核状态,关系数,关联实体数,定义是否存在,指南数,正式CDSS关系数,疾病亚类,疾病名称,疾病大类,疾病编码,证据数
+33,23,13,10,1,1,0,8,1,11,792,9,0,2,22,10,0,38,10,2,8,2,2,2,21,23,8,False,pending_clinical_use_effect_review,1048,1046,是,22,0,,ST段抬高型心肌梗死,,DIS-CARD-CAD-STEMI,792
+10,4,7,0,1,1,0,2,0,9,353,11,0,1,15,8,0,14,1,0,3,1,0,1,9,13,6,False,pending_clinical_review,484,479,是,15,0,,不稳定型心绞痛,,DIS-CARD-CAD-UA,353
+4,4,3,0,1,0,7,0,0,1,49,7,0,0,0,0,0,6,0,0,1,0,0,0,1,7,0,False,pending_clinical_review,100,99,是,0,0,,冠状动脉痉挛,,DIS-CARD-CAD-SPASM,49
+6,0,9,0,0,0,0,0,1,4,1355,13,0,0,0,8,0,12,2,0,6,0,0,0,16,15,6,False,pending_clinical_review,1460,1459,是,0,0,,冠状动脉粥样硬化性心脏病,,DIS-CARD-CAD-CHD,1355
+5,1,9,0,1,0,0,0,1,15,1003,12,0,0,0,7,0,9,11,0,3,0,0,0,13,16,4,False,pending_clinical_review,1123,1122,是,0,0,,动脉粥样硬化,,DIS-CARD-CAD-ATHEROSCLEROSIS,1003
+1,0,2,0,0,0,0,0,0,0,19,2,0,0,0,0,0,0,0,0,1,0,0,0,2,2,1,False,pending_clinical_review,32,31,是,0,0,,心肌梗死后综合征,,DIS-CARD-CAD-POST-MI-SYNDROME,19
+12,4,9,0,1,1,0,4,0,2,1557,10,0,1,23,10,0,15,11,0,6,1,0,1,13,14,8,False,pending_clinical_review,1720,1718,是,23,0,,急性冠脉综合征,,DIS-CARD-CAD-ACS,1557
+13,4,11,0,1,1,0,4,2,13,1780,16,0,9,27,15,0,21,12,8,10,9,0,2,23,25,9,False,pending_clinical_review,2025,2023,是,27,0,,急性心肌梗死,,DIS-CARD-CAD-AMI,1780
+7,4,6,0,1,1,0,1,0,2,483,6,0,1,17,3,0,10,17,0,2,1,0,1,2,9,3,False,pending_clinical_review,593,591,是,17,0,,慢性冠脉综合征,,DIS-CARD-CAD-CCS,483
+8,4,7,0,1,1,3,2,0,2,525,12,0,12,22,16,0,17,8,11,2,12,0,1,12,13,4,False,pending_clinical_review,704,699,是,22,0,,稳定型心绞痛,,DIS-CARD-CAD-STABLE-ANGINA,525
+10,6,11,0,1,1,0,3,0,2,280,13,0,1,17,3,0,3,3,0,5,1,0,0,19,15,4,True,clinical_ready,405,402,是,17,0,,缺血性心肌病,,DIS-CARD-CAD-ICM,280
+4,2,4,0,0,1,0,0,0,1,24,4,0,1,9,2,0,4,0,0,1,1,0,0,4,7,2,False,pending_clinical_review,77,75,是,9,0,,陈旧性心肌梗死,,DIS-CARD-CAD-OLD-MI,24
+4,3,2,0,1,1,0,0,0,1,7,8,0,1,2,1,0,3,0,0,1,1,0,0,2,5,1,False,pending_clinical_review,49,47,是,2,0,,隐匿性冠心病,,DIS-CARD-CAD-SILENT-ISCHEMIA,7
+10,4,6,0,1,1,0,3,0,9,784,13,0,1,19,6,0,14,1,0,3,1,0,2,8,11,6,False,pending_clinical_review,914,912,是,19,0,,非ST段抬高型心肌梗死,,DIS-CARD-CAD-NSTEMI,784

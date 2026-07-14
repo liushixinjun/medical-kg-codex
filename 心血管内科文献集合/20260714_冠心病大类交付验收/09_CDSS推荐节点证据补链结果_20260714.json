@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-07-14 19:23:36",
+  "apply": true,
+  "issue_count": 20,
+  "candidate_issue_count": 15,
+  "unresolved_count": 5,
+  "blocked_pair_count": 5,
+  "linked_count": 15,
+  "blocked_relation_count": 5,
+  "candidate_file": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\20260714_冠心病大类交付验收\\06_CDSS推荐节点证据候选_20260714.csv",
+  "selected_file": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\20260714_冠心病大类交付验收\\07_CDSS推荐节点证据正式补链清单_20260714.csv",
+  "blocked_file": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\20260714_冠心病大类交付验收\\08_CDSS推荐节点正式阻断清单_20260714.csv",
+  "unresolved": [
+    {
+      "disease_code": "DIS-CARD-CAD-AMI",
+      "disease_name": "急性心肌梗死",
+      "node_code": "PLAN-CARD-TEXT-BDE62A3BE0",
+      "node_name": "降压治疗",
+      "reason": "候选证据主要来自脑出血、糖尿病高血压或溶栓禁忌筛查，不是AMI降压治疗的直接推荐证据",
+      "keywords": [
+        "降压治疗",
+        "降压",
+        "血压",
+        "高血压",
+        "收缩压",
+        "舒张压"
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-ATHEROSCLEROSIS",
+      "disease_name": "动脉粥样硬化",
+      "node_code": "PLAN-CARD-TEXT-BDE62A3BE0",
+      "node_name": "降压治疗",
+      "reason": "候选证据主要来自高血压章节，属于危险因素管理，不适合作为动脉粥样硬化治疗方案的直接CDSS推荐",
+      "keywords": [
+        "降压治疗",
+        "降压",
+        "血压",
+        "高血压",
+        "收缩压",
+        "舒张压"
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-CHD",
+      "disease_name": "冠状动脉粥样硬化性心脏病",
+      "node_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "node_name": "控制心室率",
+      "reason": "候选证据主要来自房颤或瓣膜病场景，控制心室率不应作为冠心病本病种通用治疗方案直接推荐",
+      "keywords": [
+        "控制心室率",
+        "心室率",
+        "心率控制",
+        "房颤",
+        "心房颤动"
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-CHD",
+      "disease_name": "冠状动脉粥样硬化性心脏病",
+      "node_code": "PLAN-CARD-TEXT-BDE62A3BE0",
+      "node_name": "降压治疗",
+      "reason": "候选证据属于高血压风险管理，应归入危险因素/预防场景，不作为冠心病治疗方案直接推荐",
+      "keywords": [
+        "降压治疗",
+        "降压",
+        "血压",
+        "高血压",
+        "收缩压",
+        "舒张压"
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-ICM",
+      "disease_name": "缺血性心肌病",
+      "node_code": "PLAN-CARD-TEXT-BDE62A3BE0",
+      "node_name": "降压治疗",
+      "reason": "候选证据来自稳定型心绞痛或高血压管理，缺少缺血性心肌病本病种直接治疗证据",
+      "keywords": [
+        "降压治疗",
+        "降压",
+        "血压",
+        "高血压",
+        "收缩压",
+        "舒张压"
+      ]
+    }
+  ],
+  "blocked_rows": [
+    {
+      "disease_code": "DIS-CARD-CAD-AMI",
+      "disease_name": "急性心肌梗死",
+      "node_code": "PLAN-CARD-TEXT-BDE62A3BE0",
+      "node_name": "降压治疗",
+      "reason": "候选证据主要来自脑出血、糖尿病高血压或溶栓禁忌筛查，不是AMI降压治疗的直接推荐证据"
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-ATHEROSCLEROSIS",
+      "disease_name": "动脉粥样硬化",
+      "node_code": "PLAN-CARD-TEXT-BDE62A3BE0",
+      "node_name": "降压治疗",
+      "reason": "候选证据主要来自高血压章节，属于危险因素管理，不适合作为动脉粥样硬化治疗方案的直接CDSS推荐"
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-CHD",
+      "disease_name": "冠状动脉粥样硬化性心脏病",
+      "node_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "node_name": "控制心室率",
+      "reason": "候选证据主要来自房颤或瓣膜病场景，控制心室率不应作为冠心病本病种通用治疗方案直接推荐"
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-CHD",
+      "disease_name": "冠状动脉粥样硬化性心脏病",
+      "node_code": "PLAN-CARD-TEXT-BDE62A3BE0",
+      "node_name": "降压治疗",
+      "reason": "候选证据属于高血压风险管理，应归入危险因素/预防场景，不作为冠心病治疗方案直接推荐"
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-ICM",
+      "disease_name": "缺血性心肌病",
+      "node_code": "PLAN-CARD-TEXT-BDE62A3BE0",
+      "node_name": "降压治疗",
+      "reason": "候选证据来自稳定型心绞痛或高血压管理，缺少缺血性心肌病本病种直接治疗证据"
+    }
+  ]
+}

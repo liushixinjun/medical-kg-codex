@@ -1,0 +1,6 @@
+﻿disease_code,disease_name,node_code,node_name,reason
+DIS-CARD-CAD-AMI,急性心肌梗死,PLAN-CARD-TEXT-BDE62A3BE0,降压治疗,候选证据主要来自脑出血、糖尿病高血压或溶栓禁忌筛查，不是AMI降压治疗的直接推荐证据
+DIS-CARD-CAD-ATHEROSCLEROSIS,动脉粥样硬化,PLAN-CARD-TEXT-BDE62A3BE0,降压治疗,候选证据主要来自高血压章节，属于危险因素管理，不适合作为动脉粥样硬化治疗方案的直接CDSS推荐
+DIS-CARD-CAD-CHD,冠状动脉粥样硬化性心脏病,PLAN-CARD-TEXT-655F4B37BC,控制心室率,候选证据主要来自房颤或瓣膜病场景，控制心室率不应作为冠心病本病种通用治疗方案直接推荐
+DIS-CARD-CAD-CHD,冠状动脉粥样硬化性心脏病,PLAN-CARD-TEXT-BDE62A3BE0,降压治疗,候选证据属于高血压风险管理，应归入危险因素/预防场景，不作为冠心病治疗方案直接推荐
+DIS-CARD-CAD-ICM,缺血性心肌病,PLAN-CARD-TEXT-BDE62A3BE0,降压治疗,候选证据来自稳定型心绞痛或高血压管理，缺少缺血性心肌病本病种直接治疗证据
