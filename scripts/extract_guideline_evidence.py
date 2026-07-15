@@ -19,7 +19,7 @@ def _disease_patterns(vocabulary: list[dict]) -> list[dict]:
         if row.get("entityType") != "Disease":
             continue
         names = [row.get("canonical_name", ""), row.get("name_en", ""), row.get("abbr", "")]
-        names.extend(item.strip() for item in row.get("aliases", "").split(","))
+        names.extend(item.strip() for item in re.split(r"[,，;；、]", row.get("aliases", "")))
         names = [name for name in names if name]
         regexes = []
         for name in sorted(set(names), key=len, reverse=True):
@@ -38,8 +38,71 @@ def _disease_patterns(vocabulary: list[dict]) -> list[dict]:
     return patterns
 
 
+def _load_disease_vocabulary(batch_dir: Path) -> list[dict]:
+    """Load disease anchors from both legacy vocabulary and current scope taxonomy.
+
+    Older batches stored Disease rows in controlled_vocabulary.csv. Current G0
+    configs store disease scope rows in scope_taxonomy.csv and keep
+    controlled_vocabulary.csv for terms such as procedures and drugs. Evidence
+    extraction needs both formats; otherwise a valid batch can parse documents
+    but extract zero evidence because no disease anchors are available.
+    """
+    scope_dir = batch_dir / "00_scope_and_config"
+    rows: list[dict] = []
+
+    vocabulary_path = scope_dir / "controlled_vocabulary.csv"
+    if vocabulary_path.is_file():
+        rows.extend(_load_csv(vocabulary_path))
+
+    taxonomy_path = scope_dir / "scope_taxonomy.csv"
+    if taxonomy_path.is_file():
+        for row in _load_csv(taxonomy_path):
+            disease_code = (row.get("disease_code") or "").strip()
+            name = (row.get("name") or "").strip()
+            if not disease_code or not name:
+                continue
+            rows.append(
+                {
+                    "canonical_name": name,
+                    "name_en": row.get("name_en", ""),
+                    "abbr": "",
+                    "aliases": row.get("aliases", ""),
+                    "entityType": "Disease",
+                    "disease_scope": disease_code,
+                    "source": "scope_taxonomy",
+                }
+            )
+
+    return rows
+
+
 def _pathway_element(text: str) -> str:
+    heading = text[:160]
+    explicit_heading_rules = (
+        ("pathophysiology", r"【病理生理】|^病理生理"),
+        ("etiology", r"【病因】|【病因和发病机制】|^病因|^病因和发病机制"),
+        ("symptom_sign", r"【临床表现】|^临床表现"),
+        ("exam", r"【实验室和辅助检查】|【辅助检查】|^实验室和辅助检查|^辅助检查"),
+        ("diagnosis_criteria", r"【诊断与鉴别诊断】|【诊断】|^诊断与鉴别诊断|^诊断"),
+        ("treatment_plan", r"【治疗】|^治疗"),
+        ("prognosis", r"【预后】|^预后"),
+        ("prevention", r"【预防】|^预防"),
+    )
+    for element, pattern in explicit_heading_rules:
+        if re.search(pattern, heading, re.IGNORECASE):
+            return element
     rules = (
+        ("follow_up", r"随访|复查|复诊|定期评估|长期管理|监测疾病进展|超声随访|术后随访"),
+        ("prognosis", r"预后|死亡率|生存率|复发|再入院|不良事件|猝死|心衰发生率|远期结局"),
+        ("treatment_plan", r"治疗|治疗原则|治疗方案|推荐使用|推荐.*植入|用药|药物|手术|介入|置换|修复|成形|球囊|TAVR|TAVI|TEER|PBMV|抗凝|抗血小板|利尿|再灌注|溶栓|PCI|CABG|移植"),
+        ("risk_stratification", r"危险分层|风险分层|风险评估|高危|中危|低危|评分|GRACE|CHA2DS2|HAS-BLED|EuroSCORE|STS"),
+        ("diagnosis_criteria", r"诊断标准|诊断依据|诊断与鉴别诊断|鉴别诊断|确诊|疑诊|排除|需与|鉴别|诊断流程"),
+        ("exam", r"检查|辅助检查|心电图|超声心动图|经胸超声|经食管超声|CT|CTA|磁共振|CMR|X线|造影|导管检查|基因检测|实验室|检验|肌钙蛋白|BNP|NT-proBNP|D-二聚体"),
+        ("symptom_sign", r"临床表现|症状|体征|呼吸困难|胸痛|晕厥|心悸|水肿|乏力|咳嗽|咯血|杂音|奔马律|啰音|发绀|颈静脉"),
+        ("pathophysiology", r"发病机制|病理生理|心室重构|血流动力学|容量负荷|压力负荷|纤维化|瓣膜钙化|瓣环扩张|反流机制"),
+        ("etiology", r"病因|病因和发病机制|致病原因|遗传|感染|风湿|退行性|黏液样变性|先天性|缺血性|创伤|医源性"),
+        ("epidemiology", r"流行病学|患病率|发病率|人群|年龄|性别|地区|负担"),
+        ("definition", r"定义为|是指|是一类|属于|称为|又称|概述"),
         ("follow_up", r"随访|复查|监测疾病进展"),
         ("prognosis", r"预后|死亡率|生存率"),
         ("treatment_plan", r"治疗|推荐使用|推荐.*植入|用药|药物|手术|消融|移植"),
@@ -190,7 +253,7 @@ def _is_garbled_like(paragraph: str) -> bool:
 def extract_guideline_evidence(batch_dir: Path) -> dict:
     batch_dir = Path(batch_dir).resolve()
     manifest = _load_csv(batch_dir / "01_source_manifest" / "source_documents_manifest.csv")
-    vocabulary = _load_csv(batch_dir / "00_scope_and_config" / "controlled_vocabulary.csv")
+    vocabulary = _load_disease_vocabulary(batch_dir)
     disease_patterns = _disease_patterns(vocabulary)
     included = [
         row

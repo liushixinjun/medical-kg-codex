@@ -1,0 +1,19 @@
+﻿{
+  "batch_id": "20260715_瓣膜病正式解析",
+  "specialty": "心血管内科",
+  "disease_category": "瓣膜病",
+  "scope_type": "疾病大类",
+  "scope_target": "瓣膜病、心脏瓣膜病、瓣膜性心脏病",
+  "guide_root": "E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/诊疗指南",
+  "textbook_root": "E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/书籍教材",
+  "output_root": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合",
+  "schema_file": "专科知识图谱Schema标准.md",
+  "schema_version": "V1.15",
+  "skill_file": "AI自动化工具-文献指南解析.md",
+  "skill_version": "UNKNOWN",
+  "source_manifest_hash": "1B79AAC942AD668BC02500B9083C88500199157A5BA78D656CA5D35246707E9D",
+  "included_file_count": 19,
+  "excluded_file_count": 403,
+  "created_time": "2026-07-15T08:30:05.622841+08:00",
+  "source_review_decision_count": 1
+}

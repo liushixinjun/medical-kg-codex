@@ -1,0 +1,475 @@
+{
+  "batch_id": "20260715_瓣膜病正式解析",
+  "repair_name": "瓣膜病入库后质量收口修复",
+  "diagnosis_components": {
+    "count": 9,
+    "rows": [
+      {
+        "batch_id": "20260715_瓣膜病正式解析",
+        "criteria_code": "DXC-CARD-68477B544D28",
+        "criteria_name": "心脏瓣膜病诊断标准",
+        "disease_code": "DIS-CARD-VHD",
+        "disease_name": "心脏瓣膜病",
+        "component_code": "DXCC-4AC1FAB31F59"
+      },
+      {
+        "batch_id": "20260715_瓣膜病正式解析",
+        "criteria_code": "DXC-CARD-77A1FFD2141A",
+        "criteria_name": "主动脉瓣反流诊断标准",
+        "disease_code": "DIS-CARD-VHD-AR",
+        "disease_name": "主动脉瓣反流",
+        "component_code": "DXCC-AF69890DF96F"
+      },
+      {
+        "batch_id": "20260715_瓣膜病正式解析",
+        "criteria_code": "DXC-CARD-4DEEDAD6C3FF",
+        "criteria_name": "主动脉瓣狭窄诊断标准",
+        "disease_code": "DIS-CARD-VHD-AS",
+        "disease_name": "主动脉瓣狭窄",
+        "component_code": "DXCC-8EBD9EB9B237"
+      },
+      {
+        "batch_id": "20260715_瓣膜病正式解析",
+        "criteria_code": "DXC-CARD-14B670E75BBA",
+        "criteria_name": "二尖瓣反流诊断标准",
+        "disease_code": "DIS-CARD-VHD-MR",
+        "disease_name": "二尖瓣反流",
+        "component_code": "DXCC-218021B027E2"
+      },
+      {
+        "batch_id": "20260715_瓣膜病正式解析",
+        "criteria_code": "DXC-CARD-64BF26B4C10D",
+        "criteria_name": "二尖瓣狭窄诊断标准",
+        "disease_code": "DIS-CARD-VHD-MS",
+        "disease_name": "二尖瓣狭窄",
+        "component_code": "DXCC-F9D7F13354C3"
+      },
+      {
+        "batch_id": "20260715_瓣膜病正式解析",
+        "criteria_code": "DXC-CARD-21550FC060EE",
+        "criteria_name": "多瓣膜病诊断标准",
+        "disease_code": "DIS-CARD-VHD-MULTI",
+        "disease_name": "多瓣膜病",
+        "component_code": "DXCC-B5BB765D4F24"
+      },
+      {
+        "batch_id": "20260715_瓣膜病正式解析",
+        "criteria_code": "DXC-CARD-2DD7C79F13C4",
+        "criteria_name": "肺动脉瓣狭窄诊断标准",
+        "disease_code": "DIS-CARD-VHD-PS",
+        "disease_name": "肺动脉瓣狭窄",
+        "component_code": "DXCC-36E3338A792B"
+      },
+      {
+        "batch_id": "20260715_瓣膜病正式解析",
+        "criteria_code": "DXC-CARD-570F9507B544",
+        "criteria_name": "风湿性心脏瓣膜病诊断标准",
+        "disease_code": "DIS-CARD-VHD-RHD",
+        "disease_name": "风湿性心脏瓣膜病",
+        "component_code": "DXCC-00F6A0D62A3F"
+      },
+      {
+        "batch_id": "20260715_瓣膜病正式解析",
+        "criteria_code": "DXC-CARD-A7D45B7182F1",
+        "criteria_name": "三尖瓣反流诊断标准",
+        "disease_code": "DIS-CARD-VHD-TR",
+        "disease_name": "三尖瓣反流",
+        "component_code": "DXCC-E0C0B0F7B2B2"
+      }
+    ]
+  },
+  "replaced_references": {
+    "count": 2,
+    "rows": [
+      {
+        "duplicate_code": "EXAM-CARD-61766890B7D2",
+        "duplicate_name": "心脏磁共振",
+        "relation_type": "has_recommended_action",
+        "source_code": "RULE-CARD-B5631E8ECEEC",
+        "source_name": "心脏瓣膜病临床规则-7954AA",
+        "standard_node_code": "EXAM-CMR"
+      },
+      {
+        "duplicate_code": "EXAM-CARD-61766890B7D2",
+        "duplicate_name": "心脏磁共振",
+        "relation_type": "requires_exam",
+        "source_code": "DIS-CARD-VHD",
+        "source_name": "心脏瓣膜病",
+        "standard_node_code": "EXAM-CMR"
+      }
+    ]
+  },
+  "duplicate_groups": {
+    "count": 33,
+    "totals": {
+      "incoming": 360,
+      "outgoing": 682,
+      "deleted_nodes": 33
+    },
+    "rows": [
+      {
+        "disease_code": "DIS-CARD-VHD-AR",
+        "disease_name": "主动脉瓣反流",
+        "entity_type": "Complication",
+        "name": "感染性心内膜炎",
+        "duplicate_code": "COMP-CARD-4FC74E832AFB",
+        "standard_code": "COMP-CARD-TEXT-4FC74E832A",
+        "incoming": 9,
+        "outgoing": 30,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-AR",
+        "disease_name": "主动脉瓣反流",
+        "entity_type": "Complication",
+        "name": "肺动脉高压",
+        "duplicate_code": "COMP-CARD-0B4E779BE011",
+        "standard_code": "COMP-CARD-FULLBOOK-0B4E779BE0",
+        "incoming": 7,
+        "outgoing": 14,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-AR",
+        "disease_name": "主动脉瓣反流",
+        "entity_type": "Procedure",
+        "name": "经导管主动脉瓣置换术",
+        "duplicate_code": "PROC-TAVR",
+        "standard_code": "PROC-CARD-TEXT-53ECAA23AE",
+        "incoming": 277,
+        "outgoing": 289,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-AR",
+        "disease_name": "主动脉瓣反流",
+        "entity_type": "RiskFactor",
+        "name": "创伤",
+        "duplicate_code": "RF-CARD-CCD18035D80D",
+        "standard_code": "RF-CARD-FULLBOOK-CCD18035D8",
+        "incoming": 8,
+        "outgoing": 16,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-AR",
+        "disease_name": "主动脉瓣反流",
+        "entity_type": "Sign",
+        "name": "发绀",
+        "duplicate_code": "SIGN-CARD-E67B99C5BD07",
+        "standard_code": "SIGN-CARD-TEXT-E67B99C5BD",
+        "incoming": 6,
+        "outgoing": 8,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-AR",
+        "disease_name": "主动脉瓣反流",
+        "entity_type": "Sign",
+        "name": "舒张期杂音",
+        "duplicate_code": "SIGN-CARD-5DE431E83E76",
+        "standard_code": "CARD-SKELETON-20260709-SIGN-476050EFAFFE21D8",
+        "incoming": 9,
+        "outgoing": 14,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-AR",
+        "disease_name": "主动脉瓣反流",
+        "entity_type": "Symptom",
+        "name": "咯血",
+        "duplicate_code": "SYM-CARD-DB87B8B091D1",
+        "standard_code": "SYM-CARD-TEXT-DB87B8B091",
+        "incoming": 5,
+        "outgoing": 11,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-AR",
+        "disease_name": "主动脉瓣反流",
+        "entity_type": "Symptom",
+        "name": "咳嗽",
+        "duplicate_code": "SYM-CARD-24EDE9C8766A",
+        "standard_code": "SYM-CARD-TEXT-24EDE9C876",
+        "incoming": 5,
+        "outgoing": 11,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-AR",
+        "disease_name": "主动脉瓣反流",
+        "entity_type": "Symptom",
+        "name": "心绞痛",
+        "duplicate_code": "SYM-CARD-1001D988DAB7",
+        "standard_code": "CARD-SKELETON-20260709-SYMPTOM-E201291B32C71911",
+        "incoming": 8,
+        "outgoing": 27,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-AS",
+        "disease_name": "主动脉瓣狭窄",
+        "entity_type": "Complication",
+        "name": "感染性心内膜炎",
+        "duplicate_code": "COMP-CARD-4FC74E832AFB",
+        "standard_code": "COMP-CARD-TEXT-4FC74E832A",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-AS",
+        "disease_name": "主动脉瓣狭窄",
+        "entity_type": "Complication",
+        "name": "猝死",
+        "duplicate_code": "COMP-CARD-578BE2D590E3",
+        "standard_code": "COMP-CARD-TEXT-578BE2D590",
+        "incoming": 3,
+        "outgoing": 7,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-AS",
+        "disease_name": "主动脉瓣狭窄",
+        "entity_type": "Complication",
+        "name": "肺动脉高压",
+        "duplicate_code": "COMP-CARD-0B4E779BE011",
+        "standard_code": "COMP-CARD-FULLBOOK-0B4E779BE0",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-AS",
+        "disease_name": "主动脉瓣狭窄",
+        "entity_type": "Procedure",
+        "name": "经导管主动脉瓣置换术",
+        "duplicate_code": "PROC-TAVR",
+        "standard_code": "PROC-CARD-TEXT-53ECAA23AE",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-AS",
+        "disease_name": "主动脉瓣狭窄",
+        "entity_type": "RiskFactor",
+        "name": "创伤",
+        "duplicate_code": "RF-CARD-CCD18035D80D",
+        "standard_code": "RF-CARD-FULLBOOK-CCD18035D8",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-AS",
+        "disease_name": "主动脉瓣狭窄",
+        "entity_type": "Symptom",
+        "name": "咳嗽",
+        "duplicate_code": "SYM-CARD-24EDE9C8766A",
+        "standard_code": "SYM-CARD-TEXT-24EDE9C876",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-AS",
+        "disease_name": "主动脉瓣狭窄",
+        "entity_type": "Symptom",
+        "name": "心绞痛",
+        "duplicate_code": "SYM-CARD-1001D988DAB7",
+        "standard_code": "CARD-SKELETON-20260709-SYMPTOM-E201291B32C71911",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-MR",
+        "disease_name": "二尖瓣反流",
+        "entity_type": "Complication",
+        "name": "感染性心内膜炎",
+        "duplicate_code": "COMP-CARD-4FC74E832AFB",
+        "standard_code": "COMP-CARD-TEXT-4FC74E832A",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-MR",
+        "disease_name": "二尖瓣反流",
+        "entity_type": "Complication",
+        "name": "猝死",
+        "duplicate_code": "COMP-CARD-578BE2D590E3",
+        "standard_code": "COMP-CARD-TEXT-578BE2D590",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-MR",
+        "disease_name": "二尖瓣反流",
+        "entity_type": "Complication",
+        "name": "肺动脉高压",
+        "duplicate_code": "COMP-CARD-0B4E779BE011",
+        "standard_code": "COMP-CARD-FULLBOOK-0B4E779BE0",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-MR",
+        "disease_name": "二尖瓣反流",
+        "entity_type": "Complication",
+        "name": "脑卒中",
+        "duplicate_code": "COMP-CARD-2EDA47E727DD",
+        "standard_code": "COMP-CARD-TEXT-2EDA47E727",
+        "incoming": 18,
+        "outgoing": 248,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-MR",
+        "disease_name": "二尖瓣反流",
+        "entity_type": "RiskFactor",
+        "name": "创伤",
+        "duplicate_code": "RF-CARD-CCD18035D80D",
+        "standard_code": "RF-CARD-FULLBOOK-CCD18035D8",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-MR",
+        "disease_name": "二尖瓣反流",
+        "entity_type": "Sign",
+        "name": "收缩期杂音",
+        "duplicate_code": "SIGN-CARD-A80D9A93E7B1",
+        "standard_code": "CARD-SKELETON-20260709-SIGN-EED0EF48BD272C92",
+        "incoming": 5,
+        "outgoing": 7,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-MR",
+        "disease_name": "二尖瓣反流",
+        "entity_type": "Symptom",
+        "name": "咯血",
+        "duplicate_code": "SYM-CARD-DB87B8B091D1",
+        "standard_code": "SYM-CARD-TEXT-DB87B8B091",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-MR",
+        "disease_name": "二尖瓣反流",
+        "entity_type": "Symptom",
+        "name": "心绞痛",
+        "duplicate_code": "SYM-CARD-1001D988DAB7",
+        "standard_code": "CARD-SKELETON-20260709-SYMPTOM-E201291B32C71911",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-MS",
+        "disease_name": "二尖瓣狭窄",
+        "entity_type": "Complication",
+        "name": "感染性心内膜炎",
+        "duplicate_code": "COMP-CARD-4FC74E832AFB",
+        "standard_code": "COMP-CARD-TEXT-4FC74E832A",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-MS",
+        "disease_name": "二尖瓣狭窄",
+        "entity_type": "Complication",
+        "name": "肺动脉高压",
+        "duplicate_code": "COMP-CARD-0B4E779BE011",
+        "standard_code": "COMP-CARD-FULLBOOK-0B4E779BE0",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-MS",
+        "disease_name": "二尖瓣狭窄",
+        "entity_type": "Complication",
+        "name": "脑卒中",
+        "duplicate_code": "COMP-CARD-2EDA47E727DD",
+        "standard_code": "COMP-CARD-TEXT-2EDA47E727",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-MS",
+        "disease_name": "二尖瓣狭窄",
+        "entity_type": "Sign",
+        "name": "发绀",
+        "duplicate_code": "SIGN-CARD-E67B99C5BD07",
+        "standard_code": "SIGN-CARD-TEXT-E67B99C5BD",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-MS",
+        "disease_name": "二尖瓣狭窄",
+        "entity_type": "Symptom",
+        "name": "咯血",
+        "duplicate_code": "SYM-CARD-DB87B8B091D1",
+        "standard_code": "SYM-CARD-TEXT-DB87B8B091",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-MS",
+        "disease_name": "二尖瓣狭窄",
+        "entity_type": "Symptom",
+        "name": "咳嗽",
+        "duplicate_code": "SYM-CARD-24EDE9C8766A",
+        "standard_code": "SYM-CARD-TEXT-24EDE9C876",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-MULTI",
+        "disease_name": "多瓣膜病",
+        "entity_type": "Complication",
+        "name": "感染性心内膜炎",
+        "duplicate_code": "COMP-CARD-4FC74E832AFB",
+        "standard_code": "COMP-CARD-TEXT-4FC74E832A",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-MULTI",
+        "disease_name": "多瓣膜病",
+        "entity_type": "Sign",
+        "name": "舒张期杂音",
+        "duplicate_code": "SIGN-CARD-5DE431E83E76",
+        "standard_code": "CARD-SKELETON-20260709-SIGN-476050EFAFFE21D8",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      },
+      {
+        "disease_code": "DIS-CARD-VHD-MULTI",
+        "disease_name": "多瓣膜病",
+        "entity_type": "Symptom",
+        "name": "心绞痛",
+        "duplicate_code": "SYM-CARD-1001D988DAB7",
+        "standard_code": "CARD-SKELETON-20260709-SYMPTOM-E201291B32C71911",
+        "incoming": 0,
+        "outgoing": 0,
+        "deleted_nodes": 1
+      }
+    ]
+  }
+}

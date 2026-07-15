@@ -1,0 +1,23 @@
+{
+  "batch_id": "20260715_瓣膜病正式解析",
+  "postcheck_name": "批次入库后复测",
+  "postcheck_status": "passed",
+  "blocking_issue_count": 0,
+  "blocking_gates": [],
+  "generated_at": "2026-07-15 12:02:39",
+  "checks": {
+    "主数据质量闸门": {
+      "status": "passed",
+      "blocking_issue_count": 0,
+      "counts": {
+        "same_disease_same_type_same_name_duplicate_count": 0,
+        "diagnosis_criteria_without_component_count": 0,
+        "orphan_diagnosis_criteria_count": 0,
+        "treatment_plan_without_downstream_count": 0,
+        "replaced_duplicate_still_referenced_count": 0
+      }
+    }
+  },
+  "output_dir": "心血管内科文献集合\\20260715_瓣膜病正式解析\\99_入库后复测",
+  "master_data_gate_output_dir": "心血管内科文献集合\\20260715_瓣膜病正式解析\\99_入库后复测\\01_主数据质量闸门"
+}

@@ -1,0 +1,6 @@
+﻿check_item,status,detail
+scope_defined,PASS,"瓣膜病,心脏瓣膜病,瓣膜性心脏病"
+source_roots_exist,PASS,2
+output_dir_safe,PASS,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260715_瓣膜病正式解析
+neo4j_write_disabled,PASS,G0 不写库
+included_documents,PASS,20

@@ -1,0 +1,17 @@
+﻿{
+  "document_count": 19,
+  "document_with_evidence_count": 16,
+  "disease_count": 9,
+  "evidence_count": 2189,
+  "evidence_by_disease": {
+    "DIS-CARD-VHD-AS": 664,
+    "DIS-CARD-VHD-PS": 36,
+    "DIS-CARD-VHD": 467,
+    "DIS-CARD-VHD-AR": 202,
+    "DIS-CARD-VHD-MULTI": 8,
+    "DIS-CARD-VHD-RHD": 27,
+    "DIS-CARD-VHD-MS": 217,
+    "DIS-CARD-VHD-MR": 395,
+    "DIS-CARD-VHD-TR": 173
+  }
+}

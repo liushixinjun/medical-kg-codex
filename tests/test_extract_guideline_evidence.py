@@ -4,10 +4,29 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from scripts.extract_guideline_evidence import extract_guideline_evidence
+from scripts.extract_guideline_evidence import _pathway_element, extract_guideline_evidence
 
 
 class ExtractGuidelineEvidenceTests(unittest.TestCase):
+    def test_classifies_real_chinese_pathway_terms(self):
+        examples = {
+            "主动脉瓣狭窄的临床表现包括呼吸困难、胸痛和晕厥。": "symptom_sign",
+            "超声心动图是评估主动脉瓣狭窄严重程度的主要检查。": "exam",
+            "重度主动脉瓣狭窄出现症状时推荐行瓣膜置换或介入治疗。": "treatment_plan",
+            "主动脉瓣狭窄需与肥厚型心肌病进行鉴别诊断。": "diagnosis_criteria",
+            "退行性钙化是老年主动脉瓣狭窄的重要病因。": "etiology",
+        }
+        for text, expected in examples.items():
+            with self.subTest(text=text):
+                self.assertEqual(_pathway_element(text), expected)
+
+    def test_explicit_etiology_heading_wins_over_pathophysiology_terms(self):
+        text = (
+            "【病因】 主动脉瓣反流主要由主动脉瓣膜本身病变、主动脉根部疾病所致。"
+            "主动脉瓣反流使左心室容量负荷过度而扩大，产生相对性二尖瓣关闭不全。"
+        )
+        self.assertEqual(_pathway_element(text), "etiology")
+
     def test_extracts_docx_clean_sections(self):
         with tempfile.TemporaryDirectory() as tmp:
             batch = Path(tmp)
@@ -57,6 +76,82 @@ class ExtractGuidelineEvidenceTests(unittest.TestCase):
                 .splitlines()
             ]
             self.assertEqual(rows[0]["source_page"], "N/A")
+
+    def test_extracts_disease_anchors_from_scope_taxonomy(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            batch = Path(tmp)
+            (batch / "00_scope_and_config").mkdir(parents=True)
+            (batch / "01_source_manifest").mkdir()
+            (batch / "03_clean_text").mkdir()
+
+            with (batch / "00_scope_and_config" / "controlled_vocabulary.csv").open(
+                "w", encoding="utf-8-sig", newline=""
+            ) as handle:
+                writer = csv.DictWriter(
+                    handle,
+                    fieldnames=("canonical_name", "name_en", "abbr", "aliases", "entityType", "disease_scope", "source"),
+                )
+                writer.writeheader()
+                writer.writerow(
+                    {
+                        "canonical_name": "主动脉瓣置换术",
+                        "name_en": "Aortic valve replacement",
+                        "abbr": "AVR",
+                        "aliases": "",
+                        "entityType": "Procedure",
+                        "disease_scope": "PROC-CARD-VHD-AVR",
+                        "source": "test",
+                    }
+                )
+
+            with (batch / "00_scope_and_config" / "scope_taxonomy.csv").open(
+                "w", encoding="utf-8-sig", newline=""
+            ) as handle:
+                writer = csv.DictWriter(
+                    handle,
+                    fieldnames=("disease_code", "name", "name_en", "aliases"),
+                )
+                writer.writeheader()
+                writer.writerow(
+                    {
+                        "disease_code": "DIS-CARD-VHD-AS",
+                        "name": "主动脉瓣狭窄",
+                        "name_en": "Aortic stenosis",
+                        "aliases": "AS,主动脉瓣口狭窄",
+                    }
+                )
+
+            with (batch / "01_source_manifest" / "source_documents_manifest.csv").open(
+                "w", encoding="utf-8-sig", newline=""
+            ) as handle:
+                writer = csv.DictWriter(
+                    handle,
+                    fieldnames=("batch_id", "document_id", "file_name", "source_type", "source_version", "extension", "inclusion_status"),
+                )
+                writer.writeheader()
+                writer.writerow(
+                    {
+                        "batch_id": "BATCH-VHD",
+                        "document_id": "DOC-VHD",
+                        "file_name": "主动脉瓣狭窄指南2025.pdf",
+                        "source_type": "guideline",
+                        "source_version": "2025",
+                        "extension": ".pdf",
+                        "inclusion_status": "included",
+                    }
+                )
+            (batch / "03_clean_text" / "DOC-VHD.clean.txt").write_text(
+                "<<<PAGE page=1 class=body>>>\n"
+                "主动脉瓣狭窄患者出现症状或左心室功能下降时，应评估瓣膜介入或外科治疗适应证。\n",
+                encoding="utf-8-sig",
+            )
+
+            summary = extract_guideline_evidence(batch)
+
+            self.assertEqual(summary["document_count"], 1)
+            self.assertEqual(summary["document_with_evidence_count"], 1)
+            self.assertEqual(summary["evidence_count"], 1)
+            self.assertEqual(summary["evidence_by_disease"], {"DIS-CARD-VHD-AS": 1})
 
     def test_extracts_only_explicitly_disease_anchored_evidence(self):
         with tempfile.TemporaryDirectory() as tmp:

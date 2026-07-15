@@ -1,0 +1,10 @@
+﻿specialty_code,category_code,subcategory_code,disease_code,name,name_en,aliases,inclusion_status
+CARD,CARD-VHD,,DIS-CARD-VHD,心脏瓣膜病,Valvular Heart Disease,瓣膜病；瓣膜性心脏病；VHD,included
+CARD,CARD-VHD,AORTIC,DIS-CARD-VHD-AS,主动脉瓣狭窄,Aortic Stenosis,AS；主动脉瓣口狭窄,included
+CARD,CARD-VHD,AORTIC,DIS-CARD-VHD-AR,主动脉瓣反流,Aortic Regurgitation,AR；主动脉瓣关闭不全,included
+CARD,CARD-VHD,MITRAL,DIS-CARD-VHD-MS,二尖瓣狭窄,Mitral Stenosis,MS,included
+CARD,CARD-VHD,MITRAL,DIS-CARD-VHD-MR,二尖瓣反流,Mitral Regurgitation,MR；二尖瓣关闭不全,included
+CARD,CARD-VHD,TRICUSPID,DIS-CARD-VHD-TR,三尖瓣反流,Tricuspid Regurgitation,TR；三尖瓣关闭不全,included
+CARD,CARD-VHD,PULMONARY,DIS-CARD-VHD-PS,肺动脉瓣狭窄,Pulmonary Valve Stenosis,PS；肺动脉瓣疾病,included
+CARD,CARD-VHD,MULTI,DIS-CARD-VHD-MULTI,多瓣膜病,Multiple Valvular Heart Disease,联合瓣膜病；多瓣膜损害,included
+CARD,CARD-VHD,RHEUMATIC,DIS-CARD-VHD-RHD,风湿性心脏瓣膜病,Rheumatic Valvular Heart Disease,风湿性心脏病；风湿性瓣膜病,included

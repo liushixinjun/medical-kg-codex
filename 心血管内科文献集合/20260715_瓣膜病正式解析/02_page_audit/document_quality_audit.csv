@@ -1,0 +1,11 @@
+﻿document_id,file_name,source_type,fitz_page_count,pypdf_page_count,page_count_match,accounted_page_count,parsed_page_count,nonclinical_page_count,ocr_required_page_count,page_accounting_rate,eligible_content_pass_rate,status,failure_reason
+DOC-37506EA1DDEBA633,常见先天性心脏病介入治疗中国专家共识之四：经皮球囊肺动脉瓣与主动脉瓣成形术.pdf,consensus,8,8,True,8,8,0,0,1.0,1.0,parsed,
+DOC-F2D00601C217655C,中国经导管主动脉瓣置入术(TAVI)多学科专家共识.pdf,consensus,8,8,True,8,8,0,0,1.0,1.0,parsed,
+DOC-5F99D676213DDC84,心脏瓣膜外科人工瓣膜选择中国专家共识.pdf,consensus,8,8,True,8,8,0,0,1.0,1.0,parsed,
+DOC-56EC71F40F681B16,2025ESC瓣膜指南 - .pdf,guideline,109,109,True,109,108,1,0,1.0,1.0,parsed,
+DOC-4317086452C7EB3A,ACC／AHA指南：心脏瓣膜病患者的管理（2020）.pdf,guideline,173,173,True,173,172,1,0,1.0,1.0,parsed,
+DOC-75647A0637C99A01,ESC／EACTS指南：瓣膜性心脏病的管理（2021） .pdf,guideline,72,72,True,72,71,1,0,1.0,1.0,parsed,
+DOC-60225BB8F13B8139,中国 经导管主动脉瓣置换术临床实践指南（2023版）.pdf,guideline,15,15,True,15,15,0,0,1.0,1.0,parsed,
+DOC-CC7161452CF36D38,中国 经导管主动脉瓣置换术临床路径专家共识（2024 版）.pdf,consensus,17,17,True,17,17,0,0,1.0,1.0,parsed,
+DOC-292E33BF635D9559,中国 经导管二尖瓣缘对缘修复术的中国专家共识2022.pdf,consensus,11,11,True,11,11,0,0,1.0,1.0,parsed,
+DOC-C0BB559FA2C8448A,《内科学（第10版）》.pdf,authoritative_textbook,982,982,True,982,966,16,0,1.0,1.0,parsed,

@@ -1,0 +1,10 @@
+﻿{
+  "status": "passed",
+  "batch_id": "20260715_瓣膜病正式解析",
+  "batch_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\20260715_瓣膜病正式解析",
+  "included_file_count": 20,
+  "excluded_file_count": 402,
+  "dedup_count": 15,
+  "source_manifest_hash": "1B79AAC942AD668BC02500B9083C88500199157A5BA78D656CA5D35246707E9D",
+  "created_time": "2026-07-15T08:30:05.622841+08:00"
+}

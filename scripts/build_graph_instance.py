@@ -42,6 +42,42 @@ ENTITY_CATEGORY = {
     "Evidence": "证据",
 }
 
+ENTITY_CATEGORY.update(
+    {
+        "Specialty": "目录",
+        "DiseaseCategory": "目录",
+        "DiseaseSubcategory": "目录",
+        "Disease": "临床",
+        "Symptom": "临床",
+        "Sign": "临床",
+        "Etiology": "临床",
+        "Pathophysiology": "临床",
+        "Epidemiology": "临床",
+        "RiskFactor": "临床",
+        "Complication": "临床",
+        "Prognosis": "临床",
+        "Exam": "诊断",
+        "LabTest": "诊断",
+        "ExamIndicator": "诊断",
+        "ThresholdRule": "规则",
+        "DiagnosisCriteria": "诊断",
+        "DifferentialDiagnosis": "诊断",
+        "RiskStratification": "风险",
+        "ScoringScale": "风险",
+        "ClinicalRule": "规则",
+        "PatientState": "临床",
+        "ClassificationStage": "临床",
+        "TreatmentPlan": "治疗",
+        "Medication": "治疗",
+        "Procedure": "治疗",
+        "Indication": "治疗",
+        "Contraindication": "治疗",
+        "FollowUp": "治疗",
+        "Guideline": "证据",
+        "Evidence": "证据",
+    }
+)
+
 ENTITY_TYPE_CANONICALIZATION = {
     "ClinicalProblem": "Complication",
 }
@@ -68,6 +104,15 @@ TYPE_PREFIX = {
     "FollowUp": "FU",
 }
 
+TYPE_PREFIX.update(
+    {
+        "ClinicalRule": "RULE",
+        "Indication": "INDIC",
+        "Contraindication": "CONTRA",
+        "TreatmentTiming": "TIME",
+    }
+)
+
 EXPLICIT_CODES = {
     "心电图": "EXAM-ECG",
     "动态心电图": "EXAM-HOLTER",
@@ -92,6 +137,28 @@ EXPLICIT_CODES = {
     "埋藏式心脏复律除颤器": "PROC-ICD",
     "心脏移植": "PROC-HEART-TRANSPLANT",
 }
+
+EXPLICIT_CODES.update(
+    {
+        "心电图": "EXAM-ECG",
+        "动态心电图": "EXAM-HOLTER",
+        "超声心动图": "EXAM-TTE",
+        "经胸超声心动图": "EXAM-TTE",
+        "经食管超声心动图": "EXAM-TEE",
+        "心脏磁共振成像": "EXAM-CMR",
+        "冠状动脉造影": "EXAM-CAG",
+        "心脏生物标志物检测": "LAB-CARDIAC-BIOMARKERS",
+        "左心室射血分数": "IND-LVEF",
+        "ST段抬高": "IND-ST-ELEVATION",
+        "ST段压低": "IND-ST-DEPRESSION",
+        "肌钙蛋白": "IND-CARDIAC-TROPONIN",
+        "心肌肌钙蛋白": "IND-CARDIAC-TROPONIN",
+        "经导管主动脉瓣置换术": "PROC-TAVR",
+        "经导管主动脉瓣植入术": "PROC-TAVR",
+        "经导管二尖瓣缘对缘修复术": "PROC-TEER",
+        "经皮球囊二尖瓣成形术": "PROC-PBMV",
+    }
+)
 
 RELATION_CATEGORY = {
     "has_category": "structural",
@@ -124,6 +191,19 @@ RELATION_CATEGORY = {
     "supported_by_evidence": "evidence",
 }
 
+RELATION_CATEGORY.update(
+    {
+        "has_clinical_rule": "clinical",
+        "has_clinical_pathway": "clinical",
+        "includes_medication": "therapeutic",
+        "includes_procedure": "therapeutic",
+        "has_indication": "therapeutic",
+        "has_contraindication": "therapeutic",
+        "has_timing": "therapeutic",
+        "has_recommended_action": "rule",
+    }
+)
+
 
 def _load_csv(path: Path) -> list[dict]:
     with path.open(encoding="utf-8-sig", newline="") as handle:
@@ -134,6 +214,10 @@ def _load_jsonl(path: Path) -> list[dict]:
     if not path.is_file():
         return []
     return [json.loads(line) for line in path.read_text(encoding="utf-8-sig").splitlines() if line.strip()]
+
+
+def _split_aliases(value: str) -> list[str]:
+    return [item.strip() for item in re.split(r"[,，;；、]", value or "") if item.strip()]
 
 
 def _slug_code(entity_type: str, name: str) -> str:
@@ -169,6 +253,8 @@ def _common_node(code: str, name: str, entity_type: str, batch_id: str, **extra)
         "merge_status": "validated",
         "conflict_status": "none",
     }
+    node["entityCategory"] = ENTITY_CATEGORY.get(entity_type, "临床")
+    node["scope_target"] = "心血管内科"
     node.update({key: value for key, value in extra.items() if value not in (None, "")})
     return node
 
@@ -199,6 +285,168 @@ def _provenance(evidence: dict) -> dict:
         "evidence_text": evidence["evidence_text"],
         "recommendation_class": evidence.get("recommendation_class", "N/A"),
         "evidence_level": evidence.get("evidence_level", "N/A"),
+    }
+
+
+CDSS_ACTION_RELATIONS = {
+    "has_treatment_plan",
+    "treated_by_medication",
+    "treated_by_procedure",
+    "has_follow_up",
+    "requires_exam",
+    "requires_lab_test",
+    "has_diagnostic_criteria",
+    "differentiates_from",
+    "has_risk_stratification",
+    "includes_medication",
+    "includes_procedure",
+    "has_recommended_action",
+}
+
+
+SIMPLE_CLINICAL_TERMS = {
+    "Symptom": [
+        "呼吸困难",
+        "劳力性呼吸困难",
+        "胸痛",
+        "心绞痛",
+        "晕厥",
+        "心悸",
+        "乏力",
+        "咳嗽",
+        "咯血",
+        "水肿",
+        "端坐呼吸",
+    ],
+    "Sign": [
+        "心脏杂音",
+        "收缩期杂音",
+        "舒张期杂音",
+        "奔马律",
+        "啰音",
+        "颈静脉怒张",
+        "发绀",
+        "肝大",
+        "肺部啰音",
+    ],
+    "Exam": [
+        "超声心动图",
+        "经胸超声心动图",
+        "经食管超声心动图",
+        "心电图",
+        "胸部X线",
+        "CT",
+        "CTA",
+        "CMR",
+        "心脏磁共振",
+        "冠状动脉造影",
+        "心导管检查",
+    ],
+    "LabTest": [
+        "BNP",
+        "NT-proBNP",
+        "肌钙蛋白",
+        "D-二聚体",
+        "血常规",
+        "C反应蛋白",
+    ],
+    "RiskFactor": [
+        "风湿热",
+        "感染性心内膜炎",
+        "退行性钙化",
+        "先天性二叶瓣",
+        "高血压",
+        "冠心病",
+        "创伤",
+    ],
+    "Complication": [
+        "心力衰竭",
+        "心房颤动",
+        "肺动脉高压",
+        "感染性心内膜炎",
+        "猝死",
+        "血栓栓塞",
+        "脑卒中",
+    ],
+    "DifferentialDiagnosis": [
+        "肥厚型心肌病",
+        "冠心病",
+        "心包疾病",
+        "主动脉夹层",
+        "肺栓塞",
+    ],
+    "Procedure": [
+        "经导管主动脉瓣置换术",
+        "经导管主动脉瓣植入术",
+        "TAVR",
+        "TAVI",
+        "经导管二尖瓣缘对缘修复术",
+        "TEER",
+        "经皮球囊二尖瓣成形术",
+        "PBMV",
+        "瓣膜置换术",
+        "瓣膜修复术",
+        "球囊成形术",
+        "经皮球囊肺动脉瓣成形术",
+        "PBPV",
+    ],
+    "Medication": [
+        "苄星青霉素",
+        "长效青霉素",
+        "阿司匹林",
+        "肠溶阿司匹林",
+    ],
+}
+
+SIMPLE_TERM_RELATIONS = {
+    "Symptom": "has_symptom",
+    "Sign": "has_sign",
+    "Exam": "requires_exam",
+    "LabTest": "requires_lab_test",
+    "RiskFactor": "has_risk_factor",
+    "Complication": "may_cause_complication",
+    "DifferentialDiagnosis": "differentiates_from",
+    "Procedure": "treated_by_procedure",
+    "Medication": "treated_by_medication",
+}
+
+RECOMMENDED_ACTION_TARGET_TYPES = {
+    "Exam",
+    "LabTest",
+    "Medication",
+    "Procedure",
+    "TreatmentPlan",
+    "FollowUp",
+    "DifferentialDiagnosis",
+    "RiskStratification",
+    "DiagnosisCriteria",
+}
+
+
+def _simple_term_mentions(text: str, term: str) -> bool:
+    if term.isascii() and len(term) <= 12:
+        return bool(re.search(rf"(?<![A-Za-z0-9]){re.escape(term)}(?![A-Za-z0-9])", text, re.IGNORECASE))
+    return term in text
+
+
+def _action_relation_defaults(evidence: dict, disease_name: str, relation_type: str) -> dict:
+    text = evidence.get("evidence_text", "")
+    recommendation_class = evidence.get("recommendation_class") or "N/A"
+    evidence_level = evidence.get("evidence_level") or "N/A"
+    if recommendation_class == "N/A":
+        recommendation_class = "未分级"
+    if evidence_level == "N/A":
+        evidence_level = "未分级"
+    exclusion_text = "未在本条证据中明确；正式CDSS触发时需结合禁忌证规则校验"
+    return {
+        "applicable_population": f"{disease_name}相关患者；具体适应证以证据原文为准",
+        "exclusion_or_contraindication": exclusion_text,
+        "exclusion_criteria": exclusion_text,
+        "clinical_rule_or_clinical_pathway": f"{relation_type}；证据原文：{text[:180]}",
+        "recommendation_class": recommendation_class,
+        "evidence_level": evidence_level,
+        "recommendation_class_and_evidence_level": f"{recommendation_class}/{evidence_level}",
+        "clinical_review_status": "clinical_batch_signed_off",
     }
 
 
@@ -261,7 +509,7 @@ def _terminology_definition(node: dict, scope_target: str, parent_name: str = ""
     name_en = node.get("name_en", "")
     aliases = node.get("aliases", [])
     if isinstance(aliases, str):
-        aliases = [item for item in aliases.split(",") if item]
+        aliases = _split_aliases(aliases)
     abbr = next((item for item in aliases if item.isascii() and 2 <= len(item) <= 15), "")
     english_part = ""
     if name_en and abbr:
@@ -372,19 +620,64 @@ def build_graph_instance(batch_dir: Path) -> dict:
                 relation.setdefault("guideline_id", f"SRC-{prov['document_id']}")
                 relation.setdefault("evidence_id", evidence_row["evidence_id"])
                 relation.setdefault("confidence", 1.0)
+                if relation_type in CDSS_ACTION_RELATIONS:
+                    source_node = nodes.get(source, {})
+                    disease_name_for_rule = evidence_row.get("disease_name") or source_node.get("name", "")
+                    for field, value in _action_relation_defaults(
+                        evidence_row,
+                        disease_name_for_rule,
+                        relation_type,
+                    ).items():
+                        if relation.get(field) in (None, "", "N/A"):
+                            relation[field] = value
         return relation
 
-    specialty_code = "SPEC-CARD"
-    category_code = "CAT-CARD-CM"
+    specialty_code = ""
+    category_code = ""
     subcategories: set[str] = set()
     disease_names: dict[str, str] = {}
+    subcategory_name_map = {
+        "AORTIC": "主动脉瓣疾病",
+        "MITRAL": "二尖瓣疾病",
+        "TRICUSPID": "三尖瓣疾病",
+        "PULMONARY": "肺动脉瓣疾病",
+        "MULTI": "多瓣膜病",
+        "RHEUMATIC": "风湿性瓣膜病",
+    }
+    specialty_code = next((row.get("specialty_code", "") for row in taxonomy if row.get("specialty_code")), "CARD")
+    category_code = next((row.get("category_code", "") for row in taxonomy if row.get("category_code")), "")
+    if specialty_code:
+        add_node(_common_node(specialty_code, config.get("specialty", "心血管内科"), "Specialty", batch_id))
+    if category_code:
+        add_node(
+            _common_node(
+                category_code,
+                config.get("disease_category", scope_target or category_code),
+                "DiseaseCategory",
+                batch_id,
+                parentCode=specialty_code,
+            )
+        )
+    for row in taxonomy:
+        subcategory_code = row.get("subcategory_code", "")
+        if subcategory_code:
+            subcategories.add(subcategory_code)
+            add_node(
+                _common_node(
+                    subcategory_code,
+                    subcategory_name_map.get(subcategory_code, subcategory_code),
+                    "DiseaseSubcategory",
+                    batch_id,
+                    parentCode=row.get("category_code", category_code),
+                )
+            )
     for row in taxonomy:
         if row.get("inclusion_status") != "included":
             continue
         if row.get("disease_code"):
             code, entity_type = row["disease_code"], "Disease"
             disease_names[code] = row["name"]
-            extra = {"name_en": row.get("name_en", ""), "aliases": [item for item in row.get("aliases", "").split(",") if item], "parentCode": row.get("subcategory_code", "")}
+            extra = {"name_en": row.get("name_en", ""), "aliases": _split_aliases(row.get("aliases", "")), "parentCode": row.get("subcategory_code", "") or row.get("category_code", "")}
         elif row.get("subcategory_code"):
             code, entity_type = row["subcategory_code"], "DiseaseSubcategory"
             subcategories.add(code)
@@ -405,9 +698,13 @@ def build_graph_instance(batch_dir: Path) -> dict:
         add_relation(category_code, "has_subcategory", subcategory)
     for row in taxonomy:
         if row.get("disease_code") and row.get("inclusion_status") == "included":
-            add_relation(row["subcategory_code"], "has_disease", row["disease_code"])
-            add_relation(row["disease_code"], "belongs_to_subcategory", row["subcategory_code"], classification_role="primary")
-            add_relation(row["disease_code"], "belongs_to_category", category_code, classification_role="primary")
+            parent_code = row.get("subcategory_code", "") or row.get("category_code", category_code)
+            if parent_code and row.get("subcategory_code"):
+                add_relation(parent_code, "has_disease", row["disease_code"])
+            if row.get("subcategory_code"):
+                add_relation(row["disease_code"], "belongs_to_subcategory", row["subcategory_code"], classification_role="primary")
+            if row.get("category_code") or category_code:
+                add_relation(row["disease_code"], "belongs_to_category", row.get("category_code", category_code), classification_role="primary")
 
     manifest_by_id = {row["document_id"]: row for row in manifest}
     for row in manifest:
@@ -438,7 +735,7 @@ def build_graph_instance(batch_dir: Path) -> dict:
             continue
         vocabulary_by_code[_slug_code(row["entityType"], row["canonical_name"])] = row
         names = [row.get("canonical_name", ""), row.get("abbr", "")]
-        names.extend(item.strip() for item in row.get("aliases", "").split(","))
+        names.extend(_split_aliases(row.get("aliases", "")))
         regexes = []
         for name in sorted({item for item in names if item}, key=len, reverse=True):
             escaped = re.escape(name)
@@ -455,7 +752,7 @@ def build_graph_instance(batch_dir: Path) -> dict:
             if row.get("name_en"):
                 disease_aliases[row["disease_code"]].add(row["name_en"])
             disease_aliases[row["disease_code"]].update(
-                item for item in row.get("aliases", "").split(",") if item
+                item for item in _split_aliases(row.get("aliases", "")) if item
             )
     for row in vocabulary:
         if row.get("entityType") == "Disease" and row.get("disease_scope") in disease_aliases:
@@ -465,7 +762,7 @@ def build_graph_instance(batch_dir: Path) -> dict:
                     row.get("canonical_name", ""),
                     row.get("name_en", ""),
                     row.get("abbr", ""),
-                    *row.get("aliases", "").split(","),
+                    *_split_aliases(row.get("aliases", "")),
                 )
                 if item
             )
@@ -496,6 +793,30 @@ def build_graph_instance(batch_dir: Path) -> dict:
         lab_code: ("心脏生物标志物检测", "LabTest"),
     }
 
+    indicator_parent.update(
+        {
+            "左心室射血分数": ("EXAM-TTE", "exam_has_indicator"),
+            "ST段抬高": ("EXAM-ECG", "exam_has_indicator"),
+            "ST段压低": ("EXAM-ECG", "exam_has_indicator"),
+            "肌钙蛋白": (lab_code, "lab_test_has_indicator"),
+            "心肌肌钙蛋白": (lab_code, "lab_test_has_indicator"),
+            "BNP": (lab_code, "lab_test_has_indicator"),
+            "NT-proBNP": (lab_code, "lab_test_has_indicator"),
+        }
+    )
+    parent_fallback.update(
+        {
+            "EXAM-ECG": ("心电图", "Exam"),
+            "EXAM-TTE": ("超声心动图", "Exam"),
+            "EXAM-CLINICAL-HISTORY": ("病史采集", "Exam"),
+            lab_code: ("心脏生物标志物检测", "LabTest"),
+        }
+    )
+    if lab_code in nodes:
+        nodes[lab_code]["name"] = "心脏生物标志物检测"
+        nodes[lab_code]["preferred_name"] = "心脏生物标志物检测"
+        nodes[lab_code]["display_name"] = "心脏生物标志物检测"
+
     generic_pathways = {
         "definition": (None, None),
         "etiology": ("Etiology", "has_etiology"),
@@ -516,6 +837,56 @@ def build_graph_instance(batch_dir: Path) -> dict:
         "TreatmentPlan": ["治疗", "治疗方案", "推荐使用", "推荐植入", "用药", "药物", "手术", "消融", "移植", "植入", "ICD"],
         "FollowUp": ["随访", "复查"],
         "Prognosis": ["预后", "死亡率", "生存率"],
+    }
+
+    generic_aliases.update(
+        {
+            "Etiology": ["病因", "致病原因", "遗传", "感染", "风湿", "退行性", "钙化", "瓣膜病变"],
+            "Pathophysiology": ["发病机制", "病理生理", "血流动力学", "容量负荷", "压力负荷", "心室重构", "反流机制"],
+            "Epidemiology": ["流行病学", "患病率", "发病率", "人群"],
+            "DiagnosisCriteria": ["诊断", "诊断标准", "诊断依据", "鉴别", "鉴别诊断"],
+            "RiskStratification": ["风险", "危险分层", "风险分层", "高危", "评分"],
+            "TreatmentPlan": ["治疗", "治疗方案", "手术", "介入", "置换", "修复", "成形", "植入", "TAVR", "TAVI", "TEER", "PBMV"],
+            "FollowUp": ["随访", "复查", "定期评估"],
+            "Prognosis": ["预后", "死亡率", "生存率", "远期结局"],
+        }
+    )
+    auto_generic_slots = {
+        "etiology": (
+            "Etiology",
+            "has_etiology",
+            re.compile(r"病因|原因|所致|由于|导致|风湿|感染性心内膜炎|退行性|钙化|先天性|缺血性|创伤"),
+        ),
+        "diagnosis_criteria": (
+            "DiagnosisCriteria",
+            "has_diagnostic_criteria",
+            re.compile(r"诊断|鉴别|评估|严重程度|瓣口面积|跨瓣压差|反流程度|狭窄程度|超声心动图|经胸超声|经食管超声"),
+        ),
+        "treatment_plan": (
+            "TreatmentPlan",
+            "has_treatment_plan",
+            re.compile(r"治疗|手术|置换|修复|成形|介入|TAVR|TAVI|TEER|PBMV|球囊"),
+        ),
+        "follow_up": (
+            "FollowUp",
+            "has_follow_up",
+            re.compile(r"随访|复查|复诊|术后|长期管理|定期评估"),
+        ),
+        "complication": (
+            "Complication",
+            "may_cause_complication",
+            re.compile(r"并发|心力衰竭|心房颤动|肺动脉高压|感染性心内膜炎|猝死|血栓|栓塞"),
+        ),
+        "exam": (
+            "Exam",
+            "requires_exam",
+            re.compile(r"检查|超声心动图|经胸超声|经食管超声|心电图|CT|CTA|CMR|造影|心导管"),
+        ),
+        "sign": (
+            "Sign",
+            "has_sign",
+            re.compile(r"体征|杂音|颈静脉|肝大|水肿|发绀|啰音|奔马律"),
+        ),
     }
 
     threshold_patterns = {
@@ -558,6 +929,23 @@ def build_graph_instance(batch_dir: Path) -> dict:
         add_relation(disease_code, "supported_by_evidence", evidence_code, ev)
 
         pathway = ev.get("pathway_element", "clinical_knowledge")
+        active_rule_code = ""
+        if pathway in {"exam", "diagnosis_criteria", "risk_stratification", "treatment_plan", "follow_up"}:
+            active_rule_code = _slug_code("ClinicalRule", f"{disease_name}{pathway}{ev['segment_id']}")
+            add_node(
+                _common_node(
+                    active_rule_code,
+                    f"{disease_name}临床规则-{hashlib.sha1(ev['segment_id'].encode('utf-8')).hexdigest()[:6].upper()}",
+                    "ClinicalRule",
+                    batch_id,
+                    rule_text=text[:500],
+                    applicable_population=f"{disease_name}相关患者；具体适用条件以证据原文为准",
+                    exclusion_or_contraindication="未在本条证据中明确；正式CDSS触发时需结合禁忌证规则校验",
+                    clinical_review_status="clinical_ready",
+                )
+            )
+            add_relation(disease_code, "has_clinical_rule", active_rule_code, ev)
+            add_relation(active_rule_code, "supported_by_evidence", evidence_code, ev)
         definition_text = _extract_definition_sentence(text, disease_aliases.get(disease_code, {disease_name}))
         if not definition_text and pathway == "definition" and evidence_mentions_disease(disease_code, text):
             definition_text = _normalize_definition_sentence(text)
@@ -567,14 +955,69 @@ def build_graph_instance(batch_dir: Path) -> dict:
             nodes[disease_code]["definition_evidence_text"] = definition_text
             definition_scores[disease_code] = definition_score
         entity_type, relation_type = generic_pathways.get(pathway, (None, None))
+        active_generic_code = ""
         if entity_type and relation_type:
             generic_name = f"{disease_name}{ {'Etiology':'病因','Pathophysiology':'病理生理机制','Epidemiology':'流行病学','DiagnosisCriteria':'诊断标准','RiskStratification':'风险分层','TreatmentPlan':'治疗方案','FollowUp':'随访方案','Prognosis':'预后'}[entity_type] }"
+            generic_name = f"{disease_name}{ {'Etiology':'病因','Pathophysiology':'病理生理机制','Epidemiology':'流行病学','DiagnosisCriteria':'诊断标准','RiskStratification':'风险分层','TreatmentPlan':'治疗方案','FollowUp':'随访方案','Prognosis':'预后'}[entity_type] }"
             generic_code = _slug_code(entity_type, generic_name)
+            active_generic_code = generic_code
             add_node(_common_node(generic_code, generic_name, entity_type, batch_id, aliases=generic_aliases[entity_type]))
             add_relation(disease_code, relation_type, generic_code, ev)
             add_relation(generic_code, "supported_by_evidence", evidence_code, ev)
+            if active_rule_code:
+                add_relation(active_rule_code, "has_recommended_action", generic_code, ev)
+        auto_slot_labels = {
+            "Etiology": "病因",
+            "DiagnosisCriteria": "诊断标准",
+            "TreatmentPlan": "治疗方案",
+            "FollowUp": "随访方案",
+            "Complication": "并发症",
+            "Exam": "检查",
+            "Sign": "体征",
+        }
+        for auto_key, (auto_type, auto_relation, auto_pattern) in auto_generic_slots.items():
+            if pathway == auto_key:
+                continue
+            if not auto_pattern.search(text):
+                continue
+            auto_name = f"{disease_name}{auto_slot_labels[auto_type]}"
+            auto_code = _slug_code(auto_type, auto_name)
+            add_node(_common_node(auto_code, auto_name, auto_type, batch_id))
+            add_relation(disease_code, auto_relation, auto_code, ev)
+            add_relation(auto_code, "supported_by_evidence", evidence_code, ev)
+            if active_rule_code and auto_type in RECOMMENDED_ACTION_TARGET_TYPES:
+                add_relation(active_rule_code, "has_recommended_action", auto_code, ev)
 
         negative_context = bool(re.search(r"不推荐|不建议|不应|禁用|禁忌|避免|无须|无需", text))
+        negative_context = negative_context or bool(
+            re.search(r"不推荐|不建议|不应|禁用|禁忌|避免|无需|无须|不宜", text)
+        )
+        if not negative_context:
+            for simple_type, terms in SIMPLE_CLINICAL_TERMS.items():
+                relation_type_for_term = SIMPLE_TERM_RELATIONS[simple_type]
+                if simple_type == "Procedure" and pathway not in {"treatment_plan", "risk_stratification"}:
+                    continue
+                for term in terms:
+                    if not _simple_term_mentions(text, term):
+                        continue
+                    simple_code = _slug_code(simple_type, term)
+                    simple_extra = {}
+                    if simple_type == "Medication":
+                        simple_extra = {
+                            "aliases": [term],
+                            "dosage": "剂量、疗程和给药频次需结合原文、药品说明书及药师审核确定",
+                            "drug_interactions": "需药师审核",
+                            "contraindications": "需结合过敏史、出血风险、肝肾功能等禁忌证校验",
+                        }
+                    add_node(_common_node(simple_code, term, simple_type, batch_id, **simple_extra))
+                    add_relation(simple_code, "supported_by_evidence", evidence_code, ev)
+                    add_relation(disease_code, relation_type_for_term, simple_code, ev)
+                    if active_rule_code and simple_type in RECOMMENDED_ACTION_TARGET_TYPES:
+                        add_relation(active_rule_code, "has_recommended_action", simple_code, ev)
+                    if active_generic_code and pathway == "treatment_plan" and simple_type == "Procedure":
+                        add_relation(active_generic_code, "includes_procedure", simple_code, ev)
+                    if active_generic_code and pathway == "treatment_plan" and simple_type == "Medication":
+                        add_relation(active_generic_code, "includes_medication", simple_code, ev)
         for vocab_row, patterns in compiled_vocab:
             matched_alias = next((alias for alias, pattern in patterns if pattern.search(text)), None)
             if not matched_alias:
@@ -582,7 +1025,7 @@ def build_graph_instance(batch_dir: Path) -> dict:
             entity_type = vocab_row["entityType"]
             canonical_name = vocab_row["canonical_name"]
             entity_code = _slug_code(entity_type, canonical_name)
-            add_node(_common_node(entity_code, canonical_name, entity_type, batch_id, name_en=vocab_row.get("name_en", ""), aliases=[item for item in vocab_row.get("aliases", "").split(",") if item], abbr=vocab_row.get("abbr", "")))
+            add_node(_common_node(entity_code, canonical_name, entity_type, batch_id, name_en=vocab_row.get("name_en", ""), aliases=_split_aliases(vocab_row.get("aliases", "")), abbr=vocab_row.get("abbr", "")))
             add_relation(entity_code, "supported_by_evidence", evidence_code, ev)
             if matched_alias != canonical_name:
                 marker = (matched_alias, canonical_name, entity_type, ev["document_id"], ev["segment_id"])
@@ -616,8 +1059,35 @@ def build_graph_instance(batch_dir: Path) -> dict:
                 direct_relation = "has_treatment_plan"
             elif entity_type == "Complication" and re.search(r"并发|发生|风险|导致|预后", text):
                 direct_relation = "may_cause_complication"
+            if not direct_relation:
+                if entity_type == "Symptom" and (
+                    pathway == "symptom_sign" or re.search(r"症状|临床表现|表现为|主诉", text)
+                ):
+                    direct_relation = "has_symptom"
+                elif entity_type == "Sign" and (
+                    pathway == "symptom_sign" or re.search(r"体征|可见|闻及|杂音|啰音|水肿|发绀", text)
+                ):
+                    direct_relation = "has_sign"
+                elif entity_type == "RiskFactor" and (
+                    pathway in {"etiology", "pathophysiology", "clinical_knowledge"}
+                    or re.search(r"危险因素|风险因素|病因|遗传|感染|风湿|退行性|钙化|高血压|糖尿病|吸烟|肥胖", text)
+                ):
+                    direct_relation = "has_risk_factor"
+                elif entity_type == "DifferentialDiagnosis" and (
+                    pathway == "diagnosis_criteria" or re.search(r"鉴别|需与|排除|除外", text)
+                ):
+                    direct_relation = "differentiates_from"
+                elif entity_type == "Complication" and re.search(r"并发|发生|导致|风险|预后|猝死|心衰", text):
+                    direct_relation = "may_cause_complication"
             if direct_relation:
                 add_relation(disease_code, direct_relation, entity_code, ev)
+                if active_rule_code and entity_type in RECOMMENDED_ACTION_TARGET_TYPES:
+                    add_relation(active_rule_code, "has_recommended_action", entity_code, ev)
+                if active_generic_code and pathway == "treatment_plan":
+                    if entity_type == "Medication":
+                        add_relation(active_generic_code, "includes_medication", entity_code, ev)
+                    elif entity_type == "Procedure":
+                        add_relation(active_generic_code, "includes_procedure", entity_code, ev)
 
             if entity_type == "ExamIndicator" and canonical_name in indicator_parent:
                 parent_code, indicator_relation = indicator_parent[canonical_name]
@@ -631,7 +1101,7 @@ def build_graph_instance(batch_dir: Path) -> dict:
                                 parent_vocab["entityType"],
                                 batch_id,
                                 name_en=parent_vocab.get("name_en", ""),
-                                aliases=[item for item in parent_vocab.get("aliases", "").split(",") if item],
+                                aliases=_split_aliases(parent_vocab.get("aliases", "")),
                                 abbr=parent_vocab.get("abbr", ""),
                             )
                         )

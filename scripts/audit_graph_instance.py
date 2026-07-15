@@ -355,7 +355,7 @@ def _mentions(text: str, node: dict) -> bool:
     names = [node.get("name", ""), node.get("name_en", ""), node.get("abbr", "")]
     aliases = node.get("aliases", [])
     if isinstance(aliases, str):
-        aliases = [item for item in aliases.split(",") if item]
+        aliases = [item for item in re.split(r"[,，;；、]", aliases) if item]
     names.extend(aliases)
     for name in (item for item in names if item):
         if name.isascii() and len(name) <= 8:
@@ -364,6 +364,62 @@ def _mentions(text: str, node: dict) -> bool:
         elif name.lower() in text.lower():
             return True
     return False
+
+
+SLOT_CONTAINER_TYPES = {
+    "Definition",
+    "Etiology",
+    "Pathophysiology",
+    "Epidemiology",
+    "Symptom",
+    "Sign",
+    "Exam",
+    "LabTest",
+    "DiagnosisCriteria",
+    "RiskStratification",
+    "TreatmentPlan",
+    "FollowUp",
+    "Prognosis",
+    "Prevention",
+    "Complication",
+}
+
+RELATION_SLOT_CUES = {
+    "has_definition": ("定义", "是指", "是一种", "概述", "definition"),
+    "has_etiology": ("病因", "病因和发病机制", "原因", "所致", "导致", "由", "etiology"),
+    "has_pathophysiology": ("病理生理", "发病机制", "机制", "血流动力学", "功能障碍", "pathophysiology"),
+    "has_epidemiology": ("流行病学", "患病率", "发病率", "人群", "epidemiology"),
+    "has_symptom": ("症状", "表现", "呼吸困难", "胸痛", "心悸", "晕厥", "乏力"),
+    "has_sign": ("体征", "杂音", "啰音", "奔马律", "颈静脉", "水肿", "发绀", "P2"),
+    "requires_exam": ("检查", "超声", "心电图", "CT", "MRI", "造影", "胸片", "TTE", "TEE", "CMR"),
+    "requires_lab_test": ("检验", "化验", "实验室", "血常规", "肌钙蛋白", "BNP", "NT-proBNP"),
+    "has_diagnostic_criteria": ("诊断", "诊断标准", "可诊断", "诊断依据", "criteria"),
+    "has_risk_stratification": ("风险", "分层", "评分", "危险", "EuroSCORE", "STS", "risk"),
+    "has_treatment_plan": ("治疗", "处理", "手术", "介入", "药物", "置换", "修复", "treatment"),
+    "has_follow_up": ("随访", "复查", "监测", "follow-up", "follow up"),
+    "has_prognosis": ("预后", "死亡", "生存", "复发", "prognosis"),
+    "has_prevention": ("预防", "二级预防", "生活方式", "prevention"),
+    "may_cause_complication": ("并发症", "心力衰竭", "心衰", "心律失常", "栓塞", "肺动脉高压", "感染性心内膜炎", "出血", "死亡", "complication"),
+}
+
+
+def _is_slot_container_target(source: dict, target: dict) -> bool:
+    if target.get("entityType") not in SLOT_CONTAINER_TYPES:
+        return False
+    source_name = str(source.get("name", "")).strip()
+    target_name = str(target.get("name", "")).strip()
+    return bool(source_name and target_name.startswith(source_name))
+
+
+def _slot_anchor_matches(text: str, relation_type: str, source: dict, target: dict) -> bool:
+    if not _is_slot_container_target(source, target):
+        return False
+    cues = RELATION_SLOT_CUES.get(relation_type, ())
+    if not cues:
+        return False
+    has_source_anchor = _mentions(text, source)
+    has_slot_cue = any(str(cue).lower() in text.lower() for cue in cues)
+    return has_source_anchor and has_slot_cue
 
 
 def _medication_name_error(node: dict) -> str:
@@ -667,10 +723,14 @@ def audit_graph(batch_dir: Path) -> dict:
 
     target_match_count = 0
     target_match_failures = []
+    target_match_failure_rows = []
     for rel in core_relations:
         texts = _relation_evidence_texts(rel)
+        source = node_by_code.get(rel.get("source_code"), {})
         target = node_by_code.get(rel.get("target_code"), {})
         matched = any(_mentions(text, target) for text in texts)
+        if not matched:
+            matched = any(_slot_anchor_matches(text, rel.get("relationType", ""), source, target) for text in texts)
         if not matched and target.get("entityType") == "Medication":
             matched = any(
                 _mentions(text, specific_node)
@@ -687,6 +747,24 @@ def audit_graph(batch_dir: Path) -> dict:
             target_match_count += 1
         else:
             target_match_failures.append(rel["id"])
+            target = node_by_code.get(rel.get("target_code"), {})
+            evidence_texts = _relation_evidence_texts(rel)
+            target_match_failure_rows.append(
+                {
+                    "relation_id": rel.get("id", ""),
+                    "relation_type": rel.get("relationType", ""),
+                    "source_code": rel.get("source_code", ""),
+                    "source_name": source.get("name", ""),
+                    "source_type": source.get("entityType", ""),
+                    "target_code": rel.get("target_code", ""),
+                    "target_name": target.get("name", ""),
+                    "target_type": target.get("entityType", ""),
+                    "target_aliases": "；".join(str(item) for item in _as_list(target.get("aliases"))),
+                    "evidence_sample": evidence_texts[0][:300] if evidence_texts else "",
+                    "error_type": "target_name_or_alias_not_found_in_relation_evidence",
+                    "solution": "优先补充目标实体别名；若证据不支持该目标，需重新选择证据或删除该关系。",
+                }
+            )
     target_match_rate = target_match_count / len(core_relations) if core_relations else 1.0
 
     disease_nodes = [node for node in nodes if node.get("entityType") == "Disease"]
@@ -1043,6 +1121,24 @@ def audit_graph(batch_dir: Path) -> dict:
             "solution",
         ),
         semantic_shell_rows,
+    )
+    _write_csv(
+        audit_dir / "target_match_failure_register.csv",
+        (
+            "relation_id",
+            "relation_type",
+            "source_code",
+            "source_name",
+            "source_type",
+            "target_code",
+            "target_name",
+            "target_type",
+            "target_aliases",
+            "evidence_sample",
+            "error_type",
+            "solution",
+        ),
+        target_match_failure_rows,
     )
     _write_csv(
         audit_dir / "treatment_plan_actionability_register.csv",

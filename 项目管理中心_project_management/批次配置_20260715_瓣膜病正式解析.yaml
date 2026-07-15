@@ -1,0 +1,175 @@
+batch:
+  batch_id: 20260715_瓣膜病正式解析
+  batch_name: 瓣膜病正式解析
+  created_date: "2026-07-15"
+  purpose: 教材骨架与指南PDF双维度正式解析
+
+scope:
+  top_specialty: 心血管内科
+  disease_category: 瓣膜病
+  scope_type: 疾病大类
+  scope_target:
+    - 瓣膜病
+    - 心脏瓣膜病
+    - 瓣膜性心脏病
+  source_aliases:
+    - 主动脉瓣狭窄
+    - 主动脉瓣反流
+    - 二尖瓣狭窄
+    - 二尖瓣反流
+    - 三尖瓣疾病
+    - 三尖瓣反流
+    - 肺动脉瓣疾病
+    - 肺动脉瓣狭窄
+    - 多瓣膜病
+    - 风湿性心脏瓣膜病
+    - 风湿热
+    - 人工瓣膜
+    - 瓣膜置换
+    - 经导管主动脉瓣置换术
+    - 经导管主动脉瓣植入术
+    - 经导管二尖瓣缘对缘修复术
+    - 球囊二尖瓣成形术
+    - TAVR
+    - TAVI
+    - TEER
+
+source_roots:
+  guideline_roots:
+    - E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/诊疗指南
+  textbook_roots:
+    - E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/书籍教材
+  terminology_roots:
+    - E:/BigMouse/0.CDSS文献诊疗指南材料PDF/AI专科知识图谱生成/术语字典
+
+output:
+  output_root: E:/BigMouse/0.CDSS文献诊疗指南材料PDF/AI专科知识图谱生成/心血管内科文献集合
+
+source_policy:
+  source_scope_aliases:
+    - 瓣膜
+    - 主动脉瓣
+    - 二尖瓣
+    - 三尖瓣
+    - 肺动脉瓣
+    - TAVR
+    - TAVI
+    - TEER
+  inclusion_priority:
+    P0: 教材骨架来源，固定纳入《内科学（第10版）》
+    P1: 指南、专家共识、临床路径，优先用于诊断、治疗、手术/介入、禁忌和随访证据
+    P2: 护理宣教、患者教育、边缘相关资料，只能补随访/宣教，不作为核心推荐等级证据
+  exclusion_rules:
+    - 名称含“非瓣膜性心房颤动”且主题不是瓣膜病者，不作为瓣膜病核心指南
+    - 单纯感染性心内膜炎资料只在人工瓣膜心内膜炎或瓣膜手术并发症场景引用
+
+taxonomy_rows:
+  - specialty_code: CARD
+    category_code: CARD-VHD
+    subcategory_code: ""
+    disease_code: DIS-CARD-VHD
+    name: 心脏瓣膜病
+    name_en: Valvular Heart Disease
+    aliases: 瓣膜病；瓣膜性心脏病；VHD
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-VHD
+    subcategory_code: AORTIC
+    disease_code: DIS-CARD-VHD-AS
+    name: 主动脉瓣狭窄
+    name_en: Aortic Stenosis
+    aliases: AS；主动脉瓣口狭窄
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-VHD
+    subcategory_code: AORTIC
+    disease_code: DIS-CARD-VHD-AR
+    name: 主动脉瓣反流
+    name_en: Aortic Regurgitation
+    aliases: AR；主动脉瓣关闭不全
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-VHD
+    subcategory_code: MITRAL
+    disease_code: DIS-CARD-VHD-MS
+    name: 二尖瓣狭窄
+    name_en: Mitral Stenosis
+    aliases: MS
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-VHD
+    subcategory_code: MITRAL
+    disease_code: DIS-CARD-VHD-MR
+    name: 二尖瓣反流
+    name_en: Mitral Regurgitation
+    aliases: MR；二尖瓣关闭不全
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-VHD
+    subcategory_code: TRICUSPID
+    disease_code: DIS-CARD-VHD-TR
+    name: 三尖瓣反流
+    name_en: Tricuspid Regurgitation
+    aliases: TR；三尖瓣关闭不全
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-VHD
+    subcategory_code: PULMONARY
+    disease_code: DIS-CARD-VHD-PS
+    name: 肺动脉瓣狭窄
+    name_en: Pulmonary Valve Stenosis
+    aliases: PS；肺动脉瓣疾病
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-VHD
+    subcategory_code: MULTI
+    disease_code: DIS-CARD-VHD-MULTI
+    name: 多瓣膜病
+    name_en: Multiple Valvular Heart Disease
+    aliases: 联合瓣膜病；多瓣膜损害
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-VHD
+    subcategory_code: RHEUMATIC
+    disease_code: DIS-CARD-VHD-RHD
+    name: 风湿性心脏瓣膜病
+    name_en: Rheumatic Valvular Heart Disease
+    aliases: 风湿性心脏病；风湿性瓣膜病
+    inclusion_status: included
+
+controlled_vocabulary_rows:
+  - canonical_name: 经导管主动脉瓣置换术
+    name_en: Transcatheter Aortic Valve Replacement
+    abbr: TAVR
+    aliases: TAVI；经导管主动脉瓣植入术；经导管主动脉瓣置入术
+    entityType: Procedure
+    disease_scope: 瓣膜病
+    source: batch_config
+  - canonical_name: 经导管二尖瓣缘对缘修复术
+    name_en: Transcatheter Edge-to-Edge Repair
+    abbr: TEER
+    aliases: 二尖瓣缘对缘修复；M-TEER
+    entityType: Procedure
+    disease_scope: 瓣膜病
+    source: batch_config
+  - canonical_name: 经皮球囊二尖瓣成形术
+    name_en: Percutaneous Balloon Mitral Valvuloplasty
+    abbr: PBMV
+    aliases: 球囊二尖瓣成形术；经皮二尖瓣球囊成形术
+    entityType: Procedure
+    disease_scope: 瓣膜病
+    source: batch_config
+
+execution_permissions:
+  allow_neo4j_write: false
+  allow_run_import_scripts: false
+  allow_external_web: false
+
+quality_gates:
+  required_textbook_skeleton_review: true
+  required_guideline_pdf_parse: true
+  required_source_manifest: true
+  required_evidence_chain: true
+  required_g1_audit: true
+  required_g2_audit_before_neo4j: true
+  required_server_postcheck_after_import: true

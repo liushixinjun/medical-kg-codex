@@ -1,0 +1,4 @@
+﻿canonical_name,name_en,abbr,aliases,entityType,disease_scope,source
+经导管主动脉瓣置换术,Transcatheter Aortic Valve Replacement,TAVR,TAVI；经导管主动脉瓣植入术；经导管主动脉瓣置入术,Procedure,瓣膜病,batch_config
+经导管二尖瓣缘对缘修复术,Transcatheter Edge-to-Edge Repair,TEER,二尖瓣缘对缘修复；M-TEER,Procedure,瓣膜病,batch_config
+经皮球囊二尖瓣成形术,Percutaneous Balloon Mitral Valvuloplasty,PBMV,球囊二尖瓣成形术；经皮二尖瓣球囊成形术,Procedure,瓣膜病,batch_config

@@ -33,6 +33,9 @@ __pycache__/
 **/*.clean.txt
 **/page_audit.jsonl
 **/segment_index.jsonl
+**/segment_index_docx.jsonl
+**/guideline_evidence_index.jsonl
+**/render_samples/
 
 # Specialty graph generated artifacts: keep root docs separately, do not track heavy batch outputs by default
 心血管内科文献集合/00_foundation_skeleton/
