@@ -643,6 +643,11 @@ def build_graph_instance(batch_dir: Path) -> dict:
         "PULMONARY": "肺动脉瓣疾病",
         "MULTI": "多瓣膜病",
         "RHEUMATIC": "风湿性瓣膜病",
+        "PAH": "动脉性肺动脉高压",
+        "CTEPH": "慢性血栓栓塞性肺动脉高压",
+        "LEFT_HEART": "左心疾病相关肺高压",
+        "LUNG_DISEASE": "肺部疾病和低氧相关肺高压",
+        "CRISIS": "肺动脉高压危象",
     }
     specialty_code = next((row.get("specialty_code", "") for row in taxonomy if row.get("specialty_code")), "CARD")
     category_code = next((row.get("category_code", "") for row in taxonomy if row.get("category_code")), "")

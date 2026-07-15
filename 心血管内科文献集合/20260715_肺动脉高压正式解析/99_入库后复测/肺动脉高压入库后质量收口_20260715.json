@@ -1,0 +1,12 @@
+{
+  "batch_id": "20260715_肺动脉高压正式解析",
+  "removed_polluted_rule_nodes_local": 25,
+  "removed_polluted_relations_local": 143,
+  "before_node_count": 2282,
+  "after_node_count": 2264,
+  "before_relation_count": 12464,
+  "after_relation_count": 12335,
+  "polluted_rule_codes_removed": 25,
+  "diagnosis_components_added_or_kept": 7,
+  "deleted_server_nodes": 25
+}

@@ -1,0 +1,9 @@
+﻿canonical_name,name_en,abbr,aliases,entityType,disease_scope,source
+右心导管检查,Right Heart Catheterization,RHC,右心导管；右心漂浮导管检查,Exam,肺动脉高压,batch_config
+平均肺动脉压,Mean Pulmonary Arterial Pressure,mPAP,平均肺动脉压力,ExamIndicator,肺动脉高压,batch_config
+肺动脉楔压,Pulmonary Arterial Wedge Pressure,PAWP,肺毛细血管楔压；PCWP,ExamIndicator,肺动脉高压,batch_config
+肺血管阻力,Pulmonary Vascular Resistance,PVR,肺循环阻力,ExamIndicator,肺动脉高压,batch_config
+内皮素受体拮抗剂,Endothelin Receptor Antagonist,ERA,内皮素受体阻滞剂,Medication,肺动脉高压,batch_config
+磷酸二酯酶5抑制剂,Phosphodiesterase Type 5 Inhibitor,PDE5i,PDE5抑制剂；PDE-5抑制剂,Medication,肺动脉高压,batch_config
+前列环素类似物,Prostacyclin Analogue,PCA,前列环素类药物；前列环素通路药物,Medication,肺动脉高压,batch_config
+可溶性鸟苷酸环化酶刺激剂,Soluble Guanylate Cyclase Stimulator,sGC刺激剂,鸟苷酸环化酶刺激剂；sGC stimulator,Medication,肺动脉高压,batch_config

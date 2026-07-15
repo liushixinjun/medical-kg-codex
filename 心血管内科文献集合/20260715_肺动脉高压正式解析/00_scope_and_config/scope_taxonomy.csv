@@ -1,0 +1,11 @@
+﻿specialty_code,category_code,subcategory_code,disease_code,name,name_en,aliases,inclusion_status
+CARD,CARD-PH,,DIS-CARD-PH,肺动脉高压,Pulmonary Hypertension,肺高压；PH,included
+CARD,CARD-PH,PAH,DIS-CARD-PH-PAH,动脉性肺动脉高压,Pulmonary Arterial Hypertension,PAH；肺动脉性肺高压,included
+CARD,CARD-PH,PAH,DIS-CARD-PH-IPAH,特发性肺动脉高压,Idiopathic Pulmonary Arterial Hypertension,IPAH；特发性PAH,included
+CARD,CARD-PH,PAH,DIS-CARD-PH-HPAH,遗传性肺动脉高压,Heritable Pulmonary Arterial Hypertension,HPAH；遗传性PAH；家族性肺动脉高压,included
+CARD,CARD-PH,PAH,DIS-CARD-PH-CTD,结缔组织病相关肺动脉高压,Connective Tissue Disease Associated Pulmonary Arterial Hypertension,CTD-PAH；结缔组织病相关PAH；结缔组织病；系统性硬化；系统性硬化症；硬皮病；系统性硬化相关肺动脉高压,included
+CARD,CARD-PH,PAH,DIS-CARD-PH-CHD,先天性心脏病相关肺动脉高压,Congenital Heart Disease Associated Pulmonary Arterial Hypertension,CHD-PAH；先心病相关肺动脉高压；成人先天性心脏病相关肺动脉高压；先天性心脏病相关PH；先天性心脏病；先心病；艾森曼格综合征,included
+CARD,CARD-PH,CTEPH,DIS-CARD-PH-CTEPH,慢性血栓栓塞性肺动脉高压,Chronic Thromboembolic Pulmonary Hypertension,CTEPH；慢性血栓栓塞性肺高压,included
+CARD,CARD-PH,LEFT_HEART,DIS-CARD-PH-LHD,左心疾病相关肺高压,Pulmonary Hypertension Due To Left Heart Disease,左心病相关肺高压；PH-LHD,deferred
+CARD,CARD-PH,LUNG_DISEASE,DIS-CARD-PH-LUNG,肺部疾病和低氧相关肺高压,Pulmonary Hypertension Due To Lung Disease Or Hypoxia,肺疾病相关肺高压；低氧相关肺高压,deferred
+CARD,CARD-PH,CRISIS,DIS-CARD-PH-CRISIS,肺动脉高压危象,Pulmonary Hypertensive Crisis,肺高压危象；PAH危象,deferred

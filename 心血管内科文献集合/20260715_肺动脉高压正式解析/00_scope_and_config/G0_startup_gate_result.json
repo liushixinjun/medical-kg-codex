@@ -1,0 +1,10 @@
+﻿{
+  "status": "passed",
+  "batch_id": "20260715_肺动脉高压正式解析",
+  "batch_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\20260715_肺动脉高压正式解析",
+  "included_file_count": 8,
+  "excluded_file_count": 456,
+  "dedup_count": 15,
+  "source_manifest_hash": "C5A6C0B87F79BA39D089E7DBA356BF8A04288F0579FDA212E0D3E37F6C20CBB8",
+  "created_time": "2026-07-15T12:53:14.760479+08:00"
+}

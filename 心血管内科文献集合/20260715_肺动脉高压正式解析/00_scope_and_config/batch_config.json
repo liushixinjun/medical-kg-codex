@@ -1,0 +1,18 @@
+﻿{
+  "batch_id": "20260715_肺动脉高压正式解析",
+  "specialty": "心血管内科",
+  "disease_category": "肺动脉高压",
+  "scope_type": "疾病大类",
+  "scope_target": "肺动脉高压、肺高压、肺血管疾病",
+  "guide_root": "E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/诊疗指南",
+  "textbook_root": "E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/书籍教材",
+  "output_root": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合",
+  "schema_file": "专科知识图谱Schema标准.md",
+  "schema_version": "V1.15",
+  "skill_file": "AI自动化工具-文献指南解析.md",
+  "skill_version": "UNKNOWN",
+  "source_manifest_hash": "C5A6C0B87F79BA39D089E7DBA356BF8A04288F0579FDA212E0D3E37F6C20CBB8",
+  "included_file_count": 8,
+  "excluded_file_count": 456,
+  "created_time": "2026-07-15T12:53:14.760479+08:00"
+}

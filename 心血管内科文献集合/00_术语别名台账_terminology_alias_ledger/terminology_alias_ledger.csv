@@ -6223,3 +6223,12 @@ CKMB,ckmb,肌酸激酶同工酶（CK-MB）,LabTest,LAB-CARD-CADREM-AMI-CA4C7A8A1
 肌酸激酶同工酶MB,肌酸激酶同工酶mb,肌酸激酶同工酶（CK-MB）,LabTest,LAB-CARD-CADREM-AMI-CA4C7A8A1F,BATCH-CARD-CDSS-RULE-EVIDENCE-REFINE-20260714-001,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260714_CDSS总精修\07_命名别名规范化_CKMB与药物.json,aliases
 肌酸激酶MB,肌酸激酶mb,肌酸激酶同工酶（CK-MB）,LabTest,LAB-CARD-CADREM-AMI-CA4C7A8A1F,BATCH-CARD-CDSS-RULE-EVIDENCE-REFINE-20260714-001,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260714_CDSS总精修\07_命名别名规范化_CKMB与药物.json,aliases
 肌酸激酶MB同工酶,肌酸激酶mb同工酶,肌酸激酶同工酶（CK-MB）,LabTest,LAB-CARD-CADREM-AMI-CA4C7A8A1F,BATCH-CARD-CDSS-RULE-EVIDENCE-REFINE-20260714-001,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260714_CDSS总精修\07_命名别名规范化_CKMB与药物.json,aliases
+PEA,pea,肺动脉血栓内膜剥脱术,Procedure,PROC-CARD-PH-PEA,20260715_肺动脉高压正式解析,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260715_肺动脉高压正式解析\05_data_instance\nodes_final.jsonl,aliases
+肺动脉内膜剥脱术,肺动脉内膜剥脱术,肺动脉血栓内膜剥脱术,Procedure,PROC-CARD-PH-PEA,20260715_肺动脉高压正式解析,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260715_肺动脉高压正式解析\05_data_instance\nodes_final.jsonl,aliases
+肺动脉血栓内膜剥脱,肺动脉血栓内膜剥脱,肺动脉血栓内膜剥脱术,Procedure,PROC-CARD-PH-PEA,20260715_肺动脉高压正式解析,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260715_肺动脉高压正式解析\05_data_instance\nodes_final.jsonl,aliases
+pulmonary endarterectomy,pulmonary endarterectomy,肺动脉血栓内膜剥脱术,Procedure,PROC-CARD-PH-PEA,20260715_肺动脉高压正式解析,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260715_肺动脉高压正式解析\05_data_instance\nodes_final.jsonl,aliases
+pulmonary thromboendarterectomy,pulmonary thromboendarterectomy,肺动脉血栓内膜剥脱术,Procedure,PROC-CARD-PH-PEA,20260715_肺动脉高压正式解析,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260715_肺动脉高压正式解析\05_data_instance\nodes_final.jsonl,aliases
+BPA,bpa,经皮肺动脉球囊成形术,Procedure,PROC-CARD-PH-BPA,20260715_肺动脉高压正式解析,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260715_肺动脉高压正式解析\05_data_instance\nodes_final.jsonl,aliases
+球囊肺动脉成形术,球囊肺动脉成形术,经皮肺动脉球囊成形术,Procedure,PROC-CARD-PH-BPA,20260715_肺动脉高压正式解析,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260715_肺动脉高压正式解析\05_data_instance\nodes_final.jsonl,aliases
+肺动脉球囊成形术,肺动脉球囊成形术,经皮肺动脉球囊成形术,Procedure,PROC-CARD-PH-BPA,20260715_肺动脉高压正式解析,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260715_肺动脉高压正式解析\05_data_instance\nodes_final.jsonl,aliases
+balloon pulmonary angioplasty,balloon pulmonary angioplasty,经皮肺动脉球囊成形术,Procedure,PROC-CARD-PH-BPA,20260715_肺动脉高压正式解析,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260715_肺动脉高压正式解析\05_data_instance\nodes_final.jsonl,aliases

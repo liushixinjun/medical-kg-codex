@@ -1,0 +1,17 @@
+{
+  "node_count": 2264,
+  "relation_count": 12335,
+  "disease_count": 7,
+  "non_kgnode_nodes": 0,
+  "duplicate_type_name": 0,
+  "disease_definition_empty": 0,
+  "diagnosis_criteria_without_components": 0,
+  "differential_without_details": 0,
+  "treatment_plan_without_downstream": 0,
+  "medication_class_without_specific": 0,
+  "recommendation_rels_missing_core_fields": 0,
+  "technical_name_nodes": 0,
+  "polluted_clinical_rules": 0,
+  "blocking_total": 0,
+  "status": "passed"
+}

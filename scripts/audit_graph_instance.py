@@ -352,12 +352,10 @@ def _contains_local_path(value) -> bool:
 
 
 def _mentions(text: str, node: dict) -> bool:
-    names = [node.get("name", ""), node.get("name_en", ""), node.get("abbr", "")]
-    aliases = node.get("aliases", [])
-    if isinstance(aliases, str):
-        aliases = [item for item in re.split(r"[,，;；、]", aliases) if item]
-    names.extend(aliases)
-    for name in (item for item in names if item):
+    names = [node.get("name", ""), node.get("name_en", "")]
+    names.extend(_as_list(node.get("abbr", "")))
+    names.extend(_as_list(node.get("aliases", [])))
+    for name in (str(item).strip() for item in names if str(item).strip()):
         if name.isascii() and len(name) <= 8:
             if re.search(rf"(?<![A-Za-z0-9]){re.escape(name)}(?![A-Za-z0-9])", text, re.IGNORECASE):
                 return True

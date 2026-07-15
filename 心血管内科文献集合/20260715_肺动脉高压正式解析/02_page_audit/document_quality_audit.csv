@@ -1,0 +1,9 @@
+﻿document_id,file_name,source_type,fitz_page_count,pypdf_page_count,page_count_match,accounted_page_count,parsed_page_count,nonclinical_page_count,ocr_required_page_count,page_accounting_rate,eligible_content_pass_rate,status,failure_reason
+DOC-C7CD2856344E8680,PH CN 2021.pdf,unclassified,41,41,True,41,41,0,0,1.0,1.0,parsed,
+DOC-C0DBD5588087F2F8,PH ESC 2015.pdf,guideline,58,58,True,58,56,2,0,1.0,1.0,parsed,
+DOC-DBAB434A84D3FCF6,成人先天性心脏病相关肺动脉高压诊断与治疗指南.pdf,guideline,30,30,True,30,30,0,0,1.0,1.0,parsed,
+DOC-17E858C3E29E7B39,中国肺动脉高压诊断与治疗指南（2021版）.pdf,guideline,41,41,True,41,41,0,0,1.0,1.0,parsed,
+DOC-8E0A540516C91C44,先天性心脏病相关性肺动脉高压诊治专家共识.pdf,consensus,45,45,True,45,45,0,0,1.0,1.0,parsed,
+DOC-6E23E082295DFBCD,中国 急性肺栓塞多学科团队救治中国专家共识2022.pdf,consensus,11,11,True,11,11,0,0,1.0,1.0,parsed,
+DOC-6C25179A1A6FC3F9,中国 慢性血栓栓塞性肺动脉高压诊断与治疗指南（2024版）.pdf,guideline,22,22,True,22,22,0,0,1.0,1.0,parsed,
+DOC-C0BB559FA2C8448A,《内科学（第10版）》.pdf,authoritative_textbook,982,982,True,982,966,16,0,1.0,1.0,parsed,

@@ -1,0 +1,17 @@
+﻿{
+  "document_count": 8,
+  "document_with_evidence_count": 8,
+  "disease_count": 9,
+  "evidence_count": 1512,
+  "evidence_by_disease": {
+    "DIS-CARD-PH": 512,
+    "DIS-CARD-PH-PAH": 496,
+    "DIS-CARD-PH-IPAH": 139,
+    "DIS-CARD-PH-CTD": 50,
+    "DIS-CARD-PH-HPAH": 52,
+    "DIS-CARD-PH-CHD": 128,
+    "DIS-CARD-PH-CTEPH": 126,
+    "DIS-CARD-PH-LHD": 5,
+    "DIS-CARD-PH-CRISIS": 4
+  }
+}

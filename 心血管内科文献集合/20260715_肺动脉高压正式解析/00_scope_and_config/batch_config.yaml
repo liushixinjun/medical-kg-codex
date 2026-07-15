@@ -1,0 +1,226 @@
+batch:
+  batch_id: 20260715_肺动脉高压正式解析
+  batch_name: 肺动脉高压正式解析
+  created_date: "2026-07-15"
+  purpose: 教材骨架与指南PDF双维度正式解析
+
+scope:
+  top_specialty: 心血管内科
+  disease_category: 肺动脉高压
+  scope_type: 疾病大类
+  scope_target:
+    - 肺动脉高压
+    - 肺高压
+    - 肺血管疾病
+  source_aliases:
+    - 肺动脉高压
+    - 肺高压
+    - 动脉性肺动脉高压
+    - 特发性肺动脉高压
+    - 遗传性肺动脉高压
+    - 结缔组织病相关肺动脉高压
+    - 先天性心脏病相关肺动脉高压
+    - 慢性血栓栓塞性肺动脉高压
+    - 左心疾病相关肺高压
+    - 肺部疾病相关肺高压
+    - 肺动脉高压危象
+    - 右心导管
+    - 肺血管阻力
+    - 平均肺动脉压
+    - 肺动脉楔压
+    - 肺动脉高压靶向治疗
+    - 内皮素受体拮抗剂
+    - 磷酸二酯酶5抑制剂
+    - 前列环素类似物
+    - 可溶性鸟苷酸环化酶刺激剂
+    - PAH
+    - PH
+    - CTEPH
+
+source_roots:
+  guideline_roots:
+    - E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/诊疗指南
+  textbook_roots:
+    - E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/书籍教材
+  external_authority_roots:
+    - E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/外部权威
+  terminology_roots:
+    - E:/BigMouse/0.CDSS文献诊疗指南材料PDF/AI专科知识图谱生成/术语字典
+
+output:
+  output_root: E:/BigMouse/0.CDSS文献诊疗指南材料PDF/AI专科知识图谱生成/心血管内科文献集合
+
+source_policy:
+  source_scope_aliases:
+    - 肺动脉高压
+    - 肺高压
+    - 肺血管
+    - 右心导管
+    - PAH
+    - PH
+    - CTEPH
+  inclusion_priority:
+    P0: 教材骨架来源，固定纳入《内科学（第10版）》
+    P1: 指南、专家共识、临床路径，优先用于诊断、分型、危险分层、靶向治疗、介入/手术、禁忌和随访证据
+    P2: 肺栓塞、先心病、左心疾病等交叉资料，仅在肺动脉高压直接相关场景引用
+  exclusion_rules:
+    - 单纯急性肺栓塞资料不得整体作为肺动脉高压核心指南，只能用于 CTEPH 或鉴别诊断相关证据
+    - 单纯先天性心脏病资料只有明确涉及肺动脉高压时才纳入
+    - 单纯呼吸系统疾病资料只有明确涉及肺高压时才纳入
+
+taxonomy_rows:
+  - specialty_code: CARD
+    category_code: CARD-PH
+    subcategory_code: ""
+    disease_code: DIS-CARD-PH
+    name: 肺动脉高压
+    name_en: Pulmonary Hypertension
+    aliases: 肺高压；PH
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-PH
+    subcategory_code: PAH
+    disease_code: DIS-CARD-PH-PAH
+    name: 动脉性肺动脉高压
+    name_en: Pulmonary Arterial Hypertension
+    aliases: PAH；肺动脉性肺高压
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-PH
+    subcategory_code: PAH
+    disease_code: DIS-CARD-PH-IPAH
+    name: 特发性肺动脉高压
+    name_en: Idiopathic Pulmonary Arterial Hypertension
+    aliases: IPAH；特发性PAH
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-PH
+    subcategory_code: PAH
+    disease_code: DIS-CARD-PH-HPAH
+    name: 遗传性肺动脉高压
+    name_en: Heritable Pulmonary Arterial Hypertension
+    aliases: HPAH；遗传性PAH；家族性肺动脉高压
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-PH
+    subcategory_code: PAH
+    disease_code: DIS-CARD-PH-CTD
+    name: 结缔组织病相关肺动脉高压
+    name_en: Connective Tissue Disease Associated Pulmonary Arterial Hypertension
+    aliases: CTD-PAH；结缔组织病相关PAH
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-PH
+    subcategory_code: PAH
+    disease_code: DIS-CARD-PH-CHD
+    name: 先天性心脏病相关肺动脉高压
+    name_en: Congenital Heart Disease Associated Pulmonary Arterial Hypertension
+    aliases: CHD-PAH；先心病相关肺动脉高压
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-PH
+    subcategory_code: CTEPH
+    disease_code: DIS-CARD-PH-CTEPH
+    name: 慢性血栓栓塞性肺动脉高压
+    name_en: Chronic Thromboembolic Pulmonary Hypertension
+    aliases: CTEPH；慢性血栓栓塞性肺高压
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-PH
+    subcategory_code: LEFT_HEART
+    disease_code: DIS-CARD-PH-LHD
+    name: 左心疾病相关肺高压
+    name_en: Pulmonary Hypertension Due To Left Heart Disease
+    aliases: 左心病相关肺高压；PH-LHD
+    inclusion_status: deferred
+    defer_reason: 本轮肺动脉高压资料中直接临床闭环证据不足，先作为病因/鉴别线索，不作为独立疾病闭环节点。
+  - specialty_code: CARD
+    category_code: CARD-PH
+    subcategory_code: LUNG_DISEASE
+    disease_code: DIS-CARD-PH-LUNG
+    name: 肺部疾病和低氧相关肺高压
+    name_en: Pulmonary Hypertension Due To Lung Disease Or Hypoxia
+    aliases: 肺疾病相关肺高压；低氧相关肺高压
+    inclusion_status: deferred
+    defer_reason: 本轮心血管资料不足以支撑完整独立疾病闭环，后续可在呼吸专科或肺血管专题补充。
+  - specialty_code: CARD
+    category_code: CARD-PH
+    subcategory_code: CRISIS
+    disease_code: DIS-CARD-PH-CRISIS
+    name: 肺动脉高压危象
+    name_en: Pulmonary Hypertensive Crisis
+    aliases: 肺高压危象；PAH危象
+    inclusion_status: deferred
+    defer_reason: 属于急性临床场景/并发风险，不作为独立疾病节点；后续应作为并发症、风险预警或临床规则处理。
+
+controlled_vocabulary_rows:
+  - canonical_name: 右心导管检查
+    name_en: Right Heart Catheterization
+    abbr: RHC
+    aliases: 右心导管；右心漂浮导管检查
+    entityType: Exam
+    disease_scope: 肺动脉高压
+    source: batch_config
+  - canonical_name: 平均肺动脉压
+    name_en: Mean Pulmonary Arterial Pressure
+    abbr: mPAP
+    aliases: 平均肺动脉压力
+    entityType: ExamIndicator
+    disease_scope: 肺动脉高压
+    source: batch_config
+  - canonical_name: 肺动脉楔压
+    name_en: Pulmonary Arterial Wedge Pressure
+    abbr: PAWP
+    aliases: 肺毛细血管楔压；PCWP
+    entityType: ExamIndicator
+    disease_scope: 肺动脉高压
+    source: batch_config
+  - canonical_name: 肺血管阻力
+    name_en: Pulmonary Vascular Resistance
+    abbr: PVR
+    aliases: 肺循环阻力
+    entityType: ExamIndicator
+    disease_scope: 肺动脉高压
+    source: batch_config
+  - canonical_name: 内皮素受体拮抗剂
+    name_en: Endothelin Receptor Antagonist
+    abbr: ERA
+    aliases: 内皮素受体阻滞剂
+    entityType: Medication
+    disease_scope: 肺动脉高压
+    source: batch_config
+  - canonical_name: 磷酸二酯酶5抑制剂
+    name_en: Phosphodiesterase Type 5 Inhibitor
+    abbr: PDE5i
+    aliases: PDE5抑制剂；PDE-5抑制剂
+    entityType: Medication
+    disease_scope: 肺动脉高压
+    source: batch_config
+  - canonical_name: 前列环素类似物
+    name_en: Prostacyclin Analogue
+    abbr: PCA
+    aliases: 前列环素类药物；前列环素通路药物
+    entityType: Medication
+    disease_scope: 肺动脉高压
+    source: batch_config
+  - canonical_name: 可溶性鸟苷酸环化酶刺激剂
+    name_en: Soluble Guanylate Cyclase Stimulator
+    abbr: sGC刺激剂
+    aliases: 鸟苷酸环化酶刺激剂；sGC stimulator
+    entityType: Medication
+    disease_scope: 肺动脉高压
+    source: batch_config
+
+execution_permissions:
+  allow_neo4j_write: false
+  allow_run_import_scripts: false
+  allow_external_web: false
+
+quality_gates:
+  required_textbook_skeleton_review: true
+  required_guideline_pdf_parse: true
+  required_source_manifest: true
+  required_evidence_chain: true
+  required_g1_audit: true
+  required_g2_audit_before_neo4j: true
+  required_server_postcheck_after_import: true

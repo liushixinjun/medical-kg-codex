@@ -1,9 +1,12 @@
 # ============================================
-# 手术同义词表
-# 来源：Neo4j数据库实际数据（2026-06-24导出）
-# Schema：专科知识图谱Schema标准 V1.1 §10
-# 维护方式：人工维护，AI不得自动修改
-# 合并规则：code相同=L1自动合并，aliases命中=L2自动合并，same_as=L3人工确认
+# 手术/操作同义词表
+# 来源：Neo4j 数据库实际数据与后续批次治理沉淀
+# Schema：专科知识图谱 Schema 标准
+# 维护规则：
+# 1. canonical/name 使用中文标准全称。
+# 2. 英文缩写、英文全称、中文简称统一放 aliases。
+# 3. code 必须尽量使用图谱真实 code；未入库候选不得使用正式 code。
+# 4. 本文件作为新批次抽取、实体归并、证据命中和前端展示的共享术语字典。
 # ============================================
 
 - canonical: 冠状动脉旁路移植术
@@ -16,11 +19,13 @@
   same_as: []
   note: ""
 
-- canonical: 埋藏式心脏复律除颤器
+- canonical: 植入式心脏复律除颤器
   code: PROC-ICD
   name_en: Implantable cardioverter-defibrillator
   aliases:
+    - ICD
     - 植入式心律转复除颤器
+    - 植入式除颤器
   same_as: []
   note: ""
 
@@ -80,7 +85,7 @@
     - 临时起搏
     - 临时起搏器治疗
   same_as: []
-  note: "2026-07-07 缓慢性心律失常及传导阻滞批次回写；用于CDSS路径动作和证据匹配。"
+  note: "2026-07-07 缓慢性心律失常及传导阻滞批次回写；用于 CDSS 路径动作和证据匹配。"
 
 - canonical: 心脏再同步治疗
   code: PROC-CARD-TEXT-D2C1F9E289
@@ -91,4 +96,27 @@
     - 心脏同步化治疗
     - 再同步治疗
   same_as: []
-  note: "2026-07-07 缓慢性心律失常及传导阻滞批次跨批次去重回写；保留骨架库实体编码，合并本批次同名操作实体。"
+  note: "2026-07-07 缓慢性心律失常及传导阻滞批次回写；保留骨架库实体编码，合并同名操作实体。"
+
+- canonical: 肺动脉血栓内膜剥脱术
+  code: PROC-CARD-PH-PEA
+  name_en: Pulmonary thromboendarterectomy
+  aliases:
+    - PEA
+    - 肺动脉内膜剥脱术
+    - 肺动脉血栓内膜剥脱
+    - pulmonary endarterectomy
+    - pulmonary thromboendarterectomy
+  same_as: []
+  note: "2026-07-15 肺动脉高压正式批次回写；中文标准名为主名，PEA 和英文全称仅作别名。"
+
+- canonical: 经皮肺动脉球囊成形术
+  code: PROC-CARD-PH-BPA
+  name_en: Balloon pulmonary angioplasty
+  aliases:
+    - BPA
+    - 球囊肺动脉成形术
+    - 肺动脉球囊成形术
+    - balloon pulmonary angioplasty
+  same_as: []
+  note: "2026-07-15 肺动脉高压正式批次回写；中文标准名为主名，BPA 和英文全称仅作别名。"
