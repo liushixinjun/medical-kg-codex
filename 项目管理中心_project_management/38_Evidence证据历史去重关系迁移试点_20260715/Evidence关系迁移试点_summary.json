@@ -1,0 +1,14 @@
+{
+  "batch_id": "20260715_Evidence证据历史去重关系迁移试点",
+  "generated_at": "2026-07-15 23:14:20",
+  "apply": true,
+  "group_limit": 20,
+  "max_relations_per_group": 50,
+  "candidate_group_count": 20,
+  "duplicate_node_processed_count": 20,
+  "migrated_incoming_relation_count": 15,
+  "migrated_outgoing_relation_count": 0,
+  "detail_csv": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\项目管理中心_project_management\\38_Evidence证据历史去重关系迁移试点_20260715\\Evidence关系迁移试点明细.csv",
+  "backup_csv": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\项目管理中心_project_management\\38_Evidence证据历史去重关系迁移试点_20260715\\Evidence关系迁移试点关系备份.csv",
+  "physical_delete": false
+}

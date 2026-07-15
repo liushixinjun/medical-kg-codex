@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import re
 from collections import Counter, defaultdict
@@ -602,6 +603,30 @@ def _write_csv(path: Path, fields: tuple[str, ...], rows: list[dict]) -> None:
         writer.writeheader(); writer.writerows(rows)
 
 
+def _normalize_evidence_text_for_key(text: str) -> str:
+    text = str(text or "").strip()
+    return re.sub(r"\s+", " ", text)
+
+
+def _normalize_source_for_key(value: str) -> str:
+    return re.sub(r"\s+", " ", str(value or "").strip()).lower()
+
+
+def _evidence_key_for_audit(evidence: dict) -> str:
+    raw = "|".join(
+        [
+            _normalize_source_for_key(evidence.get("source_name", "")),
+            str(evidence.get("source_page", "N/A") or "N/A").strip(),
+            _normalize_evidence_text_for_key(evidence.get("evidence_text", "")),
+        ]
+    )
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest().upper()
+
+
+def _shared_evidence_code_for_key(evidence_key: str) -> str:
+    return f"EVD-SHARED-{evidence_key[:24]}"
+
+
 def _source_year(prov: dict) -> int:
     text = " ".join(str(prov.get(field, "")) for field in ("source_version", "source_name"))
     years = [int(item) for item in re.findall(r"(?:19|20)\d{2}", text)]
@@ -672,6 +697,80 @@ def audit_graph(batch_dir: Path) -> dict:
     dangling = [rel for rel in relations if rel.get("source_code") not in node_by_code or rel.get("target_code") not in node_by_code]
     semantic_counts = Counter((rel.get("source_code"), rel.get("relationType"), rel.get("target_code")) for rel in relations)
     duplicate_semantics = [key for key, count in semantic_counts.items() if count > 1]
+
+    evidence_nodes = [node for node in nodes if node.get("entityType") == "Evidence"]
+    evidence_nodes_by_key = defaultdict(list)
+    evidence_missing_key_rows = []
+    evidence_non_shared_code_rows = []
+    evidence_wrong_shared_code_rows = []
+    for evidence_node in evidence_nodes:
+        expected_key = _evidence_key_for_audit(evidence_node)
+        expected_code = _shared_evidence_code_for_key(expected_key)
+        actual_key = str(evidence_node.get("evidence_key", "") or "")
+        actual_code = str(evidence_node.get("code", "") or "")
+        evidence_nodes_by_key[expected_key].append(evidence_node)
+        base_row = {
+            "code": actual_code,
+            "name": evidence_node.get("name", ""),
+            "source_name": evidence_node.get("source_name", ""),
+            "source_page": evidence_node.get("source_page", ""),
+            "expected_evidence_key": expected_key,
+            "actual_evidence_key": actual_key,
+            "expected_shared_code": expected_code,
+            "evidence_text_sample": _normalize_evidence_text_for_key(evidence_node.get("evidence_text", ""))[:300],
+        }
+        if not actual_key:
+            evidence_missing_key_rows.append(
+                {
+                    **base_row,
+                    "error_type": "missing_evidence_key",
+                    "solution": "证据节点必须按 source_name + source_page + evidence_text 生成 evidence_key，作为跨疾病复用依据。",
+                }
+            )
+        elif actual_key != expected_key:
+            evidence_wrong_shared_code_rows.append(
+                {
+                    **base_row,
+                    "error_type": "evidence_key_mismatch",
+                    "solution": "重新按 source_name + source_page + evidence_text 计算 evidence_key，并同步更新 Evidence.code/canonical_evidence_code。",
+                }
+            )
+        if not actual_code.startswith("EVD-SHARED-"):
+            evidence_non_shared_code_rows.append(
+                {
+                    **base_row,
+                    "error_type": "non_shared_evidence_code",
+                    "solution": "Evidence.code 必须使用 EVD-SHARED- 前缀的共享证据编号；原始编号写入 original_evidence_ids。",
+                }
+            )
+        elif actual_code != expected_code:
+            evidence_wrong_shared_code_rows.append(
+                {
+                    **base_row,
+                    "error_type": "shared_evidence_code_mismatch",
+                    "solution": "Evidence.code 必须等于 EVD-SHARED- + evidence_key 前 24 位，避免同一证据跨疾病重复建点。",
+                }
+            )
+    evidence_duplicate_key_rows = []
+    for evidence_key, group in evidence_nodes_by_key.items():
+        codes = sorted({str(node.get("code", "") or "") for node in group})
+        if len(codes) <= 1:
+            continue
+        sample = group[0]
+        evidence_duplicate_key_rows.append(
+            {
+                "evidence_key": evidence_key,
+                "expected_shared_code": _shared_evidence_code_for_key(evidence_key),
+                "source_name": sample.get("source_name", ""),
+                "source_page": sample.get("source_page", ""),
+                "node_count": len(group),
+                "code_count": len(codes),
+                "codes": "；".join(codes),
+                "evidence_text_sample": _normalize_evidence_text_for_key(sample.get("evidence_text", ""))[:300],
+                "error_type": "same_evidence_key_multiple_codes",
+                "solution": "同一证据来源、页码和原文只能保留一个共享 Evidence 节点；其他疾病通过关系复用该节点。",
+            }
+        )
 
     wrong_direction = []
     for rel in relations:
@@ -1189,6 +1288,37 @@ def audit_graph(batch_dir: Path) -> dict:
         ),
         cdss_readiness_rows,
     )
+    _write_csv(
+        audit_dir / "evidence_duplicate_key_register.csv",
+        (
+            "evidence_key",
+            "expected_shared_code",
+            "source_name",
+            "source_page",
+            "node_count",
+            "code_count",
+            "codes",
+            "evidence_text_sample",
+            "error_type",
+            "solution",
+        ),
+        evidence_duplicate_key_rows,
+    )
+    evidence_identity_fields = (
+        "code",
+        "name",
+        "source_name",
+        "source_page",
+        "expected_evidence_key",
+        "actual_evidence_key",
+        "expected_shared_code",
+        "evidence_text_sample",
+        "error_type",
+        "solution",
+    )
+    _write_csv(audit_dir / "evidence_missing_key_register.csv", evidence_identity_fields, evidence_missing_key_rows)
+    _write_csv(audit_dir / "evidence_non_shared_code_register.csv", evidence_identity_fields, evidence_non_shared_code_rows)
+    _write_csv(audit_dir / "evidence_wrong_shared_code_register.csv", evidence_identity_fields, evidence_wrong_shared_code_rows)
     _write_csv(audit_dir / "schema_gap_register.csv", ("gap_id", "pathway_element", "source_document", "description", "status", "solution"), [])
     _write_csv(
         audit_dir / "pathway_applicability_profile_errors.csv",
@@ -1221,6 +1351,10 @@ def audit_graph(batch_dir: Path) -> dict:
         "medication_class_without_specific_count": len(medication_class_specific_gap_rows),
         "medication_alias_instance_gap_count": len(medication_alias_instance_gap_rows),
         "cdss_recommendation_readiness_error_count": len(cdss_readiness_rows),
+        "evidence_duplicate_key_group_count": len(evidence_duplicate_key_rows),
+        "evidence_missing_key_count": len(evidence_missing_key_rows),
+        "evidence_non_shared_code_count": len(evidence_non_shared_code_rows),
+        "evidence_wrong_shared_code_count": len(evidence_wrong_shared_code_rows),
         "core_relation_count": len(core_relations),
         "core_relation_evidence_chain_rate": core_rate,
         "target_name_or_alias_match_rate": target_match_rate,
@@ -1254,6 +1388,10 @@ def audit_graph(batch_dir: Path) -> dict:
         summary["medication_class_without_specific_count"],
         summary["medication_alias_instance_gap_count"],
         summary["cdss_recommendation_readiness_error_count"],
+        summary["evidence_duplicate_key_group_count"],
+        summary["evidence_missing_key_count"],
+        summary["evidence_non_shared_code_count"],
+        summary["evidence_wrong_shared_code_count"],
         summary["target_match_failure_count"], summary["disease_relevance_failure_count"],
         summary["textbook_grade_error_count"], summary["threshold_required_field_error_count"],
         summary["pending_alias_review_count"], summary["pending_polarity_review_count"],

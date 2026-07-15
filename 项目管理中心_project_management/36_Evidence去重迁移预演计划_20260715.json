@@ -1,0 +1,70 @@
+{
+  "task": "20260715_Evidence证据层瘦身与入库性能优化",
+  "generated_at": "2026-07-15 23:10:00",
+  "current_server_stats": {
+    "evidence_count": 44440,
+    "empty_text_count": 1269,
+    "long_text_gt_5000": 2874,
+    "long_text_gt_10000": 1240,
+    "orphan_evidence_count": 329,
+    "duplicate_group_count": 7081,
+    "duplicate_node_count": 33703,
+    "reducible_node_count": 26622,
+    "relations_to_evidence": {
+      "supported_by_evidence": 129262,
+      "guideline_has_evidence": 23869,
+      "derived_from": 1741,
+      "section_has_evidence": 2
+    }
+  },
+  "decision": "不直接删库、不直接合并库；先生成预演映射，再确认迁移。",
+  "dedupe_key": "来源文件名 + 页码 + 原文规范化文本 的哈希值",
+  "phases": [
+    {
+      "phase": "P0_生成端固化",
+      "write_neo4j": false,
+      "goal": "后续新批次 Evidence 按证据唯一键复用主证据，避免继续膨胀。",
+      "deliverables": [
+        "新批次 Evidence 生成规则",
+        "Evidence 批量写入小批量策略",
+        "入库进度日志"
+      ]
+    },
+    {
+      "phase": "P1_服务器去重预演",
+      "write_neo4j": false,
+      "goal": "输出 old_code -> 主证据 code 的映射、重复组数量、受影响关系数量。",
+      "deliverables": [
+        "Evidence重复组明细.csv",
+        "Evidence迁移映射.csv",
+        "Evidence迁移风险清单.md"
+      ]
+    },
+    {
+      "phase": "P2_小范围迁移试点",
+      "write_neo4j": true,
+      "goal": "先选一个疾病大类或一个指南来源做关系迁移试点。",
+      "prerequisite": "P1预演结果确认，且已备份映射和关系明细。",
+      "postcheck": [
+        "重复组减少",
+        "Evidence引用关系不丢失",
+        "推荐到证据链仍可查询",
+        "医生端主证据展示正常"
+      ]
+    },
+    {
+      "phase": "P3_全库迁移",
+      "write_neo4j": true,
+      "goal": "全库 Evidence 去重和长文本治理。",
+      "prerequisite": "P2试点通过。"
+    }
+  ],
+  "frontend_rule": "医生端按 推荐/规则 -> 主证据 展示，不按 疾病 -> 全部Evidence 展示。",
+  "performance_rule": {
+    "normal_node_batch_size": "200-500",
+    "evidence_node_batch_size": "20-50",
+    "normal_relation_batch_size": "200-500",
+    "evidence_relation_batch_size": "50-100",
+    "failure_strategy": "失败自动二分拆批，保留进度日志"
+  }
+}

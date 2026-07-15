@@ -1,0 +1,113 @@
+{
+  "marked_duplicate_nodes": 20,
+  "marked_duplicate_remaining_relations": 0,
+  "migrated_relations": [
+    {
+      "relation_type": "supported_by_evidence",
+      "count": 15
+    }
+  ],
+  "marked_nodes_sample": [
+    {
+      "duplicate_code": "EVD-CARD-FOUND-00051",
+      "keep_code": "EVD-CARD-FOUND-00050",
+      "deprecated": true
+    },
+    {
+      "duplicate_code": "EVD-CARD-FOUND-00058",
+      "keep_code": "EVD-CARD-FOUND-00057",
+      "deprecated": true
+    },
+    {
+      "duplicate_code": "EVD-CARD-FOUND-00075",
+      "keep_code": "EVD-CARD-FOUND-00074",
+      "deprecated": true
+    },
+    {
+      "duplicate_code": "EVD-CARD-FOUND-00109",
+      "keep_code": "EVD-CARD-FOUND-00077",
+      "deprecated": true
+    },
+    {
+      "duplicate_code": "EVD-CARD-FOUND-00116",
+      "keep_code": "EVD-CARD-FOUND-00115",
+      "deprecated": true
+    },
+    {
+      "duplicate_code": "EVD-CARD-FOUND-00121",
+      "keep_code": "EVD-CARD-FOUND-00120",
+      "deprecated": true
+    },
+    {
+      "duplicate_code": "EVD-CARD-FOUND-00130",
+      "keep_code": "EVD-CARD-FOUND-00129",
+      "deprecated": true
+    },
+    {
+      "duplicate_code": "EVD-CARD-FOUND-00159",
+      "keep_code": "EVD-CARD-FOUND-00158",
+      "deprecated": true
+    },
+    {
+      "duplicate_code": "EVD-CARD-FOUND-00221",
+      "keep_code": "EVD-CARD-FOUND-00220",
+      "deprecated": true
+    },
+    {
+      "duplicate_code": "EVD-CARD-FOUND-00274",
+      "keep_code": "EVD-CARD-FOUND-00049",
+      "deprecated": true
+    },
+    {
+      "duplicate_code": "EVD-CARD-FOUND-00283",
+      "keep_code": "EVD-CARD-FOUND-00275",
+      "deprecated": true
+    },
+    {
+      "duplicate_code": "EVD-CARD-FOUND-00288",
+      "keep_code": "EVD-CARD-FOUND-00287",
+      "deprecated": true
+    },
+    {
+      "duplicate_code": "EVD-CARD-FOUND-00309",
+      "keep_code": "EVD-CARD-FOUND-00308",
+      "deprecated": true
+    },
+    {
+      "duplicate_code": "EVD-CARD-FOUND-00312",
+      "keep_code": "EVD-CARD-FOUND-00311",
+      "deprecated": true
+    },
+    {
+      "duplicate_code": "EVD-CARD-FOUND-00347",
+      "keep_code": "EVD-CARD-FOUND-00346",
+      "deprecated": true
+    },
+    {
+      "duplicate_code": "EVD-CARD-FULLBOOK-23CEEC03A2F403",
+      "keep_code": "EVD-CARD-FULLBOOK-A64D90CFDAACAD",
+      "deprecated": true
+    },
+    {
+      "duplicate_code": "EVD-CARD-FULLBOOK-F71AA0771E8499",
+      "keep_code": "EVD-CARD-FULLBOOK-3AF32E636CD2F4",
+      "deprecated": true
+    },
+    {
+      "duplicate_code": "EVD-CARD-FULLBOOK-9000823638AA8D",
+      "keep_code": "EVD-CARD-FULLBOOK-1B7F5CBE90D6C9",
+      "deprecated": true
+    },
+    {
+      "duplicate_code": "EVD-CARD-FULLBOOK-D8EEE7F3C6DBE5",
+      "keep_code": "EVD-CARD-FULLBOOK-AA5DBA6E134458",
+      "deprecated": true
+    },
+    {
+      "duplicate_code": "EVD-CARD-FULLBOOK-3A1B1EB74748B1",
+      "keep_code": "EVD-CARD-FULLBOOK-20DE71B2D05A92",
+      "deprecated": true
+    }
+  ],
+  "physical_delete": false
+}

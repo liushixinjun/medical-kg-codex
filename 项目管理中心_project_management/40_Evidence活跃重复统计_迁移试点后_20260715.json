@@ -1,0 +1,10 @@
+{
+  "active_duplicate_stats_after_pilot": {
+    "duplicate_group_count": 7061,
+    "duplicate_node_count": 33663,
+    "reducible_node_count": 26602
+  },
+  "marked_by_pilot": {
+    "marked_count": 20
+  }
+}

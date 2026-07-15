@@ -1,0 +1,176 @@
+{
+  "server_counts": {
+    "evidence_count": 44440,
+    "empty_text_count": 1269,
+    "long_text_gt_5000": 2874,
+    "long_text_gt_10000": 1240
+  },
+  "server_orphan": {
+    "orphan_evidence_count": 329
+  },
+  "server_duplicate_groups": {
+    "duplicate_group_count": 7081,
+    "duplicate_node_count": 33703,
+    "reducible_node_count": 26622
+  },
+  "server_top_long_text": [
+    {
+      "code": "EVD-549A636095DA35D97F5E-AF",
+      "name": "AF ESC 2020.pdf 第44页证据（SEG-DOC-C5A1A36777F25502-44-GL-00146-AF）",
+      "source_name": "AF ESC 2020.pdf",
+      "source_page": 44,
+      "text_length": 67044
+    },
+    {
+      "code": "EVD-76F14761CD70CF5658D5-HCM",
+      "name": "心肌病  ESC  2023.pdf 第40页证据（SEG-DOC-CA7BFFBD6545C234-40-GL-00151-HCM）",
+      "source_name": "心肌病  ESC  2023.pdf",
+      "source_page": 40,
+      "text_length": 52287
+    },
+    {
+      "code": "EVD-76F14761CD70CF5658D5-ARVC",
+      "name": "心肌病  ESC  2023.pdf 第40页证据（SEG-DOC-CA7BFFBD6545C234-40-GL-00153-ARVC）",
+      "source_name": "心肌病  ESC  2023.pdf",
+      "source_page": 40,
+      "text_length": 52287
+    },
+    {
+      "code": "EVD-76F14761CD70CF5658D5-DCM",
+      "name": "心肌病  ESC  2023.pdf 第40页证据（SEG-DOC-CA7BFFBD6545C234-40-GL-00152-DCM）",
+      "source_name": "心肌病  ESC  2023.pdf",
+      "source_page": 40,
+      "text_length": 52287
+    },
+    {
+      "code": "EVD-76F14761CD70CF5658D5-RCM",
+      "name": "心肌病  ESC  2023.pdf 第40页证据（SEG-DOC-CA7BFFBD6545C234-40-GL-00154-RCM）",
+      "source_name": "心肌病  ESC  2023.pdf",
+      "source_page": 40,
+      "text_length": 52287
+    },
+    {
+      "code": "EVD-26A90B12A0119056C578-ARVC",
+      "name": "HCM  ESC 2023.pdf 第40页证据（SEG-DOC-DDFCCE53CA9DCC09-40-GL-00154-ARVC）",
+      "source_name": "HCM  ESC 2023.pdf",
+      "source_page": 40,
+      "text_length": 49081
+    },
+    {
+      "code": "EVD-26A90B12A0119056C578-RCM",
+      "name": "HCM  ESC 2023.pdf 第40页证据（SEG-DOC-DDFCCE53CA9DCC09-40-GL-00155-RCM）",
+      "source_name": "HCM  ESC 2023.pdf",
+      "source_page": 40,
+      "text_length": 49081
+    },
+    {
+      "code": "EVD-26A90B12A0119056C578-HCM",
+      "name": "HCM  ESC 2023.pdf 第40页证据（SEG-DOC-DDFCCE53CA9DCC09-40-GL-00152-HCM）",
+      "source_name": "HCM  ESC 2023.pdf",
+      "source_page": 40,
+      "text_length": 49081
+    },
+    {
+      "code": "EVD-26A90B12A0119056C578-DCM",
+      "name": "HCM  ESC 2023.pdf 第40页证据（SEG-DOC-DDFCCE53CA9DCC09-40-GL-00153-DCM）",
+      "source_name": "HCM  ESC 2023.pdf",
+      "source_page": 40,
+      "text_length": 49081
+    },
+    {
+      "code": "EVD-F5B6D4B0030A92ACFC3E-HT",
+      "name": "HT ACC 2017.pdf 第122页证据（SEG-DOC-7F8628B87DE65D12-122-GL-00703-HT）",
+      "source_name": "HT ACC 2017.pdf",
+      "source_page": 122,
+      "text_length": 47976
+    },
+    {
+      "code": "EVD-DE9474F6BD650138B941-BRUGADA",
+      "name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf 第21页证据（SEG-DOC-4DE9ED834C741715-21-GL-00131-BRUGADA）",
+      "source_name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf",
+      "source_page": 21,
+      "text_length": 46199
+    },
+    {
+      "code": "EVD-DE9474F6BD650138B941-LQTS",
+      "name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf 第21页证据（SEG-DOC-4DE9ED834C741715-21-GL-00130-LQTS）",
+      "source_name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf",
+      "source_page": 21,
+      "text_length": 46199
+    },
+    {
+      "code": "EVD-DE9474F6BD650138B941-VF",
+      "name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf 第21页证据（SEG-DOC-4DE9ED834C741715-21-GL-00128-VF）",
+      "source_name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf",
+      "source_page": 21,
+      "text_length": 46199
+    },
+    {
+      "code": "EVD-DE9474F6BD650138B941-VT",
+      "name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf 第21页证据（SEG-DOC-4DE9ED834C741715-21-GL-00127-VT）",
+      "source_name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf",
+      "source_page": 21,
+      "text_length": 46199
+    },
+    {
+      "code": "EVD-DE9474F6BD650138B941-ARREST",
+      "name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf 第21页证据（SEG-DOC-4DE9ED834C741715-21-GL-00129-ARREST）",
+      "source_name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf",
+      "source_page": 21,
+      "text_length": 46199
+    },
+    {
+      "code": "EVD-DE9474F6BD650138B941-CPVT",
+      "name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf 第21页证据（SEG-DOC-4DE9ED834C741715-21-GL-00132-CPVT）",
+      "source_name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf",
+      "source_page": 21,
+      "text_length": 46199
+    },
+    {
+      "code": "EVD-A0A4FE16AE2DD49F512B-NSTEMI",
+      "name": "2018 ESC EACTS Guidelines on myocardial revascularization.pdf 第14页证据（SEG-DOC-E0F939A44074F320-14-GL-00024-NSTEMI）",
+      "source_name": "2018 ESC EACTS Guidelines on myocardial revascularization.pdf",
+      "source_page": 14,
+      "text_length": 45994
+    },
+    {
+      "code": "EVD-A0A4FE16AE2DD49F512B-CCS",
+      "name": "2018 ESC EACTS Guidelines on myocardial revascularization.pdf 第14页证据（SEG-DOC-E0F939A44074F320-14-GL-00025-CCS）",
+      "source_name": "2018 ESC EACTS Guidelines on myocardial revascularization.pdf",
+      "source_page": 14,
+      "text_length": 45994
+    },
+    {
+      "code": "EVD-A0A4FE16AE2DD49F512B-STEMI",
+      "name": "2018 ESC EACTS Guidelines on myocardial revascularization.pdf 第14页证据（SEG-DOC-E0F939A44074F320-14-GL-00023-STEMI）",
+      "source_name": "2018 ESC EACTS Guidelines on myocardial revascularization.pdf",
+      "source_page": 14,
+      "text_length": 45994
+    },
+    {
+      "code": "EVD-A0A4FE16AE2DD49F512B-ACS",
+      "name": "2018 ESC EACTS Guidelines on myocardial revascularization.pdf 第14页证据（SEG-DOC-E0F939A44074F320-14-GL-00022-ACS）",
+      "source_name": "2018 ESC EACTS Guidelines on myocardial revascularization.pdf",
+      "source_page": 14,
+      "text_length": 45994
+    }
+  ],
+  "server_relation_to_evidence": [
+    {
+      "relation_type": "supported_by_evidence",
+      "relation_count": 129262
+    },
+    {
+      "relation_type": "guideline_has_evidence",
+      "relation_count": 23869
+    },
+    {
+      "relation_type": "derived_from",
+      "relation_count": 1741
+    },
+    {
+      "relation_type": "section_has_evidence",
+      "relation_count": 2
+    }
+  ]
+}

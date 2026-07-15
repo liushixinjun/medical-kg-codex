@@ -523,6 +523,49 @@ def _terminology_definition(node: dict, scope_target: str, parent_name: str = ""
     return f"{name}{english_part}为{scope_part}的疾病或临床亚型{parent_part}。"
 
 
+def _normalize_evidence_text_for_key(text: str) -> str:
+    text = str(text or "").strip()
+    text = re.sub(r"\s+", " ", text)
+    return text
+
+
+def _normalize_source_for_key(value: str) -> str:
+    return re.sub(r"\s+", " ", str(value or "").strip()).lower()
+
+
+def _evidence_identity(evidence: dict) -> tuple[str, str]:
+    raw = "|".join(
+        [
+            _normalize_source_for_key(evidence.get("source_name", "")),
+            str(evidence.get("source_page", "N/A") or "N/A").strip(),
+            _normalize_evidence_text_for_key(evidence.get("evidence_text", "")),
+        ]
+    )
+    evidence_key = hashlib.sha256(raw.encode("utf-8")).hexdigest().upper()
+    return f"EVD-SHARED-{evidence_key[:24]}", evidence_key
+
+
+def _prepare_evidence_identity(evidence_rows: list[dict]) -> dict[str, int]:
+    changed_count = 0
+    unchanged_count = 0
+    for row in evidence_rows:
+        original_id = str(row.get("evidence_id", "") or "")
+        canonical_id, evidence_key = _evidence_identity(row)
+        if original_id and original_id != canonical_id:
+            changed_count += 1
+        else:
+            unchanged_count += 1
+        row["original_evidence_id"] = original_id
+        row["evidence_key"] = evidence_key
+        row["canonical_evidence_code"] = canonical_id
+        row["evidence_id"] = canonical_id
+    return {
+        "evidence_identity_prepared_count": len(evidence_rows),
+        "evidence_id_changed_to_shared_count": changed_count,
+        "evidence_id_already_shared_count": unchanged_count,
+    }
+
+
 def _serialize_csv_value(value):
     if isinstance(value, (list, dict)):
         return json.dumps(value, ensure_ascii=False, separators=(",", ":"))
@@ -556,6 +599,7 @@ def build_graph_instance(batch_dir: Path) -> dict:
         row.setdefault("evidence_id", f"EVD-TB-{digest[:20]}-{row['disease_code'].split('-')[-1]}")
         row.setdefault("source_version", "第10版")
     evidence.extend(textbook)
+    evidence_identity_summary = _prepare_evidence_identity(evidence)
 
     nodes: dict[str, dict] = {}
     relations: dict[tuple[str, str, str], dict] = {}
@@ -565,6 +609,20 @@ def build_graph_instance(batch_dir: Path) -> dict:
     def add_node(node: dict) -> dict:
         existing = nodes.get(node["code"])
         if existing:
+            if existing.get("entityType") == "Evidence" or node.get("entityType") == "Evidence":
+                for field in ("disease_codes", "disease_names", "original_evidence_ids", "segment_ids"):
+                    old_values = existing.get(field, [])
+                    if not isinstance(old_values, list):
+                        old_values = [old_values] if old_values not in (None, "") else []
+                    new_values = node.get(field, [])
+                    if not isinstance(new_values, list):
+                        new_values = [new_values] if new_values not in (None, "") else []
+                    merged_values = []
+                    for value in old_values + new_values:
+                        if value not in (None, "", []) and value not in merged_values:
+                            merged_values.append(value)
+                    if merged_values:
+                        existing[field] = merged_values
             for key, value in node.items():
                 if key not in existing or existing[key] in (None, "", []):
                     existing[key] = value
@@ -910,7 +968,7 @@ def build_graph_instance(batch_dir: Path) -> dict:
             continue
         ev.setdefault("source_type", "authoritative_textbook" if ev.get("recommendation_class") == "N/A" and "内科学" in ev.get("source_name", "") else "guideline")
         ev.setdefault("source_version", "N/A")
-        ev.setdefault("evidence_id", f"EVD-{hashlib.sha1(ev['segment_id'].encode()).hexdigest()[:20].upper()}")
+        ev.setdefault("evidence_id", ev.get("canonical_evidence_code") or f"EVD-{hashlib.sha1(ev['segment_id'].encode()).hexdigest()[:20].upper()}")
         disease_code = ev["disease_code"]
         disease_name = disease_names[disease_code]
         text = ev["evidence_text"]
@@ -928,7 +986,7 @@ def build_graph_instance(batch_dir: Path) -> dict:
             f'{ev["source_name"]} 第{ev.get("source_page", "N/A")}页证据'
             f'（{ev["segment_id"]}）'
         )
-        add_node(_common_node(evidence_code, evidence_name, "Evidence", batch_id, evidence_id=evidence_code, document_id=ev["document_id"], segment_id=ev["segment_id"], source_name=ev["source_name"], source_type=ev["source_type"], source_section=ev.get("source_section", "N/A"), source_page=ev.get("source_page", "N/A"), disease_code=ev.get("disease_code", ""), disease_name=ev.get("disease_name", ""), evidence_text=text, language=ev.get("language", "zh"), content_hash=ev.get("content_hash", "")))
+        add_node(_common_node(evidence_code, evidence_name, "Evidence", batch_id, evidence_id=evidence_code, original_evidence_id=ev.get("original_evidence_id", ""), original_evidence_ids=[ev.get("original_evidence_id", "")], evidence_key=ev.get("evidence_key", ""), canonical_evidence_code=ev.get("canonical_evidence_code", evidence_code), document_id=ev["document_id"], segment_id=ev["segment_id"], segment_ids=[ev.get("segment_id", "")], source_name=ev["source_name"], source_type=ev["source_type"], source_section=ev.get("source_section", "N/A"), source_page=ev.get("source_page", "N/A"), disease_code=ev.get("disease_code", ""), disease_name=ev.get("disease_name", ""), disease_codes=[ev.get("disease_code", "")], disease_names=[ev.get("disease_name", "")], evidence_text=text, evidence_summary=text[:500], language=ev.get("language", "zh"), content_hash=ev.get("content_hash", "")))
         add_relation(source_code, "guideline_has_evidence", evidence_code)
         add_relation(disease_code, "based_on_guideline", source_code, ev)
         add_relation(disease_code, "supported_by_evidence", evidence_code, ev)
@@ -1178,7 +1236,7 @@ def build_graph_instance(batch_dir: Path) -> dict:
             if relation.get("polarity") in {"negative", "conditional"}:
                 writer.writerow({"relation_id": relation["id"], "source_code": relation["source_code"], "relationType": relation["relationType"], "target_code": relation["target_code"], "polarity": relation["polarity"], "condition_text": relation.get("condition_text", ""), "evidence_text": relation.get("evidence_text", ""), "审核状态": "pending_review"})
 
-    summary = {"node_count": len(node_rows), "relation_count": len(relation_rows), "evidence_node_count": sum(row["entityType"] == "Evidence" for row in node_rows), "threshold_rule_count": sum(row["entityType"] == "ThresholdRule" for row in node_rows), "alias_normalization_count": len(alias_rows)}
+    summary = {"node_count": len(node_rows), "relation_count": len(relation_rows), "evidence_node_count": sum(row["entityType"] == "Evidence" for row in node_rows), "threshold_rule_count": sum(row["entityType"] == "ThresholdRule" for row in node_rows), "alias_normalization_count": len(alias_rows), **evidence_identity_summary}
     (extraction_dir / "graph_extraction_summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8-sig")
     return summary
 
