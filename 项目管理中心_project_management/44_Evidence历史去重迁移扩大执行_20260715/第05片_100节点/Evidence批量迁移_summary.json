@@ -1,0 +1,19 @@
+{
+  "batch_id": "20260715_Evidence证据历史去重批量迁移",
+  "generated_at": "2026-07-16 00:06:59",
+  "apply": true,
+  "group_limit": 100,
+  "max_relations_per_group": 50,
+  "candidate_csv": "项目管理中心_project_management\\37_Evidence证据层去重预演重复组_20260715.csv",
+  "candidate_group_count": 0,
+  "duplicate_node_processed_count": 0,
+  "incoming_relation_count": 0,
+  "outgoing_relation_count": 0,
+  "migrated_incoming_relation_count": 0,
+  "migrated_outgoing_relation_count": 0,
+  "marked_duplicate_count": 0,
+  "duplicate_node_remaining_relation_count_after_apply": 0,
+  "detail_csv": "项目管理中心_project_management\\44_Evidence历史去重迁移扩大执行_20260715\\第05片_100节点\\Evidence批量迁移明细.csv",
+  "backup_csv": "项目管理中心_project_management\\44_Evidence历史去重迁移扩大执行_20260715\\第05片_100节点\\Evidence批量迁移关系备份.csv",
+  "physical_delete": false
+}

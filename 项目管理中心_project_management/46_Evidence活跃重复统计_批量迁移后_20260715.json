@@ -1,0 +1,13 @@
+﻿{
+  "generated_at": "2026-07-16 00:23:00",
+  "active_duplicate_stats_include_empty_text": {
+    "duplicate_group_count": 7054,
+    "duplicate_node_count": 33113,
+    "reducible_node_count": 26059
+  },
+  "active_duplicate_stats_exclude_empty_text": {
+    "duplicate_group_count": 7053,
+    "duplicate_node_count": 31844,
+    "reducible_node_count": 24791
+  }
+}

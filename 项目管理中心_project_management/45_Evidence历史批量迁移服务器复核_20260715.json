@@ -1,0 +1,19 @@
+﻿{
+  "batch_marked": {
+    "marked_duplicate_nodes": 543,
+    "marked_duplicate_remaining_relations": 0
+  },
+  "migrated_relations": [
+    {
+      "relation_type": "supported_by_evidence",
+      "count": 64
+    }
+  ],
+  "active_duplicate_stats": {
+    "duplicate_group_count": 7053,
+    "duplicate_node_count": 31844,
+    "reducible_node_count": 24791
+  },
+  "generated_at": "2026-07-16 00:20:00",
+  "physical_delete": false
+}
