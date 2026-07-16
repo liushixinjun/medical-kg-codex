@@ -1,0 +1,103 @@
+{
+  "knowledge_browse_missing_evidence": [],
+  "v1_2_status_distribution": [
+    {
+      "entity_type": "Exam",
+      "v1_2_status": "chapter_evidence_refined",
+      "evidence_status": "has_evidence",
+      "count": 43
+    },
+    {
+      "entity_type": "Exam",
+      "v1_2_status": "chapter_evidence_refined",
+      "evidence_status": "has_evidence_status_corrected",
+      "count": 1
+    },
+    {
+      "entity_type": "Exam",
+      "v1_2_status": "excluded_from_knowledge_browse_layer",
+      "evidence_status": "not_required_deprecated_duplicate",
+      "count": 1
+    },
+    {
+      "entity_type": "RiskStratification",
+      "v1_2_status": "chapter_evidence_refined",
+      "evidence_status": "has_evidence",
+      "count": 78
+    },
+    {
+      "entity_type": "TreatmentPlan",
+      "v1_2_status": "chapter_evidence_refined",
+      "evidence_status": "has_evidence",
+      "count": 11
+    },
+    {
+      "entity_type": "TreatmentPlan",
+      "v1_2_status": "chapter_evidence_refined",
+      "evidence_status": "has_evidence_via_related_recommendation",
+      "count": 1
+    }
+  ],
+  "knowledge_browse_counts": [
+    {
+      "entity_type": "Exam",
+      "scope": "deprecated_hidden",
+      "status": "deprecated",
+      "count": 1
+    },
+    {
+      "entity_type": "Exam",
+      "scope": "knowledge_browse_only",
+      "status": "",
+      "count": 42
+    },
+    {
+      "entity_type": "Exam",
+      "scope": "knowledge_browse_only",
+      "status": "active",
+      "count": 2
+    },
+    {
+      "entity_type": "Exam",
+      "scope": null,
+      "status": "",
+      "count": 34
+    },
+    {
+      "entity_type": "Exam",
+      "scope": null,
+      "status": "active",
+      "count": 5
+    },
+    {
+      "entity_type": "Exam",
+      "scope": null,
+      "status": "deprecated",
+      "count": 12
+    },
+    {
+      "entity_type": "RiskStratification",
+      "scope": "knowledge_browse_only",
+      "status": "",
+      "count": 78
+    },
+    {
+      "entity_type": "RiskStratification",
+      "scope": null,
+      "status": "",
+      "count": 6
+    },
+    {
+      "entity_type": "TreatmentPlan",
+      "scope": "knowledge_browse_only",
+      "status": "",
+      "count": 12
+    },
+    {
+      "entity_type": "TreatmentPlan",
+      "scope": null,
+      "status": "",
+      "count": 247
+    }
+  ]
+}

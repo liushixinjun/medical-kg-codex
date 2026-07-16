@@ -1,0 +1,105 @@
+{
+  "original_baseline_used_for_report": {
+    "generated_at": "2026-07-16 23:33:27",
+    "by_type": [
+      {
+        "type": "RiskStratification",
+        "count": 78
+      },
+      {
+        "type": "Exam",
+        "count": 45
+      },
+      {
+        "type": "TreatmentPlan",
+        "count": 12
+      }
+    ],
+    "missing": [
+      {
+        "code": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+        "name": "房性心律失常与卒中风险管理",
+        "entity_type": "TreatmentPlan",
+        "status": "textbook_plan_without_action_detail",
+        "labels": []
+      },
+      {
+        "code": "EXAM-CARD-3A1C9D9E3AEB",
+        "name": "CTA",
+        "entity_type": "Exam",
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": []
+      }
+    ],
+    "source_file": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\项目管理中心_project_management\\125_内科学心血管骨架V1.2章节级证据精修与指南补强_20260716\\01_V1.2知识浏览层证据基线扫描.json"
+  },
+  "current_before_rerun_state": {
+    "by_type": [
+      {
+        "entity_type": "Exam",
+        "node_count": 44,
+        "evidence_links": 1529,
+        "missing_codes": []
+      },
+      {
+        "entity_type": "RiskStratification",
+        "node_count": 78,
+        "evidence_links": 820,
+        "missing_codes": []
+      },
+      {
+        "entity_type": "TreatmentPlan",
+        "node_count": 12,
+        "evidence_links": 487,
+        "missing_codes": []
+      }
+    ],
+    "missing": []
+  },
+  "actions": {
+    "隐藏旧CTA缩写节点": [
+      {
+        "old_code": "EXAM-CARD-3A1C9D9E3AEB",
+        "old_name": "CTA",
+        "scope": "deprecated_hidden",
+        "status": "deprecated",
+        "target_code": "EXAM-CARD-CF719F4B0836",
+        "target_name": "CT血管造影"
+      }
+    ],
+    "心房心肌病卒中风险管理补证据": [
+      {
+        "plan_code": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+        "plan_name": "房性心律失常与卒中风险管理",
+        "recommendation_code": "REC-CDSS-CM-ATRIAL-02-01-TREAT",
+        "evidence_added_or_confirmed": 3
+      }
+    ],
+    "修正误标废弃的有效检查节点": [
+      {
+        "code": "EXAM-CARD-D690076CB8EB",
+        "name": "胸部X线",
+        "status": "active",
+        "evidence_count": 26,
+        "relation_count": 17
+      }
+    ],
+    "知识浏览层证据状态统一标记": [
+      {
+        "entity_type": "Exam",
+        "marked_nodes": 44,
+        "still_missing_evidence": 0
+      },
+      {
+        "entity_type": "RiskStratification",
+        "marked_nodes": 78,
+        "still_missing_evidence": 0
+      },
+      {
+        "entity_type": "TreatmentPlan",
+        "marked_nodes": 12,
+        "still_missing_evidence": 0
+      }
+    ]
+  }
+}

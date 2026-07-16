@@ -1,0 +1,2937 @@
+{
+  "generated_at": "2026-07-16 23:33:27",
+  "password_printed": false,
+  "results": {
+    "knowledge_browse_by_type": [
+      {
+        "type": "RiskStratification",
+        "count": 78
+      },
+      {
+        "type": "Exam",
+        "count": 45
+      },
+      {
+        "type": "TreatmentPlan",
+        "count": 12
+      }
+    ],
+    "knowledge_browse_sample": [
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-3A1C9D9E3AEB",
+        "name": "CTA",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-CF719F4B0836",
+        "name": "CT血管造影",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-272288934A19",
+        "name": "Stanford B型主动脉夹层检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-C548875CF43C",
+        "name": "一度房室传导阻滞检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-16F0D6920182",
+        "name": "三尖瓣反流检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-97D69E2921A1",
+        "name": "三度房室传导阻滞检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-28A2BDE20795",
+        "name": "主动脉夹层检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-DBD1F40853C8",
+        "name": "主动脉瓣反流检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-708809C38DF0",
+        "name": "主动脉瓣狭窄检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-73E7CBE78E09",
+        "name": "二尖瓣反流检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-0865DD245608",
+        "name": "二尖瓣狭窄检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-B819A6206DDB",
+        "name": "二度房室传导阻滞检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-5DECE91D9410",
+        "name": "先天性心脏病检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-A9459B69C059",
+        "name": "先天性心脏病相关肺动脉高压检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-3D8494591EDD",
+        "name": "动脉导管未闭检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-9853A68E651E",
+        "name": "动脉性肺动脉高压检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-402C5F4A8797",
+        "name": "卵圆孔未闭检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-FE5579C751A4",
+        "name": "右心导管检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-76E926AC5403",
+        "name": "外周动脉疾病检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-A75C6A09C4B4",
+        "name": "多瓣膜病检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-90C30ED23298",
+        "name": "室间隔缺损检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-1964B3FBB1A3",
+        "name": "家族性高胆固醇血症检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-127CAD01EC4B",
+        "name": "心包炎检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-471B1F30EE60",
+        "name": "心肌炎检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-3952FA87CE06",
+        "name": "心脏瓣膜病检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-713603A45490",
+        "name": "感染性心内膜炎检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-48545B9DF12D",
+        "name": "慢性血栓栓塞性肺动脉高压检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-2A5C372915FF",
+        "name": "房室传导阻滞检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-7B61D32BDA87",
+        "name": "房间隔缺损检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-94BED620724C",
+        "name": "暴发性心肌炎检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-4AD769033513",
+        "name": "束支传导阻滞检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-CBBD6856A319",
+        "name": "特发性肺动脉高压检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-FBC2CB79BDD3",
+        "name": "窦性心动过缓检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-D778E05E37ED",
+        "name": "窦房传导阻滞检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-9392E9664208",
+        "name": "窦房结功能障碍检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-A6EE67C8B755",
+        "name": "结缔组织病相关肺动脉高压检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-EADD36742F7D",
+        "name": "缓慢性心律失常检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-0BFEB8726F1A",
+        "name": "肺动脉瓣狭窄检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-4E359DE6E39D",
+        "name": "肺动脉高压检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-D690076CB8EB",
+        "name": "胸部X线",
+        "disease": "不稳定型心绞痛",
+        "category": "冠心病",
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-F3C88113B628",
+        "name": "腹主动脉瘤检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-F6CCC6040970",
+        "name": "血脂异常检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-B5C1A79FAC54",
+        "name": "遗传性肺动脉高压检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-4BB7B70D85A1",
+        "name": "风湿性心脏瓣膜病检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "Exam",
+        "code": "EXAM-CARD-2EE41C709D36",
+        "name": "高胆固醇血症检查",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "exam_item_only_wait_indicator_detail",
+        "labels": [
+          "KGNode",
+          "Exam"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-F163C6547508ABCC",
+        "name": "109～140分为中危",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-3B90BBF6CF71",
+        "name": "Brugada综合征风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-84EBFA99E9DC47D7",
+        "name": "GRACE评分＞140分为高危",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-8915F993A61B09FD",
+        "name": "GRACE风险模型纳入了年龄、充血性心力衰竭史、心肌梗死史、静息时心率、收缩压、血肌酐、心电图ST段偏移、心肌损伤标志物升高以及是否行血运重建等参数",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-EB7F78C471AB",
+        "name": "ST段抬高型心肌梗死风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-85746367586A",
+        "name": "Stanford B型主动脉夹层风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-7DFC9261A1796F40",
+        "name": "≤108分为低危",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-2EF091559ECB",
+        "name": "一度房室传导阻滞风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-631ED5C39FA2",
+        "name": "三尖瓣反流风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-2F5AB074AC4A",
+        "name": "三度房室传导阻滞风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-38E7349FFEB1",
+        "name": "不稳定型心绞痛风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-95734A4FFFDE",
+        "name": "主动脉夹层风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-B5FED0117937",
+        "name": "主动脉瓣反流风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-B857262BAF61",
+        "name": "主动脉瓣狭窄风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-FA7327C06B6B",
+        "name": "二尖瓣反流风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-63C28F6E2E04",
+        "name": "二尖瓣狭窄风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-B97EBF8A9187",
+        "name": "二度房室传导阻滞风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-7592F7642F24",
+        "name": "儿茶酚胺敏感性多形性室性心动过速风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-0902B94345D9",
+        "name": "动脉性肺动脉高压风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-62A60E6485E2",
+        "name": "动脉粥样硬化性心血管病风险评估",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-C000ECE441E9",
+        "name": "卵圆孔未闭风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-4250085B3F54",
+        "name": "原发性醛固酮增多症风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-011399550FDD",
+        "name": "右心衰竭风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-1F051DD646C9",
+        "name": "外周动脉疾病风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-729DEE62FC8E",
+        "name": "室上性心动过速风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-ED4558D6EFFC",
+        "name": "室性心律失常风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-FC946E22ED9C",
+        "name": "室性期前收缩风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-C2AC535D62E0",
+        "name": "家族性高胆固醇血症风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-B282969A0E50",
+        "name": "尖端扭转型室性心动过速风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-FDA995103C36",
+        "name": "心力衰竭风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-FB9C8FFCFC79",
+        "name": "心包炎风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-101DF0D8A1E8",
+        "name": "心室扑动与心室颤动风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-5D9AF80FB084",
+        "name": "心房心肌病风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-7371F77D04B5",
+        "name": "心房颤动风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-4D9353FDA3DE",
+        "name": "心肌炎风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-39D6A5F57D3A",
+        "name": "心脏性猝死风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-1AC99AD88C81",
+        "name": "心脏瓣膜病风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-4263DC3E19BA",
+        "name": "心脏骤停风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-99938D33FB1A",
+        "name": "心血管风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-88069250C1FB",
+        "name": "急性主动脉综合征风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-118DE6495635",
+        "name": "急性冠脉综合征风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-7C838C246189",
+        "name": "急性心肌梗死风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-E8444019F963",
+        "name": "感染性心内膜炎风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-20754CD9B62D",
+        "name": "慢性冠脉综合征风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "CARD-SKELETON-FULL-20260709-RISKSTRATIFICATION-0A278EEDAE94874A",
+        "name": "慢性心力衰竭-风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-ED7A3B621BA8",
+        "name": "慢性血栓栓塞性肺动脉高压风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-787A8D795E64",
+        "name": "房室传导阻滞风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-74DF75F4836E",
+        "name": "房性心动过速风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-5217C75AAD41",
+        "name": "扩张型心肌病风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-D8E501796019",
+        "name": "持续性室性心动过速风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-022CFCEDF5A2",
+        "name": "暴发性心肌炎风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-48AC112AF18E",
+        "name": "束支传导阻滞风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "PLAN-CARD-STEMI-38B8E5D35355",
+        "name": "泵衰竭与血流动力学评估",
+        "disease": "ST段抬高型心肌梗死",
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-0E75EB2E0966",
+        "name": "特发性肺动脉高压风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-C8FDB01D41A4",
+        "name": "稳定型心绞痛风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-CC0A1ACB963B",
+        "name": "窦性心动过缓风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-062F236B4E5A",
+        "name": "窦房结功能障碍风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-DE15F62EA5CD",
+        "name": "结缔组织病相关肺动脉高压风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-9E103A515A5B",
+        "name": "缓慢性心律失常风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-C72CDDDDE658",
+        "name": "肥厚型心肌病风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-75136660925E",
+        "name": "肺动脉瓣狭窄风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-4AF80B2B8359",
+        "name": "肺动脉高压风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-38B4EB1E7C43",
+        "name": "腹主动脉瘤风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-73C4D46DAD92",
+        "name": "致心律失常性双心室心肌病风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-B8562DBAE6B8",
+        "name": "致心律失常性右心室心肌病风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-D82F521AFD8B",
+        "name": "致心律失常性左心室心肌病风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-341E5DDF79BA",
+        "name": "致心律失常性心肌病风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-7B7C23BB3579",
+        "name": "血流动力学不稳定",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-D36D49B564FE",
+        "name": "血脂异常风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-E35AA2C94A40",
+        "name": "遗传性肺动脉高压风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-87ECA663125E",
+        "name": "长QT间期综合征风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-11DE19F7F63C",
+        "name": "难治性高血压风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-829873C257A6",
+        "name": "非ST段抬高型心肌梗死风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-73780F30E838",
+        "name": "非持续性室性心动过速风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-49455DA34117",
+        "name": "靶器官损害评估",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-231A83ACCC0B",
+        "name": "预激综合征风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-7CA0A3EF8237",
+        "name": "高胆固醇血症风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "RiskStratification",
+        "code": "RISK-CARD-48D693E46C8B",
+        "name": "高血压风险分层",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "risk_framework_only_wait_guideline_or_textbook_detail",
+        "labels": [
+          "KGNode",
+          "RiskStratification"
+        ]
+      },
+      {
+        "type": "TreatmentPlan",
+        "code": "PLAN-CARD-46086B93DD2D",
+        "name": "ST段抬高型心肌梗死治疗方案",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "broad_plan_knowledge_browse_only",
+        "labels": [
+          "KGNode",
+          "TreatmentPlan"
+        ]
+      },
+      {
+        "type": "TreatmentPlan",
+        "code": "CARD-SKELETON-FULL-20260709-TREATMENTPLAN-D7A188C9B6C12EF5",
+        "name": "【临床表现】1.症状病人常有心包炎、心包积液、恶性肿瘤、胸部放射性治疗和胸心外科手术等病史",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "textbook_plan_without_action_detail",
+        "labels": [
+          "KGNode",
+          "TreatmentPlan"
+        ]
+      },
+      {
+        "type": "TreatmentPlan",
+        "code": "PLAN-CARD-8B4C35522D9A",
+        "name": "不稳定型心绞痛治疗方案",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "broad_plan_knowledge_browse_only",
+        "labels": [
+          "KGNode",
+          "TreatmentPlan"
+        ]
+      },
+      {
+        "type": "TreatmentPlan",
+        "code": "CARD-SKELETON-FULL-20260709-TREATMENTPLAN-542F49CC6D03259B",
+        "name": "其他病因包括恶性肿瘤、结缔组织病、尿毒症、药物等",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "textbook_plan_without_action_detail",
+        "labels": [
+          "KGNode",
+          "TreatmentPlan"
+        ]
+      },
+      {
+        "type": "TreatmentPlan",
+        "code": "PLAN-CARD-16BF65CB29FE",
+        "name": "急性冠脉综合征治疗方案",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "broad_plan_knowledge_browse_only",
+        "labels": [
+          "KGNode",
+          "TreatmentPlan"
+        ]
+      },
+      {
+        "type": "TreatmentPlan",
+        "code": "PLAN-CARD-83DC54FD93C2",
+        "name": "急性心肌梗死治疗方案",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "broad_plan_knowledge_browse_only",
+        "labels": [
+          "KGNode",
+          "TreatmentPlan"
+        ]
+      },
+      {
+        "type": "TreatmentPlan",
+        "code": "PLAN-CARD-89D4C114E515",
+        "name": "慢性冠脉综合征治疗方案",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "broad_plan_knowledge_browse_only",
+        "labels": [
+          "KGNode",
+          "TreatmentPlan"
+        ]
+      },
+      {
+        "type": "TreatmentPlan",
+        "code": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+        "name": "房性心律失常与卒中风险管理",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "textbook_plan_without_action_detail",
+        "labels": [
+          "KGNode",
+          "TreatmentPlan"
+        ]
+      },
+      {
+        "type": "TreatmentPlan",
+        "code": "PLAN-CARD-DDD036288AF3",
+        "name": "稳定型心绞痛治疗方案",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "broad_plan_knowledge_browse_only",
+        "labels": [
+          "KGNode",
+          "TreatmentPlan"
+        ]
+      },
+      {
+        "type": "TreatmentPlan",
+        "code": "CARD-SKELETON-FULL-20260709-TREATMENTPLAN-DAA970FF15656D0D",
+        "name": "穿刺伤、心肌梗死后心肌破裂、心胸外科手术及介入操作造成的冠状动脉穿孔等可造成血性心包积液",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "textbook_plan_without_action_detail",
+        "labels": [
+          "KGNode",
+          "TreatmentPlan"
+        ]
+      },
+      {
+        "type": "TreatmentPlan",
+        "code": "PLAN-CARD-9ACFEF0709E2",
+        "name": "陈旧性心肌梗死治疗方案",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "broad_plan_knowledge_browse_only",
+        "labels": [
+          "KGNode",
+          "TreatmentPlan"
+        ]
+      },
+      {
+        "type": "TreatmentPlan",
+        "code": "PLAN-CARD-2CEC4722F549",
+        "name": "非ST段抬高型心肌梗死治疗方案",
+        "disease": null,
+        "category": null,
+        "source": null,
+        "path": null,
+        "status": "broad_plan_knowledge_browse_only",
+        "labels": [
+          "KGNode",
+          "TreatmentPlan"
+        ]
+      }
+    ],
+    "browse_with_evidence": [
+      {
+        "type": "RiskStratification",
+        "nodes": 78,
+        "evidence_count": 820
+      },
+      {
+        "type": "Exam",
+        "nodes": 44,
+        "evidence_count": 1529
+      },
+      {
+        "type": "TreatmentPlan",
+        "nodes": 11,
+        "evidence_count": 484
+      }
+    ],
+    "browse_without_evidence": [
+      {
+        "type": "TreatmentPlan",
+        "count": 1,
+        "sample": [
+          {
+            "status": "textbook_plan_without_action_detail",
+            "name": "房性心律失常与卒中风险管理",
+            "path": null,
+            "code": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+            "disease": null
+          }
+        ]
+      },
+      {
+        "type": "Exam",
+        "count": 1,
+        "sample": [
+          {
+            "status": "exam_item_only_wait_indicator_detail",
+            "name": "CTA",
+            "path": null,
+            "code": "EXAM-CARD-3A1C9D9E3AEB",
+            "disease": null
+          }
+        ]
+      }
+    ],
+    "guidelines_by_name": [
+      {
+        "name": "《内科学（第10版）》.pdf",
+        "code": "SRC-DOC-C0BB559FA2C8448A",
+        "source": null,
+        "evidence_count": 3104
+      },
+      {
+        "name": "《内科学（第10版）》.docx",
+        "code": "SRC-DOC-CF62B75AEC93F1A6",
+        "source": null,
+        "evidence_count": 2091
+      },
+      {
+        "name": "内科学(第8版).docx",
+        "code": "SRC-DOC-6E44027E23077E48",
+        "source": null,
+        "evidence_count": 1426
+      },
+      {
+        "name": "ACC／AHA指南：心脏瓣膜病患者的管理（2020）.pdf",
+        "code": "SRC-DOC-4317086452C7EB3A",
+        "source": null,
+        "evidence_count": 1050
+      },
+      {
+        "name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf",
+        "code": "SRC-DOC-4DE9ED834C741715",
+        "source": null,
+        "evidence_count": 684
+      },
+      {
+        "name": "HT ACC 2017.pdf",
+        "code": "SRC-DOC-7F8628B87DE65D12",
+        "source": null,
+        "evidence_count": 585
+      },
+      {
+        "name": "NSTE-ACS ACC 2014.pdf",
+        "code": "SRC-DOC-43E2E1C7083A9CD6",
+        "source": null,
+        "evidence_count": 553
+      },
+      {
+        "name": "2025ESC瓣膜指南 - .pdf",
+        "code": "SRC-DOC-56EC71F40F681B16",
+        "source": null,
+        "evidence_count": 372
+      },
+      {
+        "name": "中国高血压防治指南(2024年修订版).pdf",
+        "code": "SRC-DOC-6EF25C3E0A7B456D",
+        "source": null,
+        "evidence_count": 359
+      },
+      {
+        "name": "NSTE-ACS ESC 2020.pdf",
+        "code": "SRC-DOC-DFD3AED1BB841FF3",
+        "source": null,
+        "evidence_count": 350
+      },
+      {
+        "name": "AF ESC 2020.pdf",
+        "code": "SRC-DOC-C5A1A36777F25502",
+        "source": null,
+        "evidence_count": 337
+      },
+      {
+        "name": "先天性心脏病相关性肺动脉高压诊治专家共识.pdf",
+        "code": "SRC-DOC-8E0A540516C91C44",
+        "source": null,
+        "evidence_count": 332
+      },
+      {
+        "name": "ESC指南：心肌病的管理2023.pdf",
+        "code": "SRC-DOC-D67714E8DE3D47F1",
+        "source": null,
+        "evidence_count": 320
+      },
+      {
+        "name": "HCM  ESC 2023.pdf",
+        "code": "SRC-DOC-DDFCCE53CA9DCC09",
+        "source": null,
+        "evidence_count": 313
+      },
+      {
+        "name": "心肌病  ESC  2023.pdf",
+        "code": "SRC-DOC-CA7BFFBD6545C234",
+        "source": null,
+        "evidence_count": 311
+      },
+      {
+        "name": "ACS  ESC  2023.pdf",
+        "code": "SRC-DOC-FAF812AF598A7058",
+        "source": null,
+        "evidence_count": 302
+      },
+      {
+        "name": "HT ESC 2024.pdf",
+        "code": "SRC-DOC-DA9BCF2DF3ABF666",
+        "source": null,
+        "evidence_count": 302
+      },
+      {
+        "name": "ESC 急性冠脉综合征指南（2023）.pdf",
+        "code": "SRC-DOC-74E4AFDAB17B75CB",
+        "source": null,
+        "evidence_count": 291
+      },
+      {
+        "name": "室上性心动过速诊断及治疗中国专家共识(2021).pdf",
+        "code": "SRC-DOC-04A6231207D5F4D6",
+        "source": null,
+        "evidence_count": 287
+      },
+      {
+        "name": "HT ESC 2018.pdf",
+        "code": "SRC-DOC-F6A187686C199FF1",
+        "source": null,
+        "evidence_count": 281
+      },
+      {
+        "name": "SVT ESC 2019.pdf",
+        "code": "SRC-DOC-34C5698E48338855",
+        "source": null,
+        "evidence_count": 279
+      },
+      {
+        "name": "心血管内科+心律失常+缓慢性心律失常+ACC_AHA_HRS缓慢心律失常指南2018摘要+20260708.pdf",
+        "code": "SRC-DOC-BC409FF8F9D25478",
+        "source": null,
+        "evidence_count": 276
+      },
+      {
+        "name": "HT AHA 2025.pdf",
+        "code": "SRC-DOC-DB0F66F2BB43C682",
+        "source": null,
+        "evidence_count": 257
+      },
+      {
+        "name": "ESC／EACTS指南：房颤的管理（2024）.pdf",
+        "code": "SRC-DOC-395E289047E6B856",
+        "source": null,
+        "evidence_count": 255
+      },
+      {
+        "name": "CCS ESC 2024.pdf",
+        "code": "SRC-DOC-01AF04BA6618BFA0",
+        "source": null,
+        "evidence_count": 244
+      },
+      {
+        "name": "ESC／EACTS指南：瓣膜性心脏病的管理（2021） .pdf",
+        "code": "SRC-DOC-75647A0637C99A01",
+        "source": null,
+        "evidence_count": 244
+      },
+      {
+        "name": "中国心力衰竭诊断和治疗指南2024.pdf",
+        "code": "SRC-DOC-E2AE11B44F6F744B",
+        "source": null,
+        "evidence_count": 240
+      },
+      {
+        "name": "AF ESC 2024.pdf",
+        "code": "SRC-DOC-1E93BC5684F37443",
+        "source": null,
+        "evidence_count": 239
+      },
+      {
+        "name": "中国肺动脉高压诊断与治疗指南（2021版）.pdf",
+        "code": "SRC-DOC-17E858C3E29E7B39",
+        "source": null,
+        "evidence_count": 238
+      },
+      {
+        "name": "PH CN 2021.pdf",
+        "code": "SRC-DOC-C7CD2856344E8680",
+        "source": null,
+        "evidence_count": 238
+      },
+      {
+        "name": "室性心律失常中国专家共识基层版.pdf",
+        "code": "SRC-DOC-00005AB23BE6D130",
+        "source": null,
+        "evidence_count": 231
+      },
+      {
+        "name": "PH ESC 2015.pdf",
+        "code": "SRC-DOC-C0DBD5588087F2F8",
+        "source": null,
+        "evidence_count": 225
+      },
+      {
+        "name": "中国心肌病综合管理指南2025.pdf",
+        "code": "SRC-DOC-8917447CF08D5176",
+        "source": null,
+        "evidence_count": 223
+      },
+      {
+        "name": "Endocarditis  ESC  2023.pdf",
+        "code": "SRC-DOC-12E23619F2A8116D",
+        "source": null,
+        "evidence_count": 211
+      },
+      {
+        "name": "ACC／AHA／ACEP／NAEMSP ／SCAI指 南：急性冠脉 综合征患者的管理 2025.pdf",
+        "code": "SRC-DOC-08953CE23214DC37",
+        "source": null,
+        "evidence_count": 209
+      },
+      {
+        "name": "心血管内科+主动脉与外周动脉疾病+主动脉疾病+ACC_AHA指南官方资料+20260715.pdf",
+        "code": "SRC-DOC-0B30504E70E79AC5",
+        "source": null,
+        "evidence_count": 202
+      },
+      {
+        "name": "心血管内科+主动脉与外周动脉疾病+外周动脉疾病+AHA_ACC指南官方资料+20260715.pdf",
+        "code": "SRC-DOC-9A5C5268159EAD49",
+        "source": null,
+        "evidence_count": 201
+      },
+      {
+        "name": "JCS 2023 Myocarditis.pdf",
+        "code": "SRC-DOC-FD423F8E41BBFB24",
+        "source": null,
+        "evidence_count": 184
+      },
+      {
+        "name": "中国心房颤动管理指南（2025）.pdf",
+        "code": "SRC-DOC-4BF1E6843E30FAE5",
+        "source": null,
+        "evidence_count": 177
+      },
+      {
+        "name": "AF AHA 2023.pdf",
+        "code": "SRC-DOC-3E85DFA7D3EA0350",
+        "source": null,
+        "evidence_count": 173
+      },
+      {
+        "name": "【医脉通】2020心肌梗死后心力衰竭防治专家共识.pdf",
+        "code": "SRC-DOC-F0DDA79BAB227E88",
+        "source": null,
+        "evidence_count": 162
+      },
+      {
+        "name": "心肌病诊断与治疗建议  2007.pdf",
+        "code": "SRC-DOC-EE4059BC9FA37E66",
+        "source": null,
+        "evidence_count": 159
+      },
+      {
+        "name": "2018 ESC EACTS Guidelines on myocardial revascularization.pdf",
+        "code": "SRC-DOC-E0F939A44074F320",
+        "source": null,
+        "evidence_count": 159
+      },
+      {
+        "name": "EACTS-STS主动脉急慢性综合征诊疗指南（2024）.pdf",
+        "code": "SRC-DOC-F17F1796C7B641AB",
+        "source": null,
+        "evidence_count": 157
+      },
+      {
+        "name": "中国高血压临床实践指南 2022.pdf",
+        "code": "SRC-DOC-139FEAE78F9A08EE",
+        "source": null,
+        "evidence_count": 150
+      },
+      {
+        "name": "中国 高血压临床实践指南2024.pdf",
+        "code": "SRC-DOC-97ABB3DBC0C7F58D",
+        "source": null,
+        "evidence_count": 149
+      },
+      {
+        "name": "STEMI ESC 2017.pdf",
+        "code": "SRC-DOC-608DDED17DA46BC7",
+        "source": null,
+        "evidence_count": 148
+      },
+      {
+        "name": "高血压基层诊疗指南（2019年）.pdf",
+        "code": "SRC-DOC-B35F3B296E91D957",
+        "source": null,
+        "evidence_count": 145
+      },
+      {
+        "name": "中国透析患者慢性心力衰竭管理指南 2022.pdf",
+        "code": "SRC-DOC-29490E0606CAC1D0",
+        "source": null,
+        "evidence_count": 137
+      },
+      {
+        "name": "成人先天性心脏病相关肺动脉高压诊断与治疗指南.pdf",
+        "code": "SRC-DOC-DBAB434A84D3FCF6",
+        "source": null,
+        "evidence_count": 131
+      },
+      {
+        "name": "CCS ESC 2019.pdf",
+        "code": "SRC-DOC-78579EFFB060EF72",
+        "source": null,
+        "evidence_count": 130
+      },
+      {
+        "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf",
+        "code": "SRC-DOC-7476B9BFB2D92F3A",
+        "source": null,
+        "evidence_count": 128
+      },
+      {
+        "name": "心血管内科+血脂异常+家族性高胆固醇血症+NICE指南+20260715.pdf",
+        "code": "SRC-DOC-286E21DEF8190B60",
+        "source": null,
+        "evidence_count": 120
+      },
+      {
+        "name": "CCS CN 2024.pdf",
+        "code": "SRC-DOC-0CFCD79F003BFB93",
+        "source": null,
+        "evidence_count": 115
+      },
+      {
+        "name": "中国慢性肾脏病患者高血压管理指南（2023年版）.pdf",
+        "code": "SRC-DOC-0354EAC6824A1FD4",
+        "source": null,
+        "evidence_count": 112
+      },
+      {
+        "name": "慢性肾脏病合并非瓣膜性心房颤动患者抗凝管理的专家共识_慢性肾脏病非瓣膜性心房颤动抗凝管理工作组.pdf",
+        "code": "SRC-DOC-63A0DE9B1C2143F8",
+        "source": null,
+        "evidence_count": 110
+      },
+      {
+        "name": "中国 心房颤动诊断和治疗中国指南 2025.pdf",
+        "code": "SRC-DOC-E365239B004F254F",
+        "source": null,
+        "evidence_count": 102
+      },
+      {
+        "name": "心房颤动诊断和治疗中国指南 2023.pdf",
+        "code": "SRC-DOC-EE90C4C9A4C51DF7",
+        "source": null,
+        "evidence_count": 102
+      },
+      {
+        "name": "NSTE-ACS CN 2024.pdf",
+        "code": "SRC-DOC-223D946BFCBBE084",
+        "source": null,
+        "evidence_count": 101
+      },
+      {
+        "name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+        "code": "SRC-DOC-80984BC35C87AC53",
+        "source": null,
+        "evidence_count": 96
+      },
+      {
+        "name": "HCM AHA 2024.pdf",
+        "code": "SRC-DOC-B4FBEFE540CF3447",
+        "source": null,
+        "evidence_count": 96
+      },
+      {
+        "name": "冠心病双联抗血小板治疗中国专家共识.pdf",
+        "code": "SRC-DOC-AFBC49A750345874",
+        "source": null,
+        "evidence_count": 91
+      },
+      {
+        "name": "Dyslipidaemias ESC 2019.pdf",
+        "code": "SRC-DOC-8FB56DBAF105E9D0",
+        "source": null,
+        "evidence_count": 89
+      },
+      {
+        "name": "经皮冠状动脉介入治疗指南（2025）.pdf",
+        "code": "SRC-DOC-99DE8941F1F5EDF3",
+        "source": null,
+        "evidence_count": 86
+      },
+      {
+        "name": "Dyslipidaemias AHA 2026.pdf",
+        "code": "SRC-DOC-D63A3D60B86BD02E",
+        "source": null,
+        "evidence_count": 84
+      },
+      {
+        "name": "常见先天性心脏病经皮介入治疗指南（2021版）.pdf",
+        "code": "SRC-DOC-D498F416ADA53A2D",
+        "source": null,
+        "evidence_count": 81
+      },
+      {
+        "name": "AHA Management of Acute Myocarditis and Chronic Inflammatory Cardiomyopathy.pdf",
+        "code": "SRC-DOC-49D6BF5C37B17E86",
+        "source": null,
+        "evidence_count": 79
+      },
+      {
+        "name": "心肌病MOGE(S)  ACC 2013.pdf",
+        "code": "SRC-DOC-BC7C1C9AEA461638",
+        "source": null,
+        "evidence_count": 78
+      },
+      {
+        "name": "中国 慢性血栓栓塞性肺动脉高压诊断与治疗指南（2024版）.pdf",
+        "code": "SRC-DOC-6C25179A1A6FC3F9",
+        "source": null,
+        "evidence_count": 78
+      },
+      {
+        "name": "内分泌性高血压筛查专家共识（2025版）.pdf",
+        "code": "SRC-DOC-A74F3266595FFD2D",
+        "source": null,
+        "evidence_count": 75
+      },
+      {
+        "name": "European position paper on the management of patients with patent foramen ovale--General approach and left circulation thromboembolism.pdf",
+        "code": "SRC-DOC-5B28785E8DBF3705",
+        "source": null,
+        "evidence_count": 73
+      },
+      {
+        "name": "STEMI CN 2019.pdf",
+        "code": "SRC-DOC-955DCDB8BC81606E",
+        "source": null,
+        "evidence_count": 71
+      },
+      {
+        "name": "STEMI ACC 2013.pdf",
+        "code": "SRC-DOC-73C01373FC69F764",
+        "source": null,
+        "evidence_count": 67
+      },
+      {
+        "name": "发作性高血压临床诊治专家共识.pdf",
+        "code": "SRC-DOC-B1340468D4735ECF",
+        "source": null,
+        "evidence_count": 66
+      },
+      {
+        "name": "中国 冠状动脉粥样硬化性心脏病猝死2024.pdf",
+        "code": "SRC-DOC-F1C8C5C1085BEDAF",
+        "source": null,
+        "evidence_count": 64
+      },
+      {
+        "name": "老年高血压特点及临床诊治流程专家共识(2024).pdf",
+        "code": "SRC-DOC-46C654EF43082103",
+        "source": null,
+        "evidence_count": 63
+      },
+      {
+        "name": "2024 中国成人暴发性心肌炎诊断和治疗指南.pdf",
+        "code": "SRC-DOC-C6EA8A283F0D0385",
+        "source": null,
+        "evidence_count": 59
+      },
+      {
+        "name": "中国心力衰竭患者离子管理专家共识.pdf",
+        "code": "SRC-DOC-932943FCA8EE5920",
+        "source": null,
+        "evidence_count": 56
+      },
+      {
+        "name": "中国血脂管理指南（2023年）.pdf",
+        "code": "SRC-DOC-6B10405CAEB0AD98",
+        "source": null,
+        "evidence_count": 54
+      },
+      {
+        "name": "冠状动脉粥样硬化性心脏病患者药物治疗管理路径专家共识_周洋.pdf",
+        "code": "SRC-DOC-EC5A88A34A19CF0B",
+        "source": null,
+        "evidence_count": 52
+      },
+      {
+        "name": "DCM  AHA  2016.pdf",
+        "code": "SRC-DOC-25584CE66134C25D",
+        "source": null,
+        "evidence_count": 50
+      },
+      {
+        "name": "慢性心力衰竭芪苈强心临床应用的专家共识2024.pdf",
+        "code": "SRC-DOC-5BC5F1BE80EF7C28",
+        "source": null,
+        "evidence_count": 50
+      },
+      {
+        "name": "2018 STEMI院前溶栓治疗中国专家共识.pdf",
+        "code": "SRC-DOC-866065446A7A5F65",
+        "source": null,
+        "evidence_count": 44
+      },
+      {
+        "name": "缺血性心肌病血运重建专家共识.pdf",
+        "code": "SRC-DOC-16A94BC5A06F338E",
+        "source": null,
+        "evidence_count": 43
+      },
+      {
+        "name": "心肌病分类历史简介.pdf",
+        "code": "SRC-DOC-87D96F5C223AD8B2",
+        "source": null,
+        "evidence_count": 42
+      },
+      {
+        "name": "中国 抗心律失常药物临床应用中国专家共识2023.pdf",
+        "code": "SRC-DOC-4A36F3721EF8AADE",
+        "source": null,
+        "evidence_count": 41
+      },
+      {
+        "name": "抗心律失常药物临床应用中国专家共识.pdf",
+        "code": "SRC-DOC-F6D887F5DD95AA6A",
+        "source": null,
+        "evidence_count": 41
+      },
+      {
+        "name": "中国 Stanford B 型主动脉夹层诊断和治疗2022.pdf",
+        "code": "SRC-DOC-2A36E86B693FD81D",
+        "source": null,
+        "evidence_count": 40
+      },
+      {
+        "name": "心肌梗死心电图诊断标准和报告规范中国专家共识.pdf",
+        "code": "SRC-DOC-37B4754AACAB4D5F",
+        "source": null,
+        "evidence_count": 38
+      },
+      {
+        "name": "【医脉通】舒张性心力衰竭早期防治专家建议.pdf",
+        "code": "SRC-DOC-5A2FCB837C748B18",
+        "source": null,
+        "evidence_count": 38
+      },
+      {
+        "name": "2021卵圆孔未闭相关卒中预防中国专家指南_张玉顺.pdf",
+        "code": "SRC-DOC-A4022DE6F3CC389F",
+        "source": null,
+        "evidence_count": 38
+      },
+      {
+        "name": "4TH universal definition of MI.pdf",
+        "code": "SRC-DOC-174B3BDD2451501A",
+        "source": null,
+        "evidence_count": 37
+      },
+      {
+        "name": "左心室肥厚诊断和治疗临床路径中国专家共识2023.pdf",
+        "code": "SRC-DOC-D5BB02FE1F42C407",
+        "source": null,
+        "evidence_count": 36
+      },
+      {
+        "name": "心房颤动节律控制药物规范应用专家共识2023.pdf",
+        "code": "SRC-DOC-470392B42F1372AF",
+        "source": null,
+        "evidence_count": 36
+      },
+      {
+        "name": "中国成人心肌炎临床诊断与治疗指南2024.pdf",
+        "code": "SRC-DOC-F40BCB9E0773ED67",
+        "source": null,
+        "evidence_count": 36
+      },
+      {
+        "name": "心力衰竭常见病因及合并症的基层处理专家建议_袁璟.pdf",
+        "code": "SRC-DOC-54361544A52624A2",
+        "source": null,
+        "evidence_count": 34
+      },
+      {
+        "name": "常见先天性心脏病介入治疗中国专家共识之一：房间隔缺损介入治疗.pdf",
+        "code": "SRC-DOC-6B429078C3D38A71",
+        "source": null,
+        "evidence_count": 34
+      },
+      {
+        "name": "心力衰竭患者利尿剂抵抗诊断及管理中国专家共识.pdf（来源标识：DOC-376766AA00F4A08F）",
+        "code": "SRC-DOC-376766AA00F4A08F",
+        "source": null,
+        "evidence_count": 33
+      },
+      {
+        "name": "心力衰竭患者利尿剂抵抗诊断及管理中国专家共识.pdf（来源标识：DOC-7198C13DB2740EAA）",
+        "code": "SRC-DOC-7198C13DB2740EAA",
+        "source": null,
+        "evidence_count": 33
+      },
+      {
+        "name": "肾上腺静脉取血操作规范和结果解读专家共识（2025年版）.pdf",
+        "code": "SRC-DOC-FC25CDC7F11D1F40",
+        "source": null,
+        "evidence_count": 33
+      },
+      {
+        "name": "ESC 关于传导系统起搏适应症的临床共识声明 2025.pdf",
+        "code": "SRC-DOC-C1A5E2FBE47FE262",
+        "source": null,
+        "evidence_count": 32
+      },
+      {
+        "name": "原发性醛固酮增多症诊断治疗的专家共识(2024版).pdf",
+        "code": "SRC-DOC-08531D2049613F2D",
+        "source": null,
+        "evidence_count": 31
+      },
+      {
+        "name": "中国 左心耳干预预防心房颤动患者血栓栓塞事件：目前的认识和建议（2023） (1).pdf",
+        "code": "SRC-DOC-12C73CE9FC871CF4",
+        "source": null,
+        "evidence_count": 29
+      },
+      {
+        "name": "常见先天性心脏病介入治疗中国专家共识之二、室间隔缺损介入治疗.pdf",
+        "code": "SRC-DOC-262E07340B05AC10",
+        "source": null,
+        "evidence_count": 29
+      },
+      {
+        "name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+        "code": "SRC-DOC-372CA06E729E0563",
+        "source": null,
+        "evidence_count": 28
+      },
+      {
+        "name": "肥厚型心肌病激发_负荷超声心动图临床应用指南(2024版).pdf",
+        "code": "SRC-DOC-6605420FFBDD9D1D",
+        "source": null,
+        "evidence_count": 28
+      },
+      {
+        "name": "DCM CN 2018.pdf",
+        "code": "SRC-DOC-FF80679E54616C13",
+        "source": null,
+        "evidence_count": 28
+      },
+      {
+        "name": "稳定性冠心病诊断与治疗指南 2018.pdf",
+        "code": "SRC-DOC-63C1CE632EA42314",
+        "source": null,
+        "evidence_count": 28
+      },
+      {
+        "name": "常见先天性心脏病介入治疗中国专家共识之三、动脉导管未闭的介入治疗.pdf",
+        "code": "SRC-DOC-7919CFC91C9F76D5",
+        "source": null,
+        "evidence_count": 28
+      },
+      {
+        "name": "青年急性心肌梗死诊断和治疗专家建议.pdf",
+        "code": "SRC-DOC-AFB35BB7F5EF5657",
+        "source": null,
+        "evidence_count": 27
+      },
+      {
+        "name": "2015卵圆孔未闭处理策略中国专家建议_张玉顺.pdf",
+        "code": "SRC-DOC-0D2C8974A4015D33",
+        "source": null,
+        "evidence_count": 26
+      },
+      {
+        "name": "中国 经导管二尖瓣缘对缘修复术的中国专家共识2022.pdf",
+        "code": "SRC-DOC-292E33BF635D9559",
+        "source": null,
+        "evidence_count": 25
+      },
+      {
+        "name": "中国 经导管主动脉瓣置换术临床实践指南（2023版）.pdf",
+        "code": "SRC-DOC-60225BB8F13B8139",
+        "source": null,
+        "evidence_count": 25
+      },
+      {
+        "name": "心力衰竭药物治疗相关高钾血症防治专家共识2024.pdf",
+        "code": "SRC-DOC-C440C68F7BD2DFFB",
+        "source": null,
+        "evidence_count": 22
+      },
+      {
+        "name": "心肌病  ESC  2008.pdf",
+        "code": "SRC-DOC-FC1C25EAC3C23336",
+        "source": null,
+        "evidence_count": 21
+      },
+      {
+        "name": "2017  卵圆孔未闭预防性封堵术中国专家共识.pdf",
+        "code": "SRC-DOC-454034D0441C5400",
+        "source": null,
+        "evidence_count": 21
+      },
+      {
+        "name": "中国 ST段抬高型心肌梗死患者急诊PCI微循环保护策略.pdf",
+        "code": "SRC-DOC-70D3EB187476D123",
+        "source": null,
+        "evidence_count": 20
+      },
+      {
+        "name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+        "code": "SRC-DOC-65A62585E5B5B852",
+        "source": null,
+        "evidence_count": 19
+      },
+      {
+        "name": "存活心肌无创影像学评价专家共识.pdf",
+        "code": "SRC-DOC-73CBCF74B9DAABAC",
+        "source": null,
+        "evidence_count": 19
+      },
+      {
+        "name": "老年冠心病慢病管理指南_王杨淦.pdf",
+        "code": "SRC-DOC-F0E1ED198C99B706",
+        "source": null,
+        "evidence_count": 19
+      },
+      {
+        "name": "DCM ESC 2016.pdf",
+        "code": "SRC-DOC-D767384247953785",
+        "source": null,
+        "evidence_count": 18
+      },
+      {
+        "name": "常见先天性心脏病介入治疗中国专家共识之四：经皮球囊肺动脉瓣与主动脉瓣成形术.pdf",
+        "code": "SRC-DOC-37506EA1DDEBA633",
+        "source": null,
+        "evidence_count": 18
+      },
+      {
+        "name": "European position paper on the management of patients with patent foramen ovale Part II - Decompression sickness, migraine, arterial deoxygenation syndromes and select high-risk clinical conditions.pdf",
+        "code": "SRC-DOC-EA5DC78A6596C8EF",
+        "source": null,
+        "evidence_count": 18
+      },
+      {
+        "name": "【医脉通】钙增敏剂在心力衰竭中的临床应用专家建议.pdf",
+        "code": "SRC-DOC-822720DB14B89B12",
+        "source": null,
+        "evidence_count": 17
+      },
+      {
+        "name": "中国 心脏再同步治疗慢性心力衰竭的中国专家共识（2021）.pdf",
+        "code": "SRC-DOC-8D7E81943229E743",
+        "source": null,
+        "evidence_count": 17
+      },
+      {
+        "name": "中国 经导管主动脉瓣置换术临床路径专家共识（2024 版）.pdf",
+        "code": "SRC-DOC-CC7161452CF36D38",
+        "source": null,
+        "evidence_count": 17
+      },
+      {
+        "name": "中国 腹主动脉瘤诊断和治疗中国专家共识（2022版）.pdf",
+        "code": "SRC-DOC-5BEAEF029271A100",
+        "source": null,
+        "evidence_count": 17
+      },
+      {
+        "name": "中国床旁临时心脏起搏急诊专家共识（2023）.pdf",
+        "code": "SRC-DOC-7EABAF0372E7ED03",
+        "source": null,
+        "evidence_count": 16
+      },
+      {
+        "name": "01-05-C-0047二尖瓣疾病.docx",
+        "code": "SRC-DOC-307AB2E3245A2947",
+        "source": null,
+        "evidence_count": 15
+      },
+      {
+        "name": "中国 感染性心内膜炎外科治疗中国专家共识2022.pdf",
+        "code": "SRC-DOC-8432060ED691116E",
+        "source": null,
+        "evidence_count": 15
+      },
+      {
+        "name": "泛血管疾病患者血脂管理专家共识（2025版）.pdf",
+        "code": "SRC-DOC-D0CFE97386526137",
+        "source": null,
+        "evidence_count": 15
+      },
+      {
+        "name": "心肌病  AHA  2006.pdf",
+        "code": "SRC-DOC-FDC3DD51C7DF68F6",
+        "source": null,
+        "evidence_count": 14
+      },
+      {
+        "name": "SCAI Guidelines for the Management of Patent Foramen Ovale.pdf",
+        "code": "SRC-DOC-B480C64DC13D3FFC",
+        "source": null,
+        "evidence_count": 14
+      },
+      {
+        "name": "Dyslipidaemias  ESC 2025.pdf",
+        "code": "SRC-DOC-3BA8C79532B5EDD9",
+        "source": null,
+        "evidence_count": 13
+      },
+      {
+        "name": "成人法布雷病心肌病诊断与治疗中国专家共识.pdf",
+        "code": "SRC-DOC-829A089219708BB6",
+        "source": null,
+        "evidence_count": 11
+      },
+      {
+        "name": "01-05-C-0046主动脉瓣疾病.docx",
+        "code": "SRC-DOC-2B898DC879F4AA3B",
+        "source": null,
+        "evidence_count": 9
+      },
+      {
+        "name": "PAD.pdf",
+        "code": "SRC-DOC-BDFDB765EACB4B6A",
+        "source": null,
+        "evidence_count": 9
+      },
+      {
+        "name": "01-05-C-0016心力衰竭.docx",
+        "code": "SRC-DOC-61F428FA760EC410",
+        "source": null,
+        "evidence_count": 8
+      },
+      {
+        "name": "中国经导管主动脉瓣置入术(TAVI)多学科专家共识.pdf",
+        "code": "SRC-DOC-F2D00601C217655C",
+        "source": null,
+        "evidence_count": 8
+      },
+      {
+        "name": "01-05-C-0058房颤的诊断和治疗.docx",
+        "code": "SRC-DOC-BB282C8639559C9D",
+        "source": null,
+        "evidence_count": 7
+      },
+      {
+        "name": "01-05-C-0048三尖瓣疾病.docx",
+        "code": "SRC-DOC-C3B25101A6FF72E5",
+        "source": null,
+        "evidence_count": 7
+      },
+      {
+        "name": "INOCA  ESC 2020.pdf",
+        "code": "SRC-DOC-20FC227DFB508FF2",
+        "source": null,
+        "evidence_count": 5
+      },
+      {
+        "name": "01-05-C-0057房颤知识.docx",
+        "code": "SRC-DOC-F7FE6EEDE206B705",
+        "source": null,
+        "evidence_count": 5
+      },
+      {
+        "name": "心肌病 WHO 1980.pdf",
+        "code": "SRC-DOC-D88537A6C14E3362",
+        "source": null,
+        "evidence_count": 4
+      },
+      {
+        "name": "01-05-C-0049肺动脉瓣疾病.docx",
+        "code": "SRC-DOC-4D9A6613713AA725",
+        "source": null,
+        "evidence_count": 4
+      },
+      {
+        "name": "心脏瓣膜外科人工瓣膜选择中国专家共识.pdf",
+        "code": "SRC-DOC-5F99D676213DDC84",
+        "source": null,
+        "evidence_count": 4
+      },
+      {
+        "name": "01-05-C-0043心力衰竭的综合管理.docx",
+        "code": "SRC-DOC-079C1061ED7DBF39",
+        "source": null,
+        "evidence_count": 3
+      },
+      {
+        "name": "01-05-J-0001华法林用药须知.docx",
+        "code": "SRC-DOC-6319D731D46D5899",
+        "source": null,
+        "evidence_count": 2
+      },
+      {
+        "name": "01-05-C-0030外科心脏瓣膜病术后出院注意事项.docx",
+        "code": "SRC-DOC-8BA4CB4FF9ACFE67",
+        "source": null,
+        "evidence_count": 2
+      },
+      {
+        "name": "中国 急性肺栓塞多学科团队救治中国专家共识2022.pdf",
+        "code": "SRC-DOC-6E23E082295DFBCD",
+        "source": null,
+        "evidence_count": 2
+      },
+      {
+        "name": "01-05-H-0012左心耳封堵术的护理指导.docx",
+        "code": "SRC-DOC-9C611A9BFCCDE7F1",
+        "source": null,
+        "evidence_count": 1
+      },
+      {
+        "name": "01-05-C-0001认识瓣膜疾病.docx",
+        "code": "SRC-DOC-5C5FF1CD150AD5BA",
+        "source": null,
+        "evidence_count": 1
+      },
+      {
+        "name": "NSTE-ACS CN 2016.pdf",
+        "code": "SRC-DOC-2641C8F36B9BF323",
+        "source": null,
+        "evidence_count": 0
+      },
+      {
+        "name": "01-05-H-0013左心耳封堵术的出院指导.docx",
+        "code": "SRC-DOC-CD28568B2980B483",
+        "source": null,
+        "evidence_count": 0
+      },
+      {
+        "name": "01-05-H-0010永久起搏器植入术的护理指导.docx",
+        "code": "SRC-DOC-69EC93BD3753EF67",
+        "source": null,
+        "evidence_count": 0
+      },
+      {
+        "name": "01-05-E-0011临时起搏器及起搏导线照护.docx",
+        "code": "SRC-DOC-765131B440125CA3",
+        "source": null,
+        "evidence_count": 0
+      },
+      {
+        "name": "01-05-H-0011永久起搏器植入的出院指导.docx",
+        "code": "SRC-DOC-80FC2E647C61A0C4",
+        "source": null,
+        "evidence_count": 0
+      },
+      {
+        "name": "中国 高血压急症诊治规范2020.pdf",
+        "code": "SRC-DOC-C962C87F4D27FFFA",
+        "source": null,
+        "evidence_count": 0
+      },
+      {
+        "name": "01-05-H-0015经皮球囊二尖瓣成形术的护理指导.docx",
+        "code": "SRC-DOC-58C30F2C7DE9CEBB",
+        "source": null,
+        "evidence_count": 0
+      },
+      {
+        "name": "01-05-I-0003外科心脏瓣膜置换术后护.docx",
+        "code": "SRC-DOC-85C25011DBCF5264",
+        "source": null,
+        "evidence_count": 0
+      },
+      {
+        "name": "01-05-H-0016经导管主动脉瓣置换术(TAVR)的护理指导.docx",
+        "code": "SRC-DOC-895B330AC279726C",
+        "source": null,
+        "evidence_count": 0
+      },
+      {
+        "name": "成人爆发性心肌炎诊断与治疗中国专家共识 2017.pdf",
+        "code": "SRC-DOC-10F916654B07340B",
+        "source": null,
+        "evidence_count": 0
+      },
+      {
+        "name": "儿童常见先天性心脏病介入治疗专家共识.pdf",
+        "code": "SRC-DOC-E3EA3D74501BC795",
+        "source": null,
+        "evidence_count": 0
+      }
+    ]
+  }
+}

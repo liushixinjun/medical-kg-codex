@@ -1,0 +1,82 @@
+﻿层级,标题,路径,可用槽位,V1冻结匹配状态,V1.2证据精修状态,说明
+章,心力衰竭,心力衰竭 > 心力衰竭,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,心力衰竭总论,心力衰竭 > 心力衰竭总论,classification；risk_stratification；etiology；pathogenesis,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,慢性心力衰竭,心力衰竭 > 慢性心力衰竭,clinical_manifestation；classification；risk_stratification；exam；diagnostic_criteria；differential_diagnosis；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,急性心力衰竭,心力衰竭 > 急性心力衰竭,definition；classification；risk_stratification；clinical_manifestation；diagnostic_criteria；differential_diagnosis；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+章,心律失常,心律失常 > 心律失常,,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,概 述,心律失常 > 概 述,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,窦性心律失常,心律失常 > 窦性心律失常,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,窦性心动过速,心律失常 > 窦性心律失常 > 窦性心动过速,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,窦性心动过缓,心律失常 > 窦性心律失常 > 窦性心动过缓,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,窦房传导阻滞,心律失常 > 窦性心律失常 > 窦房传导阻滞,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,病态窦房结综合征,心律失常 > 窦性心律失常 > 病态窦房结综合征,definition；etiology；clinical_manifestation；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,房性心律失常,心律失常 > 房性心律失常,,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,房性期前收缩,心律失常 > 房性心律失常 > 房性期前收缩,definition；clinical_manifestation；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,房性心动过速,心律失常 > 房性心律失常 > 房性心动过速,definition；etiology；clinical_manifestation；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,心房扑动,心律失常 > 房性心律失常 > 心房扑动,definition；etiology；clinical_manifestation；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,心房颤动,心律失常 > 房性心律失常 > 心房颤动,definition；etiology；clinical_manifestation；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,房室交界性心律失常,心律失常 > 房室交界性心律失常,,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,房室交界性期前收缩,心律失常 > 房室交界性心律失常 > 房室交界性期前收缩,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,非阵发性房室交界性心动过速,心律失常 > 房室交界性心律失常 > 非阵发性房室交界性心动过速,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,房室交界区相关的折返性心动过速,心律失常 > 房室交界性心律失常 > 房室交界区相关的折返性心动过速,definition；etiology；clinical_manifestation；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,室性心律失常,心律失常 > 室性心律失常,,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,室性期前收缩,心律失常 > 室性心律失常 > 室性期前收缩,definition；etiology；clinical_manifestation；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,室性心动过速,心律失常 > 室性心律失常 > 室性心动过速,definition；etiology；clinical_manifestation；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,心室扑动与心室颤动,心律失常 > 室性心律失常 > 心室扑动与心室颤动,definition；clinical_manifestation,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,心脏传导阻滞,心律失常 > 心脏传导阻滞,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,房室传导阻滞,心律失常 > 心脏传导阻滞 > 房室传导阻滞,definition；etiology；clinical_manifestation；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,室内传导阻滞,心律失常 > 心脏传导阻滞 > 室内传导阻滞,definition；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,抗心律失常药物的合理应用,心律失常 > 抗心律失常药物的合理应用,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,心律失常的介入治疗和手术治疗,心律失常 > 心律失常的介入治疗和手术治疗,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,动脉粥样硬化,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 动脉粥样硬化,definition；etiology；pathogenesis,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+章,动脉粥样硬化和冠状动脉粥样硬化性心脏病,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 动脉粥样硬化和冠状动脉粥样硬化性心脏病,definition；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；prognosis；follow_up；prevention；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,冠状动脉粥样硬化性心脏病概述,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 冠状动脉粥样硬化性心脏病概述,definition；classification；risk_stratification；pathogenesis,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,慢性冠状动脉综合征,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 慢性冠状动脉综合征,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,稳定型心绞痛,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 慢性冠状动脉综合征 > 稳定型心绞痛,definition；pathogenesis；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；prognosis；follow_up；prevention；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,缺血性心肌病,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 慢性冠状动脉综合征 > 缺血性心肌病,definition；clinical_manifestation；diagnostic_criteria；differential_diagnosis；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,隐匿型冠心病,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 慢性冠状动脉综合征 > 隐匿型冠心病,diagnostic_criteria；differential_diagnosis；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,急性冠脉综合征,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 急性冠脉综合征,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,不稳定型心绞痛和非 ST 段抬高型心肌梗死,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 急性冠脉综合征 > 不稳定型心绞痛和非 ST 段抬高型心肌梗死,definition；etiology；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；classification；risk_stratification；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,急性 ST 段抬高型心肌梗死,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 急性冠脉综合征 > 急性 ST 段抬高型心肌梗死,definition；etiology；pathogenesis；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；treatment；prognosis；follow_up；prevention,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,冠状动脉疾病的其他表现形式,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 冠状动脉疾病的其他表现形式,,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,冠状动脉痉挛,动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 冠状动脉疾病的其他表现形式 > 冠状动脉痉挛,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+章,高血压,高血压 > 高血压,,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,原发性高血压,高血压 > 原发性高血压,definition；etiology；exam；diagnostic_criteria；differential_diagnosis；classification；risk_stratification；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,继发性高血压,高血压 > 继发性高血压,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+章,心肌疾病,心肌疾病 > 心肌疾病,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,肥厚型心肌病,心肌疾病 > 肥厚型心肌病,definition；pathogenesis；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,扩张型心肌病,心肌疾病 > 扩张型心肌病,definition；etiology；pathogenesis；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,非扩张型左心室心肌病,心肌疾病 > 非扩张型左心室心肌病,definition；pathogenesis；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,致心律失常性右心室心肌病,心肌疾病 > 致心律失常性右心室心肌病,definition；pathogenesis；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,限制型心肌病,心肌疾病 > 限制型心肌病,definition；etiology；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,心肌炎,心肌疾病 > 心肌炎,definition；etiology；pathogenesis；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+章,先天性心血管病,先天性心血管病 > 先天性心血管病,,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,成人常见先天性心血管病,先天性心血管病 > 成人常见先天性心血管病,definition；pathogenesis；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；treatment；prognosis；follow_up；prevention,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+条目,艾森门格综合征,先天性心血管病 > 成人常见先天性心血管病 > 艾森门格综合征,definition；pathogenesis；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；treatment；prognosis；follow_up；prevention,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,成人先天性心脏病的介入治疗,先天性心血管病 > 成人先天性心脏病的介入治疗,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+章,心脏瓣膜病,心脏瓣膜病 > 心脏瓣膜病,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,主动脉瓣狭窄,心脏瓣膜病 > 主动脉瓣狭窄,etiology；pathogenesis；clinical_manifestation；diagnostic_criteria；differential_diagnosis；treatment；prognosis；follow_up；prevention,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,主动脉瓣反流,心脏瓣膜病 > 主动脉瓣反流,etiology；pathogenesis；clinical_manifestation；diagnostic_criteria；differential_diagnosis；treatment；prognosis；follow_up；prevention,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,二尖瓣狭窄,心脏瓣膜病 > 二尖瓣狭窄,etiology；pathogenesis；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；treatment；prognosis；follow_up；prevention,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,二尖瓣反流,心脏瓣膜病 > 二尖瓣反流,pathogenesis；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；treatment；prognosis；follow_up；prevention,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,多瓣膜病,心脏瓣膜病 > 多瓣膜病,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,风湿热,心脏瓣膜病 > 风湿热,definition；clinical_manifestation；diagnostic_criteria；differential_diagnosis,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+章,心包疾病,心包疾病 > 心包疾病,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,急性心包炎,心包疾病 > 急性心包炎,definition；etiology；pathogenesis；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；prognosis；follow_up；prevention；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,心包积液及心脏压塞,心包疾病 > 心包积液及心脏压塞,definition；etiology；pathogenesis；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；prognosis；follow_up；prevention；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,缩窄性心包炎,心包疾病 > 缩窄性心包炎,definition；etiology；pathogenesis；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；prognosis；follow_up；prevention；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+章,感染性心内膜炎,感染性心内膜炎 > 感染性心内膜炎,definition；etiology；pathogenesis；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；treatment；prognosis；follow_up；prevention,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+章,心脏骤停与心脏性猝死,心脏骤停与心脏性猝死 > 心脏骤停与心脏性猝死,definition；etiology；pathogenesis；clinical_manifestation,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,主动脉夹层,心脏骤停与心脏性猝死 > 主动脉夹层,definition；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,下肢动脉硬化闭塞症,心脏骤停与心脏性猝死 > 下肢动脉硬化闭塞症,definition；etiology；pathogenesis；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；treatment；prognosis；follow_up；prevention,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,静脉血栓症,心脏骤停与心脏性猝死 > 静脉血栓症,definition；etiology；clinical_manifestation；diagnostic_criteria；differential_diagnosis,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+章,心血管神经症,心血管神经症 > 心血管神经症,definition；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,肿瘤治疗相关的心功能不全,心血管神经症 > 肿瘤治疗相关的心功能不全,etiology；clinical_manifestation；exam；diagnostic_criteria；differential_diagnosis；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,肿瘤治疗相关的冠状动脉疾病,心血管神经症 > 肿瘤治疗相关的冠状动脉疾病,definition；pathogenesis；clinical_manifestation；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,肿瘤治疗相关的心律失常,心血管神经症 > 肿瘤治疗相关的心律失常,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,肿瘤治疗相关的高血压,心血管神经症 > 肿瘤治疗相关的高血压,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,肿瘤治疗相关的血栓性疾病,心血管神经症 > 肿瘤治疗相关的血栓性疾病,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,肿瘤治疗相关的其他心血管疾病,心血管神经症 > 肿瘤治疗相关的其他心血管疾病,definition,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,糖尿病与高血压,心血管神经症 > 糖尿病与高血压,definition；pathogenesis；clinical_manifestation；diagnostic_criteria；differential_diagnosis；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,糖尿病与冠心病,心血管神经症 > 糖尿病与冠心病,definition；pathogenesis；clinical_manifestation；diagnostic_criteria；differential_diagnosis；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
+节,糖尿病与心力衰竭,心血管神经症 > 糖尿病与心力衰竭,definition；pathogenesis；clinical_manifestation；diagnostic_criteria；differential_diagnosis；treatment,通过,通过,V1.2按知识浏览层实体复测证据链；正式CDSS推荐仍以正式推荐节点和规则链为准
