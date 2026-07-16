@@ -1,0 +1,223 @@
+{
+  "generated_at": "2026-07-16 22:01:10",
+  "before_count": 21,
+  "before": [
+    {
+      "code": "TXTSEC-CARD-8F0052D9CD064628",
+      "name": "冠状动脉疾病的其他表现形式",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-1F4863F540B1193A",
+      "name": "动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-881F348325FABFC4",
+      "name": "心肌疾病",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-A89C6468184D73A0",
+      "name": "心脏传导阻滞",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-CF2E4261E0CBB09A",
+      "name": "慢性冠状动脉综合征",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-F7CECD8190F15187",
+      "name": "成人常见先天性心血管病",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-9F1F786086088FA9",
+      "name": "房室交界性心律失常",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-07989B674404CC1B",
+      "name": "房性心律失常",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-97BBFF66DFCE20BE",
+      "name": "第三章心律失常",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-26D9148C73D692FD",
+      "name": "第三节慢性冠状动脉综合征",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-DD89C5D3B8FC875D",
+      "name": "第三节房性心律失常",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-7DAA4D2D5EA75ADA",
+      "name": "第二章心力衰竭",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-4E51D9DFE735626D",
+      "name": "第二节窦性心律失常",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-AE704C8C86EAA8A1",
+      "name": "第五节冠状动脉疾病的其他表现形式",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-637D98D9882481B7",
+      "name": "第五节室性心律失常",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-A7ABC26E489B9F6E",
+      "name": "第八节心律失常的介入治疗和手术治疗",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-B1D689C0372630B1",
+      "name": "第六章心肌疾病",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-29C64F3DFF8D98C1",
+      "name": "第六节心脏传导阻滞",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-FF693A65907956D3",
+      "name": "第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-284F3646EE9C4726",
+      "name": "第四节急性冠脉综合征",
+      "disease_count": 0,
+      "subcategory_count": 0
+    },
+    {
+      "code": "TXTSEC-CARD-5D866954C04A4E46",
+      "name": "第四节房室交界性心律失常",
+      "disease_count": 0,
+      "subcategory_count": 0
+    }
+  ],
+  "updated": {
+    "updated": 21,
+    "items": [
+      {
+        "name": "房性心律失常",
+        "code": "TXTSEC-CARD-07989B674404CC1B"
+      },
+      {
+        "name": "动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+        "code": "TXTSEC-CARD-1F4863F540B1193A"
+      },
+      {
+        "name": "第三节慢性冠状动脉综合征",
+        "code": "TXTSEC-CARD-26D9148C73D692FD"
+      },
+      {
+        "name": "第四节急性冠脉综合征",
+        "code": "TXTSEC-CARD-284F3646EE9C4726"
+      },
+      {
+        "name": "第六节心脏传导阻滞",
+        "code": "TXTSEC-CARD-29C64F3DFF8D98C1"
+      },
+      {
+        "name": "第二节窦性心律失常",
+        "code": "TXTSEC-CARD-4E51D9DFE735626D"
+      },
+      {
+        "name": "第四节房室交界性心律失常",
+        "code": "TXTSEC-CARD-5D866954C04A4E46"
+      },
+      {
+        "name": "第五节室性心律失常",
+        "code": "TXTSEC-CARD-637D98D9882481B7"
+      },
+      {
+        "name": "第二章心力衰竭",
+        "code": "TXTSEC-CARD-7DAA4D2D5EA75ADA"
+      },
+      {
+        "name": "心肌疾病",
+        "code": "TXTSEC-CARD-881F348325FABFC4"
+      },
+      {
+        "name": "冠状动脉疾病的其他表现形式",
+        "code": "TXTSEC-CARD-8F0052D9CD064628"
+      },
+      {
+        "name": "第三章心律失常",
+        "code": "TXTSEC-CARD-97BBFF66DFCE20BE"
+      },
+      {
+        "name": "房室交界性心律失常",
+        "code": "TXTSEC-CARD-9F1F786086088FA9"
+      },
+      {
+        "name": "第八节心律失常的介入治疗和手术治疗",
+        "code": "TXTSEC-CARD-A7ABC26E489B9F6E"
+      },
+      {
+        "name": "心脏传导阻滞",
+        "code": "TXTSEC-CARD-A89C6468184D73A0"
+      },
+      {
+        "name": "第五节冠状动脉疾病的其他表现形式",
+        "code": "TXTSEC-CARD-AE704C8C86EAA8A1"
+      },
+      {
+        "name": "第六章心肌疾病",
+        "code": "TXTSEC-CARD-B1D689C0372630B1"
+      },
+      {
+        "name": "慢性冠状动脉综合征",
+        "code": "TXTSEC-CARD-CF2E4261E0CBB09A"
+      },
+      {
+        "name": "第三节房性心律失常",
+        "code": "TXTSEC-CARD-DD89C5D3B8FC875D"
+      },
+      {
+        "name": "成人常见先天性心血管病",
+        "code": "TXTSEC-CARD-F7CECD8190F15187"
+      },
+      {
+        "name": "第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病",
+        "code": "TXTSEC-CARD-FF693A65907956D3"
+      }
+    ]
+  },
+  "after_remaining_count": 0,
+  "after_remaining": []
+}

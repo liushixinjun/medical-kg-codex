@@ -1,0 +1,23 @@
+{
+  "batch_id": "20260716_内科学教材定义手工核准补齐",
+  "executed_at": "2026-07-16 22:34:00",
+  "updated_count": 2,
+  "items": [
+    {
+      "disease_code": "DIS-CARD-HTN-EMERGENCY",
+      "disease_name": "高血压急症和亚急症",
+      "source_section_path": "高血压 > 原发性高血压 > 高血压急症和亚急症",
+      "docx_para_start": 5634,
+      "docx_para_end": 5640,
+      "decision": "章节内小标题，属于内科学教材范围，补入冻结范围"
+    },
+    {
+      "disease_code": "DIS-CARD-NEUROSIS",
+      "disease_name": "心血管神经症",
+      "source_section_path": "心血管神经症 > 心血管神经症",
+      "docx_para_start": 7325,
+      "docx_para_end": 7325,
+      "decision": "用DOCX原文定义替换目录摘要"
+    }
+  ]
+}

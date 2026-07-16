@@ -1,0 +1,1808 @@
+{
+  "batch_id": "20260716_内科学骨架同名实体归并",
+  "executed_at": "2026-07-16 22:21:10",
+  "merged_group_count": 184,
+  "merged_node_count": 282,
+  "skipped_group_count": 4,
+  "merged_groups": [
+    {
+      "type": "Complication",
+      "name": "心源性休克",
+      "kept_code": "COMP-CARD-2D4A7476D746",
+      "merged_count": 1,
+      "merged_codes": [
+        "COMP-CARD-CADREM-AMI-2D4A7476D7"
+      ]
+    },
+    {
+      "type": "Definition",
+      "name": "心力衰竭定义",
+      "kept_code": "DEF-DIS-CARD-HF",
+      "merged_count": 1,
+      "merged_codes": [
+        "CARD-SKELETON-FULL-20260709-DEFINITION-A2669377755E4A62"
+      ]
+    },
+    {
+      "type": "Definition",
+      "name": "急性冠脉综合征定义",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DEFINITION-8A11A000022C1D3E",
+      "merged_count": 1,
+      "merged_codes": [
+        "DEF-CARD-CADREM-ACS-ABE4D268EA"
+      ]
+    },
+    {
+      "type": "Definition",
+      "name": "稳定型心绞痛定义",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DEFINITION-488590627E403957",
+      "merged_count": 1,
+      "merged_codes": [
+        "DEF-CARD-CADREM-STABLE-ANGINA-F40CB51F94"
+      ]
+    },
+    {
+      "type": "Definition",
+      "name": "缺血性心肌病定义",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DEFINITION-27C9D2D91BBEC573",
+      "merged_count": 1,
+      "merged_codes": [
+        "DEF-CARD-CADREM-ICM-90A49A2181"
+      ]
+    },
+    {
+      "type": "DefinitionComponent",
+      "name": "导致器官病变的最常见类型，严重危害人类健康",
+      "kept_code": "CARD-SKELETON-20260709-DEFINITIONCOMPONENT-503BBBA2891A2111",
+      "merged_count": 2,
+      "merged_codes": [
+        "DEF-COMP-CARD-CADREM-ACS-6C48F96A22",
+        "DEF-COMP-CARD-CADREM-CCS-6C48F96A22"
+      ]
+    },
+    {
+      "type": "DefinitionComponent",
+      "name": "引起缺血性ST-T的改变，应加以鉴别",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DEFINITIONCOMPONENT-73489F3902B466AB",
+      "merged_count": 2,
+      "merged_codes": [
+        "DEF-COMP-CARD-CADREM-CCS-435BF8DB65",
+        "DEF-COMP-CARD-CADREM-SILENT-ISCHEMIA-435BF8DB65"
+      ]
+    },
+    {
+      "type": "DefinitionComponent",
+      "name": "是UA的一种特殊类型，其发病机制为冠脉痉挛",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DEFINITIONCOMPONENT-546D709631EA3CE0",
+      "merged_count": 2,
+      "merged_codes": [
+        "DEF-COMP-CARD-CADREM-NSTEMI-9C7D010405",
+        "DEF-COMP-CARD-CADREM-UA-9C7D010405"
+      ]
+    },
+    {
+      "type": "DefinitionComponent",
+      "name": "是农村还是城市，AMI发病率在不断增高，死亡率整体呈上升趋势",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DEFINITIONCOMPONENT-311FD855F1384B87",
+      "merged_count": 1,
+      "merged_codes": [
+        "DEF-COMP-CARD-CADREM-AMI-71AD0F8DE9"
+      ]
+    },
+    {
+      "type": "DefinitionComponent",
+      "name": "是动脉粥样硬化导致器官病变的最常见类型，严重危害人类健康",
+      "kept_code": "CARD-SKELETON-20260709-DEFINITIONCOMPONENT-4201E76BC14F1B9B",
+      "merged_count": 2,
+      "merged_codes": [
+        "DEF-COMP-CARD-CADREM-ACS-E3AD272D70",
+        "DEF-COMP-CARD-CADREM-CCS-E3AD272D70"
+      ]
+    },
+    {
+      "type": "DefinitionComponent",
+      "name": "是诊断心肌缺血的重要客观依据",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DEFINITIONCOMPONENT-BC308C550538B6D3",
+      "merged_count": 2,
+      "merged_codes": [
+        "DEF-COMP-CARD-CADREM-CCS-094ECE64D1",
+        "DEF-COMP-CARD-CADREM-SILENT-ISCHEMIA-094ECE64D1"
+      ]
+    },
+    {
+      "type": "DiagnosisCriteria",
+      "name": "缺血性心肌病诊断标准",
+      "kept_code": "DXC-CARD-097806EACD3F",
+      "merged_count": 1,
+      "merged_codes": [
+        "DXC-CARD-CADREM-ICM-097806EACD"
+      ]
+    },
+    {
+      "type": "DiagnosisCriteriaComponent",
+      "name": "一般即可建立诊断",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DIAGNOSISCRITERIACOMPONENT-3F383A8A90CEDB2B",
+      "merged_count": 1,
+      "merged_codes": [
+        "DXC-COMP-CARD-CADREM-STABLE-ANGINA-2617F49848"
+      ]
+    },
+    {
+      "type": "DiagnosisCriteriaComponent",
+      "name": "可初步作出UA/NSTEMI诊断",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DIAGNOSISCRITERIACOMPONENT-9FE38DDC64EEF8C5",
+      "merged_count": 2,
+      "merged_codes": [
+        "DXC-COMP-CARD-CADREM-NSTEMI-2795D09C52",
+        "DXC-COMP-CARD-CADREM-UA-2795D09C52"
+      ]
+    },
+    {
+      "type": "DiagnosisCriteriaComponent",
+      "name": "并短期内进行心电图、血清心肌坏死标志物测定等动态观察以确定诊断",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DIAGNOSISCRITERIACOMPONENT-05901E49B24D352B",
+      "merged_count": 1,
+      "merged_codes": [
+        "DXC-COMP-CARD-CADREM-AMI-A25969005C"
+      ]
+    },
+    {
+      "type": "DiagnosisCriteriaComponent",
+      "name": "支持心绞痛诊断",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DIAGNOSISCRITERIACOMPONENT-3797FEFBD3C0CE4F",
+      "merged_count": 1,
+      "merged_codes": [
+        "DXC-COMP-CARD-CADREM-STABLE-ANGINA-13DE31933B"
+      ]
+    },
+    {
+      "type": "DiagnosisCriteriaComponent",
+      "name": "有助于诊断和指导进一步治疗",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DIAGNOSISCRITERIACOMPONENT-ADD54DE80C4A0F0E",
+      "merged_count": 1,
+      "merged_codes": [
+        "DXC-COMP-CARD-CADREM-STABLE-ANGINA-430A65ED6F"
+      ]
+    },
+    {
+      "type": "DiagnosisCriteriaComponent",
+      "name": "特征性的心电图改变以及实验室检查发现",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DIAGNOSISCRITERIACOMPONENT-97EB74ED3F150876",
+      "merged_count": 1,
+      "merged_codes": [
+        "DXC-COMP-CARD-CADREM-AMI-C7B9D47BC2"
+      ]
+    },
+    {
+      "type": "DiagnosisCriteriaComponent",
+      "name": "缺血性心肌病诊断需满足以下几点",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DIAGNOSISCRITERIACOMPONENT-AC601B38FC13C106",
+      "merged_count": 1,
+      "merged_codes": [
+        "DXC-COMP-CARD-CADREM-ICM-A86AD2CDF4"
+      ]
+    },
+    {
+      "type": "DiagnosisCriteriaComponent",
+      "name": "诊断本病并不困难",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DIAGNOSISCRITERIACOMPONENT-7CB5E5588674E083",
+      "merged_count": 1,
+      "merged_codes": [
+        "DXC-COMP-CARD-CADREM-AMI-D5C492D199"
+      ]
+    },
+    {
+      "type": "DiagnosisCriteriaComponent",
+      "name": "鉴别诊断需要考虑以下疾病",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DIAGNOSISCRITERIACOMPONENT-DED0C1F110816350",
+      "merged_count": 1,
+      "merged_codes": [
+        "DXC-COMP-CARD-CADREM-AMI-DB977CDA84"
+      ]
+    },
+    {
+      "type": "DiseaseClassification",
+      "name": "109～140分为中危",
+      "kept_code": "CLASS-CARD-CADREM-UA-69F8FA5ADF",
+      "merged_count": 1,
+      "merged_codes": [
+        "CLASS-CARD-CADREM-NSTEMI-69F8FA5ADF"
+      ]
+    },
+    {
+      "type": "DiseaseClassification",
+      "name": "1979年WHO曾将其分为五型",
+      "kept_code": "CLASS-CARD-CADREM-CCS-B18ADE7038",
+      "merged_count": 2,
+      "merged_codes": [
+        "CARD-SKELETON-20260709-DISEASECLASSIFICATION-0F0739929D4D65FB",
+        "CLASS-CARD-CADREM-ACS-B18ADE7038"
+      ]
+    },
+    {
+      "type": "DiseaseClassification",
+      "name": "Braunwald根据心绞痛的特点和基础病因",
+      "kept_code": "CLASS-CARD-CADREM-UA-3ED0E5D680",
+      "merged_count": 2,
+      "merged_codes": [
+        "CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-25D5574205249FB4",
+        "CLASS-CARD-CADREM-NSTEMI-3ED0E5D680"
+      ]
+    },
+    {
+      "type": "DiseaseClassification",
+      "name": "GRACE评分＞140分为高危",
+      "kept_code": "CLASS-CARD-CADREM-UA-44D099513F",
+      "merged_count": 1,
+      "merged_codes": [
+        "CLASS-CARD-CADREM-NSTEMI-44D099513F"
+      ]
+    },
+    {
+      "type": "DiseaseClassification",
+      "name": "≤108分为低危",
+      "kept_code": "CLASS-CARD-CADREM-UA-B60FDF102A",
+      "merged_count": 1,
+      "merged_codes": [
+        "CLASS-CARD-CADREM-NSTEMI-B60FDF102A"
+      ]
+    },
+    {
+      "type": "DiseaseClassification",
+      "name": "冠心病有不同的临床表型",
+      "kept_code": "CLASS-CARD-CADREM-CCS-DC4DEC6771",
+      "merged_count": 2,
+      "merged_codes": [
+        "CARD-SKELETON-20260709-DISEASECLASSIFICATION-9C001CCD8D514B9B",
+        "CLASS-CARD-CADREM-ACS-DC4DEC6771"
+      ]
+    },
+    {
+      "type": "DiseaseClassification",
+      "name": "缺血性心肌病",
+      "kept_code": "CLASS-CARD-CADREM-CCS-53D1235A0C",
+      "merged_count": 2,
+      "merged_codes": [
+        "CARD-SKELETON-20260709-DISEASECLASSIFICATION-AD9A511CAB7AE0A9",
+        "CLASS-CARD-CADREM-ACS-53D1235A0C"
+      ]
+    },
+    {
+      "type": "DiseaseClassification",
+      "name": "隐匿型或无症状型冠心病",
+      "kept_code": "CLASS-CARD-CADREM-CCS-631884375C",
+      "merged_count": 2,
+      "merged_codes": [
+        "CARD-SKELETON-20260709-DISEASECLASSIFICATION-1967E04365CD118E",
+        "CLASS-CARD-CADREM-ACS-631884375C"
+      ]
+    },
+    {
+      "type": "Etiology",
+      "name": "NSTEMI常因心肌严重的持续性缺血导致心肌坏死",
+      "kept_code": "CARD-SKELETON-FULL-20260709-ETIOLOGY-346CDEBD3A30A0A1",
+      "merged_count": 1,
+      "merged_codes": [
+        "ETI-CARD-CADREM-UA-CEB14DA33E"
+      ]
+    },
+    {
+      "type": "Etiology",
+      "name": "但中止后胸痛并不能立刻缓解",
+      "kept_code": "CARD-SKELETON-FULL-20260709-ETIOLOGY-A1D8AA6E7B1C56F6",
+      "merged_count": 1,
+      "merged_codes": [
+        "ETI-CARD-CADREM-UA-BD389ED989"
+      ]
+    },
+    {
+      "type": "Etiology",
+      "name": "导致急性或亚急性心肌供氧减少和缺血加重",
+      "kept_code": "CARD-SKELETON-FULL-20260709-ETIOLOGY-C1AA38A148EB8F02",
+      "merged_count": 1,
+      "merged_codes": [
+        "ETI-CARD-CADREM-UA-D4CD854C62"
+      ]
+    },
+    {
+      "type": "Etiology",
+      "name": "心肌收缩力、心率、血压增高",
+      "kept_code": "CARD-SKELETON-FULL-20260709-ETIOLOGY-EE1E17AB67B710A5",
+      "merged_count": 1,
+      "merged_codes": [
+        "ETI-CARD-CADREM-AMI-C88715B943"
+      ]
+    },
+    {
+      "type": "Etiology",
+      "name": "机体应激反应性增强",
+      "kept_code": "CARD-SKELETON-FULL-20260709-ETIOLOGY-2ECDF0F2801C7C3B",
+      "merged_count": 1,
+      "merged_codes": [
+        "ETI-CARD-CADREM-AMI-F1D6CD2D9F"
+      ]
+    },
+    {
+      "type": "Etiology",
+      "name": "病理上出现灶性或心内膜下心肌坏死",
+      "kept_code": "CARD-SKELETON-FULL-20260709-ETIOLOGY-FE37DC0F30828D68",
+      "merged_count": 1,
+      "merged_codes": [
+        "ETI-CARD-CADREM-UA-1276AF4D97"
+      ]
+    },
+    {
+      "type": "Etiology",
+      "name": "绝大多数STEMI是由于不稳定粥样斑块溃破",
+      "kept_code": "CARD-SKELETON-FULL-20260709-ETIOLOGY-4023D2F72B8F322D",
+      "merged_count": 1,
+      "merged_codes": [
+        "ETI-CARD-CADREM-AMI-A70FED6EB8"
+      ]
+    },
+    {
+      "type": "Etiology",
+      "name": "继而出血和管腔内血栓形成而使管腔闭塞",
+      "kept_code": "CARD-SKELETON-FULL-20260709-ETIOLOGY-5ED58A240BF427A3",
+      "merged_count": 1,
+      "merged_codes": [
+        "ETI-CARD-CADREM-AMI-D585053F75"
+      ]
+    },
+    {
+      "type": "Etiology",
+      "name": "若持续时间达到20～30分钟以上",
+      "kept_code": "CARD-SKELETON-FULL-20260709-ETIOLOGY-0040EEF9BBBC7C4C",
+      "merged_count": 1,
+      "merged_codes": [
+        "ETI-CARD-CADREM-AMI-C62EB8DF63"
+      ]
+    },
+    {
+      "type": "Etiology",
+      "name": "虽可因劳力负荷诱发",
+      "kept_code": "CARD-SKELETON-FULL-20260709-ETIOLOGY-3ABB33F3C539CBFD",
+      "merged_count": 1,
+      "merged_codes": [
+        "ETI-CARD-CADREM-UA-63D82E5B74"
+      ]
+    },
+    {
+      "type": "Exam",
+      "name": "CT",
+      "kept_code": "EXAM-CARD-F6AAC5622DEA",
+      "merged_count": 6,
+      "merged_codes": [
+        "EXAM-CARD-CADREM-AMI-F6AAC5622D",
+        "EXAM-CARD-CADREM-ICM-F6AAC5622D",
+        "EXAM-CARD-CADREM-NSTEMI-F6AAC5622D",
+        "EXAM-CARD-CADREM-SILENT-ISCHEMIA-F6AAC5622D",
+        "EXAM-CARD-CADREM-STABLE-ANGINA-F6AAC5622D",
+        "EXAM-CARD-CADREM-UA-F6AAC5622D"
+      ]
+    },
+    {
+      "type": "Exam",
+      "name": "IVUS",
+      "kept_code": "EXAM-CARD-CADREM-SILENT-ISCHEMIA-9E41219AEC",
+      "merged_count": 2,
+      "merged_codes": [
+        "EXAM-CARD-CADREM-NSTEMI-9E41219AEC",
+        "EXAM-CARD-CADREM-UA-9E41219AEC"
+      ]
+    },
+    {
+      "type": "Exam",
+      "name": "OCT",
+      "kept_code": "EXAM-CARD-CADREM-UA-6595E76160",
+      "merged_count": 1,
+      "merged_codes": [
+        "EXAM-CARD-CADREM-NSTEMI-6595E76160"
+      ]
+    },
+    {
+      "type": "Exam",
+      "name": "X线",
+      "kept_code": "CARD-SKELETON-20260709-EXAM-B66979D14041DD2B",
+      "merged_count": 3,
+      "merged_codes": [
+        "EXAM-CARD-CADREM-AMI-C78840F44A",
+        "EXAM-CARD-CADREM-NSTEMI-C78840F44A",
+        "EXAM-CARD-CADREM-UA-C78840F44A"
+      ]
+    },
+    {
+      "type": "Exam",
+      "name": "冠状动脉CT血管成像",
+      "kept_code": "EXAM-CARD-F60922D428D5",
+      "merged_count": 4,
+      "merged_codes": [
+        "EXAM-CARD-CADREM-AMI-F60922D428",
+        "EXAM-CARD-CADREM-ICM-F60922D428",
+        "EXAM-CARD-CADREM-SILENT-ISCHEMIA-F60922D428",
+        "EXAM-CARD-CADREM-STABLE-ANGINA-F60922D428"
+      ]
+    },
+    {
+      "type": "Exam",
+      "name": "冠状动脉造影",
+      "kept_code": "EXAM-CAG",
+      "merged_count": 5,
+      "merged_codes": [
+        "EXAM-CARD-CADREM-ICM-ABF51FE8EB",
+        "EXAM-CARD-CADREM-NSTEMI-ABF51FE8EB",
+        "EXAM-CARD-CADREM-SILENT-ISCHEMIA-ABF51FE8EB",
+        "EXAM-CARD-CADREM-STABLE-ANGINA-ABF51FE8EB",
+        "EXAM-CARD-CADREM-UA-ABF51FE8EB"
+      ]
+    },
+    {
+      "type": "Exam",
+      "name": "心电图",
+      "kept_code": "EXAM-ECG",
+      "merged_count": 4,
+      "merged_codes": [
+        "EXAM-CARD-CADREM-AMI-8BA93874D8",
+        "EXAM-CARD-CADREM-NSTEMI-8BA93874D8",
+        "EXAM-CARD-CADREM-STABLE-ANGINA-8BA93874D8",
+        "EXAM-CARD-CADREM-UA-8BA93874D8"
+      ]
+    },
+    {
+      "type": "Exam",
+      "name": "心脏磁共振",
+      "kept_code": "EXAM-CMR",
+      "merged_count": 1,
+      "merged_codes": [
+        "EXAM-CARD-61766890B7D2"
+      ]
+    },
+    {
+      "type": "Exam",
+      "name": "经食管超声心动图",
+      "kept_code": "EXAM-CARD-705D7CD61EB7",
+      "merged_count": 1,
+      "merged_codes": [
+        "EXAM-TEE"
+      ]
+    },
+    {
+      "type": "Exam",
+      "name": "胸部X线",
+      "kept_code": "EXAM-CARD-D690076CB8EB",
+      "merged_count": 3,
+      "merged_codes": [
+        "CARD-SKELETON-20260709-EXAM-93C0CE477B5767D4",
+        "EXAM-CARD-CADREM-NSTEMI-D690076CB8",
+        "EXAM-CARD-CADREM-UA-D690076CB8"
+      ]
+    },
+    {
+      "type": "Exam",
+      "name": "超声心动图",
+      "kept_code": "EXAM-TTE",
+      "merged_count": 5,
+      "merged_codes": [
+        "EXAM-CARD-CADREM-AMI-53A915B5AC",
+        "EXAM-CARD-CADREM-ICM-53A915B5AC",
+        "EXAM-CARD-CADREM-NSTEMI-53A915B5AC",
+        "EXAM-CARD-CADREM-STABLE-ANGINA-53A915B5AC",
+        "EXAM-CARD-CADREM-UA-53A915B5AC"
+      ]
+    },
+    {
+      "type": "Exam",
+      "name": "运动负荷试验",
+      "kept_code": "EXAM-CARD-241B4B0218DF",
+      "merged_count": 2,
+      "merged_codes": [
+        "EXAM-CARD-CADREM-SILENT-ISCHEMIA-241B4B0218",
+        "EXAM-CARD-CADREM-STABLE-ANGINA-241B4B0218"
+      ]
+    },
+    {
+      "type": "FollowUp",
+      "name": "AMI相关的死亡一半发生于送到医院前",
+      "kept_code": "CARD-SKELETON-FULL-20260709-FOLLOWUP-A6765CEDC95C846E",
+      "merged_count": 1,
+      "merged_codes": [
+        "FU-CARD-CADREM-AMI-5FE270E918"
+      ]
+    },
+    {
+      "type": "FollowUp",
+      "name": "与梗死范围大小、侧支循环产生情况以及治疗是否及时等有关",
+      "kept_code": "CARD-SKELETON-FULL-20260709-FOLLOWUP-27F1DAD84AE29761",
+      "merged_count": 1,
+      "merged_codes": [
+        "FU-CARD-CADREM-AMI-444BB77CCB"
+      ]
+    },
+    {
+      "type": "FollowUp",
+      "name": "但有发生急性心肌梗死或猝死的危险",
+      "kept_code": "CARD-SKELETON-FULL-20260709-FOLLOWUP-8B4E3542C01C78DD",
+      "merged_count": 1,
+      "merged_codes": [
+        "FU-CARD-CADREM-STABLE-ANGINA-96363320D2"
+      ]
+    },
+    {
+      "type": "FollowUp",
+      "name": "其中院外死亡中相当高的比例为猝死",
+      "kept_code": "CARD-SKELETON-FULL-20260709-FOLLOWUP-EB6C7A0DB7B2BC50",
+      "merged_count": 1,
+      "merged_codes": [
+        "FU-CARD-CADREM-AMI-46F5F48E76"
+      ]
+    },
+    {
+      "type": "FollowUp",
+      "name": "决定预后的主要因素为冠脉病变累及心肌供血的范围和心功能",
+      "kept_code": "CARD-SKELETON-FULL-20260709-FOLLOWUP-DDF2C8187D3FBFD9",
+      "merged_count": 1,
+      "merged_codes": [
+        "FU-CARD-CADREM-STABLE-ANGINA-D8820F905E"
+      ]
+    },
+    {
+      "type": "FollowUp",
+      "name": "发生严重心律失常、休克或心衰者",
+      "kept_code": "CARD-SKELETON-FULL-20260709-FOLLOWUP-DD44FCB1CF077DDE",
+      "merged_count": 1,
+      "merged_codes": [
+        "FU-CARD-CADREM-AMI-8542E81A9A"
+      ]
+    },
+    {
+      "type": "FollowUp",
+      "name": "因心脏监护室、现代药物治疗进展和再灌注治疗等综合措施的使用",
+      "kept_code": "CARD-SKELETON-FULL-20260709-FOLLOWUP-DC645340565C157D",
+      "merged_count": 1,
+      "merged_codes": [
+        "FU-CARD-CADREM-AMI-4E600C8890"
+      ]
+    },
+    {
+      "type": "FollowUp",
+      "name": "国外统计年病死率可高达30%左右",
+      "kept_code": "CARD-SKELETON-FULL-20260709-FOLLOWUP-43B27B67BF6B21A1",
+      "merged_count": 1,
+      "merged_codes": [
+        "FU-CARD-CADREM-STABLE-ANGINA-F2AC9D9D81"
+      ]
+    },
+    {
+      "type": "FollowUp",
+      "name": "在正常人群中预防动脉粥样硬化和冠心病属于一级预防",
+      "kept_code": "CARD-SKELETON-FULL-20260709-FOLLOWUP-EEDEDC4E450DAAFB",
+      "merged_count": 1,
+      "merged_codes": [
+        "FU-CARD-CADREM-AMI-838F9F3901"
+      ]
+    },
+    {
+      "type": "FollowUp",
+      "name": "对稳定型心绞痛除应用药物防止心绞痛再次发作外",
+      "kept_code": "CARD-SKELETON-FULL-20260709-FOLLOWUP-39E06ECE7678561D",
+      "merged_count": 1,
+      "merged_codes": [
+        "FU-CARD-CADREM-STABLE-ANGINA-F53C8702F2"
+      ]
+    },
+    {
+      "type": "FollowUp",
+      "name": "左冠脉主干病变最为严重",
+      "kept_code": "CARD-SKELETON-FULL-20260709-FOLLOWUP-7E7AE9A60406B69F",
+      "merged_count": 1,
+      "merged_codes": [
+        "FU-CARD-CADREM-STABLE-ANGINA-D6D9711628"
+      ]
+    },
+    {
+      "type": "FollowUp",
+      "name": "左前降支病变一般较其他两支冠脉病变预后差",
+      "kept_code": "CARD-SKELETON-FULL-20260709-FOLLOWUP-372FC3E7FE8023A5",
+      "merged_count": 1,
+      "merged_codes": [
+        "FU-CARD-CADREM-STABLE-ANGINA-EA52104645"
+      ]
+    },
+    {
+      "type": "FollowUp",
+      "name": "此后依次为3支、2支与单支病变",
+      "kept_code": "CARD-SKELETON-FULL-20260709-FOLLOWUP-FD0E025BEE19151E",
+      "merged_count": 1,
+      "merged_codes": [
+        "FU-CARD-CADREM-STABLE-ANGINA-321E89BE97"
+      ]
+    },
+    {
+      "type": "FollowUp",
+      "name": "死亡多发生在第一周内",
+      "kept_code": "CARD-SKELETON-FULL-20260709-FOLLOWUP-3C9D4A95EA59DB45",
+      "merged_count": 1,
+      "merged_codes": [
+        "FU-CARD-CADREM-AMI-8F91C649B4"
+      ]
+    },
+    {
+      "type": "FollowUp",
+      "name": "稳定型心绞痛病人大多数能生存很多年",
+      "kept_code": "CARD-SKELETON-FULL-20260709-FOLLOWUP-B7D84DFF87F7E17F",
+      "merged_count": 1,
+      "merged_codes": [
+        "FU-CARD-CADREM-STABLE-ANGINA-1E7C050E20"
+      ]
+    },
+    {
+      "type": "FollowUp",
+      "name": "还应从阻止或逆转粥样硬化病情进展、预防心肌梗死等方面综合考虑",
+      "kept_code": "CARD-SKELETON-FULL-20260709-FOLLOWUP-E6445A070D74CDBE",
+      "merged_count": 1,
+      "merged_codes": [
+        "FU-CARD-CADREM-STABLE-ANGINA-5E6A65ABD8"
+      ]
+    },
+    {
+      "type": "LabTest",
+      "name": "BNP",
+      "kept_code": "LAB-CARD-AAA739D91A3A",
+      "merged_count": 1,
+      "merged_codes": [
+        "LAB-CARD-CADREM-STABLE-ANGINA-AAA739D91A"
+      ]
+    },
+    {
+      "type": "LabTest",
+      "name": "C反应蛋白",
+      "kept_code": "LAB-CARD-BF2619C772EC",
+      "merged_count": 1,
+      "merged_codes": [
+        "LAB-CARD-TEXT-BF2619C772"
+      ]
+    },
+    {
+      "type": "LabTest",
+      "name": "D-二聚体",
+      "kept_code": "LAB-CARD-2E1F4EC42626",
+      "merged_count": 2,
+      "merged_codes": [
+        "CARD-SKELETON-FULL-20260709-LABTEST-963F52815A5370A3",
+        "LAB-CARD-CADREM-AMI-2E1F4EC426"
+      ]
+    },
+    {
+      "type": "LabTest",
+      "name": "心肌肌钙蛋白",
+      "kept_code": "LAB-CARD-A9EC1D4DA037",
+      "merged_count": 3,
+      "merged_codes": [
+        "LAB-CARD-CADREM-NSTEMI-A9EC1D4DA0",
+        "LAB-CARD-CADREM-STABLE-ANGINA-A9EC1D4DA0",
+        "LAB-CARD-CADREM-UA-A9EC1D4DA0"
+      ]
+    },
+    {
+      "type": "LabTest",
+      "name": "红细胞沉降率",
+      "kept_code": "LAB-CARD-1BE2B3C08B76",
+      "merged_count": 1,
+      "merged_codes": [
+        "LAB-CARD-TEXT-1BE2B3C08B"
+      ]
+    },
+    {
+      "type": "LabTest",
+      "name": "肌红蛋白",
+      "kept_code": "LAB-CARD-STEMI-4BA28B772105",
+      "merged_count": 2,
+      "merged_codes": [
+        "CARD-SKELETON-FULL-20260709-LABTEST-E0C046557359A3B3",
+        "LAB-CARD-CADREM-AMI-4BA28B7721"
+      ]
+    },
+    {
+      "type": "LabTest",
+      "name": "肌酸激酶",
+      "kept_code": "CARD-SKELETON-20260709-LABTEST-70C17E9844CB4791",
+      "merged_count": 2,
+      "merged_codes": [
+        "LAB-CARD-CADREM-AMI-DF011D5802",
+        "LAB-CARD-CADREM-STABLE-ANGINA-DF011D5802"
+      ]
+    },
+    {
+      "type": "LabTest",
+      "name": "肌酸激酶同工酶（CK-MB）",
+      "kept_code": "LAB-CARD-960C7CE8E22B",
+      "merged_count": 5,
+      "merged_codes": [
+        "CARD-SKELETON-20260709-LABTEST-1621003505C956CA",
+        "LAB-CARD-CADREM-AMI-CA4C7A8A1F",
+        "LAB-CARD-CADREM-NSTEMI-CA4C7A8A1F",
+        "LAB-CARD-CADREM-STABLE-ANGINA-CA4C7A8A1F",
+        "LAB-CARD-CADREM-UA-CA4C7A8A1F"
+      ]
+    },
+    {
+      "type": "LabTest",
+      "name": "肌钙蛋白",
+      "kept_code": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+      "merged_count": 5,
+      "merged_codes": [
+        "IND-CARDIAC-TROPONIN",
+        "LAB-CARD-CADREM-AMI-BE6E060391",
+        "LAB-CARD-CADREM-NSTEMI-BE6E060391",
+        "LAB-CARD-CADREM-STABLE-ANGINA-BE6E060391",
+        "LAB-CARD-CADREM-UA-BE6E060391"
+      ]
+    },
+    {
+      "type": "LabTest",
+      "name": "肾功能",
+      "kept_code": "LAB-CARD-TEXT-07B39C98F1",
+      "merged_count": 1,
+      "merged_codes": [
+        "LAB-CARD-CADREM-AMI-07B39C98F1"
+      ]
+    },
+    {
+      "type": "LabTest",
+      "name": "血常规",
+      "kept_code": "LAB-CARD-3F8D27CB7EC9",
+      "merged_count": 2,
+      "merged_codes": [
+        "LAB-CARD-CADREM-AMI-3F8D27CB7E",
+        "LAB-CARD-CADREM-STABLE-ANGINA-3F8D27CB7E"
+      ]
+    },
+    {
+      "type": "LabTest",
+      "name": "血糖",
+      "kept_code": "LAB-CARD-TEXT-43D8A5AEE4",
+      "merged_count": 1,
+      "merged_codes": [
+        "LAB-CARD-CADREM-STABLE-ANGINA-43D8A5AEE4"
+      ]
+    },
+    {
+      "type": "LabTest",
+      "name": "血脂",
+      "kept_code": "LAB-CARD-C59B64C19ADD",
+      "merged_count": 2,
+      "merged_codes": [
+        "CARD-SKELETON-20260709-LABTEST-98464EDC80D81183",
+        "LAB-CARD-CADREM-STABLE-ANGINA-C59B64C19A"
+      ]
+    },
+    {
+      "type": "Medication",
+      "name": "P2Y12受体抑制剂",
+      "kept_code": "MED-CARD-86E5A960E1BF",
+      "merged_count": 1,
+      "merged_codes": [
+        "MED-CARD-CADREM-STABLE-ANGINA-86E5A960E1"
+      ]
+    },
+    {
+      "type": "Medication",
+      "name": "β受体拮抗剂",
+      "kept_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7",
+      "merged_count": 1,
+      "merged_codes": [
+        "MED-CARD-CADREM-STABLE-ANGINA-64DAEC4E11"
+      ]
+    },
+    {
+      "type": "Medication",
+      "name": "替格瑞洛",
+      "kept_code": "MED-CARD-STD-E03DF8E3FD",
+      "merged_count": 3,
+      "merged_codes": [
+        "MED-CARD-CADREM-NSTEMI-00A158EBF2",
+        "MED-CARD-CADREM-STABLE-ANGINA-00A158EBF2",
+        "MED-CARD-CADREM-UA-00A158EBF2"
+      ]
+    },
+    {
+      "type": "Medication",
+      "name": "比索洛尔",
+      "kept_code": "MED-CARD-STD-68380EE96C",
+      "merged_count": 1,
+      "merged_codes": [
+        "MED-CARD-CADREM-STABLE-ANGINA-2CF15595A0"
+      ]
+    },
+    {
+      "type": "Medication",
+      "name": "氯吡格雷",
+      "kept_code": "MED-CARD-STD-9BB6ABC99A",
+      "merged_count": 3,
+      "merged_codes": [
+        "MED-CARD-CADREM-NSTEMI-EAA01CFD43",
+        "MED-CARD-CADREM-STABLE-ANGINA-EAA01CFD43",
+        "MED-CARD-CADREM-UA-EAA01CFD43"
+      ]
+    },
+    {
+      "type": "Medication",
+      "name": "硝酸甘油",
+      "kept_code": "MED-CARD-STD-DE220086E9",
+      "merged_count": 1,
+      "merged_codes": [
+        "MED-CARD-CADREM-STABLE-ANGINA-CC1DDBE4EF"
+      ]
+    },
+    {
+      "type": "Medication",
+      "name": "硝酸酯类药物",
+      "kept_code": "MED-CARD-55157DA54154",
+      "merged_count": 4,
+      "merged_codes": [
+        "MED-CARD-CADREM-AMI-55157DA541",
+        "MED-CARD-CADREM-NSTEMI-55157DA541",
+        "MED-CARD-CADREM-STABLE-ANGINA-55157DA541",
+        "MED-CARD-CADREM-UA-55157DA541"
+      ]
+    },
+    {
+      "type": "Medication",
+      "name": "维拉帕米",
+      "kept_code": "MED-CARD-STD-C685CE7163",
+      "merged_count": 1,
+      "merged_codes": [
+        "MED-CARD-CADREM-STABLE-ANGINA-4973D3CA20"
+      ]
+    },
+    {
+      "type": "Medication",
+      "name": "美托洛尔",
+      "kept_code": "MED-CARD-STD-1691342E51",
+      "merged_count": 2,
+      "merged_codes": [
+        "MED-CARD-CADREM-AMI-C9175F150C",
+        "MED-CARD-CADREM-STABLE-ANGINA-C9175F150C"
+      ]
+    },
+    {
+      "type": "Medication",
+      "name": "钙通道阻滞剂",
+      "kept_code": "MED-CARD-TEXT-28E925C6DE",
+      "merged_count": 3,
+      "merged_codes": [
+        "MED-CARD-CADREM-NSTEMI-28E925C6DE",
+        "MED-CARD-CADREM-STABLE-ANGINA-28E925C6DE",
+        "MED-CARD-CADREM-UA-28E925C6DE"
+      ]
+    },
+    {
+      "type": "Medication",
+      "name": "阿司匹林",
+      "kept_code": "MED-CARD-9F606AC80BFD",
+      "merged_count": 3,
+      "merged_codes": [
+        "MED-CARD-CADREM-AMI-9F606AC80B",
+        "MED-CARD-CADREM-NSTEMI-9F606AC80B",
+        "MED-CARD-CADREM-STABLE-ANGINA-9F606AC80B"
+      ]
+    },
+    {
+      "type": "Medication",
+      "name": "非二氢吡啶类钙通道阻滞剂",
+      "kept_code": "MED-NDHP-CCB",
+      "merged_count": 1,
+      "merged_codes": [
+        "MED-CARD-CADREM-STABLE-ANGINA-6974A87B31"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "1.左前降支闭塞",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PATHOPHYSIOLOGY-779EDCFE828087C2",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-AMI-6FB1FDD3B9"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "个别可无严重粥样硬化病变",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PATHOPHYSIOLOGY-E32B631F2C5455DD",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-AMI-ED79A66BC1"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "休息时尚能维持心肌血流的供需平衡",
+      "kept_code": "CARD-SKELETON-20260709-PATHOPHYSIOLOGY-A6BC3CA4689797E0",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-STABLE-ANGINA-A033601646"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "但是由冠脉痉挛引起管腔闭塞者中",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PATHOPHYSIOLOGY-360FEF2686CCAE2E",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-AMI-3F144CD91D"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "使心率增快、心肌张力和收缩力增加等导致心肌氧耗量增加",
+      "kept_code": "CARD-SKELETON-20260709-PATHOPHYSIOLOGY-0A534ACEC9C357F8",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-STABLE-ANGINA-CEF047F8CC"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "冠脉血流量不能满足心肌代谢的需要就可引起心肌缺血缺氧",
+      "kept_code": "CARD-SKELETON-20260709-PATHOPHYSIOLOGY-232B1E3687EF4F43",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-CCS-DB69D4C570"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "因此心肌平时对血液中氧的摄取已接近于最大量",
+      "kept_code": "CARD-SKELETON-20260709-PATHOPHYSIOLOGY-048B828A7233A8FF",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-CCS-4BD058F9FB"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "在劳力、情绪激动、饱食、受寒等情况下",
+      "kept_code": "CARD-SKELETON-20260709-PATHOPHYSIOLOGY-A24C481F68EAFB08",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-STABLE-ANGINA-9A2CE2A411"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "并可累及窦房结和房室结",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PATHOPHYSIOLOGY-5FA7F8EE65DAC86A",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-AMI-DC36C1CC1E"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "引起左心室前壁、心尖部、下侧壁、前间隔和二尖瓣前乳头肌梗死",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PATHOPHYSIOLOGY-EE91AAB2FD2F747B",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-AMI-F22D928EBA"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "当冠脉供血供氧与心肌需血需氧之间发生矛盾",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PATHOPHYSIOLOGY-9EEA1C170D1CA8F8",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-CCS-040201AE0B"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "当冠脉狭窄或部分闭塞时",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PATHOPHYSIOLOGY-092D9A333F099532",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-STABLE-ANGINA-CAC3543953"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "心肌供血量相对比较固定",
+      "kept_code": "CARD-SKELETON-20260709-PATHOPHYSIOLOGY-4D7ADE7CA914FFF2",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-STABLE-ANGINA-341EEA4122"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "心肌细胞摄取血液氧含量达到65%～75%",
+      "kept_code": "CARD-SKELETON-20260709-PATHOPHYSIOLOGY-6260DC1159E3CF51",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-CCS-C9BC1720D7"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "心肌能量的产生要求大量氧供",
+      "kept_code": "CARD-SKELETON-20260709-PATHOPHYSIOLOGY-30268B1A981FCD54",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-CCS-0A808BE540"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "心脏负荷突然增加",
+      "kept_code": "CARD-SKELETON-20260709-PATHOPHYSIOLOGY-97D6766BAF851B32",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-STABLE-ANGINA-E8090563F9"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "明显高于其他组织",
+      "kept_code": "CARD-SKELETON-20260709-PATHOPHYSIOLOGY-E28529D626BB3598",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-CCS-46D158417E"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "暂时的缺血缺氧引起心绞痛",
+      "kept_code": "CARD-SKELETON-20260709-PATHOPHYSIOLOGY-2A2AD7BFD7B5495E",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-CCS-9E2E15DED2"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "氧需再增加时已难从血液中更多地摄取氧",
+      "kept_code": "CARD-SKELETON-20260709-PATHOPHYSIOLOGY-00BF5FBED011B38B",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-CCS-FE65B0E5C4"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "而存在狭窄的冠脉供血却不能相应地增加以满足心肌需求时",
+      "kept_code": "CARD-SKELETON-20260709-PATHOPHYSIOLOGY-BFB41F9806344A61",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-STABLE-ANGINA-664ADA841B"
+      ]
+    },
+    {
+      "type": "Pathophysiology",
+      "name": "而持续严重的心肌缺血缺氧可引起心肌坏死",
+      "kept_code": "CARD-SKELETON-20260709-PATHOPHYSIOLOGY-4EAC9220025EC76F",
+      "merged_count": 1,
+      "merged_codes": [
+        "PATH-CARD-CADREM-CCS-5D89A03DC6"
+      ]
+    },
+    {
+      "type": "Prevention",
+      "name": "AMI相关的死亡一半发生于送到医院前",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PREVENTION-0B133CA60E30871F",
+      "merged_count": 1,
+      "merged_codes": [
+        "PREV-CARD-CADREM-AMI-D96BC8BF35"
+      ]
+    },
+    {
+      "type": "Prevention",
+      "name": "与梗死范围大小、侧支循环产生情况以及治疗是否及时等有关",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PREVENTION-39DED7A9229ABD49",
+      "merged_count": 1,
+      "merged_codes": [
+        "PREV-CARD-CADREM-AMI-7736BF94EA"
+      ]
+    },
+    {
+      "type": "Prevention",
+      "name": "但有发生急性心肌梗死或猝死的危险",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PREVENTION-A37EC726345F9A49",
+      "merged_count": 1,
+      "merged_codes": [
+        "PREV-CARD-CADREM-STABLE-ANGINA-B74B4DABE4"
+      ]
+    },
+    {
+      "type": "Prevention",
+      "name": "其中院外死亡中相当高的比例为猝死",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PREVENTION-441A368EEE207483",
+      "merged_count": 1,
+      "merged_codes": [
+        "PREV-CARD-CADREM-AMI-41093999D4"
+      ]
+    },
+    {
+      "type": "Prevention",
+      "name": "决定预后的主要因素为冠脉病变累及心肌供血的范围和心功能",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PREVENTION-45A8244677B2CF10",
+      "merged_count": 1,
+      "merged_codes": [
+        "PREV-CARD-CADREM-STABLE-ANGINA-EE53356EA3"
+      ]
+    },
+    {
+      "type": "Prevention",
+      "name": "发生严重心律失常、休克或心衰者",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PREVENTION-9C696610F67F6F68",
+      "merged_count": 1,
+      "merged_codes": [
+        "PREV-CARD-CADREM-AMI-5CCB3B8EDF"
+      ]
+    },
+    {
+      "type": "Prevention",
+      "name": "因心脏监护室、现代药物治疗进展和再灌注治疗等综合措施的使用",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PREVENTION-C0D679F5DC4D62C9",
+      "merged_count": 1,
+      "merged_codes": [
+        "PREV-CARD-CADREM-AMI-EE17DD237A"
+      ]
+    },
+    {
+      "type": "Prevention",
+      "name": "国外统计年病死率可高达30%左右",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PREVENTION-38C84CC4CFF48C90",
+      "merged_count": 1,
+      "merged_codes": [
+        "PREV-CARD-CADREM-STABLE-ANGINA-921A7324A9"
+      ]
+    },
+    {
+      "type": "Prevention",
+      "name": "在正常人群中预防动脉粥样硬化和冠心病属于一级预防",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PREVENTION-089948C388A00C52",
+      "merged_count": 1,
+      "merged_codes": [
+        "PREV-CARD-CADREM-AMI-A6288B4BFC"
+      ]
+    },
+    {
+      "type": "Prevention",
+      "name": "对稳定型心绞痛除应用药物防止心绞痛再次发作外",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PREVENTION-79C76E28F8AABAFE",
+      "merged_count": 1,
+      "merged_codes": [
+        "PREV-CARD-CADREM-STABLE-ANGINA-8C97ECA759"
+      ]
+    },
+    {
+      "type": "Prevention",
+      "name": "左冠脉主干病变最为严重",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PREVENTION-658EBC05F9EBCB05",
+      "merged_count": 1,
+      "merged_codes": [
+        "PREV-CARD-CADREM-STABLE-ANGINA-9C0BE15460"
+      ]
+    },
+    {
+      "type": "Prevention",
+      "name": "左前降支病变一般较其他两支冠脉病变预后差",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PREVENTION-B36165710A80BFE0",
+      "merged_count": 1,
+      "merged_codes": [
+        "PREV-CARD-CADREM-STABLE-ANGINA-F7AB695429"
+      ]
+    },
+    {
+      "type": "Prevention",
+      "name": "此后依次为3支、2支与单支病变",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PREVENTION-842D328E5BB5071A",
+      "merged_count": 1,
+      "merged_codes": [
+        "PREV-CARD-CADREM-STABLE-ANGINA-6B2296F6A3"
+      ]
+    },
+    {
+      "type": "Prevention",
+      "name": "死亡多发生在第一周内",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PREVENTION-CB56E98BF72AB749",
+      "merged_count": 1,
+      "merged_codes": [
+        "PREV-CARD-CADREM-AMI-FC8D4931FC"
+      ]
+    },
+    {
+      "type": "Prevention",
+      "name": "稳定型心绞痛病人大多数能生存很多年",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PREVENTION-5F5222F0DFEA6A46",
+      "merged_count": 1,
+      "merged_codes": [
+        "PREV-CARD-CADREM-STABLE-ANGINA-186C81853C"
+      ]
+    },
+    {
+      "type": "Prevention",
+      "name": "还应从阻止或逆转粥样硬化病情进展、预防心肌梗死等方面综合考虑",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PREVENTION-2710DEDCD036F4B7",
+      "merged_count": 1,
+      "merged_codes": [
+        "PREV-CARD-CADREM-STABLE-ANGINA-AFD37C6CC9"
+      ]
+    },
+    {
+      "type": "Procedure",
+      "name": "PCI",
+      "kept_code": "PROC-CARD-CADREM-UA-F15816B958",
+      "merged_count": 2,
+      "merged_codes": [
+        "PROC-CARD-CADREM-AMI-F15816B958",
+        "PROC-CARD-CADREM-NSTEMI-F15816B958"
+      ]
+    },
+    {
+      "type": "Procedure",
+      "name": "心脏移植",
+      "kept_code": "PROC-HEART-TRANSPLANT",
+      "merged_count": 1,
+      "merged_codes": [
+        "PROC-CARD-CADREM-ICM-9360DBD2DE"
+      ]
+    },
+    {
+      "type": "Procedure",
+      "name": "溶栓治疗",
+      "kept_code": "PROC-CARD-DA0F467D4A30",
+      "merged_count": 1,
+      "merged_codes": [
+        "PROC-CARD-CADREM-AMI-DA0F467D4A"
+      ]
+    },
+    {
+      "type": "Procedure",
+      "name": "经皮冠状动脉介入治疗",
+      "kept_code": "PROC-CARD-E9ADC25A25E3",
+      "merged_count": 3,
+      "merged_codes": [
+        "PROC-CARD-CADREM-AMI-E9ADC25A25",
+        "PROC-CARD-CADREM-NSTEMI-E9ADC25A25",
+        "PROC-CARD-CADREM-UA-E9ADC25A25"
+      ]
+    },
+    {
+      "type": "Prognosis",
+      "name": "AMI相关的死亡一半发生于送到医院前",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PROGNOSIS-4573052A43E6370A",
+      "merged_count": 1,
+      "merged_codes": [
+        "PROG-CARD-CADREM-AMI-9AD9A3BA00"
+      ]
+    },
+    {
+      "type": "Prognosis",
+      "name": "与梗死范围大小、侧支循环产生情况以及治疗是否及时等有关",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PROGNOSIS-55A1A3A543DBFE9D",
+      "merged_count": 1,
+      "merged_codes": [
+        "PROG-CARD-CADREM-AMI-BD33C708D7"
+      ]
+    },
+    {
+      "type": "Prognosis",
+      "name": "但有发生急性心肌梗死或猝死的危险",
+      "kept_code": "CARD-SKELETON-20260709-PROGNOSIS-08BC28CAE394C7CB",
+      "merged_count": 1,
+      "merged_codes": [
+        "PROG-CARD-CADREM-STABLE-ANGINA-E42BAF39DD"
+      ]
+    },
+    {
+      "type": "Prognosis",
+      "name": "其中院外死亡中相当高的比例为猝死",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PROGNOSIS-3658F5F111EE1F5F",
+      "merged_count": 1,
+      "merged_codes": [
+        "PROG-CARD-CADREM-AMI-13D1200302"
+      ]
+    },
+    {
+      "type": "Prognosis",
+      "name": "决定预后的主要因素为冠脉病变累及心肌供血的范围和心功能",
+      "kept_code": "CARD-SKELETON-20260709-PROGNOSIS-271C51C93D0E9D81",
+      "merged_count": 1,
+      "merged_codes": [
+        "PROG-CARD-CADREM-STABLE-ANGINA-ABB6E9A212"
+      ]
+    },
+    {
+      "type": "Prognosis",
+      "name": "发生严重心律失常、休克或心衰者",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PROGNOSIS-A2A048DCDA0AC8E5",
+      "merged_count": 1,
+      "merged_codes": [
+        "PROG-CARD-CADREM-AMI-E734B17057"
+      ]
+    },
+    {
+      "type": "Prognosis",
+      "name": "因心脏监护室、现代药物治疗进展和再灌注治疗等综合措施的使用",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PROGNOSIS-07B0F01213200B22",
+      "merged_count": 1,
+      "merged_codes": [
+        "PROG-CARD-CADREM-AMI-8D1D41B8A6"
+      ]
+    },
+    {
+      "type": "Prognosis",
+      "name": "国外统计年病死率可高达30%左右",
+      "kept_code": "CARD-SKELETON-20260709-PROGNOSIS-86C202774C1227AC",
+      "merged_count": 1,
+      "merged_codes": [
+        "PROG-CARD-CADREM-STABLE-ANGINA-B60C143EF7"
+      ]
+    },
+    {
+      "type": "Prognosis",
+      "name": "在正常人群中预防动脉粥样硬化和冠心病属于一级预防",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PROGNOSIS-27A9355C85B46659",
+      "merged_count": 1,
+      "merged_codes": [
+        "PROG-CARD-CADREM-AMI-2F126AC8BE"
+      ]
+    },
+    {
+      "type": "Prognosis",
+      "name": "对稳定型心绞痛除应用药物防止心绞痛再次发作外",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PROGNOSIS-15CFDF5A62DAFC59",
+      "merged_count": 1,
+      "merged_codes": [
+        "PROG-CARD-CADREM-STABLE-ANGINA-1A8EF3B6BB"
+      ]
+    },
+    {
+      "type": "Prognosis",
+      "name": "左冠脉主干病变最为严重",
+      "kept_code": "CARD-SKELETON-20260709-PROGNOSIS-A28F787E608B8600",
+      "merged_count": 1,
+      "merged_codes": [
+        "PROG-CARD-CADREM-STABLE-ANGINA-3533D4C8E0"
+      ]
+    },
+    {
+      "type": "Prognosis",
+      "name": "左前降支病变一般较其他两支冠脉病变预后差",
+      "kept_code": "CARD-SKELETON-20260709-PROGNOSIS-0A00DB3E036D11C3",
+      "merged_count": 1,
+      "merged_codes": [
+        "PROG-CARD-CADREM-STABLE-ANGINA-89067BA4B4"
+      ]
+    },
+    {
+      "type": "Prognosis",
+      "name": "此后依次为3支、2支与单支病变",
+      "kept_code": "CARD-SKELETON-20260709-PROGNOSIS-323292330E6C8F8F",
+      "merged_count": 1,
+      "merged_codes": [
+        "PROG-CARD-CADREM-STABLE-ANGINA-F93BF46530"
+      ]
+    },
+    {
+      "type": "Prognosis",
+      "name": "死亡多发生在第一周内",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PROGNOSIS-E84D617C60D85FCB",
+      "merged_count": 1,
+      "merged_codes": [
+        "PROG-CARD-CADREM-AMI-7FF781455B"
+      ]
+    },
+    {
+      "type": "Prognosis",
+      "name": "稳定型心绞痛病人大多数能生存很多年",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PROGNOSIS-E27C67E1EC7F9595",
+      "merged_count": 1,
+      "merged_codes": [
+        "PROG-CARD-CADREM-STABLE-ANGINA-F5A579AB21"
+      ]
+    },
+    {
+      "type": "Prognosis",
+      "name": "还应从阻止或逆转粥样硬化病情进展、预防心肌梗死等方面综合考虑",
+      "kept_code": "CARD-SKELETON-FULL-20260709-PROGNOSIS-CD8FB3C802435487",
+      "merged_count": 1,
+      "merged_codes": [
+        "PROG-CARD-CADREM-STABLE-ANGINA-13BF7313B2"
+      ]
+    },
+    {
+      "type": "RiskFactor",
+      "name": "高血压",
+      "kept_code": "RF-CARD-DE0A9F1FE2C8",
+      "merged_count": 1,
+      "merged_codes": [
+        "RF-CARD-CADREM-AMI-DE0A9F1FE2"
+      ]
+    },
+    {
+      "type": "Sign",
+      "name": "低血压",
+      "kept_code": "SIGN-CARD-1FA3A83EF714",
+      "merged_count": 1,
+      "merged_codes": [
+        "SIGN-CARD-CADREM-AMI-1FA3A83EF7"
+      ]
+    },
+    {
+      "type": "Sign",
+      "name": "发绀",
+      "kept_code": "SIGN-CARD-TEXT-E67B99C5BD",
+      "merged_count": 1,
+      "merged_codes": [
+        "SIGN-CARD-CADREM-AMI-E67B99C5BD"
+      ]
+    },
+    {
+      "type": "Sign",
+      "name": "奔马律",
+      "kept_code": "SIGN-CARD-75EFE91EFEED",
+      "merged_count": 3,
+      "merged_codes": [
+        "SIGN-CARD-CADREM-AMI-75EFE91EFE",
+        "SIGN-CARD-CADREM-ICM-75EFE91EFE",
+        "SIGN-CARD-CADREM-STABLE-ANGINA-75EFE91EFE"
+      ]
+    },
+    {
+      "type": "Sign",
+      "name": "心动过缓",
+      "kept_code": "SIGN-CARD-TEXT-C0F47862DF",
+      "merged_count": 1,
+      "merged_codes": [
+        "SIGN-CARD-CADREM-AMI-C0F47862DF"
+      ]
+    },
+    {
+      "type": "Sign",
+      "name": "心动过速",
+      "kept_code": "SIGN-CARD-4E5DA62E1DA3",
+      "merged_count": 2,
+      "merged_codes": [
+        "SIGN-CARD-CADREM-AMI-4E5DA62E1D",
+        "SIGN-CARD-CADREM-STABLE-ANGINA-4E5DA62E1D"
+      ]
+    },
+    {
+      "type": "Sign",
+      "name": "心脏扩大",
+      "kept_code": "SIGN-CARD-EB9D2F421114",
+      "merged_count": 1,
+      "merged_codes": [
+        "SIGN-CARD-CADREM-ICM-EB9D2F4211"
+      ]
+    },
+    {
+      "type": "Sign",
+      "name": "心脏杂音",
+      "kept_code": "SIGN-CARD-92548DA98265",
+      "merged_count": 3,
+      "merged_codes": [
+        "SIGN-CARD-CADREM-AMI-92548DA982",
+        "SIGN-CARD-CADREM-STABLE-ANGINA-92548DA982",
+        "SIGN-CARD-CADREM-UA-92548DA982"
+      ]
+    },
+    {
+      "type": "Sign",
+      "name": "心音低钝",
+      "kept_code": "SIGN-CARD-7D7BE7B5FE4D",
+      "merged_count": 2,
+      "merged_codes": [
+        "SIGN-CARD-CADREM-AMI-7D7BE7B5FE",
+        "SIGN-CARD-CADREM-ICM-7D7BE7B5FE"
+      ]
+    },
+    {
+      "type": "Sign",
+      "name": "心音减弱",
+      "kept_code": "SIGN-CARD-E5C7FF8F1850",
+      "merged_count": 1,
+      "merged_codes": [
+        "SIGN-CARD-CADREM-ICM-E5C7FF8F18"
+      ]
+    },
+    {
+      "type": "Sign",
+      "name": "收缩期杂音",
+      "kept_code": "CARD-SKELETON-20260709-SIGN-EED0EF48BD272C92",
+      "merged_count": 1,
+      "merged_codes": [
+        "SIGN-CARD-CADREM-STABLE-ANGINA-A80D9A93E7"
+      ]
+    },
+    {
+      "type": "Sign",
+      "name": "水肿",
+      "kept_code": "SIGN-CARD-52CC24CD4C33",
+      "merged_count": 2,
+      "merged_codes": [
+        "SIGN-CARD-CADREM-AMI-52CC24CD4C",
+        "SIGN-CARD-CADREM-ICM-52CC24CD4C"
+      ]
+    },
+    {
+      "type": "Sign",
+      "name": "皮肤湿冷",
+      "kept_code": "SIGN-CARD-FFE03BB62300",
+      "merged_count": 1,
+      "merged_codes": [
+        "SIGN-CARD-CADREM-AMI-FFE03BB623"
+      ]
+    },
+    {
+      "type": "Sign",
+      "name": "第三心音",
+      "kept_code": "SIGN-CARD-B0814CB800B1",
+      "merged_count": 4,
+      "merged_codes": [
+        "SIGN-CARD-CADREM-AMI-B0814CB800",
+        "SIGN-CARD-CADREM-NSTEMI-B0814CB800",
+        "SIGN-CARD-CADREM-STABLE-ANGINA-B0814CB800",
+        "SIGN-CARD-CADREM-UA-B0814CB800"
+      ]
+    },
+    {
+      "type": "Sign",
+      "name": "第四心音",
+      "kept_code": "SIGN-CARD-658603F4081B",
+      "merged_count": 2,
+      "merged_codes": [
+        "SIGN-CARD-CADREM-AMI-658603F408",
+        "SIGN-CARD-CADREM-UA-658603F408"
+      ]
+    },
+    {
+      "type": "Sign",
+      "name": "肺水肿",
+      "kept_code": "SIGN-CARD-1431D67A6000",
+      "merged_count": 1,
+      "merged_codes": [
+        "SIGN-CARD-CADREM-ICM-1431D67A60"
+      ]
+    },
+    {
+      "type": "Sign",
+      "name": "肺部啰音",
+      "kept_code": "SIGN-CARD-67CD9C4673B0",
+      "merged_count": 2,
+      "merged_codes": [
+        "SIGN-CARD-CADREM-AMI-67CD9C4673",
+        "SIGN-CARD-CADREM-ICM-67CD9C4673"
+      ]
+    },
+    {
+      "type": "Sign",
+      "name": "颈静脉怒张",
+      "kept_code": "SIGN-CARD-37D71F7E64B1",
+      "merged_count": 1,
+      "merged_codes": [
+        "SIGN-CARD-CADREM-AMI-37D71F7E64"
+      ]
+    },
+    {
+      "type": "Sign",
+      "name": "高血压",
+      "kept_code": "SIGN-CARD-TEXT-3A48213336",
+      "merged_count": 1,
+      "merged_codes": [
+        "SIGN-CARD-CADREM-AMI-3A48213336"
+      ]
+    },
+    {
+      "type": "Specialty",
+      "name": "心血管内科",
+      "kept_code": "SPEC-CARD",
+      "merged_count": 1,
+      "merged_codes": [
+        "CARD"
+      ]
+    },
+    {
+      "type": "Symptom",
+      "name": "乏力",
+      "kept_code": "SYM-CARD-0ACC45EF4E60",
+      "merged_count": 2,
+      "merged_codes": [
+        "SYM-CARD-CADREM-AMI-0ACC45EF4E",
+        "SYM-CARD-CADREM-ICM-0ACC45EF4E"
+      ]
+    },
+    {
+      "type": "Symptom",
+      "name": "出汗",
+      "kept_code": "SYM-CARD-BC91622FC62F",
+      "merged_count": 4,
+      "merged_codes": [
+        "SYM-CARD-CADREM-AMI-BC91622FC6",
+        "SYM-CARD-CADREM-NSTEMI-BC91622FC6",
+        "SYM-CARD-CADREM-STABLE-ANGINA-BC91622FC6",
+        "SYM-CARD-CADREM-UA-BC91622FC6"
+      ]
+    },
+    {
+      "type": "Symptom",
+      "name": "劳力性呼吸困难",
+      "kept_code": "SYM-CARD-3C54A8AA7CDB",
+      "merged_count": 1,
+      "merged_codes": [
+        "SYM-CARD-CADREM-ICM-3C54A8AA7C"
+      ]
+    },
+    {
+      "type": "Symptom",
+      "name": "呼吸困难",
+      "kept_code": "SYM-CARD-19E67F3BE240",
+      "merged_count": 5,
+      "merged_codes": [
+        "SYM-CARD-CADREM-AMI-19E67F3BE2",
+        "SYM-CARD-CADREM-ICM-19E67F3BE2",
+        "SYM-CARD-CADREM-NSTEMI-19E67F3BE2",
+        "SYM-CARD-CADREM-STABLE-ANGINA-19E67F3BE2",
+        "SYM-CARD-CADREM-UA-19E67F3BE2"
+      ]
+    },
+    {
+      "type": "Symptom",
+      "name": "咳嗽",
+      "kept_code": "SYM-CARD-TEXT-24EDE9C876",
+      "merged_count": 1,
+      "merged_codes": [
+        "SYM-CARD-CADREM-AMI-24EDE9C876"
+      ]
+    },
+    {
+      "type": "Symptom",
+      "name": "夜间阵发性呼吸困难",
+      "kept_code": "SYM-CARD-9BD3C4F11F7E",
+      "merged_count": 1,
+      "merged_codes": [
+        "SYM-CARD-CADREM-ICM-9BD3C4F11F"
+      ]
+    },
+    {
+      "type": "Symptom",
+      "name": "头晕",
+      "kept_code": "SYM-CARD-6DA3580C8B73",
+      "merged_count": 2,
+      "merged_codes": [
+        "SYM-CARD-CADREM-AMI-6DA3580C8B",
+        "SYM-CARD-CADREM-ICM-6DA3580C8B"
+      ]
+    },
+    {
+      "type": "Symptom",
+      "name": "心悸",
+      "kept_code": "SYM-CARD-E3290D298A53",
+      "merged_count": 3,
+      "merged_codes": [
+        "SYM-CARD-CADREM-AMI-E3290D298A",
+        "SYM-CARD-CADREM-NSTEMI-E3290D298A",
+        "SYM-CARD-CADREM-UA-E3290D298A"
+      ]
+    },
+    {
+      "type": "Symptom",
+      "name": "心绞痛",
+      "kept_code": "CARD-SKELETON-20260709-SYMPTOM-E201291B32C71911",
+      "merged_count": 1,
+      "merged_codes": [
+        "SYM-CARD-CADREM-STABLE-ANGINA-1001D988DA"
+      ]
+    },
+    {
+      "type": "Symptom",
+      "name": "恶心呕吐",
+      "kept_code": "SYM-CARD-1053F19CEBAD",
+      "merged_count": 3,
+      "merged_codes": [
+        "SYM-CARD-CADREM-AMI-1053F19CEB",
+        "SYM-CARD-CADREM-NSTEMI-1053F19CEB",
+        "SYM-CARD-CADREM-UA-1053F19CEB"
+      ]
+    },
+    {
+      "type": "Symptom",
+      "name": "晕厥",
+      "kept_code": "SYM-CARD-F3352646F3F1",
+      "merged_count": 1,
+      "merged_codes": [
+        "SYM-CARD-CADREM-AMI-F3352646F3"
+      ]
+    },
+    {
+      "type": "Symptom",
+      "name": "濒死感",
+      "kept_code": "SYM-CARD-80A8947D5A71",
+      "merged_count": 2,
+      "merged_codes": [
+        "SYM-CARD-CADREM-AMI-80A8947D5A",
+        "SYM-CARD-CADREM-STABLE-ANGINA-80A8947D5A"
+      ]
+    },
+    {
+      "type": "Symptom",
+      "name": "端坐呼吸",
+      "kept_code": "SYM-CARD-F076662BF021",
+      "merged_count": 1,
+      "merged_codes": [
+        "SYM-CARD-CADREM-ICM-F076662BF0"
+      ]
+    },
+    {
+      "type": "Symptom",
+      "name": "胸痛",
+      "kept_code": "SYM-CARD-B479F36AE54A",
+      "merged_count": 5,
+      "merged_codes": [
+        "SYM-CARD-CADREM-AMI-B479F36AE5",
+        "SYM-CARD-CADREM-ICM-B479F36AE5",
+        "SYM-CARD-CADREM-NSTEMI-B479F36AE5",
+        "SYM-CARD-CADREM-STABLE-ANGINA-B479F36AE5",
+        "SYM-CARD-CADREM-UA-B479F36AE5"
+      ]
+    },
+    {
+      "type": "Symptom",
+      "name": "胸闷",
+      "kept_code": "SYM-CARD-0039E284D715",
+      "merged_count": 3,
+      "merged_codes": [
+        "SYM-CARD-CADREM-AMI-0039E284D7",
+        "SYM-CARD-CADREM-ICM-0039E284D7",
+        "SYM-CARD-CADREM-STABLE-ANGINA-0039E284D7"
+      ]
+    }
+  ],
+  "skipped_groups": [
+    {
+      "type": "ClinicalRule",
+      "name": "但有心肌缺血客观证据的冠心病",
+      "reason": "ClinicalRule需逐条校验rule_text，暂不自动物理合并",
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-E07A99D210903E7E",
+        "DDX-CARD-CADREM-SILENT-ISCHEMIA-3600DD6764"
+      ]
+    },
+    {
+      "type": "ClinicalRule",
+      "name": "同时需排除冠心病的某些并发症",
+      "reason": "ClinicalRule需逐条校验rule_text，暂不自动物理合并",
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-F7923C54E944468F",
+        "DDX-CARD-CADREM-ICM-003E48BBA7"
+      ]
+    },
+    {
+      "type": "ClinicalRule",
+      "name": "鉴别诊断需要考虑以下疾病",
+      "reason": "ClinicalRule需逐条校验rule_text，暂不自动物理合并",
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-5C7037DA313AEC9D",
+        "DDX-CARD-CADREM-AMI-2456ECD13F"
+      ]
+    },
+    {
+      "type": "ClinicalRule",
+      "name": "需鉴别其他引起心脏增大和心力衰竭的病因",
+      "reason": "ClinicalRule需逐条校验rule_text，暂不自动物理合并",
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-3A1C13EFDD6F8AC9",
+        "DDX-CARD-CADREM-ICM-39AF6E5DFD"
+      ]
+    }
+  ],
+  "remaining_duplicates_by_type": [
+    {
+      "type": "ClinicalRule",
+      "groups": 4,
+      "nodes": 8
+    }
+  ]
+}

@@ -1,0 +1,517 @@
+{
+  "batch_id": "20260716_内科学教材定义缺口补齐",
+  "executed_at": "2026-07-16 22:31:41",
+  "missing_before": 37,
+  "definition_imported": 13,
+  "definition_source_not_cover_marked": 0,
+  "out_of_textbook_freeze_scope_marked": 24,
+  "import_items": [
+    {
+      "disease_code": "DIS-CARD-CHD-SOVA",
+      "disease_name": "主动脉窦瘤",
+      "def_code": "DEF-DIS-CARD-CHD-SOVA",
+      "evidence_code": "EVID-DEF-DIS-CARD-CHD-SOVA",
+      "definition": "先天性主动脉窦瘤（congenital aortic sinus aneurysm）是一种少见的先天性心脏病变。此病变大多在成年时被发现，男性多于女性。",
+      "content_hash": "1FE9A4F900BFE87F",
+      "source_section_path": null,
+      "para_start": 6213,
+      "para_end": 6213,
+      "source_method": "DOCX原文定位:主动脉窦瘤"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-COA",
+      "disease_name": "主动脉缩窄",
+      "def_code": "DEF-DIS-CARD-HTN-COA",
+      "evidence_code": "EVID-DEF-DIS-CARD-HTN-COA",
+      "definition": "先天性主动脉缩窄（congenital coarctation of the aorta）是指局限性主动脉管腔狭窄，为先天性心脏大血管畸形，在各类先天性心脏病中约占 5%～8%，男女之比为（3～5）∶1。",
+      "content_hash": "BF7FB5CFEADE2695",
+      "source_section_path": null,
+      "para_start": 6191,
+      "para_end": 6191,
+      "source_method": "DOCX原文定位:主动脉缩窄"
+    },
+    {
+      "disease_code": "DIS-CARD-CHD-BAV",
+      "disease_name": "二叶主动脉瓣",
+      "def_code": "DEF-DIS-CARD-CHD-BAV",
+      "evidence_code": "EVID-DEF-DIS-CARD-CHD-BAV",
+      "definition": "先天性二叶主动脉瓣（congenital bicuspid aortic valve）是成人先天性心脏病中较常见的类型之一，在人群中的发病率约为 1%。",
+      "content_hash": "9CE9A7BA61DFC613",
+      "source_section_path": null,
+      "para_start": 6163,
+      "para_end": 6163,
+      "source_method": "DOCX原文定位:二叶主动脉瓣"
+    },
+    {
+      "disease_code": "DIS-CARD-CHD-COA",
+      "disease_name": "先天性主动脉缩窄",
+      "def_code": "DEF-DIS-CARD-CHD-COA",
+      "evidence_code": "EVID-DEF-DIS-CARD-CHD-COA",
+      "definition": "先天性主动脉缩窄（congenital coarctation of the aorta）是指局限性主动脉管腔狭窄，为先天性心脏大血管畸形，在各类先天性心脏病中约占 5%～8%，男女之比为（3～5）∶1。",
+      "content_hash": "BF7FB5CFEADE2695",
+      "source_section_path": null,
+      "para_start": 6191,
+      "para_end": 6191,
+      "source_method": "DOCX原文定位:先天性主动脉缩窄"
+    },
+    {
+      "disease_code": "DIS-CARD-CHD-CAF",
+      "disease_name": "冠状动脉瘘",
+      "def_code": "DEF-DIS-CARD-CHD-CAF",
+      "evidence_code": "EVID-DEF-DIS-CARD-CHD-CAF",
+      "definition": "冠状动脉瘘（coronary artery fistulae，CAF）是指冠状动脉与心腔、冠状静脉、肺动脉等的异常连接，是一种少见的先天性心脏病，发病率为 1.3%。",
+      "content_hash": "ED3F4904B42D5835",
+      "source_section_path": null,
+      "para_start": 6228,
+      "para_end": 6228,
+      "source_method": "DOCX原文定位:冠状动脉瘘"
+    },
+    {
+      "disease_code": "DIS-CARD-PDA",
+      "disease_name": "动脉导管未闭",
+      "def_code": "DEF-DIS-CARD-PDA",
+      "evidence_code": "EVID-DEF-DIS-CARD-PDA",
+      "definition": "动脉导管未闭（patent ductus arteriosus，PDA）是常见的先天性心脏病之一，占先天性心脏病总数的 12%～15%，女性约两倍于男性。约 10% 的病例并存其他心血管畸形。",
+      "content_hash": "1CF007C3453A12E0",
+      "source_section_path": null,
+      "para_start": 6115,
+      "para_end": 6115,
+      "source_method": "DOCX原文定位:动脉导管未闭"
+    },
+    {
+      "disease_code": "DIS-CARD-PAD",
+      "disease_name": "外周动脉疾病",
+      "def_code": "DEF-DIS-CARD-PAD",
+      "evidence_code": "EVID-DEF-DIS-CARD-PAD",
+      "definition": "下肢动脉硬化闭塞症是动脉粥样硬化累及下肢动脉导致动脉狭窄或闭塞而引起肢体缺血症状的慢性疾病，是全身动脉硬化性疾病在下肢的表现。",
+      "content_hash": "B933BE6371433EA5",
+      "source_section_path": "主动脉和周围血管病 > 下肢动脉硬化闭塞症",
+      "para_start": 7217,
+      "para_end": 7255,
+      "source_method": "章节目录definition槽位"
+    },
+    {
+      "disease_code": "DIS-CARD-PERICARDITIS",
+      "disease_name": "心包炎",
+      "def_code": "DEF-DIS-CARD-PERICARDITIS",
+      "evidence_code": "EVID-DEF-DIS-CARD-PERICARDITIS",
+      "definition": "急性心包炎（acute pericarditis）为心包脏层和壁层的急性炎症性疾病。各种原因引起的心包炎症大多以胸痛、心包摩擦音、心电图改变及心包渗出后心包积液为特征。可单独存在，或是某种全身疾病累及心包的表现。",
+      "content_hash": "C8B432481699EF30",
+      "source_section_path": "心包疾病 > 急性心包炎",
+      "para_start": 6690,
+      "para_end": 6725,
+      "source_method": "章节目录definition槽位"
+    },
+    {
+      "disease_code": "DIS-CARD-VHD",
+      "disease_name": "心脏瓣膜病",
+      "def_code": "DEF-DIS-CARD-VHD",
+      "evidence_code": "EVID-DEF-DIS-CARD-VHD",
+      "definition": "心脏瓣膜病（valvular heart disease，VHD）是由多种原因引起的心脏瓣膜狭窄或 / 和反流所致的心脏疾病。正常情况下，心脏瓣膜开放使血液向前流动，心脏瓣膜关闭则防止血液反流，从而保证心脏内血流的单向流动。当瓣膜狭窄时，心腔压力负荷增加；瓣膜反流时，心腔容量负荷增加。这些血流动力学改变可导致心房或心室结构改变及功能失常，最终出现心力衰竭、心...",
+      "content_hash": "FD1C2B9B254A2146",
+      "source_section_path": "心脏瓣膜病 > 心脏瓣膜病",
+      "para_start": 6386,
+      "para_end": 6391,
+      "source_method": "章节目录definition槽位"
+    },
+    {
+      "disease_code": "DIS-CARD-NEUROSIS",
+      "disease_name": "心血管神经症",
+      "def_code": "DEF-DIS-CARD-NEUROSIS",
+      "evidence_code": "EVID-DEF-DIS-CARD-NEUROSIS",
+      "definition": "器质性心血管疾病病人可能合并心理精神问题，临床医生需要注意识别，需重视精神心理问题混淆对器质性心脏病严重程度的评估。",
+      "content_hash": "F364478C8B1FD6F6",
+      "source_section_path": "心血管神经症 > 心血管神经症",
+      "para_start": 7338,
+      "para_end": 7392,
+      "source_method": "章节目录definition槽位"
+    },
+    {
+      "disease_code": "DIS-CARD-AAS",
+      "disease_name": "急性主动脉综合征",
+      "def_code": "DEF-DIS-CARD-AAS",
+      "evidence_code": "EVID-DEF-DIS-CARD-AAS",
+      "definition": "主动脉的血管壁由内膜、中膜和外膜三层结构组成。在各种因素导致主动脉内膜撕裂后，管腔内高速流动的血液将从撕裂口进入管壁中层，并沿血管长轴方向延伸，形成真、假两腔的病理状态，称为主动脉夹层（aortic dissection，AD）。主动脉夹层是一种心血管急危重症，具有发病急、死亡率高的特点。若未能及时诊治，48 小时内死亡率高达 50%，致死原因包括夹层破裂、...",
+      "content_hash": "46B8562F6C85DC15",
+      "source_section_path": "主动脉和周围血管病 > 主动脉夹层",
+      "para_start": 7157,
+      "para_end": 7216,
+      "source_method": "章节目录definition槽位"
+    },
+    {
+      "disease_code": "DIS-CARD-INFECTIVE-ENDOCARDITIS",
+      "disease_name": "感染性心内膜炎",
+      "def_code": "DEF-DIS-CARD-INFECTIVE-ENDOCARDITIS",
+      "evidence_code": "EVID-DEF-DIS-CARD-INFECTIVE-ENDOCARDITIS",
+      "definition": "感染性心内膜炎（infective endocarditis，IE）是指病原体循血行途径或直接感染心瓣膜、心内膜或邻近大血管内膜所致的感染性疾病，感染最常累及瓣膜，常伴赘生物形成、局部结构与功能受损、终末器官感染性栓塞及全身炎症反应。 近年来，IE 的发病率呈增长态势，这与老年退行性瓣膜病、心脏器械植入、医疗操作、静脉药物成瘾者等增多有关。我国尚无确切的发病...",
+      "content_hash": "CF031605DF4BFF64",
+      "source_section_path": "感染性心内膜炎 > 感染性心内膜炎",
+      "para_start": 6837,
+      "para_end": 7004,
+      "source_method": "章节目录definition槽位"
+    },
+    {
+      "disease_code": "DIS-CARD-ASD",
+      "disease_name": "房间隔缺损",
+      "def_code": "DEF-DIS-CARD-ASD",
+      "evidence_code": "EVID-DEF-DIS-CARD-ASD",
+      "definition": "房间隔缺损（atrial septal defect，ASD）是最常见的成人先天性心脏病，占成人先天性心脏病的20%～30%，男女发病率之比为 1∶（1.5～3），且有家族遗传倾向。",
+      "content_hash": "684007D73A2002AB",
+      "source_section_path": null,
+      "para_start": 6079,
+      "para_end": 6079,
+      "source_method": "DOCX原文定位:房间隔缺损"
+    }
+  ],
+  "source_not_cover": [],
+  "out_of_scope": [
+    {
+      "disease_code": "DIS-CARD-TBAD",
+      "disease_name": "Stanford B型主动脉夹层",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-CHD-EBSTEIN",
+      "disease_name": "三尖瓣下移畸形",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-TR",
+      "disease_name": "三尖瓣反流",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-AORTA-ANEURYSM",
+      "disease_name": "主动脉瘤",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-IE-PVE",
+      "disease_name": "人工瓣膜心内膜炎",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-CHD",
+      "disease_name": "先天性心脏病",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-PH-CHD",
+      "disease_name": "先天性心脏病相关肺动脉高压",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-PH-PAH",
+      "disease_name": "动脉性肺动脉高压",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-PFO",
+      "disease_name": "卵圆孔未闭",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-PHEO",
+      "disease_name": "嗜铬细胞瘤和副神经节瘤",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-VSD",
+      "disease_name": "室间隔缺损",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-FH",
+      "disease_name": "家族性高胆固醇血症",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-PH-CTEPH",
+      "disease_name": "慢性血栓栓塞性肺动脉高压",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-FULMINANT-MYOCARDITIS",
+      "disease_name": "暴发性心肌炎",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-PH-IPAH",
+      "disease_name": "特发性肺动脉高压",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-PH-CTD",
+      "disease_name": "结缔组织病相关肺动脉高压",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-PS",
+      "disease_name": "肺动脉瓣狭窄",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-PH",
+      "disease_name": "肺动脉高压",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-AAA",
+      "disease_name": "腹主动脉瘤",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-DYSLIPIDEMIA",
+      "disease_name": "血脂异常",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-PH-HPAH",
+      "disease_name": "遗传性肺动脉高压",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-RHD",
+      "disease_name": "风湿性心脏瓣膜病",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-HYPERCHOLESTEROLEMIA",
+      "disease_name": "高胆固醇血症",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-EMERGENCY",
+      "disease_name": "高血压急症和亚急症",
+      "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目"
+    }
+  ],
+  "candidates_report": [
+    {
+      "name": "Stanford B型主动脉夹层",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "三尖瓣下移畸形",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "三尖瓣反流",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "主动脉瘤",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "主动脉窦瘤",
+      "decision": "import_definition",
+      "method": "docx_search",
+      "text": "先天性主动脉窦瘤（congenital aortic sinus aneurysm）是一种少见的先天性心脏病变。此病变大多在成年时被发现，男性多于女性。",
+      "para_start": 6213,
+      "para_end": 6213,
+      "path": null,
+      "source_method": "DOCX原文定位:主动脉窦瘤"
+    },
+    {
+      "name": "主动脉缩窄",
+      "decision": "import_definition",
+      "method": "docx_search",
+      "text": "先天性主动脉缩窄（congenital coarctation of the aorta）是指局限性主动脉管腔狭窄，为先天性心脏大血管畸形，在各类先天性心脏病中约占 5%～8%，男女之比为（3～5）∶1。",
+      "para_start": 6191,
+      "para_end": 6191,
+      "path": null,
+      "source_method": "DOCX原文定位:主动脉缩窄"
+    },
+    {
+      "name": "二叶主动脉瓣",
+      "decision": "import_definition",
+      "method": "docx_search",
+      "text": "先天性二叶主动脉瓣（congenital bicuspid aortic valve）是成人先天性心脏病中较常见的类型之一，在人群中的发病率约为 1%。",
+      "para_start": 6163,
+      "para_end": 6163,
+      "path": null,
+      "source_method": "DOCX原文定位:二叶主动脉瓣"
+    },
+    {
+      "name": "人工瓣膜心内膜炎",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "先天性主动脉缩窄",
+      "decision": "import_definition",
+      "method": "docx_search",
+      "text": "先天性主动脉缩窄（congenital coarctation of the aorta）是指局限性主动脉管腔狭窄，为先天性心脏大血管畸形，在各类先天性心脏病中约占 5%～8%，男女之比为（3～5）∶1。",
+      "para_start": 6191,
+      "para_end": 6191,
+      "path": null,
+      "source_method": "DOCX原文定位:先天性主动脉缩窄"
+    },
+    {
+      "name": "先天性心脏病",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "先天性心脏病相关肺动脉高压",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "冠状动脉瘘",
+      "decision": "import_definition",
+      "method": "docx_search",
+      "text": "冠状动脉瘘（coronary artery fistulae，CAF）是指冠状动脉与心腔、冠状静脉、肺动脉等的异常连接，是一种少见的先天性心脏病，发病率为 1.3%。",
+      "para_start": 6228,
+      "para_end": 6228,
+      "path": null,
+      "source_method": "DOCX原文定位:冠状动脉瘘"
+    },
+    {
+      "name": "动脉导管未闭",
+      "decision": "import_definition",
+      "method": "docx_search",
+      "text": "动脉导管未闭（patent ductus arteriosus，PDA）是常见的先天性心脏病之一，占先天性心脏病总数的 12%～15%，女性约两倍于男性。约 10% 的病例并存其他心血管畸形。",
+      "para_start": 6115,
+      "para_end": 6115,
+      "path": null,
+      "source_method": "DOCX原文定位:动脉导管未闭"
+    },
+    {
+      "name": "动脉性肺动脉高压",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "卵圆孔未闭",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "嗜铬细胞瘤和副神经节瘤",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "外周动脉疾病",
+      "decision": "import_definition",
+      "method": "chapter_csv",
+      "text": "下肢动脉硬化闭塞症是动脉粥样硬化累及下肢动脉导致动脉狭窄或闭塞而引起肢体缺血症状的慢性疾病，是全身动脉硬化性疾病在下肢的表现。",
+      "para_start": 7217,
+      "para_end": 7255,
+      "path": "主动脉和周围血管病 > 下肢动脉硬化闭塞症",
+      "source_method": "章节目录definition槽位"
+    },
+    {
+      "name": "室间隔缺损",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "家族性高胆固醇血症",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "心包炎",
+      "decision": "import_definition",
+      "method": "chapter_csv",
+      "text": "急性心包炎（acute pericarditis）为心包脏层和壁层的急性炎症性疾病。各种原因引起的心包炎症大多以胸痛、心包摩擦音、心电图改变及心包渗出后心包积液为特征。可单独存在，或是某种全身疾病累及心包的表现。",
+      "para_start": 6690,
+      "para_end": 6725,
+      "path": "心包疾病 > 急性心包炎",
+      "source_method": "章节目录definition槽位"
+    },
+    {
+      "name": "心脏瓣膜病",
+      "decision": "import_definition",
+      "method": "chapter_csv",
+      "text": "心脏瓣膜病（valvular heart disease，VHD）是由多种原因引起的心脏瓣膜狭窄或 / 和反流所致的心脏疾病。正常情况下，心脏瓣膜开放使血液向前流动，心脏瓣膜关闭则防止血液反流，从而保证心脏内血流的单向流动。当瓣膜狭窄时，心腔压力负荷增加；瓣膜反流时，心腔容量负荷增加。这些血流动力学改变可导致心房或心室结构改变及功能失常，最终出现心力衰竭、心...",
+      "para_start": 6386,
+      "para_end": 6391,
+      "path": "心脏瓣膜病 > 心脏瓣膜病",
+      "source_method": "章节目录definition槽位"
+    },
+    {
+      "name": "心血管神经症",
+      "decision": "import_definition",
+      "method": "chapter_csv",
+      "text": "器质性心血管疾病病人可能合并心理精神问题，临床医生需要注意识别，需重视精神心理问题混淆对器质性心脏病严重程度的评估。",
+      "para_start": 7338,
+      "para_end": 7392,
+      "path": "心血管神经症 > 心血管神经症",
+      "source_method": "章节目录definition槽位"
+    },
+    {
+      "name": "急性主动脉综合征",
+      "decision": "import_definition",
+      "method": "chapter_csv",
+      "text": "主动脉的血管壁由内膜、中膜和外膜三层结构组成。在各种因素导致主动脉内膜撕裂后，管腔内高速流动的血液将从撕裂口进入管壁中层，并沿血管长轴方向延伸，形成真、假两腔的病理状态，称为主动脉夹层（aortic dissection，AD）。主动脉夹层是一种心血管急危重症，具有发病急、死亡率高的特点。若未能及时诊治，48 小时内死亡率高达 50%，致死原因包括夹层破裂、...",
+      "para_start": 7157,
+      "para_end": 7216,
+      "path": "主动脉和周围血管病 > 主动脉夹层",
+      "source_method": "章节目录definition槽位"
+    },
+    {
+      "name": "感染性心内膜炎",
+      "decision": "import_definition",
+      "method": "chapter_csv",
+      "text": "感染性心内膜炎（infective endocarditis，IE）是指病原体循血行途径或直接感染心瓣膜、心内膜或邻近大血管内膜所致的感染性疾病，感染最常累及瓣膜，常伴赘生物形成、局部结构与功能受损、终末器官感染性栓塞及全身炎症反应。 近年来，IE 的发病率呈增长态势，这与老年退行性瓣膜病、心脏器械植入、医疗操作、静脉药物成瘾者等增多有关。我国尚无确切的发病...",
+      "para_start": 6837,
+      "para_end": 7004,
+      "path": "感染性心内膜炎 > 感染性心内膜炎",
+      "source_method": "章节目录definition槽位"
+    },
+    {
+      "name": "慢性血栓栓塞性肺动脉高压",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "房间隔缺损",
+      "decision": "import_definition",
+      "method": "docx_search",
+      "text": "房间隔缺损（atrial septal defect，ASD）是最常见的成人先天性心脏病，占成人先天性心脏病的20%～30%，男女发病率之比为 1∶（1.5～3），且有家族遗传倾向。",
+      "para_start": 6079,
+      "para_end": 6079,
+      "path": null,
+      "source_method": "DOCX原文定位:房间隔缺损"
+    },
+    {
+      "name": "暴发性心肌炎",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "特发性肺动脉高压",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "结缔组织病相关肺动脉高压",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "肺动脉瓣狭窄",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "肺动脉高压",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "腹主动脉瘤",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "血脂异常",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "遗传性肺动脉高压",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "风湿性心脏瓣膜病",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "高胆固醇血症",
+      "decision": "not_in_textbook_freeze_scope"
+    },
+    {
+      "name": "高血压急症和亚急症",
+      "decision": "not_in_textbook_freeze_scope"
+    }
+  ]
+}

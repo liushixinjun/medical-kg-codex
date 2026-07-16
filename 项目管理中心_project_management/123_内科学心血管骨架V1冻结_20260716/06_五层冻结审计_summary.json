@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-07-16 22:07:43",
+  "target": "《内科学》第10版心血管内科骨架 V1.0 冻结版",
+  "source_chapter_total": 81,
+  "source_chapter_matched": 81,
+  "source_chapter_missing": 0,
+  "d6_subject_total": 55,
+  "textbook_evidence_nodes_checked": 2082,
+  "textbook_evidence_missing_count": 25,
+  "semantic_gate_blocking_count": 7,
+  "semantic_gate_blocking_items": [
+    {
+      "检查项": "疾病定义缺失",
+      "阻断数量": 49,
+      "状态": "阻断",
+      "样例": "[\"高血压急症和亚急症\", \"嗜铬细胞瘤和副神经节瘤\", \"主动脉缩窄\", \"三尖瓣下移畸形\", \"二叶主动脉瓣\", \"先天性主动脉缩窄\", \"主动脉窦瘤\", \"冠状动脉瘘\", \"主动脉瓣狭窄\", \"主动脉瓣反流\", \"二尖瓣狭窄\", \"二尖瓣反流\", \"多瓣膜病\", \"急性心包炎\", \"心包积液及心脏压塞\", \"缩窄性心包炎\", \"人工瓣膜心内膜炎\", \"主动脉瘤\", \"下肢动脉硬化闭塞症\", \"静脉血栓症\"]"
+    },
+    {
+      "检查项": "疾病章节来源缺失",
+      "阻断数量": 131,
+      "状态": "阻断",
+      "样例": "[\"慢性心力衰竭\", \"急性心力衰竭\", \"窦性心律失常\", \"房性心动过速\", \"心房扑动\", \"心房颤动\", \"阵发性室上性心动过速\", \"室性期前收缩\", \"持续性室性心动过速\", \"心室扑动与心室颤动\", \"房室传导阻滞\", \"长QT间期综合征\", \"Brugada综合征\", \"儿茶酚胺敏感性多形性室性心动过速\", \"早期复极综合征\", \"动脉粥样硬化\", \"冠状动脉粥样硬化性心脏病\", \"慢性冠脉综合征\", \"稳定型心绞痛\", \"缺血性心肌病\"]"
+    },
+    {
+      "检查项": "同类型同名实体重复",
+      "阻断数量": 158,
+      "状态": "阻断",
+      "样例": "[{\"name\": \"非二氢吡啶类钙通道阻滞剂\", \"codes\": [\"MED-NDHP-CCB\", \"MED-CARD-CADREM-STABLE-ANGINA-6974A87B31\"], \"type\": \"Medication\"}, {\"name\": \"硝酸酯类药物\", \"codes\": [\"MED-CARD-55157DA54154\", \"MED-CARD-CADREM-AMI-55157DA541\", \"MED-CARD-CADREM-NSTEMI-55157DA541\", \"MED-CARD-CADREM-STABLE-ANGINA-55157DA541\", \"MED-CARD-CADREM-UA-55157DA541\"], \"type\": \"Medication\"}, {\"name\": \"P2Y12受体抑制剂\", \"codes\": [\"MED-CARD-86E5A960E1BF\", \"MED-CARD-CADREM-STABLE-ANGINA-86E5A960E1\"], \"type\": \"Medication\"}, {\"name\": \"阿司匹林\", \"codes\": [\"MED-CARD-9F606AC80BFD\", \"MED-CARD-CADREM-AMI-9F606AC80B\", \"MED-CARD-CADREM-NSTEMI-9F606AC80B\", \"MED-CARD-CADREM-STABLE-ANGINA-9F606AC80B\"], \"type\": \"Medication\"}, {\"name\": \"钙通道阻滞剂\", \"codes\": [\"MED-CARD-TEXT-28E925C6DE\", \"MED-CARD-CADREM-NSTEMI-28E925C6DE\", \"MED-CARD-CADREM-STABLE-ANGINA-28E925C6DE\", \"MED-CARD-CADREM-UA-28E925C6DE\"], \"type\": \"Medication\"}, {\"name\": \"高血压\", \"codes\": [\"RF-CARD-DE0A9F1FE2C8\", \"RF-CARD-CADREM-AMI-DE0A9F1FE2\"], \"type\": \"RiskFactor\"}, {\"name\": \"肺水肿\", \"codes\": [\"SIGN-CARD-1431D67A6000\", \"SIGN-CARD-CADREM-ICM-1431D67A60\"], \"type\": \"Sign\"}, {\"name\": \"低血压\", \"codes\": [\"SIGN-CARD-1FA3A83EF714\", \"SIGN-CARD-CADREM-AMI-1FA3A83EF7\"], \"type\": \"Sign\"}, {\"name\": \"水肿\", \"codes\": [\"SIGN-CARD-52CC24CD4C33\", \"SIGN-CARD-CADREM-AMI-52CC24CD4C\", \"SIGN-CARD-CADREM-ICM-52CC24CD4C\"], \"type\": \"Sign\"}, {\"name\": \"第四心音\", \"codes\": [\"SIGN-CARD-658603F4081B\", \"SIGN-CARD-CADREM-AMI-658603F408\", \"SIGN-CARD-CADREM-UA-658603F408\"], \"type\": \"Sign\"}]"
+    },
+    {
+      "检查项": "药物类别无具体药物",
+      "阻断数量": 2,
+      "状态": "阻断",
+      "样例": "[\"苯二氮䓬类抗焦虑药\", \"选择性5-羟色胺再摄取抑制剂\"]"
+    },
+    {
+      "检查项": "检验项目无检验指标",
+      "阻断数量": 1,
+      "状态": "阻断",
+      "样例": "[\"心肌损伤标志物\"]"
+    },
+    {
+      "检查项": "检查项目无检查指标",
+      "阻断数量": 90,
+      "状态": "阻断",
+      "样例": "[\"冠状动脉造影\", \"心内膜心肌活检\", \"基因检测\", \"动态心电图\", \"运动负荷试验\", \"冠状动脉CT血管成像\", \"心脏导管检查\", \"磁共振成像\", \"电生理检查\", \"胸部X线检查\", \"冠状动脉CTA\", \"CT检查\", \"CT肺动脉造影\", \"血管超声\", \"肺通气/灌注显像\", \"利钠肽\", \"心脏CT\", \"事件记录仪\", \"经食管超声心动图\", \"12导联心电图\", \"植入式心电监测\", \"食管心房调搏\", \"心脏电生理检查\", \"运动试验\", \"主动脉CTA\", \"胸部影像学检查\", \"血常规与血红蛋白\", \"肾功能与电解质\", \"阿托品试验\", \"心电图及长程心电监测\"]"
+    },
+    {
+      "检查项": "教材槽位状态为空",
+      "阻断数量": 1747,
+      "状态": "阻断",
+      "样例": "[{\"name\": \"心电图传导阻滞诊断依据\", \"type\": \"DiagnosisCriteria\"}, {\"name\": \"三、导管消融-并发症\", \"type\": \"Complication\"}, {\"name\": \"第二章心力衰竭定义\", \"type\": \"Definition\"}, {\"name\": \"第三节急性心力衰竭定义\", \"type\": \"Definition\"}, {\"name\": \"第一节概述定义\", \"type\": \"Definition\"}, {\"name\": \"第二节窦性心律失常定义\", \"type\": \"Definition\"}, {\"name\": \"一、窦性心动过速定义\", \"type\": \"Definition\"}, {\"name\": \"二、窦性心动过缓定义\", \"type\": \"Definition\"}, {\"name\": \"三、窦性停搏定义\", \"type\": \"Definition\"}, {\"name\": \"四、窦房传导阻滞定义\", \"type\": \"Definition\"}, {\"name\": \"五、病态窦房结综合征定义\", \"type\": \"Definition\"}, {\"name\": \"一、房性期前收缩定义\", \"type\": \"Definition\"}, {\"name\": \"二、房性心动过速定义\", \"type\": \"Definition\"}, {\"name\": \"三、心房扑动定义\", \"type\": \"Definition\"}, {\"name\": \"四、心房颤动定义\", \"type\": \"Definition\"}, {\"name\": \"一、房室交界性期前收缩定义\", \"type\": \"Definition\"}, {\"name\": \"二、房室交界性逸搏与心律定义\", \"type\": \"Definition\"}, {\"name\": \"三、非阵发性房室交界性心动过速定义\", \"type\": \"Definition\"}, {\"name\": \"四、房室交界区相关的折返性心动过速定义\", \"type\": \"Definition\"}, {\"name\": \"一、室性期前收缩定义\", \"type\": \"Definition\"}, {\"name\": \"二、室性心动过速定义\", \"type\": \"Definition\"}, {\"name\": \"三、心室扑动与心室颤动定义\", \"type\": \"Definition\"}, {\"name\": \"［附］遗传性心律失常综合征定义\", \"type\": \"Definition\"}, {\"name\": \"第六节心脏传导阻滞定义\", \"type\": \"Definition\"}, {\"name\": \"第七节抗心律失常药物的合理应用定义\", \"type\": \"Definition\"}, {\"name\": \"一、心脏电复律与电除颤定义\", \"type\": \"Definition\"}, {\"name\": \"二、心血管植入型电子器械定义\", \"type\": \"Definition\"}, {\"name\": \"三、导管消融定义\", \"type\": \"Definition\"}, {\"name\": \"第一节动脉粥样硬化定义\", \"type\": \"Definition\"}, {\"name\": \"第四章动脉粥样硬化和冠状动脉粥样硬化性心脏病定义\", \"type\": \"Definition\"}]"
+    }
+  ],
+  "freeze_passed": false
+}

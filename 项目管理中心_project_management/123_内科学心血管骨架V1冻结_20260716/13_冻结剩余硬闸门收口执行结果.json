@@ -1,0 +1,345 @@
+{
+  "batch_id": "20260716_内科学心血管骨架V1冻结剩余硬闸门收口",
+  "executed_at": "2026-07-16 22:50:15",
+  "password_printed": false,
+  "duplicate_groups_merged": [
+    {
+      "code": [
+        "EVD-CARD-FOUND-00233",
+        "EVID-DEF-DIS-CARD-HTN-EMERGENCY"
+      ],
+      "type": "Evidence",
+      "name": "高血压急症和亚急症-definition-教材证据"
+    },
+    {
+      "code": [
+        "EVD-CARD-FOUND-00367",
+        "EVID-DEF-DIS-CARD-CHD-BAV"
+      ],
+      "type": "Evidence",
+      "name": "二叶主动脉瓣-definition-教材证据"
+    },
+    {
+      "code": [
+        "EVD-CARD-FOUND-00369",
+        "EVID-DEF-DIS-CARD-CHD-COA"
+      ],
+      "type": "Evidence",
+      "name": "先天性主动脉缩窄-definition-教材证据"
+    },
+    {
+      "code": [
+        "EVD-CARD-FOUND-00382",
+        "EVID-DEF-DIS-CARD-CHD-CAF"
+      ],
+      "type": "Evidence",
+      "name": "冠状动脉瘘-definition-教材证据"
+    },
+    {
+      "code": [
+        "EVD-CARD-FOUND-00450",
+        "EVID-DEF-DIS-CARD-INFECTIVE-ENDOCARDITIS"
+      ],
+      "type": "Evidence",
+      "name": "感染性心内膜炎-definition-教材证据"
+    },
+    {
+      "code": [
+        "EVD-CARD-FOUND-00501",
+        "EVID-DEF-DIS-CARD-NEUROSIS"
+      ],
+      "type": "Evidence",
+      "name": "心血管神经症-definition-教材证据"
+    },
+    {
+      "code": [
+        "DEF-DIS-CARD-VHD",
+        "CARD-SKELETON-FULL-20260709-DEFINITION-C1401E56EB9307EC"
+      ],
+      "type": "Definition",
+      "name": "心脏瓣膜病定义"
+    },
+    {
+      "code": [
+        "DEF-DIS-CARD-INFECTIVE-ENDOCARDITIS",
+        "CARD-SKELETON-FULL-20260709-DEFINITION-B6B4F866106C0FF2"
+      ],
+      "type": "Definition",
+      "name": "感染性心内膜炎定义"
+    },
+    {
+      "code": [
+        "DEF-DIS-CARD-NEUROSIS",
+        "CARD-SKELETON-FULL-20260709-DEFINITION-E2120D77D4B947D6"
+      ],
+      "type": "Definition",
+      "name": "心血管神经症定义"
+    },
+    {
+      "code": [
+        "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-PSVT",
+        "EVD-CARD-FOUND-00054"
+      ],
+      "type": "Evidence",
+      "name": "阵发性室上性心动过速-definition-教材证据"
+    },
+    {
+      "code": [
+        "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-BRUGADA",
+        "EVD-CARD-FOUND-00097"
+      ],
+      "type": "Evidence",
+      "name": "Brugada综合征-definition-教材证据"
+    },
+    {
+      "code": [
+        "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-CAD-CHD",
+        "EVD-CARD-FOUND-00126"
+      ],
+      "type": "Evidence",
+      "name": "冠状动脉粥样硬化性心脏病-definition-教材证据"
+    },
+    {
+      "code": [
+        "EVID-TEXTBOOK-DEF-DEF-CARD-CADREM-AMI-70CA4D0055",
+        "EVD-CARD-FOUND-00179"
+      ],
+      "type": "Evidence",
+      "name": "急性心肌梗死-definition-教材证据"
+    },
+    {
+      "code": [
+        "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-SCD-ARREST",
+        "EVD-CARD-FOUND-00472"
+      ],
+      "type": "Evidence",
+      "name": "心脏骤停-definition-教材证据"
+    },
+    {
+      "code": [
+        "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-SCD-SUDDEN",
+        "EVD-CARD-FOUND-00474"
+      ],
+      "type": "Evidence",
+      "name": "心脏性猝死-definition-教材证据"
+    }
+  ],
+  "source_type_corrected": [
+    {
+      "code": "DEF-DIS-CARD-HF-POST-MI",
+      "source_name": "2022 AHA/ACC/HFSA心衰指南 + 2023 ESC急性冠脉综合征指南 + PMC综述",
+      "source_type": "guideline"
+    },
+    {
+      "code": "DEF-DIS-CARD-CM-AMYLOID",
+      "source_name": "ESC心脏淀粉样变诊断与治疗立场声明2021",
+      "source_type": "expert_consensus"
+    },
+    {
+      "code": "DEF-DIS-CARD-CM-ALVC",
+      "source_name": "2023 ESC心肌病管理指南",
+      "source_type": "guideline"
+    },
+    {
+      "code": "DEF-DIS-CARD-CM-ACM",
+      "source_name": "2023 ESC心肌病管理指南",
+      "source_type": "guideline"
+    },
+    {
+      "code": "DEF-DIS-CARD-HF-DIALYSIS-CHF",
+      "source_name": "中国透析患者慢性心力衰竭管理指南",
+      "source_type": "guideline"
+    },
+    {
+      "code": "DEF-DIS-CARD-CM-FABRY",
+      "source_name": "国家罕见病诊疗指南2019 + GeneReviews + 百度健康医典",
+      "source_type": "external_authoritative"
+    },
+    {
+      "code": "DEF-DIS-CARD-CM-ATRIAL",
+      "source_name": "EHRA/HRS/APHRS/SOLAECE心房心肌病专家共识2016",
+      "source_type": "expert_consensus"
+    },
+    {
+      "code": "DEF-DIS-CARD-CM-ABVC",
+      "source_name": "2023 ESC心肌病管理指南",
+      "source_type": "guideline"
+    },
+    {
+      "code": "DEF-DIS-CARD-ARR-BRADY",
+      "source_name": "2018 ACC/AHA/HRS缓慢性心律失常与传导延迟指南摘要",
+      "source_type": "guideline"
+    },
+    {
+      "code": "DEF-DIS-CARD-ARR-VA",
+      "source_name": "2022 ESC室性心律失常与心脏性猝死预防指南",
+      "source_type": "guideline"
+    },
+    {
+      "code": "DEF-HT-GENERAL",
+      "source_name": "《内科学（第10版）》.pdf",
+      "source_type": "external_authoritative"
+    },
+    {
+      "code": "DEF-HT-PRIMARY",
+      "source_name": "《内科学（第10版）》.pdf",
+      "source_type": "external_authoritative"
+    },
+    {
+      "code": "DEF-HT-SECONDARY",
+      "source_name": "《内科学（第10版）》.pdf",
+      "source_type": "external_authoritative"
+    },
+    {
+      "code": "DEF-HT-RENAL-PARENCHYMAL",
+      "source_name": "《内科学（第10版）》.pdf",
+      "source_type": "external_authoritative"
+    }
+  ],
+  "textbook_definition_evidence_linked": [
+    {
+      "def_code": "DEF-DIS-CARD-ARR-PSVT",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-PSVT"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-ARR-VT",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-VT"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-ARR-LQTS",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-LQTS"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-ARR-BRUGADA",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-BRUGADA"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-ARR-CPVT",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-CPVT"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-ARR-ERS",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-ERS"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-CAD-CHD",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-CAD-CHD"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-CAD-POST-MI-SYNDROME",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-CAD-POST-MI-SYNDROME"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-SCD-ARREST",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-SCD-ARREST"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-SCD-SUDDEN",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-SCD-SUDDEN"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-CAD-OLD-MI",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-CAD-OLD-MI"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-HF-BIVENTRICULAR",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-HF-BIVENTRICULAR"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-HF-HFmrEF",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-HF-HFmrEF"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-HF-HFpEF",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-HF-HFpEF"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-HF-HFrEF",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-HF-HFrEF"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-HF-LEFT",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-HF-LEFT"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-HF-RIGHT",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-HF-RIGHT"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-ARR-AVNRT",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-AVNRT"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-ARR-AVRT",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-AVRT"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-ARR-SVT",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-SVT"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-ARR-WPW",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-WPW"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-ARR-NSVT",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-NSVT"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-ARR-SQTS",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-SQTS"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-ARR-TDP",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-TDP"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-ARR-AVB1",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-AVB1"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-ARR-AVB2",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-AVB2"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-ARR-SND",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-SND"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-ARR-AVB3",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-AVB3"
+    },
+    {
+      "def_code": "DEF-DIS-CARD-ARR-BBB",
+      "ev_code": "EVID-TEXTBOOK-DEF-DEF-DIS-CARD-ARR-BBB"
+    }
+  ],
+  "cad_definition_corrected": [
+    {
+      "disease": "急性心肌梗死",
+      "definition_code": "DEF-CARD-CADREM-AMI-70CA4D0055",
+      "evidence_code": "EVID-TEXTBOOK-DEF-DEF-CARD-CADREM-AMI-70CA4D0055"
+    },
+    {
+      "disease": "慢性冠脉综合征",
+      "definition_code": "DEF-CARD-CADREM-CCS-146017C72D",
+      "evidence_code": "EVID-TEXTBOOK-DEF-DEF-CARD-CADREM-CCS-146017C72D"
+    },
+    {
+      "disease": "非ST段抬高型心肌梗死",
+      "definition_code": "DEF-CARD-CADREM-NSTEMI-72693C5E2B",
+      "evidence_code": "EVID-TEXTBOOK-DEF-DEF-CARD-CADREM-NSTEMI-72693C5E2B"
+    },
+    {
+      "disease": "不稳定型心绞痛",
+      "definition_code": "DEF-CARD-CADREM-UA-B328932D1D",
+      "evidence_code": "EVID-TEXTBOOK-DEF-DEF-CARD-CADREM-UA-B328932D1D"
+    },
+    {
+      "disease": "隐匿性冠心病",
+      "definition_code": "DEF-CARD-CADREM-SILENT-ISCHEMIA-A230853392",
+      "evidence_code": "EVID-TEXTBOOK-DEF-DEF-CARD-CADREM-SILENT-ISCHEMIA-A230853392"
+    }
+  ],
+  "source_document_slot_fixed": 3
+}

@@ -1,0 +1,43 @@
+{
+  "batch_id": "20260716_临床规则同名同正文归并",
+  "executed_at": "2026-07-16 22:23:06",
+  "merged": [
+    {
+      "name": "同时需排除冠心病的某些并发症",
+      "text": "同时需排除冠心病的某些并发症",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-F7923C54E944468F",
+      "merged_count": 1,
+      "merged_codes": [
+        "DDX-CARD-CADREM-ICM-003E48BBA7"
+      ]
+    },
+    {
+      "name": "需鉴别其他引起心脏增大和心力衰竭的病因",
+      "text": "需鉴别其他引起心脏增大和心力衰竭的病因",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-3A1C13EFDD6F8AC9",
+      "merged_count": 1,
+      "merged_codes": [
+        "DDX-CARD-CADREM-ICM-39AF6E5DFD"
+      ]
+    },
+    {
+      "name": "但有心肌缺血客观证据的冠心病",
+      "text": "但有心肌缺血客观证据的冠心病",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-E07A99D210903E7E",
+      "merged_count": 1,
+      "merged_codes": [
+        "DDX-CARD-CADREM-SILENT-ISCHEMIA-3600DD6764"
+      ]
+    },
+    {
+      "name": "鉴别诊断需要考虑以下疾病",
+      "text": "鉴别诊断需要考虑以下疾病",
+      "kept_code": "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-5C7037DA313AEC9D",
+      "merged_count": 1,
+      "merged_codes": [
+        "DDX-CARD-CADREM-AMI-2456ECD13F"
+      ]
+    }
+  ],
+  "remaining_duplicates_by_type": []
+}

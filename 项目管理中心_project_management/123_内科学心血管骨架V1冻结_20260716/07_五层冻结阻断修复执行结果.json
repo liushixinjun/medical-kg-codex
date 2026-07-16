@@ -1,0 +1,169 @@
+{
+  "batch_id": "20260716_内科学心血管骨架V1冻结修复",
+  "executed_at": "2026-07-16 22:34:08",
+  "source_section_label_fixed": 0,
+  "source_section_metadata_updated": 96,
+  "source_section_unmatched_count": 0,
+  "source_section_unmatched_sample": [],
+  "definition_nodes_linked_from_disease_property": 0,
+  "definition_candidates": 0,
+  "definition_skipped": 0,
+  "disease_source_section_derived_from_linked": 54,
+  "disease_source_unmatched_count": 77,
+  "disease_source_unmatched_sample": [
+    {
+      "code": "DIS-CARD-HTN-EMERGENCY",
+      "name": "高血压急症和亚急症",
+      "path": "高血压 > 原发性高血压 > 高血压急症和亚急症"
+    },
+    {
+      "code": "DIS-CARD-HTN-PHEO",
+      "name": "嗜铬细胞瘤和副神经节瘤",
+      "path": null
+    },
+    {
+      "code": "DIS-CARD-HTN-COA",
+      "name": "主动脉缩窄",
+      "path": null
+    },
+    {
+      "code": "DIS-CARD-CM-ARVC",
+      "name": "致心律失常性右心室心肌病",
+      "path": "PDF page 14, section 3.2.4 Arrhythmogenic right ventricular cardiomyopathy"
+    },
+    {
+      "code": "DIS-CARD-CHD-EBSTEIN",
+      "name": "三尖瓣下移畸形",
+      "path": null
+    },
+    {
+      "code": "DIS-CARD-CHD-BAV",
+      "name": "二叶主动脉瓣",
+      "path": null
+    },
+    {
+      "code": "DIS-CARD-CHD-COA",
+      "name": "先天性主动脉缩窄",
+      "path": null
+    },
+    {
+      "code": "DIS-CARD-CHD-SOVA",
+      "name": "主动脉窦瘤",
+      "path": null
+    },
+    {
+      "code": "DIS-CARD-CHD-CAF",
+      "name": "冠状动脉瘘",
+      "path": null
+    },
+    {
+      "code": "DIS-CARD-VHD-AS",
+      "name": "主动脉瓣狭窄",
+      "path": null
+    },
+    {
+      "code": "DIS-CARD-VHD-AR",
+      "name": "主动脉瓣反流",
+      "path": null
+    },
+    {
+      "code": "DIS-CARD-VHD-MS",
+      "name": "二尖瓣狭窄",
+      "path": null
+    },
+    {
+      "code": "DIS-CARD-VHD-MR",
+      "name": "二尖瓣反流",
+      "path": null
+    },
+    {
+      "code": "DIS-CARD-VHD-MULTI",
+      "name": "多瓣膜病",
+      "path": null
+    },
+    {
+      "code": "DIS-CARD-PERICARD-ACUTE",
+      "name": "急性心包炎",
+      "path": null
+    },
+    {
+      "code": "DIS-CARD-PERICARD-EFFUSION",
+      "name": "心包积液及心脏压塞",
+      "path": null
+    },
+    {
+      "code": "DIS-CARD-PERICARD-CONSTRICTIVE",
+      "name": "缩窄性心包炎",
+      "path": null
+    },
+    {
+      "code": "DIS-CARD-IE-PVE",
+      "name": "人工瓣膜心内膜炎",
+      "path": null
+    },
+    {
+      "code": "DIS-CARD-SCD-ARREST",
+      "name": "心脏骤停",
+      "path": "心脏骤停与心脏性猝死"
+    },
+    {
+      "code": "DIS-CARD-SCD-SUDDEN",
+      "name": "心脏性猝死",
+      "path": "心脏骤停与心脏性猝死"
+    },
+    {
+      "code": "DIS-CARD-AORTA-ANEURYSM",
+      "name": "主动脉瘤",
+      "path": null
+    },
+    {
+      "code": "DIS-CARD-PAD-LEAD",
+      "name": "下肢动脉硬化闭塞症",
+      "path": null
+    },
+    {
+      "code": "DIS-CARD-VTE",
+      "name": "静脉血栓症",
+      "path": null
+    },
+    {
+      "code": "DIS-CARD-NEUROSIS",
+      "name": "心血管神经症",
+      "path": "心血管神经症 > 心血管神经症"
+    },
+    {
+      "code": "DIS-CARD-CM-ABVC",
+      "name": "致心律失常性双心室心肌病",
+      "path": "PDF page 14, ARVC broader concept includes biventricular disease"
+    },
+    {
+      "code": "DIS-CARD-CM-ACM",
+      "name": "致心律失常性心肌病",
+      "path": "PDF page 12, section 3.2 classification discussion"
+    },
+    {
+      "code": "DIS-CARD-CM-ALVC",
+      "name": "致心律失常性左心室心肌病",
+      "path": "PDF page 13, NDLVC phenotype definition and ALVC naming discussion"
+    },
+    {
+      "code": "DIS-CARD-CM-AMYLOID",
+      "name": "淀粉样变心肌病",
+      "path": "PMC/PDF definition and classification sections"
+    },
+    {
+      "code": "DIS-CARD-CM-ATRIAL",
+      "name": "心房心肌病",
+      "path": "Consensus definition section"
+    },
+    {
+      "code": "DIS-CARD-CM-FABRY",
+      "name": "法布雷病心肌病",
+      "path": "NHC PDF hit pages; GeneReviews disease summary; Baidu Health reviewed patient encyclopedia"
+    }
+  ],
+  "skeleton_slot_filled": 0,
+  "skeleton_slot_status_filled": 0,
+  "medication_class_source_not_cover_marked": 2,
+  "myocardial_injury_marker_children_linked": 5
+}

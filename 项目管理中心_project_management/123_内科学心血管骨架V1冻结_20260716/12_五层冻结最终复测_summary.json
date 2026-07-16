@@ -1,0 +1,498 @@
+{
+  "batch_id": "20260716_内科学心血管骨架V1冻结最终复测",
+  "generated_at": "2026-07-16 22:51:42",
+  "neo4j_uri": "bolt://192.168.3.27:7687",
+  "password_printed": false,
+  "auth_candidate_index_used": 0,
+  "results": {
+    "source_section_label_bad": {
+      "count": 0,
+      "sample": []
+    },
+    "source_section_no_path": {
+      "count": 0,
+      "sample": []
+    },
+    "disease_category_title_pollution": {
+      "count": 0,
+      "sample": []
+    },
+    "same_type_same_name_duplicates": {
+      "groups": 0,
+      "nodes": 0,
+      "sample": []
+    },
+    "textbook_in_scope_disease_no_definition": {
+      "count": 0,
+      "sample": []
+    },
+    "out_of_textbook_freeze_scope_disease": {
+      "count": 23,
+      "sample": [
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "嗜铬细胞瘤和副神经节瘤",
+          "code": "DIS-CARD-HTN-PHEO"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "三尖瓣下移畸形",
+          "code": "DIS-CARD-CHD-EBSTEIN"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "人工瓣膜心内膜炎",
+          "code": "DIS-CARD-IE-PVE"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "主动脉瘤",
+          "code": "DIS-CARD-AORTA-ANEURYSM"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "肺动脉瓣狭窄",
+          "code": "DIS-CARD-VHD-PS"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "风湿性心脏瓣膜病",
+          "code": "DIS-CARD-VHD-RHD"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "三尖瓣反流",
+          "code": "DIS-CARD-VHD-TR"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "肺动脉高压",
+          "code": "DIS-CARD-PH"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "先天性心脏病相关肺动脉高压",
+          "code": "DIS-CARD-PH-CHD"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "结缔组织病相关肺动脉高压",
+          "code": "DIS-CARD-PH-CTD"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "慢性血栓栓塞性肺动脉高压",
+          "code": "DIS-CARD-PH-CTEPH"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "遗传性肺动脉高压",
+          "code": "DIS-CARD-PH-HPAH"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "特发性肺动脉高压",
+          "code": "DIS-CARD-PH-IPAH"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "动脉性肺动脉高压",
+          "code": "DIS-CARD-PH-PAH"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "暴发性心肌炎",
+          "code": "DIS-CARD-FULMINANT-MYOCARDITIS"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "腹主动脉瘤",
+          "code": "DIS-CARD-AAA"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "Stanford B型主动脉夹层",
+          "code": "DIS-CARD-TBAD"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "先天性心脏病",
+          "code": "DIS-CARD-CHD"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "卵圆孔未闭",
+          "code": "DIS-CARD-PFO"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "室间隔缺损",
+          "code": "DIS-CARD-VSD"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "血脂异常",
+          "code": "DIS-CARD-DYSLIPIDEMIA"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "家族性高胆固醇血症",
+          "code": "DIS-CARD-FH"
+        },
+        {
+          "reason": "未匹配到《内科学》第10版心血管章节目录中的独立疾病条目",
+          "name": "高胆固醇血症",
+          "code": "DIS-CARD-HYPERCHOLESTEROLEMIA"
+        }
+      ]
+    },
+    "drug_class_no_specific": {
+      "count": 0,
+      "sample": []
+    },
+    "labtest_no_indicator": {
+      "count": 0,
+      "sample": []
+    },
+    "exam_no_indicator_all": {
+      "count": 96,
+      "sample": [
+        {
+          "name": "冠状动脉造影",
+          "code": "EXAM-CAG"
+        },
+        {
+          "name": "心内膜心肌活检",
+          "code": "EXAM-EMB"
+        },
+        {
+          "name": "基因检测",
+          "code": "EXAM-GENETIC"
+        },
+        {
+          "name": "动态心电图",
+          "code": "EXAM-HOLTER"
+        },
+        {
+          "name": "运动负荷试验",
+          "code": "EXAM-CARD-241B4B0218DF"
+        },
+        {
+          "name": "冠状动脉CT血管成像",
+          "code": "EXAM-CARD-F60922D428D5"
+        },
+        {
+          "name": "心脏导管检查",
+          "code": "EXAM-CARD-TEXT-8AF3973EB6"
+        },
+        {
+          "name": "磁共振成像",
+          "code": "EXAM-CARD-TEXT-8633D5B324"
+        },
+        {
+          "name": "电生理检查",
+          "code": "EXAM-CARD-TEXT-C33E64A777"
+        },
+        {
+          "name": "胸部X线检查",
+          "code": "EXAM-CARD-TEXT-BE9C2270C9"
+        },
+        {
+          "name": "冠状动脉CTA",
+          "code": "EXAM-CARD-TEXT-2BB358B9BF"
+        },
+        {
+          "name": "CT检查",
+          "code": "EXAM-CARD-TEXT-9A031190AE"
+        },
+        {
+          "name": "CT肺动脉造影",
+          "code": "EXAM-CARD-FULLBOOK-80909CCD5C"
+        },
+        {
+          "name": "血管超声",
+          "code": "EXAM-CARD-FULLBOOK-27900FDADC"
+        },
+        {
+          "name": "肺通气/灌注显像",
+          "code": "EXAM-CARD-FULLBOOK-FED1A8ECF0"
+        },
+        {
+          "name": "利钠肽",
+          "code": "EXAM-CARD-01C3182D129E"
+        },
+        {
+          "name": "心脏CT",
+          "code": "EXAM-CARD-1A108BEFCEA9"
+        },
+        {
+          "name": "事件记录仪",
+          "code": "EXAM-CARD-41BF81CAB3CE"
+        },
+        {
+          "name": "经食管超声心动图",
+          "code": "EXAM-CARD-705D7CD61EB7"
+        },
+        {
+          "name": "12导联心电图",
+          "code": "EXAM-CARD-A80B855C8C77"
+        },
+        {
+          "name": "植入式心电监测",
+          "code": "EXAM-CARD-F6169EE9D82C"
+        },
+        {
+          "name": "食管心房调搏",
+          "code": "EXAM-CARD-90DB0CAFC311"
+        },
+        {
+          "name": "心脏电生理检查",
+          "code": "EXAM-CARD-85148D8A75A3"
+        },
+        {
+          "name": "运动试验",
+          "code": "EXAM-CARD-896888B4FC85"
+        },
+        {
+          "name": "主动脉CTA",
+          "code": "EXAM-CARD-AORTA-CTA-CDSS"
+        },
+        {
+          "name": "胸部影像学检查",
+          "code": "EXAM-CARD-CHEST-IMAGING-CDSS"
+        },
+        {
+          "name": "血常规与血红蛋白",
+          "code": "LAB-CARD-CBC-HB-CDSS"
+        },
+        {
+          "name": "肾功能与电解质",
+          "code": "LAB-CARD-RENAL-ELECTROLYTE-CDSS"
+        },
+        {
+          "name": "阿托品试验",
+          "code": "EXAM-CARD-7B3D7DB3D83E"
+        },
+        {
+          "name": "心电图及长程心电监测",
+          "code": "EXAM-CARD-A096A6416690"
+        },
+        {
+          "name": "X线",
+          "code": "CARD-SKELETON-20260709-EXAM-B66979D14041DD2B"
+        },
+        {
+          "name": "计算机断层扫描",
+          "code": "CARD-SKELETON-20260709-EXAM-4974BA875B54084B"
+        },
+        {
+          "name": "血管内超声",
+          "code": "CARD-SKELETON-20260709-EXAM-652809DC86CBF5A2"
+        },
+        {
+          "name": "光学相干断层扫描",
+          "code": "CARD-SKELETON-FULL-20260709-EXAM-40BD433C71F71D08"
+        },
+        {
+          "name": "家庭血压监测",
+          "code": "EXAM-CARD-009841714F76"
+        },
+        {
+          "name": "诊室血压测量",
+          "code": "EXAM-CARD-1F526A303B77"
+        },
+        {
+          "name": "肾上腺CT",
+          "code": "EXAM-CARD-7611BF5653DB"
+        },
+        {
+          "name": "肾动脉超声",
+          "code": "EXAM-CARD-AA7D75430BA0"
+        },
+        {
+          "name": "眼底检查",
+          "code": "EXAM-CARD-AD3DCB35DE45"
+        },
+        {
+          "name": "肾上腺静脉采血",
+          "code": "EXAM-CARD-D9EE1FF4CE81"
+        },
+        {
+          "name": "24小时动态血压监测",
+          "code": "EXAM-CARD-F172A71AF16D"
+        },
+        {
+          "name": "睡眠呼吸监测",
+          "code": "EXAM-CARD-FDECC92EDFB7"
+        },
+        {
+          "name": "CKD高血压肾功能和尿蛋白评估",
+          "code": "EXAM-HT-CKD-EGFR-UACR"
+        },
+        {
+          "name": "正电子发射断层显像",
+          "code": "EXAM-CARD-STEMI-71B00278E585"
+        },
+        {
+          "name": "单光子发射计算机断层显像",
+          "code": "EXAM-CARD-STEMI-43AF84ECFEAC"
+        },
+        {
+          "name": "IVUS",
+          "code": "EXAM-CARD-CADREM-SILENT-ISCHEMIA-9E41219AEC"
+        },
+        {
+          "name": "Holter",
+          "code": "EXAM-CARD-CADREM-STABLE-ANGINA-2B3BD0A8FA"
+        },
+        {
+          "name": "OCT",
+          "code": "EXAM-CARD-CADREM-UA-6595E76160"
+        },
+        {
+          "name": "二尖瓣狭窄检查",
+          "code": "EXAM-CARD-0865DD245608"
+        },
+        {
+          "name": "CMR",
+          "code": "EXAM-CARD-09DFFB573658"
+        },
+        {
+          "name": "肺动脉瓣狭窄检查",
+          "code": "EXAM-CARD-0BFEB8726F1A"
+        },
+        {
+          "name": "三尖瓣反流检查",
+          "code": "EXAM-CARD-16F0D6920182"
+        },
+        {
+          "name": "心脏瓣膜病检查",
+          "code": "EXAM-CARD-3952FA87CE06"
+        },
+        {
+          "name": "CTA",
+          "code": "EXAM-CARD-3A1C9D9E3AEB"
+        },
+        {
+          "name": "风湿性心脏瓣膜病检查",
+          "code": "EXAM-CARD-4BB7B70D85A1"
+        },
+        {
+          "name": "主动脉瓣狭窄检查",
+          "code": "EXAM-CARD-708809C38DF0"
+        },
+        {
+          "name": "二尖瓣反流检查",
+          "code": "EXAM-CARD-73E7CBE78E09"
+        },
+        {
+          "name": "多瓣膜病检查",
+          "code": "EXAM-CARD-A75C6A09C4B4"
+        },
+        {
+          "name": "心导管检查",
+          "code": "EXAM-CARD-B27427130801"
+        },
+        {
+          "name": "主动脉瓣反流检查",
+          "code": "EXAM-CARD-DBD1F40853C8"
+        },
+        {
+          "name": "CT",
+          "code": "EXAM-CARD-F6AAC5622DEA"
+        },
+        {
+          "name": "慢性血栓栓塞性肺动脉高压检查",
+          "code": "EXAM-CARD-48545B9DF12D"
+        },
+        {
+          "name": "肺动脉高压检查",
+          "code": "EXAM-CARD-4E359DE6E39D"
+        },
+        {
+          "name": "动脉性肺动脉高压检查",
+          "code": "EXAM-CARD-9853A68E651E"
+        },
+        {
+          "name": "结缔组织病相关肺动脉高压检查",
+          "code": "EXAM-CARD-A6EE67C8B755"
+        },
+        {
+          "name": "先天性心脏病相关肺动脉高压检查",
+          "code": "EXAM-CARD-A9459B69C059"
+        },
+        {
+          "name": "遗传性肺动脉高压检查",
+          "code": "EXAM-CARD-B5C1A79FAC54"
+        },
+        {
+          "name": "特发性肺动脉高压检查",
+          "code": "EXAM-CARD-CBBD6856A319"
+        },
+        {
+          "name": "胸部X线",
+          "code": "EXAM-CARD-D690076CB8EB"
+        },
+        {
+          "name": "右心导管检查",
+          "code": "EXAM-CARD-FE5579C751A4"
+        },
+        {
+          "name": "房室传导阻滞检查",
+          "code": "EXAM-CARD-2A5C372915FF"
+        },
+        {
+          "name": "束支传导阻滞检查",
+          "code": "EXAM-CARD-4AD769033513"
+        },
+        {
+          "name": "窦房结功能障碍检查",
+          "code": "EXAM-CARD-9392E9664208"
+        },
+        {
+          "name": "三度房室传导阻滞检查",
+          "code": "EXAM-CARD-97D69E2921A1"
+        },
+        {
+          "name": "二度房室传导阻滞检查",
+          "code": "EXAM-CARD-B819A6206DDB"
+        },
+        {
+          "name": "一度房室传导阻滞检查",
+          "code": "EXAM-CARD-C548875CF43C"
+        },
+        {
+          "name": "窦房传导阻滞检查",
+          "code": "EXAM-CARD-D778E05E37ED"
+        },
+        {
+          "name": "缓慢性心律失常检查",
+          "code": "EXAM-CARD-EADD36742F7D"
+        },
+        {
+          "name": "窦性心动过缓检查",
+          "code": "EXAM-CARD-FBC2CB79BDD3"
+        },
+        {
+          "name": "心包炎检查",
+          "code": "EXAM-CARD-127CAD01EC4B"
+        }
+      ]
+    },
+    "textbook_core_slot_status_empty_excluding_evidence": {
+      "count": 0,
+      "sample": []
+    },
+    "textbook_definition_without_evidence": {
+      "count": 0,
+      "sample": []
+    },
+    "recommendation_statement_without_action_or_evidence": {
+      "count": 0,
+      "sample": []
+    }
+  },
+  "zero_gate_blocking": [],
+  "freeze_v1_0_judgement": "PASS",
+  "exam_indicator_note": "检查项目无指标为V1.1精细化指标层待治理；凡进入正式CDSS诊断推理的检查，必须具备诊断组件/检查指标/阈值。"
+}
