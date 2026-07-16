@@ -1,0 +1,140 @@
+{
+  "generated_at": "2026-07-15 22:30:34",
+  "database_http": "http://192.168.3.27:7474",
+  "import_results": [
+    {
+      "batch": "20260715_高血压正式解析收口",
+      "mode": "高血压定义delta幂等合并",
+      "input_node_count": 75,
+      "input_relation_count": 120,
+      "merged_node_count": 75,
+      "merged_relation_count": 120,
+      "elapsed_seconds": 10.36
+    },
+    {
+      "batch": "20260715_心肌炎心包炎感染性心内膜炎正式解析",
+      "mode": "完整批次幂等合并",
+      "input_node_count": 1620,
+      "input_relation_count": 7110,
+      "merged_node_count": 1620,
+      "merged_relation_count": 7110,
+      "elapsed_seconds": 351.58
+    },
+    {
+      "batch": "20260715_主动脉与外周动脉疾病正式解析",
+      "mode": "完整批次幂等合并",
+      "input_node_count": 1237,
+      "input_relation_count": 3567,
+      "merged_node_count": 1237,
+      "merged_relation_count": 3567,
+      "elapsed_seconds": 111.65
+    },
+    {
+      "batch": "20260715_结构性心脏病先心病正式解析",
+      "mode": "完整批次幂等合并",
+      "input_node_count": 1048,
+      "input_relation_count": 5086,
+      "merged_node_count": 1048,
+      "merged_relation_count": 5086,
+      "elapsed_seconds": 163.29
+    },
+    {
+      "batch": "20260715_血脂异常动脉粥样硬化防治正式解析",
+      "mode": "完整批次幂等合并",
+      "input_node_count": 898,
+      "input_relation_count": 3013,
+      "merged_node_count": 898,
+      "merged_relation_count": 3013,
+      "elapsed_seconds": 102.07
+    }
+  ],
+  "postcheck_results": [
+    {
+      "batch": "20260715_高血压正式解析收口",
+      "status": "passed",
+      "node_count_checked": 75,
+      "relation_count_checked": 120,
+      "blockers": {
+        "missing_node_count": 0,
+        "non_kg_node_count": 0,
+        "missing_relation_count": 0,
+        "duplicate_semantic_relation_count": 0,
+        "duplicate_type_name_count": 0,
+        "technical_name_count": 0,
+        "diagnosis_criteria_without_component_count": 0,
+        "treatment_plan_without_action_count": 0
+      }
+    },
+    {
+      "batch": "20260715_心肌炎心包炎感染性心内膜炎正式解析",
+      "status": "failed",
+      "node_count_checked": 1620,
+      "relation_count_checked": 7110,
+      "blockers": {
+        "missing_node_count": 0,
+        "non_kg_node_count": 0,
+        "missing_relation_count": 0,
+        "duplicate_semantic_relation_count": 0,
+        "duplicate_type_name_count": 0,
+        "technical_name_count": 0,
+        "diagnosis_criteria_without_component_count": 4,
+        "treatment_plan_without_action_count": 0
+      }
+    },
+    {
+      "batch": "20260715_主动脉与外周动脉疾病正式解析",
+      "status": "failed",
+      "node_count_checked": 1237,
+      "relation_count_checked": 3567,
+      "blockers": {
+        "missing_node_count": 0,
+        "non_kg_node_count": 0,
+        "missing_relation_count": 0,
+        "duplicate_semantic_relation_count": 0,
+        "duplicate_type_name_count": 0,
+        "technical_name_count": 0,
+        "diagnosis_criteria_without_component_count": 5,
+        "treatment_plan_without_action_count": 0
+      }
+    },
+    {
+      "batch": "20260715_结构性心脏病先心病正式解析",
+      "status": "failed",
+      "node_count_checked": 1048,
+      "relation_count_checked": 5086,
+      "blockers": {
+        "missing_node_count": 0,
+        "non_kg_node_count": 0,
+        "missing_relation_count": 0,
+        "duplicate_semantic_relation_count": 0,
+        "duplicate_type_name_count": 0,
+        "technical_name_count": 0,
+        "diagnosis_criteria_without_component_count": 5,
+        "treatment_plan_without_action_count": 0
+      }
+    },
+    {
+      "batch": "20260715_血脂异常动脉粥样硬化防治正式解析",
+      "status": "failed",
+      "node_count_checked": 898,
+      "relation_count_checked": 3013,
+      "blockers": {
+        "missing_node_count": 0,
+        "non_kg_node_count": 0,
+        "missing_relation_count": 0,
+        "duplicate_semantic_relation_count": 0,
+        "duplicate_type_name_count": 0,
+        "technical_name_count": 0,
+        "diagnosis_criteria_without_component_count": 3,
+        "treatment_plan_without_action_count": 0
+      }
+    }
+  ],
+  "all_postcheck_passed": false,
+  "global_counts": {
+    "server_node_count": 54535,
+    "server_relation_count": 187757,
+    "server_disease_category_count": 41,
+    "server_disease_count": 143
+  }
+}

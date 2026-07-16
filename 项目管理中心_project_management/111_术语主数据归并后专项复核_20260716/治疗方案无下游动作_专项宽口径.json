@@ -1,0 +1,118 @@
+{
+  "columns": [
+    "disease",
+    "disease_code",
+    "treatment_plan",
+    "plan_code"
+  ],
+  "rows": [
+    {
+      "disease": "主动脉瓣反流",
+      "disease_code": "DIS-CARD-VHD-AR",
+      "treatment_plan": "控制心室率",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC"
+    },
+    {
+      "disease": "主动脉瓣狭窄",
+      "disease_code": "DIS-CARD-VHD-AS",
+      "treatment_plan": "控制心室率",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC"
+    },
+    {
+      "disease": "二尖瓣反流",
+      "disease_code": "DIS-CARD-VHD-MR",
+      "treatment_plan": "控制心室率",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC"
+    },
+    {
+      "disease": "二尖瓣狭窄",
+      "disease_code": "DIS-CARD-VHD-MS",
+      "treatment_plan": "控制心室率",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC"
+    },
+    {
+      "disease": "冠状动脉粥样硬化性心脏病",
+      "disease_code": "DIS-CARD-CAD-CHD",
+      "treatment_plan": "控制心室率",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC"
+    },
+    {
+      "disease": "心力衰竭",
+      "disease_code": "DIS-CARD-HF",
+      "treatment_plan": "控制心室率",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC"
+    },
+    {
+      "disease": "心包积液及心脏压塞",
+      "disease_code": "DIS-CARD-PERICARD-EFFUSION",
+      "treatment_plan": "控制心室率",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC"
+    },
+    {
+      "disease": "心房心肌病",
+      "disease_code": "DIS-CARD-CM-ATRIAL",
+      "treatment_plan": "房性心律失常与卒中风险管理",
+      "plan_code": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT"
+    },
+    {
+      "disease": "心房扑动",
+      "disease_code": "DIS-CARD-ARR-AFL",
+      "treatment_plan": "控制心室率",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC"
+    },
+    {
+      "disease": "心房颤动",
+      "disease_code": "DIS-CARD-ARR-AF",
+      "treatment_plan": "控制心室率",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC"
+    },
+    {
+      "disease": "急性主动脉综合征",
+      "disease_code": "DIS-CARD-AAS",
+      "treatment_plan": "医学治疗与介入/手术治疗策略",
+      "plan_code": "PLAN-CARD-AAS-MEDICAL-ENDOVASCULAR-SURGICAL"
+    },
+    {
+      "disease": "急性心力衰竭",
+      "disease_code": "DIS-CARD-HF-AHF",
+      "treatment_plan": "控制心室率",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC"
+    },
+    {
+      "disease": "感染性心内膜炎",
+      "disease_code": "DIS-CARD-INFECTIVE-ENDOCARDITIS",
+      "treatment_plan": "控制心室率",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC"
+    },
+    {
+      "disease": "房室传导阻滞",
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "treatment_plan": "控制心室率",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC"
+    },
+    {
+      "disease": "房性心动过速",
+      "disease_code": "DIS-CARD-ARR-AT",
+      "treatment_plan": "控制心室率",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC"
+    },
+    {
+      "disease": "扩张型心肌病",
+      "disease_code": "DIS-CARD-CM-DCM",
+      "treatment_plan": "控制心室率",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC"
+    },
+    {
+      "disease": "持续性室性心动过速",
+      "disease_code": "DIS-CARD-ARR-VT",
+      "treatment_plan": "控制心室率",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC"
+    },
+    {
+      "disease": "非扩张型左心室心肌病",
+      "disease_code": "DIS-CARD-CM-NDLVCM",
+      "treatment_plan": "控制心室率",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC"
+    }
+  ]
+}

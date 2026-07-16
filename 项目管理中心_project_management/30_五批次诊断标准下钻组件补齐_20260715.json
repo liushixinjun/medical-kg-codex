@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-07-15 22:32:40",
+  "summary": [
+    {
+      "batch": "20260715_心肌炎心包炎感染性心内膜炎正式解析",
+      "diagnosis_criteria_count": 4,
+      "already_had_component_count": 0,
+      "delta_relation_count": 121,
+      "delta_path": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\20260715_心肌炎心包炎感染性心内膜炎正式解析\\05_delta\\诊断标准下钻组件_relations_delta_20260715.jsonl"
+    },
+    {
+      "batch": "20260715_主动脉与外周动脉疾病正式解析",
+      "diagnosis_criteria_count": 5,
+      "already_had_component_count": 0,
+      "delta_relation_count": 58,
+      "delta_path": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\20260715_主动脉与外周动脉疾病正式解析\\05_delta\\诊断标准下钻组件_relations_delta_20260715.jsonl"
+    },
+    {
+      "batch": "20260715_结构性心脏病先心病正式解析",
+      "diagnosis_criteria_count": 5,
+      "already_had_component_count": 0,
+      "delta_relation_count": 105,
+      "delta_path": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\20260715_结构性心脏病先心病正式解析\\05_delta\\诊断标准下钻组件_relations_delta_20260715.jsonl"
+    },
+    {
+      "batch": "20260715_血脂异常动脉粥样硬化防治正式解析",
+      "diagnosis_criteria_count": 3,
+      "already_had_component_count": 0,
+      "delta_relation_count": 25,
+      "delta_path": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\20260715_血脂异常动脉粥样硬化防治正式解析\\05_delta\\诊断标准下钻组件_relations_delta_20260715.jsonl"
+    }
+  ]
+}

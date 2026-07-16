@@ -1,0 +1,9 @@
+{
+  "columns": [
+    "code",
+    "name",
+    "category_count",
+    "subcategory_count"
+  ],
+  "rows": []
+}

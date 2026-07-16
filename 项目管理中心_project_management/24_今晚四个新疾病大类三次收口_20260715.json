@@ -1,0 +1,26 @@
+﻿[
+  {
+    "batch": "20260715_心肌炎心包炎感染性心内膜炎正式解析",
+    "node_changes": 0,
+    "relation_changes": 0,
+    "status": "repaired"
+  },
+  {
+    "batch": "20260715_主动脉与外周动脉疾病正式解析",
+    "node_changes": 0,
+    "relation_changes": 1,
+    "status": "repaired"
+  },
+  {
+    "batch": "20260715_结构性心脏病先心病正式解析",
+    "node_changes": 0,
+    "relation_changes": 0,
+    "status": "repaired"
+  },
+  {
+    "batch": "20260715_血脂异常动脉粥样硬化防治正式解析",
+    "node_changes": 0,
+    "relation_changes": 0,
+    "status": "repaired"
+  }
+]

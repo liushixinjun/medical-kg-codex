@@ -1,0 +1,6 @@
+{
+  "batch": "20260715_血脂异常动脉粥样硬化防治正式解析",
+  "removed_node_count": 0,
+  "removed_relation_count": 0,
+  "reason": "ASCVD风险是风险评估对象，不作为疾病节点进入本批次疾病闭环审计"
+}

@@ -1,0 +1,282 @@
+batch:
+  batch_id: 20260715_起搏治疗正式解析
+  batch_name: 起搏治疗相关疾病正式解析
+  created_date: "2026-07-15"
+  purpose: 教材骨架与指南PDF双维度正式解析，补齐起搏适应证、禁忌、植入流程、随访和CDSS证据链
+
+scope:
+  top_specialty: 心血管内科
+  disease_category: 起搏治疗相关疾病
+  scope_type: 疾病大类
+  scope_target:
+    - 起搏治疗相关疾病
+    - 缓慢性心律失常
+    - 传导阻滞
+    - 起搏器治疗
+  source_aliases:
+    - 起搏治疗
+    - 心脏起搏
+    - 心脏起搏治疗
+    - 起搏器
+    - 永久起搏器
+    - 临时起搏
+    - 临时心脏起搏
+    - 永久起搏器植入
+    - 心脏再同步治疗
+    - 植入型心律转复除颤器
+    - 植入式心律转复除颤器
+    - 除颤器
+    - ICD
+    - CRT
+    - CRT-P
+    - CRT-D
+    - pacemaker
+    - pacing
+    - bradycardia
+    - bradyarrhythmia
+    - atrioventricular block
+    - 房室传导阻滞
+    - 一度房室传导阻滞
+    - 二度房室传导阻滞
+    - 三度房室传导阻滞
+    - 高度房室传导阻滞
+    - 完全性房室传导阻滞
+    - 束支传导阻滞
+    - 室内传导阻滞
+    - 窦性心动过缓
+    - 窦房传导阻滞
+    - 窦房结功能障碍
+    - 病态窦房结综合征
+    - 缓慢性心律失常
+
+source_roots:
+  guideline_roots:
+    - E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/诊疗指南
+  textbook_roots:
+    - E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/书籍教材
+  external_authority_roots:
+    - E:/BigMouse/0.CDSS文献诊疗指南材料PDF/心血管内科/外部权威
+  terminology_roots:
+    - E:/BigMouse/0.CDSS文献诊疗指南材料PDF/AI专科知识图谱生成/术语字典
+
+output:
+  output_root: E:/BigMouse/0.CDSS文献诊疗指南材料PDF/AI专科知识图谱生成/心血管内科文献集合
+
+source_policy:
+  source_scope_aliases:
+    - 起搏
+    - 起搏器
+    - 心脏起搏
+    - 永久起搏
+    - 临时起搏
+    - ICD
+    - CRT
+    - 房室传导阻滞
+    - 传导阻滞
+    - 窦房结
+    - 缓慢性心律失常
+  inclusion_priority:
+    P0: 教材骨架来源，固定纳入《内科学（第10版）》心律失常、传导阻滞和起搏相关章节
+    P1: 起搏器、ICD、CRT、缓慢性心律失常、传导阻滞相关指南/专家共识/临床路径
+    P2: 心衰、心肌病、冠心病、瓣膜病等交叉资料中明确涉及ICD/CRT/起搏适应证的段落，仅作为交叉证据引用
+  exclusion_rules:
+    - 单纯快速性心律失常资料不得整体纳入，只有明确涉及临时起搏、ICD、CRT或起搏器处理时才引用
+    - 单纯心衰资料不得整体纳入，只有明确涉及CRT或ICD适应证、禁忌证、随访时才引用
+    - 单纯术后护理资料只能补随访和患者教育，不作为核心推荐等级证据
+
+taxonomy_rows:
+  - specialty_code: CARD
+    category_code: CARD-PACING
+    subcategory_code: BRADY
+    disease_code: DIS-CARD-ARR-BRADY
+    name: 缓慢性心律失常
+    name_en: Bradyarrhythmia
+    aliases: 心动过缓性心律失常；缓慢心律失常；bradycardia；bradyarrhythmia
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-PACING
+    subcategory_code: SND
+    disease_code: DIS-CARD-ARR-SND
+    name: 窦房结功能障碍
+    name_en: Sinus Node Dysfunction
+    aliases: 病态窦房结综合征；病窦综合征；SSS；SND；sick sinus syndrome
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-PACING
+    subcategory_code: SINUS
+    disease_code: DIS-CARD-ARR-SB
+    name: 窦性心动过缓
+    name_en: Sinus Bradycardia
+    aliases: 窦性心率过缓；sinus bradycardia
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-PACING
+    subcategory_code: SINUS
+    disease_code: DIS-CARD-ARR-SAB
+    name: 窦房传导阻滞
+    name_en: Sinoatrial Block
+    aliases: SAB；窦房阻滞；sinoatrial block
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-PACING
+    subcategory_code: AVB
+    disease_code: DIS-CARD-ARR-AVB
+    name: 房室传导阻滞
+    name_en: Atrioventricular Block
+    aliases: AVB；房室阻滞；atrioventricular block；AV block
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-PACING
+    subcategory_code: AVB
+    disease_code: DIS-CARD-ARR-AVB1
+    name: 一度房室传导阻滞
+    name_en: First-Degree Atrioventricular Block
+    aliases: 一度AVB；一度房室阻滞；first degree AV block
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-PACING
+    subcategory_code: AVB
+    disease_code: DIS-CARD-ARR-AVB2
+    name: 二度房室传导阻滞
+    name_en: Second-Degree Atrioventricular Block
+    aliases: 二度AVB；Mobitz I；Mobitz II；文氏阻滞；莫氏阻滞；second degree AV block
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-PACING
+    subcategory_code: AVB
+    disease_code: DIS-CARD-ARR-AVB3
+    name: 三度房室传导阻滞
+    name_en: Third-Degree Atrioventricular Block
+    aliases: 完全性房室传导阻滞；三度AVB；完全性AVB；complete AV block；third degree AV block
+    inclusion_status: included
+  - specialty_code: CARD
+    category_code: CARD-PACING
+    subcategory_code: BBB
+    disease_code: DIS-CARD-ARR-BBB
+    name: 束支传导阻滞
+    name_en: Bundle Branch Block
+    aliases: 室内传导阻滞；BBB；bundle branch block；intraventricular block
+    inclusion_status: included
+
+controlled_vocabulary_rows:
+  - canonical_name: 永久起搏器植入
+    name_en: Permanent Pacemaker Implantation
+    abbr: PPM
+    aliases: 永久心脏起搏器植入；永久起搏器；起搏器植入；心脏起搏器植入
+    entityType: Procedure
+    disease_scope: 起搏治疗相关疾病
+    source: batch_config
+  - canonical_name: 临时心脏起搏
+    name_en: Temporary Cardiac Pacing
+    abbr: TCP
+    aliases: 临时起搏；临时起搏器；经静脉临时心脏起搏；床旁临时心脏起搏
+    entityType: Procedure
+    disease_scope: 起搏治疗相关疾病
+    source: batch_config
+  - canonical_name: 心脏再同步治疗
+    name_en: Cardiac Resynchronization Therapy
+    abbr: CRT
+    aliases: CRT-P；CRT-D；双心室起搏；心脏同步化治疗
+    entityType: Procedure
+    disease_scope: 起搏治疗相关疾病
+    source: batch_config
+  - canonical_name: 植入式心律转复除颤器
+    name_en: Implantable Cardioverter Defibrillator
+    abbr: ICD
+    aliases: 植入型心律转复除颤器；埋藏式心律转复除颤器；植入式除颤器；心脏除颤器
+    entityType: Procedure
+    disease_scope: 起搏治疗相关疾病
+    source: batch_config
+  - canonical_name: 起搏器程控
+    name_en: Pacemaker Programming
+    abbr: ""
+    aliases: 起搏器参数调整；起搏器随访程控；程控随访
+    entityType: Procedure
+    disease_scope: 起搏治疗相关疾病
+    source: batch_config
+  - canonical_name: 心电图
+    name_en: Electrocardiography
+    abbr: ECG
+    aliases: ECG；十二导联心电图；常规心电图
+    entityType: Exam
+    disease_scope: 起搏治疗相关疾病
+    source: batch_config
+  - canonical_name: 动态心电图
+    name_en: Holter Monitoring
+    abbr: Holter
+    aliases: Holter；24小时动态心电图；长程心电监测
+    entityType: Exam
+    disease_scope: 起搏治疗相关疾病
+    source: batch_config
+  - canonical_name: 心率
+    name_en: Heart Rate
+    abbr: HR
+    aliases: 心室率；脉率
+    entityType: ExamIndicator
+    disease_scope: 起搏治疗相关疾病
+    source: batch_config
+  - canonical_name: PR间期延长
+    name_en: Prolonged PR Interval
+    abbr: PR
+    aliases: PR间期延长；房室传导时间延长
+    entityType: ExamIndicator
+    disease_scope: 起搏治疗相关疾病
+    source: batch_config
+  - canonical_name: QRS波增宽
+    name_en: Wide QRS Complex
+    abbr: QRS
+    aliases: QRS时限延长；宽QRS波
+    entityType: ExamIndicator
+    disease_scope: 起搏治疗相关疾病
+    source: batch_config
+  - canonical_name: 晕厥
+    name_en: Syncope
+    abbr: ""
+    aliases: 昏厥；短暂意识丧失
+    entityType: Symptom
+    disease_scope: 起搏治疗相关疾病
+    source: batch_config
+  - canonical_name: 头晕
+    name_en: Dizziness
+    abbr: ""
+    aliases: 眩晕；头昏
+    entityType: Symptom
+    disease_scope: 起搏治疗相关疾病
+    source: batch_config
+  - canonical_name: 黑矇
+    name_en: Amaurosis
+    abbr: ""
+    aliases: 眼前发黑；一过性黑矇
+    entityType: Symptom
+    disease_scope: 起搏治疗相关疾病
+    source: batch_config
+  - canonical_name: 心动过缓
+    name_en: Bradycardia
+    abbr: ""
+    aliases: 心率过慢；缓慢心率
+    entityType: Sign
+    disease_scope: 起搏治疗相关疾病
+    source: batch_config
+  - canonical_name: 起搏器感染
+    name_en: Cardiac Implantable Electronic Device Infection
+    abbr: CIED infection
+    aliases: CIED感染；起搏器囊袋感染；装置感染
+    entityType: Complication
+    disease_scope: 起搏治疗相关疾病
+    source: batch_config
+
+execution_permissions:
+  allow_neo4j_write: false
+  allow_run_import_scripts: false
+  allow_external_web: false
+
+quality_gates:
+  required_textbook_skeleton_review: true
+  required_guideline_pdf_parse: true
+  required_source_manifest: true
+  required_evidence_chain: true
+  required_g1_audit: true
+  required_g2_audit_before_neo4j: true
+  required_server_postcheck_after_import: true
+  required_diagnosis_component_detail: true
+  required_clinical_rule_section_scope: true

@@ -1,0 +1,57 @@
+{
+  "created_at": "2026-07-15 19:35:26",
+  "source_csv": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\项目管理中心_project_management\\19_剩余PDF可解析疾病清单_20260715.csv",
+  "batch_count": 5,
+  "results": [
+    {
+      "batch_id": "20260715_心肌炎心包炎感染性心内膜炎正式解析",
+      "category": "心肌炎/心包炎/感染性心内膜炎",
+      "status": "passed",
+      "selected_pdf_count": 8,
+      "textbook_count": 2,
+      "included_document_count": 10,
+      "blockers": [],
+      "batch_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\20260715_心肌炎心包炎感染性心内膜炎正式解析"
+    },
+    {
+      "batch_id": "20260715_主动脉与外周动脉疾病正式解析",
+      "category": "主动脉与外周动脉疾病",
+      "status": "passed",
+      "selected_pdf_count": 4,
+      "textbook_count": 2,
+      "included_document_count": 6,
+      "blockers": [],
+      "batch_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\20260715_主动脉与外周动脉疾病正式解析"
+    },
+    {
+      "batch_id": "20260715_结构性心脏病先心病正式解析",
+      "category": "结构性心脏病/先心病",
+      "status": "passed",
+      "selected_pdf_count": 12,
+      "textbook_count": 2,
+      "included_document_count": 14,
+      "blockers": [],
+      "batch_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\20260715_结构性心脏病先心病正式解析"
+    },
+    {
+      "batch_id": "20260715_血脂异常动脉粥样硬化防治正式解析",
+      "category": "血脂异常与动脉粥样硬化防治",
+      "status": "passed",
+      "selected_pdf_count": 5,
+      "textbook_count": 2,
+      "included_document_count": 7,
+      "blockers": [],
+      "batch_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\20260715_血脂异常动脉粥样硬化防治正式解析"
+    },
+    {
+      "batch_id": "20260715_已建疾病大类补充解析",
+      "category": "已建疾病大类补充",
+      "status": "passed",
+      "selected_pdf_count": 64,
+      "textbook_count": 2,
+      "included_document_count": 66,
+      "blockers": [],
+      "batch_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\20260715_已建疾病大类补充解析"
+    }
+  ]
+}

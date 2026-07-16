@@ -40,6 +40,7 @@ __pycache__/
 # Specialty graph generated artifacts: keep root docs separately, do not track heavy batch outputs by default
 心血管内科文献集合/00_foundation_skeleton/
 心血管内科文献集合/BATCH-*/
+心血管内科文献集合/20*_*/
 心血管内科文献集合/99_全局质量体检_global_quality_audit/
 # Delta packages are small, auditable delivery artifacts and should be tracked.
 

@@ -1,0 +1,679 @@
+{
+  "columns": [
+    "entityType",
+    "name",
+    "cnt",
+    "codes"
+  ],
+  "rows": [
+    {
+      "entityType": "DiagnosisCriteriaComponent",
+      "name": "可初步作出UA/NSTEMI诊断",
+      "cnt": 3,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-DIAGNOSISCRITERIACOMPONENT-9FE38DDC64EEF8C5",
+        "DXC-COMP-CARD-CADREM-NSTEMI-2795D09C52",
+        "DXC-COMP-CARD-CADREM-UA-2795D09C52"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "依那普利",
+      "cnt": 3,
+      "codes": [
+        "MED-CARD-FE9616A928B4",
+        "MED-CARD-FFAA53CEB3F6",
+        "MED-CARD-STD-FE9616A928"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "地尔硫卓",
+      "cnt": 3,
+      "codes": [
+        "MED-CARD-0401DB9741D8",
+        "MED-CARD-46B9D435A756",
+        "MED-CARD-STD-0401DB9741"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "培哚普利",
+      "cnt": 3,
+      "codes": [
+        "MED-CARD-4E3948E735D0",
+        "MED-CARD-92C1B5DBC246",
+        "MED-CARD-STD-4E3948E735"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "替米沙坦",
+      "cnt": 3,
+      "codes": [
+        "MED-CARD-187A38926633",
+        "MED-CARD-4B7E477CBBB5",
+        "MED-CARD-STD-187A389266"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "氨氯地平",
+      "cnt": 3,
+      "codes": [
+        "MED-CARD-3376F036ECB2",
+        "MED-CARD-DB0237EA7215",
+        "MED-CARD-STD-3376F036EC"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "氯沙坦",
+      "cnt": 3,
+      "codes": [
+        "MED-CARD-AB4975A1477D",
+        "MED-CARD-8E0DA7E93A15",
+        "MED-CARD-STD-AB4975A147"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "瑞舒伐他汀",
+      "cnt": 3,
+      "codes": [
+        "MED-CARD-DB0416905798",
+        "MED-CARD-STD-78DD48EF71",
+        "MED-CARD-ROSUVASTATIN"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "维拉帕米",
+      "cnt": 3,
+      "codes": [
+        "MED-CARD-C685CE7163F5",
+        "MED-CARD-4973D3CA200F",
+        "MED-CARD-STD-C685CE7163"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "缬沙坦",
+      "cnt": 3,
+      "codes": [
+        "MED-CARD-9118D01D97D8",
+        "MED-CARD-B11E6D463DE0",
+        "MED-CARD-STD-9118D01D97"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "贝那普利",
+      "cnt": 3,
+      "codes": [
+        "MED-CARD-F061E1CD48F6",
+        "MED-CARD-D87B39448743",
+        "MED-CARD-STD-F061E1CD48"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "阿托伐他汀",
+      "cnt": 3,
+      "codes": [
+        "MED-CARD-498184546A72",
+        "MED-CARD-STD-74A94453C6",
+        "MED-CARD-ATORVASTATIN"
+      ]
+    },
+    {
+      "entityType": "ClinicalRule",
+      "name": "但有心肌缺血客观证据的冠心病",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-E07A99D210903E7E",
+        "DDX-CARD-CADREM-SILENT-ISCHEMIA-3600DD6764"
+      ]
+    },
+    {
+      "entityType": "ClinicalRule",
+      "name": "同时需排除冠心病的某些并发症",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-F7923C54E944468F",
+        "DDX-CARD-CADREM-ICM-003E48BBA7"
+      ]
+    },
+    {
+      "entityType": "ClinicalRule",
+      "name": "鉴别诊断需要考虑以下疾病",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-5C7037DA313AEC9D",
+        "DDX-CARD-CADREM-AMI-2456ECD13F"
+      ]
+    },
+    {
+      "entityType": "ClinicalRule",
+      "name": "需鉴别其他引起心脏增大和心力衰竭的病因",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-DIFFERENTIALDIAGNOSIS-3A1C13EFDD6F8AC9",
+        "DDX-CARD-CADREM-ICM-39AF6E5DFD"
+      ]
+    },
+    {
+      "entityType": "Complication",
+      "name": "室性心律失常",
+      "cnt": 2,
+      "codes": [
+        "COMP-CARD-439BBF78D81C",
+        "CARD-SKELETON-FULL-20260709-COMPLICATION-CF33FD44E13235F5"
+      ]
+    },
+    {
+      "entityType": "DiagnosisCriteriaComponent",
+      "name": "一般即可建立诊断",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-DIAGNOSISCRITERIACOMPONENT-3F383A8A90CEDB2B",
+        "DXC-COMP-CARD-CADREM-STABLE-ANGINA-2617F49848"
+      ]
+    },
+    {
+      "entityType": "DiagnosisCriteriaComponent",
+      "name": "并短期内进行心电图、血清心肌坏死标志物测定等动态观察以确定诊断",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-DIAGNOSISCRITERIACOMPONENT-05901E49B24D352B",
+        "DXC-COMP-CARD-CADREM-AMI-A25969005C"
+      ]
+    },
+    {
+      "entityType": "DiagnosisCriteriaComponent",
+      "name": "支持心绞痛诊断",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-DIAGNOSISCRITERIACOMPONENT-3797FEFBD3C0CE4F",
+        "DXC-COMP-CARD-CADREM-STABLE-ANGINA-13DE31933B"
+      ]
+    },
+    {
+      "entityType": "DiagnosisCriteriaComponent",
+      "name": "有助于诊断和指导进一步治疗",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-DIAGNOSISCRITERIACOMPONENT-ADD54DE80C4A0F0E",
+        "DXC-COMP-CARD-CADREM-STABLE-ANGINA-430A65ED6F"
+      ]
+    },
+    {
+      "entityType": "DiagnosisCriteriaComponent",
+      "name": "特征性的心电图改变以及实验室检查发现",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-DIAGNOSISCRITERIACOMPONENT-97EB74ED3F150876",
+        "DXC-COMP-CARD-CADREM-AMI-C7B9D47BC2"
+      ]
+    },
+    {
+      "entityType": "DiagnosisCriteriaComponent",
+      "name": "缺血性心肌病诊断需满足以下几点",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-DIAGNOSISCRITERIACOMPONENT-AC601B38FC13C106",
+        "DXC-COMP-CARD-CADREM-ICM-A86AD2CDF4"
+      ]
+    },
+    {
+      "entityType": "DiagnosisCriteriaComponent",
+      "name": "诊断本病并不困难",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-DIAGNOSISCRITERIACOMPONENT-7CB5E5588674E083",
+        "DXC-COMP-CARD-CADREM-AMI-D5C492D199"
+      ]
+    },
+    {
+      "entityType": "DiagnosisCriteriaComponent",
+      "name": "鉴别诊断需要考虑以下疾病",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-DIAGNOSISCRITERIACOMPONENT-DED0C1F110816350",
+        "DXC-COMP-CARD-CADREM-AMI-DB977CDA84"
+      ]
+    },
+    {
+      "entityType": "ExamIndicator",
+      "name": "PR间期延长",
+      "cnt": 2,
+      "codes": [
+        "DXC-CARD-A10C42441F20",
+        "IND-CARD-DBBA30EA82FD"
+      ]
+    },
+    {
+      "entityType": "FollowUp",
+      "name": "AMI相关的死亡一半发生于送到医院前",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-FOLLOWUP-A6765CEDC95C846E",
+        "FU-CARD-CADREM-AMI-5FE270E918"
+      ]
+    },
+    {
+      "entityType": "FollowUp",
+      "name": "与梗死范围大小、侧支循环产生情况以及治疗是否及时等有关",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-FOLLOWUP-27F1DAD84AE29761",
+        "FU-CARD-CADREM-AMI-444BB77CCB"
+      ]
+    },
+    {
+      "entityType": "FollowUp",
+      "name": "其中院外死亡中相当高的比例为猝死",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-FOLLOWUP-EB6C7A0DB7B2BC50",
+        "FU-CARD-CADREM-AMI-46F5F48E76"
+      ]
+    },
+    {
+      "entityType": "FollowUp",
+      "name": "发生严重心律失常、休克或心衰者",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-FOLLOWUP-DD44FCB1CF077DDE",
+        "FU-CARD-CADREM-AMI-8542E81A9A"
+      ]
+    },
+    {
+      "entityType": "FollowUp",
+      "name": "因心脏监护室、现代药物治疗进展和再灌注治疗等综合措施的使用",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-FOLLOWUP-DC645340565C157D",
+        "FU-CARD-CADREM-AMI-4E600C8890"
+      ]
+    },
+    {
+      "entityType": "FollowUp",
+      "name": "在正常人群中预防动脉粥样硬化和冠心病属于一级预防",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-FOLLOWUP-EEDEDC4E450DAAFB",
+        "FU-CARD-CADREM-AMI-838F9F3901"
+      ]
+    },
+    {
+      "entityType": "FollowUp",
+      "name": "死亡多发生在第一周内",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-FOLLOWUP-3C9D4A95EA59DB45",
+        "FU-CARD-CADREM-AMI-8F91C649B4"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "依普利酮",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-567B7BD086FF",
+        "MED-CARD-31AF701C4FDE"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "利伐沙班",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-38524B4E5194",
+        "MED-CARD-EEAD5526AA1A"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "华法林",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-81B5F958C0F3",
+        "MED-CARD-B87D3CD0C528"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "单硝酸异山梨酯",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-E54BB1F31556",
+        "MED-CARD-STD-44C6BCCC3D"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "卡维地洛",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-AE13AC40D4CF",
+        "MED-CARD-STD-AE13AC40D4"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "厄贝沙坦",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-DD02471EA40F",
+        "MED-CARD-STD-DD02471EA4"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "地高辛",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-62498B0FBDC2",
+        "MED-CARD-STD-62498B0FBD"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "异丙肾上腺素",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-669F94E52F61",
+        "MED-CARD-ISOPRENALINE"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "恩格列净",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-A23B05CA197B",
+        "MED-CARD-STD-A23B05CA19"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "普拉格雷",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-0D29A60A2A91",
+        "MED-CARD-STD-6B98598B0E"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "普萘洛尔",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-968C1FB4A035",
+        "MED-CARD-STD-9146894909"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "替格瑞洛",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-00A158EBF21E",
+        "MED-CARD-STD-E03DF8E3FD"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "比索洛尔",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-2CF15595A00F",
+        "MED-CARD-STD-68380EE96C"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "氢氯噻嗪",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-1088FBF6E4D7",
+        "MED-CARD-E094B2A32744"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "氯吡格雷",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-EAA01CFD434E",
+        "MED-CARD-STD-9BB6ABC99A"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "硝苯地平",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-CF59C1850151",
+        "MED-CARD-44713CFF40E7"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "硝酸异山梨酯",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-BA676F93BC09",
+        "MED-CARD-STD-BA676F93BC"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "硝酸甘油",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-CC1DDBE4EFA8",
+        "MED-CARD-STD-DE220086E9"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "美托洛尔",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-C9175F150C3D",
+        "MED-CARD-STD-1691342E51"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "血管紧张素Ⅱ受体拮抗剂",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-TEXT-B905AF3E59",
+        "MED-CARD-92F68F550745"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "辛伐他汀",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-D8C2F2ED78A6",
+        "MED-CARD-STD-D8C2F2ED78"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "达格列净",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-3B4D860E5C07",
+        "MED-CARD-STD-3B4D860E5C"
+      ]
+    },
+    {
+      "entityType": "Medication",
+      "name": "阿托品",
+      "cnt": 2,
+      "codes": [
+        "MED-CARD-EF0B44CD1F78",
+        "MED-CARD-ATROPINE"
+      ]
+    },
+    {
+      "entityType": "Prevention",
+      "name": "AMI相关的死亡一半发生于送到医院前",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-PREVENTION-0B133CA60E30871F",
+        "PREV-CARD-CADREM-AMI-D96BC8BF35"
+      ]
+    },
+    {
+      "entityType": "Prevention",
+      "name": "与梗死范围大小、侧支循环产生情况以及治疗是否及时等有关",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-PREVENTION-39DED7A9229ABD49",
+        "PREV-CARD-CADREM-AMI-7736BF94EA"
+      ]
+    },
+    {
+      "entityType": "Prevention",
+      "name": "其中院外死亡中相当高的比例为猝死",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-PREVENTION-441A368EEE207483",
+        "PREV-CARD-CADREM-AMI-41093999D4"
+      ]
+    },
+    {
+      "entityType": "Prevention",
+      "name": "发生严重心律失常、休克或心衰者",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-PREVENTION-9C696610F67F6F68",
+        "PREV-CARD-CADREM-AMI-5CCB3B8EDF"
+      ]
+    },
+    {
+      "entityType": "Prevention",
+      "name": "因心脏监护室、现代药物治疗进展和再灌注治疗等综合措施的使用",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-PREVENTION-C0D679F5DC4D62C9",
+        "PREV-CARD-CADREM-AMI-EE17DD237A"
+      ]
+    },
+    {
+      "entityType": "Prevention",
+      "name": "在正常人群中预防动脉粥样硬化和冠心病属于一级预防",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-PREVENTION-089948C388A00C52",
+        "PREV-CARD-CADREM-AMI-A6288B4BFC"
+      ]
+    },
+    {
+      "entityType": "Prevention",
+      "name": "死亡多发生在第一周内",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-PREVENTION-CB56E98BF72AB749",
+        "PREV-CARD-CADREM-AMI-FC8D4931FC"
+      ]
+    },
+    {
+      "entityType": "Prognosis",
+      "name": "AMI相关的死亡一半发生于送到医院前",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-PROGNOSIS-4573052A43E6370A",
+        "PROG-CARD-CADREM-AMI-9AD9A3BA00"
+      ]
+    },
+    {
+      "entityType": "Prognosis",
+      "name": "与梗死范围大小、侧支循环产生情况以及治疗是否及时等有关",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-PROGNOSIS-55A1A3A543DBFE9D",
+        "PROG-CARD-CADREM-AMI-BD33C708D7"
+      ]
+    },
+    {
+      "entityType": "Prognosis",
+      "name": "其中院外死亡中相当高的比例为猝死",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-PROGNOSIS-3658F5F111EE1F5F",
+        "PROG-CARD-CADREM-AMI-13D1200302"
+      ]
+    },
+    {
+      "entityType": "Prognosis",
+      "name": "发生严重心律失常、休克或心衰者",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-PROGNOSIS-A2A048DCDA0AC8E5",
+        "PROG-CARD-CADREM-AMI-E734B17057"
+      ]
+    },
+    {
+      "entityType": "Prognosis",
+      "name": "因心脏监护室、现代药物治疗进展和再灌注治疗等综合措施的使用",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-PROGNOSIS-07B0F01213200B22",
+        "PROG-CARD-CADREM-AMI-8D1D41B8A6"
+      ]
+    },
+    {
+      "entityType": "Prognosis",
+      "name": "在正常人群中预防动脉粥样硬化和冠心病属于一级预防",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-PROGNOSIS-27A9355C85B46659",
+        "PROG-CARD-CADREM-AMI-2F126AC8BE"
+      ]
+    },
+    {
+      "entityType": "Prognosis",
+      "name": "死亡多发生在第一周内",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-PROGNOSIS-E84D617C60D85FCB",
+        "PROG-CARD-CADREM-AMI-7FF781455B"
+      ]
+    },
+    {
+      "entityType": "RiskFactor",
+      "name": "贫血",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-RISKFACTOR-9E20590F671491DC",
+        "RF-CARD-CADREM-CCS-2196488858"
+      ]
+    },
+    {
+      "entityType": "Symptom",
+      "name": "尿量减少",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-SYMPTOM-B787C9901075EAF5",
+        "SYM-CARD-CADREM-AMI-2EF0504672"
+      ]
+    },
+    {
+      "entityType": "Symptom",
+      "name": "胸部不适",
+      "cnt": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-SYMPTOM-6E063E46C043FE83",
+        "SYM-CARD-STEMI-7BB41731BD9D"
+      ]
+    }
+  ]
+}

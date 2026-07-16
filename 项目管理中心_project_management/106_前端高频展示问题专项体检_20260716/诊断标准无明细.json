@@ -1,0 +1,9 @@
+{
+  "columns": [
+    "disease",
+    "disease_code",
+    "criteria",
+    "criteria_code"
+  ],
+  "rows": []
+}

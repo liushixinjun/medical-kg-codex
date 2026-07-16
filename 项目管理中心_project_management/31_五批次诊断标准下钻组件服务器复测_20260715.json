@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-07-15 22:35:00",
+  "postchecks": [
+    {
+      "batch": "20260715_心肌炎心包炎感染性心内膜炎正式解析",
+      "diagnosis_criteria_count": 4,
+      "component_relation_count": 121,
+      "diagnosis_without_component": 0
+    },
+    {
+      "batch": "20260715_主动脉与外周动脉疾病正式解析",
+      "diagnosis_criteria_count": 5,
+      "component_relation_count": 58,
+      "diagnosis_without_component": 0
+    },
+    {
+      "batch": "20260715_结构性心脏病先心病正式解析",
+      "diagnosis_criteria_count": 5,
+      "component_relation_count": 105,
+      "diagnosis_without_component": 0
+    },
+    {
+      "batch": "20260715_血脂异常动脉粥样硬化防治正式解析",
+      "diagnosis_criteria_count": 3,
+      "component_relation_count": 25,
+      "diagnosis_without_component": 0
+    }
+  ],
+  "all_diagnosis_component_passed": true,
+  "global_counts": {
+    "node_count": 54535,
+    "relation_count": 188066,
+    "disease_category_count": 41,
+    "disease_count": 143
+  }
+}

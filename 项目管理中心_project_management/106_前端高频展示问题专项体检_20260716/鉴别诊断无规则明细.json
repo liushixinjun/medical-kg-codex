@@ -1,0 +1,9 @@
+{
+  "columns": [
+    "disease",
+    "disease_code",
+    "differential",
+    "differential_code"
+  ],
+  "rows": []
+}

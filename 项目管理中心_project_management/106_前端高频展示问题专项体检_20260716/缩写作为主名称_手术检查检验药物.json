@@ -1,0 +1,11 @@
+{
+  "columns": [
+    "entityType",
+    "code",
+    "name",
+    "display_name",
+    "preferred_name",
+    "aliases"
+  ],
+  "rows": []
+}

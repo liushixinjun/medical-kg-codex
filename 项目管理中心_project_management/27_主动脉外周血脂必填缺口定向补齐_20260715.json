@@ -1,0 +1,14 @@
+﻿[
+  {
+    "batch": "20260715_主动脉与外周动脉疾病正式解析",
+    "spec_count": 13,
+    "added_or_reused_nodes": 28,
+    "relations_touched": 39
+  },
+  {
+    "batch": "20260715_血脂异常动脉粥样硬化防治正式解析",
+    "spec_count": 1,
+    "added_or_reused_nodes": 1,
+    "relations_touched": 3
+  }
+]

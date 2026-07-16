@@ -1,0 +1,31 @@
+{
+  "batch_id": "SERVER-GLOBAL-FINAL-AUDIT-20260716",
+  "postcheck_name": "批次入库后复测",
+  "postcheck_status": "passed",
+  "postcheck_status_cn": "通过",
+  "blocking_issue_count": 0,
+  "blocking_gates": [],
+  "generated_at": "2026-07-16 18:21:42",
+  "checks": {
+    "主数据质量闸门": {
+      "status": "passed",
+      "status_cn": "通过",
+      "blocking_issue_count": 0,
+      "counts": {
+        "disease_without_category_count": 0,
+        "disease_without_subcategory_count": 0,
+        "subcategory_without_category_count": 0,
+        "disease_classification_without_parent_disease_count": 0,
+        "active_duplicate_disease_name_count": 0,
+        "retired_disease_node_remaining_count": 0,
+        "same_disease_same_type_same_name_duplicate_count": 0,
+        "diagnosis_criteria_without_component_count": 0,
+        "orphan_diagnosis_criteria_count": 0,
+        "treatment_plan_without_downstream_count": 0,
+        "replaced_duplicate_still_referenced_count": 0
+      }
+    }
+  },
+  "output_dir": "项目管理中心_project_management\\105_服务器图谱最终体检_20260716\\99_入库后复测",
+  "master_data_gate_output_dir": "项目管理中心_project_management\\105_服务器图谱最终体检_20260716\\99_入库后复测\\01_主数据质量闸门"
+}
