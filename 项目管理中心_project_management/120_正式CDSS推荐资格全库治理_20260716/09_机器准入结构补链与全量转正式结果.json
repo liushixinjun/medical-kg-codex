@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-07-16 21:21:32",
+  "scope": "20260716_正式CDSS机器准入与结构补链",
+  "stage_links": [
+    {
+      "rec": "REC-35AFFC16987E38D3",
+      "rule": "RULE-CARD-CAD-AMI-DX-COMP-IMAGING-WALL-MOTION",
+      "stage": "STAGE-CDSS-CAD-AMI-01-DIAG"
+    },
+    {
+      "rec": "REC-7025595F385004F3",
+      "rule": "RULE-CARD-CAD-AMI-DX-COMP-ECG-ISCHEMIA",
+      "stage": "STAGE-CDSS-CAD-AMI-01-DIAG"
+    },
+    {
+      "rec": "REC-73F794FD0A746355",
+      "rule": "RULE-CARD-CAD-AMI-DX-COMP-CORONARY-THROMBUS",
+      "stage": "STAGE-CDSS-CAD-AMI-01-DIAG"
+    },
+    {
+      "rec": "REC-775B4D172719135D",
+      "rule": "RULE-CARD-CAD-AMI-DX-COMP-TROPONIN-DYNAMIC",
+      "stage": "STAGE-CDSS-CAD-AMI-01-DIAG"
+    },
+    {
+      "rec": "REC-CB7A690AA83E529E",
+      "rule": "RULE-CARD-CAD-AMI-DX-COMP-CORONARY-THROMBUS",
+      "stage": "STAGE-CDSS-CAD-AMI-01-DIAG"
+    },
+    {
+      "rec": "REC-94F5D2BD891A1C5D",
+      "rule": "RULE-CARD-CAD-STEMI-DX-COMP-ST-ELEVATION",
+      "stage": "STAGE-CARD-CAD-STEMI-02-DIAGNOSIS-CONFIRMATION"
+    }
+  ],
+  "created_rules": [
+    {
+      "rec": "REC-CARD-STEMI-PRIMARY-PCI",
+      "rule": "RULE-CDSS-CARD-STEMI-PRIMARY-PCI",
+      "stage": "STAGE-CARD-CAD-STEMI-03-REPERFUSION-DECISION"
+    },
+    {
+      "rec": "REC-CARD-STEMI-THROMBOLYSIS",
+      "rule": "RULE-CDSS-CARD-STEMI-THROMBOLYSIS",
+      "stage": "STAGE-CARD-CAD-STEMI-03-REPERFUSION-DECISION"
+    }
+  ],
+  "promoted": {
+    "promoted": 510
+  },
+  "verify": {
+    "total": 567,
+    "formal_count": 567,
+    "formal_with_gap": 0,
+    "nonformal_count": 0,
+    "remaining_gap_samples": [
+      []
+    ]
+  }
+}

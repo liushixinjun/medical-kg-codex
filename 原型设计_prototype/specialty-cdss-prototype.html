@@ -1,0 +1,4432 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>专科辅助诊疗建设方案交互原型</title>
+  <style>
+    :root {
+      --blue: #2384d6;
+      --blue-dark: #176bb4;
+      --blue-soft: #eaf5ff;
+      --cyan: #00a9e8;
+      --green: #39b980;
+      --orange: #ff9f1a;
+      --red: #e55353;
+      --text: #253041;
+      --muted: #6f7c8e;
+      --line: #d8e1ec;
+      --bg: #eef3f8;
+      --panel: #ffffff;
+      --panel-soft: #f6f9fc;
+      --head: #eef5fb;
+      --shadow: 0 6px 18px rgba(29, 68, 118, 0.08);
+      --radius: 6px;
+      --font: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-width: 1280px;
+      color: var(--text);
+      background: var(--bg);
+      font-family: var(--font);
+      font-size: 14px;
+    }
+
+    button, input, select, textarea {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .app-shell {
+      display: grid;
+      grid-template-columns: 210px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      background: var(--blue);
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .brand {
+      height: 54px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0 14px;
+      background: var(--blue-dark);
+      font-size: 16px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .brand-logo {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, 0.7);
+      position: relative;
+      flex: 0 0 auto;
+    }
+
+    .brand-logo::after {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 12px;
+      width: 17px;
+      height: 4px;
+      background: #fff;
+      transform: rotate(-28deg);
+      border-radius: 8px;
+    }
+
+    .menu {
+      padding: 18px 0 24px;
+    }
+
+    .menu-item, .sub-item {
+      border: 0;
+      width: 100%;
+      color: rgba(255, 255, 255, 0.94);
+      background: transparent;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-align: left;
+      padding: 13px 18px;
+      line-height: 1;
+    }
+
+    .menu-item:hover, .sub-item:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .menu-item.active, .sub-item.active {
+      background: rgba(0, 0, 0, 0.12);
+      font-weight: 600;
+    }
+
+    .menu-icon {
+      width: 18px;
+      height: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      flex: 0 0 auto;
+    }
+
+    .sub-menu {
+      background: rgba(0, 0, 0, 0.08);
+    }
+
+    .sub-item {
+      padding-left: 36px;
+      font-size: 13px;
+    }
+
+    .prototype-flag {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 18px;
+      padding: 0 6px;
+      border-radius: 9px;
+      background: #fff1b8;
+      color: #875700;
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 1;
+      margin-left: auto;
+      white-space: nowrap;
+    }
+
+    .main {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+      padding: 0 22px;
+    }
+
+    .crumbs {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--muted);
+    }
+
+    .hamburger {
+      border: 0;
+      background: transparent;
+      color: var(--text);
+      font-size: 21px;
+      padding: 0 6px 0 0;
+    }
+
+    .crumb-now {
+      color: var(--text);
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: var(--text);
+    }
+
+    .ghost-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 1px solid var(--muted);
+      color: var(--muted);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+
+    .tabs-strip {
+      height: 40px;
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: end;
+      gap: 6px;
+      padding: 0 16px 6px;
+    }
+
+    .tab-pill {
+      height: 26px;
+      padding: 0 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--text);
+      border-radius: 2px;
+    }
+
+    .tab-pill.active {
+      background: var(--green);
+      color: #fff;
+      border-color: var(--green);
+    }
+
+    .content {
+      flex: 1;
+      padding: 14px 16px 18px;
+      overflow: auto;
+    }
+
+    .page {
+      display: none;
+    }
+
+    .page.active {
+      display: block;
+    }
+
+    .toolbar {
+      min-height: 58px;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      background: #b8c7d8;
+      padding: 10px 14px;
+      margin-bottom: 10px;
+    }
+
+    .toolbar label {
+      font-weight: 600;
+    }
+
+    .input, .select, .textarea {
+      border: 1px solid #cfd9e6;
+      border-radius: 4px;
+      background: #fff;
+      color: var(--text);
+      min-height: 34px;
+      padding: 7px 10px;
+      outline: none;
+    }
+
+    .textarea {
+      resize: vertical;
+      min-height: 52px;
+      width: 100%;
+    }
+
+    .input:focus, .select:focus, .textarea:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 2px rgba(35, 132, 214, 0.15);
+    }
+
+    .btn {
+      border: 1px solid #cfd9e6;
+      background: #fff;
+      color: var(--text);
+      min-height: 32px;
+      padding: 0 12px;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+
+    .btn:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+
+    .btn.primary {
+      background: #1683e9;
+      border-color: #1683e9;
+      color: #fff;
+    }
+
+    .btn.primary:hover {
+      background: #0e73cf;
+      color: #fff;
+    }
+
+    .btn.success {
+      background: var(--green);
+      border-color: var(--green);
+      color: #fff;
+    }
+
+    .btn.warning {
+      background: #fff8e9;
+      border-color: #ffd38a;
+      color: #9b6500;
+    }
+
+    .btn.danger {
+      background: #fff2f2;
+      border-color: #ffb9b9;
+      color: #c43636;
+    }
+
+    .btn.link {
+      border: 0;
+      background: transparent;
+      color: #008de4;
+      padding: 0;
+      min-height: auto;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 20px;
+      height: 20px;
+      padding: 0 7px;
+      border-radius: 10px;
+      background: #e8f2ff;
+      color: var(--blue-dark);
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .badge.orange {
+      background: #fff4dd;
+      color: #a76300;
+    }
+
+    .badge.green {
+      background: #e7f8ef;
+      color: #188054;
+    }
+
+    .badge.red {
+      background: #ffecec;
+      color: #c23838;
+    }
+
+    .page-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .page-title {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .page-desc {
+      margin: 5px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .panel-head {
+      min-height: 44px;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: var(--head);
+      border-radius: var(--radius) var(--radius) 0 0;
+    }
+
+    .panel-title {
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .panel-body {
+      padding: 14px;
+    }
+
+    .home-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(360px, 0.8fr);
+      gap: 14px;
+      align-items: start;
+    }
+
+    .architecture {
+      padding: 18px;
+    }
+
+    .arch-row {
+      display: grid;
+      grid-template-columns: 132px minmax(0, 1fr);
+      gap: 12px;
+      align-items: stretch;
+      margin-bottom: 12px;
+    }
+
+    .arch-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .arch-label {
+      background: linear-gradient(180deg, #197bd0, #1260a8);
+      color: #fff;
+      border-radius: 8px;
+      min-height: 86px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 14px;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .arch-lane {
+      border: 1px solid #b7d8f4;
+      background: #fbfdff;
+      border-radius: 8px;
+      padding: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .arch-node {
+      min-width: 112px;
+      min-height: 58px;
+      padding: 10px;
+      border: 1px solid #abd5f7;
+      border-radius: 6px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      text-align: center;
+    }
+
+    .arch-node strong {
+      font-weight: 600;
+    }
+
+    .arch-arrow {
+      color: var(--blue);
+      font-weight: 600;
+    }
+
+    .engine-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      width: 100%;
+    }
+
+    .engine-box {
+      border: 1px solid #a8cfee;
+      border-radius: 8px;
+      background: #fff;
+      padding: 14px;
+      min-height: 145px;
+    }
+
+    .engine-box h3 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      color: #145d9c;
+    }
+
+    .engine-box ul {
+      margin: 0;
+      padding-left: 18px;
+      line-height: 1.8;
+    }
+
+    .module-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .module-card {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 6px;
+      padding: 14px;
+      min-height: 124px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: left;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+
+    .module-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--blue);
+    }
+
+    .module-card h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .module-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .compact-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .boundary {
+      padding: 14px;
+      background: #f7fbff;
+      border-left: 4px solid var(--blue);
+      line-height: 1.85;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .timeline-step {
+      display: grid;
+      grid-template-columns: 26px minmax(0, 1fr);
+      gap: 8px;
+      align-items: start;
+    }
+
+    .step-index {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--blue);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .rules-layout {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 12px;
+    }
+
+    .filter-panel {
+      position: sticky;
+      top: 0;
+      align-self: start;
+    }
+
+    .filter-list {
+      display: grid;
+      gap: 7px;
+    }
+
+    .filter-btn {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--text);
+      min-height: 36px;
+      border-radius: 4px;
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .filter-btn.active {
+      border-color: var(--blue);
+      background: var(--blue-soft);
+      color: var(--blue-dark);
+      font-weight: 600;
+    }
+
+    .rule-card {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+
+    .rule-main {
+      padding: 13px 14px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: start;
+    }
+
+    .rule-title {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .rule-meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .rule-logic {
+      margin: 10px 0 0;
+      line-height: 1.75;
+      color: #38465a;
+    }
+
+    .rule-usage {
+      margin-top: 8px;
+      color: #5b6f86;
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
+    .rule-actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .rule-detail {
+      display: none;
+      border-top: 1px solid var(--line);
+      background: #f8fbfe;
+      padding: 12px 14px;
+    }
+
+    .rule-card.open .rule-detail {
+      display: block;
+    }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .detail-box {
+      border: 1px solid #dbe5ef;
+      background: #fff;
+      border-radius: 5px;
+      padding: 10px;
+      min-height: 76px;
+      line-height: 1.65;
+    }
+
+    .detail-box strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #1d5f9a;
+    }
+
+    .switch {
+      width: 42px;
+      height: 22px;
+      border: 0;
+      border-radius: 12px;
+      padding: 2px;
+      background: #c8d1db;
+      position: relative;
+      flex: 0 0 auto;
+    }
+
+    .switch::after {
+      content: "";
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #fff;
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      transition: left 0.15s ease;
+    }
+
+    .switch.on {
+      background: #16aee8;
+    }
+
+    .switch.on::after {
+      left: 22px;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+    }
+
+    .table th, .table td {
+      border-bottom: 1px solid var(--line);
+      padding: 11px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .table th {
+      background: #f1f6fb;
+      color: #3a4b62;
+      font-weight: 600;
+    }
+
+    .table tr:hover td {
+      background: #fbfdff;
+    }
+
+    .designer-layout {
+      display: grid;
+      grid-template-columns: 230px minmax(0, 1fr) 310px;
+      gap: 12px;
+      min-height: 660px;
+      align-items: start;
+      overflow: visible;
+    }
+
+    .designer-layout > .panel {
+      min-width: 0;
+    }
+
+    .designer-layout > .panel:first-child,
+    .designer-layout > .panel:last-child {
+      align-self: start;
+    }
+
+    #page-designer .designer-layout {
+      height: calc(100vh - 190px);
+      min-height: 620px;
+      align-items: stretch;
+      overflow: hidden;
+    }
+
+    #page-designer .designer-layout > .panel:first-child,
+    #page-designer .designer-layout > .panel:last-child {
+      align-self: stretch;
+    }
+
+    #page-designer .designer-layout > .panel {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    #page-designer .designer-layout > .panel .panel-body {
+      flex: 1;
+      overflow: auto;
+    }
+
+    .palette-group {
+      margin-bottom: 14px;
+    }
+
+    .palette-title {
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .component-help {
+      color: var(--muted);
+      background: #f6faff;
+      border-left: 3px solid var(--blue);
+      padding: 8px 9px;
+      line-height: 1.55;
+      margin: -2px 0 9px;
+    }
+
+    .component-btn {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: #fff;
+      min-height: 34px;
+      border-radius: 4px;
+      text-align: left;
+      padding: 0 10px;
+      margin-bottom: 7px;
+      display: grid;
+      grid-template-columns: 28px minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .component-btn:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+
+    .component-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 12px;
+      background: #eaf5ff;
+      color: #126eb7;
+    }
+
+    .component-icon svg, .node-icon svg {
+      width: 15px;
+      height: 15px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      display: block;
+    }
+
+    .component-icon .icon-fill, .node-icon .icon-fill {
+      fill: currentColor;
+      stroke: none;
+    }
+
+    .component-kind {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .component-btn.flow {
+      border-left: 4px solid #2384d6;
+    }
+
+    .component-btn.flow .component-icon {
+      background: #eaf5ff;
+      color: #126eb7;
+    }
+
+    .component-btn.business {
+      border-left: 4px solid #39b980;
+    }
+
+    .component-btn.business .component-icon {
+      background: #e7f8ef;
+      color: #188054;
+    }
+
+    .component-btn.risk {
+      border-left: 4px solid #ff9f1a;
+    }
+
+    .component-btn.risk .component-icon {
+      background: #fff4dd;
+      color: #a76300;
+    }
+
+    .component-btn.record {
+      border-left: 4px solid #8a63d2;
+    }
+
+    .component-btn.record .component-icon {
+      background: #f1eaff;
+      color: #6b45ad;
+    }
+
+    .component-btn.surgery {
+      border-left: 4px solid #0f9f8f;
+    }
+
+    .component-btn.surgery .component-icon {
+      background: #e3f8f5;
+      color: #08786d;
+    }
+
+    .canvas {
+      position: relative;
+      background:
+        linear-gradient(#eef4fa 1px, transparent 1px),
+        linear-gradient(90deg, #eef4fa 1px, transparent 1px);
+      background-size: 22px 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: auto;
+      min-height: 660px;
+      min-width: 0;
+    }
+
+    .canvas-title {
+      height: 42px;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.88);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .canvas-title-note {
+      margin-left: 12px;
+      color: #54708a;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    .canvas-legend {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    .legend-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 3px;
+      background: var(--blue);
+    }
+
+    .legend-dot.rule { background: var(--green); }
+    .legend-dot.exam { background: var(--cyan); }
+    .legend-dot.therapy { background: var(--orange); }
+    .legend-dot.surgery { background: #0f9f8f; }
+    .legend-dot.qc { background: var(--red); }
+    .legend-dot.record { background: #8a63d2; }
+
+    .canvas-work {
+      position: relative;
+      height: 880px;
+      min-width: 2680px;
+      cursor: grab;
+    }
+
+    #page-designer .canvas {
+      height: 100%;
+      min-height: 0;
+    }
+
+    #page-designer .canvas-work {
+      height: max(calc(100% - 42px), 780px);
+    }
+
+    .canvas.panning .canvas-work {
+      cursor: grabbing;
+    }
+
+    .canvas.connecting .canvas-work {
+      cursor: crosshair;
+    }
+
+    .canvas.connecting .flow-node {
+      cursor: crosshair;
+    }
+
+    .canvas.connecting .flow-node:hover {
+      box-shadow: 0 0 0 4px rgba(22, 131, 233, 0.18), 0 3px 8px rgba(31, 91, 146, 0.12);
+    }
+
+    .flow-node.connect-source {
+      box-shadow: 0 0 0 4px rgba(57, 185, 128, 0.22), 0 3px 8px rgba(31, 91, 146, 0.12);
+    }
+
+    .flow-node {
+      position: absolute;
+      width: 158px;
+      min-height: 64px;
+      border: 1px solid #85bdea;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 3px 8px rgba(31, 91, 146, 0.12);
+      padding: 9px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+      border-left-width: 5px;
+      cursor: move;
+      user-select: none;
+      z-index: 2;
+    }
+
+    .flow-node.branch {
+      width: 194px;
+      height: 132px;
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+      padding: 0;
+      overflow: visible;
+    }
+
+    .flow-node.branch::before {
+      content: "";
+      position: absolute;
+      inset: 5px 28px;
+      background: #f0ba55;
+      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+      filter: drop-shadow(0 3px 5px rgba(31, 91, 146, 0.14));
+    }
+
+    .flow-node.branch::after {
+      content: "";
+      position: absolute;
+      inset: 8px 31px;
+      background: #fffaf0;
+      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    }
+
+    .flow-node.branch.active {
+      border-color: transparent;
+      box-shadow: none;
+    }
+
+    .flow-node.branch.active::before {
+      background: #0b8ee8;
+      filter: drop-shadow(0 0 3px rgba(22, 131, 233, 0.42));
+    }
+
+    .flow-node.branch .node-inner {
+      position: relative;
+      z-index: 1;
+      width: 132px;
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: none;
+      line-height: 1.35;
+    }
+
+    .flow-node.node-start, .flow-node.node-end {
+      width: 124px;
+      min-height: 54px;
+      border-radius: 999px;
+      border-left-width: 1px;
+    }
+
+    .node-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .node-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 600;
+      color: #fff;
+      background: #2384d6;
+    }
+
+    .flow-node.kind-flow {
+      border-color: #84bdec;
+      border-left-color: #2384d6;
+      background: #f8fcff;
+    }
+
+    .flow-node.kind-rule {
+      border-color: #88c7a7;
+      border-left-color: #39b980;
+      background: #f7fff9;
+    }
+
+    .flow-node.kind-exam {
+      border-color: #74c4df;
+      border-left-color: #00a9e8;
+      background: #f3fcff;
+    }
+
+    .flow-node.kind-therapy {
+      border-color: #f3bd67;
+      border-left-color: #ff9f1a;
+      background: #fffaf0;
+    }
+
+    .flow-node.kind-surgery {
+      border-color: #73cfc4;
+      border-left-color: #0f9f8f;
+      background: #f2fffd;
+    }
+
+    .flow-node.kind-qc {
+      border-color: #e68a8a;
+      border-left-color: #e55353;
+      background: #fff7f7;
+    }
+
+    .flow-node.kind-record {
+      border-color: #b9a3ef;
+      border-left-color: #8a63d2;
+      background: #fbf8ff;
+    }
+
+    .flow-node.kind-follow {
+      border-color: #9ab1ce;
+      border-left-color: #6f7c8e;
+      background: #f8fafc;
+    }
+
+    .flow-node.branch {
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .flow-node.kind-flow .node-icon { background: #2384d6; }
+    .flow-node.kind-rule .node-icon { background: #39b980; }
+    .flow-node.kind-exam .node-icon { background: #00a9e8; }
+    .flow-node.kind-therapy .node-icon { background: #ff9f1a; }
+    .flow-node.kind-surgery .node-icon { background: #0f9f8f; }
+    .flow-node.kind-qc .node-icon { background: #e55353; }
+    .flow-node.kind-record .node-icon { background: #8a63d2; }
+    .flow-node.kind-follow .node-icon { background: #6f7c8e; }
+
+    .flow-node.active {
+      border-color: #0b8ee8;
+      box-shadow: 0 0 0 3px rgba(22, 131, 233, 0.18);
+    }
+
+    .flow-node.branch.active {
+      border-color: transparent;
+      box-shadow: none;
+    }
+
+    .flow-node small {
+      color: var(--muted);
+      line-height: 1.35;
+    }
+
+    .line {
+      position: absolute;
+      height: 14px;
+      border: 0;
+      padding: 0;
+      background: transparent;
+      transform-origin: left center;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .line::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 6px;
+      height: 2px;
+      background: #83a6c8;
+    }
+
+    .line::after {
+      content: "";
+      position: absolute;
+      right: -1px;
+      top: 2px;
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 7px solid #83a6c8;
+    }
+
+    .line.orange {
+      background: transparent;
+    }
+
+    .line.orange::before {
+      background: #f0a339;
+    }
+
+    .line.orange::after {
+      border-left-color: #f0a339;
+    }
+
+    .line:hover::before, .line.active::before {
+      background: #0b8ee8;
+      box-shadow: 0 0 0 3px rgba(22, 131, 233, 0.16);
+    }
+
+    .line:hover::after, .line.active::after {
+      border-left-color: #0b8ee8;
+    }
+
+    .line-label {
+      position: absolute;
+      min-width: 88px;
+      max-width: 148px;
+      border: 1px solid #bad7f0;
+      background: rgba(255, 255, 255, 0.94);
+      color: #25516f;
+      border-radius: 6px;
+      padding: 3px 7px;
+      font-size: 12px;
+      line-height: 1.35;
+      box-shadow: 0 2px 6px rgba(31, 91, 146, 0.12);
+      cursor: pointer;
+      z-index: 3;
+      text-align: center;
+      white-space: normal;
+      display: grid;
+      gap: 2px;
+    }
+
+    .line-label strong {
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .line-label small {
+      color: #68819a;
+      font-size: 11px;
+      line-height: 1.3;
+      display: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .line-label:hover small,
+    .line-label.active small {
+      display: block;
+    }
+
+    .line-label.orange {
+      border-color: #f0c77f;
+      background: rgba(255, 248, 234, 0.96);
+      color: #8a5a00;
+    }
+
+    .line-label.risk {
+      border-color: #efb1b1;
+      background: rgba(255, 244, 244, 0.96);
+      color: #b33131;
+    }
+
+    .line-rule-summary {
+      border: 1px solid #c9dced;
+      border-left: 3px solid var(--blue);
+      background: #f6fbff;
+      border-radius: 4px;
+      padding: 8px 9px;
+      line-height: 1.55;
+    }
+
+    .line-rule-summary strong {
+      display: block;
+      color: #1d5f9a;
+      margin-bottom: 3px;
+    }
+
+    .designer-inline-note {
+      color: #55718a;
+      background: #f6fbff;
+      border: 1px solid #cfe1f0;
+      border-radius: 4px;
+      padding: 7px 9px;
+      line-height: 1.55;
+    }
+
+    .line-label.active, .line-label:hover {
+      border-color: #0b8ee8;
+      box-shadow: 0 0 0 3px rgba(22, 131, 233, 0.16);
+    }
+
+    .prop-list {
+      display: grid;
+      gap: 9px;
+    }
+
+    .prop-item {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 5px;
+      padding: 10px;
+      line-height: 1.6;
+    }
+
+    .prop-item strong {
+      display: block;
+      color: #1d5f9a;
+      margin-bottom: 4px;
+    }
+
+    .prop-textarea {
+      width: 100%;
+      min-height: 76px;
+      resize: vertical;
+      border: 1px solid #cfd9e6;
+      border-radius: 4px;
+      padding: 8px;
+      line-height: 1.6;
+    }
+
+    .simulate-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 510px;
+      gap: 10px;
+      align-items: stretch;
+    }
+
+    .patient-panel {
+      background: #fff;
+      border: 1px solid var(--line);
+      min-height: 700px;
+    }
+
+    .form-grid {
+      padding: 10px 16px 18px;
+      display: grid;
+      grid-template-columns: 88px minmax(0, 1fr);
+      gap: 10px 12px;
+      align-items: start;
+    }
+
+    .form-grid label {
+      text-align: right;
+      padding-top: 9px;
+      color: #44546a;
+      font-weight: 600;
+    }
+
+    .form-grid .inline-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 92px 280px;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .right-panel {
+      background: #fff;
+      border-left: 1px solid var(--line);
+      border: 1px solid var(--line);
+      min-height: 700px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .right-tabs {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .right-tab {
+      border: 0;
+      border-bottom: 2px solid transparent;
+      background: #fff;
+      min-height: 43px;
+      color: #111b2d;
+      font-weight: 600;
+    }
+
+    .right-tab.active {
+      color: #008de4;
+      border-bottom-color: #008de4;
+    }
+
+    .recommend-scroll {
+      overflow: auto;
+      max-height: 812px;
+    }
+
+    .rec-section {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .rec-head {
+      min-height: 40px;
+      padding: 8px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      background: #fff;
+    }
+
+    .rec-title {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .rec-body {
+      display: none;
+      padding: 0 10px 10px;
+    }
+
+    .rec-section.open .rec-body {
+      display: block;
+    }
+
+    .rec-item {
+      background: #ecfbff;
+      border-bottom: 1px solid #d7eef5;
+      padding: 9px 8px;
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      gap: 9px;
+      align-items: start;
+    }
+
+    .rec-actions-stack {
+      display: grid;
+      gap: 6px;
+      justify-items: end;
+    }
+
+    .rec-item.white {
+      background: #fff;
+    }
+
+    .rec-item.warn {
+      background: #fff8ea;
+    }
+
+    .rec-item strong {
+      font-weight: 600;
+    }
+
+    .rec-detail {
+      display: none;
+      grid-column: 2 / 4;
+      padding: 8px 0 0;
+      line-height: 1.7;
+      color: #334357;
+    }
+
+    .rec-item.open .rec-detail {
+      display: block;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 6px;
+    }
+
+    .rule-chip {
+      border: 1px solid #8fc5f4;
+      background: #eef7ff;
+      color: #0b6fb3;
+      border-radius: 12px;
+      padding: 2px 7px;
+      font-size: 12px;
+      line-height: 1.3;
+      display: inline-flex;
+      align-items: center;
+      white-space: nowrap;
+    }
+
+    button.rule-chip {
+      cursor: pointer;
+    }
+
+    button.rule-chip:hover {
+      border-color: var(--blue);
+      background: #dff0ff;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 3px;
+      background: #e8eef5;
+      color: #40506a;
+      padding: 3px 7px;
+      line-height: 1.2;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .tag.green {
+      background: #e7f7ef;
+      color: #168052;
+    }
+
+    .tag.red {
+      background: #ffeded;
+      color: #b63232;
+    }
+
+    .tag.blue {
+      background: #eaf5ff;
+      color: #126eb7;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .mini {
+      font-size: 12px;
+    }
+
+    .score {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #dcebff;
+      color: var(--blue-dark);
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    .stage-board {
+      padding: 10px;
+      background: #f5f8fb;
+      border-bottom: 1px solid var(--line);
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .change-hint {
+      margin: 0 10px 8px;
+      padding: 8px 10px;
+      border: 1px dashed #d2deeb;
+      border-radius: 5px;
+      background: #fbfdff;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .change-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 5px;
+      vertical-align: middle;
+      background: #ff9f1a;
+    }
+
+    .changed-field {
+      border-color: #ff9f1a !important;
+      background: #fff8e8 !important;
+      box-shadow: 0 0 0 2px rgba(255, 159, 26, 0.16) !important;
+    }
+
+    .changed-field.report-change {
+      border-color: #1683e9 !important;
+      background: #eef7ff !important;
+      box-shadow: 0 0 0 2px rgba(22, 131, 233, 0.14) !important;
+    }
+
+    .changed-field.output-change {
+      border-color: #39b980 !important;
+      background: #eefbf4 !important;
+      box-shadow: 0 0 0 2px rgba(57, 185, 128, 0.14) !important;
+    }
+
+    .stage-pill {
+      border: 1px solid #cdd9e6;
+      background: #fff;
+      border-radius: 5px;
+      min-height: 50px;
+      padding: 8px;
+      text-align: center;
+      color: #536176;
+    }
+
+    .stage-pill.done {
+      border-color: #8fd2ad;
+      background: #eefbf4;
+      color: #16784d;
+    }
+
+    .stage-pill.active {
+      border-color: #1683e9;
+      background: #eaf5ff;
+      color: #0f67af;
+      font-weight: 600;
+    }
+
+    .toast {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      background: rgba(30, 46, 67, 0.94);
+      color: #fff;
+      border-radius: 6px;
+      padding: 10px 14px;
+      z-index: 99;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 0.18s ease, transform 0.18s ease;
+      pointer-events: none;
+      max-width: 420px;
+      line-height: 1.5;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .drawer-backdrop, .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 80;
+      background: rgba(18, 36, 58, 0.18);
+      display: none;
+    }
+
+    .drawer-backdrop.open, .modal-backdrop.open {
+      display: block;
+    }
+
+    .drawer {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 620px;
+      max-width: calc(100vw - 260px);
+      height: 100%;
+      background: #fff;
+      box-shadow: -8px 0 28px rgba(23, 57, 96, 0.18);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .drawer-head, .modal-head {
+      min-height: 56px;
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: #f2f7fc;
+    }
+
+    .drawer-body {
+      padding: 14px;
+      overflow: auto;
+    }
+
+    .preview-section {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .preview-section h3 {
+      margin: 0;
+      padding: 10px 12px;
+      font-size: 15px;
+      background: #f7fbff;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .preview-section .preview-content {
+      padding: 12px;
+      line-height: 1.8;
+    }
+
+    .preview-stage {
+      display: grid;
+      grid-template-columns: 88px minmax(0, 1fr);
+      gap: 8px;
+      padding: 8px 0;
+      border-bottom: 1px dashed #d7e2ee;
+    }
+
+    .preview-stage:last-child {
+      border-bottom: 0;
+    }
+
+    .modal {
+      position: absolute;
+      top: 72px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 760px;
+      max-width: calc(100vw - 80px);
+      max-height: calc(100vh - 120px);
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 14px 36px rgba(21, 45, 78, 0.22);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .modal-body {
+      padding: 12px;
+      overflow: auto;
+    }
+
+    .rule-option {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 6px;
+      padding: 10px 12px;
+      margin-bottom: 8px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .rule-option:hover {
+      border-color: var(--blue);
+      background: #f8fcff;
+    }
+
+    .rule-option p {
+      margin: 5px 0 0;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .empty-state {
+      border: 1px dashed #c8d6e5;
+      background: #fbfdff;
+      border-radius: 6px;
+      padding: 26px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    @media (max-width: 1500px) {
+      .simulate-layout {
+        grid-template-columns: minmax(0, 1fr) 470px;
+      }
+      .form-grid .inline-row {
+        grid-template-columns: minmax(0, 1fr) 72px 210px;
+      }
+      .engine-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-logo" aria-hidden="true"></span>
+        智业临床决策支持系统
+      </div>
+      <nav class="menu" aria-label="主菜单">
+        <button class="menu-item active" data-page-link="home"><span class="menu-icon">首</span>原型首页<span class="prototype-flag">新增</span></button>
+        <button class="menu-item"><span class="menu-icon">评</span>智能评估</button>
+        <button class="menu-item"><span class="menu-icon">标</span>标准管理</button>
+        <button class="menu-item"><span class="menu-icon">字</span>字典对照</button>
+        <button class="menu-item"><span class="menu-icon">知</span>知识管理</button>
+        <button class="menu-item"><span class="menu-icon">图</span>专科知识图谱</button>
+        <button class="menu-item" data-page-link="rules"><span class="menu-icon">规</span>规则列表<span class="prototype-flag">新增</span></button>
+        <button class="menu-item"><span class="menu-icon">V</span>VTE防治</button>
+        <button class="menu-item"><span class="menu-icon">质</span>专病质控</button>
+        <button class="menu-item"><span class="menu-icon">配</span>VTE配置</button>
+        <button class="menu-item active"><span class="menu-icon">辅</span>原型功能区<span class="prototype-flag">演示</span></button>
+        <div class="sub-menu">
+          <button class="sub-item" data-page-link="simulation">诊疗推荐原型<span class="prototype-flag">新增</span></button>
+          <button class="sub-item">实体关系维护</button>
+          <button class="sub-item">图谱标签配置</button>
+          <button class="sub-item">辅助诊疗配置</button>
+          <button class="sub-item" data-page-link="framework">专病流程框架原型<span class="prototype-flag">新增</span></button>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="crumbs">
+          <button class="hamburger" type="button" id="collapseBtn" aria-label="折叠菜单">☰</button>
+          <span>工作台</span>
+          <span>/</span>
+          <span class="crumb-now" id="crumbNow">首页</span>
+        </div>
+        <div class="top-actions">
+          <span>厦门市中医院</span>
+          <span class="ghost-icon">铃</span>
+          <span class="ghost-icon">搜</span>
+          <span class="ghost-icon">全</span>
+          <span>刘志军 ▾</span>
+        </div>
+      </header>
+
+      <div class="tabs-strip">
+        <button class="tab-pill active" data-page-link="home">原型首页</button>
+        <button class="tab-pill" data-page-link="simulation"><span>●</span> 诊疗推荐原型</button>
+      </div>
+
+      <section class="content">
+        <div class="page active" id="page-home">
+          <div class="page-head">
+            <div>
+              <h1 class="page-title">专科辅助诊疗建设方案总览</h1>
+              <p class="page-desc">按“先识别、再鉴别、后分型、再进入专病流程、最后治疗、围术期与质控”的顺序组织。</p>
+            </div>
+            <div class="rule-actions">
+              <button class="btn primary" data-page-link="simulation">进入辅助诊疗模拟</button>
+              <button class="btn" data-page-link="rules">查看规则管理</button>
+            </div>
+          </div>
+
+          <div class="home-grid">
+            <div class="panel architecture">
+              <div class="arch-row">
+                <div class="arch-label">1<br>临床场景接入</div>
+                <div class="arch-lane">
+                  <div class="arch-node"><strong>门急诊</strong><span class="mini muted">胸痛首诊</span></div>
+                  <div class="arch-node"><strong>住院管理</strong><span class="mini muted">专病跟踪</span></div>
+                  <div class="arch-node"><strong>专病管理</strong><span class="mini muted">AMI流程</span></div>
+                  <div class="arch-node"><strong>质控监管</strong><span class="mini muted">缺失提醒</span></div>
+                  <div class="arch-node"><strong>多专科扩展</strong><span class="mini muted">心血管优先</span></div>
+                </div>
+              </div>
+
+              <div class="arch-row">
+                <div class="arch-label">2<br>辅助诊疗链路</div>
+                <div class="arch-lane">
+                  <div class="arch-node"><strong>疑似疾病</strong><span class="mini muted">一诉五史触发</span></div>
+                  <span class="arch-arrow">→</span>
+                  <div class="arch-node"><strong>初筛检查</strong><span class="mini muted">心电图/肌钙蛋白</span></div>
+                  <span class="arch-arrow">→</span>
+                  <div class="arch-node"><strong>分型确诊</strong><span class="mini muted">STEMI/NSTEMI</span></div>
+                  <span class="arch-arrow">→</span>
+                  <div class="arch-node"><strong>流程承接</strong><span class="mini muted">阶段化管理</span></div>
+                  <span class="arch-arrow">→</span>
+                  <div class="arch-node"><strong>围术期</strong><span class="mini muted">术前/术中/术后</span></div>
+                  <span class="arch-arrow">→</span>
+                  <div class="arch-node"><strong>治疗质控</strong><span class="mini muted">建议/阻断/模板</span></div>
+                </div>
+              </div>
+
+              <div class="arch-row">
+                <div class="arch-label">3<br>核心引擎分工</div>
+                <div class="arch-lane">
+                  <div class="engine-row">
+                    <div class="engine-box">
+                      <h3>A. 专科知识图谱</h3>
+                      <ul>
+                        <li>识别 ACS/AMI 疑似疾病</li>
+                        <li>推荐初筛检查与鉴别方向</li>
+                        <li>报告回填后辅助分型确诊</li>
+                      </ul>
+                    </div>
+                    <div class="engine-box">
+                      <h3>B. 规则引擎 + 状态机</h3>
+                      <ul>
+                        <li>按 4.2 规则执行触发与输出</li>
+                        <li>连接线承载分支、阻断和后置动作</li>
+                        <li>记录患者当前流程阶段</li>
+                      </ul>
+                    </div>
+                    <div class="engine-box">
+                      <h3>C. 专病流程引擎</h3>
+                      <ul>
+                        <li>承接专项检查、评估、治疗建议</li>
+                        <li>覆盖介入/手术围术期提醒</li>
+                        <li>支持医嘱质控与评估表单提醒</li>
+                        <li>不替代医生确认和院内医嘱审核</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="arch-row">
+                <div class="arch-label">4<br>应用输出</div>
+                <div class="arch-lane">
+                  <div class="arch-node"><strong>医生工作站</strong><span class="mini muted">辅助决策</span></div>
+                  <div class="arch-node"><strong>患者提醒</strong><span class="mini muted">缺失项</span></div>
+                  <div class="arch-node"><strong>流程闭环</strong><span class="mini muted">阶段状态</span></div>
+                  <div class="arch-node"><strong>质控预警</strong><span class="mini muted">医嘱/评估表单</span></div>
+                  <div class="arch-node"><strong>专病管理</strong><span class="mini muted">配置复用</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="compact-list">
+              <div class="panel">
+                <div class="panel-head">
+                  <div class="panel-title">核心边界</div>
+                  <span class="badge green">4.3</span>
+                </div>
+                <div class="panel-body">
+                  <div class="boundary">
+                    知识图谱负责“识别疑似疾病、推荐初筛检查、辅助分型确诊”；专病流程引擎负责“患者进入专病流程后的专项检查、治疗方案、介入/手术围术期提醒和质控闭环”。
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel">
+                <div class="panel-head">
+                  <div class="panel-title">功能入口</div>
+                  <span class="badge">可交互</span>
+                </div>
+                <div class="panel-body">
+                  <div class="module-grid">
+                    <button class="module-card" data-page-link="rules">
+                      <span>
+                        <h3>规则管理</h3>
+                        <p>展示 4.2 的 11 条 AMI 详细规则，可筛选、展开、启停和模拟触发。</p>
+                      </span>
+                      <span class="btn primary">进入</span>
+                    </button>
+                    <button class="module-card" data-page-link="framework">
+                      <span>
+                        <h3>流程框架管理</h3>
+                        <p>维护专病流程列表，进入可视化设计器，配置节点和连接线规则。</p>
+                      </span>
+                      <span class="btn primary">进入</span>
+                    </button>
+                    <button class="module-card" data-page-link="simulation">
+                      <span>
+                        <h3>辅助诊疗模拟</h3>
+                        <p>按 AMI 病例模拟疑似疾病、检查推荐、分型、流程、治疗和围术期提醒。</p>
+                      </span>
+                      <span class="btn primary">进入</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel">
+                <div class="panel-head">
+                  <div class="panel-title">AMI 使用顺序</div>
+                  <span class="badge orange">示例</span>
+                </div>
+                <div class="panel-body">
+                  <div class="timeline">
+                    <div class="timeline-step"><span class="step-index">1</span><div>录入主诉、现病史、既往史等初诊信息，先识别 ACS/AMI 疑似疾病。</div></div>
+                    <div class="timeline-step"><span class="step-index">2</span><div>关注疑似疾病后推荐心电图、心肌肌钙蛋白、肌酸激酶同工酶、超声心动图。</div></div>
+                    <div class="timeline-step"><span class="step-index">3</span><div>报告回填后再判断 STEMI、NSTEMI 或不稳定型心绞痛待排。</div></div>
+                    <div class="timeline-step"><span class="step-index">4</span><div>医生确认后承接 AMI 专病流程，进入再灌注评估、专项检查和治疗建议。</div></div>
+                    <div class="timeline-step"><span class="step-index">5</span><div>治疗建议触发 PCI 评估后，展示术前评估、术中关注、术后观察和并发症提醒。</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page" id="page-rules">
+          <div class="page-head">
+            <div>
+              <h1 class="page-title">规则管理</h1>
+              <p class="page-desc">用于维护 4.2 章节的规则名称和详细规则逻辑，供专员配置、系统调用和模拟验证。</p>
+            </div>
+            <div class="rule-actions">
+              <input class="input" id="ruleSearch" placeholder="搜索规则名称、阶段或关键项目">
+              <button class="btn primary" id="simulateAllRules">模拟全链路触发</button>
+            </div>
+          </div>
+
+          <div class="rules-layout">
+            <div class="panel filter-panel">
+              <div class="panel-head"><div class="panel-title">规则阶段</div></div>
+              <div class="panel-body">
+                <div class="filter-list" id="ruleFilters"></div>
+              </div>
+            </div>
+            <div id="ruleList"></div>
+          </div>
+        </div>
+
+        <div class="page" id="page-framework">
+          <div class="page-head">
+            <div>
+              <h1 class="page-title">专病诊疗流程框架管理</h1>
+              <p class="page-desc">承接 4.4 章节：维护专病流程基础信息、阶段内容、规则调用、质控范围和设计器入口。</p>
+            </div>
+            <div class="rule-actions">
+              <button class="btn primary" id="newFlowBtn">新增专病流程</button>
+              <button class="btn" data-page-link="designer">打开 AMI 设计器</button>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-head">
+              <div class="panel-title">已维护专病流程列表</div>
+              <span class="badge">4 条</span>
+            </div>
+            <div class="panel-body" style="padding:0">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>专病名称</th>
+                    <th>适用科室</th>
+                    <th>版本/状态</th>
+                    <th>适用人群</th>
+                    <th>指南依据</th>
+                    <th>阶段与质控</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody id="flowTable"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="page" id="page-designer">
+          <div class="page-head">
+            <div>
+              <h1 class="page-title">专病诊疗流程设计器：急性心肌梗死（AMI）</h1>
+              <p class="page-desc">业务组件负责调用规则或智能体生成推荐结果，连接线读取上游状态完成分支、阻断和跳转。</p>
+            </div>
+            <div class="rule-actions">
+              <button class="btn" data-page-link="framework">返回流程列表</button>
+              <button class="btn primary" id="saveDesignerBtn">保存设计</button>
+              <button class="btn success" data-page-link="simulation">发布到模拟页面</button>
+            </div>
+          </div>
+
+          <div class="designer-layout">
+            <div class="panel">
+              <div class="panel-head"><div class="panel-title">组件库</div></div>
+              <div class="panel-body">
+                <div class="palette-group">
+                  <div class="palette-title">通用流程组件</div>
+                  <div class="component-help mini">开始/结束只维护业务备注；分支节点只展示分流；连接线绑定操作规则，负责状态分支、阻断和跳转。</div>
+                  <button class="component-btn flow" data-component="开始节点"><span class="component-icon" data-icon="start"></span><span>开始节点</span><span class="component-kind">通用</span></button>
+                  <button class="component-btn flow" data-component="结束节点"><span class="component-icon" data-icon="end"></span><span>结束节点</span><span class="component-kind">通用</span></button>
+                  <button class="component-btn risk" data-component="菱形分支节点"><span class="component-icon" data-icon="branch"></span><span>分支展示节点</span><span class="component-kind">分支</span></button>
+                  <button class="component-btn flow" data-component="连接线"><span class="component-icon" data-icon="line"></span><span>连接线</span><span class="component-kind">流转判断</span></button>
+                  <button class="component-btn flow" data-component="通用业务组件"><span class="component-icon" data-icon="component"></span><span>通用业务组件</span><span class="component-kind">空配置</span></button>
+                </div>
+                <div class="palette-group">
+                  <div class="palette-title">业务专病组件</div>
+                  <div class="component-help mini">业务组件只输出推荐或评估结果；新增后需在右侧配置来源。</div>
+                  <button class="component-btn business" data-component="诊疗规则组件"><span class="component-icon" data-icon="rule"></span><span>诊疗规则组件</span><span class="component-kind">规则</span></button>
+                  <button class="component-btn business" data-component="专项检查组件"><span class="component-icon" data-icon="exam"></span><span>专项检查组件</span><span class="component-kind">检查</span></button>
+                  <button class="component-btn business" data-component="专科评估组件"><span class="component-icon" data-icon="assess"></span><span>专科评估组件</span><span class="component-kind">评估</span></button>
+                  <button class="component-btn risk" data-component="治疗建议组件"><span class="component-icon" data-icon="therapy"></span><span>治疗建议组件</span><span class="component-kind">治疗</span></button>
+                  <button class="component-btn surgery" data-component="介入/手术围术期组件"><span class="component-icon" data-icon="surgery"></span><span>介入/手术围术期组件</span><span class="component-kind">围术期</span></button>
+                  <button class="component-btn risk" data-component="医嘱质控组件"><span class="component-icon" data-icon="qc"></span><span>医嘱质控组件</span><span class="component-kind">质控</span></button>
+                  <button class="component-btn record" data-component="评估表单提醒组件"><span class="component-icon" data-icon="record"></span><span>评估表单提醒组件</span><span class="component-kind">表单</span></button>
+                  <button class="component-btn record" data-component="随访任务组件"><span class="component-icon" data-icon="follow"></span><span>随访任务组件</span><span class="component-kind">随访</span></button>
+                </div>
+                <div class="boundary mini">
+                  前置入组能力不放进画布执行，仅用于判断患者是否需要进入专病流程。
+                </div>
+              </div>
+            </div>
+
+            <div class="canvas" id="designerCanvas">
+              <div class="canvas-title">
+                <span>AMI 标准化专病流程<span class="canvas-title-note">业务组件一次输出状态，连接线按状态分流</span></span>
+                <span class="canvas-legend">
+                  <span><i class="legend-dot"></i>通用</span>
+                  <span><i class="legend-dot rule"></i>规则</span>
+                  <span><i class="legend-dot exam"></i>检查</span>
+                  <span><i class="legend-dot therapy"></i>治疗</span>
+                  <span><i class="legend-dot surgery"></i>围术期</span>
+                  <span><i class="legend-dot qc"></i>质控</span>
+                  <span><i class="legend-dot record"></i>表单</span>
+                </span>
+              </div>
+              <div class="canvas-work" id="canvasWork"></div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-head">
+                <div class="panel-title">节点/连接线配置</div>
+                <span class="badge green" id="selectedNodeBadge">开始</span>
+              </div>
+              <div class="panel-body">
+                <div class="prop-list" id="propertyPanel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page" id="page-simulation">
+          <div class="toolbar">
+            <label>当前医院:</label>
+            <select class="select" style="width:210px"><option>厦门市中医院</option></select>
+            <select class="select" style="width:76px"><option>住院</option><option>门急诊</option></select>
+            <button class="btn primary" id="choosePatientBtn">选择病人</button>
+            <button class="btn primary" id="saveCaseBtn">保存</button>
+            <button class="btn primary" id="loadCaseBtn">加载病案</button>
+            <button class="btn success" id="nextStepBtn">下一步模拟</button>
+            <button class="btn primary" id="replayBtn">重新生成推荐</button>
+            <button class="btn primary" id="clearBtn">清除缓存</button>
+            <button class="btn primary" id="initBtn">初始化</button>
+          </div>
+
+          <div class="simulate-layout">
+            <div class="patient-panel">
+              <div class="stage-board" id="stageBoard">
+                <div class="stage-pill active">疑似识别<br><span class="mini">待生成</span></div>
+                <div class="stage-pill">初筛检查<br><span class="mini">待推荐</span></div>
+                <div class="stage-pill">分型确诊<br><span class="mini">待报告</span></div>
+                <div class="stage-pill">流程承接<br><span class="mini">待确认</span></div>
+                <div class="stage-pill">专项评估<br><span class="mini">待执行</span></div>
+                <div class="stage-pill">治疗方案<br><span class="mini">待输出</span></div>
+                <div class="stage-pill">围术期质控<br><span class="mini">待输出</span></div>
+              </div>
+              <div class="change-hint" id="changeHint"><span class="change-dot"></span>本步暂无新增或变化字段。</div>
+              <div class="form-grid">
+                <label>姓名</label>
+                <div class="inline-row">
+                  <input class="input" id="patientName" value="刘大虾">
+                  <span class="muted">科室</span>
+                  <input class="input" id="dept" value="心血管内科">
+                </div>
+                <label>主诉</label>
+                <input class="input" id="chiefComplaint" placeholder="例如：胸痛2小时">
+                <label>现病史</label>
+                <textarea class="textarea" id="presentHistory" placeholder="例如：压榨样胸痛，休息无法缓解，伴大汗、恶心呕吐、左肩放射痛"></textarea>
+                <label>既往史</label>
+                <textarea class="textarea" id="pastHistory" placeholder="例如：高血压10年、2型糖尿病"></textarea>
+                <label>个人史</label>
+                <textarea class="textarea" id="personalHistory" placeholder="例如：长期吸烟"></textarea>
+                <label>家族史</label>
+                <textarea class="textarea" id="familyHistory" placeholder="例如：父亲50岁心梗病史"></textarea>
+                <label>过敏史</label>
+                <textarea class="textarea" id="allergyHistory" placeholder="例如：无阿司匹林过敏"></textarea>
+                <label>体格检查</label>
+                <textarea class="textarea" id="physicalExam" placeholder="例如：血压160/95mmHg，心率98次/分"></textarea>
+                <label>专科检查</label>
+                <textarea class="textarea" id="specialExam" placeholder="点击回填报告后模拟：心电图 ST段抬高；肌钙蛋白升高"></textarea>
+                <label>辅助检查</label>
+                <textarea class="textarea" id="assistantExam" placeholder="心电图、心肌肌钙蛋白、CK-MB、超声心动图等"></textarea>
+                <label>主诊断</label>
+                <div class="inline-row">
+                  <input class="input" id="mainDiagnosis" placeholder="报告回填后生成">
+                  <span class="muted">发病时间</span>
+                  <input class="input" id="onsetTime" placeholder="2小时前">
+                </div>
+                <label>次诊断1</label>
+                <div class="inline-row">
+                  <input class="input" id="subDiagnosis1" placeholder="待排或鉴别方向">
+                  <span class="muted">状态</span>
+                  <input class="input" id="subStatus1" placeholder="待完善">
+                </div>
+                <label>次诊断2</label>
+                <div class="inline-row">
+                  <input class="input" id="subDiagnosis2" placeholder="待排或鉴别方向">
+                  <span class="muted">状态</span>
+                  <input class="input" id="subStatus2" placeholder="待完善">
+                </div>
+                <label>处置</label>
+                <textarea class="textarea" id="treatmentText" placeholder="进入专病流程后展示治疗建议和质控提醒"></textarea>
+                <label>围术期</label>
+                <textarea class="textarea" id="perioperativeText" placeholder="触发介入/手术评估后展示术前、术中、术后提醒"></textarea>
+              </div>
+            </div>
+
+            <aside class="right-panel">
+              <div class="right-tabs">
+                <button class="right-tab active" data-rec-tab="assist">辅助诊疗</button>
+                <button class="right-tab" data-rec-tab="search">知识检索</button>
+              </div>
+              <div class="recommend-scroll" id="recommendPanel"></div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="drawer-backdrop" id="flowPreviewDrawer">
+    <div class="drawer">
+      <div class="drawer-head">
+        <div>
+          <strong id="previewTitle">专病流程预览</strong>
+          <div class="mini muted" id="previewSubTitle">查看流程基础信息、阶段、规则与质控项。</div>
+        </div>
+        <button class="btn" id="closePreviewBtn">关闭</button>
+      </div>
+      <div class="drawer-body" id="previewBody"></div>
+    </div>
+  </div>
+
+  <div class="drawer-backdrop" id="ruleDetailDrawer">
+    <div class="drawer">
+      <div class="drawer-head">
+        <div>
+          <strong id="ruleDetailTitle">规则详情</strong>
+          <div class="mini muted" id="ruleDetailSubTitle">来自规则管理列表的完整规则配置内容。</div>
+        </div>
+        <button class="btn" id="closeRuleDetailBtn">关闭</button>
+      </div>
+      <div class="drawer-body" id="ruleDetailBody"></div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="rulePickerModal">
+    <div class="modal">
+      <div class="modal-head">
+        <div>
+          <strong>选择调用规则</strong>
+          <div class="mini muted" id="rulePickerNode">从规则列表中选择当前节点调用的规则。</div>
+        </div>
+        <button class="btn" id="closeRulePickerBtn">关闭</button>
+      </div>
+      <div class="modal-body" id="rulePickerList"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const rules = [
+      {
+        id: 1,
+        stage: "疑似识别",
+        name: "急性心肌梗死（AMI）疑似疾病识别规则",
+        logic: "当主诉包含“胸痛、胸闷、胸骨后疼痛”任一内容，或现病史包含“压榨样疼痛、持续不缓解、出汗、恶心呕吐、肩背部放射痛”任一内容时，系统输出 ACS/AMI 疑似疾病候选；高血压、糖尿病、冠心病史、吸烟、早发冠心病家族史只作为风险背景展示和加权，不单独触发 AMI，不输出 STEMI/NSTEMI 分型。",
+        fields: "主诉、现病史、既往史、个人史、家族史",
+        trigger: "医生录入一诉五史后点击生成疑似诊断，或系统监听病历保存事件。",
+        output: "ACS/AMI 疑似疾病候选、命中依据、风险背景标签。",
+        boundary: "只做疑似疾病推荐，不做最终确诊和分型。",
+        category: "suspect"
+      },
+      {
+        id: 2,
+        stage: "初筛检查",
+        name: "急性心肌梗死（AMI）初筛检查推荐规则",
+        logic: "当系统已生成 ACS/AMI 疑似疾病，或医生点击关注 ACS/AMI 疑似疾病后，系统检查本次就诊是否已有心电图报告、心肌肌钙蛋白检验结果、肌酸激酶同工酶检验结果和超声心动图报告；缺失任一项目时，推荐补做对应项目，并说明用于判断 ST 段改变、心肌损伤标志物升高、心肌损伤动态变化和室壁运动异常。",
+        fields: "疑似疾病状态、心电图、心肌肌钙蛋白、肌酸激酶同工酶、超声心动图",
+        trigger: "医生关注疑似疾病后，或规则引擎完成疑似识别后。",
+        output: "推荐检查、推荐检验、缺失依据。",
+        boundary: "只补齐初筛诊断依据，不表示患者已经进入治疗流程。",
+        category: "exam"
+      },
+      {
+        id: 3,
+        stage: "鉴别诊断",
+        name: "胸痛鉴别诊断提示规则",
+        logic: "当患者存在 ACS/AMI 疑似疾病且主诉或现病史包含“胸痛”时，系统检查是否已有主动脉 CTA 报告结论、肺动脉 CTA 报告结论和心电图报告结论；主动脉 CTA 未明确“主动脉夹层阴性/未见夹层”时提示需鉴别主动脉夹层，肺动脉 CTA 未明确“肺栓塞阴性/未见肺动脉栓塞”时提示需鉴别肺栓塞，心电图报告出现“弥漫性 ST 段抬高”或“PR 段压低”时提示需鉴别急性心包炎。",
+        fields: "主诉、现病史、主动脉 CTA、肺动脉 CTA、心电图报告结论",
+        trigger: "已关注 ACS/AMI 疑似疾病后。",
+        output: "主动脉夹层、肺栓塞、急性心包炎等鉴别方向和缺失依据。",
+        boundary: "只提示鉴别方向，不自动排除或确诊鉴别疾病。",
+        category: "exam"
+      },
+      {
+        id: 4,
+        stage: "分型诊断",
+        name: "急性心肌梗死（AMI）分型辅助诊断规则",
+        logic: "当心电图报告的检查所见或诊断结论包含“ST段抬高”，且心肌肌钙蛋白结果高于参考范围上限或连续两次结果呈动态升高时，系统输出“支持 AMI，倾向 STEMI”；当心肌肌钙蛋白升高或动态升高但心电图未包含“ST段抬高”时，输出“支持 AMI，倾向 NSTEMI”；当存在缺血性胸痛和心电图缺血改变但心肌肌钙蛋白未升高且未动态升高时，输出“不稳定型心绞痛待排”。",
+        fields: "心电图检查所见、心电图诊断结论、心肌肌钙蛋白结果、采样时间",
+        trigger: "心电图和心肌肌钙蛋白结果回填后。",
+        output: "STEMI、NSTEMI 或 UA 待排辅助诊断及证据。",
+        boundary: "必须在检查检验回填后触发，不能仅凭主诉直接触发分型。",
+        category: "diagnosis"
+      },
+      {
+        id: 5,
+        stage: "流程承接",
+        name: "急性心肌梗死（AMI）专病流程准入规则",
+        logic: "当辅助诊断结果为“支持 AMI，倾向 STEMI”且医生确认或关注该诊断时，系统读取心电图报告结论、心肌肌钙蛋白检验结果、发病时间和胸痛开始时间；若心电图包含“ST段抬高”、心肌肌钙蛋白高于参考上限或存在动态升高、发病时间或胸痛开始时间可明确，则提示创建 AMI 专病流程候选并定位到“再灌注评估阶段”。",
+        fields: "辅助诊断、医生确认状态、心电图、心肌肌钙蛋白、发病时间、胸痛开始时间",
+        trigger: "医生确认或关注 AMI/STEMI 诊断后。",
+        output: "AMI 专病流程候选、当前阶段、缺失项。",
+        boundary: "只判断是否承接专病流程和定位阶段，不直接生成治疗医嘱。",
+        category: "pathway"
+      },
+      {
+        id: 6,
+        stage: "专项评估",
+        name: "ST 段抬高型心肌梗死（STEMI）再灌注专项评估规则",
+        logic: "当患者处于 AMI 专病流程的再灌注评估阶段时，系统读取胸痛开始时间、当前时间、经皮冠状动脉介入治疗（PCI）可及时间、活动性出血记录、近期脑出血史、血肌酐结果、造影剂过敏史和阿司匹林过敏史；胸痛至当前时间小于等于 12 小时且 PCI 可及时间小于等于 90 分钟时，提示优先评估急诊 PCI；PCI 可及时间大于 90 分钟时，提示补充静脉溶栓适应证和禁忌证评估；存在活动性出血、近期脑出血、造影剂过敏或血肌酐升高时，同步输出风险提示和缺失评估项。",
+        fields: "胸痛开始时间、PCI 可及时间、出血记录、脑出血史、血肌酐、造影剂过敏史、阿司匹林过敏史",
+        trigger: "患者进入 AMI 专病流程并处于再灌注评估阶段。",
+        output: "急诊 PCI 评估、静脉溶栓评估、风险提示、缺失评估项。",
+        boundary: "用于专项评估和流程提示，具体处置由医生确认。",
+        category: "pathway"
+      },
+      {
+        id: 7,
+        stage: "治疗建议",
+        name: "ST 段抬高型心肌梗死（STEMI）标准化治疗建议规则",
+        logic: "当分型辅助诊断结果为 STEMI 且再灌注评估提示 PCI 可及时间小于等于 90 分钟、活动性出血为否、近期脑出血史为否时，系统输出“急诊经皮冠状动脉介入治疗（PCI）评估”，对应介入治疗申请/手术操作建议；当 PCI 可及时间大于 90 分钟且静脉溶栓禁忌证评估为无禁忌时，输出“静脉溶栓治疗评估”；当无阿司匹林过敏且无活动性出血时，输出“抗血小板治疗评估”，可关联阿司匹林、氯吡格雷或替格瑞洛；当出血风险未标记为高危且无活动性出血时，输出“抗凝治疗评估”，可关联普通肝素或低分子肝素；当 LDL-C 已回填时，输出“调脂治疗评估”并展示 LDL-C 结果，未回填时提示缺少 LDL-C 检验依据。",
+        fields: "分型诊断、PCI 可及时间、出血风险、过敏史、LDL-C、溶栓禁忌证",
+        trigger: "再灌注评估完成后进入治疗建议阶段。",
+        output: "PCI 评估、溶栓评估、抗血小板、抗凝、调脂治疗建议及阻断原因。",
+        boundary: "输出辅助治疗建议、可关联医嘱类型和阻断原因，最终处置由医生确认。",
+        category: "therapy"
+      },
+      {
+        id: 8,
+        stage: "质控与评估表单提醒",
+        name: "急性心肌梗死（AMI）医嘱质控与评估表单提醒规则",
+        logic: "当患者处于 AMI 专病流程内时，系统检查当前阶段是否已完成心电图、心肌肌钙蛋白、肌酸激酶同工酶、血肌酐、血糖、血脂和超声心动图；缺少关键依据时输出缺失提醒；已开立抗血小板或抗凝药物但活动性出血为“是”时输出用药风险；进入再灌注评估、PCI 术前或术后阶段时，检查对应评估表单是否已填写，未填写时只提醒补齐表单，不生成病程记录内容。",
+        fields: "流程阶段、检查检验完成状态、医嘱、活动性出血、评估表单完成状态",
+        trigger: "患者处于 AMI 专病流程内，并进入再灌注评估、治疗确认或围术期阶段时。",
+        output: "关键依据缺失、医嘱风险、待填写评估表单和过程质控提醒。",
+        boundary: "只做质控和评估表单提醒，不生成病程记录内容，不替代院内既有医嘱审核。",
+        category: "qc"
+      },
+      {
+        id: 9,
+        stage: "介入/手术术前",
+        name: "ST 段抬高型心肌梗死（STEMI）经皮冠状动脉介入治疗（PCI）术前评估提醒规则",
+        logic: "当分型辅助诊断结果为 STEMI，且治疗建议包含急诊经皮冠状动脉介入治疗（PCI）评估时，系统检查是否已记录造影剂过敏史、阿司匹林过敏史、活动性出血记录、近期脑出血史、血肌酐、凝血功能、血常规、出血风险评估、介入治疗术前评估记录和介入治疗知情同意记录；任一项目缺失时，在介入/手术术前提醒中提示补齐对应内容，并标记为 PCI 前需关注事项，不直接阻断急危重症救治流程。",
+        fields: "治疗建议、造影剂过敏史、阿司匹林过敏史、活动性出血、近期脑出血史、血肌酐、凝血功能、血常规、出血风险评估、术前评估记录、知情同意记录",
+        trigger: "治疗建议输出急诊经皮冠状动脉介入治疗（PCI）评估后。",
+        output: "术前评估缺失项、介入治疗知情同意提醒、造影和出血风险提示。",
+        boundary: "用于术前安全提醒和模板补齐，不替代急危重症救治决策。",
+        category: "surgery"
+      },
+      {
+        id: 10,
+        stage: "介入/手术术中",
+        name: "ST 段抬高型心肌梗死（STEMI）经皮冠状动脉介入治疗（PCI）术中关注事项提醒规则",
+        logic: "当患者已进入经皮冠状动脉介入治疗（PCI）相关流程节点时，系统提示医生关注冠状动脉造影结果、罪犯血管、术中血流恢复情况、支架植入情况、术中低血压、恶性心律失常、无复流、急性血栓形成和术中出血等事项，并检查术中关注事项评估表是否完成，未完成时生成表单提醒。",
+        fields: "介入治疗流程节点、冠状动脉造影结果、罪犯血管、血流恢复、支架植入、术中并发症、介入治疗记录",
+        trigger: "患者进入经皮冠状动脉介入治疗（PCI）相关节点时。",
+        output: "术中关注事项、术中评估表单提醒和并发症观察提醒。",
+        boundary: "用于术中关注事项和评估表单提醒，不生成手术记录内容，不替代术者判断。",
+        category: "surgery"
+      },
+      {
+        id: 11,
+        stage: "介入/手术术后",
+        name: "急性心肌梗死（AMI）介入治疗术后并发症观察与质控提醒规则",
+        logic: "当患者完成经皮冠状动脉介入治疗（PCI）或冠状动脉造影后，系统读取穿刺点观察、心电监测、心肌标志物复查、血肌酐复查、抗血小板/抗凝医嘱和生命体征；出现再发胸痛、低血压、心律失常、心力衰竭、穿刺点出血或血肌酐升高时，提示术后并发症风险；术后风险评估表未完成时，提醒补齐评估表单。",
+        fields: "PCI/冠状动脉造影完成状态、穿刺点观察、心电监测、心肌标志物复查、血肌酐复查、抗栓医嘱、生命体征、术后风险评估表状态",
+        trigger: "患者完成经皮冠状动脉介入治疗（PCI）或冠状动脉造影后。",
+        output: "术后观察提醒、并发症风险提示、术后评估表单提醒和医嘱质控提醒。",
+        boundary: "用于术后观察和质控闭环，不替代医生处理并发症。",
+        category: "surgery"
+      }
+    ];
+
+    const filters = [
+      { key: "all", label: "全部规则" },
+      { key: "suspect", label: "疑似疾病识别" },
+      { key: "exam", label: "初筛检查与鉴别" },
+      { key: "diagnosis", label: "分型辅助诊断" },
+      { key: "pathway", label: "流程承接与专项评估" },
+      { key: "therapy", label: "治疗建议" },
+      { key: "surgery", label: "介入/手术围术期" },
+      { key: "qc", label: "质控闭环" }
+    ];
+
+    const ruleUsageMap = {
+      1: { designer: "前置能力，不进入流程画布", simulation: "辅助诊疗模拟：疑似疾病", connector: "无连接线；作为后续初筛推荐触发源" },
+      2: { designer: "前置能力，不进入流程画布", simulation: "辅助诊疗模拟：初筛检查/检验", connector: "无连接线；关注疑似疾病后触发" },
+      3: { designer: "前置能力，不进入流程画布", simulation: "辅助诊疗模拟：鉴别诊断提示", connector: "无连接线；关注疑似疾病后触发" },
+      4: { designer: "前置能力，不进入流程画布", simulation: "辅助诊疗模拟：分型辅助诊断", connector: "无连接线；报告回填后触发" },
+      5: { designer: "开始节点入口备注；连接线：接收 STEMI", simulation: "辅助诊疗模拟：流程承接候选", connector: "diagnosis_status = STEMI" },
+      6: { designer: "节点：再灌注专项评估", simulation: "辅助诊疗模拟：流程承接与专项评估", connector: "输出 reperfusion_status 供分支连接线读取" },
+      7: { designer: "节点：急诊 PCI 建议、静脉溶栓建议、标准药物治疗", simulation: "辅助诊疗模拟：治疗方案与质控提醒", connector: "recommendation_status = GENERATED" },
+      8: { designer: "节点：评估表单提醒、医嘱与并发症质控", simulation: "辅助诊疗模拟：质控与评估表单提醒", connector: "form/status = REMINDER_GENERATED 或 qc_status != HARD_BLOCK" },
+      9: { designer: "节点：PCI 围术期提醒、PCI 围术期评估表", simulation: "辅助诊疗模拟：介入/手术术前提醒", connector: "confirmed_action = PRIMARY_PCI 后触发" },
+      10: { designer: "节点：PCI 围术期提醒", simulation: "辅助诊疗模拟：介入/手术术中关注", connector: "perioperative_status = REMINDER_GENERATED" },
+      11: { designer: "节点：医嘱与并发症质控、并发症观察表提醒", simulation: "辅助诊疗模拟：介入/手术术后观察", connector: "qc_status != HARD_BLOCK 后触发" }
+    };
+
+    function getRuleUsage(ruleId) {
+      return ruleUsageMap[Number(ruleId)] || { designer: "未配置", simulation: "未配置", connector: "未配置" };
+    }
+
+    function renderRuleChips(ruleIds = []) {
+      return ruleIds.map(ruleId => {
+        const rule = rules.find(item => item.id === Number(ruleId));
+        return rule ? `<button type="button" class="rule-chip" data-open-rule-detail="${rule.id}">规则${rule.id}</button>` : "";
+      }).join("");
+    }
+
+    const flows = [
+      {
+        name: "急性心肌梗死（AMI）",
+        dept: "心血管内科、急诊科、胸痛中心",
+        version: "V1.0 已启用",
+        people: "疑似 ACS/AMI，完成分型或医生确认关注",
+        guide: "中国胸痛中心、ESC NSTEMI/STEMI 指南、4TH Universal Definition of MI",
+        stages: "10 阶段 / 34 质控项",
+        status: "enabled"
+      },
+      {
+        name: "心力衰竭",
+        dept: "心血管内科",
+        version: "V0.6 草稿",
+        people: "疑似或确诊心衰患者",
+        guide: "心力衰竭基层诊疗指南",
+        stages: "6 阶段 / 12 质控项",
+        status: "draft"
+      },
+      {
+        name: "肺栓塞",
+        dept: "呼吸与危重症医学科、急诊科",
+        version: "V0.4 未启用",
+        people: "疑似肺动脉栓塞患者",
+        guide: "肺血栓栓塞症诊治指南",
+        stages: "5 阶段 / 10 质控项",
+        status: "disabled"
+      },
+      {
+        name: "房颤",
+        dept: "心血管内科",
+        version: "V0.3 未启用",
+        people: "疑似或确诊房颤患者",
+        guide: "心房颤动诊断和治疗指南",
+        stages: "5 阶段 / 9 质控项",
+        status: "disabled"
+      }
+    ];
+
+    const designerNodes = [
+      { id: "start", title: "开始", sub: "流程入口 · 备注", x: 36, y: 220, kind: "flow", icon: "start" },
+      { id: "assessment", title: "再灌注专项评估", sub: "规则/智能体一次输出", x: 260, y: 220, kind: "rule", icon: "assess" },
+      { id: "reperfusionForm", title: "再灌注评估表提醒", sub: "发病时间/禁忌/风险", x: 500, y: 220, kind: "record", icon: "record" },
+      { id: "branch", title: "再灌注结果分流", sub: "不判断 · 线规则分流", x: 750, y: 180, branch: true, kind: "therapy", icon: "branch" },
+      { id: "pciAdvice", title: "急诊 PCI 建议", sub: "业务推荐组件", x: 1050, y: 60, kind: "therapy", icon: "therapy" },
+      { id: "lysisAdvice", title: "静脉溶栓建议", sub: "业务推荐组件", x: 1050, y: 240, kind: "therapy", icon: "therapy" },
+      { id: "medicalAdvice", title: "标准药物治疗", sub: "业务推荐组件", x: 1050, y: 420, kind: "therapy", icon: "therapy" },
+      { id: "supplement", title: "资料补充/人工确认", sub: "缺失项或风险冲突", x: 750, y: 560, kind: "qc", icon: "qc" },
+      { id: "confirm", title: "治疗方案确认", sub: "医生确认最终方案", x: 1320, y: 240, kind: "therapy", icon: "therapy" },
+      { id: "treatmentBranch", title: "已确认治疗方式分流", sub: "不判断 · 线规则分流", x: 1570, y: 205, branch: true, kind: "therapy", icon: "branch" },
+      { id: "periop", title: "PCI 围术期提醒", sub: "术前/术中/术后", x: 1850, y: 80, kind: "surgery", icon: "surgery" },
+      { id: "periopForm", title: "PCI 围术期评估表", sub: "术前/术中/术后状态", x: 2090, y: 80, kind: "record", icon: "record" },
+      { id: "medication", title: "药物治疗与监测", sub: "溶栓/抗栓/调脂", x: 1850, y: 360, kind: "therapy", icon: "therapy" },
+      { id: "medicationForm", title: "用药/出血风险评估表", sub: "抗栓/溶栓/出血风险", x: 2090, y: 360, kind: "record", icon: "record" },
+      { id: "qc", title: "医嘱与并发症质控", sub: "针对具体动作提醒", x: 2320, y: 240, kind: "qc", icon: "qc" },
+      { id: "complicationForm", title: "并发症观察表提醒", sub: "出血/心衰/造影相关", x: 2320, y: 500, kind: "record", icon: "record" },
+      { id: "follow", title: "出院随访", sub: "复诊与用药提醒", x: 2090, y: 680, kind: "follow", icon: "follow" },
+      { id: "end", title: "结束", sub: "流程完成", x: 2320, y: 680, kind: "flow", icon: "end" }
+    ];
+
+    const designerLines = [
+      { id: "line-start-assessment", from: "start", to: "assessment", label: "接收 STEMI", labelOffsetY: -34, field: "diagnosis_status", operator: "=", value: "STEMI", condition: "前置知识图谱已完成分型，且医生已确认或关注 STEMI。", block: "未确认 STEMI 时不创建本流程实例。", action: "进入再灌注专项评估节点。" },
+      { id: "line-assessment-reperfusion-form", from: "assessment", to: "reperfusionForm", label: "生成评估表", field: "assessment_completed", operator: "=", value: "true", condition: "再灌注专项评估规则已输出 reperfusion_status、缺失项和风险状态。", block: "规则执行异常时停留当前节点。", action: "提醒填写或查看 STEMI 再灌注评估表。" },
+      { id: "line-reperfusion-form-branch", from: "reperfusionForm", to: "branch", label: "表单提醒完成", field: "reperfusion_form_status", operator: "=", value: "REMINDER_GENERATED", condition: "已展示再灌注评估表待填、已填和超期状态。", block: "默认不阻断主干流程。", action: "进入评估结果分流。" },
+      { id: "line-branch-pci", from: "branch", to: "pciAdvice", label: "优先急诊 PCI", labelOffsetY: -18, orange: true, field: "reperfusion_status", operator: "=", value: "PRIMARY_PCI", condition: "上游评估结果为 PRIMARY_PCI。", block: "blocked_actions 包含 PRIMARY_PCI 时不通行。", action: "展示急诊 PCI 治疗建议。" },
+      { id: "line-branch-lysis", from: "branch", to: "lysisAdvice", label: "评估静脉溶栓", labelOffsetX: 4, field: "reperfusion_status", operator: "=", value: "FIBRINOLYSIS", condition: "上游评估结果为 FIBRINOLYSIS。", block: "blocked_actions 包含 FIBRINOLYSIS 时不通行。", action: "展示静脉溶栓适应证和禁忌证评估建议。" },
+      { id: "line-branch-medical", from: "branch", to: "medicalAdvice", label: "标准药物治疗", labelOffsetY: 16, field: "reperfusion_status", operator: "=", value: "MEDICAL_TREATMENT", condition: "上游评估结果为 MEDICAL_TREATMENT。", block: "针对具体药物的禁忌信息未确认时不放行对应建议。", action: "展示抗血小板、抗凝、调脂和监测建议。" },
+      { id: "line-branch-supplement", from: "branch", to: "supplement", label: "待补充/人工确认", labelOffsetX: 43, labelOffsetY: 82, risk: true, field: "reperfusion_status", operator: "=", value: "PENDING_CONFIRMATION", condition: "存在资料缺失、风险冲突或需要医生人工确认。", block: "在缺失项或风险冲突未处理前，不进入治疗方案确认。", action: "展示缺失项、受影响动作和人工确认入口。" },
+      { id: "line-supplement-assessment", from: "supplement", to: "assessment", label: "补齐后重新评估", labelOffsetY: 18, field: "supplement_status", operator: "=", value: "COMPLETED", condition: "缺失资料已回填或风险冲突已由医生处理。", block: "未处理完成时停留当前节点。", action: "重新执行再灌注专项评估规则。" },
+      { id: "line-pci-confirm", from: "pciAdvice", to: "confirm", label: "PCI 建议已生成", field: "recommendation_status", operator: "=", value: "GENERATED", condition: "急诊 PCI 建议、依据和风险提示已生成。", block: "关键禁忌未处理时不提交确认。", action: "进入治疗方案确认。" },
+      { id: "line-lysis-confirm", from: "lysisAdvice", to: "confirm", label: "溶栓建议已生成", field: "recommendation_status", operator: "=", value: "GENERATED", condition: "溶栓建议、适应证和禁忌证提示已生成。", block: "溶栓禁忌证未处理时不提交确认。", action: "进入治疗方案确认。" },
+      { id: "line-medical-confirm", from: "medicalAdvice", to: "confirm", label: "药物建议已生成", field: "recommendation_status", operator: "=", value: "GENERATED", condition: "标准药物治疗建议和风险提示已生成。", block: "具体药物存在未处理禁忌时不放行对应建议。", action: "进入治疗方案确认。" },
+      { id: "line-confirm-treatment-branch", from: "confirm", to: "treatmentBranch", label: "医生已确认", labelOffsetY: -34, orange: true, field: "doctor_confirmed", operator: "=", value: "true", condition: "医生已确认最终治疗方式。", block: "未确认时不进入治疗执行提醒。", action: "根据 confirmed_action 进入对应处理节点。" },
+      { id: "line-treatment-periop", from: "treatmentBranch", to: "periop", label: "已确认急诊 PCI", labelOffsetX: 8, labelOffsetY: 28, orange: true, field: "confirmed_action", operator: "=", value: "PRIMARY_PCI", condition: "医生确认的治疗方式为急诊 PCI。", block: "PCI 相关 blocked_actions 未解除时不通行。", action: "进入 PCI 术前、术中、术后提醒。" },
+      { id: "line-treatment-medication", from: "treatmentBranch", to: "medication", label: "已确认溶栓/药物", labelOffsetX: 10, labelOffsetY: -34, field: "confirmed_action", operator: "in", value: "FIBRINOLYSIS,MEDICAL_TREATMENT", condition: "医生确认溶栓评估或标准药物治疗。", block: "对应药物禁忌未处理时不通行。", action: "进入药物治疗与监测提醒。" },
+      { id: "line-periop-form", from: "periop", to: "periopForm", label: "围术期表单", field: "perioperative_status", operator: "=", value: "REMINDER_GENERATED", condition: "术前、术中、术后提醒和并发症观察事项已生成。", block: "只针对具体高危动作阻断，不统一阻断急危重症救治。", action: "提醒填写或查看 PCI 术前、术中、术后评估表。" },
+      { id: "line-periop-form-qc", from: "periopForm", to: "qc", label: "围术期状态已展示", field: "periop_form_status", operator: "=", value: "REMINDER_GENERATED", condition: "已展示 PCI 围术期评估表待填、已填和超期状态。", block: "默认不阻断主干流程。", action: "进入医嘱与并发症质控。" },
+      { id: "line-medication-form", from: "medication", to: "medicationForm", label: "用药风险表单", field: "treatment_status", operator: "=", value: "CONFIRMED", condition: "溶栓或标准药物治疗方式已确认。", block: "具体用药风险未处理时不放行对应医嘱建议。", action: "提醒填写或查看用药、出血风险、溶栓禁忌相关评估表。" },
+      { id: "line-medication-form-qc", from: "medicationForm", to: "qc", label: "用药表单已展示", field: "medication_form_status", operator: "=", value: "REMINDER_GENERATED", condition: "已展示用药/出血风险评估表待填、已填和超期状态。", block: "默认不阻断主干流程。", action: "进入医嘱与并发症质控。" },
+      { id: "line-qc-complication-form", from: "qc", to: "complicationForm", label: "并发症表单", field: "qc_status", operator: "!=", value: "HARD_BLOCK", condition: "质控结果已生成，且不存在未处理的具体动作强阻断。", block: "存在未处理的高危动作时暂不继续。", action: "提醒填写或查看出血、心衰、造影相关并发症观察表。" },
+      { id: "line-complication-form-follow", from: "complicationForm", to: "follow", label: "观察表已展示", field: "complication_form_status", operator: "=", value: "REMINDER_GENERATED", condition: "已展示并发症观察表待填、已填和超期状态。", block: "默认不阻断主干流程。", action: "进入出院随访任务提醒。" },
+      { id: "line-follow-end", from: "follow", to: "end", label: "随访任务已生成", labelOffsetY: -34, field: "followup_status", operator: "=", value: "GENERATED", condition: "复诊、用药和二级预防随访任务已生成。", block: "存在未处理高危风险时提示暂缓结束。", action: "标记专病流程完成。" }
+    ];
+
+    const connectionRuleOptions = [
+      {
+        id: "flow-node-complete",
+        label: "业务组件完成状态流转规则",
+        description: "上游业务组件已完成输出，当前连接线允许进入下一个节点。",
+        field: "recommendation_status",
+        operator: "=",
+        value: "GENERATED"
+      },
+      {
+        id: "flow-stemi-entry",
+        label: "STEMI 流程准入状态校验",
+        description: "前置辅助诊断已支持 STEMI，且医生已确认或关注该诊断。",
+        field: "diagnosis_status",
+        operator: "=",
+        value: "STEMI"
+      },
+      {
+        id: "assessment-complete",
+        label: "再灌注评估完成状态校验",
+        description: "再灌注专项评估已一次性输出 reperfusion_status、缺失项和风险状态。",
+        field: "assessment_completed",
+        operator: "=",
+        value: "true"
+      },
+      {
+        id: "status-primary-pci",
+        label: "再灌注结果为急诊 PCI",
+        description: "只读取上游评估输出的 reperfusion_status，不重新执行再灌注评估。",
+        field: "reperfusion_status",
+        operator: "=",
+        value: "PRIMARY_PCI"
+      },
+      {
+        id: "status-fibrinolysis",
+        label: "再灌注结果为静脉溶栓",
+        description: "只读取上游评估输出的 reperfusion_status，不重新执行再灌注评估。",
+        field: "reperfusion_status",
+        operator: "=",
+        value: "FIBRINOLYSIS"
+      },
+      {
+        id: "status-medical-treatment",
+        label: "再灌注结果为标准药物治疗",
+        description: "只读取上游评估输出的 reperfusion_status，不重新执行再灌注评估。",
+        field: "reperfusion_status",
+        operator: "=",
+        value: "MEDICAL_TREATMENT"
+      },
+      {
+        id: "status-pending-confirmation",
+        label: "再灌注结果为待补充/人工确认",
+        description: "只读取上游评估输出的缺失项或风险冲突状态，先进入资料补充。",
+        field: "reperfusion_status",
+        operator: "=",
+        value: "PENDING_CONFIRMATION"
+      },
+      {
+        id: "supplement-re-evaluate",
+        label: "资料补齐后重新执行评估",
+        description: "资料补充完成后，回到再灌注专项评估重新获取统一状态。",
+        field: "supplement_status",
+        operator: "=",
+        value: "COMPLETED"
+      },
+      {
+        id: "pci-recommendation-generated",
+        label: "急诊 PCI 建议已生成",
+        description: "急诊 PCI 推荐组件已经输出建议、依据和风险提示。",
+        field: "recommendation_status",
+        operator: "=",
+        value: "GENERATED"
+      },
+      {
+        id: "lysis-recommendation-generated",
+        label: "静脉溶栓建议已生成",
+        description: "静脉溶栓推荐组件已经输出适应证、禁忌证和风险提示。",
+        field: "recommendation_status",
+        operator: "=",
+        value: "GENERATED"
+      },
+      {
+        id: "medical-recommendation-generated",
+        label: "标准药物治疗建议已生成",
+        description: "标准药物治疗推荐组件已经输出抗栓、调脂和监测建议。",
+        field: "recommendation_status",
+        operator: "=",
+        value: "GENERATED"
+      },
+      {
+        id: "doctor-confirmed-treatment",
+        label: "医生已确认治疗方案",
+        description: "医生已确认最终治疗方式，才允许进入治疗执行提醒。",
+        field: "doctor_confirmed",
+        operator: "=",
+        value: "true"
+      },
+      {
+        id: "confirmed-pci",
+        label: "确认治疗方式为急诊 PCI",
+        description: "医生确认的 confirmed_action 为 PRIMARY_PCI，进入 PCI 围术期提醒。",
+        field: "confirmed_action",
+        operator: "=",
+        value: "PRIMARY_PCI"
+      },
+      {
+        id: "confirmed-medical",
+        label: "确认治疗方式为溶栓或标准药物",
+        description: "医生确认的治疗方式为 FIBRINOLYSIS 或 MEDICAL_TREATMENT，进入药物治疗与监测。",
+        field: "confirmed_action",
+        operator: "in",
+        value: "FIBRINOLYSIS,MEDICAL_TREATMENT"
+      },
+      {
+        id: "periop-reminder-generated",
+        label: "围术期提醒已生成",
+        description: "术前、术中、术后关注事项及并发症观察提醒已生成。",
+        field: "perioperative_status",
+        operator: "=",
+        value: "REMINDER_GENERATED"
+      },
+      {
+        id: "treatment-confirmed",
+        label: "治疗方式已确认",
+        description: "溶栓或标准药物治疗方式已确认，进入治疗质控。",
+        field: "treatment_status",
+        operator: "=",
+        value: "CONFIRMED"
+      },
+      {
+        id: "qc-generated-no-hard-block",
+        label: "质控已生成且无强阻断",
+        description: "质控结果已生成，且不存在未处理的具体动作强阻断。",
+        field: "qc_status",
+        operator: "!=",
+        value: "HARD_BLOCK"
+      },
+      {
+        id: "form-reminder-generated",
+        label: "评估表单提醒已生成",
+        description: "已展示当前阶段待填、已填和超期的评估表单状态。",
+        field: "form_completion_status",
+        operator: "=",
+        value: "REMINDER_GENERATED"
+      },
+      {
+        id: "reperfusion-form-generated",
+        label: "再灌注评估表提醒已生成",
+        description: "已展示再灌注评估表待填、已填和超期状态。",
+        field: "reperfusion_form_status",
+        operator: "=",
+        value: "REMINDER_GENERATED"
+      },
+      {
+        id: "periop-form-generated",
+        label: "PCI 围术期评估表提醒已生成",
+        description: "已展示 PCI 术前、术中、术后评估表状态。",
+        field: "periop_form_status",
+        operator: "=",
+        value: "REMINDER_GENERATED"
+      },
+      {
+        id: "medication-form-generated",
+        label: "用药/出血风险评估表提醒已生成",
+        description: "已展示抗栓、溶栓、出血风险相关评估表状态。",
+        field: "medication_form_status",
+        operator: "=",
+        value: "REMINDER_GENERATED"
+      },
+      {
+        id: "complication-form-generated",
+        label: "并发症观察表提醒已生成",
+        description: "已展示出血、心衰、造影相关并发症观察表状态。",
+        field: "complication_form_status",
+        operator: "=",
+        value: "REMINDER_GENERATED"
+      },
+      {
+        id: "followup-generated",
+        label: "随访任务已生成",
+        description: "复诊、用药和二级预防随访任务已生成，流程可以归档。",
+        field: "followup_status",
+        operator: "=",
+        value: "GENERATED"
+      }
+    ];
+
+    const lineOperationRuleDefaults = {
+      "line-start-assessment": "flow-stemi-entry",
+      "line-assessment-reperfusion-form": "assessment-complete",
+      "line-reperfusion-form-branch": "reperfusion-form-generated",
+      "line-branch-pci": "status-primary-pci",
+      "line-branch-lysis": "status-fibrinolysis",
+      "line-branch-medical": "status-medical-treatment",
+      "line-branch-supplement": "status-pending-confirmation",
+      "line-supplement-assessment": "supplement-re-evaluate",
+      "line-pci-confirm": "pci-recommendation-generated",
+      "line-lysis-confirm": "lysis-recommendation-generated",
+      "line-medical-confirm": "medical-recommendation-generated",
+      "line-confirm-treatment-branch": "doctor-confirmed-treatment",
+      "line-treatment-periop": "confirmed-pci",
+      "line-treatment-medication": "confirmed-medical",
+      "line-periop-form": "periop-reminder-generated",
+      "line-periop-form-qc": "periop-form-generated",
+      "line-medication-form": "treatment-confirmed",
+      "line-medication-form-qc": "medication-form-generated",
+      "line-qc-complication-form": "qc-generated-no-hard-block",
+      "line-complication-form-follow": "complication-form-generated",
+      "line-follow-end": "followup-generated"
+    };
+
+    designerLines.forEach(line => {
+      line.operationRule = lineOperationRuleDefaults[line.id] || "flow-node-complete";
+      const rule = connectionRuleOptions.find(item => item.id === line.operationRule);
+      if (rule) line.ruleName = rule.label;
+    });
+
+    const nodeRuleDefaults = {
+      assessment: 6,
+      reperfusionForm: 8,
+      pciAdvice: 7,
+      lysisAdvice: 7,
+      medicalAdvice: 7,
+      supplement: 8,
+      confirm: 0,
+      periop: 9,
+      periopForm: 8,
+      medication: 7,
+      medicationForm: 8,
+      qc: 8,
+      complicationForm: 8,
+      follow: 0
+    };
+
+    const nodeRuleSelections = { ...nodeRuleDefaults };
+    const difyAgentOptions = [
+      "AMI 再灌注治疗建议智能体",
+      "AMI 围术期风险识别智能体",
+      "AMI 治疗方案解释智能体"
+    ];
+    const nodeAgentSelections = {
+      assessment: difyAgentOptions[0],
+      pciAdvice: difyAgentOptions[0],
+      lysisAdvice: difyAgentOptions[0],
+      medicalAdvice: difyAgentOptions[2],
+      confirm: difyAgentOptions[2],
+      periop: difyAgentOptions[1],
+      medication: difyAgentOptions[2],
+      qc: difyAgentOptions[1],
+      follow: difyAgentOptions[2]
+    };
+    const nodeOutputSelections = {
+      assessment: "reperfusion_status, recommended_action, missing_items, risk_flags, blocked_actions",
+      reperfusionForm: "reperfusion_form_status, pending_forms, completed_forms, overdue_forms",
+      pciAdvice: "recommendation_status, recommended_action, supporting_evidence, blocked_actions",
+      lysisAdvice: "recommendation_status, recommended_action, supporting_evidence, blocked_actions",
+      medicalAdvice: "recommendation_status, recommended_action, monitoring_items, blocked_actions",
+      supplement: "supplement_status, missing_items, risk_flags, confirmation_result",
+      confirm: "confirmed_action, doctor_confirmed, confirmation_time",
+      periop: "perioperative_status, perioperative_stage, reminder_items, complication_risks",
+      periopForm: "periop_form_status, preop_forms, intraop_forms, postop_forms, overdue_forms",
+      medication: "treatment_status, monitoring_items, risk_flags",
+      medicationForm: "medication_form_status, antithrombotic_forms, bleeding_risk_forms, contraindication_forms",
+      qc: "qc_status, warning_items, blocked_actions",
+      complicationForm: "complication_form_status, bleeding_forms, heart_failure_forms, contrast_related_forms",
+      follow: "followup_status, followup_tasks"
+    };
+
+    const nodeDisplaySelections = {
+      assessment: "展示胸痛开始时间、PCI 可及时间、溶栓禁忌、缺失项和风险提示。",
+      reperfusionForm: "展示 STEMI 再灌注评估表的待填、已填、超期状态，不生成病程记录内容。",
+      pciAdvice: "展示急诊 PCI 建议、支持依据、受阻断动作和医生确认入口。",
+      lysisAdvice: "展示溶栓适应证、禁忌证、支持依据和医生确认入口。",
+      medicalAdvice: "展示抗血小板、抗凝、调脂、监测建议及对应风险。",
+      supplement: "展示缺失资料、受影响动作、风险冲突和人工处理入口。",
+      confirm: "展示候选治疗方案、支持依据和医生最终确认结果。",
+      periop: "分阶段展示术前、术中、术后关注事项和并发症风险。",
+      periopForm: "展示 PCI 术前评估、术中记录、术后观察表的待填、已填、超期状态。",
+      medication: "展示已确认的溶栓或药物治疗建议及监测事项。",
+      medicationForm: "展示抗栓、溶栓、出血风险和禁忌相关评估表状态。",
+      qc: "展示针对具体医嘱或治疗动作的风险、提醒和阻断原因。",
+      complicationForm: "展示出血、心衰、造影相关并发症观察表的待填、已填、超期状态。",
+      follow: "展示复诊、用药和二级预防随访任务。"
+    };
+
+    const flowPreviewDetails = [
+      {
+        base: ["专病名称：急性心肌梗死（AMI）", "适用科室：心血管内科、急诊科、胸痛中心", "启用状态：V1.0 已启用", "适用人群：疑似 ACS/AMI，完成分型或医生确认关注"],
+        stages: [
+          ["疑似疾病识别", "主诉/现病史命中胸痛、出汗、恶心呕吐后，输出 ACS/AMI 疑似候选。"],
+          ["初筛检查推荐", "推荐心电图、心肌肌钙蛋白、CK-MB、超声心动图，并提示胸痛鉴别方向。"],
+          ["分型辅助诊断", "心电图 ST段抬高且肌钙蛋白升高时，输出 STEMI 分型建议。"],
+          ["流程承接", "医生确认 STEMI 后创建 AMI 专病流程，将分型结果作为前置输入传入设计器。"],
+          ["再灌注专项评估", "业务组件读取发病时间、PCI 可及时间、出血风险、肾功能和过敏史，一次输出标准状态。"],
+          ["结果分流", "连接线读取 reperfusion_status，分别进入急诊 PCI、溶栓、药物治疗或资料补充/人工确认。"],
+          ["治疗方案确认", "统一展示候选方案和依据，医生确认后输出 confirmed_action。"],
+          ["介入/手术围术期", "医生确认急诊 PCI 后，展示术前、术中、术后关注事项和并发症提醒。"],
+          ["评估表单与随访", "只提醒再灌注、出血风险、PCI 术前术后等评估表单状态，不生成病程记录内容。"]
+        ],
+        rules: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+        qc: ["关键诊断依据缺失提醒", "活动性出血下抗凝/抗血小板用药风险", "再灌注治疗评估表提醒", "PCI 术前评估表提醒", "PCI 术后风险评估表和并发症提醒"]
+      },
+      {
+        base: ["专病名称：心力衰竭", "适用科室：心血管内科", "启用状态：V0.6 草稿", "适用人群：疑似或确诊心衰患者"],
+        stages: [["疑似识别", "结合呼吸困难、水肿、BNP 等信息形成疑似方向。"], ["检查补齐", "推荐 BNP、超声心动图、胸片等基础检查。"], ["治疗提醒", "展示利尿、扩血管、容量管理等方案待配置。"]],
+        rules: [],
+        qc: ["BNP 缺失提醒", "心功能评估缺失提醒"]
+      },
+      {
+        base: ["专病名称：肺栓塞", "适用科室：呼吸与危重症医学科、急诊科", "启用状态：V0.4 未启用", "适用人群：疑似肺动脉栓塞患者"],
+        stages: [["疑似识别", "结合胸痛、呼吸困难、D-二聚体等信息形成疑似方向。"], ["检查补齐", "推荐肺动脉 CTA、D-二聚体、血气分析等。"]],
+        rules: [],
+        qc: ["肺动脉 CTA 缺失提醒", "抗凝风险评估缺失提醒"]
+      },
+      {
+        base: ["专病名称：房颤", "适用科室：心血管内科", "启用状态：V0.3 未启用", "适用人群：疑似或确诊房颤患者"],
+        stages: [["疑似识别", "结合心悸、心电图房颤表现形成疑似方向。"], ["风险评估", "推荐 CHA2DS2-VASc、HAS-BLED 等评估。"]],
+        rules: [],
+        qc: ["抗凝风险评估缺失提醒", "心电图证据缺失提醒"]
+      }
+    ];
+
+    let currentPage = "home";
+    let currentRuleFilter = "all";
+    let simulationState = "empty";
+    let recTab = "assist";
+    let assistFocus = "suspect";
+    let selectedNode = "start";
+    let selectedLine = "";
+    let connectMode = false;
+    let connectSource = "";
+    let customNodeSeq = 0;
+    let customLineSeq = 0;
+    let draggingNode = null;
+    let suppressNodeClick = false;
+    let draggingCanvas = null;
+    let suppressCanvasClick = false;
+    let lineLabelPlacementCache = new Map();
+
+    const nodeRemarks = {
+      start: "接收前置知识图谱已完成的 AMI/STEMI 分型结果和医生确认状态。",
+      end: "AMI 专病流程的唯一结束出口，只记录流程完成状态。",
+      branch: "展示再灌注评估结果分流，自身不执行规则，出口连接线读取 reperfusion_status。",
+      treatmentBranch: "展示医生已确认治疗方式的分流，出口连接线读取 confirmed_action。",
+      reperfusionForm: "跟随再灌注专项评估场景，提醒 STEMI 再灌注评估表待填、已填和超期状态。",
+      periopForm: "跟随 PCI 围术期场景，提醒术前评估、术中记录和术后观察表状态。",
+      medicationForm: "跟随药物治疗场景，提醒抗栓、溶栓、出血风险和禁忌相关评估表状态。",
+      complicationForm: "跟随并发症质控场景，提醒出血、心衰、造影相关并发症观察表状态。"
+    };
+
+    const nodeSourceSelections = {
+      assessment: "规则推荐",
+      reperfusionForm: "规则推荐",
+      pciAdvice: "规则推荐",
+      lysisAdvice: "规则推荐",
+      medicalAdvice: "规则推荐",
+      supplement: "规则推荐",
+      confirm: "Dify 智能体",
+      periop: "规则推荐",
+      periopForm: "规则推荐",
+      medication: "规则推荐",
+      medicationForm: "规则推荐",
+      qc: "规则推荐",
+      complicationForm: "规则推荐",
+      follow: "Dify 智能体"
+    };
+
+    function $(selector, root = document) {
+      return root.querySelector(selector);
+    }
+
+    function $all(selector, root = document) {
+      return Array.from(root.querySelectorAll(selector));
+    }
+
+    function escapeAttr(value) {
+      return String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/"/g, "&quot;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+    }
+
+    function iconSvg(name) {
+      const icons = {
+        start: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l10 7-10 7V5z" class="icon-fill"></path></svg>',
+        end: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"></rect></svg>',
+        branch: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 9-9 9-9-9 9-9z"></path></svg>',
+        line: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15"></path><path d="M14 6l6 6-6 6"></path></svg>',
+        component: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"></rect><path d="M8 9h8"></path><path d="M8 13h5"></path><path d="M16 13h1"></path></svg>',
+        rule: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10"></path><path d="M18 7h2"></path><circle cx="16" cy="7" r="2"></circle><path d="M4 17h2"></path><path d="M10 17h10"></path><circle cx="8" cy="17" r="2"></circle></svg>',
+        exam: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6"></path><path d="M10 3v6l-5 8a3 3 0 0 0 3 4h8a3 3 0 0 0 3-4l-5-8V3"></path><path d="M9 15h6"></path></svg>',
+        assess: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5z"></path><path d="M8 9l2 2 4-4"></path><path d="M8 16h8"></path></svg>',
+        therapy: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 21a5 5 0 0 1-7-7l7-7a5 5 0 0 1 7 7l-7 7z"></path><path d="M8 9l7 7"></path></svg>',
+        surgery: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 7l3-3 3 3-3 3-3-3z"></path><path d="M4 20l8-8"></path><path d="M8 8l8 8"></path><path d="M5 13l6 6"></path></svg>',
+        qc: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3z"></path><path d="M8 12l3 3 5-6"></path></svg>',
+        record: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 13h6"></path><path d="M9 17h6"></path></svg>',
+        follow: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v3"></path><path d="M17 4v3"></path><path d="M4 8h16"></path><rect x="4" y="5" width="16" height="16" rx="2"></rect><path d="M9 15l2 2 4-4"></path></svg>'
+      };
+      return icons[name] || icons.rule;
+    }
+
+    function renderStaticIcons() {
+      $all("[data-icon]").forEach(el => {
+        el.innerHTML = iconSvg(el.dataset.icon);
+      });
+    }
+
+    function showToast(message) {
+      const toast = $("#toast");
+      toast.textContent = message;
+      toast.classList.add("show");
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(() => toast.classList.remove("show"), 2200);
+    }
+
+    function showPage(page) {
+      currentPage = page;
+      $all(".page").forEach(el => el.classList.remove("active"));
+      const target = $("#page-" + page);
+      if (target) target.classList.add("active");
+      const titleMap = {
+        home: "首页",
+        rules: "规则管理",
+        framework: "专病诊疗流程框架管理",
+        designer: "流程设计器",
+        simulation: "辅助诊疗"
+      };
+      $("#crumbNow").textContent = titleMap[page] || "首页";
+      $all("[data-page-link]").forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.pageLink === page);
+      });
+      if (page === "rules") renderRules();
+      if (page === "framework") renderFlows();
+      if (page === "designer") renderDesigner();
+      if (page === "simulation") renderRecommendations();
+    }
+
+    function renderFilters() {
+      const wrap = $("#ruleFilters");
+      wrap.innerHTML = filters.map(filter => `
+        <button class="filter-btn ${currentRuleFilter === filter.key ? "active" : ""}" data-filter="${filter.key}">
+          <span>${filter.label}</span>
+          <span class="badge">${filter.key === "all" ? rules.length : rules.filter(rule => rule.category === filter.key).length}</span>
+        </button>
+      `).join("");
+      $all("[data-filter]", wrap).forEach(btn => {
+        btn.addEventListener("click", () => {
+          currentRuleFilter = btn.dataset.filter;
+          renderFilters();
+          renderRules();
+        });
+      });
+    }
+
+    function renderRules() {
+      renderFilters();
+      const search = ($("#ruleSearch")?.value || "").trim();
+      const visible = rules.filter(rule => {
+        const byFilter = currentRuleFilter === "all" || rule.category === currentRuleFilter;
+        const text = `${rule.name}${rule.stage}${rule.logic}${rule.fields}`;
+        const bySearch = !search || text.includes(search);
+        return byFilter && bySearch;
+      });
+      $("#ruleList").innerHTML = visible.length ? visible.map(rule => `
+        <article class="rule-card" data-rule-id="${rule.id}">
+          <div class="rule-main">
+            <div>
+              <h2 class="rule-title">${rule.id}. ${rule.name}</h2>
+              <div class="rule-meta">
+                <span class="badge">${rule.stage}</span>
+                <span class="badge green">已启用</span>
+                <span class="badge orange">AMI</span>
+              </div>
+              <p class="rule-logic">${rule.logic}</p>
+              <div class="rule-usage">原型引用：${getRuleUsage(rule.id).simulation}；设计器：${getRuleUsage(rule.id).designer}</div>
+            </div>
+            <div class="rule-actions">
+              <button class="switch on" aria-label="启停规则" data-toggle-rule="${rule.id}"></button>
+              <button class="btn" data-open-rule="${rule.id}">详情</button>
+              <button class="btn primary" data-run-rule="${rule.id}">模拟触发</button>
+            </div>
+          </div>
+          <div class="rule-detail">
+            <div class="detail-grid">
+              <div class="detail-box"><strong>读取字段</strong>${rule.fields}</div>
+              <div class="detail-box"><strong>触发阶段</strong>${rule.trigger}</div>
+              <div class="detail-box"><strong>输出内容</strong>${rule.output}</div>
+              <div class="detail-box"><strong>使用边界</strong>${rule.boundary}</div>
+              <div class="detail-box"><strong>设计器引用</strong>${getRuleUsage(rule.id).designer}</div>
+              <div class="detail-box"><strong>模拟页引用</strong>${getRuleUsage(rule.id).simulation}</div>
+              <div class="detail-box"><strong>连接线/状态字段</strong>${getRuleUsage(rule.id).connector}</div>
+              <div class="detail-box"><strong>模拟输入</strong>胸痛2小时，出汗，恶心呕吐，高血压，糖尿病；报告回填 ST段抬高、肌钙蛋白升高。</div>
+              <div class="detail-box"><strong>模拟结果</strong>${rule.id < 4 ? "输出疑似疾病、推荐检查或鉴别方向。" : rule.id < 6 ? "输出分型和流程承接候选。" : rule.id < 9 ? "输出专项评估、治疗建议或质控提醒。" : "输出术前、术中、术后围术期提醒。"}</div>
+            </div>
+          </div>
+        </article>
+      `).join("") : `<div class="empty-state">没有匹配的规则，请调整筛选条件。</div>`;
+
+      $all("[data-open-rule]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          btn.closest(".rule-card").classList.toggle("open");
+        });
+      });
+      $all("[data-toggle-rule]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          btn.classList.toggle("on");
+          showToast(btn.classList.contains("on") ? "规则已启用" : "规则已停用");
+        });
+      });
+      $all("[data-run-rule]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const rule = rules.find(item => item.id === Number(btn.dataset.runRule));
+          showToast(`已模拟触发：${rule.stage}，输出 ${rule.output}`);
+        });
+      });
+    }
+
+    function renderFlowPreview(index) {
+      const flow = flows[index];
+      const detail = flowPreviewDetails[index];
+      $("#previewTitle").textContent = `${flow.name} 流程预览`;
+      $("#previewSubTitle").textContent = `${flow.version} · ${flow.dept}`;
+      $("#previewBody").innerHTML = `
+        <section class="preview-section">
+          <h3>基础信息</h3>
+          <div class="preview-content">
+            ${detail.base.map(item => `<div>${item}</div>`).join("")}
+            <div>指南依据：${flow.guide}</div>
+            <div>阶段与质控：${flow.stages}</div>
+          </div>
+        </section>
+        <section class="preview-section">
+          <h3>阶段配置预览</h3>
+          <div class="preview-content">
+            ${detail.stages.map((stage, idx) => `
+              <div class="preview-stage">
+                <strong>${idx + 1}. ${stage[0]}</strong>
+                <span>${stage[1]}</span>
+              </div>
+            `).join("")}
+          </div>
+        </section>
+        <section class="preview-section">
+          <h3>调用规则</h3>
+          <div class="preview-content">
+            ${detail.rules.length ? detail.rules.map(id => {
+              const rule = rules.find(item => item.id === id);
+              return `<div class="preview-stage"><strong>规则${id}</strong><span>${rule.name}</span></div>`;
+            }).join("") : `<span class="muted">该流程仍为草稿，暂未配置完整规则。</span>`}
+          </div>
+        </section>
+        <section class="preview-section">
+          <h3>质控与评估表单</h3>
+          <div class="preview-content">
+            ${detail.qc.map(item => `<div>· ${item}</div>`).join("")}
+          </div>
+        </section>
+      `;
+    }
+
+    function openFlowPreview(index) {
+      renderFlowPreview(index);
+      $("#flowPreviewDrawer").classList.add("open");
+    }
+
+    function closeFlowPreview() {
+      $("#flowPreviewDrawer").classList.remove("open");
+    }
+
+    function openRuleDetail(ruleId) {
+      const rule = rules.find(item => item.id === Number(ruleId));
+      if (!rule) {
+        showToast("未找到对应规则。");
+        return;
+      }
+      $("#ruleDetailTitle").textContent = `规则${rule.id}：${rule.name}`;
+      $("#ruleDetailSubTitle").textContent = `${rule.stage} · 来自规则管理列表`;
+      $("#ruleDetailBody").innerHTML = `
+        <section class="preview-section">
+          <h3>详细规则逻辑</h3>
+          <div class="preview-content">${rule.logic}</div>
+        </section>
+        <section class="preview-section">
+          <h3>读取字段</h3>
+          <div class="preview-content">${rule.fields}</div>
+        </section>
+        <section class="preview-section">
+          <h3>触发阶段</h3>
+          <div class="preview-content">${rule.trigger}</div>
+        </section>
+        <section class="preview-section">
+          <h3>输出内容</h3>
+          <div class="preview-content">${rule.output}</div>
+        </section>
+        <section class="preview-section">
+          <h3>使用边界</h3>
+          <div class="preview-content">${rule.boundary}</div>
+        </section>
+        <section class="preview-section">
+          <h3>原型引用关系</h3>
+          <div class="preview-content">
+            <div>· 设计器：${getRuleUsage(rule.id).designer}</div>
+            <div>· 模拟页：${getRuleUsage(rule.id).simulation}</div>
+            <div>· 连接线/状态字段：${getRuleUsage(rule.id).connector}</div>
+          </div>
+        </section>
+        <section class="preview-section">
+          <h3>核对要点</h3>
+          <div class="preview-content">
+            <div>· 规则名称应与规则管理列表一致。</div>
+            <div>· 触发阶段应与当前设计器节点一致。</div>
+            <div>· 输出内容决定该节点在辅助诊疗页面展示的推荐项。</div>
+            <div>· 使用边界用于防止把候选提示、辅助分型、医嘱建议混成最终医嘱。</div>
+          </div>
+        </section>
+      `;
+      $("#ruleDetailDrawer").classList.add("open");
+    }
+
+    function closeRuleDetail() {
+      $("#ruleDetailDrawer").classList.remove("open");
+    }
+
+    function renderFlows() {
+      $("#flowTable").innerHTML = flows.map((flow, index) => `
+        <tr>
+          <td><strong>${flow.name}</strong></td>
+          <td>${flow.dept}</td>
+          <td><span class="badge ${flow.status === "enabled" ? "green" : flow.status === "draft" ? "orange" : ""}">${flow.version}</span></td>
+          <td>${flow.people}</td>
+          <td>${flow.guide}</td>
+          <td>${flow.stages}</td>
+          <td>
+            <button class="btn primary" data-open-designer="${index}">设计器</button>
+            <button class="btn" data-preview-flow="${index}">预览</button>
+            <button class="btn" data-copy-flow="${index}">复制</button>
+          </td>
+        </tr>
+      `).join("");
+      $all("[data-open-designer]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          if (Number(btn.dataset.openDesigner) === 0) {
+            showPage("designer");
+          } else {
+            showToast("该专病流程尚未配置完整，当前原型仅打开 AMI 设计器。");
+          }
+        });
+      });
+      $all("[data-preview-flow]").forEach(btn => {
+        btn.addEventListener("click", () => openFlowPreview(Number(btn.dataset.previewFlow)));
+      });
+      $all("[data-copy-flow]").forEach(btn => {
+        btn.addEventListener("click", () => showToast(`已复制流程草稿：${flows[Number(btn.dataset.copyFlow)].name}`));
+      });
+    }
+
+    function getNodeSize(node) {
+      if (!node) return { width: 158, height: 64 };
+      if (node.branch) return { width: 194, height: 132 };
+      if (node.id === "start" || node.id === "end") return { width: 124, height: 54 };
+      if (node.kind === "flow") return { width: 146, height: 58 };
+      return { width: 158, height: 64 };
+    }
+
+    function getNodeCenter(node) {
+      const size = getNodeSize(node);
+      return { x: node.x + size.width / 2, y: node.y + size.height / 2 };
+    }
+
+    function getAnchorPoint(node, otherCenter) {
+      const size = getNodeSize(node);
+      const center = getNodeCenter(node);
+      const dx = otherCenter.x - center.x;
+      const dy = otherCenter.y - center.y;
+      if (node.branch) {
+        const radiusX = 66;
+        const radiusY = 61;
+        const denominator = Math.abs(dx) / radiusX + Math.abs(dy) / radiusY;
+        if (denominator < 0.001) return center;
+        const scale = 1 / denominator;
+        return { x: center.x + dx * scale, y: center.y + dy * scale };
+      }
+      const ratioX = Math.abs(dx) > 0.1 ? (size.width / 2) / Math.abs(dx) : Number.POSITIVE_INFINITY;
+      const ratioY = Math.abs(dy) > 0.1 ? (size.height / 2) / Math.abs(dy) : Number.POSITIVE_INFINITY;
+      const ratio = Math.min(ratioX, ratioY);
+      return { x: center.x + dx * ratio, y: center.y + dy * ratio };
+    }
+
+    function getLineStyle(line) {
+      const geometry = getLineGeometry(line);
+      if (!geometry) return "display:none";
+      return `left:${geometry.start.x}px;top:${geometry.start.y - 7}px;width:${geometry.length}px;transform:rotate(${geometry.angle}deg);`;
+    }
+
+    function getLineGeometry(line) {
+      const fromNode = designerNodes.find(item => item.id === line.from);
+      const toNode = designerNodes.find(item => item.id === line.to);
+      if (!fromNode || !toNode) return null;
+      const fromCenter = getNodeCenter(fromNode);
+      const toCenter = getNodeCenter(toNode);
+      const start = getAnchorPoint(fromNode, toCenter);
+      const end = getAnchorPoint(toNode, fromCenter);
+      const dx = end.x - start.x;
+      const dy = end.y - start.y;
+      const length = Math.max(12, Math.sqrt(dx * dx + dy * dy));
+      const angle = Math.atan2(dy, dx) * 180 / Math.PI;
+      return { start, end, dx, dy, length, angle };
+    }
+
+    function getLineLabelRatio(line) {
+      if (typeof line.labelAt === "number") return Math.min(0.82, Math.max(0.18, line.labelAt));
+      if (line.from === "branch" || line.from === "treatmentBranch") return 0.38;
+      if (line.to === "branch" || line.to === "treatmentBranch") return 0.52;
+      return 0.5;
+    }
+
+    function clampLabelOffset(value, limit) {
+      return Math.max(-limit, Math.min(limit, Number(value) || 0));
+    }
+
+    function getLineLabelBasePoint(line) {
+      const geometry = getLineGeometry(line);
+      if (!geometry) return null;
+      const ratio = getLineLabelRatio(line);
+      return {
+        x: geometry.start.x + geometry.dx * ratio,
+        y: geometry.start.y + geometry.dy * ratio
+      };
+    }
+
+    function rebuildLineLabelPlacements() {
+      const nextCache = new Map();
+      const occupied = [];
+      designerLines.forEach(line => {
+        const base = getLineLabelBasePoint(line);
+        if (!base) return;
+        let x = base.x;
+        let y = base.y;
+        let attempt = 0;
+        while (attempt < 4 && occupied.some(item => Math.abs(item.x - x) < 102 && Math.abs(item.y - y) < 22)) {
+          x = base.x + (attempt + 1) * 18;
+          attempt += 1;
+        }
+        const point = { x, y };
+        occupied.push(point);
+        nextCache.set(line.id, point);
+      });
+      lineLabelPlacementCache = nextCache;
+    }
+
+    function getLineLabelStyle(line) {
+      const point = lineLabelPlacementCache.get(line.id) || getLineLabelBasePoint(line);
+      if (!point) return "display:none";
+      return `left:${point.x}px;top:${point.y}px;transform:translate(-50%,calc(-100% - 2px));`;
+    }
+
+    function getConnectionRule(ruleId) {
+      return connectionRuleOptions.find(item => item.id === ruleId);
+    }
+
+    function getLineRuleName(line) {
+      return line.ruleName || getConnectionRule(line.operationRule)?.label || "未绑定操作规则";
+    }
+
+    function updateDesignerPositions() {
+      const work = $("#canvasWork");
+      if (!work) return;
+      $all("[data-node]", work).forEach(el => {
+        const node = designerNodes.find(item => item.id === el.dataset.node);
+        if (node) {
+          el.style.left = `${node.x}px`;
+          el.style.top = `${node.y}px`;
+        }
+      });
+      $all("[data-line]", work).forEach(el => {
+        const line = designerLines.find(item => item.id === el.dataset.line);
+        if (line) el.setAttribute("style", getLineStyle(line));
+      });
+      rebuildLineLabelPlacements();
+      $all("[data-line-label]", work).forEach(el => {
+        const line = designerLines.find(item => item.id === el.dataset.lineLabel);
+        if (line) el.setAttribute("style", getLineLabelStyle(line));
+      });
+    }
+
+    function renderDesigner() {
+      const work = $("#canvasWork");
+      const canvas = $("#designerCanvas");
+      if (canvas) canvas.classList.toggle("connecting", connectMode);
+      rebuildLineLabelPlacements();
+      const lineMarkup = designerLines.map(line => {
+        const fromNode = designerNodes.find(item => item.id === line.from);
+        const toNode = designerNodes.find(item => item.id === line.to);
+        const label = `${fromNode?.title || line.from} → ${toNode?.title || line.to}`;
+        return `
+          <button type="button" class="line ${line.orange ? "orange" : ""} ${selectedLine === line.id ? "active" : ""}" data-line="${line.id}" style="${getLineStyle(line)}" title="${label}；${getLineRuleName(line)}"></button>
+        `;
+      }).join("");
+      const lineLabelMarkup = designerLines.map(line => `
+        <button type="button" class="line-label ${line.orange ? "orange" : ""} ${line.risk ? "risk" : ""} ${selectedLine === line.id ? "active" : ""}" data-line-label="${line.id}" style="${getLineLabelStyle(line)}" title="点击查看连接线绑定规则"><strong>${line.label || "连接线"}</strong><small>${getLineRuleName(line)}</small></button>
+      `).join("");
+      work.innerHTML = lineMarkup + lineLabelMarkup + designerNodes.map(node => `
+        <button class="flow-node node-${node.id} kind-${node.kind} ${node.branch ? "branch" : ""} ${connectSource === node.id ? "connect-source" : ""} ${selectedNode === node.id && !selectedLine ? "active" : ""}" data-node="${node.id}" style="left:${node.x}px;top:${node.y}px">
+          <span class="node-inner">
+            <span class="node-title"><span class="node-icon">${iconSvg(node.icon)}</span><strong>${node.title}</strong></span>
+            <small>${node.sub}</small>
+          </span>
+        </button>
+      `).join("");
+      $all("[data-line], [data-line-label]", work).forEach(line => {
+        line.addEventListener("click", event => {
+          event.stopPropagation();
+          selectedLine = line.dataset.line || line.dataset.lineLabel;
+          selectedNode = "";
+          connectMode = false;
+          connectSource = "";
+          renderDesigner();
+        });
+      });
+      $all("[data-node]", work).forEach(node => {
+        node.addEventListener("pointerdown", event => startNodeDrag(event, node.dataset.node));
+        node.addEventListener("click", event => {
+          event.stopPropagation();
+          if (suppressNodeClick) return;
+          handleDesignerNodeClick(node.dataset.node);
+        });
+      });
+      work.onpointerdown = event => {
+        if (event.target === work) startCanvasPan(event);
+      };
+      work.onclick = event => {
+        if (suppressCanvasClick) return;
+        if (event.target === work && connectMode) {
+          connectMode = false;
+          connectSource = "";
+          renderDesigner();
+          showToast("已退出连线模式。");
+        }
+      };
+      renderProperties();
+    }
+
+    function startCanvasPan(event) {
+      if (connectMode || event.button !== 0) return;
+      const work = $("#canvasWork");
+      const canvas = work?.closest(".canvas");
+      if (!work || !canvas || event.target !== work) return;
+      event.preventDefault();
+      draggingCanvas = {
+        startX: event.clientX,
+        startY: event.clientY,
+        scrollLeft: canvas.scrollLeft,
+        scrollTop: canvas.scrollTop,
+        moved: false
+      };
+      canvas.classList.add("panning");
+
+      const onMove = moveEvent => {
+        if (!draggingCanvas) return;
+        const dx = moveEvent.clientX - draggingCanvas.startX;
+        const dy = moveEvent.clientY - draggingCanvas.startY;
+        if (Math.abs(dx) + Math.abs(dy) > 4) draggingCanvas.moved = true;
+        canvas.scrollLeft = draggingCanvas.scrollLeft - dx;
+        canvas.scrollTop = draggingCanvas.scrollTop - dy;
+      };
+
+      const onUp = () => {
+        suppressCanvasClick = Boolean(draggingCanvas?.moved);
+        draggingCanvas = null;
+        canvas.classList.remove("panning");
+        document.removeEventListener("pointermove", onMove);
+        document.removeEventListener("pointerup", onUp);
+        if (suppressCanvasClick) {
+          setTimeout(() => {
+            suppressCanvasClick = false;
+          }, 0);
+        }
+      };
+
+      document.addEventListener("pointermove", onMove);
+      document.addEventListener("pointerup", onUp);
+    }
+
+    function handleDesignerNodeClick(nodeId) {
+      if (connectMode && !connectSource) {
+        connectSource = nodeId;
+        renderDesigner();
+        showToast("已选择连线起点，请点击目标节点。");
+        return;
+      }
+      if (connectMode && connectSource) {
+        if (connectSource === nodeId) {
+          showToast("目标节点不能和起点相同。");
+          return;
+        }
+        customLineSeq += 1;
+        const line = {
+          id: `line-custom-${customLineSeq}`,
+          from: connectSource,
+          to: nodeId,
+          label: "新连接线",
+          field: "",
+          operator: "",
+          value: "",
+          operationRule: "",
+          ruleName: "",
+          condition: "请在右侧配置上游输出字段和目标值。",
+          block: "请在右侧配置阻断条件。",
+          action: "请在右侧配置后置动作。"
+        };
+        designerLines.push(line);
+        selectedLine = line.id;
+        selectedNode = "";
+        connectMode = false;
+        connectSource = "";
+        renderDesigner();
+        showToast("已新增连接线，可在右侧配置状态判断。");
+        return;
+      }
+      selectedNode = nodeId;
+      selectedLine = "";
+      renderDesigner();
+    }
+
+    function startNodeDrag(event, nodeId) {
+      if (connectMode || event.button !== 0) return;
+      const node = designerNodes.find(item => item.id === nodeId);
+      const work = $("#canvasWork");
+      if (!node || !work) return;
+      event.preventDefault();
+      draggingNode = {
+        id: nodeId,
+        startX: event.clientX,
+        startY: event.clientY,
+        nodeX: node.x,
+        nodeY: node.y,
+        moved: false
+      };
+
+      const onMove = moveEvent => {
+        if (!draggingNode) return;
+        const dx = moveEvent.clientX - draggingNode.startX;
+        const dy = moveEvent.clientY - draggingNode.startY;
+        if (Math.abs(dx) + Math.abs(dy) > 4) draggingNode.moved = true;
+        const size = getNodeSize(node);
+        const maxX = Math.max(0, work.scrollWidth - size.width - 16);
+        const maxY = Math.max(0, work.scrollHeight - size.height - 16);
+        node.x = Math.min(maxX, Math.max(8, draggingNode.nodeX + dx));
+        node.y = Math.min(maxY, Math.max(8, draggingNode.nodeY + dy));
+        updateDesignerPositions();
+      };
+
+      const onUp = () => {
+        suppressNodeClick = Boolean(draggingNode?.moved);
+        draggingNode = null;
+        document.removeEventListener("pointermove", onMove);
+        document.removeEventListener("pointerup", onUp);
+        if (suppressNodeClick) {
+          selectedNode = nodeId;
+          selectedLine = "";
+          renderProperties();
+          showToast("节点位置已调整。");
+          setTimeout(() => {
+            suppressNodeClick = false;
+          }, 0);
+        }
+      };
+
+      document.addEventListener("pointermove", onMove);
+      document.addEventListener("pointerup", onUp);
+    }
+
+    function addDesignerComponent(componentName) {
+      if (componentName === "连接线") {
+        connectMode = true;
+        connectSource = "";
+        selectedLine = "";
+        renderDesigner();
+        showToast("已进入连线模式：先点起点节点，再点目标节点。");
+        return;
+      }
+
+      const uniqueChecks = {
+        "开始节点": "start",
+        "结束节点": "end"
+      };
+      if (uniqueChecks[componentName]) {
+        const existing = designerNodes.find(item => item.id === uniqueChecks[componentName]);
+        selectedNode = existing.id;
+        selectedLine = "";
+        renderDesigner();
+        showToast(`${componentName}已存在，已定位到当前节点。`);
+        return;
+      }
+
+      const componentMap = {
+        "菱形分支节点": { title: "结果分流", sub: "不判断 · 线规则分流", kind: "therapy", icon: "branch", branch: true },
+        "通用业务组件": { title: "业务组件", sub: "待配置推荐来源", kind: "rule", icon: "component" },
+        "诊疗规则组件": { title: "诊疗规则", sub: "待配置规则或智能体", kind: "rule", icon: "rule" },
+        "专项检查组件": { title: "专项检查", sub: "待配置检查推荐", kind: "exam", icon: "exam" },
+        "专科评估组件": { title: "专科评估", sub: "待配置评估内容", kind: "rule", icon: "assess" },
+        "治疗建议组件": { title: "治疗建议", sub: "待配置治疗推荐", kind: "therapy", icon: "therapy" },
+        "介入/手术围术期组件": { title: "介入/手术围术期", sub: "待配置围术期提醒", kind: "surgery", icon: "surgery" },
+        "医嘱质控组件": { title: "医嘱质控", sub: "待配置质控内容", kind: "qc", icon: "qc" },
+        "评估表单提醒组件": { title: "评估表单提醒", sub: "待配置表单提醒", kind: "record", icon: "record" },
+        "随访任务组件": { title: "随访任务", sub: "待配置随访任务", kind: "follow", icon: "follow" }
+      };
+      const template = componentMap[componentName];
+      if (!template) {
+        showToast(`暂未支持该组件：${componentName}`);
+        return;
+      }
+
+      customNodeSeq += 1;
+      const nodeId = `custom-${customNodeSeq}`;
+      const node = {
+        id: nodeId,
+        title: template.title,
+        sub: template.sub,
+        x: 80 + (customNodeSeq % 4) * 42,
+        y: 600 + (customNodeSeq % 3) * 22,
+        kind: template.kind,
+        icon: template.icon,
+        branch: Boolean(template.branch)
+      };
+      designerNodes.push(node);
+      nodeSourceSelections[nodeId] = template.branch ? "" : "未配置";
+      nodeRuleSelections[nodeId] = 0;
+      nodeOutputSelections[nodeId] = "status, recommended_items, missing_items, risk_flags";
+      nodeDisplaySelections[nodeId] = "";
+      nodeRemarks[nodeId] = `新增${componentName}，请维护节点名称、推荐实现方式和输出内容。`;
+      selectedNode = nodeId;
+      selectedLine = "";
+      renderDesigner();
+      showToast(`已新增组件：${componentName}，可拖动调整位置。`);
+    }
+
+    function renderProperties() {
+      if (selectedLine) {
+        renderLineProperties();
+        return;
+      }
+      const node = designerNodes.find(item => item.id === selectedNode) || designerNodes[0];
+      if (!selectedNode) selectedNode = node.id;
+      $("#selectedNodeBadge").textContent = node.title;
+      const selectedRuleId = nodeRuleSelections[selectedNode] || "";
+      const isStartEnd = ["start", "end"].includes(node.id);
+      const isBranch = Boolean(node.branch);
+      const canSelectRule = !isStartEnd && !isBranch;
+      const source = nodeSourceSelections[selectedNode] || (canSelectRule ? "未配置" : "");
+      const isDify = source === "Dify 智能体";
+      const isUnconfigured = source === "未配置";
+      const remark = nodeRemarks[selectedNode] || "";
+      const outputFields = nodeOutputSelections[selectedNode] || "status, recommended_items, missing_items, risk_flags";
+      const displayContent = nodeDisplaySelections[selectedNode] || "展示推荐结果、支持依据、缺失项和风险提示。";
+      const outgoingLines = designerLines.filter(line => line.from === node.id);
+
+      $("#propertyPanel").innerHTML = `
+        <div class="prop-item">
+          <strong>节点基础信息</strong>
+          <div style="display:grid;gap:8px">
+            <label class="mini muted">节点名称</label>
+            <input class="input" id="nodeTitleInput" value="${escapeAttr(node.title)}" style="width:100%">
+            <label class="mini muted">副标题/说明</label>
+            <input class="input" id="nodeSubInput" value="${escapeAttr(node.sub)}" style="width:100%">
+          </div>
+        </div>
+        ${isStartEnd ? `
+          <div class="prop-item">
+            <strong>业务备注</strong>
+            <textarea class="prop-textarea" id="nodeRemarkInput">${remark}</textarea>
+          </div>
+        ` : isBranch ? `
+          <div class="designer-inline-note">分支展示节点不调用规则，也不判断临床结果。上游业务组件先一次性输出状态，出口连接线分别绑定操作规则并读取该状态。</div>
+          <div class="prop-item">
+            <strong>分支备注</strong>
+            <textarea class="prop-textarea" id="nodeRemarkInput">${remark}</textarea>
+          </div>
+          <div class="prop-item">
+            <strong>出口连接线</strong>
+            <div style="display:grid;gap:7px">
+              ${outgoingLines.length ? outgoingLines.map(line => {
+                const target = designerNodes.find(item => item.id === line.to);
+                return `<button class="btn" data-select-outgoing-line="${line.id}">${line.label || "连接线"} · ${getLineRuleName(line)} → ${target?.title || line.to}</button>`;
+              }).join("") : `<span class="muted">暂无出口连接线。</span>`}
+            </div>
+          </div>
+        ` : `
+          <div class="prop-item">
+            <strong>推荐实现方式</strong>
+            <select class="select" id="nodeSourceSelect" style="width:100%">
+              ${["未配置", "规则推荐", "Dify 智能体"].map(item => `<option ${source === item ? "selected" : ""}>${item}</option>`).join("")}
+            </select>
+          </div>
+          ${isUnconfigured ? `
+          <div class="designer-inline-note">当前业务组件未绑定推荐实现方式。请选择“规则推荐”或“Dify 智能体”，再维护具体规则、输出字段和展示内容。</div>
+          ` : isDify ? `
+          <div class="prop-item">
+            <strong>调用 Dify 智能体</strong>
+            <select class="select" id="nodeAgentSelect" style="width:100%">
+              ${difyAgentOptions.map(agent => `<option ${((nodeAgentSelections[selectedNode] || difyAgentOptions[0]) === agent) ? "selected" : ""}>${agent}</option>`).join("")}
+            </select>
+            <span class="muted mini">智能体结果只作为本业务组件的推荐输出，不能直接决定下一个节点。</span>
+          </div>
+          ` : `
+          <div class="prop-item">
+            <strong>调用规则列表中的规则</strong>
+            <select class="select" id="nodeRuleSelect" style="width:100%">
+              <option value="" ${!selectedRuleId ? "selected" : ""}>不调用诊疗规则</option>
+              ${rules.map(rule => `<option value="${rule.id}" ${Number(selectedRuleId) === rule.id ? "selected" : ""}>规则${rule.id}：${rule.name}</option>`).join("")}
+            </select>
+            <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap">
+              <button class="btn primary" id="openRulePickerBtn">从规则列表选择</button>
+              <button class="btn" id="viewSelectedRuleBtn">查看规则详情</button>
+            </div>
+            ${selectedRuleId ? `
+            <div class="rule-usage">
+              模拟页：${getRuleUsage(selectedRuleId).simulation}<br>
+              连接线/状态字段：${getRuleUsage(selectedRuleId).connector}
+            </div>
+            ` : `<div class="rule-usage">未选择规则时，该业务组件只作为空配置节点，不输出推荐结果。</div>`}
+          </div>
+          `}
+          <div class="prop-item">
+            <strong>标准输出字段</strong>
+            <textarea class="prop-textarea" id="nodeOutputInput">${outputFields}</textarea>
+            <span class="muted mini">连接线只读取这些输出字段，不重复执行本节点的规则或智能体。</span>
+          </div>
+          <div class="prop-item">
+            <strong>推荐展示内容</strong>
+            <textarea class="prop-textarea" id="nodeDisplayInput">${displayContent}</textarea>
+          </div>
+          <div class="prop-item">
+            <strong>业务备注</strong>
+            <textarea class="prop-textarea" id="nodeRemarkInput">${remark}</textarea>
+          </div>
+        `}
+        <div class="prop-item">
+          <strong>操作</strong>
+          <button class="btn primary" id="applyNodeBtn">应用配置</button>
+          <button class="btn" id="startConnectFromNodeBtn">从此节点连线</button>
+          ${canSelectRule && !isUnconfigured ? `<button class="btn" id="testNodeBtn">测试节点</button>` : ""}
+        </div>
+      `;
+
+      if (canSelectRule) {
+        $("#nodeSourceSelect").addEventListener("change", event => {
+          nodeSourceSelections[selectedNode] = event.target.value;
+          if (event.target.value !== "规则推荐") {
+            nodeRuleSelections[selectedNode] = 0;
+          }
+          renderProperties();
+          showToast(`已切换推荐实现方式：${event.target.value}`);
+        });
+        const agentSelect = $("#nodeAgentSelect");
+        if (agentSelect) {
+          agentSelect.addEventListener("change", event => {
+            nodeAgentSelections[selectedNode] = event.target.value;
+            showToast(`已选择 Dify 智能体：${event.target.value}`);
+          });
+        }
+        const ruleSelect = $("#nodeRuleSelect");
+        if (ruleSelect) {
+          ruleSelect.addEventListener("change", event => {
+            nodeRuleSelections[selectedNode] = event.target.value ? Number(event.target.value) : 0;
+            const rule = rules.find(item => item.id === Number(event.target.value));
+            showToast(rule ? `已选择调用规则：${rule.name}` : "当前组件未选择规则。");
+          });
+          $("#openRulePickerBtn").addEventListener("click", () => openRulePicker(selectedNode));
+          $("#viewSelectedRuleBtn").addEventListener("click", () => {
+            if (!nodeRuleSelections[selectedNode]) {
+              showToast("请先选择要查看的规则。");
+              return;
+            }
+            openRuleDetail(nodeRuleSelections[selectedNode]);
+          });
+        }
+      }
+      if (isBranch) {
+        $all("[data-select-outgoing-line]").forEach(btn => {
+          btn.addEventListener("click", () => {
+            selectedLine = btn.dataset.selectOutgoingLine;
+            selectedNode = "";
+            renderDesigner();
+          });
+        });
+      }
+      $("#applyNodeBtn").addEventListener("click", () => {
+        const titleInput = $("#nodeTitleInput");
+        const subInput = $("#nodeSubInput");
+        if (titleInput) node.title = titleInput.value.trim() || node.title;
+        if (subInput) node.sub = subInput.value.trim() || node.sub;
+        const input = $("#nodeRemarkInput");
+        if (input) nodeRemarks[node.id] = input.value.trim();
+        const sourceInput = $("#nodeSourceSelect");
+        if (sourceInput) nodeSourceSelections[node.id] = sourceInput.value;
+        const agentInput = $("#nodeAgentSelect");
+        if (agentInput) nodeAgentSelections[node.id] = agentInput.value;
+        const outputInput = $("#nodeOutputInput");
+        if (outputInput) nodeOutputSelections[node.id] = outputInput.value.trim();
+        const displayInput = $("#nodeDisplayInput");
+        if (displayInput) nodeDisplaySelections[node.id] = displayInput.value.trim();
+        renderDesigner();
+        renderProperties();
+        showToast(isStartEnd ? "流程节点配置已保存。" : "节点配置已应用到当前画布。");
+      });
+      $("#startConnectFromNodeBtn").addEventListener("click", () => {
+        connectMode = true;
+        connectSource = node.id;
+        selectedLine = "";
+        renderDesigner();
+        showToast(`已以“${node.title}”为起点，请点击目标节点完成连线。`);
+      });
+      const testBtn = $("#testNodeBtn");
+      if (testBtn) testBtn.addEventListener("click", () => showToast(`已测试“${node.title}”，输出：${nodeOutputSelections[node.id] || "status"}`));
+    }
+
+    function renderLineProperties() {
+      const line = designerLines.find(item => item.id === selectedLine);
+      if (!line) {
+        selectedLine = "";
+        renderProperties();
+        return;
+      }
+      const fromNode = designerNodes.find(item => item.id === line.from);
+      const toNode = designerNodes.find(item => item.id === line.to);
+      $("#selectedNodeBadge").textContent = "连接线";
+      const selectedOperationRule = line.operationRule || "";
+      const selectedRule = getConnectionRule(selectedOperationRule);
+      const ruleCondition = selectedRule ? `${line.field || selectedRule.field} ${line.operator || selectedRule.operator} ${line.value || selectedRule.value}` : "未绑定操作规则";
+      $("#propertyPanel").innerHTML = `
+        <div class="prop-item">
+          <strong>画布标签</strong>
+          <input class="input" id="lineLabelInput" value="${line.label || ""}" style="width:100%">
+          <span class="muted mini">${fromNode?.title || line.from} → ${toNode?.title || line.to}</span>
+        </div>
+        <div class="prop-item">
+          <strong>绑定操作规则</strong>
+          <select class="select" id="lineRuleSelect" style="width:100%">
+            <option value="" ${!selectedOperationRule ? "selected" : ""}>未绑定操作规则</option>
+            ${connectionRuleOptions.map(item => `<option value="${item.id}" ${selectedOperationRule === item.id ? "selected" : ""}>${item.label}</option>`).join("")}
+          </select>
+          <span class="muted mini">新增连线默认未绑定，配置后才参与状态分支、阻断和跳转。</span>
+        </div>
+        <div class="prop-item">
+          <div class="line-rule-summary" id="lineRuleSummary">
+            <strong>规则判断</strong>
+            <div>${ruleCondition}</div>
+            <div class="mini muted">${selectedRule ? selectedRule.description : "请从下拉框选择连接线操作规则。"}</div>
+          </div>
+        </div>
+        <div class="prop-item">
+          <strong>通过后说明</strong>
+          <textarea class="prop-textarea" id="lineConditionInput">${line.condition || selectedRule?.description || ""}</textarea>
+        </div>
+        <div class="prop-item">
+          <strong>阻断提示</strong>
+          <textarea class="prop-textarea" id="lineBlockInput">${line.block || "不满足条件时停留当前节点，并提示需要补齐或人工确认的内容。"}</textarea>
+        </div>
+        <div class="prop-item">
+          <strong>命中后动作</strong>
+          <textarea class="prop-textarea" id="lineActionInput">${line.action || "进入目标节点。"}</textarea>
+        </div>
+        <div class="prop-item">
+          <strong>操作</strong>
+          <button class="btn primary" id="applyLineBtn">应用连接线配置</button>
+          <button class="btn" id="testLineBtn">测试连线</button>
+        </div>
+      `;
+      const syncRuleSummary = ruleId => {
+        const rule = getConnectionRule(ruleId);
+        const summary = $("#lineRuleSummary");
+        if (summary) {
+          summary.innerHTML = rule
+            ? `<strong>规则判断</strong><div>${rule.field} ${rule.operator} ${rule.value}</div><div class="mini muted">${rule.description}</div>`
+            : `<strong>规则判断</strong><div>未绑定操作规则</div><div class="mini muted">请从下拉框选择连接线操作规则。</div>`;
+        }
+      };
+      $("#lineRuleSelect").addEventListener("change", event => {
+        const rule = getConnectionRule(event.target.value);
+        if (rule) {
+          line.operationRule = rule.id;
+          line.ruleName = rule.label;
+          line.field = rule.field;
+          line.operator = rule.operator;
+          line.value = rule.value;
+          showToast(`已绑定连接线操作规则：${rule.label}`);
+        } else {
+          line.operationRule = "";
+          line.ruleName = "";
+          line.field = "";
+          line.operator = "";
+          line.value = "";
+          showToast("已清空连接线操作规则。");
+        }
+        syncRuleSummary(event.target.value);
+        renderDesigner();
+      });
+      $("#applyLineBtn").addEventListener("click", () => {
+        line.label = $("#lineLabelInput").value.trim() || "连接线";
+        const rule = getConnectionRule(line.operationRule);
+        line.ruleName = rule?.label || "";
+        if (rule) {
+          line.field = rule.field;
+          line.operator = rule.operator;
+          line.value = rule.value;
+        }
+        line.condition = $("#lineConditionInput").value.trim();
+        line.block = $("#lineBlockInput").value.trim();
+        line.action = $("#lineActionInput").value.trim();
+        renderDesigner();
+        showToast("连接线规则已应用。");
+      });
+      $("#testLineBtn").addEventListener("click", () => {
+        if (!line.operationRule) {
+          showToast("当前连接线未绑定操作规则，请先选择规则。");
+          return;
+        }
+        showToast(`已测试连接线：${line.field || "status"} ${line.operator || "="} ${line.value || ""}`);
+      });
+    }
+
+    function openRulePicker(nodeId) {
+      const node = designerNodes.find(item => item.id === nodeId);
+      $("#rulePickerNode").textContent = `当前节点：${node.title}，请选择该节点调用的规则。`;
+      $("#rulePickerList").innerHTML = rules.map(rule => `
+        <div class="rule-option">
+          <div>
+            <strong>规则${rule.id}：${rule.name}</strong>
+            <div class="rule-meta">
+              <span class="badge">${rule.stage}</span>
+              <span class="badge green">已启用</span>
+            </div>
+            <p>${rule.logic}</p>
+          </div>
+          <div class="rec-actions-stack">
+            <button class="btn primary" data-pick-rule="${rule.id}">选择</button>
+            <button class="btn" data-view-rule="${rule.id}">详情</button>
+          </div>
+        </div>
+      `).join("");
+      $all("[data-pick-rule]", $("#rulePickerList")).forEach(btn => {
+        btn.addEventListener("click", () => {
+          const ruleId = Number(btn.dataset.pickRule);
+          nodeRuleSelections[nodeId] = ruleId;
+          closeRulePicker();
+          renderProperties();
+          const rule = rules.find(item => item.id === ruleId);
+          showToast(`已为“${node.title}”选择：${rule.name}`);
+        });
+      });
+      $all("[data-view-rule]", $("#rulePickerList")).forEach(btn => {
+        btn.addEventListener("click", () => openRuleDetail(btn.dataset.viewRule));
+      });
+      $("#rulePickerModal").classList.add("open");
+    }
+
+    function closeRulePicker() {
+      $("#rulePickerModal").classList.remove("open");
+    }
+
+    function clearChangedFields() {
+      $all(".changed-field").forEach(el => {
+        el.classList.remove("changed-field", "report-change", "output-change");
+      });
+    }
+
+    function markChangedFields(ids, message, type = "") {
+      clearChangedFields();
+      ids.forEach(id => {
+        const el = $("#" + id);
+        if (el) {
+          el.classList.add("changed-field");
+          if (type) el.classList.add(type);
+        }
+      });
+      const hint = $("#changeHint");
+      if (hint) {
+        hint.innerHTML = `<span class="change-dot"></span>${message}`;
+      }
+    }
+
+    function clearChangeHint() {
+      clearChangedFields();
+      const hint = $("#changeHint");
+      if (hint) hint.innerHTML = `<span class="change-dot"></span>本步暂无新增或变化字段。`;
+    }
+
+    function bindFieldChangeTracking() {
+      const trackedFields = ["chiefComplaint", "presentHistory", "pastHistory", "personalHistory", "familyHistory", "allergyHistory", "physicalExam"];
+      trackedFields.forEach(id => {
+        const el = $("#" + id);
+        if (!el) return;
+        el.addEventListener("input", () => {
+          el.classList.add("changed-field");
+          const hint = $("#changeHint");
+          if (hint) hint.innerHTML = `<span class="change-dot"></span>手动修改：${el.previousElementSibling ? el.previousElementSibling.textContent : "患者信息"}字段已变化，可点击“重新生成推荐”观察右侧结果。`;
+        });
+      });
+    }
+
+    function setField(id, value) {
+      const el = $("#" + id);
+      if (el) el.value = value;
+    }
+
+    function loadCase() {
+      setField("patientName", "刘大虾");
+      setField("dept", "心血管内科");
+      setField("chiefComplaint", "胸痛2小时");
+      setField("presentHistory", "压榨样胸痛，休息无法缓解，伴大汗、恶心呕吐、左肩放射痛。");
+      setField("pastHistory", "高血压10年、2型糖尿病。");
+      setField("personalHistory", "长期吸烟。");
+      setField("familyHistory", "父亲50岁心梗病史。");
+      setField("allergyHistory", "无阿司匹林过敏，无造影剂过敏。");
+      setField("physicalExam", "血压160/95mmHg，心率98次/分，神志清楚，胸前区不适。");
+      setField("specialExam", "");
+      setField("assistantExam", "");
+      setField("mainDiagnosis", "");
+      setField("onsetTime", "2小时前");
+      setField("subDiagnosis1", "");
+      setField("subStatus1", "");
+      setField("subDiagnosis2", "");
+      setField("subStatus2", "");
+      setField("treatmentText", "");
+      setField("perioperativeText", "");
+      simulationState = "case";
+      assistFocus = "suspect";
+      renderRecommendations();
+      markChangedFields(["chiefComplaint", "presentHistory", "pastHistory", "personalHistory", "familyHistory", "allergyHistory", "physicalExam"], "本步新增/变化：主诉、现病史、既往史、个人史、家族史、过敏史、体格检查已加载。");
+      showToast("AMI 模拟病案已加载。");
+    }
+
+    function generateSuspects() {
+      if (!$("#chiefComplaint").value.trim()) loadCase();
+      simulationState = "suspect";
+      assistFocus = "suspect";
+      renderRecommendations();
+      showToast("已根据主诉、现病史和风险背景生成疑似疾病候选。");
+    }
+
+    function focusSuspectDisease() {
+      if (simulationState === "empty" || simulationState === "case") generateSuspects();
+      simulationState = "focused";
+      assistFocus = "exam";
+      renderRecommendations();
+      clearChangeHint();
+      showToast("医生已关注 ACS/AMI 疑似疾病，系统开始推荐初筛检查、检验和鉴别方向。");
+    }
+
+    function fillReports() {
+      if (simulationState === "empty") loadCase();
+      setField("specialExam", "心电图：Ⅱ、Ⅲ、aVF 导联 ST段抬高；提示下壁急性心肌梗死可能。");
+      setField("assistantExam", "心肌肌钙蛋白T：0.42 ng/mL，高于参考上限；肌酸激酶同工酶 CK-MB：升高；超声心动图：下壁室壁运动减弱；血肌酐：86 μmol/L；LDL-C：3.2 mmol/L。");
+      setField("mainDiagnosis", "急性 ST 段抬高型心肌梗死（STEMI）");
+      setField("subDiagnosis1", "主动脉夹层待排");
+      setField("subStatus1", "需完善主动脉 CTA");
+      setField("subDiagnosis2", "肺栓塞待排");
+      setField("subStatus2", "需完善肺动脉 CTA");
+      simulationState = "reports";
+      assistFocus = "diagnosis";
+      renderRecommendations();
+      markChangedFields(["specialExam", "assistantExam", "mainDiagnosis", "subDiagnosis1", "subStatus1", "subDiagnosis2", "subStatus2"], "本步新增/变化：心电图、检验结果、主诊断和鉴别诊断状态已回填。", "report-change");
+      showToast("检查检验结果已回填，已触发分型辅助诊断。");
+    }
+
+    function enterPathway() {
+      if (simulationState === "empty" || simulationState === "case" || simulationState === "suspect" || simulationState === "focused") fillReports();
+      setField("treatmentText", "已承接 AMI 专病流程，当前定位：再灌注评估阶段；建议优先评估急诊经皮冠状动脉介入治疗（PCI），同步评估抗血小板、抗凝、调脂治疗和出血风险。");
+      simulationState = "pathway";
+      assistFocus = "pathway";
+      renderRecommendations();
+      markChangedFields(["treatmentText"], "本步新增/变化：处置内容已生成专病流程、治疗方案和质控提醒。", "output-change");
+      showToast("已创建 AMI 专病流程候选，并进入再灌注评估阶段。");
+    }
+
+    function enterPerioperative() {
+      if (simulationState !== "pathway" && simulationState !== "periop") enterPathway();
+      setField("perioperativeText", "术前：补齐介入治疗术前评估、造影剂过敏史、肾功能、凝血功能、出血风险评估和知情同意记录；术中：关注罪犯血管、血流恢复、支架植入、低血压、恶性心律失常、无复流和术中出血；术后：观察穿刺点出血、再发胸痛、心律失常、心力衰竭、低血压和肾功能变化。");
+      simulationState = "periop";
+      assistFocus = "periop";
+      renderRecommendations();
+      markChangedFields(["perioperativeText"], "本步新增/变化：介入/手术围术期提醒已生成，包含术前、术中、术后和并发症观察。", "output-change");
+      showToast("已触发介入/手术围术期提醒。");
+    }
+
+    function setRecommendationTab(tabKey) {
+      recTab = tabKey;
+      $all("[data-rec-tab]").forEach(item => {
+        item.classList.toggle("active", item.dataset.recTab === tabKey);
+      });
+      renderRecommendations();
+    }
+
+    function nextSimulationStep() {
+      if (simulationState === "empty") {
+        loadCase();
+        simulationState = "suspect";
+        setRecommendationTab("assist");
+        showToast("第1步：已加载 AMI 模拟病案，并生成疑似疾病推荐。");
+        return;
+      }
+      if (simulationState === "case") {
+        setRecommendationTab("assist");
+        generateSuspects();
+        clearChangeHint();
+        showToast("第2步：已完成疑似疾病识别，当前仅展示候选，需关注后才推荐初筛检查。");
+        return;
+      }
+      if (simulationState === "suspect") {
+        setRecommendationTab("assist");
+        focusSuspectDisease();
+        showToast("第3步：已关注 ACS/AMI 疑似疾病，推荐初筛检查、检验和鉴别方向。");
+        return;
+      }
+      if (simulationState === "focused") {
+        setRecommendationTab("assist");
+        fillReports();
+        showToast("第4步：已回填心电图和肌钙蛋白结果，输出 STEMI 分型建议。");
+        return;
+      }
+      if (simulationState === "reports") {
+        enterPathway();
+        setRecommendationTab("assist");
+        showToast("第5步：已承接 AMI 专病流程，定位再灌注评估阶段。");
+        return;
+      }
+      if (simulationState === "pathway") {
+        enterPerioperative();
+        setRecommendationTab("assist");
+        showToast("第6步：已输出介入/手术围术期提醒和并发症观察。");
+        return;
+      }
+      setRecommendationTab("assist");
+      assistFocus = "periop";
+      renderRecommendations();
+      showToast("已在辅助诊疗总览中展示围术期、治疗质控和评估表单提醒。");
+    }
+
+    function rerunRecommendations() {
+      if (simulationState === "empty") {
+        loadCase();
+        generateSuspects();
+        showToast("已按默认 AMI 病案重新生成推荐。");
+        return;
+      }
+      if (simulationState === "case" || simulationState === "suspect") {
+        generateSuspects();
+        showToast("已按当前一诉五史重新生成疑似疾病候选。");
+        return;
+      }
+      if (simulationState === "focused") {
+        renderRecommendations();
+        showToast("已按已关注的疑似疾病重新生成初筛检查、检验和鉴别推荐。");
+        return;
+      }
+      if (simulationState === "reports") {
+        fillReports();
+        showToast("已按当前检查检验结果重新生成分型辅助诊断。");
+        return;
+      }
+      if (simulationState === "periop") {
+        enterPerioperative();
+        showToast("已按当前治疗动作重新生成围术期提醒。");
+        return;
+      }
+      enterPathway();
+      showToast("已按当前专病流程状态重新生成治疗建议和质控提醒。");
+    }
+
+    function resetSimulation() {
+      ["chiefComplaint","presentHistory","pastHistory","personalHistory","familyHistory","allergyHistory","physicalExam","specialExam","assistantExam","mainDiagnosis","onsetTime","subDiagnosis1","subStatus1","subDiagnosis2","subStatus2","treatmentText","perioperativeText"].forEach(id => setField(id, ""));
+      simulationState = "empty";
+      assistFocus = "suspect";
+      recTab = "assist";
+      $all("[data-rec-tab]").forEach(item => {
+        item.classList.toggle("active", item.dataset.recTab === "assist");
+      });
+      renderRecommendations();
+      clearChangeHint();
+      showToast("模拟页面已初始化。");
+    }
+
+    function stageClass(index) {
+      const stateIndex = { empty: 0, case: 0, suspect: 0, focused: 1, reports: 2, pathway: 5, periop: 6 }[simulationState] ?? 0;
+      if (index < stateIndex) return "done";
+      if (index === stateIndex) return "active";
+      return "";
+    }
+
+    function renderStages() {
+      const hasCandidate = ["suspect", "focused", "reports", "pathway", "periop"].includes(simulationState);
+      const hasFocused = ["focused", "reports", "pathway", "periop"].includes(simulationState);
+      const hasReports = ["reports", "pathway", "periop"].includes(simulationState);
+      const hasPathway = ["pathway", "periop"].includes(simulationState);
+      const hasPeriop = simulationState === "periop";
+      const labels = [
+        ["疑似识别", hasFocused ? "已关注" : hasCandidate ? "候选已命中" : "待生成"],
+        ["初筛检查", hasFocused ? "已推荐" : hasCandidate ? "待关注" : "待推荐"],
+        ["分型确诊", hasReports ? "STEMI" : "待报告"],
+        ["流程承接", hasPathway ? "已承接" : "待确认"],
+        ["专项评估", hasPathway ? "再灌注" : "待执行"],
+        ["治疗方案", hasPathway ? "已输出" : "待输出"],
+        ["围术期质控", hasPeriop ? "已输出" : hasPathway ? "待触发" : "待输出"]
+      ];
+      $("#stageBoard").innerHTML = labels.map((item, index) => `
+        <div class="stage-pill ${stageClass(index)}">${item[0]}<br><span class="mini">${item[1]}</span></div>
+      `).join("");
+    }
+
+    function section(title, count, body, open = true) {
+      return `
+        <section class="rec-section ${open ? "open" : ""}">
+          <div class="rec-head">
+            <div class="rec-title"><span class="ghost-icon">项</span>${title}<span class="badge orange">${count}</span></div>
+            <button class="btn link" data-toggle-section>⌃</button>
+          </div>
+          <div class="rec-body">${body}</div>
+        </section>
+      `;
+    }
+
+    function recItem(title, tags, detail, opts = {}) {
+      return `
+        <div class="rec-item ${opts.white ? "white" : ""} ${opts.warn ? "warn" : ""}">
+          ${opts.switch ? `<button class="switch ${opts.selected ? "on" : ""}" data-rec-switch aria-label="选择${title}"></button>` : `<span class="score">${opts.score || "+"}</span>`}
+          <div>
+            <strong>${title}</strong>
+            <div class="tag-row">${tags.map(tag => `<span class="tag ${tag.type || ""}">${tag.text || tag}</span>`).join("")}</div>
+            ${opts.rules?.length ? `<div class="tag-row">${renderRuleChips(opts.rules)}</div>` : ""}
+          </div>
+          <div class="rec-actions-stack">
+            ${opts.action ? `<button class="btn primary" data-rec-action="${opts.action}">${opts.actionLabel || "执行"}</button>` : ""}
+            <button class="btn link" data-toggle-rec>展开</button>
+          </div>
+          <div class="rec-detail">${detail}</div>
+        </div>
+      `;
+    }
+
+    function renderAssistTab() {
+      if (simulationState === "empty") {
+        return `<div class="empty-state" style="margin:14px">请先点击“加载病案”或“下一步模拟”，模拟 AMI 辅助诊疗完整链路。</div>`;
+      }
+      if (simulationState === "case") {
+        return `<div class="empty-state" style="margin:14px">已加载刘大虾的 AMI 模拟病案，点击“下一步模拟”或“重新生成推荐”后，右侧将生成疑似疾病候选。</div>`;
+      }
+      const hasFocused = ["focused", "reports", "pathway", "periop"].includes(simulationState);
+      const hasReports = ["reports", "pathway", "periop"].includes(simulationState);
+      const inPathway = ["pathway", "periop"].includes(simulationState);
+      const hasPeriop = simulationState === "periop";
+
+      const suspect = section("疑似疾病", simulationState === "case" ? 0 : 2, simulationState === "case" ? `
+        <div class="empty-state">已加载病案，点击“下一步模拟”或“重新生成推荐”生成疑似疾病。</div>
+      ` : `
+        ${recItem("急性冠脉综合征（ACS）/急性心肌梗死（AMI）疑似", [
+          { text: hasFocused ? "已关注" : "候选未关注", type: hasFocused ? "green" : "" }, { text: "胸痛2小时", type: "blue" }, { text: "大汗", type: "blue" }, { text: "恶心呕吐", type: "blue" }, { text: "高血压", type: "" }, { text: "糖尿病", type: "" }
+        ], "命中规则一：主诉和现病史包含缺血性胸痛相关描述，既往史中的高血压、糖尿病只作为风险背景加权，不单独触发 AMI。选中前只是候选提示，不驱动检查推荐；关注后才会触发初筛检查、检验和鉴别方向。", hasFocused ? { score: 1, switch: true, selected: true, rules: [1] } : { score: 1, action: "focusSuspect", actionLabel: "关注并继续", rules: [1] })}
+        ${recItem("不稳定型心绞痛待排", [
+          { text: "候选未关注", type: "" }, { text: "胸痛", type: "blue" }, { text: "需肌钙蛋白判断", type: "" }
+        ], "当前阶段只提示待排方向，需等待心电图和心肌肌钙蛋白结果回填后再进行分型。", { score: 2, switch: true, rules: [1, 4] })}
+      `);
+
+      const exam = hasFocused ? section("初筛检查推荐", 4, `
+        ${recItem("心电图", [{ text: hasReports ? "已回填 ST段抬高" : "待回填", type: hasReports ? "red" : "" }, { text: "判断 ST 段改变", type: "blue" }, { text: "初筛必备" }], "命中规则二：关注 ACS/AMI 疑似疾病后推荐心电图。报告回填后，如果检查所见包含 ST段抬高，将触发分型辅助诊断。", { white: true, rules: [2, 4] })}
+        ${recItem("超声心动图", [{ text: hasReports ? "已回填室壁运动减弱" : "待回填", type: hasReports ? "red" : "" }, { text: "室壁运动异常", type: "blue" }], "用于判断室壁运动异常、心功能情况，进入专病流程后也可作为专项检查质控项。", { white: true, rules: [2, 8] })}
+        ${recItem("主动脉 CT 血管成像（CTA）", [{ text: "鉴别主动脉夹层", type: "" }], "命中规则三：胸痛患者未见主动脉夹层排除依据时，提示完善主动脉 CTA。", { white: true, rules: [3] })}
+        ${recItem("肺动脉 CT 血管成像（CTA）", [{ text: "鉴别肺栓塞", type: "" }], "命中规则三：胸痛患者未见肺栓塞排除依据时，提示完善肺动脉 CTA。", { white: true, rules: [3] })}
+      `) : "";
+
+      const lab = hasFocused ? section("初筛检验推荐", 4, `
+        ${recItem("心肌肌钙蛋白", [{ text: "心肌损伤标志物", type: "blue" }, { text: hasReports ? "已升高" : "待回填", type: hasReports ? "red" : "" }], "命中规则二和规则四：结果高于参考范围上限或连续两次动态升高，是 AMI 分型辅助诊断的关键依据。", { white: true, rules: [2, 4] })}
+        ${recItem("肌酸激酶同工酶 CK-MB", [{ text: "心肌损伤辅助依据", type: "blue" }], "用于补充心肌损伤判断，与肌钙蛋白共同作为初筛检验推荐。", { white: true, rules: [2] })}
+        ${recItem("血肌酐", [{ text: "介入与造影风险", type: "" }], "进入再灌注评估后读取血肌酐，血肌酐升高时输出造影相关风险提示。", { white: true, rules: [6, 9] })}
+        ${recItem("血脂 LDL-C", [{ text: "调脂治疗依据", type: "" }], "进入治疗建议阶段后，如果 LDL-C 已回填，展示结果并关联调脂治疗评估；未回填时提示缺少 LDL-C 依据。", { white: true, rules: [7] })}
+      `) : "";
+
+      const diagnosis = hasReports ? section("分型辅助诊断", 1, `
+        ${recItem("支持 AMI，倾向 STEMI", [
+          { text: "心电图 ST段抬高", type: "red" }, { text: "肌钙蛋白升高", type: "red" }, { text: "胸痛2小时", type: "blue" }
+        ], "命中规则四：心电图检查所见或诊断结论包含 ST段抬高，且心肌肌钙蛋白高于参考范围上限，输出 STEMI 分型建议。此分型不在一开始录入主诉时直接给出。", { score: 1, switch: true, selected: true, rules: [4] })}
+      `) : "";
+
+      const diff = hasFocused ? section("鉴别诊断提示", 3, `
+        ${recItem("主动脉夹层", [{ text: "需主动脉 CTA", type: "" }], "胸痛症状相似，未见主动脉 CTA 排除依据时提示鉴别。", { white: true, rules: [3] })}
+        ${recItem("肺栓塞", [{ text: "需肺动脉 CTA", type: "" }], "胸痛或呼吸困难患者未见肺动脉 CTA 排除依据时提示鉴别。", { white: true, rules: [3] })}
+        ${recItem("急性心包炎", [{ text: "看心电图 PR段/ST段", type: "" }], "心电图出现弥漫性 ST段抬高或 PR段压低时提示鉴别急性心包炎。", { white: true, rules: [3] })}
+      `) : "";
+
+      const pathway = (inPathway || hasReports) ? section("流程承接与专项评估", inPathway ? 5 : 1, inPathway ? `
+        ${recItem("AMI 专病流程：再灌注评估阶段", [{ text: "已承接", type: "green" }, { text: "医生已关注 STEMI", type: "blue" }], "命中规则五：STEMI 辅助诊断已确认，心电图 ST段抬高、肌钙蛋白升高、胸痛开始时间明确，系统创建 AMI 专病流程候选并定位再灌注评估阶段。", { score: 1, switch: true, selected: true, rules: [5, 6] })}
+        ${recItem("冠状动脉造影/介入治疗术前评估", [{ text: "PCI 相关", type: "blue" }], "用于急诊经皮冠状动脉介入治疗（PCI）评估，不自动生成医嘱。", { white: true, rules: [6, 9] })}
+        ${recItem("出血风险评估", [{ text: "抗凝/抗血小板前置", type: "" }], "存在活动性出血或近期脑出血时，输出风险提示并限制相关建议。", { white: true, rules: [6, 8] })}
+        ${recItem("肾功能评估：血肌酐", [{ text: "造影剂风险", type: "" }], "血肌酐升高或造影剂过敏时，提示介入相关风险。", { white: true, rules: [6, 9] })}
+        ${recItem("心功能评估：超声心动图", [{ text: "室壁运动/心功能", type: "" }], "用于评估病情严重程度和后续治疗风险。", { white: true, rules: [8] })}
+      ` : hasReports ? `
+        ${recItem("创建 AMI 专病流程候选", [{ text: "STEMI 已支持", type: "green" }, { text: "待医生确认", type: "" }], "检查检验已支持 STEMI，可点击下一步或顶部“进入专病流程”承接后续专项评估、治疗建议和质控提醒。", { score: 1, action: "enterPathway", actionLabel: "进入流程", rules: [5] })}
+      ` : "", hasReports || inPathway) : "";
+
+      const therapyQc = inPathway ? section("治疗方案与质控提醒", 9, `
+        ${recItem("急诊经皮冠状动脉介入治疗（PCI）评估", [{ text: "PCI可及≤90分钟", type: "green" }, { text: "非自动医嘱", type: "" }], "命中规则七：分型为 STEMI，PCI 可及时间小于等于 90 分钟，活动性出血为否，近期脑出血史为否，推荐急诊 PCI 评估。", { white: true, rules: [7] })}
+        ${recItem("静脉溶栓治疗评估", [{ text: "PCI>90分钟时启用", type: "" }], "当前病例 PCI 可及时间满足优先 PCI，静脉溶栓作为备选评估项展示。", { white: true, rules: [7] })}
+        ${recItem("抗血小板治疗评估", [{ text: "阿司匹林/氯吡格雷/替格瑞洛", type: "blue" }], "无阿司匹林过敏且无活动性出血时，输出抗血小板治疗评估，可关联对应药物医嘱类型。", { white: true, rules: [7] })}
+        ${recItem("抗凝治疗评估", [{ text: "普通肝素/低分子肝素", type: "blue" }], "出血风险未标记为高危且无活动性出血时，输出抗凝治疗评估。", { white: true, rules: [7] })}
+        ${recItem("调脂治疗评估", [{ text: "LDL-C 3.2 mmol/L", type: "red" }], "LDL-C 已回填，系统展示检验结果并关联他汀类调脂药物医嘱建议。", { white: true, rules: [7] })}
+        ${recItem("关键诊断依据完整性", [{ text: "心电图已回填", type: "green" }, { text: "肌钙蛋白已回填", type: "green" }], "命中规则八：心电图和心肌肌钙蛋白已回填，当前不提示关键诊断依据缺失。", { white: true, rules: [8] })}
+        ${recItem("抗凝/抗血小板用药风险", [{ text: "活动性出血：否", type: "green" }], "如活动性出血记录为“是”，系统将在医嘱质控中提示用药风险。", { white: true, rules: [8] })}
+        ${recItem("再灌注治疗评估表", [{ text: "推荐补齐", type: "red" }], "进入再灌注评估阶段后，未填写再灌注治疗评估表时提醒补齐，不生成书写内容。", { warn: true, rules: [8] })}
+        ${recItem("介入治疗术前评估表", [{ text: "推荐补齐", type: "red" }], "进入急诊 PCI 评估前，提示补齐介入治疗术前评估表。", { warn: true, rules: [8, 9] })}
+      `) : "";
+
+      const periop = hasPeriop ? section("介入/手术围术期提醒", 8, `
+        ${recItem("术前评估：介入治疗术前评估表", [{ text: "推荐补齐", type: "red" }, { text: "规则九", type: "blue" }], "治疗建议已触发急诊经皮冠状动脉介入治疗（PCI）评估，系统检查介入治疗术前评估表是否完成，缺失时提醒补齐。", { warn: true, rules: [9] })}
+        ${recItem("术前安全：造影剂过敏史与肾功能", [{ text: "造影剂过敏：无", type: "green" }, { text: "血肌酐 86 μmol/L", type: "green" }], "命中规则九：术前读取造影剂过敏史和血肌酐；若严重过敏或肾功能明显异常，强提示介入相关风险。", { white: true, rules: [9] })}
+        ${recItem("术前安全：凝血功能、血常规、出血风险", [{ text: "需核对", type: "red" }], "命中规则九：急诊 PCI 前需核对凝血功能、血常规、活动性出血记录和出血风险评估。", { warn: true, rules: [9] })}
+        ${recItem("术前表单：介入治疗术前评估表", [{ text: "推荐补齐", type: "red" }], "进入 PCI 评估后，系统提醒补齐介入治疗术前评估表，只展示表单完成状态。", { warn: true, rules: [8, 9] })}
+        ${recItem("术中关注：罪犯血管、血流恢复、支架植入", [{ text: "规则十", type: "blue" }], "进入 PCI 相关节点时，提示记录冠状动脉造影结果、罪犯血管、TIMI 血流恢复情况和支架植入情况。", { white: true, rules: [10] })}
+        ${recItem("术中并发症：低血压、恶性心律失常、无复流、出血", [{ text: "持续观察", type: "" }], "规则十用于提示术中并发症观察事项，并检查术中关注事项评估表是否完成。", { white: true, rules: [10] })}
+        ${recItem("术后观察：穿刺点出血、再发胸痛、心律失常", [{ text: "规则十一", type: "blue" }, { text: "需观察", type: "red" }], "完成 PCI 或冠状动脉造影后，读取穿刺点观察、心电监测、心肌标志物和肾功能复查结果。", { warn: true, rules: [11] })}
+        ${recItem("术后评估表：并发症风险评估", [{ text: "推荐补齐", type: "red" }], "若出现血肌酐升高、低血压、心衰等信息，系统提示并发症风险，并提醒填写 PCI 术后风险评估表。", { warn: true, rules: [8, 11] })}
+      `) : "";
+
+      const sectionMap = {
+        suspect: [suspect, exam, lab, diff, diagnosis, pathway, therapyQc, periop],
+        exam: [exam, lab, diff, suspect, diagnosis, pathway, therapyQc, periop],
+        diagnosis: [diagnosis, suspect, exam, lab, diff, pathway, therapyQc, periop],
+        pathway: [pathway, diagnosis, therapyQc, suspect, exam, lab, diff, periop],
+        therapy: [therapyQc, pathway, diagnosis, suspect, exam, lab, diff, periop],
+        periop: [periop, therapyQc, pathway, diagnosis, suspect, exam, lab, diff]
+      };
+      return (sectionMap[assistFocus] || sectionMap.suspect).filter(Boolean).join("");
+    }
+
+    function renderPathwayTab() {
+      const body = ["pathway", "periop"].includes(simulationState) ? `
+        ${section("专病流程", 1, `
+          ${recItem("AMI 专病流程：再灌注评估阶段", [{ text: "已承接", type: "green" }, { text: "医生已关注 STEMI", type: "blue" }], "命中规则五：STEMI 辅助诊断已确认，心电图 ST段抬高、肌钙蛋白升高、胸痛开始时间明确，系统创建 AMI 专病流程候选并定位再灌注评估阶段。", { score: 1, switch: true, selected: true, rules: [5, 6] })}
+        `)}
+        ${section("流程内专项检查", 4, `
+          ${recItem("冠状动脉造影/介入治疗术前评估", [{ text: "PCI 相关", type: "blue" }], "用于急诊经皮冠状动脉介入治疗（PCI）评估，不自动生成医嘱。", { white: true, rules: [6, 9] })}
+          ${recItem("出血风险评估", [{ text: "抗凝/抗血小板前置", type: "" }], "存在活动性出血或近期脑出血时，输出风险提示并限制相关建议。", { white: true, rules: [6, 8] })}
+          ${recItem("肾功能评估：血肌酐", [{ text: "造影剂风险", type: "" }], "血肌酐升高或造影剂过敏时，提示介入相关风险。", { white: true, rules: [6, 9] })}
+          ${recItem("心功能评估：超声心动图", [{ text: "室壁运动/心功能", type: "" }], "用于评估病情严重程度和后续治疗风险。", { white: true, rules: [8] })}
+        `)}
+      ` : `<div class="empty-state" style="margin:14px">请先完成检查检验回填并点击“进入专病流程”。</div>`;
+      return body;
+    }
+
+    function renderQcTab() {
+      if (!["pathway", "periop"].includes(simulationState)) {
+        return `<div class="empty-state" style="margin:14px">患者尚未进入 AMI 专病流程，暂不展示专病质控闭环。</div>`;
+      }
+      return `
+        ${section("治疗方案", 5, `
+          ${recItem("急诊经皮冠状动脉介入治疗（PCI）评估", [{ text: "PCI可及≤90分钟", type: "green" }, { text: "非自动医嘱", type: "" }], "命中规则七：分型为 STEMI，PCI 可及时间小于等于 90 分钟，活动性出血为否，近期脑出血史为否，推荐急诊 PCI 评估。", { white: true, rules: [7] })}
+          ${recItem("静脉溶栓治疗评估", [{ text: "PCI>90分钟时启用", type: "" }], "当前病例 PCI 可及时间满足优先 PCI，静脉溶栓作为备选评估项展示。", { white: true, rules: [7] })}
+          ${recItem("抗血小板治疗评估", [{ text: "阿司匹林/氯吡格雷/替格瑞洛", type: "blue" }], "无阿司匹林过敏且无活动性出血时，输出抗血小板治疗评估，可关联对应药物医嘱类型。", { white: true, rules: [7] })}
+          ${recItem("抗凝治疗评估", [{ text: "普通肝素/低分子肝素", type: "blue" }], "出血风险未标记为高危且无活动性出血时，输出抗凝治疗评估。", { white: true, rules: [7] })}
+          ${recItem("调脂治疗评估", [{ text: "LDL-C 3.2 mmol/L", type: "red" }], "LDL-C 已回填，系统展示检验结果并关联他汀类调脂药物医嘱建议。", { white: true, rules: [7] })}
+        `)}
+        ${section("医嘱质控与评估表单提醒", 4, `
+          ${recItem("关键诊断依据完整性", [{ text: "心电图已回填", type: "green" }, { text: "肌钙蛋白已回填", type: "green" }], "命中规则八：心电图和心肌肌钙蛋白已回填，当前不提示关键诊断依据缺失。", { white: true, rules: [8] })}
+          ${recItem("抗凝/抗血小板用药风险", [{ text: "活动性出血：否", type: "green" }], "如活动性出血记录为“是”，系统将在医嘱质控中提示用药风险。", { white: true, rules: [8] })}
+          ${recItem("再灌注治疗评估表", [{ text: "推荐补齐", type: "red" }], "进入再灌注评估阶段后，未填写再灌注治疗评估表时提醒补齐。", { warn: true, rules: [8] })}
+          ${recItem("介入治疗术前评估表", [{ text: "推荐补齐", type: "red" }], "进入急诊 PCI 评估前，提示补齐介入治疗术前评估表。", { warn: true, rules: [8, 9] })}
+        `)}
+      `;
+    }
+
+    function renderSearchTab() {
+      return `
+        ${section("知识检索", 5, `
+          ${recItem("急性心肌梗死（AMI）", [{ text: "Disease", type: "blue" }, { text: "关联症状/检查/诊断标准", type: "" }], "可查询胸痛、出汗、恶心呕吐等症状关系，以及心电图、心肌肌钙蛋白、CK-MB 等检查检验关系。", { white: true, rules: [1, 2, 4] })}
+          ${recItem("STEMI", [{ text: "DiseaseClassification", type: "blue" }], "在报告回填后，依据 ST段抬高和肌钙蛋白升高进行分型辅助诊断。", { white: true, rules: [4, 5] })}
+          ${recItem("心电图", [{ text: "Exam", type: "blue" }, { text: "ST段抬高", type: "red" }], "用于判断 ST 段改变，是初筛检查和分型诊断的核心依据。", { white: true, rules: [2, 4] })}
+          ${recItem("心肌肌钙蛋白", [{ text: "LabTest", type: "blue" }, { text: "动态升高", type: "red" }], "用于判断心肌损伤标志物升高和动态变化。", { white: true, rules: [2, 4] })}
+          ${recItem("经皮冠状动脉介入治疗（PCI）", [{ text: "Procedure", type: "blue" }, { text: "围术期触发对象", type: "green" }], "治疗建议命中 PCI 评估后，围术期规则读取该操作实体，展示术前评估、术中关注、术后观察和并发症提醒。", { white: true, rules: [7, 9, 10, 11] })}
+        `)}
+      `;
+    }
+
+    function renderRecommendations() {
+      const panel = $("#recommendPanel");
+      if (!panel) return;
+      try {
+        renderStages();
+        const html = recTab === "search" ? renderSearchTab() : renderAssistTab();
+        panel.innerHTML = html && html.trim()
+          ? html
+          : `<div class="empty-state" style="margin:14px">当前阶段暂无推荐内容。状态：${simulationState}</div>`;
+      } catch (error) {
+        panel.innerHTML = `<div class="empty-state" style="margin:14px;color:#c43636">辅助诊疗推荐渲染异常：${error.message}<br>当前状态：${simulationState}</div>`;
+        console.error(error);
+        return;
+      }
+
+      $all("[data-toggle-section]", panel).forEach(btn => {
+        btn.addEventListener("click", () => {
+          const sectionEl = btn.closest(".rec-section");
+          sectionEl.classList.toggle("open");
+          btn.textContent = sectionEl.classList.contains("open") ? "⌃" : "⌄";
+        });
+      });
+      $all("[data-toggle-rec]", panel).forEach(btn => {
+        btn.addEventListener("click", () => {
+          const item = btn.closest(".rec-item");
+          item.classList.toggle("open");
+          btn.textContent = item.classList.contains("open") ? "收起" : "展开";
+        });
+      });
+      $all("[data-rec-switch]", panel).forEach(btn => {
+        btn.addEventListener("click", () => {
+          btn.classList.toggle("on");
+          showToast(btn.classList.contains("on") ? "已关注该推荐项" : "已取消关注该推荐项");
+        });
+      });
+      $all("[data-rec-action]", panel).forEach(btn => {
+        btn.addEventListener("click", () => {
+          if (btn.dataset.recAction === "focusSuspect") {
+            focusSuspectDisease();
+            return;
+          }
+          if (btn.dataset.recAction === "enterPathway") {
+            enterPathway();
+          }
+        });
+      });
+      $all("[data-open-rule-detail]", panel).forEach(btn => {
+        btn.addEventListener("click", event => {
+          event.stopPropagation();
+          openRuleDetail(btn.dataset.openRuleDetail);
+        });
+      });
+    }
+
+    function bindEvents() {
+      bindFieldChangeTracking();
+      $all("[data-page-link]").forEach(btn => {
+        btn.addEventListener("click", () => showPage(btn.dataset.pageLink));
+      });
+      $("#ruleSearch").addEventListener("input", renderRules);
+      $("#simulateAllRules").addEventListener("click", () => {
+        showPage("simulation");
+        loadCase();
+        generateSuspects();
+      });
+      $("#newFlowBtn").addEventListener("click", () => showToast("新增专病流程弹窗已模拟打开，可维护专病名称、适用科室、版本和启用状态。"));
+      $("#saveDesignerBtn").addEventListener("click", () => showToast("设计器配置已保存。"));
+      $("#closePreviewBtn").addEventListener("click", closeFlowPreview);
+      $("#flowPreviewDrawer").addEventListener("click", event => {
+        if (event.target.id === "flowPreviewDrawer") closeFlowPreview();
+      });
+      $("#closeRuleDetailBtn").addEventListener("click", closeRuleDetail);
+      $("#ruleDetailDrawer").addEventListener("click", event => {
+        if (event.target.id === "ruleDetailDrawer") closeRuleDetail();
+      });
+      $("#closeRulePickerBtn").addEventListener("click", closeRulePicker);
+      $("#rulePickerModal").addEventListener("click", event => {
+        if (event.target.id === "rulePickerModal") closeRulePicker();
+      });
+      $all("[data-component]").forEach(btn => {
+        btn.addEventListener("click", () => addDesignerComponent(btn.dataset.component));
+      });
+      $("#loadCaseBtn").addEventListener("click", loadCase);
+      $("#choosePatientBtn").addEventListener("click", () => {
+        loadCase();
+        showToast("已选择患者刘大虾，并加载 AMI 模拟病案。");
+      });
+      $("#saveCaseBtn").addEventListener("click", () => showToast("当前病案已保存。"));
+      $("#nextStepBtn").addEventListener("click", nextSimulationStep);
+      $("#replayBtn").addEventListener("click", rerunRecommendations);
+      $("#clearBtn").addEventListener("click", resetSimulation);
+      $("#initBtn").addEventListener("click", resetSimulation);
+      $("#collapseBtn").addEventListener("click", () => showToast("菜单折叠动作已模拟。"));
+      $all("[data-rec-tab]").forEach(tab => {
+        tab.addEventListener("click", () => {
+          setRecommendationTab(tab.dataset.recTab);
+        });
+      });
+
+      const toolbar = $(".toolbar");
+      const reportBtn = document.createElement("button");
+      reportBtn.className = "btn warning";
+      reportBtn.id = "fillReportsBtn";
+      reportBtn.textContent = "回填报告";
+      reportBtn.addEventListener("click", fillReports);
+      toolbar.appendChild(reportBtn);
+
+      const pathBtn = document.createElement("button");
+      pathBtn.className = "btn success";
+      pathBtn.id = "enterPathwayBtn";
+      pathBtn.textContent = "进入专病流程";
+      pathBtn.addEventListener("click", enterPathway);
+      toolbar.appendChild(pathBtn);
+
+      const periopBtn = document.createElement("button");
+      periopBtn.className = "btn success";
+      periopBtn.id = "enterPeriopBtn";
+      periopBtn.textContent = "触发围术期";
+      periopBtn.addEventListener("click", enterPerioperative);
+      toolbar.appendChild(periopBtn);
+    }
+
+    renderStaticIcons();
+    bindEvents();
+    renderRules();
+    renderFlows();
+    renderDesigner();
+    renderRecommendations();
+    const initialPage = new URLSearchParams(window.location.search).get("page");
+    if (["home", "rules", "framework", "designer", "simulation"].includes(initialPage)) {
+      showPage(initialPage);
+    }
+  </script>
+</body>
+</html>

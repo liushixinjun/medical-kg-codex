@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-07-16 20:59:33",
+  "total_recommendations": 567,
+  "by_qualification": {
+    "已正式可用": 2,
+    "结构完整但字段不足/待审核": 557,
+    "阻断：结构不完整": 8
+  },
+  "by_status": {
+    "clinical_ready|approved|formal|true": 26,
+    "clinical_batch_signed_off|approved|test_recommendation|false": 31,
+    "pending_clinical_use_effect_review|approved_for_sample||false": 290,
+    "pending_clinical_use_effect_review|ai_prechecked|test_recommendation|false": 220
+  },
+  "gap_counts": {
+    "缺触发条件/规则逻辑": 52,
+    "缺患者字段": 52,
+    "缺推荐原文/摘要": 52,
+    "缺推荐等级": 7,
+    "缺证据等级": 7,
+    "缺诊疗阶段": 8,
+    "缺关联疾病": 8,
+    "缺临床规则": 2,
+    "缺适用人群": 2,
+    "缺排除/禁忌": 2
+  }
+}
