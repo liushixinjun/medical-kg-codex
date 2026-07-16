@@ -1,0 +1,980 @@
+[
+  {
+    "rec_eid": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42952",
+    "rec_props": {
+      "exclusion_criteria": "存在禁忌证、资料不足、替代诊断更可能或患者状态不稳定时，需临床医师复核。",
+      "evidence_level": "专家共识/教材证据",
+      "scope_type": "disease_category",
+      "schema_version": "V1.11",
+      "entityType": "RecommendationStatement",
+      "type_label": "RecommendationStatement",
+      "primary_label": "KGNode",
+      "id": "KG_REC_HT_CKD_TX_PLAN_CARD_BDE62A3BE028",
+      "applicable_population": "慢性肾脏病合并高血压患者中符合该推荐适用条件者。",
+      "entityCategory": "推荐",
+      "canonical_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "ai_evidence_review_status": "ai_prechecked_limited",
+      "name": "慢性肾脏病合并高血压：降压治疗推荐",
+      "created_at": "2026-07-10 17:00:00",
+      "source_name": "中国高血压防治指南(2024年修订版).pdf",
+      "evidence_id": "EVD-2DDA42E80412B28DBCD1-CKD",
+      "formal_cdss_ready": false,
+      "review_status": "approved",
+      "merge_status": "batch_ready_for_import",
+      "disease_code": "DIS-CARD-HT-CKD",
+      "scope_target": "高血压",
+      "source_page": 50,
+      "recommendation_class": "未分级推荐",
+      "code": "REC-HT-CKD-TX-PLAN-CARD-BDE62A3BE028",
+      "preferred_name": "慢性肾脏病合并高血压：降压治疗推荐",
+      "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension",
+      "display_name": "慢性肾脏病合并高血压：降压治疗推荐",
+      "clinical_review_status": "clinical_batch_signed_off",
+      "conflict_status": "none",
+      "recommendation_text": "慢性肾脏病合并高血压患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：降压治疗。",
+      "cdss_release_level": "test_recommendation"
+    },
+    "rec_code": "REC-HT-CKD-TX-PLAN-CARD-BDE62A3BE028",
+    "targets": [
+      {
+        "disease_code": "DIS-CARD-HT-CKD",
+        "plan": "降压治疗",
+        "disease": "慢性肾脏病合并高血压",
+        "plan_code": "PLAN-CARD-BDE62A3BE028"
+      }
+    ],
+    "evidence_codes": [
+      "EVD-A88C4F456FAF11892EC6-CKD",
+      "EVD-2DDA42E80412B28DBCD1-CKD"
+    ]
+  },
+  {
+    "rec_eid": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42955",
+    "rec_props": {
+      "exclusion_criteria": "存在禁忌证、资料不足、替代诊断更可能或患者状态不稳定时，需临床医师复核。",
+      "evidence_level": "专家共识/教材证据",
+      "scope_type": "disease_category",
+      "schema_version": "V1.11",
+      "entityType": "RecommendationStatement",
+      "type_label": "RecommendationStatement",
+      "primary_label": "KGNode",
+      "id": "KG_REC_HT_ELDERLY_TX_PLAN_CARD_0CDCF256C0E6",
+      "applicable_population": "老年高血压患者中符合该推荐适用条件者。",
+      "entityCategory": "推荐",
+      "canonical_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "ai_evidence_review_status": "ai_prechecked_limited",
+      "name": "老年高血压：联合降压治疗推荐",
+      "created_at": "2026-07-10 17:00:00",
+      "source_name": "《内科学（第10版）》.pdf",
+      "evidence_id": "EVD-4D4733BDF4898D1249F4-ELDERLY",
+      "formal_cdss_ready": false,
+      "review_status": "approved",
+      "merge_status": "batch_ready_for_import",
+      "disease_code": "DIS-CARD-HT-ELDERLY",
+      "scope_target": "高血压",
+      "source_page": 299,
+      "recommendation_class": "未分级推荐",
+      "code": "REC-HT-ELDERLY-TX-PLAN-CARD-0CDCF256C0E6",
+      "preferred_name": "老年高血压：联合降压治疗推荐",
+      "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension",
+      "display_name": "老年高血压：联合降压治疗推荐",
+      "clinical_review_status": "clinical_batch_signed_off",
+      "conflict_status": "none",
+      "recommendation_text": "老年高血压患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：联合降压治疗。",
+      "cdss_release_level": "test_recommendation"
+    },
+    "rec_code": "REC-HT-ELDERLY-TX-PLAN-CARD-0CDCF256C0E6",
+    "targets": [
+      {
+        "disease_code": "DIS-CARD-HT-ELDERLY",
+        "plan": "联合降压治疗",
+        "disease": "老年高血压",
+        "plan_code": "PLAN-CARD-0CDCF256C0E6"
+      }
+    ],
+    "evidence_codes": [
+      "EVD-55D105F697904AE83838-ELDERLY",
+      "EVD-4D4733BDF4898D1249F4-ELDERLY"
+    ]
+  },
+  {
+    "rec_eid": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42958",
+    "rec_props": {
+      "exclusion_criteria": "存在禁忌证、资料不足、替代诊断更可能或患者状态不稳定时，需临床医师复核。",
+      "evidence_level": "专家共识/教材证据",
+      "scope_type": "disease_category",
+      "schema_version": "V1.11",
+      "entityType": "RecommendationStatement",
+      "type_label": "RecommendationStatement",
+      "primary_label": "KGNode",
+      "id": "KG_REC_HT_EMERGENCY_TX_PLAN_CARD_0CDCF256C0E6",
+      "applicable_population": "高血压急症患者中符合该推荐适用条件者。",
+      "entityCategory": "推荐",
+      "canonical_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "ai_evidence_review_status": "ai_prechecked_limited",
+      "name": "高血压急症：联合降压治疗推荐",
+      "created_at": "2026-07-10 17:00:00",
+      "source_name": "中国慢性肾脏病患者高血压管理指南（2023年版）.pdf",
+      "evidence_id": "EVD-5B44A97D405F06F81886-EMERGENCY",
+      "formal_cdss_ready": false,
+      "review_status": "approved",
+      "merge_status": "batch_ready_for_import",
+      "disease_code": "DIS-CARD-HT-EMERGENCY",
+      "scope_target": "高血压",
+      "source_page": 15,
+      "recommendation_class": "未分级推荐",
+      "code": "REC-HT-EMERGENCY-TX-PLAN-CARD-0CDCF256C0E6",
+      "preferred_name": "高血压急症：联合降压治疗推荐",
+      "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension",
+      "display_name": "高血压急症：联合降压治疗推荐",
+      "clinical_review_status": "clinical_batch_signed_off",
+      "conflict_status": "none",
+      "recommendation_text": "高血压急症患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：联合降压治疗。",
+      "cdss_release_level": "test_recommendation"
+    },
+    "rec_code": "REC-HT-EMERGENCY-TX-PLAN-CARD-0CDCF256C0E6",
+    "targets": [
+      {
+        "disease_code": "DIS-CARD-HT-EMERGENCY",
+        "plan": "联合降压治疗",
+        "disease": "高血压急症",
+        "plan_code": "PLAN-CARD-0CDCF256C0E6"
+      }
+    ],
+    "evidence_codes": [
+      "EVD-5B44A97D405F06F81886-EMERGENCY"
+    ]
+  },
+  {
+    "rec_eid": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42959",
+    "rec_props": {
+      "exclusion_criteria": "存在禁忌证、资料不足、替代诊断更可能或患者状态不稳定时，需临床医师复核。",
+      "evidence_level": "专家共识/教材证据",
+      "scope_type": "disease_category",
+      "schema_version": "V1.11",
+      "entityType": "RecommendationStatement",
+      "type_label": "RecommendationStatement",
+      "primary_label": "KGNode",
+      "id": "KG_REC_HT_EMERGENCY_TX_PLAN_CARD_BDE62A3BE028",
+      "applicable_population": "高血压急症患者中符合该推荐适用条件者。",
+      "entityCategory": "推荐",
+      "canonical_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "ai_evidence_review_status": "ai_prechecked_limited",
+      "name": "高血压急症：降压治疗推荐",
+      "created_at": "2026-07-10 17:00:00",
+      "source_name": "高血压基层诊疗指南（2019年）.pdf",
+      "evidence_id": "EVD-2C41FB69D2B7082252AC-EMERGENCY",
+      "formal_cdss_ready": false,
+      "review_status": "approved",
+      "merge_status": "batch_ready_for_import",
+      "disease_code": "DIS-CARD-HT-EMERGENCY",
+      "scope_target": "高血压",
+      "source_page": 9,
+      "recommendation_class": "未分级推荐",
+      "code": "REC-HT-EMERGENCY-TX-PLAN-CARD-BDE62A3BE028",
+      "preferred_name": "高血压急症：降压治疗推荐",
+      "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension",
+      "display_name": "高血压急症：降压治疗推荐",
+      "clinical_review_status": "clinical_batch_signed_off",
+      "conflict_status": "none",
+      "recommendation_text": "高血压急症患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：降压治疗。",
+      "cdss_release_level": "test_recommendation"
+    },
+    "rec_code": "REC-HT-EMERGENCY-TX-PLAN-CARD-BDE62A3BE028",
+    "targets": [
+      {
+        "disease_code": "DIS-CARD-HT-EMERGENCY",
+        "plan": "降压治疗",
+        "disease": "高血压急症",
+        "plan_code": "PLAN-CARD-BDE62A3BE028"
+      }
+    ],
+    "evidence_codes": [
+      "EVD-2C41FB69D2B7082252AC-EMERGENCY"
+    ]
+  },
+  {
+    "rec_eid": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42962",
+    "rec_props": {
+      "exclusion_criteria": "存在禁忌证、资料不足、替代诊断更可能或患者状态不稳定时，需临床医师复核。",
+      "evidence_level": "专家共识/教材证据",
+      "scope_type": "disease_category",
+      "schema_version": "V1.11",
+      "entityType": "RecommendationStatement",
+      "type_label": "RecommendationStatement",
+      "primary_label": "KGNode",
+      "id": "KG_REC_HT_ENDOCRINE_TX_PLAN_CARD_BDE62A3BE028",
+      "applicable_population": "内分泌性高血压患者中符合该推荐适用条件者。",
+      "entityCategory": "推荐",
+      "canonical_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "ai_evidence_review_status": "ai_prechecked_limited",
+      "name": "内分泌性高血压：降压治疗推荐",
+      "created_at": "2026-07-10 17:00:00",
+      "source_name": "中国高血压防治指南(2024年修订版).pdf",
+      "evidence_id": "EVD-3BE0AA4C1951C4CEB406-ENDOCRINE",
+      "formal_cdss_ready": false,
+      "review_status": "approved",
+      "merge_status": "batch_ready_for_import",
+      "disease_code": "DIS-CARD-HT-ENDOCRINE",
+      "scope_target": "高血压",
+      "source_page": 63,
+      "recommendation_class": "未分级推荐",
+      "code": "REC-HT-ENDOCRINE-TX-PLAN-CARD-BDE62A3BE028",
+      "preferred_name": "内分泌性高血压：降压治疗推荐",
+      "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension",
+      "display_name": "内分泌性高血压：降压治疗推荐",
+      "clinical_review_status": "clinical_batch_signed_off",
+      "conflict_status": "none",
+      "recommendation_text": "内分泌性高血压患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：降压治疗。",
+      "cdss_release_level": "test_recommendation"
+    },
+    "rec_code": "REC-HT-ENDOCRINE-TX-PLAN-CARD-BDE62A3BE028",
+    "targets": [
+      {
+        "disease_code": "DIS-CARD-HT-ENDOCRINE",
+        "plan": "降压治疗",
+        "disease": "内分泌性高血压",
+        "plan_code": "PLAN-CARD-BDE62A3BE028"
+      }
+    ],
+    "evidence_codes": [
+      "EVD-3F12816A44E155A83816-ENDOCRINE",
+      "EVD-3BE0AA4C1951C4CEB406-ENDOCRINE"
+    ]
+  },
+  {
+    "rec_eid": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42965",
+    "rec_props": {
+      "exclusion_criteria": "存在禁忌证、资料不足、替代诊断更可能或患者状态不稳定时，需临床医师复核。",
+      "evidence_level": "专家共识/教材证据",
+      "scope_type": "disease_category",
+      "schema_version": "V1.11",
+      "entityType": "RecommendationStatement",
+      "type_label": "RecommendationStatement",
+      "primary_label": "KGNode",
+      "id": "KG_REC_HT_HT_TX_PLAN_CARD_0CDCF256C0E6",
+      "applicable_population": "高血压患者中符合该推荐适用条件者。",
+      "entityCategory": "推荐",
+      "canonical_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "ai_evidence_review_status": "ai_prechecked_limited",
+      "name": "高血压：联合降压治疗推荐",
+      "created_at": "2026-07-10 17:00:00",
+      "source_name": "中国慢性肾脏病患者高血压管理指南（2023年版）.pdf",
+      "evidence_id": "EVD-A88C4F456FAF11892EC6-HT",
+      "formal_cdss_ready": false,
+      "review_status": "approved",
+      "merge_status": "batch_ready_for_import",
+      "disease_code": "DIS-CARD-HT",
+      "scope_target": "高血压",
+      "source_page": 1,
+      "recommendation_class": "未分级推荐",
+      "code": "REC-HT-HT-TX-PLAN-CARD-0CDCF256C0E6",
+      "preferred_name": "高血压：联合降压治疗推荐",
+      "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension",
+      "display_name": "高血压：联合降压治疗推荐",
+      "clinical_review_status": "clinical_batch_signed_off",
+      "conflict_status": "none",
+      "recommendation_text": "高血压患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：联合降压治疗。",
+      "cdss_release_level": "test_recommendation"
+    },
+    "rec_code": "REC-HT-HT-TX-PLAN-CARD-0CDCF256C0E6",
+    "targets": [
+      {
+        "disease_code": "DIS-CARD-HT",
+        "plan": "联合降压治疗",
+        "disease": "高血压",
+        "plan_code": "PLAN-CARD-0CDCF256C0E6"
+      }
+    ],
+    "evidence_codes": [
+      "EVD-A88C4F456FAF11892EC6-HT"
+    ]
+  },
+  {
+    "rec_eid": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42966",
+    "rec_props": {
+      "exclusion_criteria": "存在禁忌证、资料不足、替代诊断更可能或患者状态不稳定时，需临床医师复核。",
+      "evidence_level": "专家共识/教材证据",
+      "scope_type": "disease_category",
+      "schema_version": "V1.11",
+      "entityType": "RecommendationStatement",
+      "type_label": "RecommendationStatement",
+      "primary_label": "KGNode",
+      "id": "KG_REC_HT_HT_TX_PLAN_CARD_2081B78ED14D",
+      "applicable_population": "高血压患者中符合该推荐适用条件者。",
+      "entityCategory": "推荐",
+      "canonical_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "ai_evidence_review_status": "ai_prechecked_limited",
+      "name": "高血压：生活方式干预推荐",
+      "created_at": "2026-07-10 17:00:00",
+      "source_name": "HT AHA 2025.pdf",
+      "evidence_id": "EVD-33A716520D7F8314C556-HT",
+      "formal_cdss_ready": false,
+      "review_status": "approved",
+      "merge_status": "batch_ready_for_import",
+      "disease_code": "DIS-CARD-HT",
+      "scope_target": "高血压",
+      "source_page": 50,
+      "recommendation_class": "未分级推荐",
+      "code": "REC-HT-HT-TX-PLAN-CARD-2081B78ED14D",
+      "preferred_name": "高血压：生活方式干预推荐",
+      "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension",
+      "display_name": "高血压：生活方式干预推荐",
+      "clinical_review_status": "clinical_batch_signed_off",
+      "conflict_status": "none",
+      "recommendation_text": "高血压患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：生活方式干预。",
+      "cdss_release_level": "test_recommendation"
+    },
+    "rec_code": "REC-HT-HT-TX-PLAN-CARD-2081B78ED14D",
+    "targets": [
+      {
+        "disease_code": "DIS-CARD-HT",
+        "plan": "生活方式干预",
+        "disease": "高血压",
+        "plan_code": "PLAN-CARD-2081B78ED14D"
+      }
+    ],
+    "evidence_codes": [
+      "EVD-33A716520D7F8314C556-HT"
+    ]
+  },
+  {
+    "rec_eid": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42969",
+    "rec_props": {
+      "exclusion_criteria": "存在禁忌证、资料不足、替代诊断更可能或患者状态不稳定时，需临床医师复核。",
+      "evidence_level": "专家共识/教材证据",
+      "scope_type": "disease_category",
+      "schema_version": "V1.11",
+      "entityType": "RecommendationStatement",
+      "type_label": "RecommendationStatement",
+      "primary_label": "KGNode",
+      "id": "KG_REC_HT_MASKED_TX_PLAN_CARD_2081B78ED14D",
+      "applicable_population": "隐匿性高血压患者中符合该推荐适用条件者。",
+      "entityCategory": "推荐",
+      "canonical_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "ai_evidence_review_status": "ai_prechecked_limited",
+      "name": "隐匿性高血压：生活方式干预推荐",
+      "created_at": "2026-07-10 17:00:00",
+      "source_name": "中国 高血压临床实践指南2024.pdf",
+      "evidence_id": "EVD-4B3F5EB920C53E1A1117-MASKED",
+      "formal_cdss_ready": false,
+      "review_status": "approved",
+      "merge_status": "batch_ready_for_import",
+      "disease_code": "DIS-CARD-HT-MASKED",
+      "scope_target": "高血压",
+      "source_page": 5,
+      "recommendation_class": "未分级推荐",
+      "code": "REC-HT-MASKED-TX-PLAN-CARD-2081B78ED14D",
+      "preferred_name": "隐匿性高血压：生活方式干预推荐",
+      "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension",
+      "display_name": "隐匿性高血压：生活方式干预推荐",
+      "clinical_review_status": "clinical_batch_signed_off",
+      "conflict_status": "none",
+      "recommendation_text": "隐匿性高血压患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：生活方式干预。",
+      "cdss_release_level": "test_recommendation"
+    },
+    "rec_code": "REC-HT-MASKED-TX-PLAN-CARD-2081B78ED14D",
+    "targets": [
+      {
+        "disease_code": "DIS-CARD-HT-MASKED",
+        "plan": "生活方式干预",
+        "disease": "隐匿性高血压",
+        "plan_code": "PLAN-CARD-2081B78ED14D"
+      }
+    ],
+    "evidence_codes": [
+      "EVD-4B3F5EB920C53E1A1117-MASKED",
+      "EVD-42EC986AAC855EFABD81-MASKED"
+    ]
+  },
+  {
+    "rec_eid": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42972",
+    "rec_props": {
+      "exclusion_criteria": "存在禁忌证、资料不足、替代诊断更可能或患者状态不稳定时，需临床医师复核。",
+      "evidence_level": "专家共识/教材证据",
+      "scope_type": "disease_category",
+      "schema_version": "V1.11",
+      "entityType": "RecommendationStatement",
+      "type_label": "RecommendationStatement",
+      "primary_label": "KGNode",
+      "id": "KG_REC_HT_PA_TX_PLAN_CARD_0CDCF256C0E6",
+      "applicable_population": "原发性醛固酮增多症患者中符合该推荐适用条件者。",
+      "entityCategory": "推荐",
+      "canonical_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "ai_evidence_review_status": "ai_prechecked_limited",
+      "name": "原发性醛固酮增多症：联合降压治疗推荐",
+      "created_at": "2026-07-10 17:00:00",
+      "source_name": "高血压基层诊疗指南（2019年）.pdf",
+      "evidence_id": "EVD-16CFD7364178002D2E4F-PA",
+      "formal_cdss_ready": false,
+      "review_status": "approved",
+      "merge_status": "batch_ready_for_import",
+      "disease_code": "DIS-CARD-HT-PA",
+      "scope_target": "高血压",
+      "source_page": 4,
+      "recommendation_class": "未分级推荐",
+      "code": "REC-HT-PA-TX-PLAN-CARD-0CDCF256C0E6",
+      "preferred_name": "原发性醛固酮增多症：联合降压治疗推荐",
+      "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension",
+      "display_name": "原发性醛固酮增多症：联合降压治疗推荐",
+      "clinical_review_status": "clinical_batch_signed_off",
+      "conflict_status": "none",
+      "recommendation_text": "原发性醛固酮增多症患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：联合降压治疗。",
+      "cdss_release_level": "test_recommendation"
+    },
+    "rec_code": "REC-HT-PA-TX-PLAN-CARD-0CDCF256C0E6",
+    "targets": [
+      {
+        "disease_code": "DIS-CARD-HT-PA",
+        "plan": "联合降压治疗",
+        "disease": "原发性醛固酮增多症",
+        "plan_code": "PLAN-CARD-0CDCF256C0E6"
+      }
+    ],
+    "evidence_codes": [
+      "EVD-C654C566F263D893CF24-PA",
+      "EVD-16CFD7364178002D2E4F-PA"
+    ]
+  },
+  {
+    "rec_eid": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42978",
+    "rec_props": {
+      "exclusion_criteria": "存在禁忌证、资料不足、替代诊断更可能或患者状态不稳定时，需临床医师复核。",
+      "evidence_level": "专家共识/教材证据",
+      "scope_type": "disease_category",
+      "schema_version": "V1.11",
+      "entityType": "RecommendationStatement",
+      "type_label": "RecommendationStatement",
+      "primary_label": "KGNode",
+      "id": "KG_REC_HT_PRIMARY_TX_PLAN_CARD_0CDCF256C0E6",
+      "applicable_population": "原发性高血压患者中符合该推荐适用条件者。",
+      "entityCategory": "推荐",
+      "canonical_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "ai_evidence_review_status": "ai_prechecked_limited",
+      "name": "原发性高血压：联合降压治疗推荐",
+      "created_at": "2026-07-10 17:00:00",
+      "source_name": "原发性醛固酮增多症诊断治疗的专家共识(2024版).pdf",
+      "evidence_id": "EVD-C654C566F263D893CF24-PRIMARY",
+      "formal_cdss_ready": false,
+      "review_status": "approved",
+      "merge_status": "batch_ready_for_import",
+      "disease_code": "DIS-CARD-HT-PRIMARY",
+      "scope_target": "高血压",
+      "source_page": 1,
+      "recommendation_class": "未分级推荐",
+      "code": "REC-HT-PRIMARY-TX-PLAN-CARD-0CDCF256C0E6",
+      "preferred_name": "原发性高血压：联合降压治疗推荐",
+      "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension",
+      "display_name": "原发性高血压：联合降压治疗推荐",
+      "clinical_review_status": "clinical_batch_signed_off",
+      "conflict_status": "none",
+      "recommendation_text": "原发性高血压患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：联合降压治疗。",
+      "cdss_release_level": "test_recommendation"
+    },
+    "rec_code": "REC-HT-PRIMARY-TX-PLAN-CARD-0CDCF256C0E6",
+    "targets": [
+      {
+        "disease_code": "DIS-CARD-HT-PRIMARY",
+        "plan": "联合降压治疗",
+        "disease": "原发性高血压",
+        "plan_code": "PLAN-CARD-0CDCF256C0E6"
+      }
+    ],
+    "evidence_codes": [
+      "EVD-C654C566F263D893CF24-PRIMARY"
+    ]
+  },
+  {
+    "rec_eid": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42979",
+    "rec_props": {
+      "exclusion_criteria": "存在禁忌证、资料不足、替代诊断更可能或患者状态不稳定时，需临床医师复核。",
+      "evidence_level": "专家共识/教材证据",
+      "scope_type": "disease_category",
+      "schema_version": "V1.11",
+      "entityType": "RecommendationStatement",
+      "type_label": "RecommendationStatement",
+      "primary_label": "KGNode",
+      "id": "KG_REC_HT_PRIMARY_TX_PLAN_CARD_2081B78ED14D",
+      "applicable_population": "原发性高血压患者中符合该推荐适用条件者。",
+      "entityCategory": "推荐",
+      "canonical_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "ai_evidence_review_status": "ai_prechecked_limited",
+      "name": "原发性高血压：生活方式干预推荐",
+      "created_at": "2026-07-10 17:00:00",
+      "source_name": "中国高血压防治指南(2024年修订版).pdf",
+      "evidence_id": "EVD-0A63E2B8B75DCFCA2254-PRIMARY",
+      "formal_cdss_ready": false,
+      "review_status": "approved",
+      "merge_status": "batch_ready_for_import",
+      "disease_code": "DIS-CARD-HT-PRIMARY",
+      "scope_target": "高血压",
+      "source_page": 83,
+      "recommendation_class": "未分级推荐",
+      "code": "REC-HT-PRIMARY-TX-PLAN-CARD-2081B78ED14D",
+      "preferred_name": "原发性高血压：生活方式干预推荐",
+      "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension",
+      "display_name": "原发性高血压：生活方式干预推荐",
+      "clinical_review_status": "clinical_batch_signed_off",
+      "conflict_status": "none",
+      "recommendation_text": "原发性高血压患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：生活方式干预。",
+      "cdss_release_level": "test_recommendation"
+    },
+    "rec_code": "REC-HT-PRIMARY-TX-PLAN-CARD-2081B78ED14D",
+    "targets": [
+      {
+        "disease_code": "DIS-CARD-HT-PRIMARY",
+        "plan": "生活方式干预",
+        "disease": "原发性高血压",
+        "plan_code": "PLAN-CARD-2081B78ED14D"
+      }
+    ],
+    "evidence_codes": [
+      "EVD-0A63E2B8B75DCFCA2254-PRIMARY"
+    ]
+  },
+  {
+    "rec_eid": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42982",
+    "rec_props": {
+      "exclusion_criteria": "存在禁忌证、资料不足、替代诊断更可能或患者状态不稳定时，需临床医师复核。",
+      "evidence_level": "专家共识/教材证据",
+      "scope_type": "disease_category",
+      "schema_version": "V1.11",
+      "entityType": "RecommendationStatement",
+      "type_label": "RecommendationStatement",
+      "primary_label": "KGNode",
+      "id": "KG_REC_HT_RENAL_PARENCHYMAL_TX_PLAN_CARD_BDE62A3BE028",
+      "applicable_population": "肾实质性高血压患者中符合该推荐适用条件者。",
+      "entityCategory": "推荐",
+      "canonical_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "ai_evidence_review_status": "ai_prechecked_limited",
+      "name": "肾实质性高血压：降压治疗推荐",
+      "created_at": "2026-07-10 17:00:00",
+      "source_name": "中国高血压防治指南(2024年修订版).pdf",
+      "evidence_id": "EVD-CCDB5C17583C3B81129F-PARENCHYMAL",
+      "formal_cdss_ready": false,
+      "review_status": "approved",
+      "merge_status": "batch_ready_for_import",
+      "disease_code": "DIS-CARD-HT-RENAL-PARENCHYMAL",
+      "scope_target": "高血压",
+      "source_page": 56,
+      "recommendation_class": "未分级推荐",
+      "code": "REC-HT-RENAL-PARENCHYMAL-TX-PLAN-CARD-BDE62A3BE028",
+      "preferred_name": "肾实质性高血压：降压治疗推荐",
+      "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension",
+      "display_name": "肾实质性高血压：降压治疗推荐",
+      "clinical_review_status": "clinical_batch_signed_off",
+      "conflict_status": "none",
+      "recommendation_text": "肾实质性高血压患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：降压治疗。",
+      "cdss_release_level": "test_recommendation"
+    },
+    "rec_code": "REC-HT-RENAL-PARENCHYMAL-TX-PLAN-CARD-BDE62A3BE028",
+    "targets": [
+      {
+        "disease_code": "DIS-CARD-HT-RENAL-PARENCHYMAL",
+        "plan": "降压治疗",
+        "disease": "肾实质性高血压",
+        "plan_code": "PLAN-CARD-BDE62A3BE028"
+      }
+    ],
+    "evidence_codes": [
+      "EVD-CCDB5C17583C3B81129F-PARENCHYMAL",
+      "EVD-97CEBFD426BC6919E7BB-PARENCHYMAL"
+    ]
+  },
+  {
+    "rec_eid": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42985",
+    "rec_props": {
+      "exclusion_criteria": "存在禁忌证、资料不足、替代诊断更可能或患者状态不稳定时，需临床医师复核。",
+      "evidence_level": "专家共识/教材证据",
+      "scope_type": "disease_category",
+      "schema_version": "V1.11",
+      "entityType": "RecommendationStatement",
+      "type_label": "RecommendationStatement",
+      "primary_label": "KGNode",
+      "id": "KG_REC_HT_RENOVASCULAR_TX_PLAN_CARD_0CDCF256C0E6",
+      "applicable_population": "肾血管性高血压患者中符合该推荐适用条件者。",
+      "entityCategory": "推荐",
+      "canonical_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "ai_evidence_review_status": "ai_prechecked_limited",
+      "name": "肾血管性高血压：联合降压治疗推荐",
+      "created_at": "2026-07-10 17:00:00",
+      "source_name": "《内科学（第10版）》.pdf",
+      "evidence_id": "EVD-94C7E566B0A8FDC6FDFA-RENOVASCULAR",
+      "formal_cdss_ready": false,
+      "review_status": "approved",
+      "merge_status": "batch_ready_for_import",
+      "disease_code": "DIS-CARD-HT-RENOVASCULAR",
+      "scope_target": "高血压",
+      "source_page": 304,
+      "recommendation_class": "未分级推荐",
+      "code": "REC-HT-RENOVASCULAR-TX-PLAN-CARD-0CDCF256C0E6",
+      "preferred_name": "肾血管性高血压：联合降压治疗推荐",
+      "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension",
+      "display_name": "肾血管性高血压：联合降压治疗推荐",
+      "clinical_review_status": "clinical_batch_signed_off",
+      "conflict_status": "none",
+      "recommendation_text": "肾血管性高血压患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：联合降压治疗。",
+      "cdss_release_level": "test_recommendation"
+    },
+    "rec_code": "REC-HT-RENOVASCULAR-TX-PLAN-CARD-0CDCF256C0E6",
+    "targets": [
+      {
+        "disease_code": "DIS-CARD-HT-RENOVASCULAR",
+        "plan": "联合降压治疗",
+        "disease": "肾血管性高血压",
+        "plan_code": "PLAN-CARD-0CDCF256C0E6"
+      }
+    ],
+    "evidence_codes": [
+      "EVD-AFF9D4BC9FDD0477BEE4-RENOVASCULAR",
+      "EVD-94C7E566B0A8FDC6FDFA-RENOVASCULAR"
+    ]
+  },
+  {
+    "rec_eid": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42988",
+    "rec_props": {
+      "exclusion_criteria": "存在禁忌证、资料不足、替代诊断更可能或患者状态不稳定时，需临床医师复核。",
+      "evidence_level": "专家共识/教材证据",
+      "scope_type": "disease_category",
+      "schema_version": "V1.11",
+      "entityType": "RecommendationStatement",
+      "type_label": "RecommendationStatement",
+      "primary_label": "KGNode",
+      "id": "KG_REC_HT_RESISTANT_TX_PLAN_CARD_0CDCF256C0E6",
+      "applicable_population": "难治性高血压患者中符合该推荐适用条件者。",
+      "entityCategory": "推荐",
+      "canonical_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "ai_evidence_review_status": "ai_prechecked_limited",
+      "name": "难治性高血压：联合降压治疗推荐",
+      "created_at": "2026-07-10 17:00:00",
+      "source_name": "中国慢性肾脏病患者高血压管理指南（2023年版）.pdf",
+      "evidence_id": "EVD-62B64136818BC831207A-RESISTANT",
+      "formal_cdss_ready": false,
+      "review_status": "approved",
+      "merge_status": "batch_ready_for_import",
+      "disease_code": "DIS-CARD-HT-RESISTANT",
+      "scope_target": "高血压",
+      "source_page": 3,
+      "recommendation_class": "未分级推荐",
+      "code": "REC-HT-RESISTANT-TX-PLAN-CARD-0CDCF256C0E6",
+      "preferred_name": "难治性高血压：联合降压治疗推荐",
+      "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension",
+      "display_name": "难治性高血压：联合降压治疗推荐",
+      "clinical_review_status": "clinical_batch_signed_off",
+      "conflict_status": "none",
+      "recommendation_text": "难治性高血压患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：联合降压治疗。",
+      "cdss_release_level": "test_recommendation"
+    },
+    "rec_code": "REC-HT-RESISTANT-TX-PLAN-CARD-0CDCF256C0E6",
+    "targets": [
+      {
+        "disease_code": "DIS-CARD-HT-RESISTANT",
+        "plan": "联合降压治疗",
+        "disease": "难治性高血压",
+        "plan_code": "PLAN-CARD-0CDCF256C0E6"
+      }
+    ],
+    "evidence_codes": [
+      "EVD-62B64136818BC831207A-RESISTANT"
+    ]
+  },
+  {
+    "rec_eid": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42989",
+    "rec_props": {
+      "exclusion_criteria": "存在禁忌证、资料不足、替代诊断更可能或患者状态不稳定时，需临床医师复核。",
+      "evidence_level": "专家共识/教材证据",
+      "scope_type": "disease_category",
+      "schema_version": "V1.11",
+      "entityType": "RecommendationStatement",
+      "type_label": "RecommendationStatement",
+      "primary_label": "KGNode",
+      "id": "KG_REC_HT_RESISTANT_TX_PLAN_CARD_2081B78ED14D",
+      "applicable_population": "难治性高血压患者中符合该推荐适用条件者。",
+      "entityCategory": "推荐",
+      "canonical_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "ai_evidence_review_status": "ai_prechecked_limited",
+      "name": "难治性高血压：生活方式干预推荐",
+      "created_at": "2026-07-10 17:00:00",
+      "source_name": "HT ACC 2017.pdf",
+      "evidence_id": "EVD-823179F4FBF21E7669A8-RESISTANT",
+      "formal_cdss_ready": false,
+      "review_status": "approved",
+      "merge_status": "batch_ready_for_import",
+      "disease_code": "DIS-CARD-HT-RESISTANT",
+      "scope_target": "高血压",
+      "source_page": 40,
+      "recommendation_class": "未分级推荐",
+      "code": "REC-HT-RESISTANT-TX-PLAN-CARD-2081B78ED14D",
+      "preferred_name": "难治性高血压：生活方式干预推荐",
+      "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension",
+      "display_name": "难治性高血压：生活方式干预推荐",
+      "clinical_review_status": "clinical_batch_signed_off",
+      "conflict_status": "none",
+      "recommendation_text": "难治性高血压患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：生活方式干预。",
+      "cdss_release_level": "test_recommendation"
+    },
+    "rec_code": "REC-HT-RESISTANT-TX-PLAN-CARD-2081B78ED14D",
+    "targets": [
+      {
+        "disease_code": "DIS-CARD-HT-RESISTANT",
+        "plan": "生活方式干预",
+        "disease": "难治性高血压",
+        "plan_code": "PLAN-CARD-2081B78ED14D"
+      }
+    ],
+    "evidence_codes": [
+      "EVD-823179F4FBF21E7669A8-RESISTANT"
+    ]
+  },
+  {
+    "rec_eid": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42992",
+    "rec_props": {
+      "exclusion_criteria": "存在禁忌证、资料不足、替代诊断更可能或患者状态不稳定时，需临床医师复核。",
+      "evidence_level": "专家共识/教材证据",
+      "scope_type": "disease_category",
+      "schema_version": "V1.11",
+      "entityType": "RecommendationStatement",
+      "type_label": "RecommendationStatement",
+      "primary_label": "KGNode",
+      "id": "KG_REC_HT_SECONDARY_TX_PLAN_CARD_0CDCF256C0E6",
+      "applicable_population": "继发性高血压患者中符合该推荐适用条件者。",
+      "entityCategory": "推荐",
+      "canonical_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "ai_evidence_review_status": "ai_prechecked_limited",
+      "name": "继发性高血压：联合降压治疗推荐",
+      "created_at": "2026-07-10 17:00:00",
+      "source_name": "原发性醛固酮增多症诊断治疗的专家共识(2024版).pdf",
+      "evidence_id": "EVD-C654C566F263D893CF24-SECONDARY",
+      "formal_cdss_ready": false,
+      "review_status": "approved",
+      "merge_status": "batch_ready_for_import",
+      "disease_code": "DIS-CARD-HT-SECONDARY",
+      "scope_target": "高血压",
+      "source_page": 1,
+      "recommendation_class": "未分级推荐",
+      "code": "REC-HT-SECONDARY-TX-PLAN-CARD-0CDCF256C0E6",
+      "preferred_name": "继发性高血压：联合降压治疗推荐",
+      "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension",
+      "display_name": "继发性高血压：联合降压治疗推荐",
+      "clinical_review_status": "clinical_batch_signed_off",
+      "conflict_status": "none",
+      "recommendation_text": "继发性高血压患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：联合降压治疗。",
+      "cdss_release_level": "test_recommendation"
+    },
+    "rec_code": "REC-HT-SECONDARY-TX-PLAN-CARD-0CDCF256C0E6",
+    "targets": [
+      {
+        "disease_code": "DIS-CARD-HT-SECONDARY",
+        "plan": "联合降压治疗",
+        "disease": "继发性高血压",
+        "plan_code": "PLAN-CARD-0CDCF256C0E6"
+      }
+    ],
+    "evidence_codes": [
+      "EVD-C654C566F263D893CF24-SECONDARY"
+    ]
+  },
+  {
+    "rec_eid": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42993",
+    "rec_props": {
+      "exclusion_criteria": "存在禁忌证、资料不足、替代诊断更可能或患者状态不稳定时，需临床医师复核。",
+      "evidence_level": "专家共识/教材证据",
+      "scope_type": "disease_category",
+      "schema_version": "V1.11",
+      "entityType": "RecommendationStatement",
+      "type_label": "RecommendationStatement",
+      "primary_label": "KGNode",
+      "id": "KG_REC_HT_SECONDARY_TX_PLAN_CARD_BDE62A3BE028",
+      "applicable_population": "继发性高血压患者中符合该推荐适用条件者。",
+      "entityCategory": "推荐",
+      "canonical_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "ai_evidence_review_status": "ai_prechecked_limited",
+      "name": "继发性高血压：降压治疗推荐",
+      "created_at": "2026-07-10 17:00:00",
+      "source_name": "中国高血压临床实践指南 2022.pdf",
+      "evidence_id": "EVD-1C27C83622E84DA46B10-SECONDARY",
+      "formal_cdss_ready": false,
+      "review_status": "approved",
+      "merge_status": "batch_ready_for_import",
+      "disease_code": "DIS-CARD-HT-SECONDARY",
+      "scope_target": "高血压",
+      "source_page": 23,
+      "recommendation_class": "未分级推荐",
+      "code": "REC-HT-SECONDARY-TX-PLAN-CARD-BDE62A3BE028",
+      "preferred_name": "继发性高血压：降压治疗推荐",
+      "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension",
+      "display_name": "继发性高血压：降压治疗推荐",
+      "clinical_review_status": "clinical_batch_signed_off",
+      "conflict_status": "none",
+      "recommendation_text": "继发性高血压患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：降压治疗。",
+      "cdss_release_level": "test_recommendation"
+    },
+    "rec_code": "REC-HT-SECONDARY-TX-PLAN-CARD-BDE62A3BE028",
+    "targets": [
+      {
+        "disease_code": "DIS-CARD-HT-SECONDARY",
+        "plan": "降压治疗",
+        "disease": "继发性高血压",
+        "plan_code": "PLAN-CARD-BDE62A3BE028"
+      }
+    ],
+    "evidence_codes": [
+      "EVD-1C27C83622E84DA46B10-SECONDARY"
+    ]
+  },
+  {
+    "rec_eid": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42996",
+    "rec_props": {
+      "exclusion_criteria": "存在禁忌证、资料不足、替代诊断更可能或患者状态不稳定时，需临床医师复核。",
+      "evidence_level": "专家共识/教材证据",
+      "scope_type": "disease_category",
+      "schema_version": "V1.11",
+      "entityType": "RecommendationStatement",
+      "type_label": "RecommendationStatement",
+      "primary_label": "KGNode",
+      "id": "KG_REC_HT_URGENCY_TX_PLAN_CARD_BDE62A3BE028",
+      "applicable_population": "高血压亚急症患者中符合该推荐适用条件者。",
+      "entityCategory": "推荐",
+      "canonical_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "ai_evidence_review_status": "ai_prechecked_limited",
+      "name": "高血压亚急症：降压治疗推荐",
+      "created_at": "2026-07-10 17:00:00",
+      "source_name": "中国高血压防治指南(2024年修订版).pdf",
+      "evidence_id": "EVD-2C1DE2A549847001BE2C-URGENCY",
+      "formal_cdss_ready": false,
+      "review_status": "approved",
+      "merge_status": "batch_ready_for_import",
+      "disease_code": "DIS-CARD-HT-URGENCY",
+      "scope_target": "高血压",
+      "source_page": 67,
+      "recommendation_class": "未分级推荐",
+      "code": "REC-HT-URGENCY-TX-PLAN-CARD-BDE62A3BE028",
+      "preferred_name": "高血压亚急症：降压治疗推荐",
+      "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension",
+      "display_name": "高血压亚急症：降压治疗推荐",
+      "clinical_review_status": "clinical_batch_signed_off",
+      "conflict_status": "none",
+      "recommendation_text": "高血压亚急症患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：降压治疗。",
+      "cdss_release_level": "test_recommendation"
+    },
+    "rec_code": "REC-HT-URGENCY-TX-PLAN-CARD-BDE62A3BE028",
+    "targets": [
+      {
+        "disease_code": "DIS-CARD-HT-URGENCY",
+        "plan": "降压治疗",
+        "disease": "高血压亚急症",
+        "plan_code": "PLAN-CARD-BDE62A3BE028"
+      }
+    ],
+    "evidence_codes": [
+      "EVD-C5F4AC21B117738DF204-URGENCY",
+      "EVD-2C1DE2A549847001BE2C-URGENCY"
+    ]
+  },
+  {
+    "rec_eid": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42999",
+    "rec_props": {
+      "exclusion_criteria": "存在禁忌证、资料不足、替代诊断更可能或患者状态不稳定时，需临床医师复核。",
+      "evidence_level": "专家共识/教材证据",
+      "scope_type": "disease_category",
+      "schema_version": "V1.11",
+      "entityType": "RecommendationStatement",
+      "type_label": "RecommendationStatement",
+      "primary_label": "KGNode",
+      "id": "KG_REC_HT_WCH_TX_PLAN_CARD_2081B78ED14D",
+      "applicable_population": "白大衣高血压患者中符合该推荐适用条件者。",
+      "entityCategory": "推荐",
+      "canonical_labels": [
+        "KGNode",
+        "RecommendationStatement"
+      ],
+      "ai_evidence_review_status": "ai_prechecked_limited",
+      "name": "白大衣高血压：生活方式干预推荐",
+      "created_at": "2026-07-10 17:00:00",
+      "source_name": "HT ESC 2018.pdf",
+      "evidence_id": "EVD-776F28B4C885F14E4B7A-WCH",
+      "formal_cdss_ready": false,
+      "review_status": "approved",
+      "merge_status": "batch_ready_for_import",
+      "disease_code": "DIS-CARD-HT-WCH",
+      "scope_target": "高血压",
+      "source_page": 56,
+      "recommendation_class": "未分级推荐",
+      "code": "REC-HT-WCH-TX-PLAN-CARD-2081B78ED14D",
+      "preferred_name": "白大衣高血压：生活方式干预推荐",
+      "batch_id": "BATCH-CARD-HT-20260709-001_高血压_Hypertension",
+      "display_name": "白大衣高血压：生活方式干预推荐",
+      "clinical_review_status": "clinical_batch_signed_off",
+      "conflict_status": "none",
+      "recommendation_text": "白大衣高血压患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：生活方式干预。",
+      "cdss_release_level": "test_recommendation"
+    },
+    "rec_code": "REC-HT-WCH-TX-PLAN-CARD-2081B78ED14D",
+    "targets": [
+      {
+        "disease_code": "DIS-CARD-HT-WCH",
+        "plan": "生活方式干预",
+        "disease": "白大衣高血压",
+        "plan_code": "PLAN-CARD-2081B78ED14D"
+      }
+    ],
+    "evidence_codes": [
+      "EVD-776F28B4C885F14E4B7A-WCH",
+      "EVD-62B64136818BC831207A-WCH"
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-07-16 19:53:34",
+  "overview": [
+    {
+      "treatment_plan_count": 259,
+      "disease_direct_relation_count": 344,
+      "rec_to_plan_count": 208,
+      "evidence_count": 358,
+      "plan_with_downstream_count": 132
+    }
+  ],
+  "signed_full_chain": [
+    {
+      "n": 19,
+      "plan_n": 3,
+      "disease_n": 14
+    }
+  ],
+  "direct_without_formal_chain": [
+    {
+      "relation_n": 338,
+      "disease_n": 116,
+      "plan_n": 132
+    }
+  ],
+  "rec_without_evidence_or_action": [
+    {
+      "rec_without_action": 0,
+      "rec_without_evidence": 0
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-07-16 19:59:16",
+  "scope": "20260716_治疗方案动作链全库治理",
+  "formalized_recommendations": 19,
+  "marked_direct_relations_as_knowledge_only": 344,
+  "verify": {
+    "total_rec": 567,
+    "formal_rec": 26,
+    "formalized_this_scope": 19,
+    "direct_rels": 344,
+    "marked_not_formal": 344,
+    "formal_rec_to_plan": 26,
+    "formal_evidence_n": 41
+  },
+  "note": "正式CDSS推荐入口统一为 RecommendationStatement -> recommends_action；Disease -> has_treatment_plan 仅用于图谱探索/知识浏览。"
+}

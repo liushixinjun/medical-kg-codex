@@ -1,0 +1,22 @@
+{
+  "gate_name": "主数据质量闸门",
+  "gate_status": "passed",
+  "gate_status_cn": "通过",
+  "blocking_issue_count": 0,
+  "blocking_items": [],
+  "counts": {
+    "disease_without_category_count": 0,
+    "disease_without_subcategory_count": 0,
+    "subcategory_without_category_count": 0,
+    "disease_classification_without_parent_disease_count": 0,
+    "active_duplicate_disease_name_count": 0,
+    "retired_disease_node_remaining_count": 0,
+    "same_disease_same_type_same_name_duplicate_count": 0,
+    "diagnosis_criteria_without_component_count": 0,
+    "orphan_diagnosis_criteria_count": 0,
+    "treatment_plan_without_downstream_count": 0,
+    "replaced_duplicate_still_referenced_count": 0
+  },
+  "generated_at": "2026-07-16 19:59:36",
+  "output_dir": "项目管理中心_project_management\\118_治疗方案动作链全库治理后入库复测_20260716\\99_入库后复测\\01_主数据质量闸门"
+}

@@ -1,0 +1,8 @@
+{
+  "generated_at": "2026-07-16 20:00:19",
+  "formal_recommendation_to_treatment_plan": 28,
+  "formal_chain_failed": 0,
+  "disease_direct_treatment_plan_relations": 344,
+  "direct_relations_not_marked_knowledge_only": 0,
+  "passed": true
+}

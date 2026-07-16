@@ -1,7 +1,7 @@
 # Trae前端开发全局提示词
 
-版本：V1.6
-更新时间：2026-07-16 18:50:00
+版本：V1.7
+更新时间：2026-07-16 20:05:00
 适用范围：专科知识图谱、专病辅助诊疗、图谱探索、临床诊断模拟、路径编辑、临床审核、Schema 标准、CDSS 前后端集成。
 依据文件：
 
@@ -14,6 +14,7 @@
 
 | 版本 | 时间 | 变更内容 | Trae影响 |
 |---|---:|---|---|
+| V1.7 | 2026-07-16 20:05:00 | 新增治疗方案动作链全库治理规则：`疾病 → 治疗方案` 直连全部只作为知识浏览；正式推荐区必须走“推荐陈述 → 推荐动作 → 证据” | 前端正式推荐区不得再用 `has_treatment_plan` 直连作为推荐入口；图谱探索页可展示直连，但必须标识为知识浏览 |
 | V1.6 | 2026-07-16 18:50:00 | 新增“入库后复测”和“阶段候选动作/正式推荐动作”前端硬规则；补充治疗方案无下游动作的展示边界 | 前端不得展示无下游动作的治疗方案为可执行推荐；不得把阶段候选动作当患者正式推荐；页面问题先按入库后复测结果与专项体检结果对账 |
 | V1.5 | 2026-07-14 20:40:00 | 新增 CDSS 推荐证据范围过滤规则：Evidence/Guideline 必须按当前疾病或当前疾病大类过滤 `supported_by_evidence.disease_code`，不能展示推荐节点连接的全部证据 | 医生点击“急诊PCI、抗凝治疗、降压治疗、起搏治疗”等推荐时，只展示属于当前疾病/大类的证据；外部疾病证据不得进入正式 CDSS 展示 |
 | V1.4 | 2026-07-11 17:34:47 | Schema V1.15 所有表格已统一增加 AMI 示例列，并补具体值格式要求 | Trae 阅读 Schema 时按“格式或使用要求 + AMI示例”理解接口字段、展示字段和查询关系 |
@@ -63,6 +64,39 @@
 ```
 
 如果专项体检提示“治疗方案无下游动作”，前端可以在图谱探索页显示为知识节点，但不能在正式 CDSS 推荐区显示为可执行推荐。正式推荐必须来自 `RecommendationStatement` 或命中的 `ClinicalRule`，并且能展示当前推荐自己的证据链。
+
+### 1.0.2 治疗方案正式推荐入口硬规则
+
+正式 CDSS 推荐区不得使用下面这种直连作为推荐入口：
+
+```cypher
+MATCH (d:Disease)-[:has_treatment_plan]->(plan:TreatmentPlan)
+```
+
+这类关系只代表疾病知识浏览，不代表患者当前应执行该方案。服务器已把这类直连关系标记为：
+
+```text
+cdss_usage = knowledge_explore_only
+not_formal_cdss_recommendation = true
+recommendation_entry_required = RecommendationStatement->recommends_action
+```
+
+正式推荐区必须使用：
+
+```cypher
+MATCH (d:Disease {code:$disease_code})
+  -[:has_clinical_pathway]->(:ClinicalPathway)
+  -[:has_pathway_stage]->(:PathwayStage)
+  -[:has_recommendation_statement]->(rec:RecommendationStatement)
+  -[:recommends_action]->(action)
+WHERE coalesce(rec.formal_cdss_ready,false)=true
+   OR coalesce(rec.cdss_release_level,'')='formal'
+   OR coalesce(rec.clinical_review_status,'')='clinical_ready'
+OPTIONAL MATCH (rec)-[:derived_from|supported_by_evidence]->(e:Evidence)
+RETURN rec, action, collect(DISTINCT e) AS evidence
+```
+
+医生点击某条推荐时，只展示该 `RecommendationStatement` 自己连接的证据，不展示疾病证据池。
 
 ### 1.1 CDSS 推荐证据范围过滤硬规则
 
