@@ -1,0 +1,137 @@
+{
+  "batch_id": "20260716_CDSS治疗方案动作链增强",
+  "generated_at": "2026-07-16 19:01:58",
+  "created_or_updated_chains": [
+    {
+      "disease_code": "DIS-CARD-ARR-AF",
+      "disease_name": "心房颤动",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rec_code": "REC-CDSS-CARD-ARR-AF-RATE-CONTROL",
+      "evidence_codes": [
+        "EVD-CARD-DEEP-59E5E08B606D9D",
+        "EVD-CARD-DEEP-94D83E44FD47F4"
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AFL",
+      "disease_name": "心房扑动",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rec_code": "REC-CDSS-CARD-ARR-AFL-RATE-CONTROL",
+      "evidence_codes": [
+        "EVD-CARD-DEEP-2E78252BA488DA",
+        "EVD-CARD-DEEP-CEF86B15D75B03"
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-MS",
+      "disease_name": "二尖瓣狭窄",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rec_code": "REC-CDSS-CARD-VHD-MS-RATE-CONTROL",
+      "evidence_codes": [
+        "EVD-CARD-DEEP-480396BA8D88DB",
+        "EVD-CARD-DEEP-1F46BD1E7FFCA3",
+        "EVD-CARD-DEEP-537B1B4362A135"
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-HF",
+      "disease_name": "心力衰竭",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rec_code": "REC-CDSS-CARD-HF-RATE-CONTROL",
+      "evidence_codes": [
+        "EVD-CARD-DEEP-94D83E44FD47F4",
+        "EVD-CARD-FOUND-00052"
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-HF-AHF",
+      "disease_name": "急性心力衰竭",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rec_code": "REC-CDSS-CARD-HF-AHF-RATE-CONTROL",
+      "evidence_codes": [
+        "EVD-CARD-DEEP-94D83E44FD47F4",
+        "EVD-CARD-DEEP-7222B11A90"
+      ]
+    }
+  ],
+  "deleted_relationships": [
+    {
+      "disease_code": "DIS-CARD-VHD-AR",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "deleted_count": 1,
+      "reason": "瓣膜反流/狭窄本身不是心室率控制适应证；需合并房颤等场景另建规则"
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-AS",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "deleted_count": 1,
+      "reason": "瓣膜反流/狭窄本身不是心室率控制适应证；需合并房颤等场景另建规则"
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-MR",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "deleted_count": 1,
+      "reason": "瓣膜反流/狭窄本身不是心室率控制适应证；需合并房颤等场景另建规则"
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-CHD",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "deleted_count": 1,
+      "reason": "冠心病本身不是心室率控制适应证；应通过心律失常/心衰合并场景触发"
+    },
+    {
+      "disease_code": "DIS-CARD-PERICARD-EFFUSION",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "deleted_count": 1,
+      "reason": "心包积液/压塞治疗核心为病因、引流或抢救处置，缺少心室率控制证据"
+    },
+    {
+      "disease_code": "DIS-CARD-INFECTIVE-ENDOCARDITIS",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "deleted_count": 1,
+      "reason": "感染性心内膜炎本身不是心室率控制适应证；缺少直接证据"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "deleted_count": 1,
+      "reason": "房室传导阻滞是缓慢性传导问题，心室率控制作为直连治疗方案不合适"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AT",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "deleted_count": 1,
+      "reason": "房性心动过速需按心律失常专病规则处理，当前缺少控制心室率直接证据链"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-DCM",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "deleted_count": 1,
+      "reason": "扩张型心肌病需通过合并房颤/心衰场景触发，疾病直连会误导"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-VT",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "deleted_count": 1,
+      "reason": "持续性室速治疗不是心室率控制，应按复律、抗心律失常、ICD等路径"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-NDLVCM",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "deleted_count": 1,
+      "reason": "非扩张型左室心肌病需通过合并房颤/心衰场景触发，疾病直连会误导"
+    },
+    {
+      "disease_code": "DIS-CARD-AAS",
+      "plan_code": "PLAN-CARD-AAS-MEDICAL-ENDOVASCULAR-SURGICAL",
+      "deleted_count": 1,
+      "reason": "急性主动脉综合征该方案缺少直连推荐证据链，本轮不作为正式CDSS推荐直连"
+    }
+  ],
+  "skipped": []
+}

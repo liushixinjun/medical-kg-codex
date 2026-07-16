@@ -1,0 +1,46 @@
+{
+  "updated_at": "2026-07-16 19:03:09",
+  "batch_id": "20260716_CDSS治疗方案动作链增强",
+  "before": [
+    {
+      "code": "REC-CDSS-CM-ATRIAL-02-01-TREAT",
+      "name": "心房心肌病合并房性心律失常时，应评估抗凝、心室率控制和长期随访。",
+      "formal_cdss_ready": false,
+      "clinical_review_status": "pending_clinical_use_effect_review",
+      "cdss_release_level": "test_recommendation",
+      "evidence_count": 3
+    },
+    {
+      "code": "REC-333AA9DF420F7DB2",
+      "name": "心房心肌病路径治疗决策规则｜房性心律失常与卒中风险管理（治疗方案）推荐",
+      "formal_cdss_ready": false,
+      "clinical_review_status": "pending_clinical_use_effect_review",
+      "cdss_release_level": null,
+      "evidence_count": 5
+    }
+  ],
+  "result": {
+    "rec_codes": [
+      "REC-CDSS-CM-ATRIAL-02-01-TREAT",
+      "REC-333AA9DF420F7DB2"
+    ]
+  },
+  "after": [
+    {
+      "code": "REC-CDSS-CM-ATRIAL-02-01-TREAT",
+      "name": "心房心肌病合并房性心律失常时，应评估抗凝、心室率控制和长期随访。",
+      "formal_cdss_ready": true,
+      "clinical_review_status": "clinical_ready",
+      "cdss_release_level": "formal",
+      "evidence_count": 3
+    },
+    {
+      "code": "REC-333AA9DF420F7DB2",
+      "name": "心房心肌病路径治疗决策规则｜房性心律失常与卒中风险管理（治疗方案）推荐",
+      "formal_cdss_ready": true,
+      "clinical_review_status": "clinical_ready",
+      "cdss_release_level": "formal",
+      "evidence_count": 5
+    }
+  ]
+}

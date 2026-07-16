@@ -1,0 +1,761 @@
+{
+  "generated_at": "2026-07-16 19:01:58",
+  "batch_id": "20260716_CDSS治疗方案动作链增强",
+  "chains": [
+    {
+      "disease_code": "DIS-CARD-ARR-AF",
+      "disease_name": "心房颤动",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rec_code": "REC-CDSS-CARD-ARR-AF-RATE-CONTROL",
+      "rule_code": "RULE-CDSS-CARD-ARR-AF-RATE-CONTROL",
+      "stage_code": "STAGE-CDSS-CARD-ARR-AF-RATE-CONTROL",
+      "evidence_found": [
+        {
+          "code": "EVD-CARD-DEEP-59E5E08B606D9D",
+          "name": "心房颤动-心动过速-教材证据-6455-606D9D",
+          "disease_name": "心房颤动",
+          "source": "《内科学（第10版）》.docx",
+          "page": "N/A",
+          "evidence_text": "3. 控制心室率 房颤伴快速心室率是产生症状的主要原因，长时间的快速心室率可引起血流动力学不稳定或导致心动过速性心肌病。因此，有效控制心室率是房颤管理的重要环节。对于无症状的房颤，且左心室收缩功能正常，控制静息心室率＜110 次 / 分；对于症状性明显或出现心动过速性心肌病时，应控制静息心室率＜80 次 / 分且中等运动时心室率＜110 次 / 分。"
+        },
+        {
+          "code": "EVD-CARD-DEEP-94D83E44FD47F4",
+          "name": "心房颤动-心动过缓-教材证据-6457-FD47F4",
+          "disease_name": "心房颤动",
+          "source": "《内科学（第10版）》.docx",
+          "page": "N/A",
+          "evidence_text": "控制心室率的药物包括β受体拮抗剂、非二氢吡啶类钙通道阻滞剂、洋地黄制剂和某些抗心律失常药物（如胺碘酮），可单用或者联合应用，但应注意这些药物的禁忌证。射血分数保留的心力衰竭病人可选择β受体拮抗剂或 / 和非二氢吡啶类钙通道阻滞剂。射血分数下降的心力衰竭病人首选β受体拮抗剂，当心室率控制不达标或β受体拮抗剂有使用禁忌时，应考虑使用洋地黄类药物或/ 和胺碘酮。达到严格心室率控制目标后，应行 24 小时动态心电图监测以评估有无心动过缓和心脏停搏情况。"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AFL",
+      "disease_name": "心房扑动",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rec_code": "REC-CDSS-CARD-ARR-AFL-RATE-CONTROL",
+      "rule_code": "RULE-CDSS-CARD-ARR-AFL-RATE-CONTROL",
+      "stage_code": "STAGE-CDSS-CARD-ARR-AFL-RATE-CONTROL",
+      "evidence_found": [
+        {
+          "code": "EVD-CARD-DEEP-CEF86B15D75B03",
+          "name": "心房扑动-低血压-教材证据-6939-D75B03",
+          "disease_name": "心房扑动",
+          "source": "《内科学（第10版）》.docx",
+          "page": "N/A",
+          "evidence_text": "维拉帕米 （verapamil） 用于房颤或房扑的心室率控制、不适当窦性心动过速，终止（静脉）和预防（口服）阵发性室上速，也可用于终止左后分支起源的特发性室速和 短 联 律 间 期（340~ 360ms）室早诱发的室速 口服：起始剂量 80～120mg/ 次，每 6～8 小时 1 次；可逐渐增加剂量；长期服用可使用缓释剂型， 240mg，每日 1 次。静脉注射：终止室上速和特发性室速，每次 5~ 10mg 或 0.075～0.15mg/kg，静 脉注射 2～5 分 钟，间 隔 15～30 分钟可重复 1 次，最大剂量 20mg。静脉注射 1～5 分钟起效，达峰时间 5 分钟。静脉滴注维持量0.005mg/（kg·min）。 半 衰 期 2.5小时 已应用β受体拮抗剂或有血流动力学障碍者易引起低血压、心动过缓、房室传导阻滞、心搏停顿；禁用于严重心衰、SSS、二 度 以 上 AVB、预激综合征伴房颤 / 房扑、室速，心源性休克以及其他低血压状态"
+        },
+        {
+          "code": "EVD-CARD-DEEP-2E78252BA488DA",
+          "name": "心房扑动-心动过速-教材证据-6949-A488DA",
+          "disease_name": "心房扑动",
+          "source": "《内科学（第10版）》.docx",
+          "page": "N/A",
+          "evidence_text": "伊伐布雷定（ivabradine） 异丙肾上腺素（isoproterenol） 地高辛 （digoxin） 治疗不适当窦性心动过速或 HFrEF（NYHA Ⅱ~ Ⅳ级），在服用β受体拮抗剂最大耐受剂量后，心率仍≥75 次/分的病人 用于高度或三度 AVB，尤其伴阿斯综合征发作时（除外室速或室颤引起）；用 于 LQTS（特 别 是2 型和 3 型）可提高心率并缩短 QT 间期、抑制TdP；抑 制 Brugada 综 合征和早期复极综合征等合并室颤 / 室速电风暴 用于减慢房颤或房扑的快速心室率及终止室上速，尤其合并心功能不全时 口服：2.5～7.5mg/ 次，每 12 小时 1次；可与β受体拮抗剂合用，静息心率控制目标值 50～60 次 / 分。起效快，达峰时间 1 小时；半衰期2 小时 静脉注射：负荷量 20～60μg/ 次，重复剂量 10～20μg/ 次 静脉滴注维持：0.5～1mg 溶于 5%葡萄糖溶液 200～300ml 缓慢静脉滴注；起始输注速度 1～3μg/min，可逐渐增加，根据心率调整剂量。半衰期 2.5～5 分钟 口 服：维 持 量 0.125～0.25mg，每 日 1"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-MS",
+      "disease_name": "二尖瓣狭窄",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rec_code": "REC-CDSS-CARD-VHD-MS-RATE-CONTROL",
+      "rule_code": "RULE-CDSS-CARD-VHD-MS-RATE-CONTROL",
+      "stage_code": "STAGE-CDSS-CARD-VHD-MS-RATE-CONTROL",
+      "evidence_found": [
+        {
+          "code": "EVD-CARD-DEEP-480396BA8D88DB",
+          "name": "二尖瓣狭窄-水肿-教材证据-9989-8D88DB",
+          "disease_name": "二尖瓣狭窄",
+          "source": "《内科学（第10版）》.docx",
+          "page": "N/A",
+          "evidence_text": "3. 心房颤动 急性快速型房颤应立即控制心室率，可先静脉注射洋地黄类药物如毛花苷丙注射液；如效果不满意，可静脉注射地尔硫䓬或艾司洛尔；当血流动力学不稳定时，如出现肺水肿、休克、心"
+        },
+        {
+          "code": "EVD-CARD-DEEP-1F46BD1E7FFCA3",
+          "name": "二尖瓣狭窄-晕厥-教材证据-9995-7FFCA3",
+          "disease_name": "二尖瓣狭窄",
+          "source": "《内科学（第10版）》.docx",
+          "page": "N/A",
+          "evidence_text": "绞痛或晕厥者，应立即电复律。慢性房颤病人应争取介入或者手术解决狭窄，可口服β受体拮抗剂、地高辛或非二氢吡啶类钙通道阻滞剂控制心室率，使用 VKA 抗凝。"
+        },
+        {
+          "code": "EVD-CARD-DEEP-537B1B4362A135",
+          "name": "二尖瓣狭窄-心力衰竭-教材证据-9987-62A135",
+          "disease_name": "二尖瓣狭窄",
+          "source": "《内科学（第10版）》.docx",
+          "page": "N/A",
+          "evidence_text": "2. 急性肺水肿 处理原则与急性左心衰所致的肺水肿相似。需注意以下两点：①避免使用以扩张小动脉为主、减轻心脏后负荷的血管扩张药物，应选用扩张静脉系统、减轻心脏前负荷为主的硝酸酯类药物；②正性肌力药物对二尖瓣狭窄的肺水肿无益，仅在房颤伴快速心室率时可静脉注射毛花苷丙，以减慢心室率。"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-HF",
+      "disease_name": "心力衰竭",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rec_code": "REC-CDSS-CARD-HF-RATE-CONTROL",
+      "rule_code": "RULE-CDSS-CARD-HF-RATE-CONTROL",
+      "stage_code": "STAGE-CDSS-CARD-HF-RATE-CONTROL",
+      "evidence_found": [
+        {
+          "code": "EVD-CARD-FOUND-00052",
+          "name": "心房颤动-symptom-教材证据",
+          "disease_name": "心房颤动",
+          "source": "《内科学（第10版）》.docx",
+          "page": "N/A",
+          "evidence_text": "地高辛可改善心衰病人的症状，提高运动耐量，减少住院率，但对生存率无明显改变。适用于应用利尿剂、ACEI/ARB/ARNI、β受体拮抗剂、MRA 和 SGLT2i 后仍持续有症状的 HFrEF 病人，或症状性心衰伴房颤快心室率者。"
+        },
+        {
+          "code": "EVD-CARD-DEEP-94D83E44FD47F4",
+          "name": "心房颤动-心动过缓-教材证据-6457-FD47F4",
+          "disease_name": "心房颤动",
+          "source": "《内科学（第10版）》.docx",
+          "page": "N/A",
+          "evidence_text": "控制心室率的药物包括β受体拮抗剂、非二氢吡啶类钙通道阻滞剂、洋地黄制剂和某些抗心律失常药物（如胺碘酮），可单用或者联合应用，但应注意这些药物的禁忌证。射血分数保留的心力衰竭病人可选择β受体拮抗剂或 / 和非二氢吡啶类钙通道阻滞剂。射血分数下降的心力衰竭病人首选β受体拮抗剂，当心室率控制不达标或β受体拮抗剂有使用禁忌时，应考虑使用洋地黄类药物或/ 和胺碘酮。达到严格心室率控制目标后，应行 24 小时动态心电图监测以评估有无心动过缓和心脏停搏情况。"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-HF-AHF",
+      "disease_name": "急性心力衰竭",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rec_code": "REC-CDSS-CARD-HF-AHF-RATE-CONTROL",
+      "rule_code": "RULE-CDSS-CARD-HF-AHF-RATE-CONTROL",
+      "stage_code": "STAGE-CDSS-CARD-HF-AHF-RATE-CONTROL",
+      "evidence_found": [
+        {
+          "code": "EVD-CARD-DEEP-94D83E44FD47F4",
+          "name": "心房颤动-心动过缓-教材证据-6457-FD47F4",
+          "disease_name": "心房颤动",
+          "source": "《内科学（第10版）》.docx",
+          "page": "N/A",
+          "evidence_text": "控制心室率的药物包括β受体拮抗剂、非二氢吡啶类钙通道阻滞剂、洋地黄制剂和某些抗心律失常药物（如胺碘酮），可单用或者联合应用，但应注意这些药物的禁忌证。射血分数保留的心力衰竭病人可选择β受体拮抗剂或 / 和非二氢吡啶类钙通道阻滞剂。射血分数下降的心力衰竭病人首选β受体拮抗剂，当心室率控制不达标或β受体拮抗剂有使用禁忌时，应考虑使用洋地黄类药物或/ 和胺碘酮。达到严格心室率控制目标后，应行 24 小时动态心电图监测以评估有无心动过缓和心脏停搏情况。"
+        }
+      ]
+    }
+  ],
+  "removed_relationship_candidates": [
+    {
+      "disease_code": "DIS-CARD-VHD-AR",
+      "disease_name": "主动脉瓣反流",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rel_props": {
+        "relationType": "has_treatment_plan",
+        "source_types": [
+          "authoritative_textbook"
+        ],
+        "evidence_level": "N/A",
+        "source_type": "authoritative_textbook",
+        "evidence_text": "（二）药物治疗 药物治疗效果不明显，无特异性药物治疗。主要为对症支持治疗，包括：预防感染性心内膜炎；风湿性心脏病病人应预防风湿热；积极控制血压；心衰病人应限制钠盐摄入，可用利尿剂以及 ACEI 等药物治疗；积极治疗易导致血流动力学不稳定的心律失常，房颤病人可谨慎使用β受体拮抗剂及洋地黄类药物控制心室率，警惕可能出现的急性左心衰竭。血管扩张药物如硝酸酯类、硝苯地平等可降低体循环血压以及冠状动脉灌注压，应避免使用此类药物。他汀类药物对主动脉瓣狭窄的进展无明确的防治作用。",
+        "target_code": "PLAN-CARD-TEXT-655F4B37BC",
+        "schema_version": "V1.4",
+        "id": "REL-A64CEC30340A",
+        "disease_name": "主动脉瓣反流",
+        "source_name": "《内科学（第10版）》docx",
+        "guideline_id": "DOC-CF62B75AEC93F1A6",
+        "evidence_id": "EVD-CARD-FULLBOOK-D5A0AC52C9A341",
+        "source_version": "第10版",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "EVD-CARD-FULLBOOK-D5A0AC52C9A341"
+        ],
+        "source_names": [
+          "《内科学（第10版）》docx"
+        ],
+        "relationCategory": "therapeutic",
+        "review_status": "approved",
+        "disease_code": "DIS-CARD-VHD-AR",
+        "evidence_count": 1,
+        "provenance_records_json": "[{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-9785\",\"source_name\":\"《内科学（第10版）》docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"全书跨章节回捞\",\"source_page\":\"N/A\",\"line_start\":9785,\"line_end\":9785,\"evidence_text\":\"（二）药物治疗 药物治疗效果不明显，无特异性药物治疗。主要为对症支持治疗，包括：预防感染性心内膜炎；风湿性心脏病病人应预防风湿热；积极控制血压；心衰病人应限制钠盐摄入，可用利尿剂以及 ACEI 等药物治疗；积极治疗易导致血流动力学不稳定的心律失常，房颤病人可谨慎使用β受体拮抗剂及洋地黄类药物控制心室率，警惕可能出现的急性左心衰竭。血管扩张药物如硝酸酯类、硝苯地平等可降低体循环血压以及冠状动脉灌注压，应避免使用此类药物。他汀类药物对主动脉瓣狭窄的进展无明确的防治作用。\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-FULLBOOK-D5A0AC52C9A341\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-VHD-AR\",\"disease_name\":\"主动脉瓣反流\"}]",
+        "target_name": "控制心室率",
+        "source_page": "N/A",
+        "document_id": "DOC-CF62B75AEC93F1A6",
+        "recommendation_class": "N/A",
+        "confidence": 1.0,
+        "source_section": "全书跨章节回捞",
+        "batch_id": "FOUNDATION-CARD-FULLBOOK-BACKFILL-20260625-001",
+        "source_code": "DIS-CARD-VHD-AR",
+        "segment_id": "LINE-9785",
+        "clinical_review_status": "pending_clinical_review",
+        "document_ids": [
+          "DOC-CF62B75AEC93F1A6"
+        ]
+      },
+      "cleanup_reason": "瓣膜反流/狭窄本身不是心室率控制适应证；需合并房颤等场景另建规则"
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-AS",
+      "disease_name": "主动脉瓣狭窄",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rel_props": {
+        "relationType": "has_treatment_plan",
+        "source_types": [
+          "authoritative_textbook"
+        ],
+        "evidence_level": "N/A",
+        "source_type": "authoritative_textbook",
+        "evidence_text": "（二）药物治疗 药物治疗效果不明显，无特异性药物治疗。主要为对症支持治疗，包括：预防感染性心内膜炎；风湿性心脏病病人应预防风湿热；积极控制血压；心衰病人应限制钠盐摄入，可用利尿剂以及 ACEI 等药物治疗；积极治疗易导致血流动力学不稳定的心律失常，房颤病人可谨慎使用β受体拮抗剂及洋地黄类药物控制心室率，警惕可能出现的急性左心衰竭。血管扩张药物如硝酸酯类、硝苯地平等可降低体循环血压以及冠状动脉灌注压，应避免使用此类药物。他汀类药物对主动脉瓣狭窄的进展无明确的防治作用。",
+        "target_code": "PLAN-CARD-TEXT-655F4B37BC",
+        "schema_version": "V1.4",
+        "id": "REL-DF4231F43B13",
+        "disease_name": "主动脉瓣狭窄",
+        "source_name": "《内科学（第10版）》.docx",
+        "guideline_id": "DOC-CF62B75AEC93F1A6",
+        "evidence_id": "EVD-CARD-DEEP-BA9B13DCEADB80",
+        "source_version": "第10版",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "EVD-CARD-DEEP-BA9B13DCEADB80",
+          "EVD-CARD-FULLBOOK-BA9B13DCEADB80"
+        ],
+        "source_names": [
+          "《内科学（第10版）》.docx",
+          "《内科学（第10版）》docx"
+        ],
+        "relationCategory": "therapeutic",
+        "review_status": "approved",
+        "disease_code": "DIS-CARD-VHD-AS",
+        "evidence_count": 2,
+        "provenance_records_json": "[{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-9785\",\"source_name\":\"《内科学（第10版）》.docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"第三篇 循环系统疾病\",\"source_page\":\"N/A\",\"line_start\":9785,\"line_end\":9785,\"evidence_text\":\"（二）药物治疗 药物治疗效果不明显，无特异性药物治疗。主要为对症支持治疗，包括：预防感染性心内膜炎；风湿性心脏病病人应预防风湿热；积极控制血压；心衰病人应限制钠盐摄入，可用利尿剂以及 ACEI 等药物治疗；积极治疗易导致血流动力学不稳定的心律失常，房颤病人可谨慎使用β受体拮抗剂及洋地黄类药物控制心室率，警惕可能出现的急性左心衰竭。血管扩张药物如硝酸酯类、硝苯地平等可降低体循环血压以及冠状动脉灌注压，应避免使用此类药物。他汀类药物对主动脉瓣狭窄的进展无明确的防治作用。\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-DEEP-BA9B13DCEADB80\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-VHD-AS\",\"disease_name\":\"主动脉瓣狭窄\"},{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-9785\",\"source_name\":\"《内科学（第10版）》docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"全书跨章节回捞\",\"source_page\":\"N/A\",\"line_start\":9785,\"line_end\":9785,\"evidence_text\":\"（二）药物治疗 药物治疗效果不明显，无特异性药物治疗。主要为对症支持治疗，包括：预防感染性心内膜炎；风湿性心脏病病人应预防风湿热；积极控制血压；心衰病人应限制钠盐摄入，可用利尿剂以及 ACEI 等药物治疗；积极治疗易导致血流动力学不稳定的心律失常，房颤病人可谨慎使用β受体拮抗剂及洋地黄类药物控制心室率，警惕可能出现的急性左心衰竭。血管扩张药物如硝酸酯类、硝苯地平等可降低体循环血压以及冠状动脉灌注压，应避免使用此类药物。他汀类药物对主动脉瓣狭窄的进展无明确的防治作用。\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-FULLBOOK-BA9B13DCEADB80\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-VHD-AS\",\"disease_name\":\"主动脉瓣狭窄\"}]",
+        "target_name": "控制心室率",
+        "source_page": "N/A",
+        "document_id": "DOC-CF62B75AEC93F1A6",
+        "recommendation_class": "N/A",
+        "confidence": 1.0,
+        "source_section": "第三篇 循环系统疾病",
+        "batch_id": "FOUNDATION-CARD-DEEP-20260625-001",
+        "source_code": "DIS-CARD-VHD-AS",
+        "segment_id": "LINE-9785",
+        "clinical_review_status": "pending_clinical_review",
+        "document_ids": [
+          "DOC-CF62B75AEC93F1A6"
+        ]
+      },
+      "cleanup_reason": "瓣膜反流/狭窄本身不是心室率控制适应证；需合并房颤等场景另建规则"
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-MR",
+      "disease_name": "二尖瓣反流",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rel_props": {
+        "relationType": "has_treatment_plan",
+        "source_types": [
+          "authoritative_textbook"
+        ],
+        "evidence_level": "N/A",
+        "source_type": "authoritative_textbook",
+        "evidence_text": "绞痛或晕厥者，应立即电复律。慢性房颤病人应争取介入或者手术解决狭窄，可口服β受体拮抗剂、地高辛或非二氢吡啶类钙通道阻滞剂控制心室率，使用 VKA 抗凝。",
+        "target_code": "PLAN-CARD-TEXT-655F4B37BC",
+        "schema_version": "V1.4",
+        "id": "REL-38041EBE51F5",
+        "disease_name": "二尖瓣反流",
+        "source_name": "《内科学（第10版）》.docx",
+        "guideline_id": "DOC-CF62B75AEC93F1A6",
+        "evidence_id": "EVD-CARD-DEEP-97BB84A3F1ED77",
+        "source_version": "第10版",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "EVD-CARD-DEEP-97BB84A3F1ED77",
+          "EVD-CARD-FULLBOOK-97BB84A3F1ED77"
+        ],
+        "source_names": [
+          "《内科学（第10版）》.docx",
+          "《内科学（第10版）》docx"
+        ],
+        "relationCategory": "therapeutic",
+        "review_status": "approved",
+        "disease_code": "DIS-CARD-VHD-MR",
+        "evidence_count": 2,
+        "provenance_records_json": "[{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-9995\",\"source_name\":\"《内科学（第10版）》.docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"第三篇 循环系统疾病\",\"source_page\":\"N/A\",\"line_start\":9995,\"line_end\":9995,\"evidence_text\":\"绞痛或晕厥者，应立即电复律。慢性房颤病人应争取介入或者手术解决狭窄，可口服β受体拮抗剂、地高辛或非二氢吡啶类钙通道阻滞剂控制心室率，使用 VKA 抗凝。\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-DEEP-97BB84A3F1ED77\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-VHD-MR\",\"disease_name\":\"二尖瓣反流\"},{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-9995\",\"source_name\":\"《内科学（第10版）》docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"全书跨章节回捞\",\"source_page\":\"N/A\",\"line_start\":9995,\"line_end\":9995,\"evidence_text\":\"绞痛或晕厥者，应立即电复律。慢性房颤病人应争取介入或者手术解决狭窄，可口服β受体拮抗剂、地高辛或非二氢吡啶类钙通道阻滞剂控制心室率，使用 VKA 抗凝。\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-FULLBOOK-97BB84A3F1ED77\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-VHD-MR\",\"disease_name\":\"二尖瓣反流\"}]",
+        "target_name": "控制心室率",
+        "source_page": "N/A",
+        "document_id": "DOC-CF62B75AEC93F1A6",
+        "recommendation_class": "N/A",
+        "confidence": 1.0,
+        "source_section": "第三篇 循环系统疾病",
+        "batch_id": "FOUNDATION-CARD-DEEP-20260625-001",
+        "source_code": "DIS-CARD-VHD-MR",
+        "segment_id": "LINE-9995",
+        "clinical_review_status": "pending_clinical_review",
+        "document_ids": [
+          "DOC-CF62B75AEC93F1A6"
+        ]
+      },
+      "cleanup_reason": "瓣膜反流/狭窄本身不是心室率控制适应证；需合并房颤等场景另建规则"
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-CHD",
+      "disease_name": "冠状动脉粥样硬化性心脏病",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rel_props": {
+        "relationType": "has_treatment_plan",
+        "source_types": [
+          "authoritative_textbook"
+        ],
+        "evidence_level": "N/A",
+        "quality_block_reason": "候选证据主要来自房颤或瓣膜病场景，控制心室率不应作为冠心病本病种通用治疗方案直接推荐",
+        "source_type": "authoritative_textbook",
+        "evidence_text": "绞痛或晕厥者，应立即电复律。慢性房颤病人应争取介入或者手术解决狭窄，可口服β受体拮抗剂、地高辛或非二氢吡啶类钙通道阻滞剂控制心室率，使用 VKA 抗凝。",
+        "quality_block_stage": "冠心病大类交付验收",
+        "target_code": "PLAN-CARD-TEXT-655F4B37BC",
+        "schema_version": "V1.4",
+        "id": "REL-2F8754521BD9",
+        "disease_name": "冠状动脉粥样硬化性心脏病",
+        "source_name": "《内科学（第10版）》.docx",
+        "guideline_id": "DOC-CF62B75AEC93F1A6",
+        "evidence_id": "EVD-CARD-DEEP-824143C4F8BF05",
+        "source_version": "第10版",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "EVD-CARD-DEEP-824143C4F8BF05",
+          "EVD-CARD-DEEP-D08524B5DA0A1D",
+          "EVD-CARD-FULLBOOK-824143C4F8BF05",
+          "EVD-CARD-FULLBOOK-D08524B5DA0A1D"
+        ],
+        "source_names": [
+          "《内科学（第10版）》.docx",
+          "《内科学（第10版）》docx"
+        ],
+        "relationCategory": "therapeutic",
+        "review_status": "approved",
+        "disease_code": "DIS-CARD-CAD-CHD",
+        "evidence_count": 4,
+        "provenance_records_json": "[{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-9995\",\"source_name\":\"《内科学（第10版）》.docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"第三篇 循环系统疾病\",\"source_page\":\"N/A\",\"line_start\":9995,\"line_end\":9995,\"evidence_text\":\"绞痛或晕厥者，应立即电复律。慢性房颤病人应争取介入或者手术解决狭窄，可口服β受体拮抗剂、地高辛或非二氢吡啶类钙通道阻滞剂控制心室率，使用 VKA 抗凝。\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-DEEP-824143C4F8BF05\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-CAD-CHD\",\"disease_name\":\"冠状动脉粥样硬化性心脏病\"},{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-11183\",\"source_name\":\"《内科学（第10版）》.docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"第三篇 循环系统疾病\",\"source_page\":\"N/A\",\"line_start\":11183,\"line_end\":11183,\"evidence_text\":\"肿瘤病人房颤的治疗详见本篇第三章。肿瘤病人需特殊考虑：①评估肿瘤合并房颤病人血栓栓塞、出血风险时还应结合肿瘤类型、分期及肿瘤治疗方案；②非瓣膜性房颤病人，可优选 NOAC抗凝，但需注意，NOAC 均需经 P- 糖蛋白转运，利伐沙班和阿哌沙班经 CYP3A4 代谢，对 P- 糖蛋白或 CYP3A4 有抑制或增强作用的肿瘤药物可能会影响 NOAC 的抗凝作用；③肿瘤治疗过程中需动态评估血栓栓塞及出血风险，并酌情调整抗凝方案；④非二氢吡啶类钙通道阻滞剂、洋地黄类药物与肿瘤治疗药物存在潜在的药物间相互作用，优选β受体拮抗剂控制心室率；⑤伊布利特不经 CYP3A4、CYP2D6、P- 糖蛋白代谢，可用于肿瘤病人房颤复律；胺碘酮、决奈达隆是 CYP3A4和 P- 糖蛋白的抑制剂，普罗帕酮主要经 CYP2D6 代谢，应用时需注意与肿瘤治疗药物间的相互作用。\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-DEEP-D08524B5DA0A1D\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-CAD-CHD\",\"disease_name\":\"冠状动脉粥样硬化性心脏病\"},{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-9995\",\"source_name\":\"《内科学（第10版）》docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"全书跨章节回捞\",\"source_page\":\"N/A\",\"line_start\":9995,\"line_end\":9995,\"evidence_text\":\"绞痛或晕厥者，应立即电复律。慢性房颤病人应争取介入或者手术解决狭窄，可口服β受体拮抗剂、地高辛或非二氢吡啶类钙通道阻滞剂控制心室率，使用 VKA 抗凝。\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-FULLBOOK-824143C4F8BF05\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-CAD-CHD\",\"disease_name\":\"冠状动脉粥样硬化性心脏病\"},{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-11183\",\"source_name\":\"《内科学（第10版）》docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"全书跨章节回捞\",\"source_page\":\"N/A\",\"line_start\":11183,\"line_end\":11183,\"evidence_text\":\"肿瘤病人房颤的治疗详见本篇第三章。肿瘤病人需特殊考虑：①评估肿瘤合并房颤病人血栓栓塞、出血风险时还应结合肿瘤类型、分期及肿瘤治疗方案；②非瓣膜性房颤病人，可优选 NOAC抗凝，但需注意，NOAC 均需经 P- 糖蛋白转运，利伐沙班和阿哌沙班经 CYP3A4 代谢，对 P- 糖蛋白或 CYP3A4 有抑制或增强作用的肿瘤药物可能会影响 NOAC 的抗凝作用；③肿瘤治疗过程中需动态评估血栓栓塞及出血风险，并酌情调整抗凝方案；④非二氢吡啶类钙通道阻滞剂、洋地黄类药物与肿瘤治疗药物存在潜在的药物间相互作用，优选β受体拮抗剂控制心室率；⑤伊布利特不经 CYP3A4、CYP2D6、P- 糖蛋白代谢，可用于肿瘤病人房颤复律；胺碘酮、决奈达隆是 CYP3A4和 P- 糖蛋白的抑制剂，普罗帕酮主要经 CYP2D6 代谢，应用时需注意与肿瘤治疗药物间的相互作用。\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-FULLBOOK-D08524B5DA0A1D\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-CAD-CHD\",\"disease_name\":\"冠状动脉粥样硬化性心脏病\"}]",
+        "target_name": "控制心室率",
+        "source_page": "N/A",
+        "document_id": "DOC-CF62B75AEC93F1A6",
+        "recommendation_class": "N/A",
+        "confidence": 1.0,
+        "source_section": "第三篇 循环系统疾病",
+        "batch_id": "FOUNDATION-CARD-DEEP-20260625-001",
+        "source_code": "DIS-CARD-CAD-CHD",
+        "updated_at": "2026-07-14 19:23:36",
+        "segment_id": "LINE-9995",
+        "clinical_review_status": "pending_clinical_review",
+        "document_ids": [
+          "DOC-CF62B75AEC93F1A6"
+        ]
+      },
+      "cleanup_reason": "冠心病本身不是心室率控制适应证；应通过心律失常/心衰合并场景触发"
+    },
+    {
+      "disease_code": "DIS-CARD-PERICARD-EFFUSION",
+      "disease_name": "心包积液及心脏压塞",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rel_props": {
+        "relationType": "has_treatment_plan",
+        "source_types": [
+          "authoritative_textbook"
+        ],
+        "evidence_level": "N/A",
+        "source_type": "authoritative_textbook",
+        "evidence_text": "绞痛或晕厥者，应立即电复律。慢性房颤病人应争取介入或者手术解决狭窄，可口服β受体拮抗剂、地高辛或非二氢吡啶类钙通道阻滞剂控制心室率，使用 VKA 抗凝。",
+        "target_code": "PLAN-CARD-TEXT-655F4B37BC",
+        "schema_version": "V1.4",
+        "id": "REL-58010B869C96",
+        "disease_name": "心包积液及心脏压塞",
+        "source_name": "《内科学（第10版）》docx",
+        "guideline_id": "DOC-CF62B75AEC93F1A6",
+        "evidence_id": "EVD-CARD-FULLBOOK-5FD9794A3F8F91",
+        "source_version": "第10版",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "EVD-CARD-FULLBOOK-5FD9794A3F8F91"
+        ],
+        "source_names": [
+          "《内科学（第10版）》docx"
+        ],
+        "relationCategory": "therapeutic",
+        "review_status": "approved",
+        "disease_code": "DIS-CARD-PERICARD-EFFUSION",
+        "evidence_count": 1,
+        "provenance_records_json": "[{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-9995\",\"source_name\":\"《内科学（第10版）》docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"全书跨章节回捞\",\"source_page\":\"N/A\",\"line_start\":9995,\"line_end\":9995,\"evidence_text\":\"绞痛或晕厥者，应立即电复律。慢性房颤病人应争取介入或者手术解决狭窄，可口服β受体拮抗剂、地高辛或非二氢吡啶类钙通道阻滞剂控制心室率，使用 VKA 抗凝。\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-FULLBOOK-5FD9794A3F8F91\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-PERICARD-EFFUSION\",\"disease_name\":\"心包积液及心脏压塞\"}]",
+        "target_name": "控制心室率",
+        "source_page": "N/A",
+        "document_id": "DOC-CF62B75AEC93F1A6",
+        "recommendation_class": "N/A",
+        "confidence": 1.0,
+        "source_section": "全书跨章节回捞",
+        "batch_id": "FOUNDATION-CARD-FULLBOOK-BACKFILL-20260625-001",
+        "source_code": "DIS-CARD-PERICARD-EFFUSION",
+        "segment_id": "LINE-9995",
+        "clinical_review_status": "pending_clinical_review",
+        "document_ids": [
+          "DOC-CF62B75AEC93F1A6"
+        ]
+      },
+      "cleanup_reason": "心包积液/压塞治疗核心为病因、引流或抢救处置，缺少心室率控制证据"
+    },
+    {
+      "disease_code": "DIS-CARD-INFECTIVE-ENDOCARDITIS",
+      "disease_name": "感染性心内膜炎",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rel_props": {
+        "relationType": "has_treatment_plan",
+        "source_types": [
+          "authoritative_textbook"
+        ],
+        "evidence_level": "N/A",
+        "duplicate_replaced_by_source_code": "DIS-CARD-INFECTIVE-ENDOCARDITIS",
+        "source_type": "authoritative_textbook",
+        "evidence_text": "（二）药物治疗 药物治疗效果不明显，无特异性药物治疗。主要为对症支持治疗，包括：预防感染性心内膜炎；风湿性心脏病病人应预防风湿热；积极控制血压；心衰病人应限制钠盐摄入，可用利尿剂以及 ACEI 等药物治疗；积极治疗易导致血流动力学不稳定的心律失常，房颤病人可谨慎使用β受体拮抗剂及洋地黄类药物控制心室率，警惕可能出现的急性左心衰竭。血管扩张药物如硝酸酯类、硝苯地平等可降低体循环血压以及冠状动脉灌注压，应避免使用此类药物。他汀类药物对主动脉瓣狭窄的进展无明确的防治作用。",
+        "target_code": "PLAN-CARD-TEXT-655F4B37BC",
+        "schema_version": "V1.4",
+        "migration_reason": "20260716疾病重复编码归并",
+        "id": "REL-EC278D85D79F",
+        "disease_name": "感染性心内膜炎",
+        "migrated_from_source_code": "DIS-CARD-IE",
+        "source_name": "《内科学（第10版）》.docx",
+        "guideline_id": "DOC-CF62B75AEC93F1A6",
+        "evidence_id": "EVD-CARD-DEEP-D9D16013296017",
+        "source_version": "第10版",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "EVD-CARD-DEEP-D9D16013296017",
+          "EVD-CARD-FULLBOOK-D9D16013296017"
+        ],
+        "source_names": [
+          "《内科学（第10版）》.docx",
+          "《内科学（第10版）》docx"
+        ],
+        "relationCategory": "therapeutic",
+        "review_status": "approved",
+        "disease_code": "DIS-CARD-IE",
+        "evidence_count": 2,
+        "provenance_records_json": "[{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-9785\",\"source_name\":\"《内科学（第10版）》.docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"第三篇 循环系统疾病\",\"source_page\":\"N/A\",\"line_start\":9785,\"line_end\":9785,\"evidence_text\":\"（二）药物治疗 药物治疗效果不明显，无特异性药物治疗。主要为对症支持治疗，包括：预防感染性心内膜炎；风湿性心脏病病人应预防风湿热；积极控制血压；心衰病人应限制钠盐摄入，可用利尿剂以及 ACEI 等药物治疗；积极治疗易导致血流动力学不稳定的心律失常，房颤病人可谨慎使用β受体拮抗剂及洋地黄类药物控制心室率，警惕可能出现的急性左心衰竭。血管扩张药物如硝酸酯类、硝苯地平等可降低体循环血压以及冠状动脉灌注压，应避免使用此类药物。他汀类药物对主动脉瓣狭窄的进展无明确的防治作用。\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-DEEP-D9D16013296017\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-IE\",\"disease_name\":\"感染性心内膜炎\"},{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-9785\",\"source_name\":\"《内科学（第10版）》docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"全书跨章节回捞\",\"source_page\":\"N/A\",\"line_start\":9785,\"line_end\":9785,\"evidence_text\":\"（二）药物治疗 药物治疗效果不明显，无特异性药物治疗。主要为对症支持治疗，包括：预防感染性心内膜炎；风湿性心脏病病人应预防风湿热；积极控制血压；心衰病人应限制钠盐摄入，可用利尿剂以及 ACEI 等药物治疗；积极治疗易导致血流动力学不稳定的心律失常，房颤病人可谨慎使用β受体拮抗剂及洋地黄类药物控制心室率，警惕可能出现的急性左心衰竭。血管扩张药物如硝酸酯类、硝苯地平等可降低体循环血压以及冠状动脉灌注压，应避免使用此类药物。他汀类药物对主动脉瓣狭窄的进展无明确的防治作用。\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-FULLBOOK-D9D16013296017\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-IE\",\"disease_name\":\"感染性心内膜炎\"}]",
+        "target_name": "控制心室率",
+        "source_page": "N/A",
+        "document_id": "DOC-CF62B75AEC93F1A6",
+        "recommendation_class": "N/A",
+        "migrated_at": "2026-07-16 12:52:31",
+        "confidence": 1.0,
+        "source_section": "第三篇 循环系统疾病",
+        "batch_id": "FOUNDATION-CARD-DEEP-20260625-001",
+        "migration_status": "deprecated_duplicate_relation",
+        "source_code": "DIS-CARD-IE",
+        "updated_at": "2026-07-16 11:58:18",
+        "segment_id": "LINE-9785",
+        "clinical_review_status": "pending_clinical_review",
+        "document_ids": [
+          "DOC-CF62B75AEC93F1A6"
+        ],
+        "migrated_from_disease_code": "DIS-CARD-IE"
+      },
+      "cleanup_reason": "感染性心内膜炎本身不是心室率控制适应证；缺少直接证据"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rel_props": {
+        "relationType": "has_treatment_plan",
+        "source_types": [
+          "authoritative_textbook"
+        ],
+        "evidence_level": "N/A",
+        "source_type": "authoritative_textbook",
+        "evidence_text": "【治疗】 房颤治疗强调长期综合管理，即在治疗原发疾病和诱发因素基础上，积极预防血栓栓塞、转复并维持窦性心律及控制心室率，这是房颤治疗的基本原则。",
+        "target_code": "PLAN-CARD-TEXT-655F4B37BC",
+        "schema_version": "V1.4",
+        "id": "REL-813628FD3100",
+        "disease_name": "房室传导阻滞",
+        "source_name": "《内科学（第10版）》docx",
+        "guideline_id": "DOC-CF62B75AEC93F1A6",
+        "evidence_id": "EVD-CARD-FULLBOOK-4B8BFA79592D58",
+        "source_version": "第10版",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "EVD-CARD-FULLBOOK-4B8BFA79592D58"
+        ],
+        "source_names": [
+          "《内科学（第10版）》docx"
+        ],
+        "relationCategory": "therapeutic",
+        "review_status": "approved",
+        "disease_code": "DIS-CARD-ARR-AVB",
+        "evidence_count": 1,
+        "provenance_records_json": "[{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-6383\",\"source_name\":\"《内科学（第10版）》docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"全书跨章节回捞\",\"source_page\":\"N/A\",\"line_start\":6383,\"line_end\":6383,\"evidence_text\":\"【治疗】 房颤治疗强调长期综合管理，即在治疗原发疾病和诱发因素基础上，积极预防血栓栓塞、转复并维持窦性心律及控制心室率，这是房颤治疗的基本原则。\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-FULLBOOK-4B8BFA79592D58\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-ARR-AVB\",\"disease_name\":\"房室传导阻滞\"}]",
+        "target_name": "控制心室率",
+        "source_page": "N/A",
+        "document_id": "DOC-CF62B75AEC93F1A6",
+        "recommendation_class": "N/A",
+        "confidence": 1.0,
+        "source_section": "全书跨章节回捞",
+        "batch_id": "FOUNDATION-CARD-FULLBOOK-BACKFILL-20260625-001",
+        "source_code": "DIS-CARD-ARR-AVB",
+        "segment_id": "LINE-6383",
+        "clinical_review_status": "pending_clinical_review",
+        "document_ids": [
+          "DOC-CF62B75AEC93F1A6"
+        ]
+      },
+      "cleanup_reason": "房室传导阻滞是缓慢性传导问题，心室率控制作为直连治疗方案不合适"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AT",
+      "disease_name": "房性心动过速",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rel_props": {
+        "relationType": "has_treatment_plan",
+        "source_types": [
+          "authoritative_textbook"
+        ],
+        "evidence_level": "N/A",
+        "source_type": "authoritative_textbook",
+        "evidence_text": "【治疗】 房速的处理主要取决于心室率的快慢及病人的血流动力学情况。如心室率不太快且无严重的血流动力学障碍，可选择口服β受体拮抗剂，不伴器质性心脏病，可选择非二氢吡啶类钙通道阻滞剂和Ⅰc 类（普罗帕酮）抗心律失常药。如心室率达 140 次 / 分以上，由洋地黄中毒所致或临床上有严重充血性心力衰竭或休克征象，应进行紧急治疗。其处理方法如下：①病因与诱因治疗：主要是针对基础疾病治疗。肺部疾病病人应纠正低氧血症、控制感染；如洋地黄中毒引起者，需立即停用并纠正可能伴随的电解质紊乱，特别要警惕低钾血症。②控制心室率：急性期血流动力学稳定且无失代偿性心力衰竭可静脉使用β受体拮抗剂或非二氢吡啶类钙通道阻滞剂，当药物治疗不能控制心室率时，可考虑同步直流电复律。对于药物治疗无效反复发作的多源性房性心动过速伴左心室功能不全病人，可考虑房室结消融联合永久起搏器治疗。③转复窦性心律：优先使用腺苷转复治疗，若无效，可",
+        "target_code": "PLAN-CARD-TEXT-655F4B37BC",
+        "schema_version": "V1.4",
+        "id": "REL-7CF9B3FF9543",
+        "disease_name": "房性心动过速",
+        "source_name": "《内科学（第10版）》.docx",
+        "guideline_id": "DOC-CF62B75AEC93F1A6",
+        "evidence_id": "EVD-CARD-DEEP-F9FFB2F98F9232",
+        "source_version": "第10版",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "EVD-CARD-DEEP-F9FFB2F98F9232",
+          "EVD-CARD-FULLBOOK-F9FFB2F98F9232",
+          "EVD-CARD-FULLBOOK-E4075B372922B7"
+        ],
+        "source_names": [
+          "《内科学（第10版）》.docx",
+          "《内科学（第10版）》docx"
+        ],
+        "relationCategory": "therapeutic",
+        "review_status": "approved",
+        "disease_code": "DIS-CARD-ARR-AT",
+        "evidence_count": 3,
+        "provenance_records_json": "[{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-6315\",\"source_name\":\"《内科学（第10版）》.docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"第三篇 循环系统疾病\",\"source_page\":\"N/A\",\"line_start\":6315,\"line_end\":6315,\"evidence_text\":\"【治疗】 房速的处理主要取决于心室率的快慢及病人的血流动力学情况。如心室率不太快且无严重的血流动力学障碍，可选择口服β受体拮抗剂，不伴器质性心脏病，可选择非二氢吡啶类钙通道阻滞剂和Ⅰc 类（普罗帕酮）抗心律失常药。如心室率达 140 次 / 分以上，由洋地黄中毒所致或临床上有严重充血性心力衰竭或休克征象，应进行紧急治疗。其处理方法如下：①病因与诱因治疗：主要是针对基础疾病治疗。肺部疾病病人应纠正低氧血症、控制感染；如洋地黄中毒引起者，需立即停用并纠正可能伴随的电解质紊乱，特别要警惕低钾血症。②控制心室率：急性期血流动力学稳定且无失代偿性心力衰竭可静脉使用β受体拮抗剂或非二氢吡啶类钙通道阻滞剂，当药物治疗不能控制心室率时，可考虑同步直流电复律。对于药物治疗无效反复发作的多源性房性心动过速伴左心室功能不全病人，可考虑房室结消融联合永久起搏器治疗。③转复窦性心律：优先使用腺苷转复治疗，若无效，可\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-DEEP-F9FFB2F98F9232\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-ARR-AT\",\"disease_name\":\"房性心动过速\"},{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-6315\",\"source_name\":\"《内科学（第10版）》docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"全书跨章节回捞\",\"source_page\":\"N/A\",\"line_start\":6315,\"line_end\":6315,\"evidence_text\":\"【治疗】 房速的处理主要取决于心室率的快慢及病人的血流动力学情况。如心室率不太快且无严重的血流动力学障碍，可选择口服β受体拮抗剂，不伴器质性心脏病，可选择非二氢吡啶类钙通道阻滞剂和Ⅰc 类（普罗帕酮）抗心律失常药。如心室率达 140 次 / 分以上，由洋地黄中毒所致或临床上有严重充血性心力衰竭或休克征象，应进行紧急治疗。其处理方法如下：①病因与诱因治疗：主要是针对基础疾病治疗。肺部疾病病人应纠正低氧血症、控制感染；如洋地黄中毒引起者，需立即停用并纠正可能伴随的电解质紊乱，特别要警惕低钾血症。②控制心室率：急性期血流动力学稳定且无失代偿性心力衰竭可静脉使用β受体拮抗剂或非二氢吡啶类钙通道阻滞剂，当药物治疗不能控制心室率时，可考虑同步直流电复律。对于药物治疗无效反复发作的多源性房性心动过速伴左心室功能不全病人，可考虑房室结消融联合永久起搏器治疗。③转复窦性心律：优先使用腺苷转复治疗，若无效，可\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-FULLBOOK-F9FFB2F98F9232\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-ARR-AT\",\"disease_name\":\"房性心动过速\"},{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-6383\",\"source_name\":\"《内科学（第10版）》docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"全书跨章节回捞\",\"source_page\":\"N/A\",\"line_start\":6383,\"line_end\":6383,\"evidence_text\":\"【治疗】 房颤治疗强调长期综合管理，即在治疗原发疾病和诱发因素基础上，积极预防血栓栓塞、转复并维持窦性心律及控制心室率，这是房颤治疗的基本原则。\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-FULLBOOK-E4075B372922B7\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-ARR-AT\",\"disease_name\":\"房性心动过速\"}]",
+        "target_name": "控制心室率",
+        "source_page": "N/A",
+        "document_id": "DOC-CF62B75AEC93F1A6",
+        "recommendation_class": "N/A",
+        "confidence": 1.0,
+        "source_section": "第三篇 循环系统疾病",
+        "batch_id": "FOUNDATION-CARD-DEEP-20260625-001",
+        "source_code": "DIS-CARD-ARR-AT",
+        "segment_id": "LINE-6315",
+        "clinical_review_status": "pending_clinical_review",
+        "document_ids": [
+          "DOC-CF62B75AEC93F1A6"
+        ]
+      },
+      "cleanup_reason": "房性心动过速需按心律失常专病规则处理，当前缺少控制心室率直接证据链"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-DCM",
+      "disease_name": "扩张型心肌病",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rel_props": {
+        "relationType": "has_treatment_plan",
+        "source_types": [
+          "authoritative_textbook"
+        ],
+        "evidence_level": "N/A",
+        "source_type": "authoritative_textbook",
+        "evidence_text": "5. 心动过速性心肌病 多见于 AF 或室上性心动过速，临床符合 DCM 特点。有效控制心室率或射频消融治疗是关键，尚需使用阻断神经体液激活的药物。",
+        "target_code": "PLAN-CARD-TEXT-655F4B37BC",
+        "schema_version": "V1.4",
+        "id": "REL-1D5DEDD978AD",
+        "disease_name": "扩张型心肌病",
+        "source_name": "《内科学（第10版）》.docx",
+        "guideline_id": "DOC-CF62B75AEC93F1A6",
+        "evidence_id": "EVD-CARD-DEEP-B2CD09E3E11656",
+        "source_version": "第10版",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "EVD-CARD-DEEP-B2CD09E3E11656",
+          "EVD-CARD-FULLBOOK-B2CD09E3E11656"
+        ],
+        "source_names": [
+          "《内科学（第10版）》.docx",
+          "《内科学（第10版）》docx"
+        ],
+        "relationCategory": "therapeutic",
+        "review_status": "approved",
+        "disease_code": "DIS-CARD-CM-DCM",
+        "evidence_count": 2,
+        "provenance_records_json": "[{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-8917\",\"source_name\":\"《内科学（第10版）》.docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"第三篇 循环系统疾病\",\"source_page\":\"N/A\",\"line_start\":8917,\"line_end\":8917,\"evidence_text\":\"5. 心动过速性心肌病 多见于 AF 或室上性心动过速，临床符合 DCM 特点。有效控制心室率或射频消融治疗是关键，尚需使用阻断神经体液激活的药物。\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-DEEP-B2CD09E3E11656\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-CM-DCM\",\"disease_name\":\"扩张型心肌病\"},{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-8917\",\"source_name\":\"《内科学（第10版）》docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"全书跨章节回捞\",\"source_page\":\"N/A\",\"line_start\":8917,\"line_end\":8917,\"evidence_text\":\"5. 心动过速性心肌病 多见于 AF 或室上性心动过速，临床符合 DCM 特点。有效控制心室率或射频消融治疗是关键，尚需使用阻断神经体液激活的药物。\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-FULLBOOK-B2CD09E3E11656\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-CM-DCM\",\"disease_name\":\"扩张型心肌病\"}]",
+        "target_name": "控制心室率",
+        "source_page": "N/A",
+        "document_id": "DOC-CF62B75AEC93F1A6",
+        "recommendation_class": "N/A",
+        "confidence": 1.0,
+        "source_section": "第三篇 循环系统疾病",
+        "batch_id": "FOUNDATION-CARD-DEEP-20260625-001",
+        "source_code": "DIS-CARD-CM-DCM",
+        "segment_id": "LINE-8917",
+        "clinical_review_status": "pending_clinical_review",
+        "document_ids": [
+          "DOC-CF62B75AEC93F1A6"
+        ]
+      },
+      "cleanup_reason": "扩张型心肌病需通过合并房颤/心衰场景触发，疾病直连会误导"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-VT",
+      "disease_name": "持续性室性心动过速",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rel_props": {
+        "relationType": "has_treatment_plan",
+        "source_types": [
+          "authoritative_textbook"
+        ],
+        "evidence_level": "N/A",
+        "source_type": "authoritative_textbook",
+        "evidence_text": "【治疗】 房颤治疗强调长期综合管理，即在治疗原发疾病和诱发因素基础上，积极预防血栓栓塞、转复并维持窦性心律及控制心室率，这是房颤治疗的基本原则。",
+        "target_code": "PLAN-CARD-TEXT-655F4B37BC",
+        "schema_version": "V1.4",
+        "id": "REL-E16CB778E44B",
+        "disease_name": "室性心动过速",
+        "source_name": "《内科学（第10版）》docx",
+        "guideline_id": "DOC-CF62B75AEC93F1A6",
+        "evidence_id": "EVD-CARD-FULLBOOK-82AD3A6E5C569F",
+        "source_version": "第10版",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "EVD-CARD-FULLBOOK-82AD3A6E5C569F"
+        ],
+        "source_names": [
+          "《内科学（第10版）》docx"
+        ],
+        "relationCategory": "therapeutic",
+        "review_status": "approved",
+        "disease_code": "DIS-CARD-ARR-VT",
+        "evidence_count": 1,
+        "provenance_records_json": "[{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-6383\",\"source_name\":\"《内科学（第10版）》docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"全书跨章节回捞\",\"source_page\":\"N/A\",\"line_start\":6383,\"line_end\":6383,\"evidence_text\":\"【治疗】 房颤治疗强调长期综合管理，即在治疗原发疾病和诱发因素基础上，积极预防血栓栓塞、转复并维持窦性心律及控制心室率，这是房颤治疗的基本原则。\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-FULLBOOK-82AD3A6E5C569F\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-ARR-VT\",\"disease_name\":\"室性心动过速\"}]",
+        "target_name": "控制心室率",
+        "source_page": "N/A",
+        "document_id": "DOC-CF62B75AEC93F1A6",
+        "recommendation_class": "N/A",
+        "confidence": 1.0,
+        "source_section": "全书跨章节回捞",
+        "batch_id": "FOUNDATION-CARD-FULLBOOK-BACKFILL-20260625-001",
+        "source_code": "DIS-CARD-ARR-VT",
+        "segment_id": "LINE-6383",
+        "clinical_review_status": "pending_clinical_review",
+        "document_ids": [
+          "DOC-CF62B75AEC93F1A6"
+        ]
+      },
+      "cleanup_reason": "持续性室速治疗不是心室率控制，应按复律、抗心律失常、ICD等路径"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-NDLVCM",
+      "disease_name": "非扩张型左心室心肌病",
+      "plan_code": "PLAN-CARD-TEXT-655F4B37BC",
+      "plan_name": "控制心室率",
+      "rel_props": {
+        "relationType": "has_treatment_plan",
+        "source_types": [
+          "authoritative_textbook"
+        ],
+        "evidence_level": "N/A",
+        "source_type": "authoritative_textbook",
+        "evidence_text": "5. 心动过速性心肌病 多见于 AF 或室上性心动过速，临床符合 DCM 特点。有效控制心室率或射频消融治疗是关键，尚需使用阻断神经体液激活的药物。",
+        "target_code": "PLAN-CARD-TEXT-655F4B37BC",
+        "schema_version": "V1.4",
+        "id": "REL-BF1B4759B8C5",
+        "disease_name": "非扩张型左心室心肌病",
+        "source_name": "《内科学（第10版）》.docx",
+        "guideline_id": "DOC-CF62B75AEC93F1A6",
+        "evidence_id": "EVD-CARD-DEEP-CE363658AA73BD",
+        "source_version": "第10版",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "EVD-CARD-DEEP-CE363658AA73BD",
+          "EVD-CARD-FULLBOOK-CE363658AA73BD"
+        ],
+        "source_names": [
+          "《内科学（第10版）》.docx",
+          "《内科学（第10版）》docx"
+        ],
+        "relationCategory": "therapeutic",
+        "review_status": "approved",
+        "disease_code": "DIS-CARD-CM-NDLVCM",
+        "evidence_count": 2,
+        "provenance_records_json": "[{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-8917\",\"source_name\":\"《内科学（第10版）》.docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"第三篇 循环系统疾病\",\"source_page\":\"N/A\",\"line_start\":8917,\"line_end\":8917,\"evidence_text\":\"5. 心动过速性心肌病 多见于 AF 或室上性心动过速，临床符合 DCM 特点。有效控制心室率或射频消融治疗是关键，尚需使用阻断神经体液激活的药物。\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-DEEP-CE363658AA73BD\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-CM-NDLVCM\",\"disease_name\":\"非扩张型左心室心肌病\"},{\"document_id\":\"DOC-CF62B75AEC93F1A6\",\"segment_id\":\"LINE-8917\",\"source_name\":\"《内科学（第10版）》docx\",\"source_type\":\"authoritative_textbook\",\"source_version\":\"第10版\",\"source_section\":\"全书跨章节回捞\",\"source_page\":\"N/A\",\"line_start\":8917,\"line_end\":8917,\"evidence_text\":\"5. 心动过速性心肌病 多见于 AF 或室上性心动过速，临床符合 DCM 特点。有效控制心室率或射频消融治疗是关键，尚需使用阻断神经体液激活的药物。\",\"guideline_id\":\"DOC-CF62B75AEC93F1A6\",\"evidence_id\":\"EVD-CARD-FULLBOOK-CE363658AA73BD\",\"recommendation_class\":\"N/A\",\"evidence_level\":\"N/A\",\"confidence\":1.0,\"disease_code\":\"DIS-CARD-CM-NDLVCM\",\"disease_name\":\"非扩张型左心室心肌病\"}]",
+        "target_name": "控制心室率",
+        "source_page": "N/A",
+        "document_id": "DOC-CF62B75AEC93F1A6",
+        "recommendation_class": "N/A",
+        "confidence": 1.0,
+        "source_section": "第三篇 循环系统疾病",
+        "batch_id": "FOUNDATION-CARD-DEEP-20260625-001",
+        "source_code": "DIS-CARD-CM-NDLVCM",
+        "segment_id": "LINE-8917",
+        "clinical_review_status": "pending_clinical_review",
+        "document_ids": [
+          "DOC-CF62B75AEC93F1A6"
+        ]
+      },
+      "cleanup_reason": "非扩张型左室心肌病需通过合并房颤/心衰场景触发，疾病直连会误导"
+    },
+    {
+      "disease_code": "DIS-CARD-AAS",
+      "disease_name": "急性主动脉综合征",
+      "plan_code": "PLAN-CARD-AAS-MEDICAL-ENDOVASCULAR-SURGICAL",
+      "plan_name": "医学治疗与介入/手术治疗策略",
+      "rel_props": {
+        "exclusion_criteria": "不符合相应解剖条件、合并不可接受手术/介入风险或需先稳定生命体征者，应由多学科团队评估。",
+        "relationType": "has_treatment_plan",
+        "source_types": [
+          "guideline"
+        ],
+        "evidence_level": "B-NR",
+        "source_type": "guideline",
+        "evidence_text": "Management of Acute Type B Aortic Dissection Recommendations for the Management of Acute Type B Aortic Dissection Referenced studies that support the recommendations are summarized in the Online Data Supplement. COR LOE Recommendations 1. In all patients with uncomplicated acute type B aortic dissection, medical therapy 1 B-NR is recommended as the initial management strategy. 151",
+        "target_code": "PLAN-CARD-AAS-MEDICAL-ENDOVASCULAR-SURGICAL",
+        "scope_type": "category",
+        "schema_version": "V1.15",
+        "id": "REL-0111212D2015",
+        "applicable_population": "急性主动脉综合征及其主动脉夹层相关亚型患者，需按病变部位、破裂/灌注不良等并发症和解剖条件决策。",
+        "polarity": "positive",
+        "source_name": "心血管内科+主动脉与外周动脉疾病+主动脉疾病+ACC_AHA指南官方资料+20260715.pdf",
+        "guideline_id": "SRC-DOC-0B30504E70E79AC5",
+        "evidence_id": "EVD-CURATED-DC677654B4E8E7D50A8A",
+        "source_version": "2026",
+        "evidence_ids": [
+          "EVD-CURATED-DC677654B4E8E7D50A8A"
+        ],
+        "source_names": [
+          "心血管内科+主动脉与外周动脉疾病+主动脉疾病+ACC_AHA指南官方资料+20260715.pdf"
+        ],
+        "relationCategory": "therapeutic",
+        "review_status": "review_ready",
+        "merge_status": "candidate",
+        "evidence_count": 1,
+        "provenance_records_json": "[{\"document_id\":\"DOC-0B30504E70E79AC5\",\"segment_id\":\"SEG-DOC-0B30504E70E79AC5-151-CURATED-75CAACED25\",\"source_name\":\"心血管内科+主动脉与外周动脉疾病+主动脉疾病+ACC_AHA指南官方资料+20260715.pdf\",\"source_type\":\"guideline\",\"source_version\":\"2026\",\"source_section\":\"treatment_plan\",\"source_page\":151,\"evidence_text\":\"Management of Acute Type B Aortic Dissection Recommendations for the Management of Acute Type B Aortic Dissection Referenced studies that support the recommendations are summarized in the Online Data Supplement. COR LOE Recommendations 1. In all patients with uncomplicated acute type B aortic dissection, medical therapy 1 B-NR is recommended as the initial management strategy. 151\",\"guideline_id\":\"SRC-DOC-0B30504E70E79AC5\",\"evidence_id\":\"EVD-CURATED-DC677654B4E8E7D50A8A\",\"recommendation_class\":\"I\",\"evidence_level\":\"B-NR\",\"confidence\":0.92}]",
+        "scope_target": "心血管内科",
+        "source_page": 151,
+        "document_id": "DOC-0B30504E70E79AC5",
+        "recommendation_class": "I",
+        "confidence": 0.92,
+        "source_section": "treatment_plan",
+        "batch_id": "20260715_主动脉与外周动脉疾病正式解析",
+        "source_code": "DIS-CARD-AAS",
+        "segment_id": "SEG-DOC-0B30504E70E79AC5-151-CURATED-75CAACED25",
+        "clinical_review_status": "clinical_batch_signed_off",
+        "conflict_status": "none",
+        "document_ids": [
+          "DOC-0B30504E70E79AC5"
+        ]
+      },
+      "cleanup_reason": "急性主动脉综合征该方案缺少直连推荐证据链，本轮不作为正式CDSS推荐直连"
+    }
+  ]
+}

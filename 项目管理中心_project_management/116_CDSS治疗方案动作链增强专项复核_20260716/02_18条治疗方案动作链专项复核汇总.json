@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-07-16 19:08:02",
+  "source_csv": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\项目管理中心_project_management\\111_术语主数据归并后专项复核_20260716\\治疗方案无下游动作_专项宽口径.csv",
+  "total": 18,
+  "formal_chain_with_evidence": 6,
+  "removed_or_blocked_direct_without_chain": 12,
+  "still_direct_without_formal_chain": 0,
+  "direct_relation_remaining": 6,
+  "passed": true
+}
