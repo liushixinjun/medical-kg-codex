@@ -1,0 +1,72 @@
+﻿{
+  "ami_pci_active_nodes": [
+    {
+      "disease": "急性心肌梗死",
+      "rel_type": "treated_by_procedure",
+      "code": "PROC-CARD-E9ADC25A25E3",
+      "name": "经皮冠状动脉介入治疗",
+      "display_name": "经皮冠状动脉介入治疗",
+      "preferred_name": "经皮冠状动脉介入治疗",
+      "aliases": [
+        "冠脉介入",
+        "介入治疗",
+        "支架植入",
+        "球囊扩张",
+        "PTCA",
+        "PCI",
+        "经皮冠状动脉介入治疗"
+      ],
+      "abbr": "PCI"
+    }
+  ],
+  "old_nodes_remaining_relations": [
+    {
+      "code": "PROC-CARD-CADREM-AMI-F15816B958",
+      "name": "PCI",
+      "deprecated": true,
+      "duplicate_replaced_by": "PROC-CARD-E9ADC25A25E3",
+      "relation_count": 0
+    },
+    {
+      "code": "PROC-CARD-CADREM-NSTEMI-F15816B958",
+      "name": "PCI",
+      "deprecated": true,
+      "duplicate_replaced_by": "PROC-CARD-E9ADC25A25E3",
+      "relation_count": 0
+    },
+    {
+      "code": "PROC-CARD-CADREM-UA-F15816B958",
+      "name": "PCI",
+      "deprecated": true,
+      "duplicate_replaced_by": "PROC-CARD-E9ADC25A25E3",
+      "relation_count": 0
+    }
+  ],
+  "standard_node_disease_links": [
+    {
+      "disease_code": "DIS-CARD-CAD-AMI",
+      "disease_name": "急性心肌梗死",
+      "procedure_code": "PROC-CARD-E9ADC25A25E3",
+      "procedure_name": "经皮冠状动脉介入治疗",
+      "migrated_from_target_code": "PROC-CARD-CADREM-AMI-F15816B958",
+      "data_quality_action": "merge_abbreviation_procedure_to_standard_chinese_name"
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-NSTEMI",
+      "disease_name": "非ST段抬高型心肌梗死",
+      "procedure_code": "PROC-CARD-E9ADC25A25E3",
+      "procedure_name": "经皮冠状动脉介入治疗",
+      "migrated_from_target_code": "PROC-CARD-CADREM-NSTEMI-F15816B958",
+      "data_quality_action": "merge_abbreviation_procedure_to_standard_chinese_name"
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-UA",
+      "disease_name": "不稳定型心绞痛",
+      "procedure_code": "PROC-CARD-E9ADC25A25E3",
+      "procedure_name": "经皮冠状动脉介入治疗",
+      "migrated_from_target_code": "PROC-CARD-CADREM-UA-F15816B958",
+      "data_quality_action": "merge_abbreviation_procedure_to_standard_chinese_name"
+    }
+  ],
+  "active_abbreviation_procedure_nodes": []
+}

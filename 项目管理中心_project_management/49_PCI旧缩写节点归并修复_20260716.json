@@ -1,0 +1,15 @@
+﻿{
+  "batch": "20260716_PCI旧缩写节点归并修复",
+  "migrated_at": "2026-07-16 11:02:41",
+  "standard_code": "PROC-CARD-E9ADC25A25E3",
+  "old_abbreviation_nodes": [
+    "PROC-CARD-CADREM-AMI-F15816B958",
+    "PROC-CARD-CADREM-NSTEMI-F15816B958",
+    "PROC-CARD-CADREM-UA-F15816B958"
+  ],
+  "incoming_treated_by_procedure_migrated": 3,
+  "outgoing_supported_by_evidence_migrated": 3,
+  "old_abbreviation_nodes_marked_deprecated": 3,
+  "orphan_duplicate_standard_nodes_marked_deprecated": 3,
+  "physical_delete": false
+}

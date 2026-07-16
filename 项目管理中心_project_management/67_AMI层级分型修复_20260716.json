@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-07-16 11:26:48",
+  "action": "补齐冠心病/ACS/AMI层级与AMI分型节点",
+  "created_or_updated": [
+    {
+      "code": "DIS-CARD-CAD-ACS",
+      "name": "急性冠脉综合征",
+      "parent_code": "SUB-CARD-CAD-ACS",
+      "parent_name": "急性冠脉综合征谱系",
+      "disease_level": "acs_spectrum"
+    },
+    {
+      "code": "DIS-CARD-CAD-AMI",
+      "name": "急性心肌梗死",
+      "parent_code": "SUB-CARD-CAD-ACS",
+      "parent_name": "急性冠脉综合征谱系",
+      "disease_level": "ami_parent"
+    },
+    {
+      "code": "DIS-CARD-CAD-UA",
+      "name": "不稳定型心绞痛",
+      "parent_code": "SUB-CARD-CAD-ACS",
+      "parent_name": "急性冠脉综合征谱系",
+      "disease_level": "acs_disease"
+    },
+    {
+      "code": "DIS-CARD-CAD-STEMI",
+      "name": "ST段抬高型心肌梗死",
+      "parent_code": "DIS-CARD-CAD-AMI",
+      "parent_name": "急性心肌梗死",
+      "disease_level": "ami_subtype"
+    },
+    {
+      "code": "DIS-CARD-CAD-NSTEMI",
+      "name": "非ST段抬高型心肌梗死",
+      "parent_code": "DIS-CARD-CAD-AMI",
+      "parent_name": "急性心肌梗死",
+      "disease_level": "ami_subtype"
+    },
+    {
+      "code": "CLASS-CARD-CAD-AMI-STEMI",
+      "name": "ST段抬高型心肌梗死",
+      "maps_to_disease_code": "DIS-CARD-CAD-STEMI",
+      "rel": "has_classification"
+    },
+    {
+      "code": "CLASS-CARD-CAD-AMI-NSTEMI",
+      "name": "非ST段抬高型心肌梗死",
+      "maps_to_disease_code": "DIS-CARD-CAD-NSTEMI",
+      "rel": "has_classification"
+    }
+  ],
+  "relations_ensured": [
+    {
+      "source": "CAT-CARD-CAD",
+      "rel": "has_subcategory",
+      "target": "SUB-CARD-CAD-ACS"
+    },
+    {
+      "source": "SUB-CARD-CAD-ACS",
+      "rel": "has_disease",
+      "target": "DIS-CARD-CAD-ACS"
+    },
+    {
+      "source": "SUB-CARD-CAD-ACS",
+      "rel": "has_disease",
+      "target": "DIS-CARD-CAD-AMI"
+    },
+    {
+      "source": "SUB-CARD-CAD-ACS",
+      "rel": "has_disease",
+      "target": "DIS-CARD-CAD-UA"
+    },
+    {
+      "source": "SUB-CARD-CAD-ACS",
+      "rel": "has_disease",
+      "target": "DIS-CARD-CAD-STEMI"
+    },
+    {
+      "source": "SUB-CARD-CAD-ACS",
+      "rel": "has_disease",
+      "target": "DIS-CARD-CAD-NSTEMI"
+    }
+  ]
+}

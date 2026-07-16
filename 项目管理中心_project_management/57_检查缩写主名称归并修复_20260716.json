@@ -1,0 +1,70 @@
+﻿{
+  "batch": "20260716_检查缩写主名称归并修复",
+  "migrated_at": "2026-07-16 11:11:48",
+  "pairs": [
+    {
+      "old_code": "EXAM-CARD-09DFFB573658",
+      "std_code": "EXAM-CMR",
+      "abbr": "CMR",
+      "standard_name": "心脏磁共振"
+    },
+    {
+      "old_code": "EXAM-CARD-CADREM-AMI-F6AAC5622D",
+      "std_code": "EXAM-CARD-TEXT-9A031190AE",
+      "abbr": "CT",
+      "standard_name": "CT检查"
+    },
+    {
+      "old_code": "EXAM-CARD-CADREM-ICM-F6AAC5622D",
+      "std_code": "EXAM-CARD-TEXT-9A031190AE",
+      "abbr": "CT",
+      "standard_name": "CT检查"
+    },
+    {
+      "old_code": "EXAM-CARD-CADREM-NSTEMI-F6AAC5622D",
+      "std_code": "EXAM-CARD-TEXT-9A031190AE",
+      "abbr": "CT",
+      "standard_name": "CT检查"
+    },
+    {
+      "old_code": "EXAM-CARD-CADREM-SILENT-ISCHEMIA-F6AAC5622D",
+      "std_code": "EXAM-CARD-TEXT-9A031190AE",
+      "abbr": "CT",
+      "standard_name": "CT检查"
+    },
+    {
+      "old_code": "EXAM-CARD-CADREM-STABLE-ANGINA-F6AAC5622D",
+      "std_code": "EXAM-CARD-TEXT-9A031190AE",
+      "abbr": "CT",
+      "standard_name": "CT检查"
+    },
+    {
+      "old_code": "EXAM-CARD-CADREM-UA-F6AAC5622D",
+      "std_code": "EXAM-CARD-TEXT-9A031190AE",
+      "abbr": "CT",
+      "standard_name": "CT检查"
+    },
+    {
+      "old_code": "EXAM-CARD-F6AAC5622DEA",
+      "std_code": "EXAM-CARD-TEXT-9A031190AE",
+      "abbr": "CT",
+      "standard_name": "CT检查"
+    },
+    {
+      "old_code": "EXAM-CARD-3A1C9D9E3AEB",
+      "std_code": "EXAM-CARD-CF719F4B0836",
+      "abbr": "CTA",
+      "standard_name": "CT血管造影"
+    },
+    {
+      "old_code": "EXAM-CARD-CADREM-STABLE-ANGINA-2B3BD0A8FA",
+      "std_code": "EXAM-HOLTER",
+      "abbr": "Holter",
+      "standard_name": "动态心电图"
+    }
+  ],
+  "incoming_migrated": 621,
+  "outgoing_migrated": 550,
+  "marked_deprecated": 10,
+  "physical_delete": false
+}

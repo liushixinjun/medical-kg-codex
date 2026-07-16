@@ -1,0 +1,496 @@
+{
+  "generated_at": "2026-07-16 11:21:03",
+  "scope": "检验缩写修复后复核",
+  "nodes": [
+    {
+      "code": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+      "labels": [
+        "KGNode",
+        "LabTest"
+      ],
+      "entityType": "LabTest",
+      "name": "B型钠尿肽",
+      "display_name": "B型钠尿肽",
+      "preferred_name": "B型钠尿肽",
+      "aliases": [
+        "BNP",
+        "脑钠肽",
+        "B型钠尿肽"
+      ],
+      "abbr": "BNP",
+      "status": "active",
+      "incoming": 143,
+      "outgoing": 117,
+      "props": {
+        "standard_name": "B型钠尿肽",
+        "entityType": "LabTest",
+        "aliases": [
+          "BNP",
+          "脑钠肽",
+          "B型钠尿肽"
+        ],
+        "type_label": "LabTest",
+        "updated_reason": "C6 standardize abbreviation primary name",
+        "primary_label": "KGNode",
+        "id": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+        "canonical_labels": [
+          "KGNode",
+          "LabTest"
+        ],
+        "migrated_knowledge_layer_from": "textbook_skeleton",
+        "name": "B型钠尿肽",
+        "knowledge_layer": "textbook_core",
+        "formal_cdss_ready": false,
+        "source_layer": "textbook_skeleton",
+        "alias": [
+          "BNP",
+          "脑钠肽",
+          "B型利钠肽"
+        ],
+        "status": "active",
+        "normalization_note": "20260716：中文全称作为检验项目主名，英文缩写保留为别名",
+        "migrated_at": "2026-07-11 08:17:48",
+        "abbr": "BNP",
+        "code": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+        "clinical_use_status": "knowledge_display_only",
+        "preferred_name": "B型钠尿肽",
+        "batch_id": "CARD-SKELETON-20260709",
+        "display_name": "B型钠尿肽",
+        "updated_at": "2026-07-16 11:21:03",
+        "graph_version": "CARD-SKELETON-20260709-C5",
+        "skeleton_scope": "cardiology_priority_four_textbook_skeleton"
+      }
+    },
+    {
+      "code": "LAB-CARD-408A62EF5D51",
+      "labels": [
+        "KGNode",
+        "LabTest"
+      ],
+      "entityType": "LabTest",
+      "name": "N端B型钠尿肽前体",
+      "display_name": "N端B型钠尿肽前体",
+      "preferred_name": "N端B型钠尿肽前体",
+      "aliases": [
+        "NT-proBNP",
+        "N端脑钠肽前体",
+        "N末端B型钠尿肽前体"
+      ],
+      "abbr": "NT-proBNP",
+      "status": "active",
+      "incoming": 78,
+      "outgoing": 60,
+      "props": {
+        "scope_target": "血脂异常、动脉粥样硬化、ASCVD风险防治",
+        "status": "active",
+        "normalization_note": "20260716：中文全称作为检验项目主名，英文缩写保留为别名",
+        "abbr": "NT-proBNP",
+        "code": "LAB-CARD-408A62EF5D51",
+        "scope_type": "疾病大类",
+        "entityType": "LabTest",
+        "schema_version": "V1.15",
+        "aliases": [
+          "NT-proBNP",
+          "N端脑钠肽前体",
+          "N末端B型钠尿肽前体"
+        ],
+        "primary_label": "KGNode",
+        "type_label": "LabTest",
+        "preferred_name": "N端B型钠尿肽前体",
+        "batch_id": "20260715_血脂异常动脉粥样硬化防治正式解析",
+        "id": "KG_LAB_CARD_408A62EF5D51",
+        "display_name": "N端B型钠尿肽前体",
+        "entityCategory": "诊断",
+        "updated_at": "2026-07-16 11:21:03",
+        "canonical_labels": [
+          "KGNode",
+          "LabTest"
+        ],
+        "name": "N端B型钠尿肽前体",
+        "conflict_status": "none",
+        "merge_status": "validated",
+        "review_status": "approved"
+      }
+    },
+    {
+      "code": "LAB-CARD-AAA739D91A3A",
+      "labels": [
+        "KGNode",
+        "LabTest"
+      ],
+      "entityType": "LabTest",
+      "name": "BNP",
+      "display_name": "BNP",
+      "preferred_name": "BNP",
+      "aliases": null,
+      "abbr": null,
+      "status": "deprecated",
+      "incoming": 122,
+      "outgoing": 100,
+      "props": {
+        "deprecated": "yes",
+        "deprecated_at": "2026-07-16 11:21:03",
+        "scope_target": "心肌炎、心包炎、感染性心内膜炎",
+        "deprecated_reason": "20260716检验缩写主名称归并：保留历史节点但不再作为有效主节点",
+        "status": "deprecated",
+        "replaced_by_name": "B型钠尿肽",
+        "code": "LAB-CARD-AAA739D91A3A",
+        "scope_type": "疾病大类",
+        "entityType": "LabTest",
+        "schema_version": "V1.15",
+        "primary_label": "KGNode",
+        "type_label": "LabTest",
+        "preferred_name": "BNP",
+        "batch_id": "20260715_心肌炎心包炎感染性心内膜炎正式解析",
+        "id": "KG_LAB_CARD_AAA739D91A3A",
+        "display_name": "BNP",
+        "entityCategory": "诊断",
+        "updated_at": "2026-07-16 11:21:03",
+        "canonical_labels": [
+          "KGNode",
+          "LabTest"
+        ],
+        "duplicate_replaced_by": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+        "name": "BNP",
+        "conflict_status": "none",
+        "merge_status": "validated",
+        "review_status": "approved"
+      }
+    },
+    {
+      "code": "LAB-CARD-CADREM-STABLE-ANGINA-408A62EF5D",
+      "labels": [
+        "KGNode",
+        "LabTest"
+      ],
+      "entityType": "LabTest",
+      "name": "NT-proBNP",
+      "display_name": "NT-proBNP",
+      "preferred_name": "NT-proBNP",
+      "aliases": null,
+      "abbr": null,
+      "status": "deprecated",
+      "incoming": 1,
+      "outgoing": 3,
+      "props": {
+        "disease_category": "冠心病",
+        "deprecated_reason": "20260716检验缩写主名称归并：保留历史节点但不再作为有效主节点",
+        "source_type": "authoritative_textbook",
+        "scope_type": "disease_category_batch_refine",
+        "schema_version": "V1.15",
+        "entityType": "LabTest",
+        "type_label": "LabTest",
+        "primary_label": "KGNode",
+        "source_subject_name": "稳定型心绞痛",
+        "id": "KG_LAB_CARD_CADREM_STABLE_ANGINA_408A62EF5D",
+        "duplicate_replaced_by": "LAB-CARD-408A62EF5D51",
+        "canonical_labels": [
+          "KGNode",
+          "LabTest"
+        ],
+        "disease_name": "稳定型心绞痛",
+        "name": "NT-proBNP",
+        "created_at": "2026-07-12 21:45:00",
+        "formal_cdss_ready": false,
+        "skill_version": "V2.1-CAD-remaining-textbook-refine",
+        "evidence_ids": [
+          "CARD-SKELETON-FULL-20260709-EVID-2C126A261F69277E"
+        ],
+        "review_status": "ai_prechecked",
+        "merge_status": "delta_ready",
+        "disease_code": "DIS-CARD-CAD-STABLE-ANGINA",
+        "deprecated": "yes",
+        "deprecated_at": "2026-07-16 11:21:03",
+        "scope_target": "冠心病剩余病种",
+        "status": "deprecated",
+        "replaced_by_name": "N端B型钠尿肽前体",
+        "code": "LAB-CARD-CADREM-STABLE-ANGINA-408A62EF5D",
+        "source_section": "动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 慢性冠状动脉综合征 > 稳定型心绞痛",
+        "top_specialty": "心血管内科",
+        "preferred_name": "NT-proBNP",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+        "display_name": "NT-proBNP",
+        "updated_at": "2026-07-16 11:21:03",
+        "source_authority": "《内科学（第10版）》",
+        "clinical_review_status": "pending_clinical_use_effect_review",
+        "cdss_release_level": "test_recommendation"
+      }
+    },
+    {
+      "code": "LAB-CARD-CADREM-STABLE-ANGINA-AAA739D91A",
+      "labels": [
+        "KGNode",
+        "LabTest"
+      ],
+      "entityType": "LabTest",
+      "name": "BNP",
+      "display_name": "BNP",
+      "preferred_name": "BNP",
+      "aliases": null,
+      "abbr": null,
+      "status": "deprecated",
+      "incoming": 1,
+      "outgoing": 3,
+      "props": {
+        "disease_category": "冠心病",
+        "deprecated_reason": "20260716检验缩写主名称归并：保留历史节点但不再作为有效主节点",
+        "source_type": "authoritative_textbook",
+        "scope_type": "disease_category_batch_refine",
+        "schema_version": "V1.15",
+        "entityType": "LabTest",
+        "type_label": "LabTest",
+        "primary_label": "KGNode",
+        "source_subject_name": "稳定型心绞痛",
+        "id": "KG_LAB_CARD_CADREM_STABLE_ANGINA_AAA739D91A",
+        "duplicate_replaced_by": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+        "canonical_labels": [
+          "KGNode",
+          "LabTest"
+        ],
+        "disease_name": "稳定型心绞痛",
+        "name": "BNP",
+        "created_at": "2026-07-12 21:45:00",
+        "formal_cdss_ready": false,
+        "skill_version": "V2.1-CAD-remaining-textbook-refine",
+        "evidence_ids": [
+          "CARD-SKELETON-FULL-20260709-EVID-2C126A261F69277E"
+        ],
+        "review_status": "ai_prechecked",
+        "merge_status": "delta_ready",
+        "disease_code": "DIS-CARD-CAD-STABLE-ANGINA",
+        "deprecated": "yes",
+        "deprecated_at": "2026-07-16 11:21:03",
+        "scope_target": "冠心病剩余病种",
+        "status": "deprecated",
+        "replaced_by_name": "B型钠尿肽",
+        "code": "LAB-CARD-CADREM-STABLE-ANGINA-AAA739D91A",
+        "source_section": "动脉粥样硬化和冠状动脉粥样硬化性心脏病 > 慢性冠状动脉综合征 > 稳定型心绞痛",
+        "top_specialty": "心血管内科",
+        "preferred_name": "BNP",
+        "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+        "display_name": "BNP",
+        "updated_at": "2026-07-16 11:21:03",
+        "source_authority": "《内科学（第10版）》",
+        "clinical_review_status": "pending_clinical_use_effect_review",
+        "cdss_release_level": "test_recommendation"
+      }
+    },
+    {
+      "code": "LAB-CARD-TEXT-768E5070F6",
+      "labels": [
+        "KGNode",
+        "LabTest"
+      ],
+      "entityType": "LabTest",
+      "name": "脑钠肽",
+      "display_name": "脑钠肽",
+      "preferred_name": "脑钠肽",
+      "aliases": [
+        "BNP",
+        "NT-proBNP"
+      ],
+      "abbr": null,
+      "status": "deprecated",
+      "incoming": 13,
+      "outgoing": 2,
+      "props": {
+        "deprecated_reason": "20260716检验缩写主名称归并：保留历史节点但不再作为有效主节点",
+        "source_type": "authoritative_textbook",
+        "scope_type": "specialty",
+        "schema_version": "V1.4",
+        "entityType": "LabTest",
+        "aliases": [
+          "BNP",
+          "NT-proBNP"
+        ],
+        "type_label": "LabTest",
+        "primary_label": "KGNode",
+        "id": "KG_LAB-CARD-TEXT-768E5070F6",
+        "entityCategory": "检验",
+        "duplicate_replaced_by": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+        "canonical_labels": [
+          "KGNode",
+          "LabTest"
+        ],
+        "description": "脑钠肽（教材深层实体化抽取）",
+        "name": "脑钠肽",
+        "formal_cdss_ready": false,
+        "review_status": "approved",
+        "merge_status": "validated",
+        "deprecated": "yes",
+        "deprecated_at": "2026-07-16 11:21:03",
+        "scope_target": "心血管内科",
+        "status": "deprecated",
+        "replaced_by_name": "B型钠尿肽",
+        "code": "LAB-CARD-TEXT-768E5070F6",
+        "preferred_name": "脑钠肽",
+        "batch_id": "FOUNDATION-CARD-DEEP-20260625-001",
+        "display_name": "脑钠肽",
+        "updated_at": "2026-07-16 11:21:03",
+        "clinical_review_status": "pending_clinical_review"
+      }
+    }
+  ],
+  "active_abbreviation_primary_name_nodes": [
+    {
+      "code": "EXAM-CARD-09DFFB573658",
+      "entityType": "Exam",
+      "name": "CMR",
+      "display_name": "CMR",
+      "aliases": [
+        "CMR"
+      ],
+      "status": null
+    },
+    {
+      "code": "EXAM-CARD-CADREM-AMI-F6AAC5622D",
+      "entityType": "Exam",
+      "name": "CT",
+      "display_name": "CT",
+      "aliases": [
+        "CT"
+      ],
+      "status": null
+    },
+    {
+      "code": "EXAM-CARD-CADREM-ICM-F6AAC5622D",
+      "entityType": "Exam",
+      "name": "CT",
+      "display_name": "CT",
+      "aliases": [
+        "CT"
+      ],
+      "status": null
+    },
+    {
+      "code": "EXAM-CARD-CADREM-NSTEMI-F6AAC5622D",
+      "entityType": "Exam",
+      "name": "CT",
+      "display_name": "CT",
+      "aliases": [
+        "CT"
+      ],
+      "status": null
+    },
+    {
+      "code": "EXAM-CARD-CADREM-SILENT-ISCHEMIA-F6AAC5622D",
+      "entityType": "Exam",
+      "name": "CT",
+      "display_name": "CT",
+      "aliases": [
+        "CT"
+      ],
+      "status": null
+    },
+    {
+      "code": "EXAM-CARD-CADREM-STABLE-ANGINA-F6AAC5622D",
+      "entityType": "Exam",
+      "name": "CT",
+      "display_name": "CT",
+      "aliases": [
+        "CT"
+      ],
+      "status": null
+    },
+    {
+      "code": "EXAM-CARD-CADREM-UA-F6AAC5622D",
+      "entityType": "Exam",
+      "name": "CT",
+      "display_name": "CT",
+      "aliases": [
+        "CT"
+      ],
+      "status": null
+    },
+    {
+      "code": "EXAM-CARD-F6AAC5622DEA",
+      "entityType": "Exam",
+      "name": "CT",
+      "display_name": "CT",
+      "aliases": [
+        "CT"
+      ],
+      "status": null
+    },
+    {
+      "code": "EXAM-CARD-3A1C9D9E3AEB",
+      "entityType": "Exam",
+      "name": "CTA",
+      "display_name": "CTA",
+      "aliases": [
+        "CTA"
+      ],
+      "status": null
+    },
+    {
+      "code": "EXAM-CARD-CADREM-STABLE-ANGINA-2B3BD0A8FA",
+      "entityType": "Exam",
+      "name": "Holter",
+      "display_name": "Holter",
+      "aliases": [
+        "Holter"
+      ],
+      "status": null
+    },
+    {
+      "code": "PROC-CARD-74A1F415EBD2",
+      "entityType": "Procedure",
+      "name": "PBMV",
+      "display_name": "PBMV",
+      "aliases": [
+        "PBMV"
+      ],
+      "status": null
+    },
+    {
+      "code": "PROC-CARD-CADREM-AMI-F15816B958",
+      "entityType": "Procedure",
+      "name": "PCI",
+      "display_name": "PCI",
+      "aliases": [
+        "PCI"
+      ],
+      "status": null
+    },
+    {
+      "code": "PROC-CARD-CADREM-NSTEMI-F15816B958",
+      "entityType": "Procedure",
+      "name": "PCI",
+      "display_name": "PCI",
+      "aliases": [
+        "PCI"
+      ],
+      "status": null
+    },
+    {
+      "code": "PROC-CARD-CADREM-UA-F15816B958",
+      "entityType": "Procedure",
+      "name": "PCI",
+      "display_name": "PCI",
+      "aliases": [
+        "PCI"
+      ],
+      "status": null
+    },
+    {
+      "code": "PROC-CARD-B8BE09194D42",
+      "entityType": "Procedure",
+      "name": "TAVR",
+      "display_name": "TAVR",
+      "aliases": [
+        "TAVR"
+      ],
+      "status": null
+    },
+    {
+      "code": "PROC-CARD-3A51966AEA2C",
+      "entityType": "Procedure",
+      "name": "TEER",
+      "display_name": "TEER",
+      "aliases": [
+        "TEER"
+      ],
+      "status": null
+    }
+  ]
+}

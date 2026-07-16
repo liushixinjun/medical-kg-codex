@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-07-16 11:30:19",
+  "action": "修复剩余IVUS/OCT/INR/PBPV/TAVI缩写主名",
+  "standard_updates": [
+    {
+      "code": "CARD-SKELETON-20260709-EXAM-652809DC86CBF5A2",
+      "entityType": "Exam",
+      "name": "血管内超声",
+      "aliases": [
+        "IVUS",
+        "血管内超声",
+        "冠状动脉血管内超声"
+      ]
+    },
+    {
+      "code": "CARD-SKELETON-FULL-20260709-EXAM-40BD433C71F71D08",
+      "entityType": "Exam",
+      "name": "光学相干断层扫描",
+      "aliases": [
+        "OCT",
+        "光学相干断层扫描",
+        "光学相干断层成像"
+      ]
+    },
+    {
+      "code": "LAB-CARD-6DEDDE6D2554",
+      "entityType": "LabTest",
+      "name": "国际标准化比值",
+      "aliases": [
+        "INR",
+        "国际标准化比值"
+      ]
+    },
+    {
+      "code": "PROC-CARD-5558D37982AF",
+      "entityType": "Procedure",
+      "name": "经皮球囊肺动脉瓣成形术",
+      "aliases": [
+        "PBPV",
+        "经皮球囊肺动脉瓣成形术",
+        "肺动脉瓣球囊成形术"
+      ]
+    },
+    {
+      "code": "PROC-CARD-TEXT-53ECAA23AE",
+      "entityType": "Procedure",
+      "name": "经导管主动脉瓣置换术",
+      "aliases": [
+        "TAVR",
+        "TAVI",
+        "经导管主动脉瓣置换术",
+        "经导管主动脉瓣植入术"
+      ]
+    }
+  ],
+  "old_to_standard": {
+    "EXAM-CARD-CADREM-NSTEMI-9E41219AEC": "CARD-SKELETON-20260709-EXAM-652809DC86CBF5A2",
+    "EXAM-CARD-CADREM-SILENT-ISCHEMIA-9E41219AEC": "CARD-SKELETON-20260709-EXAM-652809DC86CBF5A2",
+    "EXAM-CARD-CADREM-UA-9E41219AEC": "CARD-SKELETON-20260709-EXAM-652809DC86CBF5A2",
+    "EXAM-CARD-CADREM-NSTEMI-6595E76160": "CARD-SKELETON-FULL-20260709-EXAM-40BD433C71F71D08",
+    "EXAM-CARD-CADREM-UA-6595E76160": "CARD-SKELETON-FULL-20260709-EXAM-40BD433C71F71D08",
+    "PROC-CARD-B4FC5ED6A1F7": "PROC-CARD-5558D37982AF",
+    "PROC-CARD-2FA3B15D2F3F": "PROC-CARD-TEXT-53ECAA23AE",
+    "PROC-TAVR": "PROC-CARD-TEXT-53ECAA23AE"
+  },
+  "incoming_migrated": 291,
+  "outgoing_migrated": 257,
+  "marked_deprecated": 8,
+  "skipped": []
+}

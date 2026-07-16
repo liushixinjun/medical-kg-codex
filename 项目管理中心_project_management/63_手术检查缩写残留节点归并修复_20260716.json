@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-07-16 11:22:35",
+  "action": "手术/检查缩写残留节点归并到中文全称标准节点",
+  "old_to_standard": {
+    "PROC-CARD-CADREM-AMI-F15816B958": "PROC-CARD-E9ADC25A25E3",
+    "PROC-CARD-CADREM-NSTEMI-F15816B958": "PROC-CARD-E9ADC25A25E3",
+    "PROC-CARD-CADREM-UA-F15816B958": "PROC-CARD-E9ADC25A25E3",
+    "PROC-CARD-CADREM-AMI-E9ADC25A25": "PROC-CARD-E9ADC25A25E3",
+    "PROC-CARD-CADREM-NSTEMI-E9ADC25A25": "PROC-CARD-E9ADC25A25E3",
+    "PROC-CARD-CADREM-UA-E9ADC25A25": "PROC-CARD-E9ADC25A25E3",
+    "PROC-CARD-3A51966AEA2C": "PROC-TEER",
+    "PROC-CARD-B8BE09194D42": "PROC-CARD-TEXT-53ECAA23AE",
+    "PROC-CARD-74A1F415EBD2": "PROC-PBMV",
+    "EXAM-CARD-CADREM-AMI-F6AAC5622D": "EXAM-CARD-TEXT-9A031190AE",
+    "EXAM-CARD-CADREM-NSTEMI-F6AAC5622D": "EXAM-CARD-TEXT-9A031190AE",
+    "EXAM-CARD-CADREM-UA-F6AAC5622D": "EXAM-CARD-TEXT-9A031190AE",
+    "EXAM-CARD-CADREM-STABLE-ANGINA-F6AAC5622D": "EXAM-CARD-TEXT-9A031190AE",
+    "EXAM-CARD-CADREM-SILENT-ISCHEMIA-F6AAC5622D": "EXAM-CARD-TEXT-9A031190AE",
+    "EXAM-CARD-CADREM-ICM-F6AAC5622D": "EXAM-CARD-TEXT-9A031190AE",
+    "EXAM-CARD-F6AAC5622DEA": "EXAM-CARD-TEXT-9A031190AE",
+    "EXAM-CARD-3A1C9D9E3AEB": "EXAM-CARD-CF719F4B0836",
+    "EXAM-CARD-09DFFB573658": "EXAM-CMR",
+    "EXAM-CARD-CADREM-STABLE-ANGINA-2B3BD0A8FA": "EXAM-HOLTER"
+  },
+  "standard_updates": [
+    {
+      "code": "PROC-CARD-E9ADC25A25E3",
+      "name": "经皮冠状动脉介入治疗",
+      "aliases": [
+        "PCI",
+        "PTCA",
+        "经皮冠状动脉介入治疗",
+        "冠状动脉介入治疗",
+        "经皮冠状动脉介入术"
+      ]
+    },
+    {
+      "code": "PROC-TEER",
+      "name": "经导管二尖瓣缘对缘修复术",
+      "aliases": [
+        "TEER",
+        "经导管二尖瓣缘对缘修复术",
+        "二尖瓣缘对缘修复术"
+      ]
+    },
+    {
+      "code": "PROC-CARD-TEXT-53ECAA23AE",
+      "name": "经导管主动脉瓣置换术",
+      "aliases": [
+        "TAVR",
+        "TAVI",
+        "经导管主动脉瓣置换术",
+        "经导管主动脉瓣植入术"
+      ]
+    },
+    {
+      "code": "PROC-PBMV",
+      "name": "经皮球囊二尖瓣成形术",
+      "aliases": [
+        "PBMV",
+        "经皮球囊二尖瓣成形术",
+        "经皮二尖瓣球囊成形术"
+      ]
+    },
+    {
+      "code": "EXAM-CARD-TEXT-9A031190AE",
+      "name": "CT检查",
+      "aliases": [
+        "CT",
+        "CT检查",
+        "计算机断层扫描"
+      ]
+    },
+    {
+      "code": "EXAM-CARD-CF719F4B0836",
+      "name": "CT血管造影",
+      "aliases": [
+        "CTA",
+        "CT血管造影",
+        "冠状动脉CTA"
+      ]
+    },
+    {
+      "code": "EXAM-CMR",
+      "name": "心脏磁共振",
+      "aliases": [
+        "CMR",
+        "心脏磁共振",
+        "心血管磁共振"
+      ]
+    },
+    {
+      "code": "EXAM-HOLTER",
+      "name": "动态心电图",
+      "aliases": [
+        "Holter",
+        "动态心电图",
+        "24小时动态心电图"
+      ]
+    }
+  ],
+  "incoming_migrated": 0,
+  "outgoing_migrated": 0,
+  "marked_deprecated": 19,
+  "skipped": []
+}

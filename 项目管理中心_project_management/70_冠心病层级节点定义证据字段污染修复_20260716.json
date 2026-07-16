@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-07-16 11:27:39",
+  "updated": [
+    {
+      "code": "DIS-CARD-CAD-ACS",
+      "name": "急性冠脉综合征",
+      "definition_evidence_text": "急性冠脉综合征是一组由急性心肌缺血引起的临床综合征，主要包括不稳定型心绞痛（UA）、非ST段抬高型心肌梗死（NSTEMI）和ST段抬高型心肌梗死（STEMI），冠心病猝死是特殊类型ACS。"
+    },
+    {
+      "code": "DIS-CARD-CAD-AMI",
+      "name": "急性心肌梗死",
+      "definition_evidence_text": "急性心肌梗死（AMI）是急性冠脉综合征的重要类型，临床上分为5型，其中最常见的是原发冠脉不稳定斑块破裂、糜烂或侵蚀继发血栓形成导致的自发性AMI。"
+    },
+    {
+      "code": "DIS-CARD-CAD-UA",
+      "name": "不稳定型心绞痛",
+      "definition_evidence_text": "不稳定型心绞痛（UA）属于非ST段抬高型急性冠脉综合征，是有新发心肌缺血（包括静息状态下缺血）但不伴有心肌坏死的临床状态。"
+    },
+    {
+      "code": "DIS-CARD-CAD-NSTEMI",
+      "name": "非ST段抬高型心肌梗死",
+      "definition_evidence_text": "非ST段抬高型心肌梗死（NSTEMI）属于非ST段抬高型急性冠脉综合征，是伴有心肌坏死标志物升高但无持续ST段抬高表现的急性心肌梗死类型。"
+    },
+    {
+      "code": "DIS-CARD-CAD-STEMI",
+      "name": "ST段抬高型心肌梗死",
+      "definition_evidence_text": "STEMI是指急性心肌缺血性坏死，大多是在冠脉病变基础上发生冠脉血供急剧减少或中断，使相应心肌严重而持久地急性缺血所致。"
+    }
+  ],
+  "after": [
+    {
+      "code": "DIS-CARD-CAD-ACS",
+      "name": "急性冠脉综合征",
+      "definition": "急性冠脉综合征是一组由急性心肌缺血引起的临床综合征，主要包括不稳定型心绞痛（UA）、非ST 段抬高型心肌梗死（NSTEMI）和 ST 段抬高型心肌梗死（STEMI），冠心病猝死是特殊类型 ACS。",
+      "definition_evidence_text": "急性冠脉综合征是一组由急性心肌缺血引起的临床综合征，主要包括不稳定型心绞痛（UA）、非ST段抬高型心肌梗死（NSTEMI）和ST段抬高型心肌梗死（STEMI），冠心病猝死是特殊类型ACS。",
+      "note": "20260716：修复definition_evidence_text跨章节污染，保持疾病主定义与证据字段一致"
+    },
+    {
+      "code": "DIS-CARD-CAD-AMI",
+      "name": "急性心肌梗死",
+      "definition": "急性心肌梗死（AMI）是急性冠脉综合征的重要类型，临床上分为5型，其中最常见的是原发冠脉不稳定斑块破裂、糜烂或侵蚀继发血栓形成导致的自发性AMI。",
+      "definition_evidence_text": "急性心肌梗死（AMI）是急性冠脉综合征的重要类型，临床上分为5型，其中最常见的是原发冠脉不稳定斑块破裂、糜烂或侵蚀继发血栓形成导致的自发性AMI。",
+      "note": "20260716：修复definition_evidence_text跨章节污染，保持疾病主定义与证据字段一致"
+    },
+    {
+      "code": "DIS-CARD-CAD-NSTEMI",
+      "name": "非ST段抬高型心肌梗死",
+      "definition": "非ST段抬高型心肌梗死（NSTEMI）属于非ST段抬高型急性冠脉综合征，表现为较严重心肌缺血，并伴有心肌损害和心肌坏死标志物升高。",
+      "definition_evidence_text": "非ST段抬高型心肌梗死（NSTEMI）属于非ST段抬高型急性冠脉综合征，是伴有心肌坏死标志物升高但无持续ST段抬高表现的急性心肌梗死类型。",
+      "note": "20260716：修复definition_evidence_text跨章节污染，保持疾病主定义与证据字段一致"
+    },
+    {
+      "code": "DIS-CARD-CAD-STEMI",
+      "name": "ST段抬高型心肌梗死",
+      "definition": "STEMI 是指急性心肌缺血性坏死，大多是在冠脉病变的基础上，发生冠脉血供急剧减少或中断，使相应的心肌严重而持久地急性缺血所致。",
+      "definition_evidence_text": "STEMI是指急性心肌缺血性坏死，大多是在冠脉病变基础上发生冠脉血供急剧减少或中断，使相应心肌严重而持久地急性缺血所致。",
+      "note": "20260716：修复definition_evidence_text跨章节污染，保持疾病主定义与证据字段一致"
+    },
+    {
+      "code": "DIS-CARD-CAD-UA",
+      "name": "不稳定型心绞痛",
+      "definition": "不稳定型心绞痛（UA）属于非ST段抬高型急性冠脉综合征，是有新发心肌缺血（包括静息状态下缺血）但不伴有心肌坏死的临床状态。",
+      "definition_evidence_text": "不稳定型心绞痛（UA）属于非ST段抬高型急性冠脉综合征，是有新发心肌缺血（包括静息状态下缺血）但不伴有心肌坏死的临床状态。",
+      "note": "20260716：修复definition_evidence_text跨章节污染，保持疾病主定义与证据字段一致"
+    }
+  ]
+}

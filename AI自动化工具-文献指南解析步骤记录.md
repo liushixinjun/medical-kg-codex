@@ -1,3 +1,24 @@
+## 2026-07-16 11:05:00——PCI 旧缩写节点归并修复
+
+- 用户问题：Trae 提示 AMI 下显示 `PCI`，需核查是数据问题还是展示问题。
+- 核查结论：Trae 判断正确，这是数据问题，不是前端展示问题。
+- 问题原因：旧批次 `BATCH-CARD-CAD-REMAINING-20260712-001` 残留 disease-specific `PCI` 手术节点，直接与 AMI/NSTEMI/UA 相连；标准中文节点“经皮冠状动脉介入治疗”已存在，但旧缩写节点未完全归并。
+- 处理动作：
+  - 迁移 3 条 `treated_by_procedure` 疾病-手术关系到标准中文节点 `PROC-CARD-E9ADC25A25E3`。
+  - 迁移 3 条 `supported_by_evidence` 手术-证据关系到标准中文节点。
+  - 标记 3 个旧 `PCI` 缩写节点为废弃，剩余关系为 0。
+  - 标记 3 个无关系 disease-specific 中文重复手术节点为废弃。
+  - 未物理删除节点。
+- 复核结果：AMI 当前活跃 PCI/介入相关手术节点只剩“经皮冠状动脉介入治疗”；活跃 `Procedure.name=PCI` 节点为 0。
+- 术语字典：`术语字典/6_手术同义词表.yaml` 已存在“经皮冠状动脉介入治疗”，别名包含 `PCI`、`PTCA`、冠脉介入等。
+- 输出文件：
+  - `项目管理中心_project_management/49_PCI旧缩写节点修复前核查_20260716.json`
+  - `项目管理中心_project_management/49_PCI旧缩写节点归并修复_20260716.json`
+  - `项目管理中心_project_management/50_PCI旧缩写节点归并修复复核_20260716.json`
+  - `项目管理中心_project_management/51_PCI旧缩写节点归并修复报告_20260716.md`
+- 关联踩坑日志：
+  - `2026-07-16 11:05:00——术语字典存在不代表旧批次节点已归并，必须查服务器活跃节点`
+
 ## 2026-07-16 00:25:00——Evidence 历史去重迁移扩大到 543 个节点
 
 - 用户指令：先提交本轮 Evidence 改造到 GitHub，然后把历史 Evidence 去重迁移从 20 个节点扩大到 500–1000 个低风险重复节点。
@@ -1591,3 +1612,26 @@ Neo4j连接：否
 - `2026-07-15——DOCX随访资料不能只解析不入证据索引`
 - `2026-07-15——缩写不能作为临床主名称`
 - `2026-07-15——治疗方案必须挂具体药物/操作/随访动作`
+## 2026-07-16 11:40:00——术语别名主数据、PCI残留节点与AMI层级收口——已写入 Neo4j
+
+- 学科：心血管内科
+- 类型：服务器图谱主数据质量治理
+- 触发问题：Trae 前端复核发现 AMI 下仍能看到旧 `PCI` 节点；用户要求核对别名保留、同类问题全库排查，并确认“急性心肌梗死/AMI 与 STEMI、NSTEMI 层级”到底是数据问题还是前端问题。
+- 本轮处理：
+  - PCI：旧 `PCI` 缩写节点、疾病专属重复节点全部归并到标准节点“经皮冠状动脉介入治疗”，旧节点保留但标记停用，不物理删除。
+  - 手术/检查/检验缩写：`PCI、TEER、TAVR、PBMV、CT、CTA、CMR、Holter、BNP、NT-proBNP、IVUS、OCT、INR、PBPV、TAVI` 均改为中文全称做主名，英文缩写保留到 `abbr/aliases`。
+  - BNP 与 NT-proBNP：拆成两个标准检验节点，避免“脑钠肽”同时挂 BNP 和 NT-proBNP 的混淆。
+  - 同类型同名重复：Procedure、Exam、LabTest 三类共 30 组重复、65 个旧节点完成关系迁移并停用旧节点。
+  - AMI 层级：补齐“冠心病 -> 急性冠脉综合征谱系 -> 急性心肌梗死”，并补齐“急性心肌梗死 -> STEMI/NSTEMI 分型节点”；STEMI/NSTEMI 同时保留为可独立诊疗的 Disease 节点。
+  - 定义字段污染：修复 ACS、AMI、UA、NSTEMI、STEMI 5 个冠心病层级节点的 `definition_evidence_text` 跨章节污染。
+- 服务器复核结果：
+  - 有效缩写主名节点：0
+  - 已知缩写残留主名节点：0
+  - Procedure/Exam/LabTest 同类型同名重复：0
+  - AMI 旧 PCI 节点剩余关系：0
+  - AMI 分型节点：2 个（STEMI、NSTEMI），均可跳转到对应 Disease 节点
+- 关键输出：
+  - `项目管理中心_project_management/78_别名主数据与AMI层级最终收口复核_20260716.json`
+  - `项目管理中心_project_management/76_同类型同名重复节点归并修复_20260716.json`
+  - `项目管理中心_project_management/73_剩余缩写主名归并修复_20260716.json`
+  - `项目管理中心_project_management/67_AMI层级分型修复_20260716.json`

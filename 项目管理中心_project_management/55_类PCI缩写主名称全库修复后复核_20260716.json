@@ -1,0 +1,290 @@
+﻿{
+  "summary": {
+    "remaining_candidate_count": 14,
+    "by_type": {
+      "Exam": 10,
+      "LabTest": 4
+    }
+  },
+  "remaining_candidates": [
+    {
+      "old_code": "EXAM-CARD-CADREM-AMI-F6AAC5622D",
+      "entityType": "Exam",
+      "old_name": "CT",
+      "old_relation_count": 4,
+      "match_count": 2,
+      "suggested_standard_code": "EXAM-CARD-1A108BEFCEA9",
+      "suggested_standard_name": "心脏CT",
+      "all_matches": [
+        {
+          "code": "EXAM-CARD-1A108BEFCEA9",
+          "name": "心脏CT",
+          "relation_count": 54
+        },
+        {
+          "code": "EXAM-CARD-TEXT-9A031190AE",
+          "name": "CT检查",
+          "relation_count": 31
+        }
+      ]
+    },
+    {
+      "old_code": "EXAM-CARD-CADREM-ICM-F6AAC5622D",
+      "entityType": "Exam",
+      "old_name": "CT",
+      "old_relation_count": 3,
+      "match_count": 2,
+      "suggested_standard_code": "EXAM-CARD-1A108BEFCEA9",
+      "suggested_standard_name": "心脏CT",
+      "all_matches": [
+        {
+          "code": "EXAM-CARD-1A108BEFCEA9",
+          "name": "心脏CT",
+          "relation_count": 54
+        },
+        {
+          "code": "EXAM-CARD-TEXT-9A031190AE",
+          "name": "CT检查",
+          "relation_count": 31
+        }
+      ]
+    },
+    {
+      "old_code": "EXAM-CARD-CADREM-NSTEMI-F6AAC5622D",
+      "entityType": "Exam",
+      "old_name": "CT",
+      "old_relation_count": 2,
+      "match_count": 2,
+      "suggested_standard_code": "EXAM-CARD-1A108BEFCEA9",
+      "suggested_standard_name": "心脏CT",
+      "all_matches": [
+        {
+          "code": "EXAM-CARD-1A108BEFCEA9",
+          "name": "心脏CT",
+          "relation_count": 54
+        },
+        {
+          "code": "EXAM-CARD-TEXT-9A031190AE",
+          "name": "CT检查",
+          "relation_count": 31
+        }
+      ]
+    },
+    {
+      "old_code": "EXAM-CARD-CADREM-SILENT-ISCHEMIA-F6AAC5622D",
+      "entityType": "Exam",
+      "old_name": "CT",
+      "old_relation_count": 3,
+      "match_count": 2,
+      "suggested_standard_code": "EXAM-CARD-1A108BEFCEA9",
+      "suggested_standard_name": "心脏CT",
+      "all_matches": [
+        {
+          "code": "EXAM-CARD-1A108BEFCEA9",
+          "name": "心脏CT",
+          "relation_count": 54
+        },
+        {
+          "code": "EXAM-CARD-TEXT-9A031190AE",
+          "name": "CT检查",
+          "relation_count": 31
+        }
+      ]
+    },
+    {
+      "old_code": "EXAM-CARD-CADREM-STABLE-ANGINA-2B3BD0A8FA",
+      "entityType": "Exam",
+      "old_name": "Holter",
+      "old_relation_count": 2,
+      "match_count": 2,
+      "suggested_standard_code": "EXAM-HOLTER",
+      "suggested_standard_name": "动态心电图",
+      "all_matches": [
+        {
+          "code": "EXAM-HOLTER",
+          "name": "动态心电图",
+          "relation_count": 386
+        },
+        {
+          "code": "EXAM-CARD-A096A6416690",
+          "name": "心电图及长程心电监测",
+          "relation_count": 4
+        }
+      ]
+    },
+    {
+      "old_code": "EXAM-CARD-CADREM-STABLE-ANGINA-F6AAC5622D",
+      "entityType": "Exam",
+      "old_name": "CT",
+      "old_relation_count": 4,
+      "match_count": 2,
+      "suggested_standard_code": "EXAM-CARD-1A108BEFCEA9",
+      "suggested_standard_name": "心脏CT",
+      "all_matches": [
+        {
+          "code": "EXAM-CARD-1A108BEFCEA9",
+          "name": "心脏CT",
+          "relation_count": 54
+        },
+        {
+          "code": "EXAM-CARD-TEXT-9A031190AE",
+          "name": "CT检查",
+          "relation_count": 31
+        }
+      ]
+    },
+    {
+      "old_code": "EXAM-CARD-CADREM-UA-F6AAC5622D",
+      "entityType": "Exam",
+      "old_name": "CT",
+      "old_relation_count": 2,
+      "match_count": 2,
+      "suggested_standard_code": "EXAM-CARD-1A108BEFCEA9",
+      "suggested_standard_name": "心脏CT",
+      "all_matches": [
+        {
+          "code": "EXAM-CARD-1A108BEFCEA9",
+          "name": "心脏CT",
+          "relation_count": 54
+        },
+        {
+          "code": "EXAM-CARD-TEXT-9A031190AE",
+          "name": "CT检查",
+          "relation_count": 31
+        }
+      ]
+    },
+    {
+      "old_code": "LAB-CARD-CADREM-STABLE-ANGINA-408A62EF5D",
+      "entityType": "LabTest",
+      "old_name": "NT-proBNP",
+      "old_relation_count": 4,
+      "match_count": 1,
+      "suggested_standard_code": "LAB-CARD-TEXT-768E5070F6",
+      "suggested_standard_name": "脑钠肽",
+      "all_matches": [
+        {
+          "code": "LAB-CARD-TEXT-768E5070F6",
+          "name": "脑钠肽",
+          "relation_count": 15
+        }
+      ]
+    },
+    {
+      "old_code": "LAB-CARD-CADREM-STABLE-ANGINA-AAA739D91A",
+      "entityType": "LabTest",
+      "old_name": "BNP",
+      "old_relation_count": 4,
+      "match_count": 1,
+      "suggested_standard_code": "LAB-CARD-TEXT-768E5070F6",
+      "suggested_standard_name": "脑钠肽",
+      "all_matches": [
+        {
+          "code": "LAB-CARD-TEXT-768E5070F6",
+          "name": "脑钠肽",
+          "relation_count": 15
+        }
+      ]
+    },
+    {
+      "old_code": "EXAM-CARD-09DFFB573658",
+      "entityType": "Exam",
+      "old_name": "CMR",
+      "old_relation_count": 321,
+      "match_count": 2,
+      "suggested_standard_code": "EXAM-CMR",
+      "suggested_standard_name": "心脏磁共振",
+      "all_matches": [
+        {
+          "code": "EXAM-CMR",
+          "name": "心脏磁共振",
+          "relation_count": 773
+        },
+        {
+          "code": "EXAM-CARD-61766890B7D2",
+          "name": "心脏磁共振",
+          "relation_count": 111
+        }
+      ]
+    },
+    {
+      "old_code": "EXAM-CARD-3A1C9D9E3AEB",
+      "entityType": "Exam",
+      "old_name": "CTA",
+      "old_relation_count": 134,
+      "match_count": 3,
+      "suggested_standard_code": "EXAM-CARD-F60922D428D5",
+      "suggested_standard_name": "冠状动脉CT血管成像",
+      "all_matches": [
+        {
+          "code": "EXAM-CARD-F60922D428D5",
+          "name": "冠状动脉CT血管成像",
+          "relation_count": 254
+        },
+        {
+          "code": "EXAM-CARD-CF719F4B0836",
+          "name": "CT血管造影",
+          "relation_count": 127
+        },
+        {
+          "code": "EXAM-CARD-TEXT-2BB358B9BF",
+          "name": "冠状动脉CTA",
+          "relation_count": 14
+        }
+      ]
+    },
+    {
+      "old_code": "EXAM-CARD-F6AAC5622DEA",
+      "entityType": "Exam",
+      "old_name": "CT",
+      "old_relation_count": 696,
+      "match_count": 2,
+      "suggested_standard_code": "EXAM-CARD-1A108BEFCEA9",
+      "suggested_standard_name": "心脏CT",
+      "all_matches": [
+        {
+          "code": "EXAM-CARD-1A108BEFCEA9",
+          "name": "心脏CT",
+          "relation_count": 54
+        },
+        {
+          "code": "EXAM-CARD-TEXT-9A031190AE",
+          "name": "CT检查",
+          "relation_count": 31
+        }
+      ]
+    },
+    {
+      "old_code": "LAB-CARD-408A62EF5D51",
+      "entityType": "LabTest",
+      "old_name": "NT-proBNP",
+      "old_relation_count": 134,
+      "match_count": 1,
+      "suggested_standard_code": "LAB-CARD-TEXT-768E5070F6",
+      "suggested_standard_name": "脑钠肽",
+      "all_matches": [
+        {
+          "code": "LAB-CARD-TEXT-768E5070F6",
+          "name": "脑钠肽",
+          "relation_count": 15
+        }
+      ]
+    },
+    {
+      "old_code": "LAB-CARD-AAA739D91A3A",
+      "entityType": "LabTest",
+      "old_name": "BNP",
+      "old_relation_count": 222,
+      "match_count": 1,
+      "suggested_standard_code": "LAB-CARD-TEXT-768E5070F6",
+      "suggested_standard_name": "脑钠肽",
+      "all_matches": [
+        {
+          "code": "LAB-CARD-TEXT-768E5070F6",
+          "name": "脑钠肽",
+          "relation_count": 15
+        }
+      ]
+    }
+  ]
+}

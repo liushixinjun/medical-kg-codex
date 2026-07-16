@@ -1,0 +1,200 @@
+﻿[
+  {
+    "code": "PROC-CARD-CADREM-AMI-F15816B958",
+    "name": "PCI",
+    "entityType": "Procedure",
+    "incoming": [
+      {
+        "relation_type": "treated_by_procedure",
+        "source_code": "DIS-CARD-CAD-AMI",
+        "source_name": "急性心肌梗死",
+        "props": {
+          "relationType": "treated_by_procedure",
+          "disease_code": "DIS-CARD-CAD-AMI",
+          "skill_version": "V2.1-CAD-remaining-textbook-refine",
+          "target_code": "PROC-CARD-CADREM-AMI-F15816B958",
+          "top_specialty": "心血管内科",
+          "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+          "created_at": "2026-07-12 21:45:00",
+          "source_type": "authoritative_textbook",
+          "clinical_review_status": "pending_clinical_use_effect_review",
+          "scope_target": "冠心病剩余病种",
+          "schema_version": "V1.15",
+          "extraction_basis": "textbook_skeleton_d6",
+          "disease_category": "冠心病",
+          "formal_cdss_ready": false,
+          "id": "REL-3C8520AF33925FBAB3F1",
+          "disease_name": "急性心肌梗死",
+          "evidence_ids": [
+            "CARD-SKELETON-FULL-20260709-EVID-4BCA4250B8AD28D0"
+          ],
+          "review_status": "ai_prechecked",
+          "source_code": "DIS-CARD-CAD-AMI",
+          "scope_type": "disease_category_batch_refine",
+          "source_name": "《内科学（第10版）》"
+        }
+      }
+    ],
+    "outgoing": [
+      {
+        "target_code": "EVD-CARD-TEXTBOOK-EA3E63A92CBC2493",
+        "target_name": "急性心肌梗死-Procedure-3-教材原文证据",
+        "relation_type": "supported_by_evidence",
+        "props": {
+          "relationType": "supported_by_evidence",
+          "disease_code": "DIS-CARD-CAD-AMI",
+          "skill_version": "V2.1-CAD-remaining-textbook-refine",
+          "target_code": "EVD-CARD-TEXTBOOK-EA3E63A92CBC2493",
+          "top_specialty": "心血管内科",
+          "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+          "created_at": "2026-07-12 21:45:00",
+          "source_type": "authoritative_textbook",
+          "evidence_id": "CARD-SKELETON-FULL-20260709-EVID-4BCA4250B8AD28D0",
+          "clinical_review_status": "pending_clinical_use_effect_review",
+          "scope_target": "冠心病剩余病种",
+          "schema_version": "V1.15",
+          "disease_category": "冠心病",
+          "formal_cdss_ready": false,
+          "id": "REL-A2D1173D88892D22F4E9",
+          "disease_name": "急性心肌梗死",
+          "review_status": "ai_prechecked",
+          "source_code": "PROC-CARD-CADREM-AMI-F15816B958",
+          "scope_type": "disease_category_batch_refine",
+          "source_name": "《内科学（第10版）》"
+        }
+      }
+    ]
+  },
+  {
+    "code": "PROC-CARD-CADREM-NSTEMI-F15816B958",
+    "name": "PCI",
+    "entityType": "Procedure",
+    "incoming": [
+      {
+        "relation_type": "treated_by_procedure",
+        "source_code": "DIS-CARD-CAD-NSTEMI",
+        "source_name": "非ST段抬高型心肌梗死",
+        "props": {
+          "relationType": "treated_by_procedure",
+          "disease_code": "DIS-CARD-CAD-NSTEMI",
+          "skill_version": "V2.1-CAD-remaining-textbook-refine",
+          "target_code": "PROC-CARD-CADREM-NSTEMI-F15816B958",
+          "top_specialty": "心血管内科",
+          "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+          "created_at": "2026-07-12 21:45:00",
+          "source_type": "authoritative_textbook",
+          "clinical_review_status": "pending_clinical_use_effect_review",
+          "scope_target": "冠心病剩余病种",
+          "schema_version": "V1.15",
+          "extraction_basis": "textbook_skeleton_d6",
+          "disease_category": "冠心病",
+          "formal_cdss_ready": false,
+          "id": "REL-4F993DBA30CF1403C447",
+          "disease_name": "非ST段抬高型心肌梗死",
+          "evidence_ids": [
+            "CARD-SKELETON-FULL-20260709-EVID-E60A0993B3902D4E"
+          ],
+          "review_status": "ai_prechecked",
+          "source_code": "DIS-CARD-CAD-NSTEMI",
+          "scope_type": "disease_category_batch_refine",
+          "source_name": "《内科学（第10版）》"
+        }
+      }
+    ],
+    "outgoing": [
+      {
+        "target_code": "EVD-CARD-TEXTBOOK-B24FA1D62CE761A1",
+        "target_name": "非ST段抬高型心肌梗死-Procedure-2-教材原文证据",
+        "relation_type": "supported_by_evidence",
+        "props": {
+          "relationType": "supported_by_evidence",
+          "disease_code": "DIS-CARD-CAD-NSTEMI",
+          "skill_version": "V2.1-CAD-remaining-textbook-refine",
+          "target_code": "EVD-CARD-TEXTBOOK-B24FA1D62CE761A1",
+          "top_specialty": "心血管内科",
+          "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+          "created_at": "2026-07-12 21:45:00",
+          "source_type": "authoritative_textbook",
+          "evidence_id": "CARD-SKELETON-FULL-20260709-EVID-E60A0993B3902D4E",
+          "clinical_review_status": "pending_clinical_use_effect_review",
+          "scope_target": "冠心病剩余病种",
+          "schema_version": "V1.15",
+          "disease_category": "冠心病",
+          "formal_cdss_ready": false,
+          "id": "REL-9BA4805FB9B73D39BC9F",
+          "disease_name": "非ST段抬高型心肌梗死",
+          "review_status": "ai_prechecked",
+          "source_code": "PROC-CARD-CADREM-NSTEMI-F15816B958",
+          "scope_type": "disease_category_batch_refine",
+          "source_name": "《内科学（第10版）》"
+        }
+      }
+    ]
+  },
+  {
+    "code": "PROC-CARD-CADREM-UA-F15816B958",
+    "name": "PCI",
+    "entityType": "Procedure",
+    "incoming": [
+      {
+        "relation_type": "treated_by_procedure",
+        "source_code": "DIS-CARD-CAD-UA",
+        "source_name": "不稳定型心绞痛",
+        "props": {
+          "relationType": "treated_by_procedure",
+          "disease_code": "DIS-CARD-CAD-UA",
+          "skill_version": "V2.1-CAD-remaining-textbook-refine",
+          "target_code": "PROC-CARD-CADREM-UA-F15816B958",
+          "top_specialty": "心血管内科",
+          "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+          "created_at": "2026-07-12 21:45:00",
+          "source_type": "authoritative_textbook",
+          "clinical_review_status": "pending_clinical_use_effect_review",
+          "scope_target": "冠心病剩余病种",
+          "schema_version": "V1.15",
+          "extraction_basis": "textbook_skeleton_d6",
+          "disease_category": "冠心病",
+          "formal_cdss_ready": false,
+          "id": "REL-51AB36624A505137B955",
+          "disease_name": "不稳定型心绞痛",
+          "evidence_ids": [
+            "CARD-SKELETON-FULL-20260709-EVID-E60A0993B3902D4E"
+          ],
+          "review_status": "ai_prechecked",
+          "source_code": "DIS-CARD-CAD-UA",
+          "scope_type": "disease_category_batch_refine",
+          "source_name": "《内科学（第10版）》"
+        }
+      }
+    ],
+    "outgoing": [
+      {
+        "target_code": "EVD-CARD-TEXTBOOK-B24FA1D62CE761A1",
+        "target_name": "非ST段抬高型心肌梗死-Procedure-2-教材原文证据",
+        "relation_type": "supported_by_evidence",
+        "props": {
+          "relationType": "supported_by_evidence",
+          "disease_code": "DIS-CARD-CAD-UA",
+          "skill_version": "V2.1-CAD-remaining-textbook-refine",
+          "target_code": "EVD-CARD-TEXTBOOK-B24FA1D62CE761A1",
+          "top_specialty": "心血管内科",
+          "batch_id": "BATCH-CARD-CAD-REMAINING-20260712-001",
+          "created_at": "2026-07-12 21:45:00",
+          "source_type": "authoritative_textbook",
+          "evidence_id": "CARD-SKELETON-FULL-20260709-EVID-E60A0993B3902D4E",
+          "clinical_review_status": "pending_clinical_use_effect_review",
+          "scope_target": "冠心病剩余病种",
+          "schema_version": "V1.15",
+          "disease_category": "冠心病",
+          "formal_cdss_ready": false,
+          "id": "REL-431C916F80DA5662C3EF",
+          "disease_name": "不稳定型心绞痛",
+          "review_status": "ai_prechecked",
+          "source_code": "PROC-CARD-CADREM-UA-F15816B958",
+          "scope_type": "disease_category_batch_refine",
+          "source_name": "《内科学（第10版）》"
+        }
+      }
+    ]
+  }
+]

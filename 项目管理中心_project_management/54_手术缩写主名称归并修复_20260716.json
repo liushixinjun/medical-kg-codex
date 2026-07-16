@@ -1,0 +1,28 @@
+﻿{
+  "batch": "20260716_手术缩写主名称归并修复",
+  "migrated_at": "2026-07-16 11:09:25",
+  "pairs": [
+    {
+      "old_code": "PROC-CARD-3A51966AEA2C",
+      "std_code": "PROC-TEER",
+      "abbr": "TEER",
+      "standard_name": "经导管二尖瓣缘对缘修复术"
+    },
+    {
+      "old_code": "PROC-CARD-B8BE09194D42",
+      "std_code": "PROC-CARD-TEXT-53ECAA23AE",
+      "abbr": "TAVR",
+      "standard_name": "经导管主动脉瓣置换术"
+    },
+    {
+      "old_code": "PROC-CARD-74A1F415EBD2",
+      "std_code": "PROC-PBMV",
+      "abbr": "PBMV",
+      "standard_name": "经皮球囊二尖瓣成形术"
+    }
+  ],
+  "incoming_migrated": 198,
+  "outgoing_migrated": 158,
+  "marked_deprecated": 3,
+  "physical_delete": false
+}

@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-07-16 11:21:03",
+  "action": "检验缩写主名称归并修复：中文全称做主名，BNP/NT-proBNP保留为别名",
+  "standard_nodes": {
+    "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B": {
+      "name": "B型钠尿肽",
+      "abbr": "BNP",
+      "aliases": [
+        "BNP",
+        "脑钠肽",
+        "B型钠尿肽"
+      ]
+    },
+    "LAB-CARD-408A62EF5D51": {
+      "name": "N端B型钠尿肽前体",
+      "abbr": "NT-proBNP",
+      "aliases": [
+        "NT-proBNP",
+        "N端脑钠肽前体",
+        "N末端B型钠尿肽前体"
+      ]
+    }
+  },
+  "old_to_standard": {
+    "LAB-CARD-AAA739D91A3A": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+    "LAB-CARD-CADREM-STABLE-ANGINA-AAA739D91A": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+    "LAB-CARD-TEXT-768E5070F6": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+    "LAB-CARD-CADREM-STABLE-ANGINA-408A62EF5D": "LAB-CARD-408A62EF5D51"
+  },
+  "standard_updates": [
+    {
+      "code": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+      "name": "B型钠尿肽",
+      "aliases": [
+        "BNP",
+        "脑钠肽",
+        "B型钠尿肽"
+      ]
+    },
+    {
+      "code": "LAB-CARD-408A62EF5D51",
+      "name": "N端B型钠尿肽前体",
+      "aliases": [
+        "NT-proBNP",
+        "N端脑钠肽前体",
+        "N末端B型钠尿肽前体"
+      ]
+    }
+  ],
+  "incoming_migrated": 137,
+  "outgoing_migrated": 108,
+  "marked_deprecated": 4,
+  "skipped": []
+}

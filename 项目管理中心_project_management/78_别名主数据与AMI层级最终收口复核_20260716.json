@@ -1,0 +1,181 @@
+{
+  "generated_at": "2026-07-16 11:32:44",
+  "active_ascii_primary_name_nodes": [],
+  "known_abbreviation_primary_name_nodes": [],
+  "active_duplicate_name_groups": [],
+  "ami_active_procedures": [
+    {
+      "rel_type": "treated_by_procedure",
+      "code": "PROC-CARD-BDB19D2C7A36",
+      "name": "冠状动脉旁路移植术",
+      "aliases": [
+        "冠脉搭桥",
+        "搭桥手术",
+        "心脏搭桥",
+        "CABG"
+      ]
+    },
+    {
+      "rel_type": "treated_by_procedure",
+      "code": "PROC-CARD-TEXT-84551F84B4",
+      "name": "射频消融术",
+      "aliases": [
+        "导管消融",
+        "消融术"
+      ]
+    },
+    {
+      "rel_type": "treated_by_procedure",
+      "code": "PROC-CARD-TEXT-D2C1F9E289",
+      "name": "心脏再同步治疗",
+      "aliases": [
+        "CRT",
+        "再同步治疗",
+        "双心室起搏",
+        "CRT-P",
+        "CRT-D",
+        "心脏同步化治疗",
+        "心脏再同步治疗"
+      ]
+    },
+    {
+      "rel_type": "treated_by_procedure",
+      "code": "PROC-HEART-TRANSPLANT",
+      "name": "心脏移植",
+      "aliases": [
+        "心脏移植术",
+        "心脏移植"
+      ]
+    },
+    {
+      "rel_type": "treated_by_procedure",
+      "code": "PROC-CARD-TEXT-D9A9D30763",
+      "name": "植入式心律转复除颤器",
+      "aliases": [
+        "ICD",
+        "植入型心律转复除颤器",
+        "埋藏式心律转复除颤器",
+        "植入式除颤器",
+        "心脏除颤器",
+        "植入式心律转复除颤器"
+      ]
+    },
+    {
+      "rel_type": "treated_by_procedure",
+      "code": "PROC-CARD-DA0F467D4A30",
+      "name": "溶栓治疗",
+      "aliases": [
+        "静脉溶栓",
+        "纤溶治疗",
+        "溶栓治疗"
+      ]
+    },
+    {
+      "rel_type": "treated_by_procedure",
+      "code": "PROC-CARD-TEXT-6248D2A735",
+      "name": "瓣膜置换术",
+      "aliases": [
+        "瓣膜置换",
+        "瓣膜置换术"
+      ]
+    },
+    {
+      "rel_type": "treated_by_procedure",
+      "code": "PROC-CARD-E9ADC25A25E3",
+      "name": "经皮冠状动脉介入治疗",
+      "aliases": [
+        "PCI",
+        "PTCA",
+        "经皮冠状动脉介入治疗",
+        "冠状动脉介入治疗",
+        "经皮冠状动脉介入术"
+      ]
+    },
+    {
+      "rel_type": "treated_by_procedure",
+      "code": "PROC-CARD-TEXT-23F5CDA89B",
+      "name": "起搏器植入",
+      "aliases": [
+        "起搏治疗"
+      ]
+    }
+  ],
+  "old_pci_nodes": [
+    {
+      "code": "PROC-CARD-CADREM-AMI-E9ADC25A25",
+      "name": "经皮冠状动脉介入治疗",
+      "status": "deprecated",
+      "duplicate_replaced_by": "PROC-CARD-E9ADC25A25E3",
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "code": "PROC-CARD-CADREM-AMI-F15816B958",
+      "name": "PCI",
+      "status": "deprecated",
+      "duplicate_replaced_by": "PROC-CARD-E9ADC25A25E3",
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "code": "PROC-CARD-CADREM-NSTEMI-F15816B958",
+      "name": "PCI",
+      "status": "deprecated",
+      "duplicate_replaced_by": "PROC-CARD-E9ADC25A25E3",
+      "incoming": 0,
+      "outgoing": 0
+    },
+    {
+      "code": "PROC-CARD-CADREM-UA-F15816B958",
+      "name": "PCI",
+      "status": "deprecated",
+      "duplicate_replaced_by": "PROC-CARD-E9ADC25A25E3",
+      "incoming": 0,
+      "outgoing": 0
+    }
+  ],
+  "ami_classification_nodes": [
+    {
+      "code": "CLASS-CARD-CAD-AMI-STEMI",
+      "name": "ST段抬高型心肌梗死",
+      "maps_to_disease_code": "DIS-CARD-CAD-STEMI",
+      "aliases": [
+        "STEMI",
+        "ST段抬高型心肌梗死"
+      ]
+    },
+    {
+      "code": "CLASS-CARD-CAD-AMI-NSTEMI",
+      "name": "非ST段抬高型心肌梗死",
+      "maps_to_disease_code": "DIS-CARD-CAD-NSTEMI",
+      "aliases": [
+        "NSTEMI",
+        "非ST段抬高型心肌梗死"
+      ]
+    }
+  ],
+  "bnp_ntprobnp_standard_nodes": [
+    {
+      "code": "CARD-SKELETON-20260709-LABTEST-C35CBC9355102D0B",
+      "name": "B型钠尿肽",
+      "abbr": "BNP",
+      "aliases": [
+        "BNP",
+        "脑钠肽",
+        "B型钠尿肽"
+      ],
+      "status": "active"
+    },
+    {
+      "code": "LAB-CARD-408A62EF5D51",
+      "name": "N端B型钠尿肽前体",
+      "abbr": "NT-proBNP",
+      "aliases": [
+        "NT-proBNP",
+        "N端脑钠肽前体",
+        "N末端B型钠尿肽前体"
+      ],
+      "status": "active"
+    }
+  ]
+}

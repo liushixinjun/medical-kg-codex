@@ -1,0 +1,74 @@
+﻿{
+  "summary": {
+    "remaining_candidate_count": 4,
+    "by_type": {
+      "LabTest": 4
+    }
+  },
+  "remaining_candidates": [
+    {
+      "old_code": "LAB-CARD-CADREM-STABLE-ANGINA-408A62EF5D",
+      "entityType": "LabTest",
+      "old_name": "NT-proBNP",
+      "old_relation_count": 4,
+      "match_count": 1,
+      "suggested_standard_code": "LAB-CARD-TEXT-768E5070F6",
+      "suggested_standard_name": "脑钠肽",
+      "all_matches": [
+        {
+          "code": "LAB-CARD-TEXT-768E5070F6",
+          "name": "脑钠肽",
+          "relation_count": 15
+        }
+      ]
+    },
+    {
+      "old_code": "LAB-CARD-CADREM-STABLE-ANGINA-AAA739D91A",
+      "entityType": "LabTest",
+      "old_name": "BNP",
+      "old_relation_count": 4,
+      "match_count": 1,
+      "suggested_standard_code": "LAB-CARD-TEXT-768E5070F6",
+      "suggested_standard_name": "脑钠肽",
+      "all_matches": [
+        {
+          "code": "LAB-CARD-TEXT-768E5070F6",
+          "name": "脑钠肽",
+          "relation_count": 15
+        }
+      ]
+    },
+    {
+      "old_code": "LAB-CARD-408A62EF5D51",
+      "entityType": "LabTest",
+      "old_name": "NT-proBNP",
+      "old_relation_count": 134,
+      "match_count": 1,
+      "suggested_standard_code": "LAB-CARD-TEXT-768E5070F6",
+      "suggested_standard_name": "脑钠肽",
+      "all_matches": [
+        {
+          "code": "LAB-CARD-TEXT-768E5070F6",
+          "name": "脑钠肽",
+          "relation_count": 15
+        }
+      ]
+    },
+    {
+      "old_code": "LAB-CARD-AAA739D91A3A",
+      "entityType": "LabTest",
+      "old_name": "BNP",
+      "old_relation_count": 222,
+      "match_count": 1,
+      "suggested_standard_code": "LAB-CARD-TEXT-768E5070F6",
+      "suggested_standard_name": "脑钠肽",
+      "all_matches": [
+        {
+          "code": "LAB-CARD-TEXT-768E5070F6",
+          "name": "脑钠肽",
+          "relation_count": 15
+        }
+      ]
+    }
+  ]
+}

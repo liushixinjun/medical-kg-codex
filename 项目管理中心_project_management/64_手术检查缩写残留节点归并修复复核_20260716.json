@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-07-16 11:22:35",
+  "active_abbreviation_primary_name_nodes": [],
+  "ami_active_procedures": [
+    {
+      "rel_type": "treated_by_procedure",
+      "code": "PROC-CARD-BDB19D2C7A36",
+      "name": "冠状动脉旁路移植术",
+      "aliases": [
+        "冠脉搭桥",
+        "搭桥手术",
+        "心脏搭桥",
+        "CABG"
+      ],
+      "status": null
+    },
+    {
+      "rel_type": "treated_by_procedure",
+      "code": "PROC-CARD-TEXT-84551F84B4",
+      "name": "射频消融术",
+      "aliases": [
+        "导管消融",
+        "消融术"
+      ],
+      "status": null
+    },
+    {
+      "rel_type": "treated_by_procedure",
+      "code": "PROC-CARD-TEXT-D2C1F9E289",
+      "name": "心脏再同步治疗",
+      "aliases": [
+        "CRT",
+        "再同步治疗",
+        "双心室起搏"
+      ],
+      "status": null
+    },
+    {
+      "rel_type": "treated_by_procedure",
+      "code": "PROC-HEART-TRANSPLANT",
+      "name": "心脏移植",
+      "aliases": [
+        "心脏移植术"
+      ],
+      "status": null
+    },
+    {
+      "rel_type": "treated_by_procedure",
+      "code": "PROC-CARD-TEXT-D9A9D30763",
+      "name": "植入式心律转复除颤器",
+      "aliases": [
+        "ICD"
+      ],
+      "status": null
+    },
+    {
+      "rel_type": "treated_by_procedure",
+      "code": "PROC-CARD-DA0F467D4A30",
+      "name": "溶栓治疗",
+      "aliases": [
+        "静脉溶栓",
+        "纤溶治疗",
+        "溶栓治疗"
+      ],
+      "status": null
+    },
+    {
+      "rel_type": "treated_by_procedure",
+      "code": "PROC-CARD-TEXT-6248D2A735",
+      "name": "瓣膜置换术",
+      "aliases": [
+        "瓣膜置换"
+      ],
+      "status": null
+    },
+    {
+      "rel_type": "treated_by_procedure",
+      "code": "PROC-CARD-E9ADC25A25E3",
+      "name": "经皮冠状动脉介入治疗",
+      "aliases": [
+        "PCI",
+        "PTCA",
+        "经皮冠状动脉介入治疗",
+        "冠状动脉介入治疗",
+        "经皮冠状动脉介入术"
+      ],
+      "status": "active"
+    },
+    {
+      "rel_type": "treated_by_procedure",
+      "code": "PROC-CARD-TEXT-23F5CDA89B",
+      "name": "起搏器植入",
+      "aliases": [
+        "起搏治疗"
+      ],
+      "status": null
+    }
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "generated_at": "2026-07-16 11:31:43",
+  "action": "同类型同名重复节点安全归并",
+  "group_count": 30,
+  "mapping_count": 65,
+  "mappings": [
+    {
+      "entityType": "Exam",
+      "name": "冠状动脉造影",
+      "old": "EXAM-CARD-CADREM-ICM-ABF51FE8EB",
+      "standard": "EXAM-CAG",
+      "old_rel_count": 2,
+      "standard_rel_count": 475
+    },
+    {
+      "entityType": "Exam",
+      "name": "冠状动脉造影",
+      "old": "EXAM-CARD-CADREM-NSTEMI-ABF51FE8EB",
+      "standard": "EXAM-CAG",
+      "old_rel_count": 0,
+      "standard_rel_count": 475
+    },
+    {
+      "entityType": "Exam",
+      "name": "冠状动脉造影",
+      "old": "EXAM-CARD-CADREM-SILENT-ISCHEMIA-ABF51FE8EB",
+      "standard": "EXAM-CAG",
+      "old_rel_count": 3,
+      "standard_rel_count": 475
+    },
+    {
+      "entityType": "Exam",
+      "name": "冠状动脉造影",
+      "old": "EXAM-CARD-CADREM-STABLE-ANGINA-ABF51FE8EB",
+      "standard": "EXAM-CAG",
+      "old_rel_count": 0,
+      "standard_rel_count": 475
+    },
+    {
+      "entityType": "Exam",
+      "name": "冠状动脉造影",
+      "old": "EXAM-CARD-CADREM-UA-ABF51FE8EB",
+      "standard": "EXAM-CAG",
+      "old_rel_count": 0,
+      "standard_rel_count": 475
+    },
+    {
+      "entityType": "Exam",
+      "name": "超声心动图",
+      "old": "EXAM-CARD-CADREM-AMI-53A915B5AC",
+      "standard": "EXAM-TTE",
+      "old_rel_count": 0,
+      "standard_rel_count": 1516
+    },
+    {
+      "entityType": "Exam",
+      "name": "超声心动图",
+      "old": "EXAM-CARD-CADREM-ICM-53A915B5AC",
+      "standard": "EXAM-TTE",
+      "old_rel_count": 2,
+      "standard_rel_count": 1516
+    },
+    {
+      "entityType": "Exam",
+      "name": "超声心动图",
+      "old": "EXAM-CARD-CADREM-NSTEMI-53A915B5AC",
+      "standard": "EXAM-TTE",
+      "old_rel_count": 0,
+      "standard_rel_count": 1516
+    },
+    {
+      "entityType": "Exam",
+      "name": "超声心动图",
+      "old": "EXAM-CARD-CADREM-STABLE-ANGINA-53A915B5AC",
+      "standard": "EXAM-TTE",
+      "old_rel_count": 0,
+      "standard_rel_count": 1516
+    },
+    {
+      "entityType": "Exam",
+      "name": "超声心动图",
+      "old": "EXAM-CARD-CADREM-UA-53A915B5AC",
+      "standard": "EXAM-TTE",
+      "old_rel_count": 0,
+      "standard_rel_count": 1516
+    },
+    {
+      "entityType": "LabTest",
+      "name": "肌酸激酶同工酶（CK-MB）",
+      "old": "CARD-SKELETON-20260709-LABTEST-1621003505C956CA",
+      "standard": "LAB-CARD-960C7CE8E22B",
+      "old_rel_count": 0,
+      "standard_rel_count": 87
+    },
+    {
+      "entityType": "LabTest",
+      "name": "肌酸激酶同工酶（CK-MB）",
+      "old": "LAB-CARD-CADREM-AMI-CA4C7A8A1F",
+      "standard": "LAB-CARD-960C7CE8E22B",
+      "old_rel_count": 0,
+      "standard_rel_count": 87
+    },
+    {
+      "entityType": "LabTest",
+      "name": "肌酸激酶同工酶（CK-MB）",
+      "old": "LAB-CARD-CADREM-NSTEMI-CA4C7A8A1F",
+      "standard": "LAB-CARD-960C7CE8E22B",
+      "old_rel_count": 0,
+      "standard_rel_count": 87
+    },
+    {
+      "entityType": "LabTest",
+      "name": "肌酸激酶同工酶（CK-MB）",
+      "old": "LAB-CARD-CADREM-STABLE-ANGINA-CA4C7A8A1F",
+      "standard": "LAB-CARD-960C7CE8E22B",
+      "old_rel_count": 0,
+      "standard_rel_count": 87
+    },
+    {
+      "entityType": "LabTest",
+      "name": "肌酸激酶同工酶（CK-MB）",
+      "old": "LAB-CARD-CADREM-UA-CA4C7A8A1F",
+      "standard": "LAB-CARD-960C7CE8E22B",
+      "old_rel_count": 0,
+      "standard_rel_count": 87
+    },
+    {
+      "entityType": "LabTest",
+      "name": "肌钙蛋白",
+      "old": "IND-CARDIAC-TROPONIN",
+      "standard": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+      "old_rel_count": 199,
+      "standard_rel_count": 32
+    },
+    {
+      "entityType": "LabTest",
+      "name": "肌钙蛋白",
+      "old": "LAB-CARD-CADREM-AMI-BE6E060391",
+      "standard": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+      "old_rel_count": 4,
+      "standard_rel_count": 32
+    },
+    {
+      "entityType": "LabTest",
+      "name": "肌钙蛋白",
+      "old": "LAB-CARD-CADREM-NSTEMI-BE6E060391",
+      "standard": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+      "old_rel_count": 3,
+      "standard_rel_count": 32
+    },
+    {
+      "entityType": "LabTest",
+      "name": "肌钙蛋白",
+      "old": "LAB-CARD-CADREM-STABLE-ANGINA-BE6E060391",
+      "standard": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+      "old_rel_count": 0,
+      "standard_rel_count": 32
+    },
+    {
+      "entityType": "LabTest",
+      "name": "肌钙蛋白",
+      "old": "LAB-CARD-CADREM-UA-BE6E060391",
+      "standard": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+      "old_rel_count": 3,
+      "standard_rel_count": 32
+    },
+    {
+      "entityType": "Exam",
+      "name": "冠状动脉CT血管成像",
+      "old": "EXAM-CARD-CADREM-AMI-F60922D428",
+      "standard": "EXAM-CARD-F60922D428D5",
+      "old_rel_count": 0,
+      "standard_rel_count": 254
+    },
+    {
+      "entityType": "Exam",
+      "name": "冠状动脉CT血管成像",
+      "old": "EXAM-CARD-CADREM-ICM-F60922D428",
+      "standard": "EXAM-CARD-F60922D428D5",
+      "old_rel_count": 3,
+      "standard_rel_count": 254
+    },
+    {
+      "entityType": "Exam",
+      "name": "冠状动脉CT血管成像",
+      "old": "EXAM-CARD-CADREM-SILENT-ISCHEMIA-F60922D428",
+      "standard": "EXAM-CARD-F60922D428D5",
+      "old_rel_count": 3,
+      "standard_rel_count": 254
+    },
+    {
+      "entityType": "Exam",
+      "name": "冠状动脉CT血管成像",
+      "old": "EXAM-CARD-CADREM-STABLE-ANGINA-F60922D428",
+      "standard": "EXAM-CARD-F60922D428D5",
+      "old_rel_count": 0,
+      "standard_rel_count": 254
+    },
+    {
+      "entityType": "Exam",
+      "name": "心电图",
+      "old": "EXAM-CARD-CADREM-AMI-8BA93874D8",
+      "standard": "EXAM-ECG",
+      "old_rel_count": 0,
+      "standard_rel_count": 2887
+    },
+    {
+      "entityType": "Exam",
+      "name": "心电图",
+      "old": "EXAM-CARD-CADREM-NSTEMI-8BA93874D8",
+      "standard": "EXAM-ECG",
+      "old_rel_count": 0,
+      "standard_rel_count": 2887
+    },
+    {
+      "entityType": "Exam",
+      "name": "心电图",
+      "old": "EXAM-CARD-CADREM-STABLE-ANGINA-8BA93874D8",
+      "standard": "EXAM-ECG",
+      "old_rel_count": 0,
+      "standard_rel_count": 2887
+    },
+    {
+      "entityType": "Exam",
+      "name": "心电图",
+      "old": "EXAM-CARD-CADREM-UA-8BA93874D8",
+      "standard": "EXAM-ECG",
+      "old_rel_count": 0,
+      "standard_rel_count": 2887
+    },
+    {
+      "entityType": "Exam",
+      "name": "X线",
+      "old": "EXAM-CARD-CADREM-AMI-C78840F44A",
+      "standard": "CARD-SKELETON-20260709-EXAM-B66979D14041DD2B",
+      "old_rel_count": 3,
+      "standard_rel_count": 66
+    },
+    {
+      "entityType": "Exam",
+      "name": "X线",
+      "old": "EXAM-CARD-CADREM-NSTEMI-C78840F44A",
+      "standard": "CARD-SKELETON-20260709-EXAM-B66979D14041DD2B",
+      "old_rel_count": 2,
+      "standard_rel_count": 66
+    },
+    {
+      "entityType": "Exam",
+      "name": "X线",
+      "old": "EXAM-CARD-CADREM-UA-C78840F44A",
+      "standard": "CARD-SKELETON-20260709-EXAM-B66979D14041DD2B",
+      "old_rel_count": 2,
+      "standard_rel_count": 66
+    },
+    {
+      "entityType": "Exam",
+      "name": "胸部X线",
+      "old": "CARD-SKELETON-20260709-EXAM-93C0CE477B5767D4",
+      "standard": "EXAM-CARD-D690076CB8EB",
+      "old_rel_count": 23,
+      "standard_rel_count": 34
+    },
+    {
+      "entityType": "Exam",
+      "name": "胸部X线",
+      "old": "EXAM-CARD-CADREM-NSTEMI-D690076CB8",
+      "standard": "EXAM-CARD-D690076CB8EB",
+      "old_rel_count": 2,
+      "standard_rel_count": 34
+    },
+    {
+      "entityType": "Exam",
+      "name": "胸部X线",
+      "old": "EXAM-CARD-CADREM-UA-D690076CB8",
+      "standard": "EXAM-CARD-D690076CB8EB",
+      "old_rel_count": 2,
+      "standard_rel_count": 34
+    },
+    {
+      "entityType": "LabTest",
+      "name": "心肌肌钙蛋白",
+      "old": "LAB-CARD-CADREM-NSTEMI-A9EC1D4DA0",
+      "standard": "LAB-CARD-A9EC1D4DA037",
+      "old_rel_count": 0,
+      "standard_rel_count": 406
+    },
+    {
+      "entityType": "LabTest",
+      "name": "心肌肌钙蛋白",
+      "old": "LAB-CARD-CADREM-STABLE-ANGINA-A9EC1D4DA0",
+      "standard": "LAB-CARD-A9EC1D4DA037",
+      "old_rel_count": 0,
+      "standard_rel_count": 406
+    },
+    {
+      "entityType": "LabTest",
+      "name": "心肌肌钙蛋白",
+      "old": "LAB-CARD-CADREM-UA-A9EC1D4DA0",
+      "standard": "LAB-CARD-A9EC1D4DA037",
+      "old_rel_count": 0,
+      "standard_rel_count": 406
+    },
+    {
+      "entityType": "Exam",
+      "name": "运动负荷试验",
+      "old": "EXAM-CARD-CADREM-SILENT-ISCHEMIA-241B4B0218",
+      "standard": "EXAM-CARD-241B4B0218DF",
+      "old_rel_count": 3,
+      "standard_rel_count": 113
+    },
+    {
+      "entityType": "Exam",
+      "name": "运动负荷试验",
+      "old": "EXAM-CARD-CADREM-STABLE-ANGINA-241B4B0218",
+      "standard": "EXAM-CARD-241B4B0218DF",
+      "old_rel_count": 0,
+      "standard_rel_count": 113
+    },
+    {
+      "entityType": "LabTest",
+      "name": "D-二聚体",
+      "old": "CARD-SKELETON-FULL-20260709-LABTEST-963F52815A5370A3",
+      "standard": "LAB-CARD-2E1F4EC42626",
+      "old_rel_count": 13,
+      "standard_rel_count": 4
+    },
+    {
+      "entityType": "LabTest",
+      "name": "D-二聚体",
+      "old": "LAB-CARD-CADREM-AMI-2E1F4EC426",
+      "standard": "LAB-CARD-2E1F4EC42626",
+      "old_rel_count": 4,
+      "standard_rel_count": 4
+    },
+    {
+      "entityType": "LabTest",
+      "name": "肌红蛋白",
+      "old": "CARD-SKELETON-FULL-20260709-LABTEST-E0C046557359A3B3",
+      "standard": "LAB-CARD-STEMI-4BA28B772105",
+      "old_rel_count": 2,
+      "standard_rel_count": 3
+    },
+    {
+      "entityType": "LabTest",
+      "name": "肌红蛋白",
+      "old": "LAB-CARD-CADREM-AMI-4BA28B7721",
+      "standard": "LAB-CARD-STEMI-4BA28B772105",
+      "old_rel_count": 3,
+      "standard_rel_count": 3
+    },
+    {
+      "entityType": "LabTest",
+      "name": "肌酸激酶",
+      "old": "LAB-CARD-CADREM-AMI-DF011D5802",
+      "standard": "CARD-SKELETON-20260709-LABTEST-70C17E9844CB4791",
+      "old_rel_count": 3,
+      "standard_rel_count": 13
+    },
+    {
+      "entityType": "LabTest",
+      "name": "肌酸激酶",
+      "old": "LAB-CARD-CADREM-STABLE-ANGINA-DF011D5802",
+      "standard": "CARD-SKELETON-20260709-LABTEST-70C17E9844CB4791",
+      "old_rel_count": 0,
+      "standard_rel_count": 13
+    },
+    {
+      "entityType": "LabTest",
+      "name": "血常规",
+      "old": "LAB-CARD-CADREM-AMI-3F8D27CB7E",
+      "standard": "LAB-CARD-3F8D27CB7EC9",
+      "old_rel_count": 5,
+      "standard_rel_count": 78
+    },
+    {
+      "entityType": "LabTest",
+      "name": "血常规",
+      "old": "LAB-CARD-CADREM-STABLE-ANGINA-3F8D27CB7E",
+      "standard": "LAB-CARD-3F8D27CB7EC9",
+      "old_rel_count": 5,
+      "standard_rel_count": 78
+    },
+    {
+      "entityType": "LabTest",
+      "name": "血脂",
+      "old": "CARD-SKELETON-20260709-LABTEST-98464EDC80D81183",
+      "standard": "LAB-CARD-C59B64C19ADD",
+      "old_rel_count": 19,
+      "standard_rel_count": 107
+    },
+    {
+      "entityType": "LabTest",
+      "name": "血脂",
+      "old": "LAB-CARD-CADREM-STABLE-ANGINA-C59B64C19A",
+      "standard": "LAB-CARD-C59B64C19ADD",
+      "old_rel_count": 0,
+      "standard_rel_count": 107
+    },
+    {
+      "entityType": "Procedure",
+      "name": "血运重建",
+      "old": "PROC-CARD-CADREM-ICM-12A7FC2FA4",
+      "standard": "CARD-SKELETON-20260709-PROCEDURE-04A901E627374E47",
+      "old_rel_count": 3,
+      "standard_rel_count": 21
+    },
+    {
+      "entityType": "Procedure",
+      "name": "血运重建",
+      "old": "PROC-CARD-CADREM-SILENT-ISCHEMIA-12A7FC2FA4",
+      "standard": "CARD-SKELETON-20260709-PROCEDURE-04A901E627374E47",
+      "old_rel_count": 2,
+      "standard_rel_count": 21
+    },
+    {
+      "entityType": "Exam",
+      "name": "心脏磁共振",
+      "old": "EXAM-CARD-61766890B7D2",
+      "standard": "EXAM-CMR",
+      "old_rel_count": 111,
+      "standard_rel_count": 1092
+    },
+    {
+      "entityType": "Exam",
+      "name": "电生理检查",
+      "old": "EXAM-CARD-C33E64A77705",
+      "standard": "EXAM-CARD-TEXT-C33E64A777",
+      "old_rel_count": 39,
+      "standard_rel_count": 193
+    },
+    {
+      "entityType": "Exam",
+      "name": "经食管超声心动图",
+      "old": "EXAM-TEE",
+      "standard": "EXAM-CARD-705D7CD61EB7",
+      "old_rel_count": 34,
+      "standard_rel_count": 57
+    },
+    {
+      "entityType": "LabTest",
+      "name": "C反应蛋白",
+      "old": "LAB-CARD-TEXT-BF2619C772",
+      "standard": "LAB-CARD-BF2619C772EC",
+      "old_rel_count": 11,
+      "standard_rel_count": 27
+    },
+    {
+      "entityType": "LabTest",
+      "name": "红细胞沉降率",
+      "old": "LAB-CARD-TEXT-1BE2B3C08B",
+      "standard": "LAB-CARD-1BE2B3C08B76",
+      "old_rel_count": 19,
+      "standard_rel_count": 40
+    },
+    {
+      "entityType": "LabTest",
+      "name": "肾功能",
+      "old": "LAB-CARD-CADREM-AMI-07B39C98F1",
+      "standard": "LAB-CARD-TEXT-07B39C98F1",
+      "old_rel_count": 0,
+      "standard_rel_count": 56
+    },
+    {
+      "entityType": "LabTest",
+      "name": "血糖",
+      "old": "LAB-CARD-CADREM-STABLE-ANGINA-43D8A5AEE4",
+      "standard": "LAB-CARD-TEXT-43D8A5AEE4",
+      "old_rel_count": 0,
+      "standard_rel_count": 47
+    },
+    {
+      "entityType": "Procedure",
+      "name": "同步直流电复律",
+      "old": "PROC-CARD-STEMI-7FD747D740F0",
+      "standard": "PROC-CARD-7FD747D740F0",
+      "old_rel_count": 3,
+      "standard_rel_count": 84
+    },
+    {
+      "entityType": "Procedure",
+      "name": "心脏再同步治疗",
+      "old": "PROC-CARD-D2C1F9E28927",
+      "standard": "PROC-CARD-TEXT-D2C1F9E289",
+      "old_rel_count": 51,
+      "standard_rel_count": 66
+    },
+    {
+      "entityType": "Procedure",
+      "name": "心脏移植",
+      "old": "PROC-CARD-CADREM-ICM-9360DBD2DE",
+      "standard": "PROC-HEART-TRANSPLANT",
+      "old_rel_count": 1,
+      "standard_rel_count": 100
+    },
+    {
+      "entityType": "Procedure",
+      "name": "植入式心律转复除颤器",
+      "old": "PROC-CARD-D9A9D3076376",
+      "standard": "PROC-CARD-TEXT-D9A9D30763",
+      "old_rel_count": 21,
+      "standard_rel_count": 34
+    },
+    {
+      "entityType": "Procedure",
+      "name": "溶栓治疗",
+      "old": "PROC-CARD-CADREM-AMI-DA0F467D4A",
+      "standard": "PROC-CARD-DA0F467D4A30",
+      "old_rel_count": 0,
+      "standard_rel_count": 114
+    },
+    {
+      "entityType": "Procedure",
+      "name": "瓣膜置换术",
+      "old": "PROC-CARD-6248D2A735EC",
+      "standard": "PROC-CARD-TEXT-6248D2A735",
+      "old_rel_count": 6,
+      "standard_rel_count": 16
+    },
+    {
+      "entityType": "Procedure",
+      "name": "病因治疗",
+      "old": "PROCEDURE-CARD-4F1AD8D53CF9",
+      "standard": "PROC-CARD-AVB1-CAUSE-TREATMENT",
+      "old_rel_count": 1,
+      "standard_rel_count": 1
+    }
+  ],
+  "incoming_migrated": 296,
+  "outgoing_migrated": 319,
+  "marked_deprecated": 65,
+  "skipped": []
+}
