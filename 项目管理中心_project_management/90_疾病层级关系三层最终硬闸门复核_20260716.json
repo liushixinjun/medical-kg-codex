@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-07-16 12:06:56",
+  "scope": "疾病层级关系三层最终硬闸门复核",
+  "active_counts": [
+    {
+      "entityType": "Disease",
+      "cnt": 131
+    },
+    {
+      "entityType": "DiseaseCategory",
+      "cnt": 41
+    },
+    {
+      "entityType": "DiseaseClassification",
+      "cnt": 71
+    },
+    {
+      "entityType": "DiseaseSubcategory",
+      "cnt": 51
+    }
+  ],
+  "gates": {
+    "disease_no_category": 0,
+    "disease_no_subcategory": 0,
+    "subcategory_no_category": 0,
+    "classification_orphan": 0,
+    "duplicate_disease_names": 0,
+    "old_duplicate_codes_remaining": 0
+  },
+  "details": {
+    "active_counts": [
+      {
+        "entityType": "Disease",
+        "cnt": 131
+      },
+      {
+        "entityType": "DiseaseCategory",
+        "cnt": 41
+      },
+      {
+        "entityType": "DiseaseClassification",
+        "cnt": 71
+      },
+      {
+        "entityType": "DiseaseSubcategory",
+        "cnt": 51
+      }
+    ],
+    "disease_no_category": [],
+    "disease_no_subcategory": [],
+    "subcategory_no_category": [],
+    "classification_orphan": [],
+    "duplicate_disease_names": [],
+    "old_codes_remaining": []
+  },
+  "conclusion": "passed"
+}

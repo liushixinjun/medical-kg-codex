@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-07-16 11:59:20",
+  "action": "孤立疾病分型退出正式层",
+  "result": {
+    "deprecated_count": 36,
+    "delete_candidate_count": 0,
+    "manual_review_count": 36
+  },
+  "remaining_active_orphan_classification": [],
+  "remaining_disease_without_subcategory": [],
+  "active_duplicate_disease_names_sample": [
+    {
+      "name": "主动脉夹层",
+      "cnt": 2,
+      "codes": [
+        "DIS-CARD-AORTA-AD",
+        "DIS-CARD-AORTIC-DISSECTION"
+      ]
+    },
+    {
+      "name": "动脉导管未闭",
+      "cnt": 2,
+      "codes": [
+        "DIS-CARD-CHD-PDA",
+        "DIS-CARD-PDA"
+      ]
+    },
+    {
+      "name": "原发性醛固酮增多症",
+      "cnt": 2,
+      "codes": [
+        "DIS-CARD-HTN-PA",
+        "DIS-CARD-HT-PA"
+      ]
+    },
+    {
+      "name": "室间隔缺损",
+      "cnt": 2,
+      "codes": [
+        "DIS-CARD-CHD-VSD",
+        "DIS-CARD-VSD"
+      ]
+    },
+    {
+      "name": "房间隔缺损",
+      "cnt": 2,
+      "codes": [
+        "DIS-CARD-CHD-ASD",
+        "DIS-CARD-ASD"
+      ]
+    },
+    {
+      "name": "肺动脉瓣狭窄",
+      "cnt": 2,
+      "codes": [
+        "DIS-CARD-CHD-PS",
+        "DIS-CARD-VHD-PS"
+      ]
+    },
+    {
+      "name": "肾血管性高血压",
+      "cnt": 2,
+      "codes": [
+        "DIS-CARD-HTN-RENOVASCULAR",
+        "DIS-CARD-HT-RENOVASCULAR"
+      ]
+    }
+  ]
+}

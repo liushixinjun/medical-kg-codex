@@ -1,0 +1,169 @@
+{
+  "generated_at": "2026-07-16 12:04:13",
+  "execution": [
+    {
+      "old": "DIS-CARD-AORTA-AD",
+      "new": "DIS-CARD-AORTIC-DISSECTION",
+      "reason": "主动脉夹层：保留20260715正式解析节点，迁移旧骨架节点关系",
+      "status": "merged_and_deleted",
+      "outgoing_migrated": 432,
+      "incoming_migrated": 1,
+      "old_relationships_deleted": 433,
+      "old_nodes_deleted": 1
+    },
+    {
+      "old": "DIS-CARD-CHD-PDA",
+      "new": "DIS-CARD-PDA",
+      "reason": "动脉导管未闭：保留20260715结构性/先心病正式解析节点",
+      "status": "merged_and_deleted",
+      "outgoing_migrated": 181,
+      "incoming_migrated": 1,
+      "old_relationships_deleted": 182,
+      "old_nodes_deleted": 1
+    },
+    {
+      "old": "DIS-CARD-HTN-PA",
+      "new": "DIS-CARD-HT-PA",
+      "reason": "原发性醛固酮增多症：保留高血压批次标准HT编码",
+      "status": "merged_and_deleted",
+      "outgoing_migrated": 119,
+      "incoming_migrated": 1,
+      "old_relationships_deleted": 120,
+      "old_nodes_deleted": 1
+    },
+    {
+      "old": "DIS-CARD-CHD-VSD",
+      "new": "DIS-CARD-VSD",
+      "reason": "室间隔缺损：保留20260715结构性/先心病正式解析节点",
+      "status": "merged_and_deleted",
+      "outgoing_migrated": 286,
+      "incoming_migrated": 1,
+      "old_relationships_deleted": 287,
+      "old_nodes_deleted": 1
+    },
+    {
+      "old": "DIS-CARD-CHD-ASD",
+      "new": "DIS-CARD-ASD",
+      "reason": "房间隔缺损：保留20260715结构性/先心病正式解析节点",
+      "status": "merged_and_deleted",
+      "outgoing_migrated": 183,
+      "incoming_migrated": 1,
+      "old_relationships_deleted": 184,
+      "old_nodes_deleted": 1
+    },
+    {
+      "old": "DIS-CARD-CHD-PS",
+      "new": "DIS-CARD-VHD-PS",
+      "reason": "肺动脉瓣狭窄：保留瓣膜病正式解析节点，并承接先心病目录关系",
+      "status": "merged_and_deleted",
+      "outgoing_migrated": 117,
+      "incoming_migrated": 1,
+      "old_relationships_deleted": 118,
+      "old_nodes_deleted": 1
+    },
+    {
+      "old": "DIS-CARD-HTN-RENOVASCULAR",
+      "new": "DIS-CARD-HT-RENOVASCULAR",
+      "reason": "肾血管性高血压：保留高血压批次标准HT编码",
+      "status": "merged_and_deleted",
+      "outgoing_migrated": 104,
+      "incoming_migrated": 1,
+      "old_relationships_deleted": 105,
+      "old_nodes_deleted": 1
+    }
+  ],
+  "postcheck": {
+    "remaining_disease_without_subcategory": [],
+    "remaining_active_orphan_classification": [],
+    "active_duplicate_disease_names": [],
+    "deleted_old_codes_remaining": [],
+    "standard_nodes_summary": [
+      {
+        "code": "DIS-CARD-AORTIC-DISSECTION",
+        "name": "主动脉夹层",
+        "aliases": [
+          "aortic dissection",
+          "主动脉夹层动脉瘤",
+          "AD"
+        ],
+        "merged_from_codes": [
+          "DIS-CARD-AORTA-AD"
+        ],
+        "relation_count": 957
+      },
+      {
+        "code": "DIS-CARD-ASD",
+        "name": "房间隔缺损",
+        "aliases": [
+          "ASD",
+          "atrial septal defect"
+        ],
+        "merged_from_codes": [
+          "DIS-CARD-CHD-ASD"
+        ],
+        "relation_count": 395
+      },
+      {
+        "code": "DIS-CARD-HT-PA",
+        "name": "原发性醛固酮增多症",
+        "aliases": [
+          "原醛",
+          "PA",
+          "primary aldosteronism"
+        ],
+        "merged_from_codes": [
+          "DIS-CARD-HTN-PA"
+        ],
+        "relation_count": 376
+      },
+      {
+        "code": "DIS-CARD-HT-RENOVASCULAR",
+        "name": "肾血管性高血压",
+        "aliases": [
+          "renovascular hypertension",
+          "肾动脉狭窄相关高血压"
+        ],
+        "merged_from_codes": [
+          "DIS-CARD-HTN-RENOVASCULAR"
+        ],
+        "relation_count": 152
+      },
+      {
+        "code": "DIS-CARD-PDA",
+        "name": "动脉导管未闭",
+        "aliases": [
+          "PDA",
+          "patent ductus arteriosus"
+        ],
+        "merged_from_codes": [
+          "DIS-CARD-CHD-PDA"
+        ],
+        "relation_count": 324
+      },
+      {
+        "code": "DIS-CARD-VHD-PS",
+        "name": "肺动脉瓣狭窄",
+        "aliases": [
+          "PS",
+          "肺动脉瓣疾病"
+        ],
+        "merged_from_codes": [
+          "DIS-CARD-CHD-PS"
+        ],
+        "relation_count": 215
+      },
+      {
+        "code": "DIS-CARD-VSD",
+        "name": "室间隔缺损",
+        "aliases": [
+          "VSD",
+          "ventricular septal defect"
+        ],
+        "merged_from_codes": [
+          "DIS-CARD-CHD-VSD"
+        ],
+        "relation_count": 455
+      }
+    ]
+  }
+}

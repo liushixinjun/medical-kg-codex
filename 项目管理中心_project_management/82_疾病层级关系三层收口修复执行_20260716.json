@@ -1,0 +1,832 @@
+{
+  "generated_at": "2026-07-16 11:58:18",
+  "action": "疾病层级关系三层收口修复续跑",
+  "directory_links": [
+    {
+      "disease": "DIS-CARD-AORTIC-DISSECTION",
+      "disease_name": "主动脉夹层",
+      "category": "CAT-CARD-AORTA-PAD",
+      "subcategory": "SUB-CARD-AORTA-PAD-GENERAL"
+    },
+    {
+      "disease": "DIS-CARD-TBAD",
+      "disease_name": "Stanford B型主动脉夹层",
+      "category": "CAT-CARD-AORTA-PAD",
+      "subcategory": "SUB-CARD-AORTA-PAD-GENERAL"
+    },
+    {
+      "disease": "DIS-CARD-AAS",
+      "disease_name": "急性主动脉综合征",
+      "category": "CAT-CARD-AORTA-PAD",
+      "subcategory": "SUB-CARD-AORTA-PAD-GENERAL"
+    },
+    {
+      "disease": "DIS-CARD-AAA",
+      "disease_name": "腹主动脉瘤",
+      "category": "CAT-CARD-AORTA-PAD",
+      "subcategory": "SUB-CARD-AORTA-PAD-GENERAL"
+    },
+    {
+      "disease": "DIS-CARD-PAD",
+      "disease_name": "外周动脉疾病",
+      "category": "CAT-CARD-AORTA-PAD",
+      "subcategory": "SUB-CARD-AORTA-PAD-GENERAL"
+    },
+    {
+      "disease": "DIS-CARD-MYOCARDITIS",
+      "disease_name": "心肌炎",
+      "category": "CARD-MPIE",
+      "subcategory": "SUB-CARD-MPIE-GENERAL"
+    },
+    {
+      "disease": "DIS-CARD-FULMINANT-MYOCARDITIS",
+      "disease_name": "暴发性心肌炎",
+      "category": "CARD-MPIE",
+      "subcategory": "SUB-CARD-MPIE-GENERAL"
+    },
+    {
+      "disease": "DIS-CARD-PERICARDITIS",
+      "disease_name": "心包炎",
+      "category": "CARD-MPIE",
+      "subcategory": "SUB-CARD-MPIE-GENERAL"
+    },
+    {
+      "disease": "DIS-CARD-INFECTIVE-ENDOCARDITIS",
+      "disease_name": "感染性心内膜炎",
+      "category": "CARD-MPIE",
+      "subcategory": "SUB-CARD-MPIE-GENERAL"
+    },
+    {
+      "disease": "DIS-CARD-VHD",
+      "disease_name": "心脏瓣膜病",
+      "category": "CAT-CARD-VHD",
+      "subcategory": "SUB-CARD-VHD-GENERAL"
+    },
+    {
+      "disease": "DIS-CARD-CHD",
+      "disease_name": "先天性心脏病",
+      "category": "CARD-SHD-CHD",
+      "subcategory": "SUB-CARD-SHD-CHD-GENERAL"
+    },
+    {
+      "disease": "DIS-CARD-PDA",
+      "disease_name": "动脉导管未闭",
+      "category": "CARD-SHD-CHD",
+      "subcategory": "SUB-CARD-SHD-CHD-GENERAL"
+    },
+    {
+      "disease": "DIS-CARD-PFO",
+      "disease_name": "卵圆孔未闭",
+      "category": "CARD-SHD-CHD",
+      "subcategory": "SUB-CARD-SHD-CHD-GENERAL"
+    },
+    {
+      "disease": "DIS-CARD-VSD",
+      "disease_name": "室间隔缺损",
+      "category": "CARD-SHD-CHD",
+      "subcategory": "SUB-CARD-SHD-CHD-GENERAL"
+    },
+    {
+      "disease": "DIS-CARD-ASD",
+      "disease_name": "房间隔缺损",
+      "category": "CARD-SHD-CHD",
+      "subcategory": "SUB-CARD-SHD-CHD-GENERAL"
+    },
+    {
+      "disease": "DIS-CARD-PH",
+      "disease_name": "肺动脉高压",
+      "category": "CARD-PH",
+      "subcategory": "SUB-CARD-PH-GENERAL"
+    },
+    {
+      "disease": "DIS-CARD-DYSLIPIDEMIA",
+      "disease_name": "血脂异常",
+      "category": "CARD-LIPID-ASCVD",
+      "subcategory": "SUB-CARD-LIPID-ASCVD-GENERAL"
+    },
+    {
+      "disease": "DIS-CARD-HYPERCHOLESTEROLEMIA",
+      "disease_name": "高胆固醇血症",
+      "category": "CARD-LIPID-ASCVD",
+      "subcategory": "SUB-CARD-LIPID-ASCVD-GENERAL"
+    },
+    {
+      "disease": "DIS-CARD-FH",
+      "disease_name": "家族性高胆固醇血症",
+      "category": "CARD-LIPID-ASCVD",
+      "subcategory": "SUB-CARD-LIPID-ASCVD-GENERAL"
+    }
+  ],
+  "classification_links": [
+    {
+      "parent": "DIS-CARD-HF",
+      "parent_name": "心力衰竭",
+      "classification": "CLASS-CARD-HF-CARD-HF-AHF",
+      "classification_name": "急性心力衰竭",
+      "child": "DIS-CARD-HF-AHF",
+      "child_name": "急性心力衰竭"
+    },
+    {
+      "parent": "DIS-CARD-HF",
+      "parent_name": "心力衰竭",
+      "classification": "CLASS-CARD-HF-CARD-HF-CHF",
+      "classification_name": "慢性心力衰竭",
+      "child": "DIS-CARD-HF-CHF",
+      "child_name": "慢性心力衰竭"
+    },
+    {
+      "parent": "DIS-CARD-HF",
+      "parent_name": "心力衰竭",
+      "classification": "CLASS-CARD-HF-CARD-HF-HFrEF",
+      "classification_name": "射血分数降低的心力衰竭",
+      "child": "DIS-CARD-HF-HFrEF",
+      "child_name": "射血分数降低的心力衰竭"
+    },
+    {
+      "parent": "DIS-CARD-HF",
+      "parent_name": "心力衰竭",
+      "classification": "CLASS-CARD-HF-CARD-HF-HFmrEF",
+      "classification_name": "射血分数轻度降低的心力衰竭",
+      "child": "DIS-CARD-HF-HFmrEF",
+      "child_name": "射血分数轻度降低的心力衰竭"
+    },
+    {
+      "parent": "DIS-CARD-HF",
+      "parent_name": "心力衰竭",
+      "classification": "CLASS-CARD-HF-CARD-HF-HFpEF",
+      "classification_name": "射血分数保留的心力衰竭",
+      "child": "DIS-CARD-HF-HFpEF",
+      "child_name": "射血分数保留的心力衰竭"
+    },
+    {
+      "parent": "DIS-CARD-HF",
+      "parent_name": "心力衰竭",
+      "classification": "CLASS-CARD-HF-CARD-HF-BIVENTRICULAR",
+      "classification_name": "全心衰竭",
+      "child": "DIS-CARD-HF-BIVENTRICULAR",
+      "child_name": "全心衰竭"
+    },
+    {
+      "parent": "DIS-CARD-HF",
+      "parent_name": "心力衰竭",
+      "classification": "CLASS-CARD-HF-CARD-HF-POST-MI",
+      "classification_name": "心肌梗死后心力衰竭",
+      "child": "DIS-CARD-HF-POST-MI",
+      "child_name": "心肌梗死后心力衰竭"
+    },
+    {
+      "parent": "DIS-CARD-HF",
+      "parent_name": "心力衰竭",
+      "classification": "CLASS-CARD-HF-CARD-HF-DIALYSIS-CHF",
+      "classification_name": "透析患者慢性心力衰竭",
+      "child": "DIS-CARD-HF-DIALYSIS-CHF",
+      "child_name": "透析患者慢性心力衰竭"
+    },
+    {
+      "parent": "DIS-CARD-HT",
+      "parent_name": "高血压",
+      "classification": "CLASS-CARD-HT-CARD-HT-PRIMARY",
+      "classification_name": "原发性高血压",
+      "child": "DIS-CARD-HT-PRIMARY",
+      "child_name": "原发性高血压"
+    },
+    {
+      "parent": "DIS-CARD-HT",
+      "parent_name": "高血压",
+      "classification": "CLASS-CARD-HT-CARD-HT-SECONDARY",
+      "classification_name": "继发性高血压",
+      "child": "DIS-CARD-HT-SECONDARY",
+      "child_name": "继发性高血压"
+    },
+    {
+      "parent": "DIS-CARD-HT",
+      "parent_name": "高血压",
+      "classification": "CLASS-CARD-HT-CARD-HT-WCH",
+      "classification_name": "白大衣高血压",
+      "child": "DIS-CARD-HT-WCH",
+      "child_name": "白大衣高血压"
+    },
+    {
+      "parent": "DIS-CARD-HT",
+      "parent_name": "高血压",
+      "classification": "CLASS-CARD-HT-CARD-HT-MASKED",
+      "classification_name": "隐匿性高血压",
+      "child": "DIS-CARD-HT-MASKED",
+      "child_name": "隐匿性高血压"
+    },
+    {
+      "parent": "DIS-CARD-HT",
+      "parent_name": "高血压",
+      "classification": "CLASS-CARD-HT-CARD-HT-RESISTANT",
+      "classification_name": "难治性高血压",
+      "child": "DIS-CARD-HT-RESISTANT",
+      "child_name": "难治性高血压"
+    },
+    {
+      "parent": "DIS-CARD-HT",
+      "parent_name": "高血压",
+      "classification": "CLASS-CARD-HT-CARD-HT-EMERGENCY",
+      "classification_name": "高血压急症",
+      "child": "DIS-CARD-HT-EMERGENCY",
+      "child_name": "高血压急症"
+    },
+    {
+      "parent": "DIS-CARD-HT",
+      "parent_name": "高血压",
+      "classification": "CLASS-CARD-HT-CARD-HT-URGENCY",
+      "classification_name": "高血压亚急症",
+      "child": "DIS-CARD-HT-URGENCY",
+      "child_name": "高血压亚急症"
+    },
+    {
+      "parent": "DIS-CARD-HT",
+      "parent_name": "高血压",
+      "classification": "CLASS-CARD-HT-CARD-HT-ELDERLY",
+      "classification_name": "老年高血压",
+      "child": "DIS-CARD-HT-ELDERLY",
+      "child_name": "老年高血压"
+    },
+    {
+      "parent": "DIS-CARD-HT",
+      "parent_name": "高血压",
+      "classification": "CLASS-CARD-HT-CARD-HT-PAROXYSMAL",
+      "classification_name": "发作性高血压",
+      "child": "DIS-CARD-HT-PAROXYSMAL",
+      "child_name": "发作性高血压"
+    },
+    {
+      "parent": "DIS-CARD-HT",
+      "parent_name": "高血压",
+      "classification": "CLASS-CARD-HT-CARD-HT-CKD",
+      "classification_name": "慢性肾脏病合并高血压",
+      "child": "DIS-CARD-HT-CKD",
+      "child_name": "慢性肾脏病合并高血压"
+    },
+    {
+      "parent": "DIS-CARD-HT",
+      "parent_name": "高血压",
+      "classification": "CLASS-CARD-HT-CARD-HT-RENAL-PARENCHYMAL",
+      "classification_name": "肾实质性高血压",
+      "child": "DIS-CARD-HT-RENAL-PARENCHYMAL",
+      "child_name": "肾实质性高血压"
+    },
+    {
+      "parent": "DIS-CARD-HT",
+      "parent_name": "高血压",
+      "classification": "CLASS-CARD-HT-CARD-HT-RENOVASCULAR",
+      "classification_name": "肾血管性高血压",
+      "child": "DIS-CARD-HT-RENOVASCULAR",
+      "child_name": "肾血管性高血压"
+    },
+    {
+      "parent": "DIS-CARD-HT",
+      "parent_name": "高血压",
+      "classification": "CLASS-CARD-HT-CARD-HT-ENDOCRINE",
+      "classification_name": "内分泌性高血压",
+      "child": "DIS-CARD-HT-ENDOCRINE",
+      "child_name": "内分泌性高血压"
+    },
+    {
+      "parent": "DIS-CARD-PH",
+      "parent_name": "肺动脉高压",
+      "classification": "CLASS-CARD-PH-CARD-PH-PAH",
+      "classification_name": "动脉性肺动脉高压",
+      "child": "DIS-CARD-PH-PAH",
+      "child_name": "动脉性肺动脉高压"
+    },
+    {
+      "parent": "DIS-CARD-PH",
+      "parent_name": "肺动脉高压",
+      "classification": "CLASS-CARD-PH-CARD-PH-IPAH",
+      "classification_name": "特发性肺动脉高压",
+      "child": "DIS-CARD-PH-IPAH",
+      "child_name": "特发性肺动脉高压"
+    },
+    {
+      "parent": "DIS-CARD-PH",
+      "parent_name": "肺动脉高压",
+      "classification": "CLASS-CARD-PH-CARD-PH-HPAH",
+      "classification_name": "遗传性肺动脉高压",
+      "child": "DIS-CARD-PH-HPAH",
+      "child_name": "遗传性肺动脉高压"
+    },
+    {
+      "parent": "DIS-CARD-PH",
+      "parent_name": "肺动脉高压",
+      "classification": "CLASS-CARD-PH-CARD-PH-CTD",
+      "classification_name": "结缔组织病相关肺动脉高压",
+      "child": "DIS-CARD-PH-CTD",
+      "child_name": "结缔组织病相关肺动脉高压"
+    },
+    {
+      "parent": "DIS-CARD-PH",
+      "parent_name": "肺动脉高压",
+      "classification": "CLASS-CARD-PH-CARD-PH-CHD",
+      "classification_name": "先天性心脏病相关肺动脉高压",
+      "child": "DIS-CARD-PH-CHD",
+      "child_name": "先天性心脏病相关肺动脉高压"
+    },
+    {
+      "parent": "DIS-CARD-PH",
+      "parent_name": "肺动脉高压",
+      "classification": "CLASS-CARD-PH-CARD-PH-CTEPH",
+      "classification_name": "慢性血栓栓塞性肺动脉高压",
+      "child": "DIS-CARD-PH-CTEPH",
+      "child_name": "慢性血栓栓塞性肺动脉高压"
+    },
+    {
+      "parent": "DIS-CARD-MYOCARDITIS",
+      "parent_name": "心肌炎",
+      "classification": "CLASS-CARD-MYOCARDITIS-CARD-FULMINANT-MYOCARDITIS",
+      "classification_name": "暴发性心肌炎",
+      "child": "DIS-CARD-FULMINANT-MYOCARDITIS",
+      "child_name": "暴发性心肌炎"
+    },
+    {
+      "parent": "DIS-CARD-PERICARDITIS",
+      "parent_name": "心包炎",
+      "classification": "CLASS-CARD-PERICARDITIS-CARD-PERICARD-ACUTE",
+      "classification_name": "急性心包炎",
+      "child": "DIS-CARD-PERICARD-ACUTE",
+      "child_name": "急性心包炎"
+    },
+    {
+      "parent": "DIS-CARD-PERICARDITIS",
+      "parent_name": "心包炎",
+      "classification": "CLASS-CARD-PERICARDITIS-CARD-PERICARD-CONSTRICTIVE",
+      "classification_name": "缩窄性心包炎",
+      "child": "DIS-CARD-PERICARD-CONSTRICTIVE",
+      "child_name": "缩窄性心包炎"
+    },
+    {
+      "parent": "DIS-CARD-ARR-SVT",
+      "parent_name": "室上性心动过速",
+      "classification": "CLASS-CARD-ARR-SVT-CARD-ARR-PSVT",
+      "classification_name": "阵发性室上性心动过速",
+      "child": "DIS-CARD-ARR-PSVT",
+      "child_name": "阵发性室上性心动过速"
+    }
+  ],
+  "duplicate_disease_retired": [
+    {
+      "old_code": "DIS-CARD-HTN-ESSENTIAL",
+      "std_code": "DIS-CARD-HT-PRIMARY",
+      "old_name": "原发性高血压",
+      "std_name": "原发性高血压",
+      "rels": 311,
+      "incoming_migrated": 0,
+      "outgoing_migrated": 0
+    },
+    {
+      "old_code": "DIS-CARD-HTN-SECONDARY",
+      "std_code": "DIS-CARD-HT-SECONDARY",
+      "old_name": "继发性高血压",
+      "std_name": "继发性高血压",
+      "rels": 314,
+      "incoming_migrated": 1,
+      "outgoing_migrated": 312
+    },
+    {
+      "old_code": "DIS-CARD-HTN-RENAL-PARENCHYMAL",
+      "std_code": "DIS-CARD-HT-RENAL-PARENCHYMAL",
+      "old_name": "肾实质性高血压",
+      "std_name": "肾实质性高血压",
+      "rels": 55,
+      "incoming_migrated": 1,
+      "outgoing_migrated": 54
+    },
+    {
+      "old_code": "DIS-CARD-CM-MYOCARDITIS",
+      "std_code": "DIS-CARD-MYOCARDITIS",
+      "old_name": "心肌炎",
+      "std_name": "心肌炎",
+      "rels": 709,
+      "incoming_migrated": 1,
+      "outgoing_migrated": 705
+    },
+    {
+      "old_code": "DIS-CARD-IE",
+      "std_code": "DIS-CARD-INFECTIVE-ENDOCARDITIS",
+      "old_name": "感染性心内膜炎",
+      "std_name": "感染性心内膜炎",
+      "rels": 652,
+      "incoming_migrated": 1,
+      "outgoing_migrated": 648
+    }
+  ],
+  "relationship_migration": {
+    "incoming": 4,
+    "outgoing": 1719
+  },
+  "orphan_classification_treatment": [
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-4D901F6118D1C9A3",
+      "name": "1.Ⅰ类阻滞快速钠通道",
+      "entityType": "ClinicalRule",
+      "action": "retype_to_clinical_rule"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-6D548BBAB4A66D2F",
+      "name": "1.急性心衰系因急性的严重心肌损害、结构破坏、心律失常或突然加重的心脏负荷",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 4,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-F163C6547508ABCC",
+      "name": "109～140分为中危",
+      "entityType": "RiskStratification",
+      "action": "retype_to_risk_stratification"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-0F0739929D4D65FB",
+      "name": "1979年WHO曾将其分为五型",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 4,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-39D40802C6FD5E42",
+      "name": "2.Ⅱ类拮抗β肾上腺素能受体",
+      "entityType": "ClinicalRule",
+      "action": "retype_to_clinical_rule"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-0F476B8279CAC9AE",
+      "name": "2.慢性心衰呈一个缓慢的发展过程",
+      "entityType": "DefinitionComponent",
+      "action": "retype_to_definition_component"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-6E684F06E54B04C6",
+      "name": "3.Ⅲ类阻滞钾通道与延长复极",
+      "entityType": "ClinicalRule",
+      "action": "retype_to_clinical_rule"
+    },
+    {
+      "code": "CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-25D5574205249FB4",
+      "name": "Braunwald根据心绞痛的特点和基础病因",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-119BA60B7A932664",
+      "name": "CCS包括以下情况：伴稳定心绞痛症状和/或呼吸困难的疑似冠心病病人",
+      "entityType": "DefinitionComponent",
+      "action": "retype_to_definition_component"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-89FF6D87640E98CC",
+      "name": "CCS）和急性冠脉综合征（acutecoronarysyndrome",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 4,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-84EBFA99E9DC47D7",
+      "name": "GRACE评分＞140分为高危",
+      "entityType": "RiskStratification",
+      "action": "retype_to_risk_stratification"
+    },
+    {
+      "code": "CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-8915F993A61B09FD",
+      "name": "GRACE风险模型纳入了年龄、充血性心力衰竭史、心肌梗死史、静息时心率、收缩压、血肌酐、心电图ST段偏移、心肌损伤标志物升高以及是否行血运重建等参数",
+      "entityType": "RiskStratification",
+      "action": "retype_to_risk_stratification"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-AAAC1C88BFF4E4B8",
+      "name": "LVEF≤40%者称为射血分数降低的心衰（HFwithreducedEF",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 4,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-E51C7E4ECEA047D3",
+      "name": "LVEF）进行的心衰分类在临床上具有重要意义",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 4,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-FAC37E423AAE5C1C",
+      "name": "RCM可分为心肌型和心内膜心肌型",
+      "entityType": "DefinitionComponent",
+      "action": "retype_to_definition_component"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-9FB4E88E62F60AF4",
+      "name": "“干冷”型",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-7DCF00210EB3D32A",
+      "name": "“湿暖”型",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-4D1615020410044F",
+      "name": "Ⅰa类：药物减慢动作电位0相上升速度（Vmax）",
+      "entityType": "ClinicalRule",
+      "action": "retype_to_clinical_rule"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-C94CD0919A1D0424",
+      "name": "Ⅰb类：药物不减慢Vmax",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-C89B40C999634443",
+      "name": "Ⅰc类：药物减慢Vmax",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-7DFC9261A1796F40",
+      "name": "≤108分为低危",
+      "entityType": "RiskStratification",
+      "action": "retype_to_risk_stratification"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-FD80A8C8EA9112E2",
+      "name": "【临床分型】由于病理解剖和病理生理变化的不同",
+      "entityType": "DefinitionComponent",
+      "action": "retype_to_definition_component"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-D2180DA75866F485",
+      "name": "【心律失常分类】心律失常按发生部位分为室上性（包括窦性、房性、房室交界性）和室性心律失常两大类",
+      "entityType": "DefinitionComponent",
+      "action": "retype_to_definition_component"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-DC62304FBD624975",
+      "name": "【抗心律失常药物分类方法】（一）VaughanWilliams分类根据药物的电生理效应将抗心律失常药物分为四类",
+      "entityType": "ClinicalRule",
+      "action": "retype_to_clinical_rule"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-70616E046BD56599",
+      "name": "【病因与分类】本病病因极为复杂",
+      "entityType": "DefinitionComponent",
+      "action": "retype_to_definition_component"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-6279901326F700A1",
+      "name": "也可以是慢性心衰急性加重",
+      "entityType": "DefinitionComponent",
+      "action": "retype_to_definition_component"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-9C001CCD8D514B9B",
+      "name": "冠心病有不同的临床表型",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 4,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-1DDAF2C3BC90B074",
+      "name": "分为快速型与缓慢型心律失常两大类",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-39F01C63BB11BB9B",
+      "name": "可以是初发心衰",
+      "entityType": "DefinitionComponent",
+      "action": "retype_to_definition_component"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-2F3B270C14EBF999",
+      "name": "右心室代偿功能不全所致为右心衰竭",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 4,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-2BA81BCB3845EAE2",
+      "name": "多为类瘤样浸润或恶性浸润所致",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-D50DC1E09B076C23",
+      "name": "奎尼丁、普鲁卡因胺、丙吡胺等属此类",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-166A31C01D170E49",
+      "name": "左心衰竭和右心衰竭同时存在即为全心衰竭",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 4,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-126CD05E958B4C7E",
+      "name": "心内膜心肌型又可分为",
+      "entityType": "DefinitionComponent",
+      "action": "retype_to_definition_component"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-D4B45A7B4AF38283",
+      "name": "心肌型又可分为",
+      "entityType": "DefinitionComponent",
+      "action": "retype_to_definition_component"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-AFF08098E4D1BCCB",
+      "name": "按发生机制分为冲动形成异常和冲动传导异常两大类",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-C4C8EFEE3F1B56EC",
+      "name": "是目前已明确的可以改善病人长期预后的抗心律失常药物",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-5CC02E1A5C7B3C28",
+      "name": "普罗帕酮属此类",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-A5AB4885679C6C16",
+      "name": "本章主要依据心律失常发生的部位、机制以及心率快慢进行综合分类",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-E319DCBA31FC8488",
+      "name": "此型病情最轻",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-D55C8A0BE8CA104D",
+      "name": "窦性停搏、病态窦房结综合征",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-534B24B04EEE58F3",
+      "name": "第二节慢性心力衰竭-分类/分型",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-AD9A511CAB7AE0A9",
+      "name": "缺血性心肌病",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 4,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-1461CDA7A131F777",
+      "name": "美托洛尔、普萘洛尔、纳多洛尔、卡维地洛、比索洛尔、阿替洛尔等属此类",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-A32B65198EF00C24",
+      "name": "美西律、苯妥英钠与利多卡因等属此类",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-49567123AEB0F14D",
+      "name": "胺碘酮、决奈达隆、索他洛尔、伊布利特、多非利特等属此类",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-C0F7A573C5D7026F",
+      "name": "表3-3-1房颤的临床分类",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-11F8F205966D8060",
+      "name": "表3-4-2不稳定型心绞痛严重程度分级（Braunwald分级）表3-4-3不稳定型心绞痛或非ST段抬高型心肌梗死的危险分层和治疗策略建议",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-B2FFCF49C66EE917",
+      "name": "见于心内膜弹力纤维增生症、高嗜酸性粒细胞综合征、放射性损害、蒽环类药物毒性等",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-5910536FA8358CF4",
+      "name": "近年趋向于根据发病特点和治疗原则不同分为两大类：慢性冠脉综合征（chroniccoronarysyndrome",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 4,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-778D48AA08D54825",
+      "name": "部分可能与轻型DCM、HCM等有表型重叠",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-1967E04365CD118E",
+      "name": "隐匿型或无症状型冠心病",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 4,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-03FA6960B56D5F02",
+      "name": "（一）冲动形成异常1.窦性心律失常",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 2,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-FBC8988935A6B6F5",
+      "name": "（一）按发生的部位分类左心室代偿功能不全所致为左心衰竭",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 4,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-DE6B394D88B989C0",
+      "name": "（三）按左心室射血分数分类根据左心室射血分数（leftventricularejectionfraction",
+      "entityType": "DiseaseClassification",
+      "cleanup_status": "needs_manual_classification_review",
+      "rels": 4,
+      "action": "mark_review_or_delete_candidate"
+    },
+    {
+      "code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-FDBC8B9D332EF7C0",
+      "name": "（二）按发生的速度分类根据心衰发生的速度可分为慢性心衰和急性心衰",
+      "entityType": "DefinitionComponent",
+      "action": "retype_to_definition_component"
+    }
+  ],
+  "skipped": []
+}
