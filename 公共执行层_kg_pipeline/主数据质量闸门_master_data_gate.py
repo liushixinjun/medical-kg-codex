@@ -40,6 +40,159 @@ class GateCheck:
 
 CHECKS: list[GateCheck] = [
     GateCheck(
+        metric="disease_without_category_count",
+        chinese_name="疾病无大类",
+        description="正式疾病必须能连到疾病大类，否则左侧目录、统计口径和专科导航都会断链。",
+        count_query="""
+            MATCH (d:KGNode {entityType:'Disease'})
+            WHERE coalesce(d.status,'active') <> 'deprecated'
+              AND coalesce(d.deprecated, false) <> true
+              AND d.duplicate_replaced_by IS NULL
+            OPTIONAL MATCH (d)-[:belongs_to_category]->(c:KGNode {entityType:'DiseaseCategory'})
+            WITH d, count(c) AS category_count
+            WHERE category_count = 0
+            RETURN count(d) AS value
+        """,
+        detail_query="""
+            MATCH (d:KGNode {entityType:'Disease'})
+            WHERE coalesce(d.status,'active') <> 'deprecated'
+              AND coalesce(d.deprecated, false) <> true
+              AND d.duplicate_replaced_by IS NULL
+            OPTIONAL MATCH (d)-[:belongs_to_category]->(c:KGNode {entityType:'DiseaseCategory'})
+            WITH d, count(c) AS category_count
+            WHERE category_count = 0
+            RETURN d.code AS disease_code, d.name AS disease_name, d.batch_id AS batch_id
+            ORDER BY disease_name, disease_code
+        """,
+    ),
+    GateCheck(
+        metric="disease_without_subcategory_count",
+        chinese_name="疾病无亚类",
+        description="正式疾病必须能连到疾病亚类，否则无法落到三层目录中的具体位置。",
+        count_query="""
+            MATCH (d:KGNode {entityType:'Disease'})
+            WHERE coalesce(d.status,'active') <> 'deprecated'
+              AND coalesce(d.deprecated, false) <> true
+              AND d.duplicate_replaced_by IS NULL
+            OPTIONAL MATCH (d)-[:belongs_to_subcategory]->(s:KGNode {entityType:'DiseaseSubcategory'})
+            WITH d, count(s) AS subcategory_count
+            WHERE subcategory_count = 0
+            RETURN count(d) AS value
+        """,
+        detail_query="""
+            MATCH (d:KGNode {entityType:'Disease'})
+            WHERE coalesce(d.status,'active') <> 'deprecated'
+              AND coalesce(d.deprecated, false) <> true
+              AND d.duplicate_replaced_by IS NULL
+            OPTIONAL MATCH (d)-[:belongs_to_subcategory]->(s:KGNode {entityType:'DiseaseSubcategory'})
+            WITH d, count(s) AS subcategory_count
+            WHERE subcategory_count = 0
+            RETURN d.code AS disease_code, d.name AS disease_name, d.batch_id AS batch_id
+            ORDER BY disease_name, disease_code
+        """,
+    ),
+    GateCheck(
+        metric="subcategory_without_category_count",
+        chinese_name="疾病亚类无大类",
+        description="疾病亚类必须能归属到疾病大类，否则大类目录无法展开到亚类。",
+        count_query="""
+            MATCH (s:KGNode {entityType:'DiseaseSubcategory'})
+            WHERE coalesce(s.status,'active') <> 'deprecated'
+              AND coalesce(s.deprecated, false) <> true
+            OPTIONAL MATCH (s)-[:belongs_to_category]->(c1:KGNode {entityType:'DiseaseCategory'})
+            OPTIONAL MATCH (c2:KGNode {entityType:'DiseaseCategory'})-[:has_subcategory]->(s)
+            WITH s, count(DISTINCT c1) + count(DISTINCT c2) AS category_count
+            WHERE category_count = 0
+            RETURN count(s) AS value
+        """,
+        detail_query="""
+            MATCH (s:KGNode {entityType:'DiseaseSubcategory'})
+            WHERE coalesce(s.status,'active') <> 'deprecated'
+              AND coalesce(s.deprecated, false) <> true
+            OPTIONAL MATCH (s)-[:belongs_to_category]->(c1:KGNode {entityType:'DiseaseCategory'})
+            OPTIONAL MATCH (c2:KGNode {entityType:'DiseaseCategory'})-[:has_subcategory]->(s)
+            WITH s, count(DISTINCT c1) + count(DISTINCT c2) AS category_count
+            WHERE category_count = 0
+            RETURN s.code AS subcategory_code, s.name AS subcategory_name, s.batch_id AS batch_id
+            ORDER BY subcategory_name, subcategory_code
+        """,
+    ),
+    GateCheck(
+        metric="disease_classification_without_parent_disease_count",
+        chinese_name="疾病分型无父疾病",
+        description="正式疾病分型必须挂在某个父疾病下面；不能判定父疾病的分型不得进入正式分型层。",
+        count_query="""
+            MATCH (cl:KGNode {entityType:'DiseaseClassification'})
+            WHERE coalesce(cl.status,'active') <> 'deprecated'
+              AND coalesce(cl.deprecated, false) <> true
+            OPTIONAL MATCH (d:KGNode {entityType:'Disease'})-[:has_classification]->(cl)
+            WITH cl, count(d) AS parent_count
+            WHERE parent_count = 0
+            RETURN count(cl) AS value
+        """,
+        detail_query="""
+            MATCH (cl:KGNode {entityType:'DiseaseClassification'})
+            WHERE coalesce(cl.status,'active') <> 'deprecated'
+              AND coalesce(cl.deprecated, false) <> true
+            OPTIONAL MATCH (d:KGNode {entityType:'Disease'})-[:has_classification]->(cl)
+            WITH cl, count(d) AS parent_count
+            WHERE parent_count = 0
+            RETURN cl.code AS classification_code, cl.name AS classification_name, cl.batch_id AS batch_id
+            ORDER BY classification_name, classification_code
+        """,
+    ),
+    GateCheck(
+        metric="active_duplicate_disease_name_count",
+        chinese_name="正式疾病同名重复",
+        description="同一个疾病名称不能存在多个正式 Disease 节点；一病多目录应使用一个疾病节点连接多个目录。",
+        count_query="""
+            MATCH (d:KGNode {entityType:'Disease'})
+            WHERE coalesce(d.status,'active') <> 'deprecated'
+              AND coalesce(d.deprecated, false) <> true
+              AND d.duplicate_replaced_by IS NULL
+              AND d.name IS NOT NULL
+              AND trim(d.name) <> ''
+            WITH d.name AS disease_name, count(DISTINCT d.code) AS node_count
+            WHERE node_count > 1
+            RETURN count(*) AS value
+        """,
+        detail_query="""
+            MATCH (d:KGNode {entityType:'Disease'})
+            WHERE coalesce(d.status,'active') <> 'deprecated'
+              AND coalesce(d.deprecated, false) <> true
+              AND d.duplicate_replaced_by IS NULL
+              AND d.name IS NOT NULL
+              AND trim(d.name) <> ''
+            WITH d.name AS disease_name, collect(DISTINCT d.code) AS disease_codes, count(DISTINCT d.code) AS node_count
+            WHERE node_count > 1
+            RETURN disease_name, node_count, disease_codes
+            ORDER BY node_count DESC, disease_name
+        """,
+    ),
+    GateCheck(
+        metric="retired_disease_node_remaining_count",
+        chinese_name="退役疾病节点残留",
+        description="已被标准疾病替换的旧 Disease 节点不得继续留在正式图谱库；留痕应放在本地备份文件，不放在医生可查图谱里。",
+        count_query="""
+            MATCH (d:KGNode {entityType:'Disease'})
+            WHERE d.duplicate_replaced_by IS NOT NULL
+               OR coalesce(d.status,'active') = 'deprecated'
+               OR coalesce(d.deprecated, false) = true
+            RETURN count(d) AS value
+        """,
+        detail_query="""
+            MATCH (d:KGNode {entityType:'Disease'})
+            WHERE d.duplicate_replaced_by IS NOT NULL
+               OR coalesce(d.status,'active') = 'deprecated'
+               OR coalesce(d.deprecated, false) = true
+            OPTIONAL MATCH (d)-[r]-()
+            RETURN d.code AS disease_code, d.name AS disease_name, d.status AS status,
+                   d.deprecated AS deprecated, d.duplicate_replaced_by AS duplicate_replaced_by,
+                   count(r) AS relation_count
+            ORDER BY relation_count DESC, disease_name
+        """,
+    ),
+    GateCheck(
         metric="same_disease_same_type_same_name_duplicate_count",
         chinese_name="同病种同类型同名重复直连",
         description="同一个疾病下，同一实体类型、同一名称出现多个节点。应复用标准主节点，不应重复创建。",
@@ -207,9 +360,11 @@ def summarize_counts(counts: dict[str, int]) -> dict[str, Any]:
         for check in CHECKS
         if int(counts.get(check.metric, 0) or 0) > 0
     ]
+    gate_status = "passed" if not blocking_items else "failed"
     return {
         "gate_name": "主数据质量闸门",
-        "gate_status": "passed" if not blocking_items else "failed",
+        "gate_status": gate_status,
+        "gate_status_cn": "通过" if gate_status == "passed" else "未通过",
         "blocking_issue_count": len(blocking_items),
         "blocking_items": blocking_items,
         "counts": counts,
@@ -221,7 +376,7 @@ def write_report(path: Path, summary: dict[str, Any], output_dir: Path) -> None:
         "# 主数据质量闸门报告",
         "",
         f"- 生成时间：{summary['generated_at']}",
-        f"- 闸门状态：{summary['gate_status']}",
+        f"- 闸门状态：{summary.get('gate_status_cn', summary['gate_status'])}",
         f"- 阻断项数量：{summary['blocking_issue_count']}",
         "",
         "## 检查结果",
@@ -236,7 +391,7 @@ def write_report(path: Path, summary: dict[str, Any], output_dir: Path) -> None:
         lines.append(f"| {check.chinese_name} | {count} | {check.description} |")
     lines.extend(["", "## 结论", ""])
     if summary["gate_status"] == "passed":
-        lines.append("本轮主数据质量闸门通过：未发现同病种重复主节点、孤儿诊断标准、空壳治疗方案或已替换节点仍被引用。")
+        lines.append("本轮主数据质量闸门通过：未发现疾病层级断链、孤立疾病分型、同名疾病重复、退役疾病残留、孤儿诊断标准、空壳治疗方案或已替换节点仍被引用。")
     else:
         lines.append("本轮主数据质量闸门未通过：必须先处理阻断项，再进入新病种入库或正式 CDSS 转正。")
     lines.extend(["", "## 明细目录", "", f"`{output_dir / 'details'}`"])

@@ -1,0 +1,13 @@
+{
+  "disease_without_category_count": [],
+  "disease_without_subcategory_count": [],
+  "subcategory_without_category_count": [],
+  "disease_classification_without_parent_disease_count": [],
+  "active_duplicate_disease_name_count": [],
+  "retired_disease_node_remaining_count": [],
+  "same_disease_same_type_same_name_duplicate_count": [],
+  "diagnosis_criteria_without_component_count": [],
+  "orphan_diagnosis_criteria_count": [],
+  "treatment_plan_without_downstream_count": [],
+  "replaced_duplicate_still_referenced_count": []
+}

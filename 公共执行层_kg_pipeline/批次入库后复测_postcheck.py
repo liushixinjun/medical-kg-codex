@@ -52,16 +52,19 @@ def summarize_postcheck(batch_id: str, master_data_summary: dict[str, Any]) -> d
     if master_status != "passed" or master_blocking_count > 0:
         blocking_gates.append("主数据质量闸门")
 
+    status = "passed" if not blocking_gates else "failed"
     return {
         "batch_id": batch_id,
         "postcheck_name": "批次入库后复测",
-        "postcheck_status": "passed" if not blocking_gates else "failed",
+        "postcheck_status": status,
+        "postcheck_status_cn": "通过" if status == "passed" else "未通过",
         "blocking_issue_count": master_blocking_count,
         "blocking_gates": blocking_gates,
         "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "checks": {
             "主数据质量闸门": {
                 "status": master_status,
+                "status_cn": master_data_summary.get("gate_status_cn", master_status),
                 "blocking_issue_count": master_blocking_count,
                 "counts": master_data_summary.get("counts", {}),
             }
@@ -75,7 +78,7 @@ def write_postcheck_report(path: Path, summary: dict[str, Any], paths: Postcheck
         "",
         f"- 批次编号：{summary['batch_id']}",
         f"- 生成时间：{summary['generated_at']}",
-        f"- 复测状态：{summary['postcheck_status']}",
+        f"- 复测状态：{summary.get('postcheck_status_cn', summary['postcheck_status'])}",
         f"- 阻断项数量：{summary['blocking_issue_count']}",
         "",
         "## 本轮固定复测项",
@@ -85,7 +88,7 @@ def write_postcheck_report(path: Path, summary: dict[str, Any], paths: Postcheck
     ]
     master = summary["checks"]["主数据质量闸门"]
     lines.append(
-        f"| 主数据质量闸门 | {master['status']} | {master['blocking_issue_count']} | `{paths.master_data_gate_dir}` |"
+        f"| 主数据质量闸门 | {master.get('status_cn', master['status'])} | {master['blocking_issue_count']} | `{paths.master_data_gate_dir}` |"
     )
     lines.extend(["", "## 结论", ""])
     if summary["postcheck_status"] == "passed":
