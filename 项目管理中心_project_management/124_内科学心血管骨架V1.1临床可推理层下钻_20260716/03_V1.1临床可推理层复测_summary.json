@@ -1,0 +1,67 @@
+{
+  "batch_id": "20260716_内科学心血管骨架V1.1临床可推理层复测",
+  "generated_at": "2026-07-16 23:21:36",
+  "password_printed": false,
+  "results": {
+    "exam_formal_missing_indicator": {
+      "count": 0,
+      "sample": []
+    },
+    "exam_indicator_total": {
+      "count": 204
+    },
+    "lab_formal_missing_indicator": {
+      "count": 0,
+      "sample": []
+    },
+    "dx_no_component": {
+      "count": 0,
+      "sample": []
+    },
+    "diff_no_detail": {
+      "count": 0,
+      "sample": []
+    },
+    "treatment_formal_missing_action": {
+      "count": 0,
+      "sample": []
+    },
+    "contra_unlinked_formal": {
+      "count": 0,
+      "sample": []
+    },
+    "risk_formal_missing_component": {
+      "count": 0,
+      "sample": []
+    },
+    "med_abbrev_without_alias": {
+      "count": 0,
+      "sample": []
+    },
+    "procedure_abbrev_primary": {
+      "count": 0,
+      "sample": []
+    },
+    "procedure_duplicate_after_standardization": {
+      "groups": 0,
+      "nodes": 0,
+      "sample": []
+    },
+    "recommendation_not_formal": {
+      "count": 0,
+      "sample": []
+    },
+    "browse_only_exam_count": {
+      "count": 45
+    },
+    "browse_only_risk_count": {
+      "count": 78
+    },
+    "browse_only_treatment_count": {
+      "count": 12
+    }
+  },
+  "blocking": [],
+  "v1_1_judgement": "PASS",
+  "scope_note": "V1.1统计正式推理节点；知识浏览节点不进入正式CDSS推理区。"
+}

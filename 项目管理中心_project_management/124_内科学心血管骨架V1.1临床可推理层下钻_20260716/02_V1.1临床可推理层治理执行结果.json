@@ -1,0 +1,1904 @@
+{
+  "batch_id": "20260716_内科学心血管骨架V1.1临床可推理层下钻治理",
+  "executed_at": "2026-07-16 23:19:36",
+  "password_printed": false,
+  "exam_indicator_links": [
+    {
+      "exam_code": "EXAM-ECG",
+      "indicator": "ST段抬高"
+    },
+    {
+      "exam_code": "EXAM-ECG",
+      "indicator": "ST段压低"
+    },
+    {
+      "exam_code": "EXAM-ECG",
+      "indicator": "T波倒置"
+    },
+    {
+      "exam_code": "EXAM-ECG",
+      "indicator": "病理性Q波"
+    },
+    {
+      "exam_code": "EXAM-ECG",
+      "indicator": "QRS波时限"
+    },
+    {
+      "exam_code": "EXAM-ECG",
+      "indicator": "PR间期"
+    },
+    {
+      "exam_code": "EXAM-ECG",
+      "indicator": "QT间期"
+    },
+    {
+      "exam_code": "EXAM-ECG",
+      "indicator": "心律"
+    },
+    {
+      "exam_code": "EXAM-CARD-A80B855C8C77",
+      "indicator": "ST段抬高"
+    },
+    {
+      "exam_code": "EXAM-CARD-A80B855C8C77",
+      "indicator": "ST段压低"
+    },
+    {
+      "exam_code": "EXAM-CARD-A80B855C8C77",
+      "indicator": "T波倒置"
+    },
+    {
+      "exam_code": "EXAM-CARD-A80B855C8C77",
+      "indicator": "病理性Q波"
+    },
+    {
+      "exam_code": "EXAM-CARD-A80B855C8C77",
+      "indicator": "QRS波时限"
+    },
+    {
+      "exam_code": "EXAM-CARD-A80B855C8C77",
+      "indicator": "PR间期"
+    },
+    {
+      "exam_code": "EXAM-CARD-A80B855C8C77",
+      "indicator": "QT间期"
+    },
+    {
+      "exam_code": "EXAM-CARD-A80B855C8C77",
+      "indicator": "心律"
+    },
+    {
+      "exam_code": "EXAM-HOLTER",
+      "indicator": "心律失常发作频率"
+    },
+    {
+      "exam_code": "EXAM-HOLTER",
+      "indicator": "最长RR间期"
+    },
+    {
+      "exam_code": "EXAM-HOLTER",
+      "indicator": "室性早搏负荷"
+    },
+    {
+      "exam_code": "EXAM-HOLTER",
+      "indicator": "房颤负荷"
+    },
+    {
+      "exam_code": "EXAM-HOLTER",
+      "indicator": "心率变异性"
+    },
+    {
+      "exam_code": "EXAM-CARD-CADREM-STABLE-ANGINA-2B3BD0A8FA",
+      "indicator": "心律失常发作频率"
+    },
+    {
+      "exam_code": "EXAM-CARD-CADREM-STABLE-ANGINA-2B3BD0A8FA",
+      "indicator": "最长RR间期"
+    },
+    {
+      "exam_code": "EXAM-CARD-CADREM-STABLE-ANGINA-2B3BD0A8FA",
+      "indicator": "室性早搏负荷"
+    },
+    {
+      "exam_code": "EXAM-CARD-CADREM-STABLE-ANGINA-2B3BD0A8FA",
+      "indicator": "房颤负荷"
+    },
+    {
+      "exam_code": "EXAM-CARD-CADREM-STABLE-ANGINA-2B3BD0A8FA",
+      "indicator": "心率变异性"
+    },
+    {
+      "exam_code": "EXAM-CARD-A096A6416690",
+      "indicator": "心律失常发作频率"
+    },
+    {
+      "exam_code": "EXAM-CARD-A096A6416690",
+      "indicator": "最长RR间期"
+    },
+    {
+      "exam_code": "EXAM-CARD-A096A6416690",
+      "indicator": "室性早搏负荷"
+    },
+    {
+      "exam_code": "EXAM-CARD-A096A6416690",
+      "indicator": "房颤负荷"
+    },
+    {
+      "exam_code": "EXAM-CARD-A096A6416690",
+      "indicator": "心率变异性"
+    },
+    {
+      "exam_code": "EXAM-CARD-41BF81CAB3CE",
+      "indicator": "症状相关心律事件"
+    },
+    {
+      "exam_code": "EXAM-CARD-41BF81CAB3CE",
+      "indicator": "阵发性心律失常记录"
+    },
+    {
+      "exam_code": "EXAM-CARD-F6169EE9D82C",
+      "indicator": "长程心律事件"
+    },
+    {
+      "exam_code": "EXAM-CARD-F6169EE9D82C",
+      "indicator": "隐匿性房颤事件"
+    },
+    {
+      "exam_code": "EXAM-CARD-F6169EE9D82C",
+      "indicator": "症状相关心律事件"
+    },
+    {
+      "exam_code": "EXAM-CARD-90DB0CAFC311",
+      "indicator": "诱发性室上性心动过速"
+    },
+    {
+      "exam_code": "EXAM-CARD-90DB0CAFC311",
+      "indicator": "房室结传导特征"
+    },
+    {
+      "exam_code": "EXAM-CARD-90DB0CAFC311",
+      "indicator": "旁路传导证据"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-C33E64A777",
+      "indicator": "诱发性心动过速"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-C33E64A777",
+      "indicator": "房室传导时间"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-C33E64A777",
+      "indicator": "旁路定位"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-C33E64A777",
+      "indicator": "室性心律失常诱发"
+    },
+    {
+      "exam_code": "EXAM-CARD-85148D8A75A3",
+      "indicator": "诱发性心动过速"
+    },
+    {
+      "exam_code": "EXAM-CARD-85148D8A75A3",
+      "indicator": "房室传导时间"
+    },
+    {
+      "exam_code": "EXAM-CARD-85148D8A75A3",
+      "indicator": "旁路定位"
+    },
+    {
+      "exam_code": "EXAM-CARD-85148D8A75A3",
+      "indicator": "室性心律失常诱发"
+    },
+    {
+      "exam_code": "EXAM-TTE",
+      "indicator": "左室射血分数"
+    },
+    {
+      "exam_code": "EXAM-TTE",
+      "indicator": "室壁运动异常"
+    },
+    {
+      "exam_code": "EXAM-TTE",
+      "indicator": "室壁厚度"
+    },
+    {
+      "exam_code": "EXAM-TTE",
+      "indicator": "瓣口面积"
+    },
+    {
+      "exam_code": "EXAM-TTE",
+      "indicator": "跨瓣压差"
+    },
+    {
+      "exam_code": "EXAM-TTE",
+      "indicator": "反流程度"
+    },
+    {
+      "exam_code": "EXAM-TTE",
+      "indicator": "肺动脉压力估测"
+    },
+    {
+      "exam_code": "EXAM-TTE",
+      "indicator": "心包积液"
+    },
+    {
+      "exam_code": "EXAM-CARD-705D7CD61EB7",
+      "indicator": "左心耳血栓"
+    },
+    {
+      "exam_code": "EXAM-CARD-705D7CD61EB7",
+      "indicator": "瓣膜赘生物"
+    },
+    {
+      "exam_code": "EXAM-CARD-705D7CD61EB7",
+      "indicator": "瓣膜反流程度"
+    },
+    {
+      "exam_code": "EXAM-CARD-705D7CD61EB7",
+      "indicator": "房间隔缺损分流"
+    },
+    {
+      "exam_code": "EXAM-CARD-705D7CD61EB7",
+      "indicator": "心内血栓"
+    },
+    {
+      "exam_code": "EXAM-CAG",
+      "indicator": "冠状动脉狭窄程度"
+    },
+    {
+      "exam_code": "EXAM-CAG",
+      "indicator": "冠状动脉闭塞"
+    },
+    {
+      "exam_code": "EXAM-CAG",
+      "indicator": "TIMI血流分级"
+    },
+    {
+      "exam_code": "EXAM-CAG",
+      "indicator": "罪犯血管"
+    },
+    {
+      "exam_code": "EXAM-CAG",
+      "indicator": "侧支循环"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-2BB358B9BF",
+      "indicator": "冠状动脉狭窄程度"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-2BB358B9BF",
+      "indicator": "冠状动脉钙化"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-2BB358B9BF",
+      "indicator": "冠状动脉斑块性质"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-2BB358B9BF",
+      "indicator": "冠状动脉起源异常"
+    },
+    {
+      "exam_code": "EXAM-CARD-F60922D428D5",
+      "indicator": "冠状动脉狭窄程度"
+    },
+    {
+      "exam_code": "EXAM-CARD-F60922D428D5",
+      "indicator": "冠状动脉钙化"
+    },
+    {
+      "exam_code": "EXAM-CARD-F60922D428D5",
+      "indicator": "冠状动脉斑块性质"
+    },
+    {
+      "exam_code": "EXAM-CARD-F60922D428D5",
+      "indicator": "冠状动脉起源异常"
+    },
+    {
+      "exam_code": "EXAM-CARD-FULLBOOK-80909CCD5C",
+      "indicator": "肺动脉充盈缺损"
+    },
+    {
+      "exam_code": "EXAM-CARD-FULLBOOK-80909CCD5C",
+      "indicator": "肺动脉栓塞部位"
+    },
+    {
+      "exam_code": "EXAM-CARD-FULLBOOK-80909CCD5C",
+      "indicator": "右心负荷征象"
+    },
+    {
+      "exam_code": "EXAM-CARD-FULLBOOK-FED1A8ECF0",
+      "indicator": "通气灌注不匹配"
+    },
+    {
+      "exam_code": "EXAM-CARD-FULLBOOK-FED1A8ECF0",
+      "indicator": "肺灌注缺损"
+    },
+    {
+      "exam_code": "EXAM-CARD-FULLBOOK-27900FDADC",
+      "indicator": "血管狭窄程度"
+    },
+    {
+      "exam_code": "EXAM-CARD-FULLBOOK-27900FDADC",
+      "indicator": "血流速度"
+    },
+    {
+      "exam_code": "EXAM-CARD-FULLBOOK-27900FDADC",
+      "indicator": "血栓形成"
+    },
+    {
+      "exam_code": "EXAM-CARD-FULLBOOK-27900FDADC",
+      "indicator": "斑块性质"
+    },
+    {
+      "exam_code": "EXAM-CARD-AORTA-CTA-CDSS",
+      "indicator": "主动脉内膜片"
+    },
+    {
+      "exam_code": "EXAM-CARD-AORTA-CTA-CDSS",
+      "indicator": "真假腔"
+    },
+    {
+      "exam_code": "EXAM-CARD-AORTA-CTA-CDSS",
+      "indicator": "主动脉夹层范围"
+    },
+    {
+      "exam_code": "EXAM-CARD-AORTA-CTA-CDSS",
+      "indicator": "主动脉瘤直径"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-9A031190AE",
+      "indicator": "结构异常"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-9A031190AE",
+      "indicator": "钙化"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-9A031190AE",
+      "indicator": "血栓"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-9A031190AE",
+      "indicator": "占位或积液"
+    },
+    {
+      "exam_code": "EXAM-CARD-F6AAC5622DEA",
+      "indicator": "结构异常"
+    },
+    {
+      "exam_code": "EXAM-CARD-F6AAC5622DEA",
+      "indicator": "钙化"
+    },
+    {
+      "exam_code": "EXAM-CARD-F6AAC5622DEA",
+      "indicator": "血栓"
+    },
+    {
+      "exam_code": "EXAM-CARD-F6AAC5622DEA",
+      "indicator": "占位或积液"
+    },
+    {
+      "exam_code": "CARD-SKELETON-20260709-EXAM-4974BA875B54084B",
+      "indicator": "结构异常"
+    },
+    {
+      "exam_code": "CARD-SKELETON-20260709-EXAM-4974BA875B54084B",
+      "indicator": "钙化"
+    },
+    {
+      "exam_code": "CARD-SKELETON-20260709-EXAM-4974BA875B54084B",
+      "indicator": "血栓"
+    },
+    {
+      "exam_code": "CARD-SKELETON-20260709-EXAM-4974BA875B54084B",
+      "indicator": "占位或积液"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-BE9C2270C9",
+      "indicator": "心影增大"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-BE9C2270C9",
+      "indicator": "肺淤血"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-BE9C2270C9",
+      "indicator": "肺水肿"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-BE9C2270C9",
+      "indicator": "胸腔积液"
+    },
+    {
+      "exam_code": "CARD-SKELETON-20260709-EXAM-B66979D14041DD2B",
+      "indicator": "心影增大"
+    },
+    {
+      "exam_code": "CARD-SKELETON-20260709-EXAM-B66979D14041DD2B",
+      "indicator": "肺淤血"
+    },
+    {
+      "exam_code": "CARD-SKELETON-20260709-EXAM-B66979D14041DD2B",
+      "indicator": "肺水肿"
+    },
+    {
+      "exam_code": "CARD-SKELETON-20260709-EXAM-B66979D14041DD2B",
+      "indicator": "胸腔积液"
+    },
+    {
+      "exam_code": "EXAM-CARD-CHEST-IMAGING-CDSS",
+      "indicator": "心影增大"
+    },
+    {
+      "exam_code": "EXAM-CARD-CHEST-IMAGING-CDSS",
+      "indicator": "肺淤血"
+    },
+    {
+      "exam_code": "EXAM-CARD-CHEST-IMAGING-CDSS",
+      "indicator": "肺水肿"
+    },
+    {
+      "exam_code": "EXAM-CARD-CHEST-IMAGING-CDSS",
+      "indicator": "胸腔积液"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-8633D5B324",
+      "indicator": "延迟钆增强"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-8633D5B324",
+      "indicator": "心肌水肿"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-8633D5B324",
+      "indicator": "心室容积"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-8633D5B324",
+      "indicator": "左室射血分数"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-8633D5B324",
+      "indicator": "心肌纤维化"
+    },
+    {
+      "exam_code": "EXAM-CARD-09DFFB573658",
+      "indicator": "延迟钆增强"
+    },
+    {
+      "exam_code": "EXAM-CARD-09DFFB573658",
+      "indicator": "心肌水肿"
+    },
+    {
+      "exam_code": "EXAM-CARD-09DFFB573658",
+      "indicator": "心室容积"
+    },
+    {
+      "exam_code": "EXAM-CARD-09DFFB573658",
+      "indicator": "左室射血分数"
+    },
+    {
+      "exam_code": "EXAM-CARD-09DFFB573658",
+      "indicator": "心肌纤维化"
+    },
+    {
+      "exam_code": "EXAM-CARD-1A108BEFCEA9",
+      "indicator": "心脏结构异常"
+    },
+    {
+      "exam_code": "EXAM-CARD-1A108BEFCEA9",
+      "indicator": "冠状动脉钙化"
+    },
+    {
+      "exam_code": "EXAM-CARD-1A108BEFCEA9",
+      "indicator": "心腔血栓"
+    },
+    {
+      "exam_code": "EXAM-CARD-1A108BEFCEA9",
+      "indicator": "心包异常"
+    },
+    {
+      "exam_code": "CARD-SKELETON-20260709-EXAM-652809DC86CBF5A2",
+      "indicator": "斑块负荷"
+    },
+    {
+      "exam_code": "CARD-SKELETON-20260709-EXAM-652809DC86CBF5A2",
+      "indicator": "最小管腔面积"
+    },
+    {
+      "exam_code": "CARD-SKELETON-20260709-EXAM-652809DC86CBF5A2",
+      "indicator": "支架贴壁"
+    },
+    {
+      "exam_code": "CARD-SKELETON-20260709-EXAM-652809DC86CBF5A2",
+      "indicator": "血管夹层"
+    },
+    {
+      "exam_code": "EXAM-CARD-CADREM-SILENT-ISCHEMIA-9E41219AEC",
+      "indicator": "斑块负荷"
+    },
+    {
+      "exam_code": "EXAM-CARD-CADREM-SILENT-ISCHEMIA-9E41219AEC",
+      "indicator": "最小管腔面积"
+    },
+    {
+      "exam_code": "EXAM-CARD-CADREM-SILENT-ISCHEMIA-9E41219AEC",
+      "indicator": "支架贴壁"
+    },
+    {
+      "exam_code": "EXAM-CARD-CADREM-SILENT-ISCHEMIA-9E41219AEC",
+      "indicator": "血管夹层"
+    },
+    {
+      "exam_code": "CARD-SKELETON-FULL-20260709-EXAM-40BD433C71F71D08",
+      "indicator": "纤维帽厚度"
+    },
+    {
+      "exam_code": "CARD-SKELETON-FULL-20260709-EXAM-40BD433C71F71D08",
+      "indicator": "斑块破裂"
+    },
+    {
+      "exam_code": "CARD-SKELETON-FULL-20260709-EXAM-40BD433C71F71D08",
+      "indicator": "支架贴壁"
+    },
+    {
+      "exam_code": "CARD-SKELETON-FULL-20260709-EXAM-40BD433C71F71D08",
+      "indicator": "血栓影像"
+    },
+    {
+      "exam_code": "EXAM-CARD-CADREM-UA-6595E76160",
+      "indicator": "纤维帽厚度"
+    },
+    {
+      "exam_code": "EXAM-CARD-CADREM-UA-6595E76160",
+      "indicator": "斑块破裂"
+    },
+    {
+      "exam_code": "EXAM-CARD-CADREM-UA-6595E76160",
+      "indicator": "支架贴壁"
+    },
+    {
+      "exam_code": "EXAM-CARD-CADREM-UA-6595E76160",
+      "indicator": "血栓影像"
+    },
+    {
+      "exam_code": "EXAM-CARD-241B4B0218DF",
+      "indicator": "运动诱发ST段压低"
+    },
+    {
+      "exam_code": "EXAM-CARD-241B4B0218DF",
+      "indicator": "运动诱发心绞痛"
+    },
+    {
+      "exam_code": "EXAM-CARD-241B4B0218DF",
+      "indicator": "运动耐量"
+    },
+    {
+      "exam_code": "EXAM-CARD-241B4B0218DF",
+      "indicator": "血压反应"
+    },
+    {
+      "exam_code": "EXAM-CARD-241B4B0218DF",
+      "indicator": "运动诱发心律失常"
+    },
+    {
+      "exam_code": "EXAM-CARD-896888B4FC85",
+      "indicator": "运动诱发ST段压低"
+    },
+    {
+      "exam_code": "EXAM-CARD-896888B4FC85",
+      "indicator": "运动诱发心绞痛"
+    },
+    {
+      "exam_code": "EXAM-CARD-896888B4FC85",
+      "indicator": "运动耐量"
+    },
+    {
+      "exam_code": "EXAM-CARD-896888B4FC85",
+      "indicator": "血压反应"
+    },
+    {
+      "exam_code": "EXAM-CARD-896888B4FC85",
+      "indicator": "运动诱发心律失常"
+    },
+    {
+      "exam_code": "EXAM-CARD-1F526A303B77",
+      "indicator": "收缩压"
+    },
+    {
+      "exam_code": "EXAM-CARD-1F526A303B77",
+      "indicator": "舒张压"
+    },
+    {
+      "exam_code": "EXAM-CARD-1F526A303B77",
+      "indicator": "脉压"
+    },
+    {
+      "exam_code": "EXAM-CARD-009841714F76",
+      "indicator": "家庭平均收缩压"
+    },
+    {
+      "exam_code": "EXAM-CARD-009841714F76",
+      "indicator": "家庭平均舒张压"
+    },
+    {
+      "exam_code": "EXAM-CARD-009841714F76",
+      "indicator": "晨峰血压"
+    },
+    {
+      "exam_code": "EXAM-CARD-F172A71AF16D",
+      "indicator": "24小时平均血压"
+    },
+    {
+      "exam_code": "EXAM-CARD-F172A71AF16D",
+      "indicator": "白昼平均血压"
+    },
+    {
+      "exam_code": "EXAM-CARD-F172A71AF16D",
+      "indicator": "夜间平均血压"
+    },
+    {
+      "exam_code": "EXAM-CARD-F172A71AF16D",
+      "indicator": "夜间血压下降率"
+    },
+    {
+      "exam_code": "EXAM-CARD-AD3DCB35DE45",
+      "indicator": "高血压视网膜病变"
+    },
+    {
+      "exam_code": "EXAM-CARD-AD3DCB35DE45",
+      "indicator": "视乳头水肿"
+    },
+    {
+      "exam_code": "EXAM-CARD-AD3DCB35DE45",
+      "indicator": "眼底出血"
+    },
+    {
+      "exam_code": "EXAM-CARD-AA7D75430BA0",
+      "indicator": "肾动脉狭窄"
+    },
+    {
+      "exam_code": "EXAM-CARD-AA7D75430BA0",
+      "indicator": "肾动脉血流速度"
+    },
+    {
+      "exam_code": "EXAM-CARD-AA7D75430BA0",
+      "indicator": "阻力指数"
+    },
+    {
+      "exam_code": "EXAM-CARD-7611BF5653DB",
+      "indicator": "肾上腺占位"
+    },
+    {
+      "exam_code": "EXAM-CARD-7611BF5653DB",
+      "indicator": "肾上腺增生"
+    },
+    {
+      "exam_code": "EXAM-CARD-D9EE1FF4CE81",
+      "indicator": "醛固酮皮质醇比值"
+    },
+    {
+      "exam_code": "EXAM-CARD-D9EE1FF4CE81",
+      "indicator": "侧别化指数"
+    },
+    {
+      "exam_code": "EXAM-CARD-FDECC92EDFB7",
+      "indicator": "呼吸暂停低通气指数"
+    },
+    {
+      "exam_code": "EXAM-CARD-FDECC92EDFB7",
+      "indicator": "夜间低氧饱和度"
+    },
+    {
+      "exam_code": "EXAM-CARD-FDECC92EDFB7",
+      "indicator": "最低血氧饱和度"
+    },
+    {
+      "exam_code": "EXAM-CARD-7B3D7DB3D83E",
+      "indicator": "心率反应"
+    },
+    {
+      "exam_code": "EXAM-CARD-7B3D7DB3D83E",
+      "indicator": "窦房结功能反应"
+    },
+    {
+      "exam_code": "EXAM-CARD-STEMI-71B00278E585",
+      "indicator": "心肌代谢"
+    },
+    {
+      "exam_code": "EXAM-CARD-STEMI-71B00278E585",
+      "indicator": "心肌存活性"
+    },
+    {
+      "exam_code": "EXAM-CARD-STEMI-43AF84ECFEAC",
+      "indicator": "心肌灌注缺损"
+    },
+    {
+      "exam_code": "EXAM-CARD-STEMI-43AF84ECFEAC",
+      "indicator": "室壁运动"
+    },
+    {
+      "exam_code": "EXAM-CARD-STEMI-43AF84ECFEAC",
+      "indicator": "左室射血分数"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-8AF3973EB6",
+      "indicator": "心腔压力"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-8AF3973EB6",
+      "indicator": "肺动脉压力"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-8AF3973EB6",
+      "indicator": "心排血量"
+    },
+    {
+      "exam_code": "EXAM-CARD-TEXT-8AF3973EB6",
+      "indicator": "血氧饱和度阶差"
+    },
+    {
+      "exam_code": "EXAM-CARD-B27427130801",
+      "indicator": "心腔压力"
+    },
+    {
+      "exam_code": "EXAM-CARD-B27427130801",
+      "indicator": "肺动脉压力"
+    },
+    {
+      "exam_code": "EXAM-CARD-B27427130801",
+      "indicator": "心排血量"
+    },
+    {
+      "exam_code": "EXAM-CARD-B27427130801",
+      "indicator": "血氧饱和度阶差"
+    },
+    {
+      "exam_code": "EXAM-EMB",
+      "indicator": "心肌炎症浸润"
+    },
+    {
+      "exam_code": "EXAM-EMB",
+      "indicator": "淀粉样沉积"
+    },
+    {
+      "exam_code": "EXAM-EMB",
+      "indicator": "心肌纤维化"
+    },
+    {
+      "exam_code": "EXAM-EMB",
+      "indicator": "病原体证据"
+    },
+    {
+      "exam_code": "EXAM-GENETIC",
+      "indicator": "致病变异"
+    },
+    {
+      "exam_code": "EXAM-GENETIC",
+      "indicator": "可能致病变异"
+    },
+    {
+      "exam_code": "EXAM-GENETIC",
+      "indicator": "家族遗传证据"
+    }
+  ],
+  "lab_reclassified": [
+    {
+      "code": "EXAM-CARD-01C3182D129E",
+      "name": "利钠肽",
+      "indicators": [
+        "BNP",
+        "NT-proBNP"
+      ]
+    },
+    {
+      "code": "LAB-CARD-CBC-HB-CDSS",
+      "name": "血常规与血红蛋白",
+      "indicators": [
+        "白细胞计数",
+        "血红蛋白",
+        "血小板计数"
+      ]
+    },
+    {
+      "code": "LAB-CARD-RENAL-ELECTROLYTE-CDSS",
+      "name": "肾功能与电解质",
+      "indicators": [
+        "血肌酐",
+        "估算肾小球滤过率",
+        "血钾",
+        "血钠"
+      ]
+    },
+    {
+      "code": "EXAM-HT-CKD-EGFR-UACR",
+      "name": "CKD高血压肾功能和尿蛋白评估",
+      "indicators": [
+        "估算肾小球滤过率",
+        "尿白蛋白肌酐比值",
+        "血肌酐"
+      ]
+    }
+  ],
+  "procedure_standardized": [
+    {
+      "code": "PROC-CARD-CADREM-UA-F15816B958",
+      "name": "经皮冠状动脉介入治疗",
+      "aliases": [
+        "PCI",
+        "经皮冠状动脉介入术",
+        "PTCA"
+      ]
+    },
+    {
+      "code": "PROC-CARD-2FA3B15D2F3F",
+      "name": "经导管主动脉瓣植入术",
+      "aliases": [
+        "TAVI",
+        "TAVR",
+        "经导管主动脉瓣置换术"
+      ]
+    },
+    {
+      "code": "PROC-CARD-B8BE09194D42",
+      "name": "经导管主动脉瓣置换术",
+      "aliases": [
+        "TAVR",
+        "TAVI",
+        "经导管主动脉瓣植入术"
+      ]
+    },
+    {
+      "code": "PROC-CARD-3A51966AEA2C",
+      "name": "经导管缘对缘修复术",
+      "aliases": [
+        "TEER",
+        "二尖瓣经导管缘对缘修复"
+      ]
+    },
+    {
+      "code": "PROC-CARD-B4FC5ED6A1F7",
+      "name": "经皮球囊肺动脉瓣成形术",
+      "aliases": [
+        "PBPV"
+      ]
+    },
+    {
+      "code": "PROC-CARD-74A1F415EBD2",
+      "name": "经皮球囊二尖瓣成形术",
+      "aliases": [
+        "PBMV"
+      ]
+    }
+  ],
+  "medication_alias_fixed": [
+    {
+      "code": "CARD-SKELETON-20260709-MEDICATION-CE7B6E8D0756D10D",
+      "name": "钠-葡萄糖共转运蛋白2抑制剂",
+      "aliases": [
+        "SGLT2抑制剂",
+        "SGLT2i",
+        "SGLT-2抑制剂"
+      ]
+    },
+    {
+      "code": "CARD-SKELETON-FULL-20260709-MEDICATION-67B8149DCE7481E3",
+      "name": "选择性5-羟色胺再摄取抑制剂",
+      "aliases": [
+        "SSRI",
+        "SSRIs"
+      ]
+    }
+  ],
+  "risk_components_linked": [
+    {
+      "risk": "GRACE评分",
+      "component": "年龄"
+    },
+    {
+      "risk": "GRACE评分",
+      "component": "充血性心力衰竭史"
+    },
+    {
+      "risk": "GRACE评分",
+      "component": "心肌梗死史"
+    },
+    {
+      "risk": "GRACE评分",
+      "component": "静息心率"
+    },
+    {
+      "risk": "GRACE评分",
+      "component": "收缩压"
+    },
+    {
+      "risk": "GRACE评分",
+      "component": "血肌酐"
+    },
+    {
+      "risk": "GRACE评分",
+      "component": "ST段偏移"
+    },
+    {
+      "risk": "GRACE评分",
+      "component": "心肌损伤标志物升高"
+    },
+    {
+      "risk": "GRACE评分",
+      "component": "是否行血运重建"
+    },
+    {
+      "risk": "TIMI评分",
+      "component": "年龄"
+    },
+    {
+      "risk": "TIMI评分",
+      "component": "冠心病危险因素"
+    },
+    {
+      "risk": "TIMI评分",
+      "component": "已知冠状动脉狭窄"
+    },
+    {
+      "risk": "TIMI评分",
+      "component": "近期阿司匹林使用"
+    },
+    {
+      "risk": "TIMI评分",
+      "component": "严重心绞痛发作"
+    },
+    {
+      "risk": "TIMI评分",
+      "component": "ST段偏移"
+    },
+    {
+      "risk": "TIMI评分",
+      "component": "心肌损伤标志物升高"
+    },
+    {
+      "risk": "CHA2DS2-VASc评分",
+      "component": "充血性心力衰竭"
+    },
+    {
+      "risk": "CHA2DS2-VASc评分",
+      "component": "高血压"
+    },
+    {
+      "risk": "CHA2DS2-VASc评分",
+      "component": "年龄≥75岁"
+    },
+    {
+      "risk": "CHA2DS2-VASc评分",
+      "component": "糖尿病"
+    },
+    {
+      "risk": "CHA2DS2-VASc评分",
+      "component": "卒中或短暂性脑缺血发作"
+    },
+    {
+      "risk": "CHA2DS2-VASc评分",
+      "component": "血管疾病"
+    },
+    {
+      "risk": "CHA2DS2-VASc评分",
+      "component": "年龄65-74岁"
+    },
+    {
+      "risk": "CHA2DS2-VASc评分",
+      "component": "女性"
+    },
+    {
+      "risk": "HAS-BLED评分",
+      "component": "高血压"
+    },
+    {
+      "risk": "HAS-BLED评分",
+      "component": "肝肾功能异常"
+    },
+    {
+      "risk": "HAS-BLED评分",
+      "component": "卒中史"
+    },
+    {
+      "risk": "HAS-BLED评分",
+      "component": "出血史或出血倾向"
+    },
+    {
+      "risk": "HAS-BLED评分",
+      "component": "INR不稳定"
+    },
+    {
+      "risk": "HAS-BLED评分",
+      "component": "年龄>65岁"
+    },
+    {
+      "risk": "HAS-BLED评分",
+      "component": "药物或饮酒"
+    },
+    {
+      "risk": "SAMe-TT2R2评分",
+      "component": "女性"
+    },
+    {
+      "risk": "SAMe-TT2R2评分",
+      "component": "年龄<60岁"
+    },
+    {
+      "risk": "SAMe-TT2R2评分",
+      "component": "合并疾病"
+    },
+    {
+      "risk": "SAMe-TT2R2评分",
+      "component": "治疗药物相互作用"
+    },
+    {
+      "risk": "SAMe-TT2R2评分",
+      "component": "吸烟"
+    },
+    {
+      "risk": "SAMe-TT2R2评分",
+      "component": "非白人种族"
+    },
+    {
+      "risk": "EHRA症状分级",
+      "component": "无症状"
+    },
+    {
+      "risk": "EHRA症状分级",
+      "component": "轻度症状"
+    },
+    {
+      "risk": "EHRA症状分级",
+      "component": "重度症状"
+    },
+    {
+      "risk": "EHRA症状分级",
+      "component": "致残性症状"
+    }
+  ],
+  "contraindication_links": [
+    {
+      "contraindication": "活动性出血",
+      "target_type": "TreatmentPlan",
+      "target": "抗凝治疗",
+      "target_code": "PLAN-CARD-A1C4E6332D38"
+    },
+    {
+      "contraindication": "活动性出血",
+      "target_type": "Procedure",
+      "target": "溶栓治疗",
+      "target_code": "PROC-CARD-DA0F467D4A30"
+    },
+    {
+      "contraindication": "活动性出血",
+      "target_type": "TreatmentPlan",
+      "target": "溶栓治疗",
+      "target_code": "PLAN-CARD-FULLBOOK-B87D3F557B"
+    },
+    {
+      "contraindication": "活动性出血",
+      "target_type": "Medication",
+      "target": "抗凝药物",
+      "target_code": "MED-CARD-TEXT-EE219280A7"
+    },
+    {
+      "contraindication": "活动性出血",
+      "target_type": "Medication",
+      "target": "直接口服抗凝药",
+      "target_code": "MED-CARD-STEMI-38F899E9910B"
+    },
+    {
+      "contraindication": "中重度二尖瓣狭窄",
+      "target_type": "Medication",
+      "target": "直接口服抗凝药",
+      "target_code": "MED-CARD-STEMI-38F899E9910B"
+    },
+    {
+      "contraindication": "中重度二尖瓣狭窄",
+      "target_type": "Medication",
+      "target": "利伐沙班",
+      "target_code": "MED-CARD-38524B4E5194"
+    },
+    {
+      "contraindication": "中重度二尖瓣狭窄",
+      "target_type": "Medication",
+      "target": "阿哌沙班",
+      "target_code": "MED-CARD-FC4A5B5D6C12"
+    },
+    {
+      "contraindication": "中重度二尖瓣狭窄",
+      "target_type": "Medication",
+      "target": "达比加群",
+      "target_code": "MED-CARD-C3B888F489B9"
+    },
+    {
+      "contraindication": "中重度二尖瓣狭窄",
+      "target_type": "Medication",
+      "target": "达比加群酯",
+      "target_code": "MED-CARD-68E5765B76ED"
+    },
+    {
+      "contraindication": "中重度二尖瓣狭窄",
+      "target_type": "Medication",
+      "target": "依度沙班",
+      "target_code": "MED-CARD-51D548F951AD"
+    },
+    {
+      "contraindication": "机械瓣膜",
+      "target_type": "Medication",
+      "target": "直接口服抗凝药",
+      "target_code": "MED-CARD-STEMI-38F899E9910B"
+    },
+    {
+      "contraindication": "机械瓣膜",
+      "target_type": "Medication",
+      "target": "利伐沙班",
+      "target_code": "MED-CARD-38524B4E5194"
+    },
+    {
+      "contraindication": "机械瓣膜",
+      "target_type": "Medication",
+      "target": "阿哌沙班",
+      "target_code": "MED-CARD-FC4A5B5D6C12"
+    },
+    {
+      "contraindication": "机械瓣膜",
+      "target_type": "Medication",
+      "target": "达比加群",
+      "target_code": "MED-CARD-C3B888F489B9"
+    },
+    {
+      "contraindication": "机械瓣膜",
+      "target_type": "Medication",
+      "target": "达比加群酯",
+      "target_code": "MED-CARD-68E5765B76ED"
+    },
+    {
+      "contraindication": "机械瓣膜",
+      "target_type": "Medication",
+      "target": "依度沙班",
+      "target_code": "MED-CARD-51D548F951AD"
+    },
+    {
+      "contraindication": "病态窦房结综合征",
+      "target_type": "Medication",
+      "target": "β受体拮抗剂",
+      "target_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7"
+    },
+    {
+      "contraindication": "病态窦房结综合征",
+      "target_type": "Medication",
+      "target": "地尔硫卓",
+      "target_code": "MED-CARD-STD-0401DB9741"
+    },
+    {
+      "contraindication": "病态窦房结综合征",
+      "target_type": "Medication",
+      "target": "维拉帕米",
+      "target_code": "MED-CARD-STD-C685CE7163"
+    },
+    {
+      "contraindication": "二度或三度房室传导阻滞",
+      "target_type": "Medication",
+      "target": "β受体拮抗剂",
+      "target_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7"
+    },
+    {
+      "contraindication": "二度或三度房室传导阻滞",
+      "target_type": "Medication",
+      "target": "地尔硫卓",
+      "target_code": "MED-CARD-STD-0401DB9741"
+    },
+    {
+      "contraindication": "二度或三度房室传导阻滞",
+      "target_type": "Medication",
+      "target": "维拉帕米",
+      "target_code": "MED-CARD-STD-C685CE7163"
+    },
+    {
+      "contraindication": "严重低血压",
+      "target_type": "Medication",
+      "target": "硝酸酯类药物",
+      "target_code": "MED-CARD-55157DA54154"
+    },
+    {
+      "contraindication": "严重低血压",
+      "target_type": "Medication",
+      "target": "β受体拮抗剂",
+      "target_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7"
+    },
+    {
+      "contraindication": "严重低血压",
+      "target_type": "Medication",
+      "target": "地尔硫卓",
+      "target_code": "MED-CARD-STD-0401DB9741"
+    },
+    {
+      "contraindication": "严重低血压",
+      "target_type": "Medication",
+      "target": "维拉帕米",
+      "target_code": "MED-CARD-STD-C685CE7163"
+    },
+    {
+      "contraindication": "支气管哮喘",
+      "target_type": "Medication",
+      "target": "β受体拮抗剂",
+      "target_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7"
+    },
+    {
+      "contraindication": "预激合并房颤",
+      "target_type": "Medication",
+      "target": "地尔硫卓",
+      "target_code": "MED-CARD-STD-0401DB9741"
+    },
+    {
+      "contraindication": "预激合并房颤",
+      "target_type": "Medication",
+      "target": "维拉帕米",
+      "target_code": "MED-CARD-STD-C685CE7163"
+    },
+    {
+      "contraindication": "预激合并房颤",
+      "target_type": "Medication",
+      "target": "洋地黄类药物",
+      "target_code": "MED-CARD-TEXT-93710567D3"
+    },
+    {
+      "contraindication": "预激合并房颤",
+      "target_type": "Medication",
+      "target": "β受体拮抗剂",
+      "target_code": "CARD-SKELETON-20260709-MEDICATION-DDAA1C07D618EDC7"
+    },
+    {
+      "contraindication": "妊娠",
+      "target_type": "Medication",
+      "target": "华法林",
+      "target_code": "MED-CARD-81B5F958C0F3"
+    }
+  ],
+  "treatment_plans_marked": [
+    {
+      "disease": "急性冠脉综合征",
+      "code": "PLAN-CARD-16BF65CB29FE",
+      "name": "急性冠脉综合征治疗方案",
+      "status": "broad_plan_knowledge_browse_only"
+    },
+    {
+      "disease": "急性心肌梗死",
+      "code": "PLAN-CARD-83DC54FD93C2",
+      "name": "急性心肌梗死治疗方案",
+      "status": "broad_plan_knowledge_browse_only"
+    },
+    {
+      "disease": "慢性冠脉综合征",
+      "code": "PLAN-CARD-89D4C114E515",
+      "name": "慢性冠脉综合征治疗方案",
+      "status": "broad_plan_knowledge_browse_only"
+    },
+    {
+      "disease": "非ST段抬高型心肌梗死",
+      "code": "PLAN-CARD-2CEC4722F549",
+      "name": "非ST段抬高型心肌梗死治疗方案",
+      "status": "broad_plan_knowledge_browse_only"
+    },
+    {
+      "disease": "稳定型心绞痛",
+      "code": "PLAN-CARD-DDD036288AF3",
+      "name": "稳定型心绞痛治疗方案",
+      "status": "broad_plan_knowledge_browse_only"
+    },
+    {
+      "disease": "ST段抬高型心肌梗死",
+      "code": "PLAN-CARD-46086B93DD2D",
+      "name": "ST段抬高型心肌梗死治疗方案",
+      "status": "broad_plan_knowledge_browse_only"
+    },
+    {
+      "disease": "心房心肌病",
+      "code": "PLAN-CARD-CM-ATRIAL-AF-STROKE-RISK-MANAGEMENT",
+      "name": "房性心律失常与卒中风险管理",
+      "status": "textbook_plan_without_action_detail"
+    },
+    {
+      "disease": "陈旧性心肌梗死",
+      "code": "PLAN-CARD-9ACFEF0709E2",
+      "name": "陈旧性心肌梗死治疗方案",
+      "status": "broad_plan_knowledge_browse_only"
+    },
+    {
+      "disease": "不稳定型心绞痛",
+      "code": "PLAN-CARD-8B4C35522D9A",
+      "name": "不稳定型心绞痛治疗方案",
+      "status": "broad_plan_knowledge_browse_only"
+    },
+    {
+      "disease": "缩窄性心包炎",
+      "code": "CARD-SKELETON-FULL-20260709-TREATMENTPLAN-542F49CC6D03259B",
+      "name": "其他病因包括恶性肿瘤、结缔组织病、尿毒症、药物等",
+      "status": "textbook_plan_without_action_detail"
+    },
+    {
+      "disease": "缩窄性心包炎",
+      "code": "CARD-SKELETON-FULL-20260709-TREATMENTPLAN-D7A188C9B6C12EF5",
+      "name": "【临床表现】1.症状病人常有心包炎、心包积液、恶性肿瘤、胸部放射性治疗和胸心外科手术等病史",
+      "status": "textbook_plan_without_action_detail"
+    },
+    {
+      "disease": "心包积液及心脏压塞",
+      "code": "CARD-SKELETON-FULL-20260709-TREATMENTPLAN-DAA970FF15656D0D",
+      "name": "穿刺伤、心肌梗死后心肌破裂、心胸外科手术及介入操作造成的冠状动脉穿孔等可造成血性心包积液",
+      "status": "textbook_plan_without_action_detail"
+    }
+  ],
+  "generic_risks_marked": 78,
+  "generic_exams_marked": 45,
+  "standardization_duplicate_merged": [
+    {
+      "type": "ExamIndicator",
+      "name": "ST段抬高",
+      "code": [
+        "IND-CARD-340F2703D39C",
+        "IND-EXAM-CARD-A80B855C8C77-ST段抬高",
+        "IND-EXAM-ECG-ST段抬高"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "ST段压低",
+      "code": [
+        "IND-CARD-6B1C9ED7E8FB",
+        "IND-EXAM-CARD-A80B855C8C77-ST段压低",
+        "IND-EXAM-ECG-ST段压低"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "心律失常发作频率",
+      "code": [
+        "IND-EXAM-CARD-A096A6416690-心律失常发作频率",
+        "IND-EXAM-HOLTER-心律失常发作频率",
+        "IND-EXAM-CARD-CADREM-STABLE-ANGINA-2B3BD0A8FA-心律失常发作频率"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "房颤负荷",
+      "code": [
+        "IND-EXAM-CARD-CADREM-STABLE-ANGINA-2B3BD0A8FA-房颤负荷",
+        "IND-EXAM-CARD-A096A6416690-房颤负荷",
+        "IND-EXAM-HOLTER-房颤负荷"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "旁路定位",
+      "code": [
+        "IND-EXAM-CARD-85148D8A75A3-旁路定位",
+        "IND-EXAM-CARD-TEXT-C33E64A777-旁路定位"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "房室传导时间",
+      "code": [
+        "IND-EXAM-CARD-TEXT-C33E64A777-房室传导时间",
+        "IND-EXAM-CARD-85148D8A75A3-房室传导时间"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "QT间期",
+      "code": [
+        "IND-CARD-FBF6BA629985",
+        "IND-EXAM-CARD-A80B855C8C77-QT间期",
+        "IND-EXAM-ECG-QT间期"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "室性心律失常诱发",
+      "code": [
+        "IND-EXAM-CARD-85148D8A75A3-室性心律失常诱发",
+        "IND-EXAM-CARD-TEXT-C33E64A777-室性心律失常诱发"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "诱发性心动过速",
+      "code": [
+        "IND-EXAM-CARD-TEXT-C33E64A777-诱发性心动过速",
+        "IND-EXAM-CARD-85148D8A75A3-诱发性心动过速"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "T波倒置",
+      "code": [
+        "IND-CARD-STEMI-97C7D041D11F",
+        "IND-EXAM-CARD-A80B855C8C77-T波倒置",
+        "IND-EXAM-ECG-T波倒置"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "心率变异性",
+      "code": [
+        "IND-EXAM-HOLTER-心率变异性",
+        "IND-EXAM-CARD-A096A6416690-心率变异性",
+        "IND-EXAM-CARD-CADREM-STABLE-ANGINA-2B3BD0A8FA-心率变异性"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "左室射血分数",
+      "code": [
+        "IND-EXAM-TTE-左室射血分数",
+        "IND-EXAM-CARD-TEXT-8633D5B324-左室射血分数",
+        "IND-EXAM-CARD-09DFFB573658-左室射血分数",
+        "IND-EXAM-CARD-STEMI-43AF84ECFEAC-左室射血分数"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "最长RR间期",
+      "code": [
+        "IND-EXAM-CARD-A096A6416690-最长RR间期",
+        "IND-EXAM-HOLTER-最长RR间期",
+        "IND-EXAM-CARD-CADREM-STABLE-ANGINA-2B3BD0A8FA-最长RR间期"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "症状相关心律事件",
+      "code": [
+        "IND-EXAM-CARD-41BF81CAB3CE-症状相关心律事件",
+        "IND-EXAM-CARD-F6169EE9D82C-症状相关心律事件"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "心律",
+      "code": [
+        "IND-EXAM-CARD-A80B855C8C77-心律",
+        "IND-EXAM-ECG-心律"
+      ]
+    },
+    {
+      "type": "Procedure",
+      "name": "经皮冠状动脉介入治疗",
+      "code": [
+        "PROC-CARD-E9ADC25A25E3",
+        "PROC-CARD-CADREM-UA-F15816B958"
+      ]
+    },
+    {
+      "type": "Procedure",
+      "name": "经导管主动脉瓣置换术",
+      "code": [
+        "PROC-CARD-TEXT-53ECAA23AE",
+        "PROC-CARD-B8BE09194D42"
+      ]
+    },
+    {
+      "type": "RiskFactor",
+      "name": "糖尿病",
+      "code": [
+        "RF-CARD-26FAEB71ABE2",
+        "RISKCOMP-RISK-CARD-BD6FBD0D2712-糖尿病"
+      ]
+    },
+    {
+      "type": "RiskFactor",
+      "name": "吸烟",
+      "code": [
+        "RF-CARD-C5097AF85131",
+        "RISKCOMP-RISK-CARD-7A36CE5B521B-吸烟"
+      ]
+    },
+    {
+      "type": "RiskFactor",
+      "name": "高血压",
+      "code": [
+        "RF-CARD-DE0A9F1FE2C8",
+        "RISKCOMP-RISK-CARD-BD6FBD0D2712-高血压",
+        "RISKCOMP-RISK-CARD-E21D88A4688D-高血压"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "室性早搏负荷",
+      "code": [
+        "IND-EXAM-CARD-CADREM-STABLE-ANGINA-2B3BD0A8FA-室性早搏负荷",
+        "IND-EXAM-HOLTER-室性早搏负荷",
+        "IND-EXAM-CARD-A096A6416690-室性早搏负荷"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "纤维帽厚度",
+      "code": [
+        "IND-CARD-SKELETON-FULL-20260709-EXAM-40BD433C71F71D08-纤维帽厚度",
+        "IND-EXAM-CARD-CADREM-UA-6595E76160-纤维帽厚度"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "PR间期",
+      "code": [
+        "DXC-CARD-F7025E7AB077",
+        "IND-EXAM-CARD-A80B855C8C77-PR间期",
+        "IND-EXAM-ECG-PR间期"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "钙化",
+      "code": [
+        "IND-EXAM-CARD-F6AAC5622DEA-钙化",
+        "IND-CARD-SKELETON-20260709-EXAM-4974BA875B54084B-钙化",
+        "IND-EXAM-CARD-TEXT-9A031190AE-钙化"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "占位或积液",
+      "code": [
+        "IND-EXAM-CARD-F6AAC5622DEA-占位或积液",
+        "IND-EXAM-CARD-TEXT-9A031190AE-占位或积液",
+        "IND-CARD-SKELETON-20260709-EXAM-4974BA875B54084B-占位或积液"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "支架贴壁",
+      "code": [
+        "IND-CARD-SKELETON-FULL-20260709-EXAM-40BD433C71F71D08-支架贴壁",
+        "IND-EXAM-CARD-CADREM-UA-6595E76160-支架贴壁",
+        "IND-EXAM-CARD-CADREM-SILENT-ISCHEMIA-9E41219AEC-支架贴壁",
+        "IND-CARD-SKELETON-20260709-EXAM-652809DC86CBF5A2-支架贴壁"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "心排血量",
+      "code": [
+        "IND-EXAM-CARD-B27427130801-心排血量",
+        "IND-EXAM-CARD-TEXT-8AF3973EB6-心排血量"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "QRS波时限",
+      "code": [
+        "IND-EXAM-CARD-A80B855C8C77-QRS波时限",
+        "IND-EXAM-ECG-QRS波时限"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "收缩压",
+      "code": [
+        "IND-CARD-06FCC1FC835C",
+        "IND-EXAM-CARD-1F526A303B77-收缩压"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "舒张压",
+      "code": [
+        "IND-CARD-8A26783DF8CC",
+        "IND-EXAM-CARD-1F526A303B77-舒张压"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "24小时平均血压",
+      "code": [
+        "IND-CARD-8EDA33C8602F",
+        "IND-EXAM-CARD-F172A71AF16D-24小时平均血压"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "估算肾小球滤过率",
+      "code": [
+        "IND-CARD-F253DB167E81",
+        "LABIND-EXAM-HT-CKD-EGFR-UACR-估算肾小球滤过率",
+        "LABIND-LAB-CARD-RENAL-ELECTROLYTE-CDSS-估算肾小球滤过率"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "病理性Q波",
+      "code": [
+        "IND-CARD-STEMI-632284B2B3C7",
+        "IND-EXAM-CARD-A80B855C8C77-病理性Q波",
+        "IND-EXAM-ECG-病理性Q波"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "冠状动脉狭窄程度",
+      "code": [
+        "IND-EXAM-CAG-冠状动脉狭窄程度",
+        "IND-EXAM-CARD-F60922D428D5-冠状动脉狭窄程度",
+        "IND-EXAM-CARD-TEXT-2BB358B9BF-冠状动脉狭窄程度"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "冠状动脉起源异常",
+      "code": [
+        "IND-EXAM-CARD-TEXT-2BB358B9BF-冠状动脉起源异常",
+        "IND-EXAM-CARD-F60922D428D5-冠状动脉起源异常"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "冠状动脉斑块性质",
+      "code": [
+        "IND-EXAM-CARD-F60922D428D5-冠状动脉斑块性质",
+        "IND-EXAM-CARD-TEXT-2BB358B9BF-冠状动脉斑块性质"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "冠状动脉钙化",
+      "code": [
+        "IND-EXAM-CARD-F60922D428D5-冠状动脉钙化",
+        "IND-EXAM-CARD-TEXT-2BB358B9BF-冠状动脉钙化",
+        "IND-EXAM-CARD-1A108BEFCEA9-冠状动脉钙化"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "结构异常",
+      "code": [
+        "IND-CARD-SKELETON-20260709-EXAM-4974BA875B54084B-结构异常",
+        "IND-EXAM-CARD-TEXT-9A031190AE-结构异常",
+        "IND-EXAM-CARD-F6AAC5622DEA-结构异常"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "血栓",
+      "code": [
+        "IND-CARD-SKELETON-20260709-EXAM-4974BA875B54084B-血栓",
+        "IND-EXAM-CARD-F6AAC5622DEA-血栓",
+        "IND-EXAM-CARD-TEXT-9A031190AE-血栓"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "肺淤血",
+      "code": [
+        "IND-CARD-SKELETON-20260709-EXAM-B66979D14041DD2B-肺淤血",
+        "IND-EXAM-CARD-TEXT-BE9C2270C9-肺淤血",
+        "IND-EXAM-CARD-CHEST-IMAGING-CDSS-肺淤血"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "胸腔积液",
+      "code": [
+        "IND-CARD-SKELETON-20260709-EXAM-B66979D14041DD2B-胸腔积液",
+        "IND-EXAM-CARD-TEXT-BE9C2270C9-胸腔积液",
+        "IND-EXAM-CARD-CHEST-IMAGING-CDSS-胸腔积液"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "肺水肿",
+      "code": [
+        "IND-EXAM-CARD-TEXT-BE9C2270C9-肺水肿",
+        "IND-CARD-SKELETON-20260709-EXAM-B66979D14041DD2B-肺水肿",
+        "IND-EXAM-CARD-CHEST-IMAGING-CDSS-肺水肿"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "心影增大",
+      "code": [
+        "IND-CARD-SKELETON-20260709-EXAM-B66979D14041DD2B-心影增大",
+        "IND-EXAM-CARD-CHEST-IMAGING-CDSS-心影增大",
+        "IND-EXAM-CARD-TEXT-BE9C2270C9-心影增大"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "斑块破裂",
+      "code": [
+        "IND-EXAM-CARD-CADREM-UA-6595E76160-斑块破裂",
+        "IND-CARD-SKELETON-FULL-20260709-EXAM-40BD433C71F71D08-斑块破裂"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "斑块负荷",
+      "code": [
+        "IND-EXAM-CARD-CADREM-SILENT-ISCHEMIA-9E41219AEC-斑块负荷",
+        "IND-CARD-SKELETON-20260709-EXAM-652809DC86CBF5A2-斑块负荷"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "心肌水肿",
+      "code": [
+        "IND-EXAM-CARD-09DFFB573658-心肌水肿",
+        "IND-EXAM-CARD-TEXT-8633D5B324-心肌水肿"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "心肌纤维化",
+      "code": [
+        "IND-EXAM-CARD-09DFFB573658-心肌纤维化",
+        "IND-EXAM-CARD-TEXT-8633D5B324-心肌纤维化",
+        "IND-EXAM-EMB-心肌纤维化"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "血栓影像",
+      "code": [
+        "IND-EXAM-CARD-CADREM-UA-6595E76160-血栓影像",
+        "IND-CARD-SKELETON-FULL-20260709-EXAM-40BD433C71F71D08-血栓影像"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "延迟钆增强",
+      "code": [
+        "IND-EXAM-CARD-09DFFB573658-延迟钆增强",
+        "IND-EXAM-CARD-TEXT-8633D5B324-延迟钆增强"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "最小管腔面积",
+      "code": [
+        "IND-EXAM-CARD-CADREM-SILENT-ISCHEMIA-9E41219AEC-最小管腔面积",
+        "IND-CARD-SKELETON-20260709-EXAM-652809DC86CBF5A2-最小管腔面积"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "心室容积",
+      "code": [
+        "IND-EXAM-CARD-09DFFB573658-心室容积",
+        "IND-EXAM-CARD-TEXT-8633D5B324-心室容积"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "运动耐量",
+      "code": [
+        "IND-EXAM-CARD-241B4B0218DF-运动耐量",
+        "IND-EXAM-CARD-896888B4FC85-运动耐量"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "血压反应",
+      "code": [
+        "IND-EXAM-CARD-241B4B0218DF-血压反应",
+        "IND-EXAM-CARD-896888B4FC85-血压反应"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "运动诱发ST段压低",
+      "code": [
+        "IND-EXAM-CARD-241B4B0218DF-运动诱发ST段压低",
+        "IND-EXAM-CARD-896888B4FC85-运动诱发ST段压低"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "运动诱发心绞痛",
+      "code": [
+        "IND-EXAM-CARD-241B4B0218DF-运动诱发心绞痛",
+        "IND-EXAM-CARD-896888B4FC85-运动诱发心绞痛"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "血管夹层",
+      "code": [
+        "IND-EXAM-CARD-CADREM-SILENT-ISCHEMIA-9E41219AEC-血管夹层",
+        "IND-CARD-SKELETON-20260709-EXAM-652809DC86CBF5A2-血管夹层"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "运动诱发心律失常",
+      "code": [
+        "IND-EXAM-CARD-241B4B0218DF-运动诱发心律失常",
+        "IND-EXAM-CARD-896888B4FC85-运动诱发心律失常"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "血氧饱和度阶差",
+      "code": [
+        "IND-EXAM-CARD-TEXT-8AF3973EB6-血氧饱和度阶差",
+        "IND-EXAM-CARD-B27427130801-血氧饱和度阶差"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "心腔压力",
+      "code": [
+        "IND-EXAM-CARD-B27427130801-心腔压力",
+        "IND-EXAM-CARD-TEXT-8AF3973EB6-心腔压力"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "肺动脉压力",
+      "code": [
+        "IND-EXAM-CARD-B27427130801-肺动脉压力",
+        "IND-EXAM-CARD-TEXT-8AF3973EB6-肺动脉压力"
+      ]
+    },
+    {
+      "type": "ExamIndicator",
+      "name": "血肌酐",
+      "code": [
+        "LABIND-EXAM-HT-CKD-EGFR-UACR-血肌酐",
+        "LABIND-LAB-CARD-RENAL-ELECTROLYTE-CDSS-血肌酐"
+      ]
+    },
+    {
+      "type": "RiskFactor",
+      "name": "年龄",
+      "code": [
+        "RF-CARD-CADREM-UA-D06E58C8BA",
+        "RISKCOMP-RISK-CARD-9566F1411AE9-年龄",
+        "RISKCOMP-RISK-CARD-638FD4C2210F-年龄"
+      ]
+    },
+    {
+      "type": "RiskFactor",
+      "name": "ST段偏移",
+      "code": [
+        "RISKCOMP-RISK-CARD-9566F1411AE9-ST段偏移",
+        "RISKCOMP-RISK-CARD-638FD4C2210F-ST段偏移"
+      ]
+    },
+    {
+      "type": "RiskFactor",
+      "name": "心肌损伤标志物升高",
+      "code": [
+        "RISKCOMP-RISK-CARD-638FD4C2210F-心肌损伤标志物升高",
+        "RISKCOMP-RISK-CARD-9566F1411AE9-心肌损伤标志物升高"
+      ]
+    },
+    {
+      "type": "RiskFactor",
+      "name": "女性",
+      "code": [
+        "RISKCOMP-RISK-CARD-BD6FBD0D2712-女性",
+        "RISKCOMP-RISK-CARD-7A36CE5B521B-女性"
+      ]
+    },
+    {
+      "type": "Procedure",
+      "name": "经皮球囊肺动脉瓣成形术",
+      "code": [
+        "PROC-CARD-5558D37982AF",
+        "PROC-CARD-B4FC5ED6A1F7"
+      ]
+    },
+    {
+      "type": "Procedure",
+      "name": "经皮球囊二尖瓣成形术",
+      "code": [
+        "PROC-PBMV",
+        "PROC-CARD-74A1F415EBD2"
+      ]
+    }
+  ]
+}
