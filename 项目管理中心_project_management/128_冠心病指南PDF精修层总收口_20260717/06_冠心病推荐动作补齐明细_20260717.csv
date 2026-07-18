@@ -1,0 +1,10 @@
+﻿relation_type,recommendation_code,recommendation_name,action_code,action_name,action_labels
+recommends_action,REC-CDSS-CAD-ACS-01-01-ECG-TROP,疑似ACS应优先进行心电图和心肌肌钙蛋白评估。,EXAM-CARD-A80B855C8C77,12导联心电图,"['KGNode', 'Exam']"
+recommends_action,REC-CDSS-CAD-ACS-01-01-ECG-TROP,疑似ACS应优先进行心电图和心肌肌钙蛋白评估。,LAB-CARD-CADCD76D40B9,心肌损伤标志物,"['KGNode', 'LabTest']"
+recommends_action,REC-7025595F385004F3,缺血性心电图改变｜心电图（检查）推荐,EXAM-CARD-A80B855C8C77,12导联心电图,"['KGNode', 'Exam']"
+recommends_action,REC-775B4D172719135D,肌钙蛋白升高及动态变化｜心肌肌钙蛋白（检验）推荐,LAB-CARD-CADCD76D40B9,心肌损伤标志物,"['KGNode', 'LabTest']"
+recommends_action,REC-CB7A690AA83E529E,冠状动脉血栓或责任病变｜冠状动脉CT血管成像（检查）推荐,EXAM-CARD-TEXT-2BB358B9BF,冠状动脉CTA,"['KGNode', 'Exam']"
+recommends_action,REC-CDSS-CAD-CCS-01-01-TEST,慢性冠脉综合征应根据症状和风险选择心电图、负荷试验、冠脉CTA或冠脉造影。,EXAM-CARD-A80B855C8C77,12导联心电图,"['KGNode', 'Exam']"
+recommends_action,REC-CDSS-CAD-CCS-01-01-TEST,慢性冠脉综合征应根据症状和风险选择心电图、负荷试验、冠脉CTA或冠脉造影。,EXAM-CARD-896888B4FC85,运动试验,"['KGNode', 'Exam']"
+recommends_action,REC-CDSS-CAD-CCS-01-01-TEST,慢性冠脉综合征应根据症状和风险选择心电图、负荷试验、冠脉CTA或冠脉造影。,EXAM-CARD-TEXT-2BB358B9BF,冠状动脉CTA,"['KGNode', 'Exam']"
+recommends_action,REC-94F5D2BD891A1C5D,持续ST段抬高或等效表现｜心电图（检查）推荐,EXAM-CARD-A80B855C8C77,12导联心电图,"['KGNode', 'Exam']"

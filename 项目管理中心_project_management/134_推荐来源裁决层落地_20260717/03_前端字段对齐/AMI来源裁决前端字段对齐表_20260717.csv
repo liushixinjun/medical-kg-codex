@@ -1,0 +1,7 @@
+﻿adjudication_code_裁决编码,disease_name_疾病名称,clinical_question_临床问题,clinical_scenario_适用场景,final_recommendation_综合推荐,primary_guideline_name_主依据指南,supporting_guideline_names_支持依据,conflict_status_冲突状态,cdss_use_status_CDSS状态,default_display_默认展示,action_name_推荐动作名称,frontend_area_前端区域
+SRCADJ-CARD-AMI-DX-001,急性心肌梗死,AMI诊断标准,疑似急性心肌缺血或急性胸痛患者,结合缺血症状、心电图缺血改变、心肌坏死标志物动态变化和影像学证据进行诊断,4TH universal definition of MI.pdf,内科学第10版,无冲突,正式推荐,诊断依据和主证据,AMI诊断标准判断,预览区
+SRCADJ-CARD-AMI-ECG-001,急性心肌梗死,首诊心电图检查,疑似ACS或急性胸痛患者,尽早完成心电图检查并识别ST段抬高、压低、T波改变或异常Q波,ACC/AHA/ACEP/NAEMSP/SCAI指南：急性冠脉综合征患者的管理2025.pdf,内科学第10版,无冲突,正式推荐,检查动作和主证据,心电图检查,预览区
+SRCADJ-CARD-AMI-PCI-001,急性心肌梗死,STEMI再灌注策略,发病12小时内且ST段抬高,优先经皮冠状动脉介入治疗；PCI明显延误时进入溶栓评估,STEMI CN 2019.pdf,ACS 2025指南；内科学第10版,无冲突,正式推荐,直接PCI推荐和主依据指南,经皮冠状动脉介入治疗,预览区
+SRCADJ-CARD-AMI-FIB-001,急性心肌梗死,STEMI溶栓治疗,预计直接PCI明显延误且无溶栓禁忌,可考虑溶栓治疗，并在溶栓后评估血管再通和补救PCI,2018 STEMI院前溶栓治疗中国专家共识.pdf,内科学第10版,无冲突,正式推荐,溶栓推荐和禁忌入口,溶栓治疗,预览区
+SRCADJ-CARD-AMI-FIB-CONTRA-001,急性心肌梗死,溶栓禁忌证,拟行溶栓治疗前,存在出血性脑卒中、近期脑血管事件、活动性内脏出血、未排除主动脉夹层、严重未控制高血压等情况时阻断溶栓,2018 STEMI院前溶栓治疗中国专家共识.pdf,内科学第10版,无冲突,正式推荐,阻断规则和主证据,阻断溶栓治疗,预览区
+SRCADJ-CARD-AMI-ANTIPLATELET-001,急性心肌梗死,抗血小板治疗,AMI确诊或高度疑似且无明确禁忌,按指南选择阿司匹林及P2Y12受体抑制剂等抗血小板治疗,NSTE-ACS CN 2024.pdf,ACS 2025指南；内科学第10版,待核对分型差异,冲突待裁决,不进入正式推荐区,抗血小板治疗,冲突/阻断区

@@ -1,0 +1,195 @@
+{
+  "generated_at": "2026-07-17 14:52:33",
+  "package_id": "SUPP-EVIDENCE-MERGE-20260717-001",
+  "server_verify_passed": true,
+  "blockers": [],
+  "summary": {
+    "imported_nodes": 5617,
+    "missing_entity_type": 0,
+    "missing_name": 0,
+    "evidence_missing_text": 0,
+    "imported_relations": 16695
+  },
+  "duplicate_code_groups": 0,
+  "relation_evidence_text_count": 0,
+  "kg_node_code_index": [
+    {
+      "name": "kg_node_code",
+      "state": "ONLINE",
+      "labelsOrTypes": [
+        "KGNode"
+      ],
+      "properties": [
+        "code"
+      ]
+    }
+  ],
+  "node_by_type_top30": [
+    {
+      "entity_type": "ClinicalRule",
+      "count": 3330
+    },
+    {
+      "entity_type": "Evidence",
+      "count": 2140
+    },
+    {
+      "entity_type": "Exam",
+      "count": 29
+    },
+    {
+      "entity_type": "Disease",
+      "count": 24
+    },
+    {
+      "entity_type": "RiskStratification",
+      "count": 21
+    },
+    {
+      "entity_type": "TreatmentPlan",
+      "count": 16
+    },
+    {
+      "entity_type": "Guideline",
+      "count": 11
+    },
+    {
+      "entity_type": "Complication",
+      "count": 9
+    },
+    {
+      "entity_type": "DiseaseCategory",
+      "count": 7
+    },
+    {
+      "entity_type": "Procedure",
+      "count": 6
+    },
+    {
+      "entity_type": "Etiology",
+      "count": 5
+    },
+    {
+      "entity_type": "FollowUp",
+      "count": 5
+    },
+    {
+      "entity_type": "DiagnosisCriteria",
+      "count": 4
+    },
+    {
+      "entity_type": "LabTest",
+      "count": 3
+    },
+    {
+      "entity_type": "Prognosis",
+      "count": 2
+    },
+    {
+      "entity_type": "Sign",
+      "count": 2
+    },
+    {
+      "entity_type": "DifferentialDiagnosis",
+      "count": 1
+    },
+    {
+      "entity_type": "Medication",
+      "count": 1
+    },
+    {
+      "entity_type": "Specialty",
+      "count": 1
+    }
+  ],
+  "relation_by_type_top30": [
+    {
+      "relation_type": "supported_by_evidence",
+      "count": 7655
+    },
+    {
+      "relation_type": "has_clinical_rule",
+      "count": 3330
+    },
+    {
+      "relation_type": "has_recommended_action",
+      "count": 3308
+    },
+    {
+      "relation_type": "guideline_has_evidence",
+      "count": 2140
+    },
+    {
+      "relation_type": "requires_exam",
+      "count": 64
+    },
+    {
+      "relation_type": "based_on_guideline",
+      "count": 35
+    },
+    {
+      "relation_type": "belongs_to_category",
+      "count": 25
+    },
+    {
+      "relation_type": "has_risk_stratification",
+      "count": 21
+    },
+    {
+      "relation_type": "includes_procedure",
+      "count": 20
+    },
+    {
+      "relation_type": "treated_by_procedure",
+      "count": 20
+    },
+    {
+      "relation_type": "requires_lab_test",
+      "count": 19
+    },
+    {
+      "relation_type": "has_treatment_plan",
+      "count": 16
+    },
+    {
+      "relation_type": "may_cause_complication",
+      "count": 12
+    },
+    {
+      "relation_type": "has_category",
+      "count": 7
+    },
+    {
+      "relation_type": "has_etiology",
+      "count": 5
+    },
+    {
+      "relation_type": "has_follow_up",
+      "count": 5
+    },
+    {
+      "relation_type": "has_diagnostic_criteria",
+      "count": 4
+    },
+    {
+      "relation_type": "treated_by_medication",
+      "count": 3
+    },
+    {
+      "relation_type": "has_prognosis",
+      "count": 2
+    },
+    {
+      "relation_type": "has_sign",
+      "count": 2
+    },
+    {
+      "relation_type": "includes_medication",
+      "count": 1
+    },
+    {
+      "relation_type": "differentiates_from",
+      "count": 1
+    }
+  ]
+}

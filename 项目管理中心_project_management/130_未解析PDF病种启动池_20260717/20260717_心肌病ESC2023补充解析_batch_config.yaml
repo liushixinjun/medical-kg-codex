@@ -1,0 +1,109 @@
+batch:
+  batch_id: 20260717_心肌病ESC2023补充解析
+scope:
+  top_specialty: 心血管内科
+  disease_category: 心肌病
+  scope_type: 指南PDF补充解析
+  scope_target:
+  - 心肌病
+  - 肥厚型心肌病
+  - 扩张型心肌病
+  - 限制型心肌病
+  - 致心律失常性心肌病
+  source_aliases: &id001
+  - ESC指南：心肌病的管理2023
+source_policy:
+  source_scope_aliases: *id001
+source_roots:
+  guideline_roots:
+  - E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\项目管理中心_project_management\130_未解析PDF病种启动池_20260717\00_精确PDF源文件\20260717_心肌病ESC2023补充解析
+  textbook_roots:
+  - E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\项目管理中心_project_management\130_未解析PDF病种启动池_20260717\00_空教材闸门目录_仅满足G0校验
+  external_authority_roots: []
+  terminology_roots: []
+output:
+  output_root: E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合
+execution_permissions:
+  allow_neo4j_write: false
+  allow_run_import_scripts: false
+  allow_parse_pdf: true
+  allow_extract_evidence: false
+taxonomy_rows:
+- specialty_code: CARD
+  category_code: CAT-CARD-CM
+  subcategory_code: ''
+  disease_code: DIS-CARD-CM-GENERAL
+  name: 心肌病
+  name_en: ''
+  aliases: 心肌病；cardiomyopathy；cardiomyopathies；CM
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CAT-CARD-CM
+  subcategory_code: ''
+  disease_code: DIS-CARD-CM-HCM
+  name: 肥厚型心肌病
+  name_en: ''
+  aliases: 肥厚型心肌病；hypertrophic cardiomyopathy；HCM
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CAT-CARD-CM
+  subcategory_code: ''
+  disease_code: DIS-CARD-CM-DCM
+  name: 扩张型心肌病
+  name_en: ''
+  aliases: 扩张型心肌病；dilated cardiomyopathy；DCM
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CAT-CARD-CM
+  subcategory_code: ''
+  disease_code: DIS-CARD-CM-RCM
+  name: 限制型心肌病
+  name_en: ''
+  aliases: 限制型心肌病；restrictive cardiomyopathy；RCM
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CAT-CARD-CM
+  subcategory_code: ''
+  disease_code: DIS-CARD-CM-ACM
+  name: 致心律失常性心肌病
+  name_en: ''
+  aliases: 致心律失常性心肌病；arrhythmogenic cardiomyopathy；arrhythmogenic right ventricular
+    cardiomyopathy；ACM；ARVC
+  inclusion_status: included
+controlled_vocabulary_rows:
+- canonical_name: 心肌病
+  name_en: cardiomyopathy
+  abbr: CM
+  aliases: 心肌病；cardiomyopathy；cardiomyopathies；CM
+  entityType: Disease
+  disease_scope: DIS-CARD-CM-GENERAL
+  source: 未解析PDF启动池
+- canonical_name: 肥厚型心肌病
+  name_en: hypertrophic cardiomyopathy
+  abbr: HCM
+  aliases: 肥厚型心肌病；hypertrophic cardiomyopathy；HCM
+  entityType: Disease
+  disease_scope: DIS-CARD-CM-HCM
+  source: 未解析PDF启动池
+- canonical_name: 扩张型心肌病
+  name_en: dilated cardiomyopathy
+  abbr: DCM
+  aliases: 扩张型心肌病；dilated cardiomyopathy；DCM
+  entityType: Disease
+  disease_scope: DIS-CARD-CM-DCM
+  source: 未解析PDF启动池
+- canonical_name: 限制型心肌病
+  name_en: restrictive cardiomyopathy
+  abbr: RCM
+  aliases: 限制型心肌病；restrictive cardiomyopathy；RCM
+  entityType: Disease
+  disease_scope: DIS-CARD-CM-RCM
+  source: 未解析PDF启动池
+- canonical_name: 致心律失常性心肌病
+  name_en: arrhythmogenic cardiomyopathy
+  abbr: ACM
+  aliases: 致心律失常性心肌病；arrhythmogenic cardiomyopathy；arrhythmogenic right ventricular
+    cardiomyopathy；ACM；ARVC
+  entityType: Disease
+  disease_scope: DIS-CARD-CM-ACM
+  source: 未解析PDF启动池

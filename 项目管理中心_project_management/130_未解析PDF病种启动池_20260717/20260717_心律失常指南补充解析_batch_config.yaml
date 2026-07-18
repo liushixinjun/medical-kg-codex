@@ -1,0 +1,109 @@
+batch:
+  batch_id: 20260717_心律失常指南补充解析
+scope:
+  top_specialty: 心血管内科
+  disease_category: 心律失常
+  scope_type: 指南PDF补充解析
+  scope_target:
+  - 心房颤动
+  - 心房扑动
+  - 室性心律失常
+  - 心脏性猝死
+  - 左心耳干预
+  source_aliases: &id001
+  - ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022
+  - ESC／EACTS指南：房颤的管理（2024）
+  - 中国 左心耳干预预防心房颤动患者血栓栓塞事件：目前的认识和建议（2023） (1)
+source_policy:
+  source_scope_aliases: *id001
+source_roots:
+  guideline_roots:
+  - E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\项目管理中心_project_management\130_未解析PDF病种启动池_20260717\00_精确PDF源文件\20260717_心律失常指南补充解析
+  textbook_roots:
+  - E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\项目管理中心_project_management\130_未解析PDF病种启动池_20260717\00_空教材闸门目录_仅满足G0校验
+  external_authority_roots: []
+  terminology_roots: []
+output:
+  output_root: E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合
+execution_permissions:
+  allow_neo4j_write: false
+  allow_run_import_scripts: false
+  allow_parse_pdf: true
+  allow_extract_evidence: false
+taxonomy_rows:
+- specialty_code: CARD
+  category_code: CAT-CARD-ARR
+  subcategory_code: ''
+  disease_code: DIS-CARD-ARR-AF
+  name: 心房颤动
+  name_en: ''
+  aliases: 心房颤动；atrial fibrillation；AF
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CAT-CARD-ARR
+  subcategory_code: ''
+  disease_code: DIS-CARD-ARR-AFL
+  name: 心房扑动
+  name_en: ''
+  aliases: 心房扑动；atrial flutter；AFL
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CAT-CARD-ARR
+  subcategory_code: ''
+  disease_code: DIS-CARD-ARR-VA
+  name: 室性心律失常
+  name_en: ''
+  aliases: 室性心律失常；ventricular arrhythmia；ventricular arrhythmias；VA
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CAT-CARD-ARR
+  subcategory_code: ''
+  disease_code: DIS-CARD-SCD-SUDDEN
+  name: 心脏性猝死
+  name_en: ''
+  aliases: 心脏性猝死；sudden cardiac death；SCD
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CAT-CARD-ARR
+  subcategory_code: ''
+  disease_code: ''
+  name: 左心耳干预
+  name_en: ''
+  aliases: 左心耳干预；left atrial appendage；left atrial appendage occlusion；LAA；LAAO
+  inclusion_status: included
+controlled_vocabulary_rows:
+- canonical_name: 心房颤动
+  name_en: atrial fibrillation
+  abbr: AF
+  aliases: 心房颤动；atrial fibrillation；AF
+  entityType: Disease
+  disease_scope: DIS-CARD-ARR-AF
+  source: 未解析PDF启动池
+- canonical_name: 心房扑动
+  name_en: atrial flutter
+  abbr: AFL
+  aliases: 心房扑动；atrial flutter；AFL
+  entityType: Disease
+  disease_scope: DIS-CARD-ARR-AFL
+  source: 未解析PDF启动池
+- canonical_name: 室性心律失常
+  name_en: ventricular arrhythmia
+  abbr: VA
+  aliases: 室性心律失常；ventricular arrhythmia；ventricular arrhythmias；VA
+  entityType: Disease
+  disease_scope: DIS-CARD-ARR-VA
+  source: 未解析PDF启动池
+- canonical_name: 心脏性猝死
+  name_en: sudden cardiac death
+  abbr: SCD
+  aliases: 心脏性猝死；sudden cardiac death；SCD
+  entityType: Disease
+  disease_scope: DIS-CARD-SCD-SUDDEN
+  source: 未解析PDF启动池
+- canonical_name: 左心耳干预
+  name_en: left atrial appendage
+  abbr: LAA
+  aliases: 左心耳干预；left atrial appendage；left atrial appendage occlusion；LAA；LAAO
+  entityType: Disease
+  disease_scope: CAT-CARD-ARR
+  source: 未解析PDF启动池

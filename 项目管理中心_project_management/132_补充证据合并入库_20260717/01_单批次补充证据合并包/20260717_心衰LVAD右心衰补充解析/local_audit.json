@@ -1,0 +1,33 @@
+{
+  "scope": "20260717_心衰LVAD右心衰补充解析",
+  "generated_at": "2026-07-17 14:26:49",
+  "package_id": "SUPP-EVIDENCE-MERGE-20260717-001",
+  "node_count": 132,
+  "relation_count": 286,
+  "entity_type_counts": {
+    "ClinicalRule": 58,
+    "Disease": 2,
+    "DiseaseCategory": 1,
+    "Evidence": 66,
+    "Guideline": 1,
+    "LabTest": 1,
+    "RiskStratification": 2,
+    "Specialty": 1
+  },
+  "relation_type_counts": {
+    "based_on_guideline": 2,
+    "belongs_to_category": 2,
+    "guideline_has_evidence": 66,
+    "has_category": 1,
+    "has_clinical_rule": 58,
+    "has_recommended_action": 4,
+    "has_risk_stratification": 2,
+    "supported_by_evidence": 151
+  },
+  "evidence_node_count": 66,
+  "evidence_missing_text_count": 0,
+  "issue_count": 0,
+  "blocking_count": 0,
+  "import_allowed": true,
+  "issues": []
+}

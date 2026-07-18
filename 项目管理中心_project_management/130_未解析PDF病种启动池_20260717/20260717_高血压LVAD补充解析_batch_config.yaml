@@ -1,0 +1,61 @@
+batch:
+  batch_id: 20260717_高血压LVAD补充解析
+scope:
+  top_specialty: 心血管内科
+  disease_category: 高血压
+  scope_type: 指南PDF补充解析
+  scope_target:
+  - 高血压
+  - 心室辅助装置相关高血压
+  source_aliases: &id001
+  - AHA科学声明：使用心室辅助装置患者高血压的管理（2022）
+source_policy:
+  source_scope_aliases: *id001
+source_roots:
+  guideline_roots:
+  - E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\项目管理中心_project_management\130_未解析PDF病种启动池_20260717\00_精确PDF源文件\20260717_高血压LVAD补充解析
+  textbook_roots:
+  - E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\项目管理中心_project_management\130_未解析PDF病种启动池_20260717\00_空教材闸门目录_仅满足G0校验
+  external_authority_roots: []
+  terminology_roots: []
+output:
+  output_root: E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合
+execution_permissions:
+  allow_neo4j_write: false
+  allow_run_import_scripts: false
+  allow_parse_pdf: true
+  allow_extract_evidence: false
+taxonomy_rows:
+- specialty_code: CARD
+  category_code: CAT-CARD-HTN
+  subcategory_code: ''
+  disease_code: DIS-CARD-HTN-ESSENTIAL
+  name: 高血压
+  name_en: ''
+  aliases: 高血压；hypertension；high blood pressure
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CAT-CARD-HTN
+  subcategory_code: ''
+  disease_code: ''
+  name: 心室辅助装置相关高血压
+  name_en: ''
+  aliases: 心室辅助装置相关高血压；ventricular assist device hypertension；VAD hypertension；LVAD
+    hypertension
+  inclusion_status: included
+controlled_vocabulary_rows:
+- canonical_name: 高血压
+  name_en: hypertension
+  abbr: ''
+  aliases: 高血压；hypertension；high blood pressure
+  entityType: Disease
+  disease_scope: DIS-CARD-HTN-ESSENTIAL
+  source: 未解析PDF启动池
+- canonical_name: 心室辅助装置相关高血压
+  name_en: ventricular assist device hypertension
+  abbr: ''
+  aliases: 心室辅助装置相关高血压；ventricular assist device hypertension；VAD hypertension；LVAD
+    hypertension
+  entityType: Disease
+  disease_scope: CAT-CARD-HTN
+  source: 未解析PDF启动池

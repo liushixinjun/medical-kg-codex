@@ -1,0 +1,36 @@
+{
+  "scope": "20260717_高血压LVAD补充解析",
+  "generated_at": "2026-07-17 14:26:49",
+  "package_id": "SUPP-EVIDENCE-MERGE-20260717-001",
+  "node_count": 39,
+  "relation_count": 86,
+  "entity_type_counts": {
+    "ClinicalRule": 12,
+    "Disease": 1,
+    "DiseaseCategory": 1,
+    "Evidence": 19,
+    "Exam": 1,
+    "Guideline": 1,
+    "LabTest": 2,
+    "RiskStratification": 1,
+    "Specialty": 1
+  },
+  "relation_type_counts": {
+    "based_on_guideline": 1,
+    "belongs_to_category": 1,
+    "guideline_has_evidence": 19,
+    "has_category": 1,
+    "has_clinical_rule": 12,
+    "has_recommended_action": 12,
+    "has_risk_stratification": 1,
+    "requires_exam": 1,
+    "requires_lab_test": 1,
+    "supported_by_evidence": 37
+  },
+  "evidence_node_count": 19,
+  "evidence_missing_text_count": 0,
+  "issue_count": 0,
+  "blocking_count": 0,
+  "import_allowed": true,
+  "issues": []
+}

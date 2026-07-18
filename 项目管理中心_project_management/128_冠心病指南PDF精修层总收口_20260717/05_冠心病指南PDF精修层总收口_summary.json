@@ -1,0 +1,238 @@
+{
+  "generated_at": "2026-07-17 00:38:06",
+  "neo4j_written": false,
+  "server": "192.168.3.27:7687",
+  "冠心病PDF总数": 18,
+  "冠心病已解析登记PDF数": 18,
+  "冠心病未解析PDF数": 0,
+  "冠心病台账批次数": 5,
+  "冠心病写库批次数": 4,
+  "disease_count": 14,
+  "entity_counts": {
+    "Evidence": 9059,
+    "ClinicalRule": 119,
+    "PathwayStage": 67,
+    "RecommendationStatement": 43,
+    "Medication": 33,
+    "Pathophysiology": 32,
+    "Sign": 31,
+    "Symptom": 29,
+    "DefinitionComponent": 27,
+    "Etiology": 23,
+    "Prevention": 20,
+    "FollowUp": 19,
+    "Prognosis": 19,
+    "ExamIndicator": 18,
+    "DiagnosisCriteriaComponent": 14,
+    "DiseaseClassification": 13,
+    "Definition": 12,
+    "ClinicalPathway": 11,
+    "Contraindication": 10,
+    "RiskFactor": 10,
+    "Complication": 9,
+    "ThresholdRule": 8,
+    "DifferentialDiagnosis": 7,
+    "TreatmentPlan": 6,
+    "Exam": 5,
+    "Procedure": 4,
+    "DiagnosisCriteria": 2,
+    "LabTest": 2,
+    "Disease": 1,
+    "Epidemiology": 1,
+    "RiskStratification": 1
+  },
+  "relation_counts_top": [
+    {
+      "relation_type": "supported_by_evidence",
+      "count": 16610
+    },
+    {
+      "relation_type": "recommends_action",
+      "count": 386
+    },
+    {
+      "relation_type": "has_recommendation_statement",
+      "count": 269
+    },
+    {
+      "relation_type": "has_recommended_action",
+      "count": 234
+    },
+    {
+      "relation_type": "derived_from",
+      "count": 147
+    },
+    {
+      "relation_type": "based_on_guideline",
+      "count": 116
+    },
+    {
+      "relation_type": "has_stage_rule",
+      "count": 73
+    },
+    {
+      "relation_type": "has_specific_medication",
+      "count": 51
+    },
+    {
+      "relation_type": "next_pathway_stage",
+      "count": 45
+    },
+    {
+      "relation_type": "treated_by_medication",
+      "count": 38
+    },
+    {
+      "relation_type": "has_pathway_stage",
+      "count": 37
+    },
+    {
+      "relation_type": "has_definition_component",
+      "count": 32
+    },
+    {
+      "relation_type": "has_clinical_rule",
+      "count": 23
+    },
+    {
+      "relation_type": "has_symptom",
+      "count": 23
+    },
+    {
+      "relation_type": "has_sign",
+      "count": 21
+    },
+    {
+      "relation_type": "includes_medication",
+      "count": 14
+    },
+    {
+      "relation_type": "has_diagnostic_component",
+      "count": 13
+    },
+    {
+      "relation_type": "has_risk_factor",
+      "count": 13
+    },
+    {
+      "relation_type": "may_cause_complication",
+      "count": 13
+    },
+    {
+      "relation_type": "has_etiology",
+      "count": 11
+    },
+    {
+      "relation_type": "exam_has_indicator",
+      "count": 10
+    },
+    {
+      "relation_type": "has_contraindication",
+      "count": 10
+    },
+    {
+      "relation_type": "has_pathophysiology",
+      "count": 10
+    },
+    {
+      "relation_type": "requires_lab_test",
+      "count": 10
+    },
+    {
+      "relation_type": "requires_exam",
+      "count": 9
+    },
+    {
+      "relation_type": "differentiates_from",
+      "count": 8
+    },
+    {
+      "relation_type": "has_threshold_rule",
+      "count": 8
+    },
+    {
+      "relation_type": "has_treatment_plan",
+      "count": 8
+    },
+    {
+      "relation_type": "includes_procedure",
+      "count": 8
+    },
+    {
+      "relation_type": "treated_by_procedure",
+      "count": 8
+    },
+    {
+      "relation_type": "blocks_action",
+      "count": 7
+    },
+    {
+      "relation_type": "has_differential_point",
+      "count": 7
+    },
+    {
+      "relation_type": "has_treatment_component",
+      "count": 5
+    },
+    {
+      "relation_type": "has_clinical_pathway",
+      "count": 3
+    },
+    {
+      "relation_type": "requires_exclusion_exam",
+      "count": 3
+    },
+    {
+      "relation_type": "belongs_to_subcategory",
+      "count": 2
+    },
+    {
+      "relation_type": "has_follow_up",
+      "count": 2
+    },
+    {
+      "relation_type": "has_prevention",
+      "count": 2
+    },
+    {
+      "relation_type": "has_prognosis",
+      "count": 2
+    },
+    {
+      "relation_type": "has_risk_stratification",
+      "count": 2
+    },
+    {
+      "relation_type": "lab_test_has_indicator",
+      "count": 2
+    },
+    {
+      "relation_type": "may_block_action",
+      "count": 2
+    },
+    {
+      "relation_type": "belongs_to_category",
+      "count": 1
+    },
+    {
+      "relation_type": "has_definition",
+      "count": 1
+    },
+    {
+      "relation_type": "has_diagnostic_criteria",
+      "count": 1
+    },
+    {
+      "relation_type": "has_epidemiology",
+      "count": 1
+    }
+  ],
+  "recommendation_statement_count": 43,
+  "statement_with_action_count": 43,
+  "statement_with_evidence_count": 43,
+  "statement_with_rule_count": 43,
+  "statement_gap_count": 0,
+  "treatment_plan_downstream_gap_count": 0,
+  "diagnosis_component_gap_count": 0,
+  "total_blocking_gap_count": 0
+}

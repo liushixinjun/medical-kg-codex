@@ -673,6 +673,38 @@
       line-height: 1.55;
     }
 
+    .select-icon-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 26px;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .icon-link {
+      width: 26px;
+      height: 32px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--blue);
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 700;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .icon-link:hover {
+      background: #eaf5ff;
+      color: var(--blue-dark);
+    }
+
+    .icon-link.disabled {
+      color: #b8c6d6;
+      pointer-events: none;
+      cursor: default;
+    }
+
     .rule-actions {
       display: flex;
       gap: 8px;
@@ -822,6 +854,25 @@
       padding: 8px 9px;
       line-height: 1.55;
       margin: -2px 0 9px;
+    }
+
+    .help-icon-btn {
+      width: 24px;
+      height: 24px;
+      min-height: 24px;
+      padding: 0;
+      border-radius: 50%;
+      border: 1px solid #9ec7ee;
+      background: #eaf5ff;
+      color: var(--blue-dark);
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .help-icon-btn:hover {
+      background: #d9ecff;
+      color: var(--blue-dark);
+      border-color: var(--blue);
     }
 
     .component-btn {
@@ -1759,6 +1810,95 @@
       overflow: auto;
     }
 
+    .modal-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .guide-modal {
+      top: 24px;
+      width: calc(100vw - 72px);
+      max-width: 1280px;
+      max-height: calc(100vh - 48px);
+    }
+
+    .guide-modal.maximized {
+      top: 12px;
+      width: calc(100vw - 24px);
+      max-width: none;
+      height: calc(100vh - 24px);
+      max-height: calc(100vh - 24px);
+    }
+
+    .guide-intro {
+      border: 1px solid #cfe1f3;
+      border-radius: 6px;
+      background: #f6fbff;
+      padding: 12px;
+      margin-bottom: 12px;
+      line-height: 1.8;
+    }
+
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .guide-card {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 10px;
+      background: #fff;
+      line-height: 1.75;
+    }
+
+    .guide-card strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--blue-dark);
+    }
+
+    .guide-flow {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    .guide-flow li {
+      border: 1px solid #d8e5f2;
+      border-radius: 6px;
+      padding: 9px 10px;
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    .guide-flow .step-no {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 6px;
+      background: #eaf5ff;
+      color: var(--blue-dark);
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    .guide-callout {
+      margin-top: 10px;
+      padding: 10px 12px;
+      border-left: 4px solid var(--green);
+      background: #f0fbf5;
+      line-height: 1.75;
+      font-weight: 600;
+    }
+
     .rule-option {
       border: 1px solid var(--line);
       background: #fff;
@@ -2081,7 +2221,10 @@
 
           <div class="designer-layout">
             <div class="panel">
-              <div class="panel-head"><div class="panel-title">组件库</div></div>
+              <div class="panel-head">
+                <div class="panel-title">组件库</div>
+                <button class="help-icon-btn" id="openDesignerGuideBtn" title="流程引擎说明" aria-label="流程引擎说明">?</button>
+              </div>
               <div class="panel-body">
                 <div class="palette-group">
                   <div class="palette-title">通用流程组件</div>
@@ -2266,6 +2409,90 @@
     </div>
   </div>
 
+  <div class="modal-backdrop" id="designerGuideModal">
+    <div class="modal guide-modal">
+      <div class="modal-head">
+        <div>
+          <strong>流程引擎编辑器设计标准与临床流转说明</strong>
+          <div class="mini muted">用于评审说明：组件边界、规则配置位置、状态流转方式和 AMI 临床应用链路。</div>
+        </div>
+        <div class="modal-actions">
+          <button class="btn" id="toggleDesignerGuideMaxBtn">最大化</button>
+          <button class="btn" id="closeDesignerGuideBtn">关闭</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="guide-intro">
+          本设计器用于把专病诊疗流程拆成“流程结构、推荐输出、状态分流、质控提醒”四类能力。前置知识图谱负责识别疑似疾病、推荐初筛检查、辅助分型确诊；患者进入专病流程后，由流程引擎按照节点和连接线配置，驱动专项检查、治疗方案、介入/手术围术期、医嘱质控和评估表单提醒。
+        </div>
+
+        <div class="preview-section">
+          <h3>一、组件设计边界</h3>
+          <div class="preview-content guide-grid">
+            <div class="guide-card">
+              <strong>通用流程组件</strong>
+              开始、结束、分支展示节点、连接线只负责流程结构和状态流转。开始/结束仅维护业务备注；分支节点只做视觉展示，不承载判断逻辑。
+            </div>
+            <div class="guide-card">
+              <strong>业务专病组件</strong>
+              诊疗规则、专项检查、专科评估、治疗建议、围术期、质控、评估表单等组件负责输出推荐或提醒结果，不直接决定流程跳转。
+            </div>
+            <div class="guide-card">
+              <strong>连接线规则</strong>
+              连接线读取上游业务组件的标准输出字段，配置“满足什么状态就流向哪个节点”，负责分支、阻断、回流和跳转。
+            </div>
+          </div>
+        </div>
+
+        <div class="preview-section">
+          <h3>二、规则配置标准</h3>
+          <div class="preview-content">
+            <ul class="guide-flow">
+              <li><span class="step-no">1</span>规则列表作为规则主数据，统一维护规则名称、触发阶段、读取字段、判断逻辑、输出字段和边界说明。</li>
+              <li><span class="step-no">2</span>业务组件选择“规则推荐”或“Dify 智能体”，一次性输出诊疗建议、缺失项、风险标记或状态字段，不在组件内部做流程跳转。</li>
+              <li><span class="step-no">3</span>连接线绑定操作规则，只读取上游输出状态，例如 `reperfusion_status = PRIMARY_PCI`，再决定进入急诊 PCI、静脉溶栓、药物治疗、资料补充或人工确认。</li>
+              <li><span class="step-no">4</span>分支展示节点用于让画布看得懂，例如“再灌注结果分流”，真实判断仍放在各条出口连接线上。</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="preview-section">
+          <h3>三、临床应用流转</h3>
+          <div class="preview-content">
+            <ul class="guide-flow">
+              <li><span class="step-no">1</span>医生在辅助诊疗页面录入一诉五史、体征、检查检验和报告内容，系统先完成疑似疾病识别和初筛检查推荐。</li>
+              <li><span class="step-no">2</span>心电图、肌钙蛋白等结果回填后，系统辅助完成 AMI 分型判断，医生确认或关注后进入 AMI 专病流程。</li>
+              <li><span class="step-no">3</span>流程引擎进入对应业务组件，例如再灌注专项评估、治疗建议、围术期提醒、医嘱质控或评估表单提醒。</li>
+              <li><span class="step-no">4</span>业务组件输出标准状态，连接线读取状态后完成分流：推荐 PCI、推荐溶栓、推荐药物治疗、资料补充、人工确认或质控阻断。</li>
+              <li><span class="step-no">5</span>医生确认方案后，系统继续触发后续围术期、用药监测、并发症风险、评估表单和随访提醒，形成流程闭环。</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="preview-section">
+          <h3>四、AMI 示例口径</h3>
+          <div class="preview-content guide-grid">
+            <div class="guide-card">
+              <strong>再灌注专项评估</strong>
+              读取发病时间、心电图 ST 段、肌钙蛋白、PCI 可及时间、溶栓禁忌和出血风险，输出再灌注状态。
+            </div>
+            <div class="guide-card">
+              <strong>连接线分流</strong>
+              `PRIMARY_PCI` 流向急诊 PCI 建议；`FIBRINOLYSIS` 流向静脉溶栓建议；`MEDICAL_TREATMENT` 流向标准药物治疗；`PENDING_CONFIRMATION` 流向资料补充/人工确认。
+            </div>
+            <div class="guide-card">
+              <strong>后续闭环</strong>
+              医生确认治疗方式后，触发 PCI 围术期提醒、抗栓/调脂用药监测、质控拦截和阶段性评估表单提醒。
+            </div>
+          </div>
+          <div class="guide-callout">
+            评审一句话：业务组件负责“一次输出推荐结果”，连接线负责“按输出状态流转”；知识图谱管前置识别和分型，流程引擎管进入专病流程后的标准化诊疗闭环。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script>
@@ -2329,10 +2556,17 @@
         id: 6,
         stage: "专项评估",
         name: "ST 段抬高型心肌梗死（STEMI）再灌注专项评估规则",
-        logic: "当患者处于 AMI 专病流程的再灌注评估阶段时，系统读取胸痛开始时间、当前时间、经皮冠状动脉介入治疗（PCI）可及时间、活动性出血记录、近期脑出血史、血肌酐结果、造影剂过敏史和阿司匹林过敏史；胸痛至当前时间小于等于 12 小时且 PCI 可及时间小于等于 90 分钟时，提示优先评估急诊 PCI；PCI 可及时间大于 90 分钟时，提示补充静脉溶栓适应证和禁忌证评估；存在活动性出血、近期脑出血、造影剂过敏或血肌酐升高时，同步输出风险提示和缺失评估项。",
+        logic: "用于再灌注评估阶段的规则说明：患者已经进入 AMI 专病流程，系统读取胸痛开始时间、当前时间、经皮冠状动脉介入治疗（PCI）可及时间、出血风险、脑出血史、过敏史和肾功能等资料，并一次性输出再灌注建议、风险提示和缺失评估项。",
+        premise: "患者已完成 STEMI 分型确认，并进入 AMI 专病流程的再灌注专项评估节点。",
+        conditions: [
+          "胸痛开始时间至当前时间小于等于 12 小时，且 PCI 可及时间小于等于 90 分钟时，输出 reperfusion_status = PRIMARY_PCI，并提示优先评估急诊经皮冠状动脉介入治疗（PCI）。",
+          "胸痛开始时间至当前时间小于等于 12 小时，且 PCI 可及时间大于 90 分钟时，输出 reperfusion_status = FIBRINOLYSIS_EVALUATION，并提示补充静脉溶栓适应证和禁忌证评估。",
+          "胸痛开始时间、当前时间或 PCI 可及时间缺失时，输出 reperfusion_status = PENDING_CONFIRMATION，并提示资料补充或人工确认。",
+          "存在活动性出血、近期脑出血、造影剂过敏、阿司匹林过敏或血肌酐升高时，同步输出 risk_flags 和 missing_items，用于质控提醒或阻断后续连接线。"
+        ],
         fields: "胸痛开始时间、PCI 可及时间、出血记录、脑出血史、血肌酐、造影剂过敏史、阿司匹林过敏史",
         trigger: "患者进入 AMI 专病流程并处于再灌注评估阶段。",
-        output: "急诊 PCI 评估、静脉溶栓评估、风险提示、缺失评估项。",
+        output: "reperfusion_status、急诊 PCI 评估、静脉溶栓评估、风险提示、缺失评估项。",
         boundary: "用于专项评估和流程提示，具体处置由医生确认。",
         category: "pathway"
       },
@@ -3091,11 +3325,30 @@
       }
       $("#ruleDetailTitle").textContent = `规则${rule.id}：${rule.name}`;
       $("#ruleDetailSubTitle").textContent = `${rule.stage} · 来自规则管理列表`;
-      $("#ruleDetailBody").innerHTML = `
+      const logicSection = rule.conditions?.length ? `
+        <section class="preview-section">
+          <h3>逻辑说明 / 适用前提</h3>
+          <div class="preview-content">
+            <div>${rule.logic}</div>
+            <div style="margin-top:8px"><strong>适用前提：</strong>${rule.premise || rule.trigger}</div>
+          </div>
+        </section>
+        <section class="preview-section">
+          <h3>具体判断条件</h3>
+          <div class="preview-content">
+            <ol style="margin:0;padding-left:20px;line-height:1.9">
+              ${rule.conditions.map(item => `<li>${item}</li>`).join("")}
+            </ol>
+          </div>
+        </section>
+      ` : `
         <section class="preview-section">
           <h3>详细规则逻辑</h3>
           <div class="preview-content">${rule.logic}</div>
         </section>
+      `;
+      $("#ruleDetailBody").innerHTML = `
+        ${logicSection}
         <section class="preview-section">
           <h3>读取字段</h3>
           <div class="preview-content">${rule.fields}</div>
@@ -3621,13 +3874,14 @@
           ` : `
           <div class="prop-item">
             <strong>调用规则列表中的规则</strong>
-            <select class="select" id="nodeRuleSelect" style="width:100%">
-              <option value="" ${!selectedRuleId ? "selected" : ""}>不调用诊疗规则</option>
-              ${rules.map(rule => `<option value="${rule.id}" ${Number(selectedRuleId) === rule.id ? "selected" : ""}>规则${rule.id}：${rule.name}</option>`).join("")}
-            </select>
-            <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap">
-              <button class="btn primary" id="openRulePickerBtn">从规则列表选择</button>
-              <button class="btn" id="viewSelectedRuleBtn">查看规则详情</button>
+            <div class="select-icon-row">
+              <select class="select" id="nodeRuleSelect" style="width:100%">
+                <option value="" ${!selectedRuleId ? "selected" : ""}>不调用诊疗规则</option>
+                ${rules.map(rule => `<option value="${rule.id}" ${Number(selectedRuleId) === rule.id ? "selected" : ""}>规则${rule.id}：${rule.name}</option>`).join("")}
+              </select>
+              ${selectedRuleId
+                ? `<a href="javascript:void(0)" class="icon-link" id="viewSelectedRuleIconLink" title="查看规则详情" aria-label="查看规则详情">ⓘ</a>`
+                : `<span class="icon-link disabled" title="请先选择规则">ⓘ</span>`}
             </div>
             ${selectedRuleId ? `
             <div class="rule-usage">
@@ -3682,8 +3936,8 @@
             const rule = rules.find(item => item.id === Number(event.target.value));
             showToast(rule ? `已选择调用规则：${rule.name}` : "当前组件未选择规则。");
           });
-          $("#openRulePickerBtn").addEventListener("click", () => openRulePicker(selectedNode));
-          $("#viewSelectedRuleBtn").addEventListener("click", () => {
+          const ruleDetailLink = $("#viewSelectedRuleIconLink");
+          if (ruleDetailLink) ruleDetailLink.addEventListener("click", () => {
             if (!nodeRuleSelections[selectedNode]) {
               showToast("请先选择要查看的规则。");
               return;
@@ -3873,6 +4127,25 @@
 
     function closeRulePicker() {
       $("#rulePickerModal").classList.remove("open");
+    }
+
+    function openDesignerGuide() {
+      $("#designerGuideModal").classList.add("open");
+    }
+
+    function closeDesignerGuide() {
+      $("#designerGuideModal").classList.remove("open");
+      const guide = $(".guide-modal");
+      const maxBtn = $("#toggleDesignerGuideMaxBtn");
+      guide.classList.remove("maximized");
+      maxBtn.textContent = "最大化";
+    }
+
+    function toggleDesignerGuideMax() {
+      const guide = $(".guide-modal");
+      const maxBtn = $("#toggleDesignerGuideMaxBtn");
+      const maximized = guide.classList.toggle("maximized");
+      maxBtn.textContent = maximized ? "还原" : "最大化";
     }
 
     function clearChangedFields() {
@@ -4373,6 +4646,12 @@
       $("#closeRulePickerBtn").addEventListener("click", closeRulePicker);
       $("#rulePickerModal").addEventListener("click", event => {
         if (event.target.id === "rulePickerModal") closeRulePicker();
+      });
+      $("#openDesignerGuideBtn").addEventListener("click", openDesignerGuide);
+      $("#toggleDesignerGuideMaxBtn").addEventListener("click", toggleDesignerGuideMax);
+      $("#closeDesignerGuideBtn").addEventListener("click", closeDesignerGuide);
+      $("#designerGuideModal").addEventListener("click", event => {
+        if (event.target.id === "designerGuideModal") closeDesignerGuide();
       });
       $all("[data-component]").forEach(btn => {
         btn.addEventListener("click", () => addDesignerComponent(btn.dataset.component));

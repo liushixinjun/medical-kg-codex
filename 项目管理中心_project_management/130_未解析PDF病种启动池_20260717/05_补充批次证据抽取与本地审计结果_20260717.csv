@@ -1,0 +1,8 @@
+﻿batch_id,batch_dir,started_at,neo4j_written,extract_status,build_status,audit_status,evidence_count,node_count,relation_count,blocking_count,warning_count,error,finished_at
+20260717_冠心病ACS2025补充解析,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260717_冠心病ACS2025补充解析,2026-07-17 13:55:02,否,completed,completed,completed,430,518,1824,,,,2026-07-17 13:55:17
+20260717_瓣膜病指南补充解析,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260717_瓣膜病指南补充解析,2026-07-17 13:55:17,否,completed,completed,completed,2720,2399,6700,,,,2026-07-17 13:56:02
+20260717_心律失常指南补充解析,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260717_心律失常指南补充解析,2026-07-17 13:56:02,否,completed,completed,completed,1287,1384,3958,,,,2026-07-17 13:56:53
+20260717_心肌病ESC2023补充解析,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260717_心肌病ESC2023补充解析,2026-07-17 13:56:53,否,completed,completed,completed,984,1017,3203,,,,2026-07-17 13:57:06
+20260717_结构性先心病介入补充解析,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260717_结构性先心病介入补充解析,2026-07-17 13:57:06,否,completed,completed,completed,97,157,640,,,,2026-07-17 13:57:07
+20260717_心衰LVAD右心衰补充解析,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260717_心衰LVAD右心衰补充解析,2026-07-17 13:57:07,否,completed,completed,completed,295,132,286,,,,2026-07-17 13:57:08
+20260717_高血压LVAD补充解析,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260717_高血压LVAD补充解析,2026-07-17 13:57:08,否,completed,completed,completed,38,39,86,,,,2026-07-17 13:57:09

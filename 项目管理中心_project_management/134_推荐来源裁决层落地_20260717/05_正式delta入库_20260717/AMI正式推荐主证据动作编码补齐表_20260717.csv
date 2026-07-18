@@ -1,0 +1,6 @@
+﻿裁决编码,临床问题,主依据指南编码,主依据指南,主证据编码,推荐等级,证据等级,动作编码,动作名称,动作关系,分级说明
+SRCADJ-CARD-AMI-DX-001,AMI诊断标准,SRC-DOC-174B3BDD2451501A,4TH universal definition of MI.pdf,EVD-BFD8DF56E0886EF186D8-AMI,定义标准,国际通用定义标准,DXC-CARD-547346EE2FED,急性心肌梗死诊断标准,recommends_action,诊断定义类证据原文无I/A等治疗推荐分级，按定义标准入正式诊断依据。
+SRCADJ-CARD-AMI-ECG-001,首诊心电图检查,SRC-DOC-866065446A7A5F65,2018 STEMI院前溶栓治疗中国专家共识.pdf,EVD-9A1C41BB38E3029E07C5-STEMI,专家共识推荐,专家共识证据,EXAM-CARD-A80B855C8C77,12导联心电图,recommends_action,专家共识原文未结构化为I/A等分级，保留来源类型和原文证据。
+SRCADJ-CARD-AMI-PCI-001,STEMI再灌注策略,SRC-DOC-866065446A7A5F65,2018 STEMI院前溶栓治疗中国专家共识.pdf,EVD-C29D798C2C4AA7DB70EA-STEMI,专家共识推荐,专家共识证据,PROC-CARD-E9ADC25A25E3,经皮冠状动脉介入治疗,recommends_action,专家共识原文未结构化为I/A等分级，保留来源类型和原文证据。
+SRCADJ-CARD-AMI-FIB-001,STEMI溶栓治疗,SRC-DOC-866065446A7A5F65,2018 STEMI院前溶栓治疗中国专家共识.pdf,EVD-56AF2340E37314FCA705-AMI,专家共识推荐,专家共识证据,PROC-CARD-DA0F467D4A30,溶栓治疗,recommends_action,专家共识原文未结构化为I/A等分级，保留来源类型和原文证据。
+SRCADJ-CARD-AMI-FIB-CONTRA-001,溶栓禁忌证,SRC-DOC-866065446A7A5F65,2018 STEMI院前溶栓治疗中国专家共识.pdf,EVD-B9B303B0E1B921BC095F-AMI,禁忌阻断规则,专家共识证据,PROC-CARD-DA0F467D4A30,溶栓治疗,blocks_action,禁忌阻断类规则不使用治疗推荐等级，按原文禁忌清单入正式阻断逻辑。

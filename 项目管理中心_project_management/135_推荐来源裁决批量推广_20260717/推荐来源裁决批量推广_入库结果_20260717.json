@@ -1,0 +1,105 @@
+{
+  "batch_id": "推荐来源裁决批量推广_20260717",
+  "schema_version": "V1.17",
+  "run_at": "2026-07-17 23:21:05",
+  "target_categories": [
+    "冠心病",
+    "心肌病",
+    "心力衰竭",
+    "心律失常",
+    "高血压",
+    "瓣膜病",
+    "肺动脉高压",
+    "起搏治疗相关疾病"
+  ],
+  "candidate_count": 529,
+  "blocked_count": 19,
+  "imported_count": 529,
+  "summary_by_category": {
+    "心律失常": {
+      "入库候选": 217,
+      "阻断": 3
+    },
+    "瓣膜病": {
+      "入库候选": 1,
+      "阻断": 0
+    },
+    "心力衰竭": {
+      "入库候选": 75,
+      "阻断": 1
+    },
+    "冠心病": {
+      "入库候选": 111,
+      "阻断": 14
+    },
+    "心肌病": {
+      "入库候选": 75,
+      "阻断": 1
+    },
+    "高血压": {
+      "入库候选": 50,
+      "阻断": 0
+    }
+  },
+  "verify": {
+    "source_adjudication_count": 529,
+    "missing_primary_evidence": 0,
+    "missing_primary_guideline": 0,
+    "missing_recommendation_class": 0,
+    "missing_evidence_level": 0,
+    "missing_action_code": 0,
+    "non_formal": 0
+  },
+  "category_verify": [
+    {
+      "category": "冠心病",
+      "count": 111
+    },
+    {
+      "category": "心力衰竭",
+      "count": 75
+    },
+    {
+      "category": "心律失常",
+      "count": 217
+    },
+    {
+      "category": "心肌病",
+      "count": 75
+    },
+    {
+      "category": "瓣膜病",
+      "count": 1
+    },
+    {
+      "category": "高血压",
+      "count": 50
+    }
+  ],
+  "relationship_verify": [
+    {
+      "relationship": "based_on_guideline",
+      "count": 529
+    },
+    {
+      "relationship": "decides_recommendation",
+      "count": 529
+    },
+    {
+      "relationship": "derived_from",
+      "count": 1058
+    },
+    {
+      "relationship": "has_source_adjudication",
+      "count": 529
+    },
+    {
+      "relationship": "recommends_action",
+      "count": 1058
+    },
+    {
+      "relationship": "uses_primary_guideline",
+      "count": 529
+    }
+  ]
+}

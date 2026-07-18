@@ -1,0 +1,111 @@
+batch:
+  batch_id: 20260717_冠心病ACS2025补充解析
+scope:
+  top_specialty: 心血管内科
+  disease_category: 冠心病
+  scope_type: 指南PDF补充解析
+  scope_target:
+  - 急性冠脉综合征
+  - 急性心肌梗死
+  - ST段抬高型心肌梗死
+  - 非ST段抬高型心肌梗死
+  - 不稳定型心绞痛
+  source_aliases: &id001
+  - ACC／AHA／ACEP／NAEMSP ／SCAI指 南：急性冠脉 综合征患者的管理 2025
+source_policy:
+  source_scope_aliases: *id001
+source_roots:
+  guideline_roots:
+  - E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\项目管理中心_project_management\130_未解析PDF病种启动池_20260717\00_精确PDF源文件\20260717_冠心病ACS2025补充解析
+  textbook_roots:
+  - E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\项目管理中心_project_management\130_未解析PDF病种启动池_20260717\00_空教材闸门目录_仅满足G0校验
+  external_authority_roots: []
+  terminology_roots: []
+output:
+  output_root: E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合
+execution_permissions:
+  allow_neo4j_write: false
+  allow_run_import_scripts: false
+  allow_parse_pdf: true
+  allow_extract_evidence: false
+taxonomy_rows:
+- specialty_code: CARD
+  category_code: CAT-CARD-CAD
+  subcategory_code: ''
+  disease_code: DIS-CARD-CAD-ACS
+  name: 急性冠脉综合征
+  name_en: ''
+  aliases: 急性冠脉综合征；acute coronary syndrome；ACS
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CAT-CARD-CAD
+  subcategory_code: ''
+  disease_code: DIS-CARD-CAD-AMI
+  name: 急性心肌梗死
+  name_en: ''
+  aliases: 急性心肌梗死；acute myocardial infarction；myocardial infarction；AMI；MI
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CAT-CARD-CAD
+  subcategory_code: ''
+  disease_code: DIS-CARD-CAD-STEMI
+  name: ST段抬高型心肌梗死
+  name_en: ''
+  aliases: ST段抬高型心肌梗死；ST-segment elevation myocardial infarction；ST elevation myocardial
+    infarction；STEMI
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CAT-CARD-CAD
+  subcategory_code: ''
+  disease_code: DIS-CARD-CAD-NSTEMI
+  name: 非ST段抬高型心肌梗死
+  name_en: ''
+  aliases: 非ST段抬高型心肌梗死；non-ST-segment elevation myocardial infarction；non-ST elevation
+    myocardial infarction；NSTEMI
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CAT-CARD-CAD
+  subcategory_code: ''
+  disease_code: DIS-CARD-CAD-UA
+  name: 不稳定型心绞痛
+  name_en: ''
+  aliases: 不稳定型心绞痛；unstable angina；UA
+  inclusion_status: included
+controlled_vocabulary_rows:
+- canonical_name: 急性冠脉综合征
+  name_en: acute coronary syndrome
+  abbr: ACS
+  aliases: 急性冠脉综合征；acute coronary syndrome；ACS
+  entityType: Disease
+  disease_scope: DIS-CARD-CAD-ACS
+  source: 未解析PDF启动池
+- canonical_name: 急性心肌梗死
+  name_en: acute myocardial infarction
+  abbr: AMI
+  aliases: 急性心肌梗死；acute myocardial infarction；myocardial infarction；AMI；MI
+  entityType: Disease
+  disease_scope: DIS-CARD-CAD-AMI
+  source: 未解析PDF启动池
+- canonical_name: ST段抬高型心肌梗死
+  name_en: ST-segment elevation myocardial infarction
+  abbr: STEMI
+  aliases: ST段抬高型心肌梗死；ST-segment elevation myocardial infarction；ST elevation myocardial
+    infarction；STEMI
+  entityType: Disease
+  disease_scope: DIS-CARD-CAD-STEMI
+  source: 未解析PDF启动池
+- canonical_name: 非ST段抬高型心肌梗死
+  name_en: non-ST-segment elevation myocardial infarction
+  abbr: NSTEMI
+  aliases: 非ST段抬高型心肌梗死；non-ST-segment elevation myocardial infarction；non-ST elevation
+    myocardial infarction；NSTEMI
+  entityType: Disease
+  disease_scope: DIS-CARD-CAD-NSTEMI
+  source: 未解析PDF启动池
+- canonical_name: 不稳定型心绞痛
+  name_en: unstable angina
+  abbr: UA
+  aliases: 不稳定型心绞痛；unstable angina；UA
+  entityType: Disease
+  disease_scope: DIS-CARD-CAD-UA
+  source: 未解析PDF启动池

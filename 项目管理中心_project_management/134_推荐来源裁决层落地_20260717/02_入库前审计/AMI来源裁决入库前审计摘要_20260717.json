@@ -1,0 +1,10 @@
+{
+  "sample_rows": 6,
+  "formal_status_rows": 5,
+  "blocked_rows": 6,
+  "import_ready_rows": 0,
+  "frontend_preview_rows": 6,
+  "delta_candidate_nodes": 6,
+  "delta_candidate_relations": 12,
+  "neo4j_written": false
+}

@@ -1,0 +1,8 @@
+﻿batch_id,evidence_count,evidence_with_guideline,evidence_with_guideline_rate,evidence_used_by_clinical_entity,evidence_used_by_clinical_entity_rate,disease_reachable_evidence,disease_reachable_evidence_rate,reached_disease_count,clinical_rule_count,rules_with_action,rules_with_evidence,rules_with_action_and_evidence,formal_cdss_chain_rate,disease_rule_action_evidence_chains,action_count,action_disease_count,judgement
+20260717_冠心病ACS2025补充解析,102,102,100.0%,102,100.0%,102,100.0%,7,392,314,392,314,80.1%,314,15,5,可进入正式CDSS推荐链路
+20260717_瓣膜病指南补充解析,1148,1148,100.0%,1148,100.0%,1148,100.0%,7,1220,546,1220,546,44.8%,546,21,5,部分可进入正式CDSS推荐链路，需补动作链
+20260717_心律失常指南补充解析,500,500,100.0%,500,100.0%,500,100.0%,14,842,402,842,402,47.7%,402,22,4,部分可进入正式CDSS推荐链路，需补动作链
+20260717_心肌病ESC2023补充解析,267,267,100.0%,267,100.0%,267,100.0%,10,726,372,726,372,51.2%,372,15,5,部分可进入正式CDSS推荐链路，需补动作链
+20260717_结构性先心病介入补充解析,38,38,100.0%,38,100.0%,38,100.0%,6,80,64,80,64,80.0%,64,21,4,可进入正式CDSS推荐链路
+20260717_心衰LVAD右心衰补充解析,66,66,100.0%,66,100.0%,66,100.0%,2,58,4,58,4,6.9%,4,2,2,知识浏览可用，正式CDSS动作链明显不足
+20260717_高血压LVAD补充解析,19,19,100.0%,19,100.0%,19,100.0%,1,12,8,12,8,66.7%,8,3,1,部分可进入正式CDSS推荐链路，需补动作链

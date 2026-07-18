@@ -1,0 +1,75 @@
+batch:
+  batch_id: 20260717_心衰LVAD右心衰补充解析
+scope:
+  top_specialty: 心血管内科
+  disease_category: 心力衰竭
+  scope_type: 指南PDF补充解析
+  scope_target:
+  - 右心衰竭
+  - 左心室辅助装置
+  - 心力衰竭
+  source_aliases: &id001
+  - ESC指南：右心衰与左心室辅助装置-术前，围手术期和术后管理策略 2024
+source_policy:
+  source_scope_aliases: *id001
+source_roots:
+  guideline_roots:
+  - E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\项目管理中心_project_management\130_未解析PDF病种启动池_20260717\00_精确PDF源文件\20260717_心衰LVAD右心衰补充解析
+  textbook_roots:
+  - E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\项目管理中心_project_management\130_未解析PDF病种启动池_20260717\00_空教材闸门目录_仅满足G0校验
+  external_authority_roots: []
+  terminology_roots: []
+output:
+  output_root: E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合
+execution_permissions:
+  allow_neo4j_write: false
+  allow_run_import_scripts: false
+  allow_parse_pdf: true
+  allow_extract_evidence: false
+taxonomy_rows:
+- specialty_code: CARD
+  category_code: CAT-CARD-HF
+  subcategory_code: ''
+  disease_code: DIS-CARD-HF-RIGHT
+  name: 右心衰竭
+  name_en: ''
+  aliases: 右心衰竭；right heart failure；right ventricular failure；RHF；RVF
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CAT-CARD-HF
+  subcategory_code: ''
+  disease_code: ''
+  name: 左心室辅助装置
+  name_en: ''
+  aliases: 左心室辅助装置；left ventricular assist device；left ventricular assist devices；LVAD
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CAT-CARD-HF
+  subcategory_code: ''
+  disease_code: DIS-CARD-HF-GENERAL
+  name: 心力衰竭
+  name_en: ''
+  aliases: 心力衰竭；heart failure；HF
+  inclusion_status: included
+controlled_vocabulary_rows:
+- canonical_name: 右心衰竭
+  name_en: right heart failure
+  abbr: RHF
+  aliases: 右心衰竭；right heart failure；right ventricular failure；RHF；RVF
+  entityType: Disease
+  disease_scope: DIS-CARD-HF-RIGHT
+  source: 未解析PDF启动池
+- canonical_name: 左心室辅助装置
+  name_en: left ventricular assist device
+  abbr: LVAD
+  aliases: 左心室辅助装置；left ventricular assist device；left ventricular assist devices；LVAD
+  entityType: Disease
+  disease_scope: CAT-CARD-HF
+  source: 未解析PDF启动池
+- canonical_name: 心力衰竭
+  name_en: heart failure
+  abbr: HF
+  aliases: 心力衰竭；heart failure；HF
+  entityType: Disease
+  disease_scope: DIS-CARD-HF-GENERAL
+  source: 未解析PDF启动池

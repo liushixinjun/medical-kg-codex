@@ -1,0 +1,17 @@
+{
+  "fix_batch_id": "推荐来源裁决动作编码映射修复_20260717",
+  "source_adjudication_batch_id": "推荐来源裁决批量推广_20260717",
+  "blocked_with_missing_action": 15,
+  "mapping_fixed": 15,
+  "supplement_imported": 14,
+  "still_blocked": 1,
+  "verify": {
+    "total": 543,
+    "missing_primary_evidence": 0,
+    "missing_primary_guideline": 0,
+    "missing_recommendation_class": 0,
+    "missing_evidence_level": 0,
+    "missing_action_code": 0,
+    "non_formal": 0
+  }
+}

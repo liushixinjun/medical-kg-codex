@@ -1,0 +1,38 @@
+{
+  "scope": "20260717_心肌病ESC2023补充解析",
+  "generated_at": "2026-07-17 14:26:48",
+  "package_id": "SUPP-EVIDENCE-MERGE-20260717-001",
+  "node_count": 1017,
+  "relation_count": 3203,
+  "entity_type_counts": {
+    "ClinicalRule": 726,
+    "Disease": 5,
+    "DiseaseCategory": 1,
+    "Evidence": 267,
+    "Exam": 7,
+    "Guideline": 1,
+    "LabTest": 3,
+    "RiskStratification": 5,
+    "Specialty": 1,
+    "TreatmentPlan": 1
+  },
+  "relation_type_counts": {
+    "based_on_guideline": 5,
+    "belongs_to_category": 5,
+    "guideline_has_evidence": 267,
+    "has_category": 1,
+    "has_clinical_rule": 726,
+    "has_recommended_action": 706,
+    "has_risk_stratification": 5,
+    "has_treatment_plan": 1,
+    "requires_exam": 15,
+    "requires_lab_test": 10,
+    "supported_by_evidence": 1462
+  },
+  "evidence_node_count": 267,
+  "evidence_missing_text_count": 0,
+  "issue_count": 0,
+  "blocking_count": 0,
+  "import_allowed": true,
+  "issues": []
+}

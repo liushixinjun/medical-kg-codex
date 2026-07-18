@@ -1,0 +1,7 @@
+﻿裁决编码,疾病,临床问题,CDSS使用状态,冲突状态,主依据,主依据编码,支持依据编码,前端预览可用,可直接入库,问题,阻断
+SRCADJ-CARD-AMI-DX-001,急性心肌梗死,AMI诊断标准,正式推荐,无冲突,4TH universal definition of MI.pdf,GL-CARD-MI-UDMI-4,GL-CARD-INTERNALMED-10,是,否,,缺主证据编码；缺推荐等级；缺证据等级；缺标准推荐动作编码
+SRCADJ-CARD-AMI-ECG-001,急性心肌梗死,首诊心电图检查,正式推荐,无冲突,ACC/AHA/ACEP/NAEMSP/SCAI指南：急性冠脉综合征患者的管理2025.pdf,GL-CARD-ACS-2025,GL-CARD-INTERNALMED-10,是,否,,缺主证据编码；缺推荐等级；缺证据等级；缺标准推荐动作编码
+SRCADJ-CARD-AMI-PCI-001,急性心肌梗死,STEMI再灌注策略,正式推荐,无冲突,STEMI CN 2019.pdf,GL-CARD-STEMI-CN-2019,GL-CARD-ACS-2025;GL-CARD-INTERNALMED-10,是,否,,缺主证据编码；缺推荐等级；缺证据等级；缺标准推荐动作编码
+SRCADJ-CARD-AMI-FIB-001,急性心肌梗死,STEMI溶栓治疗,正式推荐,无冲突,2018 STEMI院前溶栓治疗中国专家共识.pdf,GL-CARD-STEMI-PREHOSPITAL-FIB-2018,GL-CARD-INTERNALMED-10,是,否,,缺主证据编码；缺推荐等级；缺证据等级；缺标准推荐动作编码
+SRCADJ-CARD-AMI-FIB-CONTRA-001,急性心肌梗死,溶栓禁忌证,正式推荐,无冲突,2018 STEMI院前溶栓治疗中国专家共识.pdf,GL-CARD-STEMI-PREHOSPITAL-FIB-2018,GL-CARD-INTERNALMED-10,是,否,,缺主证据编码；缺推荐等级；缺证据等级；缺标准推荐动作编码
+SRCADJ-CARD-AMI-ANTIPLATELET-001,急性心肌梗死,抗血小板治疗,冲突待裁决,待核对分型差异,NSTE-ACS CN 2024.pdf,GL-CARD-NSTEACS-CN-2024,GL-CARD-ACS-2025;GL-CARD-INTERNALMED-10,是,否,,非正式推荐，不得进入医生端主动推荐区

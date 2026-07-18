@@ -1,0 +1,92 @@
+batch:
+  batch_id: 20260717_结构性先心病介入补充解析
+scope:
+  top_specialty: 心血管内科
+  disease_category: 结构性心脏病/先天性心脏病
+  scope_type: 指南PDF补充解析
+  scope_target:
+  - 房间隔缺损
+  - 肺动脉瓣狭窄
+  - 主动脉瓣狭窄
+  - 先天性心脏病介入治疗
+  source_aliases: &id001
+  - 常见先天性心脏病介入治疗中国专家共识之一：房间隔缺损介入治疗
+  - 常见先天性心脏病介入治疗中国专家共识之四：经皮球囊肺动脉瓣与主动脉瓣成形术
+source_policy:
+  source_scope_aliases: *id001
+source_roots:
+  guideline_roots:
+  - E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\项目管理中心_project_management\130_未解析PDF病种启动池_20260717\00_精确PDF源文件\20260717_结构性先心病介入补充解析
+  textbook_roots:
+  - E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\项目管理中心_project_management\130_未解析PDF病种启动池_20260717\00_空教材闸门目录_仅满足G0校验
+  external_authority_roots: []
+  terminology_roots: []
+output:
+  output_root: E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合
+execution_permissions:
+  allow_neo4j_write: false
+  allow_run_import_scripts: false
+  allow_parse_pdf: true
+  allow_extract_evidence: false
+taxonomy_rows:
+- specialty_code: CARD
+  category_code: CARD-SHD-CHD
+  subcategory_code: ''
+  disease_code: DIS-CARD-CHD-ASD
+  name: 房间隔缺损
+  name_en: ''
+  aliases: 房间隔缺损；atrial septal defect；ASD
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CARD-SHD-CHD
+  subcategory_code: ''
+  disease_code: DIS-CARD-VHD-PS
+  name: 肺动脉瓣狭窄
+  name_en: ''
+  aliases: 肺动脉瓣狭窄；pulmonary valve stenosis；pulmonary stenosis；PS
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CARD-SHD-CHD
+  subcategory_code: ''
+  disease_code: DIS-CARD-VHD-AS
+  name: 主动脉瓣狭窄
+  name_en: ''
+  aliases: 主动脉瓣狭窄；aortic stenosis；AS
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CARD-SHD-CHD
+  subcategory_code: ''
+  disease_code: ''
+  name: 先天性心脏病介入治疗
+  name_en: ''
+  aliases: 先天性心脏病介入治疗；congenital heart disease；CHD；interventional treatment
+  inclusion_status: included
+controlled_vocabulary_rows:
+- canonical_name: 房间隔缺损
+  name_en: atrial septal defect
+  abbr: ASD
+  aliases: 房间隔缺损；atrial septal defect；ASD
+  entityType: Disease
+  disease_scope: DIS-CARD-CHD-ASD
+  source: 未解析PDF启动池
+- canonical_name: 肺动脉瓣狭窄
+  name_en: pulmonary valve stenosis
+  abbr: PS
+  aliases: 肺动脉瓣狭窄；pulmonary valve stenosis；pulmonary stenosis；PS
+  entityType: Disease
+  disease_scope: DIS-CARD-VHD-PS
+  source: 未解析PDF启动池
+- canonical_name: 主动脉瓣狭窄
+  name_en: aortic stenosis
+  abbr: AS
+  aliases: 主动脉瓣狭窄；aortic stenosis；AS
+  entityType: Disease
+  disease_scope: DIS-CARD-VHD-AS
+  source: 未解析PDF启动池
+- canonical_name: 先天性心脏病介入治疗
+  name_en: congenital heart disease
+  abbr: CHD
+  aliases: 先天性心脏病介入治疗；congenital heart disease；CHD；interventional treatment
+  entityType: Disease
+  disease_scope: CARD-SHD-CHD
+  source: 未解析PDF启动池

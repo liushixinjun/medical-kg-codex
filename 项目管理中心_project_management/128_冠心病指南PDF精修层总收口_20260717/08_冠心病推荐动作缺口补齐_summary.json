@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-07-17 00:35:38",
+  "batch_id": "20260717_冠心病推荐动作缺口补齐",
+  "neo4j_written": true,
+  "planned_recommendations": 8,
+  "planned_action_links": 12,
+  "created_or_matched_recommends_action_relations": 9,
+  "blocked_count": 3,
+  "blocked": [
+    {
+      "recommendation_code": "REC-35AFFC16987E38D3",
+      "target": "超声心动图",
+      "reason": "未找到既有Exam动作节点"
+    },
+    {
+      "recommendation_code": "REC-73F794FD0A746355",
+      "target": "冠状动脉造影 / 冠脉造影",
+      "reason": "未找到既有Exam动作节点"
+    },
+    {
+      "recommendation_code": "REC-CDSS-CAD-CCS-01-01-TEST",
+      "target": "冠状动脉造影 / 冠脉造影",
+      "reason": "未找到既有Exam动作节点"
+    }
+  ]
+}

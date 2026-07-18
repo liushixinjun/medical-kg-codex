@@ -1,0 +1,8 @@
+{
+  "generated_at": "2026-07-17 00:37:42",
+  "batch_id": "20260717_冠心病缺失标准检查动作补齐",
+  "neo4j_written": true,
+  "standard_exam_upserts": 2,
+  "recommendation_action_relation_upserts": 3,
+  "blocked": []
+}

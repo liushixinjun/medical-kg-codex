@@ -28,7 +28,7 @@
   </defs>
 
   <rect class="bg" x="0" y="0" width="1500" height="1760"/>
-  <text class="title" x="40" y="40">AMI 完整模拟泳道图：一诉五史出疑似诊断，报告回填后收敛诊疗建议</text>
+  <text class="title" x="40" y="40">AMI 辅助诊疗泳道图：一诉五史出疑似诊断，报告回填后进入专病流程</text>
 
   <rect class="lane" x="35" y="70" width="370" height="1640" rx="14"/>
   <rect class="lane" x="445" y="70" width="380" height="1640" rx="14"/>
@@ -70,13 +70,13 @@
 
   <!-- step 2 -->
   <rect class="box2" x="480" y="455" width="310" height="145" rx="10"/>
-  <text class="h" x="505" y="485">2. 推荐疑似诊断</text>
+  <text class="h" x="505" y="485">2. 疑似疾病识别</text>
   <text class="t" x="505" y="515">疑似：ACS、AMI</text>
   <text class="t" x="505" y="540">备选：UA、心肌炎等</text>
   <text class="t" x="505" y="565">高血压/糖尿病进入风险背景</text>
 
   <rect class="box3" x="900" y="445" width="520" height="165" rx="10"/>
-  <text class="h" x="925" y="475">疑似诊断反查</text>
+  <text class="h" x="925" y="475">疑似识别图谱命中</text>
   <text class="small" x="925" y="504">Disease -has_symptom-> 胸痛/出汗/恶心呕吐</text>
   <text class="small" x="925" y="526">Disease -has_risk_factor-> 高血压/糖尿病</text>
   <text class="small" x="925" y="548">候选：DIS-CARD-CAD-ACS / DIS-CARD-CAD-AMI</text>
@@ -90,13 +90,13 @@
   <text class="t" x="95" y="745">不需要先确认最终诊断</text>
 
   <rect class="box2" x="480" y="645" width="310" height="135" rx="10"/>
-  <text class="h" x="505" y="675">3. 推荐下一步检查检验</text>
+  <text class="h" x="505" y="675">3. 初筛检查与鉴别</text>
   <text class="t" x="505" y="705">心电图、心肌肌钙蛋白</text>
   <text class="t" x="505" y="730">CK-MB、超声心动图</text>
   <text class="t" x="505" y="755">肾功能、血糖、血脂检查</text>
 
   <rect class="box3" x="900" y="640" width="520" height="145" rx="10"/>
-  <text class="h" x="925" y="670">检查检验关系</text>
+  <text class="h" x="925" y="670">检查鉴别图谱命中</text>
   <text class="small" x="925" y="698">DIS-CARD-CAD-AMI -requires_exam-> EXAM-ECG</text>
   <text class="small" x="925" y="720">DIS-CARD-CAD-AMI -requires_exam-> EXAM-TTE / EXAM-CAG</text>
   <text class="small" x="925" y="742">DIS-CARD-CAD-AMI -requires_lab_test</text>
@@ -115,35 +115,35 @@
   <text class="t" x="95" y="1065">主动脉CTA：夹层未见</text>
 
   <rect class="box2" x="480" y="930" width="310" height="150" rx="10"/>
-  <text class="h" x="505" y="960">4. 形成诊断依据</text>
+  <text class="h" x="505" y="960">4. 分型辅助诊断</text>
   <text class="t" x="505" y="990">支持：缺血性胸痛</text>
   <text class="t" x="505" y="1015">支持：ST段抬高</text>
   <text class="t" x="505" y="1040">支持：心肌肌钙蛋白动态升高</text>
   <text class="t" x="505" y="1065">鉴别：主动脉夹层已排除</text>
 
   <rect class="box3" x="900" y="915" width="520" height="180" rx="10"/>
-  <text class="h" x="925" y="945">诊断标准命中</text>
+  <text class="h" x="925" y="945">诊断标准图谱命中</text>
   <text class="small" x="925" y="973">DIS-CARD-CAD-AMI -has_diagnostic_criteria</text>
   <text class="small" x="925" y="995">  -> DXC-CARD-547346EE2FED</text>
   <text class="small" x="925" y="1017">EXAM-ECG -exam_has_indicator-> IND-CARD-340F2703D39C</text>
   <text class="small" x="925" y="1039">RULE-CARD-CAD-AMI-DX-COMP-ECG-ISCHEMIA</text>
   <text class="small" x="925" y="1061">RULE-CARD-CAD-AMI-DX-COMP-TROPONIN-DYNAMIC</text>
-  <text class="note" x="925" y="1083">此时由疑似诊断收敛为 AMI/STEMI 支持依据</text>
+  <text class="note" x="925" y="1083">此时由疑似诊断收敛为 AMI/STEMI 诊断依据</text>
 
   <!-- step 5 -->
   <rect class="box1" x="70" y="1160" width="310" height="110" rx="10"/>
   <text class="h" x="95" y="1190">医生确认或关注诊断</text>
-  <text class="t" x="95" y="1220">确认：AMI / STEMI</text>
+  <text class="t" x="95" y="1220">确认：AMI / STEMI 分型</text>
   <text class="t" x="95" y="1245">继续生成治疗建议</text>
 
   <rect class="box2" x="480" y="1150" width="310" height="135" rx="10"/>
-  <text class="h" x="505" y="1180">5. 进入再灌注评估</text>
+  <text class="h" x="505" y="1180">5. 流程准入与专项评估</text>
   <text class="t" x="505" y="1210">发病时间：2小时</text>
-  <text class="t" x="505" y="1235">PCI可及：90分钟</text>
+  <text class="t" x="505" y="1235">PCI介入可及：90分钟</text>
   <text class="t" x="505" y="1260">活动性出血：无</text>
 
   <rect class="box3" x="900" y="1145" width="520" height="145" rx="10"/>
-  <text class="h" x="925" y="1175">推荐阶段定位</text>
+  <text class="h" x="925" y="1175">流程阶段定位</text>
   <text class="small" x="925" y="1203">stage_code = STAGE-CDSS-CAD-AMI-02-REPERFUSION</text>
   <text class="small" x="925" y="1225">rule_code = RULE-CDSS-CAD-AMI-02-01-REPERFUSION</text>
   <text class="small" x="925" y="1247">RecommendationStatement 作为当前患者推荐根节点</text>
@@ -151,32 +151,32 @@
 
   <!-- step 6 -->
   <rect class="box2" x="480" y="1355" width="310" height="135" rx="10"/>
-  <text class="h" x="505" y="1385">6. 输出治疗建议</text>
-  <text class="t" x="505" y="1415">建议：评估PCI/溶栓/冠脉造影</text>
+  <text class="h" x="505" y="1385">6. 标准化治疗建议</text>
+  <text class="t" x="505" y="1415">建议：介入治疗/溶栓/冠脉造影评估</text>
   <text class="t" x="505" y="1440">动作：经皮冠状动脉介入治疗</text>
-  <text class="t" x="505" y="1465">关注：出血风险、PCI可及性</text>
+  <text class="t" x="505" y="1465">关注：出血风险、PCI介入可及性</text>
 
   <rect class="box3" x="900" y="1340" width="520" height="170" rx="10"/>
-  <text class="h" x="925" y="1370">治疗推荐命中</text>
+  <text class="h" x="925" y="1370">治疗建议图谱命中</text>
   <text class="small" x="925" y="1398">REC-CDSS-CAD-AMI-02-01-REPERFUSION</text>
   <text class="small" x="925" y="1420">  -recommends_action-> PROC-CARD-E9ADC25A25E3</text>
   <text class="small" x="925" y="1442">  action_name: 经皮冠状动脉介入治疗</text>
   <text class="small" x="925" y="1464">primary_evidence_code 可用于展示证据来源</text>
   <text class="note" x="925" y="1488">输出给医生：建议、依据、需补充判断的信息</text>
 
-  <!-- step 7 -->
+  <!-- final display -->
   <rect class="box1" x="70" y="1540" width="310" height="95" rx="10"/>
   <text class="h" x="95" y="1570">医生查看辅助建议</text>
   <text class="t" x="95" y="1600">展示建议、依据、证据来源</text>
   <text class="t" x="95" y="1625">由医生确认最终处置</text>
 
   <rect class="box2" x="480" y="1535" width="310" height="105" rx="10"/>
-  <text class="h" x="505" y="1565">7. 展示建议与证据</text>
+  <text class="h" x="505" y="1565">质控与模板提醒</text>
   <text class="t" x="505" y="1595">推荐陈述、动作、证据</text>
   <text class="t" x="505" y="1620">风险提示和缺失项</text>
 
   <rect class="box3" x="900" y="1530" width="520" height="115" rx="10"/>
-  <text class="h" x="925" y="1560">证据展示</text>
+  <text class="h" x="925" y="1560">证据与展示要求</text>
   <text class="small" x="925" y="1588">RecommendationStatement.primary_evidence_code</text>
   <text class="small" x="925" y="1610">Evidence / Guideline 用于展示来源</text>
   <text class="note" x="925" y="1632">不得只展示疾病名称，必须展示命中依据和下一步动作</text>

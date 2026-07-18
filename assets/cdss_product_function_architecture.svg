@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1200" viewBox="0 0 1900 1200">
+  <defs>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#64748b"/>
+    </marker>
+    <style>
+      .page { fill:#f4f8fc; }
+      .title { font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; font-size:34px; font-weight:700; fill:#0f172a; }
+      .subtitle { font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; font-size:18px; fill:#475569; }
+      .band { fill:#ffffff; stroke:#cbd5e1; stroke-width:1.6; }
+      .bandBlue { fill:#f7fbff; }
+      .bandGreen { fill:#f7fff9; }
+      .bandOrange { fill:#fffaf0; }
+      .bandPurple { fill:#f8f5ff; }
+      .bandTitle { font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; font-size:23px; font-weight:700; fill:#0f172a; }
+      .bandNote { font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; font-size:15px; fill:#64748b; }
+      .box { fill:#ffffff; stroke:#94a3b8; stroke-width:1.5; }
+      .boxBlue { fill:#eff6ff; stroke:#60a5fa; }
+      .boxGreen { fill:#ecfdf5; stroke:#34d399; }
+      .boxOrange { fill:#fff7ed; stroke:#fb923c; }
+      .boxPurple { fill:#f5f3ff; stroke:#a78bfa; }
+      .boxGray { fill:#f8fafc; stroke:#94a3b8; }
+      .boxTitle { font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; font-size:19px; font-weight:700; fill:#111827; }
+      .boxText { font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; font-size:14px; fill:#334155; }
+      .small { font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; font-size:13px; fill:#475569; }
+      .arrowBlue { stroke:#2563eb; stroke-width:2.3; fill:none; marker-end:url(#arrowBlue); }
+      .arrowGreen { stroke:#16a34a; stroke-width:2.3; fill:none; marker-end:url(#arrowGreen); }
+      .arrowOrange { stroke:#f59e0b; stroke-width:2.3; fill:none; marker-end:url(#arrowOrange); }
+      .arrowGray { stroke:#64748b; stroke-width:2; fill:none; marker-end:url(#arrowGray); stroke-dasharray:7 6; }
+      .labelBg { fill:#ffffff; stroke:#cbd5e1; stroke-width:1; }
+      .labelText { font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; font-size:13px; font-weight:700; fill:#334155; }
+      .tab { fill:#eef6ff; stroke:#60a5fa; stroke-width:1.3; }
+      .tabText { font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; font-size:16px; font-weight:700; fill:#1d4ed8; }
+    </style>
+  </defs>
+
+  <rect class="page" x="0" y="0" width="1900" height="1200"/>
+
+  <text class="title" x="60" y="58">专科辅助诊疗产品功能架构图</text>
+  <text class="subtitle" x="60" y="92">以门诊发现、急诊救治、住院承接和院内数据回填为主线，展示 CDSS 能力如何服务医生端专科辅助诊疗。</text>
+
+  <!-- Business access layer -->
+  <rect class="band bandBlue" x="42" y="125" width="1816" height="205" rx="18"/>
+  <text class="bandTitle" x="72" y="164">业务系统接入层</text>
+  <text class="bandNote" x="72" y="190">门诊、急诊、住院不是孤立入口，患者数据和诊疗状态在同一院内系统中持续回填。</text>
+
+  <rect class="box boxBlue" x="235" y="215" width="220" height="72" rx="12"/>
+  <text class="boxTitle" x="345" y="245" text-anchor="middle">门诊工作站</text>
+  <text class="boxText" x="345" y="270" text-anchor="middle">首诊 / 复诊 / 胸痛筛查</text>
+
+  <rect class="box boxOrange" x="520" y="215" width="235" height="72" rx="12"/>
+  <text class="boxTitle" x="637" y="245" text-anchor="middle">急诊/胸痛中心</text>
+  <text class="boxText" x="637" y="270" text-anchor="middle">分诊 / 抢救 / 快速检查</text>
+
+  <rect class="box boxGreen" x="820" y="215" width="220" height="72" rx="12"/>
+  <text class="boxTitle" x="930" y="245" text-anchor="middle">住院医生站</text>
+  <text class="boxText" x="930" y="270" text-anchor="middle">入科承接 / 院内突发</text>
+
+  <rect class="box boxGray" x="1105" y="205" width="325" height="92" rx="12"/>
+  <text class="boxTitle" x="1268" y="237" text-anchor="middle">院内系统数据</text>
+  <text class="boxText" x="1268" y="262" text-anchor="middle">EMR / LIS / PACS / 医嘱</text>
+  <text class="boxText" x="1268" y="284" text-anchor="middle">介入记录 / 手术记录 / 评估表单</text>
+
+  <rect class="box boxPurple" x="1495" y="215" width="220" height="72" rx="12"/>
+  <text class="boxTitle" x="1605" y="245" text-anchor="middle">患者全周期数据</text>
+  <text class="boxText" x="1605" y="270" text-anchor="middle">一次就诊持续更新</text>
+
+  <path class="arrowBlue" d="M455 251 L520 251"/>
+  <path class="arrowBlue" d="M755 251 L820 251"/>
+  <path class="arrowGreen" d="M1040 251 L1105 251"/>
+  <path class="arrowGreen" d="M1430 251 L1495 251"/>
+  <path class="arrowGray" d="M930 287 C910 323, 632 323, 637 287"/>
+  <rect class="labelBg" x="662" y="304" width="170" height="28" rx="8"/>
+  <text class="labelText" x="747" y="324" text-anchor="middle">住院突发胸痛回流急诊逻辑</text>
+
+  <!-- CDSS capability layer -->
+  <rect class="band bandGreen" x="42" y="355" width="1188" height="350" rx="18"/>
+  <text class="bandTitle" x="72" y="394">CDSS 专科辅助推荐能力层</text>
+  <text class="bandNote" x="72" y="420">围绕一个专病从“疑似、检查、分型、承接、治疗、质控”逐步输出推荐结果。</text>
+
+  <rect class="box boxGreen" x="110" y="455" width="230" height="78" rx="12"/>
+  <text class="boxTitle" x="225" y="488" text-anchor="middle">患者信息解析</text>
+  <text class="boxText" x="225" y="514" text-anchor="middle">一诉五史、体征、报告</text>
+
+  <rect class="box boxGreen" x="385" y="455" width="230" height="78" rx="12"/>
+  <text class="boxTitle" x="500" y="488" text-anchor="middle">疑似疾病识别</text>
+  <text class="boxText" x="500" y="514" text-anchor="middle">ACS / AMI 候选</text>
+
+  <rect class="box boxGreen" x="660" y="455" width="230" height="78" rx="12"/>
+  <text class="boxTitle" x="775" y="488" text-anchor="middle">初筛检查与鉴别</text>
+  <text class="boxText" x="775" y="514" text-anchor="middle">心电图、肌钙蛋白、CTA</text>
+
+  <rect class="box boxGreen" x="935" y="455" width="230" height="78" rx="12"/>
+  <text class="boxTitle" x="1050" y="488" text-anchor="middle">分型辅助诊断</text>
+  <text class="boxText" x="1050" y="514" text-anchor="middle">STEMI / NSTEMI / UA</text>
+
+  <rect class="box boxGreen" x="250" y="585" width="250" height="78" rx="12"/>
+  <text class="boxTitle" x="375" y="618" text-anchor="middle">流程承接与专项评估</text>
+  <text class="boxText" x="375" y="644" text-anchor="middle">再灌注、出血、肾功</text>
+
+  <rect class="box boxGreen" x="545" y="585" width="250" height="78" rx="12"/>
+  <text class="boxTitle" x="670" y="618" text-anchor="middle">治疗方案建议</text>
+  <text class="boxText" x="670" y="644" text-anchor="middle">PCI、溶栓、抗栓、调脂</text>
+
+  <rect class="box boxGreen" x="840" y="585" width="250" height="78" rx="12"/>
+  <text class="boxTitle" x="965" y="618" text-anchor="middle">围术期与质控提醒</text>
+  <text class="boxText" x="965" y="644" text-anchor="middle">术前/术后、表单、医嘱风险</text>
+
+  <path class="arrowGreen" d="M340 494 L385 494"/>
+  <path class="arrowGreen" d="M615 494 L660 494"/>
+  <path class="arrowGreen" d="M890 494 L935 494"/>
+  <path class="arrowGreen" d="M1050 533 C1050 560, 375 555, 375 585"/>
+  <path class="arrowGreen" d="M500 533 C500 560, 670 555, 670 585"/>
+  <path class="arrowGreen" d="M775 533 C775 560, 965 555, 965 585"/>
+
+  <!-- Flow engine layer -->
+  <rect class="band bandOrange" x="42" y="730" width="1188" height="230" rx="18"/>
+  <text class="bandTitle" x="72" y="768">专病流程引擎编排层</text>
+  <text class="bandNote" x="72" y="794">流程引擎不替代诊断判断，负责承接患者进入专病流程后的节点、状态、分支和闭环管理。</text>
+
+  <rect class="box boxOrange" x="125" y="830" width="220" height="72" rx="12"/>
+  <text class="boxTitle" x="235" y="860" text-anchor="middle">专病流程实例</text>
+  <text class="boxText" x="235" y="884" text-anchor="middle">同一患者跨场景承接</text>
+
+  <rect class="box boxOrange" x="405" y="830" width="220" height="72" rx="12"/>
+  <text class="boxTitle" x="515" y="860" text-anchor="middle">节点与组件配置</text>
+  <text class="boxText" x="515" y="884" text-anchor="middle">阶段、启停、版本</text>
+
+  <rect class="box boxOrange" x="685" y="830" width="220" height="72" rx="12"/>
+  <text class="boxTitle" x="795" y="860" text-anchor="middle">连接线流转</text>
+  <text class="boxText" x="795" y="884" text-anchor="middle">准入、分支、阻断</text>
+
+  <rect class="box boxOrange" x="965" y="830" width="220" height="72" rx="12"/>
+  <text class="boxTitle" x="1075" y="860" text-anchor="middle">状态机与质控闭环</text>
+  <text class="boxText" x="1075" y="884" text-anchor="middle">待办、已确认、已完成</text>
+
+  <path class="arrowOrange" d="M345 866 L405 866"/>
+  <path class="arrowOrange" d="M625 866 L685 866"/>
+  <path class="arrowOrange" d="M905 866 L965 866"/>
+
+  <!-- Doctor assistant panel -->
+  <rect class="band bandPurple" x="1265" y="355" width="593" height="605" rx="18"/>
+  <text class="bandTitle" x="1295" y="394">医生端专科辅助诊疗展示</text>
+  <text class="bandNote" x="1295" y="420">对应原型右侧“辅助诊疗 / 知识检索”面板，展示可操作的推荐栏目。</text>
+
+  <rect class="tab" x="1330" y="452" width="450" height="44" rx="10"/>
+  <text class="tabText" x="1435" y="480" text-anchor="middle">辅助诊疗</text>
+  <text class="boxTitle" x="1665" y="480" text-anchor="middle">知识检索</text>
+
+  <rect class="box boxPurple" x="1325" y="525" width="225" height="58" rx="10"/>
+  <text class="boxTitle" x="1438" y="560" text-anchor="middle">疑似疾病推荐</text>
+  <rect class="box boxPurple" x="1580" y="525" width="225" height="58" rx="10"/>
+  <text class="boxTitle" x="1693" y="560" text-anchor="middle">初筛检查/检验</text>
+
+  <rect class="box boxPurple" x="1325" y="610" width="225" height="58" rx="10"/>
+  <text class="boxTitle" x="1438" y="645" text-anchor="middle">鉴别诊断提示</text>
+  <rect class="box boxPurple" x="1580" y="610" width="225" height="58" rx="10"/>
+  <text class="boxTitle" x="1693" y="645" text-anchor="middle">分型辅助诊断</text>
+
+  <rect class="box boxPurple" x="1325" y="695" width="225" height="58" rx="10"/>
+  <text class="boxTitle" x="1438" y="730" text-anchor="middle">流程承接与评估</text>
+  <rect class="box boxPurple" x="1580" y="695" width="225" height="58" rx="10"/>
+  <text class="boxTitle" x="1693" y="730" text-anchor="middle">治疗方案与质控</text>
+
+  <rect class="box boxPurple" x="1325" y="780" width="225" height="58" rx="10"/>
+  <text class="boxTitle" x="1438" y="815" text-anchor="middle">围术期/表单提醒</text>
+  <rect class="box boxPurple" x="1580" y="780" width="225" height="58" rx="10"/>
+  <text class="boxTitle" x="1693" y="815" text-anchor="middle">知识检索与依据</text>
+
+  <rect class="box boxPurple" x="1325" y="865" width="480" height="58" rx="10"/>
+  <text class="boxTitle" x="1565" y="900" text-anchor="middle">医生操作：关注、确认、展开、进入流程、查看规则详情</text>
+
+  <!-- Cross-layer arrows -->
+  <path class="arrowBlue" d="M1605 287 C1605 342, 225 360, 225 455"/>
+  <rect class="labelBg" x="1170" y="332" width="125" height="28" rx="8"/>
+  <text class="labelText" x="1232" y="352" text-anchor="middle">患者数据进入</text>
+
+  <path class="arrowOrange" d="M965 663 C965 725, 795 770, 795 830"/>
+  <rect class="labelBg" x="820" y="716" width="135" height="28" rx="8"/>
+  <text class="labelText" x="887" y="736" text-anchor="middle">推荐结果承接</text>
+
+  <path class="arrowBlue" d="M1230 494 L1325 554"/>
+  <path class="arrowBlue" d="M1230 624 L1325 724"/>
+  <path class="arrowBlue" d="M1185 866 C1240 866, 1265 894, 1325 894"/>
+  <rect class="labelBg" x="1218" y="545" width="120" height="28" rx="8"/>
+  <text class="labelText" x="1278" y="565" text-anchor="middle">医生端展示</text>
+
+  <!-- Foundation layer -->
+  <rect class="band bandPurple" x="42" y="990" width="1816" height="145" rx="18"/>
+  <text class="bandTitle" x="72" y="1028">知识与数据支撑层</text>
+  <text class="bandNote" x="72" y="1054">为上层推荐和流程状态提供统一数据、知识、规则和证据来源。</text>
+
+  <rect class="box boxGray" x="270" y="1082" width="260" height="46" rx="10"/>
+  <text class="boxTitle" x="400" y="1111" text-anchor="middle">院内全周期数据</text>
+  <rect class="box boxGray" x="590" y="1082" width="260" height="46" rx="10"/>
+  <text class="boxTitle" x="720" y="1111" text-anchor="middle">专科知识图谱</text>
+  <rect class="box boxGray" x="910" y="1082" width="260" height="46" rx="10"/>
+  <text class="boxTitle" x="1040" y="1111" text-anchor="middle">规则库 / 智能体</text>
+  <rect class="box boxGray" x="1230" y="1082" width="260" height="46" rx="10"/>
+  <text class="boxTitle" x="1360" y="1111" text-anchor="middle">指南证据与版本</text>
+
+  <path class="arrowGray" d="M400 1082 C400 1010, 235 972, 235 902"/>
+  <path class="arrowGray" d="M720 1082 C720 1005, 500 730, 500 533"/>
+  <path class="arrowGray" d="M1040 1082 C1040 990, 1075 955, 1075 902"/>
+  <path class="arrowGray" d="M1360 1082 C1360 1005, 1565 972, 1565 923"/>
+</svg>

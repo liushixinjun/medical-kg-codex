@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1380" viewBox="0 0 2200 1380">
+  <defs>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#64748b"/>
+    </marker>
+    <style>
+      .page { fill:#f4f8fc; }
+      .title { font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; font-size:34px; font-weight:700; fill:#0f172a; }
+      .subtitle { font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; font-size:18px; fill:#475569; }
+      .band { fill:#ffffff; stroke:#cbd5e1; stroke-width:1.6; }
+      .bandBlue { fill:#f7fbff; }
+      .bandGreen { fill:#f7fff9; }
+      .bandOrange { fill:#fffaf0; }
+      .bandPurple { fill:#f8f5ff; }
+      .bandTitle { font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; font-size:24px; font-weight:700; fill:#0f172a; }
+      .bandNote { font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; font-size:15px; fill:#64748b; }
+      .box { fill:#ffffff; stroke:#94a3b8; stroke-width:1.6; }
+      .boxBlue { fill:#eff6ff; stroke:#60a5fa; }
+      .boxGreen { fill:#ecfdf5; stroke:#34d399; }
+      .boxOrange { fill:#fff7ed; stroke:#fb923c; }
+      .boxPurple { fill:#f5f3ff; stroke:#a78bfa; }
+      .boxRed { fill:#fff1f2; stroke:#fb7185; }
+      .boxGray { fill:#f8fafc; stroke:#94a3b8; }
+      .nodeTitle { font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; font-size:18px; font-weight:700; fill:#111827; }
+      .nodeText { font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; font-size:14px; fill:#334155; }
+      .small { font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; font-size:13px; fill:#475569; }
+      .arrowBlue { stroke:#2563eb; stroke-width:2.3; fill:none; marker-end:url(#arrowBlue); }
+      .arrowGreen { stroke:#16a34a; stroke-width:2.3; fill:none; marker-end:url(#arrowGreen); }
+      .arrowOrange { stroke:#f59e0b; stroke-width:2.3; fill:none; marker-end:url(#arrowOrange); }
+      .arrowGray { stroke:#64748b; stroke-width:2; fill:none; marker-end:url(#arrowGray); stroke-dasharray:7 6; }
+      .labelBg { fill:#ffffff; stroke:#cbd5e1; stroke-width:1; }
+      .flowLabel { font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; font-size:13px; font-weight:700; fill:#334155; }
+      .tag { fill:#eaf5ff; stroke:#93c5fd; stroke-width:1; }
+      .tagText { font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif; font-size:13px; font-weight:700; fill:#1d4ed8; }
+      .stateTag { fill:#ecfdf5; stroke:#86efac; stroke-width:1; }
+      .stateText { fill:#166534; }
+      .warnTag { fill:#fff7ed; stroke:#fdba74; stroke-width:1; }
+      .warnText { fill:#9a3412; }
+    </style>
+  </defs>
+
+  <rect class="page" x="0" y="0" width="2200" height="1380"/>
+
+  <text class="title" x="60" y="58">AMI 全场景诊断与流程承接图</text>
+  <text class="subtitle" x="60" y="92">多入口进入同一 AMI 诊断链：门诊、急诊、住院均可触发辅助诊断，诊断确认后再承接专病流程和医生端辅助诊疗展示。</text>
+
+  <!-- Product architecture mapping -->
+  <rect class="tag" x="60" y="118" width="300" height="32" rx="10"/>
+  <text class="tagText" x="78" y="140">对应产品架构：业务系统接入层</text>
+  <rect class="stateTag" x="385" y="118" width="350" height="32" rx="10"/>
+  <text class="tagText stateText" x="403" y="140">对应产品架构：CDSS 专科辅助推荐能力层</text>
+  <rect class="warnTag" x="760" y="118" width="315" height="32" rx="10"/>
+  <text class="tagText warnText" x="778" y="140">对应产品架构：专病流程引擎编排层</text>
+  <rect class="tag" x="1100" y="118" width="350" height="32" rx="10"/>
+  <text class="tagText" x="1118" y="140">对应产品架构：医生端专科辅助诊疗展示</text>
+  <rect class="stateTag" x="1475" y="118" width="300" height="32" rx="10"/>
+  <text class="tagText stateText" x="1493" y="140">对应产品架构：知识与数据支撑层</text>
+
+  <!-- Business entry layer -->
+  <rect class="band bandBlue" x="42" y="180" width="2116" height="265" rx="18"/>
+  <text class="bandTitle" x="72" y="220">一、业务系统入口：门诊、急诊、住院均可进入同一诊断链</text>
+  <text class="bandNote" x="72" y="247">这层解决评审里的核心问题：不是只覆盖急诊，也不是门诊、急诊、住院三套割裂流程，而是多个业务入口共享同一 AMI 辅助诊断能力。</text>
+
+  <rect class="box boxBlue" x="105" y="295" width="260" height="96" rx="14"/>
+  <text class="nodeTitle" x="132" y="328">门诊入口</text>
+  <text class="nodeText" x="132" y="356">胸痛、胸闷、复诊筛查</text>
+  <text class="nodeText" x="132" y="379">可转急诊或直接收住院</text>
+
+  <rect class="box boxOrange" x="430" y="295" width="260" height="96" rx="14"/>
+  <text class="nodeTitle" x="457" y="328">急诊/胸痛中心入口</text>
+  <text class="nodeText" x="457" y="356">分诊、抢救、快速检查</text>
+  <text class="nodeText" x="457" y="379">急诊处理后可转住院</text>
+
+  <rect class="box boxGreen" x="755" y="295" width="260" height="96" rx="14"/>
+  <text class="nodeTitle" x="782" y="328">住院入口</text>
+  <text class="nodeText" x="782" y="356">直接入院、入科后发现</text>
+  <text class="nodeText" x="782" y="379">院内突发胸痛可触发诊断链</text>
+
+  <rect class="box boxGray" x="1080" y="285" width="315" height="116" rx="14"/>
+  <text class="nodeTitle" x="1107" y="318">院内系统数据回填</text>
+  <text class="nodeText" x="1107" y="348">EMR、LIS、PACS、医嘱</text>
+  <text class="nodeText" x="1107" y="371">介入/手术记录、评估表单</text>
+  <text class="nodeText" x="1107" y="394">支撑门急诊住院共享状态</text>
+
+  <rect class="box boxPurple" x="1495" y="295" width="300" height="96" rx="14"/>
+  <text class="nodeTitle" x="1522" y="328">患者全周期数据</text>
+  <text class="nodeText" x="1522" y="356">同一次就诊持续更新</text>
+  <text class="nodeText" x="1522" y="379">避免重复推荐和业务断点</text>
+
+  <path class="arrowOrange" d="M365 343 L430 343"/>
+  <rect class="labelBg" x="366" y="307" width="98" height="28" rx="8"/>
+  <text class="flowLabel" x="415" y="327" text-anchor="middle">高危转急诊</text>
+
+  <path class="arrowGreen" d="M690 343 L755 343"/>
+  <rect class="labelBg" x="686" y="307" width="100" height="28" rx="8"/>
+  <text class="flowLabel" x="736" y="327" text-anchor="middle">急诊转住院</text>
+
+  <path class="arrowGreen" d="M365 380 C505 430, 650 430, 755 380"/>
+  <rect class="labelBg" x="475" y="407" width="125" height="28" rx="8"/>
+  <text class="flowLabel" x="537" y="427" text-anchor="middle">门诊直接收住院</text>
+
+  <path class="arrowGray" d="M885 295 C820 250, 540 250, 560 295"/>
+  <rect class="labelBg" x="608" y="252" width="150" height="28" rx="8"/>
+  <text class="flowLabel" x="683" y="272" text-anchor="middle">住院突发胸痛回急诊逻辑</text>
+
+  <path class="arrowGreen" d="M1015 343 L1080 343"/>
+  <path class="arrowGreen" d="M1395 343 L1495 343"/>
+
+  <!-- CDSS diagnosis layer -->
+  <rect class="band bandGreen" x="42" y="480" width="2116" height="370" rx="18"/>
+  <text class="bandTitle" x="72" y="520">二、CDSS 专科辅助诊断链：所有入口共用同一套 AMI 判断顺序</text>
+  <text class="bandNote" x="72" y="547">一开始只做疑似推荐；心电图、心肌肌钙蛋白等结果回填后，才进行 STEMI/NSTEMI 等分型辅助诊断。</text>
+
+  <rect class="box boxGreen" x="115" y="610" width="235" height="90" rx="14"/>
+  <text class="nodeTitle" x="140" y="642">患者信息解析</text>
+  <text class="nodeText" x="140" y="670">主诉、现病史、既往史</text>
+  <text class="nodeText" x="140" y="692">体征、生命体征、报告</text>
+
+  <rect class="box boxGreen" x="405" y="610" width="235" height="90" rx="14"/>
+  <text class="nodeTitle" x="430" y="642">疑似疾病识别</text>
+  <text class="nodeText" x="430" y="670">输出 ACS/AMI 候选</text>
+  <text class="nodeText" x="430" y="692">危险因素只做加权</text>
+
+  <rect class="box boxGreen" x="695" y="610" width="250" height="90" rx="14"/>
+  <text class="nodeTitle" x="720" y="642">初筛检查推荐</text>
+  <text class="nodeText" x="720" y="670">心电图、肌钙蛋白、CK-MB</text>
+  <text class="nodeText" x="720" y="692">超声心动图</text>
+
+  <rect class="box boxGreen" x="1000" y="610" width="250" height="90" rx="14"/>
+  <text class="nodeTitle" x="1025" y="642">胸痛鉴别提示</text>
+  <text class="nodeText" x="1025" y="670">主动脉夹层、肺栓塞</text>
+  <text class="nodeText" x="1025" y="692">急性心包炎等待排</text>
+
+  <rect class="box boxPurple" x="1305" y="610" width="270" height="90" rx="14"/>
+  <text class="nodeTitle" x="1330" y="642">报告回填与分型</text>
+  <text class="nodeText" x="1330" y="670">ST 段抬高 + 肌钙蛋白升高</text>
+  <text class="nodeText" x="1330" y="692">输出 STEMI/NSTEMI/UA</text>
+
+  <rect class="box boxOrange" x="1630" y="610" width="270" height="90" rx="14"/>
+  <text class="nodeTitle" x="1655" y="642">医生确认/关注诊断</text>
+  <text class="nodeText" x="1655" y="670">确认 AMI/STEMI 候选</text>
+  <text class="nodeText" x="1655" y="692">决定是否承接专病流程</text>
+
+  <path class="arrowGreen" d="M350 655 L405 655"/>
+  <path class="arrowGreen" d="M640 655 L695 655"/>
+  <path class="arrowGreen" d="M945 655 L1000 655"/>
+  <path class="arrowGreen" d="M1250 655 L1305 655"/>
+  <path class="arrowOrange" d="M1575 655 L1630 655"/>
+
+  <!-- Entry arrows into diagnosis chain -->
+  <path class="arrowBlue" d="M235 391 C235 475, 232 535, 232 610"/>
+  <path class="arrowOrange" d="M560 391 C560 472, 522 535, 522 610"/>
+  <path class="arrowGreen" d="M885 391 C885 492, 820 535, 820 610"/>
+  <path class="arrowGray" d="M1238 401 C1160 462, 1125 530, 1125 610"/>
+  <rect class="labelBg" x="78" y="574" width="180" height="28" rx="8"/>
+  <text class="flowLabel" x="168" y="594" text-anchor="middle">门诊也可触发同一诊断链</text>
+  <rect class="labelBg" x="495" y="574" width="150" height="28" rx="8"/>
+  <text class="flowLabel" x="570" y="594" text-anchor="middle">急诊快速触发</text>
+  <rect class="labelBg" x="780" y="574" width="165" height="28" rx="8"/>
+  <text class="flowLabel" x="862" y="594" text-anchor="middle">住院直接触发/复用</text>
+
+  <!-- Flow engine and display layer -->
+  <rect class="band bandOrange" x="42" y="885" width="1290" height="300" rx="18"/>
+  <text class="bandTitle" x="72" y="925">三、诊断确认后的专病流程承接</text>
+  <text class="bandNote" x="72" y="952">只有医生确认或关注诊断后，才进入专病流程实例；后续治疗、围术期和质控属于流程承接后的动作。</text>
+
+  <rect class="box boxOrange" x="130" y="1020" width="245" height="88" rx="14"/>
+  <text class="nodeTitle" x="155" y="1052">创建/承接 AMI 流程实例</text>
+  <text class="nodeText" x="155" y="1081">同一患者跨场景承接</text>
+
+  <rect class="box boxOrange" x="435" y="1020" width="245" height="88" rx="14"/>
+  <text class="nodeTitle" x="460" y="1052">专项评估节点</text>
+  <text class="nodeText" x="460" y="1081">再灌注、出血、肾功、心功能</text>
+
+  <rect class="box boxOrange" x="740" y="1020" width="245" height="88" rx="14"/>
+  <text class="nodeTitle" x="765" y="1052">治疗方案节点</text>
+  <text class="nodeText" x="765" y="1081">PCI、溶栓、抗栓、调脂</text>
+
+  <rect class="box boxOrange" x="1045" y="1020" width="245" height="88" rx="14"/>
+  <text class="nodeTitle" x="1070" y="1052">围术期与质控节点</text>
+  <text class="nodeText" x="1070" y="1081">术前/术后、表单、医嘱风险</text>
+
+  <path class="arrowOrange" d="M375 1064 L435 1064"/>
+  <path class="arrowOrange" d="M680 1064 L740 1064"/>
+  <path class="arrowOrange" d="M985 1064 L1045 1064"/>
+  <path class="arrowOrange" d="M1765 700 C1765 825, 252 835, 252 1020"/>
+  <rect class="labelBg" x="1495" y="790" width="210" height="28" rx="8"/>
+  <text class="flowLabel" x="1600" y="810" text-anchor="middle">医生确认后承接流程实例</text>
+
+  <rect class="band bandPurple" x="1370" y="885" width="788" height="300" rx="18"/>
+  <text class="bandTitle" x="1400" y="925">四、医生端专科辅助诊疗展示</text>
+  <text class="bandNote" x="1400" y="952">对应产品功能架构图右侧小助手模块，所有推荐结果最终在医生端面板统一展示。</text>
+
+  <rect class="box boxPurple" x="1425" y="995" width="210" height="58" rx="10"/>
+  <text class="nodeTitle" x="1530" y="1030" text-anchor="middle">疑似疾病推荐</text>
+  <rect class="box boxPurple" x="1665" y="995" width="210" height="58" rx="10"/>
+  <text class="nodeTitle" x="1770" y="1030" text-anchor="middle">初筛检查/检验</text>
+  <rect class="box boxPurple" x="1905" y="995" width="210" height="58" rx="10"/>
+  <text class="nodeTitle" x="2010" y="1030" text-anchor="middle">分型辅助诊断</text>
+
+  <rect class="box boxPurple" x="1425" y="1085" width="210" height="58" rx="10"/>
+  <text class="nodeTitle" x="1530" y="1120" text-anchor="middle">流程承接与评估</text>
+  <rect class="box boxPurple" x="1665" y="1085" width="210" height="58" rx="10"/>
+  <text class="nodeTitle" x="1770" y="1120" text-anchor="middle">治疗方案与质控</text>
+  <rect class="box boxPurple" x="1905" y="1085" width="210" height="58" rx="10"/>
+  <text class="nodeTitle" x="2010" y="1120" text-anchor="middle">围术期/表单提醒</text>
+
+  <path class="arrowBlue" d="M1900 655 C2050 740, 2010 900, 2010 995"/>
+  <path class="arrowBlue" d="M1290 1064 C1345 1064, 1370 1114, 1425 1114"/>
+  <rect class="labelBg" x="1968" y="762" width="145" height="28" rx="8"/>
+  <text class="flowLabel" x="2040" y="782" text-anchor="middle">推荐结果展示</text>
+
+  <!-- Foundation layer -->
+  <rect class="band bandPurple" x="42" y="1210" width="2116" height="125" rx="18"/>
+  <text class="bandTitle" x="72" y="1248">五、知识与数据支撑</text>
+  <text class="bandNote" x="72" y="1274">院内全周期数据、专科知识图谱、规则库/智能体、指南证据与版本共同支撑上方诊断推荐、流程承接和医生端展示。</text>
+
+  <rect class="box boxGray" x="315" y="1292" width="245" height="42" rx="10"/>
+  <text class="nodeTitle" x="437" y="1319" text-anchor="middle">院内全周期数据</text>
+  <rect class="box boxGray" x="630" y="1292" width="245" height="42" rx="10"/>
+  <text class="nodeTitle" x="752" y="1319" text-anchor="middle">专科知识图谱</text>
+  <rect class="box boxGray" x="945" y="1292" width="245" height="42" rx="10"/>
+  <text class="nodeTitle" x="1067" y="1319" text-anchor="middle">规则库 / 智能体</text>
+  <rect class="box boxGray" x="1260" y="1292" width="245" height="42" rx="10"/>
+  <text class="nodeTitle" x="1382" y="1319" text-anchor="middle">指南证据与版本</text>
+
+  <rect class="tag" x="1540" y="1292" width="525" height="42" rx="10"/>
+  <text class="tagText" x="1560" y="1319">关键边界：诊断链负责“是否疑似/如何分型”，流程引擎负责“确认后如何承接和闭环”。</text>
+</svg>

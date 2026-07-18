@@ -1,0 +1,4 @@
+推荐候选编码,疾病编码,疾病名称,临床问题,适用场景,推荐动作标准名,动作类型,推荐原文摘要,推荐等级,证据等级,来源指南编码,页码或段落,证据编码,是否候选进入CDSS,备注
+RC-CARD-AMI-REPERFUSION-001,DIS-CARD-CAD-AMI,急性心肌梗死,STEMI再灌注治疗,发病12小时内且ST段抬高,经皮冠状动脉介入治疗,操作/手术,STEMI患者应尽快恢复梗死相关血管灌注,待从指南抽取,待从指南抽取,GL-CARD-STEMI-CN-2019,待填写,EV-CARD-AMI-REPERFUSION-001,是,候选推荐，需进入来源裁决
+RC-CARD-AMI-FIBRINOLYSIS-001,DIS-CARD-CAD-AMI,急性心肌梗死,STEMI溶栓治疗,预计直接PCI明显延误且无溶栓禁忌,溶栓治疗,治疗动作,PCI延误时可考虑溶栓治疗,待从指南抽取,待从指南抽取,GL-CARD-STEMI-CN-2019,待填写,EV-CARD-AMI-FIBRINOLYSIS-001,是,需同时检查禁忌证
+RC-CARD-AMI-DIAGNOSIS-001,DIS-CARD-CAD-AMI,急性心肌梗死,AMI诊断标准,疑似急性心肌缺血或胸痛患者,心肌坏死标志物动态检测,检验,肌钙蛋白升高并呈动态变化支持心肌损伤/梗死诊断,待从指南抽取,待从指南抽取,GL-CARD-MI-UDMI-4,待填写,EV-CARD-AMI-DIAGNOSIS-001,是,诊断推荐也需要来源裁决

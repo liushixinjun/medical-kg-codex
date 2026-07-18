@@ -1,0 +1,15 @@
+﻿code,name,disease_subcategory,cdss_ready,clinical_review_status
+DIS-CARD-CAD-ACS,急性冠脉综合征,,False,pending_clinical_review
+DIS-CARD-CAD-AMI,急性心肌梗死,,False,pending_clinical_review
+DIS-CARD-CAD-ATHEROSCLEROSIS,动脉粥样硬化,,False,pending_clinical_review
+DIS-CARD-CAD-CCS,慢性冠脉综合征,,False,pending_clinical_review
+DIS-CARD-CAD-CHD,冠状动脉粥样硬化性心脏病,,False,pending_clinical_review
+DIS-CARD-CAD-ICM,缺血性心肌病,,True,clinical_ready
+DIS-CARD-CAD-NSTEMI,非ST段抬高型心肌梗死,,False,pending_clinical_review
+DIS-CARD-CAD-OLD-MI,陈旧性心肌梗死,,False,pending_clinical_review
+DIS-CARD-CAD-POST-MI-SYNDROME,心肌梗死后综合征,,False,pending_clinical_review
+DIS-CARD-CAD-SILENT-ISCHEMIA,隐匿性冠心病,,False,pending_clinical_review
+DIS-CARD-CAD-SPASM,冠状动脉痉挛,,False,pending_clinical_review
+DIS-CARD-CAD-STABLE-ANGINA,稳定型心绞痛,,False,pending_clinical_review
+DIS-CARD-CAD-STEMI,ST段抬高型心肌梗死,,False,pending_clinical_use_effect_review
+DIS-CARD-CAD-UA,不稳定型心绞痛,,False,pending_clinical_review

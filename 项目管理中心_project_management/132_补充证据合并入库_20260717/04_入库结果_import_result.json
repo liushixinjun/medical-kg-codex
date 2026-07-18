@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-07-17 14:44:47",
+  "package_id": "SUPP-EVIDENCE-MERGE-20260717-001",
+  "neo4j_written": true,
+  "node_rows_processed": 5617,
+  "relation_rows_processed": 16695,
+  "relation_rows_skipped_missing_endpoint": 0,
+  "before_counts": {
+    "nodes": 54371,
+    "rels": 187165
+  },
+  "after_counts": {
+    "nodes": 59860,
+    "rels": 203736
+  }
+}

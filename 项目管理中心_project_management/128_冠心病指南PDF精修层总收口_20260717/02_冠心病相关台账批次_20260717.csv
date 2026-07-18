@@ -1,0 +1,6 @@
+﻿batch_id,学科,疾病大类,专病范围,状态,输出路径,是否写Neo4j,备注
+BATCH-CARD-CAD-AMI-LABIND-20260713-001,心血管内科,冠心病,急性心肌梗死检验指标精修,已生成并导入Neo4j且服务器入库后复测通过,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\BATCH-CARD-CAD-AMI-LABIND-20260713-001_AMI检验指标精修_lab_indicator_refine,是,修复LabTest到ExamIndicator的检验指标下钻关系；节点15；关系26；AMI检验指标0->11；Evidence缺失0；非KGNode=0；全局缺口扫描文件=心血管内科文献集合/全局检验指标缺口扫描_20260713.csv
+BATCH-CARD-CAD-REMAINING-20260712-001,心血管内科,冠心病,冠心病剩余病种教材骨架精修,已生成并导入Neo4j且服务器入库后复测通过,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\BATCH-CARD-CAD-REMAINING-20260712-001_冠心病剩余病种教材骨架精修_textbook_refine,是,导入节点461；关系859；替换旧同语义关系0；覆盖AMI/ACS/CCS/UA/NSTEMI/稳定型心绞痛/缺血性心肌病/隐匿性冠心病；服务器硬闸门全0；陈旧性心肌梗死无独立D6教材来源
+BATCH-CARD-CAD-STEMI-20260712-001,心血管内科,冠心病,ST段抬高型心肌梗死,已生成并导入Neo4j且服务器入库后复测通过,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\BATCH-CARD-CAD-STEMI-20260712-001_STEMI教材骨架精修_textbook_refine,是,导入节点203；关系430；替换旧同语义关系37；服务器诊断标准明细9；鉴别诊断8；具体溶栓药物7；禁忌证10；阻断关系4；ClinicalRule原文证据18/18；hard_gate_pass=true
+BATCH-CARD-CAD-202607-PLAN,心血管内科,冠心病,冠心病大类含ACS/AMI/STEMI/NSTEMI/慢性冠脉疾病,计划中,心血管内科文献集合,待定,本月优先第1位；回原文重抽取
+BATCH-CARD-CAD-TOTAL-REFINE-20260714-001,心血管内科,冠心病,冠心病总精修扩展,已写入Neo4j并通过入库后复测,E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合\20260714_冠心病总精修,是,补齐36条CDSS规则证据链；直接PCI治疗补具体操作；泵衰竭与血流动力学评估更正为风险分层；38个测试通过节点转formal_cdss_ready=true；治疗方案可执行性缺口=0；规则缺文本/证据=0

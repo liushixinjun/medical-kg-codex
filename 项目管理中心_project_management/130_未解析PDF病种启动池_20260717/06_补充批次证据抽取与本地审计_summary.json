@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-07-17 13:55:02",
+  "neo4j_written": false,
+  "batch_count": 7,
+  "extract_completed_count": 7,
+  "build_completed_count": 7,
+  "audit_completed_count": 7,
+  "error_count": 0,
+  "total_evidence_count": 5851,
+  "total_node_count": 5646,
+  "total_relation_count": 16697
+}

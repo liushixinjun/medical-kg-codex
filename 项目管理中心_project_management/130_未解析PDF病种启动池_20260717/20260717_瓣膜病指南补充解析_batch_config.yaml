@@ -1,0 +1,108 @@
+batch:
+  batch_id: 20260717_瓣膜病指南补充解析
+scope:
+  top_specialty: 心血管内科
+  disease_category: 瓣膜病
+  scope_type: 指南PDF补充解析
+  scope_target:
+  - 心脏瓣膜病
+  - 主动脉瓣狭窄
+  - 主动脉瓣反流
+  - 二尖瓣狭窄
+  - 二尖瓣反流
+  source_aliases: &id001
+  - ACC／AHA指南：心脏瓣膜病患者的管理（2020）
+  - 'ESC／EACTS指南：瓣膜性心脏病的管理（2021） '
+source_policy:
+  source_scope_aliases: *id001
+source_roots:
+  guideline_roots:
+  - E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\项目管理中心_project_management\130_未解析PDF病种启动池_20260717\00_精确PDF源文件\20260717_瓣膜病指南补充解析
+  textbook_roots:
+  - E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\项目管理中心_project_management\130_未解析PDF病种启动池_20260717\00_空教材闸门目录_仅满足G0校验
+  external_authority_roots: []
+  terminology_roots: []
+output:
+  output_root: E:\BigMouse\0.CDSS文献诊疗指南材料PDF\AI专科知识图谱生成\心血管内科文献集合
+execution_permissions:
+  allow_neo4j_write: false
+  allow_run_import_scripts: false
+  allow_parse_pdf: true
+  allow_extract_evidence: false
+taxonomy_rows:
+- specialty_code: CARD
+  category_code: CARD-VHD
+  subcategory_code: ''
+  disease_code: DIS-CARD-VHD
+  name: 心脏瓣膜病
+  name_en: ''
+  aliases: 心脏瓣膜病；valvular heart disease；heart valve disease；VHD
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CARD-VHD
+  subcategory_code: ''
+  disease_code: DIS-CARD-VHD-AS
+  name: 主动脉瓣狭窄
+  name_en: ''
+  aliases: 主动脉瓣狭窄；aortic stenosis；AS
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CARD-VHD
+  subcategory_code: ''
+  disease_code: DIS-CARD-VHD-AR
+  name: 主动脉瓣反流
+  name_en: ''
+  aliases: 主动脉瓣反流；aortic regurgitation；aortic insufficiency；AR
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CARD-VHD
+  subcategory_code: ''
+  disease_code: DIS-CARD-VHD-MS
+  name: 二尖瓣狭窄
+  name_en: ''
+  aliases: 二尖瓣狭窄；mitral stenosis；MS
+  inclusion_status: included
+- specialty_code: CARD
+  category_code: CARD-VHD
+  subcategory_code: ''
+  disease_code: DIS-CARD-VHD-MR
+  name: 二尖瓣反流
+  name_en: ''
+  aliases: 二尖瓣反流；mitral regurgitation；mitral insufficiency；MR
+  inclusion_status: included
+controlled_vocabulary_rows:
+- canonical_name: 心脏瓣膜病
+  name_en: valvular heart disease
+  abbr: VHD
+  aliases: 心脏瓣膜病；valvular heart disease；heart valve disease；VHD
+  entityType: Disease
+  disease_scope: DIS-CARD-VHD
+  source: 未解析PDF启动池
+- canonical_name: 主动脉瓣狭窄
+  name_en: aortic stenosis
+  abbr: AS
+  aliases: 主动脉瓣狭窄；aortic stenosis；AS
+  entityType: Disease
+  disease_scope: DIS-CARD-VHD-AS
+  source: 未解析PDF启动池
+- canonical_name: 主动脉瓣反流
+  name_en: aortic regurgitation
+  abbr: AR
+  aliases: 主动脉瓣反流；aortic regurgitation；aortic insufficiency；AR
+  entityType: Disease
+  disease_scope: DIS-CARD-VHD-AR
+  source: 未解析PDF启动池
+- canonical_name: 二尖瓣狭窄
+  name_en: mitral stenosis
+  abbr: MS
+  aliases: 二尖瓣狭窄；mitral stenosis；MS
+  entityType: Disease
+  disease_scope: DIS-CARD-VHD-MS
+  source: 未解析PDF启动池
+- canonical_name: 二尖瓣反流
+  name_en: mitral regurgitation
+  abbr: MR
+  aliases: 二尖瓣反流；mitral regurgitation；mitral insufficiency；MR
+  entityType: Disease
+  disease_scope: DIS-CARD-VHD-MR
+  source: 未解析PDF启动池

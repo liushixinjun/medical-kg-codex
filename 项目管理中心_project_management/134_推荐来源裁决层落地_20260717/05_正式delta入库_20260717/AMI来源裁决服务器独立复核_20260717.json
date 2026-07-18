@@ -1,0 +1,98 @@
+{
+  "batch_id": "AMI推荐来源裁决正式入库_20260717",
+  "summary": [
+    {
+      "entityType": "RecommendationStatement",
+      "count": 5
+    },
+    {
+      "entityType": "SourceAdjudication",
+      "count": 5
+    }
+  ],
+  "hard_gates": {
+    "nodes": 10,
+    "missing_primary_evidence": 0,
+    "missing_recommendation_class": 0,
+    "missing_evidence_level": 0,
+    "missing_action_code": 0,
+    "non_formal": 0
+  },
+  "relationships": [
+    {
+      "relationship": "based_on_guideline",
+      "count": 5
+    },
+    {
+      "relationship": "blocks_action",
+      "count": 2
+    },
+    {
+      "relationship": "decides_recommendation",
+      "count": 5
+    },
+    {
+      "relationship": "derived_from",
+      "count": 10
+    },
+    {
+      "relationship": "has_source_adjudication",
+      "count": 5
+    },
+    {
+      "relationship": "recommends_action",
+      "count": 8
+    },
+    {
+      "relationship": "uses_primary_guideline",
+      "count": 5
+    }
+  ],
+  "rows": [
+    {
+      "code": "SRCADJ-CARD-AMI-DX-001",
+      "question": "AMI诊断标准",
+      "evidence": "EVD-BFD8DF56E0886EF186D8-AMI",
+      "recommendation_class": "定义标准",
+      "evidence_level": "国际通用定义标准",
+      "action_code": "DXC-CARD-547346EE2FED",
+      "action_relation": "recommends_action"
+    },
+    {
+      "code": "SRCADJ-CARD-AMI-ECG-001",
+      "question": "首诊心电图检查",
+      "evidence": "EVD-9A1C41BB38E3029E07C5-STEMI",
+      "recommendation_class": "专家共识推荐",
+      "evidence_level": "专家共识证据",
+      "action_code": "EXAM-CARD-A80B855C8C77",
+      "action_relation": "recommends_action"
+    },
+    {
+      "code": "SRCADJ-CARD-AMI-FIB-001",
+      "question": "STEMI溶栓治疗",
+      "evidence": "EVD-56AF2340E37314FCA705-AMI",
+      "recommendation_class": "专家共识推荐",
+      "evidence_level": "专家共识证据",
+      "action_code": "PROC-CARD-DA0F467D4A30",
+      "action_relation": "recommends_action"
+    },
+    {
+      "code": "SRCADJ-CARD-AMI-FIB-CONTRA-001",
+      "question": "溶栓禁忌证",
+      "evidence": "EVD-B9B303B0E1B921BC095F-AMI",
+      "recommendation_class": "禁忌阻断规则",
+      "evidence_level": "专家共识证据",
+      "action_code": "PROC-CARD-DA0F467D4A30",
+      "action_relation": "blocks_action"
+    },
+    {
+      "code": "SRCADJ-CARD-AMI-PCI-001",
+      "question": "STEMI再灌注策略",
+      "evidence": "EVD-C29D798C2C4AA7DB70EA-STEMI",
+      "recommendation_class": "专家共识推荐",
+      "evidence_level": "专家共识证据",
+      "action_code": "PROC-CARD-E9ADC25A25E3",
+      "action_relation": "recommends_action"
+    }
+  ]
+}

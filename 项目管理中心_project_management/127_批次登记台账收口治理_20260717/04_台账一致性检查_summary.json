@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-07-17T00:27:37",
+  "csv_ledger": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\项目管理中心_project_management\\04_批次登记台账_batch_ledger.csv",
+  "md_ledger": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\心血管内科文献集合\\批次登记台账.md",
+  "csv_batch_count": 47,
+  "md_heading_count": 34,
+  "missing_in_md_count": 0,
+  "empty_output_path_count": 1,
+  "missing_output_path_count": 1,
+  "duplicate_batch_id_count": 0,
+  "latest_required_missing_csv_count": 0,
+  "latest_required_missing_md_count": 0,
+  "latest_required_batch_ids": [
+    "20260716_内科学心血管骨架V1冻结",
+    "20260716_内科学心血管骨架V1.1临床可推理层下钻",
+    "20260716_内科学心血管骨架V1.2章节级证据精修",
+    "20260717_指南PDF精修层全库总检",
+    "20260717_批次登记台账收口治理"
+  ],
+  "neo4j_written": false
+}

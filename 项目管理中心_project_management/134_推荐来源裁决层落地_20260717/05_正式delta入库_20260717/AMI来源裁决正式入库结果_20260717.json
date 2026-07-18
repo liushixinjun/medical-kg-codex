@@ -1,0 +1,50 @@
+{
+  "batch_id": "AMI推荐来源裁决正式入库_20260717",
+  "schema_version": "V1.17",
+  "run_at": "2026-07-17 17:36:02",
+  "planned_formal_rows": 5,
+  "imported_rows": 5,
+  "missing_rows": 0,
+  "nodes_written": 10,
+  "relations_written": 40,
+  "verify": {
+    "source_adjudication_count": 5,
+    "recommendation_statement_count": 5,
+    "missing_primary_evidence_count": 0,
+    "missing_recommendation_class_count": 0,
+    "missing_evidence_level_count": 0,
+    "missing_action_code_count": 0,
+    "non_formal_cdss_count": 0
+  },
+  "relationship_verify": [
+    {
+      "relationship": "based_on_guideline",
+      "count": 5
+    },
+    {
+      "relationship": "blocks_action",
+      "count": 2
+    },
+    {
+      "relationship": "decides_recommendation",
+      "count": 5
+    },
+    {
+      "relationship": "derived_from",
+      "count": 10
+    },
+    {
+      "relationship": "has_source_adjudication",
+      "count": 5
+    },
+    {
+      "relationship": "recommends_action",
+      "count": 8
+    },
+    {
+      "relationship": "uses_primary_guideline",
+      "count": 5
+    }
+  ],
+  "missing": []
+}

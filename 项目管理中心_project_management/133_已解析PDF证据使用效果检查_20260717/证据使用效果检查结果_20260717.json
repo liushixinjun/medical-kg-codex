@@ -1,0 +1,325 @@
+{
+  "generated_at": "2026-07-17 15:10:16",
+  "neo4j_written": false,
+  "package_id": "SUPP-EVIDENCE-MERGE-20260717-001",
+  "global_summary": {
+    "evidence_count": 2140,
+    "evidence_with_guideline": 2140,
+    "evidence_used_by_clinical_entity": 2140,
+    "disease_reachable_evidence": 2140,
+    "clinical_rule_count": 3330,
+    "rules_with_action_and_evidence": 1710
+  },
+  "batches": [
+    {
+      "batch_id": "20260717_冠心病ACS2025补充解析",
+      "evidence_count": 102,
+      "evidence_with_guideline": 102,
+      "evidence_with_guideline_rate": "100.0%",
+      "evidence_used_by_clinical_entity": 102,
+      "evidence_used_by_clinical_entity_rate": "100.0%",
+      "disease_reachable_evidence": 102,
+      "disease_reachable_evidence_rate": "100.0%",
+      "reached_disease_count": 7,
+      "clinical_rule_count": 392,
+      "rules_with_action": 314,
+      "rules_with_evidence": 392,
+      "rules_with_action_and_evidence": 314,
+      "formal_cdss_chain_rate": "80.1%",
+      "disease_rule_action_evidence_chains": 314,
+      "action_count": 15,
+      "action_disease_count": 5,
+      "judgement": "可进入正式CDSS推荐链路",
+      "top_diseases": [
+        {
+          "disease_code": "DIS-CARD-CAD-ACS",
+          "disease_name": "急性冠脉综合征",
+          "evidence_count": 74,
+          "rule_count": 148
+        },
+        {
+          "disease_code": "DIS-CARD-CAD-AMI",
+          "disease_name": "急性心肌梗死",
+          "evidence_count": 64,
+          "rule_count": 128
+        },
+        {
+          "disease_code": "DIS-CARD-CAD-STEMI",
+          "disease_name": "ST段抬高型心肌梗死",
+          "evidence_count": 44,
+          "rule_count": 88
+        },
+        {
+          "disease_code": "DIS-CARD-CAD-NSTEMI",
+          "disease_name": "非ST段抬高型心肌梗死",
+          "evidence_count": 11,
+          "rule_count": 22
+        },
+        {
+          "disease_code": "DIS-CARD-CAD-UA",
+          "disease_name": "不稳定型心绞痛",
+          "evidence_count": 3,
+          "rule_count": 6
+        }
+      ]
+    },
+    {
+      "batch_id": "20260717_瓣膜病指南补充解析",
+      "evidence_count": 1148,
+      "evidence_with_guideline": 1148,
+      "evidence_with_guideline_rate": "100.0%",
+      "evidence_used_by_clinical_entity": 1148,
+      "evidence_used_by_clinical_entity_rate": "100.0%",
+      "disease_reachable_evidence": 1148,
+      "disease_reachable_evidence_rate": "100.0%",
+      "reached_disease_count": 7,
+      "clinical_rule_count": 1220,
+      "rules_with_action": 546,
+      "rules_with_evidence": 1220,
+      "rules_with_action_and_evidence": 546,
+      "formal_cdss_chain_rate": "44.8%",
+      "disease_rule_action_evidence_chains": 546,
+      "action_count": 21,
+      "action_disease_count": 5,
+      "judgement": "部分可进入正式CDSS推荐链路，需补动作链",
+      "top_diseases": [
+        {
+          "disease_code": "DIS-CARD-VHD-AS",
+          "disease_name": "主动脉瓣狭窄",
+          "evidence_count": 260,
+          "rule_count": 520
+        },
+        {
+          "disease_code": "DIS-CARD-VHD-MR",
+          "disease_name": "二尖瓣反流",
+          "evidence_count": 149,
+          "rule_count": 298
+        },
+        {
+          "disease_code": "DIS-CARD-VHD",
+          "disease_name": "心脏瓣膜病",
+          "evidence_count": 93,
+          "rule_count": 186
+        },
+        {
+          "disease_code": "DIS-CARD-VHD-AR",
+          "disease_name": "主动脉瓣反流",
+          "evidence_count": 59,
+          "rule_count": 118
+        },
+        {
+          "disease_code": "DIS-CARD-VHD-MS",
+          "disease_name": "二尖瓣狭窄",
+          "evidence_count": 49,
+          "rule_count": 98
+        }
+      ]
+    },
+    {
+      "batch_id": "20260717_心律失常指南补充解析",
+      "evidence_count": 500,
+      "evidence_with_guideline": 500,
+      "evidence_with_guideline_rate": "100.0%",
+      "evidence_used_by_clinical_entity": 500,
+      "evidence_used_by_clinical_entity_rate": "100.0%",
+      "disease_reachable_evidence": 500,
+      "disease_reachable_evidence_rate": "100.0%",
+      "reached_disease_count": 14,
+      "clinical_rule_count": 842,
+      "rules_with_action": 402,
+      "rules_with_evidence": 842,
+      "rules_with_action_and_evidence": 402,
+      "formal_cdss_chain_rate": "47.7%",
+      "disease_rule_action_evidence_chains": 402,
+      "action_count": 22,
+      "action_disease_count": 4,
+      "judgement": "部分可进入正式CDSS推荐链路，需补动作链",
+      "top_diseases": [
+        {
+          "disease_code": "DIS-CARD-ARR-AF",
+          "disease_name": "心房颤动",
+          "evidence_count": 209,
+          "rule_count": 418
+        },
+        {
+          "disease_code": "DIS-CARD-ARR-VA",
+          "disease_name": "室性心律失常",
+          "evidence_count": 117,
+          "rule_count": 234
+        },
+        {
+          "disease_code": "DIS-CARD-SCD-SUDDEN",
+          "disease_name": "心脏性猝死",
+          "evidence_count": 85,
+          "rule_count": 170
+        },
+        {
+          "disease_code": "DIS-CARD-ARR-AFL",
+          "disease_name": "心房扑动",
+          "evidence_count": 10,
+          "rule_count": 20
+        }
+      ]
+    },
+    {
+      "batch_id": "20260717_心肌病ESC2023补充解析",
+      "evidence_count": 267,
+      "evidence_with_guideline": 267,
+      "evidence_with_guideline_rate": "100.0%",
+      "evidence_used_by_clinical_entity": 267,
+      "evidence_used_by_clinical_entity_rate": "100.0%",
+      "disease_reachable_evidence": 267,
+      "disease_reachable_evidence_rate": "100.0%",
+      "reached_disease_count": 10,
+      "clinical_rule_count": 726,
+      "rules_with_action": 372,
+      "rules_with_evidence": 726,
+      "rules_with_action_and_evidence": 372,
+      "formal_cdss_chain_rate": "51.2%",
+      "disease_rule_action_evidence_chains": 372,
+      "action_count": 15,
+      "action_disease_count": 5,
+      "judgement": "部分可进入正式CDSS推荐链路，需补动作链",
+      "top_diseases": [
+        {
+          "disease_code": "DIS-CARD-CM-GENERAL",
+          "disease_name": "心肌病",
+          "evidence_count": 138,
+          "rule_count": 276
+        },
+        {
+          "disease_code": "DIS-CARD-CM-HCM",
+          "disease_name": "肥厚型心肌病",
+          "evidence_count": 84,
+          "rule_count": 168
+        },
+        {
+          "disease_code": "DIS-CARD-CM-DCM",
+          "disease_name": "扩张型心肌病",
+          "evidence_count": 59,
+          "rule_count": 118
+        },
+        {
+          "disease_code": "DIS-CARD-CM-ACM",
+          "disease_name": "致心律失常性心肌病",
+          "evidence_count": 50,
+          "rule_count": 100
+        },
+        {
+          "disease_code": "DIS-CARD-CM-RCM",
+          "disease_name": "限制型心肌病",
+          "evidence_count": 32,
+          "rule_count": 64
+        }
+      ]
+    },
+    {
+      "batch_id": "20260717_结构性先心病介入补充解析",
+      "evidence_count": 38,
+      "evidence_with_guideline": 38,
+      "evidence_with_guideline_rate": "100.0%",
+      "evidence_used_by_clinical_entity": 38,
+      "evidence_used_by_clinical_entity_rate": "100.0%",
+      "disease_reachable_evidence": 38,
+      "disease_reachable_evidence_rate": "100.0%",
+      "reached_disease_count": 6,
+      "clinical_rule_count": 80,
+      "rules_with_action": 64,
+      "rules_with_evidence": 80,
+      "rules_with_action_and_evidence": 64,
+      "formal_cdss_chain_rate": "80.0%",
+      "disease_rule_action_evidence_chains": 64,
+      "action_count": 21,
+      "action_disease_count": 4,
+      "judgement": "可进入正式CDSS推荐链路",
+      "top_diseases": [
+        {
+          "disease_code": "DIS-CARD-CHD-ASD",
+          "disease_name": "房间隔缺损",
+          "evidence_count": 24,
+          "rule_count": 48
+        },
+        {
+          "disease_code": "DIS-CARD-VHD-PS",
+          "disease_name": "肺动脉瓣狭窄",
+          "evidence_count": 10,
+          "rule_count": 20
+        },
+        {
+          "disease_code": "DIS-CARD-VHD-AS",
+          "disease_name": "主动脉瓣狭窄",
+          "evidence_count": 6,
+          "rule_count": 12
+        },
+        {
+          "disease_code": "DIS-CARD-ASD",
+          "disease_name": "房间隔缺损",
+          "evidence_count": 2,
+          "rule_count": 3
+        }
+      ]
+    },
+    {
+      "batch_id": "20260717_心衰LVAD右心衰补充解析",
+      "evidence_count": 66,
+      "evidence_with_guideline": 66,
+      "evidence_with_guideline_rate": "100.0%",
+      "evidence_used_by_clinical_entity": 66,
+      "evidence_used_by_clinical_entity_rate": "100.0%",
+      "disease_reachable_evidence": 66,
+      "disease_reachable_evidence_rate": "100.0%",
+      "reached_disease_count": 2,
+      "clinical_rule_count": 58,
+      "rules_with_action": 4,
+      "rules_with_evidence": 58,
+      "rules_with_action_and_evidence": 4,
+      "formal_cdss_chain_rate": "6.9%",
+      "disease_rule_action_evidence_chains": 4,
+      "action_count": 2,
+      "action_disease_count": 2,
+      "judgement": "知识浏览可用，正式CDSS动作链明显不足",
+      "top_diseases": [
+        {
+          "disease_code": "DIS-CARD-HF-RIGHT",
+          "disease_name": "右心衰竭",
+          "evidence_count": 18,
+          "rule_count": 36
+        },
+        {
+          "disease_code": "DIS-CARD-HF-GENERAL",
+          "disease_name": "心力衰竭",
+          "evidence_count": 11,
+          "rule_count": 22
+        }
+      ]
+    },
+    {
+      "batch_id": "20260717_高血压LVAD补充解析",
+      "evidence_count": 19,
+      "evidence_with_guideline": 19,
+      "evidence_with_guideline_rate": "100.0%",
+      "evidence_used_by_clinical_entity": 19,
+      "evidence_used_by_clinical_entity_rate": "100.0%",
+      "disease_reachable_evidence": 19,
+      "disease_reachable_evidence_rate": "100.0%",
+      "reached_disease_count": 1,
+      "clinical_rule_count": 12,
+      "rules_with_action": 8,
+      "rules_with_evidence": 12,
+      "rules_with_action_and_evidence": 8,
+      "formal_cdss_chain_rate": "66.7%",
+      "disease_rule_action_evidence_chains": 8,
+      "action_count": 3,
+      "action_disease_count": 1,
+      "judgement": "部分可进入正式CDSS推荐链路，需补动作链",
+      "top_diseases": [
+        {
+          "disease_code": "DIS-CARD-HTN-ESSENTIAL",
+          "disease_name": "高血压",
+          "evidence_count": 6,
+          "rule_count": 12
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "scope": "20260717_瓣膜病指南补充解析",
+  "generated_at": "2026-07-17 14:26:44",
+  "package_id": "SUPP-EVIDENCE-MERGE-20260717-001",
+  "node_count": 2399,
+  "relation_count": 6700,
+  "entity_type_counts": {
+    "ClinicalRule": 1220,
+    "Disease": 5,
+    "DiseaseCategory": 1,
+    "Evidence": 1148,
+    "Exam": 7,
+    "Guideline": 2,
+    "LabTest": 2,
+    "Procedure": 3,
+    "RiskStratification": 5,
+    "Specialty": 1,
+    "TreatmentPlan": 5
+  },
+  "relation_type_counts": {
+    "based_on_guideline": 10,
+    "belongs_to_category": 5,
+    "guideline_has_evidence": 1148,
+    "has_category": 1,
+    "has_clinical_rule": 1220,
+    "has_recommended_action": 1200,
+    "has_risk_stratification": 5,
+    "has_treatment_plan": 5,
+    "includes_procedure": 14,
+    "requires_exam": 15,
+    "requires_lab_test": 4,
+    "supported_by_evidence": 3059,
+    "treated_by_procedure": 14
+  },
+  "evidence_node_count": 1148,
+  "evidence_missing_text_count": 0,
+  "issue_count": 0,
+  "blocking_count": 0,
+  "import_allowed": true,
+  "issues": []
+}
