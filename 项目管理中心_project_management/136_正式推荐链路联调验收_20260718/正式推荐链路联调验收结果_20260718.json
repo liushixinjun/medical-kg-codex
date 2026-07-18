@@ -1,0 +1,48 @@
+{
+  "run_at": "2026-07-18 06:33:50",
+  "summary": {
+    "source_adjudication_count": 548,
+    "missing_disease_link": 0,
+    "missing_recommendation_link": 0,
+    "missing_action_link": 0,
+    "missing_evidence_link": 0,
+    "missing_guideline_link": 0,
+    "missing_category": 0,
+    "missing_primary_evidence_code": 0,
+    "missing_primary_guideline_code": 0,
+    "missing_recommendation_class": 0,
+    "missing_evidence_level": 0,
+    "missing_action_code": 0,
+    "positive_action_relations": 546,
+    "blocked_action_relations": 2
+  },
+  "by_category": [
+    {
+      "category": "心律失常",
+      "count": 220
+    },
+    {
+      "category": "冠心病",
+      "count": 125
+    },
+    {
+      "category": "心力衰竭",
+      "count": 76
+    },
+    {
+      "category": "心肌病",
+      "count": 76
+    },
+    {
+      "category": "高血压",
+      "count": 50
+    },
+    {
+      "category": "瓣膜病",
+      "count": 1
+    }
+  ],
+  "disease_count": 74,
+  "anomaly_count": 0,
+  "output_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\项目管理中心_project_management\\136_正式推荐链路联调验收_20260718"
+}

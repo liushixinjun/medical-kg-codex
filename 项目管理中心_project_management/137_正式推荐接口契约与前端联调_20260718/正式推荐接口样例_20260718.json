@@ -1,0 +1,3264 @@
+{
+  "DIS-CARD-CAD-STEMI": {
+    "success": true,
+    "disease": {
+      "code": "DIS-CARD-CAD-STEMI",
+      "name": "ST段抬高型心肌梗死",
+      "category": "冠心病"
+    },
+    "summary": {
+      "total": 35,
+      "recommend_count": 34,
+      "block_count": 1
+    },
+    "recommendations": [
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-F30A44AEA5A7E41B",
+        "recommendation_code": "REC-CDSS-CAD-STEMI-03-02-FIB-BLOCK",
+        "clinical_question": "疑似主动脉夹层、活动性出血或重大出血风险未排除前，不得把溶栓作为可执行推荐。",
+        "clinical_scenario": "ST段抬高型心肌梗死相关患者",
+        "recommendation_text": "疑似主动脉夹层、活动性出血或重大出血风险未排除前，不得把溶栓作为可执行推荐。",
+        "action": {
+          "code": "RULE-CARD-CAD-STEMI-04-FIBRINOLYSIS-BLOCK",
+          "name": "STEMI溶栓禁忌阻断规则",
+          "type": "ClinicalRule",
+          "relation": "blocks_action",
+          "relation_cn": "禁忌/阻断"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-866065446A7A5F65",
+          "name": "2018 STEMI院前溶栓治疗中国专家共识.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-EF6583F11208428D78F4-STEMI",
+          "page": 3,
+          "text": "则，应迅速评估以下几个重要因素：①症状发生的  件，掌握溶栓治疗的适应证和禁忌证，能够处理溶 时间；②STEMI 相关并发症的风险；③药物溶栓  栓治疗的并发症，同时与相关医院建立高效的救治 发生出血的风险；④休克或严重心力衰竭；⑤转运  网络 [9]。 至可行PCI 医院的时间。对于发病早期的患者，即  4.1　开展院前溶栓治疗的基本条件　由于STEMI"
+        },
+        "recommendation_class": "未分级/指南未显式标注",
+        "evidence_level": "未分级/指南未显式标注",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-045DD815A6B2FC06",
+        "recommendation_code": "REC-E93F9908FD3EA058",
+        "clinical_question": "满足“STEMI诊断确认规则”时，推荐：心肌肌钙蛋白",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "急性心肌损伤证据合并急性缺血证据时支持AMI诊断；持续ST段抬高或等效心电图表现支持STEMI分型。",
+        "action": {
+          "code": "LAB-CARD-A9EC1D4DA037",
+          "name": "心肌肌钙蛋白",
+          "type": "LabTest",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-B006F53884892B4245ED-STEMI",
+          "page": 6,
+          "text": "2.1 Definition of acute myocardial infarction The term acute myocardial infarction (AMI) should be used when there is evidence of myocardial injury (defined as an elevation of car- diac troponin values with at least one value above the 99th percentile upper reference limit) with necrosis in a clinical setting consistent                                                                                                                                                                                   "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-050CFB5A23B3E2A5",
+        "recommendation_code": "REC-0C4298F05F8B721B",
+        "clinical_question": "满足“STEMI抗血小板与抗凝治疗规则”时，推荐：阿司匹林",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "STEMI治疗应将抗血小板、P2Y12抑制剂和抗凝药物拆到具体药物节点，并与适用条件/禁忌一起展示。",
+        "action": {
+          "code": "MED-CARD-9F606AC80BFD",
+          "name": "阿司匹林",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-DBAD6C36E6EB12587EA1-STEMI",
+          "page": 25,
+          "text": "should be avoided. Loading of aspirin should be done as in all STEMI Logistical issues for hospital stay patients, and clopidogrel is the P2Y12 inhibitor of choice (600 mg loading dose) before or at the latest at the time of PCI. Prasugrel and Recommendations                           Classa    Levelb                                                                               ticagrelor are not recommended. Ideally, a chronic anticoagulation It is indicated that all hospitals participating in "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-06650AF19E981C5F",
+        "recommendation_code": "REC-4E58B5A027DD1859",
+        "clinical_question": "满足“STEMI诊断确认规则”时，推荐：超声心动图",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "急性心肌损伤证据合并急性缺血证据时支持AMI诊断；持续ST段抬高或等效心电图表现支持STEMI分型。",
+        "action": {
+          "code": "EXAM-TTE",
+          "name": "超声心动图",
+          "type": "Exam",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-B006F53884892B4245ED-STEMI",
+          "page": 6,
+          "text": "2.1 Definition of acute myocardial infarction The term acute myocardial infarction (AMI) should be used when there is evidence of myocardial injury (defined as an elevation of car- diac troponin values with at least one value above the 99th percentile upper reference limit) with necrosis in a clinical setting consistent                                                                                                                                                                                   "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-0BFD40FDCA4855C6",
+        "recommendation_code": "REC-CECAF7E945B18B0B",
+        "clinical_question": "满足“STEMI疑诊心电图与肌钙蛋白评估规则”时，推荐：心肌肌钙蛋白",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "疑似ACS或急性胸痛患者，应优先补齐心电图、心肌肌钙蛋白和发病时间。",
+        "action": {
+          "code": "LAB-CARD-A9EC1D4DA037",
+          "name": "心肌肌钙蛋白",
+          "type": "LabTest",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-113BF85876DF5EF032F0-STEMI",
+          "page": 9,
+          "text": "Ventricular pacing. Pacemaker rhythm may  also  prevent        (  1 mm in men, 40 years old)]  is recommended to detect ST- interpretation of ST-segment changes and may require urgent angiog-      segment elevation consistent with inferior and basal MI. raphy to confirm diagnosis and initiate therapy. Reprogramming the        Left main coronary obstruction. The presence of ST depres- pacemaker—allowing an evaluation of ECG changes during intrinsic       sion   1 mm in eight or more surface leads"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-0D531509335455A5",
+        "recommendation_code": "REC-13AB94BB541808B3",
+        "clinical_question": "满足“STEMI溶栓禁忌阻断规则”时，阻断/暂不推荐：溶栓治疗",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "疑似主动脉夹层、重大出血风险或其他溶栓禁忌未排除前，不得把溶栓治疗作为可执行推荐。",
+        "action": {
+          "code": "PROC-CARD-DA0F467D4A30",
+          "name": "溶栓治疗",
+          "type": "Procedure",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-866065446A7A5F65",
+          "name": "2018 STEMI院前溶栓治疗中国专家共识.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-B9B303B0E1B921BC095F-STEMI",
+          "page": 5,
+          "text": "对于长期服用阿司匹林的患者， 除外） （7）明确、高度怀疑或不能排除主动脉夹层     否□ 是□   再追加150 mg。在阿司匹林基础上，所有溶栓患 （8）感染性心内膜炎               否□ 是□   者均应口服300 mg 负荷剂量氯吡格雷（维持剂量 （9）高血压患者经积极降压治疗后，血压仍≥180/110 mmHg 者                         否□ 是□     75 mg，每日1 次） [3-5] 或180 mg 替格瑞洛（维持 （10）正在使用抗凝药（如华法林及新型口服抗凝药）                         否□ 是□   剂量90 mg，每日2 次）[21]。 的患者 （11）严重肝肾功能障碍、严重消耗状态或晚期恶性肿                         否□ 是□  4.5　溶栓效果评估　溶栓治疗目的是通过溶解血 瘤等患者 （12）妊娠期女性                否□ 是□  栓尽可能早地开通梗死相关血管，恢复心肌血流灌 （13）长时间或有创性复苏            否□ 是□      "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-1679A1950670D499",
+        "recommendation_code": "REC-7AFE5F9672849D6F",
+        "clinical_question": "满足“STEMI疑诊心电图与肌钙蛋白评估规则”时，推荐：心电图",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "疑似ACS或急性胸痛患者，应优先补齐心电图、心肌肌钙蛋白和发病时间。",
+        "action": {
+          "code": "EXAM-ECG",
+          "name": "心电图",
+          "type": "Exam",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-113BF85876DF5EF032F0-STEMI",
+          "page": 9,
+          "text": "Ventricular pacing. Pacemaker rhythm may  also  prevent        (  1 mm in men, 40 years old)]  is recommended to detect ST- interpretation of ST-segment changes and may require urgent angiog-      segment elevation consistent with inferior and basal MI. raphy to confirm diagnosis and initiate therapy. Reprogramming the        Left main coronary obstruction. The presence of ST depres- pacemaker—allowing an evaluation of ECG changes during intrinsic       sion   1 mm in eight or more surface leads"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-3B1DA6075FEB3905",
+        "recommendation_code": "REC-B548FF7AAB85E2FB",
+        "clinical_question": "满足“STEMI诊断确认规则”时，推荐：心电图",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "急性心肌损伤证据合并急性缺血证据时支持AMI诊断；持续ST段抬高或等效心电图表现支持STEMI分型。",
+        "action": {
+          "code": "EXAM-ECG",
+          "name": "心电图",
+          "type": "Exam",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-B006F53884892B4245ED-STEMI",
+          "page": 6,
+          "text": "2.1 Definition of acute myocardial infarction The term acute myocardial infarction (AMI) should be used when there is evidence of myocardial injury (defined as an elevation of car- diac troponin values with at least one value above the 99th percentile upper reference limit) with necrosis in a clinical setting consistent                                                                                                                                                                                   "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-3EC874F70194D633",
+        "recommendation_code": "REC-F562BBBF4440B83B",
+        "clinical_question": "满足“STEMI二级预防与随访规则”时，推荐：急性心肌梗死随访方案",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "急性期稳定后进入二级预防、心脏康复、危险因素控制和随访计划。",
+        "action": {
+          "code": "FU-CARD-ED1B0E900769",
+          "name": "急性心肌梗死随访方案",
+          "type": "FollowUp",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-CD376C831C68934A39DA-STEMI",
+          "page": 49,
+          "text": "ACE inhibitors are recommended, starting within the ﬁrst 24 h of STEMI in patients with evidence of heart failure, LV systolic I    A dysfunction, diabetes, or an anterior infarct."
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-468D14974E96B0F9",
+        "recommendation_code": "REC-3565AC8D78FB12CB",
+        "clinical_question": "满足“STEMI抗血小板与抗凝治疗规则”时，推荐：普通肝素",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "STEMI治疗应将抗血小板、P2Y12抑制剂和抗凝药物拆到具体药物节点，并与适用条件/禁忌一起展示。",
+        "action": {
+          "code": "MED-CARD-A49408D27901",
+          "name": "普通肝素",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-DBAD6C36E6EB12587EA1-STEMI",
+          "page": 25,
+          "text": "should be avoided. Loading of aspirin should be done as in all STEMI Logistical issues for hospital stay patients, and clopidogrel is the P2Y12 inhibitor of choice (600 mg loading dose) before or at the latest at the time of PCI. Prasugrel and Recommendations                           Classa    Levelb                                                                               ticagrelor are not recommended. Ideally, a chronic anticoagulation It is indicated that all hospitals participating in "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-496CA1DD575B58E7",
+        "recommendation_code": "REC-C389A95578FBC4FC",
+        "clinical_question": "满足“STEMI二级预防与随访规则”时，推荐：阿托伐他汀",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "急性期稳定后进入二级预防、心脏康复、危险因素控制和随访计划。",
+        "action": {
+          "code": "MED-CARD-ATORVASTATIN",
+          "name": "阿托伐他汀",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-CD376C831C68934A39DA-STEMI",
+          "page": 49,
+          "text": "ACE inhibitors are recommended, starting within the ﬁrst 24 h of STEMI in patients with evidence of heart failure, LV systolic I    A dysfunction, diabetes, or an anterior infarct."
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-5B1E523E667F9219",
+        "recommendation_code": "REC-CDSS-CAD-STEMI-02-01-CONFIRM",
+        "clinical_question": "持续ST段抬高或等效心电图表现合并急性心肌损伤支持STEMI诊断。",
+        "clinical_scenario": "ST段抬高型心肌梗死相关患者",
+        "recommendation_text": "持续ST段抬高或等效心电图表现合并急性心肌损伤支持STEMI诊断。",
+        "action": {
+          "code": "DXC-CARD-36BC5337C93C",
+          "name": "ST段抬高型心肌梗死诊断标准",
+          "type": "DiagnosisCriteria",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-99DE8941F1F5EDF3",
+          "name": "经皮冠状动脉介入治疗指南（2025）.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-EB89F9779A00919D51C4-STEMI",
+          "page": 15,
+          "text": "若>12 h，则应按常规方案给予 依诺肝素（先静脉注射0.5 mg/kg，90 min后再追加0.3 mg/kg）［211⁃212，223］ PCI术后应考虑停止常规抗凝治疗，但有其他指征时例外［7，222］                            Ⅱa          C⁃EO 对于出血高危患者，可考虑使用比伐芦定替代UFH［208］                        Ⅰ          A 不推荐交叉使用UFH和低分子肝素                                             Ⅲ⁃Hm         C⁃EO STEMI 所有患者直接PCI 术中都应肝素化抗凝，给予UFH，剂量同NSTE⁃ACS，必要时需（但不常规）使用    Ⅰ           C⁃EO GPI［211］ 直接PCI术中，使用UFH抗凝联用GPI时，剂量同NSTE⁃ACS［209］                    Ⅰ           C⁃EO 对HIT患者，直接PCI术中应使用比伐芦定抗凝，剂量为0.75 mg/kg，静脉弹丸式注射，"
+        },
+        "recommendation_class": "Ⅰ",
+        "evidence_level": "B",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-5E1967B4E61C9EEC",
+        "recommendation_code": "REC-2D3B6B1813298A97",
+        "clinical_question": "满足“STEMI抗血小板与抗凝治疗规则”时，推荐：抗凝治疗",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "STEMI治疗应将抗血小板、P2Y12抑制剂和抗凝药物拆到具体药物节点，并与适用条件/禁忌一起展示。",
+        "action": {
+          "code": "PLAN-CARD-A1C4E6332D38",
+          "name": "抗凝治疗",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-DBAD6C36E6EB12587EA1-STEMI",
+          "page": 25,
+          "text": "should be avoided. Loading of aspirin should be done as in all STEMI Logistical issues for hospital stay patients, and clopidogrel is the P2Y12 inhibitor of choice (600 mg loading dose) before or at the latest at the time of PCI. Prasugrel and Recommendations                           Classa    Levelb                                                                               ticagrelor are not recommended. Ideally, a chronic anticoagulation It is indicated that all hospitals participating in "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-5E1F9230E150991E",
+        "recommendation_code": "REC-14B40A1608CFAC32",
+        "clinical_question": "满足“STEMI再灌注策略选择规则”时，推荐：经皮冠状动脉介入治疗",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "STEMI且发病12小时内或持续缺血时进入再灌注策略选择，优先评估急诊PCI可及性；不可及时评估溶栓。",
+        "action": {
+          "code": "PROC-CARD-E9ADC25A25E3",
+          "name": "经皮冠状动脉介入治疗",
+          "type": "Procedure",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-9E8CE48E36F457A68185-STEMI",
+          "page": 49,
+          "text": "When ﬁbrinolysis is the reperfusion strategy, it is recommended to initiate this treatment as soon as possible after STEMI diag- I    A nosis, preferably in the pre-hospital setting."
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-5F767AC7B3077114",
+        "recommendation_code": "REC-CDSS-CAD-STEMI-01-01-ECG-TROP",
+        "clinical_question": "疑似STEMI应优先完成心电图、肌钙蛋白和发病时间评估。",
+        "clinical_scenario": "ST段抬高型心肌梗死相关患者",
+        "recommendation_text": "疑似STEMI应优先完成心电图、肌钙蛋白和发病时间评估。",
+        "action": {
+          "code": "EXAM-ECG",
+          "name": "心电图",
+          "type": "Exam",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-99DE8941F1F5EDF3",
+          "name": "经皮冠状动脉介入治疗指南（2025）.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-209101805929DE8C4729-STEMI",
+          "page": 6,
+          "text": "益比、发病至就诊时间、就诊时临床及血液动力学                          心电图相邻2个或2个以上导联ST段抬高，在肢体 延误特征、合并症、出血风险、禁忌证和预期PCI        导联≥0.1 mⅤ、胸导联≥0.2 mV或新出现的LBBB或 时间。                                        内完                                       RBBB；（3）年龄≤75 周岁；（4）不能在120 min （一）溶栓指征                                         成急诊PCI［13］。 （三）溶栓药物      1. 适应证：急性胸痛发病未超过12 h，预期 目前临床应用的主要溶栓药物包括非特异性 FMC 至导丝通过IRA 时间＞120 min，无溶栓禁忌 纤溶酶原激活剂和特异性纤溶酶原激活剂两大类。 证（Ⅰ，A）；发病12~24 h仍有进行性缺血性胸痛和 建议优先采用特异性纤溶酶原激活剂。重组组织心电图至少相邻2 个或2 个以上导联ST 段抬高> 型纤溶酶原激"
+        },
+        "recommendation_class": "Ⅰ",
+        "evidence_level": "A",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-637CE7268A786A8C",
+        "recommendation_code": "REC-B7FE465A6C4671CF",
+        "clinical_question": "满足“STEMI疑诊心电图与肌钙蛋白评估规则”时，推荐：肌酸激酶同工酶",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "疑似ACS或急性胸痛患者，应优先补齐心电图、心肌肌钙蛋白和发病时间。",
+        "action": {
+          "code": "LAB-CARD-960C7CE8E22B",
+          "name": "肌酸激酶同工酶（CK-MB）",
+          "type": "LabTest",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-113BF85876DF5EF032F0-STEMI",
+          "page": 9,
+          "text": "Ventricular pacing. Pacemaker rhythm may  also  prevent        (  1 mm in men, 40 years old)]  is recommended to detect ST- interpretation of ST-segment changes and may require urgent angiog-      segment elevation consistent with inferior and basal MI. raphy to confirm diagnosis and initiate therapy. Reprogramming the        Left main coronary obstruction. The presence of ST depres- pacemaker—allowing an evaluation of ECG changes during intrinsic       sion   1 mm in eight or more surface leads"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-68F8BB86838D1702",
+        "recommendation_code": "REC-D2F4322AB9136FA8",
+        "clinical_question": "满足“STEMI再灌注策略选择规则”时，推荐：再灌注治疗",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "STEMI且发病12小时内或持续缺血时进入再灌注策略选择，优先评估急诊PCI可及性；不可及时评估溶栓。",
+        "action": {
+          "code": "PLAN-CARD-3972CBC8228B",
+          "name": "再灌注治疗",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-9E8CE48E36F457A68185-STEMI",
+          "page": 49,
+          "text": "When ﬁbrinolysis is the reperfusion strategy, it is recommended to initiate this treatment as soon as possible after STEMI diag- I    A nosis, preferably in the pre-hospital setting."
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-78EE5D858DDDBEA4",
+        "recommendation_code": "REC-CDSS-CAD-STEMI-05-01-FOLLOW",
+        "clinical_question": "STEMI稳定后应落实他汀、β受体阻滞剂、抗栓延续和随访。",
+        "clinical_scenario": "ST段抬高型心肌梗死相关患者",
+        "recommendation_text": "STEMI稳定后应落实他汀、β受体阻滞剂、抗栓延续和随访。",
+        "action": {
+          "code": "MED-CARD-ATORVASTATIN",
+          "name": "阿托伐他汀",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-955DCDB8BC81606E",
+          "name": "STEMI CN 2019.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-2E0A1554DC5CE6BE3BCA-STEMI",
+          "page": 14,
+          "text": "STEMI患者出院后应积极控制心    标血压为<130/80 mmHg（Ⅱa，C）， 血管危险因素，进行科学合理的二级预防和以运动                                                 110 mmHg）［63］，年龄>80岁的患者目标血压为<150/ 为主的心脏康复治疗，以改善患者的生活质量和远                                                 90 mmHg（Ⅱa，B）。STEMI患者出院后应持续强化 期预后［57‑58］。                      调脂治疗，低密度脂蛋白胆固醇（low‑density 一、二级预防                                                                lipoprotein cholesterol，LDL‑C）治疗目标值< （一）非药物干预                                                           1.8 mmol/L（Ⅰ，B）［"
+        },
+        "recommendation_class": "Ⅱa",
+        "evidence_level": "C",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-81268690EB035ABA",
+        "recommendation_code": "REC-CARD-STEMI-THROMBOLYSIS",
+        "clinical_question": "STEMI符合再灌注条件但直接PCI延迟时，在排除禁忌后可评估溶栓治疗。",
+        "clinical_scenario": "ST段抬高型心肌梗死患者再灌注决策场景",
+        "recommendation_text": "STEMI患者预计直接PCI延迟超过120分钟且无溶栓禁忌时，应尽早给予溶栓治疗。",
+        "action": {
+          "code": "PLAN-CARD-FULLBOOK-B87D3F557B",
+          "name": "溶栓治疗",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-CF62B75AEC93F1A6",
+          "name": "《内科学（第10版）》.docx"
+        },
+        "primary_evidence": {
+          "code": "EVD-CARD-STEMI-TEXTBOOK-7744F98100",
+          "page": "255",
+          "text": "如果预计直接 PCI 时间大于 120 分钟，则首选溶栓策略，力争在 ECG 诊断明确后 10 分钟内给予溶栓药物。适应证包括两个或两个以上相邻导联 ST 段抬高，或病史提示 AMI 伴左束支传导阻滞且起病时间小于 12 小时；75 岁以上需慎重权衡；12～24 小时仍有进行性缺血性胸痛和广泛 ST 段抬高者也可考虑。"
+        },
+        "recommendation_class": "教材/指南支持",
+        "evidence_level": "权威教材/指南证据",
+        "conflict_status": "无冲突"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-81F1165D4C1DF87D",
+        "recommendation_code": "REC-33FC7A359E1DA0BB",
+        "clinical_question": "满足“STEMI溶栓禁忌阻断规则”时，阻断/暂不推荐：溶栓治疗",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "疑似主动脉夹层、重大出血风险或其他溶栓禁忌未排除前，不得把溶栓治疗作为可执行推荐。",
+        "action": {
+          "code": "PLAN-CARD-FULLBOOK-B87D3F557B",
+          "name": "溶栓治疗",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-866065446A7A5F65",
+          "name": "2018 STEMI院前溶栓治疗中国专家共识.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-B9B303B0E1B921BC095F-STEMI",
+          "page": 5,
+          "text": "对于长期服用阿司匹林的患者， 除外） （7）明确、高度怀疑或不能排除主动脉夹层     否□ 是□   再追加150 mg。在阿司匹林基础上，所有溶栓患 （8）感染性心内膜炎               否□ 是□   者均应口服300 mg 负荷剂量氯吡格雷（维持剂量 （9）高血压患者经积极降压治疗后，血压仍≥180/110 mmHg 者                         否□ 是□     75 mg，每日1 次） [3-5] 或180 mg 替格瑞洛（维持 （10）正在使用抗凝药（如华法林及新型口服抗凝药）                         否□ 是□   剂量90 mg，每日2 次）[21]。 的患者 （11）严重肝肾功能障碍、严重消耗状态或晚期恶性肿                         否□ 是□  4.5　溶栓效果评估　溶栓治疗目的是通过溶解血 瘤等患者 （12）妊娠期女性                否□ 是□  栓尽可能早地开通梗死相关血管，恢复心肌血流灌 （13）长时间或有创性复苏            否□ 是□      "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-8BAD196145F075E2",
+        "recommendation_code": "REC-CDSS-CAD-STEMI-03-01-PCI",
+        "clinical_question": "STEMI且处于再灌注时间窗时，应优先评估急诊PCI可及性。",
+        "clinical_scenario": "ST段抬高型心肌梗死相关患者",
+        "recommendation_text": "STEMI且处于再灌注时间窗时，应优先评估急诊PCI可及性。",
+        "action": {
+          "code": "PLAN-CARD-3972CBC8228B",
+          "name": "再灌注治疗",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-99DE8941F1F5EDF3",
+          "name": "经皮冠状动脉介入治疗指南（2025）.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-656552BDE7ECDB150311-STEMI",
+          "page": 4,
+          "text": "再灌注治疗时间窗内，发病<3 h 的STEMI，直                              合并多支血管病变STEMI 患者，行急诊IRA 病变严重程度和供接PCI与溶栓同效；发病3~12 h，直接PCI优于溶栓                           血运重建同时，可根据非IRA 血范围同期行血运重建，也可考虑出院前对非治疗（Ⅰ，A），优选直接PCI。 接受溶栓治疗的患者应在溶栓后60~90 min内                                            IRA 病变行血运重建（Ⅱa，B）；近来有研究显示， 急性评估溶栓有效性，溶栓失败的患者应立即行紧急补   心原性休克患者在IRA 血运重建时对非IRA 内                 年的临床预后救PCI［12，14］；溶栓成功的患者应在溶栓后2~24 h    血运重建并不能改善患者30 d 和1 策略（急诊冠状动脉造影后，根据              ［18］。常规行直接PCI                        （Ⅱb，C） 期间应考虑应用血管内影"
+        },
+        "recommendation_class": "Ⅰ",
+        "evidence_level": "A",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-97D48C10C55B4BD2",
+        "recommendation_code": "REC-CDSS-CAD-STEMI-04-01-ANTITHROMBOTIC",
+        "clinical_question": "STEMI治疗应明确抗血小板、P2Y12受体抑制剂和抗凝药物。",
+        "clinical_scenario": "ST段抬高型心肌梗死相关患者",
+        "recommendation_text": "STEMI治疗应明确抗血小板、P2Y12受体抑制剂和抗凝药物。",
+        "action": {
+          "code": "PLAN-CARD-42FD049DCDB5",
+          "name": "抗血小板治疗",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-955DCDB8BC81606E",
+          "name": "STEMI CN 2019.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-BF217534ED86E20A9DAA-STEMI",
+          "page": 5,
+          "text": "对已使用适当剂量依诺肝素而需PCI的患者， 我国大规模注册研究显示，与氯吡格雷相比，替格                 前可不追加剂                        若最后一次皮下注射在8 h 内，PCI 之间，应考虑使瑞洛显著降低低出血风险患者的缺血事件［22］。     量；若最后一次皮下注射在8~12 h 除非存在禁忌证如高出血风险，在直接PCI   用依诺肝素0.3 mg/kg静脉推注（Ⅱa，A）。 接受口服抗凝药治疗患者的围术期抗栓治前（或最迟在PCI 时）推荐使用替格瑞洛（180 mg             3. 时，负荷剂量，90 mg，2 次/d）（Ⅰ，A）。在替格瑞洛无   疗：接受口服抗凝药物治疗的患者发生STEMI 负法获得或有禁忌证时可选用氯吡格雷［600 mg    建议行直接PCI。术中推荐肠外抗凝治疗，应避免 缺血高危患荷剂量（年龄＞75岁负荷量300 mg），75 mg，1次/d］   使用GPⅡb/Ⅲa 受体拮抗剂。STEMI 者，术后抗栓方案取决于血栓栓塞风险（采用（Ⅰ，A）。围术期再发急性缺血事件的患者，应将 负荷剂量，氯吡格雷替"
+        },
+        "recommendation_class": "Ⅱa",
+        "evidence_level": "A",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-9876D9815CFD7B83",
+        "recommendation_code": "REC-3A1C60225ED42F22",
+        "clinical_question": "满足“STEMI抗血小板与抗凝治疗规则”时，推荐：低分子量肝素",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "STEMI治疗应将抗血小板、P2Y12抑制剂和抗凝药物拆到具体药物节点，并与适用条件/禁忌一起展示。",
+        "action": {
+          "code": "MED-CARD-2CCCA76B39F5",
+          "name": "低分子量肝素",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-DBAD6C36E6EB12587EA1-STEMI",
+          "page": 25,
+          "text": "should be avoided. Loading of aspirin should be done as in all STEMI Logistical issues for hospital stay patients, and clopidogrel is the P2Y12 inhibitor of choice (600 mg loading dose) before or at the latest at the time of PCI. Prasugrel and Recommendations                           Classa    Levelb                                                                               ticagrelor are not recommended. Ideally, a chronic anticoagulation It is indicated that all hospitals participating in "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-9BB189E0DD629B46",
+        "recommendation_code": "REC-72CE3AFC19E6F55D",
+        "clinical_question": "满足“STEMI再灌注策略选择规则”时，推荐：溶栓治疗",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "STEMI且发病12小时内或持续缺血时进入再灌注策略选择，优先评估急诊PCI可及性；不可及时评估溶栓。",
+        "action": {
+          "code": "PLAN-CARD-FULLBOOK-B87D3F557B",
+          "name": "溶栓治疗",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-9E8CE48E36F457A68185-STEMI",
+          "page": 49,
+          "text": "When ﬁbrinolysis is the reperfusion strategy, it is recommended to initiate this treatment as soon as possible after STEMI diag- I    A nosis, preferably in the pre-hospital setting."
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-9BDFC458B0982161",
+        "recommendation_code": "REC-F2DB01C170AD5BEE",
+        "clinical_question": "满足“STEMI抗血小板与抗凝治疗规则”时，推荐：替格瑞洛",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "STEMI治疗应将抗血小板、P2Y12抑制剂和抗凝药物拆到具体药物节点，并与适用条件/禁忌一起展示。",
+        "action": {
+          "code": "MED-CARD-STD-E03DF8E3FD",
+          "name": "替格瑞洛",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-DBAD6C36E6EB12587EA1-STEMI",
+          "page": 25,
+          "text": "should be avoided. Loading of aspirin should be done as in all STEMI Logistical issues for hospital stay patients, and clopidogrel is the P2Y12 inhibitor of choice (600 mg loading dose) before or at the latest at the time of PCI. Prasugrel and Recommendations                           Classa    Levelb                                                                               ticagrelor are not recommended. Ideally, a chronic anticoagulation It is indicated that all hospitals participating in "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-AB2D26B058CC9169",
+        "recommendation_code": "REC-84244900D44544BD",
+        "clinical_question": "满足“STEMI二级预防与随访规则”时，推荐：β受体阻滞剂",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "急性期稳定后进入二级预防、心脏康复、危险因素控制和随访计划。",
+        "action": {
+          "code": "MED-BETA-BLOCKER",
+          "name": "β受体阻滞剂",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-CD376C831C68934A39DA-STEMI",
+          "page": 49,
+          "text": "ACE inhibitors are recommended, starting within the ﬁrst 24 h of STEMI in patients with evidence of heart failure, LV systolic I    A dysfunction, diabetes, or an anterior infarct."
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-AF01979937403AEA",
+        "recommendation_code": "REC-CARD-STEMI-PRIMARY-PCI",
+        "clinical_question": "STEMI符合再灌注条件且PCI可及时完成时，推荐优先评估直接PCI治疗。",
+        "clinical_scenario": "ST段抬高型心肌梗死患者再灌注决策场景",
+        "recommendation_text": "STEMI患者若PCI可及并能在推荐时间窗完成，应优先进行直接PCI。",
+        "action": {
+          "code": "PLAN-CARD-STEMI-A8A3EB1D6170",
+          "name": "直接PCI治疗",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-CF62B75AEC93F1A6",
+          "name": "《内科学（第10版）》.docx"
+        },
+        "primary_evidence": {
+          "code": "EVD-CARD-STEMI-TEXTBOOK-705923557B",
+          "page": "255",
+          "text": "若病人在救护车或无 PCI 能力医院，但预计 120 分钟内可转运至有 PCI 条件医院并完成 PCI，则首选直接 PCI 策略，力争 90 分钟内完成再灌注；可行 PCI 医院应力争 60 分钟内完成再灌注。直接 PCI 适用于症状发作 12 小时以内并有持续新发 ST 段抬高或新发左束支传导阻滞者。"
+        },
+        "recommendation_class": "教材/指南支持",
+        "evidence_level": "权威教材/指南证据",
+        "conflict_status": "无冲突"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-B051125DF22B945B",
+        "recommendation_code": "REC-427E7B3010D2852C",
+        "clinical_question": "满足“STEMI二级预防与随访规则”时，推荐：瑞舒伐他汀",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "急性期稳定后进入二级预防、心脏康复、危险因素控制和随访计划。",
+        "action": {
+          "code": "MED-CARD-STD-78DD48EF71",
+          "name": "瑞舒伐他汀",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-CD376C831C68934A39DA-STEMI",
+          "page": 49,
+          "text": "ACE inhibitors are recommended, starting within the ﬁrst 24 h of STEMI in patients with evidence of heart failure, LV systolic I    A dysfunction, diabetes, or an anterior infarct."
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-BEA63534A6C2EBC1",
+        "recommendation_code": "REC-06A4C4DDBAEDAA6A",
+        "clinical_question": "满足“STEMI再灌注策略选择规则”时，推荐：溶栓治疗",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "STEMI且发病12小时内或持续缺血时进入再灌注策略选择，优先评估急诊PCI可及性；不可及时评估溶栓。",
+        "action": {
+          "code": "PROC-CARD-DA0F467D4A30",
+          "name": "溶栓治疗",
+          "type": "Procedure",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-9E8CE48E36F457A68185-STEMI",
+          "page": 49,
+          "text": "When ﬁbrinolysis is the reperfusion strategy, it is recommended to initiate this treatment as soon as possible after STEMI diag- I    A nosis, preferably in the pre-hospital setting."
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-C5DD8F1CC387783C",
+        "recommendation_code": "REC-21F28579B6832C61",
+        "clinical_question": "满足“STEMI再灌注策略选择规则”时，推荐：冠状动脉造影",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "STEMI且发病12小时内或持续缺血时进入再灌注策略选择，优先评估急诊PCI可及性；不可及时评估溶栓。",
+        "action": {
+          "code": "EXAM-CAG",
+          "name": "冠状动脉造影",
+          "type": "Exam",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-9E8CE48E36F457A68185-STEMI",
+          "page": 49,
+          "text": "When ﬁbrinolysis is the reperfusion strategy, it is recommended to initiate this treatment as soon as possible after STEMI diag- I    A nosis, preferably in the pre-hospital setting."
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-D0C79D7C0138392C",
+        "recommendation_code": "REC-89A78DF92D89D62C",
+        "clinical_question": "满足“STEMI抗血小板与抗凝治疗规则”时，推荐：抗血小板治疗",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "STEMI治疗应将抗血小板、P2Y12抑制剂和抗凝药物拆到具体药物节点，并与适用条件/禁忌一起展示。",
+        "action": {
+          "code": "PLAN-CARD-42FD049DCDB5",
+          "name": "抗血小板治疗",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-DBAD6C36E6EB12587EA1-STEMI",
+          "page": 25,
+          "text": "should be avoided. Loading of aspirin should be done as in all STEMI Logistical issues for hospital stay patients, and clopidogrel is the P2Y12 inhibitor of choice (600 mg loading dose) before or at the latest at the time of PCI. Prasugrel and Recommendations                           Classa    Levelb                                                                               ticagrelor are not recommended. Ideally, a chronic anticoagulation It is indicated that all hospitals participating in "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-D97A3C37F3E08465",
+        "recommendation_code": "REC-B7C862C18DA692B5",
+        "clinical_question": "满足“STEMI诊断确认规则”时，推荐：ST段抬高型心肌梗死诊断标准",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "急性心肌损伤证据合并急性缺血证据时支持AMI诊断；持续ST段抬高或等效心电图表现支持STEMI分型。",
+        "action": {
+          "code": "DXC-CARD-36BC5337C93C",
+          "name": "ST段抬高型心肌梗死诊断标准",
+          "type": "DiagnosisCriteria",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-B006F53884892B4245ED-STEMI",
+          "page": 6,
+          "text": "2.1 Definition of acute myocardial infarction The term acute myocardial infarction (AMI) should be used when there is evidence of myocardial injury (defined as an elevation of car- diac troponin values with at least one value above the 99th percentile upper reference limit) with necrosis in a clinical setting consistent                                                                                                                                                                                   "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-DCBEAC5FCECA8B90",
+        "recommendation_code": "REC-94F5D2BD891A1C5D",
+        "clinical_question": "满足“持续ST段抬高或等效表现”时，推荐：心电图",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "在符合AMI背景下，持续ST段抬高或等效心电图表现支持STEMI分型，并触发再灌注路径。",
+        "action": {
+          "code": "EXAM-ECG",
+          "name": "心电图",
+          "type": "Exam",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-1C7BEBF33C4B07C4693D-STEMI",
+          "page": 48,
+          "text": "Reperfusion therapy is indicated in all patients with symptoms of ischaemia of <_ 12 h duration and persistent ST-segment I    A elevation.         If primary PCI cannot be performed in a timely way after STEMI diagnosis, ﬁbrinolytic therapy is recommended within 12 h of                                                                                                                                                                                                                                     "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-F5F9B8A37A02851D",
+        "recommendation_code": "REC-E14001FF270B3D36",
+        "clinical_question": "满足“STEMI抗血小板与抗凝治疗规则”时，推荐：氯吡格雷",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "STEMI治疗应将抗血小板、P2Y12抑制剂和抗凝药物拆到具体药物节点，并与适用条件/禁忌一起展示。",
+        "action": {
+          "code": "MED-CARD-STD-9BB6ABC99A",
+          "name": "氯吡格雷",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-DBAD6C36E6EB12587EA1-STEMI",
+          "page": 25,
+          "text": "should be avoided. Loading of aspirin should be done as in all STEMI Logistical issues for hospital stay patients, and clopidogrel is the P2Y12 inhibitor of choice (600 mg loading dose) before or at the latest at the time of PCI. Prasugrel and Recommendations                           Classa    Levelb                                                                               ticagrelor are not recommended. Ideally, a chronic anticoagulation It is indicated that all hospitals participating in "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-FCBE46C0A9BD4F61",
+        "recommendation_code": "REC-B2246A1F11635602",
+        "clinical_question": "满足“STEMI诊断确认规则”时，推荐：急性心肌梗死诊断标准",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "急性心肌损伤证据合并急性缺血证据时支持AMI诊断；持续ST段抬高或等效心电图表现支持STEMI分型。",
+        "action": {
+          "code": "DXC-CARD-547346EE2FED",
+          "name": "急性心肌梗死诊断标准",
+          "type": "DiagnosisCriteria",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-B006F53884892B4245ED-STEMI",
+          "page": 6,
+          "text": "2.1 Definition of acute myocardial infarction The term acute myocardial infarction (AMI) should be used when there is evidence of myocardial injury (defined as an elevation of car- diac troponin values with at least one value above the 99th percentile upper reference limit) with necrosis in a clinical setting consistent                                                                                                                                                                                   "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      }
+    ]
+  },
+  "DIS-CARD-CAD-AMI": {
+    "success": true,
+    "disease": {
+      "code": "DIS-CARD-CAD-AMI",
+      "name": "急性心肌梗死",
+      "category": "冠心病"
+    },
+    "summary": {
+      "total": 13,
+      "recommend_count": 12,
+      "block_count": 1
+    },
+    "recommendations": [
+      {
+        "source_adjudication_code": "SRCADJ-CARD-AMI-FIB-CONTRA-001",
+        "recommendation_code": "RECST-CARD-AMI-SRCADJ-FIB-CONTRA-20260717",
+        "clinical_question": "溶栓禁忌证",
+        "clinical_scenario": "拟行溶栓治疗前",
+        "recommendation_text": "存在出血性脑卒中、近期脑血管事件、活动性内脏出血、未排除主动脉夹层、严重未控制高血压等情况时，应阻断溶栓治疗。",
+        "action": {
+          "code": "PROC-CARD-DA0F467D4A30",
+          "name": "溶栓治疗",
+          "type": "Procedure",
+          "relation": "blocks_action",
+          "relation_cn": "禁忌/阻断"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-866065446A7A5F65",
+          "name": "2018 STEMI院前溶栓治疗中国专家共识.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-B9B303B0E1B921BC095F-AMI",
+          "page": 5,
+          "text": "对于长期服用阿司匹林的患者， 除外） （7）明确、高度怀疑或不能排除主动脉夹层     否□ 是□   再追加150 mg。在阿司匹林基础上，所有溶栓患 （8）感染性心内膜炎               否□ 是□   者均应口服300 mg 负荷剂量氯吡格雷（维持剂量 （9）高血压患者经积极降压治疗后，血压仍≥180/110 mmHg 者                         否□ 是□     75 mg，每日1 次） [3-5] 或180 mg 替格瑞洛（维持 （10）正在使用抗凝药（如华法林及新型口服抗凝药）                         否□ 是□   剂量90 mg，每日2 次）[21]。 的患者 （11）严重肝肾功能障碍、严重消耗状态或晚期恶性肿                         否□ 是□  4.5　溶栓效果评估　溶栓治疗目的是通过溶解血 瘤等患者 （12）妊娠期女性                否□ 是□  栓尽可能早地开通梗死相关血管，恢复心肌血流灌 （13）长时间或有创性复苏            否□ 是□      "
+        },
+        "recommendation_class": "禁忌阻断规则",
+        "evidence_level": "专家共识证据",
+        "conflict_status": "无冲突"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-AMI-DX-001",
+        "recommendation_code": "RECST-CARD-AMI-SRCADJ-DX-20260717",
+        "clinical_question": "AMI诊断标准",
+        "clinical_scenario": "疑似急性心肌缺血或急性胸痛患者",
+        "recommendation_text": "结合缺血症状、心电图缺血改变、心肌坏死标志物动态变化和影像学证据进行急性心肌梗死诊断。",
+        "action": {
+          "code": "DXC-CARD-547346EE2FED",
+          "name": "急性心肌梗死诊断标准",
+          "type": "DiagnosisCriteria",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-174B3BDD2451501A",
+          "name": "4TH universal definition of MI.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-BFD8DF56E0886EF186D8-AMI",
+          "page": 5,
+          "text": "The term myocardial injury should be used when there is evidence of elevated cardiac troponin values (cTn) with at least one value above the 99th percentile upper reference limit (URL). The myocardial injury is considered acute if there is a rise and/or fall of cTn values.        Criteria for acute myocardial infarction (types 1, 2 and 3 MI)                                                                                                                                                             "
+        },
+        "recommendation_class": "定义标准",
+        "evidence_level": "国际通用定义标准",
+        "conflict_status": "无冲突"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-AMI-ECG-001",
+        "recommendation_code": "RECST-CARD-AMI-SRCADJ-ECG-20260717",
+        "clinical_question": "首诊心电图检查",
+        "clinical_scenario": "疑似ACS或急性胸痛患者",
+        "recommendation_text": "首次医疗接触后尽快记录并判读12导联心电图，用于识别ST段抬高、压低、T波改变或异常Q波。",
+        "action": {
+          "code": "EXAM-CARD-A80B855C8C77",
+          "name": "12导联心电图",
+          "type": "Exam",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-866065446A7A5F65",
+          "name": "2018 STEMI院前溶栓治疗中国专家共识.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-9A1C41BB38E3029E07C5-STEMI",
+          "page": 2,
+          "text": "的重要问题是STEMI 患者接受及时再灌注治疗率          表1　STEMI 早期诊断与早期处理 诊断方法           操作低 [1,2]。院前溶栓治疗是及时再灌注治疗的重要组 心电图监测首次医疗接触后尽快记录12 导联心电图检查并判 成部分 [3-5]。然而，目前国内存在院前急救人员缺         读，最迟不超过10 分钟对所有疑诊STEMI 患者尽 快用心电除颤监护仪进行监测 乏相关培训，对急性STEMI 患者的早期诊断、风         高度怀疑后壁心肌梗死（回旋支闭塞）的患者应考 险分层及溶栓治疗方案缺乏认识，亟待制订一部科          虑加做后壁导联（V7 ～V9）心电图 下壁心肌梗死患者应考虑加做右心室导联（V3R 和 学的专家共识对院前急救人员进行指导。"
+        },
+        "recommendation_class": "专家共识推荐",
+        "evidence_level": "专家共识证据",
+        "conflict_status": "无冲突"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-AMI-FIB-001",
+        "recommendation_code": "RECST-CARD-AMI-SRCADJ-FIB-20260717",
+        "clinical_question": "STEMI溶栓治疗",
+        "clinical_scenario": "STEMI发病早期，预计不能在120分钟内完成PPCI且无溶栓禁忌",
+        "recommendation_text": "符合STEMI溶栓适应证且不能在120分钟内完成PPCI时，可行溶栓治疗，并在溶栓后评估再通及补救PCI。",
+        "action": {
+          "code": "PROC-CARD-DA0F467D4A30",
+          "name": "溶栓治疗",
+          "type": "Procedure",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-866065446A7A5F65",
+          "name": "2018 STEMI院前溶栓治疗中国专家共识.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-56AF2340E37314FCA705-AMI",
+          "page": 4,
+          "text": "• 晚期肝脏疾病 • 感染性心内膜炎 4.2　院前溶栓治疗的适应证和禁忌证　开展院前                         • 活动性消化性溃疡 溶栓治疗的适应证应具备以下全部4 个条件：①                         • 长时间或有创性复苏 注：1 mmHg ＝0.133 kPa 急性胸痛持续30 分钟以上，但未超过12 小时； ②心电图相邻2 个或更多导联ST 段抬高在肢体导  溶栓治疗。 联≥0.1 mV、胸导联≥0.2 mV 或新出现的完全性    溶栓治疗前应进行知情同意。因为溶栓治疗除 左（或右）束支传导阻滞；③年龄≤75 周岁；④  了可能发生出血、再灌注性心律失常等不良反应， 不能在120 分钟内完成PPCI。           严重者可能有致死、致残的风险之外，还有可能溶 决定溶栓治疗前应综合分析预期风险/ 效益  栓失败。即使使用第三代特异性溶栓药，成功率也 比、发病至就诊时间、就诊时临床及血流动力学特  仅有大约80%，其中达到心肌梗死溶栓治疗试验 征、合并症、出血风险、禁忌证及预期PCI 延误  （TIMI）血流分级Ⅲ级的仅有大约"
+        },
+        "recommendation_class": "专家共识推荐",
+        "evidence_level": "专家共识证据",
+        "conflict_status": "无冲突"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-AMI-PCI-001",
+        "recommendation_code": "RECST-CARD-AMI-SRCADJ-PCI-20260717",
+        "clinical_question": "STEMI再灌注策略",
+        "clinical_scenario": "STEMI确诊或高度疑似，需选择再灌注策略",
+        "recommendation_text": "能在规定时间窗内完成直接经皮冠状动脉介入治疗时，应优先选择直接PCI；明显延误时进入溶栓评估。",
+        "action": {
+          "code": "PROC-CARD-E9ADC25A25E3",
+          "name": "经皮冠状动脉介入治疗",
+          "type": "Procedure",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-866065446A7A5F65",
+          "name": "2018 STEMI院前溶栓治疗中国专家共识.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-C29D798C2C4AA7DB70EA-STEMI",
+          "page": 8,
+          "text": "键启动电话，当急性胸痛患者拨打急救电话后救  同时应公布各关键岗位的一键启动电话，确保全天 护车到达现场，10 分钟内完成首份心电图并传输  候应急响应。 至胸痛中心信息共享平台，通过一键启动电话通    （3）院前急救系统与各医疗机构的联合救治。 知PPCI 医院的心内科医师帮助诊断。对于诊断明  签署联合救治协议，制订统一的STEMI 诊断及再 确的STEMI，若能在指南规定的120 分钟内送至  灌注方案和流程图、时间节点记录与管理、培训与 就近的PPCI 医院并完成PPCI（包括转运及门- 球  教育、联合演练、考核与反馈机制等。 时间），则应尽可能实施绕行非PPCI 医院、绕行      （4）PPCI 医院与周边非PPCI 医院之间的联合 PPCI 医院急诊室和CCU 直达导管室，以最大限度  救治。签署联合救治协议，制订STEMI 诊断及鉴"
+        },
+        "recommendation_class": "专家共识推荐",
+        "evidence_level": "专家共识证据",
+        "conflict_status": "无冲突"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-01B72A9E86690FAA",
+        "recommendation_code": "REC-35AFFC16987E38D3",
+        "clinical_question": "满足“影像学新发室壁运动异常”时，推荐：超声心动图",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "超声、CMR或其他影像提示新发局部室壁运动异常或存活心肌丢失时，作为缺血性损伤证据之一。",
+        "action": {
+          "code": "EXAM-TTE",
+          "name": "超声心动图",
+          "type": "Exam",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-174B3BDD2451501A",
+          "name": "4TH universal definition of MI.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-4E5A6C127482DC443670-STEMI",
+          "page": 4,
+          "text": "•  Differentiation of myocardial infarction from myocardial injury. •  Highlighting peri-procedural myocardial injury after cardiac and non-cardiac procedures as discrete from myocardial infarction. •  Consideration of electrical remodelling (cardiac memory) in assessing repolarization abnormalities with tachyarrhythmia, pacing, and rate-related conduction disturbances. • Use of cardiovascular magnetic resonance to define aetiology of myocardial injury. • Use of computed tomographic coronary ang"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-069AC08522519EBE",
+        "recommendation_code": "REC-775B4D172719135D",
+        "clinical_question": "满足“肌钙蛋白升高及动态变化”时，推荐：心肌肌钙蛋白",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "心肌肌钙蛋白至少一次超过第99百分位上限，且存在升高和/或下降动态变化，提示急性心肌损伤。",
+        "action": {
+          "code": "LAB-CARD-A9EC1D4DA037",
+          "name": "心肌肌钙蛋白",
+          "type": "LabTest",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-174B3BDD2451501A",
+          "name": "4TH universal definition of MI.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-5C8AE27C34EB5FAA3124-AMI",
+          "page": 19,
+          "text": "Figure 7 Illustration of early cardiac troponin kinetics in patients after acute myocardial injury including acute myocardial infarction. The timing of biomarker release into the circulation is dependent on blood flow and how soon after the onset of symptoms samples are obtained. Thus, the ability to consider small changes as diagnostic can be problematic. In addition, many comorbidities increase cTn values and, in particular, hs-cTn values, so that elevations can be present at baseline even in "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-1FF5943FFA9FE747",
+        "recommendation_code": "REC-73F794FD0A746355",
+        "clinical_question": "满足“冠状动脉血栓或责任病变”时，推荐：冠状动脉造影",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "冠脉造影或相关证据显示血栓/责任病变时，支持冠脉事件相关AMI判断。",
+        "action": {
+          "code": "EXAM-CAG",
+          "name": "冠状动脉造影",
+          "type": "Exam",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-174B3BDD2451501A",
+          "name": "4TH universal definition of MI.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-4E5A6C127482DC443670-STEMI",
+          "page": 4,
+          "text": "•  Differentiation of myocardial infarction from myocardial injury. •  Highlighting peri-procedural myocardial injury after cardiac and non-cardiac procedures as discrete from myocardial infarction. •  Consideration of electrical remodelling (cardiac memory) in assessing repolarization abnormalities with tachyarrhythmia, pacing, and rate-related conduction disturbances. • Use of cardiovascular magnetic resonance to define aetiology of myocardial injury. • Use of computed tomographic coronary ang"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-548F10EE05420D90",
+        "recommendation_code": "REC-CDSS-CAD-AMI-01-01-DIAG",
+        "clinical_question": "急性心肌损伤证据合并缺血证据时支持急性心肌梗死诊断。",
+        "clinical_scenario": "急性心肌梗死相关患者",
+        "recommendation_text": "急性心肌损伤证据合并缺血证据时支持急性心肌梗死诊断。",
+        "action": {
+          "code": "DXC-CARD-547346EE2FED",
+          "name": "急性心肌梗死诊断标准",
+          "type": "DiagnosisCriteria",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-37B4754AACAB4D5F",
+          "name": "心肌梗死心电图诊断标准和报告规范中国专家共识.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-674A318C96D4760982B1-AMI",
+          "page": 9,
+          "text": "支架内血栓形成的危险因素包括：        延长导管缓慢前送，套住被卡支架后撤出体外                  （1）高危患者如 肾功能不全和残余血小板高反应性等；                      （2）高危病   （Ⅱa，C⁃EO）。预防的关键在于充分预扩张病变， 对严重钙化病变，应使用旋磨等方法预处理，经非 变（B2或C型复杂冠状动脉病变如CTO、血栓病变、 小血管弥漫病变，特别是极度迂曲和偏心的严重钙   顺应球囊充分扩张后再置入支架。 化病变等）；                                    术后常发      （3）支架置入相关因素，如多支架、长支             6. 围术期心肌损伤和心肌梗死：PCI 架、双支架和小支架等；            （4）支架相关因素，如对多    生围术期（≤48 h）心肌损伤或心肌梗死，依据第4版 聚物涂层过敏、炎症反应致血管内皮化障碍及内膜                        倍                            心肌梗死通用定义，当术后肌钙蛋白>99%"
+        },
+        "recommendation_class": "未分级/指南未显式标注",
+        "evidence_level": "未分级/指南未显式标注",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-88F59A89604685FF",
+        "recommendation_code": "REC-7025595F385004F3",
+        "clinical_question": "满足“缺血性心电图改变”时，推荐：心电图",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "新发缺血性ST-T改变、ST段抬高/压低、病理性Q波等支持急性心肌缺血证据。",
+        "action": {
+          "code": "EXAM-ECG",
+          "name": "心电图",
+          "type": "Exam",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-608DDED17DA46BC7",
+          "name": "STEMI ESC 2017.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-113BF85876DF5EF032F0-STEMI",
+          "page": 9,
+          "text": "Ventricular pacing. Pacemaker rhythm may  also  prevent        (  1 mm in men, 40 years old)]  is recommended to detect ST- interpretation of ST-segment changes and may require urgent angiog-      segment elevation consistent with inferior and basal MI. raphy to confirm diagnosis and initiate therapy. Reprogramming the        Left main coronary obstruction. The presence of ST depres- pacemaker—allowing an evaluation of ECG changes during intrinsic       sion   1 mm in eight or more surface leads"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-95FEFEBADCF89072",
+        "recommendation_code": "REC-CDSS-CAD-AMI-03-01-PREVENT",
+        "clinical_question": "AMI稳定后应落实抗血小板、他汀、β受体阻滞剂和随访管理。",
+        "clinical_scenario": "急性心肌梗死相关患者",
+        "recommendation_text": "AMI稳定后应落实抗血小板、他汀、β受体阻滞剂和随访管理。",
+        "action": {
+          "code": "PLAN-CARD-42FD049DCDB5",
+          "name": "抗血小板治疗",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-AFBC49A750345874",
+          "name": "冠心病双联抗血小板治疗中国专家共识.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-D67B8B5A8FB0C8C69598-AMI",
+          "page": 2,
+          "text": "氯吡格雷联合阿司匹林较时，降低出血风险，提高临床净获益，进而改善冠心      ［3］，半衰期为6 h 单独使用阿司匹林显著减少急性心肌梗死患者的病患者二级预防效果，减轻疾病与社会负担。推荐 等级及证据水平说明分别见表1和2。        不良心血管事件，且大出血事件发生率无明显增加［5‑7］。但氯吡格雷抗血小板疗效的个体差异较 表1 《冠心病双联抗血小板治疗中国专家共识》中的                         大，部分患者表现出低反应或无反应（即氯吡格雷 推荐强度分级 酶基因（如推荐级别        定义         推荐用语    抵抗），该现象受细胞色素P450                                       ［8］。氯吡格雷抵抗的患者服     有证据证明和已达成共识该治疗或            CYP2C19）多态性影响Ⅰ      操作有益、有用、有效       推荐/建议    用常规剂量氯吡格雷无法达到预期的血小板抑制 效果，与缺血事件风险增高相关［9］。Ⅱ    对于该治疗或操作的有用/有效性存在矛盾的证据或意见分"
+        },
+        "recommendation_class": "未分级/共识意见",
+        "evidence_level": "未分级/共识证据",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-A265053FC6E5D961",
+        "recommendation_code": "REC-CDSS-CAD-AMI-02-01-REPERFUSION",
+        "clinical_question": "AMI患者应结合分型、时间窗和PCI可及性评估急诊PCI、溶栓或冠脉造影。",
+        "clinical_scenario": "急性心肌梗死相关患者",
+        "recommendation_text": "AMI患者应结合分型、时间窗和PCI可及性评估急诊PCI、溶栓或冠脉造影。",
+        "action": {
+          "code": "PLAN-CARD-3972CBC8228B",
+          "name": "再灌注治疗",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-955DCDB8BC81606E",
+          "name": "STEMI CN 2019.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-ED6B61F9AB279C7BCBB4-AMI",
+          "page": 2,
+          "text": "疑诊STEMI 的患者必须在首次医疗接触（ﬁrst 40                                                             38.09         39.32 34.12                         medical contact，FMC）时尽快获得并判读12 导联                                                  28.10 30                              25.53死亡率（1/10              23.2    23.16                      23.42                            心电图，加速STEMI 的早期诊断和处理。部分特 20  16.46               21.50     18.40 17.36  15.77                         殊类型的患者可能影响心电图ST 段判断（表2）， 11.30    10  12 当首"
+        },
+        "recommendation_class": "Ⅰ",
+        "evidence_level": "A",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-F7B9535C9730E68C",
+        "recommendation_code": "REC-CB7A690AA83E529E",
+        "clinical_question": "满足“冠状动脉血栓或责任病变”时，推荐：冠状动脉CT血管成像",
+        "clinical_scenario": "ST段抬高型心肌梗死",
+        "recommendation_text": "冠脉造影或相关证据显示血栓/责任病变时，支持冠脉事件相关AMI判断。",
+        "action": {
+          "code": "EXAM-CARD-F60922D428D5",
+          "name": "冠状动脉CT血管成像",
+          "type": "Exam",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-174B3BDD2451501A",
+          "name": "4TH universal definition of MI.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-4E5A6C127482DC443670-STEMI",
+          "page": 4,
+          "text": "•  Differentiation of myocardial infarction from myocardial injury. •  Highlighting peri-procedural myocardial injury after cardiac and non-cardiac procedures as discrete from myocardial infarction. •  Consideration of electrical remodelling (cardiac memory) in assessing repolarization abnormalities with tachyarrhythmia, pacing, and rate-related conduction disturbances. • Use of cardiovascular magnetic resonance to define aetiology of myocardial injury. • Use of computed tomographic coronary ang"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      }
+    ]
+  },
+  "DIS-CARD-CM-HCM": {
+    "success": true,
+    "disease": {
+      "code": "DIS-CARD-CM-HCM",
+      "name": "肥厚型心肌病",
+      "category": "心肌病"
+    },
+    "summary": {
+      "total": 10,
+      "recommend_count": 10,
+      "block_count": 0
+    },
+    "recommendations": [
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-1A1793D10EE14A93",
+        "recommendation_code": "REC-2B53E0EC6FAAF3FC",
+        "clinical_question": "满足“肥厚型心肌病路径治疗决策规则”时，推荐：抗凝治疗",
+        "clinical_scenario": "冠心病、心肌病、室性心律失常、心脏性猝死及历史静态路径迁移",
+        "recommendation_text": "根据患者状态、适应证、禁忌证和证据等级选择肥厚型心肌病治疗路径中的治疗策略。",
+        "action": {
+          "code": "PLAN-CARD-A1C4E6332D38",
+          "name": "抗凝治疗",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-372CA06E729E0563",
+          "name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-FFEC8CA65DBBB1B8118F-HCM",
+          "page": 6,
+          "text": "9.1 DCM                                  ACM 的超微结构改变目前尚未见系统的临床研 病理诊断为排除性诊断。心肌细胞肥大、空  究，因此不推荐做透射电子显微镜检查（Ⅲ，C）。 泡变性和间质纤维化是DCM 主要的组织病理学改     9.5 代谢性心肌病 变 [58-59]。透射电子显微镜观察见心肌细胞内线粒体     9.5.1 法布雷心肌病 数目增多、大小不等、嵴断裂或消失，可见结构不      EMB 是诊断法布雷心肌病特别是非经典型法布 良的肌节，主要表现为Z 线增宽、模糊或Z 线缺失  雷心肌病的金标准 [64]。 等。此外亦见溶酶体和脂褐素增多，糖原颗粒减少，    诊断标准：（1）组织学表现为心肌细胞肥大、 肌原纤维溶解等（Ⅱb，C） [60]。           空泡变性，间质纤维脂肪浸润。（2）免疫组织化 9.2 HCM                  学染色α 半乳糖苷酶（GLA）表达减少和Gb3 表 病理诊断为排除性诊断。心肌细胞显著肥大、  达增加（Ⅰ，A）[65-66]。（3）透射电子显微镜观察心 心肌细胞排列紊乱、"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-38C610E6D5A36690",
+        "recommendation_code": "REC-975A4B8091F0C7AC",
+        "clinical_question": "满足“肥厚型心肌病路径随访安全规则”时，推荐：肥厚型心肌病风险分层",
+        "clinical_scenario": "冠心病、心肌病、室性心律失常、心脏性猝死及历史静态路径迁移",
+        "recommendation_text": "治疗后持续监测疗效、安全性、复发风险和随访计划。",
+        "action": {
+          "code": "RISK-CARD-C72CDDDDE658",
+          "name": "肥厚型心肌病风险分层",
+          "type": "RiskStratification",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-372CA06E729E0563",
+          "name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-FFEC8CA65DBBB1B8118F-HCM",
+          "page": 6,
+          "text": "9.1 DCM                                  ACM 的超微结构改变目前尚未见系统的临床研 病理诊断为排除性诊断。心肌细胞肥大、空  究，因此不推荐做透射电子显微镜检查（Ⅲ，C）。 泡变性和间质纤维化是DCM 主要的组织病理学改     9.5 代谢性心肌病 变 [58-59]。透射电子显微镜观察见心肌细胞内线粒体     9.5.1 法布雷心肌病 数目增多、大小不等、嵴断裂或消失，可见结构不      EMB 是诊断法布雷心肌病特别是非经典型法布 良的肌节，主要表现为Z 线增宽、模糊或Z 线缺失  雷心肌病的金标准 [64]。 等。此外亦见溶酶体和脂褐素增多，糖原颗粒减少，    诊断标准：（1）组织学表现为心肌细胞肥大、 肌原纤维溶解等（Ⅱb，C） [60]。           空泡变性，间质纤维脂肪浸润。（2）免疫组织化 9.2 HCM                  学染色α 半乳糖苷酶（GLA）表达减少和Gb3 表 病理诊断为排除性诊断。心肌细胞显著肥大、  达增加（Ⅰ，A）[65-66]。（3）透射电子显微镜观察心 心肌细胞排列紊乱、"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-5C68BAFA0A8858BA",
+        "recommendation_code": "REC-346A7B6F72203B80",
+        "clinical_question": "满足“肥厚型心肌病路径治疗决策规则”时，推荐：肥厚型心肌病治疗方案",
+        "clinical_scenario": "冠心病、心肌病、室性心律失常、心脏性猝死及历史静态路径迁移",
+        "recommendation_text": "根据患者状态、适应证、禁忌证和证据等级选择肥厚型心肌病治疗路径中的治疗策略。",
+        "action": {
+          "code": "PLAN-CARD-C73CCA666CCA",
+          "name": "肥厚型心肌病治疗方案",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-372CA06E729E0563",
+          "name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-FFEC8CA65DBBB1B8118F-HCM",
+          "page": 6,
+          "text": "9.1 DCM                                  ACM 的超微结构改变目前尚未见系统的临床研 病理诊断为排除性诊断。心肌细胞肥大、空  究，因此不推荐做透射电子显微镜检查（Ⅲ，C）。 泡变性和间质纤维化是DCM 主要的组织病理学改     9.5 代谢性心肌病 变 [58-59]。透射电子显微镜观察见心肌细胞内线粒体     9.5.1 法布雷心肌病 数目增多、大小不等、嵴断裂或消失，可见结构不      EMB 是诊断法布雷心肌病特别是非经典型法布 良的肌节，主要表现为Z 线增宽、模糊或Z 线缺失  雷心肌病的金标准 [64]。 等。此外亦见溶酶体和脂褐素增多，糖原颗粒减少，    诊断标准：（1）组织学表现为心肌细胞肥大、 肌原纤维溶解等（Ⅱb，C） [60]。           空泡变性，间质纤维脂肪浸润。（2）免疫组织化 9.2 HCM                  学染色α 半乳糖苷酶（GLA）表达减少和Gb3 表 病理诊断为排除性诊断。心肌细胞显著肥大、  达增加（Ⅰ，A）[65-66]。（3）透射电子显微镜观察心 心肌细胞排列紊乱、"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-7E56329DDBF5F960",
+        "recommendation_code": "REC-D528B7393F407AFD",
+        "clinical_question": "满足“肥厚型心肌病路径评估规则”时，推荐：肥厚型心肌病诊断标准",
+        "clinical_scenario": "冠心病、心肌病、室性心律失常、心脏性猝死及历史静态路径迁移",
+        "recommendation_text": "进入肥厚型心肌病治疗路径前，先确认诊断依据、严重程度、危险因素和禁忌信息。",
+        "action": {
+          "code": "DXC-CARD-4335F6498D1C",
+          "name": "肥厚型心肌病诊断标准",
+          "type": "DiagnosisCriteria",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-372CA06E729E0563",
+          "name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-FFEC8CA65DBBB1B8118F-HCM",
+          "page": 6,
+          "text": "9.1 DCM                                  ACM 的超微结构改变目前尚未见系统的临床研 病理诊断为排除性诊断。心肌细胞肥大、空  究，因此不推荐做透射电子显微镜检查（Ⅲ，C）。 泡变性和间质纤维化是DCM 主要的组织病理学改     9.5 代谢性心肌病 变 [58-59]。透射电子显微镜观察见心肌细胞内线粒体     9.5.1 法布雷心肌病 数目增多、大小不等、嵴断裂或消失，可见结构不      EMB 是诊断法布雷心肌病特别是非经典型法布 良的肌节，主要表现为Z 线增宽、模糊或Z 线缺失  雷心肌病的金标准 [64]。 等。此外亦见溶酶体和脂褐素增多，糖原颗粒减少，    诊断标准：（1）组织学表现为心肌细胞肥大、 肌原纤维溶解等（Ⅱb，C） [60]。           空泡变性，间质纤维脂肪浸润。（2）免疫组织化 9.2 HCM                  学染色α 半乳糖苷酶（GLA）表达减少和Gb3 表 病理诊断为排除性诊断。心肌细胞显著肥大、  达增加（Ⅰ，A）[65-66]。（3）透射电子显微镜观察心 心肌细胞排列紊乱、"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-83ADAB0E0AEFB96F",
+        "recommendation_code": "REC-CDSS-CM-HCM-03-02-SRT",
+        "clinical_question": "药物治疗后仍有重度症状且存在显著LVOTO时，可评估室间隔切除术或酒精室间隔消融术。",
+        "clinical_scenario": "肥厚型心肌病相关患者",
+        "recommendation_text": "药物治疗后仍有重度症状且存在显著LVOTO时，可评估室间隔切除术或酒精室间隔消融术。",
+        "action": {
+          "code": "PROC-SEPTAL-MYECTOMY",
+          "name": "室间隔切除术",
+          "type": "Procedure",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-80984BC35C87AC53",
+          "name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-98CDE2336CD2602F64A6-HCM",
+          "page": 11,
+          "text": "中华超声影像学杂志2024年8月第33卷第8期  ChinJ Ultrasonogr,August2024,Vol33,No.8               · 655 · myosininhibitor,CMI)如玛伐凯泰的获批上市,国 家药品监督管理局要求启动伐凯泰治疗前、剂量滴定 以确认                      期间及之后定期进行超声心动图检查, LVOTG 降低,并监测心肌收缩功能过度下降;其中 必须测量左心室射血分数(leftventricularejection fraction,LVEF)及Valsalva激发后的LVOTG[15]。 在CMI初始治疗阶段要求每4周进行超声心动图检 查直到12周。在药物维持阶段应当每12周行超声心 动图检查。推荐采用二维双平面法或者三维超声测量 LVEF,在治疗全程中测量方法应保持一致。当心内 膜边界显示不清时可采用声学增强剂。左心室整体纵 向应变(globallongitudinalstrain,GLS)、左心室 舒张功能、二尖瓣反流程度等可辅助判断心脏收缩功 能的变化。每次行超声心动图检查时必须与既往的结 有无变  "
+        },
+        "recommendation_class": "Ⅱa",
+        "evidence_level": "C",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-89DBFF84EB2F5523",
+        "recommendation_code": "REC-CDSS-CM-HCM-04-01-FOLLOW",
+        "clinical_question": "HCM应定期复评症状、心电/动态心电图、影像学和家系风险。",
+        "clinical_scenario": "肥厚型心肌病相关患者",
+        "recommendation_text": "HCM应定期复评症状、心电/动态心电图、影像学和家系风险。",
+        "action": {
+          "code": "FU-CARD-B30DF4D6DE67",
+          "name": "肥厚型心肌病随访方案",
+          "type": "FollowUp",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-6605420FFBDD9D1D",
+          "name": "肥厚型心肌病激发_负荷超声心动图临床应用指南(2024版).pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-FEC5483CB7E25D200A90-HCM",
+          "page": 15,
+          "text": "5.2 风险评估指标                 或无意中被发现。如仅表现为局部心肌肥厚，没有 HCM 患者应该在最初诊断以及每1~2 年进行系  明显血流动力学改变，要启动临床观察和随访（Ⅱa， 统的、全面的非侵入性的SCD 风险评估 [128]（Ⅰ，B），  C），同时进行不良预后（如猝死）危险分层、合并症 内容包括：（1）心脏骤停或者持续性室性心律失常  评估，如无禁忌，可适当选用药物治疗（如β 受体 的个人史；（2）怀疑心律失常晕厥史；（3）HCM 相关  阻滞剂等）。 猝死、心脏骤停、持续性室性心律失常的家族史；（4）    与无症状的HCM 患者相比，出现症状的HCM 超声心动图评估最大左心室壁厚度、LVEF、左心房  患者结局更差 [138]。非梗阻性HCM 患者常见症状如 内径、左心室心尖室壁瘤等；（5）动态心电图监测发  呼吸困难和胸痛等，可能与心肌舒张功能障碍、肥 现的NSVT。经过临床评估后，未定义为高风险患  厚的心肌需氧- 供氧失衡、冠状动脉微血管受压或 者或者不确定是否安装ICD 的HCM 患者，可以通  与其他合并症因素有关，如合并典型心绞痛症状或 过"
+        },
+        "recommendation_class": "Ⅰ",
+        "evidence_level": "B",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-9802214F8A0FA140",
+        "recommendation_code": "REC-0C79D172AF1123A2",
+        "clinical_question": "满足“肥厚型心肌病路径随访安全规则”时，推荐：肥厚型心肌病随访方案",
+        "clinical_scenario": "冠心病、心肌病、室性心律失常、心脏性猝死及历史静态路径迁移",
+        "recommendation_text": "治疗后持续监测疗效、安全性、复发风险和随访计划。",
+        "action": {
+          "code": "FU-CARD-B30DF4D6DE67",
+          "name": "肥厚型心肌病随访方案",
+          "type": "FollowUp",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-372CA06E729E0563",
+          "name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-FFEC8CA65DBBB1B8118F-HCM",
+          "page": 6,
+          "text": "9.1 DCM                                  ACM 的超微结构改变目前尚未见系统的临床研 病理诊断为排除性诊断。心肌细胞肥大、空  究，因此不推荐做透射电子显微镜检查（Ⅲ，C）。 泡变性和间质纤维化是DCM 主要的组织病理学改     9.5 代谢性心肌病 变 [58-59]。透射电子显微镜观察见心肌细胞内线粒体     9.5.1 法布雷心肌病 数目增多、大小不等、嵴断裂或消失，可见结构不      EMB 是诊断法布雷心肌病特别是非经典型法布 良的肌节，主要表现为Z 线增宽、模糊或Z 线缺失  雷心肌病的金标准 [64]。 等。此外亦见溶酶体和脂褐素增多，糖原颗粒减少，    诊断标准：（1）组织学表现为心肌细胞肥大、 肌原纤维溶解等（Ⅱb，C） [60]。           空泡变性，间质纤维脂肪浸润。（2）免疫组织化 9.2 HCM                  学染色α 半乳糖苷酶（GLA）表达减少和Gb3 表 病理诊断为排除性诊断。心肌细胞显著肥大、  达增加（Ⅰ，A）[65-66]。（3）透射电子显微镜观察心 心肌细胞排列紊乱、"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-B7DFC74DEF356ADF",
+        "recommendation_code": "REC-CDSS-CM-HCM-02-01-SCD-RISK",
+        "clinical_question": "HCM确诊后应评估猝死风险并判断ICD适应证。",
+        "clinical_scenario": "肥厚型心肌病相关患者",
+        "recommendation_text": "HCM确诊后应评估猝死风险并判断ICD适应证。",
+        "action": {
+          "code": "RISK-CARD-C72CDDDDE658",
+          "name": "肥厚型心肌病风险分层",
+          "type": "RiskStratification",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-6605420FFBDD9D1D",
+          "name": "肥厚型心肌病激发_负荷超声心动图临床应用指南(2024版).pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-FEC5483CB7E25D200A90-HCM",
+          "page": 15,
+          "text": "5.2 风险评估指标                 或无意中被发现。如仅表现为局部心肌肥厚，没有 HCM 患者应该在最初诊断以及每1~2 年进行系  明显血流动力学改变，要启动临床观察和随访（Ⅱa， 统的、全面的非侵入性的SCD 风险评估 [128]（Ⅰ，B），  C），同时进行不良预后（如猝死）危险分层、合并症 内容包括：（1）心脏骤停或者持续性室性心律失常  评估，如无禁忌，可适当选用药物治疗（如β 受体 的个人史；（2）怀疑心律失常晕厥史；（3）HCM 相关  阻滞剂等）。 猝死、心脏骤停、持续性室性心律失常的家族史；（4）    与无症状的HCM 患者相比，出现症状的HCM 超声心动图评估最大左心室壁厚度、LVEF、左心房  患者结局更差 [138]。非梗阻性HCM 患者常见症状如 内径、左心室心尖室壁瘤等；（5）动态心电图监测发  呼吸困难和胸痛等，可能与心肌舒张功能障碍、肥 现的NSVT。经过临床评估后，未定义为高风险患  厚的心肌需氧- 供氧失衡、冠状动脉微血管受压或 者或者不确定是否安装ICD 的HCM 患者，可以通  与其他合并症因素有关，如合并典型心绞痛症状或 过"
+        },
+        "recommendation_class": "Ⅰ",
+        "evidence_level": "B",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-C3CFE6D003C71342",
+        "recommendation_code": "REC-CDSS-CM-HCM-01-01-DIAG",
+        "clinical_question": "疑似肥厚型心肌病应结合超声心动图、心脏磁共振、最大室壁厚度和家族史确认诊断。",
+        "clinical_scenario": "肥厚型心肌病相关患者",
+        "recommendation_text": "疑似肥厚型心肌病应结合超声心动图、心脏磁共振、最大室壁厚度和家族史确认诊断。",
+        "action": {
+          "code": "DXC-CARD-4335F6498D1C",
+          "name": "肥厚型心肌病诊断标准",
+          "type": "DiagnosisCriteria",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-6605420FFBDD9D1D",
+          "name": "肥厚型心肌病激发_负荷超声心动图临床应用指南(2024版).pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-986C7CF16E3D3252DF80-HCM",
+          "page": 2,
+          "text": "肥厚型心肌病                   (hypertrophiccardiomyopathy,  要价值,结合国内外相关文献和指南,立足我国国情 HCM)是指在没有其他潜在心脏疾病、系统性或代  和临床应用现状,由中国超声心动图学会等8个超声 谢性疾病情况下出现心室心肌肥厚,主要由心肌肌小  医学学会的专家共同起草了HCM 激发/负荷超声心 节相关蛋白基因突变引起的心肌疾病                     [1]。超声心动图  动图临床应用指南,旨在推广激发/负荷超声心动图 或者磁共振检查左心室舒张末期任意部位室壁厚度≥  技术在HCM 诊断中的应用,对操作的规范化进行指 15 mm 可确诊,致病基因检测阳性者或者遗传受累  导,更为有效地检出隐匿性梗阻的HCM 患者,便于 也可确      患者进行精确的危险分层和指导临床治疗决家系成员检查发现左心室壁厚度≥13 mm      对HCM 诊  [2]。HCM 的临床表现及病程具有多样性,有些患  策。 者可长期无症状,而部分患者首发症状为猝死 [3]。    一、指南编写方法 HCM 患者最常见的症状是劳力性呼吸"
+        },
+        "recommendation_class": "I",
+        "evidence_level": "B",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-E3DDF0BBA159141C",
+        "recommendation_code": "REC-CDSS-CM-HCM-03-01-MED",
+        "clinical_question": "有症状HCM患者应优先评估β受体阻滞剂或非二氢吡啶类钙通道阻滞剂。",
+        "clinical_scenario": "肥厚型心肌病相关患者",
+        "recommendation_text": "有症状HCM患者应优先评估β受体阻滞剂或非二氢吡啶类钙通道阻滞剂。",
+        "action": {
+          "code": "PLAN-CARD-C73CCA666CCA",
+          "name": "肥厚型心肌病治疗方案",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-6605420FFBDD9D1D",
+          "name": "肥厚型心肌病激发_负荷超声心动图临床应用指南(2024版).pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-7C6A63C34029A8BAAD7F-HCM",
+          "page": 11,
+          "text": "2.对于静息状态下LVOTG<50 mmHg且药物   分型按照流程出现颜色即可确诊)                          治疗效果不佳的HCM 患者,推荐进行激发/负荷超 于HCM 患者的诊断及分型仍未见报道,随着数据的  声心动图检查,测定LVOTG 的变化,以明确是否 积累及技术的进步,相信该领域成果未来可期。    需要手术干预(Ⅰ,B)。 2.指导治疗                    3.激发/负荷超声心动图检查观察内容包括:评 (1)指导HCM 疾病治疗、效果评估及随访    估有无二尖瓣前叶SAM 征及分级、左心室流出道血 对于HCM 患者风险评估,无论是否出现症状,  流加速情况、左心室腔梗阻位置、左心室梗阻部位最 大血流速度及压力阶差超声识别严重血流动力学梗阻(≥50 mmHg)非常                (Ⅰ,B)。 患者静息状态下存在左心室流出道梗重要。HCM                      4.激发/负荷超声心动图检查应严格把握各项负 阻,提示死亡风险增高,可能出现心源性猝死。有症  荷试验的适应证和禁忌证,试验前准备充足的"
+        },
+        "recommendation_class": "Ⅰ",
+        "evidence_level": "B",
+        "conflict_status": "none"
+      }
+    ]
+  },
+  "DIS-CARD-HF": {
+    "success": true,
+    "disease": {
+      "code": "DIS-CARD-HF",
+      "name": "心力衰竭",
+      "category": "心力衰竭"
+    },
+    "summary": {
+      "total": 30,
+      "recommend_count": 30,
+      "block_count": 0
+    },
+    "recommendations": [
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-0283F49C1248AC9C",
+        "recommendation_code": "REC-F0EDA6FAF73E180D",
+        "clinical_question": "满足“心衰随访与用药安全监测规则”时，推荐：心力衰竭随访方案",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "治疗调整后需随访症状、体重、血压、肾功能、电解质及药物相关高钾血症风险。",
+        "action": {
+          "code": "FU-CARD-8BCE7C3349BC",
+          "name": "心力衰竭随访方案",
+          "type": "FollowUp",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-C440C68F7BD2DFFB",
+          "name": "心力衰竭药物治疗相关高钾血症防治专家共识2024.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-D33B79AC036793E90BBD-HF",
+          "page": 5,
+          "text": "4 高钾血症高危心力衰竭患者的随访监测及预防        NYHA 心功能分级与高钾血症的发生也有关。 4.1 随访监测                   一项纳入1 028 例慢性肾脏病或糖尿病伴心力衰 竭患者的土耳其研究发现，高钾血症的发病风险 推荐意见              随NYHA 心功能分级升高而增加（Ⅰ级 vs. Ⅱ级 vs. （1）由于高钾血症的临床症状和心电图表现  Ⅲ级 vs. Ⅳ级：9.8% vs. 12.8% vs. 14.4% vs. 23.4%， 均缺乏特异性，且患者常无症状，因此所有慢性    P=0.03） [38]。另一项研究发现，NYHA 心功能分级 心力衰竭患者均应定期监测血钾水平。       是高钾血症的独立预测因子，NYHA 心功能分级 （2）RASi/ARNI 及MRA 启动和滴定期间应   Ⅲ~ Ⅳ级患者发生高钾血症的风险是其他患者的3 以1 次/1~2 周的频率监测血钾和肾功能，达到最   倍 [39]，这可能与NYHA 心功能分级较高的患者更常 大滴定剂量1~2 周后复查，之后监测频率1 次/ 月，  合并重度肾功能不全有关 "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-08B7877F1017D7DF",
+        "recommendation_code": "REC-CDSS-HF-HF-03-01-TREAT",
+        "clinical_question": "心力衰竭治疗应根据病情严重程度、禁忌证和患者特征选择心力衰竭治疗方案、β受体阻滞剂、盐皮质激素受体拮抗剂、血管紧张素Ⅱ受体阻滞剂、血管紧张素受体脑啡肽酶抑制剂等。",
+        "clinical_scenario": "心力衰竭相关患者",
+        "recommendation_text": "心力衰竭治疗应根据病情严重程度、禁忌证和患者特征选择心力衰竭治疗方案、β受体阻滞剂、盐皮质激素受体拮抗剂、血管紧张素Ⅱ受体阻滞剂、血管紧张素受体脑啡肽酶抑制剂等。",
+        "action": {
+          "code": "PLAN-CARD-EFF16DE5C7BC",
+          "name": "心力衰竭治疗方案",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-E2AE11B44F6F744B",
+          "name": "中国心力衰竭诊断和治疗指南2024.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-6540A6A24A533BF087A7-HF",
+          "page": 25,
+          "text": "若对   节律与心率控制的结果，相较于药物治疗，导管消 受体阻滞剂不能耐受、有禁忌证、反应欠佳的 β                       融进行节律控制患者的全因死亡和再住院率显著 患者可用 HFrEF 患者可用地高辛（Ⅱa，C），HFpEF       降低，左心室功能、生活质量显著改善，心律失常复 非二氢吡啶类钙通道阻滞剂（维拉帕米、地尔硫䓬）                        发显著减少［164］。然而，多数研究入选了高度选择 的人群，未来仍需要进一步研究来确定适合的（Ⅱa，B）；以上均不耐受者可以考虑胺碘酮（Ⅱb， 患者。C），或在β受体阻滞剂或地高辛的基础上加用胺碘 酮（Ⅱb，C）。（2）NYHA 心功能Ⅳ级的患者，应考虑                                 对于HFrEF伴房颤患者，目前推荐：合并LVEF 下降的房颤患者，若高度怀疑为心律失常性心肌静脉应用胺碘酮或洋地黄类药物（Ⅱa，B）。（3）房颤 的患者，节律控制失败，药物治疗下 伴LVEF≤50%                    病，建议行导管消融以改善心功能（Ⅰ，"
+        },
+        "recommendation_class": "Ⅱa",
+        "evidence_level": "C",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-1B90D068F76A88DC",
+        "recommendation_code": "REC-CDSS-HF-HF-02-01-RISK",
+        "clinical_question": "心力衰竭确诊或高度疑似后，应结合心力衰竭风险分层、利尿剂抵抗进行风险分层和高危因素识别。",
+        "clinical_scenario": "心力衰竭相关患者",
+        "recommendation_text": "心力衰竭确诊或高度疑似后，应结合心力衰竭风险分层、利尿剂抵抗进行风险分层和高危因素识别。",
+        "action": {
+          "code": "RISK-CARD-FDA995103C36",
+          "name": "心力衰竭风险分层",
+          "type": "RiskStratification",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-98F1F8383E6558161C56-HF",
+          "page": 10,
+          "text": "(1)2 型糖尿病 推荐使用SGLT2i 来管理高血糖并降低心力衰竭的住院和死亡风险 [54] (2) 血脂异常 根据现行国内外血脂异常指南进行治疗 [1] (3) 肥胖 肥胖者应减轻体重；推荐使用GLP-1 RA 或GIP/GLP-1 RA 治疗 [102-104] (4) 高尿酸血症和痛风 参考国内外相关指南和专家共识进行治疗 [1] (5) 贫血 明确贫血原因并针对病因治疗，严重时考虑输血 [1] (6) 铁缺乏 可考虑静脉补铁以改善症状 HFpEF-5    ( 心    (7) 甲状腺功能异常 脏外疾病相关   建议内分泌科治疗 [1] HFpEF)             (8) 慢性肾脏病 对于eGFR>30 ml/(min·1.73 m2 ) 的HFpEF 伴慢性肾脏病患者，ARNI 有助于延缓肾功能恶化，降低终末期肾脏病和肾 脏相关死亡风险 [105]，推荐ARNI 替代ACEI/ARB 以改善血压控制，降低终末期肾脏病及心血管事件风险 [106-107]； 推荐使用达格列净[eGFR ≥25 ml/(min·1.73 m2 )] 或恩格列净[eGFR ≥20 ml/"
+        },
+        "recommendation_class": "Ⅰ",
+        "evidence_level": "C",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-1BE70A74326158D2",
+        "recommendation_code": "REC-94618DD43705D2DF",
+        "clinical_question": "满足“心衰随访与用药安全监测规则”时，推荐：肾功能与电解质",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "治疗调整后需随访症状、体重、血压、肾功能、电解质及药物相关高钾血症风险。",
+        "action": {
+          "code": "LAB-CARD-RENAL-ELECTROLYTE-CDSS",
+          "name": "肾功能与电解质",
+          "type": "LabTest",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-C440C68F7BD2DFFB",
+          "name": "心力衰竭药物治疗相关高钾血症防治专家共识2024.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-D33B79AC036793E90BBD-HF",
+          "page": 5,
+          "text": "4 高钾血症高危心力衰竭患者的随访监测及预防        NYHA 心功能分级与高钾血症的发生也有关。 4.1 随访监测                   一项纳入1 028 例慢性肾脏病或糖尿病伴心力衰 竭患者的土耳其研究发现，高钾血症的发病风险 推荐意见              随NYHA 心功能分级升高而增加（Ⅰ级 vs. Ⅱ级 vs. （1）由于高钾血症的临床症状和心电图表现  Ⅲ级 vs. Ⅳ级：9.8% vs. 12.8% vs. 14.4% vs. 23.4%， 均缺乏特异性，且患者常无症状，因此所有慢性    P=0.03） [38]。另一项研究发现，NYHA 心功能分级 心力衰竭患者均应定期监测血钾水平。       是高钾血症的独立预测因子，NYHA 心功能分级 （2）RASi/ARNI 及MRA 启动和滴定期间应   Ⅲ~ Ⅳ级患者发生高钾血症的风险是其他患者的3 以1 次/1~2 周的频率监测血钾和肾功能，达到最   倍 [39]，这可能与NYHA 心功能分级较高的患者更常 大滴定剂量1~2 周后复查，之后监测频率1 次/ 月，  合并重度肾功能不全有关 "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-25B43026F3462C5E",
+        "recommendation_code": "REC-54A9B88981A6EDE3",
+        "clinical_question": "满足“HFpEF综合管理规则”时，推荐：达格列净",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "HFpEF应重视利钠肽/结构功能证据、容量管理、合并症管理和SGLT2抑制剂等治疗选择。",
+        "action": {
+          "code": "MED-CARD-STD-3B4D860E5C",
+          "name": "达格列净",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-7DFE0F3278CE8851A238-HFpEF",
+          "page": 8,
+          "text": "推荐意见考虑技术可及性、  钠肽测定与超声心动图相结合、静息与负荷超声心动 医疗中心经验以及患者的意愿，当临床怀疑HFpEF，  图相结合、无创检查与有创血液动力学检查相结合对 而BNP 或NT-proBNP 以及静息超声心动图不能确诊  疑似患者鉴别诊断的重要性。同时，本推荐意见在E/e' 时，建议行负荷超声心动图检查。在有条件的医疗  检查基础上，增加了左心房内径、左心室壁厚度及肺 中心，高度怀疑HFpEF 而上述无创检查不能明确诊  动脉收缩压三个可以通过常规超声心动图检查即可获 断时，推荐行有创血液动力学检查。无论静息还是  得的参数，进一步优化了HFpEF 诊断流程，有助于"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-270A9E3E1A10C06F",
+        "recommendation_code": "REC-D6E3E20CC3A239C2",
+        "clinical_question": "满足“心衰LVEF分型规则”时，推荐：射血分数保留的心力衰竭诊断标准",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "根据LVEF将心衰分为HFrEF、HFmrEF和HFpEF，并结合结构/舒张功能异常和利钠肽判断。",
+        "action": {
+          "code": "DXC-CARD-2456E1DC2365",
+          "name": "射血分数保留的心力衰竭诊断标准",
+          "type": "DiagnosisCriteria",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-7DFE0F3278CE8851A238-HFpEF",
+          "page": 8,
+          "text": "推荐意见考虑技术可及性、  钠肽测定与超声心动图相结合、静息与负荷超声心动 医疗中心经验以及患者的意愿，当临床怀疑HFpEF，  图相结合、无创检查与有创血液动力学检查相结合对 而BNP 或NT-proBNP 以及静息超声心动图不能确诊  疑似患者鉴别诊断的重要性。同时，本推荐意见在E/e' 时，建议行负荷超声心动图检查。在有条件的医疗  检查基础上，增加了左心房内径、左心室壁厚度及肺 中心，高度怀疑HFpEF 而上述无创检查不能明确诊  动脉收缩压三个可以通过常规超声心动图检查即可获 断时，推荐行有创血液动力学检查。无论静息还是  得的参数，进一步优化了HFpEF 诊断流程，有助于"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-3955D1602B0EF1FA",
+        "recommendation_code": "REC-773A8F4D3FBECC1A",
+        "clinical_question": "满足“心衰LVEF分型规则”时，推荐：射血分数轻度降低的心力衰竭诊断标准",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "根据LVEF将心衰分为HFrEF、HFmrEF和HFpEF，并结合结构/舒张功能异常和利钠肽判断。",
+        "action": {
+          "code": "DXC-CARD-28280DD401C8",
+          "name": "射血分数轻度降低的心力衰竭诊断标准",
+          "type": "DiagnosisCriteria",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-7DFE0F3278CE8851A238-HFpEF",
+          "page": 8,
+          "text": "推荐意见考虑技术可及性、  钠肽测定与超声心动图相结合、静息与负荷超声心动 医疗中心经验以及患者的意愿，当临床怀疑HFpEF，  图相结合、无创检查与有创血液动力学检查相结合对 而BNP 或NT-proBNP 以及静息超声心动图不能确诊  疑似患者鉴别诊断的重要性。同时，本推荐意见在E/e' 时，建议行负荷超声心动图检查。在有条件的医疗  检查基础上，增加了左心房内径、左心室壁厚度及肺 中心，高度怀疑HFpEF 而上述无创检查不能明确诊  动脉收缩压三个可以通过常规超声心动图检查即可获 断时，推荐行有创血液动力学检查。无论静息还是  得的参数，进一步优化了HFpEF 诊断流程，有助于"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-3976CF063F033A4C",
+        "recommendation_code": "REC-52314CDED5532BDA",
+        "clinical_question": "满足“HFrEF长期规范药物治疗规则”时，推荐：钠-葡萄糖协同转运蛋白2抑制剂",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "HFrEF长期治疗优先形成包含ARNI/ACEI/ARB、β受体阻滞剂、MRA、SGLT2抑制剂等的规范治疗组合，并监测禁忌和耐受。",
+        "action": {
+          "code": "MED-CARD-3B504DD7AA33",
+          "name": "钠-葡萄糖协同转运蛋白2抑制剂",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-6C40984E352072D805F6-HF",
+          "page": 11,
+          "text": "此外，SGLT2i 也可显著改善  中，沙库巴曲缬沙坦可减少心血管死亡和心力衰竭 生活质量 [115]。两项研究均纳入LVEF>40% 的患  再住院的复合终点事件 [122]。PARALAX 研究比较了 者。由于目前LVEF 为41%~49% 的患者被归为  沙库巴曲缬沙坦和RAS 抑制剂或安慰剂的效果，结 HFmrEF，EMPEROR-Preserved 研究亚组分析显   果发现12 周时NT-proBNP 水平显著降低（几何平均 示，恩格列净同样显著改善了LVEF ≥50% 心力    比0.84，95%CI：0.80~0.88，P<0.001），但24 周时6 衰竭患者的主要终点结局（心血管死亡或心力衰竭  分钟步行距离、KCCQ 评分和NYHA 心功能分级的 入院） [116]。恩格列净在广泛的LVEF 范围内（从  差异均无统计学意义 [123]。PARAMOUNT 研究纳入了 <25% 到<65%）的作用幅度相似 [117]；DELIVER 研    LVEF ≥45% 的HFpEF 患者，比较了沙库巴曲缬沙 究发现，LVEF<50% 和≥60% 的患者均能从达格  坦"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-46D58D99D740B6A2",
+        "recommendation_code": "REC-0F630AC742C64BB6",
+        "clinical_question": "满足“心衰LVEF分型规则”时，推荐：射血分数降低的心力衰竭诊断标准",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "根据LVEF将心衰分为HFrEF、HFmrEF和HFpEF，并结合结构/舒张功能异常和利钠肽判断。",
+        "action": {
+          "code": "DXC-CARD-221AA46B58A3",
+          "name": "射血分数降低的心力衰竭诊断标准",
+          "type": "DiagnosisCriteria",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-7DFE0F3278CE8851A238-HFpEF",
+          "page": 8,
+          "text": "推荐意见考虑技术可及性、  钠肽测定与超声心动图相结合、静息与负荷超声心动 医疗中心经验以及患者的意愿，当临床怀疑HFpEF，  图相结合、无创检查与有创血液动力学检查相结合对 而BNP 或NT-proBNP 以及静息超声心动图不能确诊  疑似患者鉴别诊断的重要性。同时，本推荐意见在E/e' 时，建议行负荷超声心动图检查。在有条件的医疗  检查基础上，增加了左心房内径、左心室壁厚度及肺 中心，高度怀疑HFpEF 而上述无创检查不能明确诊  动脉收缩压三个可以通过常规超声心动图检查即可获 断时，推荐行有创血液动力学检查。无论静息还是  得的参数，进一步优化了HFpEF 诊断流程，有助于"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-4CE86BC7CAE0BF23",
+        "recommendation_code": "REC-3F196A9FDA47EC87",
+        "clinical_question": "满足“HFrEF长期规范药物治疗规则”时，推荐：血管紧张素受体脑啡肽酶抑制剂",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "HFrEF长期治疗优先形成包含ARNI/ACEI/ARB、β受体阻滞剂、MRA、SGLT2抑制剂等的规范治疗组合，并监测禁忌和耐受。",
+        "action": {
+          "code": "MED-CARD-5C774D10CF46",
+          "name": "血管紧张素受体脑啡肽酶抑制剂",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-6C40984E352072D805F6-HF",
+          "page": 11,
+          "text": "此外，SGLT2i 也可显著改善  中，沙库巴曲缬沙坦可减少心血管死亡和心力衰竭 生活质量 [115]。两项研究均纳入LVEF>40% 的患  再住院的复合终点事件 [122]。PARALAX 研究比较了 者。由于目前LVEF 为41%~49% 的患者被归为  沙库巴曲缬沙坦和RAS 抑制剂或安慰剂的效果，结 HFmrEF，EMPEROR-Preserved 研究亚组分析显   果发现12 周时NT-proBNP 水平显著降低（几何平均 示，恩格列净同样显著改善了LVEF ≥50% 心力    比0.84，95%CI：0.80~0.88，P<0.001），但24 周时6 衰竭患者的主要终点结局（心血管死亡或心力衰竭  分钟步行距离、KCCQ 评分和NYHA 心功能分级的 入院） [116]。恩格列净在广泛的LVEF 范围内（从  差异均无统计学意义 [123]。PARAMOUNT 研究纳入了 <25% 到<65%）的作用幅度相似 [117]；DELIVER 研    LVEF ≥45% 的HFpEF 患者，比较了沙库巴曲缬沙 究发现，LVEF<50% 和≥60% 的患者均能从达格  坦"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-51C0830C39A21CD2",
+        "recommendation_code": "REC-84BF0B512DC5CDB8",
+        "clinical_question": "满足“HFpEF综合管理规则”时，推荐：射血分数保留的心力衰竭治疗方案",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "HFpEF应重视利钠肽/结构功能证据、容量管理、合并症管理和SGLT2抑制剂等治疗选择。",
+        "action": {
+          "code": "PLAN-CARD-71EEE6F12EA8",
+          "name": "射血分数保留的心力衰竭治疗方案",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-7DFE0F3278CE8851A238-HFpEF",
+          "page": 8,
+          "text": "推荐意见考虑技术可及性、  钠肽测定与超声心动图相结合、静息与负荷超声心动 医疗中心经验以及患者的意愿，当临床怀疑HFpEF，  图相结合、无创检查与有创血液动力学检查相结合对 而BNP 或NT-proBNP 以及静息超声心动图不能确诊  疑似患者鉴别诊断的重要性。同时，本推荐意见在E/e' 时，建议行负荷超声心动图检查。在有条件的医疗  检查基础上，增加了左心房内径、左心室壁厚度及肺 中心，高度怀疑HFpEF 而上述无创检查不能明确诊  动脉收缩压三个可以通过常规超声心动图检查即可获 断时，推荐行有创血液动力学检查。无论静息还是  得的参数，进一步优化了HFpEF 诊断流程，有助于"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-5F19CA4FFF02DA96",
+        "recommendation_code": "REC-B85BF2552DE6849B",
+        "clinical_question": "满足“急性心衰淤血处理规则”时，推荐：肾功能与电解质",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "急性心衰伴容量负荷或淤血时，应评估利尿剂治疗、肾功能电解质和血流动力学状态。",
+        "action": {
+          "code": "LAB-CARD-RENAL-ELECTROLYTE-CDSS",
+          "name": "肾功能与电解质",
+          "type": "LabTest",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7198C13DB2740EAA",
+          "name": "心力衰竭患者利尿剂抵抗诊断及管理中国专家共识.pdf（来源标识：DOC-7198C13DB2740EAA）"
+        },
+        "primary_evidence": {
+          "code": "EVD-3D73B3265AA9A0357CBB-AHF",
+          "page": 2,
+          "text": "缩写                    英文全称                 中文全称 ADHF                          acutedecompensatedheartfailure        急性失代偿性心力衰竭 ARNI                           angiotensinreceptor-neprilysininhibitor     血管紧张素受体脑啡肽酶抑制剂 AVP                                    argininevasopressin            精氨酸血管升压素 BNP                                  B-typenatriureticpeptide             B型利钠肽 bio-ADM                           biologicallyactiveadrenomedullin           肾上腺髓质素 sST2                       solublegrowth"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-711BD94E62202683",
+        "recommendation_code": "REC-CDSS-CARD-HF-RATE-CONTROL",
+        "clinical_question": "心力衰竭合并房颤快心室率时，建议结合射血分数和禁忌证选择心室率控制策略；射血分数下降者需慎用非二氢吡啶类钙通道阻滞剂。",
+        "clinical_scenario": "心力衰竭合并心房颤动快速心室率或心室率控制不达标者",
+        "recommendation_text": "心力衰竭合并房颤快心室率时，建议结合射血分数和禁忌证选择心室率控制策略；射血分数下降者需慎用非二氢吡啶类钙通道阻滞剂。",
+        "action": {
+          "code": "PLAN-CARD-TEXT-655F4B37BC",
+          "name": "控制心室率",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-CF62B75AEC93F1A6",
+          "name": "《内科学（第10版）》.docx"
+        },
+        "primary_evidence": {
+          "code": "EVD-CARD-DEEP-94D83E44FD47F4",
+          "page": "N/A",
+          "text": "控制心室率的药物包括β受体拮抗剂、非二氢吡啶类钙通道阻滞剂、洋地黄制剂和某些抗心律失常药物（如胺碘酮），可单用或者联合应用，但应注意这些药物的禁忌证。射血分数保留的心力衰竭病人可选择β受体拮抗剂或 / 和非二氢吡啶类钙通道阻滞剂。射血分数下降的心力衰竭病人首选β受体拮抗剂，当心室率控制不达标或β受体拮抗剂有使用禁忌时，应考虑使用洋地黄类药物或/ 和胺碘酮。达到严格心室率控制目标后，应行 24 小时动态心电图监测以评估有无心动过缓和心脏停搏情况。"
+        },
+        "recommendation_class": "教材支持",
+        "evidence_level": "权威教材证据",
+        "conflict_status": "无冲突"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-7F0BD2449B4C3299",
+        "recommendation_code": "REC-D45CAF96A2017FFB",
+        "clinical_question": "满足“急性心衰淤血处理规则”时，推荐：急性心力衰竭治疗方案",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "急性心衰伴容量负荷或淤血时，应评估利尿剂治疗、肾功能电解质和血流动力学状态。",
+        "action": {
+          "code": "PLAN-CARD-8DE84AB1F5CB",
+          "name": "急性心力衰竭治疗方案",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7198C13DB2740EAA",
+          "name": "心力衰竭患者利尿剂抵抗诊断及管理中国专家共识.pdf（来源标识：DOC-7198C13DB2740EAA）"
+        },
+        "primary_evidence": {
+          "code": "EVD-3D73B3265AA9A0357CBB-AHF",
+          "page": 2,
+          "text": "缩写                    英文全称                 中文全称 ADHF                          acutedecompensatedheartfailure        急性失代偿性心力衰竭 ARNI                           angiotensinreceptor-neprilysininhibitor     血管紧张素受体脑啡肽酶抑制剂 AVP                                    argininevasopressin            精氨酸血管升压素 BNP                                  B-typenatriureticpeptide             B型利钠肽 bio-ADM                           biologicallyactiveadrenomedullin           肾上腺髓质素 sST2                       solublegrowth"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-86D566693919C9D4",
+        "recommendation_code": "REC-9374F3930A04EA51",
+        "clinical_question": "满足“心衰LVEF分型规则”时，推荐：左心室射血分数",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "根据LVEF将心衰分为HFrEF、HFmrEF和HFpEF，并结合结构/舒张功能异常和利钠肽判断。",
+        "action": {
+          "code": "IND-LVEF",
+          "name": "左心室射血分数",
+          "type": "ExamIndicator",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-7DFE0F3278CE8851A238-HFpEF",
+          "page": 8,
+          "text": "推荐意见考虑技术可及性、  钠肽测定与超声心动图相结合、静息与负荷超声心动 医疗中心经验以及患者的意愿，当临床怀疑HFpEF，  图相结合、无创检查与有创血液动力学检查相结合对 而BNP 或NT-proBNP 以及静息超声心动图不能确诊  疑似患者鉴别诊断的重要性。同时，本推荐意见在E/e' 时，建议行负荷超声心动图检查。在有条件的医疗  检查基础上，增加了左心房内径、左心室壁厚度及肺 中心，高度怀疑HFpEF 而上述无创检查不能明确诊  动脉收缩压三个可以通过常规超声心动图检查即可获 断时，推荐行有创血液动力学检查。无论静息还是  得的参数，进一步优化了HFpEF 诊断流程，有助于"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-86FF453066D5795D",
+        "recommendation_code": "REC-713CAA3F200C250E",
+        "clinical_question": "满足“心衰疑诊利钠肽与超声评估规则”时，推荐：心电图",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "疑似心衰时优先补齐利钠肽、心电图、超声心动图和LVEF，用于确认心衰及分型。",
+        "action": {
+          "code": "EXAM-ECG",
+          "name": "心电图",
+          "type": "Exam",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-C3D617211B596CF0E5CE-HF",
+          "page": 7,
+          "text": "HFSA 心力衰竭指南均推荐心力衰竭的评估包括使用 阈值的灵敏度和特异度均有限，必须综合其他临   经胸超声心动图评估LVEF，如果超声心动图不能适 床特征解读。                   当估计LVEF，建议使用其他无创心脏影像学方法。 推荐强度：强 证据质量：B                      12 篇文献报告了超声心动图评估左心室充盈压的方 法，结果显示E/e' 的诊断价值最高，E/e' ≥15 诊断 证据概述：共识制定工作组进行了定性研究，   HFpEF 具有较高的特异度，而灵敏度相对较低。心 共纳入文献6 篇，证据存在不一致性。AHA 系统收  电图：HFpEF 患者的常见心电图异常包括左心房增 集和评价了2017 年前发表的相关研究，BNP 或NT-  大、左心室肥厚、复极异常等。心电图检查更重要 proBNP 具有较高的阴性预测价值（95%~99%）[43]。  的目的是筛查房颤和心肌缺血。若LVEF>50% 的呼 但一项经有创血液动力学检查证实的HFpEF 研究  吸困难患者心电图提示房颤，则HFpEF 的可能性增 发现有20% 患者利钠肽水平低于"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-9601249A2398193F",
+        "recommendation_code": "REC-292BE2CF55986450",
+        "clinical_question": "满足“HFrEF长期规范药物治疗规则”时，推荐：盐皮质激素受体拮抗剂",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "HFrEF长期治疗优先形成包含ARNI/ACEI/ARB、β受体阻滞剂、MRA、SGLT2抑制剂等的规范治疗组合，并监测禁忌和耐受。",
+        "action": {
+          "code": "MED-CARD-E2FE14E667D7",
+          "name": "盐皮质激素受体拮抗剂",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-6C40984E352072D805F6-HF",
+          "page": 11,
+          "text": "此外，SGLT2i 也可显著改善  中，沙库巴曲缬沙坦可减少心血管死亡和心力衰竭 生活质量 [115]。两项研究均纳入LVEF>40% 的患  再住院的复合终点事件 [122]。PARALAX 研究比较了 者。由于目前LVEF 为41%~49% 的患者被归为  沙库巴曲缬沙坦和RAS 抑制剂或安慰剂的效果，结 HFmrEF，EMPEROR-Preserved 研究亚组分析显   果发现12 周时NT-proBNP 水平显著降低（几何平均 示，恩格列净同样显著改善了LVEF ≥50% 心力    比0.84，95%CI：0.80~0.88，P<0.001），但24 周时6 衰竭患者的主要终点结局（心血管死亡或心力衰竭  分钟步行距离、KCCQ 评分和NYHA 心功能分级的 入院） [116]。恩格列净在广泛的LVEF 范围内（从  差异均无统计学意义 [123]。PARAMOUNT 研究纳入了 <25% 到<65%）的作用幅度相似 [117]；DELIVER 研    LVEF ≥45% 的HFpEF 患者，比较了沙库巴曲缬沙 究发现，LVEF<50% 和≥60% 的患者均能从达格  坦"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-96E53A97F7CC5D59",
+        "recommendation_code": "REC-1F08D0D8F95F8840",
+        "clinical_question": "满足“急性心衰淤血处理规则”时，推荐：袢利尿剂",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "急性心衰伴容量负荷或淤血时，应评估利尿剂治疗、肾功能电解质和血流动力学状态。",
+        "action": {
+          "code": "MED-CARD-072B93AB8BC2",
+          "name": "袢利尿剂",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7198C13DB2740EAA",
+          "name": "心力衰竭患者利尿剂抵抗诊断及管理中国专家共识.pdf（来源标识：DOC-7198C13DB2740EAA）"
+        },
+        "primary_evidence": {
+          "code": "EVD-3D73B3265AA9A0357CBB-AHF",
+          "page": 2,
+          "text": "缩写                    英文全称                 中文全称 ADHF                          acutedecompensatedheartfailure        急性失代偿性心力衰竭 ARNI                           angiotensinreceptor-neprilysininhibitor     血管紧张素受体脑啡肽酶抑制剂 AVP                                    argininevasopressin            精氨酸血管升压素 BNP                                  B-typenatriureticpeptide             B型利钠肽 bio-ADM                           biologicallyactiveadrenomedullin           肾上腺髓质素 sST2                       solublegrowth"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-9D9198D0E5D4E50D",
+        "recommendation_code": "REC-1EAC86CC172E82A3",
+        "clinical_question": "满足“HFrEF长期规范药物治疗规则”时，推荐：血管紧张素Ⅱ受体阻滞剂",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "HFrEF长期治疗优先形成包含ARNI/ACEI/ARB、β受体阻滞剂、MRA、SGLT2抑制剂等的规范治疗组合，并监测禁忌和耐受。",
+        "action": {
+          "code": "MED-CARD-C015B7A5655A",
+          "name": "血管紧张素Ⅱ受体阻滞剂",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-6C40984E352072D805F6-HF",
+          "page": 11,
+          "text": "此外，SGLT2i 也可显著改善  中，沙库巴曲缬沙坦可减少心血管死亡和心力衰竭 生活质量 [115]。两项研究均纳入LVEF>40% 的患  再住院的复合终点事件 [122]。PARALAX 研究比较了 者。由于目前LVEF 为41%~49% 的患者被归为  沙库巴曲缬沙坦和RAS 抑制剂或安慰剂的效果，结 HFmrEF，EMPEROR-Preserved 研究亚组分析显   果发现12 周时NT-proBNP 水平显著降低（几何平均 示，恩格列净同样显著改善了LVEF ≥50% 心力    比0.84，95%CI：0.80~0.88，P<0.001），但24 周时6 衰竭患者的主要终点结局（心血管死亡或心力衰竭  分钟步行距离、KCCQ 评分和NYHA 心功能分级的 入院） [116]。恩格列净在广泛的LVEF 范围内（从  差异均无统计学意义 [123]。PARAMOUNT 研究纳入了 <25% 到<65%）的作用幅度相似 [117]；DELIVER 研    LVEF ≥45% 的HFpEF 患者，比较了沙库巴曲缬沙 究发现，LVEF<50% 和≥60% 的患者均能从达格  坦"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-A1AAC930310A8381",
+        "recommendation_code": "REC-BC83F3EE8B0FA67D",
+        "clinical_question": "满足“HFrEF长期规范药物治疗规则”时，推荐：β受体阻滞剂",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "HFrEF长期治疗优先形成包含ARNI/ACEI/ARB、β受体阻滞剂、MRA、SGLT2抑制剂等的规范治疗组合，并监测禁忌和耐受。",
+        "action": {
+          "code": "MED-BETA-BLOCKER",
+          "name": "β受体阻滞剂",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-6C40984E352072D805F6-HF",
+          "page": 11,
+          "text": "此外，SGLT2i 也可显著改善  中，沙库巴曲缬沙坦可减少心血管死亡和心力衰竭 生活质量 [115]。两项研究均纳入LVEF>40% 的患  再住院的复合终点事件 [122]。PARALAX 研究比较了 者。由于目前LVEF 为41%~49% 的患者被归为  沙库巴曲缬沙坦和RAS 抑制剂或安慰剂的效果，结 HFmrEF，EMPEROR-Preserved 研究亚组分析显   果发现12 周时NT-proBNP 水平显著降低（几何平均 示，恩格列净同样显著改善了LVEF ≥50% 心力    比0.84，95%CI：0.80~0.88，P<0.001），但24 周时6 衰竭患者的主要终点结局（心血管死亡或心力衰竭  分钟步行距离、KCCQ 评分和NYHA 心功能分级的 入院） [116]。恩格列净在广泛的LVEF 范围内（从  差异均无统计学意义 [123]。PARAMOUNT 研究纳入了 <25% 到<65%）的作用幅度相似 [117]；DELIVER 研    LVEF ≥45% 的HFpEF 患者，比较了沙库巴曲缬沙 究发现，LVEF<50% 和≥60% 的患者均能从达格  坦"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-A28CCECB3D7812E7",
+        "recommendation_code": "REC-A515D5BD5F41CCE3",
+        "clinical_question": "满足“心衰随访与用药安全监测规则”时，推荐：心力衰竭风险分层",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "治疗调整后需随访症状、体重、血压、肾功能、电解质及药物相关高钾血症风险。",
+        "action": {
+          "code": "RISK-CARD-FDA995103C36",
+          "name": "心力衰竭风险分层",
+          "type": "RiskStratification",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-C440C68F7BD2DFFB",
+          "name": "心力衰竭药物治疗相关高钾血症防治专家共识2024.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-D33B79AC036793E90BBD-HF",
+          "page": 5,
+          "text": "4 高钾血症高危心力衰竭患者的随访监测及预防        NYHA 心功能分级与高钾血症的发生也有关。 4.1 随访监测                   一项纳入1 028 例慢性肾脏病或糖尿病伴心力衰 竭患者的土耳其研究发现，高钾血症的发病风险 推荐意见              随NYHA 心功能分级升高而增加（Ⅰ级 vs. Ⅱ级 vs. （1）由于高钾血症的临床症状和心电图表现  Ⅲ级 vs. Ⅳ级：9.8% vs. 12.8% vs. 14.4% vs. 23.4%， 均缺乏特异性，且患者常无症状，因此所有慢性    P=0.03） [38]。另一项研究发现，NYHA 心功能分级 心力衰竭患者均应定期监测血钾水平。       是高钾血症的独立预测因子，NYHA 心功能分级 （2）RASi/ARNI 及MRA 启动和滴定期间应   Ⅲ~ Ⅳ级患者发生高钾血症的风险是其他患者的3 以1 次/1~2 周的频率监测血钾和肾功能，达到最   倍 [39]，这可能与NYHA 心功能分级较高的患者更常 大滴定剂量1~2 周后复查，之后监测频率1 次/ 月，  合并重度肾功能不全有关 "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-AF64DD3BC74A3BA5",
+        "recommendation_code": "REC-C8BC81FA4A99CFFD",
+        "clinical_question": "满足“心衰疑诊利钠肽与超声评估规则”时，推荐：超声心动图",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "疑似心衰时优先补齐利钠肽、心电图、超声心动图和LVEF，用于确认心衰及分型。",
+        "action": {
+          "code": "EXAM-TTE",
+          "name": "超声心动图",
+          "type": "Exam",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-C3D617211B596CF0E5CE-HF",
+          "page": 7,
+          "text": "HFSA 心力衰竭指南均推荐心力衰竭的评估包括使用 阈值的灵敏度和特异度均有限，必须综合其他临   经胸超声心动图评估LVEF，如果超声心动图不能适 床特征解读。                   当估计LVEF，建议使用其他无创心脏影像学方法。 推荐强度：强 证据质量：B                      12 篇文献报告了超声心动图评估左心室充盈压的方 法，结果显示E/e' 的诊断价值最高，E/e' ≥15 诊断 证据概述：共识制定工作组进行了定性研究，   HFpEF 具有较高的特异度，而灵敏度相对较低。心 共纳入文献6 篇，证据存在不一致性。AHA 系统收  电图：HFpEF 患者的常见心电图异常包括左心房增 集和评价了2017 年前发表的相关研究，BNP 或NT-  大、左心室肥厚、复极异常等。心电图检查更重要 proBNP 具有较高的阴性预测价值（95%~99%）[43]。  的目的是筛查房颤和心肌缺血。若LVEF>50% 的呼 但一项经有创血液动力学检查证实的HFpEF 研究  吸困难患者心电图提示房颤，则HFpEF 的可能性增 发现有20% 患者利钠肽水平低于"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-B1085283B7BF5F8D",
+        "recommendation_code": "REC-4D99AA7991249384",
+        "clinical_question": "满足“心衰疑诊利钠肽与超声评估规则”时，推荐：利钠肽",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "疑似心衰时优先补齐利钠肽、心电图、超声心动图和LVEF，用于确认心衰及分型。",
+        "action": {
+          "code": "EXAM-CARD-01C3182D129E",
+          "name": "利钠肽",
+          "type": "LabTest",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-C3D617211B596CF0E5CE-HF",
+          "page": 7,
+          "text": "HFSA 心力衰竭指南均推荐心力衰竭的评估包括使用 阈值的灵敏度和特异度均有限，必须综合其他临   经胸超声心动图评估LVEF，如果超声心动图不能适 床特征解读。                   当估计LVEF，建议使用其他无创心脏影像学方法。 推荐强度：强 证据质量：B                      12 篇文献报告了超声心动图评估左心室充盈压的方 法，结果显示E/e' 的诊断价值最高，E/e' ≥15 诊断 证据概述：共识制定工作组进行了定性研究，   HFpEF 具有较高的特异度，而灵敏度相对较低。心 共纳入文献6 篇，证据存在不一致性。AHA 系统收  电图：HFpEF 患者的常见心电图异常包括左心房增 集和评价了2017 年前发表的相关研究，BNP 或NT-  大、左心室肥厚、复极异常等。心电图检查更重要 proBNP 具有较高的阴性预测价值（95%~99%）[43]。  的目的是筛查房颤和心肌缺血。若LVEF>50% 的呼 但一项经有创血液动力学检查证实的HFpEF 研究  吸困难患者心电图提示房颤，则HFpEF 的可能性增 发现有20% 患者利钠肽水平低于"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-C63A05FAEAAAD007",
+        "recommendation_code": "REC-CDSS-HF-HF-01-01-DIAG",
+        "clinical_question": "疑似心力衰竭时，应结合心力衰竭诊断标准、利钠肽、左心室射血分数、超声心动图进行诊断确认和必要鉴别。",
+        "clinical_scenario": "心力衰竭相关患者",
+        "recommendation_text": "疑似心力衰竭时，应结合心力衰竭诊断标准、利钠肽、左心室射血分数、超声心动图进行诊断确认和必要鉴别。",
+        "action": {
+          "code": "DXC-CARD-C9F14771A730",
+          "name": "心力衰竭诊断标准",
+          "type": "DiagnosisCriteria",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-E2AE11B44F6F744B",
+          "name": "中国心力衰竭诊断和治疗指南2024.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-C3D617211B596CF0E5CE-HF",
+          "page": 7,
+          "text": "HFSA 心力衰竭指南均推荐心力衰竭的评估包括使用 阈值的灵敏度和特异度均有限，必须综合其他临   经胸超声心动图评估LVEF，如果超声心动图不能适 床特征解读。                   当估计LVEF，建议使用其他无创心脏影像学方法。 推荐强度：强 证据质量：B                      12 篇文献报告了超声心动图评估左心室充盈压的方 法，结果显示E/e' 的诊断价值最高，E/e' ≥15 诊断 证据概述：共识制定工作组进行了定性研究，   HFpEF 具有较高的特异度，而灵敏度相对较低。心 共纳入文献6 篇，证据存在不一致性。AHA 系统收  电图：HFpEF 患者的常见心电图异常包括左心房增 集和评价了2017 年前发表的相关研究，BNP 或NT-  大、左心室肥厚、复极异常等。心电图检查更重要 proBNP 具有较高的阴性预测价值（95%~99%）[43]。  的目的是筛查房颤和心肌缺血。若LVEF>50% 的呼 但一项经有创血液动力学检查证实的HFpEF 研究  吸困难患者心电图提示房颤，则HFpEF 的可能性增 发现有20% 患者利钠肽水平低于"
+        },
+        "recommendation_class": "Ⅰ",
+        "evidence_level": "C",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-DC6191F9B52195A3",
+        "recommendation_code": "REC-A42A28167A3ECA65",
+        "clinical_question": "满足“HFrEF长期规范药物治疗规则”时，推荐：血管紧张素转换酶抑制剂",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "HFrEF长期治疗优先形成包含ARNI/ACEI/ARB、β受体阻滞剂、MRA、SGLT2抑制剂等的规范治疗组合，并监测禁忌和耐受。",
+        "action": {
+          "code": "MED-CARD-E40082221530",
+          "name": "血管紧张素转换酶抑制剂",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-6C40984E352072D805F6-HF",
+          "page": 11,
+          "text": "此外，SGLT2i 也可显著改善  中，沙库巴曲缬沙坦可减少心血管死亡和心力衰竭 生活质量 [115]。两项研究均纳入LVEF>40% 的患  再住院的复合终点事件 [122]。PARALAX 研究比较了 者。由于目前LVEF 为41%~49% 的患者被归为  沙库巴曲缬沙坦和RAS 抑制剂或安慰剂的效果，结 HFmrEF，EMPEROR-Preserved 研究亚组分析显   果发现12 周时NT-proBNP 水平显著降低（几何平均 示，恩格列净同样显著改善了LVEF ≥50% 心力    比0.84，95%CI：0.80~0.88，P<0.001），但24 周时6 衰竭患者的主要终点结局（心血管死亡或心力衰竭  分钟步行距离、KCCQ 评分和NYHA 心功能分级的 入院） [116]。恩格列净在广泛的LVEF 范围内（从  差异均无统计学意义 [123]。PARAMOUNT 研究纳入了 <25% 到<65%）的作用幅度相似 [117]；DELIVER 研    LVEF ≥45% 的HFpEF 患者，比较了沙库巴曲缬沙 究发现，LVEF<50% 和≥60% 的患者均能从达格  坦"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-DF49F7DA8FFBA48D",
+        "recommendation_code": "REC-A85649C61BA4AEA9",
+        "clinical_question": "满足“心衰诊断三要素规则”时，推荐：心力衰竭诊断标准",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "心衰诊断应同时考虑症状体征、利钠肽升高以及心脏结构或功能异常证据。",
+        "action": {
+          "code": "DXC-CARD-C9F14771A730",
+          "name": "心力衰竭诊断标准",
+          "type": "DiagnosisCriteria",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-C3D617211B596CF0E5CE-HF",
+          "page": 7,
+          "text": "HFSA 心力衰竭指南均推荐心力衰竭的评估包括使用 阈值的灵敏度和特异度均有限，必须综合其他临   经胸超声心动图评估LVEF，如果超声心动图不能适 床特征解读。                   当估计LVEF，建议使用其他无创心脏影像学方法。 推荐强度：强 证据质量：B                      12 篇文献报告了超声心动图评估左心室充盈压的方 法，结果显示E/e' 的诊断价值最高，E/e' ≥15 诊断 证据概述：共识制定工作组进行了定性研究，   HFpEF 具有较高的特异度，而灵敏度相对较低。心 共纳入文献6 篇，证据存在不一致性。AHA 系统收  电图：HFpEF 患者的常见心电图异常包括左心房增 集和评价了2017 年前发表的相关研究，BNP 或NT-  大、左心室肥厚、复极异常等。心电图检查更重要 proBNP 具有较高的阴性预测价值（95%~99%）[43]。  的目的是筛查房颤和心肌缺血。若LVEF>50% 的呼 但一项经有创血液动力学检查证实的HFpEF 研究  吸困难患者心电图提示房颤，则HFpEF 的可能性增 发现有20% 患者利钠肽水平低于"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-E1F514327BEF505C",
+        "recommendation_code": "REC-3A6BA48320B05217",
+        "clinical_question": "满足“心衰疑诊利钠肽与超声评估规则”时，推荐：左心室射血分数",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "疑似心衰时优先补齐利钠肽、心电图、超声心动图和LVEF，用于确认心衰及分型。",
+        "action": {
+          "code": "IND-LVEF",
+          "name": "左心室射血分数",
+          "type": "ExamIndicator",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-C3D617211B596CF0E5CE-HF",
+          "page": 7,
+          "text": "HFSA 心力衰竭指南均推荐心力衰竭的评估包括使用 阈值的灵敏度和特异度均有限，必须综合其他临   经胸超声心动图评估LVEF，如果超声心动图不能适 床特征解读。                   当估计LVEF，建议使用其他无创心脏影像学方法。 推荐强度：强 证据质量：B                      12 篇文献报告了超声心动图评估左心室充盈压的方 法，结果显示E/e' 的诊断价值最高，E/e' ≥15 诊断 证据概述：共识制定工作组进行了定性研究，   HFpEF 具有较高的特异度，而灵敏度相对较低。心 共纳入文献6 篇，证据存在不一致性。AHA 系统收  电图：HFpEF 患者的常见心电图异常包括左心房增 集和评价了2017 年前发表的相关研究，BNP 或NT-  大、左心室肥厚、复极异常等。心电图检查更重要 proBNP 具有较高的阴性预测价值（95%~99%）[43]。  的目的是筛查房颤和心肌缺血。若LVEF>50% 的呼 但一项经有创血液动力学检查证实的HFpEF 研究  吸困难患者心电图提示房颤，则HFpEF 的可能性增 发现有20% 患者利钠肽水平低于"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-E6B077F3057C9894",
+        "recommendation_code": "REC-CDSS-HF-HF-04-01-FOLLOW",
+        "clinical_question": "心力衰竭稳定期或治疗后，应按心力衰竭随访方案、心力衰竭预后进行随访和复评。",
+        "clinical_scenario": "心力衰竭相关患者",
+        "recommendation_text": "心力衰竭稳定期或治疗后，应按心力衰竭随访方案、心力衰竭预后进行随访和复评。",
+        "action": {
+          "code": "FU-CARD-8BCE7C3349BC",
+          "name": "心力衰竭随访方案",
+          "type": "FollowUp",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-F0DDA79BAB227E88",
+          "name": "【医脉通】2020心肌梗死后心力衰竭防治专家共识.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-3461CF8721AE7EC69AFB-HF",
+          "page": 10,
+          "text": "10 mg，1 次/d）或安慰剂治疗；中位随访10.8 个月，  次/min，自主呼吸微弱或消失，二氧化碳分压进行性 维利西呱显著降低心血管死亡或首次因心衰住院的   升高）或不能耐受NIPPV 或存在NIPPV 治疗禁忌证者， 复合终点事件发生风险（降幅为10%），提示维利西  应及时予以气管插管，行有创机械通气（Ⅰ，C）[4]。 呱可为HFrEF 患者带来获益 [68]。CK-1827452 是一     6.3.2 血液净化治疗 种可直接激活肌球蛋白的新型药物，同样具有改善    单纯血液滤过适合发生急性肺水肿且对袢利尿 心功能的潜能 [69-70]。这些药物在心梗后心衰患者中  剂和噻嗪类利尿剂抵抗或血钠水平<110 mmol/L 且 使用的有效性与安全性尚需要进一步研究。其他药  有神经精神症状者；合并肾功能进行性减退、血肌 物如洋地黄类药物、血管扩张剂（硝酸酯、肼屈嗪）、  酐水平>500 µmol/L 者，适合血液透析等净化治疗。 改善能量代谢药物（如曲美他嗪、辅酶Q10、左卡     6.3.3 主动脉内球囊反搏 尼汀、磷酸肌酸等）以及芪苈强心胶囊等可以改善    当急"
+        },
+        "recommendation_class": "Ⅰ",
+        "evidence_level": "A",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-E91655DE514CD32E",
+        "recommendation_code": "REC-B3EABCBC56B3613A",
+        "clinical_question": "满足“HFrEF长期规范药物治疗规则”时，推荐：射血分数降低的心力衰竭治疗方案",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "HFrEF长期治疗优先形成包含ARNI/ACEI/ARB、β受体阻滞剂、MRA、SGLT2抑制剂等的规范治疗组合，并监测禁忌和耐受。",
+        "action": {
+          "code": "PLAN-CARD-4C0507593DD1",
+          "name": "射血分数降低的心力衰竭治疗方案",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-6C40984E352072D805F6-HF",
+          "page": 11,
+          "text": "此外，SGLT2i 也可显著改善  中，沙库巴曲缬沙坦可减少心血管死亡和心力衰竭 生活质量 [115]。两项研究均纳入LVEF>40% 的患  再住院的复合终点事件 [122]。PARALAX 研究比较了 者。由于目前LVEF 为41%~49% 的患者被归为  沙库巴曲缬沙坦和RAS 抑制剂或安慰剂的效果，结 HFmrEF，EMPEROR-Preserved 研究亚组分析显   果发现12 周时NT-proBNP 水平显著降低（几何平均 示，恩格列净同样显著改善了LVEF ≥50% 心力    比0.84，95%CI：0.80~0.88，P<0.001），但24 周时6 衰竭患者的主要终点结局（心血管死亡或心力衰竭  分钟步行距离、KCCQ 评分和NYHA 心功能分级的 入院） [116]。恩格列净在广泛的LVEF 范围内（从  差异均无统计学意义 [123]。PARAMOUNT 研究纳入了 <25% 到<65%）的作用幅度相似 [117]；DELIVER 研    LVEF ≥45% 的HFpEF 患者，比较了沙库巴曲缬沙 究发现，LVEF<50% 和≥60% 的患者均能从达格  坦"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-F57D7D7F859769C1",
+        "recommendation_code": "REC-B04D6200D4BB9821",
+        "clinical_question": "满足“HFpEF综合管理规则”时，推荐：钠-葡萄糖协同转运蛋白2抑制剂",
+        "clinical_scenario": "心力衰竭",
+        "recommendation_text": "HFpEF应重视利钠肽/结构功能证据、容量管理、合并症管理和SGLT2抑制剂等治疗选择。",
+        "action": {
+          "code": "MED-CARD-3B504DD7AA33",
+          "name": "钠-葡萄糖协同转运蛋白2抑制剂",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-7476B9BFB2D92F3A",
+          "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-7DFE0F3278CE8851A238-HFpEF",
+          "page": 8,
+          "text": "推荐意见考虑技术可及性、  钠肽测定与超声心动图相结合、静息与负荷超声心动 医疗中心经验以及患者的意愿，当临床怀疑HFpEF，  图相结合、无创检查与有创血液动力学检查相结合对 而BNP 或NT-proBNP 以及静息超声心动图不能确诊  疑似患者鉴别诊断的重要性。同时，本推荐意见在E/e' 时，建议行负荷超声心动图检查。在有条件的医疗  检查基础上，增加了左心房内径、左心室壁厚度及肺 中心，高度怀疑HFpEF 而上述无创检查不能明确诊  动脉收缩压三个可以通过常规超声心动图检查即可获 断时，推荐行有创血液动力学检查。无论静息还是  得的参数，进一步优化了HFpEF 诊断流程，有助于"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      }
+    ]
+  },
+  "DIS-CARD-ARR-AF": {
+    "success": true,
+    "disease": {
+      "code": "DIS-CARD-ARR-AF",
+      "name": "心房颤动",
+      "category": "心律失常"
+    },
+    "summary": {
+      "total": 30,
+      "recommend_count": 30,
+      "block_count": 0
+    },
+    "recommendations": [
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-1746ED8268324CD7",
+        "recommendation_code": "REC-1F0F59A9B1E764A4",
+        "clinical_question": "满足“房颤急性复律/心率控制规则”时，推荐：胺碘酮",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "房颤急性发作时先判断血流动力学稳定性；不稳定者考虑同步电复律，稳定者根据情况选择心率或节律控制。",
+        "action": {
+          "code": "MED-AMIODARONE",
+          "name": "胺碘酮",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-4BF1E6843E30FAE5",
+          "name": "中国心房颤动管理指南（2025）.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-8A9E9D41F2BC962BEB8B-AF",
+          "page": 38,
+          "text": "十一、急性心房颤动的治疗           如无禁忌证，推荐紧急同步直流电复律作为一线治 （一）急性房颤的定义              疗［315，550-552］。房颤合并预激综合征时，如心室率过 急性房颤发作是指房颤首次发作、阵发性房颤                               快（>200次/min）时，推荐紧急同步电复律；当心室 发作期及持续性或永久性房颤发生快速心室率和/   率达250次/min，推荐立即同步电复律［48，315，552-553］。 症状加重期［547-548］，可以是新发房颤或之前未被识     对这类患者，除心室率过快之外，需要注意有 别的房颤，也可以是全身疾病加重时首次或反复出   无引起血流动力学不稳定的其他原因，如感染（败 现的房颤［373，375，549］。                  血症）、消化道出血、肺栓塞、各种原因的毒素、基础 （二）急性房颤的临床评估            心脏病明显加重等，并及时处理。 对急性房颤患者，首先要评估血流动力学是否                             （1）抗"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-21957CD951D2411C",
+        "recommendation_code": "REC-9EDEC8498F9DF980",
+        "clinical_question": "满足“房颤随访规则”时，推荐：心房颤动随访方案",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "房颤长期管理需随访心律、症状、抗凝安全、卒中/出血风险和危险因素控制。",
+        "action": {
+          "code": "FU-CARD-CE0CF6305FAF",
+          "name": "心房颤动随访方案",
+          "type": "FollowUp",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-EE90C4C9A4C51DF7",
+          "name": "心房颤动诊断和治疗中国指南 2023.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-72EB22EEF00323FB3AD9-AF",
+          "page": 17,
+          "text": "随着房颤综合管理水平的提 表28  EAST‑AFNET 4研究与AFFIRM研究对比 支持节律控制取得   项目                   AFFIRM研究                      EAST‑AFNET 4研究          优效性结果的因素 发表时间              2002年                     2020年                                                                                               / 纳入患者                  4 060例房颤患者，初发房颤35.5%   2 789 例早期房颤患者（≤1 年），初发房颤37.6%，持                         /                                   续性房颤26.7% 胺碘酮、索他洛尔等        氟卡尼、胺碘酮、决奈达隆等 AAD                                  "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-2ABBB184C10F0A32",
+        "recommendation_code": "REC-19EFD56BD1F71BD1",
+        "clinical_question": "满足“房颤抗凝治疗规则”时，推荐：利伐沙班",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "需抗凝者结合肾功能、出血风险和禁忌选择抗凝治疗，药物类别必须关联到具体药物。",
+        "action": {
+          "code": "MED-CARD-38524B4E5194",
+          "name": "利伐沙班",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-4BF1E6843E30FAE5",
+          "name": "中国心房颤动管理指南（2025）.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-8A9E9D41F2BC962BEB8B-AF",
+          "page": 38,
+          "text": "十一、急性心房颤动的治疗           如无禁忌证，推荐紧急同步直流电复律作为一线治 （一）急性房颤的定义              疗［315，550-552］。房颤合并预激综合征时，如心室率过 急性房颤发作是指房颤首次发作、阵发性房颤                               快（>200次/min）时，推荐紧急同步电复律；当心室 发作期及持续性或永久性房颤发生快速心室率和/   率达250次/min，推荐立即同步电复律［48，315，552-553］。 症状加重期［547-548］，可以是新发房颤或之前未被识     对这类患者，除心室率过快之外，需要注意有 别的房颤，也可以是全身疾病加重时首次或反复出   无引起血流动力学不稳定的其他原因，如感染（败 现的房颤［373，375，549］。                  血症）、消化道出血、肺栓塞、各种原因的毒素、基础 （二）急性房颤的临床评估            心脏病明显加重等，并及时处理。 对急性房颤患者，首先要评估血流动力学是否                             （1）抗"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-2C966178F03F2EF2",
+        "recommendation_code": "REC-66EED9892A98D449",
+        "clinical_question": "满足“房颤急性复律/心率控制规则”时，推荐：同步电复律",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "房颤急性发作时先判断血流动力学稳定性；不稳定者考虑同步电复律，稳定者根据情况选择心率或节律控制。",
+        "action": {
+          "code": "PLAN-CARD-108E680ADD4F",
+          "name": "同步电复律",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-4BF1E6843E30FAE5",
+          "name": "中国心房颤动管理指南（2025）.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-8A9E9D41F2BC962BEB8B-AF",
+          "page": 38,
+          "text": "十一、急性心房颤动的治疗           如无禁忌证，推荐紧急同步直流电复律作为一线治 （一）急性房颤的定义              疗［315，550-552］。房颤合并预激综合征时，如心室率过 急性房颤发作是指房颤首次发作、阵发性房颤                               快（>200次/min）时，推荐紧急同步电复律；当心室 发作期及持续性或永久性房颤发生快速心室率和/   率达250次/min，推荐立即同步电复律［48，315，552-553］。 症状加重期［547-548］，可以是新发房颤或之前未被识     对这类患者，除心室率过快之外，需要注意有 别的房颤，也可以是全身疾病加重时首次或反复出   无引起血流动力学不稳定的其他原因，如感染（败 现的房颤［373，375，549］。                  血症）、消化道出血、肺栓塞、各种原因的毒素、基础 （二）急性房颤的临床评估            心脏病明显加重等，并及时处理。 对急性房颤患者，首先要评估血流动力学是否                             （1）抗"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-2EFAC1A391007373",
+        "recommendation_code": "REC-BCBA175C5200A414",
+        "clinical_question": "满足“房颤急性复律/心率控制规则”时，推荐：复律治疗",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "房颤急性发作时先判断血流动力学稳定性；不稳定者考虑同步电复律，稳定者根据情况选择心率或节律控制。",
+        "action": {
+          "code": "PLAN-CARD-TEXT-7CC38FBA6F",
+          "name": "复律治疗",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-4BF1E6843E30FAE5",
+          "name": "中国心房颤动管理指南（2025）.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-8A9E9D41F2BC962BEB8B-AF",
+          "page": 38,
+          "text": "十一、急性心房颤动的治疗           如无禁忌证，推荐紧急同步直流电复律作为一线治 （一）急性房颤的定义              疗［315，550-552］。房颤合并预激综合征时，如心室率过 急性房颤发作是指房颤首次发作、阵发性房颤                               快（>200次/min）时，推荐紧急同步电复律；当心室 发作期及持续性或永久性房颤发生快速心室率和/   率达250次/min，推荐立即同步电复律［48，315，552-553］。 症状加重期［547-548］，可以是新发房颤或之前未被识     对这类患者，除心室率过快之外，需要注意有 别的房颤，也可以是全身疾病加重时首次或反复出   无引起血流动力学不稳定的其他原因，如感染（败 现的房颤［373，375，549］。                  血症）、消化道出血、肺栓塞、各种原因的毒素、基础 （二）急性房颤的临床评估            心脏病明显加重等，并及时处理。 对急性房颤患者，首先要评估血流动力学是否                             （1）抗"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-3440CF57DA9D309C",
+        "recommendation_code": "REC-61BF47328BC263D5",
+        "clinical_question": "满足“房颤急性复律/心率控制规则”时，推荐：地尔硫卓",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "房颤急性发作时先判断血流动力学稳定性；不稳定者考虑同步电复律，稳定者根据情况选择心率或节律控制。",
+        "action": {
+          "code": "MED-CARD-STD-0401DB9741",
+          "name": "地尔硫卓",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-4BF1E6843E30FAE5",
+          "name": "中国心房颤动管理指南（2025）.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-8A9E9D41F2BC962BEB8B-AF",
+          "page": 38,
+          "text": "十一、急性心房颤动的治疗           如无禁忌证，推荐紧急同步直流电复律作为一线治 （一）急性房颤的定义              疗［315，550-552］。房颤合并预激综合征时，如心室率过 急性房颤发作是指房颤首次发作、阵发性房颤                               快（>200次/min）时，推荐紧急同步电复律；当心室 发作期及持续性或永久性房颤发生快速心室率和/   率达250次/min，推荐立即同步电复律［48，315，552-553］。 症状加重期［547-548］，可以是新发房颤或之前未被识     对这类患者，除心室率过快之外，需要注意有 别的房颤，也可以是全身疾病加重时首次或反复出   无引起血流动力学不稳定的其他原因，如感染（败 现的房颤［373，375，549］。                  血症）、消化道出血、肺栓塞、各种原因的毒素、基础 （二）急性房颤的临床评估            心脏病明显加重等，并及时处理。 对急性房颤患者，首先要评估血流动力学是否                             （1）抗"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-35DCDB9CA05A6813",
+        "recommendation_code": "REC-CDSS-AF-ARR-AF-04-01-FOLLOW",
+        "clinical_question": "心房颤动稳定期或治疗后，应按心房颤动随访方案、心房颤动预后进行随访和复评。",
+        "clinical_scenario": "心房颤动相关患者",
+        "recommendation_text": "心房颤动稳定期或治疗后，应按心房颤动随访方案、心房颤动预后进行随访和复评。",
+        "action": {
+          "code": "FU-CARD-CE0CF6305FAF",
+          "name": "心房颤动随访方案",
+          "type": "FollowUp",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-EE90C4C9A4C51DF7",
+          "name": "心房颤动诊断和治疗中国指南 2023.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-DC5F68281990CE87A7A1-AF",
+          "page": 16,
+          "text": "然而   节律控制是指通过应用AAD、直流电转复、导管消 评分为   融或外科消融恢复窦性心律并进行长期维持。本 PRAGUE‑17 入选的患者CHA2DS2‑VASc （4.7±1.5）分，HAS‑BLED 评分为（3.1±0.9）分，为高    世纪初，AFFIRM、RACE、CHF‑AF 等研究均未显示卒中风险与高出血风险人群，并不能代表更多数的  节律控制策略可改善房颤患者预后［202‑204］，但 房颤患者［198‑199］。                     研究的事后分析显示，接受抗凝治疗且成                                          AFFIRM 对于充分抗凝后仍发生卒中的患者，排除明确   功维持窦性心律者死亡风险明显降低［205］，观察性 风险相脑血管狭窄相关卒中后，可考虑行LAAC。      研究显示节律控制与较低的卒中/TIA 分（男性）  关               研究纳入了  计划入选3 000 例CHA2DS2‑VASc≥2                  ［206］。2020 年发表的EAST‑AF"
+        },
+        "recommendation_class": "Ⅱa",
+        "evidence_level": "C",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-3843DEFE93B64202",
+        "recommendation_code": "REC-4879BC5487C0237C",
+        "clinical_question": "满足“房颤随访规则”时，推荐：HAS-BLED评分",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "房颤长期管理需随访心律、症状、抗凝安全、卒中/出血风险和危险因素控制。",
+        "action": {
+          "code": "RISK-CARD-E21D88A4688D",
+          "name": "HAS-BLED评分",
+          "type": "RiskStratification",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-EE90C4C9A4C51DF7",
+          "name": "心房颤动诊断和治疗中国指南 2023.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-72EB22EEF00323FB3AD9-AF",
+          "page": 17,
+          "text": "随着房颤综合管理水平的提 表28  EAST‑AFNET 4研究与AFFIRM研究对比 支持节律控制取得   项目                   AFFIRM研究                      EAST‑AFNET 4研究          优效性结果的因素 发表时间              2002年                     2020年                                                                                               / 纳入患者                  4 060例房颤患者，初发房颤35.5%   2 789 例早期房颤患者（≤1 年），初发房颤37.6%，持                         /                                   续性房颤26.7% 胺碘酮、索他洛尔等        氟卡尼、胺碘酮、决奈达隆等 AAD                                  "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-3A08F4D2CA7D6F2B",
+        "recommendation_code": "REC-CDSS-AF-ARR-AF-01-01-DIAG",
+        "clinical_question": "疑似心房颤动时，应结合心房颤动诊断标准、12导联心电图、事件记录仪、动态心电图、心脏CT等进行诊断确认和必要鉴别。",
+        "clinical_scenario": "心房颤动相关患者",
+        "recommendation_text": "疑似心房颤动时，应结合心房颤动诊断标准、12导联心电图、事件记录仪、动态心电图、心脏CT等进行诊断确认和必要鉴别。",
+        "action": {
+          "code": "DXC-CARD-5996B55AA97D",
+          "name": "心房颤动诊断标准",
+          "type": "DiagnosisCriteria",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-470392B42F1372AF",
+          "name": "心房颤动节律控制药物规范应用专家共识2023.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-DD21E053B151F1B764C3-AF",
+          "page": 3,
+          "text": "表3 房颤的分类          心房血栓的金标准。但少数病例左心耳梳状肌可 临床分类            定义          能被误诊为血栓，结合三维图像重建则有助于进行 阵发性房颤         房颤持续时间短于7 da          鉴别。 持续性房颤                                      成像：可用于明确左心          房颤持续时间7 d及以上             （9）左心房和肺静脉CT 持久性房颤         房颤持续时间超过1年           房、左心耳和肺静脉解剖特征等，以及房颤导管消 永久性房颤          转复并维持窦性心律可能性小，房颤持续10~                    20波；或心脏磁共振成像显示左心房纤维化年以上，心电图显示近乎直线的极细小f   融术前左心房血栓的筛查［30‑31］。由于左心耳具有 面积占左心房面积的30%以上［28］      死腔样的结构特点，房颤发作时左心耳收缩功能显 检查时易出   注：房颤为心房颤动；a包括房颤自行终止或干预终止      著"
+        },
+        "recommendation_class": "未分级/指南未显式标注",
+        "evidence_level": "未分级/指南未显式标注",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-428DB01516B411BD",
+        "recommendation_code": "REC-0FCD2D2818CA7033",
+        "clinical_question": "满足“房颤随访规则”时，推荐：CHA2DS2-VASc评分",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "房颤长期管理需随访心律、症状、抗凝安全、卒中/出血风险和危险因素控制。",
+        "action": {
+          "code": "RISK-CARD-BD6FBD0D2712",
+          "name": "CHA2DS2-VASc评分",
+          "type": "RiskStratification",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-EE90C4C9A4C51DF7",
+          "name": "心房颤动诊断和治疗中国指南 2023.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-72EB22EEF00323FB3AD9-AF",
+          "page": 17,
+          "text": "随着房颤综合管理水平的提 表28  EAST‑AFNET 4研究与AFFIRM研究对比 支持节律控制取得   项目                   AFFIRM研究                      EAST‑AFNET 4研究          优效性结果的因素 发表时间              2002年                     2020年                                                                                               / 纳入患者                  4 060例房颤患者，初发房颤35.5%   2 789 例早期房颤患者（≤1 年），初发房颤37.6%，持                         /                                   续性房颤26.7% 胺碘酮、索他洛尔等        氟卡尼、胺碘酮、决奈达隆等 AAD                                  "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-4CA5E95A995611CF",
+        "recommendation_code": "REC-7437BD316125078C",
+        "clinical_question": "满足“房颤急性复律/心率控制规则”时，推荐：β受体阻滞剂",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "房颤急性发作时先判断血流动力学稳定性；不稳定者考虑同步电复律，稳定者根据情况选择心率或节律控制。",
+        "action": {
+          "code": "MED-BETA-BLOCKER",
+          "name": "β受体阻滞剂",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-4BF1E6843E30FAE5",
+          "name": "中国心房颤动管理指南（2025）.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-8A9E9D41F2BC962BEB8B-AF",
+          "page": 38,
+          "text": "十一、急性心房颤动的治疗           如无禁忌证，推荐紧急同步直流电复律作为一线治 （一）急性房颤的定义              疗［315，550-552］。房颤合并预激综合征时，如心室率过 急性房颤发作是指房颤首次发作、阵发性房颤                               快（>200次/min）时，推荐紧急同步电复律；当心室 发作期及持续性或永久性房颤发生快速心室率和/   率达250次/min，推荐立即同步电复律［48，315，552-553］。 症状加重期［547-548］，可以是新发房颤或之前未被识     对这类患者，除心室率过快之外，需要注意有 别的房颤，也可以是全身疾病加重时首次或反复出   无引起血流动力学不稳定的其他原因，如感染（败 现的房颤［373，375，549］。                  血症）、消化道出血、肺栓塞、各种原因的毒素、基础 （二）急性房颤的临床评估            心脏病明显加重等，并及时处理。 对急性房颤患者，首先要评估血流动力学是否                             （1）抗"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-4F4637855CD5C240",
+        "recommendation_code": "REC-4DC54492700DB784",
+        "clinical_question": "满足“房颤卒中出血评分规则”时，推荐：HAS-BLED评分",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "房颤确诊后应评估CHA2DS2-VASc卒中风险和HAS-BLED出血风险，用于抗凝决策。",
+        "action": {
+          "code": "RISK-CARD-E21D88A4688D",
+          "name": "HAS-BLED评分",
+          "type": "RiskStratification",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-C5A1A36777F25502",
+          "name": "AF ESC 2020.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-1BDBEB039CDD54E3D3A7-AF",
+          "page": 36,
+          "text": "Figure 12  ‘A’  - Anticoagulation/Avoid stroke: The ‘AF 3-step’ pathway. AF =  atrial  fibrillation; CHA2DS2-VASc = Congestive heart  failure, Hypertension, Age >_75 years, Diabetes mellitus, Stroke, Vascular disease, Age 65- 74 years, Sex category (female); HAS-BLED = Hypertension, Abnormal renal/liver function, Stroke, Bleeding history or predisposition, Labile INR, Elderly (>65 years), Drugs/alcohol concomitantly; INR = international normal- ized ratio; NOAC = non-vitamin K antagonist oral an"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-5149DF811CC86C4E",
+        "recommendation_code": "REC-92367B78C701618A",
+        "clinical_question": "满足“房颤心电图诊断规则”时，推荐：心房颤动诊断标准",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "房颤诊断需心电证据支持，重点识别RR间期绝对不规则和P波缺如等特征，必要时使用动态心电图。",
+        "action": {
+          "code": "DXC-CARD-5996B55AA97D",
+          "name": "心房颤动诊断标准",
+          "type": "DiagnosisCriteria",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-63A0DE9B1C2143F8",
+          "name": "慢性肾脏病合并非瓣膜性心房颤动患者抗凝管理的专家共识_慢性肾脏病非瓣膜性心房颤动抗凝管理工作组.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-028A2F2BA76DE48E34B3-AF",
+          "page": 2,
+          "text": "险增加密切相关。流行病学调查显示我国年龄标准    2 房颤定义及诊断"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-6ABF8189AC479429",
+        "recommendation_code": "REC-C9CFCBFF9AA3901F",
+        "clinical_question": "满足“房颤心电图诊断规则”时，推荐：心电图",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "房颤诊断需心电证据支持，重点识别RR间期绝对不规则和P波缺如等特征，必要时使用动态心电图。",
+        "action": {
+          "code": "EXAM-ECG",
+          "name": "心电图",
+          "type": "Exam",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-63A0DE9B1C2143F8",
+          "name": "慢性肾脏病合并非瓣膜性心房颤动患者抗凝管理的专家共识_慢性肾脏病非瓣膜性心房颤动抗凝管理工作组.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-028A2F2BA76DE48E34B3-AF",
+          "page": 2,
+          "text": "险增加密切相关。流行病学调查显示我国年龄标准    2 房颤定义及诊断"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-6CCF7BB3FD239BE6",
+        "recommendation_code": "REC-CDSS-AF-ARR-AF-03-01-TREAT",
+        "clinical_question": "心房颤动治疗应根据病情严重程度、禁忌证和患者特征选择复律治疗、导管消融、左心耳封堵、β受体阻滞剂、低分子肝素等。",
+        "clinical_scenario": "心房颤动相关患者",
+        "recommendation_text": "心房颤动治疗应根据病情严重程度、禁忌证和患者特征选择复律治疗、导管消融、左心耳封堵、β受体阻滞剂、低分子肝素等。",
+        "action": {
+          "code": "PLAN-CARD-TEXT-7CC38FBA6F",
+          "name": "复律治疗",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-12C73CE9FC871CF4",
+          "name": "中国 左心耳干预预防心房颤动患者血栓栓塞事件：目前的认识和建议（2023） (1).pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-E807E736B7EFCCD34B7B-AF",
+          "page": 27,
+          "text": "推荐 证据 非HFrEF控制心室率房颤患者应使用β 受体阻滞剂或ND‑CCB Ⅰ    C               建议                                                        级别 级别 HFrEF的房颤患者应使用β受体阻滞剂控制心室率 Ⅰ    C     充分的药物治疗仍不能良好控制心室率的永久性            受体阻滞剂控制心室率           房颤患者，症状严重，或伴心衰，导管消融没有维 Ⅱa   B HFrEF 的房颤患者在使用β受体阻滞剂的情况下，应考 Ⅱa    C      持窦性心律可能的，应考虑行房室结消融联合植  虑使用洋地黄控制心室率a［339］不满意或不能应用β                                   入心室同步化起搏器［223‑224］ 单一药物不能达到目标心率，应考虑联合应用不同                         的永久性房颤  种类的心室率控制药物［333‑334］         Ⅰ    C     对于适合房室结消融联合置入CRT  "
+        },
+        "recommendation_class": "未分级/指南未显式标注",
+        "evidence_level": "未分级/指南未显式标注",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-6D9B6690B3A5CE77",
+        "recommendation_code": "REC-CDSS-CARD-ARR-AF-RATE-CONTROL",
+        "clinical_question": "心房颤动伴快速心室率或症状明显时，建议评估并实施心室率控制；药物选择需结合左室收缩功能、血流动力学状态和禁忌证。",
+        "clinical_scenario": "心房颤动患者，尤其合并快速心室率或症状者",
+        "recommendation_text": "心房颤动伴快速心室率或症状明显时，建议评估并实施心室率控制；药物选择需结合左室收缩功能、血流动力学状态和禁忌证。",
+        "action": {
+          "code": "PLAN-CARD-TEXT-655F4B37BC",
+          "name": "控制心室率",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-CF62B75AEC93F1A6",
+          "name": "《内科学（第10版）》.docx"
+        },
+        "primary_evidence": {
+          "code": "EVD-CARD-DEEP-59E5E08B606D9D",
+          "page": "N/A",
+          "text": "3. 控制心室率 房颤伴快速心室率是产生症状的主要原因，长时间的快速心室率可引起血流动力学不稳定或导致心动过速性心肌病。因此，有效控制心室率是房颤管理的重要环节。对于无症状的房颤，且左心室收缩功能正常，控制静息心室率＜110 次 / 分；对于症状性明显或出现心动过速性心肌病时，应控制静息心室率＜80 次 / 分且中等运动时心室率＜110 次 / 分。"
+        },
+        "recommendation_class": "教材支持",
+        "evidence_level": "权威教材证据",
+        "conflict_status": "无冲突"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-71D72EEA2BD26FF6",
+        "recommendation_code": "REC-59B287969535CC42",
+        "clinical_question": "满足“房颤抗凝治疗规则”时，推荐：抗凝治疗",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "需抗凝者结合肾功能、出血风险和禁忌选择抗凝治疗，药物类别必须关联到具体药物。",
+        "action": {
+          "code": "PLAN-CARD-A1C4E6332D38",
+          "name": "抗凝治疗",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-4BF1E6843E30FAE5",
+          "name": "中国心房颤动管理指南（2025）.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-8A9E9D41F2BC962BEB8B-AF",
+          "page": 38,
+          "text": "十一、急性心房颤动的治疗           如无禁忌证，推荐紧急同步直流电复律作为一线治 （一）急性房颤的定义              疗［315，550-552］。房颤合并预激综合征时，如心室率过 急性房颤发作是指房颤首次发作、阵发性房颤                               快（>200次/min）时，推荐紧急同步电复律；当心室 发作期及持续性或永久性房颤发生快速心室率和/   率达250次/min，推荐立即同步电复律［48，315，552-553］。 症状加重期［547-548］，可以是新发房颤或之前未被识     对这类患者，除心室率过快之外，需要注意有 别的房颤，也可以是全身疾病加重时首次或反复出   无引起血流动力学不稳定的其他原因，如感染（败 现的房颤［373，375，549］。                  血症）、消化道出血、肺栓塞、各种原因的毒素、基础 （二）急性房颤的临床评估            心脏病明显加重等，并及时处理。 对急性房颤患者，首先要评估血流动力学是否                             （1）抗"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-77CDFC385287B55F",
+        "recommendation_code": "REC-59BE03402037CFE1",
+        "clinical_question": "满足“房颤抗凝治疗规则”时，推荐：达比加群酯",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "需抗凝者结合肾功能、出血风险和禁忌选择抗凝治疗，药物类别必须关联到具体药物。",
+        "action": {
+          "code": "MED-CARD-68E5765B76ED",
+          "name": "达比加群酯",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-4BF1E6843E30FAE5",
+          "name": "中国心房颤动管理指南（2025）.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-8A9E9D41F2BC962BEB8B-AF",
+          "page": 38,
+          "text": "十一、急性心房颤动的治疗           如无禁忌证，推荐紧急同步直流电复律作为一线治 （一）急性房颤的定义              疗［315，550-552］。房颤合并预激综合征时，如心室率过 急性房颤发作是指房颤首次发作、阵发性房颤                               快（>200次/min）时，推荐紧急同步电复律；当心室 发作期及持续性或永久性房颤发生快速心室率和/   率达250次/min，推荐立即同步电复律［48，315，552-553］。 症状加重期［547-548］，可以是新发房颤或之前未被识     对这类患者，除心室率过快之外，需要注意有 别的房颤，也可以是全身疾病加重时首次或反复出   无引起血流动力学不稳定的其他原因，如感染（败 现的房颤［373，375，549］。                  血症）、消化道出血、肺栓塞、各种原因的毒素、基础 （二）急性房颤的临床评估            心脏病明显加重等，并及时处理。 对急性房颤患者，首先要评估血流动力学是否                             （1）抗"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-7D7B780DB1EC899A",
+        "recommendation_code": "REC-FB096AED547CC572",
+        "clinical_question": "满足“房颤心电图诊断规则”时，推荐：动态心电图",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "房颤诊断需心电证据支持，重点识别RR间期绝对不规则和P波缺如等特征，必要时使用动态心电图。",
+        "action": {
+          "code": "EXAM-HOLTER",
+          "name": "动态心电图",
+          "type": "Exam",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-63A0DE9B1C2143F8",
+          "name": "慢性肾脏病合并非瓣膜性心房颤动患者抗凝管理的专家共识_慢性肾脏病非瓣膜性心房颤动抗凝管理工作组.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-028A2F2BA76DE48E34B3-AF",
+          "page": 2,
+          "text": "险增加密切相关。流行病学调查显示我国年龄标准    2 房颤定义及诊断"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-80A9AB2CD119E392",
+        "recommendation_code": "REC-4B0CDD61249087E3",
+        "clinical_question": "满足“房颤节律控制与导管消融规则”时，推荐：房颤导管消融",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "症状性或反复发作房颤可评估节律控制、复律和导管消融，同时保留抗凝风险管理。",
+        "action": {
+          "code": "PROC-CARD-A89DB5C678D2",
+          "name": "房颤导管消融",
+          "type": "Procedure",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-EE90C4C9A4C51DF7",
+          "name": "心房颤动诊断和治疗中国指南 2023.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-72EB22EEF00323FB3AD9-AF",
+          "page": 17,
+          "text": "随着房颤综合管理水平的提 表28  EAST‑AFNET 4研究与AFFIRM研究对比 支持节律控制取得   项目                   AFFIRM研究                      EAST‑AFNET 4研究          优效性结果的因素 发表时间              2002年                     2020年                                                                                               / 纳入患者                  4 060例房颤患者，初发房颤35.5%   2 789 例早期房颤患者（≤1 年），初发房颤37.6%，持                         /                                   续性房颤26.7% 胺碘酮、索他洛尔等        氟卡尼、胺碘酮、决奈达隆等 AAD                                  "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-84EAA3AF0A8D68FA",
+        "recommendation_code": "REC-C8711A1A89432598",
+        "clinical_question": "满足“房颤急性复律/心率控制规则”时，推荐：维拉帕米",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "房颤急性发作时先判断血流动力学稳定性；不稳定者考虑同步电复律，稳定者根据情况选择心率或节律控制。",
+        "action": {
+          "code": "MED-CARD-STD-C685CE7163",
+          "name": "维拉帕米",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-4BF1E6843E30FAE5",
+          "name": "中国心房颤动管理指南（2025）.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-8A9E9D41F2BC962BEB8B-AF",
+          "page": 38,
+          "text": "十一、急性心房颤动的治疗           如无禁忌证，推荐紧急同步直流电复律作为一线治 （一）急性房颤的定义              疗［315，550-552］。房颤合并预激综合征时，如心室率过 急性房颤发作是指房颤首次发作、阵发性房颤                               快（>200次/min）时，推荐紧急同步电复律；当心室 发作期及持续性或永久性房颤发生快速心室率和/   率达250次/min，推荐立即同步电复律［48，315，552-553］。 症状加重期［547-548］，可以是新发房颤或之前未被识     对这类患者，除心室率过快之外，需要注意有 别的房颤，也可以是全身疾病加重时首次或反复出   无引起血流动力学不稳定的其他原因，如感染（败 现的房颤［373，375，549］。                  血症）、消化道出血、肺栓塞、各种原因的毒素、基础 （二）急性房颤的临床评估            心脏病明显加重等，并及时处理。 对急性房颤患者，首先要评估血流动力学是否                             （1）抗"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-863E42DCFCEAB6E4",
+        "recommendation_code": "REC-2D0C8BD190242AD2",
+        "clinical_question": "满足“房颤抗凝治疗规则”时，推荐：抗凝药物",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "需抗凝者结合肾功能、出血风险和禁忌选择抗凝治疗，药物类别必须关联到具体药物。",
+        "action": {
+          "code": "MED-CARD-TEXT-EE219280A7",
+          "name": "抗凝药物",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-4BF1E6843E30FAE5",
+          "name": "中国心房颤动管理指南（2025）.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-8A9E9D41F2BC962BEB8B-AF",
+          "page": 38,
+          "text": "十一、急性心房颤动的治疗           如无禁忌证，推荐紧急同步直流电复律作为一线治 （一）急性房颤的定义              疗［315，550-552］。房颤合并预激综合征时，如心室率过 急性房颤发作是指房颤首次发作、阵发性房颤                               快（>200次/min）时，推荐紧急同步电复律；当心室 发作期及持续性或永久性房颤发生快速心室率和/   率达250次/min，推荐立即同步电复律［48，315，552-553］。 症状加重期［547-548］，可以是新发房颤或之前未被识     对这类患者，除心室率过快之外，需要注意有 别的房颤，也可以是全身疾病加重时首次或反复出   无引起血流动力学不稳定的其他原因，如感染（败 现的房颤［373，375，549］。                  血症）、消化道出血、肺栓塞、各种原因的毒素、基础 （二）急性房颤的临床评估            心脏病明显加重等，并及时处理。 对急性房颤患者，首先要评估血流动力学是否                             （1）抗"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-AE7117390B8A337D",
+        "recommendation_code": "REC-D5B3CEFE3FFC72D0",
+        "clinical_question": "满足“房颤卒中出血评分规则”时，推荐：心房颤动风险分层",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "房颤确诊后应评估CHA2DS2-VASc卒中风险和HAS-BLED出血风险，用于抗凝决策。",
+        "action": {
+          "code": "RISK-CARD-7371F77D04B5",
+          "name": "心房颤动风险分层",
+          "type": "RiskStratification",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-C5A1A36777F25502",
+          "name": "AF ESC 2020.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-1BDBEB039CDD54E3D3A7-AF",
+          "page": 36,
+          "text": "Figure 12  ‘A’  - Anticoagulation/Avoid stroke: The ‘AF 3-step’ pathway. AF =  atrial  fibrillation; CHA2DS2-VASc = Congestive heart  failure, Hypertension, Age >_75 years, Diabetes mellitus, Stroke, Vascular disease, Age 65- 74 years, Sex category (female); HAS-BLED = Hypertension, Abnormal renal/liver function, Stroke, Bleeding history or predisposition, Labile INR, Elderly (>65 years), Drugs/alcohol concomitantly; INR = international normal- ized ratio; NOAC = non-vitamin K antagonist oral an"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-B4DA3930F298705B",
+        "recommendation_code": "REC-D2D781973B06A7AE",
+        "clinical_question": "满足“房颤抗凝治疗规则”时，推荐：华法林",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "需抗凝者结合肾功能、出血风险和禁忌选择抗凝治疗，药物类别必须关联到具体药物。",
+        "action": {
+          "code": "MED-CARD-81B5F958C0F3",
+          "name": "华法林",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-4BF1E6843E30FAE5",
+          "name": "中国心房颤动管理指南（2025）.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-8A9E9D41F2BC962BEB8B-AF",
+          "page": 38,
+          "text": "十一、急性心房颤动的治疗           如无禁忌证，推荐紧急同步直流电复律作为一线治 （一）急性房颤的定义              疗［315，550-552］。房颤合并预激综合征时，如心室率过 急性房颤发作是指房颤首次发作、阵发性房颤                               快（>200次/min）时，推荐紧急同步电复律；当心室 发作期及持续性或永久性房颤发生快速心室率和/   率达250次/min，推荐立即同步电复律［48，315，552-553］。 症状加重期［547-548］，可以是新发房颤或之前未被识     对这类患者，除心室率过快之外，需要注意有 别的房颤，也可以是全身疾病加重时首次或反复出   无引起血流动力学不稳定的其他原因，如感染（败 现的房颤［373，375，549］。                  血症）、消化道出血、肺栓塞、各种原因的毒素、基础 （二）急性房颤的临床评估            心脏病明显加重等，并及时处理。 对急性房颤患者，首先要评估血流动力学是否                             （1）抗"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-D0146A236F43A27E",
+        "recommendation_code": "REC-B745392F663784E3",
+        "clinical_question": "满足“房颤节律控制与导管消融规则”时，推荐：节律控制",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "症状性或反复发作房颤可评估节律控制、复律和导管消融，同时保留抗凝风险管理。",
+        "action": {
+          "code": "PLAN-CARD-40AB27F53C05",
+          "name": "节律控制",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-EE90C4C9A4C51DF7",
+          "name": "心房颤动诊断和治疗中国指南 2023.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-72EB22EEF00323FB3AD9-AF",
+          "page": 17,
+          "text": "随着房颤综合管理水平的提 表28  EAST‑AFNET 4研究与AFFIRM研究对比 支持节律控制取得   项目                   AFFIRM研究                      EAST‑AFNET 4研究          优效性结果的因素 发表时间              2002年                     2020年                                                                                               / 纳入患者                  4 060例房颤患者，初发房颤35.5%   2 789 例早期房颤患者（≤1 年），初发房颤37.6%，持                         /                                   续性房颤26.7% 胺碘酮、索他洛尔等        氟卡尼、胺碘酮、决奈达隆等 AAD                                  "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-D645757DC17C5E08",
+        "recommendation_code": "REC-F0606169CFA78157",
+        "clinical_question": "满足“房颤抗凝治疗规则”时，推荐：阿哌沙班",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "需抗凝者结合肾功能、出血风险和禁忌选择抗凝治疗，药物类别必须关联到具体药物。",
+        "action": {
+          "code": "MED-CARD-FC4A5B5D6C12",
+          "name": "阿哌沙班",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-4BF1E6843E30FAE5",
+          "name": "中国心房颤动管理指南（2025）.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-8A9E9D41F2BC962BEB8B-AF",
+          "page": 38,
+          "text": "十一、急性心房颤动的治疗           如无禁忌证，推荐紧急同步直流电复律作为一线治 （一）急性房颤的定义              疗［315，550-552］。房颤合并预激综合征时，如心室率过 急性房颤发作是指房颤首次发作、阵发性房颤                               快（>200次/min）时，推荐紧急同步电复律；当心室 发作期及持续性或永久性房颤发生快速心室率和/   率达250次/min，推荐立即同步电复律［48，315，552-553］。 症状加重期［547-548］，可以是新发房颤或之前未被识     对这类患者，除心室率过快之外，需要注意有 别的房颤，也可以是全身疾病加重时首次或反复出   无引起血流动力学不稳定的其他原因，如感染（败 现的房颤［373，375，549］。                  血症）、消化道出血、肺栓塞、各种原因的毒素、基础 （二）急性房颤的临床评估            心脏病明显加重等，并及时处理。 对急性房颤患者，首先要评估血流动力学是否                             （1）抗"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-DC304D9E1E4D9D28",
+        "recommendation_code": "REC-48ACCA58849D7D40",
+        "clinical_question": "满足“房颤卒中出血评分规则”时，推荐：CHA2DS2-VASc评分",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "房颤确诊后应评估CHA2DS2-VASc卒中风险和HAS-BLED出血风险，用于抗凝决策。",
+        "action": {
+          "code": "RISK-CARD-BD6FBD0D2712",
+          "name": "CHA2DS2-VASc评分",
+          "type": "RiskStratification",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-C5A1A36777F25502",
+          "name": "AF ESC 2020.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-1BDBEB039CDD54E3D3A7-AF",
+          "page": 36,
+          "text": "Figure 12  ‘A’  - Anticoagulation/Avoid stroke: The ‘AF 3-step’ pathway. AF =  atrial  fibrillation; CHA2DS2-VASc = Congestive heart  failure, Hypertension, Age >_75 years, Diabetes mellitus, Stroke, Vascular disease, Age 65- 74 years, Sex category (female); HAS-BLED = Hypertension, Abnormal renal/liver function, Stroke, Bleeding history or predisposition, Labile INR, Elderly (>65 years), Drugs/alcohol concomitantly; INR = international normal- ized ratio; NOAC = non-vitamin K antagonist oral an"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-E02E4CB5CE7C5151",
+        "recommendation_code": "REC-06672B182152B976",
+        "clinical_question": "满足“房颤抗凝治疗规则”时，推荐：达比加群",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "需抗凝者结合肾功能、出血风险和禁忌选择抗凝治疗，药物类别必须关联到具体药物。",
+        "action": {
+          "code": "MED-CARD-C3B888F489B9",
+          "name": "达比加群",
+          "type": "Medication",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-4BF1E6843E30FAE5",
+          "name": "中国心房颤动管理指南（2025）.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-8A9E9D41F2BC962BEB8B-AF",
+          "page": 38,
+          "text": "十一、急性心房颤动的治疗           如无禁忌证，推荐紧急同步直流电复律作为一线治 （一）急性房颤的定义              疗［315，550-552］。房颤合并预激综合征时，如心室率过 急性房颤发作是指房颤首次发作、阵发性房颤                               快（>200次/min）时，推荐紧急同步电复律；当心室 发作期及持续性或永久性房颤发生快速心室率和/   率达250次/min，推荐立即同步电复律［48，315，552-553］。 症状加重期［547-548］，可以是新发房颤或之前未被识     对这类患者，除心室率过快之外，需要注意有 别的房颤，也可以是全身疾病加重时首次或反复出   无引起血流动力学不稳定的其他原因，如感染（败 现的房颤［373，375，549］。                  血症）、消化道出血、肺栓塞、各种原因的毒素、基础 （二）急性房颤的临床评估            心脏病明显加重等，并及时处理。 对急性房颤患者，首先要评估血流动力学是否                             （1）抗"
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-EA2D525F55C06122",
+        "recommendation_code": "REC-CDSS-AF-ARR-AF-02-01-RISK",
+        "clinical_question": "心房颤动确诊或高度疑似后，应结合CHA2DS2-VASc评分、EHRA症状分级、心房颤动风险分层、冠心病、吸烟等进行风险分层和高危因素识别。",
+        "clinical_scenario": "心房颤动相关患者",
+        "recommendation_text": "心房颤动确诊或高度疑似后，应结合CHA2DS2-VASc评分、EHRA症状分级、心房颤动风险分层、冠心病、吸烟等进行风险分层和高危因素识别。",
+        "action": {
+          "code": "RISK-CARD-BD6FBD0D2712",
+          "name": "CHA2DS2-VASc评分",
+          "type": "RiskStratification",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-EE90C4C9A4C51DF7",
+          "name": "心房颤动诊断和治疗中国指南 2023.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-E27C252B3894B512EFCD-AF",
+          "page": 9,
+          "text": "如血栓风险低                           抑制剂的双联治疗维持6~12 联合单一抗血小板治疗（主要为氯吡格雷）                个月之后改为单独NOAC                       于出血风险，应考虑双联治疗6 的临床相关出血或大出血及颅内出血风险减少                              OAC治疗［98‑101，110］。 研17%~47%，心血管死亡、卒中及全因死亡无显著差      对于未行PCI 的房颤合并CCS 患者，AFIRE 异［98‑101，105‑107］，但心脏缺血事件（主要为支架内血栓   究显示单独应用利伐沙班治疗的有效性终点（卒 相关）风险更高           研究、  中、体循环栓塞、心肌梗死、需要血运重建的不稳定             ［106］。在PIONEER AF‑PCI 研究和   心绞痛或全因死亡的复合终点）不劣于利伐沙班联REDUAL‑PCI 研究、AUGUSTUS 合单抗血小板治疗，但大出血发生率明显降低［111］。ENTRUST‑AF‑PCI 研究中，接受NO"
+        },
+        "recommendation_class": "未分级/指南未显式标注",
+        "evidence_level": "未分级/指南未显式标注",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-F4A7EF9EF3C5D3C4",
+        "recommendation_code": "REC-142D35EEB9FF17B3",
+        "clinical_question": "满足“房颤节律控制与导管消融规则”时，推荐：导管消融",
+        "clinical_scenario": "心房颤动",
+        "recommendation_text": "症状性或反复发作房颤可评估节律控制、复律和导管消融，同时保留抗凝风险管理。",
+        "action": {
+          "code": "PLAN-CARD-5C9E41087192",
+          "name": "导管消融",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-EE90C4C9A4C51DF7",
+          "name": "心房颤动诊断和治疗中国指南 2023.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-72EB22EEF00323FB3AD9-AF",
+          "page": 17,
+          "text": "随着房颤综合管理水平的提 表28  EAST‑AFNET 4研究与AFFIRM研究对比 支持节律控制取得   项目                   AFFIRM研究                      EAST‑AFNET 4研究          优效性结果的因素 发表时间              2002年                     2020年                                                                                               / 纳入患者                  4 060例房颤患者，初发房颤35.5%   2 789 例早期房颤患者（≤1 年），初发房颤37.6%，持                         /                                   续性房颤26.7% 胺碘酮、索他洛尔等        氟卡尼、胺碘酮、决奈达隆等 AAD                                  "
+        },
+        "recommendation_class": "未结构化",
+        "evidence_level": "未结构化",
+        "conflict_status": "none"
+      }
+    ]
+  },
+  "DIS-CARD-HT": {
+    "success": true,
+    "disease": {
+      "code": "DIS-CARD-HT",
+      "name": "高血压",
+      "category": "高血压"
+    },
+    "summary": {
+      "total": 4,
+      "recommend_count": 4,
+      "block_count": 0
+    },
+    "recommendations": [
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-6B00E19C2262CD19",
+        "recommendation_code": "REC-HT-HT-TX-PLAN-CARD-2081B78ED14D",
+        "clinical_question": "高血压：生活方式干预。",
+        "clinical_scenario": "高血压患者中符合该推荐适用条件者。",
+        "recommendation_text": "高血压患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：生活方式干预。",
+        "action": {
+          "code": "PLAN-CARD-2081B78ED14D",
+          "name": "生活方式干预",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-DB0F66F2BB43C682",
+          "name": "HT AHA 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-33A716520D7F8314C556-HT",
+          "page": 50,
+          "text": "e50  TBD 2025                                                Hypertension. 2025;82:e00–e00. DOI: 10.1161/HYP.0000000000000249"
+        },
+        "recommendation_class": "未分级推荐",
+        "evidence_level": "专家共识/教材证据",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-9791D24D9ED6CE30",
+        "recommendation_code": "REC-HT-HT-FU-FU-CARD-67AAA3B7D885",
+        "clinical_question": "高血压：高血压随访方案。",
+        "clinical_scenario": "高血压患者中符合该推荐适用条件者。",
+        "recommendation_text": "高血压患者在FU阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：高血压随访方案。",
+        "action": {
+          "code": "FU-CARD-67AAA3B7D885",
+          "name": "高血压随访方案",
+          "type": "FollowUp",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-DB0F66F2BB43C682",
+          "name": "HT AHA 2025.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-A88C4F456FAF11892EC6-HT",
+          "page": 1,
+          "text": "· 专家共识· 中国慢性肾脏病患者高血压管理指南（2023年版）"
+        },
+        "recommendation_class": "未分级推荐",
+        "evidence_level": "专家共识/教材证据",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-9BCB53F90A6FD0C3",
+        "recommendation_code": "REC-HT-HT-TX-PLAN-CARD-0CDCF256C0E6",
+        "clinical_question": "高血压：联合降压治疗。",
+        "clinical_scenario": "高血压患者中符合该推荐适用条件者。",
+        "recommendation_text": "高血压患者在TX阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：联合降压治疗。",
+        "action": {
+          "code": "PLAN-CARD-0CDCF256C0E6",
+          "name": "联合降压治疗",
+          "type": "TreatmentPlan",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-0354EAC6824A1FD4",
+          "name": "中国慢性肾脏病患者高血压管理指南（2023年版）.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-A88C4F456FAF11892EC6-HT",
+          "page": 1,
+          "text": "· 专家共识· 中国慢性肾脏病患者高血压管理指南（2023年版）"
+        },
+        "recommendation_class": "未分级推荐",
+        "evidence_level": "专家共识/教材证据",
+        "conflict_status": "none"
+      },
+      {
+        "source_adjudication_code": "SRCADJ-CARD-BULK-CD3D7E6B8B61C900",
+        "recommendation_code": "REC-HT-HT-DIAG-DXC-CARD-AA96D71FB917",
+        "clinical_question": "高血压：高血压诊断标准。",
+        "clinical_scenario": "高血压患者中符合该推荐适用条件者。",
+        "recommendation_text": "高血压患者在DIAG阶段，如满足适用条件且无排除/禁忌条件，建议评估或执行：高血压诊断标准。",
+        "action": {
+          "code": "DXC-CARD-AA96D71FB917",
+          "name": "高血压诊断标准",
+          "type": "DiagnosisCriteria",
+          "relation": "recommends_action",
+          "relation_cn": "建议执行"
+        },
+        "primary_guideline": {
+          "code": "SRC-DOC-0354EAC6824A1FD4",
+          "name": "中国慢性肾脏病患者高血压管理指南（2023年版）.pdf"
+        },
+        "primary_evidence": {
+          "code": "EVD-A88C4F456FAF11892EC6-HT",
+          "page": 1,
+          "text": "· 专家共识· 中国慢性肾脏病患者高血压管理指南（2023年版）"
+        },
+        "recommendation_class": "未分级推荐",
+        "evidence_level": "专家共识/教材证据",
+        "conflict_status": "none"
+      }
+    ]
+  }
+}

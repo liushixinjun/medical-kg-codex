@@ -1,0 +1,12 @@
+{
+  "run_at": "2026-07-18 06:33:54",
+  "output_dir": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\项目管理中心_project_management\\137_正式推荐接口契约与前端联调_20260718",
+  "sample_disease_count": 6,
+  "sample_total_recommendations": 122,
+  "files": [
+    "正式推荐接口契约_20260718.md",
+    "正式推荐接口样例_20260718.json",
+    "正式推荐接口验收用例_20260718.csv",
+    "Trae后端正式推荐联调任务说明_20260718.md"
+  ]
+}
