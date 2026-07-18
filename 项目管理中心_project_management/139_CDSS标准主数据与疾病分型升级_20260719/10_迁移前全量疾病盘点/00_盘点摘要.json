@@ -1,0 +1,94 @@
+{
+  "read_only": true,
+  "entity_counts": [
+    {
+      "entity_type": "Disease",
+      "count": 135
+    },
+    {
+      "entity_type": "DiseaseCategory",
+      "count": 20
+    },
+    {
+      "entity_type": "DiseaseClassification",
+      "count": 94
+    },
+    {
+      "entity_type": "DiseaseSubcategory",
+      "count": 51
+    },
+    {
+      "entity_type": "Specialty",
+      "count": 2
+    }
+  ],
+  "structural_relation_counts": [
+    {
+      "relation_type": "belongs_to_subcategory",
+      "count": 191
+    },
+    {
+      "relation_type": "has_disease",
+      "count": 191
+    },
+    {
+      "relation_type": "belongs_to_category",
+      "count": 171
+    },
+    {
+      "relation_type": "has_classification",
+      "count": 71
+    },
+    {
+      "relation_type": "has_subcategory",
+      "count": 52
+    },
+    {
+      "relation_type": "has_category",
+      "count": 27
+    }
+  ],
+  "structural_endpoint_counts": [
+    {
+      "source_type": "Disease",
+      "relation_type": "belongs_to_subcategory",
+      "target_type": "DiseaseSubcategory",
+      "count": 191
+    },
+    {
+      "source_type": "DiseaseSubcategory",
+      "relation_type": "has_disease",
+      "target_type": "Disease",
+      "count": 191
+    },
+    {
+      "source_type": "Disease",
+      "relation_type": "belongs_to_category",
+      "target_type": "DiseaseCategory",
+      "count": 171
+    },
+    {
+      "source_type": "Disease",
+      "relation_type": "has_classification",
+      "target_type": "DiseaseClassification",
+      "count": 71
+    },
+    {
+      "source_type": "DiseaseCategory",
+      "relation_type": "has_subcategory",
+      "target_type": "DiseaseSubcategory",
+      "count": 52
+    },
+    {
+      "source_type": "Specialty",
+      "relation_type": "has_category",
+      "target_type": "DiseaseCategory",
+      "count": 27
+    }
+  ],
+  "hierarchy_node_count": 302,
+  "hierarchy_relation_count": 703,
+  "duplicate_disease_name_group_count": 3,
+  "sample_detail_row_count": 103,
+  "sample_classification_detail_row_count": 20
+}

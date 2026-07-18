@@ -1,0 +1,38 @@
+[
+  {
+    "source_type": "Disease",
+    "relation_type": "belongs_to_subcategory",
+    "target_type": "DiseaseSubcategory",
+    "count": 191
+  },
+  {
+    "source_type": "DiseaseSubcategory",
+    "relation_type": "has_disease",
+    "target_type": "Disease",
+    "count": 191
+  },
+  {
+    "source_type": "Disease",
+    "relation_type": "belongs_to_category",
+    "target_type": "DiseaseCategory",
+    "count": 171
+  },
+  {
+    "source_type": "Disease",
+    "relation_type": "has_classification",
+    "target_type": "DiseaseClassification",
+    "count": 71
+  },
+  {
+    "source_type": "DiseaseCategory",
+    "relation_type": "has_subcategory",
+    "target_type": "DiseaseSubcategory",
+    "count": 52
+  },
+  {
+    "source_type": "Specialty",
+    "relation_type": "has_category",
+    "target_type": "DiseaseCategory",
+    "count": 27
+  }
+]

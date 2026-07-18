@@ -1,0 +1,222 @@
+[
+  {
+    "parent_disease_code": "DIS-CARD-CAD-AMI",
+    "classification_code": "CLASS-CARD-CAD-AMI-NSTEMI",
+    "classification_name": "非ST段抬高型心肌梗死",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "has_classification",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-AMI",
+    "other_type": "Disease",
+    "other_name": "急性心肌梗死"
+  },
+  {
+    "parent_disease_code": "DIS-CARD-CAD-AMI",
+    "classification_code": "CLASS-CARD-CAD-AMI-STEMI",
+    "classification_name": "ST段抬高型心肌梗死",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "has_classification",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-AMI",
+    "other_type": "Disease",
+    "other_name": "急性心肌梗死"
+  },
+  {
+    "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+    "classification_code": "CLASS-CARD-CADREM-NSTEMI-6C5E8C98A0",
+    "classification_name": "非ST段抬高型心肌梗死分类要点2",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "has_classification",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-NSTEMI",
+    "other_type": "Disease",
+    "other_name": "非ST段抬高型心肌梗死"
+  },
+  {
+    "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+    "classification_code": "CLASS-CARD-CADREM-NSTEMI-6C5E8C98A0",
+    "classification_name": "非ST段抬高型心肌梗死分类要点2",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "supported_by_evidence",
+    "direction": "outgoing",
+    "other_code": "EVD-CARD-TEXTBOOK-42AC228EDF5F4AD2",
+    "other_type": "Evidence",
+    "other_name": "非ST段抬高型心肌梗死-DiseaseClassification-6-教材原文证据"
+  },
+  {
+    "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+    "classification_code": "CLASS-CARD-CADREM-NSTEMI-6F48893A3E",
+    "classification_name": "非ST段抬高型心肌梗死分类要点6",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "has_classification",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-NSTEMI",
+    "other_type": "Disease",
+    "other_name": "非ST段抬高型心肌梗死"
+  },
+  {
+    "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+    "classification_code": "CLASS-CARD-CADREM-NSTEMI-6F48893A3E",
+    "classification_name": "非ST段抬高型心肌梗死分类要点6",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "supported_by_evidence",
+    "direction": "outgoing",
+    "other_code": "EVD-CARD-TEXTBOOK-42AC228EDF5F4AD2",
+    "other_type": "Evidence",
+    "other_name": "非ST段抬高型心肌梗死-DiseaseClassification-6-教材原文证据"
+  },
+  {
+    "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+    "classification_code": "CLASS-CARD-CADREM-UA-3ED0E5D680",
+    "classification_name": "Braunwald根据心绞痛的特点和基础病因",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "has_classification",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-NSTEMI",
+    "other_type": "Disease",
+    "other_name": "非ST段抬高型心肌梗死"
+  },
+  {
+    "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+    "classification_code": "CLASS-CARD-CADREM-UA-3ED0E5D680",
+    "classification_name": "Braunwald根据心绞痛的特点和基础病因",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "has_classification",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-UA",
+    "other_type": "Disease",
+    "other_name": "不稳定型心绞痛"
+  },
+  {
+    "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+    "classification_code": "CLASS-CARD-CADREM-UA-3ED0E5D680",
+    "classification_name": "Braunwald根据心绞痛的特点和基础病因",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "has_classification",
+    "direction": "incoming",
+    "other_code": "TXTSEC-CARD-B2E03CDC8FB6BAC7",
+    "other_type": "SourceSection",
+    "other_name": "不稳定型心绞痛和非 ST 段抬高型心肌梗死"
+  },
+  {
+    "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+    "classification_code": "CLASS-CARD-CADREM-UA-3ED0E5D680",
+    "classification_name": "Braunwald根据心绞痛的特点和基础病因",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "supported_by_evidence",
+    "direction": "outgoing",
+    "other_code": "CARD-SKELETON-FULL-20260709-EVID-58481CF31F07440A",
+    "other_type": "Evidence",
+    "other_name": "教材证据-1F07440A"
+  },
+  {
+    "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+    "classification_code": "CLASS-CARD-CADREM-UA-3ED0E5D680",
+    "classification_name": "Braunwald根据心绞痛的特点和基础病因",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "supported_by_evidence",
+    "direction": "outgoing",
+    "other_code": "EVD-CARD-TEXTBOOK-42AC228EDF5F4AD2",
+    "other_type": "Evidence",
+    "other_name": "非ST段抬高型心肌梗死-DiseaseClassification-6-教材原文证据"
+  },
+  {
+    "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+    "classification_code": "CLASS-CARD-CADREM-UA-44D099513F",
+    "classification_name": "GRACE评分＞140分为高危",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "has_classification",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-NSTEMI",
+    "other_type": "Disease",
+    "other_name": "非ST段抬高型心肌梗死"
+  },
+  {
+    "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+    "classification_code": "CLASS-CARD-CADREM-UA-44D099513F",
+    "classification_name": "GRACE评分＞140分为高危",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "has_classification",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-UA",
+    "other_type": "Disease",
+    "other_name": "不稳定型心绞痛"
+  },
+  {
+    "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+    "classification_code": "CLASS-CARD-CADREM-UA-44D099513F",
+    "classification_name": "GRACE评分＞140分为高危",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "supported_by_evidence",
+    "direction": "outgoing",
+    "other_code": "EVD-CARD-TEXTBOOK-42AC228EDF5F4AD2",
+    "other_type": "Evidence",
+    "other_name": "非ST段抬高型心肌梗死-DiseaseClassification-6-教材原文证据"
+  },
+  {
+    "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+    "classification_code": "CLASS-CARD-CADREM-UA-69F8FA5ADF",
+    "classification_name": "109～140分为中危",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "has_classification",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-NSTEMI",
+    "other_type": "Disease",
+    "other_name": "非ST段抬高型心肌梗死"
+  },
+  {
+    "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+    "classification_code": "CLASS-CARD-CADREM-UA-69F8FA5ADF",
+    "classification_name": "109～140分为中危",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "has_classification",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-UA",
+    "other_type": "Disease",
+    "other_name": "不稳定型心绞痛"
+  },
+  {
+    "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+    "classification_code": "CLASS-CARD-CADREM-UA-69F8FA5ADF",
+    "classification_name": "109～140分为中危",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "supported_by_evidence",
+    "direction": "outgoing",
+    "other_code": "EVD-CARD-TEXTBOOK-42AC228EDF5F4AD2",
+    "other_type": "Evidence",
+    "other_name": "非ST段抬高型心肌梗死-DiseaseClassification-6-教材原文证据"
+  },
+  {
+    "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+    "classification_code": "CLASS-CARD-CADREM-UA-B60FDF102A",
+    "classification_name": "≤108分为低危",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "has_classification",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-NSTEMI",
+    "other_type": "Disease",
+    "other_name": "非ST段抬高型心肌梗死"
+  },
+  {
+    "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+    "classification_code": "CLASS-CARD-CADREM-UA-B60FDF102A",
+    "classification_name": "≤108分为低危",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "has_classification",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-UA",
+    "other_type": "Disease",
+    "other_name": "不稳定型心绞痛"
+  },
+  {
+    "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+    "classification_code": "CLASS-CARD-CADREM-UA-B60FDF102A",
+    "classification_name": "≤108分为低危",
+    "classification_type": "DiseaseClassification",
+    "relation_type": "supported_by_evidence",
+    "direction": "outgoing",
+    "other_code": "EVD-CARD-TEXTBOOK-42AC228EDF5F4AD2",
+    "other_type": "Evidence",
+    "other_name": "非ST段抬高型心肌梗死-DiseaseClassification-6-教材原文证据"
+  }
+]

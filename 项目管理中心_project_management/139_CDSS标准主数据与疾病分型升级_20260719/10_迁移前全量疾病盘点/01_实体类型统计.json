@@ -1,0 +1,22 @@
+[
+  {
+    "entity_type": "Disease",
+    "count": 135
+  },
+  {
+    "entity_type": "DiseaseCategory",
+    "count": 20
+  },
+  {
+    "entity_type": "DiseaseClassification",
+    "count": 94
+  },
+  {
+    "entity_type": "DiseaseSubcategory",
+    "count": 51
+  },
+  {
+    "entity_type": "Specialty",
+    "count": 2
+  }
+]

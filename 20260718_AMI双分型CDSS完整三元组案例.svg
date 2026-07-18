@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1960" height="1320" viewBox="0 0 1960 1320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#152746"/></linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity=".43"/></filter>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3.5" orient="auto"><path d="M0 0L0 7L9 3.5Z" fill="#6ea9ff"/></marker>
+    <marker id="g" markerWidth="10" markerHeight="10" refX="8" refY="3.5" orient="auto"><path d="M0 0L0 7L9 3.5Z" fill="#55d8b5"/></marker>
+    <style>
+      .t{font:700 34px 'Microsoft YaHei',sans-serif;fill:#f5f8ff}.sub{font:400 17px 'Microsoft YaHei',sans-serif;fill:#aebdd2}
+      .h{font:700 18px 'Microsoft YaHei',sans-serif;fill:#fff}.s{font:400 14px 'Microsoft YaHei',sans-serif;fill:#d6dfed}.c{font:700 14px Consolas,'Microsoft YaHei',monospace;fill:#ddfff5}
+      .el{font:600 13px 'Microsoft YaHei',sans-serif;fill:#dce9ff;paint-order:stroke;stroke:#091323;stroke-width:5px}.e{stroke:#6ea9ff;stroke-width:2.7;fill:none;marker-end:url(#a)}.eg{stroke:#55d8b5;stroke-width:2.5;stroke-dasharray:8 6;fill:none;marker-end:url(#g)}
+      .panel{fill:#101e34;stroke:#2d4a70;stroke-width:1.5}.input{fill:#633d91;stroke:#bc94f3}.fact{fill:#1b5d79;stroke:#69c6e8}.rule{fill:#78531f;stroke:#f0ba62}.sus{fill:#704fc0;stroke:#c1a6ff}.stemi{fill:#a33d4b;stroke:#ff8e9c}.nstemi{fill:#176f91;stroke:#71ccea}.act{fill:#176d59;stroke:#62dfbc}.src{fill:#40546e;stroke:#9aacc2}
+    </style>
+  </defs>
+  <rect width="1960" height="1320" fill="url(#bg)"/>
+  <text x="52" y="54" class="t">急性心肌梗死（AMI）：STEMI 与 NSTEMI 双分型完整三元组案例</text>
+  <text x="52" y="86" class="sub">共同完成疑似 AMI 识别，再依据心电图和肌钙蛋白进入两条不同的临床路径；正式推荐必须经过患者条件、排除条件和证据链</text>
+
+  <!-- EMR input -->
+  <rect x="42" y="128" width="285" height="560" rx="22" class="panel" filter="url(#sh)"/>
+  <text x="184" y="168" text-anchor="middle" class="h">患者数据（EMR）</text>
+  <rect x="69" y="200" width="231" height="58" rx="15" class="input"/><text x="184" y="227" text-anchor="middle" class="h">持续性胸痛</text><text x="184" y="248" text-anchor="middle" class="s">症状</text>
+  <rect x="69" y="278" width="231" height="58" rx="15" class="input"/><text x="184" y="305" text-anchor="middle" class="h">出汗、濒死感</text><text x="184" y="326" text-anchor="middle" class="s">症状/体征</text>
+  <rect x="69" y="356" width="231" height="70" rx="15" class="input"/><text x="184" y="383" text-anchor="middle" class="h">肌钙蛋白动态升高</text><text x="184" y="407" text-anchor="middle" class="s">检验细项及动态变化</text>
+  <rect x="69" y="446" width="231" height="70" rx="15" class="input"/><text x="184" y="473" text-anchor="middle" class="h">心电图结果</text><text x="184" y="497" text-anchor="middle" class="s">有或无持续ST段抬高</text>
+  <rect x="69" y="536" width="231" height="58" rx="15" class="input"/><text x="184" y="563" text-anchor="middle" class="h">发病时间</text><text x="184" y="584" text-anchor="middle" class="s">决定再灌注时间窗</text>
+  <rect x="69" y="614" width="231" height="50" rx="15" class="input"/><text x="184" y="645" text-anchor="middle" class="h">出血及其他禁忌信息</text>
+
+  <!-- standardized facts -->
+  <rect x="400" y="135" width="285" height="66" rx="17" class="fact"/><text x="542" y="163" text-anchor="middle" class="h">缺血性胸痛</text><text x="542" y="187" text-anchor="middle" class="s">Symptom · 标准症状</text>
+  <rect x="400" y="225" width="285" height="66" rx="17" class="fact"/><text x="542" y="253" text-anchor="middle" class="h">心肌肌钙蛋白</text><text x="542" y="277" text-anchor="middle" class="s">LabSubitem · 检验细项</text>
+  <rect x="400" y="315" width="285" height="78" rx="17" class="fact"/><text x="542" y="344" text-anchor="middle" class="h">升高并呈动态变化</text><text x="542" y="369" text-anchor="middle" class="s">ThresholdRule · 阈值/动态规则</text>
+  <rect x="400" y="420" width="285" height="66" rx="17" class="fact"/><text x="542" y="448" text-anchor="middle" class="h">十二导联心电图</text><text x="542" y="472" text-anchor="middle" class="s">ExamItem · 检查项目</text>
+  <rect x="400" y="510" width="285" height="66" rx="17" class="fact"/><text x="542" y="538" text-anchor="middle" class="h">ST段持续抬高</text><text x="542" y="562" text-anchor="middle" class="s">ExamObservation · 检查发现</text>
+  <rect x="400" y="600" width="285" height="66" rx="17" class="fact"/><text x="542" y="628" text-anchor="middle" class="h">无持续ST段抬高</text><text x="542" y="652" text-anchor="middle" class="s">ExamObservation · 检查发现</text>
+
+  <path d="M300 229L399 168" class="e"/><text x="320" y="180" class="el">术语归一</text>
+  <path d="M300 391C345 350 370 280 399 258" class="e"/><text x="315" y="327" class="el">结果映射</text>
+  <path d="M300 391L399 354" class="e"/><text x="321" y="365" class="el">动态判断</text>
+  <path d="M300 481L399 453" class="e"/><text x="325" y="448" class="el">项目映射</text>
+  <path d="M300 481C345 500 365 526 399 543" class="e"/><text x="322" y="519" class="el">结果映射</text>
+  <path d="M300 481C345 540 370 605 399 633" class="e"/><text x="314" y="576" class="el">结果映射</text>
+
+  <!-- AMI criteria and suspected -->
+  <rect x="760" y="185" width="360" height="115" rx="20" class="rule"/>
+  <text x="940" y="220" text-anchor="middle" class="h">急性心肌梗死诊断规则</text>
+  <text x="940" y="249" text-anchor="middle" class="s">急性心肌损伤证据</text>
+  <text x="940" y="275" text-anchor="middle" class="s">并至少具有一项心肌缺血证据</text>
+  <path d="M685 168C730 180 740 195 759 210" class="e"/><text x="690" y="193" class="el">输入症状</text>
+  <path d="M685 354C730 330 740 290 759 270" class="e"/><text x="688" y="323" class="el">输入检验规则</text>
+
+  <circle cx="940" cy="430" r="105" class="sus" filter="url(#sh)"/>
+  <text x="940" y="407" text-anchor="middle" class="h">急性心肌梗死</text>
+  <text x="940" y="435" text-anchor="middle" class="s">疑似疾病 / 初步诊断</text>
+  <text x="940" y="463" text-anchor="middle" class="c">I21.900</text>
+  <path d="M940 301L940 324" class="e"/><text x="955" y="319" class="el">满足规则</text>
+
+  <!-- split rules -->
+  <rect x="760" y="590" width="330" height="102" rx="20" class="rule"/>
+  <text x="925" y="624" text-anchor="middle" class="h">STEMI分型规则</text>
+  <text x="925" y="652" text-anchor="middle" class="s">符合急性心肌梗死</text>
+  <text x="925" y="676" text-anchor="middle" class="s">并存在持续ST段抬高表现</text>
+  <rect x="1140" y="590" width="330" height="102" rx="20" class="rule"/>
+  <text x="1305" y="624" text-anchor="middle" class="h">NSTEMI分型规则</text>
+  <text x="1305" y="652" text-anchor="middle" class="s">符合急性心肌梗死</text>
+  <text x="1305" y="676" text-anchor="middle" class="s">但不存在持续ST段抬高表现</text>
+  <path d="M900 533L910 589" class="e"/><text x="842" y="567" class="el">进入分型</text>
+  <path d="M1000 516C1080 545 1160 570 1210 589" class="e"/><text x="1068" y="553" class="el">进入分型</text>
+  <path d="M685 543C720 560 735 595 759 620" class="e"/><text x="683" y="590" class="el">输入心电图</text>
+  <path d="M685 633C870 720 1050 640 1139 635" class="e"/><text x="878" y="696" class="el">输入心电图</text>
+
+  <!-- subtype nodes -->
+  <circle cx="710" cy="825" r="108" class="stemi" filter="url(#sh)"/>
+  <text x="710" y="800" text-anchor="middle" class="h">ST段抬高型</text><text x="710" y="827" text-anchor="middle" class="h">心肌梗死</text><text x="710" y="856" text-anchor="middle" class="s">临床分型 · STEMI</text>
+  <circle cx="1290" cy="825" r="108" class="nstemi" filter="url(#sh)"/>
+  <text x="1290" y="800" text-anchor="middle" class="h">非ST段抬高型</text><text x="1290" y="827" text-anchor="middle" class="h">心肌梗死</text><text x="1290" y="856" text-anchor="middle" class="s">临床分型 · NSTEMI</text>
+  <path d="M870 693C825 735 780 765 758 783" class="e"/><text x="790" y="738" class="el">规则判定为</text>
+  <path d="M1300 693L1293 716" class="e"/><text x="1310" y="711" class="el">规则判定为</text>
+
+  <!-- coding -->
+  <rect x="480" y="1010" width="330" height="78" rx="18" class="act"/>
+  <text x="645" y="1038" text-anchor="middle" class="h">STEMI标准诊断编码</text><text x="645" y="1065" text-anchor="middle" class="s">从Oracle有效ICD-10记录选择</text>
+  <rect x="1170" y="1010" width="330" height="78" rx="18" class="act"/>
+  <text x="1335" y="1038" text-anchor="middle" class="h">NSTEMI标准诊断编码</text><text x="1335" y="1065" text-anchor="middle" class="s">从Oracle有效ICD-10记录选择</text>
+  <path d="M682 934L651 1009" class="eg"/><text x="590" y="974" class="el">可编码为</text>
+  <path d="M1305 934L1330 1009" class="eg"/><text x="1340" y="974" class="el">可编码为</text>
+
+  <!-- STEMI pathway -->
+  <rect x="1530" y="175" width="380" height="118" rx="20" class="rule"/>
+  <text x="1720" y="208" text-anchor="middle" class="h">STEMI再灌注决策阶段</text>
+  <text x="1720" y="237" text-anchor="middle" class="s">判断发病时间、PCI可及性</text>
+  <text x="1720" y="264" text-anchor="middle" class="s">并排除溶栓、介入及用药禁忌</text>
+  <path d="M810 790C1070 610 1370 360 1529 250" class="e"/><text x="1195" y="520" class="el">进入STEMI路径</text>
+
+  <rect x="1530" y="340" width="380" height="130" rx="20" class="act"/>
+  <text x="1720" y="374" text-anchor="middle" class="h">STEMI正式推荐陈述</text>
+  <text x="1720" y="404" text-anchor="middle" class="s">符合条件时选择直接PCI</text>
+  <text x="1720" y="430" text-anchor="middle" class="s">或在PCI不能及时实施时评估溶栓</text>
+  <text x="1720" y="455" text-anchor="middle" class="s">同时处理抗血小板、抗凝及其他支持治疗</text>
+  <path d="M1720 294L1720 339" class="e"/><text x="1735" y="321" class="el">满足规则后推荐</text>
+
+  <!-- NSTEMI pathway -->
+  <rect x="1530" y="535" width="380" height="118" rx="20" class="rule"/>
+  <text x="1720" y="568" text-anchor="middle" class="h">NSTEMI危险分层阶段</text>
+  <text x="1720" y="597" text-anchor="middle" class="s">评估血流动力学、持续缺血</text>
+  <text x="1720" y="624" text-anchor="middle" class="s">GRACE风险及出血风险</text>
+  <path d="M1393 791C1470 735 1530 668 1580 624" class="e"/><text x="1435" y="719" class="el">进入NSTEMI路径</text>
+
+  <rect x="1530" y="700" width="380" height="130" rx="20" class="act"/>
+  <text x="1720" y="734" text-anchor="middle" class="h">NSTEMI正式推荐陈述</text>
+  <text x="1720" y="764" text-anchor="middle" class="s">依据风险分层决定介入时机</text>
+  <text x="1720" y="790" text-anchor="middle" class="s">结合出血风险选择抗栓方案</text>
+  <text x="1720" y="815" text-anchor="middle" class="s">不把STEMI溶栓规则直接套用</text>
+  <path d="M1720 654L1720 699" class="e"/><text x="1735" y="682" class="el">满足规则后推荐</text>
+
+  <!-- evidence -->
+  <rect x="1530" y="900" width="380" height="190" rx="20" class="src"/>
+  <text x="1720" y="934" text-anchor="middle" class="h">两条推荐分别绑定证据链</text>
+  <text x="1720" y="969" text-anchor="middle" class="s">推荐陈述 → 主依据指南</text>
+  <text x="1720" y="997" text-anchor="middle" class="s">→ 原文证据 → 页码/段落</text>
+  <text x="1720" y="1025" text-anchor="middle" class="s">→ 推荐等级 → 证据等级</text>
+  <text x="1720" y="1053" text-anchor="middle" class="s">STEMI与NSTEMI证据不得混用</text>
+  <path d="M1760 471C1840 600 1840 780 1770 899" class="e"/><text x="1810" y="670" class="el">证据支持</text>
+  <path d="M1720 831L1720 899" class="e"/><text x="1735" y="869" class="el">证据支持</text>
+
+  <!-- guard rails/footer -->
+  <rect x="42" y="1135" width="1868" height="135" rx="18" class="panel"/>
+  <text x="70" y="1168" class="h">关键业务结果</text>
+  <text x="70" y="1197" class="s">1. 症状和肌钙蛋白先支持“疑似急性心肌梗死”；不能仅凭胸痛直接输出STEMI或NSTEMI。</text>
+  <text x="70" y="1223" class="s">2. STEMI与NSTEMI是同一层的两个临床分型；两者分别进入再灌注决策路径和危险分层路径。</text>
+  <text x="70" y="1249" class="s">3. 具体ICD-10编码从 `VALID_FLAG=1` 的Oracle标准诊断字典选择；I23.*并发症和亚急性病程不作为STEMI/NSTEMI下级。</text>
+  <text x="1040" y="1197" class="s">三元组：（急性心肌梗死）—[具有临床分型]→（STEMI）</text>
+  <text x="1040" y="1223" class="s">三元组：（STEMI）—[进入路径阶段]→（再灌注决策）</text>
+  <text x="1040" y="1249" class="s">三元组：（正式推荐陈述）—[由证据支持]→（指南原文证据）</text>
+</svg>

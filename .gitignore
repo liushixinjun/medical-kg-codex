@@ -45,6 +45,9 @@ __pycache__/
 # Delta packages are small, auditable delivery artifacts and should be tracked.
 
 # Local large database safety backups; keep on disk, do not push to Git
+数据库备份_backup/
+**/01_写库前回滚包/
+**/回滚包_rollback/
 项目管理中心_project_management/109_术语主数据同名重复归并_20260716/
 项目管理中心_project_management/117_治疗方案动作链全库治理_20260716/05_写库前_疾病直连治疗方案关系备份.json
 

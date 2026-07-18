@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1080" viewBox="0 0 1800 1080">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="75%">
+      <stop offset="0" stop-color="#162848"/>
+      <stop offset="1" stop-color="#08111f"/>
+    </radialGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="11" markerHeight="11" refX="9" refY="3.5" orient="auto">
+      <path d="M0 0 L0 7 L10 3.5 Z" fill="#68a7ff"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="11" markerHeight="11" refX="9" refY="3.5" orient="auto">
+      <path d="M0 0 L0 7 L10 3.5 Z" fill="#54d6b5"/>
+    </marker>
+    <style>
+      .title { font: 700 34px 'Microsoft YaHei',sans-serif; fill:#f5f8ff; }
+      .subtitle { font: 400 18px 'Microsoft YaHei',sans-serif; fill:#aebdd3; }
+      .nodeTitle { font: 700 18px 'Microsoft YaHei',sans-serif; fill:#fff; }
+      .nodeSub { font: 400 14px 'Microsoft YaHei',sans-serif; fill:#d4def0; }
+      .code { font: 700 14px Consolas,'Microsoft YaHei',monospace; fill:#d9fff4; }
+      .edgeLabel { font: 600 14px 'Microsoft YaHei',sans-serif; fill:#d9e7ff; paint-order:stroke; stroke:#0b1425; stroke-width:5px; stroke-linejoin:round; }
+      .edge { stroke:#68a7ff; stroke-width:3; fill:none; marker-end:url(#arrowBlue); }
+      .codeEdge { stroke:#54d6b5; stroke-width:2.5; stroke-dasharray:9 7; fill:none; marker-end:url(#arrowGreen); }
+      .panel { fill:#0f1c31; stroke:#284466; stroke-width:1.5; }
+    </style>
+  </defs>
+
+  <rect width="1800" height="1080" fill="url(#bg)"/>
+  <text x="60" y="58" class="title">疾病三层结构：三元组网状展示</text>
+  <text x="60" y="90" class="subtitle">实线表示临床疾病关系；绿色虚线表示诊断编码选择，不增加疾病层级</text>
+
+  <!-- Legend -->
+  <rect x="1260" y="32" width="480" height="78" rx="16" class="panel"/>
+  <circle cx="1295" cy="58" r="10" fill="#457bda"/><text x="1315" y="64" class="nodeSub">专科</text>
+  <circle cx="1390" cy="58" r="10" fill="#7a59c8"/><text x="1410" y="64" class="nodeSub">疑似疾病</text>
+  <circle cx="1515" cy="58" r="10" fill="#168598"/><text x="1535" y="64" class="nodeSub">临床分型</text>
+  <circle cx="1640" cy="58" r="10" fill="#208c72"/><text x="1660" y="64" class="nodeSub">标准编码</text>
+  <line x1="1290" y1="89" x2="1360" y2="89" class="edge"/><text x="1380" y="95" class="nodeSub">层级关系</text>
+  <line x1="1500" y1="89" x2="1570" y2="89" class="codeEdge"/><text x="1590" y="95" class="nodeSub">编码关系</text>
+
+  <!-- Root specialty -->
+  <circle cx="900" cy="205" r="92" fill="#315fae" stroke="#83b3ff" stroke-width="4" filter="url(#glow)"/>
+  <text x="900" y="198" text-anchor="middle" class="nodeTitle">心血管内科</text>
+  <text x="900" y="225" text-anchor="middle" class="nodeSub">Specialty · 专科</text>
+
+  <!-- Category nodes -->
+  <circle cx="480" cy="420" r="108" fill="#704ebd" stroke="#b79aff" stroke-width="4" filter="url(#shadow)"/>
+  <text x="480" y="402" text-anchor="middle" class="nodeTitle">心肌病</text>
+  <text x="480" y="429" text-anchor="middle" class="nodeSub">疑似疾病 / 初步诊断</text>
+  <text x="480" y="454" text-anchor="middle" class="code">I42.900</text>
+
+  <circle cx="1320" cy="420" r="108" fill="#704ebd" stroke="#b79aff" stroke-width="4" filter="url(#shadow)"/>
+  <text x="1320" y="402" text-anchor="middle" class="nodeTitle">急性心肌梗死</text>
+  <text x="1320" y="429" text-anchor="middle" class="nodeSub">疑似疾病 / 初步诊断</text>
+  <text x="1320" y="454" text-anchor="middle" class="code">I21.900</text>
+
+  <!-- Root edges -->
+  <path d="M820 247 C715 295 620 340 550 372" class="edge"/>
+  <text x="671" y="305" class="edgeLabel">包含疾病大类</text>
+  <path d="M980 247 C1085 295 1180 340 1250 372" class="edge"/>
+  <text x="1055" y="305" class="edgeLabel">包含疾病大类</text>
+
+  <!-- Cardiomyopathy subtypes -->
+  <circle cx="175" cy="665" r="82" fill="#117c90" stroke="#6bd8e8" stroke-width="3"/>
+  <text x="175" y="659" text-anchor="middle" class="nodeTitle">肥厚型心肌病</text>
+  <text x="175" y="684" text-anchor="middle" class="nodeSub">临床分型</text>
+
+  <circle cx="480" cy="720" r="82" fill="#117c90" stroke="#6bd8e8" stroke-width="3"/>
+  <text x="480" y="714" text-anchor="middle" class="nodeTitle">扩张型心肌病</text>
+  <text x="480" y="739" text-anchor="middle" class="nodeSub">临床分型</text>
+
+  <circle cx="765" cy="665" r="82" fill="#117c90" stroke="#6bd8e8" stroke-width="3"/>
+  <text x="765" y="659" text-anchor="middle" class="nodeTitle">限制型心肌病</text>
+  <text x="765" y="684" text-anchor="middle" class="nodeSub">临床分型</text>
+
+  <path d="M410 503 C340 550 260 600 220 620" class="edge"/>
+  <text x="276" y="555" class="edgeLabel">具有临床分型</text>
+  <path d="M480 529 L480 636" class="edge"/>
+  <text x="495" y="585" class="edgeLabel">具有临床分型</text>
+  <path d="M550 503 C620 550 695 600 725 620" class="edge"/>
+  <text x="618" y="555" class="edgeLabel">具有临床分型</text>
+
+  <!-- HCM code nodes -->
+  <rect x="65" y="870" width="230" height="70" rx="17" fill="#176b59" stroke="#5ce0bc" stroke-width="2"/>
+  <text x="180" y="896" text-anchor="middle" class="code">I42.100</text>
+  <text x="180" y="921" text-anchor="middle" class="nodeSub">梗阻性肥厚型心肌病</text>
+
+  <rect x="325" y="870" width="230" height="70" rx="17" fill="#176b59" stroke="#5ce0bc" stroke-width="2"/>
+  <text x="440" y="896" text-anchor="middle" class="code">I42.200</text>
+  <text x="440" y="921" text-anchor="middle" class="nodeSub">其他肥厚型心肌病</text>
+
+  <rect x="585" y="870" width="230" height="70" rx="17" fill="#176b59" stroke="#5ce0bc" stroke-width="2"/>
+  <text x="700" y="896" text-anchor="middle" class="code">I42.201</text>
+  <text x="700" y="921" text-anchor="middle" class="nodeSub">心尖肥厚型心肌病</text>
+
+  <path d="M150 747 C145 800 160 830 175 868" class="codeEdge"/>
+  <text x="68" y="808" class="edgeLabel">可编码为</text>
+  <path d="M190 743 C250 800 355 825 420 868" class="codeEdge"/>
+  <text x="286" y="810" class="edgeLabel">可编码为</text>
+  <path d="M225 728 C340 780 565 815 680 868" class="codeEdge"/>
+  <text x="515" y="810" class="edgeLabel">可编码为</text>
+
+  <!-- AMI subtypes -->
+  <circle cx="1110" cy="685" r="95" fill="#117c90" stroke="#6bd8e8" stroke-width="3"/>
+  <text x="1110" y="676" text-anchor="middle" class="nodeTitle">ST段抬高型</text>
+  <text x="1110" y="703" text-anchor="middle" class="nodeTitle">心肌梗死</text>
+  <text x="1110" y="730" text-anchor="middle" class="nodeSub">临床分型 · STEMI</text>
+
+  <circle cx="1510" cy="685" r="95" fill="#117c90" stroke="#6bd8e8" stroke-width="3"/>
+  <text x="1510" y="676" text-anchor="middle" class="nodeTitle">非ST段抬高型</text>
+  <text x="1510" y="703" text-anchor="middle" class="nodeTitle">心肌梗死</text>
+  <text x="1510" y="730" text-anchor="middle" class="nodeSub">临床分型 · NSTEMI</text>
+
+  <path d="M1260 514 C1210 565 1165 610 1135 592" class="edge"/>
+  <text x="1130" y="550" class="edgeLabel">具有临床分型</text>
+  <path d="M1380 514 C1430 565 1470 610 1485 592" class="edge"/>
+  <text x="1420" y="550" class="edgeLabel">具有临床分型</text>
+
+  <!-- AMI code selection -->
+  <rect x="1005" y="875" width="285" height="68" rx="17" fill="#176b59" stroke="#5ce0bc" stroke-width="2"/>
+  <text x="1147" y="901" text-anchor="middle" class="nodeSub">STEMI有效 ICD-10 编码集合</text>
+  <text x="1147" y="926" text-anchor="middle" class="code">按部位和标准字典选择</text>
+
+  <rect x="1380" y="875" width="285" height="68" rx="17" fill="#176b59" stroke="#5ce0bc" stroke-width="2"/>
+  <text x="1522" y="901" text-anchor="middle" class="nodeSub">NSTEMI有效 ICD-10 编码集合</text>
+  <text x="1522" y="926" text-anchor="middle" class="code">按标准字典选择</text>
+
+  <path d="M1110 781 L1140 873" class="codeEdge"/>
+  <text x="1040" y="838" class="edgeLabel">可编码为</text>
+  <path d="M1510 781 L1520 873" class="codeEdge"/>
+  <text x="1535" y="838" class="edgeLabel">可编码为</text>
+
+  <!-- Triple examples -->
+  <rect x="80" y="985" width="1640" height="62" rx="15" fill="#13223a" stroke="#314c70"/>
+  <text x="110" y="1012" class="nodeSub">三元组示例：</text>
+  <text x="230" y="1012" class="edgeLabel">（心肌病）—[具有临床分型]→（肥厚型心肌病）</text>
+  <text x="760" y="1012" class="edgeLabel">（肥厚型心肌病）—[可编码为]→（I42.100 梗阻性肥厚型心肌病）</text>
+  <text x="230" y="1037" class="edgeLabel">（急性心肌梗死）—[具有临床分型]→（STEMI）</text>
+  <text x="760" y="1037" class="edgeLabel">（STEMI）—[可编码为]→（对应的有效 ICD-10 诊断）</text>
+</svg>

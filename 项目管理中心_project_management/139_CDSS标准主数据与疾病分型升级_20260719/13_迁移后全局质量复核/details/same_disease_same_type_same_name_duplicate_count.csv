@@ -1,0 +1,4 @@
+﻿disease_code,disease_name,entity_type,name,node_codes,node_count
+DIS-CARD-ARR-AF,心房颤动,Exam,经食管超声心动图,"['EXAM-CARD-705D7CD61EB7', 'EXAM-TEE']",2
+DIS-CARD-VHD-AS,主动脉瓣狭窄,Procedure,经皮球囊肺动脉瓣成形术,"[['PROC-CARD-5558D37982AF', 'PROC-CARD-B4FC5ED6A1F7'], 'PROC-CARD-5558D37982AF']",2
+DIS-CARD-VHD-PS,肺动脉瓣狭窄,Procedure,经皮球囊肺动脉瓣成形术,"[['PROC-CARD-5558D37982AF', 'PROC-CARD-B4FC5ED6A1F7'], 'PROC-CARD-5558D37982AF']",2

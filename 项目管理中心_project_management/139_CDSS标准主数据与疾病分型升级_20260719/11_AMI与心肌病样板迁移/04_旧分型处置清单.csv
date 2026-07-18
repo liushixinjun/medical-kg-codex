@@ -1,0 +1,9 @@
+﻿parent_disease_code,classification_code,classification_name,action,target_disease_code,reason
+DIS-CARD-CAD-AMI,CLASS-CARD-CAD-AMI-NSTEMI,非ST段抬高型心肌梗死,clinical_subtype,DIS-CARD-CAD-NSTEMI,旧分型名称与现有疾病实体精确一致
+DIS-CARD-CAD-AMI,CLASS-CARD-CAD-AMI-STEMI,ST段抬高型心肌梗死,clinical_subtype,DIS-CARD-CAD-STEMI,旧分型名称与现有疾病实体精确一致
+DIS-CARD-CAD-NSTEMI,CLASS-CARD-CADREM-NSTEMI-6C5E8C98A0,非ST段抬高型心肌梗死分类要点2,invalid_fragment,,抽取生成的无语义分类要点标题
+DIS-CARD-CAD-NSTEMI,CLASS-CARD-CADREM-NSTEMI-6F48893A3E,非ST段抬高型心肌梗死分类要点6,invalid_fragment,,抽取生成的无语义分类要点标题
+DIS-CARD-CAD-NSTEMI,CLASS-CARD-CADREM-UA-3ED0E5D680,Braunwald根据心绞痛的特点和基础病因,risk_stratification,,风险、分期或血流动力学分层
+DIS-CARD-CAD-NSTEMI,CLASS-CARD-CADREM-UA-44D099513F,GRACE评分＞140分为高危,risk_stratification,,风险、分期或血流动力学分层
+DIS-CARD-CAD-NSTEMI,CLASS-CARD-CADREM-UA-69F8FA5ADF,109～140分为中危,risk_stratification,,风险、分期或血流动力学分层
+DIS-CARD-CAD-NSTEMI,CLASS-CARD-CADREM-UA-B60FDF102A,≤108分为低危,risk_stratification,,风险、分期或血流动力学分层

@@ -1,0 +1,11 @@
+{
+  "migration_batch_id": "MIG-CARD-V2-20260719-001",
+  "scope": "sample",
+  "changed_code_count": 33,
+  "existing_node_snapshot_count": 22,
+  "existing_relationship_snapshot_count": 162,
+  "upsert_node_count": 24,
+  "upsert_relationship_count": 37,
+  "full_database_backup": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\数据库备份_backup\\20260718_大版本升级前",
+  "created_at": "2026-07-19 01:12:46"
+}

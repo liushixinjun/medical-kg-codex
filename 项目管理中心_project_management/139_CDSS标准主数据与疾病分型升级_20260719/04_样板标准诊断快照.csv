@@ -1,0 +1,12 @@
+cdss_dict_id,standard_code,name,class_code,coding_system,coding_system_version,source_table,source,valid_flag,sex_limit_code,age_min,age_max
+adb56b7ed55412d0630ec4f16af30860,I21.900,急性心肌梗死,I21.9,ICD-10（诊断）,V1.0,K_ICD10_DICT,国家临床版2.0,1,,,
+71b7c9b82cfdb149fc948faf1257c92d,I21.300x004,急性ST段抬高型心肌梗死,I21.3,ICD-10（诊断）,V1.0,K_ICD10_DICT,国家临床版2.0,1,9,,
+17b9670d00eced9c9a278ce1c1399f74,I21.401,急性非ST段抬高型心肌梗死,I21.4,ICD-10（诊断）,V1.0,K_ICD10_DICT,国家临床版2.0,1,9,,
+d4c92d7b4031091f475c20c62bffcd04,I42.900,心肌病,I42.9,ICD-10（诊断）,V1.0,K_ICD10_DICT,国家临床版2.0,1,9,,
+5034eac3a6a1dd3aeade10483be77945,I42.000,扩张型心肌病,I42.0,ICD-10（诊断）,V1.0,K_ICD10_DICT,国家临床版2.0,1,9,,
+4f1a72e6c466ee33af17b25bb63ee927,I42.100,梗阻性肥厚型心肌病,I42.1,ICD-10（诊断）,V1.0,K_ICD10_DICT,国家临床版2.0,1,9,,
+8ae05ac20de3bd6401453f4a6cdf712c,I42.101,肥厚型梗阻性心肌病,I42.1,ICD-10（诊断）,V1.0,K_ICD10_DICT,国家临床版2.0,1,9,,
+ea1b1eb42678ac3a529d11ad80675ab3,I42.200,肥厚型心肌病，其他的,I42.2,ICD-10（诊断）,V1.0,K_ICD10_DICT,国家临床版2.0,1,9,,
+1944e333b4a3e52e7f98d4ddfa24ef83,I42.200x001,肥厚性非梗阻性心肌病,I42.2,ICD-10（诊断）,V1.0,K_ICD10_DICT,国家临床版2.0,1,9,,
+2755d92cdaba7909f59ca61cdf9e9295,I42.200x002,肥厚性心肌病,I42.2,ICD-10（诊断）,V1.0,K_ICD10_DICT,国家临床版2.0,1,9,,
+add9ff35ca35063430741f77205da63b,I42.201,心尖肥厚型心肌病,I42.2,ICD-10（诊断）,V1.0,K_ICD10_DICT,国家临床版2.0,1,9,,

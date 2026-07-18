@@ -1,0 +1,1779 @@
+{
+  "scope": "all",
+  "batch_id": "MIG-CARD-V2-20260719-ALL",
+  "classification_actions": [
+    {
+      "parent_disease_code": "DIS-CARD-ARR-SVT",
+      "classification_code": "CLASS-CARD-ARR-SVT-CARD-ARR-PSVT",
+      "classification_name": "阵发性室上性心动过速",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-ARR-PSVT",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-ACS",
+      "classification_code": "CLASS-CARD-CADREM-ACS-2591236BEF",
+      "classification_name": "急性冠脉综合征分类要点6",
+      "action": "invalid_fragment",
+      "reason": "抽取生成的无语义分类要点标题"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-ACS",
+      "classification_code": "CLASS-CARD-CADREM-ACS-3BA30640A8",
+      "classification_name": "急性冠脉综合征分类要点5",
+      "action": "invalid_fragment",
+      "reason": "抽取生成的无语义分类要点标题"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-ACS",
+      "classification_code": "CLASS-CARD-CADREM-ACS-6DC7442542",
+      "classification_name": "急性冠脉综合征分类要点7",
+      "action": "invalid_fragment",
+      "reason": "抽取生成的无语义分类要点标题"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-ACS",
+      "classification_code": "CLASS-CARD-CADREM-CCS-53D1235A0C",
+      "classification_name": "缺血性心肌病",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-CAD-ICM",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-ACS",
+      "classification_code": "CLASS-CARD-CADREM-CCS-631884375C",
+      "classification_name": "隐匿型或无症状型冠心病",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+      "allowed_parent_codes": [
+        "DIS-CARD-CAD-CCS"
+      ],
+      "reason": "经临床语义核对映射到现有疾病实体"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-ACS",
+      "classification_code": "CLASS-CARD-CADREM-CCS-B18ADE7038",
+      "classification_name": "1979年WHO曾将其分为五型",
+      "action": "invalid_fragment",
+      "reason": "教材说明句或表格标题，不是稳定实体"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-ACS",
+      "classification_code": "CLASS-CARD-CADREM-CCS-DC4DEC6771",
+      "classification_name": "冠心病有不同的临床表型",
+      "action": "invalid_fragment",
+      "reason": "不能稳定表达诊断分型、展示分组或风险分层"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-CCS",
+      "classification_code": "CLASS-CARD-CADREM-CCS-038C086E09",
+      "classification_name": "慢性冠脉综合征分类要点6",
+      "action": "invalid_fragment",
+      "reason": "抽取生成的无语义分类要点标题"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-CCS",
+      "classification_code": "CLASS-CARD-CADREM-CCS-53D1235A0C",
+      "classification_name": "缺血性心肌病",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-CAD-ICM",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-CCS",
+      "classification_code": "CLASS-CARD-CADREM-CCS-631884375C",
+      "classification_name": "隐匿型或无症状型冠心病",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+      "allowed_parent_codes": [
+        "DIS-CARD-CAD-CCS"
+      ],
+      "reason": "经临床语义核对映射到现有疾病实体"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-CCS",
+      "classification_code": "CLASS-CARD-CADREM-CCS-9C4BA248F9",
+      "classification_name": "慢性冠脉综合征分类要点7",
+      "action": "invalid_fragment",
+      "reason": "抽取生成的无语义分类要点标题"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-CCS",
+      "classification_code": "CLASS-CARD-CADREM-CCS-B18ADE7038",
+      "classification_name": "1979年WHO曾将其分为五型",
+      "action": "invalid_fragment",
+      "reason": "教材说明句或表格标题，不是稳定实体"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-CCS",
+      "classification_code": "CLASS-CARD-CADREM-CCS-DC4DEC6771",
+      "classification_name": "冠心病有不同的临床表型",
+      "action": "invalid_fragment",
+      "reason": "不能稳定表达诊断分型、展示分组或风险分层"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-CCS",
+      "classification_code": "CLASS-CARD-CADREM-CCS-DF7358F0FE",
+      "classification_name": "慢性冠脉综合征分类要点5",
+      "action": "invalid_fragment",
+      "reason": "抽取生成的无语义分类要点标题"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-UA",
+      "classification_code": "CLASS-CARD-CADREM-UA-8F74C8F4F2",
+      "classification_name": "不稳定型心绞痛分类要点6",
+      "action": "invalid_fragment",
+      "reason": "抽取生成的无语义分类要点标题"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-UA",
+      "classification_code": "CLASS-CARD-CADREM-UA-B94C1D1E11",
+      "classification_name": "不稳定型心绞痛分类要点2",
+      "action": "invalid_fragment",
+      "reason": "抽取生成的无语义分类要点标题"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HF",
+      "classification_code": "CLASS-CARD-HF-CARD-HF-AHF",
+      "classification_name": "急性心力衰竭",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HF-AHF",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HF",
+      "classification_code": "CLASS-CARD-HF-CARD-HF-BIVENTRICULAR",
+      "classification_name": "全心衰竭",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HF-BIVENTRICULAR",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HF",
+      "classification_code": "CLASS-CARD-HF-CARD-HF-CHF",
+      "classification_name": "慢性心力衰竭",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HF-CHF",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HF",
+      "classification_code": "CLASS-CARD-HF-CARD-HF-DIALYSIS-CHF",
+      "classification_name": "透析患者慢性心力衰竭",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HF-DIALYSIS-CHF",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HF",
+      "classification_code": "CLASS-CARD-HF-CARD-HF-HFmrEF",
+      "classification_name": "射血分数轻度降低的心力衰竭",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HF-HFmrEF",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HF",
+      "classification_code": "CLASS-CARD-HF-CARD-HF-HFpEF",
+      "classification_name": "射血分数保留的心力衰竭",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HF-HFpEF",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HF",
+      "classification_code": "CLASS-CARD-HF-CARD-HF-HFrEF",
+      "classification_name": "射血分数降低的心力衰竭",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HF-HFrEF",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HF",
+      "classification_code": "CLASS-CARD-HF-CARD-HF-POST-MI",
+      "classification_name": "心肌梗死后心力衰竭",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HF-POST-MI",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HF-AHF",
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-63303FD52837F56B",
+      "classification_name": "按有无淤血分为“湿”和“干”型",
+      "action": "risk_stratification",
+      "reason": "风险、分期或血流动力学分层"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HF-AHF",
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-A7F9A023797D915C",
+      "classification_name": "（二）临床分型急性心衰根据组织的淤血和灌注情况进行分型",
+      "action": "invalid_fragment",
+      "reason": "教材句段或列表残句，不是稳定实体"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HF-AHF",
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-BBA8E712A5F0D040",
+      "classification_name": "“干暖”型",
+      "action": "risk_stratification",
+      "reason": "风险、分期或血流动力学分层"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HF-AHF",
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-CF366EAA84BACA78",
+      "classification_name": "有无组织低灌注分为“冷”和“暖”型",
+      "action": "risk_stratification",
+      "reason": "风险、分期或血流动力学分层"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HF-AHF",
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-EB4039DCBE2F8B03",
+      "classification_name": "由此可将急性心衰分为四型",
+      "action": "invalid_fragment",
+      "reason": "不能稳定表达诊断分型、展示分组或风险分层"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HF-AHF",
+      "classification_code": "CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-1FE11A62423F4F39",
+      "classification_name": "根据起病速度和病情危急程度可分为慢性心衰急性失代偿、急性肺水肿、心源性休克",
+      "action": "invalid_fragment",
+      "reason": "教材句段或列表残句，不是稳定实体"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HF-AHF",
+      "classification_code": "CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-2DDAC1A80113CE08",
+      "classification_name": "（一）临床分类1.急性左心衰竭急性发作或加重的左心室收缩力降低、负荷加重",
+      "action": "invalid_fragment",
+      "reason": "教材句段或列表残句，不是稳定实体"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HF-AHF",
+      "classification_code": "CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-3A5A1E8E1FE7AC7A",
+      "classification_name": "常由急性冠脉综合征、高血压危象、严重心律失常、慢性心衰急性失代偿等所致",
+      "action": "invalid_fragment",
+      "reason": "教材句段或列表残句，不是稳定实体"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HF-AHF",
+      "classification_code": "CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-416C3A7882FD59F3",
+      "classification_name": "2.急性右心衰竭右心室心肌收缩力急剧下降或右心室的前后负荷突然加重",
+      "action": "invalid_fragment",
+      "reason": "教材句段或列表残句，不是稳定实体"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HF-CHF",
+      "classification_code": "CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-65721E6A565E87C6",
+      "classification_name": "通过治疗只能延缓而不能逆转心衰分期（表3-2-1）",
+      "action": "invalid_fragment",
+      "reason": "教材说明句或表格标题，不是稳定实体"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HF-CHF",
+      "classification_code": "CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-B65BE33922EF48C1",
+      "classification_name": "（一）心力衰竭分期心衰分期全面描述了病情进展阶段",
+      "action": "invalid_fragment",
+      "reason": "教材句段或列表残句，不是稳定实体"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HT",
+      "classification_code": "CLASS-CARD-HT-CARD-HT-CKD",
+      "classification_name": "慢性肾脏病合并高血压",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HT-CKD",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HT",
+      "classification_code": "CLASS-CARD-HT-CARD-HT-ELDERLY",
+      "classification_name": "老年高血压",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HT-ELDERLY",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HT",
+      "classification_code": "CLASS-CARD-HT-CARD-HT-EMERGENCY",
+      "classification_name": "高血压急症",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HT-EMERGENCY",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HT",
+      "classification_code": "CLASS-CARD-HT-CARD-HT-ENDOCRINE",
+      "classification_name": "内分泌性高血压",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HT-ENDOCRINE",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HT",
+      "classification_code": "CLASS-CARD-HT-CARD-HT-MASKED",
+      "classification_name": "隐匿性高血压",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HT-MASKED",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HT",
+      "classification_code": "CLASS-CARD-HT-CARD-HT-PAROXYSMAL",
+      "classification_name": "发作性高血压",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HT-PAROXYSMAL",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HT",
+      "classification_code": "CLASS-CARD-HT-CARD-HT-PRIMARY",
+      "classification_name": "原发性高血压",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HT-PRIMARY",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HT",
+      "classification_code": "CLASS-CARD-HT-CARD-HT-RENAL-PARENCHYMAL",
+      "classification_name": "肾实质性高血压",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HT-RENAL-PARENCHYMAL",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HT",
+      "classification_code": "CLASS-CARD-HT-CARD-HT-RENOVASCULAR",
+      "classification_name": "肾血管性高血压",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HT-RENOVASCULAR",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HT",
+      "classification_code": "CLASS-CARD-HT-CARD-HT-RESISTANT",
+      "classification_name": "难治性高血压",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HT-RESISTANT",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HT",
+      "classification_code": "CLASS-CARD-HT-CARD-HT-SECONDARY",
+      "classification_name": "继发性高血压",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HT-SECONDARY",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HT",
+      "classification_code": "CLASS-CARD-HT-CARD-HT-URGENCY",
+      "classification_name": "高血压亚急症",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HT-URGENCY",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HT",
+      "classification_code": "CLASS-CARD-HT-CARD-HT-WCH",
+      "classification_name": "白大衣高血压",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-HT-WCH",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-HT-PRIMARY",
+      "classification_code": "CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-B3A56D773D632276",
+      "classification_name": "将高血压病人分为低危、中危、高危和很高危",
+      "action": "risk_stratification",
+      "reason": "风险、分期或血流动力学分层"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-MYOCARDITIS",
+      "classification_code": "CLASS-CARD-MYOCARDITIS-CARD-FULMINANT-MYOCARDITIS",
+      "classification_name": "暴发性心肌炎",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-FULMINANT-MYOCARDITIS",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-PERICARDITIS",
+      "classification_code": "CLASS-CARD-PERICARDITIS-CARD-PERICARD-ACUTE",
+      "classification_name": "急性心包炎",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-PERICARD-ACUTE",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-PERICARDITIS",
+      "classification_code": "CLASS-CARD-PERICARDITIS-CARD-PERICARD-CONSTRICTIVE",
+      "classification_name": "缩窄性心包炎",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-PERICARD-CONSTRICTIVE",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-PH",
+      "classification_code": "CLASS-CARD-PH-CARD-PH-CHD",
+      "classification_name": "先天性心脏病相关肺动脉高压",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-PH-CHD",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-PH",
+      "classification_code": "CLASS-CARD-PH-CARD-PH-CTD",
+      "classification_name": "结缔组织病相关肺动脉高压",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-PH-CTD",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-PH",
+      "classification_code": "CLASS-CARD-PH-CARD-PH-CTEPH",
+      "classification_name": "慢性血栓栓塞性肺动脉高压",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-PH-CTEPH",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-PH",
+      "classification_code": "CLASS-CARD-PH-CARD-PH-HPAH",
+      "classification_name": "遗传性肺动脉高压",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-PH-HPAH",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-PH",
+      "classification_code": "CLASS-CARD-PH-CARD-PH-IPAH",
+      "classification_name": "特发性肺动脉高压",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-PH-IPAH",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-PH",
+      "classification_code": "CLASS-CARD-PH-CARD-PH-PAH",
+      "classification_name": "动脉性肺动脉高压",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-PH-PAH",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    }
+  ],
+  "orphan_classification_nodes": [
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-6D548BBAB4A66D2F",
+      "classification_name": "1.急性心衰系因急性的严重心肌损害、结构破坏、心律失常或突然加重的心脏负荷",
+      "relationship_count": 4,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-89FF6D87640E98CC",
+      "classification_name": "CCS）和急性冠脉综合征（acutecoronarysyndrome",
+      "relationship_count": 4,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-AAAC1C88BFF4E4B8",
+      "classification_name": "LVEF≤40%者称为射血分数降低的心衰（HFwithreducedEF",
+      "relationship_count": 4,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-E51C7E4ECEA047D3",
+      "classification_name": "LVEF）进行的心衰分类在临床上具有重要意义",
+      "relationship_count": 4,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-9FB4E88E62F60AF4",
+      "classification_name": "“干冷”型",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-7DCF00210EB3D32A",
+      "classification_name": "“湿暖”型",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-C94CD0919A1D0424",
+      "classification_name": "Ⅰb类：药物不减慢Vmax",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-C89B40C999634443",
+      "classification_name": "Ⅰc类：药物减慢Vmax",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-1DDAF2C3BC90B074",
+      "classification_name": "分为快速型与缓慢型心律失常两大类",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-2F3B270C14EBF999",
+      "classification_name": "右心室代偿功能不全所致为右心衰竭",
+      "relationship_count": 4,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-2BA81BCB3845EAE2",
+      "classification_name": "多为类瘤样浸润或恶性浸润所致",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-D50DC1E09B076C23",
+      "classification_name": "奎尼丁、普鲁卡因胺、丙吡胺等属此类",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-166A31C01D170E49",
+      "classification_name": "左心衰竭和右心衰竭同时存在即为全心衰竭",
+      "relationship_count": 4,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-AFF08098E4D1BCCB",
+      "classification_name": "按发生机制分为冲动形成异常和冲动传导异常两大类",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-C4C8EFEE3F1B56EC",
+      "classification_name": "是目前已明确的可以改善病人长期预后的抗心律失常药物",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-5CC02E1A5C7B3C28",
+      "classification_name": "普罗帕酮属此类",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-A5AB4885679C6C16",
+      "classification_name": "本章主要依据心律失常发生的部位、机制以及心率快慢进行综合分类",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-E319DCBA31FC8488",
+      "classification_name": "此型病情最轻",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-D55C8A0BE8CA104D",
+      "classification_name": "窦性停搏、病态窦房结综合征",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-534B24B04EEE58F3",
+      "classification_name": "第二节慢性心力衰竭-分类/分型",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-1461CDA7A131F777",
+      "classification_name": "美托洛尔、普萘洛尔、纳多洛尔、卡维地洛、比索洛尔、阿替洛尔等属此类",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-A32B65198EF00C24",
+      "classification_name": "美西律、苯妥英钠与利多卡因等属此类",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-49567123AEB0F14D",
+      "classification_name": "胺碘酮、决奈达隆、索他洛尔、伊布利特、多非利特等属此类",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-C0F7A573C5D7026F",
+      "classification_name": "表3-3-1房颤的临床分类",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-11F8F205966D8060",
+      "classification_name": "表3-4-2不稳定型心绞痛严重程度分级（Braunwald分级）表3-4-3不稳定型心绞痛或非ST段抬高型心肌梗死的危险分层和治疗策略建议",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-B2FFCF49C66EE917",
+      "classification_name": "见于心内膜弹力纤维增生症、高嗜酸性粒细胞综合征、放射性损害、蒽环类药物毒性等",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-5910536FA8358CF4",
+      "classification_name": "近年趋向于根据发病特点和治疗原则不同分为两大类：慢性冠脉综合征（chroniccoronarysyndrome",
+      "relationship_count": 4,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-778D48AA08D54825",
+      "classification_name": "部分可能与轻型DCM、HCM等有表型重叠",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-03FA6960B56D5F02",
+      "classification_name": "（一）冲动形成异常1.窦性心律失常",
+      "relationship_count": 2,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-FBC8988935A6B6F5",
+      "classification_name": "（一）按发生的部位分类左心室代偿功能不全所致为左心衰竭",
+      "relationship_count": 4,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    },
+    {
+      "classification_code": "CARD-SKELETON-20260709-DISEASECLASSIFICATION-DE6B394D88B989C0",
+      "classification_name": "（三）按左心室射血分数分类根据左心室射血分数（leftventricularejectionfraction",
+      "relationship_count": 4,
+      "action": "orphan_legacy_classification",
+      "reason": "未挂接疾病的历史误分类或抽取残句；完整内容已进入回滚包"
+    }
+  ],
+  "duplicate_disease_map": {
+    "DIS-CARD-HF": "DIS-CARD-HF-GENERAL",
+    "DIS-CARD-ASD": "DIS-CARD-CHD-ASD",
+    "DIS-CARD-HTN-ESSENTIAL": "DIS-CARD-HT"
+  },
+  "unresolved_classifications": [],
+  "unresolved_classification_count": 0,
+  "entity_counts_before": {
+    "Disease": 135,
+    "DiseaseCategory": 20,
+    "DiseaseClassification": 86,
+    "DiseaseSubcategory": 51,
+    "RiskStratification": 91,
+    "Specialty": 2,
+    "StandardDiagnosis": 11
+  },
+  "standard_dictionary_mapping": [
+    {
+      "disease_code": "DIS-CARD-ARR-BRUGADA",
+      "disease_name": "Brugada综合征",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "e6ac1db8a9f46396074bde9a1bea4bf6",
+      "standard_code": "I49.003",
+      "standard_name": "Brugada综合征",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-STEMI",
+      "disease_name": "ST段抬高型心肌梗死",
+      "match_type": "已审核别名精确匹配",
+      "cdss_dict_id": "71b7c9b82cfdb149fc948faf1257c92d",
+      "standard_code": "I21.300x004",
+      "standard_name": "急性ST段抬高型心肌梗死",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-TR",
+      "disease_name": "三尖瓣反流",
+      "match_type": "已审核别名精确匹配",
+      "cdss_dict_id": "89ca3397e9b49ccaa42021679a81f783",
+      "standard_code": "I07.100",
+      "standard_name": "三尖瓣关闭不全",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-PAD-LEAD",
+      "disease_name": "下肢动脉硬化闭塞症",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "0b225b9e20c9345385d5ba32ce393a85",
+      "standard_code": "I70.204",
+      "standard_name": "下肢动脉硬化闭塞症",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-UA",
+      "disease_name": "不稳定型心绞痛",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "fdd231b93df00db06874ab9734c562a5",
+      "standard_code": "I20.000",
+      "standard_name": "不稳定型心绞痛",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-AR",
+      "disease_name": "主动脉瓣反流",
+      "match_type": "已审核别名精确匹配",
+      "cdss_dict_id": "8c0f5c9ff1599708f22cf8f48cb2980d",
+      "standard_code": "I35.100",
+      "standard_name": "主动脉瓣关闭不全",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-AS",
+      "disease_name": "主动脉瓣狭窄",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "dda08ebdae467c918775006c05150d8b",
+      "standard_code": "I35.000",
+      "standard_name": "主动脉瓣狭窄",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-COA",
+      "disease_name": "主动脉缩窄",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "673733da975bd4faac1fbd589930e23a",
+      "standard_code": "Q25.100",
+      "standard_name": "主动脉缩窄",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-MR",
+      "disease_name": "二尖瓣反流",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "41303bcfe5ffbef9307a0e4b68cc96fd",
+      "standard_code": "I34.001",
+      "standard_name": "二尖瓣反流",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-MS",
+      "disease_name": "二尖瓣狭窄",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "a0f7c65a88342d7832b6b0ba956184a6",
+      "standard_code": "I05.000",
+      "standard_name": "二尖瓣狭窄",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-IE-PVE",
+      "disease_name": "人工瓣膜心内膜炎",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "317670513d8f563ca5bec93684094c23",
+      "standard_code": "T82.601",
+      "standard_name": "人工瓣膜心内膜炎",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-CPVT",
+      "disease_name": "儿茶酚胺敏感性多形性室性心动过速",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "c2d30e3074b0d9377477293cc5110bdf",
+      "standard_code": "I47.200x021",
+      "standard_name": "儿茶酚胺敏感性多形性室性心动过速",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-HF-BIVENTRICULAR",
+      "disease_name": "全心衰竭",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "f40bd3b067b967dd2f3deaee0c69f73f",
+      "standard_code": "I50.002",
+      "standard_name": "全心衰竭",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-SPASM",
+      "disease_name": "冠状动脉痉挛",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "8a60941d16329afb6912bdd17203c44f",
+      "standard_code": "I20.102",
+      "standard_name": "冠状动脉痉挛",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CHD-CAF",
+      "disease_name": "冠状动脉瘘",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "073d77d9eefebf78bf2324d18093824f",
+      "standard_code": "I25.800x005",
+      "standard_name": "冠状动脉瘘",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-CHD",
+      "disease_name": "冠状动脉粥样硬化性心脏病",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "51ea51436418eb85ac82436d6eae32a6",
+      "standard_code": "I25.103",
+      "standard_name": "冠状动脉粥样硬化性心脏病",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-PDA",
+      "disease_name": "动脉导管未闭",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "cf05c09b8c0baf6da6224cda2483d924",
+      "standard_code": "Q25.000",
+      "standard_name": "动脉导管未闭",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-ATHEROSCLEROSIS",
+      "disease_name": "动脉粥样硬化",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "b7720e8e24eec4bf6ed9e1e00f3c61d6",
+      "standard_code": "I70.900x004",
+      "standard_name": "动脉粥样硬化",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PRIMARY",
+      "disease_name": "原发性高血压",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "ea37dcfe4b9051b9bc44b368dfafb5cd",
+      "standard_code": "I10.x09",
+      "standard_name": "原发性高血压",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-HF-RIGHT",
+      "disease_name": "右心衰竭",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "39e97afa2118cfbdfea770f284a40486",
+      "standard_code": "I50.001",
+      "standard_name": "右心衰竭",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SVT",
+      "disease_name": "室上性心动过速",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "167027eceaa9fecab1c767841a43ff24",
+      "standard_code": "I47.100",
+      "standard_name": "室上性心动过速",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-VA",
+      "disease_name": "室性心律失常",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "7bd71b518ebbc59dc61908754ec43aa9",
+      "standard_code": "I49.802",
+      "standard_name": "室性心律失常",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-PVC",
+      "disease_name": "室性期前收缩",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "727fc564bbbd62127f73fcdbc01d69cf",
+      "standard_code": "I49.300x002",
+      "standard_name": "室性期前收缩",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-VSD",
+      "disease_name": "室间隔缺损",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "a82c0e94b26a9f11025430fcde31f237",
+      "standard_code": "Q21.000",
+      "standard_name": "室间隔缺损",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-FH",
+      "disease_name": "家族性高胆固醇血症",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "c363ca06b4e7f0c0af4790fbeb49d268",
+      "standard_code": "E78.001",
+      "standard_name": "家族性高胆固醇血症",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-TDP",
+      "disease_name": "尖端扭转型室性心动过速",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "6a979f3b09dc8980068cdc75554b65fa",
+      "standard_code": "I47.200x001",
+      "standard_name": "尖端扭转型室性心动过速",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-HF-LEFT",
+      "disease_name": "左心衰竭",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "003709945bb07a417e7946a1750a9ea4",
+      "standard_code": "I50.100x006",
+      "standard_name": "左心衰竭",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-HF-GENERAL",
+      "disease_name": "心力衰竭",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "db94a5333fd9453dacae2eade4e74c1e",
+      "standard_code": "I50.900",
+      "standard_name": "心力衰竭",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-PERICARDITIS",
+      "disease_name": "心包炎",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "6c9c77a1c30846e40eb258801d191d0d",
+      "standard_code": "I31.902",
+      "standard_name": "心包炎",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AFL",
+      "disease_name": "心房扑动",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "c666dc0f60205f7f4402e7f6133d8576",
+      "standard_code": "I48.x03",
+      "standard_name": "心房扑动",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AF",
+      "disease_name": "心房颤动",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "c0cfdedddfa6ebfb855672794ca27c6b",
+      "standard_code": "I48.x01",
+      "standard_name": "心房颤动",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-MYOCARDITIS",
+      "disease_name": "心肌炎",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "48d8556e94f3520e45a8ca0ab41794b2",
+      "standard_code": "I51.400",
+      "standard_name": "心肌炎",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CM-GENERAL",
+      "disease_name": "心肌病",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "d4c92d7b4031091f475c20c62bffcd04",
+      "standard_code": "I42.900",
+      "standard_name": "心肌病",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-VHD",
+      "disease_name": "心脏瓣膜病",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "9d660750bc292517a932076f2acead7c",
+      "standard_code": "I38.x01",
+      "standard_name": "心脏瓣膜病",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-ACS",
+      "disease_name": "急性冠脉综合征",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "c2001b708d61f08722ab4b8ff3fc7704",
+      "standard_code": "I24.901",
+      "standard_name": "急性冠脉综合征",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-HF-AHF",
+      "disease_name": "急性心力衰竭",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "34f03d2c54e501d0d005e115626507f6",
+      "standard_code": "I50.907",
+      "standard_name": "急性心力衰竭",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-PERICARD-ACUTE",
+      "disease_name": "急性心包炎",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "0245ad1a5fbed5a0c6b96284a817fec3",
+      "standard_code": "I30.900",
+      "standard_name": "急性心包炎",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-AMI",
+      "disease_name": "急性心肌梗死",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "adb56b7ed55412d0630ec4f16af30860",
+      "standard_code": "I21.900",
+      "standard_name": "急性心肌梗死",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-INFECTIVE-ENDOCARDITIS",
+      "disease_name": "感染性心内膜炎",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "c7d9fb2f930c00784a64cea50e3fad7f",
+      "standard_code": "I33.000x004",
+      "standard_name": "感染性心内膜炎",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-HF-CHF",
+      "disease_name": "慢性心力衰竭",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "a038aa718b8e2c158984f6d18163a41b",
+      "standard_code": "I50.908",
+      "standard_name": "慢性心力衰竭",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "e598f7aaf1140cc7786fdad87633114d",
+      "standard_code": "I44.303",
+      "standard_name": "房室传导阻滞",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVRT",
+      "disease_name": "房室折返性心动过速",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "265555965e6a44ac0b8ea65f7a401296",
+      "standard_code": "I47.100x005",
+      "standard_name": "房室折返性心动过速",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVNRT",
+      "disease_name": "房室结折返性心动过速",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "21dd37e340ea5a814951f0abdb53365d",
+      "standard_code": "I47.100x004",
+      "standard_name": "房室结折返性心动过速",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AT",
+      "disease_name": "房性心动过速",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "9cd9a0b744409e3a0b1a7c0ee7a10850",
+      "standard_code": "I47.101",
+      "standard_name": "房性心动过速",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CHD-ASD",
+      "disease_name": "房间隔缺损",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "1953efafdb2b7c48094c13f26e4dae62",
+      "standard_code": "Q21.100",
+      "standard_name": "房间隔缺损",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CM-DCM",
+      "disease_name": "扩张型心肌病",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "5034eac3a6a1dd3aeade10483be77945",
+      "standard_code": "I42.000",
+      "standard_name": "扩张型心肌病",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-VT",
+      "disease_name": "持续性室性心动过速",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "53864a978dbbc4a2dbd4c4847f7722e7",
+      "standard_code": "I47.203",
+      "standard_name": "持续性室性心动过速",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-FULMINANT-MYOCARDITIS",
+      "disease_name": "暴发性心肌炎",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "877a0aa3fa0c9b3494d23e728e196595",
+      "standard_code": "I40.000x005",
+      "standard_name": "暴发性心肌炎",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "6ceb458cd7dbb096657ab4285f283d16",
+      "standard_code": "I45.401",
+      "standard_name": "束支传导阻滞",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-PH-IPAH",
+      "disease_name": "特发性肺动脉高压",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "ff4f373c98217c8a79b5af09e06a5c41",
+      "standard_code": "I27.000x006",
+      "standard_name": "特发性肺动脉高压",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-HT-WCH",
+      "disease_name": "白大衣高血压",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "af1c3d1aadef96014ecf5e5ea8a76721",
+      "standard_code": "I10.x00x016",
+      "standard_name": "白大衣高血压",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SQTS",
+      "disease_name": "短QT间期综合征",
+      "match_type": "已审核别名精确匹配",
+      "cdss_dict_id": "29e2a296e713dcecf33cdff90e1cde63",
+      "standard_code": "I45.801",
+      "standard_name": "短QT综合征",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-STABLE-ANGINA",
+      "disease_name": "稳定型心绞痛",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "422684c88d0093171caa0aa03abbda1e",
+      "standard_code": "I20.801",
+      "standard_name": "稳定型心绞痛",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "ab7719565aa1023b218454d075577918",
+      "standard_code": "R00.100x001",
+      "standard_name": "窦性心动过缓",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SINUS",
+      "disease_name": "窦性心律失常",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "75f1c0a6a27589c82330f4f637df93fc",
+      "standard_code": "I49.801",
+      "standard_name": "窦性心律失常",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "ea1627556086d23c73fd7c90898c7290",
+      "standard_code": "I45.501",
+      "standard_name": "窦房传导阻滞",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-HT-SECONDARY",
+      "disease_name": "继发性高血压",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "f240db8dae7c5cf278462416146c518c",
+      "standard_code": "I15.900",
+      "standard_name": "继发性高血压",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-PERICARD-CONSTRICTIVE",
+      "disease_name": "缩窄性心包炎",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "6c538096e753c63cf1da32578b3adb82",
+      "standard_code": "I31.100x002",
+      "standard_name": "缩窄性心包炎",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-ICM",
+      "disease_name": "缺血性心肌病",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "f58084c2440d22165926369fb830025b",
+      "standard_code": "I25.500",
+      "standard_name": "缺血性心肌病",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-PS",
+      "disease_name": "肺动脉瓣狭窄",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "bd06ead8dfb48052efde146ce6ed2525",
+      "standard_code": "I37.000",
+      "standard_name": "肺动脉瓣狭窄",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-PH",
+      "disease_name": "肺动脉高压",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "ec485a41165830b8ac22d1633a028b64",
+      "standard_code": "I27.200x012",
+      "standard_name": "肺动脉高压",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-HT-RENAL-PARENCHYMAL",
+      "disease_name": "肾实质性高血压",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "c8e808d072c097879f26802a728285c7",
+      "standard_code": "I15.100x001",
+      "standard_name": "肾实质性高血压",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-HT-RENOVASCULAR",
+      "disease_name": "肾血管性高血压",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "544e899227b2eab9ecf0ea53b324964b",
+      "standard_code": "I15.000",
+      "standard_name": "肾血管性高血压",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-DYSLIPIDEMIA",
+      "disease_name": "血脂异常",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "67753f1ea2e1d9fb237ea6ef57a8d0c6",
+      "standard_code": "R77.800x001",
+      "standard_name": "血脂异常",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-LQTS",
+      "disease_name": "长QT间期综合征",
+      "match_type": "已审核别名精确匹配",
+      "cdss_dict_id": "6480dced356ccb7ea7ec2de604aa1b1b",
+      "standard_code": "I45.803",
+      "standard_name": "长QT综合征",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-PSVT",
+      "disease_name": "阵发性室上性心动过速",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "e95d9bfcf4dcae2d651b3db2a30b466f",
+      "standard_code": "I47.102",
+      "standard_name": "阵发性室上性心动过速",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-OLD-MI",
+      "disease_name": "陈旧性心肌梗死",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "920828c06aa498701beaf8006a7698f9",
+      "standard_code": "I25.200",
+      "standard_name": "陈旧性心肌梗死",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+      "disease_name": "隐匿性冠心病",
+      "match_type": "已审核别名精确匹配",
+      "cdss_dict_id": "e5ee45d493b9fba93c04993e684b7b9b",
+      "standard_code": "I25.600",
+      "standard_name": "无症状心肌缺血",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-HT-RESISTANT",
+      "disease_name": "难治性高血压",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "08bb7825ecad0b37e8a504f68292c026",
+      "standard_code": "I10.x12",
+      "standard_name": "难治性高血压",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-NSTEMI",
+      "disease_name": "非ST段抬高型心肌梗死",
+      "match_type": "已审核别名精确匹配",
+      "cdss_dict_id": "17b9670d00eced9c9a278ce1c1399f74",
+      "standard_code": "I21.401",
+      "standard_name": "急性非ST段抬高型心肌梗死",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-NSVT",
+      "disease_name": "非持续性室性心动过速",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "52b0c256d6ccba0b0a7fca09c00936e1",
+      "standard_code": "I47.200x007",
+      "standard_name": "非持续性室性心动过速",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-WPW",
+      "disease_name": "预激综合征",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "caae917c66434151ba03a93c9cc451d5",
+      "standard_code": "I45.600",
+      "standard_name": "预激综合征",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-HYPERCHOLESTEROLEMIA",
+      "disease_name": "高胆固醇血症",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "50be9f42098bed3ac08b7ea425222e0c",
+      "standard_code": "E78.000x001",
+      "standard_name": "高胆固醇血症",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-HT",
+      "disease_name": "高血压",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "a928c01ab8b14b8ebbc1db5b8641cd5e",
+      "standard_code": "I10.x00x002",
+      "standard_name": "高血压",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-HT-URGENCY",
+      "disease_name": "高血压亚急症",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "1d99bb8bd9099b13d63205af82055fad",
+      "standard_code": "I10.x14",
+      "standard_name": "高血压亚急症",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-HT-EMERGENCY",
+      "disease_name": "高血压急症",
+      "match_type": "标准名称精确匹配",
+      "cdss_dict_id": "fe936ff46faba2192d5272077b8bcea6",
+      "standard_code": "I10.x10",
+      "standard_name": "高血压急症",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CM-HCM",
+      "disease_name": "肥厚型心肌病",
+      "match_type": "样板UUID精确核验",
+      "cdss_dict_id": "4f1a72e6c466ee33af17b25bb63ee927",
+      "standard_code": "I42.100",
+      "standard_name": "梗阻性肥厚型心肌病",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CM-HCM",
+      "disease_name": "肥厚型心肌病",
+      "match_type": "样板UUID精确核验",
+      "cdss_dict_id": "8ae05ac20de3bd6401453f4a6cdf712c",
+      "standard_code": "I42.101",
+      "standard_name": "肥厚型梗阻性心肌病",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CM-HCM",
+      "disease_name": "肥厚型心肌病",
+      "match_type": "样板UUID精确核验",
+      "cdss_dict_id": "ea1b1eb42678ac3a529d11ad80675ab3",
+      "standard_code": "I42.200",
+      "standard_name": "肥厚型心肌病，其他的",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CM-HCM",
+      "disease_name": "肥厚型心肌病",
+      "match_type": "样板UUID精确核验",
+      "cdss_dict_id": "1944e333b4a3e52e7f98d4ddfa24ef83",
+      "standard_code": "I42.200x001",
+      "standard_name": "肥厚性非梗阻性心肌病",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CM-HCM",
+      "disease_name": "肥厚型心肌病",
+      "match_type": "样板UUID精确核验",
+      "cdss_dict_id": "2755d92cdaba7909f59ca61cdf9e9295",
+      "standard_code": "I42.200x002",
+      "standard_name": "肥厚性心肌病",
+      "valid_flag": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CM-HCM",
+      "disease_name": "肥厚型心肌病",
+      "match_type": "样板UUID精确核验",
+      "cdss_dict_id": "add9ff35ca35063430741f77205da63b",
+      "standard_code": "I42.201",
+      "standard_name": "心尖肥厚型心肌病",
+      "valid_flag": 1
+    }
+  ],
+  "dictionary_registration_queue": [
+    {
+      "disease_code": "DIS-CARD-TBAD",
+      "disease_name": "Stanford B型主动脉夹层",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-CHD-EBSTEIN",
+      "disease_name": "三尖瓣下移畸形",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-AORTIC-DISSECTION",
+      "disease_name": "主动脉夹层",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-AORTA-ANEURYSM",
+      "disease_name": "主动脉瘤",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-CHD-SOVA",
+      "disease_name": "主动脉窦瘤",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-CHD-BAV",
+      "disease_name": "二叶主动脉瓣",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "reason": "别名候选未进入等价白名单，不能自动裁决",
+      "candidate_names": "文氏阻滞",
+      "handling": "进入标准字典候选匹配队列"
+    },
+    {
+      "disease_code": "DIS-CARD-CHD-COA",
+      "disease_name": "先天性主动脉缩窄",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-CHD",
+      "disease_name": "先天性心脏病",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-PH-CHD",
+      "disease_name": "先天性心脏病相关肺动脉高压",
+      "reason": "别名候选未进入等价白名单，不能自动裁决",
+      "candidate_names": "艾森曼格综合征",
+      "handling": "进入标准字典候选匹配队列"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-ENDOCRINE",
+      "disease_name": "内分泌性高血压",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-PH-PAH",
+      "disease_name": "动脉性肺动脉高压",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-PFO",
+      "disease_name": "卵圆孔未闭",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PAROXYSMAL",
+      "disease_name": "发作性高血压",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-PHEO",
+      "disease_name": "嗜铬细胞瘤和副神经节瘤",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-PAD",
+      "disease_name": "外周动脉疾病",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-MULTI",
+      "disease_name": "多瓣膜病",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-HF-HFpEF",
+      "disease_name": "射血分数保留的心力衰竭",
+      "reason": "别名候选未进入等价白名单，不能自动裁决",
+      "candidate_names": "舒张性心力衰竭",
+      "handling": "进入标准字典候选匹配队列"
+    },
+    {
+      "disease_code": "DIS-CARD-HF-HFmrEF",
+      "disease_name": "射血分数轻度降低的心力衰竭",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-HF-HFrEF",
+      "disease_name": "射血分数降低的心力衰竭",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-PERICARD-EFFUSION",
+      "disease_name": "心包积液及心脏压塞",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-VF",
+      "disease_name": "心室扑动与心室颤动",
+      "reason": "别名候选未进入等价白名单，不能自动裁决",
+      "candidate_names": "心室扑动；心室颤动",
+      "handling": "进入标准字典候选匹配队列"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ATRIAL",
+      "disease_name": "心房心肌病",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-HF-POST-MI",
+      "disease_name": "心肌梗死后心力衰竭",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-POST-MI-SYNDROME",
+      "disease_name": "心肌梗死后综合征",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-SCD-SUDDEN",
+      "disease_name": "心脏性猝死",
+      "reason": "别名候选未进入等价白名单，不能自动裁决",
+      "candidate_names": "心源性猝死；猝死",
+      "handling": "进入标准字典候选匹配队列"
+    },
+    {
+      "disease_code": "DIS-CARD-SCD-ARREST",
+      "disease_name": "心脏骤停",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-NEUROSIS",
+      "disease_name": "心血管神经症",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-AAS",
+      "disease_name": "急性主动脉综合征",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-CCS",
+      "disease_name": "慢性冠脉综合征",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-CKD",
+      "disease_name": "慢性肾脏病合并高血压",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-PH-CTEPH",
+      "disease_name": "慢性血栓栓塞性肺动脉高压",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-ERS",
+      "disease_name": "早期复极综合征",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-FABRY",
+      "disease_name": "法布雷病心肌病",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-AMYLOID",
+      "disease_name": "淀粉样变心肌病",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "reason": "别名候选未进入等价白名单，不能自动裁决",
+      "candidate_names": "病态窦房结综合征",
+      "handling": "进入标准字典候选匹配队列"
+    },
+    {
+      "disease_code": "DIS-CARD-PH-CTD",
+      "disease_name": "结缔组织病相关肺动脉高压",
+      "reason": "别名候选未进入等价白名单，不能自动裁决",
+      "candidate_names": "系统性硬化症；结缔组织病",
+      "handling": "进入标准字典候选匹配队列"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-ELDERLY",
+      "disease_name": "老年高血压",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-AAA",
+      "disease_name": "腹主动脉瘤",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ABVC",
+      "disease_name": "致心律失常性双心室心肌病",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ARVC",
+      "disease_name": "致心律失常性右心室心肌病",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ALVC",
+      "disease_name": "致心律失常性左心室心肌病",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ACM",
+      "disease_name": "致心律失常性心肌病",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-HF-DIALYSIS-CHF",
+      "disease_name": "透析患者慢性心力衰竭",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-PH-HPAH",
+      "disease_name": "遗传性肺动脉高压",
+      "reason": "别名候选未进入等价白名单，不能自动裁决",
+      "candidate_names": "家族性肺动脉高压",
+      "handling": "进入标准字典候选匹配队列"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-RCM",
+      "disease_name": "限制型心肌病",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-HT-MASKED",
+      "disease_name": "隐匿性高血压",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-VTE",
+      "disease_name": "静脉血栓症",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-NDLVCM",
+      "disease_name": "非扩张型左心室心肌病",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-RHD",
+      "disease_name": "风湿性心脏瓣膜病",
+      "reason": "别名候选未进入等价白名单，不能自动裁决",
+      "candidate_names": "风湿性心脏病",
+      "handling": "进入标准字典候选匹配队列"
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-EMERGENCY",
+      "disease_name": "高血压急症和亚急症",
+      "reason": "CDSS有效标准诊断名称未精确命中",
+      "handling": "进入标准字典候选匹配/注册队列，不自动猜测"
+    }
+  ],
+  "standard_diagnosis_count": 82,
+  "exact_standard_mapping_count": 82,
+  "unmatched_disease_count": 55
+}

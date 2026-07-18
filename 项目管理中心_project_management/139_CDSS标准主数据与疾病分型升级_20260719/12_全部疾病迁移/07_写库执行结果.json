@@ -1,0 +1,22 @@
+{
+  "batch_id": "MIG-CARD-V2-20260719-ALL",
+  "scope": "all",
+  "stats": {
+    "upsert_nodes": 286,
+    "upsert_relations": 600,
+    "deleted_orphan_classification_nodes": 31,
+    "deleted_legacy_relations": 442,
+    "duplicate_specialty_remaining_relations": 0
+  },
+  "classification_stats": {
+    "classification_to_risk": 4,
+    "classification_fragment_deleted": 18,
+    "transferred_nonlegacy_relationships": 6,
+    "classification_to_disease": 33
+  },
+  "duplicate_stats": {
+    "transferred_relationships": 3633,
+    "deleted_duplicate_diseases": 3
+  },
+  "applied_at": "2026-07-19 01:58:01"
+}

@@ -40,17 +40,16 @@ class GateCheck:
 
 CHECKS: list[GateCheck] = [
     GateCheck(
-        metric="disease_without_category_count",
-        chinese_name="疾病无大类",
-        description="正式疾病必须能连到疾病大类，否则左侧目录、统计口径和专科导航都会断链。",
+        metric="disease_without_parent_count",
+        chinese_name="疾病无父级",
+        description="正式疾病必须由疾病大类直接包含，或作为另一个疾病的临床分型；两者都没有即为目录断链。",
         count_query="""
             MATCH (d:KGNode {entityType:'Disease'})
             WHERE coalesce(d.status,'active') <> 'deprecated'
               AND coalesce(d.deprecated, false) <> true
               AND d.duplicate_replaced_by IS NULL
-            OPTIONAL MATCH (d)-[:belongs_to_category]->(c:KGNode {entityType:'DiseaseCategory'})
-            WITH d, count(c) AS category_count
-            WHERE category_count = 0
+              AND NOT (:KGNode {entityType:'DiseaseCategory'})-[:has_disease]->(d)
+              AND NOT (:KGNode {entityType:'Disease'})-[:has_clinical_subtype]->(d)
             RETURN count(d) AS value
         """,
         detail_query="""
@@ -58,87 +57,77 @@ CHECKS: list[GateCheck] = [
             WHERE coalesce(d.status,'active') <> 'deprecated'
               AND coalesce(d.deprecated, false) <> true
               AND d.duplicate_replaced_by IS NULL
-            OPTIONAL MATCH (d)-[:belongs_to_category]->(c:KGNode {entityType:'DiseaseCategory'})
-            WITH d, count(c) AS category_count
-            WHERE category_count = 0
+              AND NOT (:KGNode {entityType:'DiseaseCategory'})-[:has_disease]->(d)
+              AND NOT (:KGNode {entityType:'Disease'})-[:has_clinical_subtype]->(d)
             RETURN d.code AS disease_code, d.name AS disease_name, d.batch_id AS batch_id
             ORDER BY disease_name, disease_code
         """,
     ),
     GateCheck(
-        metric="disease_without_subcategory_count",
-        chinese_name="疾病无亚类",
-        description="正式疾病必须能连到疾病亚类，否则无法落到三层目录中的具体位置。",
+        metric="clinical_subtype_without_parent_count",
+        chinese_name="临床分型无父疾病",
+        description="标记为具体临床分型的疾病必须由宽口径疾病通过 has_clinical_subtype 连接。",
         count_query="""
-            MATCH (d:KGNode {entityType:'Disease'})
-            WHERE coalesce(d.status,'active') <> 'deprecated'
-              AND coalesce(d.deprecated, false) <> true
-              AND d.duplicate_replaced_by IS NULL
-            OPTIONAL MATCH (d)-[:belongs_to_subcategory]->(s:KGNode {entityType:'DiseaseSubcategory'})
-            WITH d, count(s) AS subcategory_count
-            WHERE subcategory_count = 0
+            MATCH (d:KGNode {entityType:'Disease', diagnostic_role:'clinical_subtype'})
+            WHERE NOT (:KGNode {entityType:'Disease'})-[:has_clinical_subtype]->(d)
             RETURN count(d) AS value
         """,
         detail_query="""
-            MATCH (d:KGNode {entityType:'Disease'})
-            WHERE coalesce(d.status,'active') <> 'deprecated'
-              AND coalesce(d.deprecated, false) <> true
-              AND d.duplicate_replaced_by IS NULL
-            OPTIONAL MATCH (d)-[:belongs_to_subcategory]->(s:KGNode {entityType:'DiseaseSubcategory'})
-            WITH d, count(s) AS subcategory_count
-            WHERE subcategory_count = 0
+            MATCH (d:KGNode {entityType:'Disease', diagnostic_role:'clinical_subtype'})
+            WHERE NOT (:KGNode {entityType:'Disease'})-[:has_clinical_subtype]->(d)
             RETURN d.code AS disease_code, d.name AS disease_name, d.batch_id AS batch_id
             ORDER BY disease_name, disease_code
         """,
     ),
     GateCheck(
-        metric="subcategory_without_category_count",
-        chinese_name="疾病亚类无大类",
-        description="疾病亚类必须能归属到疾病大类，否则大类目录无法展开到亚类。",
+        metric="display_group_without_category_count",
+        chinese_name="展示分组无疾病大类",
+        description="DiseaseSubcategory 只用于页面展示分组，必须由疾病大类通过 has_display_group 连接。",
         count_query="""
             MATCH (s:KGNode {entityType:'DiseaseSubcategory'})
             WHERE coalesce(s.status,'active') <> 'deprecated'
               AND coalesce(s.deprecated, false) <> true
-            OPTIONAL MATCH (s)-[:belongs_to_category]->(c1:KGNode {entityType:'DiseaseCategory'})
-            OPTIONAL MATCH (c2:KGNode {entityType:'DiseaseCategory'})-[:has_subcategory]->(s)
-            WITH s, count(DISTINCT c1) + count(DISTINCT c2) AS category_count
-            WHERE category_count = 0
+              AND NOT (:KGNode {entityType:'DiseaseCategory'})-[:has_display_group]->(s)
             RETURN count(s) AS value
         """,
         detail_query="""
             MATCH (s:KGNode {entityType:'DiseaseSubcategory'})
             WHERE coalesce(s.status,'active') <> 'deprecated'
               AND coalesce(s.deprecated, false) <> true
-            OPTIONAL MATCH (s)-[:belongs_to_category]->(c1:KGNode {entityType:'DiseaseCategory'})
-            OPTIONAL MATCH (c2:KGNode {entityType:'DiseaseCategory'})-[:has_subcategory]->(s)
-            WITH s, count(DISTINCT c1) + count(DISTINCT c2) AS category_count
-            WHERE category_count = 0
+              AND NOT (:KGNode {entityType:'DiseaseCategory'})-[:has_display_group]->(s)
             RETURN s.code AS subcategory_code, s.name AS subcategory_name, s.batch_id AS batch_id
             ORDER BY subcategory_name, subcategory_code
         """,
     ),
     GateCheck(
-        metric="disease_classification_without_parent_disease_count",
-        chinese_name="疾病分型无父疾病",
-        description="正式疾病分型必须挂在某个父疾病下面；不能判定父疾病的分型不得进入正式分型层。",
+        metric="legacy_disease_classification_count",
+        chinese_name="旧疾病分型实体残留",
+        description="V2.0 已用 Disease 加 has_clinical_subtype 表达诊断分型，DiseaseClassification 必须为零。",
         count_query="""
             MATCH (cl:KGNode {entityType:'DiseaseClassification'})
-            WHERE coalesce(cl.status,'active') <> 'deprecated'
-              AND coalesce(cl.deprecated, false) <> true
-            OPTIONAL MATCH (d:KGNode {entityType:'Disease'})-[:has_classification]->(cl)
-            WITH cl, count(d) AS parent_count
-            WHERE parent_count = 0
             RETURN count(cl) AS value
         """,
         detail_query="""
             MATCH (cl:KGNode {entityType:'DiseaseClassification'})
-            WHERE coalesce(cl.status,'active') <> 'deprecated'
-              AND coalesce(cl.deprecated, false) <> true
-            OPTIONAL MATCH (d:KGNode {entityType:'Disease'})-[:has_classification]->(cl)
-            WITH cl, count(d) AS parent_count
-            WHERE parent_count = 0
             RETURN cl.code AS classification_code, cl.name AS classification_name, cl.batch_id AS batch_id
             ORDER BY classification_name, classification_code
+        """,
+    ),
+    GateCheck(
+        metric="legacy_disease_hierarchy_relation_count",
+        chinese_name="旧疾病层级关系残留",
+        description="V1 的双向和过载关系不得回流；新结构只使用 V2.0 单向层级关系。",
+        count_query="""
+            MATCH ()-[r]->()
+            WHERE type(r) IN ['has_category','belongs_to_category','has_subcategory','belongs_to_subcategory','has_classification']
+            RETURN count(r) AS value
+        """,
+        detail_query="""
+            MATCH (source)-[r]->(target)
+            WHERE type(r) IN ['has_category','belongs_to_category','has_subcategory','belongs_to_subcategory','has_classification']
+            RETURN source.code AS source_code, source.name AS source_name,
+                   type(r) AS relation_type, target.code AS target_code, target.name AS target_name
+            ORDER BY relation_type, source_name, target_name
         """,
     ),
     GateCheck(
@@ -190,6 +179,26 @@ CHECKS: list[GateCheck] = [
                    d.deprecated AS deprecated, d.duplicate_replaced_by AS duplicate_replaced_by,
                    count(r) AS relation_count
             ORDER BY relation_count DESC, disease_name
+        """,
+    ),
+    GateCheck(
+        metric="non_scalar_code_count",
+        chinese_name="编码字段不是单值字符串",
+        description="实体 code 必须是唯一、稳定的单值字符串；历史合并编码应写入 merged_from_codes，不能把编码数组继续留在主编码字段。",
+        count_query="""
+            MATCH (n:KGNode)
+            WHERE n.code IS NOT NULL
+              AND valueType(n.code) STARTS WITH 'LIST'
+            RETURN count(n) AS value
+        """,
+        detail_query="""
+            MATCH (n:KGNode)
+            WHERE n.code IS NOT NULL
+              AND valueType(n.code) STARTS WITH 'LIST'
+            RETURN elementId(n) AS node_element_id, n.entityType AS entity_type,
+                   n.name AS name, n.code AS code, n.duplicate_replaced_by AS duplicate_replaced_by,
+                   n.batch_id AS batch_id
+            ORDER BY entity_type, name
         """,
     ),
     GateCheck(
@@ -286,6 +295,7 @@ CHECKS: list[GateCheck] = [
         count_query="""
             MATCH (src:KGNode)-[r]->(n:KGNode)
             WHERE n.duplicate_replaced_by IS NOT NULL
+              AND n.duplicate_replaced_by <> n.code
               AND type(r) IN [
                 'has_symptom','has_sign','requires_exam','requires_lab_test','has_treatment_plan',
                 'has_diagnostic_criteria','has_differential_diagnosis','has_risk_factor',
@@ -297,6 +307,7 @@ CHECKS: list[GateCheck] = [
         detail_query="""
             MATCH (src:KGNode)-[r]->(n:KGNode)
             WHERE n.duplicate_replaced_by IS NOT NULL
+              AND n.duplicate_replaced_by <> n.code
               AND type(r) IN [
                 'has_symptom','has_sign','requires_exam','requires_lab_test','has_treatment_plan',
                 'has_diagnostic_criteria','has_differential_diagnosis','has_risk_factor',

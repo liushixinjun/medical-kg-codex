@@ -1,0 +1,17 @@
+{
+  "batch_id": "MIG-CARD-V2-20260719-001",
+  "scope": "sample",
+  "stats": {
+    "upsert_nodes": 24,
+    "upsert_relations": 37,
+    "deleted_legacy_relations": 42
+  },
+  "classification_stats": {
+    "transferred_nonlegacy_relationships": 0,
+    "classification_to_disease": 2,
+    "classification_fragment_deleted": 2,
+    "classification_to_risk": 4
+  },
+  "duplicate_stats": {},
+  "applied_at": "2026-07-19 01:12:55"
+}

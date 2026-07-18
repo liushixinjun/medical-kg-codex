@@ -1,0 +1,9 @@
+对象类型,旧编码/旧关系,当前状态,V2.0目标,处理动作,写库条件
+节点,CARD,重复Specialty,SPEC-CARD,迁移全部有效关系后进入物理删除候选,关系迁移后CARD入度和出度均为0
+关系,has_category,V1.x目录关系,has_disease_category,迁移后删除旧关系,新旧关系数量核对一致
+关系,belongs_to_category,V1.x反向归属关系,只保留正向has_disease或has_clinical_subtype,先建正向关系再删除反向关系,疾病层级硬闸门通过
+节点,CLASS-CARD-CAD-AMI-STEMI,重复DiseaseClassification,DIS-CARD-CAD-STEMI,关系迁移到Disease后进入物理删除候选,旧节点无任何引用
+节点,CLASS-CARD-CAD-AMI-NSTEMI,重复DiseaseClassification,DIS-CARD-CAD-NSTEMI,关系迁移到Disease后进入物理删除候选,旧节点无任何引用
+关系,has_classification,V1.x疾病分型关系,has_clinical_subtype,AMI直接连接STEMI/NSTEMI Disease,父子疾病存在且无环
+关系,CAT-CARD-CAD与STEMI/NSTEMI直接归属,层级扁平,AMI has_clinical_subtype STEMI/NSTEMI,保留AMI父层并取消分型直接挂大类,分型父疾病唯一
+关系,CAT-CARD-CM与HCM/DCM直接归属,层级扁平,心肌病 has_clinical_subtype HCM/DCM,保留心肌病父层并取消分型直接挂大类,分型父疾病唯一

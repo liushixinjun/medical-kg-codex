@@ -1,0 +1,1032 @@
+[
+  {
+    "code": "CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CARD-SHD-CHD",
+    "other_type": "DiseaseCategory",
+    "other_name": "结构性心脏病/先天性心脏病"
+  },
+  {
+    "code": "CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CARD-VHD",
+    "other_type": "DiseaseCategory",
+    "other_name": "瓣膜病"
+  },
+  {
+    "code": "CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-ARR",
+    "other_type": "DiseaseCategory",
+    "other_name": "心律失常"
+  },
+  {
+    "code": "CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-CAD",
+    "other_type": "DiseaseCategory",
+    "other_name": "冠心病"
+  },
+  {
+    "code": "CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-CM",
+    "other_type": "DiseaseCategory",
+    "other_name": "心肌病"
+  },
+  {
+    "code": "CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-HF",
+    "other_type": "DiseaseCategory",
+    "other_name": "心力衰竭"
+  },
+  {
+    "code": "CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-HTN",
+    "other_type": "DiseaseCategory",
+    "other_name": "高血压"
+  },
+  {
+    "code": "CAT-CARD-CAD",
+    "entity_type": "DiseaseCategory",
+    "name": "冠心病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-ACS",
+    "other_type": "Disease",
+    "other_name": "急性冠脉综合征"
+  },
+  {
+    "code": "CAT-CARD-CAD",
+    "entity_type": "DiseaseCategory",
+    "name": "冠心病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-AMI",
+    "other_type": "Disease",
+    "other_name": "急性心肌梗死"
+  },
+  {
+    "code": "CAT-CARD-CAD",
+    "entity_type": "DiseaseCategory",
+    "name": "冠心病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-ATHEROSCLEROSIS",
+    "other_type": "Disease",
+    "other_name": "动脉粥样硬化"
+  },
+  {
+    "code": "CAT-CARD-CAD",
+    "entity_type": "DiseaseCategory",
+    "name": "冠心病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-CCS",
+    "other_type": "Disease",
+    "other_name": "慢性冠脉综合征"
+  },
+  {
+    "code": "CAT-CARD-CAD",
+    "entity_type": "DiseaseCategory",
+    "name": "冠心病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-CHD",
+    "other_type": "Disease",
+    "other_name": "冠状动脉粥样硬化性心脏病"
+  },
+  {
+    "code": "CAT-CARD-CAD",
+    "entity_type": "DiseaseCategory",
+    "name": "冠心病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-ICM",
+    "other_type": "Disease",
+    "other_name": "缺血性心肌病"
+  },
+  {
+    "code": "CAT-CARD-CAD",
+    "entity_type": "DiseaseCategory",
+    "name": "冠心病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-NSTEMI",
+    "other_type": "Disease",
+    "other_name": "非ST段抬高型心肌梗死"
+  },
+  {
+    "code": "CAT-CARD-CAD",
+    "entity_type": "DiseaseCategory",
+    "name": "冠心病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-OLD-MI",
+    "other_type": "Disease",
+    "other_name": "陈旧性心肌梗死"
+  },
+  {
+    "code": "CAT-CARD-CAD",
+    "entity_type": "DiseaseCategory",
+    "name": "冠心病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-POST-MI-SYNDROME",
+    "other_type": "Disease",
+    "other_name": "心肌梗死后综合征"
+  },
+  {
+    "code": "CAT-CARD-CAD",
+    "entity_type": "DiseaseCategory",
+    "name": "冠心病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+    "other_type": "Disease",
+    "other_name": "隐匿性冠心病"
+  },
+  {
+    "code": "CAT-CARD-CAD",
+    "entity_type": "DiseaseCategory",
+    "name": "冠心病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-SPASM",
+    "other_type": "Disease",
+    "other_name": "冠状动脉痉挛"
+  },
+  {
+    "code": "CAT-CARD-CAD",
+    "entity_type": "DiseaseCategory",
+    "name": "冠心病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-STABLE-ANGINA",
+    "other_type": "Disease",
+    "other_name": "稳定型心绞痛"
+  },
+  {
+    "code": "CAT-CARD-CAD",
+    "entity_type": "DiseaseCategory",
+    "name": "冠心病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-STEMI",
+    "other_type": "Disease",
+    "other_name": "ST段抬高型心肌梗死"
+  },
+  {
+    "code": "CAT-CARD-CAD",
+    "entity_type": "DiseaseCategory",
+    "name": "冠心病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-UA",
+    "other_type": "Disease",
+    "other_name": "不稳定型心绞痛"
+  },
+  {
+    "code": "CAT-CARD-CAD",
+    "entity_type": "DiseaseCategory",
+    "name": "冠心病",
+    "relation_type": "has_category",
+    "direction": "incoming",
+    "other_code": "CARD",
+    "other_type": "Specialty",
+    "other_name": "心血管内科"
+  },
+  {
+    "code": "CAT-CARD-CAD",
+    "entity_type": "DiseaseCategory",
+    "name": "冠心病",
+    "relation_type": "has_category",
+    "direction": "incoming",
+    "other_code": "SPEC-CARD",
+    "other_type": "Specialty",
+    "other_name": "心血管内科"
+  },
+  {
+    "code": "CAT-CARD-CAD",
+    "entity_type": "DiseaseCategory",
+    "name": "冠心病",
+    "relation_type": "has_subcategory",
+    "direction": "outgoing",
+    "other_code": "SUB-CARD-CAD-ACS",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "急性冠脉综合征谱系"
+  },
+  {
+    "code": "CAT-CARD-CAD",
+    "entity_type": "DiseaseCategory",
+    "name": "冠心病",
+    "relation_type": "has_subcategory",
+    "direction": "outgoing",
+    "other_code": "SUB-CARD-CAD-CHRONIC",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "慢性冠脉疾病谱系"
+  },
+  {
+    "code": "CAT-CARD-CAD",
+    "entity_type": "DiseaseCategory",
+    "name": "冠心病",
+    "relation_type": "has_subcategory",
+    "direction": "outgoing",
+    "other_code": "SUB-CARD-CAD-GENERAL",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "冠状动脉粥样硬化性心脏病"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-ICM",
+    "other_type": "Disease",
+    "other_name": "缺血性心肌病"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CM-ABVC",
+    "other_type": "Disease",
+    "other_name": "致心律失常性双心室心肌病"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CM-ACM",
+    "other_type": "Disease",
+    "other_name": "致心律失常性心肌病"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CM-ALVC",
+    "other_type": "Disease",
+    "other_name": "致心律失常性左心室心肌病"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CM-AMYLOID",
+    "other_type": "Disease",
+    "other_name": "淀粉样变心肌病"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CM-ARVC",
+    "other_type": "Disease",
+    "other_name": "致心律失常性右心室心肌病"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CM-ATRIAL",
+    "other_type": "Disease",
+    "other_name": "心房心肌病"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CM-DCM",
+    "other_type": "Disease",
+    "other_name": "扩张型心肌病"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CM-FABRY",
+    "other_type": "Disease",
+    "other_name": "法布雷病心肌病"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CM-GENERAL",
+    "other_type": "Disease",
+    "other_name": "心肌病"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CM-HCM",
+    "other_type": "Disease",
+    "other_name": "肥厚型心肌病"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CM-NDLVCM",
+    "other_type": "Disease",
+    "other_name": "非扩张型左心室心肌病"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CM-RCM",
+    "other_type": "Disease",
+    "other_name": "限制型心肌病"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "belongs_to_category",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-MYOCARDITIS",
+    "other_type": "Disease",
+    "other_name": "心肌炎"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "has_category",
+    "direction": "incoming",
+    "other_code": "CARD",
+    "other_type": "Specialty",
+    "other_name": "心血管内科"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "has_category",
+    "direction": "incoming",
+    "other_code": "SPEC-CARD",
+    "other_type": "Specialty",
+    "other_name": "心血管内科"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "has_subcategory",
+    "direction": "outgoing",
+    "other_code": "SUB-CARD-CM-ARRHYTHMIC",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "心律失常表型心肌病"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "has_subcategory",
+    "direction": "outgoing",
+    "other_code": "SUB-CARD-CM-ATRIAL",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "心房心肌病"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "has_subcategory",
+    "direction": "outgoing",
+    "other_code": "SUB-CARD-CM-GENERAL",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "心肌病与心肌炎"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "has_subcategory",
+    "direction": "outgoing",
+    "other_code": "SUB-CARD-CM-PHENOTYPE",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "心室表型心肌病"
+  },
+  {
+    "code": "CAT-CARD-CM",
+    "entity_type": "DiseaseCategory",
+    "name": "心肌病",
+    "relation_type": "has_subcategory",
+    "direction": "outgoing",
+    "other_code": "SUB-CARD-CM-SPECIAL",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "特殊病因及继发性心肌病"
+  },
+  {
+    "code": "CLASS-CARD-CAD-AMI-NSTEMI",
+    "entity_type": "DiseaseClassification",
+    "name": "非ST段抬高型心肌梗死",
+    "relation_type": "has_classification",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-AMI",
+    "other_type": "Disease",
+    "other_name": "急性心肌梗死"
+  },
+  {
+    "code": "CLASS-CARD-CAD-AMI-STEMI",
+    "entity_type": "DiseaseClassification",
+    "name": "ST段抬高型心肌梗死",
+    "relation_type": "has_classification",
+    "direction": "incoming",
+    "other_code": "DIS-CARD-CAD-AMI",
+    "other_type": "Disease",
+    "other_name": "急性心肌梗死"
+  },
+  {
+    "code": "DIS-CARD-CAD-AMI",
+    "entity_type": "Disease",
+    "name": "急性心肌梗死",
+    "relation_type": "belongs_to_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-CAD",
+    "other_type": "DiseaseCategory",
+    "other_name": "冠心病"
+  },
+  {
+    "code": "DIS-CARD-CAD-AMI",
+    "entity_type": "Disease",
+    "name": "急性心肌梗死",
+    "relation_type": "belongs_to_subcategory",
+    "direction": "outgoing",
+    "other_code": "SUB-CARD-CAD-ACS",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "急性冠脉综合征谱系"
+  },
+  {
+    "code": "DIS-CARD-CAD-AMI",
+    "entity_type": "Disease",
+    "name": "急性心肌梗死",
+    "relation_type": "belongs_to_subcategory",
+    "direction": "outgoing",
+    "other_code": "SUB-CARD-CAD-GENERAL",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "冠状动脉粥样硬化性心脏病"
+  },
+  {
+    "code": "DIS-CARD-CAD-AMI",
+    "entity_type": "Disease",
+    "name": "急性心肌梗死",
+    "relation_type": "has_classification",
+    "direction": "outgoing",
+    "other_code": "CLASS-CARD-CAD-AMI-NSTEMI",
+    "other_type": "DiseaseClassification",
+    "other_name": "非ST段抬高型心肌梗死"
+  },
+  {
+    "code": "DIS-CARD-CAD-AMI",
+    "entity_type": "Disease",
+    "name": "急性心肌梗死",
+    "relation_type": "has_classification",
+    "direction": "outgoing",
+    "other_code": "CLASS-CARD-CAD-AMI-STEMI",
+    "other_type": "DiseaseClassification",
+    "other_name": "ST段抬高型心肌梗死"
+  },
+  {
+    "code": "DIS-CARD-CAD-AMI",
+    "entity_type": "Disease",
+    "name": "急性心肌梗死",
+    "relation_type": "has_disease",
+    "direction": "incoming",
+    "other_code": "SUB-CARD-CAD-ACS",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "急性冠脉综合征谱系"
+  },
+  {
+    "code": "DIS-CARD-CAD-AMI",
+    "entity_type": "Disease",
+    "name": "急性心肌梗死",
+    "relation_type": "has_disease",
+    "direction": "incoming",
+    "other_code": "SUB-CARD-CAD-GENERAL",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "冠状动脉粥样硬化性心脏病"
+  },
+  {
+    "code": "DIS-CARD-CAD-NSTEMI",
+    "entity_type": "Disease",
+    "name": "非ST段抬高型心肌梗死",
+    "relation_type": "belongs_to_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-CAD",
+    "other_type": "DiseaseCategory",
+    "other_name": "冠心病"
+  },
+  {
+    "code": "DIS-CARD-CAD-NSTEMI",
+    "entity_type": "Disease",
+    "name": "非ST段抬高型心肌梗死",
+    "relation_type": "belongs_to_subcategory",
+    "direction": "outgoing",
+    "other_code": "SUB-CARD-CAD-ACS",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "急性冠脉综合征谱系"
+  },
+  {
+    "code": "DIS-CARD-CAD-NSTEMI",
+    "entity_type": "Disease",
+    "name": "非ST段抬高型心肌梗死",
+    "relation_type": "belongs_to_subcategory",
+    "direction": "outgoing",
+    "other_code": "SUB-CARD-CAD-GENERAL",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "冠状动脉粥样硬化性心脏病"
+  },
+  {
+    "code": "DIS-CARD-CAD-NSTEMI",
+    "entity_type": "Disease",
+    "name": "非ST段抬高型心肌梗死",
+    "relation_type": "has_classification",
+    "direction": "outgoing",
+    "other_code": "CLASS-CARD-CADREM-NSTEMI-6C5E8C98A0",
+    "other_type": "DiseaseClassification",
+    "other_name": "非ST段抬高型心肌梗死分类要点2"
+  },
+  {
+    "code": "DIS-CARD-CAD-NSTEMI",
+    "entity_type": "Disease",
+    "name": "非ST段抬高型心肌梗死",
+    "relation_type": "has_classification",
+    "direction": "outgoing",
+    "other_code": "CLASS-CARD-CADREM-NSTEMI-6F48893A3E",
+    "other_type": "DiseaseClassification",
+    "other_name": "非ST段抬高型心肌梗死分类要点6"
+  },
+  {
+    "code": "DIS-CARD-CAD-NSTEMI",
+    "entity_type": "Disease",
+    "name": "非ST段抬高型心肌梗死",
+    "relation_type": "has_classification",
+    "direction": "outgoing",
+    "other_code": "CLASS-CARD-CADREM-UA-3ED0E5D680",
+    "other_type": "DiseaseClassification",
+    "other_name": "Braunwald根据心绞痛的特点和基础病因"
+  },
+  {
+    "code": "DIS-CARD-CAD-NSTEMI",
+    "entity_type": "Disease",
+    "name": "非ST段抬高型心肌梗死",
+    "relation_type": "has_classification",
+    "direction": "outgoing",
+    "other_code": "CLASS-CARD-CADREM-UA-44D099513F",
+    "other_type": "DiseaseClassification",
+    "other_name": "GRACE评分＞140分为高危"
+  },
+  {
+    "code": "DIS-CARD-CAD-NSTEMI",
+    "entity_type": "Disease",
+    "name": "非ST段抬高型心肌梗死",
+    "relation_type": "has_classification",
+    "direction": "outgoing",
+    "other_code": "CLASS-CARD-CADREM-UA-69F8FA5ADF",
+    "other_type": "DiseaseClassification",
+    "other_name": "109～140分为中危"
+  },
+  {
+    "code": "DIS-CARD-CAD-NSTEMI",
+    "entity_type": "Disease",
+    "name": "非ST段抬高型心肌梗死",
+    "relation_type": "has_classification",
+    "direction": "outgoing",
+    "other_code": "CLASS-CARD-CADREM-UA-B60FDF102A",
+    "other_type": "DiseaseClassification",
+    "other_name": "≤108分为低危"
+  },
+  {
+    "code": "DIS-CARD-CAD-NSTEMI",
+    "entity_type": "Disease",
+    "name": "非ST段抬高型心肌梗死",
+    "relation_type": "has_disease",
+    "direction": "incoming",
+    "other_code": "SUB-CARD-CAD-ACS",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "急性冠脉综合征谱系"
+  },
+  {
+    "code": "DIS-CARD-CAD-NSTEMI",
+    "entity_type": "Disease",
+    "name": "非ST段抬高型心肌梗死",
+    "relation_type": "has_disease",
+    "direction": "incoming",
+    "other_code": "SUB-CARD-CAD-GENERAL",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "冠状动脉粥样硬化性心脏病"
+  },
+  {
+    "code": "DIS-CARD-CAD-STEMI",
+    "entity_type": "Disease",
+    "name": "ST段抬高型心肌梗死",
+    "relation_type": "belongs_to_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-CAD",
+    "other_type": "DiseaseCategory",
+    "other_name": "冠心病"
+  },
+  {
+    "code": "DIS-CARD-CAD-STEMI",
+    "entity_type": "Disease",
+    "name": "ST段抬高型心肌梗死",
+    "relation_type": "belongs_to_subcategory",
+    "direction": "outgoing",
+    "other_code": "SUB-CARD-CAD-ACS",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "急性冠脉综合征谱系"
+  },
+  {
+    "code": "DIS-CARD-CAD-STEMI",
+    "entity_type": "Disease",
+    "name": "ST段抬高型心肌梗死",
+    "relation_type": "belongs_to_subcategory",
+    "direction": "outgoing",
+    "other_code": "SUB-CARD-CAD-GENERAL",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "冠状动脉粥样硬化性心脏病"
+  },
+  {
+    "code": "DIS-CARD-CAD-STEMI",
+    "entity_type": "Disease",
+    "name": "ST段抬高型心肌梗死",
+    "relation_type": "has_disease",
+    "direction": "incoming",
+    "other_code": "SUB-CARD-CAD-ACS",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "急性冠脉综合征谱系"
+  },
+  {
+    "code": "DIS-CARD-CAD-STEMI",
+    "entity_type": "Disease",
+    "name": "ST段抬高型心肌梗死",
+    "relation_type": "has_disease",
+    "direction": "incoming",
+    "other_code": "SUB-CARD-CAD-GENERAL",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "冠状动脉粥样硬化性心脏病"
+  },
+  {
+    "code": "DIS-CARD-CM-DCM",
+    "entity_type": "Disease",
+    "name": "扩张型心肌病",
+    "relation_type": "belongs_to_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-CM",
+    "other_type": "DiseaseCategory",
+    "other_name": "心肌病"
+  },
+  {
+    "code": "DIS-CARD-CM-DCM",
+    "entity_type": "Disease",
+    "name": "扩张型心肌病",
+    "relation_type": "belongs_to_subcategory",
+    "direction": "outgoing",
+    "other_code": "SUB-CARD-CM-GENERAL",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "心肌病与心肌炎"
+  },
+  {
+    "code": "DIS-CARD-CM-DCM",
+    "entity_type": "Disease",
+    "name": "扩张型心肌病",
+    "relation_type": "belongs_to_subcategory",
+    "direction": "outgoing",
+    "other_code": "SUB-CARD-CM-PHENOTYPE",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "心室表型心肌病"
+  },
+  {
+    "code": "DIS-CARD-CM-DCM",
+    "entity_type": "Disease",
+    "name": "扩张型心肌病",
+    "relation_type": "has_disease",
+    "direction": "incoming",
+    "other_code": "SUB-CARD-CM-GENERAL",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "心肌病与心肌炎"
+  },
+  {
+    "code": "DIS-CARD-CM-DCM",
+    "entity_type": "Disease",
+    "name": "扩张型心肌病",
+    "relation_type": "has_disease",
+    "direction": "incoming",
+    "other_code": "SUB-CARD-CM-PHENOTYPE",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "心室表型心肌病"
+  },
+  {
+    "code": "DIS-CARD-CM-GENERAL",
+    "entity_type": "Disease",
+    "name": "心肌病",
+    "relation_type": "belongs_to_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-CM",
+    "other_type": "DiseaseCategory",
+    "other_name": "心肌病"
+  },
+  {
+    "code": "DIS-CARD-CM-HCM",
+    "entity_type": "Disease",
+    "name": "肥厚型心肌病",
+    "relation_type": "belongs_to_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-CM",
+    "other_type": "DiseaseCategory",
+    "other_name": "心肌病"
+  },
+  {
+    "code": "DIS-CARD-CM-HCM",
+    "entity_type": "Disease",
+    "name": "肥厚型心肌病",
+    "relation_type": "belongs_to_subcategory",
+    "direction": "outgoing",
+    "other_code": "SUB-CARD-CM-GENERAL",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "心肌病与心肌炎"
+  },
+  {
+    "code": "DIS-CARD-CM-HCM",
+    "entity_type": "Disease",
+    "name": "肥厚型心肌病",
+    "relation_type": "belongs_to_subcategory",
+    "direction": "outgoing",
+    "other_code": "SUB-CARD-CM-PHENOTYPE",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "心室表型心肌病"
+  },
+  {
+    "code": "DIS-CARD-CM-HCM",
+    "entity_type": "Disease",
+    "name": "肥厚型心肌病",
+    "relation_type": "has_disease",
+    "direction": "incoming",
+    "other_code": "SUB-CARD-CM-GENERAL",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "心肌病与心肌炎"
+  },
+  {
+    "code": "DIS-CARD-CM-HCM",
+    "entity_type": "Disease",
+    "name": "肥厚型心肌病",
+    "relation_type": "has_disease",
+    "direction": "incoming",
+    "other_code": "SUB-CARD-CM-PHENOTYPE",
+    "other_type": "DiseaseSubcategory",
+    "other_name": "心室表型心肌病"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CARD-AORTA-PAD",
+    "other_type": "DiseaseCategory",
+    "other_name": "主动脉与外周动脉疾病"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CARD-LIPID-ASCVD",
+    "other_type": "DiseaseCategory",
+    "other_name": "血脂异常与动脉粥样硬化防治"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CARD-MPIE",
+    "other_type": "DiseaseCategory",
+    "other_name": "心肌炎/心包炎/感染性心内膜炎"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CARD-PACING",
+    "other_type": "DiseaseCategory",
+    "other_name": "起搏治疗相关疾病"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CARD-PH",
+    "other_type": "DiseaseCategory",
+    "other_name": "肺动脉高压"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CARD-SHD-CHD",
+    "other_type": "DiseaseCategory",
+    "other_name": "结构性心脏病/先天性心脏病"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CARD-VHD",
+    "other_type": "DiseaseCategory",
+    "other_name": "瓣膜病"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-AORTA-PAD",
+    "other_type": "DiseaseCategory",
+    "other_name": "主动脉和周围血管病"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-ARR",
+    "other_type": "DiseaseCategory",
+    "other_name": "心律失常"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-CAD",
+    "other_type": "DiseaseCategory",
+    "other_name": "冠心病"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-CHD",
+    "other_type": "DiseaseCategory",
+    "other_name": "先天性心血管病"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-CM",
+    "other_type": "DiseaseCategory",
+    "other_name": "心肌病"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-HF",
+    "other_type": "DiseaseCategory",
+    "other_name": "心力衰竭"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-HT",
+    "other_type": "DiseaseCategory",
+    "other_name": "高血压疾病"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-HTN",
+    "other_type": "DiseaseCategory",
+    "other_name": "高血压"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-IE",
+    "other_type": "DiseaseCategory",
+    "other_name": "感染性心内膜炎"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-NEUROSIS",
+    "other_type": "DiseaseCategory",
+    "other_name": "心血管神经症"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-PERICARD",
+    "other_type": "DiseaseCategory",
+    "other_name": "心包疾病"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-SCD",
+    "other_type": "DiseaseCategory",
+    "other_name": "心脏骤停与心脏性猝死"
+  },
+  {
+    "code": "SPEC-CARD",
+    "entity_type": "Specialty",
+    "name": "心血管内科",
+    "relation_type": "has_category",
+    "direction": "outgoing",
+    "other_code": "CAT-CARD-VHD",
+    "other_type": "DiseaseCategory",
+    "other_name": "心脏瓣膜病"
+  }
+]

@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1220" viewBox="0 0 1900 1220">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08111f"/><stop offset="1" stop-color="#142441"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity=".42"/></filter>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3.5" orient="auto"><path d="M0 0L0 7L9 3.5Z" fill="#6da9ff"/></marker>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="8" refY="3.5" orient="auto"><path d="M0 0L0 7L9 3.5Z" fill="#55d8b5"/></marker>
+    <style>
+      .t{font:700 34px 'Microsoft YaHei',sans-serif;fill:#f4f8ff}.sub{font:400 17px 'Microsoft YaHei',sans-serif;fill:#afbdd1}
+      .h{font:700 19px 'Microsoft YaHei',sans-serif;fill:#fff}.s{font:400 14px 'Microsoft YaHei',sans-serif;fill:#d5dfef}
+      .c{font:700 14px Consolas,'Microsoft YaHei',monospace;fill:#d5fff4}.el{font:600 13px 'Microsoft YaHei',sans-serif;fill:#dce8ff;paint-order:stroke;stroke:#091323;stroke-width:5px}
+      .e{stroke:#6da9ff;stroke-width:2.7;fill:none;marker-end:url(#arr)}.eg{stroke:#55d8b5;stroke-width:2.5;stroke-dasharray:8 6;fill:none;marker-end:url(#arrG)}
+      .box{fill:#101e34;stroke:#2e4a70;stroke-width:1.5}.patient{fill:#633d91;stroke:#ba91f4}.fact{fill:#1d5d7a;stroke:#69c5e8}.rule{fill:#7b5522;stroke:#f2bb62}.disease{fill:#704fc0;stroke:#c0a4ff}.subtype{fill:#147c90;stroke:#72dce9}.action{fill:#186d59;stroke:#62dfbd}.source{fill:#3f536d;stroke:#9aabc1}
+    </style>
+  </defs>
+  <rect width="1900" height="1220" fill="url(#bg)"/>
+  <text x="55" y="55" class="t">肥厚型心肌病：从患者数据到正式 CDSS 推荐的完整三元组案例</text>
+  <text x="55" y="88" class="sub">示例用于说明图谱结构；正式上线时，每条规则和推荐必须使用已审核的教材/指南原文证据</text>
+
+  <!-- Patient input -->
+  <rect x="45" y="135" width="300" height="490" rx="22" class="box" filter="url(#shadow)"/>
+  <text x="195" y="175" text-anchor="middle" class="h">患者数据（EMR）</text>
+  <rect x="75" y="205" width="240" height="58" rx="15" class="patient"/><text x="195" y="231" text-anchor="middle" class="h">劳力性呼吸困难</text><text x="195" y="251" text-anchor="middle" class="s">症状</text>
+  <rect x="75" y="282" width="240" height="58" rx="15" class="patient"/><text x="195" y="308" text-anchor="middle" class="h">劳力性晕厥</text><text x="195" y="328" text-anchor="middle" class="s">症状</text>
+  <rect x="75" y="359" width="240" height="58" rx="15" class="patient"/><text x="195" y="385" text-anchor="middle" class="h">心肌病家族史</text><text x="195" y="405" text-anchor="middle" class="s">危险因素</text>
+  <rect x="75" y="436" width="240" height="70" rx="15" class="patient"/><text x="195" y="463" text-anchor="middle" class="h">最大室壁厚度 18 mm</text><text x="195" y="486" text-anchor="middle" class="s">超声心动图检查发现</text>
+  <rect x="75" y="525" width="240" height="70" rx="15" class="patient"/><text x="195" y="552" text-anchor="middle" class="h">LVOT峰值压差 60 mmHg</text><text x="195" y="575" text-anchor="middle" class="s">超声心动图检查发现</text>
+
+  <!-- Facts -->
+  <rect x="430" y="125" width="310" height="70" rx="17" class="fact"/><text x="585" y="154" text-anchor="middle" class="h">呼吸困难</text><text x="585" y="178" text-anchor="middle" class="s">Symptom · 标准症状实体</text>
+  <rect x="430" y="220" width="310" height="70" rx="17" class="fact"/><text x="585" y="249" text-anchor="middle" class="h">晕厥</text><text x="585" y="273" text-anchor="middle" class="s">Symptom · 标准症状实体</text>
+  <rect x="430" y="315" width="310" height="70" rx="17" class="fact"/><text x="585" y="344" text-anchor="middle" class="h">心肌病家族史</text><text x="585" y="368" text-anchor="middle" class="s">RiskFactor · 危险因素</text>
+  <rect x="430" y="410" width="310" height="70" rx="17" class="fact"/><text x="585" y="439" text-anchor="middle" class="h">最大室壁厚度</text><text x="585" y="463" text-anchor="middle" class="s">ExamObservation · 检查发现</text>
+  <rect x="430" y="505" width="310" height="70" rx="17" class="fact"/><text x="585" y="534" text-anchor="middle" class="h">左室流出道峰值压差</text><text x="585" y="558" text-anchor="middle" class="s">ExamObservation · 检查发现</text>
+
+  <!-- patient mapping edges -->
+  <path d="M315 234L429 161" class="e"/><text x="337" y="183" class="el">术语归一</text>
+  <path d="M315 311L429 256" class="e"/><text x="347" y="269" class="el">术语归一</text>
+  <path d="M315 388L429 351" class="e"/><text x="345" y="351" class="el">术语归一</text>
+  <path d="M315 470L429 446" class="e"/><text x="346" y="439" class="el">结果映射</text>
+  <path d="M315 560L429 541" class="e"/><text x="346" y="531" class="el">结果映射</text>
+
+  <!-- Suspected disease -->
+  <circle cx="920" cy="280" r="108" class="disease" filter="url(#shadow)"/>
+  <text x="920" y="260" text-anchor="middle" class="h">心肌病</text>
+  <text x="920" y="287" text-anchor="middle" class="s">疑似疾病 / 初步诊断</text>
+  <text x="920" y="314" text-anchor="middle" class="c">I42.900</text>
+  <path d="M740 160C810 170 825 205 835 225" class="e"/><text x="765" y="187" class="el">支持疑似诊断</text>
+  <path d="M740 255C812 252 824 257 812 262" class="e"/><text x="756" y="244" class="el">支持疑似诊断</text>
+  <path d="M740 350C805 335 824 322 820 315" class="e"/><text x="752" y="333" class="el">增加可能性</text>
+
+  <!-- Diagnosis rule -->
+  <rect x="810" y="475" width="360" height="110" rx="20" class="rule"/>
+  <text x="990" y="507" text-anchor="middle" class="h">肥厚型心肌病诊断规则</text>
+  <text x="990" y="535" text-anchor="middle" class="s">成人最大室壁厚度 ≥15 mm</text>
+  <text x="990" y="561" text-anchor="middle" class="s">并排除负荷增加等其他原因</text>
+  <path d="M740 445C780 454 805 475 835 493" class="e"/><text x="750" y="469" class="el">输入指标</text>
+  <path d="M920 389L957 474" class="e"/><text x="930" y="433" class="el">进入分型</text>
+
+  <!-- HCM subtype -->
+  <circle cx="1320" cy="290" r="118" class="subtype" filter="url(#shadow)"/>
+  <text x="1320" y="269" text-anchor="middle" class="h">肥厚型心肌病</text>
+  <text x="1320" y="297" text-anchor="middle" class="s">临床分型</text>
+  <text x="1320" y="325" text-anchor="middle" class="s">requires_code_selection=true</text>
+  <path d="M1028 280L1201 286" class="e"/><text x="1083" y="270" class="el">具有临床分型</text>
+  <path d="M1170 520C1240 485 1277 425 1292 406" class="e"/><text x="1201" y="466" class="el">规则判定为</text>
+
+  <!-- Obstruction rule -->
+  <rect x="1190" y="485" width="330" height="98" rx="20" class="rule"/>
+  <text x="1355" y="518" text-anchor="middle" class="h">梗阻表型规则</text>
+  <text x="1355" y="547" text-anchor="middle" class="s">LVOT峰值压差 ≥30 mmHg</text>
+  <text x="1355" y="569" text-anchor="middle" class="s">本例：60 mmHg</text>
+  <path d="M740 540C900 610 1090 570 1189 535" class="e"/><text x="888" y="586" class="el">输入指标</text>
+
+  <!-- ICD coding -->
+  <rect x="1585" y="230" width="270" height="112" rx="20" class="action"/>
+  <text x="1720" y="261" text-anchor="middle" class="c">I42.100</text>
+  <text x="1720" y="289" text-anchor="middle" class="h">梗阻性肥厚型心肌病</text>
+  <text x="1720" y="316" text-anchor="middle" class="s">CDSS标准诊断编码</text>
+  <path d="M1438 289L1584 286" class="eg"/><text x="1470" y="276" class="el">可编码为</text>
+  <path d="M1520 521C1600 475 1663 395 1696 343" class="eg"/><text x="1575" y="447" class="el">满足编码条件</text>
+
+  <!-- Risk -->
+  <rect x="815" y="670" width="350" height="94" rx="20" class="rule"/>
+  <text x="990" y="703" text-anchor="middle" class="h">风险分层</text>
+  <text x="990" y="731" text-anchor="middle" class="s">HCM Risk-SCD及其他猝死风险因素</text>
+  <text x="990" y="753" text-anchor="middle" class="s">决定是否进入ICD预防决策</text>
+  <path d="M1320 409C1250 515 1138 620 1088 669" class="e"/><text x="1180" y="574" class="el">进入风险评估</text>
+
+  <!-- Pathway and recommendation -->
+  <rect x="1220" y="680" width="350" height="94" rx="20" class="rule"/>
+  <text x="1395" y="713" text-anchor="middle" class="h">有症状梗阻型HCM治疗阶段</text>
+  <text x="1395" y="741" text-anchor="middle" class="s">匹配症状、梗阻程度及禁忌条件</text>
+  <path d="M1345 582L1382 679" class="e"/><text x="1368" y="635" class="el">触发路径阶段</text>
+
+  <rect x="1195" y="840" width="400" height="108" rx="20" class="action"/>
+  <text x="1395" y="875" text-anchor="middle" class="h">推荐陈述</text>
+  <text x="1395" y="904" text-anchor="middle" class="s">有症状梗阻型HCM，优先考虑</text>
+  <text x="1395" y="930" text-anchor="middle" class="s">非血管扩张性β受体拮抗剂</text>
+  <path d="M1395 775L1395 839" class="e"/><text x="1410" y="811" class="el">满足规则后推荐</text>
+
+  <!-- Actions -->
+  <rect x="910" y="1010" width="300" height="76" rx="18" class="action"/>
+  <text x="1060" y="1041" text-anchor="middle" class="h">美托洛尔</text>
+  <text x="1060" y="1068" text-anchor="middle" class="s">Medication · 具体药品</text>
+  <rect x="1260" y="1010" width="300" height="76" rx="18" class="action"/>
+  <text x="1410" y="1041" text-anchor="middle" class="h">室间隔减容治疗</text>
+  <text x="1410" y="1068" text-anchor="middle" class="s">Procedure · 条件性后续操作</text>
+  <path d="M1325 949C1250 980 1160 1000 1110 1009" class="e"/><text x="1170" y="985" class="el">推荐动作</text>
+  <path d="M1455 949L1425 1009" class="e"/><text x="1455" y="985" class="el">条件性动作</text>
+
+  <!-- Evidence -->
+  <rect x="1600" y="840" width="255" height="238" rx="20" class="source"/>
+  <text x="1727" y="875" text-anchor="middle" class="h">推荐证据链</text>
+  <text x="1727" y="915" text-anchor="middle" class="s">推荐陈述</text>
+  <text x="1727" y="942" text-anchor="middle" class="s">↓ 主依据</text>
+  <text x="1727" y="969" text-anchor="middle" class="s">指南/教材</text>
+  <text x="1727" y="996" text-anchor="middle" class="s">↓ 原文证据</text>
+  <text x="1727" y="1023" text-anchor="middle" class="s">页码/段落</text>
+  <text x="1727" y="1050" text-anchor="middle" class="s">推荐等级/证据等级</text>
+  <path d="M1595 894L1599 894" class="e"/><text x="1602" y="822" class="el">由证据支持</text>
+
+  <!-- Footer -->
+  <rect x="45" y="1125" width="1810" height="58" rx="16" class="box"/>
+  <text x="70" y="1150" class="s">正式展示：医生首先看到“疑似心肌病”，证据满足后看到“肥厚型心肌病”，梗阻表型成立后可选择 I42.100；药物和手术只通过规则与推荐陈述进入正式推荐区。</text>
+  <text x="70" y="1174" class="s">关键三元组：（心肌病）—[具有临床分型]→（肥厚型心肌病）；（肥厚型心肌病）—[可编码为]→（I42.100）；（推荐陈述）—[推荐动作]→（美托洛尔）。</text>
+</svg>

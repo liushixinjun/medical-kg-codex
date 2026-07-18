@@ -1,0 +1,43 @@
+{
+  "gate_name": "主数据质量闸门",
+  "gate_status": "failed",
+  "gate_status_cn": "未通过",
+  "blocking_issue_count": 3,
+  "blocking_items": [
+    {
+      "metric": "non_scalar_code_count",
+      "chinese_name": "编码字段不是单值字符串",
+      "count": 81,
+      "description": "实体 code 必须是唯一、稳定的单值字符串；历史合并编码应写入 merged_from_codes，不能把编码数组继续留在主编码字段。"
+    },
+    {
+      "metric": "same_disease_same_type_same_name_duplicate_count",
+      "chinese_name": "同病种同类型同名重复直连",
+      "count": 3,
+      "description": "同一个疾病下，同一实体类型、同一名称出现多个节点。应复用标准主节点，不应重复创建。"
+    },
+    {
+      "metric": "replaced_duplicate_still_referenced_count",
+      "chinese_name": "已替换重复节点仍被引用",
+      "count": 1580,
+      "description": "重复节点已经被标记为归并替换，但仍被疾病、路径、规则或推荐关系引用。"
+    }
+  ],
+  "counts": {
+    "disease_without_parent_count": 0,
+    "clinical_subtype_without_parent_count": 0,
+    "display_group_without_category_count": 0,
+    "legacy_disease_classification_count": 0,
+    "legacy_disease_hierarchy_relation_count": 0,
+    "active_duplicate_disease_name_count": 0,
+    "retired_disease_node_remaining_count": 0,
+    "non_scalar_code_count": 81,
+    "same_disease_same_type_same_name_duplicate_count": 3,
+    "diagnosis_criteria_without_component_count": 0,
+    "orphan_diagnosis_criteria_count": 0,
+    "treatment_plan_without_downstream_count": 0,
+    "replaced_duplicate_still_referenced_count": 1580
+  },
+  "generated_at": "2026-07-19 02:20:00",
+  "output_dir": "项目管理中心_project_management\\139_CDSS标准主数据与疾病分型升级_20260719\\16_最终全库主数据复核"
+}

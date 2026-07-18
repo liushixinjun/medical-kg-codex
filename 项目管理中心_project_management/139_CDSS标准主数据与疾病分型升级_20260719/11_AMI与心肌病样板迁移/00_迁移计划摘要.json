@@ -1,0 +1,90 @@
+{
+  "scope": "sample",
+  "batch_id": "MIG-CARD-V2-20260719-001",
+  "package_audit": {
+    "scope_name": "AMI与心肌病样板",
+    "node_count": 20,
+    "relationship_count": 19,
+    "standard_diagnosis_count": 11,
+    "error_count": 0,
+    "warning_count": 0,
+    "errors": [],
+    "warnings": [],
+    "passed": true
+  },
+  "classification_actions": [
+    {
+      "parent_disease_code": "DIS-CARD-CAD-AMI",
+      "classification_code": "CLASS-CARD-CAD-AMI-NSTEMI",
+      "classification_name": "非ST段抬高型心肌梗死",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-CAD-NSTEMI",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-AMI",
+      "classification_code": "CLASS-CARD-CAD-AMI-STEMI",
+      "classification_name": "ST段抬高型心肌梗死",
+      "action": "clinical_subtype",
+      "target_disease_code": "DIS-CARD-CAD-STEMI",
+      "reason": "旧分型名称与现有疾病实体精确一致"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+      "classification_code": "CLASS-CARD-CADREM-NSTEMI-6C5E8C98A0",
+      "classification_name": "非ST段抬高型心肌梗死分类要点2",
+      "action": "invalid_fragment",
+      "reason": "抽取生成的无语义分类要点标题"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+      "classification_code": "CLASS-CARD-CADREM-NSTEMI-6F48893A3E",
+      "classification_name": "非ST段抬高型心肌梗死分类要点6",
+      "action": "invalid_fragment",
+      "reason": "抽取生成的无语义分类要点标题"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+      "classification_code": "CLASS-CARD-CADREM-UA-3ED0E5D680",
+      "classification_name": "Braunwald根据心绞痛的特点和基础病因",
+      "action": "risk_stratification",
+      "reason": "风险、分期或血流动力学分层"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+      "classification_code": "CLASS-CARD-CADREM-UA-44D099513F",
+      "classification_name": "GRACE评分＞140分为高危",
+      "action": "risk_stratification",
+      "reason": "风险、分期或血流动力学分层"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+      "classification_code": "CLASS-CARD-CADREM-UA-69F8FA5ADF",
+      "classification_name": "109～140分为中危",
+      "action": "risk_stratification",
+      "reason": "风险、分期或血流动力学分层"
+    },
+    {
+      "parent_disease_code": "DIS-CARD-CAD-NSTEMI",
+      "classification_code": "CLASS-CARD-CADREM-UA-B60FDF102A",
+      "classification_name": "≤108分为低危",
+      "action": "risk_stratification",
+      "reason": "风险、分期或血流动力学分层"
+    }
+  ],
+  "duplicate_disease_map": {},
+  "related_subcategory_codes": [
+    "SUB-CARD-CAD-ACS",
+    "SUB-CARD-CAD-GENERAL",
+    "SUB-CARD-CM-GENERAL",
+    "SUB-CARD-CM-PHENOTYPE"
+  ],
+  "unresolved_classification_count": 0,
+  "oracle_verification": {
+    "requested_count": 11,
+    "matched_count": 11,
+    "difference_count": 0,
+    "differences": [],
+    "passed": true
+  }
+}

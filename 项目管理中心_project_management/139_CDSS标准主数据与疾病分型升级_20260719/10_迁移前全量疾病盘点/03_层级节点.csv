@@ -1,0 +1,303 @@
+﻿aliases,code,deprecated,diagnostic_role,duplicate_replaced_by,entity_type,is_diagnosable,is_emr_writable,name,schema_version,status
+"['Brugada', '布鲁加达综合征', 'Brugada pattern', '1型Brugada心电图']",DIS-CARD-ARR-BRUGADA,,,,Disease,,,Brugada综合征,V1.7,
+"['STEMI', '急性ST段抬高型心肌梗死', 'ST段抬高心肌梗死']",DIS-CARD-CAD-STEMI,,,,Disease,,,ST段抬高型心肌梗死,V1.15,
+"['B型主动脉夹层', 'TBAD']",DIS-CARD-TBAD,,,,Disease,,,Stanford B型主动脉夹层,V1.15,
+"['一度AVB', '一度房室阻滞', 'first degree AV block']",DIS-CARD-ARR-AVB1,,,,Disease,,,一度房室传导阻滞,V1.16,
+,DIS-CARD-CHD-EBSTEIN,,,,Disease,,,三尖瓣下移畸形,V1.4,
+"['TR', '三尖瓣关闭不全']",DIS-CARD-VHD-TR,,,,Disease,,,三尖瓣反流,V1.15,
+"['完全性房室传导阻滞', '三度AVB', '完全性AVB', 'complete AV block', 'third degree AV block']",DIS-CARD-ARR-AVB3,,,,Disease,,,三度房室传导阻滞,V1.16,
+,DIS-CARD-PAD-LEAD,,,,Disease,,,下肢动脉硬化闭塞症,V1.4,
+"['UA', '不稳定心绞痛']",DIS-CARD-CAD-UA,,,,Disease,,,不稳定型心绞痛,V1.1,
+"['aortic dissection', '主动脉夹层动脉瘤', 'AD']",DIS-CARD-AORTIC-DISSECTION,,,,Disease,,,主动脉夹层,V1.15,
+"['AR', '主动脉瓣关闭不全']",DIS-CARD-VHD-AR,,,,Disease,,,主动脉瓣反流,V1.15,
+"['AS', '主动脉瓣口狭窄']",DIS-CARD-VHD-AS,,,,Disease,,,主动脉瓣狭窄,V1.15,
+,DIS-CARD-AORTA-ANEURYSM,,,,Disease,,,主动脉瘤,V1.4,
+,DIS-CARD-CHD-SOVA,,,,Disease,,,主动脉窦瘤,V1.4,
+,DIS-CARD-HTN-COA,,,,Disease,,,主动脉缩窄,V1.4,
+['BAV'],DIS-CARD-CHD-BAV,,,,Disease,,,二叶主动脉瓣,V1.4,
+"['MR', '二尖瓣关闭不全']",DIS-CARD-VHD-MR,,,,Disease,,,二尖瓣反流,V1.15,
+['MS'],DIS-CARD-VHD-MS,,,,Disease,,,二尖瓣狭窄,V1.15,
+"['二度AVB', 'Mobitz I', 'Mobitz II', '文氏阻滞', '莫氏阻滞', 'second degree AV block']",DIS-CARD-ARR-AVB2,,,,Disease,,,二度房室传导阻滞,V1.16,
+['PVE'],DIS-CARD-IE-PVE,,,,Disease,,,人工瓣膜心内膜炎,V1.4,
+"['CPVT', '儿茶酚胺敏感性室速', '儿茶酚胺敏感性室性心动过速']",DIS-CARD-ARR-CPVT,,,,Disease,,,儿茶酚胺敏感性多形性室性心动过速,V1.7,
+,DIS-CARD-CHD-COA,,,,Disease,,,先天性主动脉缩窄,V1.4,
+"['先心病', 'CHD', 'congenital heart disease']",DIS-CARD-CHD,,,,Disease,,,先天性心脏病,V1.15,
+"['CHD-PAH', '先心病相关肺动脉高压', '成人先天性心脏病相关肺动脉高压', '先天性心脏病相关PH', '先天性心脏病', '先心病', '艾森曼格综合征']",DIS-CARD-PH-CHD,,,,Disease,,,先天性心脏病相关肺动脉高压,V1.15,
+"['全心衰', '双心衰竭', '双心室心力衰竭']",DIS-CARD-HF-BIVENTRICULAR,,,,Disease,,,全心衰竭,V1.7,
+['endocrine hypertension'],DIS-CARD-HT-ENDOCRINE,,,,Disease,,,内分泌性高血压,V1.11,
+,DIS-CARD-CAD-SPASM,,,,Disease,,,冠状动脉痉挛,V1.4,
+,DIS-CARD-CHD-CAF,,,,Disease,,,冠状动脉瘘,V1.4,
+"['冠心病', 'CHD', 'CAD']",DIS-CARD-CAD-CHD,,,,Disease,,,冠状动脉粥样硬化性心脏病,V1.4,
+"['PDA', 'patent ductus arteriosus']",DIS-CARD-PDA,,,,Disease,,,动脉导管未闭,V1.15,
+"['PAH', '肺动脉性肺高压']",DIS-CARD-PH-PAH,,,,Disease,,,动脉性肺动脉高压,V1.15,
+,DIS-CARD-CAD-ATHEROSCLEROSIS,,,,Disease,,,动脉粥样硬化,V1.4,
+"['PFO', 'patent foramen ovale']",DIS-CARD-PFO,,,,Disease,,,卵圆孔未闭,V1.15,
+"['原醛', 'PA', 'primary aldosteronism']",DIS-CARD-HT-PA,,,,Disease,,,原发性醛固酮增多症,V1.11,
+"['本态性高血压', 'essential hypertension', 'primary hypertension']",DIS-CARD-HT-PRIMARY,,,,Disease,,,原发性高血压,V1.11,
+"['paroxysmal hypertension', '阵发性高血压']",DIS-CARD-HT-PAROXYSMAL,,,,Disease,,,发作性高血压,V1.11,
+"['右心衰', '右心功能不全']",DIS-CARD-HF-RIGHT,,,,Disease,,,右心衰竭,V1.7,
+,DIS-CARD-HTN-PHEO,,,,Disease,,,嗜铬细胞瘤和副神经节瘤,V1.4,
+"['PAD', '外周动脉病', '下肢动脉疾病']",DIS-CARD-PAD,,,,Disease,,,外周动脉疾病,V1.15,
+"['联合瓣膜病', '多瓣膜损害']",DIS-CARD-VHD-MULTI,,,,Disease,,,多瓣膜病,V1.15,
+"['室上速', 'SVT', 'PSVT', '阵发性室上性心动过速', '阵发性室上速', 'supraventricular tachycardia']",DIS-CARD-ARR-SVT,,,,Disease,,,室上性心动过速,V1.7,
+"['室性心律失常谱系', 'ventricular arrhythmias']",DIS-CARD-ARR-VA,,,,Disease,,,室性心律失常,V1.7,
+"['PVC', '室性早搏', '室早', '室性期前搏动', 'premature ventricular contraction']",DIS-CARD-ARR-PVC,,,,Disease,,,室性期前收缩,V1.7,
+"['VSD', 'ventricular septal defect']",DIS-CARD-VSD,,,,Disease,,,室间隔缺损,V1.15,
+"['FH', 'familial hypercholesterolemia']",DIS-CARD-FH,,,,Disease,,,家族性高胆固醇血症,V1.15,
+"['HFpEF', '射血分数保留心衰', '舒张性心力衰竭', '舒张性心衰', 'DHF']",DIS-CARD-HF-HFpEF,,,,Disease,,,射血分数保留的心力衰竭,V1.7,
+"['HFmrEF', '射血分数中间范围心力衰竭', '射血分数轻度降低心衰']",DIS-CARD-HF-HFmrEF,,,,Disease,,,射血分数轻度降低的心力衰竭,V1.7,
+"['HFrEF', '射血分数降低心衰', '收缩性心力衰竭']",DIS-CARD-HF-HFrEF,,,,Disease,,,射血分数降低的心力衰竭,V1.7,
+"['TdP', '尖端扭转型室速', '尖端扭转', '多形性室性心动过速', 'torsades']",DIS-CARD-ARR-TDP,,,,Disease,,,尖端扭转型室性心动过速,V1.7,
+"['左心衰', '左心功能不全']",DIS-CARD-HF-LEFT,,,,Disease,,,左心衰竭,V1.7,
+"['心衰', 'HF', '心功能不全', '心脏衰竭']",DIS-CARD-HF,,,,Disease,,,心力衰竭,V1.7,
+"['心力衰竭', 'heart failure', 'HF']",DIS-CARD-HF-GENERAL,,,,Disease,,,心力衰竭,V1.16,
+"['急性心包炎', 'pericarditis']",DIS-CARD-PERICARDITIS,,,,Disease,,,心包炎,V1.15,
+,DIS-CARD-PERICARD-EFFUSION,,,,Disease,,,心包积液及心脏压塞,V1.4,
+"['VF', '心室颤动', '室颤', '心室扑动', '室扑', 'ventricular fibrillation', 'ventricular flutter']",DIS-CARD-ARR-VF,,,,Disease,,,心室扑动与心室颤动,V1.7,
+['AtCM'],DIS-CARD-CM-ATRIAL,,,,Disease,,,心房心肌病,V1.1,
+"['房扑', 'AFL', 'atrial flutter', '典型心房扑动', '峡部依赖性心房扑动']",DIS-CARD-ARR-AFL,,,,Disease,,,心房扑动,V1.7,
+"['房颤', 'AF', 'atrial fibrillation', '非瓣膜性心房颤动', 'NVAF', '瓣膜性心房颤动', '持续性房颤', '阵发性房颤', '永久性房颤', '长程持续性房颤']",DIS-CARD-ARR-AF,,,,Disease,,,心房颤动,V1.7,
+"['心梗后心衰', '心肌梗死后心衰', 'post-MI HF']",DIS-CARD-HF-POST-MI,,,,Disease,,,心肌梗死后心力衰竭,V1.7,
+,DIS-CARD-CAD-POST-MI-SYNDROME,,,,Disease,,,心肌梗死后综合征,V1.4,
+"['成人心肌炎', '急性心肌炎', 'myocarditis']",DIS-CARD-MYOCARDITIS,,,,Disease,,,心肌炎,V1.15,
+"['心肌病', 'cardiomyopathy', 'cardiomyopathies', 'CM']",DIS-CARD-CM-GENERAL,,,,Disease,,,心肌病,V1.16,
+"['SCD', '心源性猝死', '猝死', 'sudden cardiac death']",DIS-CARD-SCD-SUDDEN,,,,Disease,,,心脏性猝死,V1.7,
+"['瓣膜病', '瓣膜性心脏病', 'VHD']",DIS-CARD-VHD,,,,Disease,,,心脏瓣膜病,V1.15,
+"['CA', '心搏骤停', '循环骤停', 'cardiac arrest']",DIS-CARD-SCD-ARREST,,,,Disease,,,心脏骤停,V1.7,
+,DIS-CARD-NEUROSIS,,,,Disease,,,心血管神经症,V1.4,
+"['AAS', 'acute aortic syndrome']",DIS-CARD-AAS,,,,Disease,,,急性主动脉综合征,V1.15,
+"['ACS', '急性冠状动脉综合征', '冠脉综合征']",DIS-CARD-CAD-ACS,,,,Disease,,,急性冠脉综合征,V1.1,
+"['急性心衰', 'AHF', '急性失代偿心力衰竭', 'ADHF']",DIS-CARD-HF-AHF,,,,Disease,,,急性心力衰竭,V1.7,
+,DIS-CARD-PERICARD-ACUTE,,,,Disease,,,急性心包炎,V1.4,
+"['AMI', '心梗', '心肌梗死', '急性心梗']",DIS-CARD-CAD-AMI,,,,Disease,,,急性心肌梗死,V1.1,
+"['IE', 'infective endocarditis', 'endocarditis']",DIS-CARD-INFECTIVE-ENDOCARDITIS,,,,Disease,,,感染性心内膜炎,V1.15,
+"['CCS', '慢性冠脉疾病', '慢性冠状动脉综合征', '慢性冠状动脉疾病', 'CCD']",DIS-CARD-CAD-CCS,,,,Disease,,,慢性冠脉综合征,V1.1,
+"['慢性心衰', 'CHF']",DIS-CARD-HF-CHF,,,,Disease,,,慢性心力衰竭,V1.7,
+"['CKD合并高血压', '慢性肾脏病患者高血压']",DIS-CARD-HT-CKD,,,,Disease,,,慢性肾脏病合并高血压,V1.11,
+"['CTEPH', '慢性血栓栓塞性肺高压']",DIS-CARD-PH-CTEPH,,,,Disease,,,慢性血栓栓塞性肺动脉高压,V1.15,
+"['AVB', '房室阻滞', 'atrioventricular block', 'AV block']",DIS-CARD-ARR-AVB,,,,Disease,,,房室传导阻滞,V1.16,
+"['AVRT', '房室折返', '旁路相关心动过速']",DIS-CARD-ARR-AVRT,,,,Disease,,,房室折返性心动过速,V1.7,
+"['AVNRT', '房室结折返', '房室结折返性心动过速']",DIS-CARD-ARR-AVNRT,,,,Disease,,,房室结折返性心动过速,V1.7,
+"['AT', '局灶性房性心动过速', '房速']",DIS-CARD-ARR-AT,,,,Disease,,,房性心动过速,V1.7,
+"['ASD', 'atrial septal defect']",DIS-CARD-ASD,,,,Disease,,,房间隔缺损,V1.15,
+"['房间隔缺损', 'atrial septal defect', 'ASD']",DIS-CARD-CHD-ASD,,,,Disease,,,房间隔缺损,V1.16,
+"['DCM', '充血型心肌病']",DIS-CARD-CM-DCM,,,,Disease,,,扩张型心肌病,V1.1,
+"['VT', '室性心动过速', '室速', '持续性室速', 'ventricular tachycardia']",DIS-CARD-ARR-VT,,,,Disease,,,持续性室性心动过速,V1.7,
+['ERS'],DIS-CARD-ARR-ERS,,,,Disease,,,早期复极综合征,V1.4,
+"['爆发性心肌炎', 'fulminant myocarditis']",DIS-CARD-FULMINANT-MYOCARDITIS,,,,Disease,,,暴发性心肌炎,V1.15,
+"['室内传导阻滞', 'BBB', 'bundle branch block', 'intraventricular block']",DIS-CARD-ARR-BBB,,,,Disease,,,束支传导阻滞,V1.16,
+['Fabry病心肌病'],DIS-CARD-CM-FABRY,,,,Disease,,,法布雷病心肌病,V1.1,
+"['心脏淀粉样变', 'ATTR-CM', 'AL-CM']",DIS-CARD-CM-AMYLOID,,,,Disease,,,淀粉样变心肌病,V1.1,
+"['IPAH', '特发性PAH']",DIS-CARD-PH-IPAH,,,,Disease,,,特发性肺动脉高压,V1.15,
+"['诊室高血压', 'white coat hypertension']",DIS-CARD-HT-WCH,,,,Disease,,,白大衣高血压,V1.11,
+"['SQTS', '短QT综合征', 'QT间期缩短', 'short-QT syndrome']",DIS-CARD-ARR-SQTS,,,,Disease,,,短QT间期综合征,V1.7,
+"['稳定性心绞痛', '稳定性冠心病']",DIS-CARD-CAD-STABLE-ANGINA,,,,Disease,,,稳定型心绞痛,V1.1,
+"['窦性心率过缓', 'sinus bradycardia']",DIS-CARD-ARR-SB,,,,Disease,,,窦性心动过缓,V1.16,
+,DIS-CARD-ARR-SINUS,,,,Disease,,,窦性心律失常,V1.4,
+"['SAB', '窦房阻滞', 'sinoatrial block']",DIS-CARD-ARR-SAB,,,,Disease,,,窦房传导阻滞,V1.16,
+"['病态窦房结综合征', '病窦综合征', 'SSS', 'SND', 'sick sinus syndrome']",DIS-CARD-ARR-SND,,,,Disease,,,窦房结功能障碍,V1.16,
+"['CTD-PAH', '结缔组织病相关PAH', '结缔组织病', '系统性硬化', '系统性硬化症', '硬皮病', '系统性硬化相关肺动脉高压']",DIS-CARD-PH-CTD,,,,Disease,,,结缔组织病相关肺动脉高压,V1.15,
+"['secondary hypertension', '可明确病因的高血压']",DIS-CARD-HT-SECONDARY,,,,Disease,,,继发性高血压,V1.11,
+"['心动过缓性心律失常', '缓慢心律失常', 'bradycardia', 'bradyarrhythmia']",DIS-CARD-ARR-BRADY,,,,Disease,,,缓慢性心律失常,V1.16,
+,DIS-CARD-PERICARD-CONSTRICTIVE,,,,Disease,,,缩窄性心包炎,V1.4,
+"['ICM', '缺血性心肌病变']",DIS-CARD-CAD-ICM,,,,Disease,,,缺血性心肌病,V1.1,
+"['老年人高血压', 'elderly hypertension']",DIS-CARD-HT-ELDERLY,,,,Disease,,,老年高血压,V1.11,
+"['HCM', '肥厚性心肌病']",DIS-CARD-CM-HCM,,,,Disease,,,肥厚型心肌病,V1.1,
+"['PS', '肺动脉瓣疾病']",DIS-CARD-VHD-PS,,,,Disease,,,肺动脉瓣狭窄,V1.15,
+"['肺高压', 'PH']",DIS-CARD-PH,,,,Disease,,,肺动脉高压,V1.15,
+"['肾性高血压', 'renal parenchymal hypertension']",DIS-CARD-HT-RENAL-PARENCHYMAL,,,,Disease,,,肾实质性高血压,V1.11,
+"['renovascular hypertension', '肾动脉狭窄相关高血压']",DIS-CARD-HT-RENOVASCULAR,,,,Disease,,,肾血管性高血压,V1.11,
+"['AAA', 'abdominal aortic aneurysm']",DIS-CARD-AAA,,,,Disease,,,腹主动脉瘤,V1.15,
+['ABVC'],DIS-CARD-CM-ABVC,,,,Disease,,,致心律失常性双心室心肌病,V1.1,
+"['ARVC', '右心室发育不良型心肌病']",DIS-CARD-CM-ARVC,,,,Disease,,,致心律失常性右心室心肌病,V1.1,
+['ALVC'],DIS-CARD-CM-ALVC,,,,Disease,,,致心律失常性左心室心肌病,V1.1,
+"['ACM', '心律失常相关心肌病']",DIS-CARD-CM-ACM,,,,Disease,,,致心律失常性心肌病,V1.1,
+"['脂质异常', 'dyslipidaemia', 'dyslipidemia']",DIS-CARD-DYSLIPIDEMIA,,,,Disease,,,血脂异常,V1.15,
+"['透析患者心力衰竭', '透析患者心衰', '血液透析患者心衰', '腹膜透析患者心衰']",DIS-CARD-HF-DIALYSIS-CHF,,,,Disease,,,透析患者慢性心力衰竭,V1.7,
+"['HPAH', '遗传性PAH', '家族性肺动脉高压']",DIS-CARD-PH-HPAH,,,,Disease,,,遗传性肺动脉高压,V1.15,
+"['LQTS', '长QT综合征', 'QT间期延长', 'long-QT syndrome']",DIS-CARD-ARR-LQTS,,,,Disease,,,长QT间期综合征,V1.7,
+['PSVT'],DIS-CARD-ARR-PSVT,,,,Disease,,,阵发性室上性心动过速,V1.4,
+"['既往心肌梗死', '陈旧性心梗']",DIS-CARD-CAD-OLD-MI,,,,Disease,,,陈旧性心肌梗死,V1.1,
+['RCM'],DIS-CARD-CM-RCM,,,,Disease,,,限制型心肌病,V1.1,
+"['无症状心肌缺血', '无症状性心肌缺血']",DIS-CARD-CAD-SILENT-ISCHEMIA,,,,Disease,,,隐匿性冠心病,V1.1,
+['masked hypertension'],DIS-CARD-HT-MASKED,,,,Disease,,,隐匿性高血压,V1.11,
+"['顽固性高血压', 'resistant hypertension']",DIS-CARD-HT-RESISTANT,,,,Disease,,,难治性高血压,V1.11,
+,DIS-CARD-VTE,,,,Disease,,,静脉血栓症,V1.4,
+"['NSTEMI', '非ST抬高心梗', '非ST段抬高性心肌梗死', '非ST段抬高心肌梗死', 'NSTE-ACS']",DIS-CARD-CAD-NSTEMI,,,,Disease,,,非ST段抬高型心肌梗死,V1.1,
+"['NDLVCM', '非扩张型左室心肌病', 'NDLVC']",DIS-CARD-CM-NDLVCM,,,,Disease,,,非扩张型左心室心肌病,V1.1,
+"['NSVT', '非持续性室速', '短阵室速', 'non-sustained VT']",DIS-CARD-ARR-NSVT,,,,Disease,,,非持续性室性心动过速,V1.7,
+"['WPW', '预激', '旁路', 'Wolff-Parkinson-White']",DIS-CARD-ARR-WPW,,,,Disease,,,预激综合征,V1.7,
+"['风湿性心脏病', '风湿性瓣膜病']",DIS-CARD-VHD-RHD,,,,Disease,,,风湿性心脏瓣膜病,V1.15,
+"['高胆固醇', 'hypercholesterolemia']",DIS-CARD-HYPERCHOLESTEROLEMIA,,,,Disease,,,高胆固醇血症,V1.15,
+"['血压升高', 'hypertension', 'HT', 'high blood pressure']",DIS-CARD-HT,,,,Disease,,,高血压,V1.11,
+"['高血压', 'hypertension', 'high blood pressure']",DIS-CARD-HTN-ESSENTIAL,,,,Disease,,,高血压,V1.16,
+"['hypertensive urgency', '无急性靶器官损害的重度高血压']",DIS-CARD-HT-URGENCY,,,,Disease,,,高血压亚急症,V1.11,
+"['hypertensive emergency', '高血压危象伴靶器官损害']",DIS-CARD-HT-EMERGENCY,,,,Disease,,,高血压急症,V1.11,
+,DIS-CARD-HTN-EMERGENCY,,,,Disease,,,高血压急症和亚急症,V1.4,
+,CARD-AORTA-PAD,,,,DiseaseCategory,,,主动脉与外周动脉疾病,V1.15,
+,CAT-CARD-AORTA-PAD,,,,DiseaseCategory,,,主动脉和周围血管病,V1.4,
+,CAT-CARD-CHD,,,,DiseaseCategory,,,先天性心血管病,V1.4,
+,CAT-CARD-CAD,,,,DiseaseCategory,,,冠心病,V1.16,
+,CAT-CARD-HF,,,,DiseaseCategory,,,心力衰竭,V1.16,
+,CAT-CARD-PERICARD,,,,DiseaseCategory,,,心包疾病,V1.4,
+,CAT-CARD-ARR,,,,DiseaseCategory,,,心律失常,V1.16,
+,CARD-MPIE,,,,DiseaseCategory,,,心肌炎/心包炎/感染性心内膜炎,V1.15,
+,CAT-CARD-CM,,,,DiseaseCategory,,,心肌病,V1.16,
+,CAT-CARD-VHD,,,,DiseaseCategory,,,心脏瓣膜病,V1.4,
+,CAT-CARD-SCD,,,,DiseaseCategory,,,心脏骤停与心脏性猝死,V1.4,
+,CAT-CARD-NEUROSIS,,,,DiseaseCategory,,,心血管神经症,V1.4,
+,CAT-CARD-IE,,,,DiseaseCategory,,,感染性心内膜炎,V1.4,
+,CARD-VHD,,,,DiseaseCategory,,,瓣膜病,V1.16,
+,CARD-SHD-CHD,,,,DiseaseCategory,,,结构性心脏病/先天性心脏病,V1.16,
+,CARD-PH,,,,DiseaseCategory,,,肺动脉高压,V1.15,
+,CARD-LIPID-ASCVD,,,,DiseaseCategory,,,血脂异常与动脉粥样硬化防治,V1.15,
+,CARD-PACING,,,,DiseaseCategory,,,起搏治疗相关疾病,V1.16,
+,CAT-CARD-HTN,,,,DiseaseCategory,,,高血压,V1.16,
+,CAT-CARD-HT,,,,DiseaseCategory,,,高血压疾病,V1.11,
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-6D548BBAB4A66D2F,yes,,,DiseaseClassification,,,1.急性心衰系因急性的严重心肌损害、结构破坏、心律失常或突然加重的心脏负荷,,deprecated
+['109～140分为中危'],CLASS-CARD-CADREM-UA-69F8FA5ADF,,,,DiseaseClassification,,,109～140分为中危,V1.15,
+['1979年WHO曾将其分为五型'],CLASS-CARD-CADREM-CCS-B18ADE7038,yes,,,DiseaseClassification,,,1979年WHO曾将其分为五型,V1.15,deprecated
+,CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-416C3A7882FD59F3,,,,DiseaseClassification,,,2.急性右心衰竭右心室心肌收缩力急剧下降或右心室的前后负荷突然加重,,
+['Braunwald根据心绞痛的特点和基础病因'],CLASS-CARD-CADREM-UA-3ED0E5D680,yes,,,DiseaseClassification,,,Braunwald根据心绞痛的特点和基础病因,V1.15,deprecated
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-89FF6D87640E98CC,yes,,,DiseaseClassification,,,CCS）和急性冠脉综合征（acutecoronarysyndrome,,deprecated
+['GRACE评分＞140分为高危'],CLASS-CARD-CADREM-UA-44D099513F,,,,DiseaseClassification,,,GRACE评分＞140分为高危,V1.15,
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-AAAC1C88BFF4E4B8,yes,,,DiseaseClassification,,,LVEF≤40%者称为射血分数降低的心衰（HFwithreducedEF,,deprecated
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-E51C7E4ECEA047D3,yes,,,DiseaseClassification,,,LVEF）进行的心衰分类在临床上具有重要意义,,deprecated
+"['STEMI', 'ST段抬高型心肌梗死']",CLASS-CARD-CAD-AMI-STEMI,,,,DiseaseClassification,,,ST段抬高型心肌梗死,,active
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-9FB4E88E62F60AF4,yes,,,DiseaseClassification,,,“干冷”型,,deprecated
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-BBA8E712A5F0D040,,,,DiseaseClassification,,,“干暖”型,,
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-7DCF00210EB3D32A,yes,,,DiseaseClassification,,,“湿暖”型,,deprecated
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-C94CD0919A1D0424,yes,,,DiseaseClassification,,,Ⅰb类：药物不减慢Vmax,,deprecated
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-C89B40C999634443,yes,,,DiseaseClassification,,,Ⅰc类：药物减慢Vmax,,deprecated
+['≤108分为低危'],CLASS-CARD-CADREM-UA-B60FDF102A,,,,DiseaseClassification,,,≤108分为低危,V1.15,
+,CLASS-CARD-CADREM-UA-B94C1D1E11,,,,DiseaseClassification,,,不稳定型心绞痛分类要点2,V1.15,
+,CLASS-CARD-CADREM-UA-8F74C8F4F2,,,,DiseaseClassification,,,不稳定型心绞痛分类要点6,V1.15,
+"['CHD-PAH', '先心病相关肺动脉高压', '成人先天性心脏病相关肺动脉高压', '先天性心脏病相关PH', '先天性心脏病', '先心病', '艾森曼格综合征']",CLASS-CARD-PH-CARD-PH-CHD,,,,DiseaseClassification,,,先天性心脏病相关肺动脉高压,,active
+"['全心衰', '双心衰竭', '双心室心力衰竭']",CLASS-CARD-HF-CARD-HF-BIVENTRICULAR,,,,DiseaseClassification,,,全心衰竭,,active
+['endocrine hypertension'],CLASS-CARD-HT-CARD-HT-ENDOCRINE,,,,DiseaseClassification,,,内分泌性高血压,,active
+['冠心病有不同的临床表型'],CLASS-CARD-CADREM-CCS-DC4DEC6771,yes,,,DiseaseClassification,,,冠心病有不同的临床表型,V1.15,deprecated
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-1DDAF2C3BC90B074,yes,,,DiseaseClassification,,,分为快速型与缓慢型心律失常两大类,,deprecated
+"['PAH', '肺动脉性肺高压']",CLASS-CARD-PH-CARD-PH-PAH,,,,DiseaseClassification,,,动脉性肺动脉高压,,active
+"['本态性高血压', 'essential hypertension', 'primary hypertension']",CLASS-CARD-HT-CARD-HT-PRIMARY,,,,DiseaseClassification,,,原发性高血压,,active
+"['paroxysmal hypertension', '阵发性高血压']",CLASS-CARD-HT-CARD-HT-PAROXYSMAL,,,,DiseaseClassification,,,发作性高血压,,active
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-2F3B270C14EBF999,yes,,,DiseaseClassification,,,右心室代偿功能不全所致为右心衰竭,,deprecated
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-2BA81BCB3845EAE2,yes,,,DiseaseClassification,,,多为类瘤样浸润或恶性浸润所致,,deprecated
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-D50DC1E09B076C23,yes,,,DiseaseClassification,,,奎尼丁、普鲁卡因胺、丙吡胺等属此类,,deprecated
+"['HFpEF', '射血分数保留心衰', '舒张性心力衰竭', '舒张性心衰', 'DHF']",CLASS-CARD-HF-CARD-HF-HFpEF,,,,DiseaseClassification,,,射血分数保留的心力衰竭,,active
+"['HFmrEF', '射血分数中间范围心力衰竭', '射血分数轻度降低心衰']",CLASS-CARD-HF-CARD-HF-HFmrEF,,,,DiseaseClassification,,,射血分数轻度降低的心力衰竭,,active
+"['HFrEF', '射血分数降低心衰', '收缩性心力衰竭']",CLASS-CARD-HF-CARD-HF-HFrEF,,,,DiseaseClassification,,,射血分数降低的心力衰竭,,active
+,CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-B3A56D773D632276,,,,DiseaseClassification,,,将高血压病人分为低危、中危、高危和很高危,,
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-166A31C01D170E49,yes,,,DiseaseClassification,,,左心衰竭和右心衰竭同时存在即为全心衰竭,,deprecated
+,CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-3A5A1E8E1FE7AC7A,,,,DiseaseClassification,,,常由急性冠脉综合征、高血压危象、严重心律失常、慢性心衰急性失代偿等所致,,
+"['心梗后心衰', '心肌梗死后心衰', 'post-MI HF']",CLASS-CARD-HF-CARD-HF-POST-MI,,,,DiseaseClassification,,,心肌梗死后心力衰竭,,active
+,CLASS-CARD-CADREM-ACS-3BA30640A8,,,,DiseaseClassification,,,急性冠脉综合征分类要点5,V1.15,
+,CLASS-CARD-CADREM-ACS-2591236BEF,,,,DiseaseClassification,,,急性冠脉综合征分类要点6,V1.15,
+,CLASS-CARD-CADREM-ACS-6DC7442542,,,,DiseaseClassification,,,急性冠脉综合征分类要点7,V1.15,
+"['急性心衰', 'AHF', '急性失代偿心力衰竭', 'ADHF']",CLASS-CARD-HF-CARD-HF-AHF,,,,DiseaseClassification,,,急性心力衰竭,,active
+['急性心包炎'],CLASS-CARD-PERICARDITIS-CARD-PERICARD-ACUTE,,,,DiseaseClassification,,,急性心包炎,,active
+,CLASS-CARD-CADREM-CCS-DF7358F0FE,,,,DiseaseClassification,,,慢性冠脉综合征分类要点5,V1.15,
+,CLASS-CARD-CADREM-CCS-038C086E09,,,,DiseaseClassification,,,慢性冠脉综合征分类要点6,V1.15,
+,CLASS-CARD-CADREM-CCS-9C4BA248F9,,,,DiseaseClassification,,,慢性冠脉综合征分类要点7,V1.15,
+"['慢性心衰', 'CHF']",CLASS-CARD-HF-CARD-HF-CHF,,,,DiseaseClassification,,,慢性心力衰竭,,active
+"['CKD合并高血压', '慢性肾脏病患者高血压']",CLASS-CARD-HT-CARD-HT-CKD,,,,DiseaseClassification,,,慢性肾脏病合并高血压,,active
+"['CTEPH', '慢性血栓栓塞性肺高压']",CLASS-CARD-PH-CARD-PH-CTEPH,,,,DiseaseClassification,,,慢性血栓栓塞性肺动脉高压,,active
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-AFF08098E4D1BCCB,yes,,,DiseaseClassification,,,按发生机制分为冲动形成异常和冲动传导异常两大类,,deprecated
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-63303FD52837F56B,,,,DiseaseClassification,,,按有无淤血分为“湿”和“干”型,,
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-C4C8EFEE3F1B56EC,yes,,,DiseaseClassification,,,是目前已明确的可以改善病人长期预后的抗心律失常药物,,deprecated
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-5CC02E1A5C7B3C28,yes,,,DiseaseClassification,,,普罗帕酮属此类,,deprecated
+"['爆发性心肌炎', 'fulminant myocarditis']",CLASS-CARD-MYOCARDITIS-CARD-FULMINANT-MYOCARDITIS,,,,DiseaseClassification,,,暴发性心肌炎,,active
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-CF366EAA84BACA78,,,,DiseaseClassification,,,有无组织低灌注分为“冷”和“暖”型,,
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-A5AB4885679C6C16,yes,,,DiseaseClassification,,,本章主要依据心律失常发生的部位、机制以及心率快慢进行综合分类,,deprecated
+,CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-1FE11A62423F4F39,,,,DiseaseClassification,,,根据起病速度和病情危急程度可分为慢性心衰急性失代偿、急性肺水肿、心源性休克,,
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-E319DCBA31FC8488,yes,,,DiseaseClassification,,,此型病情最轻,,deprecated
+"['IPAH', '特发性PAH']",CLASS-CARD-PH-CARD-PH-IPAH,,,,DiseaseClassification,,,特发性肺动脉高压,,active
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-EB4039DCBE2F8B03,,,,DiseaseClassification,,,由此可将急性心衰分为四型,,
+"['诊室高血压', 'white coat hypertension']",CLASS-CARD-HT-CARD-HT-WCH,,,,DiseaseClassification,,,白大衣高血压,,active
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-D55C8A0BE8CA104D,yes,,,DiseaseClassification,,,窦性停搏、病态窦房结综合征,,deprecated
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-534B24B04EEE58F3,yes,,,DiseaseClassification,,,第二节慢性心力衰竭-分类/分型,,deprecated
+"['CTD-PAH', '结缔组织病相关PAH', '结缔组织病', '系统性硬化', '系统性硬化症', '硬皮病', '系统性硬化相关肺动脉高压']",CLASS-CARD-PH-CARD-PH-CTD,,,,DiseaseClassification,,,结缔组织病相关肺动脉高压,,active
+"['secondary hypertension', '可明确病因的高血压']",CLASS-CARD-HT-CARD-HT-SECONDARY,,,,DiseaseClassification,,,继发性高血压,,active
+['缩窄性心包炎'],CLASS-CARD-PERICARDITIS-CARD-PERICARD-CONSTRICTIVE,,,,DiseaseClassification,,,缩窄性心包炎,,active
+['缺血性心肌病'],CLASS-CARD-CADREM-CCS-53D1235A0C,yes,,,DiseaseClassification,,,缺血性心肌病,V1.15,deprecated
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-1461CDA7A131F777,yes,,,DiseaseClassification,,,美托洛尔、普萘洛尔、纳多洛尔、卡维地洛、比索洛尔、阿替洛尔等属此类,,deprecated
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-A32B65198EF00C24,yes,,,DiseaseClassification,,,美西律、苯妥英钠与利多卡因等属此类,,deprecated
+"['老年人高血压', 'elderly hypertension']",CLASS-CARD-HT-CARD-HT-ELDERLY,,,,DiseaseClassification,,,老年高血压,,active
+"['肾性高血压', 'renal parenchymal hypertension']",CLASS-CARD-HT-CARD-HT-RENAL-PARENCHYMAL,,,,DiseaseClassification,,,肾实质性高血压,,active
+"['renovascular hypertension', '肾动脉狭窄相关高血压']",CLASS-CARD-HT-CARD-HT-RENOVASCULAR,,,,DiseaseClassification,,,肾血管性高血压,,active
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-49567123AEB0F14D,yes,,,DiseaseClassification,,,胺碘酮、决奈达隆、索他洛尔、伊布利特、多非利特等属此类,,deprecated
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-C0F7A573C5D7026F,yes,,,DiseaseClassification,,,表3-3-1房颤的临床分类,,deprecated
+,CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-11F8F205966D8060,yes,,,DiseaseClassification,,,表3-4-2不稳定型心绞痛严重程度分级（Braunwald分级）表3-4-3不稳定型心绞痛或非ST段抬高型心肌梗死的危险分层和治疗策略建议,,deprecated
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-B2FFCF49C66EE917,yes,,,DiseaseClassification,,,见于心内膜弹力纤维增生症、高嗜酸性粒细胞综合征、放射性损害、蒽环类药物毒性等,,deprecated
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-5910536FA8358CF4,yes,,,DiseaseClassification,,,近年趋向于根据发病特点和治疗原则不同分为两大类：慢性冠脉综合征（chroniccoronarysyndrome,,deprecated
+"['透析患者心力衰竭', '透析患者心衰', '血液透析患者心衰', '腹膜透析患者心衰']",CLASS-CARD-HF-CARD-HF-DIALYSIS-CHF,,,,DiseaseClassification,,,透析患者慢性心力衰竭,,active
+,CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-65721E6A565E87C6,,,,DiseaseClassification,,,通过治疗只能延缓而不能逆转心衰分期（表3-2-1）,,
+"['HPAH', '遗传性PAH', '家族性肺动脉高压']",CLASS-CARD-PH-CARD-PH-HPAH,,,,DiseaseClassification,,,遗传性肺动脉高压,,active
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-778D48AA08D54825,yes,,,DiseaseClassification,,,部分可能与轻型DCM、HCM等有表型重叠,,deprecated
+['PSVT'],CLASS-CARD-ARR-SVT-CARD-ARR-PSVT,,,,DiseaseClassification,,,阵发性室上性心动过速,,active
+['隐匿型或无症状型冠心病'],CLASS-CARD-CADREM-CCS-631884375C,yes,,,DiseaseClassification,,,隐匿型或无症状型冠心病,V1.15,deprecated
+['masked hypertension'],CLASS-CARD-HT-CARD-HT-MASKED,,,,DiseaseClassification,,,隐匿性高血压,,active
+"['顽固性高血压', 'resistant hypertension']",CLASS-CARD-HT-CARD-HT-RESISTANT,,,,DiseaseClassification,,,难治性高血压,,active
+"['NSTEMI', '非ST段抬高型心肌梗死']",CLASS-CARD-CAD-AMI-NSTEMI,,,,DiseaseClassification,,,非ST段抬高型心肌梗死,,active
+,CLASS-CARD-CADREM-NSTEMI-6C5E8C98A0,,,,DiseaseClassification,,,非ST段抬高型心肌梗死分类要点2,V1.15,
+,CLASS-CARD-CADREM-NSTEMI-6F48893A3E,,,,DiseaseClassification,,,非ST段抬高型心肌梗死分类要点6,V1.15,
+"['hypertensive urgency', '无急性靶器官损害的重度高血压']",CLASS-CARD-HT-CARD-HT-URGENCY,,,,DiseaseClassification,,,高血压亚急症,,active
+"['hypertensive emergency', '高血压危象伴靶器官损害']",CLASS-CARD-HT-CARD-HT-EMERGENCY,,,,DiseaseClassification,,,高血压急症,,active
+,CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-2DDAC1A80113CE08,,,,DiseaseClassification,,,（一）临床分类1.急性左心衰竭急性发作或加重的左心室收缩力降低、负荷加重,,
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-03FA6960B56D5F02,yes,,,DiseaseClassification,,,（一）冲动形成异常1.窦性心律失常,,deprecated
+,CARD-SKELETON-FULL-20260709-DISEASECLASSIFICATION-B65BE33922EF48C1,,,,DiseaseClassification,,,（一）心力衰竭分期心衰分期全面描述了病情进展阶段,,
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-FBC8988935A6B6F5,yes,,,DiseaseClassification,,,（一）按发生的部位分类左心室代偿功能不全所致为左心衰竭,,deprecated
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-DE6B394D88B989C0,yes,,,DiseaseClassification,,,（三）按左心室射血分数分类根据左心室射血分数（leftventricularejectionfraction,,deprecated
+,CARD-SKELETON-20260709-DISEASECLASSIFICATION-A7F9A023797D915C,,,,DiseaseClassification,,,（二）临床分型急性心衰根据组织的淤血和灌注情况进行分型,,
+,TRICUSPID,,,,DiseaseSubcategory,,,三尖瓣疾病,V1.15,
+,SUB-CARD-AORTA-PAD-GENERAL,,,,DiseaseSubcategory,,,主动脉和周围血管病,V1.4,
+,AORTIC,,,,DiseaseSubcategory,,,主动脉瓣疾病,V1.15,
+,MITRAL,,,,DiseaseSubcategory,,,二尖瓣疾病,V1.15,
+,SUB-CARD-CAD-GENERAL,,,,DiseaseSubcategory,,,冠状动脉粥样硬化性心脏病,V1.4,
+,PAH,,,,DiseaseSubcategory,,,动脉性肺动脉高压,V1.15,
+,MULTI,,,,DiseaseSubcategory,,,多瓣膜病,V1.15,
+,SUB-CARD-ARR-SVT,,,,DiseaseSubcategory,,,室上性快速性心律失常,V1.7,
+,SUB-CARD-ARR-VA,,,,DiseaseSubcategory,,,室性心律失常谱系,V1.7,
+,LEFT_HEART,,,,DiseaseSubcategory,,,左心疾病相关肺高压,V1.15,
+,SUB-CARD-HF-GENERAL,,,,DiseaseSubcategory,,,心力衰竭,V1.4,
+,SUB-CARD-PERICARD-GENERAL,,,,DiseaseSubcategory,,,心包疾病,V1.4,
+,SUB-CARD-CM-PHENOTYPE,,,,DiseaseSubcategory,,,心室表型心肌病,V1.1,
+,SUB-CARD-ARR-GENERAL,,,,DiseaseSubcategory,,,心律失常,V1.4,
+,SUB-CARD-CM-ARRHYTHMIC,,,,DiseaseSubcategory,,,心律失常表型心肌病,V1.1,
+,SUB-CARD-CM-ATRIAL,,,,DiseaseSubcategory,,,心房心肌病,V1.1,
+,SUB-CARD-ARR-AF,,,,DiseaseSubcategory,,,心房颤动及相关房性心律失常,V1.7,
+,SUB-CARD-MPIE-GENERAL,,,,DiseaseSubcategory,,,心肌炎、心包炎与感染性心内膜炎,,
+,SUB-CARD-CM-GENERAL,,,,DiseaseSubcategory,,,心肌病与心肌炎,V1.4,
+,SUB-CARD-VHD-GENERAL,,,,DiseaseSubcategory,,,心脏瓣膜病,V1.4,
+[],SUB-CARD-ARR-SCD,,,,DiseaseSubcategory,,,心脏骤停与心脏性猝死,V1.7,
+,SUB-CARD-NEUROSIS-GENERAL,,,,DiseaseSubcategory,,,心血管神经症,V1.4,
+,SUB-CARD-CAD-ACS,,,,DiseaseSubcategory,,,急性冠脉综合征谱系,V1.1,
+,SUB-CARD-IE-GENERAL,,,,DiseaseSubcategory,,,感染性心内膜炎,V1.4,
+,SUB-CARD-CAD-CHRONIC,,,,DiseaseSubcategory,,,慢性冠脉疾病谱系,V1.1,
+,CTEPH,,,,DiseaseSubcategory,,,慢性血栓栓塞性肺动脉高压,V1.15,
+,SUB-CARD-CHD-GENERAL,,,,DiseaseSubcategory,,,成人先天性心血管病,V1.4,
+"['AVB', 'atrioventricular block']",AVB,,,,DiseaseSubcategory,,,房室传导阻滞,V1.16,
+,SUB-CARD-HF-SIDE,,,,DiseaseSubcategory,,,按受累心腔分类,V1.7,
+,SUB-CARD-HF-EF,,,,DiseaseSubcategory,,,按射血分数分类,V1.7,
+,SUB-CARD-HF-COURSE,,,,DiseaseSubcategory,,,按病程与失代偿状态分类,V1.7,
+"['BBB', 'bundle branch block']",BBB,,,,DiseaseSubcategory,,,束支传导阻滞,V1.16,
+,SUB-CARD-HF-SPECIAL,,,,DiseaseSubcategory,,,特殊人群及病因相关心力衰竭,V1.7,
+,SUB-CARD-HT-SPECIAL,,,,DiseaseSubcategory,,,特殊人群和特殊类型高血压,V1.11,
+,SUB-CARD-CM-SPECIAL,,,,DiseaseSubcategory,,,特殊病因及继发性心肌病,V1.1,
+"['SINUS', 'sinus arrhythmia']",SINUS,,,,DiseaseSubcategory,,,窦性心律失常,V1.16,
+"['SND', 'sinus node dysfunction', '病态窦房结综合征', 'SSS']",SND,,,,DiseaseSubcategory,,,窦房结功能障碍,V1.16,
+,SUB-CARD-SHD-CHD-GENERAL,,,,DiseaseSubcategory,,,结构性心脏病/先天性心脏病,,
+,SUB-CARD-HT-SECONDARY,,,,DiseaseSubcategory,,,继发性高血压,V1.11,
+"['BRADY', 'bradyarrhythmia']",BRADY,,,,DiseaseSubcategory,,,缓慢性心律失常,V1.16,
+,SUB-CARD-ARR-BRADY,,,,DiseaseSubcategory,,,缓慢性心律失常及传导阻滞,V1.7,
+,PULMONARY,,,,DiseaseSubcategory,,,肺动脉瓣疾病,V1.15,
+,SUB-CARD-PH-GENERAL,,,,DiseaseSubcategory,,,肺动脉高压,,
+,CRISIS,,,,DiseaseSubcategory,,,肺动脉高压危象,V1.15,
+,LUNG_DISEASE,,,,DiseaseSubcategory,,,肺部疾病和低氧相关肺高压,V1.15,
+,SUB-CARD-LIPID-ASCVD-GENERAL,,,,DiseaseSubcategory,,,血脂异常与动脉粥样硬化防治,,
+,SUB-CARD-ARR-INHERITED,,,,DiseaseSubcategory,,,遗传性原发性心律失常综合征,V1.7,
+,RHEUMATIC,,,,DiseaseSubcategory,,,风湿性瓣膜病,V1.15,
+,SUB-CARD-HTN-GENERAL,,,,DiseaseSubcategory,,,高血压,V1.4,
+,SUB-CARD-HT-CRISIS,,,,DiseaseSubcategory,,,高血压危象,V1.11,
+,SUB-CARD-HT-GENERAL,,,,DiseaseSubcategory,,,高血压常见类型,V1.11,
+,CARD,,,,Specialty,,,心血管内科,V1.16,
+['心血管内科'],SPEC-CARD,,,,Specialty,,,心血管内科,V1.11,

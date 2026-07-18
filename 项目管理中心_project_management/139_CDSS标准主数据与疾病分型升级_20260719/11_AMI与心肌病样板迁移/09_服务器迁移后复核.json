@@ -1,0 +1,39 @@
+{
+  "scope": "sample",
+  "check_count": 5,
+  "blocking_count": 0,
+  "passed": true,
+  "checks": [
+    {
+      "metric": "sample_legacy_relation_count",
+      "chinese_name": "AMI与心肌病仍有旧层级关系",
+      "value": 0,
+      "passed": true
+    },
+    {
+      "metric": "sample_missing_core_relation_count",
+      "chinese_name": "AMI与心肌病缺少核心层级关系",
+      "value": 0,
+      "passed": true
+    },
+    {
+      "metric": "sample_missing_standard_diagnosis_count",
+      "chinese_name": "AMI与心肌病可回填疾病缺少标准诊断",
+      "value": 0,
+      "passed": true
+    },
+    {
+      "metric": "sample_duplicate_classification_node_count",
+      "chinese_name": "AMI重复分型节点仍残留",
+      "value": 0,
+      "passed": true
+    },
+    {
+      "metric": "sample_invalid_classification_remaining_count",
+      "chinese_name": "AMI与心肌病旧分型实体仍被使用",
+      "value": 0,
+      "passed": true
+    }
+  ],
+  "checked_at": "2026-07-19 01:12:55"
+}

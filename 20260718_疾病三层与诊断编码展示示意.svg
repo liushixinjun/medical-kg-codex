@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="920" viewBox="0 0 1600 920">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#111c34"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.32"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6ea8ff"/>
+    </marker>
+    <style>
+      .title { font: 700 34px 'Microsoft YaHei', sans-serif; fill: #f4f8ff; }
+      .subtitle { font: 400 18px 'Microsoft YaHei', sans-serif; fill: #a9b7ce; }
+      .section { font: 700 24px 'Microsoft YaHei', sans-serif; fill: #ffffff; }
+      .node-title { font: 700 21px 'Microsoft YaHei', sans-serif; fill: #ffffff; }
+      .node-sub { font: 400 16px 'Microsoft YaHei', sans-serif; fill: #d2dded; }
+      .small { font: 400 15px 'Microsoft YaHei', sans-serif; fill: #b8c5d8; }
+      .code { font: 600 15px Consolas, 'Microsoft YaHei', monospace; fill: #bce6ff; }
+      .tag { font: 700 14px 'Microsoft YaHei', sans-serif; fill: #07121f; }
+      .line { stroke: #6ea8ff; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .dash { stroke: #8bd3c7; stroke-width: 2.5; stroke-dasharray: 9 7; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1600" height="920" fill="url(#bg)"/>
+  <text x="70" y="65" class="title">专科 CDSS：疾病三层结构与诊断编码展示</text>
+  <text x="70" y="100" class="subtitle">医生看到的是“疑似疾病 → 临床分型”；ICD-10 作为分型后的编码选择，不增加临床疾病层级</text>
+
+  <!-- Legend -->
+  <rect x="1115" y="42" width="405" height="76" rx="16" fill="#15233d" stroke="#314866"/>
+  <circle cx="1145" cy="68" r="10" fill="#5b8def"/><text x="1164" y="74" class="small">临床疾病层级</text>
+  <circle cx="1305" cy="68" r="10" fill="#32c7a4"/><text x="1324" y="74" class="small">可用于诊断编码</text>
+  <line x1="1140" y1="96" x2="1185" y2="96" class="dash"/><text x="1200" y="102" class="small">编码映射，不是疾病下一级</text>
+
+  <!-- Left: Cardiomyopathy -->
+  <rect x="60" y="145" width="725" height="695" rx="24" fill="#101a2d" stroke="#2a4265" filter="url(#shadow)"/>
+  <text x="95" y="190" class="section">样板一：心肌病</text>
+
+  <rect x="250" y="220" width="340" height="88" rx="18" fill="#294f9c" stroke="#79a6ff"/>
+  <text x="420" y="256" text-anchor="middle" class="node-title">心血管内科</text>
+  <text x="420" y="284" text-anchor="middle" class="node-sub">第一层 · 专科</text>
+
+  <path d="M420 309 L420 350" class="line"/>
+
+  <rect x="205" y="360" width="430" height="118" rx="20" fill="#7357c6" stroke="#b49cff"/>
+  <text x="420" y="397" text-anchor="middle" class="node-title">心肌病</text>
+  <text x="420" y="426" text-anchor="middle" class="node-sub">第二层 · 疾病大类 / 疑似疾病</text>
+  <rect x="330" y="442" width="180" height="26" rx="13" fill="#ffd166"/>
+  <text x="420" y="460" text-anchor="middle" class="tag">初步诊断 I42.900</text>
+
+  <path d="M420 479 L420 526" class="line"/>
+
+  <rect x="105" y="540" width="190" height="86" rx="16" fill="#1f7a8c" stroke="#68d5e6"/>
+  <text x="200" y="575" text-anchor="middle" class="node-title">肥厚型心肌病</text>
+  <text x="200" y="602" text-anchor="middle" class="node-sub">第三层 · 临床分型</text>
+
+  <rect x="325" y="540" width="190" height="86" rx="16" fill="#1f7a8c" stroke="#68d5e6"/>
+  <text x="420" y="575" text-anchor="middle" class="node-title">扩张型心肌病</text>
+  <text x="420" y="602" text-anchor="middle" class="node-sub">第三层 · 临床分型</text>
+
+  <rect x="545" y="540" width="190" height="86" rx="16" fill="#1f7a8c" stroke="#68d5e6"/>
+  <text x="640" y="575" text-anchor="middle" class="node-title">限制型心肌病</text>
+  <text x="640" y="602" text-anchor="middle" class="node-sub">第三层 · 临床分型</text>
+
+  <path d="M365 479 C320 510 255 515 200 539" class="line"/>
+  <path d="M420 479 L420 539" class="line"/>
+  <path d="M475 479 C520 510 585 515 640 539" class="line"/>
+
+  <rect x="95" y="682" width="610" height="122" rx="18" fill="#122d2d" stroke="#32c7a4"/>
+  <text x="120" y="715" class="node-title">肥厚型心肌病：诊断编码选择</text>
+  <text x="120" y="747" class="code">I42.100  梗阻性肥厚型心肌病</text>
+  <text x="120" y="775" class="code">I42.200  其他肥厚型心肌病</text>
+  <text x="420" y="775" class="code">I42.201  心尖肥厚型心肌病</text>
+  <path d="M200 627 C200 650 230 661 260 681" class="dash"/>
+
+  <!-- Right: AMI -->
+  <rect x="815" y="145" width="725" height="695" rx="24" fill="#101a2d" stroke="#2a4265" filter="url(#shadow)"/>
+  <text x="850" y="190" class="section">样板二：急性心肌梗死（AMI）</text>
+
+  <rect x="1005" y="220" width="340" height="88" rx="18" fill="#294f9c" stroke="#79a6ff"/>
+  <text x="1175" y="256" text-anchor="middle" class="node-title">心血管内科</text>
+  <text x="1175" y="284" text-anchor="middle" class="node-sub">第一层 · 专科</text>
+
+  <path d="M1175 309 L1175 350" class="line"/>
+
+  <rect x="960" y="360" width="430" height="118" rx="20" fill="#7357c6" stroke="#b49cff"/>
+  <text x="1175" y="397" text-anchor="middle" class="node-title">急性心肌梗死</text>
+  <text x="1175" y="426" text-anchor="middle" class="node-sub">第二层 · 疾病大类 / 疑似疾病</text>
+  <rect x="1085" y="442" width="180" height="26" rx="13" fill="#ffd166"/>
+  <text x="1175" y="460" text-anchor="middle" class="tag">初步诊断 I21.900</text>
+
+  <path d="M1175 479 L1175 526" class="line"/>
+
+  <rect x="935" y="540" width="285" height="86" rx="16" fill="#1f7a8c" stroke="#68d5e6"/>
+  <text x="1077" y="575" text-anchor="middle" class="node-title">ST段抬高型心肌梗死</text>
+  <text x="1077" y="602" text-anchor="middle" class="node-sub">第三层 · 临床分型（STEMI）</text>
+
+  <rect x="1250" y="540" width="250" height="86" rx="16" fill="#1f7a8c" stroke="#68d5e6"/>
+  <text x="1375" y="575" text-anchor="middle" class="node-title">非ST段抬高型心肌梗死</text>
+  <text x="1375" y="602" text-anchor="middle" class="node-sub">第三层 · 临床分型（NSTEMI）</text>
+
+  <path d="M1125 479 C1095 505 1080 520 1077 539" class="line"/>
+  <path d="M1225 479 C1280 505 1340 520 1375 539" class="line"/>
+
+  <rect x="850" y="682" width="655" height="122" rx="18" fill="#122d2d" stroke="#32c7a4"/>
+  <text x="875" y="715" class="node-title">分型后的诊断编码选择</text>
+  <text x="875" y="747" class="small">根据 CDSS 有效 ICD-10 字典继续选择部位、类型或其他可回填编码。</text>
+  <text x="875" y="778" class="small">亚急性心肌梗死属于病程状态；I23.* 属于并发症，不作为 STEMI/NSTEMI 下级。</text>
+  <path d="M1077 627 C1077 650 1095 661 1115 681" class="dash"/>
+
+  <rect x="60" y="865" width="1480" height="38" rx="12" fill="#182743"/>
+  <text x="800" y="891" text-anchor="middle" class="subtitle">页面主区只显示三层临床结构；编码列表在医生确认分型时展开，编码关系不参与疾病层级统计。</text>
+</svg>

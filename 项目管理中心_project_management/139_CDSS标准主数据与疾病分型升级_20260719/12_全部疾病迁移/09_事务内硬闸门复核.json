@@ -1,0 +1,93 @@
+{
+  "scope": "all",
+  "check_count": 14,
+  "blocking_count": 0,
+  "passed": true,
+  "checks": [
+    {
+      "metric": "legacy_structural_relation_count",
+      "chinese_name": "全库仍有V1旧层级关系",
+      "value": 0,
+      "passed": true
+    },
+    {
+      "metric": "disease_classification_node_count",
+      "chinese_name": "全库仍有旧疾病分型节点",
+      "value": 0,
+      "passed": true
+    },
+    {
+      "metric": "duplicate_specialty_root_count",
+      "chinese_name": "心血管内科重复根节点",
+      "value": 0,
+      "passed": true
+    },
+    {
+      "metric": "category_without_specialty_count",
+      "chinese_name": "疾病大类未挂顶层学科",
+      "value": 0,
+      "passed": true
+    },
+    {
+      "metric": "disease_without_parent_count",
+      "chinese_name": "疾病既无大类也无父疾病",
+      "value": 0,
+      "passed": true
+    },
+    {
+      "metric": "clinical_subtype_without_parent_count",
+      "chinese_name": "临床分型无父疾病",
+      "value": 0,
+      "passed": true
+    },
+    {
+      "metric": "disease_subtype_cycle_count",
+      "chinese_name": "疾病分型形成循环",
+      "value": 0,
+      "passed": true
+    },
+    {
+      "metric": "duplicate_active_disease_name_count",
+      "chinese_name": "正式疾病同名重复",
+      "value": 0,
+      "passed": true
+    },
+    {
+      "metric": "diagnosable_category_count",
+      "chinese_name": "疾病大类被错误标记为可诊断",
+      "value": 0,
+      "passed": true
+    },
+    {
+      "metric": "display_group_not_display_only_count",
+      "chinese_name": "展示分组被误作诊断",
+      "value": 0,
+      "passed": true
+    },
+    {
+      "metric": "emr_writable_without_standard_diagnosis_count",
+      "chinese_name": "可回填疾病缺少有效标准诊断",
+      "value": 0,
+      "passed": true
+    },
+    {
+      "metric": "invalid_standard_diagnosis_count",
+      "chinese_name": "标准诊断不是有效字典记录",
+      "value": 0,
+      "passed": true
+    },
+    {
+      "metric": "duplicate_standard_diagnosis_uuid_count",
+      "chinese_name": "标准诊断UUID重复",
+      "value": 0,
+      "passed": true
+    },
+    {
+      "metric": "duplicate_structural_relation_count",
+      "chinese_name": "V2层级关系重复",
+      "value": 0,
+      "passed": true
+    }
+  ],
+  "checked_at": "2026-07-19 01:58:03"
+}

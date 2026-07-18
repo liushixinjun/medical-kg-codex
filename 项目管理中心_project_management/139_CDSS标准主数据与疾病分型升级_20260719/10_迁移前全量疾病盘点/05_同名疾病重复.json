@@ -1,0 +1,26 @@
+[
+  {
+    "name": "心力衰竭",
+    "codes": [
+      "DIS-CARD-HF",
+      "DIS-CARD-HF-GENERAL"
+    ],
+    "count": 2
+  },
+  {
+    "name": "房间隔缺损",
+    "codes": [
+      "DIS-CARD-CHD-ASD",
+      "DIS-CARD-ASD"
+    ],
+    "count": 2
+  },
+  {
+    "name": "高血压",
+    "codes": [
+      "DIS-CARD-HT",
+      "DIS-CARD-HTN-ESSENTIAL"
+    ],
+    "count": 2
+  }
+]
