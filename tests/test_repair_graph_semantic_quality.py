@@ -126,8 +126,10 @@ class RepairGraphSemanticQualityTests(unittest.TestCase):
                     "batch_id": "BATCH-TEST",
                     "schema_version": "V1.5",
                     "review_status": "approved",
-                    "evidence_text": "\u9759\u8109\u8840\u6813\u75c7\u53ef\u91c7\u7528\u6eb6\u6813\u6cbb\u7597\u3002",
-                    "provenance_records_json": [{"evidence_text": "\u9759\u8109\u8840\u6813\u75c7\u53ef\u91c7\u7528\u6eb6\u6813\u6cbb\u7597\u3002"}],
+                    "evidence_text": "\u9759\u8109\u8840\u6813\u75c7\u91c7\u7528\u6eb6\u6813\u6cbb\u7597\u65f6\uff0c\u53ef\u4f7f\u7528\u5177\u4f53\u6eb6\u6813\u836f\u7269\u3002",
+                    "provenance_records_json": [
+                        {"evidence_text": "\u9759\u8109\u8840\u6813\u75c7\u91c7\u7528\u6eb6\u6813\u6cbb\u7597\u65f6\uff0c\u53ef\u4f7f\u7528\u5177\u4f53\u6eb6\u6813\u836f\u7269\u3002"}
+                    ],
                 }
             ]
             (data_dir / "nodes_final.jsonl").write_text(

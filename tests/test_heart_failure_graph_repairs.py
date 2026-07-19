@@ -259,8 +259,12 @@ class HeartFailureGraphRepairTests(unittest.TestCase):
             self.assertIn("达格列净", names)
             self.assertNotIn("呋塞米", loop_node["aliases"])
             self.assertTrue(any(rel[1] == "has_specific_medication" for rel in relation_keys))
-            self.assertTrue(any(rel[1] == "has_clinical_pathway" and rel[0] == "PLAN-HFrEF" for rel in relation_keys))
-            self.assertTrue(any(rel[1] == "has_clinical_pathway" and rel[0] == "DIS-CARD-HF-HFrEF" for rel in relation_keys))
+            self.assertTrue(
+                any(
+                    rel[0] == "PLAN-HFrEF" and rel[1] == "includes_medication"
+                    for rel in relation_keys
+                )
+            )
             self.assertIn("applicable_population", treated)
             self.assertIn("exclusion_criteria", treated)
             self.assertIn("dosage", loop_node)

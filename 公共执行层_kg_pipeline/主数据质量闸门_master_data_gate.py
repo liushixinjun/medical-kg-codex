@@ -291,32 +291,40 @@ CHECKS: list[GateCheck] = [
     GateCheck(
         metric="replaced_duplicate_still_referenced_count",
         chinese_name="已替换重复节点仍被引用",
-        description="重复节点已经被标记为归并替换，但仍被疾病、路径、规则或推荐关系引用。",
+        description="重复节点已经被标记为归并替换，但仍被任意实体或关系引用。检查范围覆盖全部关系类型，不再只检查少数临床关系。",
         count_query="""
-            MATCH (src:KGNode)-[r]->(n:KGNode)
+            MATCH (n:KGNode)-[r]-()
             WHERE n.duplicate_replaced_by IS NOT NULL
               AND n.duplicate_replaced_by <> n.code
-              AND type(r) IN [
-                'has_symptom','has_sign','requires_exam','requires_lab_test','has_treatment_plan',
-                'has_diagnostic_criteria','has_differential_diagnosis','has_risk_factor',
-                'has_follow_up','has_prognosis','has_prevention','has_recommended_action',
-                'recommends_action','includes_medication','includes_procedure'
-              ]
             RETURN count(r) AS value
         """,
         detail_query="""
-            MATCH (src:KGNode)-[r]->(n:KGNode)
+            MATCH (n:KGNode)-[r]-(other:KGNode)
             WHERE n.duplicate_replaced_by IS NOT NULL
               AND n.duplicate_replaced_by <> n.code
-              AND type(r) IN [
-                'has_symptom','has_sign','requires_exam','requires_lab_test','has_treatment_plan',
-                'has_diagnostic_criteria','has_differential_diagnosis','has_risk_factor',
-                'has_follow_up','has_prognosis','has_prevention','has_recommended_action',
-                'recommends_action','includes_medication','includes_procedure'
-              ]
-            RETURN src.code AS source_code, src.name AS source_name, type(r) AS relation_type,
-                   n.code AS duplicate_code, n.name AS duplicate_name, n.duplicate_replaced_by AS standard_node_code
-            ORDER BY relation_type, source_code, duplicate_name
+            RETURN other.code AS related_code, other.name AS related_name, type(r) AS relation_type,
+                   n.code AS duplicate_code, n.name AS duplicate_name,
+                   n.duplicate_replaced_by AS standard_node_code
+            ORDER BY relation_type, related_code, duplicate_name
+        """,
+    ),
+    GateCheck(
+        metric="duplicate_replacement_marker_count",
+        chinese_name="历史重复替代标记未收口",
+        description="完成物理归并后不应继续保留 duplicate_replaced_by。有效重复节点应物理归并，失效或自指标记应清除。",
+        count_query="""
+            MATCH (n:KGNode)
+            WHERE n.duplicate_replaced_by IS NOT NULL
+            RETURN count(n) AS value
+        """,
+        detail_query="""
+            MATCH (n:KGNode)
+            WHERE n.duplicate_replaced_by IS NOT NULL
+            RETURN elementId(n) AS node_element_id, n.entityType AS entity_type,
+                   n.code AS code, n.name AS name,
+                   n.duplicate_replaced_by AS duplicate_replaced_by,
+                   COUNT {(n)--()} AS relation_count
+            ORDER BY relation_count DESC, entity_type, name
         """,
     ),
 ]

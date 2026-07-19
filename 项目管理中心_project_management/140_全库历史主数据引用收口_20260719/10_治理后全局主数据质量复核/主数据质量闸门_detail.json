@@ -1,0 +1,16 @@
+{
+  "disease_without_parent_count": [],
+  "clinical_subtype_without_parent_count": [],
+  "display_group_without_category_count": [],
+  "legacy_disease_classification_count": [],
+  "legacy_disease_hierarchy_relation_count": [],
+  "active_duplicate_disease_name_count": [],
+  "retired_disease_node_remaining_count": [],
+  "non_scalar_code_count": [],
+  "same_disease_same_type_same_name_duplicate_count": [],
+  "diagnosis_criteria_without_component_count": [],
+  "orphan_diagnosis_criteria_count": [],
+  "treatment_plan_without_downstream_count": [],
+  "replaced_duplicate_still_referenced_count": [],
+  "duplicate_replacement_marker_count": []
+}
