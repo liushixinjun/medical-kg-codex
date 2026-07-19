@@ -1,0 +1,16 @@
+{
+  "applied_at": "2026-07-19 17:13:35",
+  "batch_id": "20260719_CDSS双口径缺口治理",
+  "transaction": "single_transaction_committed",
+  "result": {
+    "formal_primary_evidence_updated": 1,
+    "definition_created": 24,
+    "definition_updated": 12,
+    "plan_relations_deleted": 4,
+    "plan_nodes_deleted": 3,
+    "differential_relations_deleted": 16,
+    "differential_nodes_deleted": 0,
+    "orphan_medication_nodes_deleted": 2
+  },
+  "backup_path": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\项目管理中心_project_management\\141_CDSS双口径审计与缺口治理_20260719\\02_修复包\\写库前回滚数据.json"
+}
