@@ -1,0 +1,13 @@
+{
+  "deleted_empty_evidence_relations": 0,
+  "deleted_stale_treatment_plans": 0,
+  "normalized_standard_procedure_validation_fields": 49,
+  "deleted_invalid_catheter_thrombectomy_nodes": 0,
+  "gates": {
+    "empty_evidence_relation_count": 0,
+    "empty_treatment_plan_count": 0,
+    "tbad_action_count": 3,
+    "tbad_standard_mapping_count": 1,
+    "unmapped_procedure_count": 0
+  }
+}

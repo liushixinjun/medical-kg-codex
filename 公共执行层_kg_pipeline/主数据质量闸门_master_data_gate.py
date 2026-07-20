@@ -40,6 +40,100 @@ class GateCheck:
 
 CHECKS: list[GateCheck] = [
     GateCheck(
+        metric="noncanonical_disease_category_count",
+        chinese_name="非标准疾病大类残留",
+        description="正式疾病大类编码必须使用 CAT- 前缀；非标准旧目录会造成统计重复和疾病漏展示。",
+        count_query="""
+            MATCH (c:KGNode {entityType:'DiseaseCategory'})
+            WHERE coalesce(c.status,'active') <> 'deprecated'
+              AND coalesce(c.deprecated,false) <> true
+              AND NOT c.code STARTS WITH 'CAT-'
+            RETURN count(c) AS value
+        """,
+        detail_query="""
+            MATCH (c:KGNode {entityType:'DiseaseCategory'})
+            WHERE coalesce(c.status,'active') <> 'deprecated'
+              AND coalesce(c.deprecated,false) <> true
+              AND NOT c.code STARTS WITH 'CAT-'
+            OPTIONAL MATCH (c)-[:has_disease]->(d:KGNode {entityType:'Disease'})
+            RETURN c.code AS category_code, c.name AS category_name,
+                   count(DISTINCT d) AS direct_disease_count
+            ORDER BY category_name, category_code
+        """,
+    ),
+    GateCheck(
+        metric="disease_unreachable_from_canonical_category_count",
+        chinese_name="疾病无法从正式大类到达",
+        description="每个疾病必须能从正式疾病大类经直接包含或临床分型关系到达，否则页面与CDSS目录会漏掉该疾病。",
+        count_query="""
+            MATCH (d:KGNode {entityType:'Disease'})
+            WHERE coalesce(d.status,'active') <> 'deprecated'
+              AND coalesce(d.deprecated,false) <> true
+              AND NOT EXISTS {
+                MATCH (:KGNode {entityType:'Specialty'})-[:has_disease_category]->
+                      (c:KGNode {entityType:'DiseaseCategory'})-[:has_disease]->
+                      (:KGNode {entityType:'Disease'})-[:has_clinical_subtype*0..3]->(d)
+                WHERE c.code STARTS WITH 'CAT-'
+              }
+            RETURN count(d) AS value
+        """,
+        detail_query="""
+            MATCH (d:KGNode {entityType:'Disease'})
+            WHERE coalesce(d.status,'active') <> 'deprecated'
+              AND coalesce(d.deprecated,false) <> true
+              AND NOT EXISTS {
+                MATCH (:KGNode {entityType:'Specialty'})-[:has_disease_category]->
+                      (c:KGNode {entityType:'DiseaseCategory'})-[:has_disease]->
+                      (:KGNode {entityType:'Disease'})-[:has_clinical_subtype*0..3]->(d)
+                WHERE c.code STARTS WITH 'CAT-'
+              }
+            RETURN d.code AS disease_code, d.name AS disease_name,
+                   d.diagnostic_role AS diagnostic_role, d.parentCode AS parent_code
+            ORDER BY disease_name, disease_code
+        """,
+    ),
+    GateCheck(
+        metric="clinical_subtype_multiple_parent_count",
+        chinese_name="临床分型存在多个父疾病",
+        description="一个具体临床分型只能归属一个待分型父疾病，避免同一分型同时出现在不相干诊断路径。",
+        count_query="""
+            MATCH (d:KGNode {entityType:'Disease',diagnostic_role:'clinical_subtype'})
+            OPTIONAL MATCH (p:KGNode {entityType:'Disease'})-[:has_clinical_subtype]->(d)
+            WITH d, count(DISTINCT p) AS parent_count
+            WHERE parent_count > 1
+            RETURN count(d) AS value
+        """,
+        detail_query="""
+            MATCH (d:KGNode {entityType:'Disease',diagnostic_role:'clinical_subtype'})
+            OPTIONAL MATCH (p:KGNode {entityType:'Disease'})-[:has_clinical_subtype]->(d)
+            WITH d, collect(DISTINCT {code:p.code,name:p.name}) AS parents,
+                 count(DISTINCT p) AS parent_count
+            WHERE parent_count > 1
+            RETURN d.code AS disease_code, d.name AS disease_name, parent_count, parents
+            ORDER BY parent_count DESC, disease_name
+        """,
+    ),
+    GateCheck(
+        metric="clinical_subtype_parent_role_error_count",
+        chinese_name="临床分型父疾病角色错误",
+        description="临床分型的唯一父疾病必须是待分型诊断，不能挂在独立疾病或另一个具体分型下面。",
+        count_query="""
+            MATCH (p:KGNode {entityType:'Disease'})-[:has_clinical_subtype]->
+                  (d:KGNode {entityType:'Disease',diagnostic_role:'clinical_subtype'})
+            WHERE coalesce(p.diagnostic_role,'') <> 'broad_diagnosis'
+            RETURN count(DISTINCT d) AS value
+        """,
+        detail_query="""
+            MATCH (p:KGNode {entityType:'Disease'})-[:has_clinical_subtype]->
+                  (d:KGNode {entityType:'Disease',diagnostic_role:'clinical_subtype'})
+            WHERE coalesce(p.diagnostic_role,'') <> 'broad_diagnosis'
+            RETURN p.code AS parent_code, p.name AS parent_name,
+                   p.diagnostic_role AS parent_role,
+                   d.code AS subtype_code, d.name AS subtype_name
+            ORDER BY parent_name, subtype_name
+        """,
+    ),
+    GateCheck(
         metric="disease_without_parent_count",
         chinese_name="疾病无父级",
         description="正式疾病必须由疾病大类直接包含，或作为另一个疾病的临床分型；两者都没有即为目录断链。",
@@ -231,6 +325,118 @@ CHECKS: list[GateCheck] = [
         """,
     ),
     GateCheck(
+        metric="standard_procedure_required_field_error_count",
+        chinese_name="标准手术关键字段缺失或无效",
+        description="CDSS 标准手术必须保留 Oracle UUID、标准编码、标准名称、有效标志、来源表和二次校验结论，且只能使用有效标志为1并已校验通过的记录。",
+        count_query="""
+            MATCH (s:KGNode {entityType:'StandardProcedure'})
+            WHERE s.cdss_dict_id IS NULL OR trim(toString(s.cdss_dict_id)) = ''
+               OR s.standard_code IS NULL OR trim(toString(s.standard_code)) = ''
+               OR s.name IS NULL OR trim(s.name) = ''
+               OR coalesce(s.valid_flag, 0) <> 1
+               OR coalesce(s.source_table, '') <> 'K_OPERATION_HANDLE_DICT'
+               OR coalesce(s.dictionary_validation_status, '') <> 'validated'
+               OR s.dictionary_validation_sources IS NULL
+               OR size(s.dictionary_validation_sources) = 0
+            RETURN count(s) AS value
+        """,
+        detail_query="""
+            MATCH (s:KGNode {entityType:'StandardProcedure'})
+            WHERE s.cdss_dict_id IS NULL OR trim(toString(s.cdss_dict_id)) = ''
+               OR s.standard_code IS NULL OR trim(toString(s.standard_code)) = ''
+               OR s.name IS NULL OR trim(s.name) = ''
+               OR coalesce(s.valid_flag, 0) <> 1
+               OR coalesce(s.source_table, '') <> 'K_OPERATION_HANDLE_DICT'
+               OR coalesce(s.dictionary_validation_status, '') <> 'validated'
+               OR s.dictionary_validation_sources IS NULL
+               OR size(s.dictionary_validation_sources) = 0
+            RETURN s.code AS node_code, s.cdss_dict_id AS cdss_dict_id,
+                   s.standard_code AS standard_code, s.name AS name,
+                   s.valid_flag AS valid_flag, s.source_table AS source_table,
+                   s.dictionary_validation_status AS dictionary_validation_status,
+                   s.dictionary_validation_sources AS dictionary_validation_sources
+            ORDER BY name, standard_code
+        """,
+    ),
+    GateCheck(
+        metric="standard_procedure_duplicate_uuid_count",
+        chinese_name="标准手术Oracle UUID重复",
+        description="同一个 CDSS 手术字典 UUID 只能对应一个 StandardProcedure 节点。",
+        count_query="""
+            MATCH (s:KGNode {entityType:'StandardProcedure'})
+            WITH s.cdss_dict_id AS cdss_dict_id, count(DISTINCT s.code) AS node_count
+            WHERE cdss_dict_id IS NOT NULL AND trim(toString(cdss_dict_id)) <> '' AND node_count > 1
+            RETURN count(*) AS value
+        """,
+        detail_query="""
+            MATCH (s:KGNode {entityType:'StandardProcedure'})
+            WITH s.cdss_dict_id AS cdss_dict_id, collect(DISTINCT s.code) AS node_codes,
+                 collect(DISTINCT s.name) AS names, count(DISTINCT s.code) AS node_count
+            WHERE cdss_dict_id IS NOT NULL AND trim(toString(cdss_dict_id)) <> '' AND node_count > 1
+            RETURN cdss_dict_id, node_count, node_codes, names
+            ORDER BY node_count DESC, cdss_dict_id
+        """,
+    ),
+    GateCheck(
+        metric="standard_procedure_duplicate_code_count",
+        chinese_name="标准手术编码重复",
+        description="同一手术编码体系版本下，一个标准手术编码只能对应一个 StandardProcedure 节点。",
+        count_query="""
+            MATCH (s:KGNode {entityType:'StandardProcedure'})
+            WITH s.coding_system AS coding_system, s.coding_system_version AS coding_system_version,
+                 s.standard_code AS standard_code, count(DISTINCT s.code) AS node_count
+            WHERE standard_code IS NOT NULL AND trim(toString(standard_code)) <> '' AND node_count > 1
+            RETURN count(*) AS value
+        """,
+        detail_query="""
+            MATCH (s:KGNode {entityType:'StandardProcedure'})
+            WITH s.coding_system AS coding_system, s.coding_system_version AS coding_system_version,
+                 s.standard_code AS standard_code, collect(DISTINCT s.code) AS node_codes,
+                 collect(DISTINCT s.name) AS names, count(DISTINCT s.code) AS node_count
+            WHERE standard_code IS NOT NULL AND trim(toString(standard_code)) <> '' AND node_count > 1
+            RETURN coding_system, coding_system_version, standard_code, node_count, node_codes, names
+            ORDER BY node_count DESC, standard_code
+        """,
+    ),
+    GateCheck(
+        metric="orphan_standard_procedure_count",
+        chinese_name="标准手术无临床手术引用",
+        description="StandardProcedure 必须由临床 Procedure 通过 has_standard_procedure 引用，不能形成孤立字典节点。",
+        count_query="""
+            MATCH (s:KGNode {entityType:'StandardProcedure'})
+            WHERE NOT (:KGNode {entityType:'Procedure'})-[:has_standard_procedure]->(s)
+            RETURN count(s) AS value
+        """,
+        detail_query="""
+            MATCH (s:KGNode {entityType:'StandardProcedure'})
+            WHERE NOT (:KGNode {entityType:'Procedure'})-[:has_standard_procedure]->(s)
+            RETURN s.code AS node_code, s.standard_code AS standard_code,
+                   s.name AS name, s.cdss_dict_id AS cdss_dict_id
+            ORDER BY name, standard_code
+        """,
+    ),
+    GateCheck(
+        metric="formal_procedure_without_standard_count",
+        chinese_name="正式推荐手术缺标准手术映射",
+        description="进入正式 CDSS 推荐链路的 Procedure 必须映射到至少一个有效 StandardProcedure，才能生成可回填的手术医嘱。",
+        count_query="""
+            MATCH (r:KGNode {entityType:'RecommendationStatement'})-[:recommends_action]->
+                  (p:KGNode {entityType:'Procedure'})
+            WHERE coalesce(r.cdss_use_status, '') = '正式推荐'
+              AND NOT (p)-[:has_standard_procedure]->(:KGNode {entityType:'StandardProcedure', valid_flag:1})
+            RETURN count(DISTINCT p) AS value
+        """,
+        detail_query="""
+            MATCH (r:KGNode {entityType:'RecommendationStatement'})-[:recommends_action]->
+                  (p:KGNode {entityType:'Procedure'})
+            WHERE coalesce(r.cdss_use_status, '') = '正式推荐'
+              AND NOT (p)-[:has_standard_procedure]->(:KGNode {entityType:'StandardProcedure', valid_flag:1})
+            RETURN p.code AS procedure_code, p.name AS procedure_name,
+                   collect(DISTINCT r.code)[0..20] AS recommendation_codes
+            ORDER BY procedure_name, procedure_code
+        """,
+    ),
+    GateCheck(
         metric="diagnosis_criteria_without_component_count",
         chinese_name="诊断标准无明细",
         description="诊断标准只有标题，没有下钻到具体诊断条件。",
@@ -266,11 +472,11 @@ CHECKS: list[GateCheck] = [
     GateCheck(
         metric="treatment_plan_without_downstream_count",
         chinese_name="治疗方案无下游",
-        description="治疗方案没有药物、操作、子方案、证据或路径动作，医生无法落地执行。",
+        description="治疗方案没有药物、操作、其他治疗项目、证据或路径动作，医生无法落地执行。",
         count_query="""
             MATCH (p:TreatmentPlan)
             WHERE coalesce(p.deprecated, false) <> true
-              AND NOT (p)-[:includes_medication|includes_procedure|has_treatment_component|supported_by_evidence|has_clinical_pathway|has_follow_up|has_indication|has_contraindication|has_recommended_action|recommends_action|treated_by_medication|treated_by_procedure]->(:KGNode)
+              AND NOT (p)-[:includes_medication|includes_procedure|includes_treatment_item|has_treatment_component|supported_by_evidence|has_clinical_pathway|has_follow_up|has_indication|has_contraindication|has_recommended_action|recommends_action|treated_by_medication|treated_by_procedure]->(:KGNode)
             OPTIONAL MATCH (src:KGNode)-[r]->(p)
             WITH p, count(r) AS in_degree
             WHERE in_degree > 0 OR coalesce(p.formal_cdss_ready, false) = true
@@ -279,7 +485,7 @@ CHECKS: list[GateCheck] = [
         detail_query="""
             MATCH (p:TreatmentPlan)
             WHERE coalesce(p.deprecated, false) <> true
-              AND NOT (p)-[:includes_medication|includes_procedure|has_treatment_component|supported_by_evidence|has_clinical_pathway|has_follow_up|has_indication|has_contraindication|has_recommended_action|recommends_action|treated_by_medication|treated_by_procedure]->(:KGNode)
+              AND NOT (p)-[:includes_medication|includes_procedure|includes_treatment_item|has_treatment_component|supported_by_evidence|has_clinical_pathway|has_follow_up|has_indication|has_contraindication|has_recommended_action|recommends_action|treated_by_medication|treated_by_procedure]->(:KGNode)
             OPTIONAL MATCH (src:KGNode)-[r]->(p)
             WITH p, count(r) AS in_degree,
                  collect(DISTINCT {source_code: src.code, source_name: src.name, relation_type: type(r)})[0..20] AS incoming

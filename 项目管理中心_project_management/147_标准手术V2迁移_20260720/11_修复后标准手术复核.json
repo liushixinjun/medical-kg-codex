@@ -1,0 +1,16 @@
+{
+  "acronym_as_main_name_error_count": 0,
+  "corrected_treatment_item_count": 16,
+  "duplicate_standard_code_error_count": 0,
+  "duplicate_standard_uuid_error_count": 0,
+  "formal_procedure_without_standard_error_count": 0,
+  "mapped_procedure_count": 37,
+  "misclassified_procedure_error_count": 0,
+  "orphan_standard_procedure_error_count": 0,
+  "procedure_count": 37,
+  "retired_procedure_node_error_count": 0,
+  "standard_mapping_relation_count": 59,
+  "standard_procedure_count": 49,
+  "standard_required_field_error_count": 0,
+  "knowledge_only_unmapped_procedures": []
+}
