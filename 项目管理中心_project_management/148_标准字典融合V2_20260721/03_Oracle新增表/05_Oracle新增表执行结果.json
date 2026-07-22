@@ -1,0 +1,28 @@
+{
+  "created_tables": [
+    "K_CLINICAL_SIGN_DICT",
+    "K_EXAM_OBSERVATION_DICT",
+    "K_VITAL_SIGN_ITEM_DICT",
+    "K_EXAM_OBSERVATION_REL",
+    "K_TERM_DICT_MAPPING",
+    "K_KG_DICT_CHANGE_REVIEW",
+    "K_DIAGNOSIS_RULE",
+    "K_DIAGNOSIS_RULE_ITEM",
+    "K_DIAGNOSIS_RULE_VERSION",
+    "K_DIAGNOSIS_RULE_LOG"
+  ],
+  "retained_tables": [],
+  "created_indexes": [
+    "IX_K_CLINICAL_SIGN_NAME",
+    "IX_K_EXAM_OBSERV_NAME",
+    "IX_K_EXAM_OBSERV_REL_ITEM",
+    "IX_K_EXAM_OBSERV_REL_OBS",
+    "IX_K_TERM_MAP_TERM",
+    "IX_K_TERM_MAP_DICT",
+    "IX_K_DICT_REVIEW_STATUS",
+    "IX_K_DIAG_RULE_DISEASE",
+    "IX_K_DIAG_ITEM_RULE",
+    "IX_K_DIAG_ITEM_FINDING"
+  ],
+  "retained_indexes": []
+}

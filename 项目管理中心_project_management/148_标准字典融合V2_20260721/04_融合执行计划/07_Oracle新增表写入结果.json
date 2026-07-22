@@ -1,0 +1,15 @@
+{
+  "written_or_updated": {
+    "K_CLINICAL_SIGN_DICT": 65,
+    "K_EXAM_OBSERVATION_DICT": 144,
+    "K_VITAL_SIGN_ITEM_DICT": 7,
+    "K_EXAM_OBSERVATION_REL": 31,
+    "K_TERM_DICT_MAPPING": 69,
+    "K_KG_DICT_CHANGE_REVIEW": 437,
+    "K_DIAGNOSIS_RULE": 130,
+    "K_DIAGNOSIS_RULE_ITEM": 1808,
+    "K_DIAGNOSIS_RULE_VERSION": 1,
+    "K_DIAGNOSIS_RULE_LOG": 1
+  },
+  "existing_oracle_tables_modified": false
+}

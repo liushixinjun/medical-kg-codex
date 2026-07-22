@@ -1,0 +1,52 @@
+{
+  "summary": {
+    "oracle_passed": true,
+    "neo4j_passed": true,
+    "passed": true
+  },
+  "oracle": {
+    "counts": {
+      "K_CLINICAL_SIGN_DICT": 65,
+      "K_EXAM_OBSERVATION_DICT": 144,
+      "K_VITAL_SIGN_ITEM_DICT": 7,
+      "K_EXAM_OBSERVATION_REL": 31,
+      "K_TERM_DICT_MAPPING": 69,
+      "K_KG_DICT_CHANGE_REVIEW": 437,
+      "K_DIAGNOSIS_RULE": 130,
+      "K_DIAGNOSIS_RULE_ITEM": 1808,
+      "K_DIAGNOSIS_RULE_VERSION": 1,
+      "K_DIAGNOSIS_RULE_LOG": 1
+    },
+    "expected_minimum": {
+      "K_CLINICAL_SIGN_DICT": 65,
+      "K_EXAM_OBSERVATION_DICT": 144,
+      "K_VITAL_SIGN_ITEM_DICT": 7,
+      "K_EXAM_OBSERVATION_REL": 31,
+      "K_TERM_DICT_MAPPING": 69,
+      "K_KG_DICT_CHANGE_REVIEW": 437,
+      "K_DIAGNOSIS_RULE": 130,
+      "K_DIAGNOSIS_RULE_ITEM": 1808
+    },
+    "orphan_rule_items": 0,
+    "invalid_enabled_rule_items": 0,
+    "active_rules_without_standard_diagnosis": 0,
+    "duplicate_new_dictionary_names": {
+      "K_CLINICAL_SIGN_DICT": 0,
+      "K_EXAM_OBSERVATION_DICT": 0,
+      "K_VITAL_SIGN_ITEM_DICT": 0
+    },
+    "passed": true
+  },
+  "neo4j": {
+    "summary": {
+      "node_count": 33317,
+      "relationship_count": 139180
+    },
+    "validated_dictionary_nodes": 315,
+    "duplicate_dictionary_identity_groups": 0,
+    "scored_relations": 575,
+    "invalid_scored_relations": 0,
+    "active_disease_rules_without_standard_diagnosis": 0,
+    "passed": true
+  }
+}

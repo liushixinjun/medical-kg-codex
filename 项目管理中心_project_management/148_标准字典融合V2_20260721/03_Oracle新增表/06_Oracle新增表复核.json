@@ -1,0 +1,57 @@
+{
+  "expected_table_count": 10,
+  "existing_table_count": 10,
+  "missing_tables": [],
+  "tables": [
+    {
+      "table_name": "K_CLINICAL_SIGN_DICT",
+      "exists": true,
+      "row_count": 0
+    },
+    {
+      "table_name": "K_EXAM_OBSERVATION_DICT",
+      "exists": true,
+      "row_count": 0
+    },
+    {
+      "table_name": "K_VITAL_SIGN_ITEM_DICT",
+      "exists": true,
+      "row_count": 0
+    },
+    {
+      "table_name": "K_EXAM_OBSERVATION_REL",
+      "exists": true,
+      "row_count": 0
+    },
+    {
+      "table_name": "K_TERM_DICT_MAPPING",
+      "exists": true,
+      "row_count": 0
+    },
+    {
+      "table_name": "K_KG_DICT_CHANGE_REVIEW",
+      "exists": true,
+      "row_count": 0
+    },
+    {
+      "table_name": "K_DIAGNOSIS_RULE",
+      "exists": true,
+      "row_count": 0
+    },
+    {
+      "table_name": "K_DIAGNOSIS_RULE_ITEM",
+      "exists": true,
+      "row_count": 0
+    },
+    {
+      "table_name": "K_DIAGNOSIS_RULE_VERSION",
+      "exists": true,
+      "row_count": 0
+    },
+    {
+      "table_name": "K_DIAGNOSIS_RULE_LOG",
+      "exists": true,
+      "row_count": 0
+    }
+  ]
+}
