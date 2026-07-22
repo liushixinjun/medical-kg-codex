@@ -125,6 +125,35 @@ def test_concrete_drug_enters_group_review() -> None:
     assert result["recommended_action"] == "候选注册"
 
 
+def test_reversed_dosage_form_phrase_is_alias_not_new_drug() -> None:
+    result = MODULE.classify_review_row(
+        row("MISSING_IN_EXISTING_DICTIONARY", "肠溶阿司匹林", "K_DRUG_DICT")
+    )
+    assert result["review_layer"] == "无需人工审核"
+    assert result["recommended_action"] == "保留为别名并匹配规范制剂"
+    assert result["normalized_name"] == "阿司匹林肠溶片"
+    assert result["term_relation"] == "alias_of"
+
+
+def test_drug_class_without_drug_suffix_is_not_registered() -> None:
+    for name in ("低分子量肝素", "洋地黄制剂", "组织型纤溶酶原激活物"):
+        result = MODULE.classify_review_row(
+            row("MISSING_IN_EXISTING_DICTIONARY", name, "K_DRUG_DICT")
+        )
+        assert result["review_layer"] == "无需人工审核"
+        assert result["recommended_action"] == "转为药物类别"
+        assert result["term_relation"] == "member_of"
+
+
+def test_compounded_treatment_is_not_registered_as_drug() -> None:
+    result = MODULE.classify_review_row(
+        row("MISSING_IN_EXISTING_DICTIONARY", "极化液", "K_DRUG_DICT")
+    )
+    assert result["review_layer"] == "无需人工审核"
+    assert result["recommended_action"] == "转为治疗项目"
+    assert result["term_relation"] == "reclassified_as"
+
+
 def test_package_preserves_every_input_row() -> None:
     rows = [
         row("WRONG_TYPE_OR_COMPOSITE", "肥厚型心肌病体征", "K_CLINICAL_SIGN_DICT"),

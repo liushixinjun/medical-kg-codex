@@ -1,5 +1,5 @@
 ﻿decision_scope,group_id,review_id,target_table,candidate_name,decision,selected_target_id,reviewer,review_time,note,execution_authorized
-GROUP,GROUP-K_DRUG_DICT,,K_DRUG_DICT,药品标准字典（67条）,PENDING,,,,,0
+GROUP,GROUP-K_DRUG_DICT,,K_DRUG_DICT,药品标准字典（59条）,PENDING,,,,,0
 GROUP,GROUP-K_EXAM_ITEM_DICT,,K_EXAM_ITEM_DICT,检查项目标准字典（42条）,PENDING,,,,,0
 GROUP,GROUP-K_EXAM_OBSERVATION_DICT,,K_EXAM_OBSERVATION_DICT,检查发现标准字典（2条）,PENDING,,,,,0
 GROUP,GROUP-K_LAB_ITEM_DICT,,K_LAB_ITEM_DICT,检验项目标准字典（26条）,PENDING,,,,,0

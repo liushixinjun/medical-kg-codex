@@ -55,6 +55,7 @@ def validate_file(path: Path) -> list[dict[str, Any]]:
         code = str(item.get("code") or "").strip()
         aliases = as_list(item.get("aliases"))
         same_as = as_list(item.get("same_as"))
+        members = as_list(item.get("members"))
 
         if not canonical:
             issues.append({**loc, "level": "blocking", "issue": "empty_canonical"})
@@ -64,6 +65,30 @@ def validate_file(path: Path) -> list[dict[str, Any]]:
             issues.append({**loc, "level": "blocking", "issue": "aliases_not_list"})
         if not isinstance(item.get("same_as", []), list):
             issues.append({**loc, "level": "blocking", "issue": "same_as_not_list"})
+        for relation_field in ("members", "subclasses", "components", "formulations", "brands", "input_aliases"):
+            if relation_field in item and not isinstance(item.get(relation_field), list):
+                issues.append(
+                    {
+                        **loc,
+                        "level": "blocking",
+                        "issue": "drug_relation_field_not_list",
+                        "detail": relation_field,
+                    }
+                )
+
+        if path.name.startswith("4_药物"):
+            alias_names = {str(value or "").strip() for value in aliases if str(value or "").strip()}
+            member_names = {str(value or "").strip() for value in members if str(value or "").strip()}
+            overlap = sorted(alias_names & member_names)
+            if overlap:
+                issues.append(
+                    {
+                        **loc,
+                        "level": "blocking",
+                        "issue": "drug_member_also_used_as_alias",
+                        "detail": overlap,
+                    }
+                )
 
         if canonical:
             seen_canonical[canonical] = seen_canonical.get(canonical, 0) + 1

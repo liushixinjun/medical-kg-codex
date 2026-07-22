@@ -1,12 +1,15 @@
 # ============================================
-# 药物同义词表
-# 来源：Neo4j数据库实际数据（2026-06-24导出）
-# Schema：专科知识图谱Schema标准 V1.1 §10
-# 维护方式：人工维护，AI不得自动修改
-# 合并规则：code相同=L1自动合并，aliases命中=L2自动合并，same_as=L3人工确认
+# 药品术语字典
+# 来源：Neo4j 历史数据与标准字典治理结果
+# Schema：专科知识图谱 Schema 标准 V2.x
+# 维护方式：AI 可生成候选，只有通过 CDSS 字典与权威资料复核的主名/别名才可生效
+# 关系规则：
+#   aliases      = 同一概念的简称、缩写或异体写法
+#   members      = 药物类别下的具体药品，不得当作别名合并
+#   subclasses   = 下位药物类别，不得当作别名合并
+#   formulations = 具体制剂名称，不得与成分层主名直接合并
+#   brands       = 商品名，只用于检索和映射
 # ============================================
-
-# === 已有药物节点 ===
 
 - canonical: ACEI/ARB
   code: MED-CARD-6B08182277BE
@@ -14,87 +17,103 @@
   aliases:
     - ACEI或ARB
     - ACEI/ARB类药物
+  components:
     - 血管紧张素转换酶抑制剂
-    - 血管紧张素受体阻滞剂
+    - 血管紧张素II受体拮抗剂
   same_as: []
-  note: "历史组合类；2026-07-07 已避免占用 ACEI、ARB 单独简称，后续应逐步拆分为两个独立节点。"
+  note: "历史组合类，不得将 ACEI 和 ARB 两个独立类别当作别名合并。"
 
 - canonical: P2Y12受体抑制剂
   code: MED-CARD-86E5A960E1BF
   name_en: P2Y12 receptor inhibitor
   aliases:
+    - P2Y12抑制剂
+  members:
     - 氯吡格雷
     - 替格瑞洛
     - 普拉格雷
   same_as: []
-  note: ""
+  note: "具体药品由 members 表示，不是别名。"
 
 - canonical: β受体拮抗剂
   code: MED-BETA-BLOCKER
   name_en: Beta-blocker
   aliases:
     - β受体阻滞剂
+  members:
     - 美托洛尔
     - 比索洛尔
   same_as: []
-  note: ""
+  note: "具体药品由 members 表示，不是别名。"
 
 - canonical: 他汀类药物
   code: MED-CARD-DAE0F0B68F1D
   name_en: Statin
   aliases:
     - 他汀
-    - 高强度他汀
+  subclasses:
+    - 高强度他汀治疗
+  members:
     - 阿托伐他汀
     - 瑞舒伐他汀
   same_as: []
-  note: ""
+  note: "治疗强度不是术语别名。"
 
 - canonical: 利尿剂
   code: MED-DIURETIC
   name_en: Diuretic
-  aliases:
+  aliases: []
+  members:
     - 呋塞米
     - 氢氯噻嗪
     - 螺内酯
   same_as: []
-  note: ""
+  note: "具体药品由 members 表示，不是别名。"
 
 - canonical: 硝酸酯类药物
   code: MED-CARD-55157DA54154
   name_en: Nitrate
   aliases:
+    - 硝酸酯类
+  members:
     - 硝酸甘油
     - 单硝酸异山梨酯
   same_as: []
-  note: ""
+  note: "具体药品由 members 表示，不是别名。"
 
 - canonical: 胺碘酮
   code: MED-AMIODARONE
   name_en: Amiodarone
-  aliases:
+  aliases: []
+  brands:
     - 可达龙
   same_as: []
-  note: ""
+  note: "商品名与通用名分开管理。"
 
 - canonical: 阿司匹林
   code: MED-CARD-9F606AC80BFD
   name_en: Aspirin
   aliases:
+    - 乙酰水杨酸
+  formulations:
+    - 阿司匹林肠溶片
+  input_aliases:
+    - 肠溶阿司匹林
+  brands:
     - 拜阿司匹林
   same_as: []
-  note: ""
+  note: "‘肠溶阿司匹林’是词序倒置的输入短语，规范制剂名为‘阿司匹林肠溶片’。"
 
 - canonical: 非二氢吡啶类钙通道阻滞剂
   code: MED-NDHP-CCB
   name_en: Non-dihydropyridine calcium channel blocker
   aliases:
+    - 非二氢吡啶类钙拮抗剂
+  members:
     - 维拉帕米
-    - 地尔硫䓬
+    - 地尔硫䫅
   same_as: []
-  note: ""
-
-# === 待创建药物节点 ===
+  note: "具体药品由 members 表示，不是别名。"
 
 - canonical: 血管紧张素转换酶抑制剂
   code: MED-CARD-E40082221530
@@ -104,13 +123,14 @@
     - ACE抑制剂
     - ACE inhibitor
     - 普利类药物
+  members:
     - 依那普利
     - 卡托普利
     - 贝那普利
     - 培哚普利
   same_as: []
   status: 已入库
-  note: "2026-07-14 总精修回写：主名必须为中文完整名称，ACEI等缩写仅作aliases；由MED-CARD-6B08182277BE历史组合类拆分而来。"
+  note: "主名为中文完整类别名；缩写只作别名；具体药品改用 members。"
 
 - canonical: 血管紧张素II受体拮抗剂
   code: MED-CARD-PENDING-ARB
@@ -118,34 +138,40 @@
   aliases:
     - ARB
     - 沙坦类药物
+  members:
     - 缬沙坦
     - 氯沙坦
   same_as: []
   status: 待创建
-  note: "由MED-CARD-6B08182277BE拆分而来"
+  note: "由历史 ACEI/ARB 组合类拆分；具体药品改用 members。"
 
 - canonical: 钠-葡萄糖共转运蛋白2抑制剂
   code: MED-CARD-PENDING-SGLT2I
   name_en: Sodium-glucose co-transporter 2 inhibitor
   aliases:
     - SGLT2i
+  members:
     - 达格列净
     - 恩格列净
   same_as: []
   status: 待创建
-  note: ""
+  note: "具体药品由 members 表示，不是别名。"
 
 - canonical: 抗凝药物
   code: MED-CARD-PENDING-ANTICOAGULANT
   name_en: Anticoagulant
   aliases:
+    - 抗凝药
+    - 抗凝剂
+  subclasses:
+    - 直接口服抗凝药
+  members:
     - 华法林
-    - 达比加群
+    - 达比加群酯
     - 利伐沙班
-    - DOAC
   same_as: []
   status: 待创建
-  note: ""
+  note: "DOAC 是下位类别缩写，不是全部抗凝药的别名。"
 
 - canonical: 糖蛋白Ⅱb/Ⅲa受体拮抗剂
   code: MED-CARD-STEMI-C6E5F2B51268
@@ -155,9 +181,10 @@
     - GPIIb/IIIa受体拮抗剂
     - GP IIb/IIIa inhibitor
     - 糖蛋白IIb/IIIa受体拮抗剂
+  members:
     - 替罗非班
     - 依替巴肽
     - 阿昔单抗
   same_as: []
   status: 已入库
-  note: "2026-07-14 总精修回写：主名规范为中文完整名称，英文/罗马数字写法作aliases；具体药物已通过has_specific_medication下钻。"
+  note: "主名规范为中文完整类别名；具体药品改用 members。"

@@ -44,7 +44,7 @@ GROUP_GUIDANCE = {
     "K_EXAM_OBSERVATION_DICT": "只登记检查产生的可观察结果；诊断推理句和规则条件已自动转出。",
     "K_LAB_ITEM_DICT": "只登记可开立的检验项目，例如血常规；检验结果和规则不进入本表。",
     "K_LAB_SUBITEM_DICT": "只登记检验报告中的细项指标，例如白细胞计数；异常状态和阈值规则不进入本表。",
-    "K_DRUG_DICT": "只登记具体药品中文通用名；药物类别、联合方案和治疗策略已自动转出。",
+    "K_DRUG_DICT": "只登记经有效CDSS字典与药监资料交叉核验的规范药品名称；药物类别、制剂短语、商品名和治疗组合不得整组注册。",
     "K_TREATMENT_DICT": "登记非药品、非手术的标准治疗项目；宽泛治疗标题仍需在执行前做证据核验。",
 }
 
@@ -106,6 +106,23 @@ RULE_TERMS = ("提示", "可诊断", "可排除", "支持诊断", "诊断为", "
 DRUG_CLASS_PATTERN = re.compile(
     r"(?:类药物|药物$|抑制剂$|拮抗剂$|阻滞剂$|利尿剂$|抗凝剂$|抗凝药$|抗凝药物$|抗血小板药$|抗血小板药物$|降压药$|调脂药$|正性肌力药$|血管扩张剂$|溶栓药$)"
 )
+DRUG_CATEGORY_NAMES = {
+    "低分子肝素",
+    "低分子量肝素",
+    "洋地黄制剂",
+    "组织型纤溶酶原激活物",
+    "可溶性鸟苷酸环化酶刺激剂",
+    "钾剂",
+}
+DRUG_ALIAS_NORMALIZATION = {
+    "肠溶阿司匹林": {
+        "normalized_name": "阿司匹林肠溶片",
+        "basis": "药监部门批准的制剂通用名称为‘阿司匹林肠溶片’；原词序仅作检索别名。",
+    },
+}
+DRUG_RECLASSIFICATION = {
+    "极化液": ("治疗项目", "极化液是复方治疗组合，不是单一标准药品。"),
+}
 LAB_RESULT_STATE_PATTERN = re.compile(
     r"(?:升高|降低|增高|减低|增快|减慢|增多|减少|消失|异常|阳性|阴性|超标|达标)$"
 )
@@ -132,6 +149,9 @@ CLASSIFICATION_FIELDS = [
     "review_layer",
     "recommended_action",
     "classification_reason",
+    "normalized_name",
+    "term_relation",
+    "normalization_basis",
     "group_id",
 ]
 
@@ -165,7 +185,22 @@ def is_rule_expression(name: str) -> bool:
 
 
 def is_drug_category(name: str, target_table: str) -> bool:
-    return target_table == "K_DRUG_DICT" and bool(DRUG_CLASS_PATTERN.search(name.strip()))
+    text = name.strip()
+    return target_table == "K_DRUG_DICT" and (
+        text in DRUG_CATEGORY_NAMES or bool(DRUG_CLASS_PATTERN.search(text))
+    )
+
+
+def drug_alias_normalization(name: str, target_table: str) -> dict[str, str] | None:
+    if target_table != "K_DRUG_DICT":
+        return None
+    return DRUG_ALIAS_NORMALIZATION.get(name.strip())
+
+
+def drug_reclassification(name: str, target_table: str) -> tuple[str, str] | None:
+    if target_table != "K_DRUG_DICT":
+        return None
+    return DRUG_RECLASSIFICATION.get(name.strip())
 
 
 def is_non_atomic_sign(name: str, target_table: str) -> bool:
@@ -210,6 +245,9 @@ def classify_review_row(source_row: dict[str, Any]) -> dict[str, Any]:
     name = str(row.get("kg_node_name") or "").strip()
     target_table = str(row.get("target_table") or "").strip()
     row["group_id"] = ""
+    row["normalized_name"] = name
+    row["term_relation"] = ""
+    row["normalization_basis"] = ""
 
     if issue_type == "WRONG_TYPE_OR_COMPOSITE":
         row.update(
@@ -228,6 +266,9 @@ def classify_review_row(source_row: dict[str, Any]) -> dict[str, Any]:
             review_layer="无需人工审核",
             recommended_action="保留为别名映射",
             classification_reason="保留在图谱别名和术语映射层，不改既有Oracle标准字典主记录。",
+            normalized_name=str(row.get("target_name") or name).strip(),
+            term_relation="alias_of",
+            normalization_basis="已匹配现有有效标准字典记录。",
         )
     elif issue_type == "AMBIGUOUS_MATCH":
         row.update(
@@ -236,7 +277,27 @@ def classify_review_row(source_row: dict[str, Any]) -> dict[str, Any]:
             classification_reason="现有Oracle存在多个候选，必须明确选择、暂缓或退回治理。",
         )
     elif issue_type == "MISSING_IN_EXISTING_DICTIONARY":
-        if is_heading_pollution(name):
+        alias_resolution = drug_alias_normalization(name, target_table)
+        reclassification = drug_reclassification(name, target_table)
+        if alias_resolution:
+            row.update(
+                review_layer="无需人工审核",
+                recommended_action="保留为别名并匹配规范制剂",
+                classification_reason="原名称是口语化或词序倒置的制剂短语，不得新建为标准药品主名。",
+                normalized_name=alias_resolution["normalized_name"],
+                term_relation="alias_of",
+                normalization_basis=alias_resolution["basis"],
+            )
+        elif reclassification:
+            target_kind, reason = reclassification
+            row.update(
+                review_layer="无需人工审核",
+                recommended_action=f"转为{target_kind}",
+                classification_reason=reason,
+                term_relation="reclassified_as",
+                normalization_basis="先判定概念类型，再进入对应标准字典。",
+            )
+        elif is_heading_pollution(name):
             row.update(
                 review_layer="无需人工审核",
                 recommended_action="退回并清理污染",
@@ -283,12 +344,16 @@ def classify_review_row(source_row: dict[str, Any]) -> dict[str, Any]:
                 review_layer="无需人工审核",
                 recommended_action="转为药物类别",
                 classification_reason="这是药物类别或药理类别，不是可开立的具体药品通用名。",
+                term_relation="member_of",
+                normalization_basis="药物类别与具体药品是上下位关系，不是同义关系。",
             )
         else:
             row.update(
                 review_layer="分组批量确认",
                 recommended_action="候选注册",
                 classification_reason="通过标题污染、疾病壳、推理句和药物类别初筛，进入同类批量确认。",
+                term_relation="candidate_standard",
+                normalization_basis="仅通过结构初筛；写入前仍须核对有效CDSS字典和权威药品名称。",
                 group_id=f"GROUP-{target_table}",
             )
     else:
@@ -428,9 +493,9 @@ button.secondary{{background:#475467}}details{{margin-top:10px}}table{{width:100
 const pkg={payload};
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[c]));
 document.querySelector('#cards').innerHTML=[['原始待审',pkg.summary.total],['无需人工审核',pkg.summary.automatic_count],['分组候选',pkg.summary.group_candidate_count],['逐条裁决',pkg.summary.manual_count]].map(x=>`<div class="card"><div class="metric">${{x[1]}}</div><div class="label">${{x[0]}}</div></div>`).join('');
-const ac=Object.entries(pkg.summary.action_counts).filter(x=>['退回并重分类','转入临床规则','保留为别名映射','退回并清理污染','退回并拆分为原子项','拆分为检验细项与结果状态','转为药物类别'].includes(x[0]));
+const ac=Object.entries(pkg.summary.action_counts).filter(x=>['退回并重分类','转入临床规则','保留为别名映射','保留为别名并匹配规范制剂','退回并清理污染','退回并拆分为原子项','拆分为检验细项与结果状态','转为药物类别','转为治疗项目'].includes(x[0]));
 document.querySelector('#automaticSummary').innerHTML=ac.map(x=>`<span class="pill">${{esc(x[0])}}：${{x[1]}}</span>`).join(' ');
-function table(rows){{return `<table><thead><tr><th>名称</th><th>目标字典</th><th>处理</th><th>原因</th></tr></thead><tbody>${{rows.map(r=>`<tr><td>${{esc(r.kg_node_name)}}</td><td>${{esc(r.target_table)}}</td><td>${{esc(r.recommended_action)}}</td><td>${{esc(r.classification_reason)}}</td></tr>`).join('')}}</tbody></table>`}}
+function table(rows){{return `<table><thead><tr><th>原名称</th><th>规范主名</th><th>术语关系</th><th>目标字典</th><th>处理</th><th>原因/依据</th></tr></thead><tbody>${{rows.map(r=>`<tr><td>${{esc(r.kg_node_name)}}</td><td>${{esc(r.normalized_name)}}</td><td>${{esc(r.term_relation)}}</td><td>${{esc(r.target_table)}}</td><td>${{esc(r.recommended_action)}}</td><td>${{esc(r.classification_reason)}}<br><span class="label">${{esc(r.normalization_basis)}}</span></td></tr>`).join('')}}</tbody></table>`}}
 document.querySelector('#automaticTable').innerHTML=table(pkg.automatic);
 document.querySelector('#groups').innerHTML=pkg.groups.map(g=>{{const items=pkg.group_candidates.filter(x=>x.group_id===g.group_id);return `<div class="group" data-group="${{esc(g.group_id)}}"><div class="group-head"><div><h3>${{esc(g.table_name)}} <span class="pill">${{g.candidate_count}}条</span></h3><div class="label">${{esc(g.guidance)}}</div></div><select class="group-decision"><option value="PENDING">请选择</option><option value="APPROVE_PREPARE">同意生成拟执行清单</option><option value="HOLD">整组暂缓</option><option value="RETURN_CLEAN">退回重新清洗</option></select></div><div class="label">样例：${{g.sample_names.map(esc).join('、')}}</div><details><summary>查看本组全部${{g.candidate_count}}条</summary>${{table(items)}}</details></div>`}}).join('');
 document.querySelector('#manual').innerHTML=pkg.manual.map(m=>`<div class="group manual" data-review="${{esc(m.id)}}"><h3>${{esc(m.kg_node_name)}}</h3><div class="label">现有候选：${{m.candidate_options.length}} 个。请选择唯一记录，或暂缓治理。</div><select class="item-decision"><option value="PENDING">请选择</option>${{m.candidate_options.map(o=>`<option value="SELECT:${{esc(o.id)}}">${{esc(o.code)}}｜${{esc(o.name)}}｜${{esc(o.id)}}</option>`).join('')}}<option value="HOLD">暂缓，不改</option><option value="RETURN_CLEAN">退回字典治理</option></select></div>`).join('');
