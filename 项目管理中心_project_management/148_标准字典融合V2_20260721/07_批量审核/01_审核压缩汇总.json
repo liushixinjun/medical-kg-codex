@@ -1,0 +1,36 @@
+{
+  "total": 437,
+  "automatic_count": 258,
+  "group_candidate_count": 176,
+  "group_count": 7,
+  "manual_count": 3,
+  "layer_counts": {
+    "分组批量确认": 176,
+    "无需人工审核": 258,
+    "逐条人工裁决": 3
+  },
+  "action_counts": {
+    "保留为别名映射": 29,
+    "候选注册": 176,
+    "拆分为检验细项与结果状态": 32,
+    "转为药物类别": 29,
+    "转入临床规则": 13,
+    "退回并拆分为原子项": 104,
+    "退回并清理污染": 3,
+    "退回并重分类": 48,
+    "选择唯一标准记录": 3
+  },
+  "table_counts": {
+    "K_CLINICAL_SIGN_DICT": 108,
+    "K_DRUG_DICT": 97,
+    "K_EXAM_ITEM_DICT": 99,
+    "K_EXAM_OBSERVATION_DICT": 15,
+    "K_LAB_ITEM_DICT": 27,
+    "K_LAB_SUBITEM_DICT": 40,
+    "K_SYMPTOM_DICT": 31,
+    "K_TREATMENT_DICT": 20
+  },
+  "row_conservation_passed": true,
+  "generated_at": "2026-07-22T13:05:01",
+  "oracle_write_performed": false
+}
