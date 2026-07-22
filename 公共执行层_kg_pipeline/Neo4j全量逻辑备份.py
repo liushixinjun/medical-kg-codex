@@ -91,39 +91,35 @@ def query_scalar(session: Any, cypher: str, key: str) -> int:
 
 
 def iter_nodes(session: Any, total: int, batch_size: int) -> Iterable[dict[str, Any]]:
-    for skip in range(0, total, batch_size):
-        rows = session.run(
-            """
-            MATCH (n)
-            RETURN elementId(n) AS element_id,
-                   labels(n) AS labels,
-                   properties(n) AS properties
-            ORDER BY elementId(n)
-            SKIP $skip LIMIT $limit
-            """,
-            {"skip": skip, "limit": batch_size},
-        )
-        for row in rows:
-            yield dict(row)
+    """流式导出节点，避免 SKIP/LIMIT 对全库进行重复扫描。"""
+    del total, batch_size
+    rows = session.run(
+        """
+        MATCH (n)
+        RETURN elementId(n) AS element_id,
+               labels(n) AS labels,
+               properties(n) AS properties
+        """
+    )
+    for row in rows:
+        yield dict(row)
 
 
 def iter_relationships(session: Any, total: int, batch_size: int) -> Iterable[dict[str, Any]]:
-    for skip in range(0, total, batch_size):
-        rows = session.run(
-            """
-            MATCH (source)-[r]->(target)
-            RETURN elementId(r) AS element_id,
-                   type(r) AS relationship_type,
-                   elementId(source) AS start_element_id,
-                   elementId(target) AS end_element_id,
-                   properties(r) AS properties
-            ORDER BY elementId(r)
-            SKIP $skip LIMIT $limit
-            """,
-            {"skip": skip, "limit": batch_size},
-        )
-        for row in rows:
-            yield dict(row)
+    """流式导出关系，避免 SKIP/LIMIT 对全库进行重复扫描。"""
+    del total, batch_size
+    rows = session.run(
+        """
+        MATCH (source)-[r]->(target)
+        RETURN elementId(r) AS element_id,
+               type(r) AS relationship_type,
+               elementId(source) AS start_element_id,
+               elementId(target) AS end_element_id,
+               properties(r) AS properties
+        """
+    )
+    for row in rows:
+        yield dict(row)
 
 
 def safe_query(session: Any, cypher: str) -> dict[str, Any]:

@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "blocking": {
+    "unmatched_node_count": 0,
+    "duplicate_graph_code_count": 0,
+    "ambiguous_canonical_target_count": 0,
+    "physical_delete_without_mapping_count": 0,
+    "relationship_preservation_error_count": 0,
+    "relationship_self_loop_count": 0,
+    "invalid_relationship_endpoint_count": 0,
+    "duplicate_create_relationship_count": 0,
+    "duplicate_delete_relationship_id_count": 0
+  },
+  "safe_change_counts": {
+    "rename_nodes": 2,
+    "retype_nodes": 10,
+    "merge_nodes": 19,
+    "term_mapping_updates": 5,
+    "metadata_updates": 86,
+    "cleanup_candidates": 190
+  },
+  "manual_or_registration_count": 125
+}

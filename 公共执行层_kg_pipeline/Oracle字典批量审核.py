@@ -69,6 +69,8 @@ DISEASE_TERMS = (
     "肺动脉高压",
     "心包炎",
     "心内膜炎",
+    "心肌炎",
+    "暴发性心肌炎",
     "房颤",
     "心房颤动",
     "心房扑动",
@@ -119,6 +121,30 @@ DRUG_ALIAS_NORMALIZATION = {
         "normalized_name": "阿司匹林肠溶片",
         "basis": "药监部门批准的制剂通用名称为‘阿司匹林肠溶片’；原词序仅作检索别名。",
     },
+    "地尔硫䓬": {
+        "normalized_name": "地尔硫卓",
+        "basis": "原名称含历史异体/录入字符，规范主名统一为地尔硫卓。",
+    },
+    "达比加群": {
+        "normalized_name": "达比加群酯",
+        "basis": "原名称是常用简称，标准药品通用名按达比加群酯归一。",
+    },
+    "长效青霉素": {
+        "normalized_name": "苄星青霉素",
+        "basis": "原名称是临床俗称，规范主名按苄星青霉素归一。",
+    },
+}
+EXAM_ALIAS_NORMALIZATION = {
+    "胸部X线": "胸部X线检查",
+    "心导管检查": "心脏导管检查",
+    "电生理检查": "心脏电生理检查",
+    "运动试验": "运动负荷试验",
+}
+TREATMENT_ALIAS_NORMALIZATION = {"吸氧治疗": "氧疗"}
+SYMPTOM_CONTEXT_NORMALIZATION = {
+    "安静时持续性胸痛": {"normalized_name": "胸痛", "qualifiers": ["安静时", "持续性"]},
+    "活动时心悸": {"normalized_name": "心悸", "qualifiers": ["活动时"]},
+    "静息性呼吸困难": {"normalized_name": "呼吸困难", "qualifiers": ["静息时"]},
 }
 DRUG_RECLASSIFICATION = {
     "极化液": ("治疗项目", "极化液是复方治疗组合，不是单一标准药品。"),
@@ -128,6 +154,45 @@ LAB_RESULT_STATE_PATTERN = re.compile(
 )
 NON_OBSERVATION_CONTEXTS = {"发病时间", "家族遗传证据", "病原体证据"}
 NON_ATOMIC_SIGN_NAMES = {"左心室肥厚", "心功能不全", "肺水肿", "肺淤血", "胸腔积液", "靶器官损害"}
+CLINICAL_ASSESSMENT_NAMES = {"病史采集", "CKD高血压肾功能和尿蛋白评估"}
+LAB_SUBITEM_NAMES = {
+    "B型利钠肽",
+    "B型钠尿肽",
+    "BNP",
+    "C反应蛋白",
+    "D-二聚体",
+    "NT-proBNP",
+    "N末端B型钠尿肽前体",
+    "N末端B型利钠尿肽原",
+    "N末端B型利钠肽原",
+    "国际标准化比值",
+    "尿白蛋白/肌酐比值",
+    "心肌肌钙蛋白",
+    "白细胞计数",
+    "红细胞沉降率",
+    "肌钙蛋白",
+    "血尿酸",
+    "血肌酐",
+    "血钾",
+    "血钠",
+    "醛固酮/肾素比值",
+}
+LAB_RESULT_CONTAINER_NAMES = {"血培养结果"}
+BROAD_TREATMENT_PLAN_NAMES = {
+    "危险因素管理",
+    "开放手术修复策略",
+    "心理与行为干预",
+    "支持治疗",
+    "最佳药物治疗",
+    "机械循环支持",
+    "溶栓治疗",
+    "生命支持治疗",
+    "生活方式干预",
+    "病因治疗",
+    "纠正可逆诱因",
+}
+COMPOSITE_PROCEDURE_NAMES = {"肺移植同时修补心脏缺损"}
+AMBIGUOUS_DRUG_SHORT_NAMES = {"肝素"}
 
 
 BASE_FIELDS = [
@@ -152,6 +217,8 @@ CLASSIFICATION_FIELDS = [
     "normalized_name",
     "term_relation",
     "normalization_basis",
+    "clinical_qualifiers",
+    "resolved_target_table",
     "group_id",
 ]
 
@@ -203,6 +270,36 @@ def drug_reclassification(name: str, target_table: str) -> tuple[str, str] | Non
     return DRUG_RECLASSIFICATION.get(name.strip())
 
 
+def exam_alias_normalization(name: str, target_table: str) -> str | None:
+    if target_table != "K_EXAM_ITEM_DICT":
+        return None
+    return EXAM_ALIAS_NORMALIZATION.get(name.strip())
+
+
+def treatment_alias_normalization(name: str, target_table: str) -> str | None:
+    if target_table != "K_TREATMENT_DICT":
+        return None
+    return TREATMENT_ALIAS_NORMALIZATION.get(name.strip())
+
+
+def contextual_symptom_normalization(name: str, target_table: str) -> dict[str, Any] | None:
+    if target_table != "K_SYMPTOM_DICT":
+        return None
+    return SYMPTOM_CONTEXT_NORMALIZATION.get(name.strip())
+
+
+def is_lab_subitem_misclassified_as_item(name: str, target_table: str) -> bool:
+    return target_table == "K_LAB_ITEM_DICT" and name.strip() in LAB_SUBITEM_NAMES
+
+
+def is_clinical_assessment(name: str, target_table: str) -> bool:
+    return target_table in {"K_EXAM_ITEM_DICT", "K_LAB_ITEM_DICT"} and name.strip() in CLINICAL_ASSESSMENT_NAMES
+
+
+def is_broad_treatment_plan(name: str, target_table: str) -> bool:
+    return target_table == "K_TREATMENT_DICT" and name.strip() in BROAD_TREATMENT_PLAN_NAMES
+
+
 def is_non_atomic_sign(name: str, target_table: str) -> bool:
     if target_table != "K_CLINICAL_SIGN_DICT":
         return False
@@ -236,7 +333,7 @@ def is_non_atomic_symptom(name: str, target_table: str) -> bool:
     if target_table != "K_SYMPTOM_DICT":
         return False
     text = name.strip()
-    return text.endswith("相关症状") or "、" in text or "或" in text
+    return text.endswith("相关症状") or "、" in text or "或" in text or "和" in text
 
 
 def classify_review_row(source_row: dict[str, Any]) -> dict[str, Any]:
@@ -248,6 +345,8 @@ def classify_review_row(source_row: dict[str, Any]) -> dict[str, Any]:
     row["normalized_name"] = name
     row["term_relation"] = ""
     row["normalization_basis"] = ""
+    row["clinical_qualifiers"] = ""
+    row["resolved_target_table"] = target_table
 
     if issue_type == "WRONG_TYPE_OR_COMPOSITE":
         row.update(
@@ -278,6 +377,9 @@ def classify_review_row(source_row: dict[str, Any]) -> dict[str, Any]:
         )
     elif issue_type == "MISSING_IN_EXISTING_DICTIONARY":
         alias_resolution = drug_alias_normalization(name, target_table)
+        exam_alias = exam_alias_normalization(name, target_table)
+        treatment_alias = treatment_alias_normalization(name, target_table)
+        symptom_context = contextual_symptom_normalization(name, target_table)
         reclassification = drug_reclassification(name, target_table)
         if alias_resolution:
             row.update(
@@ -288,14 +390,96 @@ def classify_review_row(source_row: dict[str, Any]) -> dict[str, Any]:
                 term_relation="alias_of",
                 normalization_basis=alias_resolution["basis"],
             )
+        elif exam_alias:
+            row.update(
+                review_layer="无需人工审核",
+                recommended_action="保留为别名并匹配规范检查",
+                classification_reason="原名称是同一检查项目的简称，不得重复注册标准检查项目。",
+                normalized_name=exam_alias,
+                term_relation="alias_of",
+                normalization_basis="按同义检查项目归一，原名称保留在别名集合。",
+            )
+        elif treatment_alias:
+            row.update(
+                review_layer="无需人工审核",
+                recommended_action="保留为别名并匹配规范治疗",
+                classification_reason="原名称与规范治疗项目同义，不得形成重复主记录。",
+                normalized_name=treatment_alias,
+                term_relation="alias_of",
+                normalization_basis="规范主名与临床常用别名分离保存。",
+            )
+        elif symptom_context:
+            row.update(
+                review_layer="无需人工审核",
+                recommended_action="归一症状主名并保留情境",
+                classification_reason="时间、诱因和持续方式属于症状情境，不应写入标准症状主名称。",
+                normalized_name=symptom_context["normalized_name"],
+                term_relation="contextual_variant_of",
+                clinical_qualifiers=json.dumps(symptom_context["qualifiers"], ensure_ascii=False),
+                normalization_basis="主名用于跨疾病复用；情境保留在疾病关系或临床规则属性中。",
+            )
         elif reclassification:
             target_kind, reason = reclassification
+            resolved_table = "K_TREATMENT_DICT" if target_kind == "治疗项目" else ""
             row.update(
                 review_layer="无需人工审核",
                 recommended_action=f"转为{target_kind}",
                 classification_reason=reason,
                 term_relation="reclassified_as",
+                resolved_target_table=resolved_table,
                 normalization_basis="先判定概念类型，再进入对应标准字典。",
+            )
+        elif is_clinical_assessment(name, target_table):
+            row.update(
+                review_layer="无需人工审核",
+                recommended_action="转入临床评估",
+                classification_reason="该名称描述病史或综合评估过程，不是可开立的检查/检验标准项目。",
+                term_relation="reclassified_as",
+                resolved_target_table="",
+                normalization_basis="保留为评估步骤或规则，不注册Oracle项目字典。",
+            )
+        elif is_lab_subitem_misclassified_as_item(name, target_table):
+            row.update(
+                review_layer="无需人工审核",
+                recommended_action="转为检验细项",
+                classification_reason="该名称是可测量的检验指标细项，不是血常规、甲状腺功能等检验项目/组合。",
+                term_relation="reclassified_as",
+                resolved_target_table="K_LAB_SUBITEM_DICT",
+                normalization_basis="检验项目与检验细项分层治理。",
+            )
+        elif target_table == "K_LAB_SUBITEM_DICT" and name in LAB_RESULT_CONTAINER_NAMES:
+            row.update(
+                review_layer="无需人工审核",
+                recommended_action="转入检验结果规则",
+                classification_reason="该名称是结果容器，不是可独立标准化的检验细项。",
+                term_relation="reclassified_as",
+                resolved_target_table="",
+                normalization_basis="具体培养结论应由检验细项、结果值和解释规则表达。",
+            )
+        elif target_table == "K_TREATMENT_DICT" and name in COMPOSITE_PROCEDURE_NAMES:
+            row.update(
+                review_layer="无需人工审核",
+                recommended_action="拆分为具体手术与组合方案",
+                classification_reason="名称同时包含两个手术动作，不能作为单一治疗项目注册。",
+                term_relation="reclassified_as",
+                resolved_target_table="",
+                normalization_basis="分别匹配标准手术，再由治疗方案表达联合执行。",
+            )
+        elif is_broad_treatment_plan(name, target_table):
+            row.update(
+                review_layer="无需人工审核",
+                recommended_action="保留为治疗方案知识",
+                classification_reason="该名称是宽口径治疗策略或方案，不是可直接回填医嘱的标准治疗项目。",
+                term_relation="reclassified_as",
+                resolved_target_table="",
+                normalization_basis="方案节点下钻到具体药品、手术或治疗项目后才进入标准医嘱字典。",
+            )
+        elif target_table == "K_DRUG_DICT" and name in AMBIGUOUS_DRUG_SHORT_NAMES:
+            row.update(
+                review_layer="逐条人工裁决",
+                recommended_action="核对具体制剂或药品通用名",
+                classification_reason="简称可能对应不同盐型、制剂或药品记录，不能由名称直接自动合并。",
+                normalization_basis="须匹配有效CDSS药品字典记录或权威药品通用名。",
             )
         elif is_heading_pollution(name):
             row.update(
@@ -377,7 +561,29 @@ def _parse_json(value: Any, fallback: Any) -> Any:
 def build_review_package(rows: list[dict[str, Any]]) -> dict[str, Any]:
     classified = [classify_review_row(row) for row in rows]
     automatic = [row for row in classified if row["review_layer"] == "无需人工审核"]
-    group_candidates = [row for row in classified if row["review_layer"] == "分组批量确认"]
+    group_candidates: list[dict[str, Any]] = []
+    seen_candidates: dict[tuple[str, str], dict[str, Any]] = {}
+    for row in classified:
+        if row["review_layer"] != "分组批量确认":
+            continue
+        key = (
+            str(row.get("resolved_target_table") or row.get("target_table") or "").strip(),
+            str(row.get("normalized_name") or row.get("kg_node_name") or "").strip().lower(),
+        )
+        first = seen_candidates.get(key)
+        if first is None:
+            seen_candidates[key] = row
+            group_candidates.append(row)
+            continue
+        row.update(
+            review_layer="无需人工审核",
+            recommended_action="合并重复候选",
+            classification_reason="同一目标字典中已有同名候选，本条不得重复注册。",
+            term_relation="duplicate_of",
+            normalization_basis=f"首个候选编码={first.get('kg_node_code') or first.get('id') or ''}",
+            group_id="",
+        )
+        automatic.append(row)
     manual = [row for row in classified if row["review_layer"] == "逐条人工裁决"]
 
     groups: list[dict[str, Any]] = []
@@ -493,7 +699,7 @@ button.secondary{{background:#475467}}details{{margin-top:10px}}table{{width:100
 const pkg={payload};
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[c]));
 document.querySelector('#cards').innerHTML=[['原始待审',pkg.summary.total],['无需人工审核',pkg.summary.automatic_count],['分组候选',pkg.summary.group_candidate_count],['逐条裁决',pkg.summary.manual_count]].map(x=>`<div class="card"><div class="metric">${{x[1]}}</div><div class="label">${{x[0]}}</div></div>`).join('');
-const ac=Object.entries(pkg.summary.action_counts).filter(x=>['退回并重分类','转入临床规则','保留为别名映射','保留为别名并匹配规范制剂','退回并清理污染','退回并拆分为原子项','拆分为检验细项与结果状态','转为药物类别','转为治疗项目'].includes(x[0]));
+const ac=Object.entries(pkg.summary.action_counts).filter(x=>['退回并重分类','转入临床规则','保留为别名映射','保留为别名并匹配规范制剂','保留为别名并匹配规范检查','保留为别名并匹配规范治疗','归一症状主名并保留情境','保留为治疗方案知识','合并重复候选','退回并清理污染','退回并拆分为原子项','拆分为检验细项与结果状态','转为检验细项','转入检验结果规则','转入临床评估','拆分为具体手术与组合方案','转为药物类别','转为治疗项目'].includes(x[0]));
 document.querySelector('#automaticSummary').innerHTML=ac.map(x=>`<span class="pill">${{esc(x[0])}}：${{x[1]}}</span>`).join(' ');
 function table(rows){{return `<table><thead><tr><th>原名称</th><th>规范主名</th><th>术语关系</th><th>目标字典</th><th>处理</th><th>原因/依据</th></tr></thead><tbody>${{rows.map(r=>`<tr><td>${{esc(r.kg_node_name)}}</td><td>${{esc(r.normalized_name)}}</td><td>${{esc(r.term_relation)}}</td><td>${{esc(r.target_table)}}</td><td>${{esc(r.recommended_action)}}</td><td>${{esc(r.classification_reason)}}<br><span class="label">${{esc(r.normalization_basis)}}</span></td></tr>`).join('')}}</tbody></table>`}}
 document.querySelector('#automaticTable').innerHTML=table(pkg.automatic);

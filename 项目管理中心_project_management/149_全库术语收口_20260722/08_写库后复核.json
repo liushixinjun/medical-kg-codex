@@ -1,0 +1,12 @@
+{
+  "rename_expected": 2,
+  "rename_verified": 2,
+  "retype_expected": 10,
+  "retype_verified": 10,
+  "merge_expected": 19,
+  "merge_verified": 19,
+  "term_mapping_expected": 5,
+  "term_mapping_verified": 5,
+  "passed": true,
+  "verified_at": "2026-07-22T19:49:33"
+}

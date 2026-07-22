@@ -152,6 +152,169 @@ def test_compounded_treatment_is_not_registered_as_drug() -> None:
     assert result["review_layer"] == "无需人工审核"
     assert result["recommended_action"] == "转为治疗项目"
     assert result["term_relation"] == "reclassified_as"
+    assert result["resolved_target_table"] == "K_TREATMENT_DICT"
+
+
+def test_known_exam_alias_is_normalized_without_new_registration() -> None:
+    result = MODULE.classify_review_row(
+        row("MISSING_IN_EXISTING_DICTIONARY", "胸部X线", "K_EXAM_ITEM_DICT")
+    )
+    assert result["review_layer"] == "无需人工审核"
+    assert result["recommended_action"] == "保留为别名并匹配规范检查"
+    assert result["normalized_name"] == "胸部X线检查"
+    assert result["term_relation"] == "alias_of"
+
+
+def test_history_taking_is_not_an_exam_item() -> None:
+    result = MODULE.classify_review_row(
+        row("MISSING_IN_EXISTING_DICTIONARY", "病史采集", "K_EXAM_ITEM_DICT")
+    )
+    assert result["review_layer"] == "无需人工审核"
+    assert result["recommended_action"] == "转入临床评估"
+    assert result["resolved_target_table"] == ""
+
+
+def test_atomic_lab_analyte_is_reclassified_as_lab_subitem() -> None:
+    for name in ("白细胞计数", "肌钙蛋白", "D-二聚体", "血肌酐", "血钾"):
+        result = MODULE.classify_review_row(
+            row("MISSING_IN_EXISTING_DICTIONARY", name, "K_LAB_ITEM_DICT")
+        )
+        assert result["review_layer"] == "无需人工审核"
+        assert result["recommended_action"] == "转为检验细项"
+        assert result["resolved_target_table"] == "K_LAB_SUBITEM_DICT"
+        assert result["term_relation"] == "reclassified_as"
+
+
+def test_lab_panel_remains_a_lab_item_candidate() -> None:
+    result = MODULE.classify_review_row(
+        row("MISSING_IN_EXISTING_DICTIONARY", "甲状腺功能", "K_LAB_ITEM_DICT")
+    )
+    assert result["review_layer"] == "分组批量确认"
+    assert result["recommended_action"] == "候选注册"
+
+
+def test_composite_lab_assessment_is_not_registered_as_lab_item() -> None:
+    result = MODULE.classify_review_row(
+        row(
+            "MISSING_IN_EXISTING_DICTIONARY",
+            "CKD高血压肾功能和尿蛋白评估",
+            "K_LAB_ITEM_DICT",
+        )
+    )
+    assert result["review_layer"] == "无需人工审核"
+    assert result["recommended_action"] == "转入临床评估"
+
+
+def test_lab_result_container_is_not_registered_as_subitem() -> None:
+    result = MODULE.classify_review_row(
+        row("MISSING_IN_EXISTING_DICTIONARY", "血培养结果", "K_LAB_SUBITEM_DICT")
+    )
+    assert result["review_layer"] == "无需人工审核"
+    assert result["recommended_action"] == "转入检验结果规则"
+
+
+def test_broad_treatment_knowledge_is_not_registered_as_order_item() -> None:
+    for name in ("最佳药物治疗", "病因治疗", "支持治疗", "危险因素管理", "溶栓治疗"):
+        result = MODULE.classify_review_row(
+            row("MISSING_IN_EXISTING_DICTIONARY", name, "K_TREATMENT_DICT")
+        )
+        assert result["review_layer"] == "无需人工审核"
+        assert result["recommended_action"] == "保留为治疗方案知识"
+        assert result["resolved_target_table"] == ""
+
+
+def test_treatment_alias_is_normalized_without_duplicate_registration() -> None:
+    result = MODULE.classify_review_row(
+        row("MISSING_IN_EXISTING_DICTIONARY", "吸氧治疗", "K_TREATMENT_DICT")
+    )
+    assert result["review_layer"] == "无需人工审核"
+    assert result["recommended_action"] == "保留为别名并匹配规范治疗"
+    assert result["normalized_name"] == "氧疗"
+    assert result["term_relation"] == "alias_of"
+
+
+def test_composite_procedure_is_split_before_dictionary_registration() -> None:
+    result = MODULE.classify_review_row(
+        row(
+            "MISSING_IN_EXISTING_DICTIONARY",
+            "肺移植同时修补心脏缺损",
+            "K_TREATMENT_DICT",
+        )
+    )
+    assert result["review_layer"] == "无需人工审核"
+    assert result["recommended_action"] == "拆分为具体手术与组合方案"
+
+
+def test_known_drug_variant_is_alias_not_a_second_master_record() -> None:
+    expected = {
+        "地尔硫䓬": "地尔硫卓",
+        "达比加群": "达比加群酯",
+        "长效青霉素": "苄星青霉素",
+    }
+    for name, normalized in expected.items():
+        result = MODULE.classify_review_row(
+            row("MISSING_IN_EXISTING_DICTIONARY", name, "K_DRUG_DICT")
+        )
+        assert result["review_layer"] == "无需人工审核"
+        assert result["recommended_action"] == "保留为别名并匹配规范制剂"
+        assert result["normalized_name"] == normalized
+        assert result["term_relation"] == "alias_of"
+
+
+def test_ambiguous_drug_short_name_requires_authoritative_verification() -> None:
+    result = MODULE.classify_review_row(
+        row("MISSING_IN_EXISTING_DICTIONARY", "肝素", "K_DRUG_DICT")
+    )
+    assert result["review_layer"] == "逐条人工裁决"
+    assert result["recommended_action"] == "核对具体制剂或药品通用名"
+
+
+def test_contextual_symptom_phrase_keeps_context_out_of_master_name() -> None:
+    expected = {
+        "安静时持续性胸痛": "胸痛",
+        "活动时心悸": "心悸",
+        "静息性呼吸困难": "呼吸困难",
+    }
+    for name, normalized in expected.items():
+        result = MODULE.classify_review_row(
+            row("MISSING_IN_EXISTING_DICTIONARY", name, "K_SYMPTOM_DICT")
+        )
+        assert result["review_layer"] == "无需人工审核"
+        assert result["recommended_action"] == "归一症状主名并保留情境"
+        assert result["normalized_name"] == normalized
+        assert result["term_relation"] == "contextual_variant_of"
+
+
+def test_composite_symptom_with_conjunction_is_split() -> None:
+    result = MODULE.classify_review_row(
+        row(
+            "MISSING_IN_EXISTING_DICTIONARY",
+            "间歇性跛行和活动相关下肢症状",
+            "K_SYMPTOM_DICT",
+        )
+    )
+    assert result["review_layer"] == "无需人工审核"
+    assert result["recommended_action"] == "退回并拆分为原子项"
+
+
+def test_myocarditis_exam_shell_is_rejected() -> None:
+    for name in ("心肌炎检查", "暴发性心肌炎检查"):
+        result = MODULE.classify_review_row(
+            row("MISSING_IN_EXISTING_DICTIONARY", name, "K_EXAM_ITEM_DICT")
+        )
+        assert result["review_layer"] == "无需人工审核"
+        assert result["recommended_action"] == "退回并拆分为原子项"
+
+
+def test_duplicate_group_candidate_is_automatically_consolidated() -> None:
+    first = row("MISSING_IN_EXISTING_DICTIONARY", "超声心动图", "K_EXAM_ITEM_DICT")
+    second = dict(first)
+    second["id"] = "another-id"
+    second["kg_node_code"] = "another-code"
+    package = MODULE.build_review_package([first, second])
+    assert package["summary"]["group_candidate_count"] == 1
+    assert package["summary"]["automatic_count"] == 1
+    assert package["automatic"][0]["recommended_action"] == "合并重复候选"
 
 
 def test_package_preserves_every_input_row() -> None:
