@@ -1,0 +1,152 @@
+{
+  "generated_at": "2026-07-30 00:11:38",
+  "before": {
+    "graph": {
+      "node_count": 32762,
+      "relation_count": 137696
+    },
+    "wrong_recommendation_to_lab_subitem": [],
+    "differential_without_rule": [],
+    "parsed_category_summary": [
+      {
+        "disease_category": "冠心病",
+        "disease_count": 14,
+        "with_definition": 14,
+        "with_exam_plan": 14,
+        "with_treatment_plan": 14,
+        "with_standard_diagnosis": 14
+      },
+      {
+        "disease_category": "心力衰竭",
+        "disease_count": 11,
+        "with_definition": 11,
+        "with_exam_plan": 11,
+        "with_treatment_plan": 11,
+        "with_standard_diagnosis": 11
+      },
+      {
+        "disease_category": "心律失常",
+        "disease_count": 29,
+        "with_definition": 29,
+        "with_exam_plan": 29,
+        "with_treatment_plan": 29,
+        "with_standard_diagnosis": 29
+      },
+      {
+        "disease_category": "心肌病",
+        "disease_count": 12,
+        "with_definition": 12,
+        "with_exam_plan": 12,
+        "with_treatment_plan": 12,
+        "with_standard_diagnosis": 12
+      },
+      {
+        "disease_category": "未归类",
+        "disease_count": 44,
+        "with_definition": 44,
+        "with_exam_plan": 44,
+        "with_treatment_plan": 44,
+        "with_standard_diagnosis": 44
+      },
+      {
+        "disease_category": "瓣膜病",
+        "disease_count": 8,
+        "with_definition": 8,
+        "with_exam_plan": 8,
+        "with_treatment_plan": 8,
+        "with_standard_diagnosis": 8
+      },
+      {
+        "disease_category": "高血压",
+        "disease_count": 14,
+        "with_definition": 14,
+        "with_exam_plan": 14,
+        "with_treatment_plan": 14,
+        "with_standard_diagnosis": 14
+      }
+    ],
+    "process_residue": []
+  },
+  "write_result": {
+    "batch_id": "20260729-已解析疾病扩展收口",
+    "apply": false,
+    "recommendation_endpoint_repair": {
+      "migrated": 0,
+      "unresolved": [],
+      "status": "not_applied"
+    },
+    "differential_rule_repair": {
+      "bridged_existing_rules": 0,
+      "created_from_specs": 0,
+      "blocked": [],
+      "status": "not_applied"
+    }
+  },
+  "after": {
+    "graph": {
+      "node_count": 32762,
+      "relation_count": 137696
+    },
+    "wrong_recommendation_to_lab_subitem": [],
+    "differential_without_rule": [],
+    "parsed_category_summary": [
+      {
+        "disease_category": "冠心病",
+        "disease_count": 14,
+        "with_definition": 14,
+        "with_exam_plan": 14,
+        "with_treatment_plan": 14,
+        "with_standard_diagnosis": 14
+      },
+      {
+        "disease_category": "心力衰竭",
+        "disease_count": 11,
+        "with_definition": 11,
+        "with_exam_plan": 11,
+        "with_treatment_plan": 11,
+        "with_standard_diagnosis": 11
+      },
+      {
+        "disease_category": "心律失常",
+        "disease_count": 29,
+        "with_definition": 29,
+        "with_exam_plan": 29,
+        "with_treatment_plan": 29,
+        "with_standard_diagnosis": 29
+      },
+      {
+        "disease_category": "心肌病",
+        "disease_count": 12,
+        "with_definition": 12,
+        "with_exam_plan": 12,
+        "with_treatment_plan": 12,
+        "with_standard_diagnosis": 12
+      },
+      {
+        "disease_category": "未归类",
+        "disease_count": 44,
+        "with_definition": 44,
+        "with_exam_plan": 44,
+        "with_treatment_plan": 44,
+        "with_standard_diagnosis": 44
+      },
+      {
+        "disease_category": "瓣膜病",
+        "disease_count": 8,
+        "with_definition": 8,
+        "with_exam_plan": 8,
+        "with_treatment_plan": 8,
+        "with_standard_diagnosis": 8
+      },
+      {
+        "disease_category": "高血压",
+        "disease_count": 14,
+        "with_definition": 14,
+        "with_exam_plan": 14,
+        "with_treatment_plan": 14,
+        "with_standard_diagnosis": 14
+      }
+    ],
+    "process_residue": []
+  }
+}
