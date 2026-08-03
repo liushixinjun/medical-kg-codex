@@ -40,22 +40,27 @@ def test_generic_knowledge_relation_is_not_a_formal_recommendation() -> None:
     )
 
 
-def test_only_formal_source_adjudication_action_is_in_formal_scope() -> None:
+def test_only_formal_recommendation_statement_target_is_in_formal_scope() -> None:
     module = load_module()
     assert module.is_formal_recommendation_edge(
-        "SourceAdjudication",
+        "RecommendationStatement",
         "recommends_action",
         {"formal_cdss_ready": True, "cdss_use_status": "正式推荐"},
     )
     assert module.is_formal_recommendation_edge(
-        "SourceAdjudication",
+        "RecommendationStatement",
         "blocks_action",
+        {"formal_cdss_ready": True, "cdss_use_status": "正式推荐"},
+    )
+    assert module.is_formal_recommendation_edge(
+        "RecommendationStatement",
+        "recommends_assessment",
         {"formal_cdss_ready": True, "cdss_use_status": "正式推荐"},
     )
     assert not module.is_formal_recommendation_edge(
         "SourceAdjudication",
         "recommends_action",
-        {"formal_cdss_ready": False, "cdss_use_status": "仅知识展示"},
+        {"formal_cdss_ready": True, "cdss_use_status": "正式推荐"},
     )
 
 
@@ -84,7 +89,7 @@ def test_dual_scope_conclusions_are_independent() -> None:
         {
             "正式推荐缺疾病": 0,
             "正式推荐缺推荐陈述": 0,
-            "正式推荐缺动作": 0,
+            "正式推荐缺动作或评估目标": 0,
             "正式推荐缺主证据": 0,
             "正式推荐缺主指南": 0,
             "正式推荐缺推荐等级": 0,
@@ -100,9 +105,12 @@ def test_dual_scope_conclusions_are_independent() -> None:
 def test_query_contract_does_not_treat_generic_relations_as_formal_scope() -> None:
     module = load_module()
     query = module.FORMAL_RECOMMENDATION_ROWS_QUERY
-    assert "SourceAdjudication" in query
+    assert "RecommendationStatement" in query
     assert "formal_cdss_ready" in query
     assert "cdss_use_status" in query
+    assert "recommends_assessment" in query
+    assert "uses_primary_guideline" in query
+    assert "supported_by_evidence" in query
     assert "treated_by_medication" not in query
     assert "includes_medication" not in query
 

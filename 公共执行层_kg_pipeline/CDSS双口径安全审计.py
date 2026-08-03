@@ -24,12 +24,14 @@ KNOWLEDGE_BLOCKING_KEYS = (
     "鉴别诊断无规则",
     "治疗方案无可执行动作",
     "在用药物类别无具体药品",
+    "证据关键字段非文本",
+    "证据原文重复",
 )
 
 FORMAL_BLOCKING_KEYS = (
     "正式推荐缺疾病",
     "正式推荐缺推荐陈述",
-    "正式推荐缺动作",
+    "正式推荐缺动作或评估目标",
     "正式推荐缺主证据",
     "正式推荐缺主指南",
     "正式推荐缺推荐等级",
@@ -47,13 +49,14 @@ KNOWLEDGE_DESCRIPTIONS = {
     "鉴别诊断无规则": "鉴别诊断只有对象名称，没有鉴别要点或排除检查。",
     "治疗方案无可执行动作": "治疗方案无法沿受控路径到达药品、操作、检查、检验、治疗或随访动作。",
     "在用药物类别无具体药品": "临床链路使用了药物类别，但没有连接任何具体药品。",
+    "证据关键字段非文本": "证据来源或原文被错误存成数组等非文本类型，无法稳定检索和追溯。",
     "证据原文重复": "同一来源、同一页码、同一原文存在多个证据节点；按内容指纹识别，不按显示名称识别。",
 }
 
 FORMAL_DESCRIPTIONS = {
     "正式推荐缺疾病": "来源裁决没有关联疾病。",
     "正式推荐缺推荐陈述": "来源裁决没有形成医生可读的推荐陈述。",
-    "正式推荐缺动作": "来源裁决没有推荐或阻断具体动作。",
+    "正式推荐缺动作或评估目标": "推荐陈述既没有连接具体执行项目，也没有连接诊断、风险等临床评估目标。",
     "正式推荐缺主证据": "来源裁决没有主证据，或主证据编码与关系不一致。",
     "正式推荐缺主指南": "来源裁决没有主指南，或主指南编码与关系不一致。",
     "正式推荐缺推荐等级": "正式推荐缺推荐等级。",
@@ -68,10 +71,10 @@ def is_formal_recommendation_edge(
     relation_type: str,
     source_properties: dict[str, Any],
 ) -> bool:
-    """正式推荐只认来源裁决动作边，普通知识边不得进入此口径。"""
+    """正式推荐只认推荐陈述的动作或评估边，普通知识边不得进入此口径。"""
     return (
-        source_entity_type == "SourceAdjudication"
-        and relation_type in {"recommends_action", "blocks_action"}
+        source_entity_type == "RecommendationStatement"
+        and relation_type in {"recommends_action", "blocks_action", "recommends_assessment"}
         and source_properties.get("formal_cdss_ready") is True
         and source_properties.get("cdss_use_status") == "正式推荐"
     )
@@ -184,7 +187,7 @@ KNOWLEDGE_DETAIL_QUERIES: dict[str, str] = {
           AND coalesce(p.status,'') <> 'deprecated'
         OPTIONAL MATCH path=(p)-[:has_clinical_pathway|has_pathway_stage|next_pathway_stage|
           has_stage_rule|has_treatment_component|includes_medication|includes_procedure|
-          has_recommended_action|recommends_action|
+          includes_treatment_item|has_recommended_action|recommends_action|
           treated_by_medication|treated_by_procedure*1..5]->(a:KGNode)
         WHERE a.entityType IN ['Medication','Procedure','ExamItem','LabItem','TreatmentItem',
                                'FollowUp','Exam','LabTest']
@@ -213,12 +216,22 @@ KNOWLEDGE_DETAIL_QUERIES: dict[str, str] = {
                m.aliases AS aliases, used_by_codes
         ORDER BY medication_class_name
     """,
+    "证据关键字段非文本": """
+        MATCH (e:KGNode {entityType:'Evidence'})
+        WHERE (e.evidence_text IS NOT NULL AND NOT (valueType(e.evidence_text) STARTS WITH 'STRING'))
+           OR (e.source_name IS NOT NULL AND NOT (valueType(e.source_name) STARTS WITH 'STRING'))
+        RETURN e.code AS code, e.name AS name,
+               valueType(e.source_name) AS source_name_type,
+               valueType(e.evidence_text) AS evidence_text_type
+        ORDER BY e.code
+    """,
     "证据原文重复": """
         MATCH (e:KGNode {entityType:'Evidence'})
-        WITH coalesce(properties(e)['source_name'],properties(e)['source_guideline'],'') AS source_name,
-             coalesce(toString(properties(e)['source_page']),toString(properties(e)['page']),
-                      toString(properties(e)['page_number']),'') AS source_page,
-             coalesce(e.evidence_text,e.original_text,'') AS evidence_text,
+        WITH CASE WHEN valueType(e.source_name) STARTS WITH 'STRING'
+                  THEN e.source_name ELSE '' END AS source_name,
+             coalesce(toStringOrNull(e.source_page),'') AS source_page,
+             CASE WHEN valueType(e.evidence_text) STARTS WITH 'STRING'
+                  THEN e.evidence_text ELSE '' END AS evidence_text,
              count(e) AS duplicate_count, collect(e.code)[0..20] AS codes
         WHERE trim(evidence_text)<>'' AND duplicate_count>1
         RETURN source_name, source_page, substring(evidence_text,0,180) AS evidence_excerpt,
@@ -229,34 +242,34 @@ KNOWLEDGE_DETAIL_QUERIES: dict[str, str] = {
 
 
 FORMAL_RECOMMENDATION_ROWS_QUERY = """
-    MATCH (adj:KGNode {entityType:'SourceAdjudication'})
-    WHERE coalesce(adj.formal_cdss_ready,false)=true
-      AND coalesce(adj.cdss_use_status,'')='正式推荐'
-    OPTIONAL MATCH (d:KGNode)-[:has_source_adjudication]->(adj)
-    OPTIONAL MATCH (adj)-[:decides_recommendation]->
-                   (rec:KGNode {entityType:'RecommendationStatement'})
-    OPTIONAL MATCH (adj)-[ar:recommends_action|blocks_action]->(action:KGNode)
-    OPTIONAL MATCH (adj)-[:derived_from]->(ev:KGNode {entityType:'Evidence'})
-    OPTIONAL MATCH (adj)-[:uses_primary_guideline]->(gl:KGNode {entityType:'Guideline'})
-    WITH adj,
-         collect(DISTINCT d.code) AS disease_codes,
-         collect(DISTINCT rec.code) AS recommendation_codes,
+    MATCH (rec:KGNode {entityType:'RecommendationStatement'})
+    WHERE coalesce(rec.formal_cdss_ready,false)=true
+      AND coalesce(rec.cdss_use_status,'')='正式推荐'
+    OPTIONAL MATCH (rec)-[ar:recommends_action|blocks_action|recommends_assessment]->
+                   (action:KGNode)
+    OPTIONAL MATCH (rec)-[:supported_by_evidence|derived_from]->
+                   (ev:KGNode {entityType:'Evidence'})
+    OPTIONAL MATCH (rec)-[:uses_primary_guideline|based_on_guideline]->
+                   (gl:KGNode {entityType:'Guideline'})
+    WITH rec,
+         [x IN [rec.disease_code] WHERE x IS NOT NULL AND trim(toString(x)) <> ''] AS disease_codes,
+         [rec.code] AS recommendation_codes,
          collect(DISTINCT action.code) AS action_codes,
          collect(DISTINCT action.entityType) AS action_types,
          collect(DISTINCT type(ar)) AS action_relations,
          collect(DISTINCT ev.code) AS evidence_codes,
          collect(DISTINCT gl.code) AS guideline_codes
-    RETURN adj.code AS source_adjudication_code,
-           coalesce(adj.name,adj.clinical_question,adj.code) AS source_adjudication_name,
+    RETURN coalesce(rec.source_adjudication_code, rec.code) AS source_adjudication_code,
+           coalesce(rec.source_adjudication_name, rec.display_title, rec.name, rec.code) AS source_adjudication_name,
            disease_codes, recommendation_codes, action_codes, action_types, action_relations,
            evidence_codes, guideline_codes,
-           adj.action_code AS action_code_property,
-           adj.primary_evidence_code AS primary_evidence_code,
-           adj.primary_guideline_code AS primary_guideline_code,
-           adj.recommendation_class AS recommendation_class,
-           adj.evidence_level AS evidence_level,
-           adj.conflict_status AS conflict_status,
-           adj.adjudication_reason AS adjudication_reason
+           rec.action_code AS action_code_property,
+           rec.primary_evidence_code AS primary_evidence_code,
+           rec.primary_guideline_code AS primary_guideline_code,
+           rec.recommendation_class AS recommendation_class,
+           rec.evidence_level AS evidence_level,
+           rec.conflict_status AS conflict_status,
+           coalesce(rec.adjudication_reason, rec.source_decision_status, rec.primary_evidence_summary) AS adjudication_reason
     ORDER BY source_adjudication_code
 """
 
@@ -295,9 +308,11 @@ def audit_formal_rows(rows: list[dict[str, Any]]) -> tuple[dict[str, int], list[
             issues.append("正式推荐缺推荐陈述")
         if (
             not action_codes
-            or not action_relations.intersection({"recommends_action", "blocks_action"})
+            or not action_relations.intersection(
+                {"recommends_action", "blocks_action", "recommends_assessment"}
+            )
         ):
-            issues.append("正式推荐缺动作")
+            issues.append("正式推荐缺动作或评估目标")
         if not primary_evidence_code or primary_evidence_code not in evidence_codes:
             issues.append("正式推荐缺主证据")
         if not primary_guideline_code or primary_guideline_code not in guideline_codes:
@@ -394,7 +409,7 @@ def render_report(
 
 ## 三、正式推荐链路
 
-标准链路：疾病—推荐来源裁决—推荐陈述—推荐/阻断动作—主证据—主指南。
+标准链路：疾病—推荐来源裁决—推荐陈述—具体执行项目或临床评估目标；来源裁决同时连接主证据和主指南。
 
 | 检查项 | 数量 | 讲人话说明 |
 |---|---:|---|
