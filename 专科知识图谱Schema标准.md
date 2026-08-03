@@ -300,7 +300,7 @@ V3.0 是 8 月大版本标准升级的正式主文件。主文件只保留当前
 | StandardDiagnosis | K_ICD10_DICT | 诊断标准主数据 | 只使用有效记录 |
 | StandardProcedure / Procedure | K_OPERATION_HANDLE_DICT | 手术/操作标准主数据 | 图谱统一用 Procedure 实体 |
 | Medication | K_DRUG_DICT | 药品标准主数据 | 药品全称为主名 |
-| ExamItem | K_EXAM_DICT | 检查项目字典 | X线、CT 这类笼统词不得直接作为最终项目 |
+| ExamItem | K_EXAM_ITEM_DICT | 检查项目字典 | X线、CT 这类笼统词不得直接作为最终项目 |
 | LabItem | K_LAB_ITEM_DICT | 检验项目字典 | 血常规、心肌损伤标志物 |
 | LabSubitem | K_LAB_SUBITEM_DICT | 检验细项字典 | 白细胞计数、肌钙蛋白 I |
 | Symptom | K_SYMPTOM_DICT | 症状字典 | 主观感受 |
@@ -310,7 +310,7 @@ V3.0 是 8 月大版本标准升级的正式主文件。主文件只保留当前
 
 | 图谱实体 | 建议表名 | 使用方式 | 备注 |
 |---|---|---|---|
-| Sign | K_SIGN_DICT | 体征标准字典 | 按症状字典建表风格设计 |
+| Sign | K_CLINICAL_SIGN_DICT | 体征标准字典 | 按症状字典建表风格设计 |
 | ExamObservation | K_EXAM_OBSERVATION_DICT | 检查发现字典 | 例如 ST 段抬高、病理性 Q 波 |
 | VitalSignItem | 待确认生命体征表 | 生命体征标准项 | 体温、脉搏、呼吸、血压、血氧饱和度 |
 | LabSample | K_LAB_SAMPLE_DICT | 检验标本字典 | 血清、血浆、全血 |

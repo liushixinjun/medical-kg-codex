@@ -1,0 +1,14 @@
+﻿实体类型,期望字典表,总数,正式可用节点数,已绑定标准字典ID和编码,正式可用缺少标准字典ID或编码,仅知识展示缺少标准字典ID或编码,正式可用待处理或待注册,仅知识展示待处理或待注册,已绑定但缺少来源表,已绑定但缺少校验状态,同一字典身份重复组
+StandardDiagnosis,K_ICD10_DICT,86,86,86,0,0,0,0,0,0,0
+StandardProcedure,K_OPERATION_HANDLE_DICT,49,49,49,0,0,0,0,0,0,0
+Medication,K_DRUG_DICT,133,77,77,0,56,0,0,0,0,0
+ExamItem,K_EXAM_ITEM_DICT,65,8,8,0,57,0,0,0,0,0
+LabItem,K_LAB_ITEM_DICT,24,18,18,0,6,0,0,0,0,0
+LabSubitem,K_LAB_SUBITEM_DICT,23,15,15,0,8,0,0,0,0,0
+Symptom,K_SYMPTOM_DICT,53,40,40,0,13,0,0,0,0,0
+Sign,K_CLINICAL_SIGN_DICT,92,65,65,0,27,0,0,0,0,0
+ExamObservation,K_EXAM_OBSERVATION_DICT,174,144,144,0,30,0,0,0,0,0
+VitalSignItem,K_VITAL_SIGN_ITEM_DICT,0,0,0,0,0,0,0,0,0,0
+LabSample,K_LAB_SAMPLE_DICT,0,0,0,0,0,0,0,0,0,0
+LabSpecimen,K_LAB_SAMPLE_DICT,0,0,0,0,0,0,0,0,0,0
+TreatmentItem,K_TREATMENT_DICT,22,0,0,0,22,0,0,0,0,0

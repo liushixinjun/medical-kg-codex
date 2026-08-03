@@ -155,11 +155,11 @@ V4.0 是 8 月大版本升级后的正式执行技能文档。主目标不是继
 | StandardDiagnosis | K_ICD10_DICT | 只使用有效记录，保留字典 UUID、编码、名称 |
 | Procedure | K_OPERATION_HANDLE_DICT | 手术全称为主名，缩写进别名 |
 | Medication | K_DRUG_DICT | 药品规范全称为主名，品牌和口语名进别名 |
-| ExamItem | K_EXAM_DICT | 检查项目必须具体，不能停留在 X线、CT 这类笼统名称 |
+| ExamItem | K_EXAM_ITEM_DICT | 检查项目必须具体，不能停留在 X线、CT 这类笼统名称 |
 | LabItem | K_LAB_ITEM_DICT | 检验项目使用标准项目名 |
 | LabSubitem | K_LAB_SUBITEM_DICT | 检验细项使用标准指标名 |
 | Symptom | K_SYMPTOM_DICT | 多症状短语必须拆分 |
-| Sign | K_SIGN_DICT | 新增表可直接注册，主名称按医学标准名 |
+| Sign | K_CLINICAL_SIGN_DICT | 新增表可直接注册，主名称按医学标准名 |
 | ExamObservation | K_EXAM_OBSERVATION_DICT | 新增表可直接注册，用于检查发现 |
 | VitalSignItem | 生命体征表待确认 | 体温、脉搏、呼吸、血压、血氧饱和度 |
 | MedicalTermAlias | K_TERM、K_TERM_CLASS | 术语检索和别名归一 |
