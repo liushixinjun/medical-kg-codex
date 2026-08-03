@@ -1,0 +1,689 @@
+{
+  "生成时间": "2026-08-03 14:45:29",
+  "说明": "P4 主证据补链写库前快照，用于必要时回滚核对。",
+  "记录数": 4,
+  "records": [
+    {
+      "recommendation_code": "REC-CDSS-VASCD-SCD-ARREST-01-01-DIAG",
+      "recommendation_properties": {
+        "exclusion_criteria": "关键检查缺失、诊断条件不足或存在更紧急鉴别诊断时，不自动确认诊断。",
+        "evidence_level": "未分级/指南未显式标注",
+        "recommended_action_codes": [
+          "DXC-CARD-663B41A63239",
+          "EXAM-CAG",
+          "EXAM-HOLTER",
+          "EXAM-GENETIC",
+          "EXAM-ECG",
+          "LAB-CARD-A9EC1D4DA037",
+          "LAB-CARD-F89D5BB72F25",
+          "DDX-CARD-E6C98B4ECF84"
+        ],
+        "scope_type": "disease_category",
+        "entityType": "RecommendationStatement",
+        "type_label": "RecommendationStatement",
+        "primary_label": "KGNode",
+        "guideline_names": [
+          "室性心律失常中国专家共识基层版.pdf",
+          "《内科学（第10版）》.pdf",
+          "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf"
+        ],
+        "entityCategory": "推荐陈述",
+        "ai_evidence_review_status": "ai_prechecked_source_traced",
+        "evidence_ids": [
+          "EVD-A41D5F17B34CAE07E13C-CPVT",
+          "EVD-TB-21A8292F5F31E05BC01F-ARREST",
+          "EVD-SHARED-A28FAB3744FDF1FAEBE03B9C"
+        ],
+        "blocked_action_codes": [],
+        "formal_cdss_checked_at": "2026-07-16 21:16:45",
+        "last_fix_run_id": "全库正式CDSS推荐链路核验与收口_20260730",
+        "formal_ready_at": "2026-07-16 21:21:32",
+        "recommendation_class": "未分级/指南未显式标注",
+        "display_title": "疑似心脏骤停时，应结合心脏骤停诊断标准、冠状动脉造影、动态心电图、基因检测、心电图等进行诊断确认和必要鉴别。",
+        "statement_text": "疑似心脏骤停时，应结合心脏骤停诊断标准、冠状动脉造影、动态心电图、基因检测、心电图等进行诊断确认和必要鉴别。",
+        "recommendation_type": "recommend",
+        "code": "REC-CDSS-VASCD-SCD-ARREST-01-01-DIAG",
+        "display_name": "疑似心脏骤停时，应结合心脏骤停诊断标准、冠状动脉造影、动态心电图、基因检测、心电图等进行诊断确认和必要鉴别。",
+        "primary_evidence_id": "EVD-A41D5F17B34CAE07E13C-CPVT",
+        "updated_at": "2026-07-30 16:39:47",
+        "adjudication_reason": "已具备推荐动作、证据和指南来源，按结构化链路进入正式推荐。",
+        "cdss_use_status": "正式推荐",
+        "cdss_release_level": "formal",
+        "blocked_action_names": [],
+        "primary_evidence_raw_excerpt": "· 1 1 4 ·                 中华心律失常学杂志2022 年4 月第26 卷第2 期Chin J Cardiac Arrhyth,April 2022,Vol. 26,No. 2 表7　持续性多形性室性心动过速、心室扑动和心室颤动诊治的专家推荐 推荐                        推荐级别  证据级别 1. PMVT、室扑和室颤的患者应通过以下检查进行全面评估以明确是否存在结构性心脏病、遗传性心律失常 综合征、冠状动脉痉挛以及药物的致心律失常作用: 导联心电图 (1)心律失常发作时和窦性心律时记录的12                                Ⅰ         C (2)超声心动图                                            Ⅰ         B 或造影 (3)冠状动脉CT                                            Ⅰ         C 针对原因不明的猝死患者,可通过以下检查识别患者死亡的遗传因素并为其家庭成员提供预警: (4)尸检和基",
+        "schema_version": "V1.10",
+        "id": "KG_REC_CDSS_VASCD_SCD_ARREST_01_01_DIAG",
+        "applicable_population": "心脏骤停相关患者",
+        "canonical_labels": [
+          "KGNode",
+          "RecommendationStatement"
+        ],
+        "pathway_code": "PATHWAY-CDSS-VASCD-SCD-ARREST",
+        "recommended_action_names": [
+          "心脏骤停诊断标准",
+          "冠状动脉造影",
+          "动态心电图",
+          "基因检测",
+          "心电图",
+          "心肌肌钙蛋白",
+          "血钾",
+          "癫痫"
+        ],
+        "disease_name": "心脏骤停",
+        "name": "疑似心脏骤停时，应结合心脏骤停诊断标准、冠状动脉造影、动态心电图、基因检测、心电图等进行诊断确认和必要鉴别。",
+        "created_at": "2026-07-09 00:00:00",
+        "formal_cdss_blocked": false,
+        "formal_cdss_ready": true,
+        "skill_version": "V1.40",
+        "required_patient_facts": [
+          "主诉",
+          "现病史",
+          "既往史",
+          "用药史",
+          "生命体征",
+          "心电图",
+          "超声心动图",
+          "实验室检查",
+          "影像检查"
+        ],
+        "primary_source_name": "室性心律失常中国专家共识基层版.pdf",
+        "review_status": "approved",
+        "merge_status": "delta_ready",
+        "disease_code": "DIS-CARD-SCD-ARREST",
+        "evidence_count": 3,
+        "scope_target": "室性心律失常及心脏性猝死",
+        "primary_source_section": "treatment_plan",
+        "formal_cdss_block_scope": "20260716_正式CDSS推荐资格治理",
+        "stage_code": "STAGE-CDSS-VASCD-SCD-ARREST-01-DIAG",
+        "preferred_name": "疑似心脏骤停时，应结合心脏骤停诊断标准、冠状动脉造影、动态心电图、基因检测、心电图等进行诊断确认和必要鉴别。",
+        "batch_id": "BATCH-CARD-VA-SCD-CDSS-20260709-001",
+        "primary_evidence_summary": "疑似心脏骤停时，应结合心脏骤停诊断标准、冠状动脉造影、动态心电图、基因检测、心电图等进行诊断确认和必要鉴别。",
+        "evidence_summary_type": "structured_summary_with_raw_excerpt",
+        "front_end_display_rule": "正式CDSS推荐区可展示；必须展示推荐动作和当前推荐证据链",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "primary_source_page": 9,
+        "rule_code": "RULE-CDSS-VASCD-SCD-ARREST-01-01-DIAG",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260716_正式CDSS机器准入与结构补链"
+      },
+      "evidence_links": [
+        {
+          "name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf 第87页证据（SEG-DOC-4DE9ED834C741715-87-GL-00355-VA）",
+          "relation": "supported_by_evidence",
+          "code": "EVD-SHARED-A28FAB3744FDF1FAEBE03B9C"
+        },
+        {
+          "name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf 第87页证据（SEG-DOC-4DE9ED834C741715-87-GL-00355-VA）",
+          "relation": "derived_from",
+          "code": "EVD-SHARED-A28FAB3744FDF1FAEBE03B9C"
+        },
+        {
+          "name": "《内科学（第10版）》.pdf 第317页证据（SEG-DOC-C0BB559FA2C8448A-317-TB-00191-ARREST）",
+          "relation": "derived_from",
+          "code": "EVD-TB-21A8292F5F31E05BC01F-ARREST"
+        },
+        {
+          "name": "《内科学（第10版）》.pdf 第317页证据（SEG-DOC-C0BB559FA2C8448A-317-TB-00191-ARREST）",
+          "relation": "supported_by_evidence",
+          "code": "EVD-TB-21A8292F5F31E05BC01F-ARREST"
+        },
+        {
+          "name": "室性心律失常中国专家共识基层版.pdf 第9页证据（SEG-DOC-00005AB23BE6D130-9-GL-00099-CPVT）",
+          "relation": "supported_by_evidence",
+          "code": "EVD-A41D5F17B34CAE07E13C-CPVT"
+        },
+        {
+          "name": "室性心律失常中国专家共识基层版.pdf 第9页证据（SEG-DOC-00005AB23BE6D130-9-GL-00099-CPVT）",
+          "relation": "derived_from",
+          "code": "EVD-A41D5F17B34CAE07E13C-CPVT"
+        }
+      ],
+      "guideline_links": [
+        {
+          "name": "室性心律失常中国专家共识基层版.pdf",
+          "relation": "based_on_guideline",
+          "code": "SRC-DOC-00005AB23BE6D130"
+        },
+        {
+          "name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf",
+          "relation": "based_on_guideline",
+          "code": "SRC-DOC-4DE9ED834C741715"
+        },
+        {
+          "name": "《内科学（第10版）》.pdf",
+          "relation": "based_on_guideline",
+          "code": "SRC-DOC-C0BB559FA2C8448A"
+        }
+      ],
+      "action_links": [
+        {
+          "name": "心肌损伤标志物",
+          "relation": "recommends_action",
+          "code": "LAB-CARD-CADCD76D40B9",
+          "entityType": "LabItem"
+        },
+        {
+          "name": "肾功能与电解质",
+          "relation": "recommends_action",
+          "code": "LAB-CARD-RENAL-ELECTROLYTE-CDSS",
+          "entityType": "LabItem"
+        },
+        {
+          "name": "基因检测",
+          "relation": "recommends_action",
+          "code": "EXAM-GENETIC",
+          "entityType": "ExamItem"
+        },
+        {
+          "name": "心电图",
+          "relation": "recommends_action",
+          "code": "EXAM-ECG",
+          "entityType": "ExamItem"
+        },
+        {
+          "name": "动态心电图",
+          "relation": "recommends_action",
+          "code": "EXAM-HOLTER",
+          "entityType": "ExamItem"
+        },
+        {
+          "name": "冠状动脉造影",
+          "relation": "recommends_action",
+          "code": "EXAM-CAG",
+          "entityType": "ExamItem"
+        }
+      ]
+    },
+    {
+      "recommendation_code": "REC-CDSS-VASCD-SCD-ARREST-04-01-FOLLOW",
+      "recommendation_properties": {
+        "exclusion_criteria": "未完成初始治疗、病情不稳定或缺少复查结果时，提示补充评估后再随访分层。",
+        "evidence_level": "未分级/指南未显式标注",
+        "recommended_action_codes": [
+          "FU-CARD-6C300A11F9E9",
+          "PROG-CARD-9D9ABC724D48"
+        ],
+        "scope_type": "disease_category",
+        "entityType": "RecommendationStatement",
+        "type_label": "RecommendationStatement",
+        "primary_label": "KGNode",
+        "guideline_names": [
+          "室性心律失常中国专家共识基层版.pdf",
+          "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf",
+          "《内科学（第10版）》.pdf"
+        ],
+        "entityCategory": "推荐陈述",
+        "ai_evidence_review_status": "ai_prechecked_source_traced",
+        "evidence_ids": [
+          "EVD-A215F735B3016E6E5D52-SQTS",
+          "EVD-SHARED-A28FAB3744FDF1FAEBE03B9C",
+          "EVD-475059D8B5D2AB76E02F-ARREST"
+        ],
+        "blocked_action_codes": [],
+        "formal_cdss_checked_at": "2026-07-16 21:16:45",
+        "last_fix_run_id": "全库正式CDSS推荐链路核验与收口_20260730",
+        "formal_ready_at": "2026-07-16 21:21:32",
+        "recommendation_class": "未分级/指南未显式标注",
+        "display_title": "心脏骤停稳定期或治疗后，应按心脏骤停随访方案、心脏骤停预后进行随访和复评。",
+        "statement_text": "心脏骤停稳定期或治疗后，应按心脏骤停随访方案、心脏骤停预后进行随访和复评。",
+        "recommendation_type": "recommend",
+        "code": "REC-CDSS-VASCD-SCD-ARREST-04-01-FOLLOW",
+        "display_name": "心脏骤停稳定期或治疗后，应按心脏骤停随访方案、心脏骤停预后进行随访和复评。",
+        "primary_evidence_id": "EVD-A215F735B3016E6E5D52-SQTS",
+        "updated_at": "2026-07-30 16:39:47",
+        "adjudication_reason": "已具备推荐动作、证据和指南来源，按结构化链路进入正式推荐。",
+        "cdss_use_status": "正式推荐",
+        "cdss_release_level": "formal",
+        "blocked_action_names": [],
+        "primary_evidence_raw_excerpt": "为植入型心律                 间期异常    　　注:SCA                                                为心脏骤停,SQTS 为短QT 综合征,ICD     4. SQTS:SQTS 是一种以心电图QT                                转复除颤器 缩短、伴有恶性心律失常为特征的遗传性心律失常 相关的致病基综合征。目前已发现7 种与SQTS                   ERS 患者发生室颤的风险极低,对于无症状的 最严重及因。SQTS 的临床表现多变,其中以SCD           ERS 患者,建议随访。 的最常见( 约40%),其次是心悸( 约31%),24%      有室颤发作的ERS 患者,静脉应用异丙肾上腺 SQTS 患者存在心房颤动。               素可能有效。有SCA 或室颤病史的ERS 患者,再发 SQTS 诊断标准:①QTc≤340 ms,或②QTc ≤  室颤风险高,推荐植入ICD 进行二级预防。有频发 360 ms 且伴有以下至少1 个条件:",
+        "schema_version": "V1.10",
+        "id": "KG_REC_CDSS_VASCD_SCD_ARREST_04_01_FOLLOW",
+        "applicable_population": "心脏骤停相关患者",
+        "canonical_labels": [
+          "KGNode",
+          "RecommendationStatement"
+        ],
+        "pathway_code": "PATHWAY-CDSS-VASCD-SCD-ARREST",
+        "recommended_action_names": [
+          "心脏骤停随访方案",
+          "心脏骤停预后"
+        ],
+        "disease_name": "心脏骤停",
+        "name": "心脏骤停稳定期或治疗后，应按心脏骤停随访方案、心脏骤停预后进行随访和复评。",
+        "created_at": "2026-07-09 00:00:00",
+        "formal_cdss_blocked": false,
+        "formal_cdss_ready": true,
+        "skill_version": "V1.40",
+        "required_patient_facts": [
+          "主诉",
+          "现病史",
+          "既往史",
+          "用药史",
+          "生命体征",
+          "治疗方案",
+          "复查结果",
+          "症状变化",
+          "不良事件"
+        ],
+        "primary_source_name": "室性心律失常中国专家共识基层版.pdf",
+        "review_status": "approved",
+        "merge_status": "delta_ready",
+        "disease_code": "DIS-CARD-SCD-ARREST",
+        "evidence_count": 3,
+        "scope_target": "室性心律失常及心脏性猝死",
+        "primary_source_section": "follow_up",
+        "formal_cdss_block_scope": "20260716_正式CDSS推荐资格治理",
+        "stage_code": "STAGE-CDSS-VASCD-SCD-ARREST-04-FOLLOW",
+        "preferred_name": "心脏骤停稳定期或治疗后，应按心脏骤停随访方案、心脏骤停预后进行随访和复评。",
+        "batch_id": "BATCH-CARD-VA-SCD-CDSS-20260709-001",
+        "primary_evidence_summary": "心脏骤停稳定期或治疗后，应按心脏骤停随访方案、心脏骤停预后进行随访和复评。",
+        "evidence_summary_type": "structured_summary_with_raw_excerpt",
+        "front_end_display_rule": "正式CDSS推荐区可展示；必须展示推荐动作和当前推荐证据链",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "primary_source_page": 16,
+        "rule_code": "RULE-CDSS-VASCD-SCD-ARREST-04-01-FOLLOW",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260716_正式CDSS机器准入与结构补链"
+      },
+      "evidence_links": [
+        {
+          "name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf 第87页证据（SEG-DOC-4DE9ED834C741715-87-GL-00355-VA）",
+          "relation": "supported_by_evidence",
+          "code": "EVD-SHARED-A28FAB3744FDF1FAEBE03B9C"
+        },
+        {
+          "name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf 第87页证据（SEG-DOC-4DE9ED834C741715-87-GL-00355-VA）",
+          "relation": "derived_from",
+          "code": "EVD-SHARED-A28FAB3744FDF1FAEBE03B9C"
+        },
+        {
+          "name": "室性心律失常中国专家共识基层版.pdf 第16页证据（SEG-DOC-00005AB23BE6D130-16-GL-00190-SQTS）",
+          "relation": "supported_by_evidence",
+          "code": "EVD-A215F735B3016E6E5D52-SQTS"
+        },
+        {
+          "name": "室性心律失常中国专家共识基层版.pdf 第16页证据（SEG-DOC-00005AB23BE6D130-16-GL-00190-SQTS）",
+          "relation": "derived_from",
+          "code": "EVD-A215F735B3016E6E5D52-SQTS"
+        },
+        {
+          "name": "《内科学（第10版）》.pdf 第311页证据（SEG-DOC-C0BB559FA2C8448A-311-GL-00189-ARREST）",
+          "relation": "derived_from",
+          "code": "EVD-475059D8B5D2AB76E02F-ARREST"
+        },
+        {
+          "name": "《内科学（第10版）》.pdf 第311页证据（SEG-DOC-C0BB559FA2C8448A-311-GL-00189-ARREST）",
+          "relation": "supported_by_evidence",
+          "code": "EVD-475059D8B5D2AB76E02F-ARREST"
+        }
+      ],
+      "guideline_links": [
+        {
+          "name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf",
+          "relation": "based_on_guideline",
+          "code": "SRC-DOC-4DE9ED834C741715"
+        },
+        {
+          "name": "室性心律失常中国专家共识基层版.pdf",
+          "relation": "based_on_guideline",
+          "code": "SRC-DOC-00005AB23BE6D130"
+        },
+        {
+          "name": "《内科学（第10版）》.pdf",
+          "relation": "based_on_guideline",
+          "code": "SRC-DOC-C0BB559FA2C8448A"
+        }
+      ],
+      "action_links": [
+        {
+          "name": "心脏骤停随访方案",
+          "relation": "recommends_action",
+          "code": "FU-CARD-6C300A11F9E9",
+          "entityType": "FollowUp"
+        }
+      ]
+    },
+    {
+      "recommendation_code": "REC-CDSS-VASCD-SCD-SUDDEN-01-01-DIAG",
+      "recommendation_properties": {
+        "exclusion_criteria": "关键检查缺失、诊断条件不足或存在更紧急鉴别诊断时，不自动确认诊断。",
+        "evidence_level": "未分级/指南未显式标注",
+        "recommended_action_codes": [
+          "DXC-CARD-6B002C8433DE",
+          "EXAM-CAG",
+          "EXAM-HOLTER",
+          "EXAM-GENETIC",
+          "EXAM-ECG",
+          "LAB-CARD-A9EC1D4DA037",
+          "LAB-CARD-F89D5BB72F25"
+        ],
+        "scope_type": "disease_category",
+        "entityType": "RecommendationStatement",
+        "type_label": "RecommendationStatement",
+        "primary_label": "KGNode",
+        "guideline_names": [
+          "室性心律失常中国专家共识基层版.pdf",
+          "《内科学（第10版）》.pdf",
+          "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf"
+        ],
+        "entityCategory": "推荐陈述",
+        "ai_evidence_review_status": "ai_prechecked_source_traced",
+        "evidence_ids": [
+          "EVD-22F1D1DDC36B0B600F0B-NSVT",
+          "EVD-TB-529E398EB043DF2365D9-NSVT",
+          "EVD-SHARED-A28FAB3744FDF1FAEBE03B9C"
+        ],
+        "blocked_action_codes": [],
+        "formal_cdss_checked_at": "2026-07-16 21:16:45",
+        "last_fix_run_id": "全库正式CDSS推荐链路核验与收口_20260730",
+        "formal_ready_at": "2026-07-16 21:21:32",
+        "recommendation_class": "未分级/指南未显式标注",
+        "display_title": "疑似心脏性猝死时，应结合心脏性猝死诊断标准、冠状动脉造影、动态心电图、基因检测、心电图等进行诊断确认和必要鉴别。",
+        "statement_text": "疑似心脏性猝死时，应结合心脏性猝死诊断标准、冠状动脉造影、动态心电图、基因检测、心电图等进行诊断确认和必要鉴别。",
+        "recommendation_type": "recommend",
+        "code": "REC-CDSS-VASCD-SCD-SUDDEN-01-01-DIAG",
+        "display_name": "疑似心脏性猝死时，应结合心脏性猝死诊断标准、冠状动脉造影、动态心电图、基因检测、心电图等进行诊断确认和必要鉴别。",
+        "primary_evidence_id": "EVD-22F1D1DDC36B0B600F0B-NSVT",
+        "updated_at": "2026-07-30 16:39:47",
+        "adjudication_reason": "已具备推荐动作、证据和指南来源，按结构化链路进入正式推荐。",
+        "cdss_use_status": "正式推荐",
+        "cdss_release_level": "formal",
+        "blocked_action_names": [],
+        "primary_evidence_raw_excerpt": "心脏结构正常的 HCM)、扩张型心肌病( dilated  cardiomyopathy,   NSVT,导致SCD 的可能性极小,但偶尔可致晕厥。 右心室流出道室速需与致心律失常性右心室心肌DCM)、心脏瓣膜病、高血压合并左心室肥厚和充血 性心力衰竭等患者也易发生NSVT。           病( arrhythmogenic right ventricular cardiomyopathy, 的风险评估包括一般性评   (2)风险评估:NSVT                  ARVC)相鉴别。 估和进一步评估。一般性评估包括病史、家族史、应    2)结构性心脏病NSVT:与急性心肌缺血和长 用的药物、体格检查、12 导联体表心电图、超声心动   QT 综合征(long QT syndrome,LQTS)相关的NSVT, 图、实验室检查。进一步评估包括运动试验、冠状动  常表现为多形性。在有明确的持续性室速病史患 波形态可能与持脉造影或冠状动脉CT、心脏磁共振、心脏电生理检  者,如果记录到NSVT 时,其QRS 查、基因检测和/ 或家系调查。上述风险评估并非针  续性室速相",
+        "schema_version": "V1.10",
+        "id": "KG_REC_CDSS_VASCD_SCD_SUDDEN_01_01_DIAG",
+        "applicable_population": "心脏性猝死相关患者",
+        "canonical_labels": [
+          "KGNode",
+          "RecommendationStatement"
+        ],
+        "pathway_code": "PATHWAY-CDSS-VASCD-SCD-SUDDEN",
+        "recommended_action_names": [
+          "心脏性猝死诊断标准",
+          "冠状动脉造影",
+          "动态心电图",
+          "基因检测",
+          "心电图",
+          "心肌肌钙蛋白",
+          "血钾"
+        ],
+        "disease_name": "心脏性猝死",
+        "name": "疑似心脏性猝死时，应结合心脏性猝死诊断标准、冠状动脉造影、动态心电图、基因检测、心电图等进行诊断确认和必要鉴别。",
+        "created_at": "2026-07-09 00:00:00",
+        "formal_cdss_blocked": false,
+        "formal_cdss_ready": true,
+        "skill_version": "V1.40",
+        "required_patient_facts": [
+          "主诉",
+          "现病史",
+          "既往史",
+          "用药史",
+          "生命体征",
+          "心电图",
+          "超声心动图",
+          "实验室检查",
+          "影像检查"
+        ],
+        "primary_source_name": "室性心律失常中国专家共识基层版.pdf",
+        "review_status": "approved",
+        "merge_status": "delta_ready",
+        "disease_code": "DIS-CARD-SCD-SUDDEN",
+        "evidence_count": 3,
+        "scope_target": "室性心律失常及心脏性猝死",
+        "primary_source_section": "treatment_plan",
+        "formal_cdss_block_scope": "20260716_正式CDSS推荐资格治理",
+        "stage_code": "STAGE-CDSS-VASCD-SCD-SUDDEN-01-DIAG",
+        "preferred_name": "疑似心脏性猝死时，应结合心脏性猝死诊断标准、冠状动脉造影、动态心电图、基因检测、心电图等进行诊断确认和必要鉴别。",
+        "batch_id": "BATCH-CARD-VA-SCD-CDSS-20260709-001",
+        "primary_evidence_summary": "疑似心脏性猝死时，应结合心脏性猝死诊断标准、冠状动脉造影、动态心电图、基因检测、心电图等进行诊断确认和必要鉴别。",
+        "evidence_summary_type": "structured_summary_with_raw_excerpt",
+        "front_end_display_rule": "正式CDSS推荐区可展示；必须展示推荐动作和当前推荐证据链",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "primary_source_page": 4,
+        "rule_code": "RULE-CDSS-VASCD-SCD-SUDDEN-01-01-DIAG",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260716_正式CDSS机器准入与结构补链"
+      },
+      "evidence_links": [
+        {
+          "name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf 第87页证据（SEG-DOC-4DE9ED834C741715-87-GL-00355-VA）",
+          "relation": "supported_by_evidence",
+          "code": "EVD-SHARED-A28FAB3744FDF1FAEBE03B9C"
+        },
+        {
+          "name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf 第87页证据（SEG-DOC-4DE9ED834C741715-87-GL-00355-VA）",
+          "relation": "derived_from",
+          "code": "EVD-SHARED-A28FAB3744FDF1FAEBE03B9C"
+        },
+        {
+          "name": "室性心律失常中国专家共识基层版.pdf 第4页证据（SEG-DOC-00005AB23BE6D130-4-GL-00040-NSVT）",
+          "relation": "supported_by_evidence",
+          "code": "EVD-22F1D1DDC36B0B600F0B-NSVT"
+        },
+        {
+          "name": "室性心律失常中国专家共识基层版.pdf 第4页证据（SEG-DOC-00005AB23BE6D130-4-GL-00040-NSVT）",
+          "relation": "derived_from",
+          "code": "EVD-22F1D1DDC36B0B600F0B-NSVT"
+        },
+        {
+          "name": "《内科学（第10版）》.pdf 第313页证据（SEG-DOC-C0BB559FA2C8448A-313-TB-00180-NSVT）",
+          "relation": "supported_by_evidence",
+          "code": "EVD-TB-529E398EB043DF2365D9-NSVT"
+        },
+        {
+          "name": "《内科学（第10版）》.pdf 第313页证据（SEG-DOC-C0BB559FA2C8448A-313-TB-00180-NSVT）",
+          "relation": "derived_from",
+          "code": "EVD-TB-529E398EB043DF2365D9-NSVT"
+        }
+      ],
+      "guideline_links": [
+        {
+          "name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf",
+          "relation": "based_on_guideline",
+          "code": "SRC-DOC-4DE9ED834C741715"
+        },
+        {
+          "name": "室性心律失常中国专家共识基层版.pdf",
+          "relation": "based_on_guideline",
+          "code": "SRC-DOC-00005AB23BE6D130"
+        },
+        {
+          "name": "《内科学（第10版）》.pdf",
+          "relation": "based_on_guideline",
+          "code": "SRC-DOC-C0BB559FA2C8448A"
+        }
+      ],
+      "action_links": [
+        {
+          "name": "心肌损伤标志物",
+          "relation": "recommends_action",
+          "code": "LAB-CARD-CADCD76D40B9",
+          "entityType": "LabItem"
+        },
+        {
+          "name": "肾功能与电解质",
+          "relation": "recommends_action",
+          "code": "LAB-CARD-RENAL-ELECTROLYTE-CDSS",
+          "entityType": "LabItem"
+        },
+        {
+          "name": "动态心电图",
+          "relation": "recommends_action",
+          "code": "EXAM-HOLTER",
+          "entityType": "ExamItem"
+        },
+        {
+          "name": "心电图",
+          "relation": "recommends_action",
+          "code": "EXAM-ECG",
+          "entityType": "ExamItem"
+        },
+        {
+          "name": "基因检测",
+          "relation": "recommends_action",
+          "code": "EXAM-GENETIC",
+          "entityType": "ExamItem"
+        },
+        {
+          "name": "冠状动脉造影",
+          "relation": "recommends_action",
+          "code": "EXAM-CAG",
+          "entityType": "ExamItem"
+        }
+      ]
+    },
+    {
+      "recommendation_code": "REC-CDSS-VASCD-SCD-SUDDEN-04-01-FOLLOW",
+      "recommendation_properties": {
+        "exclusion_criteria": "未完成初始治疗、病情不稳定或缺少复查结果时，提示补充评估后再随访分层。",
+        "evidence_level": "未分级/共识证据",
+        "recommended_action_codes": [
+          "FU-CARD-ECE6663DB61D",
+          "PROG-CARD-ED540D3E300D"
+        ],
+        "scope_type": "disease_category",
+        "entityType": "RecommendationStatement",
+        "type_label": "RecommendationStatement",
+        "primary_label": "KGNode",
+        "guideline_names": [
+          "室性心律失常中国专家共识基层版.pdf",
+          "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf",
+          "《内科学（第10版）》.pdf"
+        ],
+        "entityCategory": "推荐陈述",
+        "ai_evidence_review_status": "ai_prechecked_source_traced",
+        "evidence_ids": [
+          "EVD-9C098C7E7DD357B920F1-SUDDEN",
+          "EVD-SHARED-A28FAB3744FDF1FAEBE03B9C",
+          "EVD-TB-FBD438288A2A74FDBC18-AMI"
+        ],
+        "blocked_action_codes": [],
+        "formal_cdss_checked_at": "2026-07-16 21:16:45",
+        "last_fix_run_id": "全库正式CDSS推荐链路核验与收口_20260730",
+        "formal_ready_at": "2026-07-16 21:21:32",
+        "recommendation_class": "未分级/共识意见",
+        "display_title": "心脏性猝死稳定期或治疗后，应按心脏性猝死随访方案、心脏性猝死预后进行随访和复评。",
+        "statement_text": "心脏性猝死稳定期或治疗后，应按心脏性猝死随访方案、心脏性猝死预后进行随访和复评。",
+        "recommendation_type": "recommend",
+        "code": "REC-CDSS-VASCD-SCD-SUDDEN-04-01-FOLLOW",
+        "display_name": "心脏性猝死稳定期或治疗后，应按心脏性猝死随访方案、心脏性猝死预后进行随访和复评。",
+        "primary_evidence_id": "EVD-9C098C7E7DD357B920F1-SUDDEN",
+        "updated_at": "2026-07-30 16:39:47",
+        "adjudication_reason": "已具备推荐动作、证据和指南来源，按结构化链路进入正式推荐。",
+        "cdss_use_status": "正式推荐",
+        "cdss_release_level": "formal",
+        "blocked_action_names": [],
+        "primary_evidence_raw_excerpt": "· 1 0 6 ·                 中华心律失常学杂志2022 年4 月第26 卷第2 期Chin J Cardiac Arrhyth,April 2022,Vol. 26,No. 2 ·指南与共识· 室性心律失常中国专家共识基层版 中华医学会心电生理和起搏分会　中国医师协会心律学专业委员会 通信作者:曹克将,Email:kjcao@ njmu.edu.cn;张澍,Email:zsfuwai@ vip.163.com;华伟, Email:drhuaweifw@ sina.com 【摘要】　室性心律失常在临床上十分常见,其既可发生在结构性心脏病与遗传性心律失常综合征 患者,也可见于心脏结构正常的人群。不同类型的室性心律失常对患者的影响不同,有的预后良好,有 的可致明显心悸与黑矇,甚至心脏性猝死。为了让基层医院的医生能更好地认识室性心律失常,提高诊 断与治疗水平,降低室性心律失常死亡率,中华医学会心电生理和起搏分会与中国医师协会心律学专业 委员会组织国内专家撰写了“室性心律失常中国专家共识基层版”。期望该共识基层版有助于促进我 国基层医生规范化诊治室性心律失常。 【关键词】",
+        "schema_version": "V1.10",
+        "id": "KG_REC_CDSS_VASCD_SCD_SUDDEN_04_01_FOLLOW",
+        "applicable_population": "心脏性猝死相关患者",
+        "canonical_labels": [
+          "KGNode",
+          "RecommendationStatement"
+        ],
+        "pathway_code": "PATHWAY-CDSS-VASCD-SCD-SUDDEN",
+        "recommended_action_names": [
+          "心脏性猝死随访方案",
+          "心脏性猝死预后"
+        ],
+        "disease_name": "心脏性猝死",
+        "name": "心脏性猝死稳定期或治疗后，应按心脏性猝死随访方案、心脏性猝死预后进行随访和复评。",
+        "created_at": "2026-07-09 00:00:00",
+        "formal_cdss_blocked": false,
+        "formal_cdss_ready": true,
+        "skill_version": "V1.40",
+        "required_patient_facts": [
+          "主诉",
+          "现病史",
+          "既往史",
+          "用药史",
+          "生命体征",
+          "治疗方案",
+          "复查结果",
+          "症状变化",
+          "不良事件"
+        ],
+        "primary_source_name": "室性心律失常中国专家共识基层版.pdf",
+        "review_status": "approved",
+        "merge_status": "delta_ready",
+        "disease_code": "DIS-CARD-SCD-SUDDEN",
+        "evidence_count": 3,
+        "scope_target": "室性心律失常及心脏性猝死",
+        "primary_source_section": "prognosis",
+        "formal_cdss_block_scope": "20260716_正式CDSS推荐资格治理",
+        "stage_code": "STAGE-CDSS-VASCD-SCD-SUDDEN-04-FOLLOW",
+        "preferred_name": "心脏性猝死稳定期或治疗后，应按心脏性猝死随访方案、心脏性猝死预后进行随访和复评。",
+        "batch_id": "BATCH-CARD-VA-SCD-CDSS-20260709-001",
+        "primary_evidence_summary": "心脏性猝死稳定期或治疗后，应按心脏性猝死随访方案、心脏性猝死预后进行随访和复评。",
+        "evidence_summary_type": "structured_summary_with_raw_excerpt",
+        "front_end_display_rule": "正式CDSS推荐区可展示；必须展示推荐动作和当前推荐证据链",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "primary_source_page": 1,
+        "rule_code": "RULE-CDSS-VASCD-SCD-SUDDEN-04-01-FOLLOW",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260716_正式CDSS机器准入与结构补链"
+      },
+      "evidence_links": [
+        {
+          "name": "《内科学（第10版）》.pdf 第215页证据（SEG-DOC-C0BB559FA2C8448A-215-TB-00017-AMI）",
+          "relation": "derived_from",
+          "code": "EVD-TB-FBD438288A2A74FDBC18-AMI"
+        },
+        {
+          "name": "《内科学（第10版）》.pdf 第215页证据（SEG-DOC-C0BB559FA2C8448A-215-TB-00017-AMI）",
+          "relation": "supported_by_evidence",
+          "code": "EVD-TB-FBD438288A2A74FDBC18-AMI"
+        },
+        {
+          "name": "室性心律失常中国专家共识基层版.pdf 第1页证据（SEG-DOC-00005AB23BE6D130-1-GL-00002-SUDDEN）",
+          "relation": "supported_by_evidence",
+          "code": "EVD-9C098C7E7DD357B920F1-SUDDEN"
+        },
+        {
+          "name": "室性心律失常中国专家共识基层版.pdf 第1页证据（SEG-DOC-00005AB23BE6D130-1-GL-00002-SUDDEN）",
+          "relation": "derived_from",
+          "code": "EVD-9C098C7E7DD357B920F1-SUDDEN"
+        },
+        {
+          "name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf 第87页证据（SEG-DOC-4DE9ED834C741715-87-GL-00355-VA）",
+          "relation": "derived_from",
+          "code": "EVD-SHARED-A28FAB3744FDF1FAEBE03B9C"
+        },
+        {
+          "name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf 第87页证据（SEG-DOC-4DE9ED834C741715-87-GL-00355-VA）",
+          "relation": "supported_by_evidence",
+          "code": "EVD-SHARED-A28FAB3744FDF1FAEBE03B9C"
+        }
+      ],
+      "guideline_links": [
+        {
+          "name": "《内科学（第10版）》.pdf",
+          "relation": "based_on_guideline",
+          "code": "SRC-DOC-C0BB559FA2C8448A"
+        },
+        {
+          "name": "ESC指南：室性心律失常患者的管理和心源性猝死的预防 2022.pdf",
+          "relation": "based_on_guideline",
+          "code": "SRC-DOC-4DE9ED834C741715"
+        },
+        {
+          "name": "室性心律失常中国专家共识基层版.pdf",
+          "relation": "based_on_guideline",
+          "code": "SRC-DOC-00005AB23BE6D130"
+        }
+      ],
+      "action_links": [
+        {
+          "name": "心脏性猝死随访方案",
+          "relation": "recommends_action",
+          "code": "FU-CARD-ECE6663DB61D",
+          "entityType": "FollowUp"
+        }
+      ]
+    }
+  ]
+}
