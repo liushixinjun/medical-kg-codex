@@ -1,0 +1,18 @@
+﻿node_code,node_name,entity_type,ref_count,diseases,recommendation_count,resolution_status,cdss_display_ready,cdss_order_ready,resolution_note,required_action,candidate_count,generated_at
+EXAM-GENETIC,基因检测,ExamItem,8,扩张型心肌病；法布雷病心肌病；肥厚型心肌病；致心律失常性双心室心肌病；致心律失常性右心室心肌病；致心律失常性左心室心肌病；致心律失常性心肌病；非扩张型左心室心肌病,8,needs_specific_exam,true,false,基因检测为宽口径检查动作，不同疾病对应检测范围不同。,按疾病和原文证据确定基因检测类型或进入待注册。,4,2026-08-03 16:28:04
+EXAM-ECG,心电图,ExamItem,8,ST段抬高型心肌梗死；心房心肌病；急性心肌梗死；扩张型心肌病；肥厚型心肌病；致心律失常性右心室心肌病；致心律失常性心肌病；非ST段抬高型心肌梗死,8,needs_specific_exam,true,false,心电图为宽口径检查动作；需按原文场景区分常规心电图、动态心电图、急诊心电图等，不能只按名称硬映射。,回原文证据确认具体检查项目；若为普通十二导联/常规心电图，可映射到常规心电图检查。,21,2026-08-03 16:28:04
+EXAM-CMR,心脏磁共振,ExamItem,11,扩张型心肌病；法布雷病心肌病；淀粉样变心肌病；肥厚型心肌病；致心律失常性双心室心肌病；致心律失常性右心室心肌病；致心律失常性左心室心肌病；致心律失常性心肌病；限制型心肌病；非扩张型左心室心肌病,11,needs_specific_exam,true,false,心脏磁共振需区分平扫、增强、延迟强化等项目。,回原文证据确认具体 CMR 项目。,2,2026-08-03 16:28:04
+EXAM-TTE,超声心动图,ExamItem,8,心房心肌病；急性心肌梗死；扩张型心肌病；淀粉样变心肌病；肥厚型心肌病；限制型心肌病,8,needs_specific_exam,true,false,超声心动图为宽口径检查动作；Oracle 中存在 M 型、二维、多普勒、经食管、负荷等多种项目。,回原文证据确认具体超声类型；不能直接把宽口径名称当医嘱项目。,16,2026-08-03 16:28:04
+LAB-CARD-CADCD76D40B9,心肌损伤标志物,LabItem,4,ST段抬高型心肌梗死；急性心肌梗死；非ST段抬高型心肌梗死,4,needs_lab_subitem_drilldown,true,false,心肌损伤标志物是组合检验概念，应下钻到肌钙蛋白、CK-MB、肌红蛋白等检验项目/细项。,补具体检验项目和检验细项后再参与正式医嘱。,24,2026-08-03 16:28:04
+LAB-CARDIAC-BIOMARKERS,心脏生物标志物检测,LabItem,1,淀粉样变心肌病,1,needs_lab_subitem_drilldown,true,false,心脏生物标志物检测是组合检验概念，应下钻到 BNP、NT-proBNP、肌钙蛋白等项目。,补具体检验项目和检验细项后再参与正式医嘱。,13,2026-08-03 16:28:04
+MED-BETA-BLOCKER,β受体阻滞剂,Medication,2,ST段抬高型心肌梗死；急性心肌梗死,2,medication_class_not_orderable,true,false,β受体阻滞剂是药物类别，不是具体可开立药品。,保留为推荐类别；正式医嘱需下钻到美托洛尔等具体药品和剂型。,20,2026-08-03 16:28:04
+MED-CARD-DAE0F0B68F1D,他汀类药物,Medication,1,急性心肌梗死,1,medication_class_not_orderable,true,false,他汀类药物是药物类别，不是具体可开立药品。,保留为推荐类别；正式医嘱需下钻到阿托伐他汀、瑞舒伐他汀等具体药品和剂型。,13,2026-08-03 16:28:04
+MED-CARD-2CCCA76B39F5,低分子量肝素,Medication,1,ST段抬高型心肌梗死,1,medication_class_not_orderable,true,false,低分子量肝素是药物类别/族，不是唯一具体药品。,按指南原文和本院药品字典确认具体药品。,15,2026-08-03 16:28:04
+MED-DIURETIC,利尿剂,Medication,1,淀粉样变心肌病,1,medication_class_not_orderable,true,false,利尿剂是药物类别，不是具体可开立药品。,正式医嘱需下钻到呋塞米、托拉塞米等具体药品和剂型。,11,2026-08-03 16:28:04
+MED-CARD-A49408D27901,普通肝素,Medication,1,ST段抬高型心肌梗死,1,medication_class_not_orderable,true,false,普通肝素需区分具体药品、剂型和给药途径。,按指南原文和本院药品字典确认具体药品。,20,2026-08-03 16:28:04
+MED-AMIODARONE,胺碘酮,Medication,1,致心律失常性左心室心肌病,1,needs_drug_form_route,true,false,胺碘酮虽是具体药名，但 Oracle 存在片剂、胶囊、注射液等多剂型。,按急性/长期用药场景确认剂型和给药途径。,7,2026-08-03 16:28:04
+PROC-SEPTAL-MYECTOMY,室间隔切除术,Procedure,1,肥厚型心肌病,1,needs_oracle_registration_or_mapping,true,false,室间隔切除术未发现可唯一命中的 CDSS 手术字典项。,进入待字典融合；不得伪造标准编码。,0,2026-08-03 16:28:04
+PROC-CARD-TEXT-D2C1F9E289,心脏再同步治疗装置植入术,Procedure,1,扩张型心肌病,1,needs_procedure_variant,true,false,心脏再同步治疗装置植入术需区分 CRT-P、CRT-D、置入、置换等操作。,按原文和临床场景确认具体手术/操作字典项。,13,2026-08-03 16:28:04
+PROC-ICD,植入式心律转复除颤器置入术,Procedure,4,扩张型心肌病；肥厚型心肌病；致心律失常性心肌病；非扩张型左心室心肌病,4,needs_procedure_variant,true,false,植入式心律转复除颤器置入术需区分单腔、双腔、置入、置换等操作。,按原文和临床场景确认具体手术/操作字典项。,20,2026-08-03 16:28:04
+PROC-ASA,酒精室间隔消融术,Procedure,1,肥厚型心肌病,1,needs_oracle_registration_or_mapping,true,false,酒精室间隔消融术存在近似术语，但不能直接确认等同于 Oracle 字典项。,进入待字典融合；需要确认是否等同于经皮室间隔心肌消融术。,1,2026-08-03 16:28:04
+PROC-CARD-DA0F467D4A30,溶栓治疗,TreatmentItem,1,ST段抬高型心肌梗死,1,needs_disease_scenario_split,true,false,溶栓治疗是共享宽口径治疗动作；不能把全局共享节点硬映射为 AMI 专属溶栓治疗。,按疾病/场景拆成具体推荐动作，再映射 CDSS 治疗字典。,15,2026-08-03 16:28:04

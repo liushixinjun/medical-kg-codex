@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-08-03 16:43:25",
+  "mode": "read_only",
+  "scope": {
+    "冠心病-急性心肌梗死样板": [
+      "DIS-CARD-CAD-AMI"
+    ],
+    "心肌病样板": [
+      "DIS-CARD-CM-GENERAL"
+    ]
+  },
+  "disease_count": 15,
+  "formal_recommendation_count": 39,
+  "blocking_gap_count": 0,
+  "warning_count": 14,
+  "fallback_standard_diagnosis_count": 5,
+  "invalid_path_count": 0,
+  "pollution_count": 0,
+  "standard_dictionary_gap_count": 0,
+  "classified_non_orderable_action_count": 55,
+  "classified_non_orderable_action_unique_count": 17,
+  "output_dir": "项目管理中心_project_management\\2026年8月P5样板终验\\03_动作字典处置后复核_20260803"
+}

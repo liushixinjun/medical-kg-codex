@@ -487,7 +487,13 @@ RETURN rec.disease_code AS disease_code,
        coalesce(n.cdss_use_status,'') AS cdss_use_status,
        coalesce(n.clinical_use_status,'') AS clinical_use_status,
        coalesce(n.dictionary_validation_status,'') AS dictionary_validation_status,
-       coalesce(n.source_table,'') AS source_table
+       coalesce(n.source_table,'') AS source_table,
+       coalesce(n.cdss_order_ready,true) AS cdss_order_ready,
+       coalesce(n.cdss_display_ready,false) AS cdss_display_ready,
+       coalesce(n.emr_write_allowed,false) AS emr_write_allowed,
+       coalesce(n.cdss_dictionary_resolution_status,'') AS cdss_dictionary_resolution_status,
+       coalesce(n.cdss_dictionary_resolution_note,'') AS cdss_dictionary_resolution_note,
+       coalesce(n.cdss_dictionary_required_action,'') AS cdss_dictionary_required_action
 ORDER BY disease_name, entity_type, node_name
 """
 
@@ -758,6 +764,30 @@ def build_gap_rows(
     return gaps
 
 
+def split_standard_action_gap_rows(
+    standard_gap_rows: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """把真正阻断的字典缺口，与已分类的“非直接医嘱动作”分开。
+
+    已分类动作的原则：
+    - 可用于图谱知识展示；
+    - 不允许直接写医嘱/回填EMR；
+    - 后续要么下钻到具体标准项目，要么进入新增字典/映射评审。
+    """
+    blocking_rows: list[dict[str, Any]] = []
+    classified_rows: list[dict[str, Any]] = []
+    for row in standard_gap_rows:
+        status = str(row.get("cdss_dictionary_resolution_status") or "").strip()
+        order_ready = is_truthy(row.get("cdss_order_ready"))
+        if status and not order_ready:
+            item = dict(row)
+            item["处置结论"] = "已分类为非直接医嘱动作：可展示，不可直接下医嘱/回填EMR"
+            classified_rows.append(item)
+        else:
+            blocking_rows.append(row)
+    return blocking_rows, classified_rows
+
+
 def write_report(
     path: Path,
     summary: dict[str, Any],
@@ -887,6 +917,7 @@ def main() -> int:
 
     driver.close()
 
+    standard_gap_rows, classified_non_orderable_action_rows = split_standard_action_gap_rows(standard_gap_rows)
     coverage_rows = build_coverage_rows(diseases, counts_by_code)
     formal_rows = evaluate_formal_rows(formal_raw)
     gap_rows = build_gap_rows(coverage_rows, formal_rows, invalid_path_rows, pollution_rows, standard_gap_rows)
@@ -894,6 +925,11 @@ def main() -> int:
     blocking_gap_count = sum(1 for row in gap_rows if "非阻断" not in row["问题类别"])
     warning_count = sum(1 for row in coverage_rows if row["提醒"])
     fallback_count = sum(1 for row in coverage_rows if row["标准诊断状态"] == "非阻断")
+    classified_non_orderable_action_unique_count = len({
+        str(row.get("node_code") or "").strip()
+        for row in classified_non_orderable_action_rows
+        if str(row.get("node_code") or "").strip()
+    })
     summary = {
         "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "mode": "read_only",
@@ -906,6 +942,8 @@ def main() -> int:
         "invalid_path_count": len(invalid_path_rows),
         "pollution_count": len(pollution_rows),
         "standard_dictionary_gap_count": len(standard_gap_rows),
+        "classified_non_orderable_action_count": len(classified_non_orderable_action_rows),
+        "classified_non_orderable_action_unique_count": classified_non_orderable_action_unique_count,
         "output_dir": str(out_dir),
     }
 
@@ -917,6 +955,7 @@ def main() -> int:
         "invalid_paths": invalid_path_rows,
         "pollution": pollution_rows,
         "formal_action_standard_dictionary_gaps": standard_gap_rows,
+        "classified_non_orderable_actions": classified_non_orderable_action_rows,
         "knowledge_standard_dictionary_todo": knowledge_standard_todo_rows,
     })
     write_csv(
@@ -1020,6 +1059,12 @@ def main() -> int:
             "clinical_use_status",
             "dictionary_validation_status",
             "source_table",
+            "cdss_order_ready",
+            "cdss_display_ready",
+            "emr_write_allowed",
+            "cdss_dictionary_resolution_status",
+            "cdss_dictionary_resolution_note",
+            "cdss_dictionary_required_action",
         ],
     )
     write_csv(
@@ -1036,6 +1081,31 @@ def main() -> int:
         ],
     )
     write_report(out_dir / "P5_AMI与心肌病样板终验报告.md", summary, coverage_rows, gap_rows)
+
+    write_csv(
+        out_dir / "08_已分类非直接医嘱动作明细.csv",
+        classified_non_orderable_action_rows,
+        [
+            "disease_code",
+            "disease_name",
+            "recommendation_code",
+            "recommendation_name",
+            "entity_type",
+            "node_code",
+            "node_name",
+            "cdss_use_status",
+            "clinical_use_status",
+            "dictionary_validation_status",
+            "source_table",
+            "cdss_order_ready",
+            "cdss_display_ready",
+            "emr_write_allowed",
+            "cdss_dictionary_resolution_status",
+            "cdss_dictionary_resolution_note",
+            "cdss_dictionary_required_action",
+            "处置结论",
+        ],
+    )
 
     print(json.dumps(summary, ensure_ascii=False, indent=2))
     return 0

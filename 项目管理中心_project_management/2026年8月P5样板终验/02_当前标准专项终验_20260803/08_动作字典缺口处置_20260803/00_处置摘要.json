@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-08-03 16:28:04",
+  "unique_gap_count": 17,
+  "candidate_count": 215,
+  "resolution_status_count": {
+    "needs_specific_exam": 4,
+    "needs_lab_subitem_drilldown": 2,
+    "medication_class_not_orderable": 5,
+    "needs_drug_form_route": 1,
+    "needs_oracle_registration_or_mapping": 2,
+    "needs_procedure_variant": 2,
+    "needs_disease_scenario_split": 1
+  },
+  "write_neo4j": true,
+  "neo4j_updated": 17
+}
