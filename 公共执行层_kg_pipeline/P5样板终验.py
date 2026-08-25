@@ -776,10 +776,21 @@ def split_standard_action_gap_rows(
     """
     blocking_rows: list[dict[str, Any]] = []
     classified_rows: list[dict[str, Any]] = []
+    non_blocking_statuses = {
+        "non_orderable_category",
+        "knowledge_display_only",
+        "knowledge_only_non_orderable",
+        "not_orderable",
+        "needs_specific_exam",
+        "needs_lab_subitem_drilldown",
+        "medication_class_not_orderable",
+        "needs_disease_scenario_split",
+        "needs_drug_form_route",
+    }
     for row in standard_gap_rows:
         status = str(row.get("cdss_dictionary_resolution_status") or "").strip()
         order_ready = is_truthy(row.get("cdss_order_ready"))
-        if status and not order_ready:
+        if status in non_blocking_statuses and not order_ready:
             item = dict(row)
             item["处置结论"] = "已分类为非直接医嘱动作：可展示，不可直接下医嘱/回填EMR"
             classified_rows.append(item)

@@ -30,41 +30,6 @@ def test_inference_sentence_is_not_registered_as_exam_observation() -> None:
     assert "临床规则" in reason
 
 
-def test_diagnostic_effect_requires_explicit_finding_context() -> None:
-    result = MODULE.classify_diagnostic_effect(
-        {
-            "evidence_text": "患者常可出现胸痛，但本段没有目标词。",
-            "review_status": "approved",
-            "conflict_status": "none",
-        },
-        "心包摩擦音",
-    )
-    assert result["effect_code"] == "UNSET"
-    assert result["score_enabled"] == 0
-
-
-def test_strong_diagnostic_effect_is_enabled_only_after_review() -> None:
-    approved = MODULE.classify_diagnostic_effect(
-        {
-            "evidence_text": "心包摩擦音是该病具有鉴别价值的特征性体征。",
-            "review_status": "approved",
-            "conflict_status": "none",
-        },
-        "心包摩擦音",
-    )
-    pending = MODULE.classify_diagnostic_effect(
-        {
-            "evidence_text": "心包摩擦音是该病具有鉴别价值的特征性体征。",
-            "review_status": "pending",
-            "conflict_status": "none",
-        },
-        "心包摩擦音",
-    )
-    assert approved["effect_code"] == "STRONG_SUPPORT"
-    assert approved["score_enabled"] == 1
-    assert pending["score_enabled"] == 0
-
-
 def test_duplicate_dictionary_target_prefers_high_degree_node() -> None:
     rows = [
         {"entity_type": "ExamItem", "dict_id": "D1", "dict_code": "E1", "dict_name": "心电图", "element_id": "a", "degree": 2, "kg_name": "ECG", "kg_code": "OLD1"},
@@ -74,3 +39,23 @@ def test_duplicate_dictionary_target_prefers_high_degree_node() -> None:
     assert len(groups) == 1
     assert groups[0]["canonical_element_id"] == "b"
     assert groups[0]["duplicate_element_ids"] == ["a"]
+
+
+def test_dictionary_source_prefers_exact_textbook_title() -> None:
+    assert MODULE.select_authoritative_source(
+        ["STEMI CN 2019.pdf", "《内科学》第10版", "《内科学（第10版）》"]
+    ) == "《内科学（第10版）》"
+
+
+def test_dictionary_source_uses_pending_marker_when_no_primary_source_exists() -> None:
+    assert MODULE.select_authoritative_source([]) == "待补充权威来源"
+
+
+def test_new_dictionary_rows_keep_processing_notes_out_of_source() -> None:
+    sign_rows, observation_rows, vital_rows, _ = MODULE.make_new_dictionary_rows({
+        "sign_candidates": [{"name": "心包摩擦音", "code": "S1", "source_names": ["STEMI CN 2019.pdf"]}],
+        "exam_observation_candidates": [{"name": "ST段抬高", "code": "O1", "source_names": []}],
+    })
+    assert sign_rows[0]["source"] == "STEMI CN 2019.pdf"
+    assert observation_rows[0]["source"] == "待补充权威来源"
+    assert vital_rows[0]["source"] == "《内科学（第10版）》"

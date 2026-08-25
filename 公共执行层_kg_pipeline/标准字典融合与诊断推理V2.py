@@ -19,8 +19,8 @@ from neo4j import GraphDatabase
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_ORACLE_DSN = "192.168.4.25:1521/ORCL"
 DEFAULT_ORACLE_USER = "zycdss"
-MODEL_VERSION = "DIAG-EFFECT-V2.0-20260721"
-DICT_SOURCE = "专科知识图谱V2.0（教材、指南及CDSS二次校验）"
+TEXTBOOK_SOURCE = "《内科学（第10版）》"
+PENDING_SOURCE = "待补充权威来源"
 
 ENTITY_TABLES: dict[str, str] = {
     "Symptom": "K_SYMPTOM_DICT",
@@ -132,6 +132,20 @@ def merge_aliases(*values: Any, exclude: str | None = None) -> list[str]:
             if alias not in result:
                 result.append(alias)
     return result
+
+
+def select_authoritative_source(values: Any) -> str:
+    """选择可展示、可追溯的单一原始资料名称，不写处理流程说明。"""
+    sources: list[str] = []
+    for value in parse_aliases(values):
+        source = value.strip()
+        if source == "《内科学》第10版":
+            source = TEXTBOOK_SOURCE
+        if source and source not in sources:
+            sources.append(source)
+    if TEXTBOOK_SOURCE in sources:
+        return TEXTBOOK_SOURCE
+    return sorted(sources, key=lambda item: (item.endswith(".docx"), item))[0] if sources else PENDING_SOURCE
 
 
 def stable_id(namespace: str, value: str) -> str:
@@ -268,8 +282,9 @@ def inventory(session) -> dict[str, Any]:
         WHERE s.entityType = 'Sign' OR 'Sign' IN labels(s)
         OPTIONAL MATCH (d:Disease)-[r]->(s)
         OPTIONAL MATCH (s)-[]-(e:Evidence)
-        RETURN s.code AS code, s.name AS name, s.aliases AS aliases,
+        RETURN s.code AS code, s.name AS name, s.aliases AS aliases, s.source_name AS node_source_name,
                count(DISTINCT d) AS disease_count, count(DISTINCT e) AS disease_evidence_count,
+               collect(DISTINCT e.source_name) AS source_names,
                collect(DISTINCT type(r))[0..10] AS relation_types
         ORDER BY disease_count DESC, name
         """,
@@ -280,8 +295,10 @@ def inventory(session) -> dict[str, Any]:
         MATCH (n:KGNode)
         WHERE n.entityType = 'ExamObservation' OR 'ExamObservation' IN labels(n)
         OPTIONAL MATCH (d:Disease)-[r]->(n)
-        RETURN n.code AS code, n.name AS name, n.aliases AS aliases,
+        OPTIONAL MATCH (n)-[]-(e:Evidence)
+        RETURN n.code AS code, n.name AS name, n.aliases AS aliases, n.source_name AS node_source_name,
                count(DISTINCT d) AS disease_count, collect(DISTINCT type(r))[0..10] AS relation_types
+               , collect(DISTINCT e.source_name) AS source_names
         ORDER BY disease_count DESC, name
         """,
     )
@@ -436,7 +453,7 @@ def make_new_dictionary_rows(inventory_data: dict[str, Any]) -> tuple[list[dict[
             "code": f"TZ{index:06d}",
             "name": name,
             "version": "V2.0",
-            "source": DICT_SOURCE,
+            "source": select_authoritative_source([item.get("node_source_name"), *(item.get("source_names") or [])]),
             "valid_flag": 1,
             "sort_no": index,
             "remark": f"由图谱体征二次校验注册；原图谱编码={item.get('code') or ''}",
@@ -473,7 +490,7 @@ def make_new_dictionary_rows(inventory_data: dict[str, Any]) -> tuple[list[dict[
             "code": f"JCGC{index:06d}",
             "name": name,
             "version": "V2.0",
-            "source": DICT_SOURCE,
+            "source": select_authoritative_source([item.get("node_source_name"), *(item.get("source_names") or [])]),
             "valid_flag": 1,
             "sort_no": index,
             "remark": remark,
@@ -486,7 +503,7 @@ def make_new_dictionary_rows(inventory_data: dict[str, Any]) -> tuple[list[dict[
             "unit": unit,
             "value_type": "NUMBER",
             "version": "V2.0",
-            "source": "CDSS既有生命体征阈值配置与临床常用生命体征二次校验",
+            "source": TEXTBOOK_SOURCE,
             "valid_flag": 1,
             "sort_no": index,
             "remark": f"兼容既有K_SIGN_DICT类型：{legacy_type}",
@@ -494,63 +511,6 @@ def make_new_dictionary_rows(inventory_data: dict[str, Any]) -> tuple[list[dict[
         for index, (code, name, unit, legacy_type) in enumerate(VITAL_SIGN_ITEMS, start=1)
     ]
     return sign_rows, observation_rows, vital_rows, review_rows
-
-
-def local_evidence_context(text: str, finding_name: str, radius: int = 140) -> tuple[str, bool]:
-    if not text or not finding_name:
-        return "", False
-    index = text.find(finding_name)
-    if index < 0:
-        aliases = parse_aliases(finding_name)
-        for alias in aliases:
-            index = text.find(alias)
-            if index >= 0:
-                break
-    if index < 0:
-        return "", False
-    start = max(0, index - radius)
-    end = min(len(text), index + len(finding_name) + radius)
-    return text[start:end], True
-
-
-def classify_diagnostic_effect(relation_properties: dict[str, Any], finding_name: str) -> dict[str, Any]:
-    text = str(relation_properties.get("evidence_text") or "")
-    context, mentioned = local_evidence_context(text, finding_name)
-    source_section = str(relation_properties.get("source_section") or "")
-    conflict = str(relation_properties.get("conflict_status") or "none").lower()
-    approved = str(relation_properties.get("review_status") or "").lower() in {"approved", "validated", "clinical_ready"}
-    if not mentioned:
-        return {
-            "effect_code": "UNSET",
-            "weight_level": 0,
-            "score_enabled": 0,
-            "required_flag": 0,
-            "method": "RELATION_ONLY_UNSCORED",
-            "confidence": 0.4,
-            "context": "",
-        }
-    required_patterns = ["必须", "必要条件", "诊断标准", "确诊需", "不可缺少"]
-    strong_patterns = ["特征性", "典型", "最常见", "主要症状", "主要体征", "多数患者", "大多数患者"]
-    support_patterns = ["常见", "多见", "表现为", "伴有", "可见", "可有", "出现"]
-    if source_section in {"diagnosis", "diagnostic_criteria"} and any(word in context for word in required_patterns):
-        effect_code, level, required = "REQUIRED", 3, 1
-    elif any(word in context for word in strong_patterns):
-        effect_code, level, required = "STRONG_SUPPORT", 3, 0
-    elif any(word in context for word in support_patterns):
-        effect_code, level, required = "SUPPORT", 2, 0
-    else:
-        effect_code, level, required = "WEAK_SUPPORT", 1, 0
-    enabled = int(conflict in {"", "none"} and approved and level >= 2)
-    confidence = 0.95 if enabled and level == 3 else 0.88 if enabled else 0.7
-    return {
-        "effect_code": effect_code,
-        "weight_level": level,
-        "score_enabled": enabled,
-        "required_flag": required,
-        "method": "EXPLICIT_TEXT_WINDOW",
-        "confidence": confidence,
-        "context": context,
-    }
 
 
 def fetch_standard_diagnoses(session) -> dict[str, str]:
@@ -572,9 +532,12 @@ def fetch_exam_observation_links(session) -> list[dict[str, Any]]:
         MATCH (exam:KGNode)-[r]-(observation:KGNode)
         WHERE (exam.entityType = 'ExamItem' OR 'ExamItem' IN labels(exam))
           AND (observation.entityType = 'ExamObservation' OR 'ExamObservation' IN labels(observation))
+        OPTIONAL MATCH (e:Evidence)
+        WHERE e.code = r.evidence_id OR e.evidence_id = r.evidence_id
         RETURN exam.code AS exam_code, exam.name AS exam_name,
                observation.code AS observation_code, observation.name AS observation_name,
-               type(r) AS relation_type, properties(r) AS relation_properties
+               type(r) AS relation_type, properties(r) AS relation_properties,
+               collect(DISTINCT e.source_name) AS source_names
         ORDER BY exam_name, observation_name
         """,
     )
@@ -656,7 +619,7 @@ def build_term_mappings(cursor: oracledb.Cursor, mapped_targets: list[dict[str, 
             "match_type": "EXACT_UNIQUE_NAME",
             "match_status": "VALIDATED",
             "match_confidence": 1.0,
-            "source": "K_TERM与CDSS标准字典唯一同名匹配",
+            "source": "Oracle术语字典 K_TERM",
             "valid_flag": 1,
             "remark": f"术语名称={term['name']}",
         }
@@ -736,6 +699,7 @@ def build_plan(session, cursor: oracledb.Cursor, output_dir: Path) -> dict[str, 
                 "status": match["status"],
                 "match_type": match["match_type"],
                 "match_confidence": match["confidence"],
+                "source": select_authoritative_source([props.get("source_name")]),
             }
             if match["status"] == "matched":
                 target = match["target"]
@@ -763,7 +727,7 @@ def build_plan(session, cursor: oracledb.Cursor, output_dir: Path) -> dict[str, 
                     "current_value": json.dumps({"aliases": parse_aliases(props.get("aliases"))}, ensure_ascii=False),
                     "proposed_value": json.dumps(targets, ensure_ascii=False),
                     "reason": "现有Oracle字典未能唯一匹配；第一批不修改既有字典",
-                    "source": "Neo4j图谱与Oracle有效字典只读比对",
+                    "source": PENDING_SOURCE,
                 })
     collision_groups = build_collision_groups(mapping_rows)
     term_mapping_rows = build_term_mappings(cursor, mapping_rows)
@@ -784,99 +748,17 @@ def build_plan(session, cursor: oracledb.Cursor, output_dir: Path) -> dict[str, 
             "id": stable_id("K_EXAM_OBSERVATION_REL", row_key),
             "exam_item_id": exam["dict_id"],
             "observation_id": observation["dict_id"],
-            "source": "专科知识图谱显式检查项目—检查发现关系",
+            "source": select_authoritative_source([
+                *(link.get("source_names") or []),
+                observation.get("source"),
+                exam.get("source"),
+            ]),
             "evidence_id": evidence_id,
             "valid_flag": 1,
             "remark": f"原关系类型={link.get('relation_type') or ''}",
         })
     exam_observation_rows = list({row["id"]: row for row in exam_observation_rows}.values())
-    standard_diagnoses = fetch_standard_diagnoses(session)
-    rule_rows: list[dict[str, Any]] = []
-    rule_item_rows: list[dict[str, Any]] = []
-    diagnostic_links = inventory_data["diagnostic_finding_links"]
-    diseases: dict[str, dict[str, Any]] = {}
-    for link in diagnostic_links:
-        disease_code = str(link.get("disease_code") or "")
-        if not disease_code:
-            continue
-        diseases.setdefault(disease_code, link)
-    for disease_code, item in sorted(diseases.items()):
-        rule_id = stable_id("K_DIAGNOSIS_RULE", disease_code)
-        diagnosis_dict_id = standard_diagnoses.get(disease_code)
-        rule_rows.append({
-            "id": rule_id,
-            "disease_node_code": disease_code,
-            "disease_name": item.get("disease_name"),
-            "diagnosis_dict_id": diagnosis_dict_id,
-            "rule_name": f"{item.get('disease_name')}疑似诊断初筛规则",
-            "rule_scope": "SUSPECTED_DIAGNOSIS",
-            "rule_version": "V2.0",
-            "status": "ACTIVE" if diagnosis_dict_id else "KNOWLEDGE_ONLY",
-            "effect_model_version": MODEL_VERSION,
-            "source": "教材与指南症状/体征关系自动初始化",
-            "valid_flag": 1,
-            "remark": "仅用于疑似疾病排序，不替代确诊与分型" if diagnosis_dict_id else "尚未绑定标准诊断，仅保留知识展示，不参与自动排序",
-        })
-    for link in diagnostic_links:
-        disease_code = str(link.get("disease_code") or "")
-        finding_type = str(link.get("finding_type") or "")
-        finding_code = str(link.get("finding_code") or "")
-        finding_name = str(link.get("finding_name") or "")
-        if not disease_code or not finding_name:
-            continue
-        mapping = node_lookup.get((finding_type, finding_code)) or node_lookup.get((finding_type, finding_name))
-        effect = classify_diagnostic_effect(link.get("relation_properties") or {}, finding_name)
-        props = link.get("relation_properties") or {}
-        evidence_id = props.get("evidence_id")
-        if not evidence_id:
-            evidence_ids = props.get("evidence_ids") or []
-            evidence_id = evidence_ids[0] if evidence_ids else None
-        item_id = stable_id("K_DIAGNOSIS_RULE_ITEM", f"{disease_code}|{finding_type}|{finding_code or finding_name}")
-        diagnosis_dict_id = standard_diagnoses.get(disease_code)
-        score_enabled = int(bool(effect["score_enabled"] and mapping and diagnosis_dict_id and evidence_id and effect["context"]))
-        rule_item_rows.append({
-            "id": item_id,
-            "rule_id": stable_id("K_DIAGNOSIS_RULE", disease_code),
-            "relation_element_id": link.get("relation_element_id"),
-            "finding_type": finding_type.upper(),
-            "finding_dict_table": mapping.get("dict_table") if mapping else None,
-            "finding_dict_id": mapping.get("dict_id") if mapping else None,
-            "finding_code": mapping.get("dict_code") if mapping else finding_code,
-            "finding_name": mapping.get("dict_name") if mapping else finding_name,
-            "effect_code": effect["effect_code"],
-            "weight_level": effect["weight_level"],
-            "score_enabled": score_enabled,
-            "trigger_operator": "PRESENT",
-            "required_flag": effect["required_flag"],
-            "negation_policy": "NO_SCORE",
-            "extraction_confidence": effect["confidence"],
-            "initialization_method": effect["method"],
-            "source_evidence_id": evidence_id,
-            "source_text": effect["context"],
-            "manual_override": 0,
-            "review_status": "AUTO_ENABLED" if score_enabled else "AUTO_UNSCORED",
-            "valid_flag": 1,
-            "remark": "自动初始化；人工维护时仅覆盖本条规则项",
-        })
-    model_row = {
-        "id": stable_id("K_DIAGNOSIS_RULE_VERSION", MODEL_VERSION),
-        "model_version": MODEL_VERSION,
-        "model_name": "专科CDSS疑似疾病诊断作用等级模型V2.0",
-        "score_matrix": json.dumps({
-            "REQUIRED": {"level": 3, "score": 3, "meaning": "必要或强制条件"},
-            "STRONG_SUPPORT": {"level": 3, "score": 3, "meaning": "强支持"},
-            "SUPPORT": {"level": 2, "score": 2, "meaning": "一般支持"},
-            "WEAK_SUPPORT": {"level": 1, "score": 1, "meaning": "弱支持，默认不启用自动计分"},
-            "AGAINST": {"level": 2, "score": -2, "meaning": "反对证据"},
-            "EXCLUDE": {"hard_stop": True, "meaning": "排除条件"},
-            "UNSET": {"level": 0, "score": 0, "meaning": "仅有关联，未形成诊断作用"},
-        }, ensure_ascii=False),
-        "status": "ACTIVE",
-        "release_time": datetime.now(),
-        "source": "教材与指南显式措辞初始化；大模型不得自行发明数值",
-        "valid_flag": 1,
-        "remark": "运行时分值由版本矩阵解释，图谱关系仅保存作用等级",
-    }
+    review_rows = [{**row, "source": row.get("source") or PENDING_SOURCE} for row in review_rows]
     plan = {
         "summary": {
             "sign_candidates": len(inventory_data["sign_candidates"]),
@@ -889,9 +771,6 @@ def build_plan(session, cursor: oracledb.Cursor, output_dir: Path) -> dict[str, 
             "term_dictionary_mappings": len(term_mapping_rows),
             "exam_observation_relations": len(exam_observation_rows),
             "review_items": len(review_rows),
-            "diagnosis_rules": len(rule_rows),
-            "diagnosis_rule_items": len(rule_item_rows),
-            "scored_rule_items": sum(int(row["score_enabled"]) for row in rule_item_rows),
         },
         "sign_rows": sign_rows,
         "observation_rows": observation_rows,
@@ -902,14 +781,10 @@ def build_plan(session, cursor: oracledb.Cursor, output_dir: Path) -> dict[str, 
         "term_mapping_rows": term_mapping_rows,
         "exam_observation_rows": exam_observation_rows,
         "review_rows": review_rows,
-        "rule_rows": rule_rows,
-        "rule_item_rows": rule_item_rows,
-        "model_row": model_row,
     }
-    write_json(output_dir / "02_标准字典融合与诊断作用初始化计划.json", plan)
+    write_json(output_dir / "02_标准字典融合计划.json", plan)
     write_csv(output_dir / "03_图谱实体标准字典匹配.csv", mapping_rows)
     write_csv(output_dir / "04_Oracle现有字典变更待审清单.csv", review_rows)
-    write_csv(output_dir / "05_诊断作用初始化明细.csv", rule_item_rows)
     write_csv(output_dir / "06_图谱重复主数据自动合并计划.csv", collision_groups)
     write_review_preview(output_dir / "Oracle现有字典变更预览_20260722.html", review_rows)
     return plan
@@ -977,6 +852,7 @@ def apply_oracle_plan(connection: oracledb.Connection, plan: dict[str, Any], out
                 **row,
                 "review_status": row.get("review_status") or "PENDING",
                 "execution_status": row.get("execution_status") or "NOT_EXECUTED",
+                "source": row.get("source") or PENDING_SOURCE,
                 "valid_flag": row.get("valid_flag", 1),
                 "remark": row.get("remark"),
             }
@@ -985,38 +861,6 @@ def apply_oracle_plan(connection: oracledb.Connection, plan: dict[str, Any], out
         counts["K_KG_DICT_CHANGE_REVIEW"] = merge_oracle_rows(
             cursor, "K_KG_DICT_CHANGE_REVIEW", review_rows,
             ["ID", "ENTITY_TYPE", "KG_NODE_CODE", "KG_NODE_NAME", "TARGET_TABLE", "TARGET_ID", "TARGET_CODE", "TARGET_NAME", "ISSUE_TYPE", "CURRENT_VALUE", "PROPOSED_VALUE", "REASON", "SOURCE", "REVIEW_STATUS", "EXECUTION_STATUS", "VALID_FLAG", "REMARK"],
-        )
-        counts["K_DIAGNOSIS_RULE"] = merge_oracle_rows(
-            cursor, "K_DIAGNOSIS_RULE", plan["rule_rows"],
-            ["ID", "DISEASE_NODE_CODE", "DISEASE_NAME", "DIAGNOSIS_DICT_ID", "RULE_NAME", "RULE_SCOPE", "RULE_VERSION", "STATUS", "EFFECT_MODEL_VERSION", "SOURCE", "VALID_FLAG", "REMARK"],
-        )
-        counts["K_DIAGNOSIS_RULE_ITEM"] = merge_oracle_rows(
-            cursor, "K_DIAGNOSIS_RULE_ITEM", plan["rule_item_rows"],
-            ["ID", "RULE_ID", "FINDING_TYPE", "FINDING_DICT_TABLE", "FINDING_DICT_ID", "FINDING_CODE", "FINDING_NAME", "EFFECT_CODE", "WEIGHT_LEVEL", "SCORE_ENABLED", "TRIGGER_OPERATOR", "TRIGGER_VALUE", "UNIT", "REQUIRED_FLAG", "NEGATION_POLICY", "EXTRACTION_CONFIDENCE", "INITIALIZATION_METHOD", "SOURCE_EVIDENCE_ID", "SOURCE_TEXT", "MANUAL_OVERRIDE", "REVIEW_STATUS", "VALID_FLAG", "REMARK"],
-        )
-        model_row = dict(plan["model_row"])
-        if isinstance(model_row.get("release_time"), str):
-            model_row["release_time"] = datetime.fromisoformat(model_row["release_time"])
-        counts["K_DIAGNOSIS_RULE_VERSION"] = merge_oracle_rows(
-            cursor, "K_DIAGNOSIS_RULE_VERSION", [model_row],
-            ["ID", "MODEL_VERSION", "MODEL_NAME", "SCORE_MATRIX", "STATUS", "RELEASE_TIME", "SOURCE", "VALID_FLAG", "REMARK"],
-        )
-        log_row = {
-            "id": stable_id("K_DIAGNOSIS_RULE_LOG", f"BATCH-20260722|{MODEL_VERSION}"),
-            "rule_id": None,
-            "rule_item_id": None,
-            "action_type": "BATCH_INITIALIZE",
-            "before_value": None,
-            "after_value": json.dumps(plan["summary"], ensure_ascii=False),
-            "operator_id": "CODEX",
-            "operator_name": "专科知识图谱自动化流程",
-            "action_time": datetime.now(),
-            "remark": "只写新增表；未修改Oracle既有字典",
-        }
-        counts["K_DIAGNOSIS_RULE_LOG"] = merge_oracle_rows(
-            cursor, "K_DIAGNOSIS_RULE_LOG", [log_row],
-            ["ID", "RULE_ID", "RULE_ITEM_ID", "ACTION_TYPE", "BEFORE_VALUE", "AFTER_VALUE", "OPERATOR_ID", "OPERATOR_NAME", "ACTION_TIME", "REMARK"],
-            touch_modify_time=False,
         )
         connection.commit()
     except Exception:
@@ -1107,47 +951,7 @@ def apply_graph_plan(driver, plan: dict[str, Any], output_dir: Path) -> dict[str
             **row,
             "aliases": merge_aliases(row.get("kg_aliases"), row.get("kg_name"), exclude=str(row.get("dict_name") or "")),
         })
-    relation_rows = [
-        {
-            "relation_element_id": row["relation_element_id"],
-            "diagnostic_effect_code": row["effect_code"],
-            "diagnostic_weight_level": row["weight_level"],
-            "diagnostic_score_enabled": row["score_enabled"],
-            "diagnostic_rule_item_id": row["id"],
-            "diagnostic_model_version": MODEL_VERSION,
-            "source_evidence_id": row.get("source_evidence_id"),
-            "diagnostic_initialization_method": row["initialization_method"],
-            "diagnostic_review_status": row["review_status"],
-        }
-        for row in plan["rule_item_rows"]
-    ]
-    rule_rows = [
-        {
-            "disease_code": row["disease_node_code"],
-            "diagnosis_rule_id": row["id"],
-            "diagnosis_rule_status": row["status"],
-            "diagnosis_effect_model_version": row["effect_model_version"],
-        }
-        for row in plan["rule_rows"]
-    ]
-
     def write_transaction(tx):
-        tx.run(
-            """
-            UNWIND $rows AS row
-            MATCH ()-[r]->() WHERE elementId(r) = row.relation_element_id
-            SET r.diagnostic_effect_code = row.diagnostic_effect_code,
-                r.diagnostic_weight_level = row.diagnostic_weight_level,
-                r.diagnostic_score_enabled = row.diagnostic_score_enabled,
-                r.diagnostic_rule_item_id = row.diagnostic_rule_item_id,
-                r.diagnostic_model_version = row.diagnostic_model_version,
-                r.source_evidence_id = row.source_evidence_id,
-                r.diagnostic_initialization_method = row.diagnostic_initialization_method,
-                r.diagnostic_review_status = row.diagnostic_review_status,
-                r.updated_at = datetime()
-            """,
-            rows=relation_rows,
-        ).consume()
         copied_relationships = 0
         deleted_nodes = 0
         for group in plan.get("collision_groups", []):
@@ -1179,28 +983,15 @@ def apply_graph_plan(driver, plan: dict[str, Any], output_dir: Path) -> dict[str
             """,
             rows=node_rows,
         ).consume()
-        tx.run(
-            """
-            UNWIND $rows AS row
-            MATCH (d:Disease {code: row.disease_code})
-            SET d.diagnosis_rule_id = row.diagnosis_rule_id,
-                d.diagnosis_rule_status = row.diagnosis_rule_status,
-                d.diagnosis_effect_model_version = row.diagnosis_effect_model_version,
-                d.updated_at = datetime()
-            """,
-            rows=rule_rows,
-        ).consume()
         return {"copied_relationships": copied_relationships, "deleted_duplicate_nodes": deleted_nodes}
 
     with driver.session(database="neo4j") as session:
         duplicate_result = session.execute_write(write_transaction)
     result = {
         "dictionary_node_updates_planned": len(node_rows),
-        "diagnostic_relation_updates_planned": len(relation_rows),
-        "disease_rule_updates_planned": len(rule_rows),
         **duplicate_result,
     }
-    write_json(output_dir / "08_Neo4j标准字典与诊断作用写入结果.json", result)
+    write_json(output_dir / "08_Neo4j标准字典融合写入结果.json", result)
     return result
 
 
@@ -1210,27 +1001,31 @@ def oracle_postcheck(connection: oracledb.Connection, plan: dict[str, Any]) -> d
         tables = [
             "K_CLINICAL_SIGN_DICT", "K_EXAM_OBSERVATION_DICT", "K_VITAL_SIGN_ITEM_DICT",
             "K_EXAM_OBSERVATION_REL", "K_TERM_DICT_MAPPING", "K_KG_DICT_CHANGE_REVIEW",
-            "K_DIAGNOSIS_RULE", "K_DIAGNOSIS_RULE_ITEM", "K_DIAGNOSIS_RULE_VERSION", "K_DIAGNOSIS_RULE_LOG",
         ]
         counts: dict[str, int] = {}
         for table in tables:
-            cursor.execute(f"SELECT COUNT(*) FROM {table} WHERE VALID_FLAG = 1" if table != "K_DIAGNOSIS_RULE_LOG" else f"SELECT COUNT(*) FROM {table}")
+            cursor.execute(f"SELECT COUNT(*) FROM {table} WHERE VALID_FLAG = 1")
             counts[table] = int(cursor.fetchone()[0])
-        cursor.execute("SELECT COUNT(*) FROM K_DIAGNOSIS_RULE_ITEM item LEFT JOIN K_DIAGNOSIS_RULE rule ON rule.ID=item.RULE_ID WHERE rule.ID IS NULL")
-        orphan_rule_items = int(cursor.fetchone()[0])
-        cursor.execute("""
-            SELECT COUNT(*) FROM K_DIAGNOSIS_RULE_ITEM
-             WHERE SCORE_ENABLED = 1
-               AND (FINDING_DICT_ID IS NULL OR SOURCE_EVIDENCE_ID IS NULL OR SOURCE_TEXT IS NULL
-                    OR DBMS_LOB.GETLENGTH(SOURCE_TEXT) = 0 OR WEIGHT_LEVEL < 2 OR REVIEW_STATUS <> 'AUTO_ENABLED')
-        """)
-        invalid_enabled_items = int(cursor.fetchone()[0])
-        cursor.execute("SELECT COUNT(*) FROM K_DIAGNOSIS_RULE WHERE STATUS='ACTIVE' AND DIAGNOSIS_DICT_ID IS NULL")
-        active_without_diagnosis = int(cursor.fetchone()[0])
         duplicates: dict[str, int] = {}
         for table in ["K_CLINICAL_SIGN_DICT", "K_EXAM_OBSERVATION_DICT", "K_VITAL_SIGN_ITEM_DICT"]:
             cursor.execute(f"SELECT COUNT(*) FROM (SELECT NAME FROM {table} WHERE VALID_FLAG=1 GROUP BY NAME HAVING COUNT(*)>1)")
             duplicates[table] = int(cursor.fetchone()[0])
+        source_quality: dict[str, dict[str, int]] = {}
+        for table in tables:
+            cursor.execute(
+                f"""SELECT
+                    SUM(CASE WHEN SOURCE IS NULL OR TRIM(SOURCE) IS NULL THEN 1 ELSE 0 END),
+                    SUM(CASE WHEN SOURCE LIKE '%专科知识图谱V2.0%'
+                               OR SOURCE LIKE '%二次校验%'
+                               OR SOURCE LIKE '%只读比对%'
+                               OR SOURCE LIKE '%显式检查项目%' THEN 1 ELSE 0 END)
+                    FROM {table}"""
+            )
+            empty_source, process_text_source = cursor.fetchone()
+            source_quality[table] = {
+                "empty_source": int(empty_source or 0),
+                "processing_text_source": int(process_text_source or 0),
+            }
         expected = {
             "K_CLINICAL_SIGN_DICT": len(unique_rows(plan["sign_rows"])),
             "K_EXAM_OBSERVATION_DICT": len(unique_rows(plan["observation_rows"])),
@@ -1238,17 +1033,17 @@ def oracle_postcheck(connection: oracledb.Connection, plan: dict[str, Any]) -> d
             "K_EXAM_OBSERVATION_REL": len(unique_rows(plan.get("exam_observation_rows", []))),
             "K_TERM_DICT_MAPPING": len(unique_rows(plan["term_mapping_rows"])),
             "K_KG_DICT_CHANGE_REVIEW": len(unique_rows(plan["review_rows"])),
-            "K_DIAGNOSIS_RULE": len(unique_rows(plan["rule_rows"])),
-            "K_DIAGNOSIS_RULE_ITEM": len(unique_rows(plan["rule_item_rows"])),
         }
         return {
             "counts": counts,
             "expected_minimum": expected,
-            "orphan_rule_items": orphan_rule_items,
-            "invalid_enabled_rule_items": invalid_enabled_items,
-            "active_rules_without_standard_diagnosis": active_without_diagnosis,
             "duplicate_new_dictionary_names": duplicates,
-            "passed": orphan_rule_items == 0 and invalid_enabled_items == 0 and active_without_diagnosis == 0 and not any(duplicates.values()) and all(counts[key] >= value for key, value in expected.items()),
+            "source_quality": source_quality,
+            "passed": (
+                not any(duplicates.values())
+                and all(counts[key] >= value for key, value in expected.items())
+                and not any(item["empty_source"] or item["processing_text_source"] for item in source_quality.values())
+            ),
         }
     finally:
         cursor.close()
@@ -1270,24 +1065,6 @@ def graph_postcheck(driver) -> dict[str, Any]:
                 WHERE total > 1 RETURN count(*) AS value
                 """,
             )["value"],
-            "scored_relations": one(session, "MATCH ()-[r]->() WHERE r.diagnostic_score_enabled=1 RETURN count(r) AS value")["value"],
-            "invalid_scored_relations": one(
-                session,
-                """
-                MATCH ()-[r]->() WHERE r.diagnostic_score_enabled=1
-                  AND (r.diagnostic_rule_item_id IS NULL OR r.source_evidence_id IS NULL
-                       OR r.diagnostic_weight_level < 2 OR r.diagnostic_review_status <> 'AUTO_ENABLED')
-                RETURN count(r) AS value
-                """,
-            )["value"],
-            "active_disease_rules_without_standard_diagnosis": one(
-                session,
-                """
-                MATCH (d:Disease) WHERE d.diagnosis_rule_status='ACTIVE'
-                  AND NOT (d)-[:has_standard_diagnosis]->(:StandardDiagnosis)
-                RETURN count(d) AS value
-                """,
-            )["value"],
         }
 
 
@@ -1296,8 +1073,8 @@ def load_plan(path: Path) -> dict[str, Any]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="标准字典融合与诊断推理 V2.0")
-    parser.add_argument("--mode", choices=["inventory", "plan", "apply", "postcheck"], required=True)
+    parser = argparse.ArgumentParser(description="标准字典融合 V2.0")
+    parser.add_argument("--mode", choices=["inventory", "plan", "apply", "repair-source", "postcheck"], required=True)
     parser.add_argument("--connection-file", type=Path, default=ROOT / "图谱数据库链接.txt")
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--plan-file", type=Path)
@@ -1311,7 +1088,7 @@ def main() -> int:
         with driver.session(database="neo4j") as session:
             if args.mode == "inventory":
                 result = inventory(session)
-                write_json(output_dir / "01_图谱标准字典与诊断关系盘点.json", result)
+                write_json(output_dir / "01_图谱标准字典关系盘点.json", result)
             elif args.mode == "plan":
                 connection = connect_oracle()
                 try:
@@ -1319,7 +1096,7 @@ def main() -> int:
                 finally:
                     connection.close()
             elif args.mode == "apply":
-                plan_file = (args.plan_file or output_dir / "02_标准字典融合与诊断作用初始化计划.json").resolve()
+                plan_file = (args.plan_file or output_dir / "02_标准字典融合计划.json").resolve()
                 plan = load_plan(plan_file)
                 connection = connect_oracle()
                 try:
@@ -1328,18 +1105,22 @@ def main() -> int:
                     result = {"summary": {"oracle": oracle_result, "neo4j": graph_result}}
                 finally:
                     connection.close()
+            elif args.mode == "repair-source":
+                plan_file = (args.plan_file or output_dir / "02_标准字典融合计划.json").resolve()
+                plan = load_plan(plan_file)
+                connection = connect_oracle()
+                try:
+                    result = {"summary": apply_oracle_plan(connection, plan, output_dir)}
+                finally:
+                    connection.close()
             elif args.mode == "postcheck":
-                plan_file = (args.plan_file or output_dir / "02_标准字典融合与诊断作用初始化计划.json").resolve()
+                plan_file = (args.plan_file or output_dir / "02_标准字典融合计划.json").resolve()
                 plan = load_plan(plan_file)
                 connection = connect_oracle()
                 try:
                     oracle_result = oracle_postcheck(connection, plan)
                     graph_result = graph_postcheck(driver)
-                    graph_result["passed"] = (
-                        graph_result["duplicate_dictionary_identity_groups"] == 0
-                        and graph_result["invalid_scored_relations"] == 0
-                        and graph_result["active_disease_rules_without_standard_diagnosis"] == 0
-                    )
+                    graph_result["passed"] = graph_result["duplicate_dictionary_identity_groups"] == 0
                     result = {
                         "summary": {
                             "oracle_passed": oracle_result["passed"],
@@ -1349,7 +1130,7 @@ def main() -> int:
                         "oracle": oracle_result,
                         "neo4j": graph_result,
                     }
-                    write_json(output_dir / "09_标准字典融合与诊断推理最终复核.json", result)
+                    write_json(output_dir / "09_标准字典融合最终复核.json", result)
                 finally:
                     connection.close()
             else:
