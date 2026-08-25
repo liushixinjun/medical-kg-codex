@@ -1,0 +1,2628 @@
+{
+  "非标准图谱节点": [
+    {
+      "element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:6109",
+      "labels": [
+        "Medication"
+      ],
+      "code": "MED-CARD-POLAR-GLUCOSE",
+      "name": "葡萄糖溶液"
+    },
+    {
+      "element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:6088",
+      "labels": [
+        "Medication"
+      ],
+      "code": "MED-CARD-POLAR-INSULIN",
+      "name": "胰岛素"
+    }
+  ],
+  "技术编码名称节点": [],
+  "同编码重复实体": [],
+  "疾病定义缺口": [],
+  "诊断标准无明细": [],
+  "鉴别诊断无规则": [
+    {
+      "disease_code": "DIS-CARD-ARR-AF",
+      "disease_name": "心房颤动",
+      "differential_code": "DDX-AUTO-3314A913596F",
+      "differential_name": "室上性心动过速"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AF",
+      "disease_name": "心房颤动",
+      "differential_code": "DDX-AUTO-5440BDF5C48B",
+      "differential_name": "房性心动过速"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AF",
+      "disease_name": "心房颤动",
+      "differential_code": "DDX-AUTO-6A0C107C77B5",
+      "differential_name": "心房扑动"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SVT",
+      "disease_name": "室上性心动过速",
+      "differential_code": "DDX-AUTO-6A0C107C77B5",
+      "differential_name": "心房扑动"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SVT",
+      "disease_name": "室上性心动过速",
+      "differential_code": "DDX-AUTO-C8BDFE4A4A0A",
+      "differential_name": "房颤伴快速心室率"
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SVT",
+      "disease_name": "室上性心动过速",
+      "differential_code": "DDX-AUTO-FEEFAEE3A37C",
+      "differential_name": "室性心动过速"
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-STEMI",
+      "disease_name": "ST段抬高型心肌梗死",
+      "differential_code": "DDX-AUTO-004BD5E4A2CE",
+      "differential_name": "STEMI"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ABVC",
+      "disease_name": "致心律失常性双心室心肌病",
+      "differential_code": "DDX-AUTO-AABAA7CCCDB4",
+      "differential_name": "表型相似心肌病"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ATRIAL",
+      "disease_name": "心房心肌病",
+      "differential_code": "DDX-AUTO-7444B3D078B4",
+      "differential_name": "继发性心房重构"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-FABRY",
+      "disease_name": "法布雷病心肌病",
+      "differential_code": "DDX-AUTO-BD24E7BE0AC4",
+      "differential_name": "左心室肥厚相关疾病"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-NDLVCM",
+      "disease_name": "非扩张型左心室心肌病",
+      "differential_code": "DDX-AUTO-BF20E9367F85",
+      "differential_name": "收缩功能减低相关疾病"
+    }
+  ],
+  "治疗方案无可执行动作": [],
+  "在用药物类别无具体药品": [],
+  "证据关键字段非文本": [],
+  "证据原文重复": [
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "心房颤动（atrialfibrillation，AF）简称房颤，是最常见的心律失常之一，是指规则有序的心房电活动丧失，代之以快速无序的颤动波，是最严重的心房电活动紊乱。心房无序的颤动使之失去了有效的收缩与舒张，心房泵血功能恶化或丧失，加之房室结对快速心房激动的递减传导，引起心室极不规则的反应。因此，心室律（率）紊乱、心功能受损和心房附壁血栓形成是房颤病人的主",
+      "duplicate_count": 32,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-00166C5BABBA84A4",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-C16267C48A93A95A",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-01A67F2B7370D378",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-D7B86CE0818144A9",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-66D60D94E5A148C0",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-D1CA98BF8E11B50D",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-118023D0D346132F",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-3D8F5EE5690B271D",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-8CC19FA501901DCD",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-8334A8BA3601AC1E",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-10EC6BC0B854633F",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-DBA2DBBF06AB8AC4",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-92468D74B74FCE4D",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-3DAB7E4970014B7D",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-703D9DE2E6C78603",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-29279323F807E2CD",
+        "CARD-SKELETON-FULL-20260709-EVID-B3ED06FF6E6D97A6",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-69395BC06CF2D37C",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-1C55C05516DC2945",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-4AD2FF6C626B2EC5"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "正常情况下心脏以一定范围的频率，发生有规律的搏动，这种搏动的冲动起源于窦房结（sinoatrialnode，SAN），以一定的顺序和频率传导至心房和心室，协调心脏各部位同步收缩，形成一次心脏搏动，周而复始，为正常节律。心律失常（cardiacarrhythmia）是指心脏冲动的频率、节律、起源部位、传导速度或激动次序的异常，可见于生理情况，更多见于病理性状态",
+      "duplicate_count": 27,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-0845ACD4B82584AC",
+        "CARD-SKELETON-FULL-20260709-EVID-E35BE1FF6041E218",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-F5A8D43E3F978D74",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-6769DCD1B88D528B",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-AAA9AE9AE7475552",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-902698E1B7A0930C",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-9242E6AEECD9D8E1",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-08F3FCC43A1205CE",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-3CE708533873D31D",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-46BA9EA1A527D87A",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-7F7C4E50783A7224",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-BF895B1241D3E95A",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-0BE334CCD683E021",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-014C96E4265EB0A5",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-63E52F927F256602",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-57C92FCF4F3433EE",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-25842A6553425042",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-7AFEA9AF4B5754AB",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-429553800EE6735E",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-88239939E952A0F6"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "继发性高血压是指由某些确定的疾病或病因引起的血压升高。继发性高血压尽管所占比例并不高，但绝对人数并不少，除了高血压本身的危害以外，与之伴随的电解质紊乱、内分泌失衡、低氧血症等还可导致独立于血压之外的心血管损害，其危害程度较原发性高血压更大。某些继发性高血压，如原发性醛固酮增多症、嗜铬细胞瘤、肾血管性高血压等，可通过手术得到根治或改善。因此，及早明确诊断能提高",
+      "duplicate_count": 24,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-4C7183F6E791256D",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-3EECC34B84E02124",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-70D6FD1FF262BE9B",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-8B2CD5D4C6EA6E86",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-ADC371DA359BE858",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-9302942CCC3B702A",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-F1EF9E1753B39A42",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-AD808C958F10F94D",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-AB40AA7C1F08D0D5",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-FCFF36D53E4B0C52",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-1A09C5BCE524D752",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-9A6E0EEE97161C43",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-6F116203D631295B",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-219EFBA862CA2AAE",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-94CE30E77532EFBD",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-FFA93BF49B7EB541",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-7A8BA84E82E6F51B",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-251F00D5CC20758C",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-617831F605FEAD24",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-54B6CF972EEE4E1D"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "抗心律失常药物治疗原则：①首先评估药物治疗的必要性，无器质性心脏病或无明显症状、不影响预后的心律失常，多不需要治疗。心律失常治疗主要目的是缓解症状或减少心律失常对心功能和心肌缺血的影响，不应以消灭或减少心律失常为主要目标。②要注意兼顾基础心脏病的治疗，去除病因和诱因，权衡心律失常治疗的重要性和紧迫性，要着重考虑可改善预后的综合治疗措施，如房颤的抗凝治疗。③正",
+      "duplicate_count": 22,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-9ACD585CF5598C2E",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-8872D48FDBD6F084",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-EAB4062809C78A40",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-0B0DF52CF34E5353",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-BFBD11C44737E9A5",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-F066BD7F08F7F5F8",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-8D1FA6A8B42FF8C4",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-B80EB5B844D04627",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-CD61F00B5C8615FA",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-D7AA2EDA40E5771A",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-B5DA8D6D06C063C1",
+        "CARD-SKELETON-FULL-20260709-EVID-5D9153BE0BBE0294",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-2B815B962F55EAE0",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-D7301FAD96526325",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-0BF1F76671936628",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-F0CCAC39CE208D5F",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-C3955CF68CD16192",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-C21C91617505D7B9",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-9259F81B29DB5F4A",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-922C62A5C944290A"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "冠脉痉挛是一种特殊类型的冠脉疾病。造影正常血管或粥样硬化病变部位均可发生痉挛。其临床表现和治疗方案与冠心病有明显的差别。病人常较年轻，除吸烟外，大多数病人缺乏动脉粥样硬化的经典危险因素。吸烟、酒精和毒品是冠脉痉挛的重要诱发因素。本病表现为静息性心绞痛，无体力劳动或情绪激动等诱因。发病时间集中在午夜至上午8点之间。病人常因恶性心律失常伴发晕厥。少数病人冠脉持续",
+      "duplicate_count": 22,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-D81171F5A335D2FB",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-4241533322F8C765",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-5B61D3EFA61026EB",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-203E96913D656AAC",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-79BAC07ED8781D8C",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-D69B59CD7F4CA768",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-3F872A6D54E256E6",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-2CD25F3A773EE40F",
+        "CARD-SKELETON-FULL-20260709-EVID-7C6E10A10595579C",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-3DA9694E2A42BDF2",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-5A119F9787935A96",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-CCD8FBE78E90E057",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-21488B31A1EA61DC",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-12C24C13DD455189",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-9C3B52011EDE791F",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-52D77C2C164A9EA6",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-C46FDCC0C0E79089",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-6ACDDF9B65627E42",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-B67C040C7906489B",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-124B4CD0166BE314"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "高血压是以体循环动脉压升高为主要临床表现的心血管综合征，可分为原发性高血压（essentialhypertension）和继发性高血压（secondaryhypertension）。原发性高血压，又称高血压病，是心脑血管疾病最重要的危险因素之一，常与其他心血管危险因素共存，可损伤重要脏器，如心、脑、肾的结构和功能，最终导致这些器官的功能衰竭。【血压分类和定义",
+      "duplicate_count": 20,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-629D49A7B14401D2",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-E927A0B555EC140F",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-05A9023922386519",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-2E6EC47FCA480C1F",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-FCE50CFC99C2E1D2",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-625396C305CF7B36",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-EDD2E9F2094CF978",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-58153468ACB079B3",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-8CF99E7F39363679",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-3D45D14CEA2D1A03",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-3F6C8C422BEB2F50",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-E06F988448EA909B",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-600595D13D2C4261",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-0AE7FA107BD4E0EF",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-200B1BDFD55D9F47",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-42FFE6BE8879101D",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-6961A75DAC3BC834",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-8B35D71C8B992A87",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-BEF5837FACE01A2F",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-068DBEFFFA44FD52"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "成人窦性心律的频率低于60次/分称为窦性心动过缓（sinusbradycardia）（图3-3-5）。窦性心动过缓常同时伴有窦性心律不齐（不同PP间期的差异＞0.12秒）。窦性心动过缓常见于健康的青年人、运动员及睡眠状态；其他原因包括颅内疾病、严重缺氧、低温、甲状腺功能减退和血管迷走性晕厥等，以及应用拟胆碱药物、胺碘酮、β受体拮抗剂、非二氢吡啶类钙通道阻滞剂",
+      "duplicate_count": 16,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-E5B90A002A9B62FA",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-E45B350FBF59008F",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-F1798A847F5BA091",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-FE807F71B03D1FCF",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-A499C02BDD58237D",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-EFBDBE99B3C554F2",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-8F4F3038ABA1AAB1",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-E75508C65FCFF8A4",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-211979E57E06E4C8",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-062A03360DE4B8A9",
+        "CARD-SKELETON-FULL-20260709-EVID-1FA19E0B280E906B",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-D35C3D45D526BC41",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-078031D600214D6F",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-ADB96B3559C690FF",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-84A1AF576A321A4C",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-464B8A6D08D6B63E"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "一、心脏电复律与电除颤【电复律与电除颤的机制和种类】心脏电复律（cardioversion）和电除颤（defibrillation）的机制是在极短暂的时间内给心脏通以强直流电，引起心脏自律细胞在瞬间同时除极化，并使所有可能存在的折返通道全部失活，此时心脏起搏系统中具有最高自律性的起搏点（通常是窦房结）重新主导心脏节律。NOTES221根据电复律时是否识别R波",
+      "duplicate_count": 15,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-20A8F230FC4D8970",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-62F3827BD8C515F1",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-778E287E2C3A7026",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-75B2668935ED8A81",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-8D1A284600268D70",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-C63A607F14F8AA09",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-08F3E510E020F7AB",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-F65ECEDC49264C6D",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-26E4BC24877D793B",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-2D6D63AAA4C7A8E8",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-1DEB23CAB67A4BBC",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-62DDBF00E525BBA3",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-CB62144A5EB369DD",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-0CF1C11ED87CF929",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-B610F352103D2DDA"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "房室交界区相关的折返性心动过速主要包括房室结折返性心动过速（atrioventricularnodalreentranttachycardia，AVNRT）和房室折返性心动过速（atrioventricularreentranttachycardia，AVRT）两大类，临床特征表现为规律而快速的心动过速，呈突然发作与终止，心电图多表现为QRS波群形态正常、R",
+      "duplicate_count": 14,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-B7ECDF6F2DB4110C",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-297D0FEABF1D21D0",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-55553667CA8866F6",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-0C764176C894529D",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-F41CFEB5F6613A58",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-428BD5EAADB9ECEF",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-EED49824F38F96E5",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-24A21A39F4F698F5",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-FEF12EE14729C78E",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-A133E577812B7F96",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-D727DC4117E17CD8",
+        "CARD-SKELETON-FULL-20260709-EVID-E11CBAC3176F9BD9",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-05BC44DECD3BBE8B",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-9F24B33860EC9839"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "肿瘤治疗过程中可出现多种类型的心律失常，包括快速型/缓慢型心律失常、室性/室上性心律失常和传导阻滞等。这些肿瘤治疗相关的心律失常可能与放/化疗造成的直接心肌损伤、冠脉病变等相关。另外肿瘤治疗常常联用抗生素、止吐药和精神类药物等，也可诱发或加重心律失常。（一）心房颤动在肿瘤病人中，房颤发病率可高达5%～16%，高于普通人群。肿瘤合并房颤的易患因素包括：①肿瘤病",
+      "duplicate_count": 14,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-6E1A3207F07AE908",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-BA89EFE2A2204D7F",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-937885389527B51C",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-4BFF25E3BF67F2B9",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-1C6596608F447F24",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-B31F89F321C0D6B4",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-E1FFE3D02FB6D147",
+        "CARD-SKELETON-FULL-20260709-EVID-983E2A07D77A9C5F",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-56D3869E574E2437",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-5FDB41FFDB42A82C",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-A99953D76C409610",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-4DE146D452E1417C",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-FB6958159B269C31",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-A32D3CD88E4E2BD2"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "非阵发性房室交界性心动过速（nonparoxysmalatrioventricularjunctionaltachycardia）的发生机制与房室交界区组织的自律性增高或触发活动有关。最常见的病因为洋地黄中毒，其次为下壁心肌梗死、心肌炎、急性风湿热或心脏瓣膜手术后等，亦偶见于正常人。心动过速发作起始与终止时，心率逐渐变化，有别于突发突止的阵发性折返性心动过速",
+      "duplicate_count": 13,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BEBAE65849F4A5B3",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-8A213BFA910203BF",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-E4C5217CAACE34DF",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-53EFE501F61E0B2B",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-047F0E1C161A0CE7",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-A51F4FEDED95BA49",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-4AABF606E4704E1B",
+        "CARD-SKELETON-FULL-20260709-EVID-0756A5C546CE0A1D",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-9CC182E08B358847",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-89A7402CF5B2E0E5",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-345B121AF032DBB6",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-E1DD47BE8D999264",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-97BE88349D5698AF"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "当离子通道或调控通道的蛋白质发生基因突变时，其功能出现异常升高或降低，导致心肌细胞除极或复极过程异常，从而延长或缩短动作电位时程而产生心律失常甚至猝死，称为离子通道病。随着基因检测技术的发展，许多排除了器质性心脏病而反复出现不明原因晕厥甚至心脏性猝死的病人被证明存在基因变异，尤其是具有家族史者，目前将此类疾病统称为遗传性心律失常综合征，常见的离子通道病有：1",
+      "duplicate_count": 11,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-56E6576F2E29FE34",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-2123264043D037AA",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-2FB31B7241690BAF",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-5A9487EC9B4C336E",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-4F2EA423F149A393",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-7774305EF200DABC",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-5754AF3F019201CD",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-8EE0E23E7BD8D33C",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-8BC6ADC5DC33D574",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-635E0BE4E1E92E0F",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-8B9952C0A53B4916"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "高血压是肿瘤病人重要的合并症，部分高血压与肿瘤治疗药物相关。其中VEGF抑制剂与高血压的关系最为密切，其引起高血压和使原有高血压病情加重的概率高达11%～45%。其发生机制包括内皮细胞分泌NO能力下降、血管收缩、外周微血管数量减少、血管弹性降低及内皮功能紊乱等。肿瘤治疗全周期均应进行血压监测与管理。血压控制目标是＜140/90mmHg，如病人耐受性良好，建议",
+      "duplicate_count": 11,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-E5C49B64C5FF11CE",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-C0A660D17225E6D0",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-B7210F3EE754CECA",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-2A78FEEFA39F91D9",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-8BB52757DF24713B",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-D6DA4C29D2A3ADA9",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-5CCEBFBB8C409AD3",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-A492585D87E3C748",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-92F68EF76F196DB0",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-88C6CADB906E8630",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-0289C46543988676"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "冠脉微血管疾病可单独存在或与心外膜冠脉阻塞性病变同时存在。早年将具有心绞痛或类似于心绞痛的症状，有心肌缺血客观依据而冠脉造影无心外膜血管狭窄者诊断为心脏X综合征。此类病人占因胸痛而行冠脉造影检查病人总数的10%～30%。本病病因尚不清楚，可能与内皮功能异常和微血管病变有关。目前认为冠脉微血管的功能和结构异常均可导致心肌缺血，大部分表现为稳定型NOTES258",
+      "duplicate_count": 10,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-54F00A77C37D0EF5",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-90C6861F92C49413",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-7ED4C97995A7F47E",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-E143523637859B19",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-9DC6DB2795742856",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-3F7D55E8AA46DBB7",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-255D733D2486E1E7",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-8038514272787B9D",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-364D73E7F3B50E7E",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-F3CC47F1B54D38B8"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "房性期前收缩（prematureatrialbeats），也称房性早搏，简称房早，是指起源于窦房结以外心房的任何部位的心房激动，是临床上常见的心律失常。【临床表现】主要表现为心悸，自觉有停跳感，部分伴有胸闷、乏力等；有些病人可能无任何症状。房早多为功能性，正常成人进行24小时动态心电图监测，大约60%有房早发生。在各种器质性心脏病如冠心病、肺心病、心肌病等病",
+      "duplicate_count": 10,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-AAA312337EBE388B",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-80FA4F7D77BAF15A",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-14D2367E29DC4C7C",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-1560BE606CBBD0C8",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-88EC8FED25304AA6",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-C7B9CA30B2D77B33",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-D0DA6311CBC46554",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-269ECF63A396661D",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-0651248C50DB3166",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-483284A07297E164"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "下肢浅静脉包括大隐静脉、小隐静脉及其分支；下肢深静脉与大动脉伴行。下肢静脉系统疾病以静脉血栓最具临床意义。【深静脉血栓形成】深静脉血栓形成（deepvenousthrombosis，DVT）是血液在深静脉内异常凝固引起的病症，多发生于下肢，血栓脱落可引起肺栓塞（pulmonaryembolism，PE），两者合称为静脉血栓栓塞症（venousthromboe",
+      "duplicate_count": 10,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-B56D2003B4B53F90",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-0DD05587C5E19219",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-5BE0C0F4512CC246",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-491EE7EABA8CF483",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-7A6A090797572C8E",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-18E82CEE8F674D9F",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-744E838E620CFF8A",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-7754974CC8764D86",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-B0C1819F7A5F9662",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-7CA7060FD897A219"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "成人窦性心律的频率超过100次/分为窦性心动过速（sinustachycardia）（图3-3-4）。目前临床上分为生理性窦性心动过速和不适当窦性心动过速。生理性窦性心动过速通常见于健康人、吸烟、饮茶或咖啡、饮酒、体力活动及情绪激动时；也可见于某些病理状态，如发热、甲亢、贫血、休克、心肌缺血、心力衰竭以及应用肾上腺素、阿托品等药物时。不适当窦性心动过速是指在",
+      "duplicate_count": 9,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-41A392A7302770C8",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-DE3B76D82C47AEBB",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-14C04E86E7F82025",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-3EB2E356B3D925E8",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-6E1E39E28FB49352",
+        "CARD-SKELETON-FULL-20260709-EVID-7FDD9076A108DFD9",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-B774CC2017A2F122",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-ECADD8563AA104AD",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-1E607CA1E7DFB227"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "心室扑动（ventricularflutter，VF）与心室颤动（ventricularfibrillation，VF）简称室扑和室颤，为致死性心律失常。最常见于冠心病和各种疾病的终末期。此外，抗心律失常药物，特别是引起QT间期延长与尖端扭转型室速的药物，以及严重缺氧缺血、预激综合征合并房颤时极快的心室率、电击伤等亦可引起。【心电图特征】心室扑动呈正弦图形，",
+      "duplicate_count": 8,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-4BCB51D93DDE0274",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-885E66C4A69345AF",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-E206BF6F2C86711F",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-E6B18D86C0A04615",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-3B51C1B539D4AE6E",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-0C1E4CDF077543C4",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-3EA6047F097E8167",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-322D30EF42048AA8"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "病态窦房结综合征（sicksinussyndrome，SSS）简称病窦综合征，是由窦房结病变导致功能减退，产生多种心律失常的综合表现。病人可在不同时间出现一种以上的心律失常，常同时合并心房自律性异常，部分病人同时有房室传导功能障碍。【病因】众多病变过程，如窦房结纤维化与脂肪浸润、硬化与退行性变、淀粉样变性、甲状腺功能减退、某些感染（布鲁氏菌病、伤寒）等均可损",
+      "duplicate_count": 8,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-D432D462DAC581D3",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-A1EE86F59649B255",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-2FD01C016B450741",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-FA99F9EE3BE0E806",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-4CD9C4F076DF47E1",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-AEAC4568D51100E8",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-D6027D69E3B27419",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-68D55B903FD1EBEB"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "风湿热（rheumaticfever）是心脏瓣膜病的主要病因之一，是由于A群乙型溶血性链球菌感染所致，其致病机制与继发于链球菌感染后异常免疫反应有关。该细菌荚膜与关节、滑膜之间有共同抗原，细胞壁外层中M蛋白及M相关蛋白、中层多糖中N-乙酰萄糖胺等与心肌和心瓣膜有共同抗原，细胞膜脂蛋白与心肌纤维膜和丘脑下核、尾状核之间有共同抗原。链球菌感染后体内产生的抗链球菌",
+      "duplicate_count": 7,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-9509614AD189250A",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-09C75D3F0134F526",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-32C671BA69C4BC90",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-933C12535138C41C",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-28658DCCF7ADDB64",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-DE5F7973234C1B6B",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-0C741FE0390EC30E"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "动脉粥样硬化（atherosclerosis）的特点是受累动脉的病变从内膜开始，局部先后发生细胞内外的脂质积聚、纤维组织增生和钙质沉着，病变内可见单核巨噬细胞及其他炎症细胞，并有平滑肌细胞的迁移和增生，大量胶原纤维、弹力纤维和蛋白多糖等结缔组织基质形成，动脉中层也可发生逐渐退变和钙化，在此基础上可发生斑块内出血、糜烂或破裂及继发局部血栓形成。由于在动脉内膜积",
+      "duplicate_count": 6,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-240EA590E486C3CB",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-052F97FB414765E6",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-5E85FED6A9BEBF93",
+        "CARD-SKELETON-FULL-20260709-EVID-592D1E9909B4807C",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-7E3FFF2E79938122",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-EE0C070EC26EA5BA"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "冠脉通常走行于心外膜下的结缔组织中，如果一段冠脉走行于心肌内，这束心肌纤维被称为心肌桥，而走行于心肌桥下的冠脉被称为壁冠状动脉，主要见于左前降支中段。冠脉造影显示该节段血管管腔收缩期受挤压，舒张期恢复正常或受压程度明显减轻，被称为“挤奶现象”（milkingeffect）。冠脉造影时心肌桥检出率为0.51%～16%，尸体解剖时检出率则高达15%～85%，说明",
+      "duplicate_count": 6,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-6C0630C672B1E2EC",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-47DA19199D05BD96",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-38AB3A4694F72916",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-F2635335BCBFB1D1",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-214D7ACBB690F29E",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-F4793B55BD5D8E8D"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "室性心动过速（ventriculartachycardia，VT）简称室速，是起源于希氏束以下的特殊传导系统或者心室肌的连续3个或3个以上的异位心搏。及时正确地判断和治疗室速具有非常重要的临床意义。【病因】室速常发生于各种器质性心脏病病人。最常见为冠心病，其次是心肌病、心力衰竭、瓣膜性心脏病等，其他病因包括代谢障碍、电解质紊乱、洋地黄中毒等。室速偶可发生在无",
+      "duplicate_count": 6,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-85769231C906B8B6",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-C18C5E0023D97A24",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-CD096CD3CE680DC3",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-EBFEE852D18D8A23",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-62EDCF77C36A02C8",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-9FEFCD9BC3C4BD67"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "【电复律与电除颤的机制和种类】心脏电复律（cardioversion）和电除颤（defibrillation）的机制是在极短暂的时间内给心脏通以强直流电，引起心脏自律细胞在瞬间同时除极化，并使所有可能存在的折返通道全部失活，此时心脏起搏系统中具有最高自律性的起搏点（通常是窦房结）重新主导心脏节律。NOTES221根据电复律时是否识别R波，分为同步电复律与非同",
+      "duplicate_count": 6,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-B9F3A26B8F692E43",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-0E5493BD2A3874D1",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-2FB83ED18C489969",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-EC65A80B0FD384E7",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-ECBE99D4CD84794A",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-43C56D00052D2C5E"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "多瓣膜病（multivalvularheartdisease）又称联合瓣膜病，是指两个或两个以上瓣膜病变同时存在。【病因】引起多瓣膜病的病因，多数为单一病因，少数为多种病因引起。1.一种疾病同时损害几个瓣膜最常见为风湿性心脏病，近一半病人有多瓣膜损害。其次为老年退行性改变、黏液样变性，可同时累及二尖瓣和三尖瓣，两者可同时发生脱垂。感染性心内膜炎也可累及多瓣膜",
+      "duplicate_count": 6,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-E08024E72CDA98A2",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-DE06F255D4116244",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-3E8FAB50D57EC93A",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-B1062639FC7D95E8",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-443CA9A580BC2F38",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-C4A9B374163C5130"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "动脉粥样硬化性心血管疾病（ASCVD）是糖尿病病人最主要的大血管并发症，超过40%的糖尿NOTES350病病人死于心血管疾病，尤其是ASCVD；在住院的冠心病病人中，合并已诊断和新诊断糖尿病的病人比例超过40%。血糖水平与冠心病发生风险呈正相关性。【发病机制】糖尿病导致冠心病的发病机制非常复杂，目前认为与高血糖和胰岛素抵抗引起的内皮功能紊乱、炎症水平上升、脂",
+      "duplicate_count": 5,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-B271BC15CCDBC9A1",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-6B898AE64068136C",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-734B7262ABBBFAE2",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-D1BE086A6533D9FD",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-FCF1363874D3340F"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "【诊断】1.发病特点隐匿型冠心病（latentcoronaryheartdisease）或无症状性冠心病是指没有心绞痛症状，但有心肌缺血客观证据的冠心病，其心肌缺血ECG表现可见于静息时，也可在负荷状态下才出现，常为动态ECG记录所发现，也可为各种影像学检查所证实。2.临床表现可分为三种类型：①有心肌缺血客观证据，但无心绞痛症状；②曾有过心肌梗死病史，现有心",
+      "duplicate_count": 5,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-9B317FE61A00036B",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-9FE937F350F537AF",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-B860CF5876DD58B7",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-D9D68AE6C46D732E",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-276FA95659998255"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "窦性停搏或窦性静止（sinuspauseorsinusarrest）是指窦房结不能产生冲动。心电图表现为在较正常PP间期显著长的间期内无P波发生，或P波与QRS波均不出现，长的PP间期与基本窦性PP间期无倍数关系（图3-3-6）。长时间的窦性停搏后，下位的潜在起搏点，如房室交界处或心室，可发出单个逸搏或逸搏性心律控制心室。窦性停搏多见于窦房结变性与纤维化、急",
+      "duplicate_count": 4,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-114FEA35B5630884",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-824EE25C108AE295",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-22751954B02D753F",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-A8AE320594ED9ADD"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "窦房传导阻滞（sinoatrialblock，SAB）指窦房结冲动传导至心房时发生延缓或阻滞。理论上SAB可分为三度，由于体表心电图不能显示窦房结电活动，因而通过体表心电图无法确定一度和三度窦房传导阻滞的诊断。二度窦房传导阻滞分为两型：莫氏（Mobitz）Ⅰ型即文氏（Wenckebach）阻滞，表现为PP间期进行性缩短，直至出现一次长PP间期，该长PP间期短",
+      "duplicate_count": 4,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-DFEC50B05FB744D4",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-40AD9D56153A0EF1",
+        "CARD-SKELETON-FULL-20260709-EVID-A60D10D0378B3BE2",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-8AA97B040064B496"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "房性心动过速（atrialtachycardia）简称房速，指起源于心房且无需房室结参与维持的心动过速。NOTES198发生机制包括自律性增加、折返与触发活动。根据起源点不同，分为局灶性房性心动过速（focalatrialtachycardia）和多源性房性心动过速（multifocalatrialtachycardia），后者也称为紊乱性房性心动过速（ch",
+      "duplicate_count": 4,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-884EC5B8963B2616",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-72DF80A59CEFA4E3",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-575F641341886917",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-170DDCBE3FB1CDF6"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "室性期前收缩（prematureventricularbeat）也称室性早搏，简称室早，是一种最常见的心律失常，指希氏束以下部位心室兴奋灶提前除极而产生的过早搏动。【病因】常见于各种器质性心脏病，如高血压、冠心病、心肌病、心肌炎及瓣膜性心脏病等。也可见于心脏结构与功能正常者，在情绪紧张、过度劳累、过量烟酒或咖啡，以及电解质紊乱等情况下可诱发室早。某些药物因素",
+      "duplicate_count": 4,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-E1AAC696E1A05FB2",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-9A7A5251D5F9AD27",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-704FAE89786F8525",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-303E69A23483F505"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "【心电图特征】",
+      "duplicate_count": 4,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-D8F26A96ED483838",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-9794A4E22D45A2F1",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-3E9285BC881C0720",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-A5ACFA03852C44B0"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "心动过速发作起始与终止时，心率逐渐变化，有别于突发突止的阵发性折返性心动过速，故称为“非阵发性”。心率70～150次/分或更快，心律通常规则，QRS波群正常，自主神经系统张力变化可影响心率快慢。如心房的电活动由窦房结或异位心房起搏点控制，可发生房室分离。洋地黄过量引起者，经常合并房室交界区文氏型传导阻滞，使心室律变得不规则。",
+      "duplicate_count": 4,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-C4-E34C2DA4FADB6E8C",
+        "CARD-SKELETON-20260709-EVID-C4-DE99F2318BB7A675",
+        "CARD-SKELETON-20260709-EVID-C4-13EFD1181D261A5C",
+        "CARD-SKELETON-20260709-EVID-C4-54A9C1CC5F1895BB"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "房室传导阻滞（atrioventricularblock）是指房室交界区脱离了生理不应期后，心房冲动传导延迟或不能传导至心室。房室传导阻滞可以发生在房室结、希氏束以及束支等不同的部位。房室传导阻滞根据严重程度分为三度：一度房室传导阻滞的传导时间延长，但全部冲动仍能传导至心室。二度房室传导阻滞又分为Ⅰ型（文氏阻滞）和Ⅱ型，Ⅰ型阻滞表现为传导时间进行性延长，直至",
+      "duplicate_count": 4,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-78A6C54EC6312AF8",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-E5CFE999F94212CF",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-68183EB9CAA61465",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-683A1BFB12FAD04A"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "糖尿病是心力衰竭（以下简称“心衰”）的独立危险因素。无论在射血分数保留型心衰（HFpEF）或射血分数下降型心衰（HFrEF）的病人中，糖尿病都增加了病人的心血管死亡风险。",
+      "duplicate_count": 3,
+      "codes": [
+        "EVD-34E543DBA608986ED047-HF",
+        "CARD-SKELETON-20260709-EVID-6CFE95A1103BE7DF",
+        "CARD-SKELETON-FULL-20260709-EVID-7D364963AAF8EEF5"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "房室交界性期前收缩（prematureatrioventricularjunctionalbeats）简称交界性期前收缩。其冲动起源于房室交界区，可前向和逆向传导，分别产生提前发生的QRS波与逆行P波；逆行P波可位于QRS波之前（PR间期＜0.12秒）、之中或之后（RP间期＜0.20秒）；QRS波形态正常（图3-3-13），当发生室内差异性传导时，QRS波形",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-7D9D8470D6E52EA9",
+        "CARD-SKELETON-FULL-20260709-EVID-462D71C51800E3BA",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-5BFA1B578C6DE6DB"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "房室交界区组织在正常情况下不表现出自律性，称为潜在起搏点。下列情况时，潜在起搏点可成为主导起搏点：①由于窦房结发放冲动频率减慢，低于潜在起搏点的固有频率；②由于传导障碍，窦房结冲动不能抵达潜在起搏点部位，潜在起搏点自动除极产生逸搏。房室交界性逸搏（AVjunctionalescapebeats）的心电图表现为在长于正常PP间期的间歇后出现一个正常的QRS波，",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-AFE8FBF6968482BE",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-FCCCE148F901C9F0",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-33D11D6AF663536B"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "【抗心律失常药物分类方法】（一）VaughanWilliams分类根据药物的电生理效应将抗心律失常药物分为四类",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-770B62216805EEA2",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-9E67E549B27FFD97",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-BA3F3ABC803A72E4"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "导管消融（catheterablation，CA）是将消融电极放置到与心律失常发生相关的心肌组织部位，采用能量（包括射频、冷冻、脉冲电场、激光和微波等）破坏心肌组织，改变该部位心肌自律性和传导性，从而达到治疗心律失常的目的。其中射频导管消融（radiofrequencycatheterablation，RFCA）技术自1989年应用于临床以来，是治疗快速型心",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-52B5DB94584D4B7A",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-9AC67BC04E522476",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-ACCA70A8267A1039"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "【心电图特征】心电图特征包括：①P波消失，代之以小而不规则的基线波动，形态与振幅均变化不定，称为f波；频率为350～600次/分。②心室率极不规则。③QRS波形态通常正常，当心室率过快，发生室内差异性传导，QRS波增宽变形（图3-3-12）。",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-C4-ACD552B5AE30E2E7",
+        "CARD-SKELETON-20260709-EVID-C4-D0F51BC6521E5B0B",
+        "CARD-SKELETON-20260709-EVID-C4-155527F565F81B27"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "房室交界性期前收缩（prematureatrioventricularjunctionalbeats）简称交界性期前收缩。其冲动起源于房室交界区，可前向和逆向传导，分别产生提前发生的QRS波与逆行P波；逆行P波可位于QRS波之前（PR间期＜0.12秒）、之中或之后（RP间期＜0.20秒）；QRS波形态正常（图3-3-13），当发生室内差异性传导时，QRS波形",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-C4-CCFDAC8C70051D27",
+        "CARD-SKELETON-20260709-EVID-C4-AB496176673124DD",
+        "CARD-SKELETON-20260709-EVID-C4-C4E52E7BDC638D16"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "本病预后随病变部位、程度、血管狭窄发展速度、受累器官受损情况和有无并发症而不同",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-8093C8723DCD490A",
+        "CARD-SKELETON-FULL-20260709-EVID-DDB7AE8D867EF2D3",
+        "CARD-SKELETON-FULL-20260709-EVID-24C6577E2B4EA0CC"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "稳定型心绞痛病人大多数能生存很多年",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-A8ED2B4E6D15977B",
+        "CARD-SKELETON-FULL-20260709-EVID-C9A0F9877FA38635",
+        "CARD-SKELETON-FULL-20260709-EVID-080404B8E14BA654"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "与梗死范围大小、侧支循环产生情况以及治疗是否及时等有关",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-0B7221C8CB516E2A",
+        "CARD-SKELETON-FULL-20260709-EVID-4F87E56A031DDB26",
+        "CARD-SKELETON-FULL-20260709-EVID-D368CF1562975037"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "死亡原因常为心力衰竭",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-1BFF14120D23C325",
+        "CARD-SKELETON-FULL-20260709-EVID-34C5355301B74EC6",
+        "CARD-SKELETON-FULL-20260709-EVID-4FC9A047E62343B4"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "为先天性心脏病后期已失去手术治疗机会",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-37C0525AD7DDEA49",
+        "CARD-SKELETON-FULL-20260709-EVID-F28CA62D7CEDC05D",
+        "CARD-SKELETON-FULL-20260709-EVID-9BEF692351CFC5C5"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "无症状者的存活率与正常群体相似",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-138004CFF6DC46DF",
+        "CARD-SKELETON-FULL-20260709-EVID-C492018F162534CF",
+        "CARD-SKELETON-FULL-20260709-EVID-7069A3E66FDD54CC"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "急性重度主动脉瓣反流如不及时手术治疗",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-8D934E1BAAF0F393",
+        "CARD-SKELETON-FULL-20260709-EVID-98F53546843A9DC0",
+        "CARD-SKELETON-FULL-20260709-EVID-2E302CF20747A703"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "二尖瓣狭窄出现症状",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-E0E8C5DE358EFC29",
+        "CARD-SKELETON-FULL-20260709-EVID-A6BF9CF26FCCDB64",
+        "CARD-SKELETON-FULL-20260709-EVID-E4F1FE8FA6140400"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "由各种乳头肌、腱索及瓣叶异常造成的急性严重二尖瓣反流伴血流动力学不稳定者",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-0A293693855960C3",
+        "CARD-SKELETON-FULL-20260709-EVID-E37B7989160CDAB1",
+        "CARD-SKELETON-FULL-20260709-EVID-BB076BEBE14F9A59"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "急性心包炎的预后取决于病因",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-DAB2331B2DB8F98B",
+        "CARD-SKELETON-FULL-20260709-EVID-BB75686283EC1A53",
+        "CARD-SKELETON-FULL-20260709-EVID-35592965C26C1F3A"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "不同病因导致的心包积液预后不同",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-19C63CFFDBCB6F1D",
+        "CARD-SKELETON-FULL-20260709-EVID-0DFCB977DA12BF9E",
+        "CARD-SKELETON-FULL-20260709-EVID-7A11A1FB90263820"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "如能及早进行心包的彻底剥离手术",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-59CBEA2D75FD8D93",
+        "CARD-SKELETON-FULL-20260709-EVID-C00E34CD6431E164",
+        "CARD-SKELETON-FULL-20260709-EVID-34F031B3CBAD22F4"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "预防IE的最有效措施是良好的口腔卫生习惯和定期的牙科检查",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-A0CF0AF0CB46DF6D",
+        "CARD-SKELETON-FULL-20260709-EVID-ACA6D20EF1241C65",
+        "CARD-SKELETON-FULL-20260709-EVID-088EBB3CDA60A58D"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "本病的预后与同时并存的冠心病、脑血管疾病密切相关",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-FA0DE436693F6D6D",
+        "CARD-SKELETON-FULL-20260709-EVID-BF6A9DD69A7DC253",
+        "CARD-SKELETON-FULL-20260709-EVID-5C2B4ECDAA5DC1B5"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "（一）静脉血栓栓塞症肿瘤相关静脉血栓栓塞症（VTE）包括深静脉血栓形成、肺栓塞和中心静脉导管相关血栓形成。肿瘤病人VTE的发生率可高达20%，同时也是肿瘤病人外科手术后最常见的死因之一。其发生与肿瘤类型、部分肿瘤治疗药物及病人本身的血栓危险因素如高龄、卧床、肥胖、感染等相关。VTE发生率较高的肿瘤包括：脑肿瘤、胰腺癌、胃癌、肺癌、肾癌、淋巴瘤及骨髓瘤。肿瘤通",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-B80AB22599D91DD3",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-12EE156D252EDF09",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-AF983B146FB4D36A"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "心肌炎（myocarditis）是指感染和非感染性心肌炎性疾病。感染性病原多为病毒，少数是细菌、真菌、立克次体、螺旋体、原虫等；非感染性病因包括理化、药物、过敏、免疫等。病毒性心肌炎（viralmyocarditis，VM）是嗜心肌病毒感染引起的心肌炎症损伤。本节重点介绍VM。【病因】嗜心肌病毒主要包括胃肠道病毒如柯萨奇病毒B3、埃可病毒、脊髓灰质炎病毒等，",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-D69E4F41987E0839",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-52D7D7F1F5E5FDB7",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-BB22BB69E9008029"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "器质性心血管疾病病人可能合并心理精神问题，临床医生需要注意识别，需重视精神心理问题混淆对器质性心脏病严重程度的评估。【治疗】心血管神经症以心理治疗为主，药物治疗为辅。首先应耐心倾听病史，了解可能的发病原因和有关因素，进行仔细的体格检查和必要的实验室检查。需通过通俗易懂地讲解疾病性质，并可用一些暗示性语言帮助病人解除顾虑。积极鼓励病人调整心态，安排好作息时间，",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-5E64AD586876B2A2",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-F7781899561D0452",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-B4C55E19F18BAE39"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "本章数字资源感染性心内膜炎（infectiveendocarditis，IE）是指病原体循血行途径或直接感染心瓣膜、心内膜或邻近大血管内膜所致的感染性疾病，感染最常累及瓣膜，常伴赘生物形成、局部结构与功能受损、终末器官感染性栓塞及全身炎症反应。近年来，IE的发病率呈增长态势，这与老年退行性瓣膜病、心脏器械植入、医疗操作、静脉药物成瘾者等增多有关。我国尚无确切",
+      "duplicate_count": 3,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-0CBCA1D78C3860E7",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-AE4A765C79675608",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-DD7DF944211BF6BF"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "下肢动脉硬化闭塞症是动脉粥样硬化累及下肢动脉导致动脉狭窄或闭塞而引起肢体缺血症状的慢性疾病，是全身动脉硬化性疾病在下肢的表现。",
+      "duplicate_count": 2,
+      "codes": [
+        "EVD-CARD-FOUND-00498",
+        "CARD-SKELETON-FULL-20260709-EVID-5CB8FD1D01EAD290"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "心力衰竭（heartfailure，HF）是各种原因导致的心脏结构和/或功能异常，使心脏出现收缩和/或充盈障碍，在静息或运动时心排血量下降或心腔内压力增高而引起的一组复杂临床综合征，主要表现为活动耐量下降和液体潴留。心功能不全（cardiacdysfunction）是一个更广泛的概念，伴有临床症状的心功能不全称之为心力衰竭（简称心衰）。",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-F69C7EE031AF3FAC",
+        "CARD-SKELETON-FULL-20260709-EVID-5F444721EFBE5EE5"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "（一）按发生的部位分类左心室代偿功能不全所致为左心衰竭",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-47C515380CC96C9D",
+        "CARD-SKELETON-FULL-20260709-EVID-226E460930A16893"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "正常窦性心律的冲动起源于窦房结，频率为60～100次/分。心电图显示窦性心律的P波在Ⅰ、Ⅱ、aVF导联直立，aVR导联倒置；PR间期为0.12～0.20秒。窦性心律失常是由于窦房结冲动发放频率的异常或窦性冲动向心房的传导受阻所导致的心律失常。根据心电图及临床表现分为窦性心动过速、窦性心动过缓、窦性停搏、窦房传导阻滞以及病态窦房结综合征。",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-12C3F899EE100558",
+        "CARD-SKELETON-FULL-20260709-EVID-65E3EB9C722DD7FC"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "病态窦房结综合征（sicksinussyndrome，SSS）简称病窦综合征，是由窦房结病变导致功能减退，产生多种心律失常的综合表现。病人可在不同时间出现一种以上的心律失常，常同时合并心房自律性异常，部分病人同时有房室传导功能障碍。",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-FF95C308EB38E46E",
+        "CARD-SKELETON-FULL-20260709-EVID-78949925460FF46A"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "房性期前收缩（prematureatrialbeats），也称房性早搏，简称房早，是指起源于窦房结以外心房的任何部位的心房激动，是临床上常见的心律失常。",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-C3A949098F4E969B",
+        "CARD-SKELETON-FULL-20260709-EVID-CF234A5A01CEABEB"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "房性心动过速（atrialtachycardia）简称房速，指起源于心房且无需房室结参与维持的心动过速。发生机制包括自律性增加、折返与触发活动。根据起源点不同，分为局灶性房性心动过速（focalatrialtachycardia）和多源性房性心动过速（multifocalatrialtachycardia），后者也称为紊乱性房性心动过速（chaoticatr",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-12B829981E43696F",
+        "CARD-SKELETON-FULL-20260709-EVID-8A53EAB5DCAA237D"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "1.药物治疗减慢心室率的药物包括β受体拮抗剂、非二氢吡啶类钙通道阻滞剂（维拉帕米、地尔硫草）或洋地黄类药物（地高辛、毛花苷丙）。转复房扑并预防复发的药物主要是Ⅲ类（伊布利特、多非利特和胺碘酮）抗心律失常药，伊布利特用于新发房扑复律治疗，禁用于严重器质性心脏病、QT间期延长和窦房结功能障碍者；多非利特亦可选用。长期维持窦性心律可选用胺碘酮、多非利特或索他洛尔等",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-C89F65F1B8DCCF0E",
+        "CARD-SKELETON-FULL-20260709-EVID-945877C4A2BA02EF"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "室性期前收缩（prematureventricularbeat）也称室性早搏，简称室早，是一种最常见的心律失常，指希氏束以下部位心室兴奋灶提前除极而产生的过早搏动。",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-EEF9F1FE945CFF14",
+        "CARD-SKELETON-FULL-20260709-EVID-EBC1E104F0ED5E78"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "室性心动过速（ventriculartachycardia，VT）简称室速，是起源于希氏束以下的特殊传导系统或者心室肌的连续3个或3个以上的异位心搏。及时正确地判断和治疗室速具有非常重要的临床意义。",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-9B2F21646F6D62DD",
+        "CARD-SKELETON-FULL-20260709-EVID-A170410AF10435D5"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "心脏传导阻滞（heartconductionblock）是由心脏传导系统的解剖或功能失常造成的永久性或暂时性冲动传导障碍，可发生于心脏传导系统的任何水平。如发生在窦房结与心房之间，称窦房传导阻滞，心房与心室之间称房室传导阻滞，心室内称室内传导阻滞。窦房传导阻滞已在本章第二节叙述。",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-ABD64F3F22242020",
+        "CARD-SKELETON-FULL-20260709-EVID-4EA119B60FD25DA9"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "滴，有T淋巴细胞浸润。Ⅲ型：斑块前期。细胞外出现较多脂滴，在内膜和中膜平滑肌层之间形成脂核，但尚未形成脂质池。Ⅳ型：粥样斑块。脂质积聚多，形成脂质池，内膜结构破坏，动脉壁变形。Ⅴ型：纤维粥样斑块。为动脉粥样硬化最具特征性病变，呈白色斑块突入动脉腔内引起管腔狭窄。斑块表面内膜被破坏而由增生的纤维膜（帽）覆盖于脂质池之上。病变可向中膜扩展，破坏管壁，并同时可有纤",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-1BB281BF37AE5797",
+        "CARD-SKELETON-FULL-20260709-EVID-12AF6B6C301ECF24"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "冠状动脉粥样硬化性心脏病（coronaryatheroscleroticheartdisease）指冠状动脉（冠脉）发生粥样硬化引起管腔狭窄或闭塞，导致心肌缺血、缺氧或坏死而引起的心脏病，简称冠心病（coronaryarterydisease，CAD；或coronaryheartdisease，CHD），亦称缺血性心脏病（ischemicheartdisea",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-53CBB81E15BBD79E",
+        "CARD-SKELETON-FULL-20260709-EVID-58D235F7E4B8E9D6"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "慢性冠状动脉综合征（CCS）最常见为慢性稳定型劳力性心绞痛和以心功能不全为主要表现的缺血性心肌病，部分处于渡过ACS后或行血运重建之后稳定期，有些则为无症状隐匿型冠心病。发生心肌缺血的主要原因是存在稳定的心外膜冠脉粥样硬化造成的固定狭窄，在某些因素导致心肌耗氧量增加的情况下诱发心肌急剧暂时性缺血缺氧；但冠脉痉挛或微血管病变的病人没有心外膜血管固定狭窄临床上亦",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-D6EAFD139DD4F1DC",
+        "CARD-SKELETON-FULL-20260709-EVID-D093233FE1AD04CA"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "稳定型心绞痛（stableanginapectoris）也称劳力性心绞痛。其特点为阵发性的前胸部压榨性疼痛或憋闷感觉，主要位于胸骨后部，可放射至心前区和左上肢尺侧，常发生于劳力负荷增加时，持续数分钟，休息或服用硝酸酯制剂后疼痛消失。疼痛发作的程度、频度、持续时间、性质及诱发因素等在数月内无明显变化。",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-48353A7C6F4F5BAC",
+        "CARD-SKELETON-FULL-20260709-EVID-25BF47F318C2C468"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "（一）症状心绞痛以发作性胸痛为主要临床表现，疼痛特点为：1.诱因常见诱因包括体力劳动或情绪激动（如愤怒、焦急、过度兴奋等），饱食、寒冷、吸烟、心动过速、休克等亦可诱发。疼痛多发生于劳力或激动的当时，而不在劳累之后。典型稳定型心绞痛常在相似的条件下重复发生。2.部位主要在胸骨体后，可波及心前区，手掌大小范围，也可横贯前胸，界限不清。常放射至左肩、左臂内侧达无名",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-3AA2EA9EAC11A156",
+        "CARD-SKELETON-FULL-20260709-EVID-4A80069491C223C7"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "（一）实验室检查血糖、血脂检查可了解冠心病危险因素；胸痛明显者需查血清心肌损伤标志物，包括心肌肌钙蛋白I或T、肌酸激酶（CK）及同工酶（CK-MB），据此与ACS相鉴别；氨基末端脑钠肽前体（NT-proBNP）可了解病人心功能状态；血常规可了解有无贫血；必要时检查甲状腺功能。（二）心电图（ECG）检查1.静息时ECG约半数病人在正常范围，也可能有陈旧性心肌梗",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-873D59BE3DD0BE55",
+        "CARD-SKELETON-FULL-20260709-EVID-2C126A261F69277E"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "【防治】明确诊断为隐匿型冠心病病人应使用药物治疗预防心肌梗死或死亡",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-6FEE324DFBEAC46E",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-BD9E1827DD1E5351"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "急性冠脉综合征是一组由急性心肌缺血引起的临床综合征，主要包括不稳定型心绞痛（UA）、非ST段抬高型心肌梗死（NSTEMI）和ST段抬高型心肌梗死（STEMI），冠心病猝死是特殊类型ACS。临床上将急性心肌梗死（acutemyocardialinfarction，AMI）分为5型：1型是自发性AMI，即原发冠脉不稳定斑块发生破裂、糜烂或侵蚀继发血栓形成所致，最",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-DF9AE305773E7B86",
+        "CARD-SKELETON-FULL-20260709-EVID-F567D86EA839F2E8"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "心肌病（cardiomyopathy，CM）是一组病因和表型异质性高的心肌疾病，其心肌结构和/或功能异常无法以前/后负荷增加或心肌缺血等疾病来诠释。CM病因复杂，可为遗传性或获得性。遗传模式多为常染色体显性遗传，由编码心肌肌节、骨架和桥粒蛋白的基因突变分别导致以心肌肥厚、心腔扩张和心律失常为主要表型的心肌病。某些系统性疾病也与CM有表型重叠。CM的分类尚未统",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-10DB7A033FEFEC11",
+        "CARD-SKELETON-FULL-20260709-EVID-8ECE48374C9EB749"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "1.症状主要有：①呼吸困难：多数为劳力性、亦可为静息性呼吸困难；②胸部闷痛：约1/3病人有劳力性胸闷痛；③心律失常：见于多数病人，但症状性心律失常主要是心房颤动（AF）、室性心动过速（VT）［包括持续性/非持续性（SVT/NSVT）］，甚至心室颤动（VF）；④心力衰竭（HF）：多见于中晚期病人，可有射血分数保留型心衰（HFpEF）或射血分数降低型心衰（HFr",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-B5C4CB2AFD47570A",
+        "CARD-SKELETON-FULL-20260709-EVID-4A65127F70D9B962"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "1.心电图检查心电图（ECG）主要发现（图3-6-1）：QRS波高电压、ST段压低、T波倒置、异常q波、室内传导阻滞及心律失常。特征是：①固定性ST段压低及T波倒置而有别于心肌缺血的动态变化；②固定性深而对称的T波倒置，提示心尖肥厚；③深而不宽的病理q波，其出现导联与冠脉分布不符而有别于梗死Q波。图3-6-1肥厚型心肌病的心电图表现A.1例56岁男性左室流出",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-4ECABF547E79DE90",
+        "CARD-SKELETON-FULL-20260709-EVID-E6CDAFA79D3E8D09"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "扩张型心肌病（dilatedcardiomyopathy，DCM）是一类以左室或双心室扩大伴收缩功能障碍为特征的心肌病，且无法以负荷异常或心肌缺血等来解释。本病发病率为0.13‰～0.84‰，预后较差，确诊后5年和10年生存率分别约50%和25%。",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-796E080AFBA9ABC6",
+        "CARD-SKELETON-FULL-20260709-EVID-DACCCDF318427922"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "1.实验室检查抗心肌抗体检查可了解DCM是否与自身免疫有关。脑钠肽或N末端B型利钠肽原和心肌肌钙蛋白是心功能、疗效及预后评估的重要标志物。2.心电图无特异性，可见QRS波增宽、R波递增不良、异常q波、ST压低和T波倒置、束支及室内传导阻滞、各种快速型心律失常。3.胸部X线可见心影增大、肺淤血、肺水肿、胸腔积液等。4.超声心动图TTE是DCM首选的评估手段。主",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-6E0F1F51BAE4FA6B",
+        "CARD-SKELETON-FULL-20260709-EVID-F9A5C0E42E74791D"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "非扩张型左心室心肌病（non-dilatedleftventricularcardiomyopathy，NDLVC）是指在无左心室扩张情况下，左心室存在着非缺血性瘢痕或脂肪替代，伴或不伴整体或局部室壁运动异常；这些心肌病变仅由负荷异常或心肌缺血无法解释。",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-69B8474C1E07CAC7",
+        "CARD-SKELETON-FULL-20260709-EVID-133435BCEA23C9AF"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "1.心电图检查本病某些心电特征可指示潜在遗传病因，如神经肌肉病变和结节病相关性NDLVC常有传导异常，DSP和PLN突变相关性NDLVC常见QRS波低电压。2.超声心动图表现为左室整体或局部收缩功能降低但心腔无明显扩大。3.心脏磁共振CMR-LGE检出的非缺血性心肌纤维或/和脂肪替代是主要诊断依据，纤维化分布模式是病因甄别的关键线索，纤维化程度有预后价值。4",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-A6B0C808434EDC8D",
+        "CARD-SKELETON-FULL-20260709-EVID-3A24967AB0F2B3EA"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "1.诊断标准",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-A47F1DE04856FD77",
+        "CARD-SKELETON-FULL-20260709-EVID-364EE162E0E6E602"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "致心律失常性右心室心肌病（arrhythmogenicrightventricularcardiomyopathy，ARVC）是以进展性右心室心肌萎缩并被纤维或/和脂肪替代为特征的心肌疾病。本病发病率为0.2‰～1.0‰，男性易患，多在30岁左右发病，预后差。",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-0256E3875E166788",
+        "CARD-SKELETON-FULL-20260709-EVID-4008AAF88BED3850"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "1.心电图检查复极/除极异常、心律失常是诊断本病的重要指标。体表常规或信号平均心电图可见右胸导联T波倒置及Epsilon波。室性心律失常尤其是左束支传导阻滞型SVT/NSVT具有诊断和预后价值。2.经胸超声心动图/心脏磁共振TTE和CMR是评估本病心脏结构和功能的主要方法，特征性表现是右室壁运动减弱、反向运动或膨出，右室射血分数（RVEF）降低，CMR-LG",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-151329B4E392B74A",
+        "CARD-SKELETON-FULL-20260709-EVID-086D09C4CAAB9F20"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "1.诊断依据对有右室扩大、左束支传导阻滞型VT者",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-E4B56AC84E2DD658",
+        "CARD-SKELETON-FULL-20260709-EVID-1108DAC286CEFB8E"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "限制型心肌病（restrictivecardiomyopathy，RCM）是一组以限制性心室充盈障碍为特征的混合性心肌病，其预后较差，5年生存期仅约30%。",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BF90A46E47DC93D1",
+        "CARD-SKELETON-FULL-20260709-EVID-34B86FC33248CF68"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "1.实验室检查原发病相关的实验室异常，如怀疑CA需做血清游离轻链及血尿免疫固定蛋白电泳以寻找浆细胞病的证据；脑钠肽（BNP）、N末端B型利钠肽原（NT-proBNP）和肌钙蛋白是评价CA严重程度的生物标志物，三者均与其预后相关。2.心电图检查可见QRS波低电压、异常q波、ST-T改变及各种心律失常，全导联低电压与影像学心肌肥厚不相称是CA较特殊表现。3.胸部",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-90C0DAA5F828804C",
+        "CARD-SKELETON-FULL-20260709-EVID-F4B52F39C38389D6"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "1.诊断依据对以右心衰和心律失常为主、心房显著扩大者",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-EEE0280455164444",
+        "CARD-SKELETON-FULL-20260709-EVID-B0A0F5086257F11C"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "心肌炎（myocarditis）是指感染和非感染性心肌炎性疾病。感染性病原多为病毒，少数是细菌、真菌、立克次体、螺旋体、原虫等；非感染性病因包括理化、药物、过敏、免疫等。病毒性心肌炎（viralmyocarditis，VM）是嗜心肌病毒感染引起的心肌炎症损伤。本节重点介绍VM。",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-552FCDE939105A61",
+        "CARD-SKELETON-FULL-20260709-EVID-CE93866B11A7F876"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "1.实验室检查急性期白细胞计数增高、血沉增快、C反应蛋白升高，肌酸激酶同工酶及心肌肌钙蛋白增高，类似心肌梗死表现但持续时间更长。2.胸部X线检查可见心影扩大，有心包积液时可呈烧瓶样改变。3.心电图检查常见QRS波或ST-T波改变、各种心律失常，特别是室性心律失常和房室传导阻滞，偶见异常q波。合并急性心包炎可有aVR导联以外ST段广泛抬高。4.超声心动图轻症者",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-34E766AFFA9778AB",
+        "CARD-SKELETON-FULL-20260709-EVID-0F1A96A6D8442C01"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "肿瘤病人罹患冠心病的风险增加，主要原因包括：①肿瘤与冠心病有共同的危险因素，如吸烟、肥胖、高血压、糖尿病等；②肿瘤细胞产生的促炎因子促进斑块形成；③肿瘤产生的促凝因子使血液处于高凝状态；④肿瘤治疗亦可通过不同作用机制诱发冠心病。",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-4DD754792DE19CBC",
+        "CARD-SKELETON-FULL-20260709-EVID-47BDE5168D863D31"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "上述药物诱发冠心病的主要机制包括冠脉内皮损伤、冠脉痉挛、急性血栓形成等",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-B148DD1922093E95",
+        "CARD-SKELETON-FULL-20260709-EVID-DD3E890DA4EA8409"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "动脉粥样硬化性心血管疾病（ASCVD）是糖尿病病人最主要的大血管并发症，超过40%的糖尿病病人死于心血管疾病，尤其是ASCVD；在住院的冠心病病人中，合并已诊断和新诊断糖尿病的病人比例超过40%。血糖水平与冠心病发生风险呈正相关性。",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-6DD4450E3AA2FE87",
+        "CARD-SKELETON-FULL-20260709-EVID-3DC84943BE79DF78"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "如发热、甲亢、贫血、休克、心肌缺血、心力衰竭以及应用肾上腺素、阿托品等药物时",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-0E20D33B3C4F007F",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-1162776EBC9C670B"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "或心率的增快与生理、情绪激动、病理状态或药物作用无关或不相一致",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-2AB402809BC225CB",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-8CE42209820B054E"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "窦性心动过速的治疗应针对病因和去除诱发因素",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-1F4EF4C931FCDB25",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-EF7A2FCE064B8688"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "如治疗心力衰竭、纠正贫血、控制甲亢等",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-F28F6A5AD78E4402",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-A3FAF5A1F4D6DCF2"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "如上述药物无效或不能耐受",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-B62B46D2F4B6A971",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-3C4B5C122A495D48"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "心电图表现为在较正常PP间期显著长的间期内无P波发生",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-975F16F7C127EDD3",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-EC1B27FCBF6B05DF"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "下位的潜在起搏点",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-AA2A952DE3531F23",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-D0DA13729AF00148"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "应用洋地黄类药物、乙酰胆碱等亦可引起窦性停搏",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-B239DBE3BA02D408",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-D80AD959EFBDEC03"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "治疗可参照病态窦房结综合征",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-9370008C259EBF85",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-5D48D3D9BD012A81"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "窦性心动过缓常同时伴有窦性心律不齐（不同PP间期的差异＞0.12秒）",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-C6DBB21EC3209BE5",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-3E0E61E21C92AE39"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "以及应用拟胆碱药物、胺碘酮、β受体拮抗剂、非二氢吡啶类钙通道阻滞剂或洋地黄类等药物",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-6E8EDC1FC9CADBD6",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-3E5FCFF676039D44"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "无症状的窦性心动过缓通常无需治疗",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-C45F0BE305E25909",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-A544CA7C1D2D2F2C"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "可应用阿托品或异丙肾上腺素等药物",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-C58F615FCD6523F8",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-F1F482D4FEC62BCC"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "故应考虑心脏起搏治疗",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-59A077D30487F23A",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-7A713F5B90A19AAC"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "由于体表心电图不能显示窦房结电活动",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-BD75CF38881180B5",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-BBF619E1D8C55E77"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "因而通过体表心电图无法确定一度和三度窦房传导阻滞的诊断",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-8EEFF5D254EC50CC",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-793542BA979DF1EA"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "窦房传导阻滞的病因及治疗参见病态窦房结综合征",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-1EFB167594862814",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-8D75198BD1F97DC5"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "造影正常血管或粥样硬化病变部位均可发生痉挛",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-149A0A724B4CC89A",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-D16ED606227EE092"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "则临床表现为静息性心绞痛伴心电图一过性ST段抬高",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-AB006E21B629E5DC",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-CDB8DE16FD0886EB"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "因静息性发作与稳定型心绞痛不同",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-86CAC94C7F3858FD",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-C9D99EE00264C0DA"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "因ST段抬高与稳定型心绞痛、UA和NSTEMI不同",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-ADEF62E74B483FAB",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-98297366292D8F96"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "因ST段抬高呈一过性与STEMI不同",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-F68AF7B9166D9BBA",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-A163ACDFF92E7237"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "因此可直接确立诊断（早先称为变异型心绞痛或Prinzmetal心绞痛）",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-32626C3974852CA9",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-AFDECFA0B97DCFB9"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "但非闭塞性冠脉痉挛表现为ST段压低或T波改变",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-20F54061745AF3F2",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-F8402D22A23F591F"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "此时就难以和一般的心绞痛相鉴别",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-32AB626C213EF67E",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-5E8C27479842A1E7"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "心电图和常规冠脉造影难以捕捉",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-800BA8722A1F6603",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-335151AF5CB6A5FA"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "长程动态ECG有助于监测到症状发作时的ST段变化",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-BEAF616085D7173A",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-C02DA0604FB8135A"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "确诊常需行乙酰胆碱或麦角新碱激发试验",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-997B4F8890D27EA7",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-83EF6FC12C54D5C1"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "房室交界性期前收缩通常无需治疗",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-83A2E129332C13E7",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-F231FC24668F3541"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "如心房的电活动由窦房结或异位心房起搏点控制",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-0C32B1511DC78BB6",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-8B77E025BE3C7FD9"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "治疗主要针对基本病因",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-EB4BE793EB38CA43",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-C158E91D862252E3"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "仅需密切观察和治疗原发疾病",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-0EAC1AF867C458D4",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-8242FE1B54F38FE9"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "不宜施行电复律",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-5D466E4ED309D22D",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-11232F442DE2E15F"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "可应用β受体拮抗剂、非二氢吡啶类钙通道阻滞剂或洋地黄治疗",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-32A08A44046B69B3",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-611B3E254208BD64"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "其他药物可选用Ⅰa、Ⅰc与Ⅲ类（胺碘酮）抗心律失常药物",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-8245A3712A30AF33",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-181A8671D5ABA74F"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "房室交界性逸搏（AVjunctionalescapebeats）的心电图表现为在长于正常PP间期的间歇后出现一个正常的QRS波",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-4CFA8D85CBF7C7E6",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-BF0071184201DA34"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "心电图显示正常下传的QRS波",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-55F4CB94978CF0CA",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-910892B673F6F1C3"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "称为潜在起搏点",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-31F361C53FCC3620",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-30321BBB94FEC15C"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "潜在起搏点可成为主导起搏点",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-0123F6D664F08003",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-9E19BF6D807CA82F"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "低于潜在起搏点的固有频率",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-978410ABB048370F",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-A912F96E5ABC4184"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "窦房结冲动不能抵达潜在起搏点部位",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-C7B2D5AB058537A9",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-9CA7791E9EAEFA5D"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "潜在起搏点自动除极产生逸搏",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-A1EDFDCCCAB5D0EE",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-D456958074702D5F"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "正常成人进行24小时动态心电图监测",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-0EDF1FEA1870E800",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-95E7202AC6D8DB32"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "【心电图特征】心电图表现为",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-3745140E278EA671",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-2151D552928E1161"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "与窦性P波形态不同",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-F23E5EC1D2AB45BA",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-AA63C0B0A72905EC"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "病人可在不同时间出现一种以上的心律失常",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-09EE995DADC024AF",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-C13A124204B6A805"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "应注意鉴别",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-96DE4F94AECEC54B",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-B538A1092EA24B4B"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "【心电图特征】心电图的主要表现包括",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-B5359B57BB7E8B5D",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-1F339A1A4D51BD63"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "病态窦房结综合征的其他心电图改变为",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-B8F34B6343089F51",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-BC4B96F20BE23C18"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "【心电图特征】心室扑动呈正弦图形",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-BFC6E97731617738",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-7065E6192E846034"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "有时难与室速鉴别",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-C087B190EDBDB1F5",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-E80946CED5B2AA93"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "无法辨认QRS波群、ST段与T波",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-3ADFD692E04AC52D",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-5DF1856C2E0C52E8"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "无法分辨QRS波群、ST段及T波",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-D4D0FB87ACC3F301",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-7E1CFAD777B4E567"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "抗心律失常药物",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-0D60E907A3564E2C",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-A73B724C7269832E"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "特别是引起QT间期延长与尖端扭转型室速的药物",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-20F81D142C95A148",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-D1530F98F64BA893"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "心房扑动（atrialflutter）简称房扑，是介于房速和房颤之间的快速型心律失常。健康者很少见，病人多伴有器质性心脏病。【病因】多见于冠心病、瓣膜病、高血压心脏病和心肌病等器质性心脏病。此外，肺栓塞、甲状腺功能亢进、酒精中毒和心包炎等，亦可出现房扑。部分病人也可无明显病因。【临床表现】病人的症状主要与房扑的心室率相关，心室率不快时，病人可无症状；房扑伴有",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-81D10DCA77171490",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-A894FD45B770358F"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "【心电图特征】心电图特征包括",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-BCBCD2FEDC09215B",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-222B351B5613372A"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "根据起源点不同",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-B47363F12667F7DA",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-067CB2A950AE8C18"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "【心电图特征】局灶性房速心电图特征包括",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-45F03A0F64B0402A",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-9F8B2F7DDE9FBBF4"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "P波形态与窦性P波不同",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-FBF716FCF4484ED2",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-4575431E0EAA2CFD"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "P波之间的等电线仍存在（与心房扑动时等电线消失不同）",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-68DE74C8382DB42E",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-9B70CDFD5F51CF7E"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "心电图多表现为QRS波群形态正常、RR间期规则的快速心律",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-7D45E89C444CF0F0",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-EB8503D15934790F"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "缺血性心肌病（ischemiccardiomyopathy，ICM）属于冠心病的一种特殊类型或晚期阶段，临床表现为新发心衰或左心室功能障碍，可伴有各种心律失常，心脏扩大类似扩张型心肌病。其病理生理基础是冠脉粥样硬化病变使心肌长期缺血、缺氧以至心肌细胞减少、坏死、心肌纤维化、心肌瘢痕形成。【临床表现】1.充血型缺血性心肌病（1）心绞痛：常见症状之一。多有明确冠",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-9037CDE745575CA4",
+        "CARD-SKELETON-20260709-EVID-BACKFILL-D82CF50AC2A7309A"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "【流行病学】慢性心力衰竭（chronicheartfailure，CHF）是心血管疾病的终末期阶段和最主要的死因。西方成人心衰患病率约为1%～2%，总患病率呈上升趋势。基于中国高血压调查研究的结果显示我国≥35岁人群心衰患病率约1.3%，估计患病人数890万；基于0.5亿中国城镇职工医疗保险数据的调查发现我国≥25岁人群心衰患病率约为1.1%，估计心衰病人1",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-831A4E2DCE41C056",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-243D5725E1632D4A"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "是心血管疾病的终末期阶段和最主要的死因",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-2D973EA09E9FC352",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-40366FB1A834F00E"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "是左心衰竭最早出现的症状",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-76B8EA1EE2828075",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-3545763AA5D7C188"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "是左心衰竭呼吸困难最严重的形式，可有哮鸣音，称为“心源性哮喘”",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-805C8074826851BC",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-88DA59E20A179331"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "是肺泡和支气管黏膜淤血所致，开始常于夜间发生，坐位或立位时可减轻，白色浆液性泡沫状痰为其特点，偶可见痰中带血丝",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-7FA2A0E73D8F75AC",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-11B6726F5BA31841"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "是器官、组织灌注不足及代偿性心率加快所致的症状",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-3B8032BEF4A0E9A1",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-C97F6B0F6DDBA553"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "是右心衰竭最常见的症状",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-F4D6956A87941616",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-B97A00092A8CF5B1"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "是心排血量下降，缺氧所致",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-145240ED0BAAABA4",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-5955E6C461E9E415"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "是右心衰竭时的主要体征，肝颈静脉反流征阳性则更具特征性",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-A176E2CFEB9B59AC",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-C73466B4A0CB2312"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "【临床表现】室速的临床症状视发作时心室率、持续时间、基础心脏病和心功能状况不同而异",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-4E28A66E89FC7A03",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-7D77ADBAB990504B"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "糖尿病是心力衰竭（以下简称“心衰”）的独立危险因素。无论在射血分数保留型心衰（HFpEF）或射血分数下降型心衰（HFrEF）的病人中，糖尿病都增加了病人的心血管死亡风险。【发病机制】糖尿病病人发生心衰是多种因素共同作用的结果，除了高血糖的直接和间接损害外，还包括肥胖等其他伴发代谢疾病对心肌的损害等。从病理生理学层面分析，心肌细胞代谢紊乱、钙离子调节功能障碍、",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-83DA373E0B2078D4",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-7D757B90342ECC95"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "抗心律失常药物治疗原则",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-4FED37CDB2DF9B93",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-8DB0F2647A2CF5FE"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "首先评估药物治疗的必要性",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-6F7E1B0D56C30CF4",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-AB10A61C5F56E15D"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "多不需要治疗",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-F4E874EAE0846FE5",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-1EC7EE3F32A93B27"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "心律失常治疗主要目的是缓解症状或减少心律失常对心功能和心肌缺血的影响",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-CDE20055EDD11290",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-4B3FAC46202C63C1"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "要注意兼顾基础心脏病的治疗",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-A04147A028899C93",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-7761B080B7D742A6"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "权衡心律失常治疗的重要性和紧迫性",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-E100456DAA0F41D7",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-DE0496E02C8EF96A"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "要着重考虑可改善预后的综合治疗措施",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-A9708EEA52B696AE",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-AAED6D897B2E1DD2"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "如房颤的抗凝治疗",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-52D31F54E50BB698",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-4E5C35A5DDA04AA6"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "正确选择抗心律失常的药物",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-2EB32F24260A0910",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-A44F1EAADA426374"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "重点考虑药物的有效性",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-E9724370F0999171",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-944ACE075955926B"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "必要时联合电复律或临时起搏治疗",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-46571A0968DBB892",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-06C6EE260CD86A4A"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "而慢性心律失常的长期治疗",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-9A6B2012398787CF",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-C91D88FB1AE792F3"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "需要考虑药物的安全性以及基础疾病药物治疗的协同性",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-A17EF5701223C830",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-E1AE492C06A5DF6A"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "协调药物治疗与非药物治疗的兼顾",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-9725471ECC41D4C9",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-5D4C2E5FDD51F9E4"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "注意抗心律失常药物的不良反应",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-DE1288E1C2501739",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-531AEA3A2EBD9566"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "致心律失常作用的定义是抗心律失常药物治疗可能导致新的心律失常或使原有心律失常加重",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-38BCAE6E31F76E1C",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-0A36D49BA921EFCA"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "如充血性心力衰竭、已应用洋地黄类药物与利尿剂、QT间期延长的病人在使用抗心律失常药物时更易发生致心律失常作用",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-55C6D715584F555F",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-5897975F7B839E2D"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "大多数的致心律失常作用发生在开始治疗后数天或改变剂量时",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-D668E2E2AC11A4E0",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-E3F5EE0390ECC69A"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "Ⅰa类：药物减慢动作电位0相上升速度（Vmax）",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-423BDEDC42DE2166",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-99A879B6DE0F4E5A"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "【类型】（一）按发生的部位分类左心室代偿功能不全所致为左心衰竭，临床上较为常见。右心室代偿功能不全所致为右心衰竭。左心衰竭和右心衰竭同时存在即为全心衰竭。（二）按发生的速度分类根据心衰发生的速度可分为慢性心衰和急性心衰。1.急性心衰系因急性的严重心肌损害、结构破坏、心律失常或突然加重的心脏负荷，使原本功能正常或处于代偿期的心脏在短时间内发生心功能急剧恶化。可",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-43827C373CADD12B",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-428E9F6837016FDE"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "是初发心衰，也可以是慢性心衰急性加重",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-E42DECEBAC46BF0D",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-7F493314552D7313"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "是，LVEF是动态变化的，在管理全程中需定期监测",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-2D6408FEB463455E",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-98003A5956314E4F"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "是指在静脉回心血量无明显减少的情况下，因心脏本身的病变引起的心脏舒张和充盈障碍",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-681C4F8433D6B14C",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-8D95EDC34D6A2A50"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "是呼吸道感染，如果合并支气管痉挛、黏膜充血和水肿等，还可使肺循环阻力增加，加重右心室后负荷",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-D010E799A489841D",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-693B2D38C6456669"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "是器质性心脏病最常见的心律失常之一，也是心衰的重要诱因",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-372D992CD85ADBAC",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-572D5BEC46603096"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "是能量供应不足时钙离子回摄入肌质网及泵出胞外的耗能过程受损，导致主动舒张功能障碍，常见于心肌缺NOTES177血、慢性容量负荷过重和衰老等",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-E801F20E7DF554DF",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-ED5606EDD03C3D83"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "是心室肌顺应性减退及充盈障碍，主要见于心室肥厚和心内膜纤维化，如高血压病、肥厚型心肌病等",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-594BF0427E0C9062",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-483DA0AC389024FF"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "是心衰发生发展的基本病理机制",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-CB69EE9FDEAFE2E3",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-35B7B0C81B5D5F60"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "此时心脏起搏系统中具有最高自律性的起搏点（通常是窦房结）重新主导心脏节律",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-1829245DB6BD73B9",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-31660D55322659F9"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "NOTES221根据电复律时是否识别R波",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-6AD6FF4BCCB18D17",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-212C292B9F623F38"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "分为同步电复律与非同步电除颤",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-6DA6C5CC18B0A3B1",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-9269BEEB2256557F"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "1.同步电复律放电时电流正好与R波同步",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-E7CF393AABD05C04",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-61D9F7715BA0871E"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "同步电复律主要用于除心室颤动、心室扑动以外存在R波的各种快速型异位心律失常",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-CF0EAA1FD3C22F03",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-48F3C7FCAD3BC058"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "如药物治疗无效的阵发性室上性心动过速、心房扑动、心房颤动及室性心动过速",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-8DF481041CA1851D",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-7D8BFDF1C1EC97C7"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "电复律前一定要核查仪器上的“同步”功能处于开启状态",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-57C15DDCA52F01ED",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-843CCEDA92538AB6"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "2.非同步电除颤临床上用于R波不能分辨时",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-6B4164B02BC0B1DA",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-60950EB3BE86DB23"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "即心室颤动或心室扑动的电治疗",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-2EF75146867EB3E6",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-0A870460EAE42CCF"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "【适应证和禁忌证】电复律与电除颤适应证主要包括两大类：各种严重的甚至危及生命的恶性心律失常",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-11255312CEFE161D",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-CEEC50D05EBBDBF6"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "且药物治疗无效者",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-D3C1F1249D1D0FD6",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-9B5F934B9E54F112"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "均应考虑电复律或电除颤",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-64EEC3A6BF35CF1B",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-958E60A04EA2BC9B"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "如果经药物治疗后不能很快纠正",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-BACKFILL-6B0F223977044BEE",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-7CF278F413084F1C"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "窦房传导阻滞（sinoatrialblock，SAB）指窦房结冲动传导至心房时发生延缓或阻滞。理论上SAB可分为三度，由于体表心电图不能显示窦房结电活动，因而通过体表心电图无法确定一度和三度窦房传导阻滞的诊断。二度窦房传导阻滞分为两型：莫氏（Mobitz）Ⅰ型即文氏（Wenckebach）阻滞，表现为PP间期进行性缩短，直至出现一次长PP间期，该长PP间期短",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-C4-68772AE6274F136B",
+        "CARD-SKELETON-20260709-EVID-C4-D4CC8B4E254869C9"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "窦房传导阻滞（sinoatrialblock，SAB）指窦房结冲动传导至心房时发生延缓或阻滞。理论上SAB可分为三度，由于体表心电图不能显示窦房结电活动，因而通过体表心电图无法确定一度和三度窦房传导阻滞的诊断。二度窦房传导阻滞分为两型：莫氏（Mobitz）Ⅰ型即文氏（Wenckebach）阻滞，表现为PP间期进行性缩短，直至出现一次长PP间期，该长PP间期短",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-20260709-EVID-C4-938561C623E664D7",
+        "CARD-SKELETON-20260709-EVID-C4-2199F62CB810DDAB"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "一般不难作出诊断",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-7DD346D31CA7ACB9",
+        "CARD-SKELETON-FULL-20260709-EVID-42DF3867DDA4696C"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "室内传导阻滞（intraventricularblock）是指希氏束以下部位的传导阻滞。室内传导系统由右束支、左前分支和左后分支三部分组成。室内传导系统的病变可波及单支、双支或三支。右束支传导阻滞较为常见，常无临床意义。左束支传导阻滞常发生于急性心肌梗死、心肌病、药物中毒等引起心肌弥漫性病变所致。左前分支阻滞较为常见，左后分支阻滞较为少见。单支、双支阻滞通常",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-3D9BD88D23C0C120",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-5EEF6C1EBF3473F4"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "诊断并不困难",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-6EF563146E0CC74F",
+        "CARD-SKELETON-FULL-20260709-EVID-9E7FA87565E7E934"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "高血压诊断根据诊室测量的血压值",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-1B92EF9269CF79BA",
+        "CARD-SKELETON-FULL-20260709-EVID-BFF35492C538159D"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "随着影像学、各种导管技术以及使用的介入器材的不断改进与发展，先心病介入治疗在一定范围内已经取代了外科手术治疗。目前，我国每年约有超过2.5万先心病病人接受介入治疗。成人先天性心脏病的介入治疗，见表3-7-2。一、经皮球囊肺动脉瓣成形术经皮球囊肺动脉瓣成形术（percutaneousballoonpulmonaryvalvuloplasty，PBPV）是较早应",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-86A12DB2B92227EE",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-85758765AE229AF5"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "缩窄性心包炎多可根据典型的临床表现及辅助检查诊断",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-31B2F0F86EE89918",
+        "CARD-SKELETON-FULL-20260709-EVID-3FEBD9D46112A4D3"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "（表3-14-1）表3-14-1CTRCD的分类及诊断标准",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-195B8E946700200B",
+        "CARD-SKELETON-FULL-20260709-EVID-F277C4E1F248C837"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "（一）肿瘤治疗相关的心脏瓣膜病肿瘤治疗相关的心脏瓣膜病是放疗常见的远期并发症，发生率约为10%。主要累及左心瓣膜，包括主动脉瓣根部、主动脉瓣瓣尖、二尖瓣瓣环、基底部和瓣叶。主要病理改变为瓣尖和瓣叶增厚，瓣膜钙化回缩，引起瓣膜狭窄或关闭不全。接受纵隔放疗的病人，在放疗前和放疗后应定期（每5年1次）行超声心动图检查。因该瓣膜病常合并纵隔纤维化（影响伤口愈合）、冠",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-A4930F3693024622",
+        "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-CD146387203E8284"
+      ]
+    },
+    {
+      "source_name": "《内科学（第10版）》",
+      "source_page": "",
+      "evidence_excerpt": "唯一有效的治疗方法是进行心肺联合移植或肺移植的同时修补心脏缺损。",
+      "duplicate_count": 2,
+      "codes": [
+        "CARD-SKELETON-FULL-20260709-EVID-MANUAL-41FDF7E95EEF8FA6",
+        "CARD-SKELETON-FULL-20260709-EVID-MANUAL-F6C8763B8D73677A"
+      ]
+    }
+  ]
+}

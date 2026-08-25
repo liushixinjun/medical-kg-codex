@@ -1,0 +1,12 @@
+﻿检查项,性质,业务编码,业务名称,说明,原始数据
+鉴别诊断无规则,阻断,DIS-CARD-ARR-AF,心房颤动,鉴别诊断只有对象名称，没有鉴别要点或排除检查。,"{""disease_code"": ""DIS-CARD-ARR-AF"", ""disease_name"": ""心房颤动"", ""differential_code"": ""DDX-AUTO-3314A913596F"", ""differential_name"": ""室上性心动过速""}"
+鉴别诊断无规则,阻断,DIS-CARD-ARR-AF,心房颤动,鉴别诊断只有对象名称，没有鉴别要点或排除检查。,"{""disease_code"": ""DIS-CARD-ARR-AF"", ""disease_name"": ""心房颤动"", ""differential_code"": ""DDX-AUTO-5440BDF5C48B"", ""differential_name"": ""房性心动过速""}"
+鉴别诊断无规则,阻断,DIS-CARD-ARR-AF,心房颤动,鉴别诊断只有对象名称，没有鉴别要点或排除检查。,"{""disease_code"": ""DIS-CARD-ARR-AF"", ""disease_name"": ""心房颤动"", ""differential_code"": ""DDX-AUTO-6A0C107C77B5"", ""differential_name"": ""心房扑动""}"
+鉴别诊断无规则,阻断,DIS-CARD-ARR-SVT,室上性心动过速,鉴别诊断只有对象名称，没有鉴别要点或排除检查。,"{""disease_code"": ""DIS-CARD-ARR-SVT"", ""disease_name"": ""室上性心动过速"", ""differential_code"": ""DDX-AUTO-6A0C107C77B5"", ""differential_name"": ""心房扑动""}"
+鉴别诊断无规则,阻断,DIS-CARD-ARR-SVT,室上性心动过速,鉴别诊断只有对象名称，没有鉴别要点或排除检查。,"{""disease_code"": ""DIS-CARD-ARR-SVT"", ""disease_name"": ""室上性心动过速"", ""differential_code"": ""DDX-AUTO-C8BDFE4A4A0A"", ""differential_name"": ""房颤伴快速心室率""}"
+鉴别诊断无规则,阻断,DIS-CARD-ARR-SVT,室上性心动过速,鉴别诊断只有对象名称，没有鉴别要点或排除检查。,"{""disease_code"": ""DIS-CARD-ARR-SVT"", ""disease_name"": ""室上性心动过速"", ""differential_code"": ""DDX-AUTO-FEEFAEE3A37C"", ""differential_name"": ""室性心动过速""}"
+鉴别诊断无规则,阻断,DIS-CARD-CAD-STEMI,ST段抬高型心肌梗死,鉴别诊断只有对象名称，没有鉴别要点或排除检查。,"{""disease_code"": ""DIS-CARD-CAD-STEMI"", ""disease_name"": ""ST段抬高型心肌梗死"", ""differential_code"": ""DDX-AUTO-004BD5E4A2CE"", ""differential_name"": ""STEMI""}"
+鉴别诊断无规则,阻断,DIS-CARD-CM-ABVC,致心律失常性双心室心肌病,鉴别诊断只有对象名称，没有鉴别要点或排除检查。,"{""disease_code"": ""DIS-CARD-CM-ABVC"", ""disease_name"": ""致心律失常性双心室心肌病"", ""differential_code"": ""DDX-AUTO-AABAA7CCCDB4"", ""differential_name"": ""表型相似心肌病""}"
+鉴别诊断无规则,阻断,DIS-CARD-CM-ATRIAL,心房心肌病,鉴别诊断只有对象名称，没有鉴别要点或排除检查。,"{""disease_code"": ""DIS-CARD-CM-ATRIAL"", ""disease_name"": ""心房心肌病"", ""differential_code"": ""DDX-AUTO-7444B3D078B4"", ""differential_name"": ""继发性心房重构""}"
+鉴别诊断无规则,阻断,DIS-CARD-CM-FABRY,法布雷病心肌病,鉴别诊断只有对象名称，没有鉴别要点或排除检查。,"{""disease_code"": ""DIS-CARD-CM-FABRY"", ""disease_name"": ""法布雷病心肌病"", ""differential_code"": ""DDX-AUTO-BD24E7BE0AC4"", ""differential_name"": ""左心室肥厚相关疾病""}"
+鉴别诊断无规则,阻断,DIS-CARD-CM-NDLVCM,非扩张型左心室心肌病,鉴别诊断只有对象名称，没有鉴别要点或排除检查。,"{""disease_code"": ""DIS-CARD-CM-NDLVCM"", ""disease_name"": ""非扩张型左心室心肌病"", ""differential_code"": ""DDX-AUTO-BF20E9367F85"", ""differential_name"": ""收缩功能减低相关疾病""}"
