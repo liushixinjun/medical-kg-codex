@@ -1,0 +1,300 @@
+{
+  "scope": {
+    "主动脉和周围血管病": [
+      "DIS-CARD-AAA",
+      "DIS-CARD-AAS",
+      "DIS-CARD-AORTA-ANEURYSM",
+      "DIS-CARD-AORTIC-DISSECTION",
+      "DIS-CARD-PAD",
+      "DIS-CARD-PAD-LEAD",
+      "DIS-CARD-TBAD",
+      "DIS-CARD-VTE"
+    ],
+    "先天性心血管病": [
+      "DIS-CARD-CHD",
+      "DIS-CARD-CHD-ASD",
+      "DIS-CARD-CHD-BAV",
+      "DIS-CARD-CHD-CAF",
+      "DIS-CARD-CHD-COA",
+      "DIS-CARD-CHD-EBSTEIN",
+      "DIS-CARD-CHD-SOVA",
+      "DIS-CARD-PDA",
+      "DIS-CARD-PFO",
+      "DIS-CARD-VHD-AS",
+      "DIS-CARD-VHD-PS",
+      "DIS-CARD-VSD"
+    ],
+    "冠心病": [
+      "DIS-CARD-CAD-ACS",
+      "DIS-CARD-CAD-AMI",
+      "DIS-CARD-CAD-ATHEROSCLEROSIS",
+      "DIS-CARD-CAD-CCS",
+      "DIS-CARD-CAD-CHD",
+      "DIS-CARD-CAD-ICM",
+      "DIS-CARD-CAD-NSTEMI",
+      "DIS-CARD-CAD-OLD-MI",
+      "DIS-CARD-CAD-POST-MI-SYNDROME",
+      "DIS-CARD-CAD-SILENT-ISCHEMIA",
+      "DIS-CARD-CAD-SPASM",
+      "DIS-CARD-CAD-STABLE-ANGINA",
+      "DIS-CARD-CAD-STEMI",
+      "DIS-CARD-CAD-UA"
+    ],
+    "心力衰竭": [
+      "DIS-CARD-HF-AHF",
+      "DIS-CARD-HF-BIVENTRICULAR",
+      "DIS-CARD-HF-CHF",
+      "DIS-CARD-HF-DIALYSIS-CHF",
+      "DIS-CARD-HF-GENERAL",
+      "DIS-CARD-HF-HFmrEF",
+      "DIS-CARD-HF-HFpEF",
+      "DIS-CARD-HF-HFrEF",
+      "DIS-CARD-HF-LEFT",
+      "DIS-CARD-HF-POST-MI",
+      "DIS-CARD-HF-RIGHT"
+    ],
+    "心包疾病": [
+      "DIS-CARD-PERICARD-ACUTE",
+      "DIS-CARD-PERICARD-CONSTRICTIVE",
+      "DIS-CARD-PERICARD-EFFUSION",
+      "DIS-CARD-PERICARDITIS"
+    ],
+    "心律失常": [
+      "DIS-CARD-ARR-AF",
+      "DIS-CARD-ARR-AFL",
+      "DIS-CARD-ARR-AT",
+      "DIS-CARD-ARR-AVB",
+      "DIS-CARD-ARR-AVB1",
+      "DIS-CARD-ARR-AVB2",
+      "DIS-CARD-ARR-AVB3",
+      "DIS-CARD-ARR-AVNRT",
+      "DIS-CARD-ARR-AVRT",
+      "DIS-CARD-ARR-BBB",
+      "DIS-CARD-ARR-BRADY",
+      "DIS-CARD-ARR-BRUGADA",
+      "DIS-CARD-ARR-CPVT",
+      "DIS-CARD-ARR-ERS",
+      "DIS-CARD-ARR-LQTS",
+      "DIS-CARD-ARR-NSVT",
+      "DIS-CARD-ARR-PSVT",
+      "DIS-CARD-ARR-PVC",
+      "DIS-CARD-ARR-SAB",
+      "DIS-CARD-ARR-SB",
+      "DIS-CARD-ARR-SINUS",
+      "DIS-CARD-ARR-SND",
+      "DIS-CARD-ARR-SQTS",
+      "DIS-CARD-ARR-SVT",
+      "DIS-CARD-ARR-TDP",
+      "DIS-CARD-ARR-VA",
+      "DIS-CARD-ARR-VF",
+      "DIS-CARD-ARR-VT",
+      "DIS-CARD-ARR-WPW",
+      "DIS-CARD-SCD-ARREST",
+      "DIS-CARD-SCD-SUDDEN"
+    ],
+    "心肌病": [
+      "DIS-CARD-CM-ABVC",
+      "DIS-CARD-CM-ACM",
+      "DIS-CARD-CM-ALVC",
+      "DIS-CARD-CM-AMYLOID",
+      "DIS-CARD-CM-ARVC",
+      "DIS-CARD-CM-ATRIAL",
+      "DIS-CARD-CM-DCM",
+      "DIS-CARD-CM-FABRY",
+      "DIS-CARD-CM-GENERAL",
+      "DIS-CARD-CM-HCM",
+      "DIS-CARD-CM-NDLVCM",
+      "DIS-CARD-CM-RCM",
+      "DIS-CARD-FULMINANT-MYOCARDITIS",
+      "DIS-CARD-MYOCARDITIS"
+    ],
+    "心脏瓣膜病": [
+      "DIS-CARD-VHD",
+      "DIS-CARD-VHD-AR",
+      "DIS-CARD-VHD-AS",
+      "DIS-CARD-VHD-MR",
+      "DIS-CARD-VHD-MS",
+      "DIS-CARD-VHD-MULTI",
+      "DIS-CARD-VHD-PS",
+      "DIS-CARD-VHD-RHD",
+      "DIS-CARD-VHD-TR"
+    ],
+    "心脏骤停与心脏性猝死": [
+      "DIS-CARD-SCD-ARREST",
+      "DIS-CARD-SCD-SUDDEN"
+    ],
+    "感染性心内膜炎": [
+      "DIS-CARD-IE-PVE",
+      "DIS-CARD-INFECTIVE-ENDOCARDITIS"
+    ],
+    "肺动脉高压": [
+      "DIS-CARD-PH",
+      "DIS-CARD-PH-CHD",
+      "DIS-CARD-PH-CTD",
+      "DIS-CARD-PH-CTEPH",
+      "DIS-CARD-PH-HPAH",
+      "DIS-CARD-PH-IPAH",
+      "DIS-CARD-PH-PAH"
+    ],
+    "血脂异常与动脉粥样硬化防治": [
+      "DIS-CARD-DYSLIPIDEMIA",
+      "DIS-CARD-FH",
+      "DIS-CARD-HYPERCHOLESTEROLEMIA"
+    ],
+    "起搏治疗相关疾病": [
+      "DIS-CARD-ARR-AVB",
+      "DIS-CARD-ARR-AVB1",
+      "DIS-CARD-ARR-AVB2",
+      "DIS-CARD-ARR-AVB3",
+      "DIS-CARD-ARR-BBB",
+      "DIS-CARD-ARR-BRADY",
+      "DIS-CARD-ARR-SAB",
+      "DIS-CARD-ARR-SB",
+      "DIS-CARD-ARR-SND"
+    ],
+    "高血压": [
+      "DIS-CARD-HT",
+      "DIS-CARD-HT-CKD",
+      "DIS-CARD-HT-ELDERLY",
+      "DIS-CARD-HT-EMERGENCY",
+      "DIS-CARD-HT-ENDOCRINE",
+      "DIS-CARD-HT-MASKED",
+      "DIS-CARD-HT-PA",
+      "DIS-CARD-HT-PAROXYSMAL",
+      "DIS-CARD-HT-PRIMARY",
+      "DIS-CARD-HT-RENAL-PARENCHYMAL",
+      "DIS-CARD-HT-RENOVASCULAR",
+      "DIS-CARD-HT-RESISTANT",
+      "DIS-CARD-HT-SECONDARY",
+      "DIS-CARD-HT-URGENCY",
+      "DIS-CARD-HT-WCH",
+      "DIS-CARD-HTN-COA",
+      "DIS-CARD-HTN-EMERGENCY",
+      "DIS-CARD-HTN-PHEO"
+    ]
+  },
+  "included": [
+    {
+      "疾病大类编码": "CAT-CARD-AORTA-PAD",
+      "疾病大类名称": "主动脉和周围血管病",
+      "纳入状态": "纳入",
+      "疾病数": 8,
+      "纳入依据": "批次台账已有教材/指南解析并写入Neo4j或补充解析入库记录",
+      "疾病样例": "外周动脉疾病(DIS-CARD-PAD)；急性主动脉综合征(DIS-CARD-AAS)；主动脉夹层(DIS-CARD-AORTIC-DISSECTION)；腹主动脉瘤(DIS-CARD-AAA)；主动脉瘤(DIS-CARD-AORTA-ANEURYSM)；静脉血栓症(DIS-CARD-VTE)；下肢动脉硬化闭塞症(DIS-CARD-PAD-LEAD)；Stanford B型主动脉夹层(DIS-CARD-TBAD)"
+    },
+    {
+      "疾病大类编码": "CAT-CARD-CHD",
+      "疾病大类名称": "先天性心血管病",
+      "纳入状态": "纳入",
+      "疾病数": 12,
+      "纳入依据": "批次台账已有教材/指南解析并写入Neo4j或补充解析入库记录",
+      "疾病样例": "先天性心脏病(DIS-CARD-CHD)；主动脉瓣狭窄(DIS-CARD-VHD-AS)；卵圆孔未闭(DIS-CARD-PFO)；室间隔缺损(DIS-CARD-VSD)；三尖瓣下移畸形(DIS-CARD-CHD-EBSTEIN)；先天性主动脉缩窄(DIS-CARD-CHD-COA)；冠状动脉瘘(DIS-CARD-CHD-CAF)；肺动脉瓣狭窄(DIS-CARD-VHD-PS)；主动脉窦瘤(DIS-CARD-CHD-SOVA)；房间隔缺损(DIS-CARD-CHD-ASD)；二叶主动脉瓣(DIS-CARD-CHD-BAV)；动脉导管未闭(DIS-CARD-PDA)"
+    },
+    {
+      "疾病大类编码": "CAT-CARD-CAD",
+      "疾病大类名称": "冠心病",
+      "纳入状态": "纳入",
+      "疾病数": 14,
+      "纳入依据": "批次台账已有教材/指南解析并写入Neo4j或补充解析入库记录",
+      "疾病样例": "ST段抬高型心肌梗死(DIS-CARD-CAD-STEMI)；非ST段抬高型心肌梗死(DIS-CARD-CAD-NSTEMI)；缺血性心肌病(DIS-CARD-CAD-ICM)；隐匿性冠心病(DIS-CARD-CAD-SILENT-ISCHEMIA)；冠状动脉粥样硬化性心脏病(DIS-CARD-CAD-CHD)；急性冠脉综合征(DIS-CARD-CAD-ACS)；心肌梗死后综合征(DIS-CARD-CAD-POST-MI-SYNDROME)；慢性冠脉综合征(DIS-CARD-CAD-CCS)；稳定型心绞痛(DIS-CARD-CAD-STABLE-ANGINA)；陈旧性心肌梗死(DIS-CARD-CAD-OLD-MI)；不稳定型心绞痛(DIS-CARD-CAD-UA)；动脉粥样硬化(DIS-CARD-CAD-ATHEROSCLEROSIS)"
+    },
+    {
+      "疾病大类编码": "CAT-CARD-HF",
+      "疾病大类名称": "心力衰竭",
+      "纳入状态": "纳入",
+      "疾病数": 11,
+      "纳入依据": "批次台账已有教材/指南解析并写入Neo4j或补充解析入库记录",
+      "疾病样例": "全心衰竭(DIS-CARD-HF-BIVENTRICULAR)；透析患者慢性心力衰竭(DIS-CARD-HF-DIALYSIS-CHF)；射血分数轻度降低的心力衰竭(DIS-CARD-HF-HFmrEF)；慢性心力衰竭(DIS-CARD-HF-CHF)；心肌梗死后心力衰竭(DIS-CARD-HF-POST-MI)；射血分数保留的心力衰竭(DIS-CARD-HF-HFpEF)；急性心力衰竭(DIS-CARD-HF-AHF)；射血分数降低的心力衰竭(DIS-CARD-HF-HFrEF)；右心衰竭(DIS-CARD-HF-RIGHT)；心力衰竭(DIS-CARD-HF-GENERAL)；左心衰竭(DIS-CARD-HF-LEFT)"
+    },
+    {
+      "疾病大类编码": "CAT-CARD-PERICARD",
+      "疾病大类名称": "心包疾病",
+      "纳入状态": "纳入",
+      "疾病数": 4,
+      "纳入依据": "批次台账已有教材/指南解析并写入Neo4j或补充解析入库记录",
+      "疾病样例": "缩窄性心包炎(DIS-CARD-PERICARD-CONSTRICTIVE)；急性心包炎(DIS-CARD-PERICARD-ACUTE)；心包炎(DIS-CARD-PERICARDITIS)；心包积液及心脏压塞(DIS-CARD-PERICARD-EFFUSION)"
+    },
+    {
+      "疾病大类编码": "CAT-CARD-ARR",
+      "疾病大类名称": "心律失常",
+      "纳入状态": "纳入",
+      "疾病数": 31,
+      "纳入依据": "批次台账已有教材/指南解析并写入Neo4j或补充解析入库记录",
+      "疾病样例": "心脏性猝死(DIS-CARD-SCD-SUDDEN)；阵发性室上性心动过速(DIS-CARD-ARR-PSVT)；一度房室传导阻滞(DIS-CARD-ARR-AVB1)；缓慢性心律失常(DIS-CARD-ARR-BRADY)；尖端扭转型室性心动过速(DIS-CARD-ARR-TDP)；窦性心动过缓(DIS-CARD-ARR-SB)；二度房室传导阻滞(DIS-CARD-ARR-AVB2)；Brugada综合征(DIS-CARD-ARR-BRUGADA)；非持续性室性心动过速(DIS-CARD-ARR-NSVT)；儿茶酚胺敏感性多形性室性心动过速(DIS-CARD-ARR-CPVT)；室上性心动过速(DIS-CARD-ARR-SVT)；心房颤动(DIS-CARD-ARR-AF)"
+    },
+    {
+      "疾病大类编码": "CAT-CARD-CM",
+      "疾病大类名称": "心肌病",
+      "纳入状态": "纳入",
+      "疾病数": 14,
+      "纳入依据": "批次台账已有教材/指南解析并写入Neo4j或补充解析入库记录",
+      "疾病样例": "致心律失常性双心室心肌病(DIS-CARD-CM-ABVC)；肥厚型心肌病(DIS-CARD-CM-HCM)；心房心肌病(DIS-CARD-CM-ATRIAL)；致心律失常性右心室心肌病(DIS-CARD-CM-ARVC)；淀粉样变心肌病(DIS-CARD-CM-AMYLOID)；扩张型心肌病(DIS-CARD-CM-DCM)；致心律失常性心肌病(DIS-CARD-CM-ACM)；暴发性心肌炎(DIS-CARD-FULMINANT-MYOCARDITIS)；限制型心肌病(DIS-CARD-CM-RCM)；非扩张型左心室心肌病(DIS-CARD-CM-NDLVCM)；法布雷病心肌病(DIS-CARD-CM-FABRY)；致心律失常性左心室心肌病(DIS-CARD-CM-ALVC)"
+    },
+    {
+      "疾病大类编码": "CAT-CARD-VHD",
+      "疾病大类名称": "心脏瓣膜病",
+      "纳入状态": "纳入",
+      "疾病数": 9,
+      "纳入依据": "批次台账已有教材/指南解析并写入Neo4j或补充解析入库记录",
+      "疾病样例": "三尖瓣反流(DIS-CARD-VHD-TR)；风湿性心脏瓣膜病(DIS-CARD-VHD-RHD)；肺动脉瓣狭窄(DIS-CARD-VHD-PS)；主动脉瓣反流(DIS-CARD-VHD-AR)；心脏瓣膜病(DIS-CARD-VHD)；二尖瓣反流(DIS-CARD-VHD-MR)；多瓣膜病(DIS-CARD-VHD-MULTI)；二尖瓣狭窄(DIS-CARD-VHD-MS)；主动脉瓣狭窄(DIS-CARD-VHD-AS)"
+    },
+    {
+      "疾病大类编码": "CAT-CARD-SCD",
+      "疾病大类名称": "心脏骤停与心脏性猝死",
+      "纳入状态": "纳入",
+      "疾病数": 2,
+      "纳入依据": "批次台账已有教材/指南解析并写入Neo4j或补充解析入库记录",
+      "疾病样例": "心脏性猝死(DIS-CARD-SCD-SUDDEN)；心脏骤停(DIS-CARD-SCD-ARREST)"
+    },
+    {
+      "疾病大类编码": "CAT-CARD-IE",
+      "疾病大类名称": "感染性心内膜炎",
+      "纳入状态": "纳入",
+      "疾病数": 2,
+      "纳入依据": "批次台账已有教材/指南解析并写入Neo4j或补充解析入库记录",
+      "疾病样例": "人工瓣膜心内膜炎(DIS-CARD-IE-PVE)；感染性心内膜炎(DIS-CARD-INFECTIVE-ENDOCARDITIS)"
+    },
+    {
+      "疾病大类编码": "CAT-CARD-PH",
+      "疾病大类名称": "肺动脉高压",
+      "纳入状态": "纳入",
+      "疾病数": 7,
+      "纳入依据": "批次台账已有教材/指南解析并写入Neo4j或补充解析入库记录",
+      "疾病样例": "遗传性肺动脉高压(DIS-CARD-PH-HPAH)；先天性心脏病相关肺动脉高压(DIS-CARD-PH-CHD)；特发性肺动脉高压(DIS-CARD-PH-IPAH)；慢性血栓栓塞性肺动脉高压(DIS-CARD-PH-CTEPH)；动脉性肺动脉高压(DIS-CARD-PH-PAH)；结缔组织病相关肺动脉高压(DIS-CARD-PH-CTD)；肺动脉高压(DIS-CARD-PH)"
+    },
+    {
+      "疾病大类编码": "CAT-CARD-LIPID-ASCVD",
+      "疾病大类名称": "血脂异常与动脉粥样硬化防治",
+      "纳入状态": "纳入",
+      "疾病数": 3,
+      "纳入依据": "批次台账已有教材/指南解析并写入Neo4j或补充解析入库记录",
+      "疾病样例": "家族性高胆固醇血症(DIS-CARD-FH)；高胆固醇血症(DIS-CARD-HYPERCHOLESTEROLEMIA)；血脂异常(DIS-CARD-DYSLIPIDEMIA)"
+    },
+    {
+      "疾病大类编码": "CAT-CARD-PACING",
+      "疾病大类名称": "起搏治疗相关疾病",
+      "纳入状态": "纳入",
+      "疾病数": 9,
+      "纳入依据": "批次台账已有教材/指南解析并写入Neo4j或补充解析入库记录",
+      "疾病样例": "二度房室传导阻滞(DIS-CARD-ARR-AVB2)；窦房传导阻滞(DIS-CARD-ARR-SAB)；一度房室传导阻滞(DIS-CARD-ARR-AVB1)；三度房室传导阻滞(DIS-CARD-ARR-AVB3)；房室传导阻滞(DIS-CARD-ARR-AVB)；缓慢性心律失常(DIS-CARD-ARR-BRADY)；窦性心动过缓(DIS-CARD-ARR-SB)；束支传导阻滞(DIS-CARD-ARR-BBB)；窦房结功能障碍(DIS-CARD-ARR-SND)"
+    },
+    {
+      "疾病大类编码": "CAT-CARD-HTN",
+      "疾病大类名称": "高血压",
+      "纳入状态": "纳入",
+      "疾病数": 18,
+      "纳入依据": "批次台账已有教材/指南解析并写入Neo4j或补充解析入库记录",
+      "疾病样例": "继发性高血压(DIS-CARD-HT-SECONDARY)；老年高血压(DIS-CARD-HT-ELDERLY)；原发性高血压(DIS-CARD-HT-PRIMARY)；白大衣高血压(DIS-CARD-HT-WCH)；内分泌性高血压(DIS-CARD-HT-ENDOCRINE)；慢性肾脏病合并高血压(DIS-CARD-HT-CKD)；难治性高血压(DIS-CARD-HT-RESISTANT)；发作性高血压(DIS-CARD-HT-PAROXYSMAL)；隐匿性高血压(DIS-CARD-HT-MASKED)；肾实质性高血压(DIS-CARD-HT-RENAL-PARENCHYMAL)；高血压急症(DIS-CARD-HT-EMERGENCY)；肾血管性高血压(DIS-CARD-HT-RENOVASCULAR)"
+    }
+  ],
+  "excluded": [
+    {
+      "疾病大类编码": "CAT-CARD-NEUROSIS",
+      "疾病大类名称": "心血管神经症",
+      "纳入状态": "暂不纳入",
+      "疾病数": 1,
+      "原因": "本轮按已解析大类终验；台账未见该大类正式指南解析收口记录",
+      "疾病样例": "心血管神经症(DIS-CARD-NEUROSIS)"
+    }
+  ]
+}

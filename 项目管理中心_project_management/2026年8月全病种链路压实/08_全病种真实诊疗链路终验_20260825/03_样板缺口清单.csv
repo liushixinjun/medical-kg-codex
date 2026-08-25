@@ -1,0 +1,106 @@
+﻿问题类别,疾病编码,疾病名称,对象类型,对象名称,问题说明,处理建议
+标准诊断阻断,DIS-CARD-TBAD,Stanford B型主动脉夹层,Disease,Stanford B型主动脉夹层,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-AORTIC-DISSECTION,主动脉夹层,Disease,主动脉夹层,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-AORTA-ANEURYSM,主动脉瘤,Disease,主动脉瘤,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-PAD,外周动脉疾病,Disease,外周动脉疾病,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-AAS,急性主动脉综合征,Disease,急性主动脉综合征,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-AAA,腹主动脉瘤,Disease,腹主动脉瘤,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-VTE,静脉血栓症,Disease,静脉血栓症,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-CHD-EBSTEIN,三尖瓣下移畸形,Disease,三尖瓣下移畸形,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-CHD-SOVA,主动脉窦瘤,Disease,主动脉窦瘤,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-CHD-BAV,二叶主动脉瓣,Disease,二叶主动脉瓣,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-CHD-COA,先天性主动脉缩窄,Disease,先天性主动脉缩窄,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-CHD,先天性心脏病,Disease,先天性心脏病,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-PFO,卵圆孔未闭,Disease,卵圆孔未闭,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-CAD-POST-MI-SYNDROME,心肌梗死后综合征,Disease,心肌梗死后综合征,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-HF-HFpEF,射血分数保留的心力衰竭,Disease,射血分数保留的心力衰竭,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-HF-HFmrEF,射血分数轻度降低的心力衰竭,Disease,射血分数轻度降低的心力衰竭,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-HF-HFrEF,射血分数降低的心力衰竭,Disease,射血分数降低的心力衰竭,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-HF-POST-MI,心肌梗死后心力衰竭,Disease,心肌梗死后心力衰竭,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-HF-DIALYSIS-CHF,透析患者慢性心力衰竭,Disease,透析患者慢性心力衰竭,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-PERICARD-EFFUSION,心包积液及心脏压塞,Disease,心包积液及心脏压塞,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-ARR-AVB1,一度房室传导阻滞,Disease,一度房室传导阻滞,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-ARR-AVB3,三度房室传导阻滞,Disease,三度房室传导阻滞,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-ARR-AVB2,二度房室传导阻滞,Disease,二度房室传导阻滞,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-SCD-SUDDEN,心脏性猝死,Disease,心脏性猝死,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-SCD-ARREST,心脏骤停,Disease,心脏骤停,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-ARR-ERS,早期复极综合征,Disease,早期复极综合征,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-ARR-SND,窦房结功能障碍,Disease,窦房结功能障碍,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-ARR-BRADY,缓慢性心律失常,Disease,缓慢性心律失常,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-VHD-MULTI,多瓣膜病,Disease,多瓣膜病,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-VHD-RHD,风湿性心脏瓣膜病,Disease,风湿性心脏瓣膜病,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-PH-CHD,先天性心脏病相关肺动脉高压,Disease,先天性心脏病相关肺动脉高压,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-PH-PAH,动脉性肺动脉高压,Disease,动脉性肺动脉高压,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-PH-CTD,结缔组织病相关肺动脉高压,Disease,结缔组织病相关肺动脉高压,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-HT-ENDOCRINE,内分泌性高血压,Disease,内分泌性高血压,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-HT-PA,原发性醛固酮增多症,Disease,原发性醛固酮增多症,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-HT-PAROXYSMAL,发作性高血压,Disease,发作性高血压,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-HTN-PHEO,嗜铬细胞瘤和副神经节瘤,Disease,嗜铬细胞瘤和副神经节瘤,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-HT-CKD,慢性肾脏病合并高血压,Disease,慢性肾脏病合并高血压,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-HT-ELDERLY,老年高血压,Disease,老年高血压,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-HT-MASKED,隐匿性高血压,Disease,隐匿性高血压,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+标准诊断阻断,DIS-CARD-HTN-EMERGENCY,高血压急症和亚急症,Disease,高血压急症和亚急症,具体诊断/分型缺少标准诊断映射，不能回填EMR。,补充CDSS标准诊断映射后才允许回填EMR。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-AVB1,一度房室传导阻滞,ExamItem,心脏电生理检查,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-AVB3,三度房室传导阻滞,ExamItem,心脏电生理检查,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-CAD-UA,不稳定型心绞痛,Procedure,经皮冠状动脉介入治疗,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-HF-BIVENTRICULAR,全心衰竭,LabItem,利钠肽,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-HF-RIGHT,右心衰竭,LabItem,利钠肽,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-SVT,室上性心动过速,ExamItem,12导联心电图,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-SVT,室上性心动过速,ExamItem,心脏电生理检查,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-VA,室性心律失常,LabItem,肾功能与电解质,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-PVC,室性期前收缩,LabItem,肾功能与电解质,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-HF-HFpEF,射血分数保留的心力衰竭,LabItem,利钠肽,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-HF-HFmrEF,射血分数轻度降低的心力衰竭,LabItem,利钠肽,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-HF-HFrEF,射血分数降低的心力衰竭,LabItem,利钠肽,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-TDP,尖端扭转型室性心动过速,LabItem,肾功能与电解质,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-HF-LEFT,左心衰竭,LabItem,利钠肽,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-VF,心室扑动与心室颤动,LabItem,肾功能与电解质,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-AFL,心房扑动,ExamItem,12导联心电图,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-AFL,心房扑动,ExamItem,心脏电生理检查,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-AF,心房颤动,ExamItem,12导联心电图,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-AF,心房颤动,ExamItem,事件记录仪,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-AF,心房颤动,Medication,地尔硫卓,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：candidate_conflict,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-AF,心房颤动,Procedure,外科迷宫手术,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-AF,心房颤动,Procedure,房室结消融,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-HF-POST-MI,心肌梗死后心力衰竭,LabItem,利钠肽,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-SCD-SUDDEN,心脏性猝死,LabItem,肾功能与电解质,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-SCD-ARREST,心脏骤停,LabItem,肾功能与电解质,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-CAD-ACS,急性冠脉综合征,ExamItem,12导联心电图,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-HF-AHF,急性心力衰竭,LabItem,利钠肽,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-CAD-CCS,慢性冠脉综合征,ExamItem,12导联心电图,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-CAD-CCS,慢性冠脉综合征,Medication,硝酸甘油,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：candidate_conflict,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-HF-CHF,慢性心力衰竭,LabItem,利钠肽,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-AVB,房室传导阻滞,ExamItem,心脏电生理检查,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-AVRT,房室折返性心动过速,ExamItem,12导联心电图,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-AVRT,房室折返性心动过速,ExamItem,心脏电生理检查,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-AVNRT,房室结折返性心动过速,ExamItem,12导联心电图,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-AVNRT,房室结折返性心动过速,ExamItem,心脏电生理检查,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-AT,房性心动过速,ExamItem,12导联心电图,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-AT,房性心动过速,ExamItem,心脏电生理检查,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-CM-DCM,扩张型心肌病,Procedure,心脏再同步治疗装置植入术,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-CM-DCM,扩张型心肌病,Procedure,植入式心律转复除颤器置入术,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-VT,持续性室性心动过速,LabItem,肾功能与电解质,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-VT,持续性室性心动过速,Medication,普罗帕酮,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：candidate_conflict,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-VT,持续性室性心动过速,Medication,普萘洛尔,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：candidate_conflict,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-VT,持续性室性心动过速,Procedure,临时心脏起搏术,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-VT,持续性室性心动过速,Procedure,同步直流电复律,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-BBB,束支传导阻滞,ExamItem,心脏电生理检查,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-SB,窦性心动过缓,ExamItem,心脏电生理检查,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-SND,窦房结功能障碍,ExamItem,心脏电生理检查,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-BRADY,缓慢性心律失常,ExamItem,心脏电生理检查,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-CM-HCM,肥厚型心肌病,Procedure,室间隔切除术,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-CM-HCM,肥厚型心肌病,Procedure,植入式心律转复除颤器置入术,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-CM-HCM,肥厚型心肌病,Procedure,酒精室间隔消融术,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-CM-ACM,致心律失常性心肌病,Procedure,植入式心律转复除颤器置入术,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-HF-DIALYSIS-CHF,透析患者慢性心力衰竭,LabItem,利钠肽,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-LQTS,长QT间期综合征,LabItem,肾功能与电解质,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-LQTS,长QT间期综合征,Medication,普萘洛尔,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：candidate_conflict,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-LQTS,长QT间期综合征,Procedure,临时心脏起搏术,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-CM-NDLVCM,非扩张型左心室心肌病,Procedure,植入式心律转复除颤器置入术,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-WPW,预激综合征,ExamItem,12导联心电图,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-WPW,预激综合征,ExamItem,心脏电生理检查,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-WPW,预激综合征,Medication,普罗帕酮,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：candidate_conflict,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-WPW,预激综合征,Medication,索他洛尔,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：candidate_conflict,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-WPW,预激综合征,Medication,维拉帕米,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：candidate_conflict,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-WPW,预激综合征,Procedure,三尖瓣环峡部消融,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。
+正式推荐动作标准字典未闭环,DIS-CARD-ARR-WPW,预激综合征,TreatmentItem,颈动脉窦按摩,正式推荐动作缺 cdss_dict_id 或标准编码；当前字典状态：pending_dictionary_registration,优先匹配CDSS标准字典；缺失时进入待注册清单，不能伪造字典ID。

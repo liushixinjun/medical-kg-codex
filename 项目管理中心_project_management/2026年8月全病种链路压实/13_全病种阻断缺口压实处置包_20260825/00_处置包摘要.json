@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-08-25",
+  "source_audit_dir": "项目管理中心_project_management\\2026年8月全病种链路压实\\11_全病种真实诊疗链路终验_修复后_20260825",
+  "disease_count": 131,
+  "formal_recommendation_count": 208,
+  "blocking_gap_total": 105,
+  "standard_diagnosis_blocking_count": 41,
+  "formal_action_dictionary_gap_rows": 64,
+  "formal_action_dictionary_gap_unique_nodes": 22,
+  "formal_action_gap_by_status": {
+    "pending_dictionary_registration": 56,
+    "candidate_conflict": 8
+  },
+  "formal_action_gap_by_entity_type": {
+    "ExamItem": 23,
+    "Procedure": 14,
+    "LabItem": 18,
+    "Medication": 8,
+    "TreatmentItem": 1
+  },
+  "non_orderable_rows": 134,
+  "non_orderable_unique_nodes": 17,
+  "non_orderable_by_status": {
+    "needs_specific_exam": 93,
+    "needs_lab_subitem_drilldown": 12,
+    "medication_class_not_orderable": 20,
+    "needs_disease_scenario_split": 1,
+    "non_orderable_category": 6,
+    "needs_drug_form_route": 2
+  },
+  "direct_oracle_original_dictionary_write": false,
+  "neo4j_writes_this_round": [
+    "P6确定性收口修复：0 changed because already clean",
+    "P6语义等价标准字典收口：3 diagnosis + 1 action"
+  ],
+  "not_executed_due_to_missing_env": [
+    "P6检验细项父级路径收口：缺少 ORACLE_PASSWORD/CDSS_ORACLE_PASSWORD，仅停止未写库"
+  ]
+}

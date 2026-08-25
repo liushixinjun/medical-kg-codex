@@ -1,0 +1,22 @@
+{
+  "mode": "write",
+  "before": {
+    "direct_examplan_to_labsubitem": 0,
+    "section_prefix_definition": 0,
+    "known_composite_sign_remaining": 0
+  },
+  "write_result": {
+    "executed_at": "2026-08-25 09:10:28",
+    "old_path_rel_deleted": 0,
+    "old_path_plan_to_labitem_created_or_matched": 0,
+    "old_path_blocked_no_parent": 0,
+    "definition_renamed": 0,
+    "composite_sign_created_or_matched": 0,
+    "composite_sign_deleted": 0
+  },
+  "after": {
+    "direct_examplan_to_labsubitem": 0,
+    "section_prefix_definition": 0,
+    "known_composite_sign_remaining": 0
+  }
+}

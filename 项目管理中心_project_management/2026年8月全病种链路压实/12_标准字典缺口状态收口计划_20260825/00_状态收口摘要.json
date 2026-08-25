@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-08-25 09:14:20",
+  "mode": "dry_run",
+  "validated_mapping_count": 0,
+  "review_count": 22,
+  "neo4j_written": false,
+  "oracle_original_dictionary_written": false,
+  "oracle_review_table_written": false,
+  "write_result": {
+    "validated_mapped": 0,
+    "review_marked": 0,
+    "review_rows_written": 0
+  }
+}

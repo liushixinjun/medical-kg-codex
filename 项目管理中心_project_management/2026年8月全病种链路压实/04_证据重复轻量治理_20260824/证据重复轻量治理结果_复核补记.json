@@ -1,0 +1,43 @@
+{
+  "record_time": "2026-08-25 00:20:00",
+  "record_type": "复核补记",
+  "scope": "服务器Neo4j心血管内科专科知识图谱",
+  "reason": "全量证据去重脚本执行速度过慢，改用轻量治理路径；轻量治理过程完成核心数据库清理后被中断，故以服务器复核结果补记。",
+  "before_global_audit": {
+    "node_count": 32780,
+    "relationship_count": 138569,
+    "knowledge_integrity_blockers": 236,
+    "non_kgnode_count": 2,
+    "duplicate_evidence_group_count": 223,
+    "differential_without_rule_count": 11
+  },
+  "evidence_deduplication": {
+    "duplicate_evidence_group_count_before": 223,
+    "involved_evidence_node_count_before": 774,
+    "duplicate_evidence_node_count_before": 551,
+    "duplicate_evidence_group_count_after": 0,
+    "duplicate_evidence_node_count_after": 0,
+    "rollback_package": "证据重复轻量治理回滚包.json.gz",
+    "deletion_policy": "先迁移关系，再物理删除重复Evidence节点；以保留节点承接原关系。"
+  },
+  "after_evidence_deduplication": {
+    "node_count": 32229,
+    "relationship_count": 138144,
+    "remaining_knowledge_integrity_blocker_type": "鉴别诊断无规则",
+    "remaining_knowledge_integrity_blocker_count": 11
+  },
+  "after_full_closure": {
+    "node_count": 32229,
+    "relationship_count": 138153,
+    "knowledge_integrity_status": "通过",
+    "formal_cdss_recommendation_status": "通过",
+    "knowledge_integrity_blockers": 0,
+    "formal_cdss_recommendation_blockers": 0,
+    "formal_source_adjudication_count": 212,
+    "final_audit_dir": "../06_全局修复后终验_20260825"
+  },
+  "notes": [
+    "本文件不包含数据库密码、账号或连接串。",
+    "最终结论以06_全局修复后终验_20260825目录下双口径安全审计结果为准。"
+  ]
+}
