@@ -1,0 +1,6008 @@
+{
+  "existing_structures": [
+    {
+      "disease_code": "DIS-CARD-CM-ACM",
+      "disease_name": "致心律失常性心肌病",
+      "relation_type": "differentiates_from",
+      "target_labels": [
+        "KGNode",
+        "DifferentialDiagnosis"
+      ],
+      "target_code": "DDX-CARD-6AB732E54DB3",
+      "target_name": "冠心病",
+      "target_properties": {
+        "scope_type": "疾病大类",
+        "schema_version": "V1.15",
+        "entityType": "DifferentialDiagnosis",
+        "aliases": [
+          "冠状动脉疾病",
+          "冠状动脉粥样硬化性心脏病"
+        ],
+        "type_label": "DifferentialDiagnosis",
+        "primary_label": "KGNode",
+        "id": "KG_DDX_CARD_6AB732E54DB3",
+        "entityCategory": "诊断",
+        "canonical_labels": [
+          "KGNode",
+          "DifferentialDiagnosis"
+        ],
+        "foundation_import_source": "BATCH-CARD-CM-20260622-001",
+        "name": "冠心病",
+        "formal_cdss_ready": true,
+        "review_status": "approved",
+        "merge_status": "validated",
+        "formal_ready_at": "2026-07-14T13:54:00",
+        "scope_target": "血脂异常、动脉粥样硬化、ASCVD风险防治",
+        "name_en": "Coronary heart disease",
+        "abbr": "CHD",
+        "code": "DDX-CARD-6AB732E54DB3",
+        "preferred_name": "冠心病",
+        "batch_id": "20260715_血脂异常动脉粥样硬化防治正式解析",
+        "display_name": "冠心病",
+        "updated_at": "2026-07-14T13:54:00",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260714_心肌病总精修",
+        "cdss_release_level": "formal"
+      },
+      "rules": [
+        {
+          "description": null,
+          "name": null,
+          "code": null
+        }
+      ],
+      "evidence": [
+        {
+          "source_page": "259",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F3A3642C0C812A4A20F5-HT"
+        },
+        {
+          "source_page": "5",
+          "source_name": "泛血管疾病患者血脂管理专家共识（2025版）.pdf",
+          "evidence_id": "EVD-F3CDFAF058B27A56D5DD-FH"
+        },
+        {
+          "source_page": "786",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E9E952E8EF90B0F82431-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "814",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E5E8BF68E1C606B7BA49-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D69D429CC105927B53AD-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "787",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E11610E954D8B5120EDE-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BDDC28BBB4C76D45ADBC-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-A74440FC2E0A0D9A49A3-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-6B80E07F31F2EDD2CDAB-CHD"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-8719402DC94C9DE88466-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "20",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-7B90B634CC77A85BADBE-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "19",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-76038E82B4A9E1770E8A-FH"
+        },
+        {
+          "source_page": "7",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-8C13E44CC7DC6D6D119E-FH"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-8AC9E3EE1ABDD2C4B04B-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-7FF041D0C3D1ECDBB76B-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "794",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-1CB89401408635ADE295-HT"
+        },
+        {
+          "source_page": "14",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-2B4E5FD15159B9F88556-HYPERCHOLESTEROLEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-649E549983E2D0944723-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "788",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-3008E1DE0621F6FBA24B-HT"
+        },
+        {
+          "source_page": "2",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-14750CB99FD5FECD789F-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "23",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-44A6857E9606A69FC0CF-FH"
+        },
+        {
+          "source_page": "23",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-6D9AFF24B631B57B7579-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "40",
+          "source_name": "DCM AHA 2016.pdf",
+          "evidence_id": "EVD-6B86DD83EA5A40FC48EA-ACM"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-0E0DB68A83C70277CA1E-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "785",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-0B68C8A888D1B4357741-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-04C55826AD37BBB4B748-FH"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-0580A467915451274C5A-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-6A510442902B8C35B153-CHD"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-7ADF93F91BC18C6278E0-PAD"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-75BA78B92C6E3A070657-PAD"
+        },
+        {
+          "source_page": "197",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BA733DE3A3E2350CD488-PAD"
+        },
+        {
+          "source_page": "5",
+          "source_name": "中国 Stanford B 型主动脉夹层诊断和治疗2022.pdf",
+          "evidence_id": "EVD-88C977A0496CCBD59066-PAD"
+        },
+        {
+          "source_page": "294",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-46683964152E5535D749-HT"
+        },
+        {
+          "source_page": "239",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-7874B2BF72F4B3556F05-PVC"
+        },
+        {
+          "source_page": "232",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F80661754E736C1801C2-AF"
+        },
+        {
+          "source_page": "8",
+          "source_name": "2024 中国成人暴发性心肌炎诊断和治疗指南.pdf",
+          "evidence_id": "EVD-39110704295544AB958E-MYOCARDITIS"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-FDCAA5B62C8C2667E320-PERICARDITIS"
+        },
+        {
+          "source_page": "224",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-4DF6EEA103CFDD3D1193-BBB"
+        },
+        {
+          "source_page": "272",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-70A672875FB90E7D7A27-ICM"
+        },
+        {
+          "source_page": "222",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-213FB6451C1E4AFE4B36-SAB"
+        },
+        {
+          "source_page": "230",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BB898761ADEFF4C57A25-AVB"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-B4E9FFC5EE6465D204BC-PERICARDITIS"
+        },
+        {
+          "source_page": "212",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-987569B72A611CE42325-CHD"
+        },
+        {
+          "source_page": "60",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D95E22BF8C5FCA8A292C-PH"
+        },
+        {
+          "source_page": "24",
+          "source_name": "PH CN 2021.pdf",
+          "evidence_id": "EVD-5FD817C81032408B4D0E-PH"
+        },
+        {
+          "source_page": "171",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-31698B19B37B03C71973-AVB"
+        },
+        {
+          "source_page": "815",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-96A13DE890A0EE65651B-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "29",
+          "source_name": "PH CN 2021.pdf",
+          "evidence_id": "EVD-56BEF8636D3F56E444EE-PAH"
+        },
+        {
+          "source_page": "1",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-56344CEB7D7CFB6E6198-ICM"
+        },
+        {
+          "source_page": "204",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-26C3C19278144232DE1C-CHD"
+        },
+        {
+          "source_page": "265",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-3BBEC2D46A322B320230-BBB"
+        },
+        {
+          "source_page": "263",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-C3CB241ED9412E86D507-CHD"
+        },
+        {
+          "source_page": "274",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-84D82E69547D4D4E8569-MR"
+        },
+        {
+          "source_page": "798",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-9F9CE2FFCBE7A8A1C303-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "349",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-1417CB6755A66242A35C-CHD"
+        },
+        {
+          "source_page": "16",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-ED629BC8BA5B3721964A-ARVC"
+        },
+        {
+          "source_page": "3",
+          "source_name": "中国 经导管主动脉瓣置换术临床实践指南（2023版）.pdf",
+          "evidence_id": "EVD-EDB904029B30F2F41A6A-AS"
+        },
+        {
+          "source_page": "976",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F33F3D7955AE28702E0B-ARVC"
+        },
+        {
+          "source_page": "972",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-019FE93DC48C8CD8DAC2-CCS"
+        },
+        {
+          "source_page": "231",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-B9CAB7EC30CAB04B08EC-BBB"
+        },
+        {
+          "source_page": "341",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-AC264AB34A5145514043-RHD"
+        },
+        {
+          "source_page": "12",
+          "source_name": "中国 经导管主动脉瓣置换术临床路径专家共识（2024 版）.pdf",
+          "evidence_id": "EVD-8120D082E0867664FD90-AS"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-24AAD8B5E5FE7627EB78-PVC"
+        },
+        {
+          "source_page": "208",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-81F0EECE0B4926177715-AS"
+        },
+        {
+          "source_page": "68",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-FF6601695AE6A9C6624E-ARVC"
+        },
+        {
+          "source_page": "15",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-FEC5483CB7E25D200A90-HCM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-F7F59E7B0FAAF79AE14A-HCM"
+        },
+        {
+          "source_page": "5",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-C41B68EB0E2A73FC1583-ICM"
+        },
+        {
+          "source_page": "359",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D96D265F9E4E68E15F8C-ARREST"
+        },
+        {
+          "source_page": "19",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-CA5C06442612964573E0-ACM"
+        },
+        {
+          "source_page": "375",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-AB5D1C77A193D7FEACBC-VHD"
+        },
+        {
+          "source_page": "8",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-F1C075DF7D18CC667C1E-ICM"
+        },
+        {
+          "source_page": "6",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-9A48E981C616E518454B-ACM"
+        },
+        {
+          "source_page": "68",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-4BC0142953B346C1151871A1"
+        },
+        {
+          "source_page": "18",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-D81B5110E5DAED296665-HCM"
+        },
+        {
+          "source_page": "75",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-C4B85D0F348E4A3467FA-HCM"
+        },
+        {
+          "source_page": "718",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D8EA2C0114E2AB8A8856-AF"
+        },
+        {
+          "source_page": "6",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-CF497DD49ED9FFA43088-ACM"
+        },
+        {
+          "source_page": "39",
+          "source_name": "DCM AHA 2016.pdf",
+          "evidence_id": "EVD-A3AA6CC1DBB44A429F48-DCM"
+        },
+        {
+          "source_page": "36",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-7C107D91E06FFEAFF9FFD20F"
+        },
+        {
+          "source_page": "12",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-B7158EA8F42BD3742755-ATRIAL"
+        },
+        {
+          "source_page": "5",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-B099D47B3C04791193F6-ICM"
+        },
+        {
+          "source_page": "340",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BFB3CBAF2B3AA3323379-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-B20E0ABA092EBED3E733-ICM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-9871EAD4F0A6AF8F6980-AMYLOID"
+        },
+        {
+          "source_page": "7",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-BB9A8D3631FE99170D28-HCM"
+        },
+        {
+          "source_page": "207",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F017D31EF6878106540E-ARVC"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-FE66F93BD07FEE13ED02-CHD"
+        },
+        {
+          "source_page": "75",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-EE8D9BBD063B8D42D3D2-HCM"
+        },
+        {
+          "source_page": "9",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-C8250F84A40E395A69D0-ICM"
+        },
+        {
+          "source_page": "8",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-2326AF857AD6D0003982-ARVC"
+        },
+        {
+          "source_page": "18",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-7463A47E870217ED6976-HCM"
+        },
+        {
+          "source_page": "9",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-8721E54B3812D0E997DF-HCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "成人法布雷病心肌病诊断与治疗中国专家共识.pdf",
+          "evidence_id": "EVD-30E6060A7D444D3FDD14-HCM"
+        },
+        {
+          "source_page": "36",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-7041347481EA824F5601-ARVC"
+        },
+        {
+          "source_page": "68",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-6F8E0A473E5CAC418486-ARVC"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-132E978331D8A717950C-AMYLOID"
+        },
+        {
+          "source_page": "377",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-TB-768C920AFBBFC4222902-VT"
+        },
+        {
+          "source_page": "210",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-97E7FAE66E8A1003A81B-RHD"
+        },
+        {
+          "source_page": "12",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-773C089A9E762740DADF-ATRIAL"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-A01BEEF00EA868356E33-FH"
+        },
+        {
+          "source_page": "2",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-38AB8FC55FAAE68FCD7F-ICM"
+        },
+        {
+          "source_page": "8",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-287A4450D605D3448BD2-ICM"
+        },
+        {
+          "source_page": "37",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-454486CC432E9B944C28DB70"
+        },
+        {
+          "source_page": "37",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-1750A3CB03E530878754-ARVC"
+        },
+        {
+          "source_page": "37",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-9726983EE0BFBFF0C893-ARVC"
+        },
+        {
+          "source_page": "205",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-92CA389907DDB492839C-AMYLOID"
+        },
+        {
+          "source_page": "28",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-961396ED0730275E56D0-ICM"
+        },
+        {
+          "source_page": "13",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-7E532BD8A74BCB9B8E92-DCM"
+        },
+        {
+          "source_page": "75",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-5229ADA2C7D16091BAA495F1"
+        },
+        {
+          "source_page": "6",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-066552C60477CD73B70D-ALVC"
+        },
+        {
+          "source_page": "12",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-0EBC528F9F2374DA5B28-ATRIAL"
+        },
+        {
+          "source_page": "2",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-0A6493CD808574838C1E-ICM"
+        },
+        {
+          "source_page": "5",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-0A8CD35563AD2A5CAEAF-ICM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-05E0D434ACF6DAEEA231-HCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-082FAB24E902B7D2BFB8-DCM"
+        },
+        {
+          "source_page": "16",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-25F6D72C3F2CC16D8FA0AF61"
+        },
+        {
+          "source_page": "16",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-08991F388B907D165EF8-ARVC"
+        },
+        {
+          "source_page": "19",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-06129C9680EC36CFC688-HCM"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ACM",
+      "disease_name": "致心律失常性心肌病",
+      "relation_type": "differentiates_from",
+      "target_labels": [
+        "KGNode",
+        "DifferentialDiagnosis"
+      ],
+      "target_code": "DDX-CARD-A07BA907BDB0",
+      "target_name": "心肌炎",
+      "target_properties": {
+        "source_type": "authoritative_textbook",
+        "scope_type": "disease",
+        "schema_version": "V1.15",
+        "entityType": "DifferentialDiagnosis",
+        "aliases": [
+          "炎症性心肌病"
+        ],
+        "type_label": "DifferentialDiagnosis",
+        "primary_label": "KGNode",
+        "id": "KG_DDX_CARD_A07BA907BDB0",
+        "entityCategory": "诊断",
+        "canonical_labels": [
+          "KGNode",
+          "DifferentialDiagnosis"
+        ],
+        "disease_name": "ST段抬高型心肌梗死",
+        "foundation_import_source": "BATCH-CARD-CM-20260622-001",
+        "name": "心肌炎",
+        "created_at": "2026-07-12 21:30:00",
+        "knowledge_layer": "textbook_skeleton",
+        "updated_by": "20260716_内科学心血管骨架V1冻结修复",
+        "formal_cdss_ready": true,
+        "skill_version": "V2.1-STEMI-textbook-refine",
+        "review_status": "ai_prechecked",
+        "merge_status": "delta_ready",
+        "disease_code": "DIS-CARD-CAD-STEMI",
+        "formal_ready_at": "2026-07-14T13:54:00",
+        "scope_target": "ST段抬高型心肌梗死",
+        "name_en": "Myocarditis",
+        "skeleton_slot": "differential_diagnosis",
+        "code": "DDX-CARD-A07BA907BDB0",
+        "source_section": "第三篇 循环系统疾病 / 第四节 急性冠脉综合征 / 二、急性ST段抬高型心肌梗死",
+        "preferred_name": "心肌炎",
+        "batch_id": "BATCH-CARD-CAD-STEMI-20260712-001",
+        "display_name": "心肌炎",
+        "updated_at": "2026-07-16 22:18:01",
+        "source_authority": "《内科学（第10版）》",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260714_心肌病总精修",
+        "skeleton_slot_status": "covered_from_textbook",
+        "cdss_release_level": "formal"
+      },
+      "rules": [
+        {
+          "description": null,
+          "name": null,
+          "code": null
+        }
+      ],
+      "evidence": [
+        {
+          "source_page": "251-252",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-CARD-STEMI-TEXTBOOK-309681CCAE"
+        },
+        {
+          "source_page": "8",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-F3C422CF5F35620C25C0-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-FB421FFB16F4732DED5C-HCM"
+        },
+        {
+          "source_page": "311",
+          "source_name": "《内科学》第10版",
+          "evidence_id": "EVD-TB-5908340B73B73B1642EC-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-F907E68F0C0DF4E636BD-DCM"
+        },
+        {
+          "source_page": "309",
+          "source_name": "《内科学》第10版",
+          "evidence_id": "EVD-TB-A1F7BDE628D49B661120-DCM"
+        },
+        {
+          "source_page": "14",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-F595B0717C94F223AFC9-DCM"
+        },
+        {
+          "source_page": "8",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-562A1F9E177146735724-HCM"
+        },
+        {
+          "source_page": "212",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-987569B72A611CE42325-CHD"
+        },
+        {
+          "source_page": "2",
+          "source_name": "左心室肥厚诊断和治疗临床路径中国专家共识2023.pdf",
+          "evidence_id": "EVD-CE95CF30E30F89DC2E82-AMYLOID"
+        },
+        {
+          "source_page": "3",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-E0C41D565D25B6F43601-AMYLOID"
+        },
+        {
+          "source_page": "6",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-ABC1875F3DE11AAB078A-ACM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-21B8D41CA943183BD0BB-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-2F09B32C737BF164BDB5-DCM"
+        },
+        {
+          "source_page": "29",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-74C08FDA665F90308028-ATRIAL"
+        },
+        {
+          "source_page": "3",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-1A44D66AC5036A5DAF96-DCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-45940BDBB5BAB828C2C3-DCM"
+        },
+        {
+          "source_page": "311",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E58570B4D59D7F3C1656-DCM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-7AE0B3CA7A1063A0E475-DCM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-B7399D3F6F6AE29606B2-ARVC"
+        },
+        {
+          "source_page": "32",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-3653EBEB989691E13537-ACM"
+        },
+        {
+          "source_page": "13",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-7E532BD8A74BCB9B8E92-DCM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "肥厚型心肌病激发_负荷超声心动图临床应用指南(2024版).pdf",
+          "evidence_id": "EVD-4640EDB1B71FF317087B-HCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-9119B6933BB04EEC6F7D-DCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-EA12FDB1586C16E92E2D-RCM"
+        },
+        {
+          "source_page": "317",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-DE49120F29505C5D60B1-ICM"
+        },
+        {
+          "source_page": "207",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F017D31EF6878106540E-ARVC"
+        },
+        {
+          "source_page": "309",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-A1F7BDE628D49B661120-ARVC"
+        },
+        {
+          "source_page": "9",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-E2384B636798D39DA53A-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-B2DCA968AD2CBCC06D55-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-CEB1E0D11EF218449196-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-9D9366D42AA49B403F52-RCM"
+        },
+        {
+          "source_page": "32",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-A0444F2C80D411061108-DCM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-132E978331D8A717950C-AMYLOID"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ALVC",
+      "disease_name": "致心律失常性左心室心肌病",
+      "relation_type": "differentiates_from",
+      "target_labels": [
+        "KGNode",
+        "DifferentialDiagnosis"
+      ],
+      "target_code": "DDX-CARD-6AB732E54DB3",
+      "target_name": "冠心病",
+      "target_properties": {
+        "scope_type": "疾病大类",
+        "schema_version": "V1.15",
+        "entityType": "DifferentialDiagnosis",
+        "aliases": [
+          "冠状动脉疾病",
+          "冠状动脉粥样硬化性心脏病"
+        ],
+        "type_label": "DifferentialDiagnosis",
+        "primary_label": "KGNode",
+        "id": "KG_DDX_CARD_6AB732E54DB3",
+        "entityCategory": "诊断",
+        "canonical_labels": [
+          "KGNode",
+          "DifferentialDiagnosis"
+        ],
+        "foundation_import_source": "BATCH-CARD-CM-20260622-001",
+        "name": "冠心病",
+        "formal_cdss_ready": true,
+        "review_status": "approved",
+        "merge_status": "validated",
+        "formal_ready_at": "2026-07-14T13:54:00",
+        "scope_target": "血脂异常、动脉粥样硬化、ASCVD风险防治",
+        "name_en": "Coronary heart disease",
+        "abbr": "CHD",
+        "code": "DDX-CARD-6AB732E54DB3",
+        "preferred_name": "冠心病",
+        "batch_id": "20260715_血脂异常动脉粥样硬化防治正式解析",
+        "display_name": "冠心病",
+        "updated_at": "2026-07-14T13:54:00",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260714_心肌病总精修",
+        "cdss_release_level": "formal"
+      },
+      "rules": [
+        {
+          "description": null,
+          "name": null,
+          "code": null
+        }
+      ],
+      "evidence": [
+        {
+          "source_page": "259",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F3A3642C0C812A4A20F5-HT"
+        },
+        {
+          "source_page": "5",
+          "source_name": "泛血管疾病患者血脂管理专家共识（2025版）.pdf",
+          "evidence_id": "EVD-F3CDFAF058B27A56D5DD-FH"
+        },
+        {
+          "source_page": "786",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E9E952E8EF90B0F82431-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "814",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E5E8BF68E1C606B7BA49-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D69D429CC105927B53AD-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "787",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E11610E954D8B5120EDE-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BDDC28BBB4C76D45ADBC-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-A74440FC2E0A0D9A49A3-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-6B80E07F31F2EDD2CDAB-CHD"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-8719402DC94C9DE88466-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "20",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-7B90B634CC77A85BADBE-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "19",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-76038E82B4A9E1770E8A-FH"
+        },
+        {
+          "source_page": "7",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-8C13E44CC7DC6D6D119E-FH"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-8AC9E3EE1ABDD2C4B04B-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-7FF041D0C3D1ECDBB76B-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "794",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-1CB89401408635ADE295-HT"
+        },
+        {
+          "source_page": "14",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-2B4E5FD15159B9F88556-HYPERCHOLESTEROLEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-649E549983E2D0944723-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "788",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-3008E1DE0621F6FBA24B-HT"
+        },
+        {
+          "source_page": "2",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-14750CB99FD5FECD789F-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "23",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-44A6857E9606A69FC0CF-FH"
+        },
+        {
+          "source_page": "23",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-6D9AFF24B631B57B7579-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "40",
+          "source_name": "DCM AHA 2016.pdf",
+          "evidence_id": "EVD-6B86DD83EA5A40FC48EA-ACM"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-0E0DB68A83C70277CA1E-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "785",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-0B68C8A888D1B4357741-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-04C55826AD37BBB4B748-FH"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-0580A467915451274C5A-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-6A510442902B8C35B153-CHD"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-7ADF93F91BC18C6278E0-PAD"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-75BA78B92C6E3A070657-PAD"
+        },
+        {
+          "source_page": "197",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BA733DE3A3E2350CD488-PAD"
+        },
+        {
+          "source_page": "5",
+          "source_name": "中国 Stanford B 型主动脉夹层诊断和治疗2022.pdf",
+          "evidence_id": "EVD-88C977A0496CCBD59066-PAD"
+        },
+        {
+          "source_page": "294",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-46683964152E5535D749-HT"
+        },
+        {
+          "source_page": "239",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-7874B2BF72F4B3556F05-PVC"
+        },
+        {
+          "source_page": "232",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F80661754E736C1801C2-AF"
+        },
+        {
+          "source_page": "8",
+          "source_name": "2024 中国成人暴发性心肌炎诊断和治疗指南.pdf",
+          "evidence_id": "EVD-39110704295544AB958E-MYOCARDITIS"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-FDCAA5B62C8C2667E320-PERICARDITIS"
+        },
+        {
+          "source_page": "224",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-4DF6EEA103CFDD3D1193-BBB"
+        },
+        {
+          "source_page": "272",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-70A672875FB90E7D7A27-ICM"
+        },
+        {
+          "source_page": "222",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-213FB6451C1E4AFE4B36-SAB"
+        },
+        {
+          "source_page": "230",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BB898761ADEFF4C57A25-AVB"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-B4E9FFC5EE6465D204BC-PERICARDITIS"
+        },
+        {
+          "source_page": "212",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-987569B72A611CE42325-CHD"
+        },
+        {
+          "source_page": "60",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D95E22BF8C5FCA8A292C-PH"
+        },
+        {
+          "source_page": "24",
+          "source_name": "PH CN 2021.pdf",
+          "evidence_id": "EVD-5FD817C81032408B4D0E-PH"
+        },
+        {
+          "source_page": "171",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-31698B19B37B03C71973-AVB"
+        },
+        {
+          "source_page": "815",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-96A13DE890A0EE65651B-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "29",
+          "source_name": "PH CN 2021.pdf",
+          "evidence_id": "EVD-56BEF8636D3F56E444EE-PAH"
+        },
+        {
+          "source_page": "1",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-56344CEB7D7CFB6E6198-ICM"
+        },
+        {
+          "source_page": "204",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-26C3C19278144232DE1C-CHD"
+        },
+        {
+          "source_page": "265",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-3BBEC2D46A322B320230-BBB"
+        },
+        {
+          "source_page": "263",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-C3CB241ED9412E86D507-CHD"
+        },
+        {
+          "source_page": "274",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-84D82E69547D4D4E8569-MR"
+        },
+        {
+          "source_page": "798",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-9F9CE2FFCBE7A8A1C303-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "349",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-1417CB6755A66242A35C-CHD"
+        },
+        {
+          "source_page": "16",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-ED629BC8BA5B3721964A-ARVC"
+        },
+        {
+          "source_page": "3",
+          "source_name": "中国 经导管主动脉瓣置换术临床实践指南（2023版）.pdf",
+          "evidence_id": "EVD-EDB904029B30F2F41A6A-AS"
+        },
+        {
+          "source_page": "976",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F33F3D7955AE28702E0B-ARVC"
+        },
+        {
+          "source_page": "972",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-019FE93DC48C8CD8DAC2-CCS"
+        },
+        {
+          "source_page": "231",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-B9CAB7EC30CAB04B08EC-BBB"
+        },
+        {
+          "source_page": "341",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-AC264AB34A5145514043-RHD"
+        },
+        {
+          "source_page": "12",
+          "source_name": "中国 经导管主动脉瓣置换术临床路径专家共识（2024 版）.pdf",
+          "evidence_id": "EVD-8120D082E0867664FD90-AS"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-24AAD8B5E5FE7627EB78-PVC"
+        },
+        {
+          "source_page": "208",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-81F0EECE0B4926177715-AS"
+        },
+        {
+          "source_page": "68",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-FF6601695AE6A9C6624E-ARVC"
+        },
+        {
+          "source_page": "15",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-FEC5483CB7E25D200A90-HCM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-F7F59E7B0FAAF79AE14A-HCM"
+        },
+        {
+          "source_page": "5",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-C41B68EB0E2A73FC1583-ICM"
+        },
+        {
+          "source_page": "359",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D96D265F9E4E68E15F8C-ARREST"
+        },
+        {
+          "source_page": "19",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-CA5C06442612964573E0-ACM"
+        },
+        {
+          "source_page": "375",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-AB5D1C77A193D7FEACBC-VHD"
+        },
+        {
+          "source_page": "8",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-F1C075DF7D18CC667C1E-ICM"
+        },
+        {
+          "source_page": "6",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-9A48E981C616E518454B-ACM"
+        },
+        {
+          "source_page": "68",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-4BC0142953B346C1151871A1"
+        },
+        {
+          "source_page": "18",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-D81B5110E5DAED296665-HCM"
+        },
+        {
+          "source_page": "75",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-C4B85D0F348E4A3467FA-HCM"
+        },
+        {
+          "source_page": "718",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D8EA2C0114E2AB8A8856-AF"
+        },
+        {
+          "source_page": "6",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-CF497DD49ED9FFA43088-ACM"
+        },
+        {
+          "source_page": "39",
+          "source_name": "DCM AHA 2016.pdf",
+          "evidence_id": "EVD-A3AA6CC1DBB44A429F48-DCM"
+        },
+        {
+          "source_page": "36",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-7C107D91E06FFEAFF9FFD20F"
+        },
+        {
+          "source_page": "12",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-B7158EA8F42BD3742755-ATRIAL"
+        },
+        {
+          "source_page": "5",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-B099D47B3C04791193F6-ICM"
+        },
+        {
+          "source_page": "340",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BFB3CBAF2B3AA3323379-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-B20E0ABA092EBED3E733-ICM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-9871EAD4F0A6AF8F6980-AMYLOID"
+        },
+        {
+          "source_page": "7",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-BB9A8D3631FE99170D28-HCM"
+        },
+        {
+          "source_page": "207",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F017D31EF6878106540E-ARVC"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-FE66F93BD07FEE13ED02-CHD"
+        },
+        {
+          "source_page": "75",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-EE8D9BBD063B8D42D3D2-HCM"
+        },
+        {
+          "source_page": "9",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-C8250F84A40E395A69D0-ICM"
+        },
+        {
+          "source_page": "8",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-2326AF857AD6D0003982-ARVC"
+        },
+        {
+          "source_page": "18",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-7463A47E870217ED6976-HCM"
+        },
+        {
+          "source_page": "9",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-8721E54B3812D0E997DF-HCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "成人法布雷病心肌病诊断与治疗中国专家共识.pdf",
+          "evidence_id": "EVD-30E6060A7D444D3FDD14-HCM"
+        },
+        {
+          "source_page": "36",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-7041347481EA824F5601-ARVC"
+        },
+        {
+          "source_page": "68",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-6F8E0A473E5CAC418486-ARVC"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-132E978331D8A717950C-AMYLOID"
+        },
+        {
+          "source_page": "377",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-TB-768C920AFBBFC4222902-VT"
+        },
+        {
+          "source_page": "210",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-97E7FAE66E8A1003A81B-RHD"
+        },
+        {
+          "source_page": "12",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-773C089A9E762740DADF-ATRIAL"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-A01BEEF00EA868356E33-FH"
+        },
+        {
+          "source_page": "2",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-38AB8FC55FAAE68FCD7F-ICM"
+        },
+        {
+          "source_page": "8",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-287A4450D605D3448BD2-ICM"
+        },
+        {
+          "source_page": "37",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-454486CC432E9B944C28DB70"
+        },
+        {
+          "source_page": "37",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-1750A3CB03E530878754-ARVC"
+        },
+        {
+          "source_page": "37",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-9726983EE0BFBFF0C893-ARVC"
+        },
+        {
+          "source_page": "205",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-92CA389907DDB492839C-AMYLOID"
+        },
+        {
+          "source_page": "28",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-961396ED0730275E56D0-ICM"
+        },
+        {
+          "source_page": "13",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-7E532BD8A74BCB9B8E92-DCM"
+        },
+        {
+          "source_page": "75",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-5229ADA2C7D16091BAA495F1"
+        },
+        {
+          "source_page": "6",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-066552C60477CD73B70D-ALVC"
+        },
+        {
+          "source_page": "12",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-0EBC528F9F2374DA5B28-ATRIAL"
+        },
+        {
+          "source_page": "2",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-0A6493CD808574838C1E-ICM"
+        },
+        {
+          "source_page": "5",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-0A8CD35563AD2A5CAEAF-ICM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-05E0D434ACF6DAEEA231-HCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-082FAB24E902B7D2BFB8-DCM"
+        },
+        {
+          "source_page": "16",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-25F6D72C3F2CC16D8FA0AF61"
+        },
+        {
+          "source_page": "16",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-08991F388B907D165EF8-ARVC"
+        },
+        {
+          "source_page": "19",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-06129C9680EC36CFC688-HCM"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-AMYLOID",
+      "disease_name": "淀粉样变心肌病",
+      "relation_type": "differentiates_from",
+      "target_labels": [
+        "KGNode",
+        "DifferentialDiagnosis"
+      ],
+      "target_code": "DDX-CARD-6AB732E54DB3",
+      "target_name": "冠心病",
+      "target_properties": {
+        "scope_type": "疾病大类",
+        "schema_version": "V1.15",
+        "entityType": "DifferentialDiagnosis",
+        "aliases": [
+          "冠状动脉疾病",
+          "冠状动脉粥样硬化性心脏病"
+        ],
+        "type_label": "DifferentialDiagnosis",
+        "primary_label": "KGNode",
+        "id": "KG_DDX_CARD_6AB732E54DB3",
+        "entityCategory": "诊断",
+        "canonical_labels": [
+          "KGNode",
+          "DifferentialDiagnosis"
+        ],
+        "foundation_import_source": "BATCH-CARD-CM-20260622-001",
+        "name": "冠心病",
+        "formal_cdss_ready": true,
+        "review_status": "approved",
+        "merge_status": "validated",
+        "formal_ready_at": "2026-07-14T13:54:00",
+        "scope_target": "血脂异常、动脉粥样硬化、ASCVD风险防治",
+        "name_en": "Coronary heart disease",
+        "abbr": "CHD",
+        "code": "DDX-CARD-6AB732E54DB3",
+        "preferred_name": "冠心病",
+        "batch_id": "20260715_血脂异常动脉粥样硬化防治正式解析",
+        "display_name": "冠心病",
+        "updated_at": "2026-07-14T13:54:00",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260714_心肌病总精修",
+        "cdss_release_level": "formal"
+      },
+      "rules": [
+        {
+          "description": null,
+          "name": null,
+          "code": null
+        }
+      ],
+      "evidence": [
+        {
+          "source_page": "259",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F3A3642C0C812A4A20F5-HT"
+        },
+        {
+          "source_page": "5",
+          "source_name": "泛血管疾病患者血脂管理专家共识（2025版）.pdf",
+          "evidence_id": "EVD-F3CDFAF058B27A56D5DD-FH"
+        },
+        {
+          "source_page": "786",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E9E952E8EF90B0F82431-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "814",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E5E8BF68E1C606B7BA49-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D69D429CC105927B53AD-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "787",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E11610E954D8B5120EDE-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BDDC28BBB4C76D45ADBC-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-A74440FC2E0A0D9A49A3-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-6B80E07F31F2EDD2CDAB-CHD"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-8719402DC94C9DE88466-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "20",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-7B90B634CC77A85BADBE-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "19",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-76038E82B4A9E1770E8A-FH"
+        },
+        {
+          "source_page": "7",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-8C13E44CC7DC6D6D119E-FH"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-8AC9E3EE1ABDD2C4B04B-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-7FF041D0C3D1ECDBB76B-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "794",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-1CB89401408635ADE295-HT"
+        },
+        {
+          "source_page": "14",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-2B4E5FD15159B9F88556-HYPERCHOLESTEROLEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-649E549983E2D0944723-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "788",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-3008E1DE0621F6FBA24B-HT"
+        },
+        {
+          "source_page": "2",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-14750CB99FD5FECD789F-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "23",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-44A6857E9606A69FC0CF-FH"
+        },
+        {
+          "source_page": "23",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-6D9AFF24B631B57B7579-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "40",
+          "source_name": "DCM AHA 2016.pdf",
+          "evidence_id": "EVD-6B86DD83EA5A40FC48EA-ACM"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-0E0DB68A83C70277CA1E-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "785",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-0B68C8A888D1B4357741-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-04C55826AD37BBB4B748-FH"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-0580A467915451274C5A-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-6A510442902B8C35B153-CHD"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-7ADF93F91BC18C6278E0-PAD"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-75BA78B92C6E3A070657-PAD"
+        },
+        {
+          "source_page": "197",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BA733DE3A3E2350CD488-PAD"
+        },
+        {
+          "source_page": "5",
+          "source_name": "中国 Stanford B 型主动脉夹层诊断和治疗2022.pdf",
+          "evidence_id": "EVD-88C977A0496CCBD59066-PAD"
+        },
+        {
+          "source_page": "294",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-46683964152E5535D749-HT"
+        },
+        {
+          "source_page": "239",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-7874B2BF72F4B3556F05-PVC"
+        },
+        {
+          "source_page": "232",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F80661754E736C1801C2-AF"
+        },
+        {
+          "source_page": "8",
+          "source_name": "2024 中国成人暴发性心肌炎诊断和治疗指南.pdf",
+          "evidence_id": "EVD-39110704295544AB958E-MYOCARDITIS"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-FDCAA5B62C8C2667E320-PERICARDITIS"
+        },
+        {
+          "source_page": "224",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-4DF6EEA103CFDD3D1193-BBB"
+        },
+        {
+          "source_page": "272",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-70A672875FB90E7D7A27-ICM"
+        },
+        {
+          "source_page": "222",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-213FB6451C1E4AFE4B36-SAB"
+        },
+        {
+          "source_page": "230",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BB898761ADEFF4C57A25-AVB"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-B4E9FFC5EE6465D204BC-PERICARDITIS"
+        },
+        {
+          "source_page": "212",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-987569B72A611CE42325-CHD"
+        },
+        {
+          "source_page": "60",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D95E22BF8C5FCA8A292C-PH"
+        },
+        {
+          "source_page": "24",
+          "source_name": "PH CN 2021.pdf",
+          "evidence_id": "EVD-5FD817C81032408B4D0E-PH"
+        },
+        {
+          "source_page": "171",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-31698B19B37B03C71973-AVB"
+        },
+        {
+          "source_page": "815",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-96A13DE890A0EE65651B-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "29",
+          "source_name": "PH CN 2021.pdf",
+          "evidence_id": "EVD-56BEF8636D3F56E444EE-PAH"
+        },
+        {
+          "source_page": "1",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-56344CEB7D7CFB6E6198-ICM"
+        },
+        {
+          "source_page": "204",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-26C3C19278144232DE1C-CHD"
+        },
+        {
+          "source_page": "265",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-3BBEC2D46A322B320230-BBB"
+        },
+        {
+          "source_page": "263",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-C3CB241ED9412E86D507-CHD"
+        },
+        {
+          "source_page": "274",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-84D82E69547D4D4E8569-MR"
+        },
+        {
+          "source_page": "798",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-9F9CE2FFCBE7A8A1C303-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "349",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-1417CB6755A66242A35C-CHD"
+        },
+        {
+          "source_page": "16",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-ED629BC8BA5B3721964A-ARVC"
+        },
+        {
+          "source_page": "3",
+          "source_name": "中国 经导管主动脉瓣置换术临床实践指南（2023版）.pdf",
+          "evidence_id": "EVD-EDB904029B30F2F41A6A-AS"
+        },
+        {
+          "source_page": "976",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F33F3D7955AE28702E0B-ARVC"
+        },
+        {
+          "source_page": "972",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-019FE93DC48C8CD8DAC2-CCS"
+        },
+        {
+          "source_page": "231",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-B9CAB7EC30CAB04B08EC-BBB"
+        },
+        {
+          "source_page": "341",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-AC264AB34A5145514043-RHD"
+        },
+        {
+          "source_page": "12",
+          "source_name": "中国 经导管主动脉瓣置换术临床路径专家共识（2024 版）.pdf",
+          "evidence_id": "EVD-8120D082E0867664FD90-AS"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-24AAD8B5E5FE7627EB78-PVC"
+        },
+        {
+          "source_page": "208",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-81F0EECE0B4926177715-AS"
+        },
+        {
+          "source_page": "68",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-FF6601695AE6A9C6624E-ARVC"
+        },
+        {
+          "source_page": "15",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-FEC5483CB7E25D200A90-HCM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-F7F59E7B0FAAF79AE14A-HCM"
+        },
+        {
+          "source_page": "5",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-C41B68EB0E2A73FC1583-ICM"
+        },
+        {
+          "source_page": "359",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D96D265F9E4E68E15F8C-ARREST"
+        },
+        {
+          "source_page": "19",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-CA5C06442612964573E0-ACM"
+        },
+        {
+          "source_page": "375",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-AB5D1C77A193D7FEACBC-VHD"
+        },
+        {
+          "source_page": "8",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-F1C075DF7D18CC667C1E-ICM"
+        },
+        {
+          "source_page": "6",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-9A48E981C616E518454B-ACM"
+        },
+        {
+          "source_page": "68",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-4BC0142953B346C1151871A1"
+        },
+        {
+          "source_page": "18",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-D81B5110E5DAED296665-HCM"
+        },
+        {
+          "source_page": "75",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-C4B85D0F348E4A3467FA-HCM"
+        },
+        {
+          "source_page": "718",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D8EA2C0114E2AB8A8856-AF"
+        },
+        {
+          "source_page": "6",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-CF497DD49ED9FFA43088-ACM"
+        },
+        {
+          "source_page": "39",
+          "source_name": "DCM AHA 2016.pdf",
+          "evidence_id": "EVD-A3AA6CC1DBB44A429F48-DCM"
+        },
+        {
+          "source_page": "36",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-7C107D91E06FFEAFF9FFD20F"
+        },
+        {
+          "source_page": "12",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-B7158EA8F42BD3742755-ATRIAL"
+        },
+        {
+          "source_page": "5",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-B099D47B3C04791193F6-ICM"
+        },
+        {
+          "source_page": "340",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BFB3CBAF2B3AA3323379-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-B20E0ABA092EBED3E733-ICM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-9871EAD4F0A6AF8F6980-AMYLOID"
+        },
+        {
+          "source_page": "7",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-BB9A8D3631FE99170D28-HCM"
+        },
+        {
+          "source_page": "207",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F017D31EF6878106540E-ARVC"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-FE66F93BD07FEE13ED02-CHD"
+        },
+        {
+          "source_page": "75",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-EE8D9BBD063B8D42D3D2-HCM"
+        },
+        {
+          "source_page": "9",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-C8250F84A40E395A69D0-ICM"
+        },
+        {
+          "source_page": "8",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-2326AF857AD6D0003982-ARVC"
+        },
+        {
+          "source_page": "18",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-7463A47E870217ED6976-HCM"
+        },
+        {
+          "source_page": "9",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-8721E54B3812D0E997DF-HCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "成人法布雷病心肌病诊断与治疗中国专家共识.pdf",
+          "evidence_id": "EVD-30E6060A7D444D3FDD14-HCM"
+        },
+        {
+          "source_page": "36",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-7041347481EA824F5601-ARVC"
+        },
+        {
+          "source_page": "68",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-6F8E0A473E5CAC418486-ARVC"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-132E978331D8A717950C-AMYLOID"
+        },
+        {
+          "source_page": "377",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-TB-768C920AFBBFC4222902-VT"
+        },
+        {
+          "source_page": "210",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-97E7FAE66E8A1003A81B-RHD"
+        },
+        {
+          "source_page": "12",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-773C089A9E762740DADF-ATRIAL"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-A01BEEF00EA868356E33-FH"
+        },
+        {
+          "source_page": "2",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-38AB8FC55FAAE68FCD7F-ICM"
+        },
+        {
+          "source_page": "8",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-287A4450D605D3448BD2-ICM"
+        },
+        {
+          "source_page": "37",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-454486CC432E9B944C28DB70"
+        },
+        {
+          "source_page": "37",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-1750A3CB03E530878754-ARVC"
+        },
+        {
+          "source_page": "37",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-9726983EE0BFBFF0C893-ARVC"
+        },
+        {
+          "source_page": "205",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-92CA389907DDB492839C-AMYLOID"
+        },
+        {
+          "source_page": "28",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-961396ED0730275E56D0-ICM"
+        },
+        {
+          "source_page": "13",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-7E532BD8A74BCB9B8E92-DCM"
+        },
+        {
+          "source_page": "75",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-5229ADA2C7D16091BAA495F1"
+        },
+        {
+          "source_page": "6",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-066552C60477CD73B70D-ALVC"
+        },
+        {
+          "source_page": "12",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-0EBC528F9F2374DA5B28-ATRIAL"
+        },
+        {
+          "source_page": "2",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-0A6493CD808574838C1E-ICM"
+        },
+        {
+          "source_page": "5",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-0A8CD35563AD2A5CAEAF-ICM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-05E0D434ACF6DAEEA231-HCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-082FAB24E902B7D2BFB8-DCM"
+        },
+        {
+          "source_page": "16",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-25F6D72C3F2CC16D8FA0AF61"
+        },
+        {
+          "source_page": "16",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-08991F388B907D165EF8-ARVC"
+        },
+        {
+          "source_page": "19",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-06129C9680EC36CFC688-HCM"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-AMYLOID",
+      "disease_name": "淀粉样变心肌病",
+      "relation_type": "differentiates_from",
+      "target_labels": [
+        "KGNode",
+        "DifferentialDiagnosis"
+      ],
+      "target_code": "DDX-CARD-A07BA907BDB0",
+      "target_name": "心肌炎",
+      "target_properties": {
+        "source_type": "authoritative_textbook",
+        "scope_type": "disease",
+        "schema_version": "V1.15",
+        "entityType": "DifferentialDiagnosis",
+        "aliases": [
+          "炎症性心肌病"
+        ],
+        "type_label": "DifferentialDiagnosis",
+        "primary_label": "KGNode",
+        "id": "KG_DDX_CARD_A07BA907BDB0",
+        "entityCategory": "诊断",
+        "canonical_labels": [
+          "KGNode",
+          "DifferentialDiagnosis"
+        ],
+        "disease_name": "ST段抬高型心肌梗死",
+        "foundation_import_source": "BATCH-CARD-CM-20260622-001",
+        "name": "心肌炎",
+        "created_at": "2026-07-12 21:30:00",
+        "knowledge_layer": "textbook_skeleton",
+        "updated_by": "20260716_内科学心血管骨架V1冻结修复",
+        "formal_cdss_ready": true,
+        "skill_version": "V2.1-STEMI-textbook-refine",
+        "review_status": "ai_prechecked",
+        "merge_status": "delta_ready",
+        "disease_code": "DIS-CARD-CAD-STEMI",
+        "formal_ready_at": "2026-07-14T13:54:00",
+        "scope_target": "ST段抬高型心肌梗死",
+        "name_en": "Myocarditis",
+        "skeleton_slot": "differential_diagnosis",
+        "code": "DDX-CARD-A07BA907BDB0",
+        "source_section": "第三篇 循环系统疾病 / 第四节 急性冠脉综合征 / 二、急性ST段抬高型心肌梗死",
+        "preferred_name": "心肌炎",
+        "batch_id": "BATCH-CARD-CAD-STEMI-20260712-001",
+        "display_name": "心肌炎",
+        "updated_at": "2026-07-16 22:18:01",
+        "source_authority": "《内科学（第10版）》",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260714_心肌病总精修",
+        "skeleton_slot_status": "covered_from_textbook",
+        "cdss_release_level": "formal"
+      },
+      "rules": [
+        {
+          "description": null,
+          "name": null,
+          "code": null
+        }
+      ],
+      "evidence": [
+        {
+          "source_page": "251-252",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-CARD-STEMI-TEXTBOOK-309681CCAE"
+        },
+        {
+          "source_page": "8",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-F3C422CF5F35620C25C0-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-FB421FFB16F4732DED5C-HCM"
+        },
+        {
+          "source_page": "311",
+          "source_name": "《内科学》第10版",
+          "evidence_id": "EVD-TB-5908340B73B73B1642EC-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-F907E68F0C0DF4E636BD-DCM"
+        },
+        {
+          "source_page": "309",
+          "source_name": "《内科学》第10版",
+          "evidence_id": "EVD-TB-A1F7BDE628D49B661120-DCM"
+        },
+        {
+          "source_page": "14",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-F595B0717C94F223AFC9-DCM"
+        },
+        {
+          "source_page": "8",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-562A1F9E177146735724-HCM"
+        },
+        {
+          "source_page": "212",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-987569B72A611CE42325-CHD"
+        },
+        {
+          "source_page": "2",
+          "source_name": "左心室肥厚诊断和治疗临床路径中国专家共识2023.pdf",
+          "evidence_id": "EVD-CE95CF30E30F89DC2E82-AMYLOID"
+        },
+        {
+          "source_page": "3",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-E0C41D565D25B6F43601-AMYLOID"
+        },
+        {
+          "source_page": "6",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-ABC1875F3DE11AAB078A-ACM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-21B8D41CA943183BD0BB-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-2F09B32C737BF164BDB5-DCM"
+        },
+        {
+          "source_page": "29",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-74C08FDA665F90308028-ATRIAL"
+        },
+        {
+          "source_page": "3",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-1A44D66AC5036A5DAF96-DCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-45940BDBB5BAB828C2C3-DCM"
+        },
+        {
+          "source_page": "311",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E58570B4D59D7F3C1656-DCM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-7AE0B3CA7A1063A0E475-DCM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-B7399D3F6F6AE29606B2-ARVC"
+        },
+        {
+          "source_page": "32",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-3653EBEB989691E13537-ACM"
+        },
+        {
+          "source_page": "13",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-7E532BD8A74BCB9B8E92-DCM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "肥厚型心肌病激发_负荷超声心动图临床应用指南(2024版).pdf",
+          "evidence_id": "EVD-4640EDB1B71FF317087B-HCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-9119B6933BB04EEC6F7D-DCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-EA12FDB1586C16E92E2D-RCM"
+        },
+        {
+          "source_page": "317",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-DE49120F29505C5D60B1-ICM"
+        },
+        {
+          "source_page": "207",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F017D31EF6878106540E-ARVC"
+        },
+        {
+          "source_page": "309",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-A1F7BDE628D49B661120-ARVC"
+        },
+        {
+          "source_page": "9",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-E2384B636798D39DA53A-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-B2DCA968AD2CBCC06D55-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-CEB1E0D11EF218449196-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-9D9366D42AA49B403F52-RCM"
+        },
+        {
+          "source_page": "32",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-A0444F2C80D411061108-DCM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-132E978331D8A717950C-AMYLOID"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ARVC",
+      "disease_name": "致心律失常性右心室心肌病",
+      "relation_type": "differentiates_from",
+      "target_labels": [
+        "KGNode",
+        "DifferentialDiagnosis"
+      ],
+      "target_code": "DDX-CARD-6AB732E54DB3",
+      "target_name": "冠心病",
+      "target_properties": {
+        "scope_type": "疾病大类",
+        "schema_version": "V1.15",
+        "entityType": "DifferentialDiagnosis",
+        "aliases": [
+          "冠状动脉疾病",
+          "冠状动脉粥样硬化性心脏病"
+        ],
+        "type_label": "DifferentialDiagnosis",
+        "primary_label": "KGNode",
+        "id": "KG_DDX_CARD_6AB732E54DB3",
+        "entityCategory": "诊断",
+        "canonical_labels": [
+          "KGNode",
+          "DifferentialDiagnosis"
+        ],
+        "foundation_import_source": "BATCH-CARD-CM-20260622-001",
+        "name": "冠心病",
+        "formal_cdss_ready": true,
+        "review_status": "approved",
+        "merge_status": "validated",
+        "formal_ready_at": "2026-07-14T13:54:00",
+        "scope_target": "血脂异常、动脉粥样硬化、ASCVD风险防治",
+        "name_en": "Coronary heart disease",
+        "abbr": "CHD",
+        "code": "DDX-CARD-6AB732E54DB3",
+        "preferred_name": "冠心病",
+        "batch_id": "20260715_血脂异常动脉粥样硬化防治正式解析",
+        "display_name": "冠心病",
+        "updated_at": "2026-07-14T13:54:00",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260714_心肌病总精修",
+        "cdss_release_level": "formal"
+      },
+      "rules": [
+        {
+          "description": null,
+          "name": null,
+          "code": null
+        }
+      ],
+      "evidence": [
+        {
+          "source_page": "259",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F3A3642C0C812A4A20F5-HT"
+        },
+        {
+          "source_page": "5",
+          "source_name": "泛血管疾病患者血脂管理专家共识（2025版）.pdf",
+          "evidence_id": "EVD-F3CDFAF058B27A56D5DD-FH"
+        },
+        {
+          "source_page": "786",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E9E952E8EF90B0F82431-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "814",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E5E8BF68E1C606B7BA49-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D69D429CC105927B53AD-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "787",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E11610E954D8B5120EDE-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BDDC28BBB4C76D45ADBC-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-A74440FC2E0A0D9A49A3-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-6B80E07F31F2EDD2CDAB-CHD"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-8719402DC94C9DE88466-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "20",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-7B90B634CC77A85BADBE-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "19",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-76038E82B4A9E1770E8A-FH"
+        },
+        {
+          "source_page": "7",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-8C13E44CC7DC6D6D119E-FH"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-8AC9E3EE1ABDD2C4B04B-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-7FF041D0C3D1ECDBB76B-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "794",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-1CB89401408635ADE295-HT"
+        },
+        {
+          "source_page": "14",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-2B4E5FD15159B9F88556-HYPERCHOLESTEROLEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-649E549983E2D0944723-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "788",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-3008E1DE0621F6FBA24B-HT"
+        },
+        {
+          "source_page": "2",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-14750CB99FD5FECD789F-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "23",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-44A6857E9606A69FC0CF-FH"
+        },
+        {
+          "source_page": "23",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-6D9AFF24B631B57B7579-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "40",
+          "source_name": "DCM AHA 2016.pdf",
+          "evidence_id": "EVD-6B86DD83EA5A40FC48EA-ACM"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-0E0DB68A83C70277CA1E-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "785",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-0B68C8A888D1B4357741-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-04C55826AD37BBB4B748-FH"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-0580A467915451274C5A-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-6A510442902B8C35B153-CHD"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-7ADF93F91BC18C6278E0-PAD"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-75BA78B92C6E3A070657-PAD"
+        },
+        {
+          "source_page": "197",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BA733DE3A3E2350CD488-PAD"
+        },
+        {
+          "source_page": "5",
+          "source_name": "中国 Stanford B 型主动脉夹层诊断和治疗2022.pdf",
+          "evidence_id": "EVD-88C977A0496CCBD59066-PAD"
+        },
+        {
+          "source_page": "294",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-46683964152E5535D749-HT"
+        },
+        {
+          "source_page": "239",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-7874B2BF72F4B3556F05-PVC"
+        },
+        {
+          "source_page": "232",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F80661754E736C1801C2-AF"
+        },
+        {
+          "source_page": "8",
+          "source_name": "2024 中国成人暴发性心肌炎诊断和治疗指南.pdf",
+          "evidence_id": "EVD-39110704295544AB958E-MYOCARDITIS"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-FDCAA5B62C8C2667E320-PERICARDITIS"
+        },
+        {
+          "source_page": "224",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-4DF6EEA103CFDD3D1193-BBB"
+        },
+        {
+          "source_page": "272",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-70A672875FB90E7D7A27-ICM"
+        },
+        {
+          "source_page": "222",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-213FB6451C1E4AFE4B36-SAB"
+        },
+        {
+          "source_page": "230",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BB898761ADEFF4C57A25-AVB"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-B4E9FFC5EE6465D204BC-PERICARDITIS"
+        },
+        {
+          "source_page": "212",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-987569B72A611CE42325-CHD"
+        },
+        {
+          "source_page": "60",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D95E22BF8C5FCA8A292C-PH"
+        },
+        {
+          "source_page": "24",
+          "source_name": "PH CN 2021.pdf",
+          "evidence_id": "EVD-5FD817C81032408B4D0E-PH"
+        },
+        {
+          "source_page": "171",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-31698B19B37B03C71973-AVB"
+        },
+        {
+          "source_page": "815",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-96A13DE890A0EE65651B-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "29",
+          "source_name": "PH CN 2021.pdf",
+          "evidence_id": "EVD-56BEF8636D3F56E444EE-PAH"
+        },
+        {
+          "source_page": "1",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-56344CEB7D7CFB6E6198-ICM"
+        },
+        {
+          "source_page": "204",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-26C3C19278144232DE1C-CHD"
+        },
+        {
+          "source_page": "265",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-3BBEC2D46A322B320230-BBB"
+        },
+        {
+          "source_page": "263",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-C3CB241ED9412E86D507-CHD"
+        },
+        {
+          "source_page": "274",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-84D82E69547D4D4E8569-MR"
+        },
+        {
+          "source_page": "798",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-9F9CE2FFCBE7A8A1C303-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "349",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-1417CB6755A66242A35C-CHD"
+        },
+        {
+          "source_page": "16",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-ED629BC8BA5B3721964A-ARVC"
+        },
+        {
+          "source_page": "3",
+          "source_name": "中国 经导管主动脉瓣置换术临床实践指南（2023版）.pdf",
+          "evidence_id": "EVD-EDB904029B30F2F41A6A-AS"
+        },
+        {
+          "source_page": "976",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F33F3D7955AE28702E0B-ARVC"
+        },
+        {
+          "source_page": "972",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-019FE93DC48C8CD8DAC2-CCS"
+        },
+        {
+          "source_page": "231",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-B9CAB7EC30CAB04B08EC-BBB"
+        },
+        {
+          "source_page": "341",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-AC264AB34A5145514043-RHD"
+        },
+        {
+          "source_page": "12",
+          "source_name": "中国 经导管主动脉瓣置换术临床路径专家共识（2024 版）.pdf",
+          "evidence_id": "EVD-8120D082E0867664FD90-AS"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-24AAD8B5E5FE7627EB78-PVC"
+        },
+        {
+          "source_page": "208",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-81F0EECE0B4926177715-AS"
+        },
+        {
+          "source_page": "68",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-FF6601695AE6A9C6624E-ARVC"
+        },
+        {
+          "source_page": "15",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-FEC5483CB7E25D200A90-HCM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-F7F59E7B0FAAF79AE14A-HCM"
+        },
+        {
+          "source_page": "5",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-C41B68EB0E2A73FC1583-ICM"
+        },
+        {
+          "source_page": "359",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D96D265F9E4E68E15F8C-ARREST"
+        },
+        {
+          "source_page": "19",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-CA5C06442612964573E0-ACM"
+        },
+        {
+          "source_page": "375",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-AB5D1C77A193D7FEACBC-VHD"
+        },
+        {
+          "source_page": "8",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-F1C075DF7D18CC667C1E-ICM"
+        },
+        {
+          "source_page": "6",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-9A48E981C616E518454B-ACM"
+        },
+        {
+          "source_page": "68",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-4BC0142953B346C1151871A1"
+        },
+        {
+          "source_page": "18",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-D81B5110E5DAED296665-HCM"
+        },
+        {
+          "source_page": "75",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-C4B85D0F348E4A3467FA-HCM"
+        },
+        {
+          "source_page": "718",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D8EA2C0114E2AB8A8856-AF"
+        },
+        {
+          "source_page": "6",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-CF497DD49ED9FFA43088-ACM"
+        },
+        {
+          "source_page": "39",
+          "source_name": "DCM AHA 2016.pdf",
+          "evidence_id": "EVD-A3AA6CC1DBB44A429F48-DCM"
+        },
+        {
+          "source_page": "36",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-7C107D91E06FFEAFF9FFD20F"
+        },
+        {
+          "source_page": "12",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-B7158EA8F42BD3742755-ATRIAL"
+        },
+        {
+          "source_page": "5",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-B099D47B3C04791193F6-ICM"
+        },
+        {
+          "source_page": "340",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BFB3CBAF2B3AA3323379-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-B20E0ABA092EBED3E733-ICM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-9871EAD4F0A6AF8F6980-AMYLOID"
+        },
+        {
+          "source_page": "7",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-BB9A8D3631FE99170D28-HCM"
+        },
+        {
+          "source_page": "207",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F017D31EF6878106540E-ARVC"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-FE66F93BD07FEE13ED02-CHD"
+        },
+        {
+          "source_page": "75",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-EE8D9BBD063B8D42D3D2-HCM"
+        },
+        {
+          "source_page": "9",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-C8250F84A40E395A69D0-ICM"
+        },
+        {
+          "source_page": "8",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-2326AF857AD6D0003982-ARVC"
+        },
+        {
+          "source_page": "18",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-7463A47E870217ED6976-HCM"
+        },
+        {
+          "source_page": "9",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-8721E54B3812D0E997DF-HCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "成人法布雷病心肌病诊断与治疗中国专家共识.pdf",
+          "evidence_id": "EVD-30E6060A7D444D3FDD14-HCM"
+        },
+        {
+          "source_page": "36",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-7041347481EA824F5601-ARVC"
+        },
+        {
+          "source_page": "68",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-6F8E0A473E5CAC418486-ARVC"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-132E978331D8A717950C-AMYLOID"
+        },
+        {
+          "source_page": "377",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-TB-768C920AFBBFC4222902-VT"
+        },
+        {
+          "source_page": "210",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-97E7FAE66E8A1003A81B-RHD"
+        },
+        {
+          "source_page": "12",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-773C089A9E762740DADF-ATRIAL"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-A01BEEF00EA868356E33-FH"
+        },
+        {
+          "source_page": "2",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-38AB8FC55FAAE68FCD7F-ICM"
+        },
+        {
+          "source_page": "8",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-287A4450D605D3448BD2-ICM"
+        },
+        {
+          "source_page": "37",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-454486CC432E9B944C28DB70"
+        },
+        {
+          "source_page": "37",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-1750A3CB03E530878754-ARVC"
+        },
+        {
+          "source_page": "37",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-9726983EE0BFBFF0C893-ARVC"
+        },
+        {
+          "source_page": "205",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-92CA389907DDB492839C-AMYLOID"
+        },
+        {
+          "source_page": "28",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-961396ED0730275E56D0-ICM"
+        },
+        {
+          "source_page": "13",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-7E532BD8A74BCB9B8E92-DCM"
+        },
+        {
+          "source_page": "75",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-5229ADA2C7D16091BAA495F1"
+        },
+        {
+          "source_page": "6",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-066552C60477CD73B70D-ALVC"
+        },
+        {
+          "source_page": "12",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-0EBC528F9F2374DA5B28-ATRIAL"
+        },
+        {
+          "source_page": "2",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-0A6493CD808574838C1E-ICM"
+        },
+        {
+          "source_page": "5",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-0A8CD35563AD2A5CAEAF-ICM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-05E0D434ACF6DAEEA231-HCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-082FAB24E902B7D2BFB8-DCM"
+        },
+        {
+          "source_page": "16",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-25F6D72C3F2CC16D8FA0AF61"
+        },
+        {
+          "source_page": "16",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-08991F388B907D165EF8-ARVC"
+        },
+        {
+          "source_page": "19",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-06129C9680EC36CFC688-HCM"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ARVC",
+      "disease_name": "致心律失常性右心室心肌病",
+      "relation_type": "differentiates_from",
+      "target_labels": [
+        "KGNode",
+        "DifferentialDiagnosis"
+      ],
+      "target_code": "DDX-CARD-A07BA907BDB0",
+      "target_name": "心肌炎",
+      "target_properties": {
+        "source_type": "authoritative_textbook",
+        "scope_type": "disease",
+        "schema_version": "V1.15",
+        "entityType": "DifferentialDiagnosis",
+        "aliases": [
+          "炎症性心肌病"
+        ],
+        "type_label": "DifferentialDiagnosis",
+        "primary_label": "KGNode",
+        "id": "KG_DDX_CARD_A07BA907BDB0",
+        "entityCategory": "诊断",
+        "canonical_labels": [
+          "KGNode",
+          "DifferentialDiagnosis"
+        ],
+        "disease_name": "ST段抬高型心肌梗死",
+        "foundation_import_source": "BATCH-CARD-CM-20260622-001",
+        "name": "心肌炎",
+        "created_at": "2026-07-12 21:30:00",
+        "knowledge_layer": "textbook_skeleton",
+        "updated_by": "20260716_内科学心血管骨架V1冻结修复",
+        "formal_cdss_ready": true,
+        "skill_version": "V2.1-STEMI-textbook-refine",
+        "review_status": "ai_prechecked",
+        "merge_status": "delta_ready",
+        "disease_code": "DIS-CARD-CAD-STEMI",
+        "formal_ready_at": "2026-07-14T13:54:00",
+        "scope_target": "ST段抬高型心肌梗死",
+        "name_en": "Myocarditis",
+        "skeleton_slot": "differential_diagnosis",
+        "code": "DDX-CARD-A07BA907BDB0",
+        "source_section": "第三篇 循环系统疾病 / 第四节 急性冠脉综合征 / 二、急性ST段抬高型心肌梗死",
+        "preferred_name": "心肌炎",
+        "batch_id": "BATCH-CARD-CAD-STEMI-20260712-001",
+        "display_name": "心肌炎",
+        "updated_at": "2026-07-16 22:18:01",
+        "source_authority": "《内科学（第10版）》",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260714_心肌病总精修",
+        "skeleton_slot_status": "covered_from_textbook",
+        "cdss_release_level": "formal"
+      },
+      "rules": [
+        {
+          "description": null,
+          "name": null,
+          "code": null
+        }
+      ],
+      "evidence": [
+        {
+          "source_page": "251-252",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-CARD-STEMI-TEXTBOOK-309681CCAE"
+        },
+        {
+          "source_page": "8",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-F3C422CF5F35620C25C0-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-FB421FFB16F4732DED5C-HCM"
+        },
+        {
+          "source_page": "311",
+          "source_name": "《内科学》第10版",
+          "evidence_id": "EVD-TB-5908340B73B73B1642EC-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-F907E68F0C0DF4E636BD-DCM"
+        },
+        {
+          "source_page": "309",
+          "source_name": "《内科学》第10版",
+          "evidence_id": "EVD-TB-A1F7BDE628D49B661120-DCM"
+        },
+        {
+          "source_page": "14",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-F595B0717C94F223AFC9-DCM"
+        },
+        {
+          "source_page": "8",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-562A1F9E177146735724-HCM"
+        },
+        {
+          "source_page": "212",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-987569B72A611CE42325-CHD"
+        },
+        {
+          "source_page": "2",
+          "source_name": "左心室肥厚诊断和治疗临床路径中国专家共识2023.pdf",
+          "evidence_id": "EVD-CE95CF30E30F89DC2E82-AMYLOID"
+        },
+        {
+          "source_page": "3",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-E0C41D565D25B6F43601-AMYLOID"
+        },
+        {
+          "source_page": "6",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-ABC1875F3DE11AAB078A-ACM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-21B8D41CA943183BD0BB-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-2F09B32C737BF164BDB5-DCM"
+        },
+        {
+          "source_page": "29",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-74C08FDA665F90308028-ATRIAL"
+        },
+        {
+          "source_page": "3",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-1A44D66AC5036A5DAF96-DCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-45940BDBB5BAB828C2C3-DCM"
+        },
+        {
+          "source_page": "311",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E58570B4D59D7F3C1656-DCM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-7AE0B3CA7A1063A0E475-DCM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-B7399D3F6F6AE29606B2-ARVC"
+        },
+        {
+          "source_page": "32",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-3653EBEB989691E13537-ACM"
+        },
+        {
+          "source_page": "13",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-7E532BD8A74BCB9B8E92-DCM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "肥厚型心肌病激发_负荷超声心动图临床应用指南(2024版).pdf",
+          "evidence_id": "EVD-4640EDB1B71FF317087B-HCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-9119B6933BB04EEC6F7D-DCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-EA12FDB1586C16E92E2D-RCM"
+        },
+        {
+          "source_page": "317",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-DE49120F29505C5D60B1-ICM"
+        },
+        {
+          "source_page": "207",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F017D31EF6878106540E-ARVC"
+        },
+        {
+          "source_page": "309",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-A1F7BDE628D49B661120-ARVC"
+        },
+        {
+          "source_page": "9",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-E2384B636798D39DA53A-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-B2DCA968AD2CBCC06D55-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-CEB1E0D11EF218449196-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-9D9366D42AA49B403F52-RCM"
+        },
+        {
+          "source_page": "32",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-A0444F2C80D411061108-DCM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-132E978331D8A717950C-AMYLOID"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ARVC",
+      "disease_name": "致心律失常性右心室心肌病",
+      "relation_type": "differentiates_from",
+      "target_labels": [
+        "KGNode",
+        "DifferentialDiagnosis"
+      ],
+      "target_code": "DDX-CARD-645287F85899",
+      "target_name": "瓣膜性心脏病",
+      "target_properties": {
+        "scope_type": "category",
+        "schema_version": "V1.1",
+        "entityType": "DifferentialDiagnosis",
+        "aliases": [
+          "瓣膜病"
+        ],
+        "type_label": "DifferentialDiagnosis",
+        "primary_label": "KGNode",
+        "id": "KG_DDX_CARD_645287F85899",
+        "entityCategory": "诊断",
+        "canonical_labels": [
+          "KGNode",
+          "DifferentialDiagnosis"
+        ],
+        "foundation_import_source": "BATCH-CARD-CM-20260622-001",
+        "name": "瓣膜性心脏病",
+        "formal_cdss_ready": true,
+        "review_status": "approved",
+        "merge_status": "validated",
+        "formal_ready_at": "2026-07-14T13:54:00",
+        "scope_target": "心肌病",
+        "name_en": "Valvular heart disease",
+        "code": "DDX-CARD-645287F85899",
+        "preferred_name": "瓣膜性心脏病",
+        "batch_id": "BATCH-CARD-CM-20260622-001",
+        "display_name": "瓣膜性心脏病",
+        "updated_at": "2026-07-14T13:54:00",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260714_心肌病总精修",
+        "cdss_release_level": "formal"
+      },
+      "rules": [
+        {
+          "description": null,
+          "name": null,
+          "code": null
+        }
+      ],
+      "evidence": [
+        {
+          "source_page": "2",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-EA12FDB1586C16E92E2D-RCM"
+        },
+        {
+          "source_page": "29",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-28A6FE4B0E63BA664B7E-ATRIAL"
+        },
+        {
+          "source_page": "375",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-AB5D1C77A193D7FEACBC-VHD"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-FB826F6A9CA5D4C3346C-ACM"
+        },
+        {
+          "source_page": "306",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D38F0492EA9F9200762F-SUDDEN"
+        },
+        {
+          "source_page": "212",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-987569B72A611CE42325-CHD"
+        },
+        {
+          "source_page": "975",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-66A077B54ED26FA762CD-ARREST"
+        },
+        {
+          "source_page": "13",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-7E532BD8A74BCB9B8E92-DCM"
+        },
+        {
+          "source_page": "306",
+          "source_name": "《内科学》第10版",
+          "evidence_id": "EVD-TB-D38F0492EA9F9200762F-HCM"
+        },
+        {
+          "source_page": "29",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-74C08FDA665F90308028-ATRIAL"
+        },
+        {
+          "source_page": "1",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-2E59910781B5C36FFDE7-DCM"
+        },
+        {
+          "source_page": "9",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-8880421ABCE71468D096-ARVC"
+        },
+        {
+          "source_page": "1",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-B2DCA968AD2CBCC06D55-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "左心室肥厚诊断和治疗临床路径中国专家共识2023.pdf",
+          "evidence_id": "EVD-A0EF6280464E916A97D2-HCM"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ARVC",
+      "disease_name": "致心律失常性右心室心肌病",
+      "relation_type": "differentiates_from",
+      "target_labels": [
+        "KGNode",
+        "DifferentialDiagnosis"
+      ],
+      "target_code": "DDX-CARD-887CF6C354E7",
+      "target_name": "高血压性心脏病",
+      "target_properties": {
+        "scope_type": "category",
+        "schema_version": "V1.1",
+        "entityType": "DifferentialDiagnosis",
+        "aliases": [
+          "高血压心脏病"
+        ],
+        "type_label": "DifferentialDiagnosis",
+        "primary_label": "KGNode",
+        "id": "KG_DDX_CARD_887CF6C354E7",
+        "entityCategory": "诊断",
+        "canonical_labels": [
+          "KGNode",
+          "DifferentialDiagnosis"
+        ],
+        "foundation_import_source": "BATCH-CARD-CM-20260622-001",
+        "name": "高血压性心脏病",
+        "formal_cdss_ready": true,
+        "review_status": "approved",
+        "merge_status": "validated",
+        "formal_ready_at": "2026-07-14T13:54:00",
+        "scope_target": "心肌病",
+        "name_en": "Hypertensive heart disease",
+        "code": "DDX-CARD-887CF6C354E7",
+        "preferred_name": "高血压性心脏病",
+        "batch_id": "BATCH-CARD-CM-20260622-001",
+        "display_name": "高血压性心脏病",
+        "updated_at": "2026-07-14T13:54:00",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260714_心肌病总精修",
+        "cdss_release_level": "formal"
+      },
+      "rules": [
+        {
+          "description": null,
+          "name": null,
+          "code": null
+        }
+      ],
+      "evidence": [
+        {
+          "source_page": "2",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-EA12FDB1586C16E92E2D-RCM"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-DCM",
+      "disease_name": "扩张型心肌病",
+      "relation_type": "differentiates_from",
+      "target_labels": [
+        "KGNode",
+        "DifferentialDiagnosis"
+      ],
+      "target_code": "DDX-CARD-6AB732E54DB3",
+      "target_name": "冠心病",
+      "target_properties": {
+        "scope_type": "疾病大类",
+        "schema_version": "V1.15",
+        "entityType": "DifferentialDiagnosis",
+        "aliases": [
+          "冠状动脉疾病",
+          "冠状动脉粥样硬化性心脏病"
+        ],
+        "type_label": "DifferentialDiagnosis",
+        "primary_label": "KGNode",
+        "id": "KG_DDX_CARD_6AB732E54DB3",
+        "entityCategory": "诊断",
+        "canonical_labels": [
+          "KGNode",
+          "DifferentialDiagnosis"
+        ],
+        "foundation_import_source": "BATCH-CARD-CM-20260622-001",
+        "name": "冠心病",
+        "formal_cdss_ready": true,
+        "review_status": "approved",
+        "merge_status": "validated",
+        "formal_ready_at": "2026-07-14T13:54:00",
+        "scope_target": "血脂异常、动脉粥样硬化、ASCVD风险防治",
+        "name_en": "Coronary heart disease",
+        "abbr": "CHD",
+        "code": "DDX-CARD-6AB732E54DB3",
+        "preferred_name": "冠心病",
+        "batch_id": "20260715_血脂异常动脉粥样硬化防治正式解析",
+        "display_name": "冠心病",
+        "updated_at": "2026-07-14T13:54:00",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260714_心肌病总精修",
+        "cdss_release_level": "formal"
+      },
+      "rules": [
+        {
+          "description": null,
+          "name": null,
+          "code": null
+        }
+      ],
+      "evidence": [
+        {
+          "source_page": "259",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F3A3642C0C812A4A20F5-HT"
+        },
+        {
+          "source_page": "5",
+          "source_name": "泛血管疾病患者血脂管理专家共识（2025版）.pdf",
+          "evidence_id": "EVD-F3CDFAF058B27A56D5DD-FH"
+        },
+        {
+          "source_page": "786",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E9E952E8EF90B0F82431-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "814",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E5E8BF68E1C606B7BA49-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D69D429CC105927B53AD-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "787",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E11610E954D8B5120EDE-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BDDC28BBB4C76D45ADBC-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-A74440FC2E0A0D9A49A3-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-6B80E07F31F2EDD2CDAB-CHD"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-8719402DC94C9DE88466-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "20",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-7B90B634CC77A85BADBE-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "19",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-76038E82B4A9E1770E8A-FH"
+        },
+        {
+          "source_page": "7",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-8C13E44CC7DC6D6D119E-FH"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-8AC9E3EE1ABDD2C4B04B-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-7FF041D0C3D1ECDBB76B-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "794",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-1CB89401408635ADE295-HT"
+        },
+        {
+          "source_page": "14",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-2B4E5FD15159B9F88556-HYPERCHOLESTEROLEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-649E549983E2D0944723-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "788",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-3008E1DE0621F6FBA24B-HT"
+        },
+        {
+          "source_page": "2",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-14750CB99FD5FECD789F-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "23",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-44A6857E9606A69FC0CF-FH"
+        },
+        {
+          "source_page": "23",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-6D9AFF24B631B57B7579-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "40",
+          "source_name": "DCM AHA 2016.pdf",
+          "evidence_id": "EVD-6B86DD83EA5A40FC48EA-ACM"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-0E0DB68A83C70277CA1E-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "785",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-0B68C8A888D1B4357741-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-04C55826AD37BBB4B748-FH"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-0580A467915451274C5A-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-6A510442902B8C35B153-CHD"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-7ADF93F91BC18C6278E0-PAD"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-75BA78B92C6E3A070657-PAD"
+        },
+        {
+          "source_page": "197",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BA733DE3A3E2350CD488-PAD"
+        },
+        {
+          "source_page": "5",
+          "source_name": "中国 Stanford B 型主动脉夹层诊断和治疗2022.pdf",
+          "evidence_id": "EVD-88C977A0496CCBD59066-PAD"
+        },
+        {
+          "source_page": "294",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-46683964152E5535D749-HT"
+        },
+        {
+          "source_page": "239",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-7874B2BF72F4B3556F05-PVC"
+        },
+        {
+          "source_page": "232",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F80661754E736C1801C2-AF"
+        },
+        {
+          "source_page": "8",
+          "source_name": "2024 中国成人暴发性心肌炎诊断和治疗指南.pdf",
+          "evidence_id": "EVD-39110704295544AB958E-MYOCARDITIS"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-FDCAA5B62C8C2667E320-PERICARDITIS"
+        },
+        {
+          "source_page": "224",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-4DF6EEA103CFDD3D1193-BBB"
+        },
+        {
+          "source_page": "272",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-70A672875FB90E7D7A27-ICM"
+        },
+        {
+          "source_page": "222",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-213FB6451C1E4AFE4B36-SAB"
+        },
+        {
+          "source_page": "230",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BB898761ADEFF4C57A25-AVB"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-B4E9FFC5EE6465D204BC-PERICARDITIS"
+        },
+        {
+          "source_page": "212",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-987569B72A611CE42325-CHD"
+        },
+        {
+          "source_page": "60",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D95E22BF8C5FCA8A292C-PH"
+        },
+        {
+          "source_page": "24",
+          "source_name": "PH CN 2021.pdf",
+          "evidence_id": "EVD-5FD817C81032408B4D0E-PH"
+        },
+        {
+          "source_page": "171",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-31698B19B37B03C71973-AVB"
+        },
+        {
+          "source_page": "815",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-96A13DE890A0EE65651B-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "29",
+          "source_name": "PH CN 2021.pdf",
+          "evidence_id": "EVD-56BEF8636D3F56E444EE-PAH"
+        },
+        {
+          "source_page": "1",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-56344CEB7D7CFB6E6198-ICM"
+        },
+        {
+          "source_page": "204",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-26C3C19278144232DE1C-CHD"
+        },
+        {
+          "source_page": "265",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-3BBEC2D46A322B320230-BBB"
+        },
+        {
+          "source_page": "263",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-C3CB241ED9412E86D507-CHD"
+        },
+        {
+          "source_page": "274",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-84D82E69547D4D4E8569-MR"
+        },
+        {
+          "source_page": "798",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-9F9CE2FFCBE7A8A1C303-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "349",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-1417CB6755A66242A35C-CHD"
+        },
+        {
+          "source_page": "16",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-ED629BC8BA5B3721964A-ARVC"
+        },
+        {
+          "source_page": "3",
+          "source_name": "中国 经导管主动脉瓣置换术临床实践指南（2023版）.pdf",
+          "evidence_id": "EVD-EDB904029B30F2F41A6A-AS"
+        },
+        {
+          "source_page": "976",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F33F3D7955AE28702E0B-ARVC"
+        },
+        {
+          "source_page": "972",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-019FE93DC48C8CD8DAC2-CCS"
+        },
+        {
+          "source_page": "231",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-B9CAB7EC30CAB04B08EC-BBB"
+        },
+        {
+          "source_page": "341",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-AC264AB34A5145514043-RHD"
+        },
+        {
+          "source_page": "12",
+          "source_name": "中国 经导管主动脉瓣置换术临床路径专家共识（2024 版）.pdf",
+          "evidence_id": "EVD-8120D082E0867664FD90-AS"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-24AAD8B5E5FE7627EB78-PVC"
+        },
+        {
+          "source_page": "208",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-81F0EECE0B4926177715-AS"
+        },
+        {
+          "source_page": "68",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-FF6601695AE6A9C6624E-ARVC"
+        },
+        {
+          "source_page": "15",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-FEC5483CB7E25D200A90-HCM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-F7F59E7B0FAAF79AE14A-HCM"
+        },
+        {
+          "source_page": "5",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-C41B68EB0E2A73FC1583-ICM"
+        },
+        {
+          "source_page": "359",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D96D265F9E4E68E15F8C-ARREST"
+        },
+        {
+          "source_page": "19",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-CA5C06442612964573E0-ACM"
+        },
+        {
+          "source_page": "375",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-AB5D1C77A193D7FEACBC-VHD"
+        },
+        {
+          "source_page": "8",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-F1C075DF7D18CC667C1E-ICM"
+        },
+        {
+          "source_page": "6",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-9A48E981C616E518454B-ACM"
+        },
+        {
+          "source_page": "68",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-4BC0142953B346C1151871A1"
+        },
+        {
+          "source_page": "18",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-D81B5110E5DAED296665-HCM"
+        },
+        {
+          "source_page": "75",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-C4B85D0F348E4A3467FA-HCM"
+        },
+        {
+          "source_page": "718",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D8EA2C0114E2AB8A8856-AF"
+        },
+        {
+          "source_page": "6",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-CF497DD49ED9FFA43088-ACM"
+        },
+        {
+          "source_page": "39",
+          "source_name": "DCM AHA 2016.pdf",
+          "evidence_id": "EVD-A3AA6CC1DBB44A429F48-DCM"
+        },
+        {
+          "source_page": "36",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-7C107D91E06FFEAFF9FFD20F"
+        },
+        {
+          "source_page": "12",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-B7158EA8F42BD3742755-ATRIAL"
+        },
+        {
+          "source_page": "5",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-B099D47B3C04791193F6-ICM"
+        },
+        {
+          "source_page": "340",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BFB3CBAF2B3AA3323379-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-B20E0ABA092EBED3E733-ICM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-9871EAD4F0A6AF8F6980-AMYLOID"
+        },
+        {
+          "source_page": "7",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-BB9A8D3631FE99170D28-HCM"
+        },
+        {
+          "source_page": "207",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F017D31EF6878106540E-ARVC"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-FE66F93BD07FEE13ED02-CHD"
+        },
+        {
+          "source_page": "75",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-EE8D9BBD063B8D42D3D2-HCM"
+        },
+        {
+          "source_page": "9",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-C8250F84A40E395A69D0-ICM"
+        },
+        {
+          "source_page": "8",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-2326AF857AD6D0003982-ARVC"
+        },
+        {
+          "source_page": "18",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-7463A47E870217ED6976-HCM"
+        },
+        {
+          "source_page": "9",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-8721E54B3812D0E997DF-HCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "成人法布雷病心肌病诊断与治疗中国专家共识.pdf",
+          "evidence_id": "EVD-30E6060A7D444D3FDD14-HCM"
+        },
+        {
+          "source_page": "36",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-7041347481EA824F5601-ARVC"
+        },
+        {
+          "source_page": "68",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-6F8E0A473E5CAC418486-ARVC"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-132E978331D8A717950C-AMYLOID"
+        },
+        {
+          "source_page": "377",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-TB-768C920AFBBFC4222902-VT"
+        },
+        {
+          "source_page": "210",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-97E7FAE66E8A1003A81B-RHD"
+        },
+        {
+          "source_page": "12",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-773C089A9E762740DADF-ATRIAL"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-A01BEEF00EA868356E33-FH"
+        },
+        {
+          "source_page": "2",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-38AB8FC55FAAE68FCD7F-ICM"
+        },
+        {
+          "source_page": "8",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-287A4450D605D3448BD2-ICM"
+        },
+        {
+          "source_page": "37",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-454486CC432E9B944C28DB70"
+        },
+        {
+          "source_page": "37",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-1750A3CB03E530878754-ARVC"
+        },
+        {
+          "source_page": "37",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-9726983EE0BFBFF0C893-ARVC"
+        },
+        {
+          "source_page": "205",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-92CA389907DDB492839C-AMYLOID"
+        },
+        {
+          "source_page": "28",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-961396ED0730275E56D0-ICM"
+        },
+        {
+          "source_page": "13",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-7E532BD8A74BCB9B8E92-DCM"
+        },
+        {
+          "source_page": "75",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-5229ADA2C7D16091BAA495F1"
+        },
+        {
+          "source_page": "6",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-066552C60477CD73B70D-ALVC"
+        },
+        {
+          "source_page": "12",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-0EBC528F9F2374DA5B28-ATRIAL"
+        },
+        {
+          "source_page": "2",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-0A6493CD808574838C1E-ICM"
+        },
+        {
+          "source_page": "5",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-0A8CD35563AD2A5CAEAF-ICM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-05E0D434ACF6DAEEA231-HCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-082FAB24E902B7D2BFB8-DCM"
+        },
+        {
+          "source_page": "16",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-25F6D72C3F2CC16D8FA0AF61"
+        },
+        {
+          "source_page": "16",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-08991F388B907D165EF8-ARVC"
+        },
+        {
+          "source_page": "19",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-06129C9680EC36CFC688-HCM"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-DCM",
+      "disease_name": "扩张型心肌病",
+      "relation_type": "differentiates_from",
+      "target_labels": [
+        "KGNode",
+        "DifferentialDiagnosis"
+      ],
+      "target_code": "DDX-CARD-A07BA907BDB0",
+      "target_name": "心肌炎",
+      "target_properties": {
+        "source_type": "authoritative_textbook",
+        "scope_type": "disease",
+        "schema_version": "V1.15",
+        "entityType": "DifferentialDiagnosis",
+        "aliases": [
+          "炎症性心肌病"
+        ],
+        "type_label": "DifferentialDiagnosis",
+        "primary_label": "KGNode",
+        "id": "KG_DDX_CARD_A07BA907BDB0",
+        "entityCategory": "诊断",
+        "canonical_labels": [
+          "KGNode",
+          "DifferentialDiagnosis"
+        ],
+        "disease_name": "ST段抬高型心肌梗死",
+        "foundation_import_source": "BATCH-CARD-CM-20260622-001",
+        "name": "心肌炎",
+        "created_at": "2026-07-12 21:30:00",
+        "knowledge_layer": "textbook_skeleton",
+        "updated_by": "20260716_内科学心血管骨架V1冻结修复",
+        "formal_cdss_ready": true,
+        "skill_version": "V2.1-STEMI-textbook-refine",
+        "review_status": "ai_prechecked",
+        "merge_status": "delta_ready",
+        "disease_code": "DIS-CARD-CAD-STEMI",
+        "formal_ready_at": "2026-07-14T13:54:00",
+        "scope_target": "ST段抬高型心肌梗死",
+        "name_en": "Myocarditis",
+        "skeleton_slot": "differential_diagnosis",
+        "code": "DDX-CARD-A07BA907BDB0",
+        "source_section": "第三篇 循环系统疾病 / 第四节 急性冠脉综合征 / 二、急性ST段抬高型心肌梗死",
+        "preferred_name": "心肌炎",
+        "batch_id": "BATCH-CARD-CAD-STEMI-20260712-001",
+        "display_name": "心肌炎",
+        "updated_at": "2026-07-16 22:18:01",
+        "source_authority": "《内科学（第10版）》",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260714_心肌病总精修",
+        "skeleton_slot_status": "covered_from_textbook",
+        "cdss_release_level": "formal"
+      },
+      "rules": [
+        {
+          "description": null,
+          "name": null,
+          "code": null
+        }
+      ],
+      "evidence": [
+        {
+          "source_page": "251-252",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-CARD-STEMI-TEXTBOOK-309681CCAE"
+        },
+        {
+          "source_page": "8",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-F3C422CF5F35620C25C0-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-FB421FFB16F4732DED5C-HCM"
+        },
+        {
+          "source_page": "311",
+          "source_name": "《内科学》第10版",
+          "evidence_id": "EVD-TB-5908340B73B73B1642EC-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-F907E68F0C0DF4E636BD-DCM"
+        },
+        {
+          "source_page": "309",
+          "source_name": "《内科学》第10版",
+          "evidence_id": "EVD-TB-A1F7BDE628D49B661120-DCM"
+        },
+        {
+          "source_page": "14",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-F595B0717C94F223AFC9-DCM"
+        },
+        {
+          "source_page": "8",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-562A1F9E177146735724-HCM"
+        },
+        {
+          "source_page": "212",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-987569B72A611CE42325-CHD"
+        },
+        {
+          "source_page": "2",
+          "source_name": "左心室肥厚诊断和治疗临床路径中国专家共识2023.pdf",
+          "evidence_id": "EVD-CE95CF30E30F89DC2E82-AMYLOID"
+        },
+        {
+          "source_page": "3",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-E0C41D565D25B6F43601-AMYLOID"
+        },
+        {
+          "source_page": "6",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-ABC1875F3DE11AAB078A-ACM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-21B8D41CA943183BD0BB-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-2F09B32C737BF164BDB5-DCM"
+        },
+        {
+          "source_page": "29",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-74C08FDA665F90308028-ATRIAL"
+        },
+        {
+          "source_page": "3",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-1A44D66AC5036A5DAF96-DCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-45940BDBB5BAB828C2C3-DCM"
+        },
+        {
+          "source_page": "311",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E58570B4D59D7F3C1656-DCM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-7AE0B3CA7A1063A0E475-DCM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-B7399D3F6F6AE29606B2-ARVC"
+        },
+        {
+          "source_page": "32",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-3653EBEB989691E13537-ACM"
+        },
+        {
+          "source_page": "13",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-7E532BD8A74BCB9B8E92-DCM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "肥厚型心肌病激发_负荷超声心动图临床应用指南(2024版).pdf",
+          "evidence_id": "EVD-4640EDB1B71FF317087B-HCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-9119B6933BB04EEC6F7D-DCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-EA12FDB1586C16E92E2D-RCM"
+        },
+        {
+          "source_page": "317",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-DE49120F29505C5D60B1-ICM"
+        },
+        {
+          "source_page": "207",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F017D31EF6878106540E-ARVC"
+        },
+        {
+          "source_page": "309",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-A1F7BDE628D49B661120-ARVC"
+        },
+        {
+          "source_page": "9",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-E2384B636798D39DA53A-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-B2DCA968AD2CBCC06D55-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-CEB1E0D11EF218449196-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-9D9366D42AA49B403F52-RCM"
+        },
+        {
+          "source_page": "32",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-A0444F2C80D411061108-DCM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-132E978331D8A717950C-AMYLOID"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-DCM",
+      "disease_name": "扩张型心肌病",
+      "relation_type": "differentiates_from",
+      "target_labels": [
+        "KGNode",
+        "DifferentialDiagnosis"
+      ],
+      "target_code": "DDX-CARD-645287F85899",
+      "target_name": "瓣膜性心脏病",
+      "target_properties": {
+        "scope_type": "category",
+        "schema_version": "V1.1",
+        "entityType": "DifferentialDiagnosis",
+        "aliases": [
+          "瓣膜病"
+        ],
+        "type_label": "DifferentialDiagnosis",
+        "primary_label": "KGNode",
+        "id": "KG_DDX_CARD_645287F85899",
+        "entityCategory": "诊断",
+        "canonical_labels": [
+          "KGNode",
+          "DifferentialDiagnosis"
+        ],
+        "foundation_import_source": "BATCH-CARD-CM-20260622-001",
+        "name": "瓣膜性心脏病",
+        "formal_cdss_ready": true,
+        "review_status": "approved",
+        "merge_status": "validated",
+        "formal_ready_at": "2026-07-14T13:54:00",
+        "scope_target": "心肌病",
+        "name_en": "Valvular heart disease",
+        "code": "DDX-CARD-645287F85899",
+        "preferred_name": "瓣膜性心脏病",
+        "batch_id": "BATCH-CARD-CM-20260622-001",
+        "display_name": "瓣膜性心脏病",
+        "updated_at": "2026-07-14T13:54:00",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260714_心肌病总精修",
+        "cdss_release_level": "formal"
+      },
+      "rules": [
+        {
+          "description": null,
+          "name": null,
+          "code": null
+        }
+      ],
+      "evidence": [
+        {
+          "source_page": "2",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-EA12FDB1586C16E92E2D-RCM"
+        },
+        {
+          "source_page": "29",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-28A6FE4B0E63BA664B7E-ATRIAL"
+        },
+        {
+          "source_page": "375",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-AB5D1C77A193D7FEACBC-VHD"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-FB826F6A9CA5D4C3346C-ACM"
+        },
+        {
+          "source_page": "306",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D38F0492EA9F9200762F-SUDDEN"
+        },
+        {
+          "source_page": "212",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-987569B72A611CE42325-CHD"
+        },
+        {
+          "source_page": "975",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-66A077B54ED26FA762CD-ARREST"
+        },
+        {
+          "source_page": "13",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-7E532BD8A74BCB9B8E92-DCM"
+        },
+        {
+          "source_page": "306",
+          "source_name": "《内科学》第10版",
+          "evidence_id": "EVD-TB-D38F0492EA9F9200762F-HCM"
+        },
+        {
+          "source_page": "29",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-74C08FDA665F90308028-ATRIAL"
+        },
+        {
+          "source_page": "1",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-2E59910781B5C36FFDE7-DCM"
+        },
+        {
+          "source_page": "9",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-8880421ABCE71468D096-ARVC"
+        },
+        {
+          "source_page": "1",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-B2DCA968AD2CBCC06D55-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "左心室肥厚诊断和治疗临床路径中国专家共识2023.pdf",
+          "evidence_id": "EVD-A0EF6280464E916A97D2-HCM"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-HCM",
+      "disease_name": "肥厚型心肌病",
+      "relation_type": "differentiates_from",
+      "target_labels": [
+        "KGNode",
+        "DifferentialDiagnosis"
+      ],
+      "target_code": "DDX-CARD-6AB732E54DB3",
+      "target_name": "冠心病",
+      "target_properties": {
+        "scope_type": "疾病大类",
+        "schema_version": "V1.15",
+        "entityType": "DifferentialDiagnosis",
+        "aliases": [
+          "冠状动脉疾病",
+          "冠状动脉粥样硬化性心脏病"
+        ],
+        "type_label": "DifferentialDiagnosis",
+        "primary_label": "KGNode",
+        "id": "KG_DDX_CARD_6AB732E54DB3",
+        "entityCategory": "诊断",
+        "canonical_labels": [
+          "KGNode",
+          "DifferentialDiagnosis"
+        ],
+        "foundation_import_source": "BATCH-CARD-CM-20260622-001",
+        "name": "冠心病",
+        "formal_cdss_ready": true,
+        "review_status": "approved",
+        "merge_status": "validated",
+        "formal_ready_at": "2026-07-14T13:54:00",
+        "scope_target": "血脂异常、动脉粥样硬化、ASCVD风险防治",
+        "name_en": "Coronary heart disease",
+        "abbr": "CHD",
+        "code": "DDX-CARD-6AB732E54DB3",
+        "preferred_name": "冠心病",
+        "batch_id": "20260715_血脂异常动脉粥样硬化防治正式解析",
+        "display_name": "冠心病",
+        "updated_at": "2026-07-14T13:54:00",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260714_心肌病总精修",
+        "cdss_release_level": "formal"
+      },
+      "rules": [
+        {
+          "description": null,
+          "name": null,
+          "code": null
+        }
+      ],
+      "evidence": [
+        {
+          "source_page": "259",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F3A3642C0C812A4A20F5-HT"
+        },
+        {
+          "source_page": "5",
+          "source_name": "泛血管疾病患者血脂管理专家共识（2025版）.pdf",
+          "evidence_id": "EVD-F3CDFAF058B27A56D5DD-FH"
+        },
+        {
+          "source_page": "786",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E9E952E8EF90B0F82431-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "814",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E5E8BF68E1C606B7BA49-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D69D429CC105927B53AD-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "787",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E11610E954D8B5120EDE-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BDDC28BBB4C76D45ADBC-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-A74440FC2E0A0D9A49A3-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-6B80E07F31F2EDD2CDAB-CHD"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-8719402DC94C9DE88466-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "20",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-7B90B634CC77A85BADBE-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "19",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-76038E82B4A9E1770E8A-FH"
+        },
+        {
+          "source_page": "7",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-8C13E44CC7DC6D6D119E-FH"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-8AC9E3EE1ABDD2C4B04B-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-7FF041D0C3D1ECDBB76B-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "794",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-1CB89401408635ADE295-HT"
+        },
+        {
+          "source_page": "14",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-2B4E5FD15159B9F88556-HYPERCHOLESTEROLEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-649E549983E2D0944723-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "788",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-3008E1DE0621F6FBA24B-HT"
+        },
+        {
+          "source_page": "2",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-14750CB99FD5FECD789F-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "23",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-44A6857E9606A69FC0CF-FH"
+        },
+        {
+          "source_page": "23",
+          "source_name": "中国血脂管理指南（2023年）.pdf",
+          "evidence_id": "EVD-6D9AFF24B631B57B7579-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "40",
+          "source_name": "DCM AHA 2016.pdf",
+          "evidence_id": "EVD-6B86DD83EA5A40FC48EA-ACM"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-0E0DB68A83C70277CA1E-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "785",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-0B68C8A888D1B4357741-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-04C55826AD37BBB4B748-FH"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-0580A467915451274C5A-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-6A510442902B8C35B153-CHD"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-7ADF93F91BC18C6278E0-PAD"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-75BA78B92C6E3A070657-PAD"
+        },
+        {
+          "source_page": "197",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BA733DE3A3E2350CD488-PAD"
+        },
+        {
+          "source_page": "5",
+          "source_name": "中国 Stanford B 型主动脉夹层诊断和治疗2022.pdf",
+          "evidence_id": "EVD-88C977A0496CCBD59066-PAD"
+        },
+        {
+          "source_page": "294",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-46683964152E5535D749-HT"
+        },
+        {
+          "source_page": "239",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-7874B2BF72F4B3556F05-PVC"
+        },
+        {
+          "source_page": "232",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F80661754E736C1801C2-AF"
+        },
+        {
+          "source_page": "8",
+          "source_name": "2024 中国成人暴发性心肌炎诊断和治疗指南.pdf",
+          "evidence_id": "EVD-39110704295544AB958E-MYOCARDITIS"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-FDCAA5B62C8C2667E320-PERICARDITIS"
+        },
+        {
+          "source_page": "224",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-4DF6EEA103CFDD3D1193-BBB"
+        },
+        {
+          "source_page": "272",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-70A672875FB90E7D7A27-ICM"
+        },
+        {
+          "source_page": "222",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-213FB6451C1E4AFE4B36-SAB"
+        },
+        {
+          "source_page": "230",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BB898761ADEFF4C57A25-AVB"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-B4E9FFC5EE6465D204BC-PERICARDITIS"
+        },
+        {
+          "source_page": "212",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-987569B72A611CE42325-CHD"
+        },
+        {
+          "source_page": "60",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D95E22BF8C5FCA8A292C-PH"
+        },
+        {
+          "source_page": "24",
+          "source_name": "PH CN 2021.pdf",
+          "evidence_id": "EVD-5FD817C81032408B4D0E-PH"
+        },
+        {
+          "source_page": "171",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-31698B19B37B03C71973-AVB"
+        },
+        {
+          "source_page": "815",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-96A13DE890A0EE65651B-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "29",
+          "source_name": "PH CN 2021.pdf",
+          "evidence_id": "EVD-56BEF8636D3F56E444EE-PAH"
+        },
+        {
+          "source_page": "1",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-56344CEB7D7CFB6E6198-ICM"
+        },
+        {
+          "source_page": "204",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-26C3C19278144232DE1C-CHD"
+        },
+        {
+          "source_page": "265",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-3BBEC2D46A322B320230-BBB"
+        },
+        {
+          "source_page": "263",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-C3CB241ED9412E86D507-CHD"
+        },
+        {
+          "source_page": "274",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-84D82E69547D4D4E8569-MR"
+        },
+        {
+          "source_page": "798",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-9F9CE2FFCBE7A8A1C303-DYSLIPIDEMIA"
+        },
+        {
+          "source_page": "349",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-1417CB6755A66242A35C-CHD"
+        },
+        {
+          "source_page": "16",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-ED629BC8BA5B3721964A-ARVC"
+        },
+        {
+          "source_page": "3",
+          "source_name": "中国 经导管主动脉瓣置换术临床实践指南（2023版）.pdf",
+          "evidence_id": "EVD-EDB904029B30F2F41A6A-AS"
+        },
+        {
+          "source_page": "976",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F33F3D7955AE28702E0B-ARVC"
+        },
+        {
+          "source_page": "972",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-019FE93DC48C8CD8DAC2-CCS"
+        },
+        {
+          "source_page": "231",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-B9CAB7EC30CAB04B08EC-BBB"
+        },
+        {
+          "source_page": "341",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-AC264AB34A5145514043-RHD"
+        },
+        {
+          "source_page": "12",
+          "source_name": "中国 经导管主动脉瓣置换术临床路径专家共识（2024 版）.pdf",
+          "evidence_id": "EVD-8120D082E0867664FD90-AS"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-24AAD8B5E5FE7627EB78-PVC"
+        },
+        {
+          "source_page": "208",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-81F0EECE0B4926177715-AS"
+        },
+        {
+          "source_page": "68",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-FF6601695AE6A9C6624E-ARVC"
+        },
+        {
+          "source_page": "15",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-FEC5483CB7E25D200A90-HCM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-F7F59E7B0FAAF79AE14A-HCM"
+        },
+        {
+          "source_page": "5",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-C41B68EB0E2A73FC1583-ICM"
+        },
+        {
+          "source_page": "359",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D96D265F9E4E68E15F8C-ARREST"
+        },
+        {
+          "source_page": "19",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-CA5C06442612964573E0-ACM"
+        },
+        {
+          "source_page": "375",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-AB5D1C77A193D7FEACBC-VHD"
+        },
+        {
+          "source_page": "8",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-F1C075DF7D18CC667C1E-ICM"
+        },
+        {
+          "source_page": "6",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-9A48E981C616E518454B-ACM"
+        },
+        {
+          "source_page": "68",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-4BC0142953B346C1151871A1"
+        },
+        {
+          "source_page": "18",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-D81B5110E5DAED296665-HCM"
+        },
+        {
+          "source_page": "75",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-C4B85D0F348E4A3467FA-HCM"
+        },
+        {
+          "source_page": "718",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D8EA2C0114E2AB8A8856-AF"
+        },
+        {
+          "source_page": "6",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-CF497DD49ED9FFA43088-ACM"
+        },
+        {
+          "source_page": "39",
+          "source_name": "DCM AHA 2016.pdf",
+          "evidence_id": "EVD-A3AA6CC1DBB44A429F48-DCM"
+        },
+        {
+          "source_page": "36",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-7C107D91E06FFEAFF9FFD20F"
+        },
+        {
+          "source_page": "12",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-B7158EA8F42BD3742755-ATRIAL"
+        },
+        {
+          "source_page": "5",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-B099D47B3C04791193F6-ICM"
+        },
+        {
+          "source_page": "340",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-BFB3CBAF2B3AA3323379-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-B20E0ABA092EBED3E733-ICM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-9871EAD4F0A6AF8F6980-AMYLOID"
+        },
+        {
+          "source_page": "7",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-BB9A8D3631FE99170D28-HCM"
+        },
+        {
+          "source_page": "207",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F017D31EF6878106540E-ARVC"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-FE66F93BD07FEE13ED02-CHD"
+        },
+        {
+          "source_page": "75",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-EE8D9BBD063B8D42D3D2-HCM"
+        },
+        {
+          "source_page": "9",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-C8250F84A40E395A69D0-ICM"
+        },
+        {
+          "source_page": "8",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-2326AF857AD6D0003982-ARVC"
+        },
+        {
+          "source_page": "18",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-7463A47E870217ED6976-HCM"
+        },
+        {
+          "source_page": "9",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-8721E54B3812D0E997DF-HCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "成人法布雷病心肌病诊断与治疗中国专家共识.pdf",
+          "evidence_id": "EVD-30E6060A7D444D3FDD14-HCM"
+        },
+        {
+          "source_page": "36",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-7041347481EA824F5601-ARVC"
+        },
+        {
+          "source_page": "68",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-6F8E0A473E5CAC418486-ARVC"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-132E978331D8A717950C-AMYLOID"
+        },
+        {
+          "source_page": "377",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-TB-768C920AFBBFC4222902-VT"
+        },
+        {
+          "source_page": "210",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-97E7FAE66E8A1003A81B-RHD"
+        },
+        {
+          "source_page": "12",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-773C089A9E762740DADF-ATRIAL"
+        },
+        {
+          "source_page": "N/A",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-A01BEEF00EA868356E33-FH"
+        },
+        {
+          "source_page": "2",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-38AB8FC55FAAE68FCD7F-ICM"
+        },
+        {
+          "source_page": "8",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-287A4450D605D3448BD2-ICM"
+        },
+        {
+          "source_page": "37",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-454486CC432E9B944C28DB70"
+        },
+        {
+          "source_page": "37",
+          "source_name": "HCM ESC 2023.pdf",
+          "evidence_id": "EVD-1750A3CB03E530878754-ARVC"
+        },
+        {
+          "source_page": "37",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-9726983EE0BFBFF0C893-ARVC"
+        },
+        {
+          "source_page": "205",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-92CA389907DDB492839C-AMYLOID"
+        },
+        {
+          "source_page": "28",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-961396ED0730275E56D0-ICM"
+        },
+        {
+          "source_page": "13",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-7E532BD8A74BCB9B8E92-DCM"
+        },
+        {
+          "source_page": "75",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-5229ADA2C7D16091BAA495F1"
+        },
+        {
+          "source_page": "6",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-066552C60477CD73B70D-ALVC"
+        },
+        {
+          "source_page": "12",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-0EBC528F9F2374DA5B28-ATRIAL"
+        },
+        {
+          "source_page": "2",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-0A6493CD808574838C1E-ICM"
+        },
+        {
+          "source_page": "5",
+          "source_name": "缺血性心肌病血运重建专家共识.pdf",
+          "evidence_id": "EVD-0A8CD35563AD2A5CAEAF-ICM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-05E0D434ACF6DAEEA231-HCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-082FAB24E902B7D2BFB8-DCM"
+        },
+        {
+          "source_page": "16",
+          "source_name": "ESC指南：心肌病的管理2023.pdf",
+          "evidence_id": "EVD-SHARED-25F6D72C3F2CC16D8FA0AF61"
+        },
+        {
+          "source_page": "16",
+          "source_name": "心肌病 ESC 2023.pdf",
+          "evidence_id": "EVD-08991F388B907D165EF8-ARVC"
+        },
+        {
+          "source_page": "19",
+          "source_name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf",
+          "evidence_id": "EVD-06129C9680EC36CFC688-HCM"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-HCM",
+      "disease_name": "肥厚型心肌病",
+      "relation_type": "differentiates_from",
+      "target_labels": [
+        "KGNode",
+        "DifferentialDiagnosis"
+      ],
+      "target_code": "DDX-CARD-A07BA907BDB0",
+      "target_name": "心肌炎",
+      "target_properties": {
+        "source_type": "authoritative_textbook",
+        "scope_type": "disease",
+        "schema_version": "V1.15",
+        "entityType": "DifferentialDiagnosis",
+        "aliases": [
+          "炎症性心肌病"
+        ],
+        "type_label": "DifferentialDiagnosis",
+        "primary_label": "KGNode",
+        "id": "KG_DDX_CARD_A07BA907BDB0",
+        "entityCategory": "诊断",
+        "canonical_labels": [
+          "KGNode",
+          "DifferentialDiagnosis"
+        ],
+        "disease_name": "ST段抬高型心肌梗死",
+        "foundation_import_source": "BATCH-CARD-CM-20260622-001",
+        "name": "心肌炎",
+        "created_at": "2026-07-12 21:30:00",
+        "knowledge_layer": "textbook_skeleton",
+        "updated_by": "20260716_内科学心血管骨架V1冻结修复",
+        "formal_cdss_ready": true,
+        "skill_version": "V2.1-STEMI-textbook-refine",
+        "review_status": "ai_prechecked",
+        "merge_status": "delta_ready",
+        "disease_code": "DIS-CARD-CAD-STEMI",
+        "formal_ready_at": "2026-07-14T13:54:00",
+        "scope_target": "ST段抬高型心肌梗死",
+        "name_en": "Myocarditis",
+        "skeleton_slot": "differential_diagnosis",
+        "code": "DDX-CARD-A07BA907BDB0",
+        "source_section": "第三篇 循环系统疾病 / 第四节 急性冠脉综合征 / 二、急性ST段抬高型心肌梗死",
+        "preferred_name": "心肌炎",
+        "batch_id": "BATCH-CARD-CAD-STEMI-20260712-001",
+        "display_name": "心肌炎",
+        "updated_at": "2026-07-16 22:18:01",
+        "source_authority": "《内科学（第10版）》",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260714_心肌病总精修",
+        "skeleton_slot_status": "covered_from_textbook",
+        "cdss_release_level": "formal"
+      },
+      "rules": [
+        {
+          "description": null,
+          "name": null,
+          "code": null
+        }
+      ],
+      "evidence": [
+        {
+          "source_page": "251-252",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-CARD-STEMI-TEXTBOOK-309681CCAE"
+        },
+        {
+          "source_page": "8",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-F3C422CF5F35620C25C0-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-FB421FFB16F4732DED5C-HCM"
+        },
+        {
+          "source_page": "311",
+          "source_name": "《内科学》第10版",
+          "evidence_id": "EVD-TB-5908340B73B73B1642EC-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-F907E68F0C0DF4E636BD-DCM"
+        },
+        {
+          "source_page": "309",
+          "source_name": "《内科学》第10版",
+          "evidence_id": "EVD-TB-A1F7BDE628D49B661120-DCM"
+        },
+        {
+          "source_page": "14",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-F595B0717C94F223AFC9-DCM"
+        },
+        {
+          "source_page": "8",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-562A1F9E177146735724-HCM"
+        },
+        {
+          "source_page": "212",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-987569B72A611CE42325-CHD"
+        },
+        {
+          "source_page": "2",
+          "source_name": "左心室肥厚诊断和治疗临床路径中国专家共识2023.pdf",
+          "evidence_id": "EVD-CE95CF30E30F89DC2E82-AMYLOID"
+        },
+        {
+          "source_page": "3",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-E0C41D565D25B6F43601-AMYLOID"
+        },
+        {
+          "source_page": "6",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-ABC1875F3DE11AAB078A-ACM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-21B8D41CA943183BD0BB-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-2F09B32C737BF164BDB5-DCM"
+        },
+        {
+          "source_page": "29",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-74C08FDA665F90308028-ATRIAL"
+        },
+        {
+          "source_page": "3",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-1A44D66AC5036A5DAF96-DCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-45940BDBB5BAB828C2C3-DCM"
+        },
+        {
+          "source_page": "311",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E58570B4D59D7F3C1656-DCM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-7AE0B3CA7A1063A0E475-DCM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-B7399D3F6F6AE29606B2-ARVC"
+        },
+        {
+          "source_page": "32",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-3653EBEB989691E13537-ACM"
+        },
+        {
+          "source_page": "13",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-7E532BD8A74BCB9B8E92-DCM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "肥厚型心肌病激发_负荷超声心动图临床应用指南(2024版).pdf",
+          "evidence_id": "EVD-4640EDB1B71FF317087B-HCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-9119B6933BB04EEC6F7D-DCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-EA12FDB1586C16E92E2D-RCM"
+        },
+        {
+          "source_page": "317",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-DE49120F29505C5D60B1-ICM"
+        },
+        {
+          "source_page": "207",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F017D31EF6878106540E-ARVC"
+        },
+        {
+          "source_page": "309",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-A1F7BDE628D49B661120-ARVC"
+        },
+        {
+          "source_page": "9",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-E2384B636798D39DA53A-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-B2DCA968AD2CBCC06D55-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-CEB1E0D11EF218449196-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-9D9366D42AA49B403F52-RCM"
+        },
+        {
+          "source_page": "32",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-A0444F2C80D411061108-DCM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-132E978331D8A717950C-AMYLOID"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-HCM",
+      "disease_name": "肥厚型心肌病",
+      "relation_type": "differentiates_from",
+      "target_labels": [
+        "KGNode",
+        "DifferentialDiagnosis"
+      ],
+      "target_code": "DDX-CARD-645287F85899",
+      "target_name": "瓣膜性心脏病",
+      "target_properties": {
+        "scope_type": "category",
+        "schema_version": "V1.1",
+        "entityType": "DifferentialDiagnosis",
+        "aliases": [
+          "瓣膜病"
+        ],
+        "type_label": "DifferentialDiagnosis",
+        "primary_label": "KGNode",
+        "id": "KG_DDX_CARD_645287F85899",
+        "entityCategory": "诊断",
+        "canonical_labels": [
+          "KGNode",
+          "DifferentialDiagnosis"
+        ],
+        "foundation_import_source": "BATCH-CARD-CM-20260622-001",
+        "name": "瓣膜性心脏病",
+        "formal_cdss_ready": true,
+        "review_status": "approved",
+        "merge_status": "validated",
+        "formal_ready_at": "2026-07-14T13:54:00",
+        "scope_target": "心肌病",
+        "name_en": "Valvular heart disease",
+        "code": "DDX-CARD-645287F85899",
+        "preferred_name": "瓣膜性心脏病",
+        "batch_id": "BATCH-CARD-CM-20260622-001",
+        "display_name": "瓣膜性心脏病",
+        "updated_at": "2026-07-14T13:54:00",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260714_心肌病总精修",
+        "cdss_release_level": "formal"
+      },
+      "rules": [
+        {
+          "description": null,
+          "name": null,
+          "code": null
+        }
+      ],
+      "evidence": [
+        {
+          "source_page": "2",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-EA12FDB1586C16E92E2D-RCM"
+        },
+        {
+          "source_page": "29",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-28A6FE4B0E63BA664B7E-ATRIAL"
+        },
+        {
+          "source_page": "375",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-AB5D1C77A193D7FEACBC-VHD"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-FB826F6A9CA5D4C3346C-ACM"
+        },
+        {
+          "source_page": "306",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D38F0492EA9F9200762F-SUDDEN"
+        },
+        {
+          "source_page": "212",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-987569B72A611CE42325-CHD"
+        },
+        {
+          "source_page": "975",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-66A077B54ED26FA762CD-ARREST"
+        },
+        {
+          "source_page": "13",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-7E532BD8A74BCB9B8E92-DCM"
+        },
+        {
+          "source_page": "306",
+          "source_name": "《内科学》第10版",
+          "evidence_id": "EVD-TB-D38F0492EA9F9200762F-HCM"
+        },
+        {
+          "source_page": "29",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-74C08FDA665F90308028-ATRIAL"
+        },
+        {
+          "source_page": "1",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-2E59910781B5C36FFDE7-DCM"
+        },
+        {
+          "source_page": "9",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-8880421ABCE71468D096-ARVC"
+        },
+        {
+          "source_page": "1",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-B2DCA968AD2CBCC06D55-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "左心室肥厚诊断和治疗临床路径中国专家共识2023.pdf",
+          "evidence_id": "EVD-A0EF6280464E916A97D2-HCM"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-RCM",
+      "disease_name": "限制型心肌病",
+      "relation_type": "differentiates_from",
+      "target_labels": [
+        "KGNode",
+        "DifferentialDiagnosis"
+      ],
+      "target_code": "DDX-CARD-A07BA907BDB0",
+      "target_name": "心肌炎",
+      "target_properties": {
+        "source_type": "authoritative_textbook",
+        "scope_type": "disease",
+        "schema_version": "V1.15",
+        "entityType": "DifferentialDiagnosis",
+        "aliases": [
+          "炎症性心肌病"
+        ],
+        "type_label": "DifferentialDiagnosis",
+        "primary_label": "KGNode",
+        "id": "KG_DDX_CARD_A07BA907BDB0",
+        "entityCategory": "诊断",
+        "canonical_labels": [
+          "KGNode",
+          "DifferentialDiagnosis"
+        ],
+        "disease_name": "ST段抬高型心肌梗死",
+        "foundation_import_source": "BATCH-CARD-CM-20260622-001",
+        "name": "心肌炎",
+        "created_at": "2026-07-12 21:30:00",
+        "knowledge_layer": "textbook_skeleton",
+        "updated_by": "20260716_内科学心血管骨架V1冻结修复",
+        "formal_cdss_ready": true,
+        "skill_version": "V2.1-STEMI-textbook-refine",
+        "review_status": "ai_prechecked",
+        "merge_status": "delta_ready",
+        "disease_code": "DIS-CARD-CAD-STEMI",
+        "formal_ready_at": "2026-07-14T13:54:00",
+        "scope_target": "ST段抬高型心肌梗死",
+        "name_en": "Myocarditis",
+        "skeleton_slot": "differential_diagnosis",
+        "code": "DDX-CARD-A07BA907BDB0",
+        "source_section": "第三篇 循环系统疾病 / 第四节 急性冠脉综合征 / 二、急性ST段抬高型心肌梗死",
+        "preferred_name": "心肌炎",
+        "batch_id": "BATCH-CARD-CAD-STEMI-20260712-001",
+        "display_name": "心肌炎",
+        "updated_at": "2026-07-16 22:18:01",
+        "source_authority": "《内科学（第10版）》",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260714_心肌病总精修",
+        "skeleton_slot_status": "covered_from_textbook",
+        "cdss_release_level": "formal"
+      },
+      "rules": [
+        {
+          "description": null,
+          "name": null,
+          "code": null
+        }
+      ],
+      "evidence": [
+        {
+          "source_page": "251-252",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-CARD-STEMI-TEXTBOOK-309681CCAE"
+        },
+        {
+          "source_page": "8",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-F3C422CF5F35620C25C0-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-FB421FFB16F4732DED5C-HCM"
+        },
+        {
+          "source_page": "311",
+          "source_name": "《内科学》第10版",
+          "evidence_id": "EVD-TB-5908340B73B73B1642EC-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-F907E68F0C0DF4E636BD-DCM"
+        },
+        {
+          "source_page": "309",
+          "source_name": "《内科学》第10版",
+          "evidence_id": "EVD-TB-A1F7BDE628D49B661120-DCM"
+        },
+        {
+          "source_page": "14",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-F595B0717C94F223AFC9-DCM"
+        },
+        {
+          "source_page": "8",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-562A1F9E177146735724-HCM"
+        },
+        {
+          "source_page": "212",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-987569B72A611CE42325-CHD"
+        },
+        {
+          "source_page": "2",
+          "source_name": "左心室肥厚诊断和治疗临床路径中国专家共识2023.pdf",
+          "evidence_id": "EVD-CE95CF30E30F89DC2E82-AMYLOID"
+        },
+        {
+          "source_page": "3",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-E0C41D565D25B6F43601-AMYLOID"
+        },
+        {
+          "source_page": "6",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-ABC1875F3DE11AAB078A-ACM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-21B8D41CA943183BD0BB-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-2F09B32C737BF164BDB5-DCM"
+        },
+        {
+          "source_page": "29",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-74C08FDA665F90308028-ATRIAL"
+        },
+        {
+          "source_page": "3",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-1A44D66AC5036A5DAF96-DCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-45940BDBB5BAB828C2C3-DCM"
+        },
+        {
+          "source_page": "311",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-E58570B4D59D7F3C1656-DCM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-7AE0B3CA7A1063A0E475-DCM"
+        },
+        {
+          "source_page": "10",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-B7399D3F6F6AE29606B2-ARVC"
+        },
+        {
+          "source_page": "32",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-3653EBEB989691E13537-ACM"
+        },
+        {
+          "source_page": "13",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-7E532BD8A74BCB9B8E92-DCM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "肥厚型心肌病激发_负荷超声心动图临床应用指南(2024版).pdf",
+          "evidence_id": "EVD-4640EDB1B71FF317087B-HCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-9119B6933BB04EEC6F7D-DCM"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-EA12FDB1586C16E92E2D-RCM"
+        },
+        {
+          "source_page": "317",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-DE49120F29505C5D60B1-ICM"
+        },
+        {
+          "source_page": "207",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-F017D31EF6878106540E-ARVC"
+        },
+        {
+          "source_page": "309",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-A1F7BDE628D49B661120-ARVC"
+        },
+        {
+          "source_page": "9",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-E2384B636798D39DA53A-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-B2DCA968AD2CBCC06D55-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-CEB1E0D11EF218449196-DCM"
+        },
+        {
+          "source_page": "1",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-9D9366D42AA49B403F52-RCM"
+        },
+        {
+          "source_page": "32",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-A0444F2C80D411061108-DCM"
+        },
+        {
+          "source_page": "4",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-132E978331D8A717950C-AMYLOID"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-RCM",
+      "disease_name": "限制型心肌病",
+      "relation_type": "differentiates_from",
+      "target_labels": [
+        "KGNode",
+        "DifferentialDiagnosis"
+      ],
+      "target_code": "DDX-CARD-645287F85899",
+      "target_name": "瓣膜性心脏病",
+      "target_properties": {
+        "scope_type": "category",
+        "schema_version": "V1.1",
+        "entityType": "DifferentialDiagnosis",
+        "aliases": [
+          "瓣膜病"
+        ],
+        "type_label": "DifferentialDiagnosis",
+        "primary_label": "KGNode",
+        "id": "KG_DDX_CARD_645287F85899",
+        "entityCategory": "诊断",
+        "canonical_labels": [
+          "KGNode",
+          "DifferentialDiagnosis"
+        ],
+        "foundation_import_source": "BATCH-CARD-CM-20260622-001",
+        "name": "瓣膜性心脏病",
+        "formal_cdss_ready": true,
+        "review_status": "approved",
+        "merge_status": "validated",
+        "formal_ready_at": "2026-07-14T13:54:00",
+        "scope_target": "心肌病",
+        "name_en": "Valvular heart disease",
+        "code": "DDX-CARD-645287F85899",
+        "preferred_name": "瓣膜性心脏病",
+        "batch_id": "BATCH-CARD-CM-20260622-001",
+        "display_name": "瓣膜性心脏病",
+        "updated_at": "2026-07-14T13:54:00",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260714_心肌病总精修",
+        "cdss_release_level": "formal"
+      },
+      "rules": [
+        {
+          "description": null,
+          "name": null,
+          "code": null
+        }
+      ],
+      "evidence": [
+        {
+          "source_page": "2",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-EA12FDB1586C16E92E2D-RCM"
+        },
+        {
+          "source_page": "29",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-28A6FE4B0E63BA664B7E-ATRIAL"
+        },
+        {
+          "source_page": "375",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-AB5D1C77A193D7FEACBC-VHD"
+        },
+        {
+          "source_page": "2",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-FB826F6A9CA5D4C3346C-ACM"
+        },
+        {
+          "source_page": "306",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-D38F0492EA9F9200762F-SUDDEN"
+        },
+        {
+          "source_page": "212",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-987569B72A611CE42325-CHD"
+        },
+        {
+          "source_page": "975",
+          "source_name": "《内科学（第10版）》",
+          "evidence_id": "EVD-66A077B54ED26FA762CD-ARREST"
+        },
+        {
+          "source_page": "13",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-7E532BD8A74BCB9B8E92-DCM"
+        },
+        {
+          "source_page": "306",
+          "source_name": "《内科学》第10版",
+          "evidence_id": "EVD-TB-D38F0492EA9F9200762F-HCM"
+        },
+        {
+          "source_page": "29",
+          "source_name": "中国心肌病综合管理指南2025.pdf",
+          "evidence_id": "EVD-74C08FDA665F90308028-ATRIAL"
+        },
+        {
+          "source_page": "1",
+          "source_name": "DCM CN 2018.pdf",
+          "evidence_id": "EVD-2E59910781B5C36FFDE7-DCM"
+        },
+        {
+          "source_page": "9",
+          "source_name": "心肌病诊断与治疗建议 2007.pdf",
+          "evidence_id": "EVD-8880421ABCE71468D096-ARVC"
+        },
+        {
+          "source_page": "1",
+          "source_name": "中国 扩张型心肌病诊断和治疗指南2018.pdf",
+          "evidence_id": "EVD-B2DCA968AD2CBCC06D55-DCM"
+        },
+        {
+          "source_page": "3",
+          "source_name": "左心室肥厚诊断和治疗临床路径中国专家共识2023.pdf",
+          "evidence_id": "EVD-A0EF6280464E916A97D2-HCM"
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-RCM",
+      "disease_name": "限制型心肌病",
+      "relation_type": "differentiates_from",
+      "target_labels": [
+        "KGNode",
+        "DifferentialDiagnosis"
+      ],
+      "target_code": "DDX-CARD-887CF6C354E7",
+      "target_name": "高血压性心脏病",
+      "target_properties": {
+        "scope_type": "category",
+        "schema_version": "V1.1",
+        "entityType": "DifferentialDiagnosis",
+        "aliases": [
+          "高血压心脏病"
+        ],
+        "type_label": "DifferentialDiagnosis",
+        "primary_label": "KGNode",
+        "id": "KG_DDX_CARD_887CF6C354E7",
+        "entityCategory": "诊断",
+        "canonical_labels": [
+          "KGNode",
+          "DifferentialDiagnosis"
+        ],
+        "foundation_import_source": "BATCH-CARD-CM-20260622-001",
+        "name": "高血压性心脏病",
+        "formal_cdss_ready": true,
+        "review_status": "approved",
+        "merge_status": "validated",
+        "formal_ready_at": "2026-07-14T13:54:00",
+        "scope_target": "心肌病",
+        "name_en": "Hypertensive heart disease",
+        "code": "DDX-CARD-887CF6C354E7",
+        "preferred_name": "高血压性心脏病",
+        "batch_id": "BATCH-CARD-CM-20260622-001",
+        "display_name": "高血压性心脏病",
+        "updated_at": "2026-07-14T13:54:00",
+        "clinical_review_status": "clinical_ready",
+        "conflict_status": "none",
+        "formal_ready_by": "Codex",
+        "formal_ready_scope": "20260714_心肌病总精修",
+        "cdss_release_level": "formal"
+      },
+      "rules": [
+        {
+          "description": null,
+          "name": null,
+          "code": null
+        }
+      ],
+      "evidence": [
+        {
+          "source_page": "2",
+          "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+          "evidence_id": "EVD-EA12FDB1586C16E92E2D-RCM"
+        }
+      ]
+    }
+  ],
+  "evidence_candidates": [
+    {
+      "disease_code": "DIS-CARD-CM-ABVC",
+      "disease_name": "致心律失常性双心室心肌病",
+      "evidence_id": "EVD-4A1E4087CE013F3ECAA8-ABVC",
+      "source_name": "中国心肌病综合管理指南2025.pdf",
+      "source_page": "18",
+      "source_section": "treatment_plan",
+      "evidence_text": "（3）致心律失常性双心室心肌病 摄入、利尿剂、β 受体阻滞剂减轻心脏负担，改善 （arrhythmogenic biventricular cardiomyopathy，ABVC）： 症状。在合并心房颤动或其他心律失常的高风险患 左、右心室平行受累。2019 年我国专家结合ACM 的 者中应考虑启动抗凝治疗（Ⅰ，B） [135]。 遗传- 临床- 影像- 病理特征提出ACM 的“阜外分 4.3.4.2 器械植入 型”，并受到国际认可 [138]。 患者如出现活动后乏力、黑矇等症状，应进行 4.4.1.2 诊断 进一步检查并评估有无传导阻滞导致的心动过缓， 随着对左、右心室受累认识的深入，近年来 必要时考虑植入起搏器。应常规评估RCM 患者的 ACM 诊断标准不断更新。基于2020 年提出的帕多 ICD 植入指征。推荐在心脏骤停事件中存活或发生 瓦标准（Padua criteria）和2023 年欧洲工作组共识， 过血液动力学不稳定的室性心律失常的RCM 患者 推荐如下诊断标准（表19）和流程（图5） [139]。"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-FABRY",
+      "disease_name": "法布雷病心肌病",
+      "evidence_id": "EVD-30EDA4A86B77A663D200-FABRY",
+      "source_name": "中国心肌病综合管理指南2025.pdf",
+      "source_page": "17",
+      "source_section": "treatment_plan",
+      "evidence_text": "心脏限制样改变，但常合并心肌肥厚或心室扩张等 这些疾病多是系统性疾病，可根据组织学受 表型，本指南不将其归属于RCM 范畴。 累部位分为：心肌细胞内病变（如糖原、溶酶体和 RCM 根据遗传特点可分为家族性与散发性；根 铁元素贮积）、心肌细胞外基质病变（如心脏结节 据病变累及的组织学部位可分为心肌细胞受累为主 病、淀粉样变心肌病导致的浸润性病变；系统性硬 （可能与基因变异相关），心肌细胞外基质受累为主 化症、糖尿病性心肌病导致的纤维化）和心内膜病 （如放疗导致的纤维化）与心内膜受累为主（如嗜酸 变（如心内膜弹力纤维增生症、类癌）。下面简述 性粒细胞性心内膜炎、心内膜心肌纤维化）三类。 鉴别要点： 4.3.2 诊断 糖原贮积病：累及心脏的表现主要为左心室肥 4.3.2.1 临床诊断 厚，但晚期也可出现心脏限制样改变 [120]。结合临床 主要表现为左、右心受累导致的心力衰竭相 表现、实验室检查、EMB 以及基因检测可以鉴别。 关症状与体征 [118]。BNP/NT-proBNP 及肌钙蛋白水 详见本文4.5.1 糖原贮积病章节。 平升高，心电学检查缺乏特异性。超声心动图特 法布雷病心肌病：为溶酶体贮积病，可表现出 征为心房扩大而心室内径正常，心室舒张功能减 限制样改变，但其最典型心脏表现是左心室肥厚， 退，收缩功能正常或轻度减低。整体纵向应变可以 还可有少汗、四肢疼痛、蛋白尿等心外特征表现 [125]。 在LVEF 正常时反映RCM 患者早期的收缩及舒张功 通过临床表现、酶活性测定和底物检测、EMB 以及 能受损 [119]，合并心房颤动时容易出现心房血栓 [120]。 基因检测鉴别。详见本文4.5.2.1 法布雷病章节。 CMR 有助于鉴别诊断特定的病因，如铁过载心肌病、 铁过载心肌病：主要指遗传性血色病与继发性铁 法布雷病心肌病等 [121]。心导管检查可显示心腔舒张 过载心肌病，铁元素在心肌细胞内贮积，早期可表 末期充盈压力升高，典型的心室压力曲线呈“平方 现为舒张功能障碍，与RCM 相似。鉴别诊断需结合 根”样改变，但灵敏度较低 [120]。诊断性检查建议见 病史（血友病及反复输血治疗史）、实验室检查（铁代 表18。"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-FABRY",
+      "disease_name": "法布雷病心肌病",
+      "evidence_id": "EVD-19A7AED44FBB561C23FB-FABRY",
+      "source_name": "中国心肌病综合管理指南2025.pdf",
+      "source_page": "22",
+      "source_section": "treatment_plan",
+      "evidence_text": "4.5.1.2 Danon 病 能障碍。依据贮积的物质不同可分为鞘脂代谢障碍（如 Danon 病系编码溶酶体相关膜蛋白2（lysosome- 法布雷病和戈谢病）、黏多糖贮积症和黏脂贮积症等。 associated membrane protein 2，LAMP2）的LAMP2 基 4.5.2.1 法布雷病 因变异，自噬体无法与溶酶体融合形成自噬溶酶体， 4.5.2.1.1 定义 导致细胞内自噬体贮积，影响器官结构和功能所致。 法布雷病是一种X 连锁遗传病，系编码α- 半 该病为X 连锁显性遗传。 乳糖苷酶A（α-galactosidase A，α-Gal A）的GLA 心肌肥厚、骨骼肌病和智力障碍三联征是Danon 基因变异导致α-Gal A 缺陷，使其代谢底物三己糖 病的典型特征。但该病临床表现异质性较高，心肌 酰基鞘脂醇（globotriaosylceramide，Gb3）及其衍生物 肥厚可以是唯一临床表现，也可终生无症状或以SCD 脱乙酰基Gb3（globotriaosylsphingosine，Lyso-Gb3） 为首发表现 [182]。血肌酸激酶水平可升高，房室阻滞 在溶酶体内贮积，引起神经、皮肤、肾脏和心脏等 及预激综合征最为常见。心肌活检免疫组织化学染色 多器官受累。法布雷病引起心肌受累称为法布雷病 显示LAMP2 蛋白表达全部或部分缺失，透射电镜见 心肌病，详见《成人法布雷病心肌病诊断与治疗中 自噬体贮积。检出LAMP2 基因致病变异可确诊。 国专家共识》[183]。 治疗主要是针对心力衰竭和心律失常的对症处理。 4.5.2.1.2 分型和诊断 4.5.1.3 PRKAG2 变异心脏综合征 按临床表现分为经典型和迟发型。经典型患者 PRKAG2 变异心脏综合征是由PRKAG2 基因变 α-Gal A 酶活性明显下降甚至完全缺失，多在儿童 异导致AMPK γ2 调节亚基功能受损，心肌细胞的 期起病，表现为神经、肾脏、心脏等多器官受累。 糖原代谢失调并大量贮积，引起器官功能障碍，该 迟发型酶活性正常或轻度减低，以成年后发病为主， 病遵循常染色体显性遗传。"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-FABRY",
+      "disease_name": "法布雷病心肌病",
+      "evidence_id": "EVD-00CF1703DDCBA6474E42-FABRY",
+      "source_name": "中国心肌病综合管理指南2025.pdf",
+      "source_page": "26",
+      "source_section": "clinical_knowledge",
+      "evidence_text": "表22 淀粉样变心肌病与其他表现为左心室肥厚疾病的鉴别 指标 肥厚型心肌病 法布雷病心肌病 淀粉样变心肌病 高血压性心肌损伤"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-FABRY",
+      "disease_name": "法布雷病心肌病",
+      "evidence_id": "EVD-4715DB578D529D08E218-FABRY",
+      "source_name": "成人法布雷病心肌病诊断与治疗中国专家共识.pdf",
+      "source_page": "1",
+      "source_section": "treatment_plan",
+      "evidence_text": "成人法布雷病心肌病诊断与治疗中国专家 共识"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-FABRY",
+      "disease_name": "法布雷病心肌病",
+      "evidence_id": "EVD-5EDB3F7B94CF24F5594F-FABRY",
+      "source_name": "成人法布雷病心肌病诊断与治疗中国专家共识.pdf",
+      "source_page": "1",
+      "source_section": "clinical_knowledge",
+      "evidence_text": "DOI：10.3760/cma.j.cn112148-20231008-00263 收稿日期 本文编辑 范姝婕 2023-10-08 成人法布雷病心肌病诊断与治引用本文：中华医学会心血管病学分会, 中华心血管病杂志编辑委员会. 疗中国专家共识[J]. 中华心血管病杂志, 2024, 52(2): 128-136. DOI: 10.3760/cma. j. cn112148-20231008-00263."
+    },
+    {
+      "disease_code": "DIS-CARD-CM-NDLVCM",
+      "disease_name": "非扩张型左心室心肌病",
+      "evidence_id": "EVD-105ACC5EF6AEFCD23F73-NDLVCM",
+      "source_name": "《内科学（第10版）》",
+      "source_page": "312",
+      "source_section": "prognosis",
+      "evidence_text": "非扩张型左心室心肌病（non-dilated left ventricular cardiomyopathy，NDLVC）是指在无左心室扩张 情况下，左心室存在着非缺血性瘢痕或脂肪替代，伴或不伴整体或局部室壁运动异常；这些心肌病变 仅由负荷异常或心肌缺血无法解释。 【发病机制】 遗传背景和基因突变是其主要发病机制，但与ARVC 和DCM 有重叠。 【临床表现】 多数NDLVC 病人无明显症状和体征，但部分病人出现与心律失常或心功能不全 的相关症状，少数病人最初表现为严重心律失常如SVT、VF，甚至猝死。 【辅助检查】 1. 心电图检查 本病某些心电特征可指示潜在遗传病因，如神经肌肉病变和结节病相关性 NDLVC 常有传导异常，DSP 和PLN 突变相关性NDLVC 常见QRS 波低电压。 2. 超声心动图 表现为左室整体或局部收缩功能降低但心腔无明显扩大。 3. 心脏磁共振 CMR-LGE 检出的非缺血性心肌纤维或 / 和脂肪替代是主要诊断依据，纤维化分 布模式是病因甄别的关键线索，纤维化程度有预后价值。 4. 心肌活检 检出的心肌组织纤维和脂肪替代是诊断的“金标准”。 5. 基因检测 NDLVC 相关基因主要是DSP、FLNC（截短变体）、DES、LMNA 或PLN，但它们与 DCM 和ARVC 的遗传基础多有重叠，其中DSP 突变与本病关系最密切。 【诊断与鉴别诊断】 1. 诊断标准 ①影像学无明显左室扩张但存在非缺血性左室瘢痕或脂肪替代，伴或不伴整体或 局部室壁运动异常；或无心肌瘢痕或脂肪替代的孤立性整体左室运动功能减退。②临床上可除外继 发性、原发性和缺血性心肌病。 2. 鉴别诊断 应与心脏收缩功能减低的其他原发和继发性心肌病鉴别。 【临床管理】 1. 药物治疗 类似于DCM，主要为β受体拮抗剂、ACEI、ARB，参阅“本章第二节”。"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-NDLVCM",
+      "disease_name": "非扩张型左心室心肌病",
+      "evidence_id": "EVD-24443126F75109E91153-NDLVCM",
+      "source_name": "心肌病心内膜心肌活检及病理检查临床应用指南.pdf",
+      "source_page": "2",
+      "source_section": "treatment_plan",
+      "evidence_text": "中国医学科学院阜外医院报道EMB 并发 学会（ESC）标准 [3-4] 和2019 年美国心律协会（HRS） 症发生率为1.61%，与国外相当 [19]。 标准 [5]，将心肌病分为扩张型心肌病（DCM）、肥厚 4 心肌病病理检查 型心肌病（HCM）、限制型心肌病（RCM）、致心律 心肌病的病理检查包括EMB、移植后受体心 失常性心肌病（ACM）和未定型心肌病五类。2023 脏病理检查及尸检，而与临床相关性最紧密的则 年ESC 更新了分类，提出了非扩张型左心室心肌病 是EMB，可提供有关心肌形态学（组织学、免疫组 （NDLVC）和致心律失常性右心室心肌病（ARVC）。 织化学和电子显微镜检测）和分子水平的基本信息， DCM 的患病率约为0.036%~0.400% [5]，HCM 的患病 其作用和意义包括：（1）病因诊断 [20-22]：EMB 是一些"
+    }
+  ]
+}

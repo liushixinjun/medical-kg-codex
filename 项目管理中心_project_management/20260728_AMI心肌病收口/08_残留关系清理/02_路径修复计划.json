@@ -1,0 +1,51 @@
+{
+  "bad_lab_paths": [],
+  "bad_exam_paths": [],
+  "invalid_lab_child_relations": [
+    {
+      "source_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:46966",
+      "source_code": "LAB-CARD-3F8D27CB7EC9",
+      "source_name": "血常规",
+      "source_labels": [
+        "KGNode",
+        "LabItem"
+      ],
+      "relation_element_id": "5:96d33a16-3d9f-4d2c-809b-20d1b37db684:133750",
+      "relation_properties": {
+        "disease_code": "DIS-CARD-CAD-STABLE-ANGINA",
+        "relationType": "lab_test_has_indicator",
+        "evidence_count": 1,
+        "migrated_at": "2026-07-16 11:31:43",
+        "source_type": "authoritative_textbook",
+        "duplicate_replaced_by_source_code": "LAB-CARD-3F8D27CB7EC9",
+        "target_code": "IND-CARD-AMI-LAB-68B53FF37FA2",
+        "schema_version": "V1.15",
+        "migration_reason": "20260716同类型同名重复节点归并",
+        "batch_id": "BATCH-CARD-CAD-LABIND-20260713-001",
+        "migration_status": "deprecated_duplicate_relation",
+        "id": "REL-5D49FC6802DB706F6B32",
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-3F8D27CB7E",
+        "updated_at": "2026-07-16 11:31:43",
+        "migration_batch": "20260719_旧结构全库收口V2",
+        "source_authority": "《内科学（第10版）》与已入库冠心病指南证据",
+        "disease_name": "稳定型心绞痛",
+        "clinical_review_status": "pending_clinical_use_effect_review",
+        "migrated_from_source_code": "LAB-CARD-CADREM-AMI-3F8D27CB7E",
+        "created_at": "2026-07-13 00:55:00",
+        "formal_cdss_ready": false,
+        "skill_version": "V2.1-CAD-lab-indicator-refine",
+        "evidence_ids": [
+          "EVD-CARD-AMI-LABIND-INFLAMMATION"
+        ]
+      },
+      "target_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:43639",
+      "target_code": "IND-CARD-AMI-LAB-68B53FF37FA2",
+      "target_name": "白细胞计数升高",
+      "target_labels": [
+        "KGNode",
+        "ThresholdRule"
+      ]
+    }
+  ],
+  "path_blockers": []
+}

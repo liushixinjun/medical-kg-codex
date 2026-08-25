@@ -1,0 +1,10 @@
+{
+  "category_count": 15,
+  "noncanonical_category_count": 0,
+  "unreachable_disease_count": 0,
+  "subtype_parent_count_error": 0,
+  "subtype_parent_role_error": 0,
+  "orphan_display_group_count": 0,
+  "invalid_acs_icm_count": 0,
+  "stale_parent_code_count": 0
+}

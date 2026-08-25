@@ -1,0 +1,14 @@
+{
+  "textbook_exists": "yes",
+  "ami_start": 3559,
+  "ami_end": 3738,
+  "hcm_start": 3931,
+  "hcm_end": 3986,
+  "textbook_rows": 17,
+  "candidate_rows": 9,
+  "accepted": 7,
+  "conditional": 1,
+  "limited": 1,
+  "wrote_neo4j": false,
+  "wrote_oracle": false
+}

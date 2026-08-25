@@ -1,0 +1,8 @@
+﻿疾病大类,专病特色点,建议结构,临床用途,必须资料,结论,是否进入正式Schema,是否写库
+心肌病,心内膜心肌活检,Procedure/StandardProcedure + ClinicalRule + Evidence,用于明确部分心肌病病因、炎症性/浸润性/储积性心肌病诊断和鉴别诊断。,心肌病心内膜心肌活检及病理检查临床应用指南; 中国心肌病综合管理指南2025; 《内科学（第10版）》,必须纳入专病特色槽位；不得只当普通检查标题。,否，本轮为专病槽位候选；结构稳定后再评估主Schema,否
+心肌病,病理检查与病理发现,ExamObservation/PathologyFinding候选 + DiagnosisCriteriaComponent + Evidence,表达心肌细胞肥大、间质纤维化、炎症、淀粉样沉积、储积病改变等可诊断或鉴别的病理发现。,心肌病心内膜心肌活检及病理检查临床应用指南; 中国心肌病综合管理指南2025,现有通用结构可先落在检查发现，后续若多病种复用再评估是否新增病理发现专门实体。,否，本轮为专病槽位候选；结构稳定后再评估主Schema,否
+心肌病,HCM 激发/负荷超声心动图,ExamItem + ExamObservation + ThresholdRule + ClinicalRule + Evidence,用于识别静息状态未显示的动态 LVOTO，影响 HCM 分型、风险评估和治疗策略。,肥厚型心肌病激发/负荷超声心动图临床应用指南2024; 中国心肌病综合管理指南2025; HCM指南,必须纳入专病特色槽位；不能只保留超声心动图通用检查。,否，本轮为专病槽位候选；结构稳定后再评估主Schema,否
+心肌病,LVOTO 动态梗阻阈值,ExamObservation + ThresholdRule + RiskStratification/ClinicalRule,用于判断梗阻型 HCM、动态梗阻、治疗选择和运动/负荷试验解释。,肥厚型心肌病激发/负荷超声心动图临床应用指南2024; HCM指南,必须纳入阈值规则，不能只写左室流出道梗阻节点。,否，本轮为专病槽位候选；结构稳定后再评估主Schema,否
+心肌病,遗传检测与家系筛查,GeneticTest候选 + FamilyHistory/ScreeningRule + Evidence,用于 HCM/DCM/特殊类型心肌病的病因识别、亲属筛查和风险管理。,中国心肌病综合管理指南2025; HCM指南; DCM指南,作为心肌病专病扩展重点；暂不为所有病种强行新增基因实体，先按槽位配置启用。,否，本轮为专病槽位候选；结构稳定后再评估主Schema,否
+心肌病,特殊病因心肌病,Etiology + DifferentialDiagnosis + StandardDiagnosis + Evidence,覆盖法布雷病、淀粉样变、Danon病、Pompe病、铁过载、线粒体病等特殊病因识别。,中国心肌病综合管理指南2025; 成人法布雷病心肌病专家共识; 权威外部资料,必须和标准诊断/别名/证据链联动，不能只当并发症或病因词。,否，本轮为专病槽位候选；结构稳定后再评估主Schema,否
+心肌病,HCM 猝死风险分层,RiskStratification + ClinicalRule + ThresholdRule + Evidence,用于 ICD 适应证、运动建议、随访强度和正式 CDSS 风险提示。,中国心肌病综合管理指南2025; HCM ESC/AHA指南; 《内科学（第10版）》,作为正式 CDSS 风险提示候选，必须带触发条件和证据。,否，本轮为专病槽位候选；结构稳定后再评估主Schema,否

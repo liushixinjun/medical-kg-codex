@@ -1,0 +1,11 @@
+{
+  "apply": true,
+  "migrated_lab_paths": 0,
+  "migrated_exam_paths": 0,
+  "deleted_bad_direct_relations": 0,
+  "created_lab_subitem_projections": 0,
+  "retyped_lab_result_rules": 1,
+  "exact_standard_diagnosis_links": 0,
+  "fallback_standard_diagnosis_links": 5,
+  "standard_diagnosis_links": 0
+}

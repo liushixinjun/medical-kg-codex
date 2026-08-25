@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-08-12T00:24:50",
+  "inventory_rows": 28,
+  "evidence_rows": 46,
+  "candidate_rows": 7,
+  "mandatory_total": 4,
+  "mandatory_included": 4,
+  "doctor_core_total": 3,
+  "doctor_core_included": 3,
+  "wrote_neo4j": false,
+  "wrote_oracle": false
+}

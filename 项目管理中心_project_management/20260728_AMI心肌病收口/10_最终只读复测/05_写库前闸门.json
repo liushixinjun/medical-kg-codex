@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-07-28 15:50:16",
+  "rollback_ready": true,
+  "unmigratable_path_count": 0,
+  "safe_path_repair_count": 0,
+  "planned_standard_mapping_count": 5,
+  "rollback_record_count": 5,
+  "write_allowed_for_path_repair": true,
+  "write_allowed_for_content_repair": true,
+  "full_sample_ready": false,
+  "acceptance_dimensions": {
+    "知识内容完整性": {
+      "status": "通过",
+      "content_gap_count": 0,
+      "empty_action_plan_count": 0
+    },
+    "标准身份完整性": {
+      "status": "不通过",
+      "standard_diagnosis_gap_count": 5
+    },
+    "路径可用性": {
+      "status": "通过",
+      "bad_direct_lab_path_count": 0,
+      "bad_direct_exam_path_count": 0,
+      "invalid_lab_child_relation_count": 0,
+      "unmigratable_path_count": 0
+    },
+    "正式推荐就绪度": {
+      "status": "通过",
+      "formal_recommendation_gap_count": 0
+    }
+  }
+}

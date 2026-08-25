@@ -1,0 +1,126 @@
+{
+  "counts": {
+    "node_count": 33311,
+    "category_count": 20,
+    "disease_count": 132,
+    "evidence_count": 19475,
+    "visual_entity_count": 13836,
+    "relationship_count": 139612
+  },
+  "categories": [
+    {
+      "code": "CARD-AORTA-PAD",
+      "name": "主动脉与外周动脉疾病",
+      "direct_disease_count": 5
+    },
+    {
+      "code": "CARD-LIPID-ASCVD",
+      "name": "血脂异常与动脉粥样硬化防治",
+      "direct_disease_count": 3
+    },
+    {
+      "code": "CARD-MPIE",
+      "name": "心肌炎/心包炎/感染性心内膜炎",
+      "direct_disease_count": 3
+    },
+    {
+      "code": "CARD-PACING",
+      "name": "起搏治疗相关疾病",
+      "direct_disease_count": 9
+    },
+    {
+      "code": "CARD-PH",
+      "name": "肺动脉高压",
+      "direct_disease_count": 1
+    },
+    {
+      "code": "CARD-SHD-CHD",
+      "name": "结构性心脏病/先天性心脏病",
+      "direct_disease_count": 7
+    },
+    {
+      "code": "CARD-VHD",
+      "name": "瓣膜病",
+      "direct_disease_count": 9
+    },
+    {
+      "code": "CAT-CARD-AORTA-PAD",
+      "name": "主动脉和周围血管病",
+      "direct_disease_count": 8
+    },
+    {
+      "code": "CAT-CARD-ARR",
+      "name": "心律失常",
+      "direct_disease_count": 30
+    },
+    {
+      "code": "CAT-CARD-CAD",
+      "name": "冠心病",
+      "direct_disease_count": 10
+    },
+    {
+      "code": "CAT-CARD-CHD",
+      "name": "先天性心血管病",
+      "direct_disease_count": 9
+    },
+    {
+      "code": "CAT-CARD-CM",
+      "name": "心肌病",
+      "direct_disease_count": 11
+    },
+    {
+      "code": "CAT-CARD-HF",
+      "name": "心力衰竭",
+      "direct_disease_count": 3
+    },
+    {
+      "code": "CAT-CARD-HT",
+      "name": "高血压疾病",
+      "direct_disease_count": 2
+    },
+    {
+      "code": "CAT-CARD-HTN",
+      "name": "高血压",
+      "direct_disease_count": 5
+    },
+    {
+      "code": "CAT-CARD-IE",
+      "name": "感染性心内膜炎",
+      "direct_disease_count": 2
+    },
+    {
+      "code": "CAT-CARD-NEUROSIS",
+      "name": "心血管神经症",
+      "direct_disease_count": 1
+    },
+    {
+      "code": "CAT-CARD-PERICARD",
+      "name": "心包疾病",
+      "direct_disease_count": 1
+    },
+    {
+      "code": "CAT-CARD-SCD",
+      "name": "心脏骤停与心脏性猝死",
+      "direct_disease_count": 2
+    },
+    {
+      "code": "CAT-CARD-VHD",
+      "name": "心脏瓣膜病",
+      "direct_disease_count": 6
+    }
+  ],
+  "disease_roles": [
+    {
+      "diagnostic_role": "independent_disease",
+      "count": 86
+    },
+    {
+      "diagnostic_role": "clinical_subtype",
+      "count": 37
+    },
+    {
+      "diagnostic_role": "broad_diagnosis",
+      "count": 9
+    }
+  ]
+}

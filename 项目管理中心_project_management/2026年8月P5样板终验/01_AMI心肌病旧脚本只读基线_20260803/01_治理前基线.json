@@ -1,0 +1,1290 @@
+{
+  "generated_at": "2026-08-03 15:11:56",
+  "scope_codes": [
+    "DIS-CARD-CAD-AMI",
+    "DIS-CARD-CAD-NSTEMI",
+    "DIS-CARD-CAD-STEMI",
+    "DIS-CARD-CM-ABVC",
+    "DIS-CARD-CM-ACM",
+    "DIS-CARD-CM-ALVC",
+    "DIS-CARD-CM-AMYLOID",
+    "DIS-CARD-CM-ARVC",
+    "DIS-CARD-CM-ATRIAL",
+    "DIS-CARD-CM-DCM",
+    "DIS-CARD-CM-FABRY",
+    "DIS-CARD-CM-GENERAL",
+    "DIS-CARD-CM-HCM",
+    "DIS-CARD-CM-NDLVCM",
+    "DIS-CARD-CM-RCM"
+  ],
+  "diseases": [
+    {
+      "disease_code": "DIS-CARD-CAD-AMI",
+      "disease_name": "急性心肌梗死",
+      "diagnostic_role": "broad_diagnosis",
+      "is_diagnosable": true,
+      "standard_diagnosis_count": 1,
+      "valid_standard_diagnosis_count": 1,
+      "exact_standard_diagnosis_count": 1,
+      "fallback_standard_diagnosis_count": 0,
+      "standard_diagnoses": [
+        {
+          "is_emr_writable": null,
+          "status": null,
+          "name": "急性心肌梗死",
+          "mapping_type": null,
+          "code": "STDDX-adb56b7ed55412d0630ec4f16af30860",
+          "valid_flag": 1
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-NSTEMI",
+      "disease_name": "非ST段抬高型心肌梗死",
+      "diagnostic_role": "clinical_subtype",
+      "is_diagnosable": true,
+      "standard_diagnosis_count": 1,
+      "valid_standard_diagnosis_count": 1,
+      "exact_standard_diagnosis_count": 1,
+      "fallback_standard_diagnosis_count": 0,
+      "standard_diagnoses": [
+        {
+          "is_emr_writable": null,
+          "status": null,
+          "name": "急性非ST段抬高型心肌梗死",
+          "mapping_type": null,
+          "code": "STDDX-17b9670d00eced9c9a278ce1c1399f74",
+          "valid_flag": 1
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-STEMI",
+      "disease_name": "ST段抬高型心肌梗死",
+      "diagnostic_role": "clinical_subtype",
+      "is_diagnosable": true,
+      "standard_diagnosis_count": 1,
+      "valid_standard_diagnosis_count": 1,
+      "exact_standard_diagnosis_count": 1,
+      "fallback_standard_diagnosis_count": 0,
+      "standard_diagnoses": [
+        {
+          "is_emr_writable": null,
+          "status": null,
+          "name": "急性ST段抬高型心肌梗死",
+          "mapping_type": null,
+          "code": "STDDX-71b7c9b82cfdb149fc948faf1257c92d",
+          "valid_flag": 1
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ABVC",
+      "disease_name": "致心律失常性双心室心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "is_diagnosable": true,
+      "standard_diagnosis_count": 1,
+      "valid_standard_diagnosis_count": 1,
+      "exact_standard_diagnosis_count": 0,
+      "fallback_standard_diagnosis_count": 1,
+      "standard_diagnoses": [
+        {
+          "is_emr_writable": false,
+          "status": "active",
+          "name": "心肌病",
+          "mapping_type": "broader_fallback",
+          "code": "STDDX-d4c92d7b4031091f475c20c62bffcd04",
+          "valid_flag": 1
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ACM",
+      "disease_name": "致心律失常性心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "is_diagnosable": true,
+      "standard_diagnosis_count": 1,
+      "valid_standard_diagnosis_count": 1,
+      "exact_standard_diagnosis_count": 0,
+      "fallback_standard_diagnosis_count": 1,
+      "standard_diagnoses": [
+        {
+          "is_emr_writable": false,
+          "status": "active",
+          "name": "心肌病",
+          "mapping_type": "broader_fallback",
+          "code": "STDDX-d4c92d7b4031091f475c20c62bffcd04",
+          "valid_flag": 1
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ALVC",
+      "disease_name": "致心律失常性左心室心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "is_diagnosable": true,
+      "standard_diagnosis_count": 1,
+      "valid_standard_diagnosis_count": 1,
+      "exact_standard_diagnosis_count": 1,
+      "fallback_standard_diagnosis_count": 0,
+      "standard_diagnoses": [
+        {
+          "is_emr_writable": true,
+          "status": "active",
+          "name": "致心律失常性左室心肌病",
+          "mapping_type": "exact",
+          "code": "STDDX-e73a5f7a9cf9b894401b8b0cbcd2cf96",
+          "valid_flag": 1
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-AMYLOID",
+      "disease_name": "淀粉样变心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "is_diagnosable": true,
+      "standard_diagnosis_count": 1,
+      "valid_standard_diagnosis_count": 1,
+      "exact_standard_diagnosis_count": 1,
+      "fallback_standard_diagnosis_count": 0,
+      "standard_diagnoses": [
+        {
+          "is_emr_writable": true,
+          "status": "active",
+          "name": "心脏淀粉样变性",
+          "mapping_type": "exact",
+          "code": "STDDX-4abaee44db4b2afe2c5e7c4b50306b67",
+          "valid_flag": 1
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ARVC",
+      "disease_name": "致心律失常性右心室心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "is_diagnosable": true,
+      "standard_diagnosis_count": 1,
+      "valid_standard_diagnosis_count": 1,
+      "exact_standard_diagnosis_count": 1,
+      "fallback_standard_diagnosis_count": 0,
+      "standard_diagnoses": [
+        {
+          "is_emr_writable": true,
+          "status": "active",
+          "name": "致心律失常性右室心肌病",
+          "mapping_type": "exact",
+          "code": "STDDX-e2f3017ed624228933ae203d12681c25",
+          "valid_flag": 1
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ATRIAL",
+      "disease_name": "心房心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "is_diagnosable": true,
+      "standard_diagnosis_count": 1,
+      "valid_standard_diagnosis_count": 1,
+      "exact_standard_diagnosis_count": 0,
+      "fallback_standard_diagnosis_count": 1,
+      "standard_diagnoses": [
+        {
+          "is_emr_writable": false,
+          "status": "active",
+          "name": "心肌病",
+          "mapping_type": "broader_fallback",
+          "code": "STDDX-d4c92d7b4031091f475c20c62bffcd04",
+          "valid_flag": 1
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-DCM",
+      "disease_name": "扩张型心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "is_diagnosable": true,
+      "standard_diagnosis_count": 1,
+      "valid_standard_diagnosis_count": 1,
+      "exact_standard_diagnosis_count": 1,
+      "fallback_standard_diagnosis_count": 0,
+      "standard_diagnoses": [
+        {
+          "is_emr_writable": null,
+          "status": null,
+          "name": "扩张型心肌病",
+          "mapping_type": null,
+          "code": "STDDX-5034eac3a6a1dd3aeade10483be77945",
+          "valid_flag": 1
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-FABRY",
+      "disease_name": "法布雷病心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "is_diagnosable": true,
+      "standard_diagnosis_count": 1,
+      "valid_standard_diagnosis_count": 1,
+      "exact_standard_diagnosis_count": 0,
+      "fallback_standard_diagnosis_count": 1,
+      "standard_diagnoses": [
+        {
+          "is_emr_writable": false,
+          "status": "active",
+          "name": "心肌病",
+          "mapping_type": "broader_fallback",
+          "code": "STDDX-d4c92d7b4031091f475c20c62bffcd04",
+          "valid_flag": 1
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-GENERAL",
+      "disease_name": "心肌病",
+      "diagnostic_role": "broad_diagnosis",
+      "is_diagnosable": true,
+      "standard_diagnosis_count": 1,
+      "valid_standard_diagnosis_count": 1,
+      "exact_standard_diagnosis_count": 1,
+      "fallback_standard_diagnosis_count": 0,
+      "standard_diagnoses": [
+        {
+          "is_emr_writable": null,
+          "status": "active",
+          "name": "心肌病",
+          "mapping_type": null,
+          "code": "STDDX-d4c92d7b4031091f475c20c62bffcd04",
+          "valid_flag": 1
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-HCM",
+      "disease_name": "肥厚型心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "is_diagnosable": true,
+      "standard_diagnosis_count": 6,
+      "valid_standard_diagnosis_count": 6,
+      "exact_standard_diagnosis_count": 6,
+      "fallback_standard_diagnosis_count": 0,
+      "standard_diagnoses": [
+        {
+          "is_emr_writable": null,
+          "status": null,
+          "name": "梗阻性肥厚型心肌病",
+          "mapping_type": null,
+          "code": "STDDX-4f1a72e6c466ee33af17b25bb63ee927",
+          "valid_flag": 1
+        },
+        {
+          "is_emr_writable": null,
+          "status": null,
+          "name": "肥厚型心肌病，其他的",
+          "mapping_type": null,
+          "code": "STDDX-ea1b1eb42678ac3a529d11ad80675ab3",
+          "valid_flag": 1
+        },
+        {
+          "is_emr_writable": null,
+          "status": null,
+          "name": "肥厚型梗阻性心肌病",
+          "mapping_type": null,
+          "code": "STDDX-8ae05ac20de3bd6401453f4a6cdf712c",
+          "valid_flag": 1
+        },
+        {
+          "is_emr_writable": null,
+          "status": null,
+          "name": "肥厚性心肌病",
+          "mapping_type": null,
+          "code": "STDDX-2755d92cdaba7909f59ca61cdf9e9295",
+          "valid_flag": 1
+        },
+        {
+          "is_emr_writable": null,
+          "status": null,
+          "name": "肥厚性非梗阻性心肌病",
+          "mapping_type": null,
+          "code": "STDDX-1944e333b4a3e52e7f98d4ddfa24ef83",
+          "valid_flag": 1
+        },
+        {
+          "is_emr_writable": null,
+          "status": null,
+          "name": "心尖肥厚型心肌病",
+          "mapping_type": null,
+          "code": "STDDX-add9ff35ca35063430741f77205da63b",
+          "valid_flag": 1
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-NDLVCM",
+      "disease_name": "非扩张型左心室心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "is_diagnosable": true,
+      "standard_diagnosis_count": 1,
+      "valid_standard_diagnosis_count": 1,
+      "exact_standard_diagnosis_count": 0,
+      "fallback_standard_diagnosis_count": 1,
+      "standard_diagnoses": [
+        {
+          "is_emr_writable": false,
+          "status": "active",
+          "name": "心肌病",
+          "mapping_type": "broader_fallback",
+          "code": "STDDX-d4c92d7b4031091f475c20c62bffcd04",
+          "valid_flag": 1
+        }
+      ]
+    },
+    {
+      "disease_code": "DIS-CARD-CM-RCM",
+      "disease_name": "限制型心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "is_diagnosable": true,
+      "standard_diagnosis_count": 1,
+      "valid_standard_diagnosis_count": 1,
+      "exact_standard_diagnosis_count": 1,
+      "fallback_standard_diagnosis_count": 0,
+      "standard_diagnoses": [
+        {
+          "is_emr_writable": true,
+          "status": "active",
+          "name": "限制型心肌病，其他的",
+          "mapping_type": "exact",
+          "code": "STDDX-b7d272035cf77c861d90a33e00cce0e2",
+          "valid_flag": 1
+        }
+      ]
+    }
+  ],
+  "slot_counts": [
+    {
+      "disease_code": "DIS-CARD-CAD-AMI",
+      "disease_name": "急性心肌梗死",
+      "diagnostic_role": "broad_diagnosis",
+      "definition": 1,
+      "symptom": 25,
+      "sign": 23,
+      "exam_plan": 1,
+      "diagnostic_criteria": 1,
+      "differential_diagnosis": 4,
+      "risk_stratification": 2,
+      "treatment_plan": 5,
+      "follow_up": 9,
+      "prognosis": 9,
+      "prevention": 8,
+      "clinical_subtype": 2,
+      "standard_diagnosis": 1,
+      "clinical_manifestation": 48,
+      "missing_required_slots": []
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-NSTEMI",
+      "disease_name": "非ST段抬高型心肌梗死",
+      "diagnostic_role": "clinical_subtype",
+      "definition": 1,
+      "symptom": 11,
+      "sign": 8,
+      "exam_plan": 1,
+      "diagnostic_criteria": 1,
+      "differential_diagnosis": 3,
+      "risk_stratification": 6,
+      "treatment_plan": 5,
+      "follow_up": 1,
+      "prognosis": 1,
+      "prevention": 0,
+      "clinical_subtype": 0,
+      "standard_diagnosis": 1,
+      "clinical_manifestation": 19,
+      "missing_required_slots": []
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-STEMI",
+      "disease_name": "ST段抬高型心肌梗死",
+      "diagnostic_role": "clinical_subtype",
+      "definition": 1,
+      "symptom": 20,
+      "sign": 21,
+      "exam_plan": 1,
+      "diagnostic_criteria": 1,
+      "differential_diagnosis": 8,
+      "risk_stratification": 2,
+      "treatment_plan": 8,
+      "follow_up": 2,
+      "prognosis": 2,
+      "prevention": 2,
+      "clinical_subtype": 0,
+      "standard_diagnosis": 1,
+      "clinical_manifestation": 41,
+      "missing_required_slots": []
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ABVC",
+      "disease_name": "致心律失常性双心室心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "definition": 1,
+      "symptom": 2,
+      "sign": 1,
+      "exam_plan": 1,
+      "diagnostic_criteria": 1,
+      "differential_diagnosis": 1,
+      "risk_stratification": 1,
+      "treatment_plan": 1,
+      "follow_up": 1,
+      "prognosis": 1,
+      "prevention": 0,
+      "clinical_subtype": 0,
+      "standard_diagnosis": 1,
+      "clinical_manifestation": 3,
+      "missing_required_slots": []
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ACM",
+      "disease_name": "致心律失常性心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "definition": 1,
+      "symptom": 5,
+      "sign": 1,
+      "exam_plan": 1,
+      "diagnostic_criteria": 1,
+      "differential_diagnosis": 2,
+      "risk_stratification": 1,
+      "treatment_plan": 1,
+      "follow_up": 1,
+      "prognosis": 1,
+      "prevention": 0,
+      "clinical_subtype": 0,
+      "standard_diagnosis": 1,
+      "clinical_manifestation": 6,
+      "missing_required_slots": []
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ALVC",
+      "disease_name": "致心律失常性左心室心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "definition": 1,
+      "symptom": 1,
+      "sign": 1,
+      "exam_plan": 1,
+      "diagnostic_criteria": 1,
+      "differential_diagnosis": 1,
+      "risk_stratification": 1,
+      "treatment_plan": 1,
+      "follow_up": 1,
+      "prognosis": 1,
+      "prevention": 0,
+      "clinical_subtype": 0,
+      "standard_diagnosis": 1,
+      "clinical_manifestation": 2,
+      "missing_required_slots": []
+    },
+    {
+      "disease_code": "DIS-CARD-CM-AMYLOID",
+      "disease_name": "淀粉样变心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "definition": 1,
+      "symptom": 1,
+      "sign": 1,
+      "exam_plan": 1,
+      "diagnostic_criteria": 1,
+      "differential_diagnosis": 2,
+      "risk_stratification": 0,
+      "treatment_plan": 1,
+      "follow_up": 1,
+      "prognosis": 1,
+      "prevention": 0,
+      "clinical_subtype": 0,
+      "standard_diagnosis": 1,
+      "clinical_manifestation": 2,
+      "missing_required_slots": []
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ARVC",
+      "disease_name": "致心律失常性右心室心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "definition": 1,
+      "symptom": 8,
+      "sign": 4,
+      "exam_plan": 1,
+      "diagnostic_criteria": 1,
+      "differential_diagnosis": 4,
+      "risk_stratification": 1,
+      "treatment_plan": 1,
+      "follow_up": 1,
+      "prognosis": 1,
+      "prevention": 0,
+      "clinical_subtype": 0,
+      "standard_diagnosis": 1,
+      "clinical_manifestation": 12,
+      "missing_required_slots": []
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ATRIAL",
+      "disease_name": "心房心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "definition": 1,
+      "symptom": 1,
+      "sign": 1,
+      "exam_plan": 1,
+      "diagnostic_criteria": 1,
+      "differential_diagnosis": 1,
+      "risk_stratification": 1,
+      "treatment_plan": 3,
+      "follow_up": 1,
+      "prognosis": 1,
+      "prevention": 0,
+      "clinical_subtype": 0,
+      "standard_diagnosis": 1,
+      "clinical_manifestation": 2,
+      "missing_required_slots": []
+    },
+    {
+      "disease_code": "DIS-CARD-CM-DCM",
+      "disease_name": "扩张型心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "definition": 1,
+      "symptom": 13,
+      "sign": 17,
+      "exam_plan": 1,
+      "diagnostic_criteria": 1,
+      "differential_diagnosis": 3,
+      "risk_stratification": 1,
+      "treatment_plan": 2,
+      "follow_up": 1,
+      "prognosis": 1,
+      "prevention": 0,
+      "clinical_subtype": 0,
+      "standard_diagnosis": 1,
+      "clinical_manifestation": 30,
+      "missing_required_slots": []
+    },
+    {
+      "disease_code": "DIS-CARD-CM-FABRY",
+      "disease_name": "法布雷病心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "definition": 1,
+      "symptom": 1,
+      "sign": 1,
+      "exam_plan": 1,
+      "diagnostic_criteria": 1,
+      "differential_diagnosis": 1,
+      "risk_stratification": 0,
+      "treatment_plan": 1,
+      "follow_up": 1,
+      "prognosis": 1,
+      "prevention": 0,
+      "clinical_subtype": 0,
+      "standard_diagnosis": 1,
+      "clinical_manifestation": 2,
+      "missing_required_slots": []
+    },
+    {
+      "disease_code": "DIS-CARD-CM-GENERAL",
+      "disease_name": "心肌病",
+      "diagnostic_role": "broad_diagnosis",
+      "definition": 1,
+      "symptom": 0,
+      "sign": 0,
+      "exam_plan": 1,
+      "diagnostic_criteria": 0,
+      "differential_diagnosis": 1,
+      "risk_stratification": 1,
+      "treatment_plan": 0,
+      "follow_up": 0,
+      "prognosis": 0,
+      "prevention": 0,
+      "clinical_subtype": 11,
+      "standard_diagnosis": 1,
+      "clinical_manifestation": 0,
+      "missing_required_slots": []
+    },
+    {
+      "disease_code": "DIS-CARD-CM-HCM",
+      "disease_name": "肥厚型心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "definition": 1,
+      "symptom": 13,
+      "sign": 10,
+      "exam_plan": 1,
+      "diagnostic_criteria": 1,
+      "differential_diagnosis": 3,
+      "risk_stratification": 1,
+      "treatment_plan": 1,
+      "follow_up": 1,
+      "prognosis": 1,
+      "prevention": 0,
+      "clinical_subtype": 0,
+      "standard_diagnosis": 6,
+      "clinical_manifestation": 23,
+      "missing_required_slots": []
+    },
+    {
+      "disease_code": "DIS-CARD-CM-NDLVCM",
+      "disease_name": "非扩张型左心室心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "definition": 1,
+      "symptom": 1,
+      "sign": 1,
+      "exam_plan": 1,
+      "diagnostic_criteria": 1,
+      "differential_diagnosis": 1,
+      "risk_stratification": 0,
+      "treatment_plan": 1,
+      "follow_up": 1,
+      "prognosis": 1,
+      "prevention": 0,
+      "clinical_subtype": 0,
+      "standard_diagnosis": 1,
+      "clinical_manifestation": 2,
+      "missing_required_slots": []
+    },
+    {
+      "disease_code": "DIS-CARD-CM-RCM",
+      "disease_name": "限制型心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "definition": 1,
+      "symptom": 9,
+      "sign": 8,
+      "exam_plan": 1,
+      "diagnostic_criteria": 1,
+      "differential_diagnosis": 3,
+      "risk_stratification": 1,
+      "treatment_plan": 1,
+      "follow_up": 1,
+      "prognosis": 1,
+      "prevention": 0,
+      "clinical_subtype": 0,
+      "standard_diagnosis": 1,
+      "clinical_manifestation": 17,
+      "missing_required_slots": []
+    }
+  ],
+  "content_gaps": [],
+  "standard_diagnosis_gaps": [
+    {
+      "disease_code": "DIS-CARD-CM-ABVC",
+      "disease_name": "致心律失常性双心室心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "issue": "仅有上位诊断回退，缺精确CDSS标准诊断",
+      "disposition": "保留知识实体和上位诊断回退；禁止作为具体分型回填EMR"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ACM",
+      "disease_name": "致心律失常性心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "issue": "仅有上位诊断回退，缺精确CDSS标准诊断",
+      "disposition": "保留知识实体和上位诊断回退；禁止作为具体分型回填EMR"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ATRIAL",
+      "disease_name": "心房心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "issue": "仅有上位诊断回退，缺精确CDSS标准诊断",
+      "disposition": "保留知识实体和上位诊断回退；禁止作为具体分型回填EMR"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-FABRY",
+      "disease_name": "法布雷病心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "issue": "仅有上位诊断回退，缺精确CDSS标准诊断",
+      "disposition": "保留知识实体和上位诊断回退；禁止作为具体分型回填EMR"
+    },
+    {
+      "disease_code": "DIS-CARD-CM-NDLVCM",
+      "disease_name": "非扩张型左心室心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "issue": "仅有上位诊断回退，缺精确CDSS标准诊断",
+      "disposition": "保留知识实体和上位诊断回退；禁止作为具体分型回填EMR"
+    }
+  ],
+  "bad_lab_paths": [],
+  "bad_exam_paths": [],
+  "invalid_lab_child_relations": [
+    {
+      "source_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:36853",
+      "source_code": "CARD-SKELETON-20260709-LABTEST-70C17E9844CB4791",
+      "source_name": "肌酸激酶",
+      "source_labels": [
+        "KGNode",
+        "LabItem"
+      ],
+      "relation_element_id": "5:96d33a16-3d9f-4d2c-809b-20d1b37db684:132889",
+      "relation_properties": {
+        "relationType": "lab_test_has_indicator",
+        "link_method": "master_data_duplicate_relation_migration",
+        "source_type": "authoritative_textbook",
+        "duplicate_replaced_by_source_code": "CARD-SKELETON-20260709-LABTEST-70C17E9844CB4791",
+        "target_code": "IND-CARD-AMI-LAB-68AAB9D88BA4",
+        "schema_version": "V1.15",
+        "migration_reason": "20260716同类型同名重复节点归并",
+        "id": "REL-2F2873671058D0F33722",
+        "disease_name": "急性心肌梗死",
+        "migrated_from_source_code": "LAB-CARD-CADREM-AMI-DF011D5802",
+        "created_at": "2026-07-13 00:20:00",
+        "formal_cdss_ready": false,
+        "skill_version": "V2.1-AMI-lab-indicator-refine",
+        "evidence_ids": [
+          "EVD-CARD-AMI-LABIND-MYOCARDIAL-BIOMARKER"
+        ],
+        "disease_code": "DIS-CARD-CAD-AMI",
+        "evidence_count": 1,
+        "migrated_at": "2026-07-16 11:31:43",
+        "batch_id": "BATCH-CARD-CAD-AMI-LABIND-20260713-001",
+        "migration_status": "deprecated_duplicate_relation",
+        "source_code": "LAB-CARD-CADREM-AMI-DF011D5802",
+        "updated_at": "2026-07-16 11:31:43",
+        "migration_batch": "20260719_旧结构全库收口V2",
+        "source_authority": "《内科学（第10版）》",
+        "master_data_merge_batch_id": "20260714_全库主数据归并治理",
+        "clinical_review_status": "pending_clinical_use_effect_review"
+      },
+      "target_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:43646",
+      "target_code": "IND-CARD-AMI-LAB-68AAB9D88BA4",
+      "target_name": "肌酸激酶升高",
+      "target_labels": [
+        "KGNode",
+        "ExamObservation"
+      ]
+    },
+    {
+      "source_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42840",
+      "source_code": "LAB-CARD-0C977E67C366",
+      "source_name": "血糖",
+      "source_labels": [
+        "KGNode",
+        "LabItem"
+      ],
+      "relation_element_id": "5:96d33a16-3d9f-4d2c-809b-20d1b37db684:89152",
+      "relation_properties": {
+        "relationType": "lab_test_has_indicator",
+        "evidence_count": 3,
+        "target_name": "空腹血糖异常",
+        "source_type": "existing_lab_evidence_refinement",
+        "target_code": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+        "confidence": 0.93,
+        "batch_id": "BATCH-CARD-HT-LABIND-20260713-001",
+        "id": "REL-CARD-HT-LABIND-BD1178987FC1",
+        "governance_note": "同一 LabTest 统一补指标，避免按疾病重复造指标。",
+        "source_code": "LAB-CARD-0C977E67C366",
+        "updated_at": "2026-07-13 23:21:02",
+        "migration_batch": "20260719_旧结构全库收口V2",
+        "clinical_review_status": "review_ready",
+        "created_at": "2026-07-13 23:21:02",
+        "source_name": "空腹血糖",
+        "formal_cdss_ready": false,
+        "evidence_ids": [
+          "EVD-E70AD0F5A40F18C80706-HT",
+          "EVD-0FDE663014406E9724AE-HT",
+          "EVD-3BBEC2D46A322B320230-BBB"
+        ],
+        "relationCategory": "检验项目-检查指标",
+        "review_status": "review_ready"
+      },
+      "target_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:43680",
+      "target_code": "IND-CARD-HT-LAB-FPG-ABNORMAL",
+      "target_name": "空腹血糖异常",
+      "target_labels": [
+        "KGNode",
+        "ExamObservation"
+      ]
+    },
+    {
+      "source_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42840",
+      "source_code": "LAB-CARD-0C977E67C366",
+      "source_name": "血糖",
+      "source_labels": [
+        "KGNode",
+        "LabItem"
+      ],
+      "relation_element_id": "5:96d33a16-3d9f-4d2c-809b-20d1b37db684:9933",
+      "relation_properties": {
+        "disease_code": "DIS-CARD-CAD-STABLE-ANGINA",
+        "relationType": "lab_test_has_indicator",
+        "evidence_count": 1,
+        "link_method": "master_data_duplicate_relation_migration",
+        "source_type": "textbook_or_clinical_path_original_evidence",
+        "target_code": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+        "schema_version": "V1.15",
+        "batch_id": "BATCH-CARD-LAB-EVIDENCE-20260713-001",
+        "id": "REL-C2D35284BB735CD52F0C",
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-43D8A5AEE4",
+        "updated_at": "2026-07-14T14:54:37",
+        "migration_batch": "20260719_旧结构全库收口V2",
+        "master_data_merge_batch_id": "20260714_全库主数据归并治理",
+        "disease_name": "稳定型心绞痛",
+        "clinical_review_status": "pending_clinical_use_effect_review",
+        "created_at": "2026-07-13 17:30:00",
+        "formal_cdss_ready": false,
+        "skill_version": "V2.1-lab-evidence-backfill",
+        "evidence_ids": [
+          "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E"
+        ]
+      },
+      "target_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:43674",
+      "target_code": "IND-CARD-LAB-GLUCOSE-ABNORMAL",
+      "target_name": "血糖异常",
+      "target_labels": [
+        "KGNode",
+        "ExamObservation"
+      ]
+    },
+    {
+      "source_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:46966",
+      "source_code": "LAB-CARD-3F8D27CB7EC9",
+      "source_name": "血常规",
+      "source_labels": [
+        "KGNode",
+        "LabItem"
+      ],
+      "relation_element_id": "5:96d33a16-3d9f-4d2c-809b-20d1b37db684:133929",
+      "relation_properties": {
+        "disease_code": "DIS-CARD-CAD-STABLE-ANGINA",
+        "relationType": "lab_test_has_indicator",
+        "evidence_count": 1,
+        "migrated_at": "2026-07-16 11:31:43",
+        "source_type": "authoritative_textbook",
+        "duplicate_replaced_by_source_code": "LAB-CARD-3F8D27CB7EC9",
+        "target_code": "IND-CARD-AMI-LAB-027A760481F7",
+        "schema_version": "V1.15",
+        "migration_reason": "20260716同类型同名重复节点归并",
+        "batch_id": "BATCH-CARD-CAD-LABIND-20260713-001",
+        "migration_status": "deprecated_duplicate_relation",
+        "id": "REL-81C71BB58A35D7F9F7E4",
+        "source_code": "LAB-CARD-CADREM-STABLE-ANGINA-3F8D27CB7E",
+        "updated_at": "2026-07-16 11:31:43",
+        "migration_batch": "20260719_旧结构全库收口V2",
+        "source_authority": "《内科学（第10版）》与已入库冠心病指南证据",
+        "disease_name": "稳定型心绞痛",
+        "clinical_review_status": "pending_clinical_use_effect_review",
+        "migrated_from_source_code": "LAB-CARD-CADREM-AMI-3F8D27CB7E",
+        "created_at": "2026-07-13 00:55:00",
+        "formal_cdss_ready": false,
+        "skill_version": "V2.1-CAD-lab-indicator-refine",
+        "evidence_ids": [
+          "EVD-CARD-AMI-LABIND-INFLAMMATION"
+        ]
+      },
+      "target_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:43641",
+      "target_code": "IND-CARD-AMI-LAB-027A760481F7",
+      "target_name": "嗜酸性粒细胞减少或消失",
+      "target_labels": [
+        "KGNode",
+        "ExamObservation"
+      ]
+    },
+    {
+      "source_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:25592",
+      "source_code": "LAB-CARD-960C7CE8E22B",
+      "source_name": "CK-MB",
+      "source_labels": [
+        "KGNode",
+        "LabItem"
+      ],
+      "relation_element_id": "5:96d33a16-3d9f-4d2c-809b-20d1b37db684:123477",
+      "relation_properties": {
+        "disease_code": "DIS-CARD-CAD-UA",
+        "relationType": "lab_test_has_indicator",
+        "evidence_count": 1,
+        "link_method": "master_data_duplicate_relation_migration",
+        "source_type": "authoritative_textbook",
+        "target_code": "IND-CARD-AMI-LAB-0FC93EB091FE",
+        "schema_version": "V1.15",
+        "batch_id": "BATCH-CARD-CAD-LABIND-20260713-001",
+        "id": "REL-2FFE1D40640372D86BC6",
+        "source_code": "LAB-CARD-CADREM-UA-CA4C7A8A1F",
+        "updated_at": "2026-07-14T14:54:55",
+        "migration_batch": "20260719_旧结构全库收口V2",
+        "source_authority": "《内科学（第10版）》与已入库冠心病指南证据",
+        "master_data_merge_batch_id": "20260714_全库主数据归并治理",
+        "disease_name": "不稳定型心绞痛",
+        "clinical_review_status": "pending_clinical_use_effect_review",
+        "created_at": "2026-07-13 00:55:00",
+        "formal_cdss_ready": false,
+        "skill_version": "V2.1-CAD-lab-indicator-refine",
+        "evidence_ids": [
+          "EVD-CARD-AMI-LABIND-MYOCARDIAL-BIOMARKER"
+        ]
+      },
+      "target_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:43637",
+      "target_code": "IND-CARD-AMI-LAB-0FC93EB091FE",
+      "target_name": "肌酸激酶同工酶升高",
+      "target_labels": [
+        "KGNode",
+        "ExamObservation"
+      ]
+    },
+    {
+      "source_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:30663",
+      "source_code": "LAB-CARD-AE8C4B377AE9",
+      "source_name": "肾功能检查",
+      "source_labels": [
+        "KGNode",
+        "LabItem"
+      ],
+      "relation_element_id": "5:96d33a16-3d9f-4d2c-809b-20d1b37db684:127409",
+      "relation_properties": {
+        "disease_code": "DIS-CARD-CAD-AMI",
+        "relationType": "lab_test_has_indicator",
+        "evidence_count": 1,
+        "link_method": "master_data_duplicate_relation_migration",
+        "source_type": "textbook_or_clinical_path_original_evidence",
+        "target_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+        "schema_version": "V1.15",
+        "batch_id": "BATCH-CARD-LAB-EVIDENCE-20260713-001",
+        "id": "REL-8C3EF52AEB2D3F1B6C79",
+        "source_code": "LAB-CARD-CADREM-AMI-07B39C98F1",
+        "updated_at": "2026-07-14T14:54:08",
+        "migration_batch": "20260719_旧结构全库收口V2",
+        "source_authority": "已入库指南/教材原文证据",
+        "master_data_merge_batch_id": "20260714_全库主数据归并治理",
+        "disease_name": "急性心肌梗死",
+        "clinical_review_status": "pending_clinical_use_effect_review",
+        "created_at": "2026-07-13 17:30:00",
+        "formal_cdss_ready": false,
+        "skill_version": "V2.1-lab-evidence-backfill",
+        "evidence_ids": [
+          "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E"
+        ]
+      },
+      "target_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:43654",
+      "target_code": "IND-CARD-LAB-RENAL-FUNCTION-ABNORMAL",
+      "target_name": "肾功能异常",
+      "target_labels": [
+        "KGNode",
+        "ExamObservation"
+      ]
+    },
+    {
+      "source_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42844",
+      "source_code": "LAB-CARD-C59B64C19ADD",
+      "source_name": "血脂",
+      "source_labels": [
+        "KGNode",
+        "LabItem"
+      ],
+      "relation_element_id": "5:96d33a16-3d9f-4d2c-809b-20d1b37db684:134895",
+      "relation_properties": {
+        "relationType": "lab_test_has_indicator",
+        "link_method": "master_data_duplicate_relation_migration",
+        "source_type": "authoritative_textbook",
+        "duplicate_replaced_by_source_code": "LAB-CARD-C59B64C19ADD",
+        "target_code": "IND-CARD-AMI-LAB-4F371E5141D0",
+        "schema_version": "V1.15",
+        "migration_reason": "20260716同类型同名重复节点归并",
+        "id": "REL-1347B41DC8EC28F2495A",
+        "disease_name": "急性心肌梗死",
+        "migrated_from_source_code": "CARD-SKELETON-20260709-LABTEST-98464EDC80D81183",
+        "created_at": "2026-07-13 00:20:00",
+        "formal_cdss_ready": false,
+        "skill_version": "V2.1-AMI-lab-indicator-refine",
+        "evidence_ids": [
+          "EVD-CARD-AMI-LABIND-LIPID"
+        ],
+        "disease_code": "DIS-CARD-CAD-AMI",
+        "evidence_count": 1,
+        "migrated_at": "2026-07-16 11:31:43",
+        "batch_id": "BATCH-CARD-CAD-AMI-LABIND-20260713-001",
+        "migration_status": "deprecated_duplicate_relation",
+        "source_code": "LAB-CARD-TEXT-D983BB0EFF",
+        "updated_at": "2026-07-16 11:31:43",
+        "migration_batch": "20260719_旧结构全库收口V2",
+        "source_authority": "《内科学（第10版）》",
+        "master_data_merge_batch_id": "20260714_全库主数据归并治理",
+        "clinical_review_status": "pending_clinical_use_effect_review"
+      },
+      "target_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:43645",
+      "target_code": "IND-CARD-AMI-LAB-4F371E5141D0",
+      "target_name": "低密度脂蛋白胆固醇升高",
+      "target_labels": [
+        "KGNode",
+        "ExamObservation"
+      ]
+    },
+    {
+      "source_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:42844",
+      "source_code": "LAB-CARD-C59B64C19ADD",
+      "source_name": "血脂",
+      "source_labels": [
+        "KGNode",
+        "LabItem"
+      ],
+      "relation_element_id": "5:96d33a16-3d9f-4d2c-809b-20d1b37db684:134816",
+      "relation_properties": {
+        "relationType": "lab_test_has_indicator",
+        "source_type": "textbook_or_clinical_path_original_evidence",
+        "duplicate_replaced_by_source_code": "LAB-CARD-C59B64C19ADD",
+        "target_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+        "schema_version": "V1.15",
+        "migration_reason": "20260716同类型同名重复节点归并",
+        "id": "REL-D9DD48969F6597DBEE2C",
+        "governance_note": "同一 LabTest 统一补指标，避免按疾病重复造指标。",
+        "disease_name": "慢性心力衰竭",
+        "migrated_from_source_code": "CARD-SKELETON-20260709-LABTEST-98464EDC80D81183",
+        "created_at": "2026-07-13 17:30:00",
+        "source_name": "血脂",
+        "formal_cdss_ready": false,
+        "skill_version": "V2.1-lab-evidence-backfill",
+        "evidence_ids": [
+          "EVI-CARD-LABBACKFILL-021F9E8DC766CF6F3E"
+        ],
+        "relationCategory": "检验项目-检查指标",
+        "review_status": "review_ready",
+        "disease_code": "DIS-CARD-HF-CHF",
+        "evidence_count": 1,
+        "target_name": "血脂异常",
+        "migrated_at": "2026-07-16 11:31:43",
+        "confidence": 0.93,
+        "batch_id": "BATCH-CARD-LAB-EVIDENCE-20260713-001",
+        "migration_status": "deprecated_duplicate_relation",
+        "source_code": "LAB-CARD-TEXT-D983BB0EFF",
+        "updated_at": "2026-07-16 11:31:43",
+        "migration_batch": "20260719_旧结构全库收口V2",
+        "clinical_review_status": "pending_clinical_use_effect_review"
+      },
+      "target_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:43675",
+      "target_code": "IND-CARD-LAB-LIPID-ABNORMAL",
+      "target_name": "血脂异常",
+      "target_labels": [
+        "KGNode",
+        "ExamObservation"
+      ]
+    },
+    {
+      "source_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:25594",
+      "source_code": "LAB-CARD-D3BEA3E2BC55",
+      "source_name": "低密度脂蛋白-胆固醇",
+      "source_labels": [
+        "KGNode",
+        "LabItem"
+      ],
+      "relation_element_id": "5:96d33a16-3d9f-4d2c-809b-20d1b37db684:124767",
+      "relation_properties": {
+        "disease_code": "DIS-CARD-CAD-AMI",
+        "relationType": "lab_test_has_indicator",
+        "evidence_count": 1,
+        "source_type": "authoritative_textbook",
+        "target_code": "IND-CARD-AMI-LAB-4F371E5141D0",
+        "schema_version": "V1.15",
+        "batch_id": "BATCH-CARD-CAD-AMI-LABIND-20260713-001",
+        "id": "REL-4C5BE5C8949A510A8CA5",
+        "source_code": "LAB-CARD-D3BEA3E2BC55",
+        "migration_batch": "20260719_旧结构全库收口V2",
+        "source_authority": "《内科学（第10版）》",
+        "disease_name": "急性心肌梗死",
+        "clinical_review_status": "pending_clinical_use_effect_review",
+        "created_at": "2026-07-13 00:20:00",
+        "formal_cdss_ready": false,
+        "skill_version": "V2.1-AMI-lab-indicator-refine",
+        "evidence_ids": [
+          "EVD-CARD-AMI-LABIND-LIPID"
+        ]
+      },
+      "target_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:43645",
+      "target_code": "IND-CARD-AMI-LAB-4F371E5141D0",
+      "target_name": "低密度脂蛋白胆固醇升高",
+      "target_labels": [
+        "KGNode",
+        "ExamObservation"
+      ]
+    },
+    {
+      "source_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:43098",
+      "source_code": "LAB-CARD-STEMI-11D44D69D5FF",
+      "source_name": "游离脂肪酸",
+      "source_labels": [
+        "KGNode",
+        "LabItem"
+      ],
+      "relation_element_id": "5:96d33a16-3d9f-4d2c-809b-20d1b37db684:124928",
+      "relation_properties": {
+        "disease_code": "DIS-CARD-CAD-STEMI",
+        "relationType": "lab_test_has_indicator",
+        "evidence_count": 1,
+        "source_type": "authoritative_textbook",
+        "target_code": "IND-CARD-LAB-FREE-FATTY-ACID-HIGH",
+        "schema_version": "V1.15",
+        "batch_id": "BATCH-CARD-CAD-LABIND-20260713-001",
+        "id": "REL-C3CEFFC384C295BFB69C",
+        "source_code": "LAB-CARD-STEMI-11D44D69D5FF",
+        "migration_batch": "20260719_旧结构全库收口V2",
+        "source_authority": "《内科学（第10版）》与已入库冠心病指南证据",
+        "disease_name": "ST段抬高型心肌梗死",
+        "clinical_review_status": "pending_clinical_use_effect_review",
+        "created_at": "2026-07-13 00:55:00",
+        "formal_cdss_ready": false,
+        "skill_version": "V2.1-CAD-lab-indicator-refine",
+        "evidence_ids": [
+          "EVD-CARD-CAD-LABIND-FREE-FATTY-ACID"
+        ]
+      },
+      "target_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:43648",
+      "target_code": "IND-CARD-LAB-FREE-FATTY-ACID-HIGH",
+      "target_name": "游离脂肪酸升高",
+      "target_labels": [
+        "KGNode",
+        "ExamObservation"
+      ]
+    },
+    {
+      "source_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:43099",
+      "source_code": "LAB-CARD-STEMI-4BA28B772105",
+      "source_name": "肌红蛋白",
+      "source_labels": [
+        "KGNode",
+        "LabItem"
+      ],
+      "relation_element_id": "5:96d33a16-3d9f-4d2c-809b-20d1b37db684:132850",
+      "relation_properties": {
+        "disease_code": "DIS-CARD-CAD-AMI",
+        "relationType": "lab_test_has_indicator",
+        "evidence_count": 1,
+        "migrated_at": "2026-07-16 11:31:43",
+        "source_type": "authoritative_textbook",
+        "duplicate_replaced_by_source_code": "LAB-CARD-STEMI-4BA28B772105",
+        "target_code": "IND-CARD-AMI-LAB-0E23D936276F",
+        "schema_version": "V1.15",
+        "migration_reason": "20260716同类型同名重复节点归并",
+        "batch_id": "BATCH-CARD-CAD-AMI-LABIND-20260713-001",
+        "migration_status": "deprecated_duplicate_relation",
+        "id": "REL-B95646F48B5CDC7543F8",
+        "source_code": "LAB-CARD-CADREM-AMI-4BA28B7721",
+        "updated_at": "2026-07-16 11:31:43",
+        "migration_batch": "20260719_旧结构全库收口V2",
+        "source_authority": "《内科学（第10版）》",
+        "disease_name": "急性心肌梗死",
+        "clinical_review_status": "pending_clinical_use_effect_review",
+        "migrated_from_source_code": "LAB-CARD-CADREM-AMI-4BA28B7721",
+        "created_at": "2026-07-13 00:20:00",
+        "formal_cdss_ready": false,
+        "skill_version": "V2.1-AMI-lab-indicator-refine",
+        "evidence_ids": [
+          "EVD-CARD-AMI-LABIND-MYOCARDIAL-BIOMARKER"
+        ]
+      },
+      "target_element_id": "4:96d33a16-3d9f-4d2c-809b-20d1b37db684:43638",
+      "target_code": "IND-CARD-AMI-LAB-0E23D936276F",
+      "target_name": "肌红蛋白升高",
+      "target_labels": [
+        "KGNode",
+        "ExamObservation"
+      ]
+    }
+  ],
+  "path_blockers": [],
+  "treatment_plan_action_gaps": [],
+  "formal_recommendation_gaps": [],
+  "planned_differential_repairs": [
+    {
+      "disease_code": "DIS-CARD-CM-ABVC",
+      "node_code": "DDX-CARD-CM-ABVC-PHENOCOPY",
+      "rule_code": "RULE-CARD-CM-ABVC-PHENOCOPY",
+      "name": "致心律失常性双心室心肌病表型鉴别",
+      "rule_text": "致心律失常性双心室心肌病属于致心律失常性心肌病的双心室表型；评估时应系统排除心肌炎、心脏结节病、右心室梗死、扩张型心肌病、肺动脉高压、右心容量负荷型先天性心脏病及特发性右心室流出道室速等表型模拟疾病。",
+      "differential_targets": [
+        "心肌炎",
+        "心脏结节病",
+        "右心室梗死",
+        "扩张型心肌病",
+        "肺动脉高压",
+        "右心容量负荷型先天性心脏病",
+        "特发性右心室流出道室速"
+      ],
+      "evidence_id": "EVD-SHARED-4BC0142953B346C1151871A1",
+      "disease_exists": true,
+      "already_present": true,
+      "evidence_exists": true
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ATRIAL",
+      "node_code": "DDX-CARD-CM-ATRIAL-SECONDARY",
+      "rule_code": "RULE-CARD-CM-ATRIAL-SECONDARY",
+      "name": "心房心肌病与继发性心房重构鉴别",
+      "rule_text": "诊断心房心肌病时应评估心房颤动持续发作、心力衰竭、瓣膜性心脏病、心肌炎、高血压和内分泌异常等可继发心房瘢痕或结构重构的病理状态，结合病因纠正后的结构和电生理变化判断是否为原发性心房心肌病。",
+      "differential_targets": [
+        "持续性心房颤动",
+        "心力衰竭",
+        "瓣膜性心脏病",
+        "心肌炎",
+        "高血压",
+        "内分泌异常"
+      ],
+      "evidence_id": "EVD-74C08FDA665F90308028-ATRIAL",
+      "disease_exists": true,
+      "already_present": true,
+      "evidence_exists": true
+    },
+    {
+      "disease_code": "DIS-CARD-CM-FABRY",
+      "node_code": "DDX-CARD-CM-FABRY-LVH",
+      "rule_code": "RULE-CARD-CM-FABRY-LVH",
+      "name": "法布雷病心肌病左心室肥厚表型鉴别",
+      "rule_text": "法布雷病心肌病出现左心室肥厚或限制样改变时，应与肥厚型心肌病、淀粉样变心肌病和高血压性心肌损伤鉴别；少汗、四肢疼痛、蛋白尿等心外表现以及酶学、基因和组织学检查有助于明确病因。",
+      "differential_targets": [
+        "肥厚型心肌病",
+        "淀粉样变心肌病",
+        "高血压性心肌损伤"
+      ],
+      "evidence_id": "EVD-00CF1703DDCBA6474E42-FABRY",
+      "disease_exists": true,
+      "already_present": true,
+      "evidence_exists": true
+    },
+    {
+      "disease_code": "DIS-CARD-CM-GENERAL",
+      "node_code": "DDX-CARD-CM-GENERAL-LOAD-ISCHEMIA",
+      "rule_code": "RULE-CARD-CM-GENERAL-LOAD-ISCHEMIA",
+      "name": "心肌病宽口径诊断排除条件",
+      "rule_text": "将心肌结构或功能异常归入心肌病宽口径诊断前，应先判断该异常是否能够由前负荷或后负荷增加、心肌缺血或其他系统性疾病充分解释；能够解释者不能仅凭心肌表型直接归入原发性心肌病，并应继续完成病因和具体表型分型。",
+      "differential_targets": [
+        "前负荷增加所致心肌改变",
+        "后负荷增加所致心肌改变",
+        "缺血性心脏病",
+        "系统性疾病心肌受累"
+      ],
+      "evidence_id": "CARD-SKELETON-20260709-EVID-10DB7A033FEFEC11",
+      "disease_exists": true,
+      "already_present": true,
+      "evidence_exists": true
+    },
+    {
+      "disease_code": "DIS-CARD-CM-NDLVCM",
+      "node_code": "DDX-CARD-CM-NDLVCM-SYSTOLIC",
+      "rule_code": "RULE-CARD-CM-NDLVCM-SYSTOLIC",
+      "name": "非扩张型左心室心肌病鉴别",
+      "rule_text": "非扩张型左心室心肌病应与导致心脏收缩功能减低的其他原发性和继发性心肌病鉴别；诊断前应排除继发性、其他原发性及缺血性心肌病，并结合无明显左心室扩张、非缺血性瘢痕或脂肪替代等特征判断。",
+      "differential_targets": [
+        "其他原发性心肌病",
+        "继发性心肌病",
+        "缺血性心肌病"
+      ],
+      "evidence_id": "EVD-105ACC5EF6AEFCD23F73-NDLVCM",
+      "disease_exists": true,
+      "already_present": true,
+      "evidence_exists": true
+    }
+  ],
+  "acceptance_dimensions": {
+    "知识内容完整性": {
+      "status": "通过",
+      "content_gap_count": 0,
+      "empty_action_plan_count": 0
+    },
+    "标准身份完整性": {
+      "status": "不通过",
+      "standard_diagnosis_gap_count": 5
+    },
+    "路径可用性": {
+      "status": "不通过",
+      "bad_direct_lab_path_count": 0,
+      "bad_direct_exam_path_count": 0,
+      "invalid_lab_child_relation_count": 11,
+      "unmigratable_path_count": 0
+    },
+    "正式推荐就绪度": {
+      "status": "通过",
+      "formal_recommendation_gap_count": 0
+    }
+  }
+}

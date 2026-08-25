@@ -1,0 +1,731 @@
+﻿[
+  {
+    "id": "79f4c7818aa1ae8b7bff48639fbc6445",
+    "code": "E85.400x005",
+    "name": "上呼吸道淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "61c41589fddd7404ec7b2716e087511e",
+    "code": "E85.901",
+    "name": "原发性淀粉样变性",
+    "class_code": "E85.9",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "da9c1cc30bceb7aefe6129d0320d6886",
+    "code": "D47.700x006",
+    "name": "原发性系统性淀粉样变性",
+    "class_code": "D47.7",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "1435462836134b7531ff16db75fef7e2",
+    "code": "I42.803",
+    "name": "右室心肌病",
+    "class_code": "I42.8",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "dd457d2ab522cf0d8439d8b060c82dc3",
+    "code": "E85.400x006",
+    "name": "咽淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "a1dc39adf736895411e101df0a650d8e",
+    "code": "E85.400x022",
+    "name": "喉淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "b2305e96c54f84bc42db230fd0bd1759",
+    "code": "E85.400x026",
+    "name": "声带淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "edacefda596b55626a574485d850676b",
+    "code": "I68.0*",
+    "name": "大脑淀粉样血管病",
+    "class_code": "I68*",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "a192dc407065ef762baca7b02f1f5618",
+    "code": "E85.100x004",
+    "name": "家族性淀粉样变性周围神经病",
+    "class_code": "E85.1",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "30b8546e2ee13e0ffa14575d4ebe08bb",
+    "code": "E85.200",
+    "name": "家族遗传性淀粉样变",
+    "class_code": "E85.2",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "13a32b26e4cac130a072c95034b53329",
+    "code": "E85.200x001",
+    "name": "家族遗传性淀粉样变性",
+    "class_code": "E85.2",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "77c1ec8438a9e02afd45ac30b20a25e0",
+    "code": "L23.500x005",
+    "name": "尼龙刷斑状淀粉样变病",
+    "class_code": "L23.5",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "be3f4c4ef044dfc77b9781a219170fe5",
+    "code": "E85.400x014",
+    "name": "局限性淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "ad175389879755bde2190b53898fcbd4",
+    "code": "E85.400x028+",
+    "name": "心脏淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": "中医诊断(完整版)"
+  },
+  {
+    "id": "4abaee44db4b2afe2c5e7c4b50306b67",
+    "code": "E85.400x028+I43.1*",
+    "name": "心脏淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "4a4d7f7914cad350dae9b94bb5c174d0",
+    "code": "E85.900x003",
+    "name": "斑疹性淀粉样变性",
+    "class_code": "E85.9",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "5aa23d4052a8a5ad8ed4da26ec175693",
+    "code": "E85.900",
+    "name": "淀粉样变",
+    "class_code": "E85.9",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "c85221b50e090bd7df1cd15f9ee7d13c",
+    "code": "E85.409",
+    "name": "淀粉样变喉损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "e5b6e9f1288f68985e3e69716b9334c2",
+    "code": "E85.401",
+    "name": "淀粉样变声带损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "7515699AED3D4436BF3279F9EF0EB3A2",
+    "code": "E85.416+",
+    "name": "淀粉样变心脏损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "ae50c2f4f0a5a03a9bb2fe02db2c0bfa",
+    "code": "E85.416+I43.1*",
+    "name": "淀粉样变心脏损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "90951d5e63e0e3927bf16dffaeaf29cf",
+    "code": "E85.900x001",
+    "name": "淀粉样变性",
+    "class_code": "E85.9",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "419011d860b278e407426990f14e98a4",
+    "code": "M14.4*",
+    "name": "淀粉样变性关节病",
+    "class_code": "M14*",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "BAB5EDBE903143A6BA8D833210C2678D",
+    "code": "E85.101+",
+    "name": "淀粉样变性周围神经病",
+    "class_code": "E85.1",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "b5b63eb2edb8c0ade2058fb3dc366c8a",
+    "code": "E85.101+G63.3*",
+    "name": "淀粉样变性周围神经病",
+    "class_code": "E85.1",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "1c3da379352d61c1e807d05a89e3f761",
+    "code": "E85.400x008+",
+    "name": "淀粉样变性性周围神经病",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": "中医诊断(完整版)"
+  },
+  {
+    "id": "bb2ce6c33457871a31fdf527b667f261",
+    "code": "E85.400x008+G99.0*",
+    "name": "淀粉样变性性周围神经病",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "d7f14e1bc0cdf7276de768c3662fc5a9",
+    "code": "E85.404",
+    "name": "淀粉样变支气管损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "deaf7083a1640be3cd32bfbe83324b05",
+    "code": "E85.407",
+    "name": "淀粉样变气管损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "f83ccdb28f3177274360a2aca8de9b0c",
+    "code": "E85.406",
+    "name": "淀粉样变甲状腺损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "AB977AAA6623420A9AEDE10C4F96834F",
+    "code": "E85.413+",
+    "name": "淀粉样变皮肤损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "74881f84ce649bfb9eba68031db37c2b",
+    "code": "E85.413+L99.0*",
+    "name": "淀粉样变皮肤损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "043A48F18925455EA7E9D37A1883904E",
+    "code": "E85.415+",
+    "name": "淀粉样变肝损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "c66c3837c1e23f2fe28765127385c638",
+    "code": "E85.415+K77.8*",
+    "name": "淀粉样变肝损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "0F18ECFC3BB8450E8C194D1A37456944",
+    "code": "E85.417+",
+    "name": "淀粉样变肠道损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "2fdb34445f81bc2f65abb697257112e8",
+    "code": "E85.417+K93.8*",
+    "name": "淀粉样变肠道损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "BB910E4A1D994F6FA96362BA8009EEDA",
+    "code": "E85.412+",
+    "name": "淀粉样变肺损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "aa0e4005c8beb3ba5a4f71c13d32a414",
+    "code": "E85.412+J99.8*",
+    "name": "淀粉样变肺损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "53DF911AB6DA43CCB02156839DF9BD60",
+    "code": "E85.411+",
+    "name": "淀粉样变肾损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "d1fdb07a1dd676bad55cc2c1d8920dd4",
+    "code": "E85.411+N29.8*",
+    "name": "淀粉样变肾损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "2baf67228e05ba82f15af336a7a4cc93",
+    "code": "E85.410",
+    "name": "淀粉样变胸膜损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "AA7AE092D69948E0B1CA81C414923DCC",
+    "code": "E85.414+",
+    "name": "淀粉样变脑血管损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "8be52e7c8f098ddcca28c35dda8cf3ff",
+    "code": "E85.414+I68.0*",
+    "name": "淀粉样变脑血管损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "d12df40f1a3111681094d10c2451c6b9",
+    "code": "E85.403",
+    "name": "淀粉样变膀胱损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "3e06655b4783c2b5d038c416a8482745",
+    "code": "E85.408",
+    "name": "淀粉样变血管损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "122bc2e42f70b4d569fd7711e1ec2f34",
+    "code": "E85.402",
+    "name": "淀粉样变鼻咽损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "81ee2a770876fc18f6ae8dce0e98b4cf",
+    "code": "E85.405",
+    "name": "淀粉样变齿龈损害",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "a188cb49a2a1efad837157ccae7c8ae8",
+    "code": "E85.800",
+    "name": "淀粉样变，其他的",
+    "class_code": "E85.8",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "56762c886d7f54dcbeac6fcbb00e7930",
+    "code": "E85.100x002",
+    "name": "淀粉样多发性神经病变",
+    "class_code": "E85.1",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "421fda3aa81633f2f2f36eaad8858b66",
+    "code": "E85.400x027",
+    "name": "淀粉样脑血管病",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "b775481181435f3da188f7d41e63f84f",
+    "code": "L99.0*",
+    "name": "皮肤淀粉样变",
+    "class_code": "L99*",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "502915a571472b6ae25ec97276161016",
+    "code": "E85.400x024+",
+    "name": "皮肤淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": "中医诊断(完整版)"
+  },
+  {
+    "id": "d155356247cb916664a844aec45fcef2",
+    "code": "E85.400x024+L99.0*",
+    "name": "皮肤淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "7efced9913bc232cd1cf1ef9d3740291",
+    "code": "E85.418",
+    "name": "眼睑淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "e12759b4b232a307a50909ba4c01c34d",
+    "code": "E85.400x003",
+    "name": "睑淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "f713fa2a3e336f405ac2901d9353e7af",
+    "code": "E85.100",
+    "name": "神经病性家族遗传性淀粉样变",
+    "class_code": "E85.1",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "e119859258731d58b4a210b8173d93ad",
+    "code": "E85.100x003",
+    "name": "神经病性家族遗传性淀粉样变性",
+    "class_code": "E85.1",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "5b490147cdba547734688505e736ced8",
+    "code": "E85.300",
+    "name": "继发性全身性淀粉样变",
+    "class_code": "E85.3",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "780dab7c50ce7a2d5c8276f89ddc807a",
+    "code": "E85.300x001",
+    "name": "继发性全身性淀粉样变性",
+    "class_code": "E85.3",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "3c76a780412f17165a0fdbc0dc42b5a5",
+    "code": "E85.300x002",
+    "name": "继发性淀粉样变性",
+    "class_code": "E85.3",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "a3ca0b88e4b40481a930229fc101cc43",
+    "code": "E85.400x029+",
+    "name": "肺淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": "中医诊断(完整版)"
+  },
+  {
+    "id": "78d0b95e1b3beb204600fdc1efa835b5",
+    "code": "E85.400x029+J99.8*",
+    "name": "肺淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "d5e44b49330a982be2e0930de3601d3e",
+    "code": "E85.400x025+",
+    "name": "肾淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": "中医诊断(完整版)"
+  },
+  {
+    "id": "3da394696451602b7065a232cec6eecc",
+    "code": "E85.400x025+N08.4*",
+    "name": "肾淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "21c1b686f2447a4e03f7dd0d2a670890",
+    "code": "E85.400x012",
+    "name": "脑淀粉样变",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "c7047fb183d1fa92ced3ff15d380eced",
+    "code": "E85.400x004",
+    "name": "脾淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "99a7a14b8ecb6f7ba5e4ea526b16fd33",
+    "code": "E85.400x021",
+    "name": "膀胱淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "e2f3017ed624228933ae203d12681c25",
+    "code": "I42.800x002",
+    "name": "致心律失常性右室心肌病",
+    "class_code": "I42.8",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "e73a5f7a9cf9b894401b8b0cbcd2cf96",
+    "code": "I42.800x006",
+    "name": "致心律失常性左室心肌病",
+    "class_code": "I42.8",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "e228fed63e0d0a27ea80f36e6ac38bd8",
+    "code": "E85.400x017+",
+    "name": "苔癣淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": "中医诊断(完整版)"
+  },
+  {
+    "id": "eedbc45ffaa18675e9ea678d7fba386d",
+    "code": "E85.400x017+L99.0*",
+    "name": "苔癣淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "4b9c67c43d25a47e6afef4f73bcf63b8",
+    "code": "E85.100x001",
+    "name": "葡萄牙型淀粉样多发性神经病变",
+    "class_code": "E85.1",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "480b10aa76a712765c5c6da82eb75a42",
+    "code": "E85.000x005",
+    "name": "遗传性淀粉样性肾病",
+    "class_code": "E85.0",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "d69683eb44a41f60a5197bdf29a26358",
+    "code": "E85.002",
+    "name": "遗传性淀粉样肾病",
+    "class_code": "E85.0",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "b7d272035cf77c861d90a33e00cce0e2",
+    "code": "I42.500",
+    "name": "限制型心肌病，其他的",
+    "class_code": "I42.5",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "945e17d49f08d1fab07aff7694bf63c6",
+    "code": "E85.400",
+    "name": "限定于器官的淀粉样变",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "ce8eea1ff15082cbbdf45a9412d3afee",
+    "code": "E85.000",
+    "name": "非神经病性家族遗传性淀粉样变",
+    "class_code": "E85.0",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "af4426f59647fe686237eba11f26e5bc",
+    "code": "E85.000x004",
+    "name": "非神经病性家族遗传性淀粉样变性",
+    "class_code": "E85.0",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "098FA8A5CCF845F6A638D2DB1928AD4C",
+    "code": "M85110/3",
+    "name": "髓样癌伴淀粉样间质",
+    "class_code": "第24章",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "746DACDBAAE84B88A66166B876CC0C85",
+    "code": "M83450/3",
+    "name": "髓样癌，伴淀粉样基质",
+    "class_code": "第24章",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  },
+  {
+    "id": "91c4b4ae297c32e80a02135b605562f2",
+    "code": "E85.400x023",
+    "name": "鼻咽淀粉样变性",
+    "class_code": "E85.4",
+    "valid_flag": 1,
+    "source": "国家临床版2.0",
+    "remark": null
+  }
+]

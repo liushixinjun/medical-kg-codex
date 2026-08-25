@@ -1,0 +1,117 @@
+{
+  "run_id": "全库正式CDSS推荐链路核验与收口_20260730",
+  "executed_at": "2026-07-30 17:31:28",
+  "neo4j_written": true,
+  "oracle_written": false,
+  "before": {
+    "recommendation_statement_total": 572,
+    "declared_formal_recommendation_count": 212,
+    "invalid_declared_formal_recommendation_count": 0,
+    "treatment_plan_no_action_blocker_count": 0
+  },
+  "fixes": {
+    "hypertension_lifestyle_plan": {
+      "plan_code": "PLAN-CARD-2081B78ED14D",
+      "plan_name": "生活方式干预",
+      "component_count": 6,
+      "linked_count": 6,
+      "components": [
+        "限制钠盐摄入",
+        "合理膳食",
+        "控制体重",
+        "规律运动",
+        "戒烟限酒",
+        "心理平衡"
+      ]
+    },
+    "recommendation_status_normalization": {
+      "promoted_or_completed_formal": 0,
+      "demoted_to_knowledge_display": 0,
+      "untouched": 572,
+      "demoted_examples": []
+    }
+  },
+  "after": {
+    "recommendation_statement_total": 572,
+    "declared_formal_recommendation_count": 212,
+    "invalid_declared_formal_recommendation_count": 0,
+    "invalid_declared_formal_issue_counts": {},
+    "treatment_plan_no_action_blocker_count": 0,
+    "standard_dictionary_formal_blocker_summary": {
+      "by_entity_type": [
+        {
+          "entity_type": "ExamItem",
+          "total": 65,
+          "formal_ready": 0,
+          "formal_missing_dict_id": 0,
+          "formal_pending": 0
+        },
+        {
+          "entity_type": "ExamObservation",
+          "total": 174,
+          "formal_ready": 0,
+          "formal_missing_dict_id": 0,
+          "formal_pending": 0
+        },
+        {
+          "entity_type": "LabItem",
+          "total": 24,
+          "formal_ready": 1,
+          "formal_missing_dict_id": 0,
+          "formal_pending": 0
+        },
+        {
+          "entity_type": "LabSubitem",
+          "total": 20,
+          "formal_ready": 4,
+          "formal_missing_dict_id": 0,
+          "formal_pending": 0
+        },
+        {
+          "entity_type": "Medication",
+          "total": 133,
+          "formal_ready": 0,
+          "formal_missing_dict_id": 0,
+          "formal_pending": 0
+        },
+        {
+          "entity_type": "Sign",
+          "total": 92,
+          "formal_ready": 0,
+          "formal_missing_dict_id": 0,
+          "formal_pending": 0
+        },
+        {
+          "entity_type": "StandardDiagnosis",
+          "total": 86,
+          "formal_ready": 0,
+          "formal_missing_dict_id": 0,
+          "formal_pending": 0
+        },
+        {
+          "entity_type": "StandardProcedure",
+          "total": 49,
+          "formal_ready": 0,
+          "formal_missing_dict_id": 0,
+          "formal_pending": 0
+        },
+        {
+          "entity_type": "Symptom",
+          "total": 53,
+          "formal_ready": 0,
+          "formal_missing_dict_id": 0,
+          "formal_pending": 0
+        },
+        {
+          "entity_type": "TreatmentItem",
+          "total": 22,
+          "formal_ready": 0,
+          "formal_missing_dict_id": 0,
+          "formal_pending": 0
+        }
+      ]
+    }
+  },
+  "remaining_plan_blockers": [],
+  "remaining_invalid_formal_examples": []
+}

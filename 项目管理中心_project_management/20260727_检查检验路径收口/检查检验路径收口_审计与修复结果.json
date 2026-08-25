@@ -1,0 +1,1384 @@
+{
+  "run_time": "2026-07-28 00:05:07",
+  "apply": false,
+  "batch": "20260727-检查检验路径收口",
+  "before": {
+    "disease_count": 132,
+    "exam_observation_count": 152,
+    "lab_subitem_count": 53,
+    "exam_item_has_observation": 165,
+    "lab_item_has_subitem": 41,
+    "plan_direct_to_labsubitem": 226,
+    "plan_direct_to_examobservation": 0
+  },
+  "candidate_count": {
+    "plan_to_labitem": 0,
+    "plan_to_examitem": 0
+  },
+  "repaired": {
+    "plan_to_labitem": 0,
+    "plan_to_examitem": 0
+  },
+  "after": {
+    "plan_direct_to_labsubitem": 226,
+    "plan_to_labitem": 383,
+    "plan_direct_to_examobservation": 0,
+    "plan_to_examitem": 874
+  },
+  "lab_candidates_sample": [],
+  "exam_candidates_sample": [],
+  "disease_path": [
+    {
+      "disease_code": "DIS-CARD-ARR-BRUGADA",
+      "disease_name": "Brugada综合征",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 8,
+      "exam_observation_count": 50,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-STEMI",
+      "disease_name": "ST段抬高型心肌梗死",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 10,
+      "exam_observation_count": 49,
+      "lab_item_count": 8,
+      "lab_subitem_count": 14
+    },
+    {
+      "disease_code": "DIS-CARD-TBAD",
+      "disease_name": "Stanford B型主动脉夹层",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 3,
+      "exam_observation_count": 4,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB1",
+      "disease_name": "一度房室传导阻滞",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 6,
+      "exam_observation_count": 36,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-CHD-EBSTEIN",
+      "disease_name": "三尖瓣下移畸形",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 6,
+      "exam_observation_count": 39,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-TR",
+      "disease_name": "三尖瓣反流",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 6,
+      "exam_observation_count": 36,
+      "lab_item_count": 4,
+      "lab_subitem_count": 10
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB3",
+      "disease_name": "三度房室传导阻滞",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 3,
+      "exam_observation_count": 17,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-PAD-LEAD",
+      "disease_name": "下肢动脉硬化闭塞症",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 2,
+      "exam_observation_count": 9,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-UA",
+      "disease_name": "不稳定型心绞痛",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 12,
+      "exam_observation_count": 56,
+      "lab_item_count": 7,
+      "lab_subitem_count": 13
+    },
+    {
+      "disease_code": "DIS-CARD-AORTIC-DISSECTION",
+      "disease_name": "主动脉夹层",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 13,
+      "exam_observation_count": 48,
+      "lab_item_count": 4,
+      "lab_subitem_count": 6
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-AR",
+      "disease_name": "主动脉瓣反流",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 11,
+      "exam_observation_count": 49,
+      "lab_item_count": 3,
+      "lab_subitem_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-AS",
+      "disease_name": "主动脉瓣狭窄",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 12,
+      "exam_observation_count": 52,
+      "lab_item_count": 5,
+      "lab_subitem_count": 12
+    },
+    {
+      "disease_code": "DIS-CARD-AORTA-ANEURYSM",
+      "disease_name": "主动脉瘤",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 6,
+      "exam_observation_count": 39,
+      "lab_item_count": 2,
+      "lab_subitem_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-CHD-SOVA",
+      "disease_name": "主动脉窦瘤",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 7,
+      "exam_observation_count": 44,
+      "lab_item_count": 1,
+      "lab_subitem_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-COA",
+      "disease_name": "主动脉缩窄",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 4,
+      "exam_observation_count": 22,
+      "lab_item_count": 1,
+      "lab_subitem_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-CHD-BAV",
+      "disease_name": "二叶主动脉瓣",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 3,
+      "exam_observation_count": 27,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-MR",
+      "disease_name": "二尖瓣反流",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 9,
+      "exam_observation_count": 44,
+      "lab_item_count": 5,
+      "lab_subitem_count": 11
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-MS",
+      "disease_name": "二尖瓣狭窄",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 9,
+      "exam_observation_count": 44,
+      "lab_item_count": 8,
+      "lab_subitem_count": 16
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB2",
+      "disease_name": "二度房室传导阻滞",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 3,
+      "exam_observation_count": 18,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-IE-PVE",
+      "disease_name": "人工瓣膜心内膜炎",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 4,
+      "exam_observation_count": 22,
+      "lab_item_count": 1,
+      "lab_subitem_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-CPVT",
+      "disease_name": "儿茶酚胺敏感性多形性室性心动过速",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 9,
+      "exam_observation_count": 50,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-CHD-COA",
+      "disease_name": "先天性主动脉缩窄",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 0,
+      "exam_item_count": 0,
+      "exam_observation_count": 0,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-CHD",
+      "disease_name": "先天性心脏病",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 8,
+      "exam_observation_count": 41,
+      "lab_item_count": 3,
+      "lab_subitem_count": 9
+    },
+    {
+      "disease_code": "DIS-CARD-PH-CHD",
+      "disease_name": "先天性心脏病相关肺动脉高压",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 11,
+      "exam_observation_count": 50,
+      "lab_item_count": 4,
+      "lab_subitem_count": 10
+    },
+    {
+      "disease_code": "DIS-CARD-HF-BIVENTRICULAR",
+      "disease_name": "全心衰竭",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 1,
+      "exam_observation_count": 10,
+      "lab_item_count": 1,
+      "lab_subitem_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-HT-ENDOCRINE",
+      "disease_name": "内分泌性高血压",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 2,
+      "exam_observation_count": 4,
+      "lab_item_count": 3,
+      "lab_subitem_count": 7
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-SPASM",
+      "disease_name": "冠状动脉痉挛",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 7,
+      "exam_observation_count": 38,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-CHD-CAF",
+      "disease_name": "冠状动脉瘘",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 1,
+      "exam_observation_count": 4,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-CHD",
+      "disease_name": "冠状动脉粥样硬化性心脏病",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 13,
+      "exam_observation_count": 66,
+      "lab_item_count": 7,
+      "lab_subitem_count": 16
+    },
+    {
+      "disease_code": "DIS-CARD-PDA",
+      "disease_name": "动脉导管未闭",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 10,
+      "exam_observation_count": 47,
+      "lab_item_count": 1,
+      "lab_subitem_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-PH-PAH",
+      "disease_name": "动脉性肺动脉高压",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 10,
+      "exam_observation_count": 50,
+      "lab_item_count": 4,
+      "lab_subitem_count": 10
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-ATHEROSCLEROSIS",
+      "disease_name": "动脉粥样硬化",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 12,
+      "exam_observation_count": 61,
+      "lab_item_count": 5,
+      "lab_subitem_count": 11
+    },
+    {
+      "disease_code": "DIS-CARD-PFO",
+      "disease_name": "卵圆孔未闭",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 7,
+      "exam_observation_count": 36,
+      "lab_item_count": 2,
+      "lab_subitem_count": 3
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PA",
+      "disease_name": "原发性醛固酮增多症",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 9,
+      "exam_observation_count": 45,
+      "lab_item_count": 7,
+      "lab_subitem_count": 11
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PRIMARY",
+      "disease_name": "原发性高血压",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 11,
+      "exam_observation_count": 49,
+      "lab_item_count": 7,
+      "lab_subitem_count": 12
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PAROXYSMAL",
+      "disease_name": "发作性高血压",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 3,
+      "exam_observation_count": 10,
+      "lab_item_count": 2,
+      "lab_subitem_count": 3
+    },
+    {
+      "disease_code": "DIS-CARD-HF-RIGHT",
+      "disease_name": "右心衰竭",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 1,
+      "exam_observation_count": 10,
+      "lab_item_count": 1,
+      "lab_subitem_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-PHEO",
+      "disease_name": "嗜铬细胞瘤和副神经节瘤",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 2,
+      "exam_observation_count": 9,
+      "lab_item_count": 2,
+      "lab_subitem_count": 3
+    },
+    {
+      "disease_code": "DIS-CARD-PAD",
+      "disease_name": "外周动脉疾病",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 3,
+      "exam_observation_count": 4,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-MULTI",
+      "disease_name": "多瓣膜病",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 3,
+      "exam_observation_count": 14,
+      "lab_item_count": 2,
+      "lab_subitem_count": 3
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SVT",
+      "disease_name": "室上性心动过速",
+      "diagnostic_role": "broad_diagnosis",
+      "exam_plan_count": 1,
+      "exam_item_count": 5,
+      "exam_observation_count": 30,
+      "lab_item_count": 2,
+      "lab_subitem_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-VA",
+      "disease_name": "室性心律失常",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 11,
+      "exam_observation_count": 54,
+      "lab_item_count": 3,
+      "lab_subitem_count": 8
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-PVC",
+      "disease_name": "室性期前收缩",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 8,
+      "exam_observation_count": 50,
+      "lab_item_count": 8,
+      "lab_subitem_count": 20
+    },
+    {
+      "disease_code": "DIS-CARD-VSD",
+      "disease_name": "室间隔缺损",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 9,
+      "exam_observation_count": 44,
+      "lab_item_count": 2,
+      "lab_subitem_count": 7
+    },
+    {
+      "disease_code": "DIS-CARD-FH",
+      "disease_name": "家族性高胆固醇血症",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 3,
+      "exam_observation_count": 17,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-HF-HFpEF",
+      "disease_name": "射血分数保留的心力衰竭",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 1,
+      "exam_observation_count": 10,
+      "lab_item_count": 1,
+      "lab_subitem_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-HF-HFmrEF",
+      "disease_name": "射血分数轻度降低的心力衰竭",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 1,
+      "exam_observation_count": 10,
+      "lab_item_count": 1,
+      "lab_subitem_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-HF-HFrEF",
+      "disease_name": "射血分数降低的心力衰竭",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 1,
+      "exam_observation_count": 10,
+      "lab_item_count": 1,
+      "lab_subitem_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-TDP",
+      "disease_name": "尖端扭转型室性心动过速",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 6,
+      "exam_observation_count": 41,
+      "lab_item_count": 2,
+      "lab_subitem_count": 5
+    },
+    {
+      "disease_code": "DIS-CARD-HF-LEFT",
+      "disease_name": "左心衰竭",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 1,
+      "exam_observation_count": 10,
+      "lab_item_count": 1,
+      "lab_subitem_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-HF-GENERAL",
+      "disease_name": "心力衰竭",
+      "diagnostic_role": "broad_diagnosis",
+      "exam_plan_count": 1,
+      "exam_item_count": 9,
+      "exam_observation_count": 53,
+      "lab_item_count": 7,
+      "lab_subitem_count": 16
+    },
+    {
+      "disease_code": "DIS-CARD-PERICARDITIS",
+      "disease_name": "心包炎",
+      "diagnostic_role": "broad_diagnosis",
+      "exam_plan_count": 1,
+      "exam_item_count": 7,
+      "exam_observation_count": 36,
+      "lab_item_count": 4,
+      "lab_subitem_count": 10
+    },
+    {
+      "disease_code": "DIS-CARD-PERICARD-EFFUSION",
+      "disease_name": "心包积液及心脏压塞",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 12,
+      "exam_observation_count": 56,
+      "lab_item_count": 6,
+      "lab_subitem_count": 13
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-VF",
+      "disease_name": "心室扑动与心室颤动",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 9,
+      "exam_observation_count": 49,
+      "lab_item_count": 6,
+      "lab_subitem_count": 10
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ATRIAL",
+      "disease_name": "心房心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 1,
+      "exam_observation_count": 6,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AFL",
+      "disease_name": "心房扑动",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 10,
+      "exam_observation_count": 41,
+      "lab_item_count": 8,
+      "lab_subitem_count": 11
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AF",
+      "disease_name": "心房颤动",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 17,
+      "exam_observation_count": 65,
+      "lab_item_count": 13,
+      "lab_subitem_count": 20
+    },
+    {
+      "disease_code": "DIS-CARD-HF-POST-MI",
+      "disease_name": "心肌梗死后心力衰竭",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 1,
+      "exam_observation_count": 10,
+      "lab_item_count": 1,
+      "lab_subitem_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-POST-MI-SYNDROME",
+      "disease_name": "心肌梗死后综合征",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 2,
+      "exam_observation_count": 23,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-MYOCARDITIS",
+      "disease_name": "心肌炎",
+      "diagnostic_role": "broad_diagnosis",
+      "exam_plan_count": 1,
+      "exam_item_count": 12,
+      "exam_observation_count": 53,
+      "lab_item_count": 6,
+      "lab_subitem_count": 12
+    },
+    {
+      "disease_code": "DIS-CARD-CM-GENERAL",
+      "disease_name": "心肌病",
+      "diagnostic_role": "broad_diagnosis",
+      "exam_plan_count": 1,
+      "exam_item_count": 3,
+      "exam_observation_count": 10,
+      "lab_item_count": 2,
+      "lab_subitem_count": 3
+    },
+    {
+      "disease_code": "DIS-CARD-SCD-SUDDEN",
+      "disease_name": "心脏性猝死",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 11,
+      "exam_observation_count": 54,
+      "lab_item_count": 2,
+      "lab_subitem_count": 6
+    },
+    {
+      "disease_code": "DIS-CARD-VHD",
+      "disease_name": "心脏瓣膜病",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 6,
+      "exam_observation_count": 37,
+      "lab_item_count": 3,
+      "lab_subitem_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-SCD-ARREST",
+      "disease_name": "心脏骤停",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 7,
+      "exam_observation_count": 45,
+      "lab_item_count": 3,
+      "lab_subitem_count": 7
+    },
+    {
+      "disease_code": "DIS-CARD-NEUROSIS",
+      "disease_name": "心血管神经症",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 2,
+      "exam_observation_count": 17,
+      "lab_item_count": 2,
+      "lab_subitem_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-AAS",
+      "disease_name": "急性主动脉综合征",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 4,
+      "exam_observation_count": 27,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-ACS",
+      "disease_name": "急性冠脉综合征",
+      "diagnostic_role": "broad_diagnosis",
+      "exam_plan_count": 1,
+      "exam_item_count": 10,
+      "exam_observation_count": 53,
+      "lab_item_count": 9,
+      "lab_subitem_count": 17
+    },
+    {
+      "disease_code": "DIS-CARD-HF-AHF",
+      "disease_name": "急性心力衰竭",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 1,
+      "exam_observation_count": 10,
+      "lab_item_count": 5,
+      "lab_subitem_count": 8
+    },
+    {
+      "disease_code": "DIS-CARD-PERICARD-ACUTE",
+      "disease_name": "急性心包炎",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 9,
+      "exam_observation_count": 40,
+      "lab_item_count": 4,
+      "lab_subitem_count": 10
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-AMI",
+      "disease_name": "急性心肌梗死",
+      "diagnostic_role": "broad_diagnosis",
+      "exam_plan_count": 1,
+      "exam_item_count": 15,
+      "exam_observation_count": 68,
+      "lab_item_count": 11,
+      "lab_subitem_count": 18
+    },
+    {
+      "disease_code": "DIS-CARD-INFECTIVE-ENDOCARDITIS",
+      "disease_name": "感染性心内膜炎",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 13,
+      "exam_observation_count": 49,
+      "lab_item_count": 7,
+      "lab_subitem_count": 14
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-CCS",
+      "disease_name": "慢性冠脉综合征",
+      "diagnostic_role": "broad_diagnosis",
+      "exam_plan_count": 1,
+      "exam_item_count": 5,
+      "exam_observation_count": 31,
+      "lab_item_count": 3,
+      "lab_subitem_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-HF-CHF",
+      "disease_name": "慢性心力衰竭",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 7,
+      "exam_observation_count": 46,
+      "lab_item_count": 8,
+      "lab_subitem_count": 16
+    },
+    {
+      "disease_code": "DIS-CARD-HT-CKD",
+      "disease_name": "慢性肾脏病合并高血压",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 0,
+      "exam_observation_count": 0,
+      "lab_item_count": 2,
+      "lab_subitem_count": 5
+    },
+    {
+      "disease_code": "DIS-CARD-PH-CTEPH",
+      "disease_name": "慢性血栓栓塞性肺动脉高压",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 8,
+      "exam_observation_count": 40,
+      "lab_item_count": 4,
+      "lab_subitem_count": 10
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVB",
+      "disease_name": "房室传导阻滞",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 11,
+      "exam_observation_count": 51,
+      "lab_item_count": 8,
+      "lab_subitem_count": 16
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVRT",
+      "disease_name": "房室折返性心动过速",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 5,
+      "exam_observation_count": 30,
+      "lab_item_count": 1,
+      "lab_subitem_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AVNRT",
+      "disease_name": "房室结折返性心动过速",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 4,
+      "exam_observation_count": 20,
+      "lab_item_count": 1,
+      "lab_subitem_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-AT",
+      "disease_name": "房性心动过速",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 5,
+      "exam_observation_count": 25,
+      "lab_item_count": 5,
+      "lab_subitem_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-CHD-ASD",
+      "disease_name": "房间隔缺损",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 8,
+      "exam_observation_count": 45,
+      "lab_item_count": 1,
+      "lab_subitem_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-CM-DCM",
+      "disease_name": "扩张型心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 14,
+      "exam_observation_count": 60,
+      "lab_item_count": 5,
+      "lab_subitem_count": 7
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-VT",
+      "disease_name": "持续性室性心动过速",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 11,
+      "exam_observation_count": 57,
+      "lab_item_count": 7,
+      "lab_subitem_count": 13
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-ERS",
+      "disease_name": "早期复极综合征",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 4,
+      "exam_observation_count": 31,
+      "lab_item_count": 1,
+      "lab_subitem_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-FULMINANT-MYOCARDITIS",
+      "disease_name": "暴发性心肌炎",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 6,
+      "exam_observation_count": 37,
+      "lab_item_count": 4,
+      "lab_subitem_count": 10
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BBB",
+      "disease_name": "束支传导阻滞",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 8,
+      "exam_observation_count": 45,
+      "lab_item_count": 4,
+      "lab_subitem_count": 10
+    },
+    {
+      "disease_code": "DIS-CARD-CM-FABRY",
+      "disease_name": "法布雷病心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 4,
+      "exam_observation_count": 21,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-CM-AMYLOID",
+      "disease_name": "淀粉样变心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 6,
+      "exam_observation_count": 39,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-PH-IPAH",
+      "disease_name": "特发性肺动脉高压",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 9,
+      "exam_observation_count": 45,
+      "lab_item_count": 4,
+      "lab_subitem_count": 10
+    },
+    {
+      "disease_code": "DIS-CARD-HT-WCH",
+      "disease_name": "白大衣高血压",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 4,
+      "exam_observation_count": 23,
+      "lab_item_count": 4,
+      "lab_subitem_count": 9
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SQTS",
+      "disease_name": "短QT间期综合征",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 4,
+      "exam_observation_count": 27,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-STABLE-ANGINA",
+      "disease_name": "稳定型心绞痛",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 9,
+      "exam_observation_count": 49,
+      "lab_item_count": 11,
+      "lab_subitem_count": 17
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SB",
+      "disease_name": "窦性心动过缓",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 4,
+      "exam_observation_count": 22,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SINUS",
+      "disease_name": "窦性心律失常",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 1,
+      "exam_observation_count": 13,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SAB",
+      "disease_name": "窦房传导阻滞",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 3,
+      "exam_observation_count": 18,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-SND",
+      "disease_name": "窦房结功能障碍",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 5,
+      "exam_observation_count": 24,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-PH-CTD",
+      "disease_name": "结缔组织病相关肺动脉高压",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 6,
+      "exam_observation_count": 32,
+      "lab_item_count": 2,
+      "lab_subitem_count": 3
+    },
+    {
+      "disease_code": "DIS-CARD-HT-SECONDARY",
+      "disease_name": "继发性高血压",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 16,
+      "exam_observation_count": 61,
+      "lab_item_count": 8,
+      "lab_subitem_count": 12
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-BRADY",
+      "disease_name": "缓慢性心律失常",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 4,
+      "exam_observation_count": 22,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-PERICARD-CONSTRICTIVE",
+      "disease_name": "缩窄性心包炎",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 11,
+      "exam_observation_count": 47,
+      "lab_item_count": 5,
+      "lab_subitem_count": 13
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-ICM",
+      "disease_name": "缺血性心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 12,
+      "exam_observation_count": 64,
+      "lab_item_count": 3,
+      "lab_subitem_count": 5
+    },
+    {
+      "disease_code": "DIS-CARD-HT-ELDERLY",
+      "disease_name": "老年高血压",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 4,
+      "exam_observation_count": 13,
+      "lab_item_count": 4,
+      "lab_subitem_count": 9
+    },
+    {
+      "disease_code": "DIS-CARD-CM-HCM",
+      "disease_name": "肥厚型心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 14,
+      "exam_observation_count": 61,
+      "lab_item_count": 3,
+      "lab_subitem_count": 9
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-PS",
+      "disease_name": "肺动脉瓣狭窄",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 6,
+      "exam_observation_count": 35,
+      "lab_item_count": 1,
+      "lab_subitem_count": 6
+    },
+    {
+      "disease_code": "DIS-CARD-PH",
+      "disease_name": "肺动脉高压",
+      "diagnostic_role": "broad_diagnosis",
+      "exam_plan_count": 1,
+      "exam_item_count": 9,
+      "exam_observation_count": 45,
+      "lab_item_count": 4,
+      "lab_subitem_count": 10
+    },
+    {
+      "disease_code": "DIS-CARD-HT-RENAL-PARENCHYMAL",
+      "disease_name": "肾实质性高血压",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 4,
+      "exam_observation_count": 23,
+      "lab_item_count": 2,
+      "lab_subitem_count": 5
+    },
+    {
+      "disease_code": "DIS-CARD-HT-RENOVASCULAR",
+      "disease_name": "肾血管性高血压",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 4,
+      "exam_observation_count": 16,
+      "lab_item_count": 2,
+      "lab_subitem_count": 3
+    },
+    {
+      "disease_code": "DIS-CARD-AAA",
+      "disease_name": "腹主动脉瘤",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 4,
+      "exam_observation_count": 17,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ABVC",
+      "disease_name": "致心律失常性双心室心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 2,
+      "exam_observation_count": 9,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ARVC",
+      "disease_name": "致心律失常性右心室心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 11,
+      "exam_observation_count": 56,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ALVC",
+      "disease_name": "致心律失常性左心室心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 6,
+      "exam_observation_count": 39,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-CM-ACM",
+      "disease_name": "致心律失常性心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 8,
+      "exam_observation_count": 43,
+      "lab_item_count": 2,
+      "lab_subitem_count": 3
+    },
+    {
+      "disease_code": "DIS-CARD-DYSLIPIDEMIA",
+      "disease_name": "血脂异常",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 6,
+      "exam_observation_count": 32,
+      "lab_item_count": 3,
+      "lab_subitem_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-HF-DIALYSIS-CHF",
+      "disease_name": "透析患者慢性心力衰竭",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 1,
+      "exam_observation_count": 10,
+      "lab_item_count": 1,
+      "lab_subitem_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-PH-HPAH",
+      "disease_name": "遗传性肺动脉高压",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 7,
+      "exam_observation_count": 36,
+      "lab_item_count": 4,
+      "lab_subitem_count": 10
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-LQTS",
+      "disease_name": "长QT间期综合征",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 6,
+      "exam_observation_count": 37,
+      "lab_item_count": 3,
+      "lab_subitem_count": 7
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-PSVT",
+      "disease_name": "阵发性室上性心动过速",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 1,
+      "exam_observation_count": 13,
+      "lab_item_count": 2,
+      "lab_subitem_count": 2
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-OLD-MI",
+      "disease_name": "陈旧性心肌梗死",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 4,
+      "exam_observation_count": 26,
+      "lab_item_count": 2,
+      "lab_subitem_count": 3
+    },
+    {
+      "disease_code": "DIS-CARD-CM-RCM",
+      "disease_name": "限制型心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 13,
+      "exam_observation_count": 51,
+      "lab_item_count": 3,
+      "lab_subitem_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+      "disease_name": "隐匿性冠心病",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 7,
+      "exam_observation_count": 39,
+      "lab_item_count": 1,
+      "lab_subitem_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-HT-MASKED",
+      "disease_name": "隐匿性高血压",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 4,
+      "exam_observation_count": 23,
+      "lab_item_count": 2,
+      "lab_subitem_count": 6
+    },
+    {
+      "disease_code": "DIS-CARD-HT-RESISTANT",
+      "disease_name": "难治性高血压",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 9,
+      "exam_observation_count": 43,
+      "lab_item_count": 5,
+      "lab_subitem_count": 10
+    },
+    {
+      "disease_code": "DIS-CARD-VTE",
+      "disease_name": "静脉血栓症",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 10,
+      "exam_observation_count": 48,
+      "lab_item_count": 5,
+      "lab_subitem_count": 12
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-NSTEMI",
+      "disease_name": "非ST段抬高型心肌梗死",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 12,
+      "exam_observation_count": 56,
+      "lab_item_count": 6,
+      "lab_subitem_count": 7
+    },
+    {
+      "disease_code": "DIS-CARD-CM-NDLVCM",
+      "disease_name": "非扩张型左心室心肌病",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 5,
+      "exam_observation_count": 34,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-NSVT",
+      "disease_name": "非持续性室性心动过速",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 8,
+      "exam_observation_count": 50,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-ARR-WPW",
+      "disease_name": "预激综合征",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 5,
+      "exam_observation_count": 30,
+      "lab_item_count": 1,
+      "lab_subitem_count": 1
+    },
+    {
+      "disease_code": "DIS-CARD-VHD-RHD",
+      "disease_name": "风湿性心脏瓣膜病",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 3,
+      "exam_observation_count": 23,
+      "lab_item_count": 3,
+      "lab_subitem_count": 9
+    },
+    {
+      "disease_code": "DIS-CARD-HYPERCHOLESTEROLEMIA",
+      "disease_name": "高胆固醇血症",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 1,
+      "exam_item_count": 2,
+      "exam_observation_count": 4,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    },
+    {
+      "disease_code": "DIS-CARD-HT",
+      "disease_name": "高血压",
+      "diagnostic_role": "broad_diagnosis",
+      "exam_plan_count": 1,
+      "exam_item_count": 11,
+      "exam_observation_count": 46,
+      "lab_item_count": 7,
+      "lab_subitem_count": 13
+    },
+    {
+      "disease_code": "DIS-CARD-HT-URGENCY",
+      "disease_name": "高血压亚急症",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 2,
+      "exam_observation_count": 16,
+      "lab_item_count": 2,
+      "lab_subitem_count": 4
+    },
+    {
+      "disease_code": "DIS-CARD-HT-EMERGENCY",
+      "disease_name": "高血压急症",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 5,
+      "exam_observation_count": 26,
+      "lab_item_count": 4,
+      "lab_subitem_count": 9
+    },
+    {
+      "disease_code": "DIS-CARD-HTN-EMERGENCY",
+      "disease_name": "高血压急症和亚急症",
+      "diagnostic_role": "independent_disease",
+      "exam_plan_count": 0,
+      "exam_item_count": 0,
+      "exam_observation_count": 0,
+      "lab_item_count": 0,
+      "lab_subitem_count": 0
+    }
+  ],
+  "key_diseases": [
+    {
+      "disease_code": "DIS-CARD-CAD-STEMI",
+      "disease_name": "ST段抬高型心肌梗死",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 10,
+      "exam_observation_count": 49,
+      "lab_item_count": 8,
+      "lab_subitem_count": 14
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-AMI",
+      "disease_name": "急性心肌梗死",
+      "diagnostic_role": "broad_diagnosis",
+      "exam_plan_count": 1,
+      "exam_item_count": 15,
+      "exam_observation_count": 68,
+      "lab_item_count": 11,
+      "lab_subitem_count": 18
+    },
+    {
+      "disease_code": "DIS-CARD-CAD-NSTEMI",
+      "disease_name": "非ST段抬高型心肌梗死",
+      "diagnostic_role": "clinical_subtype",
+      "exam_plan_count": 1,
+      "exam_item_count": 12,
+      "exam_observation_count": 56,
+      "lab_item_count": 6,
+      "lab_subitem_count": 7
+    }
+  ]
+}

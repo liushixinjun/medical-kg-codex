@@ -1,0 +1,77 @@
+{
+  "非标准图谱节点": [],
+  "技术编码名称节点": [],
+  "同编码重复实体": [],
+  "疾病定义缺口": [],
+  "诊断标准无明细": [],
+  "鉴别诊断无规则": [],
+  "治疗方案无可执行动作": [
+    {
+      "disease_code": "DIS-CARD-HT",
+      "disease_name": "高血压",
+      "plan_code": "PLAN-CARD-2081B78ED14D",
+      "plan_name": "生活方式干预",
+      "description": null,
+      "source_name": null
+    },
+    {
+      "disease_code": "DIS-CARD-HT-ELDERLY",
+      "disease_name": "老年高血压",
+      "plan_code": "PLAN-CARD-2081B78ED14D",
+      "plan_name": "生活方式干预",
+      "description": null,
+      "source_name": null
+    },
+    {
+      "disease_code": "DIS-CARD-HT-EMERGENCY",
+      "disease_name": "高血压急症",
+      "plan_code": "PLAN-CARD-2081B78ED14D",
+      "plan_name": "生活方式干预",
+      "description": null,
+      "source_name": null
+    },
+    {
+      "disease_code": "DIS-CARD-HT-MASKED",
+      "disease_name": "隐匿性高血压",
+      "plan_code": "PLAN-CARD-2081B78ED14D",
+      "plan_name": "生活方式干预",
+      "description": null,
+      "source_name": null
+    },
+    {
+      "disease_code": "DIS-CARD-HT-PRIMARY",
+      "disease_name": "原发性高血压",
+      "plan_code": "PLAN-CARD-2081B78ED14D",
+      "plan_name": "生活方式干预",
+      "description": null,
+      "source_name": null
+    },
+    {
+      "disease_code": "DIS-CARD-HT-RESISTANT",
+      "disease_name": "难治性高血压",
+      "plan_code": "PLAN-CARD-2081B78ED14D",
+      "plan_name": "生活方式干预",
+      "description": null,
+      "source_name": null
+    },
+    {
+      "disease_code": "DIS-CARD-HT-SECONDARY",
+      "disease_name": "继发性高血压",
+      "plan_code": "PLAN-CARD-2081B78ED14D",
+      "plan_name": "生活方式干预",
+      "description": null,
+      "source_name": null
+    },
+    {
+      "disease_code": "DIS-CARD-HT-WCH",
+      "disease_name": "白大衣高血压",
+      "plan_code": "PLAN-CARD-2081B78ED14D",
+      "plan_name": "生活方式干预",
+      "description": null,
+      "source_name": null
+    }
+  ],
+  "在用药物类别无具体药品": [],
+  "证据关键字段非文本": [],
+  "证据原文重复": []
+}

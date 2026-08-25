@@ -1,0 +1,415 @@
+{
+  "generated_at": "2026-07-30 17:25:27",
+  "neo4j_written": false,
+  "oracle_written": false,
+  "category_count": 15,
+  "disease_count": 145,
+  "category_summary": [
+    {
+      "category": "主动脉和周围血管病",
+      "disease_count": 8,
+      "disease_with_formal": 0,
+      "formal_missing_disease_count": 8,
+      "formal_recommendation_count": 0,
+      "formal_coverage_rate": 0.0
+    },
+    {
+      "category": "先天性心血管病",
+      "disease_count": 12,
+      "disease_with_formal": 0,
+      "formal_missing_disease_count": 12,
+      "formal_recommendation_count": 0,
+      "formal_coverage_rate": 0.0
+    },
+    {
+      "category": "冠心病",
+      "disease_count": 14,
+      "disease_with_formal": 10,
+      "formal_missing_disease_count": 4,
+      "formal_recommendation_count": 50,
+      "formal_coverage_rate": 71.4
+    },
+    {
+      "category": "心力衰竭",
+      "disease_count": 11,
+      "disease_with_formal": 11,
+      "formal_missing_disease_count": 0,
+      "formal_recommendation_count": 60,
+      "formal_coverage_rate": 100.0
+    },
+    {
+      "category": "心包疾病",
+      "disease_count": 4,
+      "disease_with_formal": 0,
+      "formal_missing_disease_count": 4,
+      "formal_recommendation_count": 0,
+      "formal_coverage_rate": 0.0
+    },
+    {
+      "category": "心律失常",
+      "disease_count": 31,
+      "disease_with_formal": 28,
+      "formal_missing_disease_count": 3,
+      "formal_recommendation_count": 86,
+      "formal_coverage_rate": 90.3
+    },
+    {
+      "category": "心肌病",
+      "disease_count": 14,
+      "disease_with_formal": 12,
+      "formal_missing_disease_count": 2,
+      "formal_recommendation_count": 52,
+      "formal_coverage_rate": 85.7
+    },
+    {
+      "category": "心脏瓣膜病",
+      "disease_count": 9,
+      "disease_with_formal": 0,
+      "formal_missing_disease_count": 9,
+      "formal_recommendation_count": 0,
+      "formal_coverage_rate": 0.0
+    },
+    {
+      "category": "心脏骤停与心脏性猝死",
+      "disease_count": 2,
+      "disease_with_formal": 2,
+      "formal_missing_disease_count": 0,
+      "formal_recommendation_count": 4,
+      "formal_coverage_rate": 100.0
+    },
+    {
+      "category": "心血管神经症",
+      "disease_count": 1,
+      "disease_with_formal": 0,
+      "formal_missing_disease_count": 1,
+      "formal_recommendation_count": 0,
+      "formal_coverage_rate": 0.0
+    },
+    {
+      "category": "感染性心内膜炎",
+      "disease_count": 2,
+      "disease_with_formal": 0,
+      "formal_missing_disease_count": 2,
+      "formal_recommendation_count": 0,
+      "formal_coverage_rate": 0.0
+    },
+    {
+      "category": "肺动脉高压",
+      "disease_count": 7,
+      "disease_with_formal": 0,
+      "formal_missing_disease_count": 7,
+      "formal_recommendation_count": 0,
+      "formal_coverage_rate": 0.0
+    },
+    {
+      "category": "血脂异常与动脉粥样硬化防治",
+      "disease_count": 3,
+      "disease_with_formal": 0,
+      "formal_missing_disease_count": 3,
+      "formal_recommendation_count": 0,
+      "formal_coverage_rate": 0.0
+    },
+    {
+      "category": "起搏治疗相关疾病",
+      "disease_count": 9,
+      "disease_with_formal": 9,
+      "formal_missing_disease_count": 0,
+      "formal_recommendation_count": 27,
+      "formal_coverage_rate": 100.0
+    },
+    {
+      "category": "高血压",
+      "disease_count": 18,
+      "disease_with_formal": 15,
+      "formal_missing_disease_count": 3,
+      "formal_recommendation_count": 58,
+      "formal_coverage_rate": 83.3
+    }
+  ],
+  "focus_rows": [
+    {
+      "category": "冠心病",
+      "disease": "ST段抬高型心肌梗死",
+      "disease_code": "DIS-CARD-CAD-STEMI",
+      "diagnostic_role": "clinical_subtype",
+      "recommendation_count": 35,
+      "direct_formal_recommendation_count": 6,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 6
+    },
+    {
+      "category": "冠心病",
+      "disease": "不稳定型心绞痛",
+      "disease_code": "DIS-CARD-CAD-UA",
+      "diagnostic_role": "independent_disease",
+      "recommendation_count": 11,
+      "direct_formal_recommendation_count": 3,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 3
+    },
+    {
+      "category": "冠心病",
+      "disease": "冠状动脉痉挛",
+      "disease_code": "DIS-CARD-CAD-SPASM",
+      "diagnostic_role": "independent_disease",
+      "recommendation_count": 0,
+      "direct_formal_recommendation_count": 0,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 0
+    },
+    {
+      "category": "冠心病",
+      "disease": "冠状动脉粥样硬化性心脏病",
+      "disease_code": "DIS-CARD-CAD-CHD",
+      "diagnostic_role": "independent_disease",
+      "recommendation_count": 0,
+      "direct_formal_recommendation_count": 0,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 0
+    },
+    {
+      "category": "冠心病",
+      "disease": "动脉粥样硬化",
+      "disease_code": "DIS-CARD-CAD-ATHEROSCLEROSIS",
+      "diagnostic_role": "independent_disease",
+      "recommendation_count": 0,
+      "direct_formal_recommendation_count": 0,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 0
+    },
+    {
+      "category": "冠心病",
+      "disease": "心肌梗死后综合征",
+      "disease_code": "DIS-CARD-CAD-POST-MI-SYNDROME",
+      "diagnostic_role": "independent_disease",
+      "recommendation_count": 0,
+      "direct_formal_recommendation_count": 0,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 0
+    },
+    {
+      "category": "冠心病",
+      "disease": "急性冠脉综合征",
+      "disease_code": "DIS-CARD-CAD-ACS",
+      "diagnostic_role": "broad_diagnosis",
+      "recommendation_count": 12,
+      "direct_formal_recommendation_count": 4,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 4
+    },
+    {
+      "category": "冠心病",
+      "disease": "急性心肌梗死",
+      "disease_code": "DIS-CARD-CAD-AMI",
+      "diagnostic_role": "broad_diagnosis",
+      "recommendation_count": 8,
+      "direct_formal_recommendation_count": 3,
+      "subtype_formal_recommendation_count": 10,
+      "effective_formal_recommendation_count": 13
+    },
+    {
+      "category": "冠心病",
+      "disease": "慢性冠脉综合征",
+      "disease_code": "DIS-CARD-CAD-CCS",
+      "diagnostic_role": "broad_diagnosis",
+      "recommendation_count": 10,
+      "direct_formal_recommendation_count": 4,
+      "subtype_formal_recommendation_count": 6,
+      "effective_formal_recommendation_count": 10
+    },
+    {
+      "category": "冠心病",
+      "disease": "稳定型心绞痛",
+      "disease_code": "DIS-CARD-CAD-STABLE-ANGINA",
+      "diagnostic_role": "independent_disease",
+      "recommendation_count": 9,
+      "direct_formal_recommendation_count": 2,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 2
+    },
+    {
+      "category": "冠心病",
+      "disease": "缺血性心肌病",
+      "disease_code": "DIS-CARD-CAD-ICM",
+      "diagnostic_role": "clinical_subtype",
+      "recommendation_count": 11,
+      "direct_formal_recommendation_count": 4,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 4
+    },
+    {
+      "category": "冠心病",
+      "disease": "陈旧性心肌梗死",
+      "disease_code": "DIS-CARD-CAD-OLD-MI",
+      "diagnostic_role": "independent_disease",
+      "recommendation_count": 6,
+      "direct_formal_recommendation_count": 2,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 2
+    },
+    {
+      "category": "冠心病",
+      "disease": "隐匿性冠心病",
+      "disease_code": "DIS-CARD-CAD-SILENT-ISCHEMIA",
+      "diagnostic_role": "clinical_subtype",
+      "recommendation_count": 5,
+      "direct_formal_recommendation_count": 2,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 2
+    },
+    {
+      "category": "冠心病",
+      "disease": "非ST段抬高型心肌梗死",
+      "disease_code": "DIS-CARD-CAD-NSTEMI",
+      "diagnostic_role": "clinical_subtype",
+      "recommendation_count": 13,
+      "direct_formal_recommendation_count": 4,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 4
+    },
+    {
+      "category": "心肌病",
+      "disease": "心房心肌病",
+      "disease_code": "DIS-CARD-CM-ATRIAL",
+      "diagnostic_role": "clinical_subtype",
+      "recommendation_count": 6,
+      "direct_formal_recommendation_count": 2,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 2
+    },
+    {
+      "category": "心肌病",
+      "disease": "心肌炎",
+      "disease_code": "DIS-CARD-MYOCARDITIS",
+      "diagnostic_role": "broad_diagnosis",
+      "recommendation_count": 0,
+      "direct_formal_recommendation_count": 0,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 0
+    },
+    {
+      "category": "心肌病",
+      "disease": "心肌病",
+      "disease_code": "DIS-CARD-CM-GENERAL",
+      "diagnostic_role": "broad_diagnosis",
+      "recommendation_count": 0,
+      "direct_formal_recommendation_count": 0,
+      "subtype_formal_recommendation_count": 26,
+      "effective_formal_recommendation_count": 26
+    },
+    {
+      "category": "心肌病",
+      "disease": "扩张型心肌病",
+      "disease_code": "DIS-CARD-CM-DCM",
+      "diagnostic_role": "clinical_subtype",
+      "recommendation_count": 11,
+      "direct_formal_recommendation_count": 3,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 3
+    },
+    {
+      "category": "心肌病",
+      "disease": "暴发性心肌炎",
+      "disease_code": "DIS-CARD-FULMINANT-MYOCARDITIS",
+      "diagnostic_role": "clinical_subtype",
+      "recommendation_count": 0,
+      "direct_formal_recommendation_count": 0,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 0
+    },
+    {
+      "category": "心肌病",
+      "disease": "法布雷病心肌病",
+      "disease_code": "DIS-CARD-CM-FABRY",
+      "diagnostic_role": "clinical_subtype",
+      "recommendation_count": 5,
+      "direct_formal_recommendation_count": 2,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 2
+    },
+    {
+      "category": "心肌病",
+      "disease": "淀粉样变心肌病",
+      "disease_code": "DIS-CARD-CM-AMYLOID",
+      "diagnostic_role": "clinical_subtype",
+      "recommendation_count": 5,
+      "direct_formal_recommendation_count": 2,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 2
+    },
+    {
+      "category": "心肌病",
+      "disease": "肥厚型心肌病",
+      "disease_code": "DIS-CARD-CM-HCM",
+      "diagnostic_role": "clinical_subtype",
+      "recommendation_count": 10,
+      "direct_formal_recommendation_count": 4,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 4
+    },
+    {
+      "category": "心肌病",
+      "disease": "致心律失常性双心室心肌病",
+      "disease_code": "DIS-CARD-CM-ABVC",
+      "diagnostic_role": "clinical_subtype",
+      "recommendation_count": 7,
+      "direct_formal_recommendation_count": 2,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 2
+    },
+    {
+      "category": "心肌病",
+      "disease": "致心律失常性右心室心肌病",
+      "disease_code": "DIS-CARD-CM-ARVC",
+      "diagnostic_role": "clinical_subtype",
+      "recommendation_count": 6,
+      "direct_formal_recommendation_count": 2,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 2
+    },
+    {
+      "category": "心肌病",
+      "disease": "致心律失常性左心室心肌病",
+      "disease_code": "DIS-CARD-CM-ALVC",
+      "diagnostic_role": "clinical_subtype",
+      "recommendation_count": 6,
+      "direct_formal_recommendation_count": 2,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 2
+    },
+    {
+      "category": "心肌病",
+      "disease": "致心律失常性心肌病",
+      "disease_code": "DIS-CARD-CM-ACM",
+      "diagnostic_role": "clinical_subtype",
+      "recommendation_count": 8,
+      "direct_formal_recommendation_count": 3,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 3
+    },
+    {
+      "category": "心肌病",
+      "disease": "限制型心肌病",
+      "disease_code": "DIS-CARD-CM-RCM",
+      "diagnostic_role": "clinical_subtype",
+      "recommendation_count": 6,
+      "direct_formal_recommendation_count": 2,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 2
+    },
+    {
+      "category": "心肌病",
+      "disease": "非扩张型左心室心肌病",
+      "disease_code": "DIS-CARD-CM-NDLVCM",
+      "diagnostic_role": "clinical_subtype",
+      "recommendation_count": 6,
+      "direct_formal_recommendation_count": 2,
+      "subtype_formal_recommendation_count": 0,
+      "effective_formal_recommendation_count": 2
+    }
+  ],
+  "files": {
+    "detail_csv": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\项目管理中心_project_management\\153_全库正式CDSS推荐链路核验_20260730\\03_全库疾病大类正式链路覆盖复核\\疾病级正式推荐链路覆盖明细_20260730.csv",
+    "summary_csv": "E:\\BigMouse\\0.CDSS文献诊疗指南材料PDF\\AI专科知识图谱生成\\项目管理中心_project_management\\153_全库正式CDSS推荐链路核验_20260730\\03_全库疾病大类正式链路覆盖复核\\疾病大类正式推荐链路覆盖汇总_20260730.csv"
+  }
+}

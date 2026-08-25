@@ -1,0 +1,267 @@
+{
+  "before": {
+    "time": "2026-08-15 22:31:02",
+    "batch_id": "20260815_全库诊疗链路语义压实",
+    "relation_missing": {
+      "has_exam_plan": {
+        "total": 130,
+        "missing_stage": 124,
+        "missing_purpose": 124,
+        "missing_target": 124,
+        "missing_formal_flag": 0
+      },
+      "includes_exam_item": {
+        "total": 874,
+        "missing_stage": 874,
+        "missing_purpose": 874,
+        "missing_target": 874,
+        "missing_formal_flag": 0
+      },
+      "includes_lab_item": {
+        "total": 442,
+        "missing_stage": 442,
+        "missing_purpose": 442,
+        "missing_target": 442,
+        "missing_formal_flag": 0
+      },
+      "exam_item_has_observation": {
+        "total": 165,
+        "missing_stage": 165,
+        "missing_purpose": 165,
+        "missing_target": 165,
+        "missing_formal_flag": 0
+      },
+      "lab_item_has_subitem": {
+        "total": 50,
+        "missing_stage": 50,
+        "missing_purpose": 50,
+        "missing_target": 50,
+        "missing_formal_flag": 0
+      },
+      "has_differential_diagnosis": {
+        "total": 158,
+        "missing_stage": 23,
+        "missing_purpose": 23,
+        "missing_target": 23,
+        "missing_formal_flag": 0
+      },
+      "has_differential_rule": {
+        "total": 126,
+        "missing_stage": 104,
+        "missing_purpose": 104,
+        "missing_target": 75,
+        "missing_formal_flag": 0
+      },
+      "requires_exclusion_exam": {
+        "total": 56,
+        "missing_stage": 29,
+        "missing_purpose": 29,
+        "missing_target": 29,
+        "missing_formal_flag": 0
+      },
+      "requires_exclusion_lab": {
+        "total": 11,
+        "missing_stage": 0,
+        "missing_purpose": 0,
+        "missing_target": 0,
+        "missing_formal_flag": 0
+      },
+      "has_treatment_plan": {
+        "total": 316,
+        "missing_stage": 284,
+        "missing_purpose": 284,
+        "missing_target": 284,
+        "missing_formal_flag": 0
+      },
+      "includes_medication": {
+        "total": 879,
+        "missing_stage": 879,
+        "missing_purpose": 879,
+        "missing_target": 879,
+        "missing_formal_flag": 0
+      },
+      "includes_procedure": {
+        "total": 376,
+        "missing_stage": 376,
+        "missing_purpose": 376,
+        "missing_target": 376,
+        "missing_formal_flag": 0
+      },
+      "includes_treatment_item": {
+        "total": 32,
+        "missing_stage": 32,
+        "missing_purpose": 32,
+        "missing_target": 32,
+        "missing_formal_flag": 0
+      },
+      "stage_has_available_action": {
+        "total": 2039,
+        "missing_stage": 2039,
+        "missing_purpose": 2039,
+        "missing_target": 2039,
+        "missing_formal_flag": 2039
+      },
+      "has_recommendation_statement": {
+        "total": 1427,
+        "missing_stage": 1427,
+        "missing_purpose": 1427,
+        "missing_target": 1427,
+        "missing_formal_flag": 0
+      },
+      "recommends_action": {
+        "total": 1316,
+        "missing_stage": 1314,
+        "missing_purpose": 1314,
+        "missing_target": 1314,
+        "missing_formal_flag": 1316
+      }
+    },
+    "ddx_rules_without_exclusion_items": 59,
+    "treatment_plans_without_downstream_action": 0,
+    "formal_recommendation_without_action": 0,
+    "formal_recommendation_without_evidence": 0,
+    "formal_recommendation_without_primary_guideline": 8
+  },
+  "updates": {
+    "has_exam_plan": 130,
+    "includes_exam_item": 874,
+    "includes_lab_item": 442,
+    "exam_item_has_observation": 165,
+    "lab_item_has_subitem": 27,
+    "has_differential_diagnosis": 158,
+    "has_differential_rule": 75,
+    "requires_exclusion_exam": 50,
+    "requires_exclusion_lab": 11,
+    "copy_ddx_exam_to_rule": 108,
+    "copy_ddx_lab_to_rule": 30,
+    "has_treatment_plan": 305,
+    "includes_medication": 1121,
+    "includes_procedure": 487,
+    "includes_treatment_item": 63,
+    "stage_has_available_action": 2039,
+    "recommends_action": 856
+  },
+  "after": {
+    "time": "2026-08-15 22:31:02",
+    "batch_id": "20260815_全库诊疗链路语义压实",
+    "relation_missing": {
+      "has_exam_plan": {
+        "total": 130,
+        "missing_stage": 0,
+        "missing_purpose": 0,
+        "missing_target": 0,
+        "missing_formal_flag": 0
+      },
+      "includes_exam_item": {
+        "total": 874,
+        "missing_stage": 0,
+        "missing_purpose": 0,
+        "missing_target": 0,
+        "missing_formal_flag": 0
+      },
+      "includes_lab_item": {
+        "total": 442,
+        "missing_stage": 0,
+        "missing_purpose": 0,
+        "missing_target": 0,
+        "missing_formal_flag": 0
+      },
+      "exam_item_has_observation": {
+        "total": 165,
+        "missing_stage": 0,
+        "missing_purpose": 0,
+        "missing_target": 0,
+        "missing_formal_flag": 0
+      },
+      "lab_item_has_subitem": {
+        "total": 50,
+        "missing_stage": 23,
+        "missing_purpose": 23,
+        "missing_target": 23,
+        "missing_formal_flag": 0
+      },
+      "has_differential_diagnosis": {
+        "total": 158,
+        "missing_stage": 0,
+        "missing_purpose": 0,
+        "missing_target": 0,
+        "missing_formal_flag": 0
+      },
+      "has_differential_rule": {
+        "total": 126,
+        "missing_stage": 47,
+        "missing_purpose": 47,
+        "missing_target": 18,
+        "missing_formal_flag": 0
+      },
+      "requires_exclusion_exam": {
+        "total": 164,
+        "missing_stage": 6,
+        "missing_purpose": 6,
+        "missing_target": 6,
+        "missing_formal_flag": 0
+      },
+      "requires_exclusion_lab": {
+        "total": 41,
+        "missing_stage": 0,
+        "missing_purpose": 0,
+        "missing_target": 0,
+        "missing_formal_flag": 0
+      },
+      "has_treatment_plan": {
+        "total": 316,
+        "missing_stage": 11,
+        "missing_purpose": 11,
+        "missing_target": 11,
+        "missing_formal_flag": 0
+      },
+      "includes_medication": {
+        "total": 879,
+        "missing_stage": 0,
+        "missing_purpose": 0,
+        "missing_target": 0,
+        "missing_formal_flag": 0
+      },
+      "includes_procedure": {
+        "total": 376,
+        "missing_stage": 0,
+        "missing_purpose": 0,
+        "missing_target": 0,
+        "missing_formal_flag": 0
+      },
+      "includes_treatment_item": {
+        "total": 32,
+        "missing_stage": 0,
+        "missing_purpose": 0,
+        "missing_target": 0,
+        "missing_formal_flag": 0
+      },
+      "stage_has_available_action": {
+        "total": 2039,
+        "missing_stage": 0,
+        "missing_purpose": 0,
+        "missing_target": 0,
+        "missing_formal_flag": 0
+      },
+      "has_recommendation_statement": {
+        "total": 1427,
+        "missing_stage": 1427,
+        "missing_purpose": 1427,
+        "missing_target": 1427,
+        "missing_formal_flag": 0
+      },
+      "recommends_action": {
+        "total": 1316,
+        "missing_stage": 312,
+        "missing_purpose": 312,
+        "missing_target": 312,
+        "missing_formal_flag": 312
+      }
+    },
+    "ddx_rules_without_exclusion_items": 18,
+    "treatment_plans_without_downstream_action": 0,
+    "formal_recommendation_without_action": 0,
+    "formal_recommendation_without_evidence": 0,
+    "formal_recommendation_without_primary_guideline": 8
+  }
+}

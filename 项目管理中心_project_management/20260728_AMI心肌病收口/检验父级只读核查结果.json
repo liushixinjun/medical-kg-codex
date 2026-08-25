@@ -1,0 +1,1297 @@
+﻿[
+  {
+    "labels": [
+      "KGNode",
+      "ExamIndicator",
+      "LabSubitem"
+    ],
+    "code": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+    "name": "肌钙蛋白",
+    "standard_dict_id": null,
+    "cdss_dict_id": null,
+    "source_name": null,
+    "status": "active",
+    "outgoing": [
+      {
+        "name": "教材证据-FA9778AB",
+        "code": "CARD-SKELETON-20260709-EVID-34E766AFFA9778AB",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "心肌病  ESC  2023.pdf 第22页证据（SEG-DOC-CA7BFFBD6545C234-22-GL-00091-ARVC）",
+        "code": "EVD-A26E919BCF3B88525041-ARVC",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf 第10页证据（SEG-DOC-80984BC35C87AC53-10-GL-00042-HCM）",
+        "code": "EVD-05E0D434ACF6DAEEA231-HCM",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第376页证据（SEG-DOC-C0BB559FA2C8448A-376-GL-00104-MYOCARDITIS）",
+        "code": "EVD-7A704920B9C1715EC86C-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "中国 扩张型心肌病诊断和治疗指南2018.pdf 第10页证据（SEG-DOC-65A62585E5B5B852-10-GL-00015-DCM）",
+        "code": "EVD-7AE0B3CA7A1063A0E475-DCM",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "DCM CN 2018.pdf 第10页证据（SEG-DOC-FF80679E54616C13-10-GL-00022-DCM）",
+        "code": "EVD-21B8D41CA943183BD0BB-DCM",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "ESC指南：心肌病的管理2023.pdf 第22页证据（SEG-DOC-D67714E8DE3D47F1-22-GL-00217-GENERAL）",
+        "code": "EVD-SHARED-B1B13A5E7EC11588A5378F31",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第283页证据（SEG-DOC-C0BB559FA2C8448A-283-GL-00034-MYOCARDITIS）",
+        "code": "EVD-12776A3FEF5667A6964D-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "HCM  ESC 2023.pdf 第6页证据（SEG-DOC-DDFCCE53CA9DCC09-6-GL-00012-ACM）",
+        "code": "EVD-9A48E981C616E518454B-ACM",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "急性心肌梗死-LabTest-7-教材原文证据",
+        "code": "EVD-CARD-TEXTBOOK-21604E90EA3EDFCC",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "中国成人心肌炎临床诊断与治疗指南2024.pdf 第5页证据（SEG-DOC-F40BCB9E0773ED67-5-GL-00017-MYOCARDITIS）",
+        "code": "EVD-7D34F5931FD9E7C52B87-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "中国成人心肌炎临床诊断与治疗指南2024.pdf 第3页证据（SEG-DOC-F40BCB9E0773ED67-3-GL-00009-MYOCARDITIS）",
+        "code": "EVD-2376559ABCC8CCF09934-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "心肌病  ESC  2023.pdf 第6页证据（SEG-DOC-CA7BFFBD6545C234-6-GL-00014-ALVC）",
+        "code": "EVD-066552C60477CD73B70D-ALVC",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "成人先天性心脏病相关肺动脉高压诊断与治疗指南.pdf 第5页证据（SEG-DOC-DBAB434A84D3FCF6-5-GL-00032-CHD）",
+        "code": "EVD-026A540417181B40186A-CHD",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "2024 中国成人暴发性心肌炎诊断和治疗指南.pdf 第17页证据（SEG-DOC-C6EA8A283F0D0385-17-GL-00108-MYOCARDITIS）",
+        "code": "EVD-52702E843320B4EDE5CF-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "2024 中国成人暴发性心肌炎诊断和治疗指南.pdf 第9页证据（SEG-DOC-C6EA8A283F0D0385-9-GL-00068-MYOCARDITIS）",
+        "code": "EVD-07375AE378658103CAC7-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学》第10版 第316页证据（SEG-DOC-C0BB559FA2C8448A-316-TB-00037）",
+        "code": "EVD-TB-B9678D452E636AA92F4C-RCM",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第211页证据（SEG-DOC-C0BB559FA2C8448A-211-GL-00025-VHD）",
+        "code": "EVD-EB3D778ADF277C7A400D-VHD",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "中国 成人肥厚型心肌病诊断与治疗指南2023.pdf 第10页证据（SEG-DOC-80984BC35C87AC53-10-GL-00043-HCM）",
+        "code": "EVD-AEA7D1C14286A4E9FEF3-HCM",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "2024 中国成人暴发性心肌炎诊断和治疗指南.pdf 第10页证据（SEG-DOC-C6EA8A283F0D0385-10-GL-00072-MYOCARDITIS）",
+        "code": "EVD-7028921E7C7A1B8E5A1D-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      }
+    ],
+    "incoming": [
+      {
+        "name": "心肌损伤标志物",
+        "code": "LAB-CARD-CADCD76D40B9",
+        "rel": "lab_item_has_subitem"
+      },
+      {
+        "name": "心脏生物标志物检测",
+        "code": "LAB-CARDIAC-BIOMARKERS",
+        "rel": "lab_item_has_subitem"
+      }
+    ]
+  },
+  {
+    "labels": [
+      "KGNode",
+      "LabItem"
+    ],
+    "code": "LAB-CARD-E0293B589260",
+    "name": "凝血功能",
+    "standard_dict_id": null,
+    "cdss_dict_id": "cbfc86d1150156e2b93c6cefbb68ea86",
+    "source_name": null,
+    "status": null,
+    "outgoing": [
+      {
+        "name": "凝血功能异常",
+        "code": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+        "rel": "lab_item_has_subitem"
+      },
+      {
+        "name": "中国 左心耳干预预防心房颤动患者血栓栓塞事件：目前的认识和建议（2023） (1).pdf 第14页证据（SEG-DOC-12C73CE9FC871CF4-14-GL-00064-AF）",
+        "code": "EVD-SHARED-3DAF51E5239BCC9F938121C1",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第894页证据（SEG-DOC-C0BB559FA2C8448A-894-GL-00124-ENDOCARDITIS）",
+        "code": "EVD-27136E07DDE05C50457F-ENDOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "AF AHA 2023.pdf 第45页证据（SEG-DOC-3E85DFA7D3EA0350-45-GL-00078-AF）",
+        "code": "EVD-58B8296ABD08869C6B20-AF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "心房颤动诊断和治疗中国指南 2023.pdf 第3页证据（SEG-DOC-EE90C4C9A4C51DF7-3-GL-00011-AF）",
+        "code": "EVD-65475B2518B7C423E844-AF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "AF ESC 2020.pdf 第87页证据（SEG-DOC-C5A1A36777F25502-87-GL-00325-AF）",
+        "code": "EVD-0A6F3D7010133C363A68-AF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "AF ESC 2020.pdf 第111页证据（SEG-DOC-C5A1A36777F25502-111-GL-00339-AF）",
+        "code": "EVD-9FB1BAC46E488D79F1E8-AF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.docx 第None页证据（SEG-DOC-CF62B75AEC93F1A6-P12844-14197-GL-00131-AF）",
+        "code": "EVD-116EBF383A37E0437417-AF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "AF ESC 2020.pdf 第97页证据（SEG-DOC-C5A1A36777F25502-97-GL-00330-AF）",
+        "code": "EVD-3772C12DB24ABA115104-AF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "AF ESC 2020.pdf 第125页证据（SEG-DOC-C5A1A36777F25502-125-GL-00351-AF）",
+        "code": "EVD-8AE51B9DC3B086CE4B62-AF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "AF ESC 2020.pdf 第85页证据（SEG-DOC-C5A1A36777F25502-85-GL-00324-AF）",
+        "code": "EVD-6C2260E152B6CEFB5B9B-AF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "中国心房颤动管理指南（2025）.pdf 第15页证据（SEG-DOC-4BF1E6843E30FAE5-15-GL-00057-AF）",
+        "code": "EVD-38DB9A582613154E5367-AF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "慢性肾脏病合并非瓣膜性心房颤动患者抗凝管理的专家共识_慢性肾脏病非瓣膜性心房颤动抗凝管理工作组.pdf 第9页证据（SEG-DOC-63A0DE9B1C2143F8-9-GL-00103-AF）",
+        "code": "EVD-7F837C3CD60F3539DD49-AF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "慢性肾脏病合并非瓣膜性心房颤动患者抗凝管理的专家共识_慢性肾脏病非瓣膜性心房颤动抗凝管理工作组.pdf 第9页证据（SEG-DOC-63A0DE9B1C2143F8-9-GL-00099-AF）",
+        "code": "EVD-5892A349BF127851A18F-AF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "AF ESC 2020.pdf 第123页证据（SEG-DOC-C5A1A36777F25502-123-GL-00349-AF）",
+        "code": "EVD-2BD88BDAC640C43791F1-AF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "AF ESC 2020.pdf 第88页证据（SEG-DOC-C5A1A36777F25502-88-GL-00326-AF）",
+        "code": "EVD-321A53A0B92C1F5F39AE-AF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "中国心房颤动管理指南（2025）.pdf 第38页证据（SEG-DOC-4BF1E6843E30FAE5-38-GL-00143-AF）",
+        "code": "EVD-F075560C553F3C83AABB-AF",
+        "rel": "supported_by_evidence"
+      }
+    ],
+    "incoming": [
+      {
+        "name": null,
+        "code": null,
+        "rel": null
+      }
+    ]
+  },
+  {
+    "labels": [
+      "KGNode",
+      "LabItem"
+    ],
+    "code": "EXAM-CARD-01C3182D129E",
+    "name": "利钠肽",
+    "standard_dict_id": null,
+    "cdss_dict_id": null,
+    "source_name": null,
+    "status": null,
+    "outgoing": [
+      {
+        "name": "内科学(第8版).docx 第None页证据（SEG-DOC-6E44027E23077E48-P09357-09357-GL-00214-HF）",
+        "code": "EVD-E32ACBF1986A07FEF2E6-HF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "内科学(第8版).docx 第None页证据（SEG-DOC-6E44027E23077E48-P09317-09317-GL-00173-HF）",
+        "code": "EVD-980D13675D2EF8C5D40E-HF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "内科学(第8版).docx 第None页证据（SEG-DOC-6E44027E23077E48-P09318-09318-GL-00174-HF）",
+        "code": "EVD-5D3D0E4402B038F149FB-HF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.docx 第None页证据（SEG-DOC-CF62B75AEC93F1A6-P02640-02874-GL-00172-HF）",
+        "code": "EVD-6F2400053438DD0F8331-HF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "【医脉通】2020心肌梗死后心力衰竭防治专家共识.pdf 第11页证据（SEG-DOC-F0DDA79BAB227E88-11-GL-00040-AMI）",
+        "code": "EVD-604AE64A8ECC884598F4-AMI",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第350页证据（SEG-DOC-C0BB559FA2C8448A-350-GL-00081-PERICARDITIS）",
+        "code": "EVD-66861ECAE552AE24D4E4-PERICARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "中国心力衰竭诊断和治疗指南2024.pdf 第16页证据（SEG-DOC-E2AE11B44F6F744B-16-GL-00123-LEFT）",
+        "code": "EVD-CB925A5C77B76D3ADD41-LEFT",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第310页证据（SEG-DOC-C0BB559FA2C8448A-310-GL-00189-ICM）",
+        "code": "EVD-9B9F6E3849142AFBB13A-ICM",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第11页证据（SEG-DOC-7476B9BFB2D92F3A-11-GL-00106-HF）",
+        "code": "EVD-6C40984E352072D805F6-HF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "中国心力衰竭诊断和治疗指南2024.pdf 第5页证据（SEG-DOC-E2AE11B44F6F744B-5-GL-00041-HFpEF）",
+        "code": "EVD-82C682D5D568267C134F-HFpEF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "中国心力衰竭诊断和治疗指南2024.pdf 第19页证据（SEG-DOC-E2AE11B44F6F744B-19-GL-00140-AHF）",
+        "code": "EVD-5C9C533ACCE865022A72-AHF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "内科学(第8版).docx 第None页证据（SEG-DOC-6E44027E23077E48-P09394-09394-GL-00227-HF）",
+        "code": "EVD-8979845E49988D9F710A-HF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "【医脉通】舒张性心力衰竭早期防治专家建议.pdf 第1页证据（SEG-DOC-5A2FCB837C748B18-1-GL-00004-HF）",
+        "code": "EVD-E25C8AD4D52A9E22604A-HF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第213页证据（SEG-DOC-C0BB559FA2C8448A-213-GL-00018-PERICARDITIS）",
+        "code": "EVD-11915759EAC6777DF697-PERICARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第219页证据（SEG-DOC-C0BB559FA2C8448A-219-GL-00035-HT）",
+        "code": "EVD-EFA3BADCA079B2278A70-HT",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "内科学(第8版).docx 第None页证据（SEG-DOC-6E44027E23077E48-P09396-09396-GL-00230-HF）",
+        "code": "EVD-7161772C65F2017B1A6E-HF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "中国心力衰竭诊断和治疗指南2024.pdf 第23页证据（SEG-DOC-E2AE11B44F6F744B-23-GL-00166-HF）",
+        "code": "EVD-5962C132CABA93BFA4E7-HF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第4页证据（SEG-DOC-7476B9BFB2D92F3A-4-GL-00035-HF）",
+        "code": "EVD-105FD3866830D730E1D7-HF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "【医脉通】2020心肌梗死后心力衰竭防治专家共识.pdf 第2页证据（SEG-DOC-F0DDA79BAB227E88-2-GL-00038-HFpEF）",
+        "code": "EVD-72B5D515FF970D85300B-HFpEF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "射血分数保留的心力衰竭诊断与治疗中国专家共识 2025.pdf 第5页证据（SEG-DOC-7476B9BFB2D92F3A-5-GL-00046-HFpEF）",
+        "code": "EVD-C47B3CCDFF3362A3752F-HFpEF",
+        "rel": "supported_by_evidence"
+      }
+    ],
+    "incoming": [
+      {
+        "name": null,
+        "code": null,
+        "rel": null
+      }
+    ]
+  },
+  {
+    "labels": [
+      "KGNode",
+      "LabItem"
+    ],
+    "code": "LAB-CARD-CADCD76D40B9",
+    "name": "心肌损伤标志物",
+    "standard_dict_id": null,
+    "cdss_dict_id": null,
+    "source_name": null,
+    "status": null,
+    "outgoing": [
+      {
+        "name": "内科学(第8版).docx 第None页证据（SEG-DOC-6E44027E23077E48-P10391-10391-GL-00118-WPW）",
+        "code": "EVD-02C09DB539E2AD3ADB44-WPW",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "心肌肌钙蛋白",
+        "code": "LAB-CARD-A9EC1D4DA037",
+        "rel": "lab_item_has_subitem"
+      },
+      {
+        "name": "肌酸激酶",
+        "code": "CARD-SKELETON-20260709-LABTEST-70C17E9844CB4791",
+        "rel": "lab_item_has_subitem"
+      },
+      {
+        "name": "肌红蛋白",
+        "code": "LAB-CARD-STEMI-4BA28B772105",
+        "rel": "lab_item_has_subitem"
+      },
+      {
+        "name": "肌钙蛋白",
+        "code": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+        "rel": "lab_item_has_subitem"
+      },
+      {
+        "name": "CK-MB",
+        "code": "LAB-CARD-960C7CE8E22B",
+        "rel": "lab_item_has_subitem"
+      }
+    ],
+    "incoming": [
+      {
+        "name": null,
+        "code": null,
+        "rel": null
+      }
+    ]
+  },
+  {
+    "labels": [
+      "KGNode",
+      "LabItem"
+    ],
+    "code": "LAB-CARDIAC-BIOMARKERS",
+    "name": "心脏生物标志物检测",
+    "standard_dict_id": null,
+    "cdss_dict_id": null,
+    "source_name": null,
+    "status": null,
+    "outgoing": [
+      {
+        "name": "N末端B型利钠肽原",
+        "code": "IND-NT-PROBNP",
+        "rel": "lab_item_has_subitem"
+      },
+      {
+        "name": "肌钙蛋白",
+        "code": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+        "rel": "lab_item_has_subitem"
+      }
+    ],
+    "incoming": [
+      {
+        "name": null,
+        "code": null,
+        "rel": null
+      }
+    ]
+  },
+  {
+    "labels": [
+      "KGNode",
+      "LabSubitem"
+    ],
+    "code": "LABIND-EXAM-CARD-01C3182D129E-BNP",
+    "name": "B型利钠肽",
+    "standard_dict_id": null,
+    "cdss_dict_id": null,
+    "source_name": "《内科学（第10版）》",
+    "status": null,
+    "outgoing": [
+      {
+        "name": "教材证据-3DD0BE55",
+        "code": "CARD-SKELETON-20260709-EVID-873D59BE3DD0BE55",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "成人先天性心脏病相关肺动脉高压诊断与治疗指南.pdf 第20页证据（SEG-DOC-DBAB434A84D3FCF6-20-GL-00129-PAH）",
+        "code": "EVD-DFE133981C222F6C0864-PAH",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "JCS 2023 Myocarditis.pdf 第2页证据（SEG-DOC-FD423F8E41BBFB24-2-GL-00001-MYOCARDITIS）",
+        "code": "EVD-164DC3909EFC53B21DB7-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "ESC／EACTS指南：房颤的管理（2024）.pdf 第28页证据（SEG-DOC-395E289047E6B856-28-GL-00300-AF）",
+        "code": "EVD-SHARED-825E91DB4C8F9D14DE1B92C6",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "ACC／AHA指南：心脏瓣膜病患者的管理（2020）.pdf 第9页证据（SEG-DOC-4317086452C7EB3A-9-GL-00051-VHD）",
+        "code": "EVD-SHARED-F9522BF1FFBABC4DEBED65B8",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "教材证据-655D0B1D",
+        "code": "CARD-SKELETON-FULL-20260709-EVID-89ABC64A655D0B1D",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "2025ESC瓣膜指南 - .pdf 第38页证据（SEG-DOC-56EC71F40F681B16-38-GL-00158-AS）",
+        "code": "EVD-4BD3C0D855F3FC8882AD-AS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "2025ESC瓣膜指南 - .pdf 第44页证据（SEG-DOC-56EC71F40F681B16-44-GL-00167-AS）",
+        "code": "EVD-87563BCB46A0715D24A4-AS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "教材证据-CC60538C",
+        "code": "CARD-SKELETON-FULL-20260709-EVID-D10DD38CCC60538C",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "2024 中国成人暴发性心肌炎诊断和治疗指南.pdf 第10页证据（SEG-DOC-C6EA8A283F0D0385-10-GL-00072-MYOCARDITIS）",
+        "code": "EVD-7028921E7C7A1B8E5A1D-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "教材证据-8A5A0317",
+        "code": "CARD-SKELETON-20260709-EVID-859983F38A5A0317",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "ESC指南：心肌病的管理2023.pdf 第93页证据（SEG-DOC-D67714E8DE3D47F1-93-GL-00973-GENERAL）",
+        "code": "EVD-SHARED-43E9DB2237FF5111F78FC43A",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "2025ESC瓣膜指南 - .pdf 第36页证据（SEG-DOC-56EC71F40F681B16-36-GL-00150-AS）",
+        "code": "EVD-4651276943F93AB5EAB0-AS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "成人先天性心脏病相关肺动脉高压诊断与治疗指南.pdf 第8页证据（SEG-DOC-DBAB434A84D3FCF6-8-GL-00048-CHD）",
+        "code": "EVD-D0ED0AE0EBC92CC2AEE5-CHD",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "ACC／AHA指南：心脏瓣膜病患者的管理（2020）.pdf 第31页证据（SEG-DOC-4317086452C7EB3A-31-GL-00505-AS）",
+        "code": "EVD-SHARED-53F744C1311E0945CA4EA363",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "ESC指南：心肌病的管理2023.pdf 第22页证据（SEG-DOC-D67714E8DE3D47F1-22-GL-00217-GENERAL）",
+        "code": "EVD-SHARED-B1B13A5E7EC11588A5378F31",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "2025ESC瓣膜指南 - .pdf 第32页证据（SEG-DOC-56EC71F40F681B16-32-GL-00135-AS）",
+        "code": "EVD-1BDB2B8DDE81CCFB199E-AS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "PH CN 2021.pdf 第17页证据（SEG-DOC-C7CD2856344E8680-17-GL-00136-CHD）",
+        "code": "EVD-CC098F50B9F035942010-CHD",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "2025ESC瓣膜指南 - .pdf 第12页证据（SEG-DOC-56EC71F40F681B16-12-GL-00064-AS）",
+        "code": "EVD-17EC5A038B176940E106-AS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.docx 第N/A页证据（SEG-DOC-CF62B75AEC93F1A6-P04719-05184-GL-00109-PERICARDITIS）",
+        "code": "EVD-5F9AD2C418FB92D60CEB-PERICARDITIS",
+        "rel": "supported_by_evidence"
+      }
+    ],
+    "incoming": [
+      {
+        "name": "利钠肽",
+        "code": "EXAM-CARD-01C3182D129E",
+        "rel": "lab_item_has_subitem"
+      }
+    ]
+  },
+  {
+    "labels": [
+      "KGNode",
+      "LabSubitem"
+    ],
+    "code": "LAB-CARD-BF2619C772EC",
+    "name": "C反应蛋白",
+    "standard_dict_id": null,
+    "cdss_dict_id": null,
+    "source_name": null,
+    "status": "active",
+    "outgoing": [
+      {
+        "name": "中国成人心肌炎临床诊断与治疗指南2024.pdf 第5页证据（SEG-DOC-F40BCB9E0773ED67-5-GL-00015-MYOCARDITIS）",
+        "code": "EVD-3DA80810CA32A51751C1-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "AHA Management of Acute Myocarditis and Chronic Inflammatory Cardiomyopathy.pdf 第14页证据（SEG-DOC-49D6BF5C37B17E86-14-GL-00079-MYOCARDITIS）",
+        "code": "EVD-F5B3CE470A861B7813FB-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "中国成人心肌炎临床诊断与治疗指南2024.pdf 第4页证据（SEG-DOC-F40BCB9E0773ED67-4-GL-00012-MYOCARDITIS）",
+        "code": "EVD-6147FEC745F4F5B8BA12-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "JCS 2023 Myocarditis.pdf 第16页证据（SEG-DOC-FD423F8E41BBFB24-16-GL-00046-MYOCARDITIS）",
+        "code": "EVD-317D7DE3A416654DE0C1-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "JCS 2023 Myocarditis.pdf 第2页证据（SEG-DOC-FD423F8E41BBFB24-2-GL-00001-MYOCARDITIS）",
+        "code": "EVD-164DC3909EFC53B21DB7-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "中国成人心肌炎临床诊断与治疗指南2024.pdf 第8页证据（SEG-DOC-F40BCB9E0773ED67-8-GL-00030-MYOCARDITIS）",
+        "code": "EVD-29979361BD879CAF16FB-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "2024 中国成人暴发性心肌炎诊断和治疗指南.pdf 第17页证据（SEG-DOC-C6EA8A283F0D0385-17-GL-00108-MYOCARDITIS）",
+        "code": "EVD-52702E843320B4EDE5CF-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "JCS 2023 Myocarditis.pdf 第18页证据（SEG-DOC-FD423F8E41BBFB24-18-GL-00049-MYOCARDITIS）",
+        "code": "EVD-34DC629F7A444040F267-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "Dyslipidaemias ESC 2019.pdf 第77页证据（SEG-DOC-8FB56DBAF105E9D0-77-GL-00093-DYSLIPIDEMIA）",
+        "code": "EVD-8FEB2D9A72CE9ECD451D-DYSLIPIDEMIA",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "ST段抬高型心肌梗死-实验室和辅助检查-教材原文证据",
+        "code": "EVD-CARD-STEMI-TEXTBOOK-AA93A51228",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第345页证据（SEG-DOC-C0BB559FA2C8448A-345-GL-00066-PERICARDITIS）",
+        "code": "EVD-9603C688AB385B9D8374-PERICARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "C反应蛋白升高",
+        "code": "IND-CARD-AMI-LAB-EB5597E7C61B",
+        "rel": "lab_item_has_subitem"
+      }
+    ],
+    "incoming": [
+      {
+        "name": null,
+        "code": null,
+        "rel": null
+      }
+    ]
+  },
+  {
+    "labels": [
+      "KGNode",
+      "LabSubitem"
+    ],
+    "code": "IND-CARD-AMI-LAB-EB5597E7C61B",
+    "name": "C反应蛋白升高",
+    "standard_dict_id": null,
+    "cdss_dict_id": null,
+    "source_name": "《内科学（第10版）》",
+    "status": null,
+    "outgoing": [
+      {
+        "name": "急性心肌梗死-炎症和血常规检验指标-教材证据",
+        "code": "EVD-CARD-AMI-LABIND-INFLAMMATION",
+        "rel": "supported_by_evidence"
+      }
+    ],
+    "incoming": [
+      {
+        "name": "C反应蛋白",
+        "code": "LAB-CARD-BF2619C772EC",
+        "rel": "lab_item_has_subitem"
+      }
+    ]
+  },
+  {
+    "labels": [
+      "KGNode",
+      "LabSubitem"
+    ],
+    "code": "LAB-CARD-2E1F4EC42626",
+    "name": "D-二聚体",
+    "standard_dict_id": null,
+    "cdss_dict_id": null,
+    "source_name": null,
+    "status": "active",
+    "outgoing": [
+      {
+        "name": "D-二聚体＜500μg/L可基本排除低度临床可能性急性PTE",
+        "code": "IND-CARD-LAB-DDIMER-PTE-NEG-20260714",
+        "rel": "lab_item_has_subitem"
+      },
+      {
+        "name": "D-二聚体升高",
+        "code": "IND-CARD-AMI-LAB-5CFDDE34866E",
+        "rel": "lab_item_has_subitem"
+      },
+      {
+        "name": "年龄校正D-二聚体临界值（＞50岁：年龄×10μg/L）",
+        "code": "IND-CARD-LAB-DDIMER-AGE-ADJ-20260714",
+        "rel": "lab_item_has_subitem"
+      },
+      {
+        "name": "D-二聚体升高提示肺栓塞鉴别线索但需结合临床",
+        "code": "IND-CARD-LAB-DDIMER-PE-ELEVATED-20260714",
+        "rel": "lab_item_has_subitem"
+      },
+      {
+        "name": "急性心肌梗死-LabTest-7-教材原文证据",
+        "code": "EVD-CARD-TEXTBOOK-21604E90EA3EDFCC",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第143页证据（SEG-DOC-C0BB559FA2C8448A-143-GL-00028-HF）",
+        "code": "EVD-0F39A4044FE5018F6EB2-HF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.docx 第N/A页证据（SEG-DOC-CF62B75AEC93F1A6-P04668-05129-GL-00016-DISSECTION）",
+        "code": "EVD-47A743D0F3638A32ADBA-DISSECTION",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "教材证据-39BF38A0",
+        "code": "CARD-SKELETON-FULL-20260709-EVID-AB73BE0939BF38A0",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "教材证据-6C870C59",
+        "code": "CARD-SKELETON-FULL-20260709-EVID-ED446CF96C870C59",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "教材证据-BA8CF483",
+        "code": "CARD-SKELETON-FULL-20260709-EVID-BACKFILL-491EE7EABA8CF483",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "教材证据-0D0EA0E2",
+        "code": "CARD-SKELETON-FULL-20260709-EVID-E52C94E90D0EA0E2",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "教材证据-B466ACF4",
+        "code": "CARD-SKELETON-FULL-20260709-EVID-F400E1ABB466ACF4",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "中国 Stanford B 型主动脉夹层诊断和治疗2022.pdf 第3页证据（SEG-DOC-2A36E86B693FD81D-3-GL-00018-TBAD）",
+        "code": "EVD-7510CFFB6D53B32B39F4-TBAD",
+        "rel": "supported_by_evidence"
+      }
+    ],
+    "incoming": [
+      {
+        "name": null,
+        "code": null,
+        "rel": null
+      }
+    ]
+  },
+  {
+    "labels": [
+      "KGNode",
+      "LabSubitem"
+    ],
+    "code": "IND-CARD-AMI-LAB-5CFDDE34866E",
+    "name": "D-二聚体升高",
+    "standard_dict_id": null,
+    "cdss_dict_id": null,
+    "source_name": "《内科学（第10版）》",
+    "status": null,
+    "outgoing": [
+      {
+        "name": "急性心肌梗死-鉴别诊断相关检验指标-教材证据",
+        "code": "EVD-CARD-AMI-LABIND-DIFFERENTIAL",
+        "rel": "supported_by_evidence"
+      }
+    ],
+    "incoming": [
+      {
+        "name": "D-二聚体",
+        "code": "LAB-CARD-2E1F4EC42626",
+        "rel": "lab_item_has_subitem"
+      }
+    ]
+  },
+  {
+    "labels": [
+      "KGNode",
+      "LabSubitem"
+    ],
+    "code": "IND-CARD-LAB-DDIMER-PE-ELEVATED-20260714",
+    "name": "D-二聚体升高提示肺栓塞鉴别线索但需结合临床",
+    "standard_dict_id": null,
+    "cdss_dict_id": null,
+    "source_name": null,
+    "status": null,
+    "outgoing": [
+      {
+        "name": "《内科学（第10版）》.docx 第N/A页证据（SEG-DOC-CF62B75AEC93F1A6-P04668-05129-GL-00016-DISSECTION）",
+        "code": "EVD-47A743D0F3638A32ADBA-DISSECTION",
+        "rel": "supported_by_evidence"
+      }
+    ],
+    "incoming": [
+      {
+        "name": "D-二聚体",
+        "code": "LAB-CARD-2E1F4EC42626",
+        "rel": "lab_item_has_subitem"
+      }
+    ]
+  },
+  {
+    "labels": [
+      "KGNode",
+      "LabSubitem"
+    ],
+    "code": "IND-CARD-LAB-DDIMER-PTE-NEG-20260714",
+    "name": "D-二聚体＜500μg/L可基本排除低度临床可能性急性PTE",
+    "standard_dict_id": null,
+    "cdss_dict_id": null,
+    "source_name": null,
+    "status": null,
+    "outgoing": [
+      {
+        "name": "《内科学（第10版）》.pdf 第143页证据（SEG-DOC-C0BB559FA2C8448A-143-GL-00028-HF）",
+        "code": "EVD-0F39A4044FE5018F6EB2-HF",
+        "rel": "supported_by_evidence"
+      }
+    ],
+    "incoming": [
+      {
+        "name": "D-二聚体",
+        "code": "LAB-CARD-2E1F4EC42626",
+        "rel": "lab_item_has_subitem"
+      }
+    ]
+  },
+  {
+    "labels": [
+      "KGNode",
+      "LabSubitem"
+    ],
+    "code": "IND-NT-PROBNP",
+    "name": "N末端B型利钠肽原",
+    "standard_dict_id": null,
+    "cdss_dict_id": null,
+    "source_name": null,
+    "status": null,
+    "outgoing": [
+      {
+        "name": "心肌病  ESC  2023.pdf 第75页证据（SEG-DOC-CA7BFFBD6545C234-75-GL-00233-HCM）",
+        "code": "EVD-EE8D9BBD063B8D42D3D2-HCM",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "ESC指南：心肌病的管理2023.pdf 第93页证据（SEG-DOC-D67714E8DE3D47F1-93-GL-00965-GENERAL）",
+        "code": "EVD-SHARED-B5880051E17DF70E922EE32B",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第212页证据（SEG-DOC-C0BB559FA2C8448A-212-GL-00109-AHF）",
+        "code": "EVD-BAC1C48FDED5FA1DEB2D-AHF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "JCS 2023 Myocarditis.pdf 第18页证据（SEG-DOC-FD423F8E41BBFB24-18-GL-00049-MYOCARDITIS）",
+        "code": "EVD-34DC629F7A444040F267-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第265页证据（SEG-DOC-C0BB559FA2C8448A-265-GL-00113-BBB）",
+        "code": "EVD-3BBEC2D46A322B320230-BBB",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "ESC／EACTS指南：房颤的管理（2024）.pdf 第6页证据（SEG-DOC-395E289047E6B856-6-GL-00014-AF）",
+        "code": "EVD-SHARED-0A982EE77CACCFAFD9C45D22",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "教材证据-F828804C",
+        "code": "CARD-SKELETON-20260709-EVID-90C0DAA5F828804C",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "ESC指南：心肌病的管理2023.pdf 第23页证据（SEG-DOC-D67714E8DE3D47F1-23-GL-00241-GENERAL）",
+        "code": "EVD-SHARED-E2405593FF8D495037B32C17",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "教材证据-1CA7ACB9",
+        "code": "CARD-SKELETON-FULL-20260709-EVID-7DD346D31CA7ACB9",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "ESC指南：心肌病的管理2023.pdf 第83页证据（SEG-DOC-D67714E8DE3D47F1-83-GL-00733-GENERAL）",
+        "code": "EVD-SHARED-297792A02D49E937557C4A7C",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "PH ESC 2015.pdf 第18页证据（SEG-DOC-C0DBD5588087F2F8-18-GL-00078-IPAH）",
+        "code": "EVD-806D0D0104F1DDD9BB53-IPAH",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第376页证据（SEG-DOC-C0BB559FA2C8448A-376-GL-00104-MYOCARDITIS）",
+        "code": "EVD-7A704920B9C1715EC86C-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "ESC／EACTS指南：房颤的管理（2024）.pdf 第17页证据（SEG-DOC-395E289047E6B856-17-GL-00226-AF）",
+        "code": "EVD-SHARED-04220019B97BE04E9884FA5E",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第144页证据（SEG-DOC-C0BB559FA2C8448A-144-GL-00001-BBB）",
+        "code": "EVD-AD8E097B4734D02B6AB4-BBB",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第161页证据（SEG-DOC-C0BB559FA2C8448A-161-GL-00011-PERICARDITIS）",
+        "code": "EVD-7BA223BED1FD740D0D5B-PERICARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "2025ESC瓣膜指南 - .pdf 第37页证据（SEG-DOC-56EC71F40F681B16-37-GL-00153-AS）",
+        "code": "EVD-7893930564CFF4154DBB-AS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "2025ESC瓣膜指南 - .pdf 第44页证据（SEG-DOC-56EC71F40F681B16-44-GL-00167-AS）",
+        "code": "EVD-87563BCB46A0715D24A4-AS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "2025ESC瓣膜指南 - .pdf 第36页证据（SEG-DOC-56EC71F40F681B16-36-GL-00147-AS）",
+        "code": "EVD-E8D8AE23997164BC5977-AS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.docx 第N/A页证据（SEG-DOC-CF62B75AEC93F1A6-P01929-02098-GL-00013-PERICARDITIS）",
+        "code": "EVD-25F80A94904CE916B391-PERICARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "教材证据-C38389D6",
+        "code": "CARD-SKELETON-FULL-20260709-EVID-F4B52F39C38389D6",
+        "rel": "supported_by_evidence"
+      }
+    ],
+    "incoming": [
+      {
+        "name": "心脏生物标志物检测",
+        "code": "LAB-CARDIAC-BIOMARKERS",
+        "rel": "lab_item_has_subitem"
+      },
+      {
+        "name": "利钠肽",
+        "code": "EXAM-CARD-01C3182D129E",
+        "rel": "lab_item_has_subitem"
+      }
+    ]
+  },
+  {
+    "labels": [
+      "KGNode",
+      "LabSubitem"
+    ],
+    "code": "IND-CARD-LAB-COAGULATION-ABNORMAL",
+    "name": "凝血功能异常",
+    "standard_dict_id": null,
+    "cdss_dict_id": null,
+    "source_name": "已入库指南/教材原文证据",
+    "status": null,
+    "outgoing": [
+      {
+        "name": "AF ESC 2020.pdf 第87页证据（SEG-DOC-C5A1A36777F25502-87-GL-00325-AF）",
+        "code": "EVD-0A6F3D7010133C363A68-AF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "AF AHA 2023.pdf 第45页证据（SEG-DOC-3E85DFA7D3EA0350-45-GL-00078-AF）",
+        "code": "EVD-58B8296ABD08869C6B20-AF",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "心房颤动诊断和治疗中国指南 2023.pdf 第3页证据（SEG-DOC-EE90C4C9A4C51DF7-3-GL-00011-AF）",
+        "code": "EVD-65475B2518B7C423E844-AF",
+        "rel": "supported_by_evidence"
+      }
+    ],
+    "incoming": [
+      {
+        "name": "凝血功能",
+        "code": "LAB-CARD-E0293B589260",
+        "rel": "lab_item_has_subitem"
+      }
+    ]
+  },
+  {
+    "labels": [
+      "KGNode",
+      "LabSubitem"
+    ],
+    "code": "IND-CARD-LAB-DDIMER-AGE-ADJ-20260714",
+    "name": "年龄校正D-二聚体临界值（＞50岁：年龄×10μg/L）",
+    "standard_dict_id": null,
+    "cdss_dict_id": null,
+    "source_name": null,
+    "status": null,
+    "outgoing": [
+      {
+        "name": "《内科学（第10版）》.pdf 第143页证据（SEG-DOC-C0BB559FA2C8448A-143-GL-00028-HF）",
+        "code": "EVD-0F39A4044FE5018F6EB2-HF",
+        "rel": "supported_by_evidence"
+      }
+    ],
+    "incoming": [
+      {
+        "name": "D-二聚体",
+        "code": "LAB-CARD-2E1F4EC42626",
+        "rel": "lab_item_has_subitem"
+      }
+    ]
+  },
+  {
+    "labels": [
+      "KGNode",
+      "LabSubitem"
+    ],
+    "code": "LAB-CARD-A9EC1D4DA037",
+    "name": "心肌肌钙蛋白",
+    "standard_dict_id": null,
+    "cdss_dict_id": null,
+    "source_name": null,
+    "status": "active",
+    "outgoing": [
+      {
+        "name": "稳定型心绞痛-LabTest-9-教材原文证据",
+        "code": "EVD-CARD-TEXTBOOK-785854BD3E765516",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "非ST段抬高型心肌梗死-LabTest-3-教材原文证据",
+        "code": "EVD-CARD-TEXTBOOK-4A7485B88CCA8761",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "ST段抬高型心肌梗死-实验室和辅助检查-教材原文证据",
+        "code": "EVD-CARD-STEMI-TEXTBOOK-AA93A51228",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "教材证据-2E74791D",
+        "code": "CARD-SKELETON-FULL-20260709-EVID-F9A5C0E42E74791D",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "教材证据-C38389D6",
+        "code": "CARD-SKELETON-FULL-20260709-EVID-F4B52F39C38389D6",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "教材证据-DC6429B3",
+        "code": "CARD-SKELETON-FULL-20260709-EVID-DFD34E3ADC6429B3",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "教材证据-1F69277E",
+        "code": "CARD-SKELETON-FULL-20260709-EVID-2C126A261F69277E",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "教材证据-D8442C01",
+        "code": "CARD-SKELETON-FULL-20260709-EVID-0F1A96A6D8442C01",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "教材证据-3DD0BE55",
+        "code": "CARD-SKELETON-20260709-EVID-873D59BE3DD0BE55",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "教材证据-BAE4FA6B",
+        "code": "CARD-SKELETON-20260709-EVID-6E0F1F51BAE4FA6B",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "教材证据-FA9778AB",
+        "code": "CARD-SKELETON-20260709-EVID-34E766AFFA9778AB",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第316页证据（SEG-DOC-C0BB559FA2C8448A-316-GL-00211-ARREST）",
+        "code": "EVD-0AAD4DF1DD131A7FBF94-ARREST",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.docx 第N/A页证据（SEG-DOC-CF62B75AEC93F1A6-P04145-04560-GL-00277-ARREST）",
+        "code": "EVD-FBDD5FD467EAA31575BC-ARREST",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.docx 第N/A页证据（SEG-DOC-CF62B75AEC93F1A6-T0072-R0004-GL-00017-DYSLIPIDEMIA）",
+        "code": "EVD-A74440FC2E0A0D9A49A3-DYSLIPIDEMIA",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第315页证据（SEG-DOC-C0BB559FA2C8448A-315-GL-00053-DCM）",
+        "code": "EVD-3BBDDF2A7ADC613FEF1D-DCM",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "内科学(第8版).docx 第N/A页证据（SEG-DOC-6E44027E23077E48-P10391-10391-GL-00188-VA）",
+        "code": "EVD-02C09DB539E2AD3ADB44-VA",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第284页证据（SEG-DOC-C0BB559FA2C8448A-284-GL-00035-MYOCARDITIS）",
+        "code": "EVD-A648A543ECA8540D5D1C-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第317页证据（SEG-DOC-C0BB559FA2C8448A-317-GL-00171-BRADY）",
+        "code": "EVD-9EFBB3D3B99F10E5C82A-BRADY",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.docx 第N/A页证据（SEG-DOC-CF62B75AEC93F1A6-P04110-04525-GL-00274-ARREST）",
+        "code": "EVD-4BE77B0879CAF239F449-ARREST",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第376页证据（SEG-DOC-C0BB559FA2C8448A-376-GL-00104-MYOCARDITIS）",
+        "code": "EVD-7A704920B9C1715EC86C-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      }
+    ],
+    "incoming": [
+      {
+        "name": "心肌损伤标志物",
+        "code": "LAB-CARD-CADCD76D40B9",
+        "rel": "lab_item_has_subitem"
+      }
+    ]
+  },
+  {
+    "labels": [
+      "KGNode",
+      "LabSubitem"
+    ],
+    "code": "IND-CARD-AMI-LAB-2906F6AE1C62",
+    "name": "心肌肌钙蛋白升高",
+    "standard_dict_id": null,
+    "cdss_dict_id": null,
+    "source_name": "《内科学（第10版）》",
+    "status": null,
+    "outgoing": [
+      {
+        "name": "肌钙蛋白原文证据",
+        "code": "EVI-CARD-LABBACKFILL-24ABD37695B5A0687F",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "急性心肌梗死-心肌坏死标志物检验指标-教材证据",
+        "code": "EVD-CARD-AMI-LABIND-MYOCARDIAL-BIOMARKER",
+        "rel": "supported_by_evidence"
+      }
+    ],
+    "incoming": [
+      {
+        "name": "心肌肌钙蛋白",
+        "code": "LAB-CARD-A9EC1D4DA037",
+        "rel": "lab_item_has_subitem"
+      },
+      {
+        "name": "肌钙蛋白",
+        "code": "CARD-SKELETON-20260709-LABTEST-AD6A34F25F521595",
+        "rel": "lab_item_has_subitem"
+      }
+    ]
+  },
+  {
+    "labels": [
+      "KGNode",
+      "LabSubitem"
+    ],
+    "code": "LAB-CARD-1BE2B3C08B76",
+    "name": "红细胞沉降率",
+    "standard_dict_id": null,
+    "cdss_dict_id": null,
+    "source_name": null,
+    "status": "active",
+    "outgoing": [
+      {
+        "name": "ST段抬高型心肌梗死-实验室和辅助检查-教材原文证据",
+        "code": "EVD-CARD-STEMI-TEXTBOOK-AA93A51228",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "2024 中国成人暴发性心肌炎诊断和治疗指南.pdf 第7页证据（SEG-DOC-C6EA8A283F0D0385-7-GL-00049-MYOCARDITIS）",
+        "code": "EVD-326335F395FD8DC6C9B9-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第345页证据（SEG-DOC-C0BB559FA2C8448A-345-GL-00066-PERICARDITIS）",
+        "code": "EVD-9603C688AB385B9D8374-PERICARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第317页证据（SEG-DOC-C0BB559FA2C8448A-317-GL-00171-BRADY）",
+        "code": "EVD-9EFBB3D3B99F10E5C82A-BRADY",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "JCS 2023 Myocarditis.pdf 第2页证据（SEG-DOC-FD423F8E41BBFB24-2-GL-00001-MYOCARDITIS）",
+        "code": "EVD-164DC3909EFC53B21DB7-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "中国成人心肌炎临床诊断与治疗指南2024.pdf 第4页证据（SEG-DOC-F40BCB9E0773ED67-4-GL-00012-MYOCARDITIS）",
+        "code": "EVD-6147FEC745F4F5B8BA12-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第353页证据（SEG-DOC-C0BB559FA2C8448A-353-GL-00087-ENDOCARDITIS）",
+        "code": "EVD-CAA67D897F9E076314C9-ENDOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第346页证据（SEG-DOC-C0BB559FA2C8448A-346-GL-00014-DISSECTION）",
+        "code": "EVD-CE101333535A26B4A38B-DISSECTION",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第867页证据（SEG-DOC-C0BB559FA2C8448A-867-GL-00121-ENDOCARDITIS）",
+        "code": "EVD-F6C79C48B389E4864BB6-ENDOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第896页证据（SEG-DOC-C0BB559FA2C8448A-896-GL-00125-PERICARDITIS）",
+        "code": "EVD-85CF79E6C74F2C7D3FDF-PERICARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.docx 第N/A页证据（SEG-DOC-CF62B75AEC93F1A6-P02492-02713-GL-00018-ENDOCARDITIS）",
+        "code": "EVD-4D64C22B28581ADCA7D1-ENDOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "JCS 2023 Myocarditis.pdf 第16页证据（SEG-DOC-FD423F8E41BBFB24-16-GL-00046-MYOCARDITIS）",
+        "code": "EVD-317D7DE3A416654DE0C1-MYOCARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.pdf 第203页证据（SEG-DOC-C0BB559FA2C8448A-203-GL-00005-CHD）",
+        "code": "EVD-FA65DC2A06995EEB9015-CHD",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "《内科学（第10版）》.docx 第N/A页证据（SEG-DOC-CF62B75AEC93F1A6-P04657-05118-GL-00091-PERICARDITIS）",
+        "code": "EVD-A0B00A61D99FE82E32D7-PERICARDITIS",
+        "rel": "supported_by_evidence"
+      },
+      {
+        "name": "红细胞沉降率增快",
+        "code": "IND-CARD-AMI-LAB-3D862E7F3F4E",
+        "rel": "lab_item_has_subitem"
+      }
+    ],
+    "incoming": [
+      {
+        "name": null,
+        "code": null,
+        "rel": null
+      }
+    ]
+  },
+  {
+    "labels": [
+      "KGNode",
+      "LabSubitem"
+    ],
+    "code": "IND-CARD-AMI-LAB-3D862E7F3F4E",
+    "name": "红细胞沉降率增快",
+    "standard_dict_id": null,
+    "cdss_dict_id": null,
+    "source_name": "《内科学（第10版）》",
+    "status": null,
+    "outgoing": [
+      {
+        "name": "急性心肌梗死-炎症和血常规检验指标-教材证据",
+        "code": "EVD-CARD-AMI-LABIND-INFLAMMATION",
+        "rel": "supported_by_evidence"
+      }
+    ],
+    "incoming": [
+      {
+        "name": "红细胞沉降率",
+        "code": "LAB-CARD-1BE2B3C08B76",
+        "rel": "lab_item_has_subitem"
+      }
+    ]
+  }
+]
