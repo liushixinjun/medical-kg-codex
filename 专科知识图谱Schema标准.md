@@ -2,9 +2,18 @@
 
 版本：V3.0（CDSS落地稳定版）
 
-更新时间：2026-08-02 23:41:31
+更新时间：2026-08-18 13:22:00
 
 适用范围：心血管内科专科知识图谱，并支持后续扩展到其他专科。
+
+## 更新日志
+
+| 时间 | 版本 | 变更内容 | 影响范围 |
+|---|---|---|---|
+| 2026-08-18 13:22:00 | V3.0 | 修正证据关系执行口径：主证据身份由 `primary_evidence_code` 字段标识，证据关系沿用现库 `supported_by_evidence`、`derived_from`、`based_on_guideline`、`uses_primary_guideline`，不制造未迁移的新关系名。 | 来源和证据关系、入库后复核 |
+| 2026-08-18 12:31:00 | V3.0 | 明确结构性知识关系与正式 CDSS 推荐关系的边界：检查/检验/治疗方案/鉴别诊断下钻关系不直接进入正式推荐，正式推荐统一走“疾病 → 推荐陈述 → 推荐动作 → 主证据/主指南”。 | 关系标准、CDSS读取口径、入库后复核 |
+| 2026-08-14 23:22:35 | V3.0 | 补充 AMI 与心肌病样板的泛化关系治理记录：旧关系不得作为正式推荐结构；鉴别诊断必须走“疾病 → 鉴别对象 → 鉴别规则/排除检查/排除检验 → 证据”的标准路径。 | Schema 关系标准、样板数据复核 |
+| 2026-08-14 22:25:00 | V3.0 | 发布 8 月大版本主标准，明确五层架构、疾病三层结构、CDSS 字典优先、正式推荐证据链、AI 解析治理字段隐藏边界。 | 全文 |
 
 ## 0. 本版定位
 
@@ -33,6 +42,8 @@ V3.0 是 8 月大版本标准升级的正式主文件。主文件只保留当前
 10. 一般知识展示可以没有正式推荐链，但必须有来源。
 11. 过程字段只能用于追溯和治理，不得进入普通 CDSS 图谱元模型展示。
 12. 后续指南升级时，不覆盖旧证据；用来源年份、版本、适用范围和冲突状态做裁决。
+13. 检查、检验、治疗、用药、手术不得只靠“疾病直接关联项目”进入正式推荐，必须说明服务于哪个诊疗阶段、哪个临床目的、哪个疾病或鉴别对象。
+14. 旧泛化关系只能作为候选来源，不能作为新批次抽取目标；新数据必须生成带业务语义的关系和正式推荐链路。
 
 ## 2. 总体架构
 
@@ -174,6 +185,8 @@ V3.0 是 8 月大版本标准升级的正式主文件。主文件只保留当前
 | Disease | `has_complication` | Complication | 有并发症 | STEMI → 心源性休克 |
 | Disease | `has_differential_diagnosis` | DifferentialDiagnosis | 有鉴别诊断对象 | STEMI → 主动脉夹层 |
 | DifferentialDiagnosis | `has_differential_rule` | ClinicalRule | 有鉴别规则 | 主动脉夹层鉴别 → 胸痛放射至背部 |
+| DifferentialDiagnosis | `requires_exclusion_exam` | ExamItem | 鉴别诊断需要排除检查 | 主动脉夹层鉴别 → 主动脉 CTA |
+| DifferentialDiagnosis | `requires_exclusion_lab` | LabItem/LabSubitem | 鉴别诊断需要排除检验或检验细项 | 肺栓塞鉴别 → D-二聚体 |
 | Disease | `has_risk_stratification` | RiskStratification | 有风险分层 | STEMI → Killip 分级 |
 | Disease | `has_followup` | FollowUp | 有随访 | AMI → 康复随访 |
 | Disease | `has_prognosis` | Prognosis | 有预后 | AMI → 院前猝死风险 |
@@ -190,7 +203,25 @@ V3.0 是 8 月大版本标准升级的正式主文件。主文件只保留当前
 | LabItem | `lab_item_has_subitem` | LabSubitem | 检验项目包含检验细项 | 血常规 → 白细胞计数 |
 | LabSubitem | `uses_lab_sample` | LabSample | 检验细项使用标本 | 肌钙蛋白 I → 血清 |
 
-辅助检查初筛、治疗前评估、鉴别诊断检查必须通过关系属性区分场景：`clinical_stage`、`purpose`、`recommendation_context`。
+检查和检验项目可以被多个场景复用，例如心电图既可用于急性胸痛首诊，也可用于再灌注后疗效评估。是否推荐给医生，不由项目名称决定，而由“关系上的业务语义”决定。
+
+| 关系字段 | 中文含义 | 必填范围 | AMI 示例 |
+|---|---|---|---|
+| `clinical_stage` | 诊疗阶段 | 检查、检验、治疗动作关系必填 | 首诊、鉴别诊断、治疗前评估、治疗后评估、随访 |
+| `purpose` | 推荐目的 | 检查、检验、治疗动作关系必填 | 确诊、分型、排除、风险分层、治疗前安全评估 |
+| `recommendation_context` | 推荐语境 | 正式推荐必填 | 急性胸痛、疑似 STEMI、溶栓前、PCI 后 |
+| `service_target_type` | 服务对象类型 | 正式推荐必填 | 疾病、鉴别诊断、治疗方案、路径阶段 |
+| `service_target_code` | 服务对象编码 | 正式推荐必填 | DIS-CARD-CAD-AMI、DIFF-CARD-AMI-AAD |
+| `service_target_name` | 服务对象名称 | 正式推荐必填 | 急性心肌梗死、主动脉夹层鉴别 |
+| `priority_level` | 推荐优先级 | 正式推荐必填 | 核心、重要、可选 |
+
+硬规则：
+
+1. 疾病直连检查/检验只能表示“知识上相关”，不能直接作为医生端正式推荐。
+2. 首诊辅助检查必须挂在 ExamPlan/LabPlan，并标明 `clinical_stage=首诊`、`purpose=确诊/分型/风险分层`。
+3. 鉴别诊断检查必须从 DifferentialDiagnosis 出发，或由 RecommendationStatement 指向鉴别对象和推荐动作，不能只挂在疾病下面。
+4. 治疗前检查必须从 TreatmentPlan 或 RecommendationStatement 出发，标明 `purpose=治疗前安全评估/禁忌排除`。
+5. 旧关系名 `RECOMMEND_CHECK`、`RECOMMEND_LAB_CHECK`、`HAS_DRUG`、`RECOMMEND_OPERATION` 不作为本 Schema 新增关系。
 
 ### 4.4 治疗和正式推荐关系
 
@@ -200,13 +231,29 @@ V3.0 是 8 月大版本标准升级的正式主文件。主文件只保留当前
 | TreatmentPlan | `includes_medication` | Medication | 方案包含药品 | 抗血小板治疗 → 阿司匹林肠溶片 |
 | TreatmentPlan | `includes_procedure` | Procedure | 方案包含手术/操作 | 再灌注治疗 → 经皮冠状动脉介入治疗 |
 | TreatmentPlan | `includes_treatment_item` | TreatmentItem | 方案包含其他治疗项目 | 一般治疗 → 吸氧 |
-| ClinicalRule | `recommends_action` | RecommendationStatement | 规则触发正式推荐 | STEMI 再灌注规则 → 推荐直接 PCI |
-| RecommendationStatement | `recommends_medication` | Medication | 推荐药品 | 推荐抗血小板治疗 → 阿司匹林肠溶片 |
-| RecommendationStatement | `recommends_procedure` | Procedure | 推荐手术/操作 | 推荐直接 PCI → 经皮冠状动脉介入治疗 |
-| RecommendationStatement | `recommends_treatment_item` | TreatmentItem | 推荐治疗项目 | 推荐一般治疗 → 吸氧 |
+| Disease | `has_recommendation_statement` | RecommendationStatement | 疾病有正式推荐陈述 | STEMI → STEMI 直接 PCI 推荐陈述 |
+| ClinicalRule | `triggers_recommendation` | RecommendationStatement | 规则触发推荐陈述 | STEMI 再灌注规则 → STEMI 直接 PCI 推荐陈述 |
+| RecommendationStatement | `recommends_action` | Medication / Procedure / TreatmentItem / ExamItem / LabItem / LabSubitem | 推荐陈述指向具体动作 | STEMI 直接 PCI 推荐陈述 → 经皮冠状动脉介入治疗 |
+| RecommendationStatement | `targets_differential_diagnosis` | DifferentialDiagnosis | 推荐服务于鉴别诊断 | 主动脉夹层排除推荐 → 主动脉夹层 |
 | RecommendationStatement | `has_contraindication` | Contraindication | 推荐有禁忌或排除条件 | 溶栓治疗 → 未排除主动脉夹层禁用 |
 
-`has_treatment_plan` 表示知识展示，`recommends_action` 表示患者满足规则后的正式推荐。两者不得混用。
+`has_treatment_plan`、`includes_medication`、`includes_procedure`、`includes_treatment_item` 表示知识展示和方案下钻；`recommends_action` 只允许从 RecommendationStatement 出发，表示患者满足规则后的正式推荐。两者不得混用。
+
+历史兼容说明：旧数据中如存在 `recommends_medication`、`recommends_procedure`、`recommends_exam_item` 等细分推荐关系，仅作为兼容读取；新批次统一生成 `recommends_action`，动作类型由终点实体类型区分。
+
+正式推荐链路必须至少具备：
+
+```text
+疾病或鉴别对象
+→ 规则或适用场景
+→ 推荐陈述
+→ 具体动作（检查、检验、药品、手术、治疗项目）
+→ 主证据
+```
+
+如果只有“治疗方案标题”或“检查项目标题”，没有适用场景、推荐目的和证据，只能进入知识展示，不能进入正式 CDSS 推荐区。
+
+服务器治理口径：结构性知识关系的 `formal_recommendation` 必须为 `no`；正式推荐动作关系的 `formal_recommendation` 才允许为 `yes`。
 
 ### 4.5 来源和证据关系
 
@@ -215,11 +262,14 @@ V3.0 是 8 月大版本标准升级的正式主文件。主文件只保留当前
 | Guideline | `has_source_section` | SourceSection | 文献包含章节 | 《内科学（第10版）》 → STEMI 治疗章节 |
 | SourceSection | `has_evidence` | Evidence | 章节包含证据片段 | STEMI 治疗章节 → FMC 后 90 分钟内 PCI |
 | 任一医学知识实体 | `supported_by_evidence` | Evidence | 知识有证据支撑 | STEMI 胸痛症状 → 教材临床表现原文 |
-| RecommendationStatement | `uses_primary_evidence` | Evidence | 推荐使用主证据 | 直接 PCI 推荐 → 2025 ACS 指南证据 |
-| RecommendationStatement | `uses_supporting_evidence` | Evidence | 推荐使用支持证据 | 直接 PCI 推荐 → 教材治疗章节 |
+| RecommendationStatement | `supported_by_evidence` | Evidence | 推荐陈述有证据支撑 | 直接 PCI 推荐 → 2025 ACS 指南证据 |
+| RecommendationStatement | `derived_from` | Evidence | 推荐陈述来源于证据片段 | 直接 PCI 推荐 → 指南原文段落 |
+| RecommendationStatement | `based_on_guideline` | Guideline | 推荐依据指南 | 直接 PCI 推荐 → 2025 ACS 指南 |
 | RecommendationStatement | `uses_primary_guideline` | Guideline | 推荐主依据文献 | 直接 PCI 推荐 → 2025 ACS 指南 |
 
 “任一医学知识实体”指本 Schema 中的临床实体，包括 Disease、Definition、Symptom、Sign、ExamItem、LabItem、Medication、Procedure、TreatmentPlan、ClinicalRule、RecommendationStatement。
+
+主证据不是靠额外新关系名区分，而是靠 `RecommendationStatement.primary_evidence_code` 指向主 Evidence；支持证据仍可通过 `supported_by_evidence` 或 `derived_from` 关联。主指南同理优先读取 `primary_guideline_code`，并可通过 `uses_primary_guideline` 或 `based_on_guideline` 下钻查看指南实体。
 
 ## 5. 字段标准
 
@@ -242,7 +292,7 @@ V3.0 是 8 月大版本标准升级的正式主文件。主文件只保留当前
 
 | 字段 | 中文名 | 格式要求 | 适用实体 | AMI 示例 |
 |---|---|---|---|---|
-| `cdss_dict_id` | CDSS字典主键 | Oracle UUID 或标准字典主键 | StandardDiagnosis、Medication、Procedure、ExamItem、LabItem、LabSubitem、Symptom、Sign、TreatmentItem | Oracle UUID |
+| `cdss_dict_id` | CDSS字典主键 | Oracle UUID 或标准字典主键 | StandardDiagnosis、Medication、Procedure、ExamItem、LabItem、LabSubitem、Symptom、Sign、VitalSignItem、TreatmentItem | Oracle UUID |
 | `standard_code` | 标准编码 | 原样保存字典编码 | 同上 | I21.900 |
 | `standard_name` | 标准名称 | 字典标准中文名 | 同上 | 急性心肌梗死 |
 | `source_table` | 来源表 | CDSS 字典表名 | 同上 | K_ICD10_DICT |
@@ -252,7 +302,7 @@ V3.0 是 8 月大版本标准升级的正式主文件。主文件只保留当前
 
 ### 5.3 基础人群和有效性限制
 
-以下字段用于 Disease、StandardDiagnosis、Medication、Procedure、ExamItem、LabItem、LabSubitem、TreatmentItem。
+以下字段用于 Disease、StandardDiagnosis、Medication、Procedure、ExamItem、LabItem、LabSubitem、VitalSignItem、TreatmentItem。
 
 | 字段 | 中文名 | 格式要求 | AMI 示例 |
 |---|---|---|---|
@@ -304,6 +354,8 @@ V3.0 是 8 月大版本标准升级的正式主文件。主文件只保留当前
 | LabItem | K_LAB_ITEM_DICT | 检验项目字典 | 血常规、心肌损伤标志物 |
 | LabSubitem | K_LAB_SUBITEM_DICT | 检验细项字典 | 白细胞计数、肌钙蛋白 I |
 | Symptom | K_SYMPTOM_DICT | 症状字典 | 主观感受 |
+| VitalSignItem | K_VITAL_SIGN_ITEM_DICT | 生命体征标准字典 | 体温、脉搏、呼吸、血压、血氧饱和度 |
+| TreatmentItem | K_TREATMENT_DICT | 其他治疗项目字典 | 吸氧、卧床休息、康复治疗 |
 | MedicalTermAlias | K_TERM、K_TERM_CLASS | 术语和可选用词 | 用于别名、检索、归一 |
 
 ### 6.2 需要新增或已新增的字典来源
@@ -312,7 +364,6 @@ V3.0 是 8 月大版本标准升级的正式主文件。主文件只保留当前
 |---|---|---|---|
 | Sign | K_CLINICAL_SIGN_DICT | 体征标准字典 | 按症状字典建表风格设计 |
 | ExamObservation | K_EXAM_OBSERVATION_DICT | 检查发现字典 | 例如 ST 段抬高、病理性 Q 波 |
-| VitalSignItem | 待确认生命体征表 | 生命体征标准项 | 体温、脉搏、呼吸、血压、血氧饱和度 |
 | LabSample | K_LAB_SAMPLE_DICT | 检验标本字典 | 血清、血浆、全血 |
 
 新增授权字典可直接注册；旧字典修名、合并、删除必须进入待处理清单。
@@ -399,16 +450,56 @@ AMI 和心肌病样板验收必须同时检查两件事：知识内容完整性�
 
 ## 10. 疾病差异扩展
 
-核心 Schema 保持通用，不为每个特殊疾病硬造一套主结构。遇到专病差异，按“扩展槽位”启用实体。
+核心 Schema 保持通用，不为每个特殊疾病硬造一套主结构。遇到专病差异，按“专病扩展槽位”启用实体和关系。
 
-| 场景 | 可启用实体 | 示例 |
+执行配置文件固定为：
+
+```text
+公共执行层_kg_pipeline/专病扩展槽位配置.yaml
+```
+
+### 10.1 启用原则
+
+| 规则 | 说明 | AMI 示例 |
 |---|---|---|
-| 遗传性疾病 | Gene、GeneticVariant、InheritancePattern、FamilyHistory | 法布雷病、肥厚型心肌病 |
-| 影像分型强依赖疾病 | ImagingPattern、ExamObservation | 心肌病 MRI 延迟强化 |
-| 介入器械强依赖疾病 | Device、Procedure | 起搏器植入、瓣膜置换 |
-| 风险评分强依赖疾病 | RiskStratification、ThresholdRule | CHA2DS2-VASc、Killip 分级 |
+| 主结构不膨胀 | 疾病、症状、体征、检查、检验、药品、手术、治疗、诊断、证据仍是主干 | STEMI 仍挂检查、检验、治疗、手术和正式推荐 |
+| 差异走槽位 | 遗传、血流动力学、瓣膜严重度、心电机制、设备参数等走扩展槽位 | STEMI 的再灌注时间窗走“时间窗”槽位 |
+| 必须有来源 | 教材、指南、共识或权威来源明确写到，才允许生成扩展实体 | “FMC 后 90 分钟内 PCI”必须有指南或教材原文 |
+| 不建空壳 | 没有原文依据、没有疾病引用、没有临床用途，不生成节点 | 不能只因为想到“罪犯血管”就生成空节点 |
+| 不替代字典 | 检查、检验、药品、手术、治疗项目仍优先绑定 CDSS 标准字典 | PCI 主名称仍映射手术字典，时间窗只是推荐条件 |
 
-扩展实体启用条件：教材、指南、共识或权威来源明确覆盖；否则只记录缺口，不生成空壳节点。
+### 10.2 心血管专病扩展槽位
+
+| 疾病方向 | 扩展内容 | 可启用实体 | 主要用途 |
+|---|---|---|---|
+| 心肌病 | 遗传方式、基因、变异、家族史、猝死风险 | Gene、GeneticVariant、InheritancePattern、FamilyHistory | 解释遗传性差异、风险分层和家系筛查 |
+| 冠心病/AMI | 再灌注时间窗、罪犯血管、梗死部位、危险分层 | TimeWindow、VascularTerritory、InfarctLocation | 支持再灌注推荐和诊断解释 |
+| 心力衰竭 | 射血分数表型、容量状态、器械治疗条件 | HeartFailurePhenotype、VolumeStatus | 支持心衰分型和治疗触发条件 |
+| 心律失常 | 心电分型、电生理机制、消融靶点 | ECGPattern、ElectrophysiologyMechanism、AblationTarget | 支持诊断解释、消融策略说明 |
+| 高血压 | 血压分级、危险分层、靶器官损害、继发病因 | BloodPressureGrade、TargetOrganDamage、SecondaryCause | 支持分级、风险评估和继发病因排查 |
+| 瓣膜病 | 瓣膜部位、狭窄/反流、严重程度、手术时机 | ValveAnatomy、ValveLesionType、SeverityGrade | 支持瓣膜病分型和手术时机判断 |
+| 肺动脉高压 | 血流动力学指标、临床分型、风险分层 | HemodynamicIndicator、ClinicalSubtype、RiskStratification | 支持诊断标准和风险分层 |
+| 起搏治疗相关疾病 | 起搏模式、导线位置、设备参数、并发症 | Device、DeviceParameter、Complication | 支持器械治疗说明和随访 |
+
+### 10.3 扩展实体进入 CDSS 的边界
+
+| 类型 | 是否进入普通知识展示 | 是否进入正式推荐 | 是否需要 CDSS 标准字典 |
+|---|---|---|---|
+| 基因、遗传方式、家族史 | 可以 | 只能作为风险解释或筛查依据 | 通常不需要 |
+| 时间窗、严重程度、容量状态 | 可以 | 可以作为触发条件或排除条件 | 通常不需要 |
+| 心电模式、血流动力学指标、瓣膜部位 | 可以 | 可以作为诊断或治疗条件 | 视是否对应检查发现/指标字典 |
+| 药品、检查、检验、手术、治疗项目 | 可以 | 可以作为正式动作 | 必须优先绑定 CDSS 标准字典 |
+| 设备和设备参数 | 可以 | 通常只做说明，除非存在标准医嘱或耗材字典 | 视医院字典能力 |
+
+### 10.4 审计要求
+
+每个扩展槽位必须通过以下检查：
+
+1. 扩展实体有来源证据。
+2. 扩展实体被疾病、诊断标准、风险分层、治疗方案或推荐陈述引用。
+3. 扩展实体没有被误抽成普通症状、检查、药品或手术。
+4. 扩展实体进入正式推荐时，必须同时具备适用场景、触发条件、禁忌/排除条件和主证据。
+5. 需要医嘱回填的实体必须绑定 CDSS 标准字典；不能绑定时只能做知识展示。
 
 ## 11. CDSS 导入和展示边界
 
@@ -453,6 +544,9 @@ batch_id、scope_type、scope_target、source_roots、parser_version、extractio
 13. 药品、手术、检查、检验、症状、体征不得使用口语名或缩写作主名称。
 14. 多症状、多药品、多检查合并短语必须拆分。
 15. `source` 字段不得写项目版本或校验过程，必须写具体来源名称。
+16. 检查、检验、药品、手术、治疗项目进入正式推荐时，关系必须有诊疗阶段、推荐目的、服务对象和优先级。
+17. 鉴别诊断必须能说明“鉴别谁、为什么鉴别、用什么检查检验鉴别、结果如何解释、依据来自哪里”。
+18. 治疗方案必须区分“方案标题”和“可执行动作”；方案标题不能直接替代医嘱动作。
 
 ## 13. 当前禁止新增项
 
@@ -464,6 +558,7 @@ batch_id、scope_type、scope_target、source_roots、parser_version、extractio
 6. 禁止把批次、哈希、路径、脚本版本、审核状态渲染为业务节点。
 7. 禁止直接写旧 Oracle 字典修名、合并、删除。
 8. 禁止用大模型常识替代来源证据。
+9. 禁止新批次继续生成旧泛化关系 `RECOMMEND_CHECK`、`RECOMMEND_LAB_CHECK`、`HAS_DRUG`、`RECOMMEND_OPERATION`、`RECOMMEND_TREATMENT`。
 
 ## 14. 与解析 SKILL 的关系
 
