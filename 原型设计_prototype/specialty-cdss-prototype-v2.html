@@ -595,129 +595,6 @@
       font-weight: 600;
     }
 
-    .kg-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 1.25fr) minmax(420px, 0.85fr);
-      gap: 14px;
-      align-items: start;
-    }
-
-    .kg-hero {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: 10px;
-      margin-bottom: 12px;
-    }
-
-    .kg-step {
-      min-height: 92px;
-      border: 1px solid #b7d8f4;
-      background: #fbfdff;
-      border-radius: 8px;
-      padding: 12px;
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-      line-height: 1.5;
-    }
-
-    .kg-step strong {
-      color: #125f9f;
-      font-size: 15px;
-    }
-
-    .kg-card-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-    }
-
-    .kg-card {
-      border: 1px solid var(--line);
-      background: #fff;
-      border-radius: 8px;
-      padding: 14px;
-      text-align: left;
-      min-height: 142px;
-      cursor: pointer;
-      transition: border-color 0.15s ease, box-shadow 0.15s ease;
-    }
-
-    .kg-card:hover,
-    .kg-card.active {
-      border-color: var(--blue);
-      box-shadow: 0 0 0 2px rgba(30, 136, 229, 0.12);
-    }
-
-    .kg-card h3 {
-      margin: 0 0 8px;
-      color: #12324d;
-      font-size: 16px;
-    }
-
-    .kg-card p {
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-
-    .kg-tagline {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-      margin-top: 10px;
-    }
-
-    .kg-chain {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      align-items: center;
-      margin: 10px 0;
-    }
-
-    .kg-node {
-      border: 1px solid #a8cfee;
-      background: #fff;
-      color: #12324d;
-      border-radius: 6px;
-      padding: 7px 9px;
-      font-weight: 600;
-      font-size: 13px;
-    }
-
-    .kg-edge {
-      color: var(--blue);
-      font-size: 12px;
-      font-weight: 600;
-    }
-
-    .schema-code {
-      margin: 10px 0 0;
-      padding: 10px;
-      background: #0f1f2f;
-      color: #e8f3ff;
-      border-radius: 6px;
-      font-family: Consolas, "Courier New", monospace;
-      font-size: 12px;
-      line-height: 1.7;
-      white-space: pre-wrap;
-    }
-
-    .kg-detail-list {
-      display: grid;
-      gap: 8px;
-      margin-top: 10px;
-    }
-
-    .kg-detail-list div {
-      border: 1px solid #dce8f3;
-      background: #fff;
-      border-radius: 6px;
-      padding: 10px;
-      line-height: 1.6;
-    }
-
     .rules-layout {
       display: grid;
       grid-template-columns: 260px minmax(0, 1fr);
@@ -1156,7 +1033,7 @@
     .canvas-work {
       position: relative;
       height: 880px;
-      min-width: 2680px;
+      min-width: 2400px;
       cursor: grab;
     }
 
@@ -2065,22 +1942,22 @@
         grid-template-columns: 1fr;
       }
     }
-  </style>
+  .scenario-selector{display:flex;gap:6px;flex-wrap:wrap;align-items:center;}.scenario-btn{border:1px solid #cfd9e6;background:#fff;color:var(--text);min-height:28px;padding:0 10px;border-radius:4px;display:inline-flex;align-items:center;font-size:13px;line-height:28px;cursor:pointer;}.scenario-btn:hover{border-color:var(--blue);color:var(--blue);background:var(--blue-soft);}.scenario-btn.active{border-color:var(--blue);background:var(--blue);color:#fff;}</style>
 </head>
 <body>
   <div class="app-shell">
     <aside class="sidebar">
       <div class="brand">
         <span class="brand-logo" aria-hidden="true"></span>
-        智业临床决策支持系统
+        智业临床决策支持系统 <span style="font-size:11px;opacity:0.7;margin-left:auto">V2.0</span>
       </div>
       <nav class="menu" aria-label="主菜单">
-        <button class="menu-item active" data-page-link="home"><span class="menu-icon">首</span>原型首页<span class="prototype-flag">新增</span></button>
+        <button class="menu-item active" data-page-link="home"><span class="menu-icon">首</span>原型首页<span class="prototype-flag" style="background:#e3f8f5;color:#08786d">V2</span></button>
         <button class="menu-item"><span class="menu-icon">评</span>智能评估</button>
         <button class="menu-item"><span class="menu-icon">标</span>标准管理</button>
         <button class="menu-item"><span class="menu-icon">字</span>字典对照</button>
         <button class="menu-item"><span class="menu-icon">知</span>知识管理</button>
-        <button class="menu-item" data-page-link="knowledgeGraph"><span class="menu-icon">图</span>专科知识图谱<span class="prototype-flag">新增</span></button>
+        <button class="menu-item"><span class="menu-icon">图</span>专科知识图谱</button>
         <button class="menu-item" data-page-link="rules"><span class="menu-icon">规</span>规则列表<span class="prototype-flag">新增</span></button>
         <button class="menu-item"><span class="menu-icon">V</span>VTE防治</button>
         <button class="menu-item"><span class="menu-icon">质</span>专病质控</button>
@@ -2115,8 +1992,7 @@
 
       <div class="tabs-strip">
         <button class="tab-pill active" data-page-link="home">原型首页</button>
-        <button class="tab-pill" data-page-link="knowledgeGraph"><span>●</span> 知识图谱原型</button>
-        <button class="tab-pill" data-page-link="simulation"><span>●</span> 诊疗推荐原型</button>
+        <button class="tab-pill" data-page-link="simulation"><span>●</span> 诊疗推荐原型 <span class="badge teal" style="font-size:10px">V2</span></button>
       </div>
 
       <section class="content">
@@ -2146,19 +2022,7 @@
               </div>
 
               <div class="arch-row">
-                <div class="arch-label">2<br>知识图谱建设</div>
-                <div class="arch-lane">
-                  <div class="arch-node"><strong>Schema V2.16</strong><span class="mini muted">统一建模标准</span></div>
-                  <div class="arch-node"><strong>实体结构</strong><span class="mini muted">疾病/检查/治疗/证据</span></div>
-                  <div class="arch-node"><strong>关系标准</strong><span class="mini muted">分型/方案/推荐链</span></div>
-                  <div class="arch-node"><strong>标准字典映射</strong><span class="mini muted">诊断/手术/医嘱候选</span></div>
-                  <div class="arch-node"><strong>CDSS展示过滤</strong><span class="mini muted">临床字段展示</span></div>
-                  <button class="btn primary" data-page-link="knowledgeGraph">查看图谱结构</button>
-                </div>
-              </div>
-
-              <div class="arch-row">
-                <div class="arch-label">3<br>辅助诊疗链路</div>
+                <div class="arch-label">2<br>辅助诊疗链路</div>
                 <div class="arch-lane">
                   <div class="arch-node"><strong>疑似疾病</strong><span class="mini muted">一诉五史触发</span></div>
                   <span class="arch-arrow">→</span>
@@ -2175,15 +2039,15 @@
               </div>
 
               <div class="arch-row">
-                <div class="arch-label">4<br>核心引擎分工</div>
+                <div class="arch-label">3<br>核心引擎分工</div>
                 <div class="arch-lane">
                   <div class="engine-row">
                     <div class="engine-box">
                       <h3>A. 专科知识图谱</h3>
                       <ul>
-                        <li>维护疾病目录、诊断分型和标准诊断</li>
-                        <li>维护检查检验、治疗手术和证据来源</li>
-                        <li>支撑疑似识别、初筛检查和分型确诊</li>
+                        <li>识别 ACS/AMI 疑似疾病</li>
+                        <li>推荐初筛检查与鉴别方向</li>
+                        <li>报告回填后辅助分型确诊</li>
                       </ul>
                     </div>
                     <div class="engine-box">
@@ -2208,7 +2072,7 @@
               </div>
 
               <div class="arch-row">
-                <div class="arch-label">5<br>应用输出</div>
+                <div class="arch-label">4<br>应用输出</div>
                 <div class="arch-lane">
                   <div class="arch-node"><strong>医生工作站</strong><span class="mini muted">辅助决策</span></div>
                   <div class="arch-node"><strong>患者提醒</strong><span class="mini muted">缺失项</span></div>
@@ -2239,13 +2103,6 @@
                 </div>
                 <div class="panel-body">
                   <div class="module-grid">
-                    <button class="module-card" data-page-link="knowledgeGraph">
-                      <span>
-                        <h3>知识图谱结构</h3>
-                        <p>按 Schema V2.16 展示实体、关系、证据、标准字典映射和 CDSS 展示边界。</p>
-                      </span>
-                      <span class="btn primary">进入</span>
-                    </button>
                     <button class="module-card" data-page-link="rules">
                       <span>
                         <h3>规则管理</h3>
@@ -2290,106 +2147,6 @@
           </div>
         </div>
 
-        <div class="page" id="page-knowledgeGraph">
-          <div class="page-head">
-            <div>
-              <h1 class="page-title">专科知识图谱结构说明</h1>
-              <p class="page-desc">基于《专科知识图谱 Schema 标准》V2.16，展示专科知识图谱建设范围、Schema结构分层及其在辅助诊疗中的调用方式。</p>
-            </div>
-            <div class="rule-actions">
-              <button class="btn primary" data-page-link="simulation">查看辅助诊疗使用</button>
-              <button class="btn" data-page-link="rules">查看规则管理</button>
-              <button class="btn" data-page-link="framework">查看流程框架</button>
-            </div>
-          </div>
-
-          <div class="kg-layout">
-            <div class="compact-list">
-              <div class="panel">
-                <div class="panel-head">
-                  <div class="panel-title">知识图谱建设规划</div>
-                  <span class="badge green">Schema V2.16</span>
-                </div>
-                <div class="panel-body">
-                  <div class="kg-hero">
-                    <div class="kg-step"><strong>1. 来源整理</strong><span>教材、指南、专家共识、CDSS标准字典分开使用。</span></div>
-                    <div class="kg-step"><strong>2. 实体建模</strong><span>疾病、症状、检查、检验、治疗、手术、证据按类型入库。</span></div>
-                    <div class="kg-step"><strong>3. 关系建模</strong><span>分型、检查方案、诊断标准、治疗方案和推荐链路显式连接。</span></div>
-                    <div class="kg-step"><strong>4. 字典映射</strong><span>诊断、检查、检验、药品、手术映射 CDSS 有效标准字典。</span></div>
-                    <div class="kg-step"><strong>5. CDSS使用</strong><span>医生端只展示临床字段，治理字段不渲染成图谱节点。</span></div>
-                  </div>
-                  <div class="boundary">
-                    图谱不是单纯知识浏览库。它负责给辅助诊疗提供可查询的疾病结构、检查检验依据、诊断分型依据、治疗/手术动作、推荐证据和标准字典身份。
-                  </div>
-                  <div class="boundary" style="margin-top:12px">
-                    <strong>Neo4j落库格式：</strong>当前库采用 <code>(:KGNode:Disease { entityType:"Disease", code:"DIS-CARD-CAD-AMI", name:"急性心肌梗死" })</code>。
-                    <br>其中 <code>:KGNode</code> 是统一基础标签，<code>:Disease</code> 是业务标签，<code>entityType</code> 是CDSS导入和接口识别字段；禁止写成 <code>:KGNode::Disease</code>。
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel">
-                <div class="panel-head">
-                  <div class="panel-title">Schema核心结构</div>
-                  <span class="badge">点击查看详情</span>
-                </div>
-                <div class="panel-body">
-                  <div class="kg-card-grid">
-                    <button class="kg-card active" data-kg-card="diagnosis">
-                      <h3>疾病目录与诊断层</h3>
-                      <p>区分目录、临床疾病、具体分型和标准诊断，避免把疾病大类直接当诊断。</p>
-                      <div class="kg-tagline"><span class="tag blue">Disease</span><span class="tag">StandardDiagnosis</span></div>
-                    </button>
-                    <button class="kg-card" data-kg-card="exam">
-                      <h3>检查检验层</h3>
-                      <p>先建辅助检查方案，再下钻到检查项目、检查发现、检验项目和检验细项。</p>
-                      <div class="kg-tagline"><span class="tag blue">ExamPlan</span><span class="tag">LabSubitem</span></div>
-                    </button>
-                    <button class="kg-card" data-kg-card="therapy">
-                      <h3>治疗与手术层</h3>
-                      <p>治疗方案只是知识容器，正式推荐必须落到药品、手术或治疗项目。</p>
-                      <div class="kg-tagline"><span class="tag blue">TreatmentPlan</span><span class="tag">Procedure</span></div>
-                    </button>
-                    <button class="kg-card" data-kg-card="decision">
-                      <h3>临床决策推荐层</h3>
-                      <p>路径阶段、临床规则、推荐陈述和证据链共同形成当前患者可展示推荐。</p>
-                      <div class="kg-tagline"><span class="tag blue">ClinicalRule</span><span class="tag">RecommendationStatement</span></div>
-                    </button>
-                    <button class="kg-card" data-kg-card="display">
-                      <h3>CDSS导入与展示边界</h3>
-                      <p>全量保留图谱结构，但医生端按业务场景读取，批次、哈希、解析版本不展示。</p>
-                      <div class="kg-tagline"><span class="tag blue">展示过滤</span><span class="tag">治理字段隔离</span></div>
-                    </button>
-                    <button class="kg-card" data-kg-card="application">
-                      <h3>辅助诊疗使用方式</h3>
-                      <p>图谱支撑疑似识别、检查推荐、分型确诊、治疗建议和质控提示的可解释依据。</p>
-                      <div class="kg-tagline"><span class="tag blue">疑似</span><span class="tag">分型</span><span class="tag">推荐依据</span></div>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="compact-list">
-              <div class="panel">
-                <div class="panel-head">
-                  <div class="panel-title" id="kgDetailTitleLabel">疾病目录与诊断层</div>
-                  <span class="badge green" id="kgDetailBadge">疾病诊断</span>
-                </div>
-                <div class="panel-body" id="kgDetailPanel"></div>
-              </div>
-
-              <div class="panel">
-                <div class="panel-head">
-                  <div class="panel-title" id="kgApplicationTitle">当前结构应用要点</div>
-                  <span class="badge orange" id="kgApplicationBadge">疾病诊断</span>
-                </div>
-                <div class="panel-body" id="kgApplicationPanel"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div class="page" id="page-rules">
           <div class="page-head">
             <div>
@@ -2397,13 +2154,8 @@
               <p class="page-desc">用于维护 4.2 章节的规则名称和详细规则逻辑，供专员配置、系统调用和模拟验证。</p>
             </div>
             <div class="rule-actions">
-              <select class="select" id="ruleDiseaseFilter" style="width:190px">
-                <option value="ami">急性心肌梗死（AMI）</option>
-                <option value="cardiomyopathy">心肌病</option>
-                <option value="all">全部专病</option>
-              </select>
               <input class="input" id="ruleSearch" placeholder="搜索规则名称、阶段或关键项目">
-              <button class="btn primary" id="simulateAllRules">模拟当前疾病触发</button>
+              <button class="btn primary" id="simulateAllRules">模拟全链路触发</button>
             </div>
           </div>
 
@@ -2433,7 +2185,7 @@
           <div class="panel">
             <div class="panel-head">
               <div class="panel-title">已维护专病流程列表</div>
-              <span class="badge">5 条</span>
+              <span class="badge">4 条</span>
             </div>
             <div class="panel-body" style="padding:0">
               <table class="table">
@@ -2457,8 +2209,8 @@
         <div class="page" id="page-designer">
           <div class="page-head">
             <div>
-              <h1 class="page-title" id="designerPageTitle">专病诊疗流程设计器：急性心肌梗死（AMI）</h1>
-              <p class="page-desc" id="designerPageDesc">业务组件负责调用规则或智能体生成推荐结果；判断节点负责满足/不满足分流；连接线负责通行、阻断和跳转。</p>
+              <h1 class="page-title">专病诊疗流程设计器：急性心肌梗死（AMI）</h1>
+              <p class="page-desc">业务组件负责调用规则或智能体生成推荐结果，连接线读取上游状态完成分支、阻断和跳转。</p>
             </div>
             <div class="rule-actions">
               <button class="btn" data-page-link="framework">返回流程列表</button>
@@ -2476,10 +2228,10 @@
               <div class="panel-body">
                 <div class="palette-group">
                   <div class="palette-title">通用流程组件</div>
-                  <div class="component-help mini">开始/结束只维护备注；判断节点负责满足/不满足分流；连接线可绑定通行条件。</div>
+                  <div class="component-help mini">开始/结束只维护业务备注；分支节点只展示分流；连接线绑定操作规则，负责状态分支、阻断和跳转。</div>
                   <button class="component-btn flow" data-component="开始节点"><span class="component-icon" data-icon="start"></span><span>开始节点</span><span class="component-kind">通用</span></button>
                   <button class="component-btn flow" data-component="结束节点"><span class="component-icon" data-icon="end"></span><span>结束节点</span><span class="component-kind">通用</span></button>
-                  <button class="component-btn risk" data-component="菱形分支节点"><span class="component-icon" data-icon="branch"></span><span>判断节点</span><span class="component-kind">分支</span></button>
+                  <button class="component-btn risk" data-component="菱形分支节点"><span class="component-icon" data-icon="branch"></span><span>分支展示节点</span><span class="component-kind">分支</span></button>
                   <button class="component-btn flow" data-component="连接线"><span class="component-icon" data-icon="line"></span><span>连接线</span><span class="component-kind">流转判断</span></button>
                   <button class="component-btn flow" data-component="通用业务组件"><span class="component-icon" data-icon="component"></span><span>通用业务组件</span><span class="component-kind">空配置</span></button>
                 </div>
@@ -2503,7 +2255,7 @@
 
             <div class="canvas" id="designerCanvas">
               <div class="canvas-title">
-                <span><span id="designerCanvasTitle">AMI 标准化专病流程</span><span class="canvas-title-note" id="designerCanvasNote">业务组件输出状态，判断节点分支，连接线通行</span></span>
+                <span>AMI 标准化专病流程<span class="canvas-title-note">业务组件一次输出状态，连接线按状态分流</span></span>
                 <span class="canvas-legend">
                   <span><i class="legend-dot"></i>通用</span>
                   <span><i class="legend-dot rule"></i>规则</span>
@@ -2531,14 +2283,22 @@
 
         <div class="page" id="page-simulation">
           <div class="toolbar">
-            <label>模拟疾病:</label>
-            <select class="select" id="simulationDiseaseSelect" style="width:170px">
-              <option value="ami">急性心肌梗死（AMI）</option>
-              <option value="cardiomyopathy">心肌病</option>
-            </select>
+            <label>当前医院:</label>
+            <select class="select" style="width:210px"><option>厦门市中医院</option></select>
+            <span style="border-left:1px solid rgba(255,255,255,0.25);height:26px;margin:0 6px"></span>
+            <label style="color:#fff;font-size:13px;white-space:nowrap">就诊场景</label>
+            <div class="scenario-selector" id="v2ScenarioSelector">
+              <button class="scenario-btn active" data-v2-scenario="standard">标准</button>
+              <button class="scenario-btn" data-v2-scenario="outpatient">门诊→住院</button>
+              <button class="scenario-btn" data-v2-scenario="emergency">急诊→住院</button>
+              <button class="scenario-btn" data-v2-scenario="direct_admission">直接入院</button>
+              <button class="scenario-btn" data-v2-scenario="inpatient_onset">院内突发</button>
+            </div>
+            <span style="border-left:1px solid rgba(255,255,255,0.25);height:26px;margin:0 6px"></span>
+            <button class="btn primary" id="choosePatientBtn">选择病人</button>
             <button class="btn primary" id="saveCaseBtn">保存</button>
-            <button class="btn primary" id="prevStepBtn">上一步</button>
-            <button class="btn success" id="nextStepBtn">下一步</button>
+            <button class="btn primary" id="loadCaseBtn">加载病案</button>
+            <button class="btn success" id="nextStepBtn">下一步模拟</button>
             <button class="btn primary" id="replayBtn">重新生成推荐</button>
             <button class="btn primary" id="clearBtn">清除缓存</button>
             <button class="btn primary" id="initBtn">初始化</button>
@@ -2601,8 +2361,8 @@
                 </div>
                 <label>处置</label>
                 <textarea class="textarea" id="treatmentText" placeholder="进入专病流程后展示治疗建议和质控提醒"></textarea>
-                <label>围术期/随访</label>
-                <textarea class="textarea" id="perioperativeText" placeholder="触发介入/手术评估或慢病随访后展示术前术后、评估表单和随访提醒"></textarea>
+                <label>围术期</label>
+                <textarea class="textarea" id="perioperativeText" placeholder="触发介入/手术评估后展示术前、术中、术后提醒"></textarea>
               </div>
             </div>
 
@@ -2672,85 +2432,70 @@
       </div>
       <div class="modal-body">
         <div class="guide-intro">
-          本设计器基于基础流程引擎改造：状态机先定位患者当前诊疗阶段，再触发当前节点绑定的业务组件；业务组件输出推荐、提醒、评估结果或状态字段，判断节点根据结果做满足/不满足分流，连接线负责通行、阻断、回流和跳转。知识图谱仍负责前置疑似识别、初筛检查和辅助分型，流程引擎负责患者进入专病流程后的标准化诊疗动作。
+          本设计器用于把专病诊疗流程拆成“流程结构、推荐输出、状态分流、质控提醒”四类能力。前置知识图谱负责识别疑似疾病、推荐初筛检查、辅助分型确诊；患者进入专病流程后，由流程引擎按照节点和连接线配置，驱动专项检查、治疗方案、介入/手术围术期、医嘱质控和评估表单提醒。
         </div>
 
         <div class="preview-section">
-          <h3>一、组件边界</h3>
+          <h3>一、组件设计边界</h3>
           <div class="preview-content guide-grid">
             <div class="guide-card">
               <strong>通用流程组件</strong>
-              开始、结束只维护流程入口和归档备注；通用业务组件默认空配置；连接线用于把节点串起来。
+              开始、结束、分支展示节点、连接线只负责流程结构和状态流转。开始/结束仅维护业务备注；分支节点只做视觉展示，不承载判断逻辑。
             </div>
             <div class="guide-card">
               <strong>业务专病组件</strong>
-              诊疗规则、专项检查、专科评估、治疗建议、围术期、质控、评估表单、随访组件负责生成推荐或提醒，不直接跳转。
+              诊疗规则、专项检查、专科评估、治疗建议、围术期、质控、评估表单等组件负责输出推荐或提醒结果，不直接决定流程跳转。
             </div>
             <div class="guide-card">
-              <strong>判断节点</strong>
-              用于二分支场景，可绑定判断规则并输出“满足/不满足”，例如 PCI 可及、溶栓条件、高危风险。
-            </div>
-            <div class="guide-card">
-              <strong>连接线通行规则</strong>
-              连接线可绑定轻量条件，也可以只承接判断出口；用于控制是否进入下一步、是否回流、是否阻断。
+              <strong>连接线规则</strong>
+              连接线读取上游业务组件的标准输出字段，配置“满足什么状态就流向哪个节点”，负责分支、阻断、回流和跳转。
             </div>
           </div>
         </div>
 
         <div class="preview-section">
-          <h3>二、规则配置口径</h3>
+          <h3>二、规则配置标准</h3>
           <div class="preview-content">
             <ul class="guide-flow">
-              <li><span class="step-no">1</span>规则列表维护完整规则详情，设计器只引用规则名称和输出字段，避免每个流程重复配置同一规则。</li>
-              <li><span class="step-no">2</span>状态机进入当前节点后，才调用该节点绑定的“规则推荐”或“Dify 智能体”，不会在流程开始时一次性执行所有业务组件。</li>
-              <li><span class="step-no">3</span>业务组件输出推荐项、缺失项、风险标记和状态字段；这些结果给医生展示，也给判断节点和连接线读取。</li>
-              <li><span class="step-no">4</span>判断节点适合明确二选一或多出口汇总后的二分支，例如“满足 STEMI / 不满足 STEMI”。</li>
-              <li><span class="step-no">5</span>连接线适合轻量通行控制，例如“检查回填完整”“医生已确认”“表单提醒已生成”“质控无强阻断”。</li>
-            </ul>
-          </div>
-          <div class="guide-callout">评审口径：状态机决定“当前在哪个诊疗阶段”；业务组件决定“当前阶段输出什么辅助结果”；判断节点解决“往哪条路走”；连接线解决“能不能往下走”。</div>
-        </div>
-
-        <div class="preview-section">
-          <h3>三、临床流转机制</h3>
-          <div class="preview-content">
-            <ul class="guide-flow">
-              <li><span class="step-no">1</span>患者在急诊、门诊或住院场景产生临床事件，例如胸痛录入、检查报告回填、医生确认诊断或治疗方案确认。</li>
-              <li><span class="step-no">2</span>状态机根据患者事件和当前状态进入对应节点，例如初筛检查、分型确认、再灌注评估、治疗方案、围术期或随访。</li>
-              <li><span class="step-no">3</span>当前节点调用绑定的业务组件，输出推荐、提醒、评估结果或状态字段，并同步展示在辅助诊疗面板。</li>
-              <li><span class="step-no">4</span>判断节点和连接线读取这些输出字段，决定满足/不满足分支、是否允许进入下一节点、是否提示补齐或人工确认。</li>
-              <li><span class="step-no">5</span>状态机记录流转结果，更新患者专病流程状态，形成诊疗推荐、过程质控、评估表单和随访闭环。</li>
+              <li><span class="step-no">1</span>规则列表作为规则主数据，统一维护规则名称、触发阶段、读取字段、判断逻辑、输出字段和边界说明。</li>
+              <li><span class="step-no">2</span>业务组件选择“规则推荐”或“Dify 智能体”，一次性输出诊疗建议、缺失项、风险标记或状态字段，不在组件内部做流程跳转。</li>
+              <li><span class="step-no">3</span>连接线绑定操作规则，只读取上游输出状态，例如 `reperfusion_status = PRIMARY_PCI`，再决定进入急诊 PCI、静脉溶栓、药物治疗、资料补充或人工确认。</li>
+              <li><span class="step-no">4</span>分支展示节点用于让画布看得懂，例如“再灌注结果分流”，真实判断仍放在各条出口连接线上。</li>
             </ul>
           </div>
         </div>
 
         <div class="preview-section">
-          <h3>四、专病示例</h3>
+          <h3>三、临床应用流转</h3>
+          <div class="preview-content">
+            <ul class="guide-flow">
+              <li><span class="step-no">1</span>医生在辅助诊疗页面录入一诉五史、体征、检查检验和报告内容，系统先完成疑似疾病识别和初筛检查推荐。</li>
+              <li><span class="step-no">2</span>心电图、肌钙蛋白等结果回填后，系统辅助完成 AMI 分型判断，医生确认或关注后进入 AMI 专病流程。</li>
+              <li><span class="step-no">3</span>流程引擎进入对应业务组件，例如再灌注专项评估、治疗建议、围术期提醒、医嘱质控或评估表单提醒。</li>
+              <li><span class="step-no">4</span>业务组件输出标准状态，连接线读取状态后完成分流：推荐 PCI、推荐溶栓、推荐药物治疗、资料补充、人工确认或质控阻断。</li>
+              <li><span class="step-no">5</span>医生确认方案后，系统继续触发后续围术期、用药监测、并发症风险、评估表单和随访提醒，形成流程闭环。</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="preview-section">
+          <h3>四、AMI 示例口径</h3>
           <div class="preview-content guide-grid">
             <div class="guide-card">
-              <strong>AMI</strong>
-              急诊、门诊或住院患者触发疑似 AMI 后，补齐心电图和肌钙蛋白，再做 STEMI/NSTEMI/UA 分型，确认后进入再灌注、治疗、围术期和质控。
+              <strong>再灌注专项评估</strong>
+              读取发病时间、心电图 ST 段、肌钙蛋白、PCI 可及时间、溶栓禁忌和出血风险，输出再灌注状态。
             </div>
             <div class="guide-card">
-              <strong>心肌病</strong>
-              门诊或住院疑似心肌病患者补齐心电图、超声、BNP、肌钙蛋白，再做分型和高危风险判断，随后输出治疗、评估表单和随访复查。
+              <strong>连接线分流</strong>
+              `PRIMARY_PCI` 流向急诊 PCI 建议；`FIBRINOLYSIS` 流向静脉溶栓建议；`MEDICAL_TREATMENT` 流向标准药物治疗；`PENDING_CONFIRMATION` 流向资料补充/人工确认。
             </div>
             <div class="guide-card">
-              <strong>评估表单</strong>
-              表单提醒跟随具体场景出现，例如 AMI 再灌注评估、PCI 围术期、出血风险，心肌病心功能、心律失常和猝死风险评估。
+              <strong>后续闭环</strong>
+              医生确认治疗方式后，触发 PCI 围术期提醒、抗栓/调脂用药监测、质控拦截和阶段性评估表单提醒。
             </div>
           </div>
-        </div>
-
-        <div class="preview-section">
-          <h3>五、落地使用方式</h3>
-          <div class="preview-content">
-            <ul class="guide-flow">
-              <li><span class="step-no">1</span>专员先在规则管理维护规则名称、逻辑、读取字段和输出字段。</li>
-              <li><span class="step-no">2</span>在流程框架管理维护专病名称、适用科室、适用人群、指南依据和启用状态。</li>
-              <li><span class="step-no">3</span>在设计器拖入业务组件、判断节点和连接线，业务组件绑定推荐来源，判断节点绑定判断规则，连接线绑定通行条件。</li>
-              <li><span class="step-no">4</span>发布到辅助诊疗模拟页后，医生录入病历和报告，右侧辅助诊疗面板按流程阶段展示推荐项。</li>
-            </ul>
+          <div class="guide-callout">
+            评审一句话：业务组件负责“一次输出推荐结果”，连接线负责“按输出状态流转”；知识图谱管前置识别和分型，流程引擎管进入专病流程后的标准化诊疗闭环。
           </div>
         </div>
       </div>
@@ -2888,72 +2633,6 @@
         output: "术后观察提醒、并发症风险提示、术后评估表单提醒和医嘱质控提醒。",
         boundary: "用于术后观察和质控闭环，不替代医生处理并发症。",
         category: "surgery"
-      },
-      {
-              "id": 12,
-              "stage": "疑似识别",
-              "name": "心肌病疑似疾病识别规则",
-              "logic": "当主诉包含“胸闷、气促、活动后呼吸困难、心悸、晕厥”任一内容，或现病史包含“运动耐量下降、夜间阵发性呼吸困难、下肢水肿、胸痛、黑朦”任一内容时，系统输出心肌病疑似疾病候选；高血压、糖尿病、饮酒史、家族性心肌病史和猝死家族史只作为风险背景加权，不单独触发心肌病疑似。",
-              "fields": "主诉、现病史、既往史、个人史、家族史、体格检查",
-              "trigger": "医生录入一诉五史或病历保存后。",
-              "output": "心肌病疑似疾病候选、命中依据、风险背景标签。",
-              "boundary": "只做疑似方向提示，不输出扩张型、肥厚型或限制型等分型结论。",
-              "category": "suspect"
-      },
-      {
-              "id": 13,
-              "stage": "初筛检查",
-              "name": "心肌病核心检查补齐规则",
-              "logic": "当系统已生成心肌病疑似疾病，或医生关注心肌病疑似方向后，系统检查本次就诊是否已有十二导联心电图、超声心动图、B型钠尿肽或NT-proBNP、心肌肌钙蛋白、肝肾功能和电解质结果；缺失任一项目时推荐补做，并说明用于判断心腔大小、室壁厚度、射血分数、心肌损伤、容量负荷和用药风险。",
-              "fields": "疑似疾病状态、心电图、超声心动图、BNP或NT-proBNP、心肌肌钙蛋白、肝肾功能、电解质",
-              "trigger": "医生关注心肌病疑似疾病后。",
-              "output": "推荐检查、推荐检验、缺失依据。",
-              "boundary": "只补齐核心检查依据，不直接进入治疗建议。",
-              "category": "exam"
-      },
-      {
-              "id": 14,
-              "stage": "分型诊断",
-              "name": "心肌病分型辅助诊断规则",
-              "logic": "当超声心动图报告结论包含“左心室扩大”且左室射血分数低于40%时，系统输出“倾向扩张型心肌病”；当超声心动图报告结论包含“室间隔增厚、左室壁增厚、流出道梗阻”任一内容时，输出“倾向肥厚型心肌病”；当超声心动图提示心室舒张受限、双房增大且射血分数保留时，输出“限制型心肌病待排”；检查结果不足时输出“证据不足，建议补充心脏磁共振或动态心电图”。",
-              "fields": "超声心动图报告结论、左室射血分数、室间隔厚度、左室壁厚度、流出道压差、心脏磁共振、动态心电图",
-              "trigger": "核心检查结果回填后。",
-              "output": "扩张型、肥厚型、限制型待排或证据不足的辅助分型建议。",
-              "boundary": "辅助医生分型判断，最终诊断由医生确认。",
-              "category": "diagnosis"
-      },
-      {
-              "id": 15,
-              "stage": "风险评估",
-              "name": "心肌病高危风险评估规则",
-              "logic": "当患者存在晕厥、持续性室性心动过速、非持续性室速、左室射血分数低于35%、猝死家族史、室间隔厚度大于等于30mm或心脏磁共振提示广泛延迟强化任一内容时，系统输出高危风险提示，并建议完善动态心电图、心脏磁共振、遗传咨询或电生理评估；未命中高危条件时输出常规风险管理建议。",
-              "fields": "晕厥史、动态心电图、左室射血分数、猝死家族史、室间隔厚度、心脏磁共振延迟强化",
-              "trigger": "分型辅助诊断完成后。",
-              "output": "高危风险状态、缺失评估项、进一步检查建议。",
-              "boundary": "只做风险提示和检查建议，不替代 ICD 或介入治疗决策。",
-              "category": "pathway"
-      },
-      {
-              "id": 16,
-              "stage": "治疗建议",
-              "name": "心肌病标准化治疗建议规则",
-              "logic": "当分型辅助诊断为扩张型心肌病且左室射血分数低于40%时，系统推荐心衰规范药物治疗评估；当分型辅助诊断为肥厚型心肌病且存在流出道梗阻时，推荐避免硝酸酯类和强利尿剂并提示β受体阻滞剂评估；当存在高危猝死风险时，提示进一步评估 ICD 植入适应证；存在房颤或血栓风险时，提示抗凝评估。",
-              "fields": "分型诊断、左室射血分数、流出道梗阻、血压、心率、房颤、血栓风险、高危风险状态",
-              "trigger": "分型和高危风险评估完成后。",
-              "output": "药物治疗建议、禁忌提醒、ICD评估提示、抗凝评估提示。",
-              "boundary": "输出辅助治疗建议，具体医嘱和介入处理由医生确认。",
-              "category": "therapy"
-      },
-      {
-              "id": 17,
-              "stage": "质控与评估表单提醒",
-              "name": "心肌病评估表单与随访提醒规则",
-              "logic": "当患者处于心肌病专病流程内时，系统检查心功能评估表、心律失常风险评估表、猝死风险评估表和随访计划是否已生成或填写；缺失时提示补齐对应表单；治疗方案确认后，提醒3至6个月复查超声心动图、心电图、肝肾功能、电解质和药物依从性评估。",
-              "fields": "流程阶段、心功能评估表、心律失常风险评估表、猝死风险评估表、随访计划、治疗确认状态",
-              "trigger": "患者进入心肌病专病流程、完成治疗建议或出院随访阶段时。",
-              "output": "待填写评估表单、随访复查项目、超期提醒。",
-              "boundary": "只做评估表单和随访提醒，不生成病程记录内容。",
-              "category": "qc"
       }
     ];
 
@@ -2969,92 +2648,18 @@
     ];
 
     const ruleUsageMap = {
-      "1": {
-            "designer": "前置能力，不进入流程画布",
-            "simulation": "辅助诊疗模拟：疑似疾病",
-            "connector": "无连接线；作为后续初筛推荐触发源"
-      },
-      "2": {
-            "designer": "前置能力，不进入流程画布",
-            "simulation": "辅助诊疗模拟：初筛检查/检验",
-            "connector": "无连接线；关注疑似疾病后触发"
-      },
-      "3": {
-            "designer": "前置能力，不进入流程画布",
-            "simulation": "辅助诊疗模拟：鉴别诊断提示",
-            "connector": "无连接线；关注疑似疾病后触发"
-      },
-      "4": {
-            "designer": "前置能力，不进入流程画布",
-            "simulation": "辅助诊疗模拟：分型辅助诊断",
-            "connector": "无连接线；报告回填后触发"
-      },
-      "5": {
-            "designer": "节点：流程承接；连接线：诊断确认后承接 AMI 流程",
-            "simulation": "辅助诊疗模拟：流程承接候选",
-            "connector": "diagnosis_status = STEMI"
-      },
-      "6": {
-            "designer": "节点：再灌注专项评估；判断节点：再灌注结果分流",
-            "simulation": "辅助诊疗模拟：专病诊疗推荐",
-            "connector": "输出 reperfusion_status 供判断节点和出口连接线读取"
-      },
-      "7": {
-            "designer": "节点：急诊 PCI 建议、静脉溶栓建议、标准药物治疗",
-            "simulation": "辅助诊疗模拟：治疗方案与质控提醒",
-            "connector": "recommendation_status = GENERATED"
-      },
-      "8": {
-            "designer": "节点：评估表单提醒、医嘱与并发症质控",
-            "simulation": "辅助诊疗模拟：质控与评估表单提醒",
-            "connector": "form/status = REMINDER_GENERATED 或 qc_status != HARD_BLOCK"
-      },
-      "9": {
-            "designer": "节点：PCI 围术期提醒、PCI 围术期评估表",
-            "simulation": "辅助诊疗模拟：介入/手术术前提醒",
-            "connector": "confirmed_action = PRIMARY_PCI 后触发"
-      },
-      "10": {
-            "designer": "节点：PCI 围术期提醒",
-            "simulation": "辅助诊疗模拟：介入/手术术中关注",
-            "connector": "perioperative_status = REMINDER_GENERATED"
-      },
-      "11": {
-            "designer": "节点：医嘱与并发症质控、并发症观察表提醒",
-            "simulation": "辅助诊疗模拟：介入/手术术后观察",
-            "connector": "qc_status != HARD_BLOCK 后触发"
-      },
-      "12": {
-            "designer": "前置能力，不进入流程画布",
-            "simulation": "辅助诊疗模拟：心肌病疑似疾病",
-            "connector": "无连接线；作为心肌病流程触发源"
-      },
-      "13": {
-            "designer": "节点：核心检查补齐",
-            "simulation": "辅助诊疗模拟：心肌病检查推荐",
-            "connector": "cm_exam_status = COMPLETE / MISSING"
-      },
-      "14": {
-            "designer": "节点：心肌病分型辅助判断",
-            "simulation": "辅助诊疗模拟：心肌病分型辅助诊断",
-            "connector": "cm_classification_status = CONFIRMED / PENDING"
-      },
-      "15": {
-            "designer": "判断节点：高危风险分流",
-            "simulation": "辅助诊疗模拟：心肌病风险评估",
-            "connector": "cm_risk_level = HIGH / STANDARD"
-      },
-      "16": {
-            "designer": "节点：心肌病标准化治疗建议",
-            "simulation": "辅助诊疗模拟：心肌病治疗建议",
-            "connector": "cm_treatment_status = GENERATED"
-      },
-      "17": {
-            "designer": "节点：评估表单提醒、随访复查",
-            "simulation": "辅助诊疗模拟：心肌病评估表单与随访",
-            "connector": "cm_form_status = REMINDER_GENERATED"
-      }
-};
+      1: { designer: "前置能力，不进入流程画布", simulation: "辅助诊疗模拟：疑似疾病", connector: "无连接线；作为后续初筛推荐触发源" },
+      2: { designer: "前置能力，不进入流程画布", simulation: "辅助诊疗模拟：初筛检查/检验", connector: "无连接线；关注疑似疾病后触发" },
+      3: { designer: "前置能力，不进入流程画布", simulation: "辅助诊疗模拟：鉴别诊断提示", connector: "无连接线；关注疑似疾病后触发" },
+      4: { designer: "前置能力，不进入流程画布", simulation: "辅助诊疗模拟：分型辅助诊断", connector: "无连接线；报告回填后触发" },
+      5: { designer: "开始节点入口备注；连接线：接收 STEMI", simulation: "辅助诊疗模拟：流程承接候选", connector: "diagnosis_status = STEMI" },
+      6: { designer: "节点：再灌注专项评估", simulation: "辅助诊疗模拟：专病诊疗推荐", connector: "输出 reperfusion_status 供分支连接线读取" },
+      7: { designer: "节点：急诊 PCI 建议、静脉溶栓建议、标准药物治疗", simulation: "辅助诊疗模拟：治疗方案与质控提醒", connector: "recommendation_status = GENERATED" },
+      8: { designer: "节点：评估表单提醒、医嘱与并发症质控", simulation: "辅助诊疗模拟：质控与评估表单提醒", connector: "form/status = REMINDER_GENERATED 或 qc_status != HARD_BLOCK" },
+      9: { designer: "节点：PCI 围术期提醒、PCI 围术期评估表", simulation: "辅助诊疗模拟：介入/手术术前提醒", connector: "confirmed_action = PRIMARY_PCI 后触发" },
+      10: { designer: "节点：PCI 围术期提醒", simulation: "辅助诊疗模拟：介入/手术术中关注", connector: "perioperative_status = REMINDER_GENERATED" },
+      11: { designer: "节点：医嘱与并发症质控、并发症观察表提醒", simulation: "辅助诊疗模拟：介入/手术术后观察", connector: "qc_status != HARD_BLOCK 后触发" }
+    };
 
     function getRuleUsage(ruleId) {
       return ruleUsageMap[Number(ruleId)] || { designer: "未配置", simulation: "未配置", connector: "未配置" };
@@ -3069,1201 +2674,403 @@
 
     const flows = [
       {
-            "name": "急性心肌梗死（AMI）",
-            "dept": "急诊科、门诊、心血管内科、胸痛中心",
-            "version": "V1.0 已启用",
-            "people": "门急诊或住院疑似 ACS/AMI，完成分型或医生确认关注",
-            "guide": "中国胸痛中心、ESC NSTEMI/STEMI 指南、4TH Universal Definition of MI",
-            "stages": "12 阶段 / 42 质控项",
-            "status": "enabled",
-            "designerKey": "ami"
+        name: "急性心肌梗死（AMI）",
+        dept: "心血管内科、急诊科、胸痛中心",
+        version: "V1.0 已启用",
+        people: "疑似 ACS/AMI，完成分型或医生确认关注",
+        guide: "中国胸痛中心、ESC NSTEMI/STEMI 指南、4TH Universal Definition of MI",
+        stages: "10 阶段 / 34 质控项",
+        status: "enabled"
       },
       {
-            "name": "心肌病",
-            "dept": "门诊、心血管内科、超声科",
-            "version": "V0.8 草稿",
-            "people": "疑似心肌病、心衰样表现、心肌病家族史或异常超声患者",
-            "guide": "心肌病诊疗指南、心力衰竭相关指南、院内随访规范",
-            "stages": "8 阶段 / 18 质控项",
-            "status": "draft",
-            "designerKey": "cardiomyopathy"
+        name: "心力衰竭",
+        dept: "心血管内科",
+        version: "V0.6 草稿",
+        people: "疑似或确诊心衰患者",
+        guide: "心力衰竭基层诊疗指南",
+        stages: "6 阶段 / 12 质控项",
+        status: "draft"
       },
       {
-            "name": "心力衰竭",
-            "dept": "心血管内科",
-            "version": "V0.6 草稿",
-            "people": "疑似或确诊心衰患者",
-            "guide": "心力衰竭基层诊疗指南",
-            "stages": "6 阶段 / 12 质控项",
-            "status": "draft"
+        name: "肺栓塞",
+        dept: "呼吸与危重症医学科、急诊科",
+        version: "V0.4 未启用",
+        people: "疑似肺动脉栓塞患者",
+        guide: "肺血栓栓塞症诊治指南",
+        stages: "5 阶段 / 10 质控项",
+        status: "disabled"
       },
       {
-            "name": "肺栓塞",
-            "dept": "呼吸与危重症医学科、急诊科",
-            "version": "V0.4 未启用",
-            "people": "疑似肺动脉栓塞患者",
-            "guide": "肺血栓栓塞症诊治指南",
-            "stages": "5 阶段 / 10 质控项",
-            "status": "disabled"
-      },
-      {
-            "name": "房颤",
-            "dept": "心血管内科",
-            "version": "V0.3 未启用",
-            "people": "疑似或确诊房颤患者",
-            "guide": "心房颤动诊断和治疗指南",
-            "stages": "5 阶段 / 9 质控项",
-            "status": "disabled"
+        name: "房颤",
+        dept: "心血管内科",
+        version: "V0.3 未启用",
+        people: "疑似或确诊房颤患者",
+        guide: "心房颤动诊断和治疗指南",
+        stages: "5 阶段 / 9 质控项",
+        status: "disabled"
       }
-];
+    ];
 
     const designerNodes = [
-      {
-            "id": "start",
-            "title": "开始",
-            "sub": "流程入口 · 备注",
-            "x": 40,
-            "y": 230,
-            "kind": "flow",
-            "icon": "start"
-      },
-      {
-            "id": "handoff",
-            "title": "流程承接",
-            "sub": "门急诊/住院触发",
-            "x": 210,
-            "y": 230,
-            "kind": "rule",
-            "icon": "rule"
-      },
-      {
-            "id": "screening",
-            "title": "初筛检查补齐",
-            "sub": "心电图/肌钙蛋白",
-            "x": 420,
-            "y": 230,
-            "kind": "exam",
-            "icon": "exam"
-      },
-      {
-            "id": "stDecision",
-            "title": "ST 段抬高判断",
-            "sub": "满足/不满足",
-            "x": 660,
-            "y": 188,
-            "branch": true,
-            "decision": true,
-            "kind": "therapy",
-            "icon": "branch"
-      },
-      {
-            "id": "classification",
-            "title": "分型确认",
-            "sub": "STEMI/NSTEMI/UA",
-            "x": 650,
-            "y": 415,
-            "kind": "rule",
-            "icon": "assess"
-      },
-      {
-            "id": "reperfusion",
-            "title": "再灌注专项评估",
-            "sub": "时间/禁忌/风险",
-            "x": 920,
-            "y": 210,
-            "kind": "rule",
-            "icon": "assess"
-      },
-      {
-            "id": "reperfusionForm",
-            "title": "再灌注评估表提醒",
-            "sub": "发病时间/禁忌/风险",
-            "x": 920,
-            "y": 415,
-            "kind": "record",
-            "icon": "record"
-      },
-      {
-            "id": "pciDecision",
-            "title": "PCI 可及判断",
-            "sub": "满足/不满足",
-            "x": 1180,
-            "y": 188,
-            "branch": true,
-            "decision": true,
-            "kind": "therapy",
-            "icon": "branch"
-      },
-      {
-            "id": "pciAdvice",
-            "title": "急诊 PCI 建议",
-            "sub": "治疗推荐组件",
-            "x": 1430,
-            "y": 90,
-            "kind": "therapy",
-            "icon": "therapy"
-      },
-      {
-            "id": "lysisDecision",
-            "title": "溶栓条件判断",
-            "sub": "满足/不满足",
-            "x": 1430,
-            "y": 300,
-            "branch": true,
-            "decision": true,
-            "kind": "therapy",
-            "icon": "branch"
-      },
-      {
-            "id": "lysisAdvice",
-            "title": "静脉溶栓建议",
-            "sub": "治疗推荐组件",
-            "x": 1700,
-            "y": 235,
-            "kind": "therapy",
-            "icon": "therapy"
-      },
-      {
-            "id": "medicalAdvice",
-            "title": "标准药物治疗",
-            "sub": "抗栓/调脂/监测",
-            "x": 1700,
-            "y": 430,
-            "kind": "therapy",
-            "icon": "therapy"
-      },
-      {
-            "id": "supplement",
-            "title": "资料补充/人工确认",
-            "sub": "缺失项或风险冲突",
-            "x": 1168,
-            "y": 505,
-            "kind": "qc",
-            "icon": "qc"
-      },
-      {
-            "id": "confirm",
-            "title": "治疗方案确认",
-            "sub": "医生确认最终方案",
-            "x": 1960,
-            "y": 330,
-            "kind": "therapy",
-            "icon": "therapy"
-      },
-      {
-            "id": "therapyDecision",
-            "title": "治疗方式分流",
-            "sub": "满足/不满足",
-            "x": 2200,
-            "y": 286,
-            "branch": true,
-            "decision": true,
-            "kind": "therapy",
-            "icon": "branch"
-      },
-      {
-            "id": "periop",
-            "title": "PCI 围术期提醒",
-            "sub": "术前/术中/术后",
-            "x": 2470,
-            "y": 170,
-            "kind": "surgery",
-            "icon": "surgery"
-      },
-      {
-            "id": "medication",
-            "title": "药物治疗与监测",
-            "sub": "溶栓/抗栓/调脂",
-            "x": 2470,
-            "y": 430,
-            "kind": "therapy",
-            "icon": "therapy"
-      },
-      {
-            "id": "qc",
-            "title": "医嘱与并发症质控",
-            "sub": "缺失/风险/阻断",
-            "x": 2730,
-            "y": 300,
-            "kind": "qc",
-            "icon": "qc"
-      },
-      {
-            "id": "stageForm",
-            "title": "阶段评估表单提醒",
-            "sub": "再灌注/围术期/出血",
-            "x": 2980,
-            "y": 300,
-            "kind": "record",
-            "icon": "record"
-      },
-      {
-            "id": "follow",
-            "title": "出院随访",
-            "sub": "复诊与用药提醒",
-            "x": 3220,
-            "y": 300,
-            "kind": "follow",
-            "icon": "follow"
-      },
-      {
-            "id": "end",
-            "title": "结束",
-            "sub": "流程完成",
-            "x": 3440,
-            "y": 300,
-            "kind": "flow",
-            "icon": "end"
-      }
-];
+      {id:"start",title:"\u5F00\u59CB",sub:"\u63A5\u6536STEMI\u5206\u578B+\u573A\u666F\u4E0A\u4E0B\u6587",x:36,y:220,kind:"flow",icon:"start"},
+      {id:"assessment",title:"\u518D\u704C\u6CE8\u4E13\u9879\u8BC4\u4F30",sub:"\u8F93\u51FA\u5206\u6D41\u72B6\u6001+\u8868\u5355\u63D0\u9192",x:260,y:220,kind:"rule",icon:"assess"},
+      {id:"branch",title:"\u518D\u704C\u6CE8\u7ED3\u679C\u5206\u6D41",sub:"\u4E0D\u5224\u65AD\u00B7\u7EBF\u89C4\u5219\u5206\u6D41",x:560,y:180,kind:"therapy",icon:"branch",branch:true},
+      {id:"pciAdvice",title:"\u6025\u8BCAPCI\u5EFA\u8BAE",sub:"\u4E1A\u52A1\u63A8\u8350\u7EC4\u4EF6",x:850,y:60,kind:"therapy",icon:"therapy"},
+      {id:"lysisAdvice",title:"\u9759\u8109\u6EB6\u6813\u5EFA\u8BAE",sub:"\u4E1A\u52A1\u63A8\u8350\u7EC4\u4EF6",x:850,y:240,kind:"therapy",icon:"therapy"},
+      {id:"medicalAdvice",title:"\u6807\u51C6\u836F\u7269\u6CBB\u7597",sub:"\u4E1A\u52A1\u63A8\u8350\u7EC4\u4EF6",x:850,y:420,kind:"therapy",icon:"therapy"},
+      {id:"supplement",title:"\u8D44\u6599\u8865\u5145/\u4EBA\u5DE5\u786E\u8BA4",sub:"\u975E\u963B\u65AD\u00B7\u4EC5\u63D0\u793A\u7F3A\u5931\u9879",x:560,y:560,kind:"qc",icon:"qc"},
+      {id:"confirm",title:"\u6CBB\u7597\u65B9\u6848\u786E\u8BA4",sub:"\u533B\u751F\u786E\u8BA4\u6700\u7EC8\u65B9\u6848",x:1100,y:240,kind:"therapy",icon:"therapy"},
+      {id:"treatmentBranch",title:"\u5DF2\u786E\u8BA4\u6CBB\u7597\u65B9\u5F0F\u5206\u6D41",sub:"\u4E0D\u5224\u65AD\u00B7\u7EBF\u89C4\u5219\u5206\u6D41",x:1340,y:205,kind:"therapy",icon:"branch",branch:true},
+      {id:"periop",title:"PCI\u56F4\u672F\u671F\u63D0\u9192",sub:"\u672F\u524D/\u672F\u4E2D/\u672F\u540E+\u8BC4\u4F30\u8868\u5355",x:1680,y:80,kind:"surgery",icon:"surgery"},
+      {id:"medication",title:"\u836F\u7269\u6CBB\u7597\u4E0E\u76D1\u6D4B",sub:"\u6EB6\u6813/\u6297\u6813/\u8C03\u8102+\u98CE\u9669\u8BC4\u4F30",x:1680,y:360,kind:"therapy",icon:"therapy"},
+      {id:"qc",title:"\u533B\u5631\u4E0E\u5E76\u53D1\u75C7\u8D28\u63A7",sub:"\u8D28\u63A7\u63D0\u9192+\u5E76\u53D1\u75C7\u89C2\u5BDF\u8868",x:2100,y:240,kind:"qc",icon:"qc"},
+      {id:"follow",title:"\u51FA\u9662\u968F\u8BBF",sub:"\u590D\u8BCA\u4E0E\u7528\u836F\u63D0\u9192",x:2100,y:520,kind:"follow",icon:"follow"},
+      {id:"end",title:"\u7ED3\u675F",sub:"\u6D41\u7A0B\u5B8C\u6210",x:2100,y:640,kind:"flow",icon:"end"},
+    ];
 
     const designerLines = [
-      {
-            "id": "line-start-handoff",
-            "from": "start",
-            "to": "handoff",
-            "label": "接收患者",
-            "field": "patient_source",
-            "operator": "in",
-            "value": "ER,OPD,IPD",
-            "condition": "患者来源为急诊、门诊或住院，且已存在疑似 ACS/AMI 或医生关注。",
-            "block": "无患者来源或未触发疑似疾病时不创建流程实例。",
-            "action": "进入流程承接。",
-            "operationRule": "flow-ami-patient-source"
-      },
-      {
-            "id": "line-handoff-screening",
-            "from": "handoff",
-            "to": "screening",
-            "label": "确认承接",
-            "field": "handoff_status",
-            "operator": "=",
-            "value": "ACCEPTED",
-            "condition": "医生确认承接 AMI 专病流程候选。",
-            "block": "未确认时仅在辅助诊疗面板保留候选提示。",
-            "action": "推荐补齐初筛检查。",
-            "operationRule": "flow-ami-handoff-accepted"
-      },
-      {
-            "id": "line-screening-st-decision",
-            "from": "screening",
-            "to": "stDecision",
-            "label": "检查回填完整",
-            "field": "screening_status",
-            "operator": "=",
-            "value": "COMPLETE",
-            "condition": "心电图和心肌肌钙蛋白结果已回填。",
-            "block": "缺少心电图或肌钙蛋白时停留在初筛检查补齐。",
-            "action": "进入 ST 段抬高判断。",
-            "operationRule": "ami-screening-complete"
-      },
-      {
-            "id": "line-st-stemi",
-            "from": "stDecision",
-            "to": "reperfusion",
-            "label": "满足：STEMI",
-            "orange": true,
-            "field": "st_elevation_status",
-            "operator": "=",
-            "value": "YES",
-            "condition": "心电图包含 ST 段抬高且肌钙蛋白升高或动态升高。",
-            "block": "无强阻断时进入再灌注专项评估。",
-            "action": "进入再灌注专项评估。",
-            "operationRule": "stemi-yes"
-      },
-      {
-            "id": "line-st-nonstemi",
-            "from": "stDecision",
-            "to": "classification",
-            "label": "不满足：继续分型",
-            "field": "st_elevation_status",
-            "operator": "=",
-            "value": "NO",
-            "condition": "肌钙蛋白升高但无 ST 段抬高，或证据指向 NSTEMI/UA。",
-            "block": "证据不足时提示补齐检查。",
-            "action": "进入分型确认。",
-            "operationRule": "stemi-no"
-      },
-      {
-            "id": "line-classification-reperfusion",
-            "from": "classification",
-            "to": "reperfusion",
-            "label": "医生确认 STEMI",
-            "field": "diagnosis_status",
-            "operator": "=",
-            "value": "STEMI_CONFIRMED",
-            "condition": "医生在分型确认节点确认 STEMI。",
-            "block": "未确认 STEMI 时不进入再灌注评估。",
-            "action": "进入再灌注专项评估。",
-            "operationRule": "flow-stemi-entry"
-      },
-      {
-            "id": "line-classification-medical",
-            "from": "classification",
-            "to": "medicalAdvice",
-            "label": "NSTEMI/UA 药物路径",
-            "field": "diagnosis_status",
-            "operator": "in",
-            "value": "NSTEMI,UA",
-            "condition": "分型结果为 NSTEMI 或 UA。",
-            "block": "证据不足时先补齐检查。",
-            "action": "进入标准药物治疗建议。",
-            "operationRule": "ami-nonstemi-medical"
-      },
-      {
-            "id": "line-reperfusion-form",
-            "from": "reperfusion",
-            "to": "reperfusionForm",
-            "label": "生成评估表",
-            "field": "assessment_completed",
-            "operator": "=",
-            "value": "true",
-            "condition": "再灌注专项评估已输出时间、禁忌、缺失项和风险状态。",
-            "block": "评估异常时停留当前节点。",
-            "action": "提醒填写再灌注评估表。",
-            "operationRule": "assessment-complete"
-      },
-      {
-            "id": "line-reperfusion-pci-decision",
-            "from": "reperfusionForm",
-            "to": "pciDecision",
-            "label": "评估表已展示",
-            "field": "reperfusion_form_status",
-            "operator": "=",
-            "value": "REMINDER_GENERATED",
-            "condition": "已展示再灌注评估表待填、已填和超期状态。",
-            "block": "默认不阻断急危重症主流程。",
-            "action": "进入 PCI 可及判断。",
-            "operationRule": "reperfusion-form-generated"
-      },
-      {
-            "id": "line-pci-yes",
-            "from": "pciDecision",
-            "to": "pciAdvice",
-            "label": "满足：≤90分钟",
-            "orange": true,
-            "field": "pci_access_status",
-            "operator": "=",
-            "value": "AVAILABLE",
-            "condition": "PCI 可及时间小于等于 90 分钟。",
-            "block": "PCI 明确不可及时不进入急诊 PCI 建议。",
-            "action": "展示急诊 PCI 建议。",
-            "operationRule": "pci-available-yes"
-      },
-      {
-            "id": "line-pci-no",
-            "from": "pciDecision",
-            "to": "lysisDecision",
-            "label": "不满足：评估溶栓",
-            "field": "pci_access_status",
-            "operator": "=",
-            "value": "UNAVAILABLE",
-            "condition": "PCI 可及时间大于 90 分钟或当前机构不可及。",
-            "block": "时间缺失时先补充资料。",
-            "action": "进入溶栓条件判断。",
-            "operationRule": "pci-available-no"
-      },
-      {
-            "id": "line-lysis-yes",
-            "from": "lysisDecision",
-            "to": "lysisAdvice",
-            "label": "满足：可溶栓",
-            "orange": true,
-            "field": "lysis_eligibility",
-            "operator": "=",
-            "value": "ELIGIBLE",
-            "condition": "符合静脉溶栓适应证且无明确禁忌证。",
-            "block": "存在活动性出血、近期脑出血等禁忌时不通行。",
-            "action": "展示静脉溶栓建议。",
-            "operationRule": "lysis-eligible-yes"
-      },
-      {
-            "id": "line-lysis-no",
-            "from": "lysisDecision",
-            "to": "medicalAdvice",
-            "label": "不满足：药物治疗",
-            "field": "lysis_eligibility",
-            "operator": "=",
-            "value": "NOT_ELIGIBLE",
-            "condition": "不满足溶栓条件或存在禁忌证。",
-            "block": "对应药物禁忌未处理时不放行具体医嘱建议。",
-            "action": "展示标准药物治疗建议。",
-            "operationRule": "lysis-eligible-no"
-      },
-      {
-            "id": "line-reperfusion-supplement",
-            "from": "reperfusion",
-            "to": "supplement",
-            "label": "资料不足",
-            "risk": true,
-            "field": "reperfusion_status",
-            "operator": "=",
-            "value": "PENDING_CONFIRMATION",
-            "condition": "胸痛开始时间、PCI 可及时间、禁忌证或关键风险资料缺失。",
-            "block": "缺失项未处理前不进入治疗确认。",
-            "action": "进入资料补充/人工确认。",
-            "operationRule": "status-pending-confirmation"
-      },
-      {
-            "id": "line-supplement-reperfusion",
-            "from": "supplement",
-            "to": "reperfusion",
-            "label": "补齐后重新评估",
-            "field": "supplement_status",
-            "operator": "=",
-            "value": "COMPLETED",
-            "condition": "缺失资料已回填或风险冲突已处理。",
-            "block": "未处理完成时停留当前节点。",
-            "action": "重新执行再灌注专项评估。",
-            "operationRule": "supplement-re-evaluate"
-      },
-      {
-            "id": "line-pci-confirm",
-            "from": "pciAdvice",
-            "to": "confirm",
-            "label": "PCI 建议已生成",
-            "field": "recommendation_status",
-            "operator": "=",
-            "value": "GENERATED",
-            "condition": "急诊 PCI 建议、依据和风险提示已生成。",
-            "block": "关键禁忌未处理时不提交确认。",
-            "action": "进入治疗方案确认。",
-            "operationRule": "pci-recommendation-generated"
-      },
-      {
-            "id": "line-lysis-confirm",
-            "from": "lysisAdvice",
-            "to": "confirm",
-            "label": "溶栓建议已生成",
-            "field": "recommendation_status",
-            "operator": "=",
-            "value": "GENERATED",
-            "condition": "溶栓建议、适应证和禁忌证提示已生成。",
-            "block": "溶栓禁忌证未处理时不提交确认。",
-            "action": "进入治疗方案确认。",
-            "operationRule": "lysis-recommendation-generated"
-      },
-      {
-            "id": "line-medical-confirm",
-            "from": "medicalAdvice",
-            "to": "confirm",
-            "label": "药物建议已生成",
-            "field": "recommendation_status",
-            "operator": "=",
-            "value": "GENERATED",
-            "condition": "标准药物治疗建议和风险提示已生成。",
-            "block": "具体药物存在未处理禁忌时不放行对应建议。",
-            "action": "进入治疗方案确认。",
-            "operationRule": "medical-recommendation-generated"
-      },
-      {
-            "id": "line-confirm-therapy-decision",
-            "from": "confirm",
-            "to": "therapyDecision",
-            "label": "医生已确认",
-            "orange": true,
-            "field": "doctor_confirmed",
-            "operator": "=",
-            "value": "true",
-            "condition": "医生已确认最终治疗方式。",
-            "block": "未确认时不进入治疗执行提醒。",
-            "action": "根据治疗方式分流。",
-            "operationRule": "doctor-confirmed-treatment"
-      },
-      {
-            "id": "line-therapy-pci",
-            "from": "therapyDecision",
-            "to": "periop",
-            "label": "满足：PCI",
-            "orange": true,
-            "field": "confirmed_action",
-            "operator": "=",
-            "value": "PRIMARY_PCI",
-            "condition": "医生确认治疗方式为急诊 PCI。",
-            "block": "PCI 相关具体禁忌未处理时提示风险。",
-            "action": "进入 PCI 围术期提醒。",
-            "operationRule": "confirmed-pci"
-      },
-      {
-            "id": "line-therapy-medication",
-            "from": "therapyDecision",
-            "to": "medication",
-            "label": "不满足：溶栓/药物",
-            "field": "confirmed_action",
-            "operator": "in",
-            "value": "FIBRINOLYSIS,MEDICAL_TREATMENT",
-            "condition": "医生确认溶栓或标准药物治疗。",
-            "block": "对应药物禁忌未处理时不放行具体建议。",
-            "action": "进入药物治疗与监测。",
-            "operationRule": "confirmed-medical"
-      },
-      {
-            "id": "line-periop-qc",
-            "from": "periop",
-            "to": "qc",
-            "label": "围术期提醒已生成",
-            "field": "perioperative_status",
-            "operator": "=",
-            "value": "REMINDER_GENERATED",
-            "condition": "术前、术中、术后关注事项和并发症观察提醒已生成。",
-            "block": "只针对具体动作高危风险提醒，不统一阻断急危重症救治。",
-            "action": "进入医嘱与并发症质控。",
-            "operationRule": "periop-reminder-generated"
-      },
-      {
-            "id": "line-medication-qc",
-            "from": "medication",
-            "to": "qc",
-            "label": "用药监测已生成",
-            "field": "treatment_status",
-            "operator": "=",
-            "value": "CONFIRMED",
-            "condition": "溶栓或药物治疗建议已确认。",
-            "block": "存在未处理用药禁忌时不放行具体医嘱建议。",
-            "action": "进入医嘱与并发症质控。",
-            "operationRule": "treatment-confirmed"
-      },
-      {
-            "id": "line-qc-form",
-            "from": "qc",
-            "to": "stageForm",
-            "label": "质控无强阻断",
-            "field": "qc_status",
-            "operator": "!=",
-            "value": "HARD_BLOCK",
-            "condition": "质控结果已生成且无未处理强阻断。",
-            "block": "存在未处理高危动作时停留当前节点。",
-            "action": "展示阶段性评估表单提醒。",
-            "operationRule": "qc-generated-no-hard-block"
-      },
-      {
-            "id": "line-form-follow",
-            "from": "stageForm",
-            "to": "follow",
-            "label": "表单提醒已生成",
-            "field": "form_completion_status",
-            "operator": "=",
-            "value": "REMINDER_GENERATED",
-            "condition": "已展示再灌注、围术期、出血风险等表单状态。",
-            "block": "默认不阻断主干流程。",
-            "action": "进入随访任务提醒。",
-            "operationRule": "form-reminder-generated"
-      },
-      {
-            "id": "line-follow-end",
-            "from": "follow",
-            "to": "end",
-            "label": "随访任务已生成",
-            "field": "followup_status",
-            "operator": "=",
-            "value": "GENERATED",
-            "condition": "复诊、用药和二级预防随访任务已生成。",
-            "block": "存在未处理高危风险时提示暂缓结束。",
-            "action": "标记专病流程完成。",
-            "operationRule": "followup-generated"
-      }
-];
+      {id:"line-start-assessment",from:"start",to:"assessment",label:"\u63A5\u6536STEMI",field:"diagnosis_status",operator:"=",value:"STEMI"},
+      {id:"line-assessment-branch",from:"assessment",to:"branch",label:"\u8BC4\u4F30\u5B8C\u6210",field:"assessment_completed",operator:"=",value:"true"},
+      {id:"line-branch-pci",from:"branch",to:"pciAdvice",label:"\u4F18\u5148\u6025\u8BCAPCI",field:"reperfusion_status",operator:"=",value:"PRIMARY_PCI",orange:true},
+      {id:"line-branch-lysis",from:"branch",to:"lysisAdvice",label:"\u8BC4\u4F30\u9759\u8109\u6EB6\u6813",field:"reperfusion_status",operator:"=",value:"FIBRINOLYSIS"},
+      {id:"line-branch-medical",from:"branch",to:"medicalAdvice",label:"\u6807\u51C6\u836F\u7269\u6CBB\u7597",field:"reperfusion_status",operator:"=",value:"MEDICAL_TREATMENT"},
+      {id:"line-branch-supplement",from:"branch",to:"supplement",label:"\u5F85\u8865\u5145/\u4EBA\u5DE5\u786E\u8BA4",field:"reperfusion_status",operator:"=",value:"PENDING_CONFIRMATION",risk:true},
+      {id:"line-pci-confirm",from:"pciAdvice",to:"confirm",label:"PCI\u5EFA\u8BAE\u5DF2\u751F\u6210",field:"recommendation_status",operator:"=",value:"GENERATED"},
+      {id:"line-lysis-confirm",from:"lysisAdvice",to:"confirm",label:"\u6EB6\u6813\u5EFA\u8BAE\u5DF2\u751F\u6210",field:"recommendation_status",operator:"=",value:"GENERATED"},
+      {id:"line-medical-confirm",from:"medicalAdvice",to:"confirm",label:"\u836F\u7269\u5EFA\u8BAE\u5DF2\u751F\u6210",field:"recommendation_status",operator:"=",value:"GENERATED"},
+      {id:"line-confirm-branch",from:"confirm",to:"treatmentBranch",label:"\u533B\u751F\u5DF2\u786E\u8BA4",field:"doctor_confirmed",operator:"=",value:"true",orange:true},
+      {id:"line-branch-periop",from:"treatmentBranch",to:"periop",label:"\u5DF2\u786E\u8BA4\u6025\u8BCAPCI",field:"confirmed_action",operator:"=",value:"PRIMARY_PCI",orange:true},
+      {id:"line-branch-medication",from:"treatmentBranch",to:"medication",label:"\u5DF2\u786E\u8BA4\u6EB6\u6813/\u836F\u7269",field:"confirmed_action",operator:"in",value:"FIBRINOLYSIS,MEDICAL_TREATMENT"},
+      {id:"line-periop-qc",from:"periop",to:"qc",label:"\u56F4\u672F\u671F\u63D0\u9192\u5DF2\u751F\u6210",field:"perioperative_status",operator:"=",value:"REMINDER_GENERATED"},
+      {id:"line-medication-qc",from:"medication",to:"qc",label:"\u6CBB\u7597\u5DF2\u786E\u8BA4",field:"treatment_status",operator:"=",value:"CONFIRMED"},
+      {id:"line-qc-follow",from:"qc",to:"follow",label:"\u8D28\u63A7\u5DF2\u751F\u6210",field:"qc_status",operator:"!=",value:"HARD_BLOCK"},
+      {id:"line-follow-end",from:"follow",to:"end",label:"\u968F\u8BBF\u4EFB\u52A1\u5DF2\u751F\u6210",field:"followup_status",operator:"=",value:"GENERATED"},
+    ];
 
     const connectionRuleOptions = [
       {
-            "id": "flow-node-complete",
-            "label": "业务组件完成状态流转规则",
-            "description": "上游业务组件已完成输出，当前连接线允许进入下一个节点。",
-            "field": "recommendation_status",
-            "operator": "=",
-            "value": "GENERATED"
+        id: "flow-node-complete",
+        label: "业务组件完成状态流转规则",
+        description: "上游业务组件已完成输出，当前连接线允许进入下一个节点。",
+        field: "recommendation_status",
+        operator: "=",
+        value: "GENERATED"
       },
       {
-            "id": "flow-ami-patient-source",
-            "label": "AMI 患者来源承接规则",
-            "description": "急诊、门诊或住院患者均可承接 AMI 专病流程，来源只决定入口说明，不决定后续治疗。",
-            "field": "patient_source",
-            "operator": "in",
-            "value": "ER,OPD,IPD"
+        id: "flow-stemi-entry",
+        label: "STEMI 流程准入状态校验",
+        description: "前置辅助诊断已支持 STEMI，且医生已确认或关注该诊断。",
+        field: "diagnosis_status",
+        operator: "=",
+        value: "STEMI"
       },
       {
-            "id": "flow-ami-handoff-accepted",
-            "label": "AMI 流程承接确认规则",
-            "description": "医生确认承接后，才进入初筛检查补齐。",
-            "field": "handoff_status",
-            "operator": "=",
-            "value": "ACCEPTED"
+        id: "assessment-complete",
+        label: "再灌注评估完成状态校验",
+        description: "再灌注专项评估已一次性输出 reperfusion_status、缺失项和风险状态。",
+        field: "assessment_completed",
+        operator: "=",
+        value: "true"
       },
       {
-            "id": "ami-screening-complete",
-            "label": "AMI 初筛检查回填完整规则",
-            "description": "心电图和心肌肌钙蛋白结果已回填，才进入 ST 段抬高判断。",
-            "field": "screening_status",
-            "operator": "=",
-            "value": "COMPLETE"
+        id: "status-primary-pci",
+        label: "再灌注结果为急诊 PCI",
+        description: "只读取上游评估输出的 reperfusion_status，不重新执行再灌注评估。",
+        field: "reperfusion_status",
+        operator: "=",
+        value: "PRIMARY_PCI"
       },
       {
-            "id": "stemi-yes",
-            "label": "ST 段抬高满足 STEMI 分支",
-            "description": "判断节点输出满足：ST 段抬高且心肌标志物支持心肌损伤。",
-            "field": "st_elevation_status",
-            "operator": "=",
-            "value": "YES"
+        id: "status-fibrinolysis",
+        label: "再灌注结果为静脉溶栓",
+        description: "只读取上游评估输出的 reperfusion_status，不重新执行再灌注评估。",
+        field: "reperfusion_status",
+        operator: "=",
+        value: "FIBRINOLYSIS"
       },
       {
-            "id": "stemi-no",
-            "label": "ST 段抬高不满足分支",
-            "description": "判断节点输出不满足：继续 NSTEMI/UA 分型确认或药物路径。",
-            "field": "st_elevation_status",
-            "operator": "=",
-            "value": "NO"
+        id: "status-medical-treatment",
+        label: "再灌注结果为标准药物治疗",
+        description: "只读取上游评估输出的 reperfusion_status，不重新执行再灌注评估。",
+        field: "reperfusion_status",
+        operator: "=",
+        value: "MEDICAL_TREATMENT"
       },
       {
-            "id": "flow-stemi-entry",
-            "label": "STEMI 分型确认后进入再灌注",
-            "description": "医生确认 STEMI 后进入再灌注评估。",
-            "field": "diagnosis_status",
-            "operator": "=",
-            "value": "STEMI_CONFIRMED"
+        id: "status-pending-confirmation",
+        label: "再灌注结果为待补充/人工确认",
+        description: "只读取上游评估输出的缺失项或风险冲突状态，先进入资料补充。",
+        field: "reperfusion_status",
+        operator: "=",
+        value: "PENDING_CONFIRMATION"
       },
       {
-            "id": "ami-nonstemi-medical",
-            "label": "NSTEMI/UA 进入药物路径",
-            "description": "分型为 NSTEMI 或 UA 时，不进入 STEMI 再灌注主路径。",
-            "field": "diagnosis_status",
-            "operator": "in",
-            "value": "NSTEMI,UA"
+        id: "supplement-re-evaluate",
+        label: "资料补齐后重新执行评估",
+        description: "资料补充完成后，回到再灌注专项评估重新获取统一状态。",
+        field: "supplement_status",
+        operator: "=",
+        value: "COMPLETED"
       },
       {
-            "id": "assessment-complete",
-            "label": "再灌注评估完成状态校验",
-            "description": "再灌注专项评估已一次性输出状态、缺失项和风险提示。",
-            "field": "assessment_completed",
-            "operator": "=",
-            "value": "true"
+        id: "pci-recommendation-generated",
+        label: "急诊 PCI 建议已生成",
+        description: "急诊 PCI 推荐组件已经输出建议、依据和风险提示。",
+        field: "recommendation_status",
+        operator: "=",
+        value: "GENERATED"
       },
       {
-            "id": "reperfusion-form-generated",
-            "label": "再灌注评估表提醒已生成",
-            "description": "已展示再灌注评估表待填、已填和超期状态。",
-            "field": "reperfusion_form_status",
-            "operator": "=",
-            "value": "REMINDER_GENERATED"
+        id: "lysis-recommendation-generated",
+        label: "静脉溶栓建议已生成",
+        description: "静脉溶栓推荐组件已经输出适应证、禁忌证和风险提示。",
+        field: "recommendation_status",
+        operator: "=",
+        value: "GENERATED"
       },
       {
-            "id": "pci-available-yes",
-            "label": "PCI 可及满足分支",
-            "description": "PCI 可及时间满足，进入急诊 PCI 建议。",
-            "field": "pci_access_status",
-            "operator": "=",
-            "value": "AVAILABLE"
+        id: "medical-recommendation-generated",
+        label: "标准药物治疗建议已生成",
+        description: "标准药物治疗推荐组件已经输出抗栓、调脂和监测建议。",
+        field: "recommendation_status",
+        operator: "=",
+        value: "GENERATED"
       },
       {
-            "id": "pci-available-no",
-            "label": "PCI 可及不满足分支",
-            "description": "PCI 不可及或超过目标时间，进入溶栓条件判断。",
-            "field": "pci_access_status",
-            "operator": "=",
-            "value": "UNAVAILABLE"
+        id: "doctor-confirmed-treatment",
+        label: "医生已确认治疗方案",
+        description: "医生已确认最终治疗方式，才允许进入治疗执行提醒。",
+        field: "doctor_confirmed",
+        operator: "=",
+        value: "true"
       },
       {
-            "id": "lysis-eligible-yes",
-            "label": "溶栓条件满足分支",
-            "description": "符合溶栓适应证且无禁忌证，进入静脉溶栓建议。",
-            "field": "lysis_eligibility",
-            "operator": "=",
-            "value": "ELIGIBLE"
+        id: "confirmed-pci",
+        label: "确认治疗方式为急诊 PCI",
+        description: "医生确认的 confirmed_action 为 PRIMARY_PCI，进入 PCI 围术期提醒。",
+        field: "confirmed_action",
+        operator: "=",
+        value: "PRIMARY_PCI"
       },
       {
-            "id": "lysis-eligible-no",
-            "label": "溶栓条件不满足分支",
-            "description": "不满足溶栓条件或存在禁忌证，进入标准药物治疗。",
-            "field": "lysis_eligibility",
-            "operator": "=",
-            "value": "NOT_ELIGIBLE"
+        id: "confirmed-medical",
+        label: "确认治疗方式为溶栓或标准药物",
+        description: "医生确认的治疗方式为 FIBRINOLYSIS 或 MEDICAL_TREATMENT，进入药物治疗与监测。",
+        field: "confirmed_action",
+        operator: "in",
+        value: "FIBRINOLYSIS,MEDICAL_TREATMENT"
       },
       {
-            "id": "status-pending-confirmation",
-            "label": "资料不足或需人工确认",
-            "description": "缺少关键资料或存在风险冲突，先进入资料补充。",
-            "field": "reperfusion_status",
-            "operator": "=",
-            "value": "PENDING_CONFIRMATION"
+        id: "periop-reminder-generated",
+        label: "围术期提醒已生成",
+        description: "术前、术中、术后关注事项及并发症观察提醒已生成。",
+        field: "perioperative_status",
+        operator: "=",
+        value: "REMINDER_GENERATED"
       },
       {
-            "id": "supplement-re-evaluate",
-            "label": "资料补齐后重新执行评估",
-            "description": "资料补充完成后，回到上游评估节点重新获取状态。",
-            "field": "supplement_status",
-            "operator": "=",
-            "value": "COMPLETED"
+        id: "treatment-confirmed",
+        label: "治疗方式已确认",
+        description: "溶栓或标准药物治疗方式已确认，进入治疗质控。",
+        field: "treatment_status",
+        operator: "=",
+        value: "CONFIRMED"
       },
       {
-            "id": "pci-recommendation-generated",
-            "label": "急诊 PCI 建议已生成",
-            "description": "急诊 PCI 推荐组件已输出建议、依据和风险提示。",
-            "field": "recommendation_status",
-            "operator": "=",
-            "value": "GENERATED"
+        id: "qc-generated-no-hard-block",
+        label: "质控已生成且无强阻断",
+        description: "质控结果已生成，且不存在未处理的具体动作强阻断。",
+        field: "qc_status",
+        operator: "!=",
+        value: "HARD_BLOCK"
       },
       {
-            "id": "lysis-recommendation-generated",
-            "label": "静脉溶栓建议已生成",
-            "description": "静脉溶栓推荐组件已输出建议、适应证和禁忌证。",
-            "field": "recommendation_status",
-            "operator": "=",
-            "value": "GENERATED"
+        id: "form-reminder-generated",
+        label: "评估表单提醒已生成",
+        description: "已展示当前阶段待填、已填和超期的评估表单状态。",
+        field: "form_completion_status",
+        operator: "=",
+        value: "REMINDER_GENERATED"
       },
       {
-            "id": "medical-recommendation-generated",
-            "label": "标准药物治疗建议已生成",
-            "description": "标准药物治疗推荐组件已输出抗栓、调脂和监测建议。",
-            "field": "recommendation_status",
-            "operator": "=",
-            "value": "GENERATED"
+        id: "reperfusion-form-generated",
+        label: "再灌注评估表提醒已生成",
+        description: "已展示再灌注评估表待填、已填和超期状态。",
+        field: "reperfusion_form_status",
+        operator: "=",
+        value: "REMINDER_GENERATED"
       },
       {
-            "id": "doctor-confirmed-treatment",
-            "label": "医生已确认治疗方案",
-            "description": "医生确认最终治疗方案后，进入治疗方式分流。",
-            "field": "doctor_confirmed",
-            "operator": "=",
-            "value": "true"
+        id: "periop-form-generated",
+        label: "PCI 围术期评估表提醒已生成",
+        description: "已展示 PCI 术前、术中、术后评估表状态。",
+        field: "periop_form_status",
+        operator: "=",
+        value: "REMINDER_GENERATED"
       },
       {
-            "id": "confirmed-pci",
-            "label": "确认治疗方式为急诊 PCI",
-            "description": "医生确认急诊 PCI 后，进入围术期提醒。",
-            "field": "confirmed_action",
-            "operator": "=",
-            "value": "PRIMARY_PCI"
+        id: "medication-form-generated",
+        label: "用药/出血风险评估表提醒已生成",
+        description: "已展示抗栓、溶栓、出血风险相关评估表状态。",
+        field: "medication_form_status",
+        operator: "=",
+        value: "REMINDER_GENERATED"
       },
       {
-            "id": "confirmed-medical",
-            "label": "确认治疗方式为溶栓或药物",
-            "description": "医生确认溶栓或标准药物治疗后，进入用药监测。",
-            "field": "confirmed_action",
-            "operator": "in",
-            "value": "FIBRINOLYSIS,MEDICAL_TREATMENT"
+        id: "complication-form-generated",
+        label: "并发症观察表提醒已生成",
+        description: "已展示出血、心衰、造影相关并发症观察表状态。",
+        field: "complication_form_status",
+        operator: "=",
+        value: "REMINDER_GENERATED"
       },
       {
-            "id": "periop-reminder-generated",
-            "label": "围术期提醒已生成",
-            "description": "术前、术中、术后关注事项已生成。",
-            "field": "perioperative_status",
-            "operator": "=",
-            "value": "REMINDER_GENERATED"
-      },
-      {
-            "id": "treatment-confirmed",
-            "label": "治疗方式已确认",
-            "description": "药物治疗或溶栓治疗已确认，进入后续质控。",
-            "field": "treatment_status",
-            "operator": "=",
-            "value": "CONFIRMED"
-      },
-      {
-            "id": "qc-generated-no-hard-block",
-            "label": "质控已生成且无强阻断",
-            "description": "质控结果已生成，且不存在未处理的具体动作强阻断。",
-            "field": "qc_status",
-            "operator": "!=",
-            "value": "HARD_BLOCK"
-      },
-      {
-            "id": "form-reminder-generated",
-            "label": "评估表单提醒已生成",
-            "description": "已展示当前阶段待填、已填和超期的评估表单状态。",
-            "field": "form_completion_status",
-            "operator": "=",
-            "value": "REMINDER_GENERATED"
-      },
-      {
-            "id": "followup-generated",
-            "label": "随访任务已生成",
-            "description": "复诊、用药和二级预防随访任务已生成，流程可以归档。",
-            "field": "followup_status",
-            "operator": "=",
-            "value": "GENERATED"
-      },
-      {
-            "id": "cm-suspect-hit",
-            "label": "心肌病疑似已命中",
-            "description": "前置识别输出心肌病疑似候选，且医生确认关注。",
-            "field": "cm_suspect_status",
-            "operator": "=",
-            "value": "HIT"
-      },
-      {
-            "id": "cm-core-exam-complete",
-            "label": "心肌病核心检查完整",
-            "description": "心电图、超声心动图、BNP/NT-proBNP、肌钙蛋白等核心检查已回填。",
-            "field": "cm_exam_status",
-            "operator": "=",
-            "value": "COMPLETE"
-      },
-      {
-            "id": "cm-core-exam-missing",
-            "label": "心肌病核心检查缺失",
-            "description": "核心检查结果不完整，回到检查补齐。",
-            "field": "cm_exam_status",
-            "operator": "=",
-            "value": "MISSING"
-      },
-      {
-            "id": "cm-classification-confirmed",
-            "label": "心肌病分型已明确",
-            "description": "分型辅助判断已输出明确分型。",
-            "field": "cm_classification_status",
-            "operator": "=",
-            "value": "CONFIRMED"
-      },
-      {
-            "id": "cm-classification-pending",
-            "label": "心肌病分型证据不足",
-            "description": "分型证据不足，需补充检查或人工确认。",
-            "field": "cm_classification_status",
-            "operator": "=",
-            "value": "PENDING"
-      },
-      {
-            "id": "cm-high-risk",
-            "label": "心肌病高危风险满足",
-            "description": "命中晕厥、室速、低射血分数、猝死家族史等高危条件。",
-            "field": "cm_risk_level",
-            "operator": "=",
-            "value": "HIGH"
-      },
-      {
-            "id": "cm-standard-risk",
-            "label": "心肌病常规风险分支",
-            "description": "未命中高危条件，进入标准治疗建议。",
-            "field": "cm_risk_level",
-            "operator": "=",
-            "value": "STANDARD"
-      },
-      {
-            "id": "cm-treatment-generated",
-            "label": "心肌病治疗建议已生成",
-            "description": "心肌病治疗建议、禁忌提醒和随访建议已生成。",
-            "field": "cm_treatment_status",
-            "operator": "=",
-            "value": "GENERATED"
-      },
-      {
-            "id": "cm-form-reminder-generated",
-            "label": "心肌病评估表单提醒已生成",
-            "description": "心功能、心律失常、猝死风险评估表单提醒已生成。",
-            "field": "cm_form_status",
-            "operator": "=",
-            "value": "REMINDER_GENERATED"
-      },
-      {
-            "id": "cm-followup-generated",
-            "label": "心肌病随访任务已生成",
-            "description": "3至6个月复查和用药随访任务已生成。",
-            "field": "cm_followup_status",
-            "operator": "=",
-            "value": "GENERATED"
+        id: "followup-generated",
+        label: "随访任务已生成",
+        description: "复诊、用药和二级预防随访任务已生成，流程可以归档。",
+        field: "followup_status",
+        operator: "=",
+        value: "GENERATED"
       }
-];
+    ];
 
     const lineOperationRuleDefaults = {
-      "line-start-handoff": "flow-ami-patient-source",
-      "line-handoff-screening": "flow-ami-handoff-accepted",
-      "line-screening-st-decision": "ami-screening-complete",
-      "line-st-stemi": "stemi-yes",
-      "line-st-nonstemi": "stemi-no",
-      "line-classification-reperfusion": "flow-stemi-entry",
-      "line-classification-medical": "ami-nonstemi-medical",
-      "line-reperfusion-form": "assessment-complete",
-      "line-reperfusion-pci-decision": "reperfusion-form-generated",
-      "line-pci-yes": "pci-available-yes",
-      "line-pci-no": "pci-available-no",
-      "line-lysis-yes": "lysis-eligible-yes",
-      "line-lysis-no": "lysis-eligible-no",
-      "line-reperfusion-supplement": "status-pending-confirmation",
-      "line-supplement-reperfusion": "supplement-re-evaluate",
+      "line-start-assessment": "flow-stemi-entry",
+      "line-assessment-reperfusion-form": "assessment-complete",
+      "line-reperfusion-form-branch": "reperfusion-form-generated",
+      "line-branch-pci": "status-primary-pci",
+      "line-branch-lysis": "status-fibrinolysis",
+      "line-branch-medical": "status-medical-treatment",
+      "line-branch-supplement": "status-pending-confirmation",
+      "line-supplement-assessment": "supplement-re-evaluate",
       "line-pci-confirm": "pci-recommendation-generated",
       "line-lysis-confirm": "lysis-recommendation-generated",
       "line-medical-confirm": "medical-recommendation-generated",
-      "line-confirm-therapy-decision": "doctor-confirmed-treatment",
-      "line-therapy-pci": "confirmed-pci",
-      "line-therapy-medication": "confirmed-medical",
-      "line-periop-qc": "periop-reminder-generated",
-      "line-medication-qc": "treatment-confirmed",
-      "line-qc-form": "qc-generated-no-hard-block",
-      "line-form-follow": "form-reminder-generated",
+      "line-confirm-treatment-branch": "doctor-confirmed-treatment",
+      "line-treatment-periop": "confirmed-pci",
+      "line-treatment-medication": "confirmed-medical",
+      "line-periop-form": "periop-reminder-generated",
+      "line-periop-form-qc": "periop-form-generated",
+      "line-medication-form": "treatment-confirmed",
+      "line-medication-form-qc": "medication-form-generated",
+      "line-qc-complication-form": "qc-generated-no-hard-block",
+      "line-complication-form-follow": "complication-form-generated",
       "line-follow-end": "followup-generated"
-};
+    };
 
     designerLines.forEach(line => {
-      line.operationRule = lineOperationRuleDefaults[line.id] || line.operationRule || "";
+      line.operationRule = lineOperationRuleDefaults[line.id] || "flow-node-complete";
       const rule = connectionRuleOptions.find(item => item.id === line.operationRule);
       if (rule) line.ruleName = rule.label;
     });
 
     const nodeRuleDefaults = {
-      "handoff": 5,
-      "screening": 2,
-      "stDecision": 4,
-      "classification": 4,
-      "reperfusion": 6,
-      "reperfusionForm": 8,
-      "pciDecision": 6,
-      "pciAdvice": 7,
-      "lysisDecision": 6,
-      "lysisAdvice": 7,
-      "medicalAdvice": 7,
-      "supplement": 8,
-      "confirm": 0,
-      "therapyDecision": 7,
-      "periop": 9,
-      "medication": 7,
-      "qc": 8,
-      "stageForm": 8,
-      "follow": 0
-};
+      assessment: 6,
+      reperfusionForm: 8,
+      pciAdvice: 7,
+      lysisAdvice: 7,
+      medicalAdvice: 7,
+      supplement: 8,
+      confirm: 0,
+      periop: 9,
+      periopForm: 8,
+      medication: 7,
+      medicationForm: 8,
+      qc: 8,
+      complicationForm: 8,
+      follow: 0
+    };
 
     const nodeRuleSelections = { ...nodeRuleDefaults };
     const difyAgentOptions = [
       "AMI 再灌注治疗建议智能体",
       "AMI 围术期风险识别智能体",
-      "AMI 治疗方案解释智能体",
-      "心肌病分型与风险评估智能体",
-      "心肌病随访管理智能体"
-];
-
+      "AMI 治疗方案解释智能体"
+    ];
     const nodeAgentSelections = {
-      "confirm": "AMI 治疗方案解释智能体",
-      "follow": "AMI 治疗方案解释智能体",
-      "cmClassification": "心肌病分型与风险评估智能体",
-      "cmFollow": "心肌病随访管理智能体"
-};
-
+      assessment: difyAgentOptions[0],
+      pciAdvice: difyAgentOptions[0],
+      lysisAdvice: difyAgentOptions[0],
+      medicalAdvice: difyAgentOptions[2],
+      confirm: difyAgentOptions[2],
+      periop: difyAgentOptions[1],
+      medication: difyAgentOptions[2],
+      qc: difyAgentOptions[1],
+      follow: difyAgentOptions[2]
+    };
     const nodeOutputSelections = {
-      "handoff": "handoff_status, patient_source, diagnosis_status, missing_items",
-      "screening": "screening_status, recommended_exams, recommended_lab_tests, missing_items",
-      "stDecision": "st_elevation_status, supporting_evidence, missing_items",
-      "classification": "diagnosis_status, diagnosis_type, supporting_evidence, missing_items",
-      "reperfusion": "assessment_completed, reperfusion_status, missing_items, risk_flags, blocked_actions",
-      "reperfusionForm": "reperfusion_form_status, pending_forms, completed_forms, overdue_forms",
-      "pciDecision": "pci_access_status, pci_available_time, missing_items",
-      "pciAdvice": "recommendation_status, recommended_action, supporting_evidence, blocked_actions",
-      "lysisDecision": "lysis_eligibility, contraindications, risk_flags",
-      "lysisAdvice": "recommendation_status, recommended_action, supporting_evidence, blocked_actions",
-      "medicalAdvice": "recommendation_status, recommended_action, monitoring_items, blocked_actions",
-      "supplement": "supplement_status, missing_items, risk_flags, confirmation_result",
-      "confirm": "confirmed_action, doctor_confirmed, confirmation_time",
-      "therapyDecision": "confirmed_action, doctor_confirmed",
-      "periop": "perioperative_status, perioperative_stage, reminder_items, complication_risks",
-      "medication": "treatment_status, monitoring_items, risk_flags",
-      "qc": "qc_status, warning_items, blocked_actions",
-      "stageForm": "form_completion_status, pending_forms, completed_forms, overdue_forms",
-      "follow": "followup_status, followup_tasks"
-};
+      assessment: "reperfusion_status, recommended_action, missing_items, risk_flags, blocked_actions",
+      reperfusionForm: "reperfusion_form_status, pending_forms, completed_forms, overdue_forms",
+      pciAdvice: "recommendation_status, recommended_action, supporting_evidence, blocked_actions",
+      lysisAdvice: "recommendation_status, recommended_action, supporting_evidence, blocked_actions",
+      medicalAdvice: "recommendation_status, recommended_action, monitoring_items, blocked_actions",
+      supplement: "supplement_status, missing_items, risk_flags, confirmation_result",
+      confirm: "confirmed_action, doctor_confirmed, confirmation_time",
+      periop: "perioperative_status, perioperative_stage, reminder_items, complication_risks",
+      periopForm: "periop_form_status, preop_forms, intraop_forms, postop_forms, overdue_forms",
+      medication: "treatment_status, monitoring_items, risk_flags",
+      medicationForm: "medication_form_status, antithrombotic_forms, bleeding_risk_forms, contraindication_forms",
+      qc: "qc_status, warning_items, blocked_actions",
+      complicationForm: "complication_form_status, bleeding_forms, heart_failure_forms, contrast_related_forms",
+      follow: "followup_status, followup_tasks"
+    };
 
     const nodeDisplaySelections = {
-      "handoff": "展示患者来源、前置分型结论、医生确认状态和流程承接提示。",
-      "screening": "展示心电图、心肌肌钙蛋白、CK-MB、超声心动图等初筛检查缺失项。",
-      "stDecision": "展示是否满足 STEMI 判断、支持依据和缺失项。",
-      "classification": "展示 STEMI、NSTEMI、UA 的辅助分型建议和证据。",
-      "reperfusion": "展示胸痛开始时间、PCI 可及时间、溶栓禁忌、缺失项和风险提示。",
-      "reperfusionForm": "展示 STEMI 再灌注评估表的待填、已填、超期状态。",
-      "pciDecision": "展示 PCI 可及时间是否满足，并提示后续分支。",
-      "pciAdvice": "展示急诊经皮冠状动脉介入治疗（PCI）建议、支持依据、风险和医生确认入口。",
-      "lysisDecision": "展示是否符合静脉溶栓适应证、是否存在禁忌证。",
-      "lysisAdvice": "展示静脉溶栓建议、适应证、禁忌证、支持依据和医生确认入口。",
-      "medicalAdvice": "展示抗血小板、抗凝、调脂、监测建议及对应风险。",
-      "supplement": "展示缺失资料、受影响动作、风险冲突和人工处理入口。",
-      "confirm": "展示候选治疗方案、支持依据和医生最终确认结果。",
-      "therapyDecision": "展示医生确认后的治疗方式，并分流到 PCI 围术期或药物治疗路径。",
-      "periop": "分阶段展示经皮冠状动脉介入治疗（PCI）术前、术中、术后关注事项。",
-      "medication": "展示已确认的溶栓或药物治疗建议及监测事项。",
-      "qc": "展示针对具体医嘱或治疗动作的风险、提醒和阻断原因。",
-      "stageForm": "展示再灌注、围术期、出血风险、并发症等评估表单状态。",
-      "follow": "展示复诊、用药和二级预防随访任务。"
-};
+      assessment: "展示胸痛开始时间、PCI 可及时间、溶栓禁忌、缺失项和风险提示。",
+      reperfusionForm: "展示 STEMI 再灌注评估表的待填、已填、超期状态，不生成病程记录内容。",
+      pciAdvice: "展示急诊 PCI 建议、支持依据、受阻断动作和医生确认入口。",
+      lysisAdvice: "展示溶栓适应证、禁忌证、支持依据和医生确认入口。",
+      medicalAdvice: "展示抗血小板、抗凝、调脂、监测建议及对应风险。",
+      supplement: "展示缺失资料、受影响动作、风险冲突和人工处理入口。",
+      confirm: "展示候选治疗方案、支持依据和医生最终确认结果。",
+      periop: "分阶段展示术前、术中、术后关注事项和并发症风险。",
+      periopForm: "展示 PCI 术前评估、术中记录、术后观察表的待填、已填、超期状态。",
+      medication: "展示已确认的溶栓或药物治疗建议及监测事项。",
+      medicationForm: "展示抗栓、溶栓、出血风险和禁忌相关评估表状态。",
+      qc: "展示针对具体医嘱或治疗动作的风险、提醒和阻断原因。",
+      complicationForm: "展示出血、心衰、造影相关并发症观察表的待填、已填、超期状态。",
+      follow: "展示复诊、用药和二级预防随访任务。"
+    };
 
     const flowPreviewDetails = [
       {
-            "base": [
-                  "专病名称：急性心肌梗死（AMI）",
-                  "适用科室：急诊科、门诊、心血管内科、胸痛中心",
-                  "启用状态：V1.0 已启用",
-                  "适用人群：门急诊或住院疑似 ACS/AMI，完成分型或医生确认关注"
-            ],
-            "stages": [
-                  [
-                        "多场景承接",
-                        "急诊胸痛、门诊疑似胸痛、住院期间新发胸痛均可触发 AMI 专病流程候选。"
-                  ],
-                  [
-                        "初筛检查补齐",
-                        "推荐心电图、心肌肌钙蛋白、CK-MB、超声心动图，并提示胸痛鉴别方向。"
-                  ],
-                  [
-                        "分型确认",
-                        "心电图 ST段抬高且肌钙蛋白升高时支持 STEMI；不满足时进入 NSTEMI/UA 分型确认。"
-                  ],
-                  [
-                        "再灌注专项评估",
-                        "读取发病时间、PCI 可及时间、溶栓禁忌、出血风险和过敏史，输出评估状态。"
-                  ],
-                  [
-                        "治疗建议",
-                        "按 PCI 可及、溶栓条件和医生确认，分流到急诊 PCI、静脉溶栓或标准药物治疗。"
-                  ],
-                  [
-                        "围术期与质控",
-                        "PCI 路径展示术前、术中、术后提醒；药物路径展示抗栓、调脂和监测提醒。"
-                  ],
-                  [
-                        "评估表单与随访",
-                        "提醒再灌注、出血风险、围术期、并发症和随访表单，不生成病程记录内容。"
-                  ]
-            ],
-            "rules": [
-                  1,
-                  2,
-                  3,
-                  4,
-                  5,
-                  6,
-                  7,
-                  8,
-                  9,
-                  10,
-                  11
-            ],
-            "qc": [
-                  "关键诊断依据缺失提醒",
-                  "活动性出血下抗凝/抗血小板用药风险",
-                  "再灌注评估表提醒",
-                  "PCI 术前术中术后关注提醒",
-                  "并发症观察表和随访提醒"
-            ]
+        base: ["专病名称：急性心肌梗死（AMI）", "适用科室：心血管内科、急诊科、胸痛中心", "启用状态：V1.0 已启用", "适用人群：疑似 ACS/AMI，完成分型或医生确认关注"],
+        stages: [
+          ["疑似疾病识别", "主诉/现病史命中胸痛、出汗、恶心呕吐后，输出 ACS/AMI 疑似候选。"],
+          ["初筛检查推荐", "推荐心电图、心肌肌钙蛋白、CK-MB、超声心动图，并提示胸痛鉴别方向。"],
+          ["分型辅助诊断", "心电图 ST段抬高且肌钙蛋白升高时，输出 STEMI 分型建议。"],
+          ["流程承接", "医生确认 STEMI 后创建 AMI 专病流程，将分型结果作为前置输入传入设计器。"],
+          ["再灌注专项评估", "业务组件读取发病时间、PCI 可及时间、出血风险、肾功能和过敏史，一次输出标准状态。"],
+          ["结果分流", "连接线读取 reperfusion_status，分别进入急诊 PCI、溶栓、药物治疗或资料补充/人工确认。"],
+          ["治疗方案确认", "统一展示候选方案和依据，医生确认后输出 confirmed_action。"],
+          ["介入/手术围术期", "医生确认急诊 PCI 后，展示术前、术中、术后关注事项和并发症提醒。"],
+          ["评估表单与随访", "只提醒再灌注、出血风险、PCI 术前术后等评估表单状态，不生成病程记录内容。"]
+        ],
+        rules: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+        qc: ["关键诊断依据缺失提醒", "活动性出血下抗凝/抗血小板用药风险", "再灌注治疗评估表提醒", "PCI 术前评估表提醒", "PCI 术后风险评估表和并发症提醒"]
       },
       {
-            "base": [
-                  "专病名称：心肌病",
-                  "适用科室：门诊、心血管内科、超声科",
-                  "启用状态：V0.8 草稿",
-                  "适用人群：疑似心肌病、心衰样表现、家族史或异常超声患者"
-            ],
-            "stages": [
-                  [
-                        "疑似识别",
-                        "结合胸闷、气促、心悸、晕厥、家族史等信息输出心肌病疑似方向。"
-                  ],
-                  [
-                        "核心检查补齐",
-                        "推荐心电图、超声心动图、BNP/NT-proBNP、肌钙蛋白、肝肾功能和电解质。"
-                  ],
-                  [
-                        "分型辅助诊断",
-                        "根据超声心动图、射血分数、室壁厚度、流出道梗阻等提示扩张型、肥厚型或限制型待排。"
-                  ],
-                  [
-                        "高危风险评估",
-                        "识别晕厥、室速、低射血分数、猝死家族史等高危风险。"
-                  ],
-                  [
-                        "治疗与随访",
-                        "输出规范化治疗建议、ICD评估提示、抗凝评估和3至6个月复查提醒。"
-                  ]
-            ],
-            "rules": [
-                  12,
-                  13,
-                  14,
-                  15,
-                  16,
-                  17
-            ],
-            "qc": [
-                  "核心检查缺失提醒",
-                  "心功能评估表提醒",
-                  "心律失常风险评估提醒",
-                  "猝死风险评估提醒",
-                  "随访复查超期提醒"
-            ]
+        base: ["专病名称：心力衰竭", "适用科室：心血管内科", "启用状态：V0.6 草稿", "适用人群：疑似或确诊心衰患者"],
+        stages: [["疑似识别", "结合呼吸困难、水肿、BNP 等信息形成疑似方向。"], ["检查补齐", "推荐 BNP、超声心动图、胸片等基础检查。"], ["治疗提醒", "展示利尿、扩血管、容量管理等方案待配置。"]],
+        rules: [],
+        qc: ["BNP 缺失提醒", "心功能评估缺失提醒"]
       },
       {
-            "base": [
-                  "专病名称：心力衰竭",
-                  "适用科室：心血管内科",
-                  "启用状态：V0.6 草稿",
-                  "适用人群：疑似或确诊心衰患者"
-            ],
-            "stages": [
-                  [
-                        "疑似识别",
-                        "结合呼吸困难、水肿、BNP 等信息形成疑似方向。"
-                  ],
-                  [
-                        "检查补齐",
-                        "推荐 BNP、超声心动图、胸片等基础检查。"
-                  ],
-                  [
-                        "治疗提醒",
-                        "展示利尿、扩血管、容量管理等方案待配置。"
-                  ]
-            ],
-            "rules": [],
-            "qc": [
-                  "BNP 缺失提醒",
-                  "心功能评估缺失提醒"
-            ]
+        base: ["专病名称：肺栓塞", "适用科室：呼吸与危重症医学科、急诊科", "启用状态：V0.4 未启用", "适用人群：疑似肺动脉栓塞患者"],
+        stages: [["疑似识别", "结合胸痛、呼吸困难、D-二聚体等信息形成疑似方向。"], ["检查补齐", "推荐肺动脉 CTA、D-二聚体、血气分析等。"]],
+        rules: [],
+        qc: ["肺动脉 CTA 缺失提醒", "抗凝风险评估缺失提醒"]
       },
       {
-            "base": [
-                  "专病名称：肺栓塞",
-                  "适用科室：呼吸与危重症医学科、急诊科",
-                  "启用状态：V0.4 未启用",
-                  "适用人群：疑似肺动脉栓塞患者"
-            ],
-            "stages": [
-                  [
-                        "疑似识别",
-                        "结合胸痛、呼吸困难、D-二聚体等信息形成疑似方向。"
-                  ],
-                  [
-                        "检查补齐",
-                        "推荐肺动脉 CTA、D-二聚体、血气分析等。"
-                  ]
-            ],
-            "rules": [],
-            "qc": [
-                  "肺动脉 CTA 缺失提醒",
-                  "抗凝风险评估缺失提醒"
-            ]
-      },
-      {
-            "base": [
-                  "专病名称：房颤",
-                  "适用科室：心血管内科",
-                  "启用状态：V0.3 未启用",
-                  "适用人群：疑似或确诊房颤患者"
-            ],
-            "stages": [
-                  [
-                        "疑似识别",
-                        "结合心悸、心电图房颤表现形成疑似方向。"
-                  ],
-                  [
-                        "风险评估",
-                        "推荐 CHA2DS2-VASc、HAS-BLED 等评估。"
-                  ]
-            ],
-            "rules": [],
-            "qc": [
-                  "抗凝风险评估缺失提醒",
-                  "心电图证据缺失提醒"
-            ]
+        base: ["专病名称：房颤", "适用科室：心血管内科", "启用状态：V0.3 未启用", "适用人群：疑似或确诊房颤患者"],
+        stages: [["疑似识别", "结合心悸、心电图房颤表现形成疑似方向。"], ["风险评估", "推荐 CHA2DS2-VASc、HAS-BLED 等评估。"]],
+        rules: [],
+        qc: ["抗凝风险评估缺失提醒", "心电图证据缺失提醒"]
       }
-];
+    ];
 
     let currentPage = "home";
-    let activeDesignerFlowKey = "ami";
     let currentRuleFilter = "all";
-    let currentRuleDisease = "ami";
-    let activeSimulationDisease = "ami";
     let simulationState = "empty";
     let recTab = "assist";
     let assistFocus = "suspect";
@@ -4279,555 +3086,32 @@
     let suppressCanvasClick = false;
     let lineLabelPlacementCache = new Map();
 
-    const kgDetails = {
-      diagnosis: {
-        badge: "疾病诊断",
-        title: "疾病目录与诊断层",
-        desc: "用于维护专科目录、临床疾病、具体分型和标准诊断之间的层级关系，避免把疾病大类直接作为诊断回填。",
-        chain: ["Specialty", "DiseaseCategory", "Disease", "Disease", "StandardDiagnosis"],
-        edges: ["has_disease_category", "has_disease", "has_clinical_subtype", "has_standard_diagnosis"],
-        syntax: "心血管内科 -has_disease_category-> 冠心病\n冠心病 -has_disease-> 急性心肌梗死\n急性心肌梗死 -has_clinical_subtype-> STEMI\n急性心肌梗死 -has_standard_diagnosis-> I21.900 急性心肌梗死",
-        example: "AMI 先作为宽口径疑似/初步诊断出现，检查结果回填后再细分 STEMI 或 NSTEMI；标准诊断用于对接 EMR 和诊断编码。",
-        value: "支撑疑似疾病识别和分型确诊，避免一开始只靠胸痛就直接推荐 STEMI/NSTEMI。",
-        application: {
-          scene: "初诊信息进入辅助诊疗后，用于识别患者可能涉及的专科疾病大类，并在报告回填后支撑分型辅助诊断。",
-          read: "读取 Specialty、DiseaseCategory、Disease、StandardDiagnosis 及 has_disease、has_clinical_subtype、has_standard_diagnosis 等关系。",
-          landing: "落到右侧辅助诊疗的疑似疾病候选、分型辅助诊断和诊断编码提示。",
-          boundary: "DiseaseCategory 只作为目录分组，不直接回填诊断；STEMI/NSTEMI 分型必须在检查检验结果回填后推荐。"
-        }
-      },
-      exam: {
-        badge: "检查检验",
-        title: "检查检验层",
-        desc: "用于维护疑似疾病后的客观检查依据，通过辅助检查方案下钻到具体检查项目、检查发现、检验项目和检验细项。",
-        chain: ["Disease", "ExamPlan", "ExamItem", "ExamObservation", "LabItem", "LabSubitem"],
-        edges: ["has_exam_plan", "includes_exam_item", "exam_item_has_observation", "includes_lab_item", "lab_item_has_subitem"],
-        syntax: "急性心肌梗死 -has_exam_plan-> AMI首诊辅助检查方案\nAMI首诊辅助检查方案 -includes_exam_item-> 常规心电图\n常规心电图 -exam_item_has_observation-> ST段抬高\nAMI首诊辅助检查方案 -includes_lab_item-> 心肌损伤标志物检测\n心肌损伤标志物检测 -lab_item_has_subitem-> 肌钙蛋白I",
-        example: "医生关注 ACS/AMI 疑似后，系统从 AMI 首诊辅助检查方案读取心电图、肌钙蛋白、CK-MB、超声心动图等推荐项。",
-        value: "支撑初筛检查推荐和报告回填后的结构化判断。",
-        application: {
-          scene: "医生关注疑似疾病后，用于推荐检查和推荐检验，补齐分型确诊所需的客观依据。",
-          read: "读取 ExamPlan、ExamItem、ExamObservation、LabItem、LabSubitem 及 has_exam_plan、includes_exam_item、includes_lab_item 等关系。",
-          landing: "落到右侧辅助诊疗的推荐检查、推荐检验、检查缺失提示和报告回填后的结构化证据展示。",
-          boundary: "检查方案只生成推荐项和缺失项提示，不直接生成医嘱；报告结果回填后才参与诊断分型判断。"
-        }
-      },
-      therapy: {
-        badge: "治疗手术",
-        title: "治疗与手术层",
-        desc: "用于维护专病治疗阶段的可执行动作。治疗方案作为知识容器，正式推荐必须落到药品、操作/手术或治疗项目。",
-        chain: ["Disease", "TreatmentPlan", "Medication", "Procedure", "StandardProcedure"],
-        edges: ["has_treatment_plan", "includes_medication", "includes_procedure", "has_standard_procedure"],
-        syntax: "STEMI -has_treatment_plan-> STEMI再灌注治疗方案\nSTEMI再灌注治疗方案 -includes_procedure-> 经皮冠状动脉介入治疗\n经皮冠状动脉介入治疗 -has_standard_procedure-> 00.6600 经皮冠状动脉介入治疗\nSTEMI再灌注治疗方案 -includes_medication-> 阿司匹林",
-        example: "PCI 不是只写英文缩写，页面同时展示经皮冠状动脉介入治疗，并映射标准手术项目，便于后续医嘱或手术项目质控。",
-        value: "支撑治疗方案推荐、介入/手术围术期提醒和标准医嘱候选。",
-        application: {
-          scene: "患者完成分型确认并承接专病流程后，用于展示治疗方案、手术/介入项目和药物治疗候选。",
-          read: "读取 TreatmentPlan、Medication、Procedure、StandardProcedure 及 has_treatment_plan、includes_medication、includes_procedure 等关系。",
-          landing: "落到右侧辅助诊疗的治疗建议、介入/手术围术期提醒、术前术中术后关注项和标准医嘱候选。",
-          boundary: "TreatmentPlan 是知识容器，不直接作为当前患者推荐；正式推荐需由临床规则和推荐陈述生成。"
-        }
-      },
-      decision: {
-        badge: "决策推荐",
-        title: "临床决策推荐层",
-        desc: "用于维护当前患者推荐动作的触发条件、推荐内容和证据来源。正式推荐需要路径阶段、临床规则、推荐陈述、具体动作和证据链共同形成。",
-        chain: ["ClinicalPathway", "PathwayStage", "ClinicalRule", "RecommendationStatement", "Evidence"],
-        edges: ["has_stage", "has_stage_rule", "has_recommendation_statement", "supported_by_evidence"],
-        syntax: "AMI专病诊疗路径 -has_stage-> STEMI再灌注评估阶段\nSTEMI再灌注评估阶段 -has_stage_rule-> 发病12小时内且PCI可及规则\n临床规则 -has_recommendation_statement-> 推荐急诊PCI\n推荐急诊PCI -recommends_action-> 经皮冠状动脉介入治疗\n推荐急诊PCI -supported_by_evidence-> STEMI指南证据",
-        example: "治疗方案不会直接变成当前患者推荐。只有患者满足阶段规则后，RecommendationStatement 才生成右侧辅助诊疗推荐卡。",
-        value: "支撑治疗建议、阻断提醒、推荐依据展示和质控闭环。",
-        application: {
-          scene: "患者处于具体专病流程阶段时，用于判断当前阶段应展示哪些推荐卡、阻断提示、证据依据和后续动作。",
-          read: "读取 ClinicalPathway、PathwayStage、ClinicalRule、RecommendationStatement、Evidence 及 has_stage_rule、recommends_action、supported_by_evidence 等关系。",
-          landing: "落到右侧辅助诊疗的治疗推荐卡、质控提醒、推荐依据、缺失项和可执行动作按钮。",
-          boundary: "推荐卡由 RecommendationStatement 结合患者数据和阶段规则生成，不由疾病节点直接连接治疗方案生成。"
-        }
-      },
-      display: {
-        badge: "展示边界",
-        title: "CDSS导入与展示边界",
-        desc: "专科图谱进入 CDSS 时完整保留实体、关系和证据，医生端按业务场景展示临床内容，解析批次、哈希、迁移状态等治理字段不得展示为临床节点。",
-        chain: ["完整图谱", "实体关系导入", "属性白名单", "页面场景读取", "医生端展示"],
-        edges: ["全量保留", "按Schema映射", "过滤治理字段", "读取临床关系"],
-        syntax: "允许展示：疾病、症状、检查、检验、治疗方案、药品、手术、诊断标准、推荐证据摘要\n禁止展示为节点：batch_id、source_hash、parser_version、migration_status、repair_status、created_at",
-        example: "AMI 页面展示胸痛、心电图、肌钙蛋白、STEMI/NSTEMI、PCI、证据摘要；不把批次号、解析版本和迁移状态显示给医生。",
-        value: "明确图谱数据全量保留、前端按业务场景读取的展示边界，避免把治理字段做成临床功能。",
-        application: {
-          scene: "图谱数据导入 CDSS 后，用于控制哪些内容进入临床页面、哪些内容仅用于后台治理和追溯。",
-          read: "读取实体、关系、证据摘要和标准字典映射；过滤 batch_id、source_hash、parser_version、migration_status 等治理属性。",
-          landing: "落到医生端的临床字段、推荐依据和证据摘要展示，后台保留批次、来源、解析版本和审核状态。",
-          boundary: "治理字段不展示为临床功能，也不作为医生端可点击图谱节点。"
-        }
-      },
-      application: {
-        badge: "使用方式",
-        title: "辅助诊疗使用方式",
-        desc: "用于说明图谱数据在辅助诊疗中的调用方式。图谱提供结构和依据，规则引擎结合患者数据生成当前推荐，流程引擎承接流程确认后的诊疗动作。",
-        chain: ["一诉五史", "疑似疾病", "初筛检查", "分型确诊", "流程内推荐"],
-        edges: ["匹配症状体征", "读取检查方案", "读取诊断标准", "读取规则推荐"],
-        syntax: "主诉/现病史 -> 命中 Symptom/Sign/RiskFactor\n疑似AMI -> 读取 ExamPlan 推荐心电图和肌钙蛋白\n报告回填 -> 读取 DiagnosisCriteria 辅助 STEMI/NSTEMI 分型\n流程阶段 -> 读取 ClinicalRule 和 RecommendationStatement 生成推荐卡",
-        example: "刘大虾录入胸痛2小时、大汗、恶心呕吐后命中 AMI 疑似；关注后推荐检查；报告回填后支持 STEMI；进入流程后推荐 PCI、药物治疗、围术期提醒和质控。",
-        value: "把图谱结构、规则列表、流程设计器和辅助诊疗模拟四块串起来。",
-        application: {
-          scene: "用于展示图谱在辅助诊疗模拟页面中的完整调用顺序，从初诊识别到治疗建议和质控提醒。",
-          read: "按阶段读取 Symptom、Sign、RiskFactor、ExamPlan、DiagnosisCriteria、ClinicalRule、RecommendationStatement 等内容。",
-          landing: "落到辅助诊疗模拟的疑似疾病、推荐检查、分型辅助诊断、专病诊疗推荐、治疗建议和质控提醒。",
-          boundary: "图谱提供结构和依据，规则引擎结合患者数据生成当前推荐，流程引擎承接确认后的标准化诊疗动作。"
-        }
-      }
+    const nodeRemarks = {
+      start: "接收前置知识图谱已完成的 AMI/STEMI 分型结果和医生确认状态。",
+      end: "AMI 专病流程的唯一结束出口，只记录流程完成状态。",
+      branch: "展示再灌注评估结果分流，自身不执行规则，出口连接线读取 reperfusion_status。",
+      treatmentBranch: "展示医生已确认治疗方式的分流，出口连接线读取 confirmed_action。",
+      reperfusionForm: "跟随再灌注专项评估场景，提醒 STEMI 再灌注评估表待填、已填和超期状态。",
+      periopForm: "跟随 PCI 围术期场景，提醒术前评估、术中记录和术后观察表状态。",
+      medicationForm: "跟随药物治疗场景，提醒抗栓、溶栓、出血风险和禁忌相关评估表状态。",
+      complicationForm: "跟随并发症质控场景，提醒出血、心衰、造影相关并发症观察表状态。"
     };
 
-    const nodeRemarks = {
-      "start": "记录流程入口、患者来源和承接备注，不调用诊疗规则。",
-      "end": "记录流程归档备注，不调用诊疗规则。",
-      "handoff": "承接门急诊或住院触发的 AMI/STEMI 专病流程候选。",
-      "stDecision": "判断心电图和肌钙蛋白是否满足 STEMI 分支。",
-      "pciDecision": "判断 PCI 可及时间是否满足急诊 PCI 分支。",
-      "lysisDecision": "判断是否符合静脉溶栓适应证且无禁忌。",
-      "therapyDecision": "根据医生确认的治疗方式进入 PCI 围术期或药物治疗监测。",
-      "stageForm": "跟随具体场景提醒再灌注、围术期、出血风险和并发症评估表单状态。"
-};
-
     const nodeSourceSelections = {
-      "handoff": "规则推荐",
-      "screening": "规则推荐",
-      "stDecision": "规则推荐",
-      "classification": "规则推荐",
-      "reperfusion": "规则推荐",
-      "reperfusionForm": "规则推荐",
-      "pciDecision": "规则推荐",
-      "pciAdvice": "规则推荐",
-      "lysisDecision": "规则推荐",
-      "lysisAdvice": "规则推荐",
-      "medicalAdvice": "规则推荐",
-      "supplement": "规则推荐",
-      "confirm": "Dify 智能体",
-      "therapyDecision": "规则推荐",
-      "periop": "规则推荐",
-      "medication": "规则推荐",
-      "qc": "规则推荐",
-      "stageForm": "规则推荐",
-      "follow": "Dify 智能体"
-};
-
-
-    const designerTemplates = {
-      ami: {
-        meta: {
-          title: "专病诊疗流程设计器：急性心肌梗死（AMI）",
-          desc: "AMI 流程覆盖急诊、门诊和住院触发场景，进入流程后由判断节点和连接线完成分流、阻断和跳转。",
-          canvasTitle: "AMI 标准化专病流程",
-          canvasNote: "门急诊/住院承接后，按检查、分型、再灌注、治疗、围术期和质控闭环流转"
-        },
-        nodes: designerNodes.map(item => ({ ...item })),
-        lines: designerLines.map(item => ({ ...item })),
-        nodeRuleSelections: { ...nodeRuleSelections },
-        nodeSourceSelections: { ...nodeSourceSelections },
-        nodeAgentSelections: { ...nodeAgentSelections },
-        nodeOutputSelections: { ...nodeOutputSelections },
-        nodeDisplaySelections: { ...nodeDisplaySelections },
-        nodeRemarks: { ...nodeRemarks },
-        lineOperationRuleDefaults: { ...lineOperationRuleDefaults },
-        selectedNode: "start"
-      },
-      cardiomyopathy: {
-              "meta": {
-                      "title": "专病诊疗流程设计器：心肌病",
-                      "desc": "心肌病流程用于对比 AMI：更强调门诊/住院慢病管理、分型确认、高危风险和随访复查。",
-                      "canvasTitle": "心肌病标准化专病流程",
-                      "canvasNote": "疑似识别后补齐检查，分型与高危判断驱动治疗和随访"
-              },
-              "nodes": [
-                      {
-                              "id": "start",
-                              "title": "开始",
-                              "sub": "流程入口 · 备注",
-                              "x": 60,
-                              "y": 230,
-                              "kind": "flow",
-                              "icon": "start"
-                      },
-                      {
-                              "id": "cmSuspect",
-                              "title": "疑似心肌病确认",
-                              "sub": "门诊/住院触发",
-                              "x": 240,
-                              "y": 230,
-                              "kind": "rule",
-                              "icon": "rule"
-                      },
-                      {
-                              "id": "cmExam",
-                              "title": "核心检查补齐",
-                              "sub": "心电/超声/BNP",
-                              "x": 480,
-                              "y": 230,
-                              "kind": "exam",
-                              "icon": "exam"
-                      },
-                      {
-                              "id": "cmExamDecision",
-                              "title": "检查完整判断",
-                              "sub": "满足/不满足",
-                              "x": 740,
-                              "y": 188,
-                              "branch": true,
-                              "decision": true,
-                              "kind": "therapy",
-                              "icon": "branch"
-                      },
-                      {
-                              "id": "cmSupplement",
-                              "title": "补齐核心检查",
-                              "sub": "缺失项提醒",
-                              "x": 740,
-                              "y": 455,
-                              "kind": "exam",
-                              "icon": "exam"
-                      },
-                      {
-                              "id": "cmClassification",
-                              "title": "分型辅助判断",
-                              "sub": "扩张/肥厚/限制",
-                              "x": 1020,
-                              "y": 230,
-                              "kind": "rule",
-                              "icon": "assess"
-                      },
-                      {
-                              "id": "cmClassDecision",
-                              "title": "分型证据判断",
-                              "sub": "满足/不满足",
-                              "x": 1280,
-                              "y": 188,
-                              "branch": true,
-                              "decision": true,
-                              "kind": "therapy",
-                              "icon": "branch"
-                      },
-                      {
-                              "id": "cmRiskDecision",
-                              "title": "高危风险判断",
-                              "sub": "满足/不满足",
-                              "x": 1550,
-                              "y": 188,
-                              "branch": true,
-                              "decision": true,
-                              "kind": "therapy",
-                              "icon": "branch"
-                      },
-                      {
-                              "id": "cmHighRisk",
-                              "title": "高危管理建议",
-                              "sub": "ICD/电生理/遗传",
-                              "x": 1810,
-                              "y": 120,
-                              "kind": "therapy",
-                              "icon": "therapy"
-                      },
-                      {
-                              "id": "cmTreatment",
-                              "title": "标准化治疗建议",
-                              "sub": "药物/抗凝/禁忌",
-                              "x": 1810,
-                              "y": 360,
-                              "kind": "therapy",
-                              "icon": "therapy"
-                      },
-                      {
-                              "id": "cmForm",
-                              "title": "评估表单提醒",
-                              "sub": "心功能/心律/猝死",
-                              "x": 2070,
-                              "y": 260,
-                              "kind": "record",
-                              "icon": "record"
-                      },
-                      {
-                              "id": "cmFollow",
-                              "title": "随访复查提醒",
-                              "sub": "3-6个月复查",
-                              "x": 2320,
-                              "y": 260,
-                              "kind": "follow",
-                              "icon": "follow"
-                      },
-                      {
-                              "id": "end",
-                              "title": "结束",
-                              "sub": "流程完成",
-                              "x": 2540,
-                              "y": 260,
-                              "kind": "flow",
-                              "icon": "end"
-                      }
-              ],
-              "lines": [
-                      {
-                              "id": "line-cm-start-suspect",
-                              "from": "start",
-                              "to": "cmSuspect",
-                              "label": "接收疑似心肌病",
-                              "operationRule": "cm-suspect-hit",
-                              "field": "cm_suspect_status",
-                              "operator": "=",
-                              "value": "HIT",
-                              "condition": "前置识别命中心肌病疑似候选，且医生确认关注。",
-                              "block": "未关注时只保留辅助诊疗提示。",
-                              "action": "进入疑似心肌病确认。"
-                      },
-                      {
-                              "id": "line-cm-suspect-exam",
-                              "from": "cmSuspect",
-                              "to": "cmExam",
-                              "label": "疑似已确认",
-                              "operationRule": "flow-node-complete",
-                              "field": "recommendation_status",
-                              "operator": "=",
-                              "value": "GENERATED",
-                              "condition": "疑似心肌病确认完成。",
-                              "block": "未确认时不进入核心检查补齐。",
-                              "action": "推荐补齐核心检查。"
-                      },
-                      {
-                              "id": "line-cm-exam-decision",
-                              "from": "cmExam",
-                              "to": "cmExamDecision",
-                              "label": "检查回填",
-                              "operationRule": "cm-core-exam-complete",
-                              "field": "cm_exam_status",
-                              "operator": "=",
-                              "value": "COMPLETE",
-                              "condition": "核心检查结果已回填。",
-                              "block": "核心检查未回填时保留缺失项提醒。",
-                              "action": "进入检查完整判断。"
-                      },
-                      {
-                              "id": "line-cm-exam-ok",
-                              "from": "cmExamDecision",
-                              "to": "cmClassification",
-                              "label": "满足：检查完整",
-                              "operationRule": "cm-core-exam-complete",
-                              "field": "cm_exam_status",
-                              "operator": "=",
-                              "value": "COMPLETE",
-                              "condition": "心电图、超声、BNP/NT-proBNP、肌钙蛋白等检查完整。",
-                              "block": "缺失时不进入分型辅助判断。",
-                              "action": "进入分型辅助判断。"
-                      },
-                      {
-                              "id": "line-cm-exam-missing",
-                              "from": "cmExamDecision",
-                              "to": "cmSupplement",
-                              "label": "不满足：补齐检查",
-                              "risk": true,
-                              "operationRule": "cm-core-exam-missing",
-                              "field": "cm_exam_status",
-                              "operator": "=",
-                              "value": "MISSING",
-                              "condition": "核心检查存在缺失。",
-                              "block": "缺失项未补齐前不进入分型判断。",
-                              "action": "展示补齐检查提醒。"
-                      },
-                      {
-                              "id": "line-cm-supplement-exam",
-                              "from": "cmSupplement",
-                              "to": "cmExam",
-                              "label": "补齐后回填",
-                              "operationRule": "supplement-re-evaluate",
-                              "field": "supplement_status",
-                              "operator": "=",
-                              "value": "COMPLETED",
-                              "condition": "缺失检查已补齐。",
-                              "block": "未补齐时停留当前节点。",
-                              "action": "回到核心检查补齐节点重新校验。"
-                      },
-                      {
-                              "id": "line-cm-class-decision",
-                              "from": "cmClassification",
-                              "to": "cmClassDecision",
-                              "label": "生成分型建议",
-                              "operationRule": "cm-classification-confirmed",
-                              "field": "cm_classification_status",
-                              "operator": "=",
-                              "value": "CONFIRMED",
-                              "condition": "分型辅助判断输出明确分型或待排方向。",
-                              "block": "证据不足时回到补齐检查。",
-                              "action": "进入分型证据判断。"
-                      },
-                      {
-                              "id": "line-cm-class-ok",
-                              "from": "cmClassDecision",
-                              "to": "cmRiskDecision",
-                              "label": "满足：分型明确",
-                              "operationRule": "cm-classification-confirmed",
-                              "field": "cm_classification_status",
-                              "operator": "=",
-                              "value": "CONFIRMED",
-                              "condition": "扩张型、肥厚型、限制型等分型方向明确。",
-                              "block": "分型证据不足时不进入风险评估。",
-                              "action": "进入高危风险判断。"
-                      },
-                      {
-                              "id": "line-cm-class-pending",
-                              "from": "cmClassDecision",
-                              "to": "cmSupplement",
-                              "label": "不满足：继续补证据",
-                              "risk": true,
-                              "operationRule": "cm-classification-pending",
-                              "field": "cm_classification_status",
-                              "operator": "=",
-                              "value": "PENDING",
-                              "condition": "分型证据不足，需补充心脏磁共振或动态心电图。",
-                              "block": "未补充证据时不进入治疗建议。",
-                              "action": "进入检查补齐提醒。"
-                      },
-                      {
-                              "id": "line-cm-risk-high",
-                              "from": "cmRiskDecision",
-                              "to": "cmHighRisk",
-                              "label": "满足：高危",
-                              "orange": true,
-                              "operationRule": "cm-high-risk",
-                              "field": "cm_risk_level",
-                              "operator": "=",
-                              "value": "HIGH",
-                              "condition": "命中晕厥、室速、低射血分数或猝死家族史等高危条件。",
-                              "block": "高危依据未确认时提示人工确认。",
-                              "action": "展示高危管理建议。"
-                      },
-                      {
-                              "id": "line-cm-risk-standard",
-                              "from": "cmRiskDecision",
-                              "to": "cmTreatment",
-                              "label": "不满足：常规风险",
-                              "operationRule": "cm-standard-risk",
-                              "field": "cm_risk_level",
-                              "operator": "=",
-                              "value": "STANDARD",
-                              "condition": "未命中高危条件。",
-                              "block": "缺少风险评估资料时不直接进入治疗建议。",
-                              "action": "进入标准化治疗建议。"
-                      },
-                      {
-                              "id": "line-cm-high-treatment",
-                              "from": "cmHighRisk",
-                              "to": "cmTreatment",
-                              "label": "风险处理后治疗",
-                              "operationRule": "cm-treatment-generated",
-                              "field": "cm_treatment_status",
-                              "operator": "=",
-                              "value": "GENERATED",
-                              "condition": "高危管理建议已展示。",
-                              "block": "高危风险未提示时不进入治疗确认。",
-                              "action": "汇总到标准化治疗建议。"
-                      },
-                      {
-                              "id": "line-cm-treatment-form",
-                              "from": "cmTreatment",
-                              "to": "cmForm",
-                              "label": "治疗建议已生成",
-                              "operationRule": "cm-treatment-generated",
-                              "field": "cm_treatment_status",
-                              "operator": "=",
-                              "value": "GENERATED",
-                              "condition": "治疗建议、禁忌提醒和随访建议已生成。",
-                              "block": "治疗建议未生成时停留当前节点。",
-                              "action": "展示评估表单提醒。"
-                      },
-                      {
-                              "id": "line-cm-form-follow",
-                              "from": "cmForm",
-                              "to": "cmFollow",
-                              "label": "表单提醒已生成",
-                              "operationRule": "cm-form-reminder-generated",
-                              "field": "cm_form_status",
-                              "operator": "=",
-                              "value": "REMINDER_GENERATED",
-                              "condition": "心功能、心律失常、猝死风险评估表提醒已生成。",
-                              "block": "默认不阻断主流程。",
-                              "action": "进入随访复查提醒。"
-                      },
-                      {
-                              "id": "line-cm-follow-end",
-                              "from": "cmFollow",
-                              "to": "end",
-                              "label": "随访任务已生成",
-                              "operationRule": "cm-followup-generated",
-                              "field": "cm_followup_status",
-                              "operator": "=",
-                              "value": "GENERATED",
-                              "condition": "3至6个月复查和用药随访任务已生成。",
-                              "block": "存在未处理高危风险时提示暂缓结束。",
-                              "action": "标记心肌病流程完成。"
-                      }
-              ],
-              "nodeRuleSelections": {
-                      "cmSuspect": 12,
-                      "cmExam": 13,
-                      "cmExamDecision": 13,
-                      "cmSupplement": 13,
-                      "cmClassification": 14,
-                      "cmClassDecision": 14,
-                      "cmRiskDecision": 15,
-                      "cmHighRisk": 15,
-                      "cmTreatment": 16,
-                      "cmForm": 17,
-                      "cmFollow": 17
-              },
-              "nodeSourceSelections": {
-                      "cmSuspect": "规则推荐",
-                      "cmExam": "规则推荐",
-                      "cmExamDecision": "规则推荐",
-                      "cmSupplement": "规则推荐",
-                      "cmClassification": "规则推荐",
-                      "cmClassDecision": "规则推荐",
-                      "cmRiskDecision": "规则推荐",
-                      "cmHighRisk": "规则推荐",
-                      "cmTreatment": "规则推荐",
-                      "cmForm": "规则推荐",
-                      "cmFollow": "Dify 智能体"
-              },
-              "nodeAgentSelections": {
-                      "cmClassification": "心肌病分型与风险评估智能体",
-                      "cmFollow": "心肌病随访管理智能体"
-              },
-              "nodeOutputSelections": {
-                      "cmSuspect": "cm_suspect_status, suspect_evidence, risk_tags",
-                      "cmExam": "cm_exam_status, recommended_exams, missing_items",
-                      "cmExamDecision": "cm_exam_status, missing_items",
-                      "cmSupplement": "supplement_status, missing_items",
-                      "cmClassification": "cm_classification_status, subtype, supporting_evidence, missing_items",
-                      "cmClassDecision": "cm_classification_status, subtype, missing_items",
-                      "cmRiskDecision": "cm_risk_level, risk_flags, missing_items",
-                      "cmHighRisk": "cm_risk_level, high_risk_actions, missing_items",
-                      "cmTreatment": "cm_treatment_status, recommended_action, contraindications, followup_items",
-                      "cmForm": "cm_form_status, pending_forms, overdue_forms",
-                      "cmFollow": "cm_followup_status, followup_tasks"
-              },
-              "nodeDisplaySelections": {
-                      "cmSuspect": "展示心肌病疑似候选、命中依据和风险背景。",
-                      "cmExam": "展示核心检查缺失项和推荐补齐理由。",
-                      "cmExamDecision": "展示核心检查是否完整。",
-                      "cmSupplement": "展示缺失检查项目和回填入口。",
-                      "cmClassification": "展示扩张型、肥厚型、限制型等辅助分型建议。",
-                      "cmClassDecision": "展示分型证据是否足够。",
-                      "cmRiskDecision": "展示是否命中高危风险。",
-                      "cmHighRisk": "展示 ICD、电生理、遗传咨询、心脏磁共振等高危管理建议。",
-                      "cmTreatment": "展示药物治疗、禁忌提醒、抗凝评估和随访建议。",
-                      "cmForm": "展示心功能、心律失常、猝死风险评估表单状态。",
-                      "cmFollow": "展示3至6个月复查和用药随访任务。"
-              },
-              "nodeRemarks": {
-                      "start": "记录门诊或住院触发来源，不调用诊疗规则。",
-                      "end": "记录心肌病流程完成状态。",
-                      "cmExamDecision": "判断核心检查是否完整，默认出口为满足/不满足。",
-                      "cmClassDecision": "判断分型证据是否足够，默认出口为满足/不满足。",
-                      "cmRiskDecision": "判断是否命中心肌病高危风险，默认出口为满足/不满足。"
-              },
-              "selectedNode": "start"
-      }
+      assessment: "规则推荐",
+      reperfusionForm: "规则推荐",
+      pciAdvice: "规则推荐",
+      lysisAdvice: "规则推荐",
+      medicalAdvice: "规则推荐",
+      supplement: "规则推荐",
+      confirm: "Dify 智能体",
+      periop: "规则推荐",
+      periopForm: "规则推荐",
+      medication: "规则推荐",
+      medicationForm: "规则推荐",
+      qc: "规则推荐",
+      complicationForm: "规则推荐",
+      follow: "Dify 智能体"
     };
 
     function $(selector, root = document) {
@@ -4836,59 +3120,6 @@
 
     function $all(selector, root = document) {
       return Array.from(root.querySelectorAll(selector));
-    }
-
-
-    function replaceMutableMap(target, source = {}) {
-      Object.keys(target).forEach(key => delete target[key]);
-      Object.assign(target, source);
-    }
-
-    function refreshDesignerHeader() {
-      const template = designerTemplates[activeDesignerFlowKey] || designerTemplates.ami;
-      const meta = template.meta || designerTemplates.ami.meta;
-      const pageTitle = $("#designerPageTitle");
-      const pageDesc = $("#designerPageDesc");
-      const canvasTitle = $("#designerCanvasTitle");
-      const canvasNote = $("#designerCanvasNote");
-      if (pageTitle) pageTitle.textContent = meta.title;
-      if (pageDesc) pageDesc.textContent = meta.desc;
-      if (canvasTitle) canvasTitle.textContent = meta.canvasTitle;
-      if (canvasNote) canvasNote.textContent = meta.canvasNote;
-    }
-
-    function applyLineOperationRules(defaults = {}) {
-      designerLines.forEach(line => {
-        line.operationRule = defaults[line.id] || line.operationRule || "";
-        const rule = getConnectionRule(line.operationRule);
-        line.ruleName = rule?.label || line.ruleName || "";
-        if (rule) {
-          line.field = rule.field;
-          line.operator = rule.operator;
-          line.value = rule.value;
-        }
-      });
-    }
-
-    function loadDesignerFlow(flowKey = "ami") {
-      const template = designerTemplates[flowKey] || designerTemplates.ami;
-      activeDesignerFlowKey = designerTemplates[flowKey] ? flowKey : "ami";
-      designerNodes.splice(0, designerNodes.length, ...template.nodes.map(item => ({ ...item })));
-      designerLines.splice(0, designerLines.length, ...template.lines.map(item => ({ ...item })));
-      replaceMutableMap(nodeRuleSelections, template.nodeRuleSelections || {});
-      replaceMutableMap(nodeSourceSelections, template.nodeSourceSelections || {});
-      replaceMutableMap(nodeAgentSelections, template.nodeAgentSelections || {});
-      replaceMutableMap(nodeOutputSelections, template.nodeOutputSelections || {});
-      replaceMutableMap(nodeDisplaySelections, template.nodeDisplaySelections || {});
-      replaceMutableMap(nodeRemarks, template.nodeRemarks || {});
-      applyLineOperationRules(template.lineOperationRuleDefaults || {});
-      selectedNode = template.selectedNode || "start";
-      selectedLine = "";
-      connectMode = false;
-      connectSource = "";
-      customNodeSeq = 0;
-      customLineSeq = 0;
-      refreshDesignerHeader();
     }
 
     function escapeAttr(value) {
@@ -4932,57 +3163,6 @@
       showToast.timer = setTimeout(() => toast.classList.remove("show"), 2200);
     }
 
-    function renderKgDetail(key = "diagnosis") {
-      const detail = kgDetails[key] || kgDetails.diagnosis;
-      const panel = $("#kgDetailPanel");
-      const badge = $("#kgDetailBadge");
-      const titleLabel = $("#kgDetailTitleLabel");
-      if (!panel || !badge || !titleLabel) return;
-      titleLabel.textContent = detail.title;
-      badge.textContent = detail.badge;
-      $all("[data-kg-card]").forEach(card => {
-        card.classList.toggle("active", card.dataset.kgCard === key);
-      });
-      const chainHtml = detail.chain.map((node, index) => `
-        <span class="kg-node">${node}</span>
-        ${detail.edges[index] ? `<span class="kg-edge">${detail.edges[index]}</span>` : ""}
-      `).join("");
-      panel.innerHTML = `
-        <div class="boundary" style="margin-bottom:10px">当前结构：${detail.title}</div>
-        <p style="margin:0;line-height:1.8;color:#42566f">${detail.desc}</p>
-        <div class="kg-chain">${chainHtml}</div>
-        <div class="schema-code">${detail.syntax}</div>
-        <div class="kg-detail-list">
-          <div><strong>AMI示例：</strong>${detail.example}</div>
-          <div><strong>对辅助诊疗的作用：</strong>${detail.value}</div>
-        </div>
-      `;
-      renderKgApplication(detail);
-    }
-
-    function renderKgApplication(detail) {
-      const panel = $("#kgApplicationPanel");
-      const badge = $("#kgApplicationBadge");
-      if (!panel || !badge || !detail.application) return;
-      badge.textContent = detail.badge;
-      const items = [
-        ["使用场景", detail.application.scene],
-        ["读取内容", detail.application.read],
-        ["CDSS落点", detail.application.landing],
-        ["配置边界", detail.application.boundary]
-      ];
-      panel.innerHTML = `
-        <div class="timeline">
-          ${items.map((item, index) => `
-            <div class="timeline-step">
-              <span class="step-index">${index + 1}</span>
-              <div><strong>${item[0]}：</strong>${item[1]}</div>
-            </div>
-          `).join("")}
-        </div>
-      `;
-    }
-
     function showPage(page) {
       currentPage = page;
       $all(".page").forEach(el => el.classList.remove("active"));
@@ -4990,7 +3170,6 @@
       if (target) target.classList.add("active");
       const titleMap = {
         home: "首页",
-        knowledgeGraph: "专科知识图谱",
         rules: "规则管理",
         framework: "专病诊疗流程框架管理",
         designer: "流程设计器",
@@ -5000,54 +3179,18 @@
       $all("[data-page-link]").forEach(btn => {
         btn.classList.toggle("active", btn.dataset.pageLink === page);
       });
-      if (page === "knowledgeGraph") renderKgDetail();
       if (page === "rules") renderRules();
       if (page === "framework") renderFlows();
       if (page === "designer") renderDesigner();
       if (page === "simulation") renderRecommendations();
     }
 
-    function getRuleDisease(rule) {
-      return rule.name.includes("心肌病") ? "cardiomyopathy" : "ami";
-    }
-
-    function getRuleDiseaseLabel(rule) {
-      return getRuleDisease(rule) === "cardiomyopathy" ? "心肌病" : "AMI";
-    }
-
-    function getRulesByCurrentDisease() {
-      return rules.filter(rule => currentRuleDisease === "all" || getRuleDisease(rule) === currentRuleDisease);
-    }
-
-    function getRuleSimulationInput(rule) {
-      if (getRuleDisease(rule) === "cardiomyopathy") {
-        return "胸闷气促、活动后呼吸困难，既往家族性心肌病史；报告回填左室射血分数降低、室间隔增厚或动态心电图异常。";
-      }
-      return "胸痛2小时，出汗，恶心呕吐，高血压，糖尿病；报告回填 ST段抬高、肌钙蛋白升高。";
-    }
-
-    function getRuleSimulationResult(rule) {
-      if (getRuleDisease(rule) === "cardiomyopathy") {
-        if (rule.category === "suspect") return "输出心肌病疑似疾病、命中依据和风险背景。";
-        if (rule.category === "exam") return "输出心电图、超声心动图、BNP或NT-proBNP、肌钙蛋白等核心检查补齐建议。";
-        if (rule.category === "diagnosis") return "输出扩张型、肥厚型、限制型待排或证据不足提示。";
-        if (rule.category === "pathway") return "输出高危风险状态、缺失评估项和进一步检查建议。";
-        if (rule.category === "therapy") return "输出心衰规范药物、流出道梗阻禁忌、ICD评估或抗凝评估提示。";
-        return "输出心功能、心律失常、猝死风险评估表单和随访复查提醒。";
-      }
-      if (rule.id < 4) return "输出疑似疾病、推荐检查或鉴别方向。";
-      if (rule.id < 6) return "输出分型和流程承接候选。";
-      if (rule.id < 9) return "输出专项评估、治疗建议或质控提醒。";
-      return "输出术前、术中、术后围术期提醒。";
-    }
-
     function renderFilters() {
       const wrap = $("#ruleFilters");
-      const diseaseRules = getRulesByCurrentDisease();
       wrap.innerHTML = filters.map(filter => `
         <button class="filter-btn ${currentRuleFilter === filter.key ? "active" : ""}" data-filter="${filter.key}">
           <span>${filter.label}</span>
-          <span class="badge">${filter.key === "all" ? diseaseRules.length : diseaseRules.filter(rule => rule.category === filter.key).length}</span>
+          <span class="badge">${filter.key === "all" ? rules.length : rules.filter(rule => rule.category === filter.key).length}</span>
         </button>
       `).join("");
       $all("[data-filter]", wrap).forEach(btn => {
@@ -5062,7 +3205,7 @@
     function renderRules() {
       renderFilters();
       const search = ($("#ruleSearch")?.value || "").trim();
-      const visible = getRulesByCurrentDisease().filter(rule => {
+      const visible = rules.filter(rule => {
         const byFilter = currentRuleFilter === "all" || rule.category === currentRuleFilter;
         const text = `${rule.name}${rule.stage}${rule.logic}${rule.fields}`;
         const bySearch = !search || text.includes(search);
@@ -5076,7 +3219,7 @@
               <div class="rule-meta">
                 <span class="badge">${rule.stage}</span>
                 <span class="badge green">已启用</span>
-                <span class="badge orange">${getRuleDiseaseLabel(rule)}</span>
+                <span class="badge orange">AMI</span>
               </div>
               <p class="rule-logic">${rule.logic}</p>
               <div class="rule-usage">原型引用：${getRuleUsage(rule.id).simulation}；设计器：${getRuleUsage(rule.id).designer}</div>
@@ -5096,8 +3239,8 @@
               <div class="detail-box"><strong>设计器引用</strong>${getRuleUsage(rule.id).designer}</div>
               <div class="detail-box"><strong>模拟页引用</strong>${getRuleUsage(rule.id).simulation}</div>
               <div class="detail-box"><strong>连接线/状态字段</strong>${getRuleUsage(rule.id).connector}</div>
-              <div class="detail-box"><strong>模拟输入</strong>${getRuleSimulationInput(rule)}</div>
-              <div class="detail-box"><strong>模拟结果</strong>${getRuleSimulationResult(rule)}</div>
+              <div class="detail-box"><strong>模拟输入</strong>胸痛2小时，出汗，恶心呕吐，高血压，糖尿病；报告回填 ST段抬高、肌钙蛋白升高。</div>
+              <div class="detail-box"><strong>模拟结果</strong>${rule.id < 4 ? "输出疑似疾病、推荐检查或鉴别方向。" : rule.id < 6 ? "输出分型和流程承接候选。" : rule.id < 9 ? "输出专项评估、治疗建议或质控提醒。" : "输出术前、术中、术后围术期提醒。"}</div>
             </div>
           </div>
         </article>
@@ -5265,12 +3408,10 @@
       `).join("");
       $all("[data-open-designer]").forEach(btn => {
         btn.addEventListener("click", () => {
-          const flow = flows[Number(btn.dataset.openDesigner)];
-          if (flow?.designerKey) {
-            loadDesignerFlow(flow.designerKey);
+          if (Number(btn.dataset.openDesigner) === 0) {
             showPage("designer");
           } else {
-            showToast("该专病流程尚未配置完整，当前原型暂未开放设计器。");
+            showToast("该专病流程尚未配置完整，当前原型仅打开 AMI 设计器。");
           }
         });
       });
@@ -5622,7 +3763,7 @@
       }
 
       const componentMap = {
-        "菱形分支节点": { title: "判断节点", sub: "满足/不满足分支", kind: "therapy", icon: "branch", branch: true, decision: true },
+        "菱形分支节点": { title: "结果分流", sub: "不判断 · 线规则分流", kind: "therapy", icon: "branch", branch: true },
         "通用业务组件": { title: "业务组件", sub: "待配置推荐来源", kind: "rule", icon: "component" },
         "诊疗规则组件": { title: "诊疗规则", sub: "待配置规则或智能体", kind: "rule", icon: "rule" },
         "专项检查组件": { title: "专项检查", sub: "待配置检查推荐", kind: "exam", icon: "exam" },
@@ -5649,8 +3790,7 @@
         y: 600 + (customNodeSeq % 3) * 22,
         kind: template.kind,
         icon: template.icon,
-        branch: Boolean(template.branch),
-        decision: Boolean(template.decision)
+        branch: Boolean(template.branch)
       };
       designerNodes.push(node);
       nodeSourceSelections[nodeId] = template.branch ? "" : "未配置";
@@ -5675,7 +3815,6 @@
       const selectedRuleId = nodeRuleSelections[selectedNode] || "";
       const isStartEnd = ["start", "end"].includes(node.id);
       const isBranch = Boolean(node.branch);
-      const isDecision = Boolean(node.decision);
       const canSelectRule = !isStartEnd && !isBranch;
       const source = nodeSourceSelections[selectedNode] || (canSelectRule ? "未配置" : "");
       const isDify = source === "Dify 智能体";
@@ -5701,22 +3840,7 @@
             <textarea class="prop-textarea" id="nodeRemarkInput">${remark}</textarea>
           </div>
         ` : isBranch ? `
-          <div class="designer-inline-note">判断节点用于承接上游节点输出的状态字段，形成满足/不满足分支；出口连接线可继续配置通行、阻断、回流或人工确认条件。</div>
-          ${isDecision ? `
-          <div class="prop-item">
-            <strong>绑定判断规则</strong>
-            <div class="select-icon-row">
-              <select class="select" id="nodeDecisionRuleSelect" style="width:100%">
-                <option value="" ${!selectedRuleId ? "selected" : ""}>不绑定判断规则</option>
-                ${rules.map(rule => `<option value="${rule.id}" ${Number(selectedRuleId) === rule.id ? "selected" : ""}>规则${rule.id}：${rule.name}</option>`).join("")}
-              </select>
-              ${selectedRuleId
-                ? `<a href="javascript:void(0)" class="icon-link" id="viewDecisionRuleIconLink" title="查看规则详情" aria-label="查看规则详情">ⓘ</a>`
-                : `<span class="icon-link disabled" title="请先选择规则">ⓘ</span>`}
-            </div>
-            <span class="muted mini">判断节点只输出“满足/不满足”状态；出口连接线承接分支结果，也可继续配置通行条件。</span>
-          </div>
-          ` : ""}
+          <div class="designer-inline-note">分支展示节点不调用规则，也不判断临床结果。上游业务组件先一次性输出状态，出口连接线分别绑定操作规则并读取该状态。</div>
           <div class="prop-item">
             <strong>分支备注</strong>
             <textarea class="prop-textarea" id="nodeRemarkInput">${remark}</textarea>
@@ -5823,24 +3947,6 @@
         }
       }
       if (isBranch) {
-        const decisionRuleSelect = $("#nodeDecisionRuleSelect");
-        if (decisionRuleSelect) {
-          decisionRuleSelect.addEventListener("change", event => {
-            nodeRuleSelections[selectedNode] = event.target.value ? Number(event.target.value) : 0;
-            const rule = rules.find(item => item.id === Number(event.target.value));
-            showToast(rule ? `已为判断节点绑定规则：${rule.name}` : "已清空判断节点规则。");
-          });
-        }
-        const decisionRuleLink = $("#viewDecisionRuleIconLink");
-        if (decisionRuleLink) {
-          decisionRuleLink.addEventListener("click", () => {
-            if (!nodeRuleSelections[selectedNode]) {
-              showToast("请先选择要查看的规则。");
-              return;
-            }
-            openRuleDetail(nodeRuleSelections[selectedNode]);
-          });
-        }
         $all("[data-select-outgoing-line]").forEach(btn => {
           btn.addEventListener("click", () => {
             selectedLine = btn.dataset.selectOutgoingLine;
@@ -5860,8 +3966,6 @@
         if (sourceInput) nodeSourceSelections[node.id] = sourceInput.value;
         const agentInput = $("#nodeAgentSelect");
         if (agentInput) nodeAgentSelections[node.id] = agentInput.value;
-        const decisionRuleInput = $("#nodeDecisionRuleSelect");
-        if (decisionRuleInput) nodeRuleSelections[node.id] = decisionRuleInput.value ? Number(decisionRuleInput.value) : 0;
         const outputInput = $("#nodeOutputInput");
         if (outputInput) nodeOutputSelections[node.id] = outputInput.value.trim();
         const displayInput = $("#nodeDisplayInput");
@@ -5901,16 +4005,16 @@
           <span class="muted mini">${fromNode?.title || line.from} → ${toNode?.title || line.to}</span>
         </div>
         <div class="prop-item">
-          <strong>连接线通行规则</strong>
+          <strong>绑定操作规则</strong>
           <select class="select" id="lineRuleSelect" style="width:100%">
-            <option value="" ${!selectedOperationRule ? "selected" : ""}>未绑定通行规则</option>
+            <option value="" ${!selectedOperationRule ? "selected" : ""}>未绑定操作规则</option>
             ${connectionRuleOptions.map(item => `<option value="${item.id}" ${selectedOperationRule === item.id ? "selected" : ""}>${item.label}</option>`).join("")}
           </select>
-          <span class="muted mini">可为空表示仅承接判断节点出口；配置后用于控制通行、阻断、回流或人工确认。</span>
+          <span class="muted mini">新增连线默认未绑定，配置后才参与状态分支、阻断和跳转。</span>
         </div>
         <div class="prop-item">
           <div class="line-rule-summary" id="lineRuleSummary">
-            <strong>通行条件</strong>
+            <strong>规则判断</strong>
             <div>${ruleCondition}</div>
             <div class="mini muted">${selectedRule ? selectedRule.description : "请从下拉框选择连接线操作规则。"}</div>
           </div>
@@ -5938,8 +4042,8 @@
         const summary = $("#lineRuleSummary");
         if (summary) {
           summary.innerHTML = rule
-            ? `<strong>通行条件</strong><div>${rule.field} ${rule.operator} ${rule.value}</div><div class="mini muted">${rule.description}</div>`
-            : `<strong>通行条件</strong><div>未绑定通行规则</div><div class="mini muted">可为空表示仅承接判断节点出口。</div>`;
+            ? `<strong>规则判断</strong><div>${rule.field} ${rule.operator} ${rule.value}</div><div class="mini muted">${rule.description}</div>`
+            : `<strong>规则判断</strong><div>未绑定操作规则</div><div class="mini muted">请从下拉框选择连接线操作规则。</div>`;
         }
       };
       $("#lineRuleSelect").addEventListener("change", event => {
@@ -6089,18 +4193,7 @@
       if (el) el.value = value;
     }
 
-    const simulationFields = ["chiefComplaint","presentHistory","pastHistory","personalHistory","familyHistory","allergyHistory","physicalExam","specialExam","assistantExam","mainDiagnosis","onsetTime","subDiagnosis1","subStatus1","subDiagnosis2","subStatus2","treatmentText","perioperativeText"];
-    const simulationStepOrder = ["empty", "case", "suspect", "focused", "reports", "pathway", "periop"];
-
-    function simulationDiseaseName() {
-      return activeSimulationDisease === "cardiomyopathy" ? "心肌病" : "AMI";
-    }
-
-    function clearSimulationFields() {
-      simulationFields.forEach(id => setField(id, ""));
-    }
-
-    function fillAmiCaseFields() {
+    function loadCase() {
       setField("patientName", "刘大虾");
       setField("dept", "心血管内科");
       setField("chiefComplaint", "胸痛2小时");
@@ -6110,86 +4203,21 @@
       setField("familyHistory", "父亲50岁心梗病史。");
       setField("allergyHistory", "无阿司匹林过敏，无造影剂过敏。");
       setField("physicalExam", "血压160/95mmHg，心率98次/分，神志清楚，胸前区不适。");
+      setField("specialExam", "");
+      setField("assistantExam", "");
+      setField("mainDiagnosis", "");
       setField("onsetTime", "2小时前");
-    }
-
-    function fillCardiomyopathyCaseFields() {
-      setField("patientName", "刘大虾");
-      setField("dept", "心血管内科");
-      setField("chiefComplaint", "胸闷、气促1个月，加重3天");
-      setField("presentHistory", "活动后呼吸困难，运动耐量下降，伴心悸、夜间阵发性呼吸困难，偶有黑朦。");
-      setField("pastHistory", "高血压5年，间断服药；无明确冠心病史。");
-      setField("personalHistory", "偶饮酒，无长期大量饮酒史。");
-      setField("familyHistory", "叔父年轻时猝死，家族中有心肌病病史。");
-      setField("allergyHistory", "无特殊药物过敏史。");
-      setField("physicalExam", "血压138/86mmHg，心率96次/分，双下肢轻度水肿，心尖部闻及收缩期杂音。");
-      setField("onsetTime", "1个月前");
-    }
-
-    function fillAmiReportFields() {
-      setField("specialExam", "心电图：Ⅱ、Ⅲ、aVF 导联 ST段抬高；提示下壁急性心肌梗死可能。");
-      setField("assistantExam", "心肌肌钙蛋白T：0.42 ng/mL，高于参考上限；肌酸激酶同工酶 CK-MB：升高；超声心动图：下壁室壁运动减弱；血肌酐：86 μmol/L；LDL-C：3.2 mmol/L。");
-      setField("mainDiagnosis", "急性 ST 段抬高型心肌梗死（STEMI）");
-      setField("subDiagnosis1", "主动脉夹层待排");
-      setField("subStatus1", "需完善主动脉 CTA");
-      setField("subDiagnosis2", "肺栓塞待排");
-      setField("subStatus2", "需完善肺动脉 CTA");
-    }
-
-    function fillCardiomyopathyReportFields() {
-      setField("specialExam", "心电图：左室肥厚伴复极异常；动态心电图：可见非持续性室性心动过速。");
-      setField("assistantExam", "超声心动图：室间隔厚度18mm，左室流出道压差45mmHg，左室射血分数62%；NT-proBNP：1280 pg/mL；心肌肌钙蛋白轻度升高；肝肾功能、电解质已回填。");
-      setField("mainDiagnosis", "肥厚型心肌病倾向");
-      setField("subDiagnosis1", "扩张型心肌病待排");
-      setField("subStatus1", "超声未见左心室明显扩大，证据不足");
-      setField("subDiagnosis2", "限制型心肌病待排");
-      setField("subStatus2", "建议结合心脏磁共振进一步评估");
-    }
-
-    function fillAmiPathwayFields() {
-      setField("treatmentText", "已承接 AMI 专病流程，当前定位：再灌注评估阶段；建议优先评估急诊经皮冠状动脉介入治疗（PCI），同步评估抗血小板、抗凝、调脂治疗和出血风险。");
-    }
-
-    function fillCardiomyopathyPathwayFields() {
-      setField("treatmentText", "已承接心肌病专病流程，当前定位：分型确认与高危风险评估；建议结合超声心动图、动态心电图、NT-proBNP、猝死家族史和晕厥史，输出高危风险和标准化治疗建议。");
-    }
-
-    function fillAmiPerioperativeFields() {
-      setField("perioperativeText", "术前：补齐介入治疗术前评估、造影剂过敏史、肾功能、凝血功能、出血风险评估和知情同意记录；术中：关注罪犯血管、血流恢复、支架植入、低血压、恶性心律失常、无复流和术中出血；术后：观察穿刺点出血、再发胸痛、心律失常、心力衰竭、低血压和肾功能变化。");
-    }
-
-    function fillCardiomyopathyFollowupFields() {
-      setField("perioperativeText", "评估表单：提醒补齐心功能评估表、心律失常风险评估表、猝死风险评估表；随访：建议3至6个月复查超声心动图、心电图、动态心电图、肝肾功能、电解质和用药依从性。");
-    }
-
-    function fillDiseaseCaseFields() {
-      if (activeSimulationDisease === "cardiomyopathy") fillCardiomyopathyCaseFields();
-      else fillAmiCaseFields();
-    }
-
-    function fillDiseaseReportFields() {
-      if (activeSimulationDisease === "cardiomyopathy") fillCardiomyopathyReportFields();
-      else fillAmiReportFields();
-    }
-
-    function fillDiseasePathwayFields() {
-      if (activeSimulationDisease === "cardiomyopathy") fillCardiomyopathyPathwayFields();
-      else fillAmiPathwayFields();
-    }
-
-    function fillDiseaseFinalFields() {
-      if (activeSimulationDisease === "cardiomyopathy") fillCardiomyopathyFollowupFields();
-      else fillAmiPerioperativeFields();
-    }
-
-    function loadCase() {
-      clearSimulationFields();
-      fillDiseaseCaseFields();
+      setField("subDiagnosis1", "");
+      setField("subStatus1", "");
+      setField("subDiagnosis2", "");
+      setField("subStatus2", "");
+      setField("treatmentText", "");
+      setField("perioperativeText", "");
       simulationState = "case";
       assistFocus = "suspect";
       renderRecommendations();
       markChangedFields(["chiefComplaint", "presentHistory", "pastHistory", "personalHistory", "familyHistory", "allergyHistory", "physicalExam"], "本步新增/变化：主诉、现病史、既往史、个人史、家族史、过敏史、体格检查已加载。");
-      showToast(`${simulationDiseaseName()} 模拟案例已加载。`);
+      showToast("AMI 模拟病案已加载。");
     }
 
     function generateSuspects() {
@@ -6197,7 +4225,7 @@
       simulationState = "suspect";
       assistFocus = "suspect";
       renderRecommendations();
-      showToast(`已根据主诉、现病史和风险背景生成${simulationDiseaseName()}疑似疾病候选。`);
+      showToast("已根据主诉、现病史和风险背景生成疑似疾病候选。");
     }
 
     function focusSuspectDisease() {
@@ -6206,14 +4234,18 @@
       assistFocus = "exam";
       renderRecommendations();
       clearChangeHint();
-      showToast(activeSimulationDisease === "cardiomyopathy"
-        ? "医生已关注心肌病疑似疾病，系统开始推荐核心检查和检验。"
-        : "医生已关注 ACS/AMI 疑似疾病，系统开始推荐初筛检查、检验和鉴别方向。");
+      showToast("医生已关注 ACS/AMI 疑似疾病，系统开始推荐初筛检查、检验和鉴别方向。");
     }
 
     function fillReports() {
       if (simulationState === "empty") loadCase();
-      fillDiseaseReportFields();
+      setField("specialExam", "心电图：Ⅱ、Ⅲ、aVF 导联 ST段抬高；提示下壁急性心肌梗死可能。");
+      setField("assistantExam", "心肌肌钙蛋白T：0.42 ng/mL，高于参考上限；肌酸激酶同工酶 CK-MB：升高；超声心动图：下壁室壁运动减弱；血肌酐：86 μmol/L；LDL-C：3.2 mmol/L。");
+      setField("mainDiagnosis", "急性 ST 段抬高型心肌梗死（STEMI）");
+      setField("subDiagnosis1", "主动脉夹层待排");
+      setField("subStatus1", "需完善主动脉 CTA");
+      setField("subDiagnosis2", "肺栓塞待排");
+      setField("subStatus2", "需完善肺动脉 CTA");
       simulationState = "reports";
       assistFocus = "diagnosis";
       renderRecommendations();
@@ -6223,74 +4255,22 @@
 
     function enterPathway() {
       if (simulationState === "empty" || simulationState === "case" || simulationState === "suspect" || simulationState === "focused") fillReports();
-      fillDiseasePathwayFields();
+      setField("treatmentText", "已承接 AMI 专病流程，当前定位：再灌注评估阶段；建议优先评估急诊经皮冠状动脉介入治疗（PCI），同步评估抗血小板、抗凝、调脂治疗和出血风险。");
       simulationState = "pathway";
       assistFocus = "pathway";
       renderRecommendations();
       markChangedFields(["treatmentText"], "本步新增/变化：处置内容已生成专病流程、治疗方案和质控提醒。", "output-change");
-      showToast(activeSimulationDisease === "cardiomyopathy"
-        ? "已创建心肌病专病流程候选，并进入高危风险评估与治疗建议阶段。"
-        : "已创建 AMI 专病流程候选，并进入再灌注评估阶段。");
+      showToast("已创建 AMI 专病流程候选，并进入再灌注评估阶段。");
     }
 
     function enterPerioperative() {
       if (simulationState !== "pathway" && simulationState !== "periop") enterPathway();
-      fillDiseaseFinalFields();
+      setField("perioperativeText", "术前：补齐介入治疗术前评估、造影剂过敏史、肾功能、凝血功能、出血风险评估和知情同意记录；术中：关注罪犯血管、血流恢复、支架植入、低血压、恶性心律失常、无复流和术中出血；术后：观察穿刺点出血、再发胸痛、心律失常、心力衰竭、低血压和肾功能变化。");
       simulationState = "periop";
-      assistFocus = activeSimulationDisease === "cardiomyopathy" ? "followup" : "periop";
+      assistFocus = "periop";
       renderRecommendations();
-      markChangedFields(["perioperativeText"], activeSimulationDisease === "cardiomyopathy"
-        ? "本步新增/变化：心肌病评估表单和随访复查提醒已生成。"
-        : "本步新增/变化：介入/手术围术期提醒已生成，包含术前、术中、术后和并发症观察。", "output-change");
-      showToast(activeSimulationDisease === "cardiomyopathy" ? "已触发心肌病评估表单与随访提醒。" : "已触发介入/手术围术期提醒。");
-    }
-
-    function focusForSimulationState(state) {
-      if (state === "focused") return "exam";
-      if (state === "reports") return "diagnosis";
-      if (state === "pathway") return "pathway";
-      if (state === "periop") return activeSimulationDisease === "cardiomyopathy" ? "followup" : "periop";
-      return "suspect";
-    }
-
-    function restoreSimulationToState(targetState, changeMessage = "") {
-      clearSimulationFields();
-      if (targetState !== "empty") fillDiseaseCaseFields();
-      if (["reports", "pathway", "periop"].includes(targetState)) fillDiseaseReportFields();
-      if (["pathway", "periop"].includes(targetState)) fillDiseasePathwayFields();
-      if (targetState === "periop") fillDiseaseFinalFields();
-      simulationState = targetState;
-      assistFocus = focusForSimulationState(targetState);
-      recTab = "assist";
-      $all("[data-rec-tab]").forEach(item => {
-        item.classList.toggle("active", item.dataset.recTab === "assist");
-      });
-      renderRecommendations();
-      if (targetState === "empty") {
-        clearChangeHint();
-        return;
-      }
-      const changedByState = {
-        case: ["chiefComplaint", "presentHistory", "pastHistory", "personalHistory", "familyHistory", "allergyHistory", "physicalExam"],
-        suspect: ["chiefComplaint", "presentHistory", "pastHistory", "personalHistory", "familyHistory"],
-        focused: ["chiefComplaint", "presentHistory", "pastHistory", "personalHistory", "familyHistory"],
-        reports: ["specialExam", "assistantExam", "mainDiagnosis", "subDiagnosis1", "subStatus1", "subDiagnosis2", "subStatus2"],
-        pathway: ["treatmentText"],
-        periop: ["perioperativeText"]
-      };
-      markChangedFields(changedByState[targetState] || [], changeMessage || `已回到${simulationDiseaseName()}模拟的${targetState}阶段。`, targetState === "reports" ? "report-change" : ["pathway", "periop"].includes(targetState) ? "output-change" : "");
-    }
-
-    function previousSimulationStep() {
-      const currentIndex = simulationStepOrder.indexOf(simulationState);
-      if (currentIndex <= 0) {
-        resetSimulation();
-        showToast("当前已经是模拟起点。");
-        return;
-      }
-      const targetState = simulationStepOrder[currentIndex - 1];
-      restoreSimulationToState(targetState, `已返回上一步：${simulationDiseaseName()} ${targetState === "case" ? "案例已加载" : targetState === "suspect" ? "疑似疾病候选" : targetState === "focused" ? "已关注疑似疾病" : targetState === "reports" ? "检查检验结果回填" : targetState === "pathway" ? "专病流程与治疗建议" : "初始状态"}。`);
-      showToast(`已返回上一步：${simulationDiseaseName()}模拟。`);
+      markChangedFields(["perioperativeText"], "本步新增/变化：介入/手术围术期提醒已生成，包含术前、术中、术后和并发症观察。", "output-change");
+      showToast("已触发介入/手术围术期提醒。");
     }
 
     function setRecommendationTab(tabKey) {
@@ -6306,61 +4286,51 @@
         loadCase();
         simulationState = "suspect";
         setRecommendationTab("assist");
-        showToast(`第1步：已加载${simulationDiseaseName()}模拟案例，并生成疑似疾病推荐。`);
+        showToast("第1步：已加载 AMI 模拟病案，并生成疑似疾病推荐。");
         return;
       }
       if (simulationState === "case") {
         setRecommendationTab("assist");
         generateSuspects();
         clearChangeHint();
-        showToast("第2步：已完成疑似疾病识别，当前仅展示候选，需关注后才推荐后续检查。");
+        showToast("第2步：已完成疑似疾病识别，当前仅展示候选，需关注后才推荐初筛检查。");
         return;
       }
       if (simulationState === "suspect") {
         setRecommendationTab("assist");
         focusSuspectDisease();
-        showToast(activeSimulationDisease === "cardiomyopathy"
-          ? "第3步：已关注心肌病疑似疾病，推荐核心检查、检验和分型依据。"
-          : "第3步：已关注 ACS/AMI 疑似疾病，推荐初筛检查、检验和鉴别方向。");
+        showToast("第3步：已关注 ACS/AMI 疑似疾病，推荐初筛检查、检验和鉴别方向。");
         return;
       }
       if (simulationState === "focused") {
         setRecommendationTab("assist");
         fillReports();
-        showToast(activeSimulationDisease === "cardiomyopathy"
-          ? "第4步：已回填超声、心电图和BNP结果，输出心肌病分型建议。"
-          : "第4步：已回填心电图和肌钙蛋白结果，输出 STEMI 分型建议。");
+        showToast("第4步：已回填心电图和肌钙蛋白结果，输出 STEMI 分型建议。");
         return;
       }
       if (simulationState === "reports") {
         enterPathway();
         setRecommendationTab("assist");
-        showToast(activeSimulationDisease === "cardiomyopathy"
-          ? "第5步：已承接心肌病专病流程，进入高危风险评估和治疗建议。"
-          : "第5步：已承接 AMI 专病流程，定位再灌注评估阶段。");
+        showToast("第5步：已承接 AMI 专病流程，定位再灌注评估阶段。");
         return;
       }
       if (simulationState === "pathway") {
         enterPerioperative();
         setRecommendationTab("assist");
-        showToast(activeSimulationDisease === "cardiomyopathy"
-          ? "第6步：已输出评估表单和随访复查提醒。"
-          : "第6步：已输出介入/手术围术期提醒和并发症观察。");
+        showToast("第6步：已输出介入/手术围术期提醒和并发症观察。");
         return;
       }
       setRecommendationTab("assist");
-      assistFocus = activeSimulationDisease === "cardiomyopathy" ? "followup" : "periop";
+      assistFocus = "periop";
       renderRecommendations();
-      showToast(activeSimulationDisease === "cardiomyopathy"
-        ? "已在辅助诊疗总览中展示评估表单、治疗质控和随访提醒。"
-        : "已在辅助诊疗总览中展示围术期、治疗质控和评估表单提醒。");
+      showToast("已在辅助诊疗总览中展示围术期、治疗质控和评估表单提醒。");
     }
 
     function rerunRecommendations() {
       if (simulationState === "empty") {
         loadCase();
         generateSuspects();
-        showToast(`已按当前${simulationDiseaseName()}案例重新生成推荐。`);
+        showToast("已按默认 AMI 病案重新生成推荐。");
         return;
       }
       if (simulationState === "case" || simulationState === "suspect") {
@@ -6387,8 +4357,8 @@
       showToast("已按当前专病流程状态重新生成治疗建议和质控提醒。");
     }
 
-    function resetSimulation(showMessage = true) {
-      clearSimulationFields();
+    function resetSimulation() {
+      ["chiefComplaint","presentHistory","pastHistory","personalHistory","familyHistory","allergyHistory","physicalExam","specialExam","assistantExam","mainDiagnosis","onsetTime","subDiagnosis1","subStatus1","subDiagnosis2","subStatus2","treatmentText","perioperativeText"].forEach(id => setField(id, ""));
       simulationState = "empty";
       assistFocus = "suspect";
       recTab = "assist";
@@ -6397,14 +4367,11 @@
       });
       renderRecommendations();
       clearChangeHint();
-      if (showMessage) showToast("模拟页面已初始化。");
+      showToast("模拟页面已初始化。");
     }
 
     function stageClass(index) {
-      const stateIndexMap = activeSimulationDisease === "cardiomyopathy"
-        ? { empty: 0, case: 0, suspect: 0, focused: 1, reports: 2, pathway: 4, periop: 6 }
-        : { empty: 0, case: 0, suspect: 0, focused: 1, reports: 2, pathway: 5, periop: 6 };
-      const stateIndex = stateIndexMap[simulationState] ?? 0;
+      const stateIndex = { empty: 0, case: 0, suspect: 0, focused: 1, reports: 2, pathway: 5, periop: 6 }[simulationState] ?? 0;
       if (index < stateIndex) return "done";
       if (index === stateIndex) return "active";
       return "";
@@ -6416,15 +4383,7 @@
       const hasReports = ["reports", "pathway", "periop"].includes(simulationState);
       const hasPathway = ["pathway", "periop"].includes(simulationState);
       const hasPeriop = simulationState === "periop";
-      const labels = activeSimulationDisease === "cardiomyopathy" ? [
-        ["疑似识别", hasFocused ? "已关注" : hasCandidate ? "候选已命中" : "待生成"],
-        ["核心检查", hasFocused ? "已推荐" : hasCandidate ? "待关注" : "待推荐"],
-        ["分型确诊", hasReports ? "心肌病分型" : "待报告"],
-        ["流程承接", hasPathway ? "已承接" : "待确认"],
-        ["高危评估", hasPathway ? "已输出" : "待执行"],
-        ["治疗建议", hasPathway ? "已输出" : "待输出"],
-        ["评估随访", hasPeriop ? "已输出" : hasPathway ? "待触发" : "待输出"]
-      ] : [
+      const labels = [
         ["疑似识别", hasFocused ? "已关注" : hasCandidate ? "候选已命中" : "待生成"],
         ["初筛检查", hasFocused ? "已推荐" : hasCandidate ? "待关注" : "待推荐"],
         ["分型确诊", hasReports ? "STEMI" : "待报告"],
@@ -6468,82 +4427,12 @@
       `;
     }
 
-    function renderCardiomyopathyAssistTab() {
-      if (simulationState === "empty") {
-        return `<div class="empty-state" style="margin:14px">请选择“心肌病”并点击“下一步”，模拟心肌病辅助诊疗完整链路。</div>`;
-      }
-      if (simulationState === "case") {
-        return `<div class="empty-state" style="margin:14px">已加载刘大虾的心肌病模拟案例，点击“下一步”或“重新生成推荐”后，右侧将生成心肌病疑似疾病候选。</div>`;
-      }
-
-      const hasFocused = ["focused", "reports", "pathway", "periop"].includes(simulationState);
-      const hasReports = ["reports", "pathway", "periop"].includes(simulationState);
-      const inPathway = ["pathway", "periop"].includes(simulationState);
-      const hasFollowup = simulationState === "periop";
-
-      const suspect = section("疑似疾病", 1, `
-        ${recItem("心肌病疑似疾病候选", [
-          { text: hasFocused ? "已关注" : "候选未关注", type: hasFocused ? "green" : "" },
-          { text: "胸闷气促", type: "blue" },
-          { text: "活动后呼吸困难", type: "blue" },
-          { text: "心悸黑朦", type: "blue" },
-          { text: "猝死家族史", type: "" }
-        ], "命中规则十二：主诉、现病史出现胸闷、气促、活动后呼吸困难、心悸、黑朦等心肌病相关描述；家族性心肌病史和猝死家族史只作为风险背景加权。关注前只是候选提示，关注后才推荐核心检查。", hasFocused ? { score: 1, switch: true, selected: true, rules: [12] } : { score: 1, action: "focusSuspect", actionLabel: "关注并继续", rules: [12] })}
-      `);
-
-      const exam = hasFocused ? section("心肌病核心检查推荐", 6, `
-        ${recItem("十二导联心电图", [{ text: hasReports ? "已回填左室肥厚" : "待回填", type: hasReports ? "red" : "" }, { text: "节律/肥厚/缺血线索", type: "blue" }], "命中规则十三：关注心肌病疑似方向后推荐心电图，用于判断心律失常、左室肥厚、复极异常等线索。", { white: true, rules: [13] })}
-        ${recItem("超声心动图", [{ text: hasReports ? "室间隔18mm" : "待回填", type: hasReports ? "red" : "" }, { text: "室壁厚度/射血分数", type: "blue" }], "命中规则十三和十四：超声心动图用于判断心腔大小、室壁厚度、左室射血分数和流出道梗阻，是心肌病分型核心依据。", { white: true, rules: [13, 14] })}
-        ${recItem("B型钠尿肽 BNP 或 NT-proBNP", [{ text: hasReports ? "NT-proBNP升高" : "待回填", type: hasReports ? "red" : "" }, { text: "容量负荷", type: "blue" }], "用于评估心衰样表现和容量负荷，支撑后续风险评估。", { white: true, rules: [13] })}
-        ${recItem("心肌肌钙蛋白", [{ text: hasReports ? "轻度升高" : "待回填", type: hasReports ? "red" : "" }, { text: "心肌损伤", type: "blue" }], "用于判断是否存在心肌损伤，并辅助排除急性冠脉综合征。", { white: true, rules: [13] })}
-        ${recItem("肝肾功能、电解质", [{ text: hasReports ? "已回填" : "待回填", type: hasReports ? "green" : "" }, { text: "用药风险", type: "" }], "用于后续用药安全、利尿剂和心衰规范治疗风险评估。", { white: true, rules: [13, 16] })}
-        ${recItem("动态心电图/心脏磁共振", [{ text: "分型或高危时补充", type: "" }], "分型证据不足或存在高危风险时，用于评估室性心律失常和心肌纤维化。", { white: true, rules: [14, 15] })}
-      `) : "";
-
-      const diagnosis = hasReports ? section("分型辅助诊断", 2, `
-        ${recItem("倾向肥厚型心肌病", [
-          { text: "室间隔18mm", type: "red" },
-          { text: "流出道压差45mmHg", type: "red" },
-          { text: "射血分数保留", type: "green" }
-        ], "命中规则十四：超声心动图提示室间隔增厚并存在流出道梗阻，系统输出倾向肥厚型心肌病；最终诊断由医生确认。", { score: 1, switch: true, selected: true, rules: [14] })}
-        ${recItem("限制型心肌病待排", [{ text: "建议心脏磁共振", type: "" }], "当前双房增大、舒张受限等证据不足，系统提示必要时补充心脏磁共振。", { white: true, rules: [14] })}
-      `) : "";
-
-      const pathway = (hasReports || inPathway) ? section("专病诊疗推荐", inPathway ? 4 : 1, inPathway ? `
-        ${recItem("心肌病专病流程：高危风险评估", [{ text: "已承接", type: "green" }, { text: "医生已关注心肌病", type: "blue" }], "心肌病分型方向已明确后，系统承接心肌病专病流程，进入高危风险评估和治疗建议阶段。", { score: 1, switch: true, selected: true, rules: [15] })}
-        ${recItem("猝死高危风险提示", [{ text: "非持续性室速", type: "red" }, { text: "猝死家族史", type: "red" }], "命中规则十五：存在非持续性室速、猝死家族史等高危因素时，提示完善动态心电图、心脏磁共振、遗传咨询或电生理评估。", { warn: true, rules: [15] })}
-        ${recItem("肥厚型心肌病治疗建议", [{ text: "避免硝酸酯类/强利尿剂", type: "red" }, { text: "β受体阻滞剂评估", type: "blue" }], "命中规则十六：肥厚型心肌病伴流出道梗阻时，提示避免可能加重梗阻的药物，并建议评估β受体阻滞剂。", { white: true, rules: [16] })}
-        ${recItem("ICD 植入适应证评估提示", [{ text: "高危时进一步评估", type: "" }], "存在高危猝死风险时，提示进一步评估植入型心律转复除颤器（ICD）适应证。", { white: true, rules: [16] })}
-      ` : `
-        ${recItem("创建心肌病专病流程候选", [{ text: "分型方向已支持", type: "green" }, { text: "待医生确认", type: "" }], "核心检查结果已支持心肌病分型方向，可点击下一步承接后续高危风险评估、治疗建议和随访质控提醒。", { score: 1, action: "enterPathway", actionLabel: "进入流程", rules: [14, 15] })}
-      `) : "";
-
-      const followup = hasFollowup ? section("评估表单与随访提醒", 4, `
-        ${recItem("心功能评估表", [{ text: "推荐补齐", type: "red" }], "命中规则十七：患者处于心肌病专病流程内时，检查心功能评估表是否生成或填写，缺失时提醒补齐。", { warn: true, rules: [17] })}
-        ${recItem("心律失常风险评估表", [{ text: "推荐补齐", type: "red" }], "动态心电图异常或存在心悸、黑朦时，提醒补齐心律失常风险评估表。", { warn: true, rules: [17] })}
-        ${recItem("猝死风险评估表", [{ text: "推荐补齐", type: "red" }], "存在猝死家族史、非持续性室速等高危因素时，提醒补齐猝死风险评估表。", { warn: true, rules: [17] })}
-        ${recItem("3至6个月复查随访", [{ text: "超声/心电图/肝肾功能", type: "blue" }], "治疗方案确认后，提醒3至6个月复查超声心动图、心电图、肝肾功能、电解质和药物依从性。", { white: true, rules: [17] })}
-      `) : "";
-
-      const sectionMap = {
-        suspect: [suspect, exam, diagnosis, pathway, followup],
-        exam: [exam, suspect, diagnosis, pathway, followup],
-        diagnosis: [diagnosis, exam, suspect, pathway, followup],
-        pathway: [pathway, diagnosis, exam, suspect, followup],
-        followup: [followup, pathway, diagnosis, exam, suspect]
-      };
-      return (sectionMap[assistFocus] || sectionMap.suspect).filter(Boolean).join("");
-    }
-
     function renderAssistTab() {
-      if (activeSimulationDisease === "cardiomyopathy") {
-        return renderCardiomyopathyAssistTab();
-      }
       if (simulationState === "empty") {
-        return `<div class="empty-state" style="margin:14px">请选择疾病并点击“下一步”，模拟 AMI 辅助诊疗完整链路。</div>`;
+        return `<div class="empty-state" style="margin:14px">请先点击“加载病案”或“下一步模拟”，模拟 AMI 辅助诊疗完整链路。</div>`;
       }
       if (simulationState === "case") {
-        return `<div class="empty-state" style="margin:14px">已加载刘大虾的 AMI 模拟案例，点击“下一步”或“重新生成推荐”后，右侧将生成疑似疾病候选。</div>`;
+        return `<div class="empty-state" style="margin:14px">已加载刘大虾的 AMI 模拟病案，点击“下一步模拟”或“重新生成推荐”后，右侧将生成疑似疾病候选。</div>`;
       }
       const hasFocused = ["focused", "reports", "pathway", "periop"].includes(simulationState);
       const hasReports = ["reports", "pathway", "periop"].includes(simulationState);
@@ -6551,7 +4440,7 @@
       const hasPeriop = simulationState === "periop";
 
       const suspect = section("疑似疾病", simulationState === "case" ? 0 : 2, simulationState === "case" ? `
-        <div class="empty-state">已加载患者信息，点击“下一步”或“重新生成推荐”生成疑似疾病。</div>
+        <div class="empty-state">已加载病案，点击“下一步模拟”或“重新生成推荐”生成疑似疾病。</div>
       ` : `
         ${recItem("急性冠脉综合征（ACS）/急性心肌梗死（AMI）疑似", [
           { text: hasFocused ? "已关注" : "候选未关注", type: hasFocused ? "green" : "" }, { text: "胸痛2小时", type: "blue" }, { text: "大汗", type: "blue" }, { text: "恶心呕吐", type: "blue" }, { text: "高血压", type: "" }, { text: "糖尿病", type: "" }
@@ -6668,17 +4557,6 @@
     }
 
     function renderSearchTab() {
-      if (activeSimulationDisease === "cardiomyopathy") {
-        return `
-          ${section("知识检索", 5, `
-            ${recItem("心肌病", [{ text: "Disease", type: "blue" }, { text: "关联症状/检查/分型", type: "" }], "可查询胸闷、气促、心悸、晕厥等症状关系，以及超声心动图、BNP/NT-proBNP、动态心电图等检查检验关系。", { white: true, rules: [12, 13, 14] })}
-            ${recItem("肥厚型心肌病", [{ text: "DiseaseClassification", type: "blue" }], "在超声心动图结果回填后，依据室间隔增厚、左室壁增厚、流出道梗阻等信息进行分型辅助诊断。", { white: true, rules: [14, 16] })}
-            ${recItem("超声心动图", [{ text: "Exam", type: "blue" }, { text: "室壁厚度/射血分数", type: "red" }], "用于判断心腔大小、室壁厚度、左室射血分数和流出道梗阻，是心肌病分型的核心依据。", { white: true, rules: [13, 14] })}
-            ${recItem("动态心电图", [{ text: "Exam", type: "blue" }, { text: "室速风险", type: "red" }], "用于识别非持续性室速等高危风险因素，支撑猝死风险评估。", { white: true, rules: [15, 17] })}
-            ${recItem("ICD 植入适应证评估", [{ text: "Procedure", type: "blue" }, { text: "高危风险提示", type: "green" }], "存在高危猝死风险时，系统提示进一步评估植入型心律转复除颤器（ICD）适应证。", { white: true, rules: [15, 16] })}
-          `)}
-        `;
-      }
       return `
         ${section("知识检索", 5, `
           ${recItem("急性心肌梗死（AMI）", [{ text: "Disease", type: "blue" }, { text: "关联症状/检查/诊断标准", type: "" }], "可查询胸痛、出汗、恶心呕吐等症状关系，以及心电图、心肌肌钙蛋白、CK-MB 等检查检验关系。", { white: true, rules: [1, 2, 4] })}
@@ -6749,22 +4627,8 @@
       $all("[data-page-link]").forEach(btn => {
         btn.addEventListener("click", () => showPage(btn.dataset.pageLink));
       });
-      $all("[data-kg-card]").forEach(card => {
-        card.addEventListener("click", () => renderKgDetail(card.dataset.kgCard));
-      });
-      $("#ruleDiseaseFilter").addEventListener("change", event => {
-        currentRuleDisease = event.target.value;
-        currentRuleFilter = "all";
-        renderRules();
-      });
       $("#ruleSearch").addEventListener("input", renderRules);
       $("#simulateAllRules").addEventListener("click", () => {
-        if (currentRuleDisease === "cardiomyopathy") {
-          loadDesignerFlow("cardiomyopathy");
-          showPage("designer");
-          showToast("已切换到心肌病流程设计器，可查看心肌病规则如何被节点和连接线调用。");
-          return;
-        }
         showPage("simulation");
         loadCase();
         generateSuspects();
@@ -6792,14 +4656,13 @@
       $all("[data-component]").forEach(btn => {
         btn.addEventListener("click", () => addDesignerComponent(btn.dataset.component));
       });
-      $("#simulationDiseaseSelect").addEventListener("change", event => {
-        activeSimulationDisease = event.target.value;
-        resetSimulation(false);
-        showToast(`已切换为${simulationDiseaseName()}模拟案例，请点击“下一步”。`);
+      $("#loadCaseBtn").addEventListener("click", loadCase);
+      $("#choosePatientBtn").addEventListener("click", () => {
+        loadCase();
+        showToast("已选择患者刘大虾，并加载 AMI 模拟病案。");
       });
-      $("#saveCaseBtn").addEventListener("click", () => showToast("当前患者信息已保存。"));
+      $("#saveCaseBtn").addEventListener("click", () => showToast("当前病案已保存。"));
       $("#nextStepBtn").addEventListener("click", nextSimulationStep);
-      $("#prevStepBtn").addEventListener("click", previousSimulationStep);
       $("#replayBtn").addEventListener("click", rerunRecommendations);
       $("#clearBtn").addEventListener("click", resetSimulation);
       $("#initBtn").addEventListener("click", resetSimulation);
@@ -6838,12 +4701,19 @@
     renderRules();
     renderFlows();
     renderDesigner();
-    renderKgDetail();
     renderRecommendations();
     const initialPage = new URLSearchParams(window.location.search).get("page");
-    if (["home", "knowledgeGraph", "rules", "framework", "designer", "simulation"].includes(initialPage)) {
+    if (["home", "rules", "framework", "designer", "simulation"].includes(initialPage)) {
       showPage(initialPage);
     }
   </script>
+<script>
+var V2R=[{id:12,stage:"\u95E8\u8BCA\u7B5B\u67E5",name:"\u95E8\u8BCA\u80F8\u75DB\u5FEB\u901F\u7B5B\u67E5\u4E0E\u8F6C\u8BCA\u5EFA\u8BAE\u89C4\u5219",logic:"\u60A3\u8005\u4E8E\u95E8\u8BCA\u5C31\u8BCA\uFF0C\u4E3B\u8BC9\u5305\u542B\u201C\u80F8\u75DB\u201D\u201C\u80F8\u95F7\u201D\u4E14\u73B0\u75C5\u53F2\u63D0\u793A\u7F3A\u8840\u6027\u80F8\u75DB\u7279\u5F81\u65F6\uFF0C\u8F93\u51FA\u201C\u5EFA\u8BAE\u7ACB\u5373\u5B8C\u5584\u5FC3\u7535\u56FE\u548C\u5FC3\u808C\u808C\u9499\u86CB\u767D\u201D\u3002",fields:"\u4E3B\u8BC9\u3001\u73B0\u75C5\u53F2\u3001\u5FC3\u7535\u56FE\u3001\u808C\u9499\u86CB\u767D",trigger:"\u60A3\u8005\u5C31\u8BCA\u65F6\u89E6\u53D1",output:"\u7B5B\u67E5\u7ED3\u679C\u3001\u8BCA\u65AD\u5EFA\u8BAE",boundary:"\u524D\u7F6E\u80FD\u529B\uFF0C\u4E0D\u8FDB\u5165\u6D41\u7A0B\u753B\u5E03",category:"outpatient"},{id:13,stage:"\u6025\u8BCA\u5206\u8BCA",name:"\u6025\u8BCAAMI\u5FEB\u901F\u5206\u8BCA\u4E0E\u65F6\u95F4\u7A97\u8D28\u63A7\u89C4\u5219",logic:"\u60A3\u8005\u4E8E\u6025\u8BCA\u5C31\u8BCA\u4E14\u4E3B\u8BC9\u5305\u542B\u201C\u80F8\u75DB\u201D\u201C\u80F8\u95F7\u201D\u65F6\uFF0C\u7CFB\u7EDF\u6807\u8BB0\u4E3A\u6025\u8BCA\u80F8\u75DB\u5E76\u542F\u52A8\u65F6\u95F4\u7A97\u8BA1\u65F6\u3002",fields:"\u4E3B\u8BC9\u3001\u73B0\u75C5\u53F2\u3001\u5FC3\u7535\u56FE\u3001\u808C\u9499\u86CB\u767D",trigger:"\u60A3\u8005\u5C31\u8BCA\u65F6\u89E6\u53D1",output:"\u7B5B\u67E5\u7ED3\u679C\u3001\u8BCA\u65AD\u5EFA\u8BAE",boundary:"\u524D\u7F6E\u80FD\u529B\uFF0C\u4E0D\u8FDB\u5165\u6D41\u7A0B\u753B\u5E03",category:"emergency"},{id:14,stage:"\u5165\u9662\u8854\u63A5",name:"\u76F4\u63A5\u5165\u9662AMI\u8854\u63A5\u4E0E\u7F3A\u9879\u8865\u9F50\u89C4\u5219",logic:"\u5F53\u60A3\u8005\u7ECF\u5916\u9662\u8F6C\u5165\u4E14\u4E3B\u8BCA\u65AD\u5305\u542B\u201C\u6025\u6027\u5FC3\u808C\u6897\u6B7B\u201D\u201CSTEMI\u201D\u65F6\uFF0C\u68C0\u67E5\u5916\u9662\u5DF2\u5B8C\u6210\u68C0\u67E5\uFF0C\u4E0D\u91CD\u590D\u63A8\u8350\u3002",fields:"\u4E3B\u8BC9\u3001\u73B0\u75C5\u53F2\u3001\u5FC3\u7535\u56FE\u3001\u808C\u9499\u86CB\u767D",trigger:"\u60A3\u8005\u5C31\u8BCA\u65F6\u89E6\u53D1",output:"\u7B5B\u67E5\u7ED3\u679C\u3001\u8BCA\u65AD\u5EFA\u8BAE",boundary:"\u524D\u7F6E\u80FD\u529B\uFF0C\u4E0D\u8FDB\u5165\u6D41\u7A0B\u753B\u5E03",category:"admission"},{id:15,stage:"\u9662\u5185\u9884\u8B66",name:"\u9662\u5185\u7A81\u53D1\u80F8\u75DB\u8BC6\u522B\u4E0E\u9884\u8B66\u89C4\u5219",logic:"\u4F4F\u9662\u671F\u95F4\u60A3\u8005\u65B0\u51FA\u73B0\u4E3B\u8BC9\u201C\u80F8\u75DB\u201D\u201C\u80F8\u95F7\u201D\u65F6\uFF0C\u7CFB\u7EDF\u8F93\u51FA\u201C\u9662\u5185\u7A81\u53D1\u80F8\u75DB\u9884\u8B66\u201D\u3002",fields:"\u4E3B\u8BC9\u3001\u73B0\u75C5\u53F2\u3001\u5FC3\u7535\u56FE\u3001\u808C\u9499\u86CB\u767D",trigger:"\u60A3\u8005\u5C31\u8BCA\u65F6\u89E6\u53D1",output:"\u7B5B\u67E5\u7ED3\u679C\u3001\u8BCA\u65AD\u5EFA\u8BAE",boundary:"\u524D\u7F6E\u80FD\u529B\uFF0C\u4E0D\u8FDB\u5165\u6D41\u7A0B\u753B\u5E03",category:"suspect"}];V2R.forEach(function(r){rules.push(r);});
+filters.length=0;filters.push({key:"all",label:"\u5168\u90E8\u89C4\u5219"},{key:"outpatient",label:"\u95E8\u8BCA\u7B5B\u67E5"},{key:"emergency",label:"\u6025\u8BCA\u5206\u8BCA"},{key:"admission",label:"\u5165\u9662\u8854\u63A5"},{key:"suspect",label:"\u7591\u4F3C\u8BC6\u522B"},{key:"exam",label:"\u521D\u7B5B\u68C0\u67E5"},{key:"diagnosis",label:"\u5206\u578B\u8BCA\u65AD"},{key:"pathway",label:"\u4E13\u75C5\u63A8\u8350"},{key:"therapy",label:"\u6CBB\u7597\u5EFA\u8BAE"},{key:"surgery",label:"\u56F4\u672F\u671F"},{key:"qc",label:"\u8D28\u63A7\u95ED\u73AF"},);
+[12,13,14,15].forEach(function(i){ruleUsageMap[i]={designer:"\u524D\u7F6E\u80FD\u529B\uFF0C\u4E0D\u8FDB\u5165\u6D41\u7A0B\u753B\u5E03",simulation:"\u524D\u7F6E\u80FD\u529B",connector:"\u524D\u7F6E\u80FD\u529B"};});
+var v2P={outpatient:{name:"张阿姨",dept:"心血管内科门诊",chief:"胸痛2天",present:"活动后胸骨后闷痛",past:"高血压10年"},emergency:{name:"李先生",dept:"急诊科",chief:"胸痛1小时",present:"压榨样胸痛伴大汗",past:"高血压5年"},direct_admission:{name:"王大爷",dept:"心血管内科",chief:"胸痛3h（外院转入）",present:"ECG抬高，肌钙蛋白↑",past:"高血压20年"},inpatient_onset:{name:"赵某",dept:"呼吸内科",chief:"胸痛（住院第2天）",present:"突发胸骨后闷痛",past:"高血压"}};
+document.querySelectorAll("[data-v2-scenario]").forEach(function(b){b.addEventListener("click",function(){var s=this.getAttribute("data-v2-scenario");document.querySelectorAll("[data-v2-scenario]").forEach(function(x){x.classList.toggle("active",x.getAttribute("data-v2-scenario")===s);});["chiefComplaint","presentHistory","pastHistory","personalHistory","familyHistory","allergyHistory","physicalExam","specialExam","assistantExam","mainDiagnosis","onsetTime","subDiagnosis1","subStatus1","subDiagnosis2","subStatus2","treatmentText","perioperativeText","patientName","dept"].forEach(function(id){var el=document.getElementById(id);if(el)el.value="";});if(s!=="standard"&&v2P[s]){var p=v2P[s];["patientName","dept","chiefComplaint","presentHistory","pastHistory"].forEach(function(k){var el=document.getElementById(k);if(el)el.value=p[k];});}var h=document.getElementById("changeHint");if(h)h.innerHTML="<span class=\"change-dot\"></span>已切换到"+(s==="standard"?"标准路径":s);if(typeof renderRecommendations==="function")renderRecommendations();});});
+if(typeof renderFilters==="function")renderFilters();if(typeof renderRules==="function")renderRules();if(typeof renderDesigner==="function")renderDesigner();if(typeof showToast==="function")showToast("V2 14节点流程已加载");if(!window.location.search.includes("page="))showPage("rules");
+</script>
 </body>
 </html>
