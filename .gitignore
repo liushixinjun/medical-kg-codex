@@ -10,6 +10,7 @@ __pycache__/
 *.log
 *.bak
 *.old
+*.~sql
 
 # Local secrets / database credentials
 图谱数据库链接.txt
@@ -50,6 +51,19 @@ __pycache__/
 **/回滚包_rollback/
 项目管理中心_project_management/109_术语主数据同名重复归并_20260716/
 项目管理中心_project_management/117_治疗方案动作链全库治理_20260716/05_写库前_疾病直连治疗方案关系备份.json
+项目管理中心_project_management/130_未解析PDF病种启动池_20260717/
+项目管理中心_project_management/132_补充证据合并入库_20260717/
+项目管理中心_project_management/141_CDSS双口径审计与缺口治理_20260719/
+项目管理中心_project_management/142_证据层去重与性能收口_20260719/
+项目管理中心_project_management/145_旧结构全库收口_20260719/
+项目管理中心_project_management/147_标准手术V2迁移_20260720/
+项目管理中心_project_management/148_标准字典融合V2_20260721/
+项目管理中心_project_management/149_历史兼容尾巴一次性收口_20260729/
+项目管理中心_project_management/152_标准字典闭环硬闸门_20260730/
+项目管理中心_project_management/20260814_全局泛化关系治理与样板打通/
+项目管理中心_project_management/2026年8月P6已解析大类终验/
+项目管理中心_project_management/2026年8月真实性来源核验/
+项目管理中心_project_management/PRD_专科知识图谱与辅助诊疗_20260814/
 
 # Local application/cache folders
 .agents/
